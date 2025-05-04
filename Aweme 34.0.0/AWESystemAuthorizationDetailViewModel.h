@@ -1,0 +1,34 @@
+@interface AWESystemAuthorizationDetailViewModel : AWESettingBaseViewModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double lastActionTime;
+@property (nonatomic) BOOL isSwitchOn;
+@property (nonatomic) NSTimer switchFireTimer;
+@property (nonatomic) q type;
+- (id)sectionDataArray;
+- (void)setIsSwitchOn:;
+- (void)setSectionDataArray:;
+- (void)configSectionDataArray;
+- (void)refactorConfigSectionDataArray;
+- (void)handleNetworkFailedWithType:;
+- (double)lastActionTime;
+- (id)switchFireTimer;
+- (void)setLastActionTime:;
+- (void)fireExifChangeAction;
+- (void)setSwitchFireTimer:;
+- (void)updateItemStatusWithType:;
+- (void)tapCellWithType:;
+- (void)switchManagePositionExifPermit:;
+- (void)switchManageIntelliAlbumSwitchOn:;
+- (void)updateSystemShareSwitch:;
+- (void)dealloc;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (BOOL)isSwitchOn;
++ (id)settingSearchRegisterDic;
++ (unsigned long long)itemStatusWithSettingItem:;
+@end

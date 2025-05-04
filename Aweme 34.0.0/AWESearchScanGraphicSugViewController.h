@@ -1,0 +1,33 @@
+@interface AWESearchScanGraphicSugViewController : UIViewController
+@property (nonatomic) @? sugWordDidSelect;
+@property (nonatomic) @? sugWordWillShow;
+@property (nonatomic) AWESearchScanGraphicSugViewControllerConfig config;
+@property (nonatomic) NSMutableArray sugWords;
+@property (nonatomic) UITableView sugTableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupSubViews;
+- (id)sugTableView;
+- (id)sugWords;
+- (id)sugWordWillShow;
+- (id)sugWordDidSelect;
+- (void)sugTableViewShow:;
+- (void)setSugWordDidSelect:;
+- (void)setSugWordWillShow:;
+- (void)setSugWords:;
+- (void)setSugTableView:;
+- (void)setConfig:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (id)initWithConfig:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (id)config;
+- (void)viewDidLoad;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)colorNamed:;
+@end

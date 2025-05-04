@@ -1,0 +1,37 @@
+@interface AWEIMAutoSearchGiphyWarmupComponent : AWEIMComponentBase
+@property (nonatomic) q warmupCount;
+@property (nonatomic) q warmupOnceCount;
+@property (nonatomic) q warmupDelay;
+@property (nonatomic) q warmupInterval;
+@property (nonatomic) q cacheExpireInterval;
+@property (nonatomic) Q conversationType;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) BOOL enableStrategyOpt;
+- (unsigned long long)conversationType;
+- (void)setConversationType:;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)hostVC_afterFirstRender;
+- (long long)cacheExpireInterval;
+- (void)setCacheExpireInterval:;
+- (BOOL)enableStrategyOpt;
+- (BOOL)p_dayTimeValid;
+- (void)p_warmupIfNeeded;
+- (id)p_setupManagerIfNeeded;
+- (void)p_startWarmupIfNeededWithMgr:;
+- (void)p_warmUpKeys:;
+- (long long)warmupOnceCount;
+- (void)setWarmupOnceCount:;
+- (long long)warmupDelay;
+- (void)setWarmupDelay:;
+- (long long)warmupInterval;
+- (void)setWarmupInterval:;
+- (void)setEnableStrategyOpt:;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (void)warmup;
+- (void)setConversationID:;
+- (void)setWarmupCount:;
+- (long long)warmupCount;
++ (BOOL)canCreateComponentWithContext:;
+@end

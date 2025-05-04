@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageRecommendDataFilter : _TtCs12_SwiftObject
+@end

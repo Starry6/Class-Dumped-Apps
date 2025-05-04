@@ -1,0 +1,31 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputViewDispatcher : NSObject
+- (void)textInputDismissCompletion;
+- (void)textInputValueChanged:;
+- (void)textInputDidAddUser:;
+- (void)textInputDidDeleteUser:;
+- (void)textInputDidClearInputData:;
+- (void)textInput:didDeleteTextInRange:;
+- (void)textInputDidDeleteDuetChain:;
+- (void)textInputDidExceedMaxLength:;
+- (void)textInputDidDeleteCommentChain:;
+- (void)textInputDidExceedMaxUserCount:;
+- (void)textInputDidNeedClosingSuggestion:;
+- (void)textInputDidStartLoadingSuggestions:;
+- (void)textInput:didReplaceTextInRange:withText:;
+- (void)textInput:didRequestSuggestion:hitBlockList:;
+- (double)textInputCurrentAwemeDuration:;
+- (BOOL)textInputShouldMatchTimeExtra:;
+- (void)growingTextViewDidChange:;
+- (void)growingTextViewDidEndEditing:;
+- (void)growingTextViewDidBeginEditing:;
+- (void)growingTextViewDidChangeSelection:;
+- (void)growingTextView:didChangeHeight:;
+- (void)growingTextView:willChangeHeight:;
+- (id)growingTextView:itemsForDrag:;
+- (BOOL)growingTextView:shouldInteractWithTextAttachment:inRange:interaction:;
+- (BOOL)growingTextViewShouldEndEditing:;
+- (BOOL)growingTextViewShouldBeginEditing:;
+- (BOOL)growingTextView:shouldChangeTextInRange:replacementText:;
+- (id)init;
+- (void).cxx_destruct;
+@end

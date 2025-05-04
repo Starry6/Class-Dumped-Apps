@@ -1,0 +1,37 @@
+@interface AWELeftSideBarProxy : NSObject
+@property (nonatomic) AWELeftSideBarBasePresenter presenter;
+@property (nonatomic) <AWELeftSideBarBussinessDelegate> bussinessDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)createLeftSideBarListCellViewWithModuleType:cellModel:;
+- (void)redDotDidShowWithModel:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:;
+- (void)dynamicReloadModule;
+- (void)dynamicInsertModule;
+- (void)subEntranceClickWithModel:;
+- (void)subtitleDidShowWithModel:;
+- (void)forceRemoveSelfWithAnimation:;
+- (void)showLeftSideBarPopView:completion:clickBlock:dismissBlock:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:jumpSchemaEndLogin:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:extraLoginTrackParams:finalBlock:;
+- (id)createLeftSideBarTopTitleCellViewWithModuleType:;
+- (void)forceRequestDynamicData;
+- (id)getleftSideBarTrackContext;
+- (id)getLeftSideBarTrackParamsForBusiness:;
+- (long long)leftSideBarCellViewPositionAtModule;
+- (void)subEntranceShowWithModel:;
+- (void)showLeftSideBarSubEntranceBadge;
+- (void)hideLeftSideBarSubEntranceBadge;
+- (void)setBussinessDelegate:;
+- (id)bussinessDelegate;
+- (void)addSecondPageViewController:animated:;
+- (void)removeSecondPageViewController:animated:;
+- (id)initWithPresenter:leftSideBarBussinessDelegate:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:extraLoginTrackParams:jumpSchemaEndLogin:finalBlock:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:extraLoginTrackParams:customTransitionType:finalBlock:;
+- (id)presenter;
+- (void)setPresenter:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface AWEZLinkSDKManager : NSObject
+@property (nonatomic) BOOL didRegisterNoti;
+@property (nonatomic) BOOL didSetPasteboardDelegate;
+@property (nonatomic) BOOL isNeedHandleZlinkWhenSettingUpdated;
+@property (nonatomic) BOOL didRegisteredSettingUpdatedMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleZlinkFromPasteboard;
+- (void)awemeSettingDidChange;
+- (void)deepLinkOnScheme:type:;
+- (void)recognizePasteboardWithExtraInfo:completion:;
+- (id)urlsForZlinkValid;
+- (BOOL)validateZlinkForURL:;
+- (void)handleZlinkFromSchemeURL:;
+- (void)handleZlinkFromUniversalLink:;
+- (id)aAWEZLinkSDKManagerCommonAdapter;
+- (void)p_didHandleZlinkFromPasteboard;
+- (void)setIsNeedHandleZlinkWhenSettingUpdated:;
+- (BOOL)checkPasteboardChangeCount;
+- (BOOL)didSetPasteboardDelegate;
+- (void)setDidSetPasteboardDelegate:;
+- (BOOL)didRegisterNoti;
+- (void)setDidRegisterNoti:;
+- (BOOL)isNeedHandleZlinkWhenSettingUpdated;
+- (void)deepLinkOnEvent:params:;
+- (BOOL)didRegisteredSettingUpdatedMessage;
+- (void)setDidRegisteredSettingUpdatedMessage:;
+- (id)init;
+- (void)dealloc;
+- (void)start;
++ (void)forbidZlinkPasteboardByChangeCount;
++ (id)pasteboardChangeCountQueue;
++ (Class)aAWEZLinkSDKManagerCommonAdapterClass;
++ (id)sharedInstance;
+@end

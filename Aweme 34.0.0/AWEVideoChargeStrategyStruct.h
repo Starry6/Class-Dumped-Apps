@@ -1,0 +1,31 @@
+@interface AWEVideoChargeStrategyStruct : AWEBaseApiModel
+@property (nonatomic) BOOL supportSegmentUnlock;
+@property (nonatomic) NSNumber totalPrice;
+@property (nonatomic) q chargeStyle;
+@property (nonatomic) NSNumber unitPrice;
+@property (nonatomic) q discounThreshold;
+@property (nonatomic) NSNumber hasPaidEpisodes;
+@property (nonatomic) NSNumber minimumDiscount;
+@property (nonatomic) NSNumber unlockCount;
+@property (nonatomic) NSString extra;
+- (void)setExtra:;
+- (long long)chargeStyle;
+- (void)setChargeStyle:;
+- (BOOL)supportSegmentUnlock;
+- (void)setSupportSegmentUnlock:;
+- (id)totalPrice;
+- (void)setTotalPrice:;
+- (long long)discounThreshold;
+- (void)setDiscounThreshold:;
+- (id)hasPaidEpisodes;
+- (void)setHasPaidEpisodes:;
+- (id)minimumDiscount;
+- (void)setMinimumDiscount:;
+- (id)unlockCount;
+- (void)setUnlockCount:;
+- (id)extra;
+- (void).cxx_destruct;
+- (void)setUnitPrice:;
+- (id)unitPrice;
++ (id)JSONKeyPathsByPropertyKey;
+@end

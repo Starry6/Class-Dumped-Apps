@@ -1,0 +1,32 @@
+@interface AWEMRSubscribeSingleChannelPanelView : AWEMRSubscribeBasePanelView
+@property (nonatomic) AWEMRSubscribeManageSingleCard card;
+@property (nonatomic) UIView optionView;
+@property (nonatomic) UILabel optionLabel;
+@property (nonatomic) DUXSwitch aSwitch;
+@property (nonatomic) DUXDivider divider;
+@property (nonatomic) NSString optionText;
+@property (nonatomic) BOOL switchOn;
+- (id)initWithDefault;
+- (id)optionText;
+- (void)setupContainerView;
+- (id)middleView;
+- (id)optionLabel;
+- (void)setOptionLabel:;
+- (double)containerViewTopInset;
+- (double)containerViewBottomInset;
+- (id)initWithOptionViewDefaultOn:valueChangedBlock:;
+- (void)setOptionText:;
+- (void)setupContainerViewWithOption;
+- (void)setupOptionView;
+- (id)card;
+- (void)setCard:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)aSwitch;
+- (void)setASwitch:;
+- (BOOL)switchOn;
+- (id)divider;
+- (void)setDivider:;
+- (id)optionView;
+- (void)setOptionView:;
+@end

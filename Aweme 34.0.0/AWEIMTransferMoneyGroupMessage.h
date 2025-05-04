@@ -1,0 +1,33 @@
+@interface AWEIMTransferMoneyGroupMessage : AWEIMTransferMoneyMessage
+@property (nonatomic) NSString senderUid;
+@property (nonatomic) NSString receiverUid;
+@property (nonatomic) NSString thirdPartyHint;
+@property (nonatomic) NSString topContentSuffix;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)topContent;
+- (id)messageExplanationText;
+- (id)topContentSuffix;
+- (unsigned long long)transUserType;
+- (id)transferDetailPageSchema;
+- (double)topContentWidth;
+- (id)initWithContentDict:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)senderUid;
+- (void)setSenderUid:;
+- (id)displayTextWithType:;
+- (id)receiverUid;
+- (id)thirdPartyHint;
+- (void)setReceiverUid:;
+- (void)setThirdPartyHint:;
+- (void)setTopContentSuffix:;
+- (void).cxx_destruct;
+- (long long)messageType;
+- (id)copyWithZone:;
+@end

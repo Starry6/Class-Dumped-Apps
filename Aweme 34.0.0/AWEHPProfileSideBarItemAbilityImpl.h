@@ -1,0 +1,36 @@
+@interface AWEHPProfileSideBarItemAbilityImpl : NSObject
+@property (nonatomic) AWELeftSideBarBasePresenter presenter;
+@property (nonatomic) AWEHPProfileSideBarManager manager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)createLeftSideBarListCellViewWithModuleType:cellModel:;
+- (void)redDotDidShowWithModel:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:;
+- (void)dynamicReloadModule;
+- (void)dynamicInsertModule;
+- (void)subEntranceClickWithModel:;
+- (id)initWithPresenter:withManager:;
+- (void)subtitleDidShowWithModel:;
+- (void)forceRemoveSelfWithAnimation:;
+- (void)p_cellClickWithNeedLogin:schema:extraLoginTrackParams:jumpSchemaEndLogin:finalBlock:;
+- (void)p_cellClickWithSchema:finalBlock:;
+- (void)showLeftSideBarPopView:completion:clickBlock:dismissBlock:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:jumpSchemaEndLogin:;
+- (void)leftSideBarCellClickWithNeedLogin:schema:extraLoginTrackParams:finalBlock:;
+- (id)createLeftSideBarTopTitleCellViewWithModuleType:;
+- (void)forceRequestDynamicData;
+- (id)getleftSideBarTrackContext;
+- (id)getLeftSideBarTrackParamsForBusiness:;
+- (long long)leftSideBarCellViewPositionAtModule;
+- (void)subEntranceShowWithModel:;
+- (void)showLeftSideBarSubEntranceBadge;
+- (void)hideLeftSideBarSubEntranceBadge;
+- (void)leftSideBarCellClickWithNeedLogin:schema:extraLoginTrackParams:customTransitionType:finalBlock:;
+- (void)setManager:;
+- (id)presenter;
+- (id)manager;
+- (void)setPresenter:;
+- (void).cxx_destruct;
+@end

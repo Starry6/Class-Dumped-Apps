@@ -1,0 +1,32 @@
+@interface AWEFeedStorage : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)feed_userFlagKeyForUserID:;
+- (long long)feed_userFlag;
+- (long long)totalVideoGuideShowedCount;
+- (id)todayFirstRecordDate;
+- (void)setTodayFirstRecordDate;
+- (long long)todayVideoGuideShowedCount;
+- (id)todayFirstShowLiveGuideDate;
+- (void)setTodayFirstShowLiveGuideDate;
+- (long long)todayLiveGuideShowedCount;
+- (long long)totalLiveGuideIgnoredCount;
+- (BOOL)feed_isUserFlagOn:;
+- (void)feed_setUserFlag:;
+- (void)feed_clearUserFlag:;
+- (void)addVideoGuideShowedCount;
+- (void)addTodayVideoGuideShowedCount;
+- (void)addTodayLiveGuideShowedCount;
+- (void)addLiveGuideIgnoreCount;
+- (void)resetLiveGuideIgnoreCount;
+- (id)firstIgnoreDate;
+- (void)setLiveGuideFirstIgnoreDate;
++ (id)feedKVHandler;
++ (id)feedCountKVHandler;
++ (id)feedPreCacheKVHandler;
++ (id)feedMMKVHandler;
++ (id)fileStorageHandler;
++ (id)sharedInstance;
+@end

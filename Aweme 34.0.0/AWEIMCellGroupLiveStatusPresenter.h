@@ -1,0 +1,2 @@
+@interface AWEIMCellGroupLiveStatusPresenter : AWEIMCellLiveStatusPresenter
+@end

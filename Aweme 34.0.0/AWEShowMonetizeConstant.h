@@ -1,0 +1,2 @@
+@interface AWEShowMonetizeConstant : NSObject
+@end

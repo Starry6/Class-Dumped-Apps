@@ -1,0 +1,34 @@
+@interface AWERVLDanmakuController : AWEVideoPlayControlBaseController
+@property (nonatomic) <AWEDanmakuBaseControllerProtocol> danmakuController;
+@property (nonatomic) <AWEDanmakuBaseContextProtocol> danmakuContext;
+@property (nonatomic) BOOL playingForDanmakuInputViewShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onPlayerWillLoopPlaying:;
+- (void)setHide:;
+- (double)currentPlayTime;
+- (void)onPlayerPlay:ifPlay:;
+- (void)onPlayerPause:;
+- (void)onPlayerBeInserted:;
+- (void)bindEvent;
+- (BOOL)containerViewAppear;
+- (id)danmakuContext;
+- (BOOL)isCurrentModelSupportMask;
+- (void)setDanmakuContext:;
+- (void)addDanmakuContainerView;
+- (id)danmakuController;
+- (void)setDanmakuController:;
+- (void)handleDanmakuInputButtonClick;
+- (BOOL)shouldRelatedShowDanmaku;
+- (void)setPlayingForDanmakuInputViewShow:;
+- (BOOL)playingForDanmakuInputViewShow;
+- (void)setModel:;
+- (void)viewDidLoad;
+- (id)playerController;
+- (void).cxx_destruct;
+- (double)videoDuration;
+- (void)viewDidAppear:;
+- (void)reset;
+@end

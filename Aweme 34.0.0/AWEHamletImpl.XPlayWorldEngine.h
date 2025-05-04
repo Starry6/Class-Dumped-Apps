@@ -1,0 +1,24 @@
+@interface AWEHamletImpl.XPlayWorldEngine : NSObject
+- (void)screenRecordTask:didStart:;
+- (void)screenRecordTask:didStop:;
+- (void)screenRecordTask:didCompletion:;
+- (void)didReceiveRTCCustomMessageWithString:;
+- (void)didReceivePodMiddlewareMessage:;
+- (void)playItem:preloadDidFailed:;
+- (void)playItem:preloadDidSucceed:;
+- (void)playItem:playStatusDidUpdated:info:;
+- (void)playItem:canJoinQueue:callback:;
+- (void)playItem:didUpdateQueueInfo:;
+- (void)playItem:didDequeue:;
+- (void)playItem:didFinishQueue:;
+- (void)playItem:didExpireQueue:;
+- (BOOL)checkIsShowing;
+- (void)playItem:playQualityStats:;
+- (void)playItem:remoteVideoStateChangeWith:withVideoStateReason:;
+- (void)playItemDidLostConnection:;
+- (void)playItem:networkStatusChangedFrom:to:;
+- (void)playItem:remoteVideoRotationChanged:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

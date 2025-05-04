@@ -1,0 +1,32 @@
+@interface AWEUserLoginEmailCodeStep2ViewController : AWEUserLoginBaseViewController
+@property (nonatomic) AWEUserLoginEmailCodeViewModel viewModel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEUserLoginErrorInfoLabel errorLabel;
+@property (nonatomic) UIView navigationBar;
+@property (nonatomic) AWEUserLoginInputView verificationCodeView;
+- (id)pageBtm;
+- (void)setupContainerView;
+- (void)cursorFocusWhenAppear;
+- (void)addErrorLabel:;
+- (void)setupBgViewIfNeed;
+- (void)setupLoginComponentView;
+- (void)startBind;
+- (id)verificationCodeView;
+- (id)verificationInputModel;
+- (void)setVerificationCodeView:;
+- (id)initWithEmailAccount:;
+- (id)navigationBar;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)containerView;
+- (long long)preferredStatusBarStyle;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setNavigationBar:;
+- (void)setupUI;
+- (void)hideError;
+- (void)setupNavigationBar;
+- (id)errorLabel;
+- (void)setErrorLabel:;
+@end

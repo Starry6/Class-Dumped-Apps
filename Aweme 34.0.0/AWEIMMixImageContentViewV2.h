@@ -1,0 +1,33 @@
+@interface AWEIMMixImageContentViewV2 : AWEIMMixImageContentView
+@property (nonatomic) @? buttonAction;
+@property (nonatomic) UIImageView duoshanView;
+@property (nonatomic) UIImageView contentStateMaskView;
+@property (nonatomic) UIView<IESIMGradientViewProtocol> gradientView;
+- (void)p_setupUI;
+- (void)onButtonTap;
+- (void)updateDisplayImage:;
+- (void)configLoadingState:;
+- (void)showEnsureDownloadView:sizeText:;
+- (void)showProcessView:;
+- (void)updateDownloadProcess:;
+- (void)p_updateCardBackground;
+- (void)handleThemeChangeNotification;
+- (void)updateDuoshanHideState:;
+- (void)updateButtonAction:;
+- (void)updateCoverWithURL:defaultCover:bgColor:hidden:;
+- (void)updateWithTitle:titleColor:desc:descColor:needDescArrow:buttonTitle:;
+- (void)updateAvatarsWithURLs:avatarWidth:maxShowCount:placeholder:;
+- (void)makeDarkMaskViewShow:;
+- (void)updateStateImageName:;
+- (id)p_multiAvatarOptionWithPlaceholder:moreAvatarCount:;
+- (void)updateUIWithQuoteState:avatarWidth:multiAvatarWidth:;
+- (void)setContentStateMaskView:;
+- (id)contentStateMaskView;
+- (void)setDuoshanView:;
+- (id)duoshanView;
+- (id)gradientView;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)buttonAction;
+- (void)setButtonAction:;
+@end

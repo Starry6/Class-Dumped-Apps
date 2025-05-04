@@ -1,0 +1,37 @@
+@interface AWESwitchNetPushContent : NSObject
+@property (nonatomic) AWESwitchNetPushView oldView;
+@property (nonatomic) AWEInnerPushCommonView currentView;
+@property (nonatomic) AWEInnerPushCommonViewModel viewModel;
+@property (nonatomic) AWEInnerNotificationRequest request;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disablePullIndicatorView;
+- (void)renderModel:context:;
+- (void)handleTapAction;
+- (id)extraParam;
+- (id)notificationOperator;
+- (BOOL)tapGestureIsEnable:;
+- (id)trackingModelForScene:;
+- (void)setNotificationOperator:;
+- (void)updateRightActionAreaModel;
+- (void)updateTitleAreaItems;
+- (void)updateContentAttrString;
+- (id)oldView;
+- (void)setOldView:;
+- (void)clickSwitchNetButton;
+- (id)content;
+- (id)view;
+- (id)viewModel;
+- (void)setViewModel:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRequest:;
+- (id)request;
+- (void)updateProperties;
+- (void)setCurrentView:;
+- (id)currentView;
+@end

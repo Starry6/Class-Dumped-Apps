@@ -1,0 +1,35 @@
+@interface AWEPadPanelTransitionController : UIPercentDrivenInteractiveTransition
+@property (nonatomic) BOOL presenting;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIViewController presentedViewController;
+@property (nonatomic) UIViewController presentingViewController;
+@property (nonatomic) double presentationTransitionDuration;
+@property (nonatomic) double dismissalTransitionDuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)animatePresentationTransition:;
+- (void)animateDismissalTransition:;
+- (void)setDismissalTransitionDuration:;
+- (void)setPresentationTransitionDuration:;
+- (double)presentationTransitionDuration;
+- (double)dismissalTransitionDuration;
+- (id)frameForPresentedViewController:transitionContext:;
+- (id)presentationControllerForPresentedViewController:presentingViewController:sourceViewController:;
+- (BOOL)isPresenting;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (id)animationControllerForDismissedController:;
+- (id)containerView;
+- (id)presentingViewController;
+- (void)setPresenting:;
+- (double)transitionDuration:;
+- (void)setContainerView:;
+- (void)animateTransition:;
+- (void).cxx_destruct;
+- (void)setPresentingViewController:;
+- (id)presentedViewController;
+- (void)setPresentedViewController:;
+- (unsigned long long)transitionAnimationOptions:;
++ (Class)presentationControllerClass;
+@end

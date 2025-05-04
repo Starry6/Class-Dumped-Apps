@@ -1,0 +1,32 @@
+@interface AWEFeedSlideActionView : UIView
+@property (nonatomic) <AWEFeedSlideActionViewResourceProvider> resourceProvider;
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView titleContainerView;
+@property (nonatomic) UIImageView imageMaskView;
+@property (nonatomic) UIImageView gradientImageView;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UIView imageContainerView;
+- (void)p_setupUI;
+- (id)lottieView;
+- (void)setLottieView:;
+- (id)imageMaskView;
+- (void)setImageMaskView:;
+- (id)initWithFrame:rsourceProvider:;
+- (id)resourceProvider;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)backgroundImageView;
+- (void)setIconImageView:;
+- (id)titleContainerView;
+- (id)imageContainerView;
+- (void)setImageContainerView:;
+- (void)setBackgroundImageView:;
+- (void)setTitleContainerView:;
+- (id)gradientImageView;
+- (void)setGradientImageView:;
+- (void)setResourceProvider:;
+@end

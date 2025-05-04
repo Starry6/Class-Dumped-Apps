@@ -1,0 +1,30 @@
+@interface AWESearchGoodsLeaderboardView : UIView
+@property (nonatomic) AWESearchMerchandiseCommonInfo leaderboard;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIView bgColorView;
+@property (nonatomic) UILabel leaderboardLabel;
+@property (nonatomic) UILabel extraLabel;
+@property (nonatomic) UIImageView arrowIcon;
+- (id)extraLabel;
+- (void)setExtraLabel:;
+- (id)arrowIcon;
+- (void)setArrowIcon:;
+- (void)configBGColor;
+- (BOOL)hasLeaderBoardIconConfig;
+- (double)leaderboardMaxWidthWithContainerWidth:;
+- (double)extraLabelWidth;
+- (double)leaderboardLabelWidth;
+- (double)leaderBoardIconWidth;
+- (double)contentTotalWidth;
+- (id)leaderboardLabel;
+- (void)setLeaderboardLabel:;
+- (id)initWithFrame:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setIconImageView:;
+- (void)setLeaderboard:;
+- (id)leaderboard;
+- (void)setBgColorView:;
+- (id)bgColorView;
+@end

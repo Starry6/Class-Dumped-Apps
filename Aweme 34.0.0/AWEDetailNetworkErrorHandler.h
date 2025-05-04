@@ -1,0 +1,30 @@
+@interface AWEDetailNetworkErrorHandler : NSObject
+@property (nonatomic) UIViewController<AWEDetailNetworkErrorHostViewController> host;
+@property (nonatomic) IESServiceProvider provider;
+@property (nonatomic) <AWEDetailViewModelProtocol> stateContext;
+@property (nonatomic) AWEDetailNetworkErrorView errorView;
+@property (nonatomic) DUXVacantView vacantErrorView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostViewDidLoad;
+- (id)initWithHost:serviceProvider:;
+- (BOOL)shouldUseUnifyStyleErrorView;
+- (void)updateErrorTitle:description:;
+- (void)p_handleNetworkError:;
+- (id)vacantErrorView;
+- (id)networkErrorContainerView;
+- (void)p_resetErrorView;
+- (void)clickedErrorViewSolutionButton:;
+- (void)setVacantErrorView:;
+- (void)setHost:;
+- (id)host;
+- (void)setProvider:;
+- (void)setStateContext:;
+- (void).cxx_destruct;
+- (id)stateContext;
+- (id)provider;
+- (id)errorView;
+- (void)setErrorView:;
+@end

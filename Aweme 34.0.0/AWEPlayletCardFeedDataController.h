@@ -1,0 +1,35 @@
+@interface AWEPlayletCardFeedDataController : AWEPlayletFeedDataController
+@property (nonatomic) NSObject<OS_dispatch_group> group;
+@property (nonatomic) q offset;
+@property (nonatomic) BOOL alreadyUpdateInsertData;
+@property (nonatomic) AWEPlayletTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)setAlreadyUpdateInsertData:;
+- (void)cacheAwemeModelWindowData:;
+- (void)requestTabWindowData:;
+- (void)requestFeedDataWithPullType:completion:;
+- (void)dealFeedDataWithPullType:response:error:completion:;
+- (void)lynxViewDidFinishLoad;
+- (id)feedConfigRequestParamsWithParamsDict:pullType:;
+- (id)feedConfigRequestParamsWithParamsDict:;
+- (BOOL)alreadyUpdateInsertData;
+- (id)init;
+- (void)setOffset:;
+- (void)setGroup:;
+- (id)tracker;
+- (long long)offset;
+- (id)group;
+- (id)initWithTracker:;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
++ (void)preloadAwemeDataWithParams:Completion:;
++ (void)preloadTabWindowDataCompletion:;
++ (void)preloadAwemeDataWithCompletion:;
++ (long long)fetchCount;
+@end

@@ -1,0 +1,33 @@
+@interface AWEUGCrossDiversionInfo : NSObject
+@property (nonatomic) NSString fromApp;
+@property (nonatomic) NSString backScheme;
+@property (nonatomic) NSString buoyTitle;
+@property (nonatomic) BOOL buoyClosable;
+@property (nonatomic) q buoyShowType;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) q landingScene;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) BOOL showed;
+@property (nonatomic) BOOL reported;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (BOOL)showed;
+- (void)setShowed:;
+- (void)setLandingScene:;
+- (long long)landingScene;
+- (id)buoyTitle;
+- (BOOL)buoyClosable;
+- (void)setBuoyTitle:;
+- (void)setBuoyClosable:;
+- (void)setBackScheme:;
+- (void)setBuoyShowType:;
+- (long long)buoyShowType;
+- (id)backScheme;
+- (void).cxx_destruct;
+- (id)fromApp;
+- (BOOL)reported;
+- (void)setReported:;
+- (void)setFromApp:;
+@end

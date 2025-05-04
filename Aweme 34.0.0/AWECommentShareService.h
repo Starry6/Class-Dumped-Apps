@@ -1,0 +1,31 @@
+@interface AWECommentShareService : AWEShareCommonImpl
+@property (nonatomic) AWECommentModel commentModel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)commentModel;
+- (void)setCommentModel:;
+- (id)contextWithAweme:;
+- (id)supportTypes;
+- (unsigned long long)supportTypesCount;
+- (id)commentContextWithAweme:commentModel:;
+- (void)showCommentAlertWithAweme:commentModel:shareType:;
+- (id)channelImage:;
+- (id)channelTitle:;
+- (id)commentShareSectionModel;
+- (Class)commentShareSectionController;
+- (id)commentShareSupportChannelTypes;
+- (id)commentShareSupportActionTypes;
+- (id)commentContextWithHotSpotCommentModel:;
+- (BOOL)canShowCommentForwardWithContext:;
+- (id)commentCellItemModel:;
+- (id)commentTask;
+- (void)trackClickEvent:awemeModel:commentModel:;
+- (void)trackAlert:show:cancel:awemeModel:commentModel:;
+- (id)shortTokenText:;
+- (void).cxx_destruct;
+@end

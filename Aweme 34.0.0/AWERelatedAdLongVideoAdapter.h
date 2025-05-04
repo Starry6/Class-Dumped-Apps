@@ -1,0 +1,30 @@
+@interface AWERelatedAdLongVideoAdapter : NSObject
+@property (nonatomic) @? playValidTrackBlock;
+@property (nonatomic) AWEAdLongVideoContainerViewModel bannerViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startFetchLongVideoAdBannerData:withBlock:;
+- (void)resetAdBanner;
+- (void)didTappedEnterFullScreenView:;
+- (void)didTappedTimerCloseAdView:;
+- (void)didTappedBackbutton:;
+- (void)didTappedAdEventArea:videoInfo:;
+- (void)adContainer:userStopped:;
+- (void)adContainer:startPlayVideo:;
+- (void)adContainer:videoFinish:;
+- (void)adContainer:videoPlayTime:videoInfo:;
+- (void)trackAdLVEventWithLabel:refer:videoInfo:;
+- (void)updatePlayValidTrackBlockWithVideoInfo:;
+- (id)playValidTrackBlock;
+- (void)setPlayValidTrackBlock:;
+- (id)bannerViewModel;
+- (void)setBannerViewModel:;
+- (void)clearAllData;
+- (void).cxx_destruct;
++ (BOOL)isPreAdExistInLongVideo:;
++ (id)relatedLongVideoAdPageContextWithModel:;
++ (BOOL)canShowAdLongContainerView;
++ (void)refreshAdContainer:withAwemeModel:;
+@end

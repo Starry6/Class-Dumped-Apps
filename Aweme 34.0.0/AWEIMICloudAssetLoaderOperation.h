@@ -1,0 +1,30 @@
+@interface AWEIMICloudAssetLoaderOperation : NSOperation
+@property (nonatomic) NSString assetIdentifier;
+@property (nonatomic) @? progressHandler;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString messageId;
+@property (nonatomic) BOOL loadAsVideo;
+@property (nonatomic) UIImage image;
+- (void)markFinish;
+- (BOOL)loadAsVideo;
+- (void)loadAssetFromICloud:loadLivePhotoImageAsVideoSource:progressHandler:completion:;
+- (void)fetchLivePhotoResouceUsingNetworkByAsset:complete:;
+- (id)livePhotoRequestOptions;
+- (id)initWithAssetIdentifier:loadLivePhotoImageAsVideoSource:messageId:progressHandler:completion:;
+- (void)setLoadAsVideo:;
+- (void)setProgressHandler:;
+- (id)progressHandler;
+- (BOOL)isAsynchronous;
+- (id)image;
+- (id)completion;
+- (BOOL)isExecuting;
+- (void)setImage:;
+- (void)setCompletion:;
+- (id)messageId;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (void)start;
+- (void)setMessageId:;
+- (id)assetIdentifier;
+- (void)setAssetIdentifier:;
+@end

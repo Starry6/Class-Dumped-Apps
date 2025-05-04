@@ -1,0 +1,35 @@
+@interface AWEPrivateAccountSettingGuideView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIImageView lockImageView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) q type;
+@property (nonatomic) @? closeButtonClickedBlock;
+@property (nonatomic) @? singleTapBlock;
+- (void)setSingleTapBlock:;
+- (void)p_closeButtonClicked;
+- (void)p_configUI;
+- (id)closeButtonClickedBlock;
+- (void)setCloseButtonClickedBlock:;
+- (id)singleTapBlock;
+- (void)p_singleTaped;
+- (void)trackWhenDismissClicked;
+- (void)trackWhenButtonClicked;
+- (id)textForTitleLabel;
+- (id)textForSubtitleLabel;
+- (long long)type;
+- (void)setType:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (id)titleLabel;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)lockImageView;
+- (void)setLockImageView:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

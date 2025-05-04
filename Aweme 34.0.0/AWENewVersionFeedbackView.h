@@ -1,0 +1,31 @@
+@interface AWENewVersionFeedbackView : UIView
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIImageView feedbackImageView;
+@property (nonatomic) UILabel feedbackLabel;
+@property (nonatomic) UITapGestureRecognizer tapGestureRecognizer;
+@property (nonatomic) BOOL isShowOnRecommendFeedPage;
+- (id)feedbackImageView;
+- (id)feedbackLabel;
+- (void)setFeedbackImageView:;
+- (void)setFeedbackLabel:;
+- (BOOL)isShowOnRecommendFeedPage;
+- (void)setIsShowOnRecommendFeedPage:;
+- (void)setupWindow;
+- (void)didChangedLanguage;
+- (void)configureFrame;
+- (void)windowClicked:;
+- (void)windowLongPressed:;
+- (id)aAWEOuterTestSettingsDOUYINLiteAdapter;
+- (void)setTapGestureRecognizer:;
+- (id)init;
+- (void)dealloc;
+- (id)tapGestureRecognizer;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (void).cxx_destruct;
+- (void)setupSubviews;
+- (void)setupLayout;
++ (BOOL)isUserSetHided;
++ (Class)aAWEOuterTestSettingsDOUYINLiteAdapterClass;
++ (id)sharedInstance;
+@end

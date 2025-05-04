@@ -1,0 +1,34 @@
+@interface AWELightMissionModel : NSObject
+@property (nonatomic) Q msgType;
+@property (nonatomic) NSString progressUpdateType;
+@property (nonatomic) Q requirementType;
+@property (nonatomic) NSString missionId;
+@property (nonatomic) NSString requirementId;
+@property (nonatomic) NSString authorId;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) Q itemSource;
+@property (nonatomic) NSString topicId;
+@property (nonatomic) double duration;
+- (id)generateRequestParamsDict;
+- (id)missionId;
+- (void)setMissionId:;
+- (id)requirementId;
+- (void)setRequirementId:;
+- (void)setProgressUpdateType:;
+- (id)progressUpdateType;
+- (void)setDuration:;
+- (id)topicId;
+- (void).cxx_destruct;
+- (double)duration;
+- (void)setTopicId:;
+- (id)itemId;
+- (unsigned long long)itemSource;
+- (void)setItemSource:;
+- (unsigned long long)msgType;
+- (void)setMsgType:;
+- (id)authorId;
+- (void)setAuthorId:;
+- (unsigned long long)requirementType;
+- (void)setRequirementType:;
+- (void)setItemId:;
+@end

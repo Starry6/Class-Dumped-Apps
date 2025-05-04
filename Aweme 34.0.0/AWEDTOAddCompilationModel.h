@@ -1,0 +1,38 @@
+@interface AWEDTOAddCompilationModel : MTLModel
+@property (nonatomic) NSString firstMixId;
+@property (nonatomic) q mixItemIndex;
+@property (nonatomic) q mixAddScene;
+@property (nonatomic) BOOL isNewMix;
+@property (nonatomic) NSString mixName;
+@property (nonatomic) NSString coverUrl;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) BOOL useDemotion;
+@property (nonatomic) q chargeType;
+@property (nonatomic) q chargeStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)mixName;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (id)firstMixId;
+- (void)setFirstMixId:;
+- (long long)mixItemIndex;
+- (void)setMixItemIndex:;
+- (long long)mixAddScene;
+- (void)setMixAddScene:;
+- (BOOL)isNewMix;
+- (void)setIsNewMix:;
+- (void)setMixName:;
+- (BOOL)useDemotion;
+- (void)setUseDemotion:;
+- (long long)chargeType;
+- (void)setChargeType:;
+- (long long)chargeStyle;
+- (void)setChargeStyle:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

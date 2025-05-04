@@ -1,0 +1,32 @@
+@interface AWEIMLiveCustomServiceFloatNavigationBar : UIView
+@property (nonatomic) UIButton detailButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) @? backButtonClickBlock;
+@property (nonatomic) @? closeButtonClickBlock;
+@property (nonatomic) @? detailButtonClickBlock;
+- (void)backButtonClick;
+- (void)showCloseButton:;
+- (void)showBackButton:;
+- (void)closeButtonClick;
+- (void)setCloseButtonClickBlock:;
+- (id)closeButtonClickBlock;
+- (void)showDetailButton:;
+- (void)setBackButtonClickBlock:;
+- (id)detailButtonClickBlock;
+- (id)backButtonClickBlock;
+- (void)detailButtonClick;
+- (void)setDetailButtonClickBlock:;
+- (id)backButton;
+- (void)setBackButton:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)detailButton;
+- (void)setDetailButton:;
+- (void)updateTitle:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEKnowledgeStateConfig : MTLModel
+@property (nonatomic) AWEKnowledgeSceneCreateConfig createConfig;
+@property (nonatomic) AWEKnowledgeSceneActionConfig pushConfig;
+@property (nonatomic) AWEKnowledgeSceneActionConfig popConfig;
+@property (nonatomic) AWEKnowledgeSceneUpdateConfig updateConfig;
+@property (nonatomic) AWEKnowledgeStateActionConfig actionConfig;
+@property (nonatomic) AWEKnowledgeStateResultConfig resultConfig;
+@property (nonatomic) NSString versionCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)actionConfig;
+- (id)pushConfig;
+- (void)setPushConfig:;
+- (id)resultConfig;
+- (void)setResultConfig:;
+- (void)setActionConfig:;
+- (id)createConfig;
+- (void)setCreateConfig:;
+- (id)popConfig;
+- (void)setPopConfig:;
+- (void)setUpdateConfig:;
+- (void).cxx_destruct;
+- (id)updateConfig;
+- (void)setVersionCode:;
+- (id)versionCode;
++ (id)createConfigJSONTransformer;
++ (id)sceneActionJSONTransformer;
++ (id)updateConfigJSONTransformer;
++ (id)actionConfigJSONTransformer;
++ (id)resultConfigJSONTransformer;
++ (id)actionSceneModelForDic:;
++ (id)toSceneDicFromDic:fromScene:;
++ (id)providerDicFromJSONDic:;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

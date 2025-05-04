@@ -1,0 +1,32 @@
+@interface AWEDiscoverDPlayletRelativeVideoDataController : AWEDiscoverDPlayletBaseDataController
+@property (nonatomic) NSMutableDictionary dataModels;
+@property (nonatomic) NSNumber currentTag;
+@property (nonatomic) NSString currentPlayletId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)loadmoreHasMore;
+- (BOOL)isRequestOnAir;
+- (void)loadPreviousWithCompletion:;
+- (id)dataModels;
+- (void)setDataModels:;
+- (void)reloadWithPullType:Completion:;
+- (void)setCurrentPlayletId:;
+- (void)setRelativeSubTagId:AwemeId:playletId:complete:;
+- (id)currentPlayletId;
+- (id)getRelativeVideoDataModelWithTag:playletId:;
+- (id)currentRelativeVideoDataModel;
+- (id)findModelWithSubDataController:paramsModel:;
+- (id)getBaseDataModel;
+- (id)getPerformanceEvent;
+- (id)getStageMonitorCommonParams:;
+- (void)lynxLoreMoreAwemeListWithParamsModel:complete:;
+- (id)findModelWithRelativeSubTagId:AwemeId:playletId:;
+- (id)initWithDataModel:;
+- (void).cxx_destruct;
+- (id)dataSource;
+- (id)currentTag;
+- (void)setCurrentTag:;
+- (id)filteredDataSource;
+@end

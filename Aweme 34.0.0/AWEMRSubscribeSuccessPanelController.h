@@ -1,0 +1,32 @@
+@interface AWEMRSubscribeSuccessPanelController : UIViewController
+@property (nonatomic) AWECodeGenCommonSubscribePopStModel popupModel;
+@property (nonatomic) UIView panelView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView coverFetchFailImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) DUXButton confirmButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)panelView;
+- (void)setPanelView:;
+- (id)getPanelView;
+- (id)initWithPopupModel:;
+- (void)setupPanelView;
+- (id)coverFetchFailImageView;
+- (void)setCoverFetchFailImageView:;
+- (void)setup;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)confirmButton;
+- (id)detailLabel;
+- (void)setConfirmButton:;
+- (void)setDetailLabel:;
+- (id)popupModel;
+- (void)setPopupModel:;
+@end

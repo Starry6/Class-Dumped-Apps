@@ -1,0 +1,31 @@
+@interface AWEIMFansGroupModuleService : HTSService
+@property (nonatomic) UIView<IESIMLoadingViewProtocol> loadingView;
+@property (nonatomic) AWEIMFansGroupGuestStateViewModel viewModel;
+@property (nonatomic) AWEIMFansGroupModuleServiceTracker tracker;
+@property (nonatomic) AWEIMApplyJoinFansGroupCommonModel applyModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupVM;
+- (id)convertApplyModelToItemModel:;
+- (void)setApplyModel:;
+- (id)applyModel;
+- (void)enterMessageListVCWithModel:cid:completion:;
+- (void)createFansGroupConversationWithCreateFansGroupModel:completion:;
+- (id)convertCreateModelToFansGroupModel:;
+- (void)createGroupEntryLimitsViewControllerWithModel:createdCompletion:selectedCompletion:;
+- (void)createFansGroupWithCreateFansGroupModel:completion:;
+- (void)applyJoinFansGroupWithModel:completion:;
+- (id)init;
+- (id)tracker;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (id)loadingView;
+- (void)setTracker:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)showLoadingView;
+- (void)hideLoadingView;
++ (id)sharedIntance;
+@end

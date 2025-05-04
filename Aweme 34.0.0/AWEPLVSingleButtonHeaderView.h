@@ -1,0 +1,35 @@
+@interface AWEPLVSingleButtonHeaderView : UICollectionReusableView
+@property (nonatomic) Q headerType;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEPLVSingleButtonHeaderButtonView button;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) @? tapButtonBlk;
+@property (nonatomic) UIView containerView;
+- (void)setButtonFontSize:;
+- (void)handleTapButton;
+- (void)updateTitleIcon:;
+- (void)updateViewForBreakPoint;
+- (void)updateButtonText:;
+- (void)updateButtonIcon:;
+- (void)configHeaderType:;
+- (void)configButtonAction:;
+- (id)tapButtonBlk;
+- (void)setTapButtonBlk:;
+- (void)updateViewMargin:;
+- (void)setHeaderType:;
+- (unsigned long long)headerType;
+- (id)initWithFrame:;
+- (void)setButton:;
+- (id)containerView;
+- (id)iconView;
+- (void)setContainerView:;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void)setTitleFontSize:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)button;
+- (void)setupView;
+- (void)updateTitle:;
++ (double)heightWithBreakPoint:;
+@end

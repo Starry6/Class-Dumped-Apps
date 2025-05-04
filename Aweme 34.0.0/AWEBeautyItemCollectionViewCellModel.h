@@ -1,0 +1,33 @@
+@interface AWEBeautyItemCollectionViewCellModel : AWEBeautyCollectionViewCellModel
+@property (nonatomic) BOOL isOffNode;
+@property (nonatomic) BOOL isStyleOffNode;
+@property (nonatomic) BOOL isStyleMoreNode;
+@property (nonatomic) BOOL isStyleNode;
+@property (nonatomic) BOOL isSplitlineNode;
+@property (nonatomic) BOOL leaf;
+@property (nonatomic) q cellStatus;
+@property (nonatomic) BOOL downloaded;
+@property (nonatomic) BOOL hasParentItem;
+@property (nonatomic) NSMutableDictionary styleExtraCellModelsNodeIdInfo;
+- (void)setStyleExtraCellModelsNodeIdInfo:;
+- (id)styleExtraCellModelsNodeIdInfo;
+- (BOOL)isStyleNode;
+- (BOOL)isSplitlineNode;
+- (BOOL)isStyleMoreNode;
+- (BOOL)hasParentItem;
+- (BOOL)isOffNode;
+- (BOOL)isStyleOffNode;
+- (void)setIsOffNode:;
+- (void)setIsStyleOffNode:;
+- (void)setIsStyleMoreNode:;
+- (void)setIsStyleNode:;
+- (void)setIsSplitlineNode:;
+- (void)setHasParentItem:;
+- (void).cxx_destruct;
+- (void)setDownloaded:;
+- (BOOL)isDownloaded;
+- (BOOL)isLeaf;
+- (long long)cellStatus;
+- (void)setCellStatus:;
+- (void)setLeaf:;
+@end

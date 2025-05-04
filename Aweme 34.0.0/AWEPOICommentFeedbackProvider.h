@@ -1,0 +1,30 @@
+@interface AWEPOICommentFeedbackProvider : NSObject
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) UIView<AWEPOICommentFeedbackProtocol> feedback;
+@property (nonatomic) AWEPOICommentFeedbackConfig config;
+@property (nonatomic) UIView<AWEPOICommentFeedbackProtocol> commentFeedBackView;
+@property (nonatomic) UIView<AWEPOICommentFeedbackHostProtocol> host;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)invokeLayout;
+- (void)hostModelDidUpdate:;
+- (void)feedbackAction:;
+- (void)showAndTrackDigToastWithType:hasDigged:hasBuried:;
+- (void)trackDigEventWithType:hasDigged:hasBuried:;
+- (void)trackDigEventWithType:hasDigged:hasBuried:hasFailed:;
+- (void)updateDigStatusWithType:hasDigged:hasBuried:;
+- (void)sendRequestForDigWithType:hasDigged:hasBuried:completionBlock:;
+- (void)updateDigModelAndUI:hasDigged:hasBuried:diggedCount:;
+- (void)publishBDXEventWithActionType:diggedCount:;
+- (id)createFeedbackView;
+- (id)commentFeedBackView;
+- (void)setHost:;
+- (void)setConfig:;
+- (id)host;
+- (id)initWithConfig:;
+- (id)config;
+- (id)feedback;
+- (void).cxx_destruct;
+- (void)setFeedback:;
++ (double)feedbackViewHeightWithConfig:;
+@end

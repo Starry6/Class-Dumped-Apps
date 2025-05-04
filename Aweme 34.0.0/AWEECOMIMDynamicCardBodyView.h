@@ -1,0 +1,30 @@
+@interface AWEECOMIMDynamicCardBodyView : AWEECOMIMDynamicCardBaseElementView
+@property (nonatomic) UIImageView extraImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView bkgImageView;
+@property (nonatomic) AWEECOMIMDynamicCardSecondaryInfoView secondaryInfoView;
+@property (nonatomic) AWEECOMIMDynamicCardSecondaryInfoView secondaryInfoViewTwo;
+@property (nonatomic) AWEECOMIMDynamicCardSecondaryInfoView secondaryInfoViewThree;
+- (id)bkgImageView;
+- (void)setBkgImageView:;
+- (void)updateWithElememtModel:;
+- (double)heightWithElementModel:;
+- (id)addChildElementViewBkgView;
+- (void)addChildElementView:model:top:height:;
+- (id)extraImageView;
+- (id)secondaryInfoView;
+- (id)secondaryInfoViewTwo;
+- (id)secondaryInfoViewThree;
+- (void)updateBodyViewWithModel:;
+- (void)setExtraImageView:;
+- (void)setSecondaryInfoView:;
+- (void)setSecondaryInfoViewTwo:;
+- (void)setSecondaryInfoViewThree:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
++ (id)sizeWithElementModel:maxSize:;
++ (double)designHeightWithImageType:;
++ (double)heightWithElementModel:maxSize:;
+@end

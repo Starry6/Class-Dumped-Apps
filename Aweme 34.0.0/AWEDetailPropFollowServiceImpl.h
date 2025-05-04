@@ -1,0 +1,31 @@
+@interface AWEDetailPropFollowServiceImpl : NSObject
+@property (nonatomic) AWEDetailPropViewModel stateContext;
+@property (nonatomic) AWEDetailPropTracker tracker;
+@property (nonatomic) NSMutableSet shownUserIDs;
+@property (nonatomic) NSMutableArray profileModels;
+@property (nonatomic) BOOL isFollowRequesting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (id)initWithStateContext:tracker:;
+- (BOOL)p_checkIfCanFollow;
+- (id)shownUserIDs;
+- (id)profileModels;
+- (void)p_updateFollowState:userID:;
+- (void)setIsFollowRequesting:;
+- (id)p_getDesignerUserModel;
+- (BOOL)isFollowRequesting;
+- (void)doFollowActionWithActionSender:;
+- (BOOL)shouldShowFollowButton;
+- (void)setShownUserIDs:;
+- (void)setProfileModels:;
+- (void)dealloc;
+- (void)setStateContext:;
+- (id)tracker;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (id)stateContext;
+@end

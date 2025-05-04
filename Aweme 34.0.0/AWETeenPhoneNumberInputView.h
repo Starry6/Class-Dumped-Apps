@@ -1,0 +1,38 @@
+@interface AWETeenPhoneNumberInputView : UIView
+@property (nonatomic) NSString text;
+@property (nonatomic) AWETeenPhoneTextField textField;
+@property (nonatomic) AWETeenCountryCodeView countryCodeView;
+@property (nonatomic) UIButton deleteBtn;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) NSString phoneNumberString;
+@property (nonatomic) @? didValueChangeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)deleteBtn;
+- (void)setDeleteBtn:;
+- (id)countryCodeView;
+- (void)didChangeValue:fromUser:fromClearButton:;
+- (id)didValueChangeBlock;
+- (void)setPhoneNumberString:;
+- (void)deleteBtnClicked;
+- (id)getAttributedPlaceholder:;
+- (void)setDidValueChangeBlock:;
+- (void)setCountryCodeView:;
+- (BOOL)becomeFirstResponder;
+- (void)textFieldDidEndEditing:;
+- (void)setCountryCode:;
+- (BOOL)resignFirstResponder;
+- (void)setText:;
+- (id)textField;
+- (id)initWithFrame:;
+- (id)text;
+- (void)setTextField:;
+- (BOOL)canBecomeFirstResponder;
+- (void).cxx_destruct;
+- (id)countryCode;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (BOOL)isFirstResponder;
+- (id)phoneNumberString;
+@end

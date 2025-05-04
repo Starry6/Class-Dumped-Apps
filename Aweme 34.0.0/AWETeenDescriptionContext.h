@@ -1,0 +1,38 @@
+@interface AWETeenDescriptionContext : NSObject
+@property (nonatomic) BOOL hasSearchText;
+@property (nonatomic) BOOL hasHashTagShowTrackPost;
+@property (nonatomic) q hashTagShowTrackPostMark;
+@property (nonatomic) NSMutableArray hashTagArray;
+@property (nonatomic) NSMutableDictionary hashTagShowMark;
+@property (nonatomic) double hashTagLength;
+@property (nonatomic) BOOL hasTrendingShowTrackPost;
+@property (nonatomic) q trendingWordsShowTrackPostMark;
+@property (nonatomic) NSMutableArray searchWordArray;
+@property (nonatomic) NSMutableDictionary searchWordShowMark;
+@property (nonatomic) BOOL forPlayLetVideoDescription;
+- (id)descriptionLabelFont;
+- (id)descriptionLabelFontWithHeightCaption;
+- (void)setHasSearchText:;
+- (BOOL)hasHashTagShowTrackPost;
+- (void)setHasHashTagShowTrackPost:;
+- (long long)hashTagShowTrackPostMark;
+- (void)setHashTagShowTrackPostMark:;
+- (id)hashTagArray;
+- (void)setHashTagArray:;
+- (id)hashTagShowMark;
+- (void)setHashTagShowMark:;
+- (double)hashTagLength;
+- (void)setHashTagLength:;
+- (BOOL)hasTrendingShowTrackPost;
+- (void)setHasTrendingShowTrackPost:;
+- (long long)trendingWordsShowTrackPostMark;
+- (void)setTrendingWordsShowTrackPostMark:;
+- (id)searchWordArray;
+- (void)setSearchWordArray:;
+- (id)searchWordShowMark;
+- (void)setSearchWordShowMark:;
+- (BOOL)forPlayLetVideoDescription;
+- (void)setForPlayLetVideoDescription:;
+- (void).cxx_destruct;
+- (BOOL)hasSearchText;
+@end

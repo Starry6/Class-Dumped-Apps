@@ -1,0 +1,34 @@
+@interface AWECountDownElementViewModel : NSObject
+@property (nonatomic) AWECountDownTask timerTask;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) AWECampaignTaskModel taskModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) Q stage;
+@property (nonatomic) AWECountDownAnchorViewViewModel anchorViewModel;
+- (id)referString;
+- (void)setReferString:;
+- (id)taskModel;
+- (void)setTaskModel:;
+- (void)videoPlay;
+- (void)videoPause;
+- (void)bindEvent;
+- (id)timerTask;
+- (void)setTimerTask:;
+- (id)anchorViewModel;
+- (void)setAnchorViewModel:;
+- (void)timerViewDidClicked;
+- (void)configAnchorViewModel;
+- (id)spliceContentViewWithCount:;
+- (id)getFailureToast;
+- (void)reportActivityResultWithComplete:;
+- (void)configWithModel:referString:;
+- (void)videoResume;
+- (id)init;
+- (void)setStage:;
+- (unsigned long long)stage;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)currentModel;
+- (void)setCurrentModel:;
++ (BOOL)shouldShowElement:referString:;
+@end

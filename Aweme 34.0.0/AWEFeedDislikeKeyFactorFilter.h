@@ -1,0 +1,33 @@
+@interface AWEFeedDislikeKeyFactorFilter : NSObject
+@property (nonatomic) NSMutableArray cachedAuthorInfos;
+@property (nonatomic) NSMutableArray cachedMusicInfos;
+@property (nonatomic) NSMutableArray cachedHashTagInfos;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dislikeWithModel:referString:;
+- (id)filterArrayWithModels:;
+- (void)revertDislikeWithModel:referString:;
+- (id)cachedAuthorInfos;
+- (void)submitDislikeReasons:awemeModel:;
+- (void)setCachedAuthorInfos:;
+- (void)loadFromCache;
+- (id)cachedMusicInfos;
+- (id)cachedHashTagInfos;
+- (BOOL)p_validateAuthorInfo:;
+- (BOOL)p_validateMusicInfo:;
+- (BOOL)p_validateHashTagInfo:;
+- (void)storeToCache;
+- (long long)expireDay;
+- (BOOL)p_isTimeStampExpire:;
+- (void)setCachedMusicInfos:;
+- (void)setCachedHashTagInfos:;
+- (id)init;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (BOOL)enabled;
+- (void).cxx_destruct;
+- (void)cleanCache;
+- (void)willTerminate:;
+@end

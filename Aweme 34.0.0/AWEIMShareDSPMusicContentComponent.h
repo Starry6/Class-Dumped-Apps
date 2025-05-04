@@ -1,0 +1,37 @@
+@interface AWEIMShareDSPMusicContentComponent : AWEIMFlexComponent
+@property (nonatomic) IESIMDisableCardPresenter disablePresenter;
+@property (nonatomic) AWEIMShareDSPMusicContentPresenter cardPresenter;
+@property (nonatomic) BOOL isObserving;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)p_trackShow;
+- (void)p_createPresenter;
+- (void)p_updateHiddenState;
+- (void)p_createCardPresenter;
+- (void)p_createDisablePresenter;
+- (id)disablePresenter;
+- (void)didTapCard;
+- (void)setDisablePresenter:;
+- (void)p_refreshTheme;
+- (void)p_refreshBackgroundImage;
+- (void)p_addNotificationObservation;
+- (void)p_removeNotificationObservation;
+- (id)cardPresenter;
+- (void)didTapPlayButton;
+- (void)setCardPresenter:;
+- (void)p_messagePlayStatusChangedNotified:;
+- (BOOL)isObserving;
+- (id)displayMessage;
+- (void)setScene:;
+- (void)dealloc;
+- (id)message;
+- (long long)scene;
+- (void)setIsObserving:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,34 @@
+@interface AWECodeGenMvInfoModel : AWEBaseDataModel
+@property (nonatomic) NSString modelID;
+@property (nonatomic) AWECodeGenUrlModel iconUrlModel;
+@property (nonatomic) NSInteger mvType;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString lokiId;
+@property (nonatomic) BOOL isImageTemplate;
+@property (nonatomic) NSInteger mvUploadType;
+@property (nonatomic) BOOL enableAlienation;
+@property (nonatomic) NSInteger provider;
+@property (nonatomic) NSArray featuresArray;
+- (int)mvType;
+- (void)setMvType:;
+- (id)lokiId;
+- (void)setLokiId:;
+- (BOOL)isImageTemplate;
+- (int)mvUploadType;
+- (BOOL)enableAlienation;
+- (id)featuresArray;
+- (id)iconUrlModel;
+- (void)setIsImageTemplate:;
+- (void)setIconUrlModel:;
+- (void)setMvUploadType:;
+- (void)setEnableAlienation:;
+- (void)setFeaturesArray:;
+- (void)setModelID:;
+- (id)modelID;
+- (void)setProvider:;
+- (void).cxx_destruct;
+- (int)provider;
+- (void)setName:;
+- (id)name;
++ (id)JSONKeyPathsByPropertyKey;
+@end

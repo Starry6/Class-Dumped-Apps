@@ -1,0 +1,31 @@
+@interface AWEWebImageLoadMonitor : NSObject
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} lock;
+@property (nonatomic) Q undecodeImageCacheSize;
+- (void)setUndecodeImageCacheSize:;
+- (unsigned long long)undecodeImageCacheSize;
+- (id)init;
+- (void)setLock:;
+- (id)lock;
+- (id)observers;
+- (void).cxx_destruct;
+- (void)setObservers:;
+- (void)addImageMonitorObserver:;
+- (void)removeImageMonitorObserver:;
++ (void)trackEvent:params:;
++ (void)setTrackCallback:;
++ (id)getBizTagWithURL:;
++ (BOOL)enableImageCacheDomainAllowList;
++ (BOOL)enableImageLoadMonitor;
++ (id)bizTag:;
++ (BOOL)isEnabledForImageLoadMonitoring;
++ (void)trackImageLoad:URL:URLs:index:from:error:timeInterval:requestID:bizTag:retryInfos:fromAWE:;
++ (BOOL)isEnabledForAnimatedImageFramesMonitoring;
++ (void)_trackAnimatedImageFramesError:URL:videoID:is6Frames:;
++ (void)trackImageLoadIfNeeded:from:;
++ (id)bd_imageRequestCompletionWithCompletion:;
++ (void)trackImageLoadWithRequest:from:;
++ (void)trackAnimatedImageFramesError:URL:videoID:isTrackScene:is6Frames:;
++ (id)trackingQueue;
++ (id)sharedMonitor;
+@end

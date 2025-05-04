@@ -1,0 +1,34 @@
+@interface AWELiveBigPartyGuestListCell : UICollectionViewCell
+@property (nonatomic) IESLiveMultiInteractUser model;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView mediaCoverView;
+@property (nonatomic) UIImageView talkingView;
+@property (nonatomic) AWELiveWebPPlayer talkingAnimationView;
+@property (nonatomic) <IESLiveSettings> settings;
+@property (nonatomic) RACCompoundDisposable disposable;
+- (void)setDisposable:;
+- (id)disposable;
+- (id)mediaCoverView;
+- (void)setMediaCoverView:;
+- (id)talkingView;
+- (id)talkingAnimationView;
+- (void)resetDisposableIfNeeded;
+- (void)setTalkingView:;
+- (void)setTalkingAnimationView:;
+- (id)textLabel;
+- (void)setSettings:;
+- (void)setModel:;
+- (void)dealloc;
+- (void)prepareForReuse;
+- (id)settings;
+- (id)initWithFrame:;
+- (id)model;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setTextLabel:;
+- (void)updateWithModel:;
+- (void)clean;
+- (void)layoutUI;
+@end

@@ -1,0 +1,35 @@
+@interface AWENearbyGuideModel : AWEBaseApiModel
+@property (nonatomic) Q guideType;
+@property (nonatomic) NSArray images;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString bannerTitle;
+@property (nonatomic) NSString button;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString bannerSchema;
+@property (nonatomic) NSString lynxUrl;
+@property (nonatomic) q showTime;
+@property (nonatomic) AWENearbyGuideFrequency frequency;
+- (id)lynxUrl;
+- (long long)showTime;
+- (void)setShowTime:;
+- (unsigned long long)guideType;
+- (void)setGuideType:;
+- (void)setLynxUrl:;
+- (id)bannerSchema;
+- (void)setBannerSchema:;
+- (id)schema;
+- (id)images;
+- (void)setSchema:;
+- (void)setButton:;
+- (void)setFrequency:;
+- (id)description;
+- (void)setImages:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)frequency;
+- (void)setTitle:;
+- (id)button;
+- (void)setBannerTitle:;
+- (id)bannerTitle;
++ (BOOL)automaticallyDefaultMapping;
+@end

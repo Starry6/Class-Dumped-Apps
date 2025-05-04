@@ -1,0 +1,30 @@
+@interface AWEFeedStickerSearchTagAlbumDisplayHandler : AWEFeedStickerBasicAlbumHandler
+@property (nonatomic) UIView<AWESearchTagProtocol> contentView;
+@property (nonatomic) DUXBasicSheet basicSheet;
+@property (nonatomic) AWEVisionTagManager tagManager;
+@property (nonatomic) AWESearchStickerModel searchTag;
+@property (nonatomic) NSArray urlList;
+- (void)hideStickers;
+- (void)stickerWillAppear;
+- (void)setTagManager:;
+- (id)tagManager;
+- (void)removeSticker:;
+- (BOOL)isFromSearch;
+- (void)closePanel;
+- (void)setBasicSheet:;
+- (id)basicSheet;
+- (id)searchTag;
+- (void)setSearchTag:;
+- (void)handleLongPressAtPoint:;
+- (void)displaySticker:;
+- (id)createSticker:;
+- (void)updateTagViewFrame:;
+- (void)jumpToSearchVisionPage:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)handleTapAtPoint:;
+- (id)urlList;
+- (void)setUrlList:;
++ (BOOL)canDisplaySticker:;
+@end

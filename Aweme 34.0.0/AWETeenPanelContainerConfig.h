@@ -1,0 +1,30 @@
+@interface AWETeenPanelContainerConfig : NSObject
+@property (nonatomic) double headerHeight;
+@property (nonatomic) {CGSize=dd} cornerRadii;
+@property (nonatomic) BOOL needBlurEffect;
+@property (nonatomic) BOOL needCloseButton;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) CAMediaTimingFunction presentTimingFunction;
+@property (nonatomic) CAMediaTimingFunction dismissTimingFunction;
+@property (nonatomic) double presentAnimateDuration;
+@property (nonatomic) double dismissAnimateDuration;
+- (BOOL)needCloseButton;
+- (void)setNeedCloseButton:;
+- (BOOL)needBlurEffect;
+- (void)setNeedBlurEffect:;
+- (id)presentTimingFunction;
+- (void)setPresentTimingFunction:;
+- (id)dismissTimingFunction;
+- (void)setDismissTimingFunction:;
+- (double)presentAnimateDuration;
+- (void)setPresentAnimateDuration:;
+- (double)dismissAnimateDuration;
+- (void)setDismissAnimateDuration:;
+- (double)headerHeight;
+- (void)setCornerRadii:;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)cornerRadii;
+- (void)setHeaderHeight:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEListenFeedEntranceGuideView : UIView
+@property (nonatomic) UIView guideMaskView;
+@property (nonatomic) LOTAnimationView animationView;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) BOOL willDismiss;
+@property (nonatomic) {CGPoint=dd} targetPoint;
+- (void)initSubviews;
+- (id)tipsLabel;
+- (void)startCountDown;
+- (void)setTipsLabel:;
+- (void)setWillDismiss:;
+- (id)guideMaskView;
+- (void)startRotateImageView;
+- (void)coreDismiss;
+- (void)setGuideMaskView:;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)setImageView:;
+- (void)start;
+- (BOOL)willDismiss;
+- (id)imageView;
+- (void)setTargetPoint:;
+- (id)targetPoint;
+- (void)initConstraints;
+- (id)animationView;
+- (void)setAnimationView:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEBaseStickerCollectionViewCell : UICollectionViewCell
+@property (nonatomic) Q downloadStatus;
+@property (nonatomic) ACCStickerPannelUIConfig uiConfig;
+@property (nonatomic) NSString stickerName;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImageView downloadImgView;
+@property (nonatomic) AWECircularProgressView downloadProgressView;
+@property (nonatomic) NSString stickerId;
+- (id)stickerId;
+- (void)setStickerId:;
+- (id)uiConfig;
+- (void)setUiConfig:;
+- (id)downloadImgView;
+- (void)setDownloadImgView:;
+- (void)downloadProgressViewScaleDisappear;
+- (void)configCellWithImage:;
+- (id)accessibilityLabel;
+- (void)setHighlighted:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (void)didMoveToWindow;
+- (BOOL)isAccessibilityElement;
+- (id)imageView;
+- (void)setupUI;
+- (id)stickerName;
+- (void)setStickerName:;
+- (unsigned long long)downloadStatus;
+- (void)setDownloadStatus:;
+- (void)updateDownloadProgress:;
+- (id)downloadProgressView;
+- (void)setDownloadProgressView:;
++ (id)identifier;
+@end

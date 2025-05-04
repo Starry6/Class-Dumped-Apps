@@ -1,0 +1,31 @@
+@interface AWEPaySwiftImpl.CCMTripActionNotifyMsg : MTLModel
+@property (nonatomic) NSString tripActionOpenLink;
+@property (nonatomic) NSString stationName;
+@property (nonatomic) NSString actionId;
+@property (nonatomic) q scanType;
+@property (nonatomic) q scanTime;
+@property (nonatomic) NSString trafficId;
+@property (nonatomic) q controlTimeInterval;
+@property (nonatomic) BOOL usePreRender;
+- (id)tripActionOpenLink;
+- (void)setTripActionOpenLink:;
+- (long long)controlTimeInterval;
+- (void)setControlTimeInterval:;
+- (BOOL)usePreRender;
+- (void)setUsePreRender:;
+- (id)trafficId;
+- (void)setTrafficId:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setScanType:;
+- (id)initWithCoder:;
+- (long long)scanType;
+- (void)setStationName:;
+- (id)stationName;
+- (long long)scanTime;
+- (void)setScanTime:;
+- (id)actionId;
+- (void)setActionId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

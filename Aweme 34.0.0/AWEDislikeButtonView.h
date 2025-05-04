@@ -1,0 +1,35 @@
+@interface AWEDislikeButtonView : UIView
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIButton dislikeButton;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton tailImageView;
+@property (nonatomic) UITapGestureRecognizer tapGes;
+@property (nonatomic) @? dislikeActionBlock;
+@property (nonatomic) @? cancelBlock;
+@property (nonatomic) @? closeBlock;
+- (void)setCloseBlock:;
+- (id)tipsLabel;
+- (id)closeBlock;
+- (id)dislikeButton;
+- (void)setDislikeButton:;
+- (void)setTipsLabel:;
+- (id)tapGes;
+- (void)setTapGes:;
+- (void)updateWithTitle:dislike:cancel:;
+- (id)initWithDislike:cancel:close:;
+- (void)setDislikeActionBlock:;
+- (void)addInsetWithSpace:button:;
+- (id)dislikeActionBlock;
+- (void)onDislikeClicked:;
+- (void)onCancelClicked:;
+- (void)onCloseClicked:;
+- (id)init;
+- (void)setCancelButton:;
+- (void)setCancelBlock:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)cancelBlock;
+- (void)setupSubviews;
+- (void)setTailImageView:;
+- (id)tailImageView;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMBatchSendMessageViewModel : NSObject
+@property (nonatomic) double animationDuration;
+@property (nonatomic) AWEIMFansGroupMultiselectListViewModel multiselectListViewModel;
+@property (nonatomic) NSString sendButtonTitle;
+@property (nonatomic) BOOL sendButtonEnable;
+@property (nonatomic) BOOL hasMore;
+- (id)panelTitle;
+- (id)sendButtonTitle;
+- (void)setSendButtonTitle:;
+- (void)__addKVOController;
+- (id)initWithFansGroupInfoList:;
+- (id)multiselectListViewModel;
+- (id)panelTotalSize;
+- (id)panelTitleSize;
+- (double)multiselectListHeight;
+- (id)panelTitleFont;
+- (id)placeHolderAttributesText;
+- (BOOL)sendButtonEnable;
+- (void)setMultiselectListViewModel:;
+- (void)setSendButtonEnable:;
+- (id)__panelTitleAttributes;
+- (id)sizeWithString:attributes:maxWidth:;
+- (id)__placeHolderText;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setAnimationDuration:;
+- (double)animationDuration;
+- (id)closeButtonImageName;
+- (double)bottomOffset;
+@end

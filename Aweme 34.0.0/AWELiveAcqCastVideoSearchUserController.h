@@ -1,0 +1,33 @@
+@interface AWELiveAcqCastVideoSearchUserController : AWELiveAcqCastVideoSearchBaseController
+@property (nonatomic) BOOL isFetching;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWELiveAcqCastVideoSearchUserManager userManager;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) <AWELiveAcqCastVideoViewModelProtocol> viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)loadMore;
+- (void)setTrackParams:;
+- (id)userManager;
+- (void)setUserManager:;
+- (id)initWithDataManager:viewModel:trackParams:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (id)loadingView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setupUI;
+- (BOOL)isFetching;
+- (void)setIsFetching:;
+@end

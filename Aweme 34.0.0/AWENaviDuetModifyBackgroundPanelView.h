@@ -1,0 +1,32 @@
+@interface AWENaviDuetModifyBackgroundPanelView : UIView
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) NSArray backgrounds;
+@property (nonatomic) @? onSelectedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOnSelectedBlock:;
+- (id)onSelectedBlock;
+- (void)setBackgrounds:;
+- (void)updateSelectedBackgroundWithIndex:;
+- (id)backgrounds;
+- (void)configBackgroundCell:indexPath:;
+- (void)scrollCollectionViewToCurrentLoactionWithAnimated:;
+- (id)collectionView;
+- (void)setSelectedIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (long long)selectedIndex;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setNameLabel:;
+- (void)setupSubviews;
+@end

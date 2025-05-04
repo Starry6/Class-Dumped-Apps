@@ -1,0 +1,36 @@
+@interface AWEIMMangoCountDownManager : NSObject
+@property (nonatomic) NSArray reservedGroupList;
+@property (nonatomic) NSMutableArray didSendTexts;
+@property (nonatomic) HMDThreadSafeDictionary monitorParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (id)monitorParams;
+- (void)setMonitorParams:;
+- (void)startMgCountDownTimer;
+- (void)resetAllWithLogout:;
+- (id)didSendTexts;
+- (void)setReservedGroupList:;
+- (void)setDidSendTexts:;
+- (void)fetchReserveGroupListWithCompletion:;
+- (void)triggerSendMessageWithIndex:settingConfig:currentServerTime:;
+- (id)reservedGroupList;
+- (void)tryHandleOutTimeCountDown:;
+- (void)p_mgTimerFired;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)settingConfig;
++ (void)markReserveCountDownCid:;
++ (id)makeFakeMessage:firework:currentTime:;
++ (id)sendFakeMessage:toConList:;
++ (void)markDidSendCountDownCids:;
++ (BOOL)isReservedGroupCon:extKey:;
++ (void)didReserveCountDownWithCid:;
++ (void)removeDidSendCountDownCids;
++ (id)didSendCountDownCids;
++ (id)sharedInstance;
+@end

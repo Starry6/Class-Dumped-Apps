@@ -1,0 +1,30 @@
+@interface AWETeenSubscribeFeedDataController : AWEListDataController
+@property (nonatomic) Q cursor;
+@property (nonatomic) NSString stickToItemIds;
+@property (nonatomic) NSString stickAfterAgeChangeItemIds;
+@property (nonatomic) BOOL forceRefresh;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)cancelCurrentTask;
+- (void)p_reportAwemeVideoNotTeen:;
+- (void)p_fetchWithPullType:completion:;
+- (id)stickAfterAgeChangeItemIds;
+- (void)setStickToItemIds:;
+- (void)setStickAfterAgeChangeItemIds:;
+- (id)stickToItemIds;
+- (BOOL)p_isValidRequest;
+- (unsigned long long)cursor;
+- (id)init;
+- (void)dealloc;
+- (void)setCursor:;
+- (BOOL)forceRefresh;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)setForceRefresh:;
++ (void)fetchHasNewSubscribeWithCompletion:;
++ (void)reportWatchedSubscribeItemID:;
+@end

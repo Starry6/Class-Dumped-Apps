@@ -1,0 +1,32 @@
+@interface AWELivePreStreamInstantEcomManager : NSObject
+@property (nonatomic) BOOL pitayaObservered;
+@property (nonatomic) NSMutableArray cacheSearchWords;
+@property (nonatomic) <AWEHttpTask> requestTask;
+@property (nonatomic) AWELivePreStreamContext context;
+- (void)setCacheSearchWords:;
+- (void)setPitayaObservered:;
+- (void)dealPitayaCallback:;
+- (void)trackPitayaQueryRequest:;
+- (void)requestSearchEcom:;
+- (id)cacheSearchWords;
+- (BOOL)enableOptCache;
+- (id)searchLocalWordModelWithRoomID:requestID:;
+- (id)buildCommonParamsAwemeModel:;
+- (id)buildCommonParamsInstantModel:;
+- (BOOL)supportPitayaSearchInstantEcomWord:;
+- (long long)ecomInstantStyle;
+- (void)addPitayaObserver;
+- (void)removePitayaObserver;
+- (id)searchLocalWordModelWithRoomID:;
+- (void)trackWordClick:awemeModel:extra:;
+- (void)trackWordShow:awemeModel:extra:;
+- (void)trackWordsWithAwemeModel:extra:;
+- (BOOL)pitayaObservered;
+- (id)init;
+- (id)requestTask;
+- (void)setContext:;
+- (void)setRequestTask:;
+- (void).cxx_destruct;
+- (id)context;
++ (id)sharedManager;
+@end

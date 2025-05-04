@@ -1,0 +1,30 @@
+@interface AWEEcomEmptySearchCell : UICollectionViewCell
+@property (nonatomic) UIImageView searchIcon;
+@property (nonatomic) UILabel emptySearchTitle;
+@property (nonatomic) UILabel bottomTitle;
+@property (nonatomic) UIImageView bottomBackGroudView;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel model;
+@property (nonatomic) UILabel rightTitle;
+@property (nonatomic) UIImageView rightImageView;
+- (void)configWithModel:;
+- (id)searchIcon;
+- (void)setSearchIcon:;
+- (id)bottomBackGroudView;
+- (id)emptySearchTitle;
+- (void)jumpShopping;
+- (void)setEmptySearchTitle:;
+- (void)setBottomBackGroudView:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)updateUI;
+- (id)rightTitle;
+- (void)setRightTitle:;
+- (void)setBottomTitle:;
+- (id)bottomTitle;
+- (id)rightImageView;
+- (void)setRightImageView:;
++ (double)heightForModel:containerWidth:;
++ (id)identifier;
+@end

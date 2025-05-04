@@ -1,0 +1,37 @@
+@interface AWEHPSkylightObject : NSObject
+@property (nonatomic) q state;
+@property (nonatomic) AWEHPSkylightUIConfig expandedUIConfig;
+@property (nonatomic) NSString accessApproachIdentifier;
+@property (nonatomic) <AWEHomepageSkylightAbility> skylightAbility;
+@property (nonatomic) <AWEHPSkylightAccessApproachProtocol> accessApproach;
+@property (nonatomic) NSObject accessApproachCommunicationObject;
+@property (nonatomic) NSString undertakeHostIdentifier;
+@property (nonatomic) <AWEHPSkylightUndertakeHostProtocol> undertakeHost;
+@property (nonatomic) NSObject undertakeHostCommunicationObject;
+@property (nonatomic) AWEHomepageSkylightExpandedUIConfigTask expandedUIConfigTask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)expandedUIConfig;
+- (id)accessApproachCommunicationObject;
+- (id)accessApproach;
+- (void)setUndertakeHost:;
+- (void)setAccessApproach:;
+- (void)setExpandedUIConfig:;
+- (id)expandedUIConfigTask;
+- (void)setUndertakeHostCommunicationObject:;
+- (id)undertakeHostIdentifier;
+- (id)skylightAbility;
+- (id)undertakeHost;
+- (id)undertakeHostCommunicationObject;
+- (id)accessApproachIdentifier;
+- (void)setAccessApproachIdentifier:;
+- (void)setSkylightAbility:;
+- (void)setAccessApproachCommunicationObject:;
+- (void)setUndertakeHostIdentifier:;
+- (void)setExpandedUIConfigTask:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setState:;
+@end

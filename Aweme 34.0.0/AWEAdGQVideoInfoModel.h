@@ -1,0 +1,31 @@
+@interface AWEAdGQVideoInfoModel : MTLModel
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString missionID;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) NSString sponsorName;
+@property (nonatomic) NSString taskName;
+@property (nonatomic) NSArray requirements;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setMissionID:;
+- (id)missionID;
+- (id)requireModel;
+- (id)sponsorName;
+- (void)setSponsorName:;
+- (id)itemID;
+- (void)setItemID:;
+- (void)setTaskName:;
+- (id)taskName;
+- (id)requirements;
+- (void).cxx_destruct;
+- (void)setRequirements:;
+- (id)authorID;
+- (void)setAuthorID:;
++ (id)requirementsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

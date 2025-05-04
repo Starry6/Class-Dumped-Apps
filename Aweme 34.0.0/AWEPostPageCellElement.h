@@ -1,0 +1,35 @@
+@interface AWEPostPageCellElement : AWEPostPageElement
+@property (nonatomic) BOOL needsUpdate;
+@property (nonatomic) NSString cellIdentifier;
+@property (nonatomic) NSString cellClass;
+@property (nonatomic) NSIndexPath indexPath;
+- (id)anchorModel;
+- (id)anchorContext;
+- (void)setupCell:;
+- (BOOL)enableStateWithFullType:;
+- (BOOL)enablePoiAnchorNotMutex;
+- (BOOL)anchor:shouldSelectAnchorWithType:;
+- (BOOL)enableAnchorCheck;
+- (BOOL)isInListDatasource;
+- (void)showAnchorContentPageWithController:;
+- (id)convertToAnchorSubscriberType;
+- (BOOL)isPassiveAnchorEnabled;
+- (long long)currentAnchorBusinessType;
+- (void)actionBlockWhenAnchorVCDisAppearIfNeed:;
+- (BOOL)checkHigherPriorityAnchor;
+- (id)anchor;
+- (void)setNeedsUpdate:;
+- (id)indexPath;
+- (BOOL)needsUpdate;
+- (void)reload;
+- (id)contentView;
+- (BOOL)isSelected;
+- (id)cellClass;
+- (void)setNeedsUpdate;
+- (id)description;
+- (void)setViewModel:;
+- (id)cell;
+- (id)cellIdentifier;
+- (void)didSelect;
+- (BOOL)canSelect;
+@end

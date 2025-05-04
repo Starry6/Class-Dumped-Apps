@@ -1,0 +1,33 @@
+@interface AWEDanmakuRecommendShieldTableViewCellModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString contentText;
+@property (nonatomic) NSString confirmText;
+@property (nonatomic) NSString cancelText;
+@property (nonatomic) NSAttributedString danmakuContentAttributeString;
+@property (nonatomic) @? confirmAction;
+@property (nonatomic) @? cancelAction;
+@property (nonatomic) double height;
+@property (nonatomic) BOOL isSingleDanmaku;
+- (id)cancelText;
+- (void)setCancelText:;
+- (id)danmakuContentAttributeString;
+- (BOOL)isSingleDanmaku;
+- (id)calculateSizeWithAttributedString:size:;
+- (void)calculateHeightWithAvailableWidth:;
+- (void)setDanmakuContentAttributeString:;
+- (void)setIsSingleDanmaku:;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setCancelAction:;
+- (double)height;
+- (void)setTitle:;
+- (id)cancelAction;
+- (id)confirmAction;
+- (void)setConfirmAction:;
+- (void)setContentText:;
+- (id)contentText;
+- (void)setConfirmText:;
+- (id)confirmText;
++ (id)defaultModel;
+@end

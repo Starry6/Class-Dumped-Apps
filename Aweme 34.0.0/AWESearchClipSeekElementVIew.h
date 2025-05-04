@@ -1,0 +1,30 @@
+@interface AWESearchClipSeekElementVIew : UIControl
+@property (nonatomic) double maxWidth;
+@property (nonatomic) double totalWidth;
+@property (nonatomic) AWEAwemeSearchQueryAnswerModel model;
+@property (nonatomic) NSString formattedTimeString;
+@property (nonatomic) UIImageView seekIconView;
+@property (nonatomic) UILabel startTimeLabel;
+@property (nonatomic) UILabel textLabel;
+- (void)setTotalWidth:;
+- (void)setStartTimeLabel:;
+- (id)startTimeLabel;
+- (id)seekIconView;
+- (id)formattedStartTimeForTime:;
+- (void)setFormattedTimeString:;
+- (void)setSeekIconView:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (double)maxWidth;
+- (id)model;
+- (void)updateLayout;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (id)formattedTimeString;
+- (double)totalWidth;
+- (void)updateWithModel:;
+- (double)getWidth;
+@end

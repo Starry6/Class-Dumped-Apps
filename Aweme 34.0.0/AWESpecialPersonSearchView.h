@@ -1,0 +1,30 @@
+@interface AWESpecialPersonSearchView : UIView
+@property (nonatomic) AWESearchBar searchBar;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) NSString searchText;
+@property (nonatomic) <AWESpecialPersonSearchViewDelegate> delegate;
+@property (nonatomic) NSString placeHolderText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)placeHolderText;
+- (void)setPlaceHolderText:;
+- (void)finishSearch;
+- (void)p_hideCancelButton;
+- (void)p_cancelButtonTapped;
+- (void)p_showCancelButton;
+- (void)endInputText;
+- (void)searchBarResignFirstResponder;
+- (id)searchBar;
+- (void)setCancelButton:;
+- (id)delegate;
+- (void)setSearchBar:;
+- (void)searchBarSearchButtonClicked:;
+- (id)initWithFrame:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (void)setSearchText:;
+- (void)setDelegate:;
+- (id)searchText;
+@end

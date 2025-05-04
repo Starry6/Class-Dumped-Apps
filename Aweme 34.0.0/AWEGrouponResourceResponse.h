@@ -1,0 +1,35 @@
+@interface AWEGrouponResourceResponse : MTLModel
+@property (nonatomic) NSArray popupList;
+@property (nonatomic) NSArray pendantList;
+@property (nonatomic) NSArray bottomBannerList;
+@property (nonatomic) NSArray activityEntranceList;
+@property (nonatomic) AWEGrouponTabGuideModel guideInfo;
+@property (nonatomic) NSDictionary controlInfo;
+@property (nonatomic) NSDictionary taskConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)taskConfig;
+- (void)setTaskConfig:;
+- (id)controlInfo;
+- (void)setControlInfo:;
+- (void)setGuideInfo:;
+- (id)guideInfo;
+- (id)bottomBannerList;
+- (id)popupList;
+- (id)pendantList;
+- (id)activityEntranceList;
+- (void)setPopupList:;
+- (void)setPendantList:;
+- (void)setBottomBannerList:;
+- (void)setActivityEntranceList:;
+- (void).cxx_destruct;
++ (BOOL)automaticallyDefaultMapping;
++ (id)popupListJSONTransformer;
++ (id)guideInfoJSONTransformer;
++ (id)pendantListJSONTransformer;
++ (id)bottomBannerListJSONTransformer;
++ (id)activityEntranceListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

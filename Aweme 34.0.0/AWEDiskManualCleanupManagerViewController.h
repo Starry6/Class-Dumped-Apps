@@ -1,0 +1,34 @@
+@interface AWEDiskManualCleanupManagerViewController : UIViewController
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEDiskCleanViewModel viewModel;
+@property (nonatomic) DUXLoadingToast cleanLoading;
+@property (nonatomic) AWEDiskManualCleanupView manualCleanupView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (BOOL)configWithRouterParamDict:;
+- (id)enterFrom;
+- (void)backBtnClick;
+- (void)configNavigationBar;
+- (void)observeDeleteDrafts;
+- (void)setCleanLoading:;
+- (id)cleanLoading;
+- (void)showCleanDraftToast;
+- (void)gotoDraftBox;
+- (void)alertWithCleanType:;
+- (void)setupCleanViewModel;
+- (id)manualCleanupView;
+- (void)gotoOfflineVideoCenter;
+- (void)gotoChatBox;
+- (void)initManualCleanupView;
+- (void)setManualCleanupView:;
+- (id)init;
+- (void)dealloc;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)createUI;
+@end

@@ -1,0 +1,38 @@
+@interface AWEFirstTimeBoostEffectManager : NSObject
+@property (nonatomic) AWEAwemeModel firstTimeBoostModel;
+@property (nonatomic) IESEffectModel downloadedEffect;
+@property (nonatomic) NSArray downloadedEffects;
+@property (nonatomic) BOOL emptyDeviceIDWhenFetchItemID;
+@property (nonatomic) BOOL canApplyFirstTimeBoostModel;
+@property (nonatomic) BOOL observedAppsflyerVideoId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)downloadedEffects;
+- (void)didUpdateInstallIDFrom:to:;
+- (void)didUpdateDeviceIDFrom:to:;
+- (void)setDownloadedEffect:;
+- (id)downloadedEffect;
+- (void)registerInstallAndDeviceIDMessage;
+- (void)handleTaskIndealloc;
+- (BOOL)emptyDeviceIDWhenFetchItemID;
+- (void)setEmptyDeviceIDWhenFetchItemID:;
+- (void)setDownloadedEffects:;
+- (BOOL)canApplyFirstTimeBoostModel;
+- (id)firstTimeBoostModel;
+- (void)setFirstTimeBoostModel:;
+- (BOOL)observedAppsflyerVideoId;
+- (void)setObservedAppsflyerVideoId:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (BOOL)canDownloadFirstTimeBoostModel;
++ (void)requestAttributionItemID;
++ (void)requestFirstTimeBoostAwemeModelWithID:;
++ (void)downloadStickerWithStickerIDS:toDownloadSticker:;
++ (void)cleanupAfterAppliedFirstTimeBoostEffect;
++ (BOOL)withinFirstInstallTwintyFourHours;
++ (void)downloadFirstTimeBoostEffectIfNeeded;
++ (id)sharedInstance;
+@end

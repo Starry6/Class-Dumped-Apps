@@ -1,0 +1,31 @@
+@interface AWEPaySwiftImpl.CCMSceneCardDetailResponse : MTLModel
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) _TtC15AWEPaySwiftImpl15CCMGatewayExtra gatewayExtra;
+@property (nonatomic) NSString retStatus;
+@property (nonatomic) _TtC15AWEPaySwiftImpl17CCMArrearShowInfo arrearInfo;
+@property (nonatomic) _TtC15AWEPaySwiftImpl19CCMEntryPageRegInfo regInfo;
+@property (nonatomic) _TtC15AWEPaySwiftImpl20CCMTrafficCardDetail trafficCardDetail;
+@property (nonatomic) _TtC15AWEPaySwiftImpl16CCMOperationCard operationCard;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (id)gatewayExtra;
+- (void)setGatewayExtra:;
+- (id)retStatus;
+- (void)setRetStatus:;
+- (id)arrearInfo;
+- (void)setArrearInfo:;
+- (id)regInfo;
+- (void)setRegInfo:;
+- (id)trafficCardDetail;
+- (void)setTrafficCardDetail:;
+- (id)operationCard;
+- (void)setOperationCard:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,34 @@
+@interface AWEPlayAiToTextTextView : UITextView
+@property (nonatomic) AWEPlayAiToTextSelectedMenuView menuView;
+@property (nonatomic) DUXPopover popover;
+@property (nonatomic) UIView popoverTargetView;
+@property (nonatomic) <AWEPlayAiToTextTextViewDelegate> actionDelegate;
+@property (nonatomic) BOOL isMenuShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)popoverTargetView;
+- (void)setPopoverTargetView:;
+- (void)hideCustomMenu;
+- (void)showCustomMenuIfNeed;
+- (id)menuButtons;
+- (void)aiToTextSelectedMenuViewDidClickPlay:;
+- (void)aiToTextSelectedMenuViewDidClickCopy:;
+- (void)aiToTextSelectedMenuViewDidClickSearch:;
+- (void)aiToTextSelectedMenuViewDidClickRepost:;
+- (void)receiveTouchOnPoint:;
+- (void)showCustomMenu;
+- (BOOL)isMenuShow;
+- (void)setIsMenuShow:;
+- (id)actionDelegate;
+- (void)buildMenuWithBuilder:;
+- (id)popover;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (BOOL)canPerformAction:withSender:;
+- (void)setPopover:;
+- (id)menuView;
+- (void)setActionDelegate:;
+- (void)setMenuView:;
+@end

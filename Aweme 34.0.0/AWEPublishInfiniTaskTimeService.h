@@ -1,0 +1,31 @@
+@interface AWEPublishInfiniTaskTimeService : NSObject
+@property (nonatomic) AWEPublishBaseTask task;
+@property (nonatomic) AWEPublishFlowModel flowModel;
+@property (nonatomic) NSDictionary eventMap;
+@property (nonatomic) <AWEPublishInfiniTaskFlowMessageServiceProtocol> flowMessageService;
+@property (nonatomic) <AWEPublishInfiniTaskCoordinatorServiceProtocol> coordinatorService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEventMap:;
+- (id)eventMap;
+- (void)setFlowModel:;
+- (id)flowModel;
+- (void)bindServices:;
+- (void)stage:didChangeStatus:;
+- (id)flowMessageService;
+- (void)runningPreUploadStageWhenPublishClick:;
+- (id)coordinatorService;
+- (void)setCoordinatorService:;
+- (void)preuploadFinished;
+- (void)resetPreUploadStage;
+- (void)setFlowMessageService:;
+- (id)exportImagesTypeCountDic:;
+- (void)endPreUploadEvent;
+- (void)extraInfoWithEvent:;
+- (void)setTask:;
+- (void)execute;
+- (id)task;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMSkylightDataComponent : AWEIMComponentBase
+@end

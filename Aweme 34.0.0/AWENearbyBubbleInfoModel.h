@@ -1,0 +1,32 @@
+@interface AWENearbyBubbleInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString activityID;
+@property (nonatomic) NSString bubbleText;
+@property (nonatomic) q bubbleRangeType;
+@property (nonatomic) NSArray citysArray;
+@property (nonatomic) q randomRange;
+@property (nonatomic) q delayDuration;
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) q frequency;
+- (long long)delayDuration;
+- (void)setDelayDuration:;
+- (long long)bubbleRangeType;
+- (void)setBubbleRangeType:;
+- (id)citysArray;
+- (void)setCitysArray:;
+- (long long)randomRange;
+- (void)setRandomRange:;
+- (void)setStartTime:;
+- (double)endTime;
+- (void)setEndTime:;
+- (void)setFrequency:;
+- (void).cxx_destruct;
+- (long long)frequency;
+- (double)startTime;
+- (id)activityID;
+- (void)setActivityID:;
+- (id)bubbleText;
+- (void)setBubbleText:;
++ (BOOL)canShowNearByBubble;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentBindingHostManager : _TtCs12_SwiftObject
+@end

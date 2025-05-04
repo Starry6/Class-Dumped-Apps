@@ -1,0 +1,35 @@
+@interface AWEECProfileResource : MTLModel
+@property (nonatomic) q index;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString text;
+@property (nonatomic) q fontSize;
+@property (nonatomic) NSString fontColor;
+@property (nonatomic) NSString image;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) AWEECProfilePadding padding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIndex:;
+- (long long)index;
+- (id)padding;
+- (id)image;
+- (void)setHeight:;
+- (long long)fontSize;
+- (void)setImage:;
+- (void)setWidth:;
+- (void)setText:;
+- (id)text;
+- (void)setFontSize:;
+- (unsigned long long)type;
+- (long long)width;
+- (void)setPadding:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (long long)height;
+- (id)fontColor;
+- (void)setFontColor:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

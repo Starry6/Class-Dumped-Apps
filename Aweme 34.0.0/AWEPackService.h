@@ -1,0 +1,30 @@
+@interface AWEPackService : NSObject
+@property (nonatomic) # modelClass;
+@property (nonatomic) # materialClass;
+@property (nonatomic) NSMutableDictionary loaders;
+@property (nonatomic) NSMutableArray filters;
+@property (nonatomic) NSMutableArray assemblers;
+- (void)pack:completion:;
+- (id)assemblers;
+- (void)setAssemblers:;
+- (id)initWithModelClass:materialClass:;
+- (void)awe_registerUser;
+- (void)registerCoreLoader:;
+- (void)registerFilter:;
+- (void)registerAssembler:;
+- (Class)materialClass;
+- (void)p_trackPackStats:;
+- (void)registerCoreLoader:dependencyList:;
+- (void)registerLoader:dependencyList:isCore:;
+- (void)registerLoader:dependencyList:;
+- (void)setMaterialClass:;
+- (id)filters;
+- (void)setFilters:;
+- (void)setModelClass:;
+- (void).cxx_destruct;
+- (Class)modelClass;
+- (id)loaders;
+- (void)registerLoader:;
+- (void)setLoaders:;
++ (id)packUser;
+@end

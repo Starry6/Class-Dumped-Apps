@@ -1,0 +1,2 @@
+@interface AWEIMRecommendGroupDefineInterface : NSObject
+@end

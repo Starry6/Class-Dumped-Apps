@@ -1,0 +1,32 @@
+@interface AWETeenSetUserInfoBaseViewController : UIViewController
+@property (nonatomic) q allStepCount;
+@property (nonatomic) UIImageView backgroundView;
+@property (nonatomic) UILabel orderLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) q messageType;
+@property (nonatomic) AWETeenUserInfo userMessage;
+@property (nonatomic) @? setCompletion;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)backBtnClicked:;
+- (void)p_setupNavigationBar;
+- (id)orderLabel;
+- (long long)allStepCount;
+- (id)initWithMessageType:userMessage:allStepCount:completion:;
+- (void)setOrderLabel:;
+- (id)setCompletion;
+- (void)setSetCompletion:;
+- (void)setAllStepCount:;
+- (void)viewDidLoad;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (id)titleLabel;
+- (long long)messageType;
+- (void)setUserMessage:;
+- (id)userMessage;
+- (void)setupContent;
+@end

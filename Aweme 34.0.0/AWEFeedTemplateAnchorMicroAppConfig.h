@@ -1,0 +1,22 @@
+@interface AWEFeedTemplateAnchorMicroAppConfig : AWEFeedTemplateAnchorBaseConfig
+- (void)anchorViewWillShowOnSuperview;
+- (void)handlerTemplateAnchorViewClicked;
+- (id)trackerParamsForTemplateAnchorClick;
+- (id)trackerParamsForTemplateAnchorShow;
+- (void)trackerForTemplateAnchorShow;
+- (void)willShowDoubleLineStyleWithType:;
+- (void)trackerForTemplateAnchorClick;
+- (void)anchorConfigReset;
+- (id)trackerCommonParamsForTemplateAnchor;
+- (BOOL)forbidIronManPreloadInLowerDevice;
+- (BOOL)enableIronManPreloadWithNunki;
+- (id)templateAnchorTrackerParams;
+- (id)detailTextTrackerParams;
+- (id)clickTrackerParams;
+- (id)microAppTrackParams;
+- (BOOL)canPreloadIronMan;
+- (void)trackAdAnchorEventWithLabel:refer:extraData:;
+- (id)microAppScene;
+- (id)microAppCustomParams;
+- (id)microAppBDPLogParams;
+@end

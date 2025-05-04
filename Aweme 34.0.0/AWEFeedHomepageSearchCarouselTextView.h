@@ -1,0 +1,30 @@
+@interface AWEFeedHomepageSearchCarouselTextView : UIView
+@property (nonatomic) Q entranceStyle;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UILabel textLabel1;
+@property (nonatomic) UILabel textLabel2;
+@property (nonatomic) UILabel mainTextLabel;
+@property (nonatomic) BOOL isAnimating;
+- (unsigned long long)entranceStyle;
+- (void)setEntranceStyle:;
+- (void)updateTextLabelWithAnimationStatus:;
+- (double)carouselViewHeight;
+- (id)textLabel1;
+- (id)initWithEntranceStyle:;
+- (void)startCarouselAnimationWithNewText:completion:;
+- (void)updateEntranceStyleByPercent:;
+- (void)setTextLabel1:;
+- (double)fontSize;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (BOOL)isAnimating;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (void)setupViews;
+- (void)updateText:;
+- (id)textLabel2;
+- (id)fakeLabel;
+- (id)mainTextLabel;
+- (void)setMainTextLabel:;
+- (void)setTextLabel2:;
+@end

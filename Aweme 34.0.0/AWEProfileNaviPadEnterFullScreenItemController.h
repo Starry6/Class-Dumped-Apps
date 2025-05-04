@@ -1,0 +1,33 @@
+@interface AWEProfileNaviPadEnterFullScreenItemController : NSObject
+@property (nonatomic) UIView itemView;
+@property (nonatomic) UIView enterFullScreenView;
+@property (nonatomic) UIView navEnterFullScreenView;
+@property (nonatomic) BOOL isStickToTop;
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (id)enterFullScreenView;
+- (void)setEnterFullScreenView:;
+- (id)profileContext;
+- (id)padService;
+- (id)navigationItemView;
+- (BOOL)disableProfileScrollingAlphaChange;
+- (void)onNavigationStickToTop:;
+- (BOOL)isStickToTop;
+- (void)setIsStickToTop:;
+- (id)navEnterFullScreenView;
+- (void)setNavEnterFullScreenView:;
+- (id)delegate;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)itemSize;
+- (id)itemView;
+- (void)setItemView:;
+- (void)enterFullScreen;
+@end

@@ -1,0 +1,32 @@
+@interface AWEDetailPageShootSameSchemaOperation : NSOperation
+@property (nonatomic) AWEDetailPageShootSameSchemaRequestModel requestModel;
+@property (nonatomic) double requestTimeout;
+@property (nonatomic) NSMutableDictionary trackDic;
+@property (nonatomic) NSMutableArray resultBlocks;
+@property (nonatomic) <AWEHttpTask> requestTask;
+@property (nonatomic) BOOL operationHasStarted;
+- (void)setTrackDic:;
+- (id)trackDic;
+- (void)didFailedWithError:;
+- (id)initWithRequestModel:;
+- (void)addResultBlockHandler:;
+- (void)setOperationHasStarted:;
+- (void)didCancelled;
+- (BOOL)operationHasStarted;
+- (void)removeResultBlockHandler:;
+- (void)setRequestModel:;
+- (BOOL)isAsynchronous;
+- (BOOL)isExecuting;
+- (id)requestModel;
+- (void)main;
+- (id)requestTask;
+- (void)setResultBlocks:;
+- (void)setRequestTimeout:;
+- (void)cancel;
+- (id)resultBlocks;
+- (void)finish;
+- (BOOL)isFinished;
+- (double)requestTimeout;
+- (void)setRequestTask:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,33 @@
+@interface AWEMissionShoppingCartAnchorExtraInfoModel : AWEBaseApiModel
+@property (nonatomic) NSArray schemaInfos;
+@property (nonatomic) q allianceAccountStatus;
+@property (nonatomic) BOOL hasPermission;
+@property (nonatomic) BOOL isOverused;
+@property (nonatomic) NSArray bindedPIDInfos;
+@property (nonatomic) NSString bindedTaoBaoPID;
+@property (nonatomic) NSString bindedYangMaTouPID;
+@property (nonatomic) BOOL isAllianceAccountActivated;
+@property (nonatomic) NSDictionary schemas;
+- (BOOL)isOverused;
+- (id)bindedTaoBaoPID;
+- (id)bindedYangMaTouPID;
+- (BOOL)isAllianceAccountActivated;
+- (id)schemaInfos;
+- (long long)allianceAccountStatus;
+- (id)bindedPIDInfos;
+- (void)setIsOverused:;
+- (void)setBindedPIDInfos:;
+- (void)setBindedTaoBaoPID:;
+- (void)setBindedYangMaTouPID:;
+- (void)setIsAllianceAccountActivated:;
+- (void)setSchemas:;
+- (void)setSchemaInfos:;
+- (void)setAllianceAccountStatus:;
+- (BOOL)hasPermission;
+- (void)setHasPermission:;
+- (void).cxx_destruct;
+- (id)schemas;
++ (id)bindedPIDInfosJSONTransformer;
++ (id)schemaInfosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

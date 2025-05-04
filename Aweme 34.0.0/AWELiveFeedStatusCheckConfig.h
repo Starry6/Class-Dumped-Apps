@@ -1,0 +1,35 @@
+@interface AWELiveFeedStatusCheckConfig : NSObject
+@property (nonatomic) NSDate lastStatusCheckDate;
+@property (nonatomic) NSDate lastFeedPreviewStatusCheckDate;
+@property (nonatomic) AWELiveMgetRoomInfoApi checkApi;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)skylightLimitNumber;
+- (void)checkIsPreviewLiveClosedOnInitializeWithId:;
+- (BOOL)enabelEnterForegroundCheck;
+- (BOOL)followCheckEnable;
+- (long long)followCheckInterval;
+- (void)fetchRoomIdsForFeedPreviewUids:referString:extraParams:force:completion:;
+- (id)checkConfig;
+- (void)fetchRoomStatusWithRoomID:completion:;
+- (long long)statusCheckMinInterval;
+- (id)lastStatusCheckDate;
+- (void)setLastStatusCheckDate:;
+- (long long)statusCheckIntervalForFeedPreview;
+- (id)lastFeedPreviewStatusCheckDate;
+- (void)_getLiveRoomIDByScene:referString:extraParams:completion:;
+- (id)_buildCurrenScene:;
+- (void)setLastFeedPreviewStatusCheckDate:;
+- (id)checkApi;
+- (id)repeatTimerInterval;
+- (BOOL)enableNewFeedPreviewFilter;
+- (BOOL)enableViewWillAppearCheck;
+- (long long)chenkLeaveInterval;
+- (BOOL)skylightCheckEnable;
+- (long long)skylightMinCheckInteval;
+- (void)setCheckApi:;
+- (void).cxx_destruct;
++ (id)sharedChecker;
+@end

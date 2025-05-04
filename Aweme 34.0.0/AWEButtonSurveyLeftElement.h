@@ -1,0 +1,34 @@
+@interface AWEButtonSurveyLeftElement : AWEPlayInteractionBaseActionButtonElement
+@property (nonatomic) AWEDislikeTwoButtonView dislikeButton;
+@property (nonatomic) AWEButtonSurveyViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (id)aAWEPadModuleAdapter;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (id)dislikeButton;
+- (void)setDislikeButton:;
+- (void)showDislikeButton;
+- (void)viewDidDisposed;
+- (BOOL)shouldActivateButtonWithData:;
+- (void)popUpPanelIfNeeded;
+- (void)userInteractionWithType:;
+- (void)userInteractionNotification:;
+- (void)hideDislikeButton;
+- (BOOL)shouldShowLeftButtonSurvey;
+- (void)didClickButtonWithIndex:;
+- (BOOL)priorityAvoidNeedHidden;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)updateLayout;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)layoutSubviews;
++ (Class)aAWEPadModuleAdapterClass;
+@end

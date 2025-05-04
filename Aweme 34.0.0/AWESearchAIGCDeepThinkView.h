@@ -1,0 +1,37 @@
+@interface AWESearchAIGCDeepThinkView : UIView
+@property (nonatomic) <AWESearchAIGCDeepThinkViewDelegate> delegate;
+@property (nonatomic) AWESearchAIGCDeepThinkViewModel viewModel;
+@property (nonatomic) AWESearchAIGCDeepThinkItemView deepThinkSwitchView;
+@property (nonatomic) AWESearchAIGCDeepThinkItemView netModeSwitchView;
+@property (nonatomic) AWESearchAIGCDeepThinkNetModePopover netModePopover;
+@property (nonatomic) {CGSize=dd} viewSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)deepThinkIsOpen;
+- (id)deepThinkModelName;
+- (void)switchDeepThinkOpenMode:;
+- (id)deepThinkSwitchView;
+- (id)netModeSwitchView;
+- (id)deepThinkNetModeName;
+- (long long)deepThinkNetModeType;
+- (id)netModePopover;
+- (void)setNetModePopover:;
+- (void)switchDeepThinkInTextMultiLine:;
+- (void)switchDeepThinkInputViewStateIsRevise:;
+- (id)deepThinkPlaceholder;
+- (void)globalModeViewTouched;
+- (void)netModeViewTouched;
+- (void)setDeepThinkSwitchView:;
+- (void)setNetModeSwitchView:;
+- (id)delegate;
+- (id)viewSize;
+- (id)initWithDelegate:;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)updateSubviews;
+- (void)createUI;
+@end

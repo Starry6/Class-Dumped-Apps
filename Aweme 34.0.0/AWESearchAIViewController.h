@@ -1,0 +1,36 @@
+@interface AWESearchAIViewController : AWESearchWebContainerViewController
+@property (nonatomic) AWESearchSkeletonUIModel customLoadInfo;
+@property (nonatomic) AWEGeneralSearchBackgroundManager backgroundManager;
+@property (nonatomic) AWESearchAICachalotDataController aiDataController;
+- (id)backgroundManager;
+- (id)tabConfig;
+- (void)searchMiddleViewControlleWillShow;
+- (void)updateSearchHeaderBackground:hidden:theme:;
+- (void)setBackgroundManager:;
+- (long long)syncGetSearchAITabLoadingConfig;
+- (long long)syncGetSearchAITabAmbientConfig;
+- (void)customFeedRecieveRequestWithResponseParams:isLoadMore:;
+- (void)customRefreshResponseCompletion:withParams:;
+- (id)customContainerConfig;
+- (Class)customDataControllerClass;
+- (void)customFeedwillRequestNetwork;
+- (void)slidingButtonDidSelectIndex:currentIndex:;
+- (void)resetSearchBackground;
+- (unsigned long long)preferSearchTheme;
+- (void)cleanHeaderBackground:;
+- (id)aiDataController;
+- (void)preloadLoaderImage;
+- (id)customLoadInfo;
+- (BOOL)customSupportByteSync;
+- (BOOL)customEnableWebViewReuse;
+- (BOOL)customEnableWebViewPreload;
+- (id)customPreLoadData;
+- (BOOL)customEnableCustomBackgroundColor;
+- (id)customCustomBackgroundColor;
+- (void)setCustomLoadInfo:;
+- (void)setAiDataController:;
+- (id)init;
+- (void)viewDidLayoutSubviews;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+@end

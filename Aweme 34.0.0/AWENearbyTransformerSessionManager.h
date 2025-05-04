@@ -1,0 +1,31 @@
+@interface AWENearbyTransformerSessionManager : NSObject
+@property (nonatomic) AWENearbyTransformerSessionTrackNode homepageLife;
+@property (nonatomic) AWENearbyTransformerSessionTrackNode homepageFresh;
+@property (nonatomic) AWENearbyTransformerSessionTrackNode lifeDualIdpt;
+- (void)setRootSessionWithPageType:type:key:value:;
+- (id)getRootIDWithRootSessionID:;
+- (id)getSessionNodeWithSessionID:rootSession:;
+- (id)getDictFromType:node:origin:;
+- (void)setDictFromType:node:dict:;
+- (id)homepageFresh;
+- (id)lifeDualIdpt;
+- (id)homepageLife;
+- (id)getRootIDWithPageType:;
+- (void)setDictWithNode:type:key:value:;
+- (void)addDictWithNode:type:params:;
+- (id)getTransformerWithPageType:;
+- (id)changeTypeToString:;
+- (id)getSessionWithSessionID:rootSessionID:type:key:;
+- (void)setSessionWithRootId:sessionId:parentSessionId:type:key:value:;
+- (void)setRootSessionWithPageType:type:params:;
+- (void)setTransformerSessionWithPageType:type:key:value:;
+- (void)setTransformerSessionWithPageType:type:params:;
+- (void)setHomepageLife:;
+- (void)setHomepageFresh:;
+- (void)setLifeDualIdpt:;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

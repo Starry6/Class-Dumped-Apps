@@ -1,0 +1,33 @@
+@interface AWEIMGroupDeleteMemberListViewController : AWEIMGroupMemberListViewController
+@property (nonatomic) NSMutableArray selectedArrayM;
+@property (nonatomic) UIView<IESIMLoadingViewProtocol> loadingView;
+- (void)updateMultiselectCount:;
+- (BOOL)shouldShowLiveFansSubscriptionDate;
+- (void)deleteMember;
+- (id)selectedArrayM;
+- (void)__trackDeleteMemberWithUserIDArray:blockListOn:shouldBlock:;
+- (void)updateNaviTitle;
+- (BOOL)canShowGroupOwner;
+- (BOOL)canShowGroupAdmin;
+- (BOOL)isMultiselectMode;
+- (BOOL)canShowSortingSwitch;
+- (BOOL)shouldAssignDefaultSortingType;
+- (BOOL)canShowInactiveEntry;
+- (BOOL)isSelectedWithModel:;
+- (void)didSelectListModel:indexPath:;
+- (void)p_didTapDelete;
+- (void)setSelectedArrayM:;
+- (void)p_updateCollectionView;
+- (id)p_deleteParticipants:participantsOptions:bots:;
+- (id)p_deleteParticipants:options:;
+- (id)p_deleteBots:;
+- (BOOL)p_enableDeleteRember;
+- (BOOL)shouldEnableOperationCells;
+- (long long)tagCountLimit;
+- (BOOL)shouldShowFansTags;
+- (BOOL)shouldEnableEnterProfileWhileAvatarTap;
+- (void)setLoadingView:;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void).cxx_destruct;
+@end

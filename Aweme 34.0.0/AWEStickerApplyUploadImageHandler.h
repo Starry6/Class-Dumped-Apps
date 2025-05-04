@@ -1,0 +1,33 @@
+@interface AWEStickerApplyUploadImageHandler : AWEStickerApplyBaseHandler
+@property (nonatomic) <ACCNetServiceProtocol> netService;
+@property (nonatomic) ACCFileUploadServiceBuilder uploadBuilder;
+@property (nonatomic) double handleMultiUploadBegin;
+@property (nonatomic) IESEffectModel currentSticker;
+@property (nonatomic) NSMutableArray uploadServiceArr;
+- (void)setCurrentSticker:;
+- (id)currentSticker;
+- (void)camera:didRecvMessage:;
+- (void)camera:willApplySticker:;
+- (void)p_clearFolder;
+- (void)p_handleUploadSingleImage:taskId:;
+- (void)p_handleUploadMultiImageMessageBody:taskID:;
+- (id)p_convertToDataWithEffectImage:;
+- (id)p_writeEffectImage:suffix:;
+- (id)p_createZipWithFilePaths:;
+- (void)p_sendMessageToEffect:taskId:;
+- (void)p_uploadImageAt:completion:;
+- (void)setHandleMultiUploadBegin:;
+- (void)p_sendMessageToEffectWithImageURIs:failed:taskID:errorCode:errorMessag:;
+- (void)p_uploadMultiImageFiles:taskID:uploadParamsModel:;
+- (id)uploadBuilder;
+- (id)uploadServiceArr;
+- (id)p_generateFilePath:;
+- (double)handleMultiUploadBegin;
+- (void)setUploadBuilder:;
+- (void)setUploadServiceArr:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)netService;
+- (void)setNetService:;
+@end

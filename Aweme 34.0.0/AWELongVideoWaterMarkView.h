@@ -1,0 +1,31 @@
+@interface AWELongVideoWaterMarkView : DUXBaseStackView
+@property (nonatomic) UIImageView waterMarkImageView;
+@property (nonatomic) UIImage waterMarkImage;
+@property (nonatomic) NSArray singleDutyViews;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)waterMarkImage;
+- (void)setWaterMarkImage:;
+- (void)showWithAwemeModel:renderFrame:;
+- (void)commentPanelShowAction:;
+- (void)beforeEnteringLandscapeFeedNotification;
+- (void)afterExitingLandscapeFeedNotification;
+- (id)singleDutyViews;
+- (id)findViewWithIdentify:;
+- (void)p_decorationWithAwemeModel:;
+- (void)layoutWithAwemeModel:renderFrame:;
+- (void)hiddenWithIdentify:;
+- (void)showWithIdentify:;
+- (void)setSingleDutyViews:;
+- (id)waterMarkImageView;
+- (void)setWaterMarkImageView:;
+- (id)init;
+- (unsigned long long)hash;
+- (void)dealloc;
+- (id)description;
+- (void).cxx_destruct;
+- (void)reset;
+- (Class)superclass;
+@end

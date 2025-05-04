@@ -1,0 +1,31 @@
+@interface AWEECCommentPublishModel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEStudioVideoAnchorModel anchorModel;
+@property (nonatomic) q createScene;
+@property (nonatomic) NSString commentText;
+@property (nonatomic) q rankType;
+@property (nonatomic) q storySourceType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCreateScene:;
+- (void)setAnchorModel:;
+- (long long)storySourceType;
+- (void)setStorySourceType:;
+- (id)anchorModel;
+- (id)acc_publishRequestParams:;
+- (id)initWithDraft:;
+- (void)saveWithDraft:;
+- (void).cxx_destruct;
+- (void)setRankType:;
+- (long long)rankType;
+- (id)copyWithZone:;
+- (void)setCommentText:;
+- (id)commentText;
+- (long long)createScene;
++ (id)createWithInfoDictionary:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEMusicCorrectView : UICollectionReusableView
+@property (nonatomic) YYLabel keywordLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) @? tapBlock;
+@property (nonatomic) <AWESearchCorrectModelProtocol> model;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (void)configureUI;
+- (id)initWithCorrectModel:;
+- (void)configureData;
+- (void)addSearchEntranceForAttributedText:;
+- (id)lineViewBackgroundColor;
+- (id)hightColor;
+- (void)caculateFrame;
+- (double)caculateHeightForYYLabel:;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)lineView;
+- (id)linkColor;
+- (void)setLineView:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)defaultColor;
+- (id)keywordLabel;
+- (void)setKeywordLabel:;
+- (void)viewTapped;
+- (double)maxLabelWidth;
+@end

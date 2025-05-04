@@ -1,0 +1,33 @@
+@interface AWESearchAIGCRequestParamsContext : AWESearchVerticalRequestParamsBaseContext
+@property (nonatomic) NSString backtrace;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) double imageWidth;
+@property (nonatomic) double imageHeight;
+@property (nonatomic) NSString tosid;
+@property (nonatomic) NSDictionary appendRefreshParams;
+@property (nonatomic) AWESearchAIGCResultRouterParams routerParams;
+@property (nonatomic) AWESearchAIGCResultRouterSearchTask routerSearchTask;
+@property (nonatomic) NSString searchUniqueID;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)routerParams;
+- (void)setRouterParams:;
+- (id)tosid;
+- (void)setTosid:;
+- (id)searchUniqueID;
+- (void)setSearchUniqueID:;
+- (id)appendRefreshParams;
+- (void)setAppendRefreshParams:;
+- (id)routerSearchTask;
+- (void)setRouterSearchTask:;
+- (id)backtrace;
+- (void).cxx_destruct;
+- (id)conversationId;
+- (void)setConversationId:;
+- (double)imageWidth;
+- (double)imageHeight;
+- (void)setBacktrace:;
+- (void)setImageHeight:;
+- (void)setImageWidth:;
+@end

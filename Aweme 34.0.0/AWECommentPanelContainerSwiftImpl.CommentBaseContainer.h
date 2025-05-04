@@ -1,0 +1,21 @@
+@interface AWECommentPanelContainerSwiftImpl.CommentBaseContainer : AWEBaseController
+- (void)onAWEUIThemeChange;
+- (void)dismissNotificationWithNotice:;
+- (void)tabBarDidChangeNotificationWithNotice:;
+- (void)landingChangeNotificationWithNotice:;
+- (void)showPopoverIfNeeded;
+- (void)commonBringCommentVCToFrontWithTopView:;
+- (id)commonPanelShowAnimationStartFrameWithOriginFrame:;
+- (void)commonPanelDismissResetTabbar;
+- (void)commonPanelDismissAnimationTask;
+- (id)init;
+- (void)dealloc;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

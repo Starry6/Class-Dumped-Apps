@@ -1,0 +1,31 @@
+@interface AWENewHotSpotCommentModel : AWEBaseApiModel
+@property (nonatomic) NSString hotSpotID;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString hotSpotServiceID;
+@property (nonatomic) q hotSpotPageTab;
+@property (nonatomic) BOOL hasImageBtnExposed;
+@property (nonatomic) NSString fromGroupID;
+@property (nonatomic) AWENewHotSpotFeedCardModel commentCardModel;
+@property (nonatomic) NSString hotSpotCommentSchema;
+@property (nonatomic) NSString inputPlaceholder;
+- (id)hotSpotCommentSchema;
+- (void)setHotSpotCommentSchema:;
+- (long long)hotSpotPageTab;
+- (id)inputPlaceholder;
+- (id)hotSpotID;
+- (id)fromGroupID;
+- (id)hotSpotServiceID;
+- (id)commentCardModel;
+- (void)setInputPlaceholder:;
+- (void)setFromGroupID:;
+- (void)setHotSpotID:;
+- (void)setHasImageBtnExposed:;
+- (id)initWithHotSpotID:keyword:hotSpotServiceID:hotSpotPageTab:;
+- (void)setCommentCardModel:;
+- (void)setHotSpotServiceID:;
+- (void)setHotSpotPageTab:;
+- (BOOL)hasImageBtnExposed;
+- (void).cxx_destruct;
+- (id)keyword;
+- (void)setKeyword:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFollowGroupUserInfoView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView verifiedImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIButton iconButton;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) BOOL isCommerce;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (BOOL)isCommerce;
+- (void)setIsCommerce:;
+- (void)__setupView;
+- (void)iconButtonClick;
+- (void)configWithUserModel:;
+- (id)init;
+- (id)initWithFrame:;
+- (id)iconImageView;
+- (void)setUserModel:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (id)userModel;
+- (void)setIconImageView:;
+- (void)setNameLabel:;
+- (id)iconButton;
+- (void)setIconButton:;
+- (void)setVerifiedImageView:;
+- (id)verifiedImageView;
++ (id)_defaultImage;
+@end

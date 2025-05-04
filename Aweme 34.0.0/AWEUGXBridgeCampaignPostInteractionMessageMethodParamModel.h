@@ -1,0 +1,35 @@
+@interface AWEUGXBridgeCampaignPostInteractionMessageMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSNumber useDefault;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) NSNumber defaultDigg;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) q replyDisplayType;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)secUid;
+- (void)setSecUid:;
+- (void)setUseDefault:;
+- (id)useDefault;
+- (id)defaultDigg;
+- (long long)replyDisplayType;
+- (void)setDefaultDigg:;
+- (void)setReplyDisplayType:;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)conversationId;
+- (void)setConversationId:;
+- (id)sceneType;
+- (void)setSceneType:;
++ (id)requiredKeyPaths;
++ (id)JSONKeyPathsByPropertyKey;
+@end

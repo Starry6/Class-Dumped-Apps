@@ -1,0 +1,32 @@
+@interface AWEUserRecommendHeaderView : UIView
+@property (nonatomic) UIView topDivider;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton privacyButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) <AWEUserRecommendTableViewModelProtocol> viewModel;
+@property (nonatomic) q scrollDirection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)p_clickCloseButton:;
+- (id)privacyButton;
+- (void)setPrivacyButton:;
+- (void)p_clickPrivacyButton:;
+- (void)setScrollDirection:;
+- (long long)scrollDirection;
+- (void)config;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setTopDivider:;
+- (id)topDivider;
++ (double)height;
++ (id)headerFooterView;
+@end

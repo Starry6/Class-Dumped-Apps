@@ -1,0 +1,35 @@
+@interface AWEUserLoginButtonComponent : NSObject
+@property (nonatomic) AWEUserLoginBaseViewModel<AWEUserLoginViewModelSecondaryProtocol> viewModel;
+@property (nonatomic) AWEUserLoginButtonView buttonView;
+@property (nonatomic) q status;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)buttonStatusChanged:;
+- (BOOL)shouldSetupDifferentiatingTheme;
+- (void)setupComponentView;
+- (id)initWithLoginViewModel:;
+- (void)startBinding;
+- (void)loginButtonClick;
+- (id)aAWEUserLoginUIComponentThemeAdapter;
+- (void)trackLoginButtonBreathAnimation;
+- (id)halfScreenButtonModel;
+- (id)fullScreenButtonModel;
+- (BOOL)needForbiddenButtonSweep;
+- (id)smsButtonTitle;
+- (id)emailCodeButtonTitle;
+- (void)setStatus:;
+- (id)viewModel;
+- (id)buttonView;
+- (unsigned long long)componentType;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)status;
+- (void)setButtonView:;
+- (void)viewDidAppear;
+- (id)componentView;
+- (id)defaultTitle;
+- (id)buttonModel;
++ (Class)aAWEUserLoginUIComponentThemeAdapterClass;
+@end

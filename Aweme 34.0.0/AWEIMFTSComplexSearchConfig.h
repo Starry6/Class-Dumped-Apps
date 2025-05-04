@@ -1,0 +1,35 @@
+@interface AWEIMFTSComplexSearchConfig : NSObject
+@property (nonatomic) NSString keyword;
+@property (nonatomic) q limitCount;
+@property (nonatomic) NSArray searchTypes;
+@property (nonatomic) NSDictionary extTypesDict;
+@property (nonatomic) NSArray excludeContentTypes;
+@property (nonatomic) BOOL enableFuzzySearchV2;
+@property (nonatomic) BOOL enableGroupMultiRecall;
+@property (nonatomic) NSArray contentTypes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)extTypesDict;
+- (void)setExtTypesDict:;
+- (BOOL)enableFuzzySearchV2;
+- (void)setEnableFuzzySearchV2:;
+- (BOOL)enableGroupMultiRecall;
+- (void)setEnableGroupMultiRecall:;
+- (id)initWithKeyword:limitCount:;
+- (id)excludeContentTypes;
+- (id)getInstanceConfigWithKeyword:limitCount:;
+- (void)setExcludeContentTypes:;
+- (long long)limitCount;
+- (id)contentTypes;
+- (id)searchTypes;
+- (void).cxx_destruct;
+- (void)setSearchTypes:;
+- (id)keyword;
++ (id)sharedIntance;
++ (id)configWithKeyword:limitCount:;
++ (id)allUserSearchContentTypesExcept:;
++ (id)allConvSearchContentTypesExcept:;
++ (id)allGroupParticipantSearchContentTypesExcept:;
+@end

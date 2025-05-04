@@ -1,0 +1,37 @@
+@interface AWEListenFeedContentFilterContainerView : UIView
+@property (nonatomic) UIScrollView contentFilterScrollView;
+@property (nonatomic) AWEListenFeedContentFilterDismissView dismissView;
+@property (nonatomic) NSArray modelArray;
+@property (nonatomic) BOOL needDelayTrack;
+@property (nonatomic) AWEListenFeedContext context;
+@property (nonatomic) double contentFilterViewHeight;
+@property (nonatomic) <AWEListenFeedContentFilterContainerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initSubviews;
+- (void)setModelArray:;
+- (id)modelArray;
+- (void)dismissClicked;
+- (double)filterViewHeight;
+- (void)setContentFilterViewHeight:;
+- (void)setNeedDelayTrack:;
+- (void)updateByModelArray:context:;
+- (id)contentFilterScrollView;
+- (double)contentFilterViewHeight;
+- (BOOL)needDelayTrack;
+- (void)trackListenModelShow;
+- (void)setContentFilterScrollView:;
+- (void)show;
+- (void)refresh;
+- (id)init;
+- (id)delegate;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (double)pageWidth;
+- (void)setDismissView:;
+- (id)dismissView;
+@end

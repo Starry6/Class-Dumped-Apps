@@ -1,0 +1,34 @@
+@interface AWEEvaluationRatingView : UIView
+@property (nonatomic) UIView starContainerView;
+@property (nonatomic) NSMutableArray starViewArray;
+@property (nonatomic) UIImage filledImage;
+@property (nonatomic) UIImage emptyImage;
+@property (nonatomic) {CGSize=dd} starSize;
+@property (nonatomic) q numberOfStars;
+@property (nonatomic) double starSpace;
+@property (nonatomic) double rate;
+@property (nonatomic) <AWEEvaluationRatingViewDelegate> delegate;
+- (void)setStarSize:;
+- (double)starSpace;
+- (void)setFilledImage:;
+- (void)setStarSpace:;
+- (id)filledImage;
+- (void)updateWithRate:;
+- (void)onImageTaped:;
+- (id)starViewArray;
+- (void)addStars;
+- (id)starContainerView;
+- (void)setStarContainerView:;
+- (void)setStarViewArray:;
+- (void)setRate:;
+- (double)rate;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)emptyImage;
+- (void)setEmptyImage:;
+- (long long)numberOfStars;
+- (void)setNumberOfStars:;
+- (id)starSize;
+@end

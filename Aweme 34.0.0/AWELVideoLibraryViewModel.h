@@ -1,0 +1,30 @@
+@interface AWELVideoLibraryViewModel : AWEBaseListViewModel
+@property (nonatomic) AWELVideoLibraryResultSectionViewModel resultSectionViewModel;
+@property (nonatomic) AWELVideoLibraryEmptySectionViewModel emptySectionViewModel;
+@property (nonatomic) AWELVideoLibraryFilterDataController filterDataController;
+@property (nonatomic) AWELVideoLibraryResultDataController resultDataController;
+@property (nonatomic) q state;
+@property (nonatomic) AWELVideoLibraryPageContext context;
+- (void)fetchListData;
+- (void)loadMoreListData;
+- (id)emptySectionViewModel;
+- (id)filterDataController;
+- (void)setFilterDataController:;
+- (id)aAWETheaterViewControllerCommonAdapter;
+- (void)setEmptySectionViewModel:;
+- (id)resultDataController;
+- (void)setResultDataController:;
+- (void)preloadResultDataIfNeeded:;
+- (void)resetFilterAndTrigResultRefreshWith:;
+- (void)p_fetchResultData;
+- (id)resultSectionViewModel;
+- (void)p_preloadCoverImage;
+- (void)setResultSectionViewModel:;
+- (id)init;
+- (long long)state;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setState:;
++ (Class)aAWETheaterViewControllerCommonAdapterClass;
+@end

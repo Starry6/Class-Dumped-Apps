@@ -1,0 +1,34 @@
+@interface AWELiteActivityPopupButtonModel : MTLModel
+@property (nonatomic) q jumpType;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString jumpLink;
+@property (nonatomic) q method;
+@property (nonatomic) BOOL isJumpLogin;
+@property (nonatomic) NSString jumpLoginSource;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) NSString tips;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)jumpType;
+- (void)setJumpType:;
+- (id)jumpLink;
+- (void)setJumpLink:;
+- (BOOL)isJumpLogin;
+- (void)setIsJumpLogin:;
+- (id)jumpLoginSource;
+- (void)setJumpLoginSource:;
+- (void)setMethod:;
+- (id)tips;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (long long)method;
+- (void)setTips:;
+- (id)imageUrl;
+- (void)setButtonText:;
+- (void)setImageUrl:;
++ (id)jumpTypeJSONTransformer;
++ (id)methodJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

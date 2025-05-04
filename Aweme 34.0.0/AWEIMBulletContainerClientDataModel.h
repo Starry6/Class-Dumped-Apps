@@ -1,0 +1,34 @@
+@interface AWEIMBulletContainerClientDataModel : MTLModel
+@property (nonatomic) AWEIMBulletContainerClientDataConversationInfo conversationInfo;
+@property (nonatomic) AWEIMBulletContainerClientDataMessageInfo messageInfo;
+@property (nonatomic) AWEIMBulletContainerClientDataContainerPerfModel containerPerf;
+@property (nonatomic) AWEIMBulletContainerUIInfo uiInfo;
+@property (nonatomic) AWEIMBulletContainerClientDataCardInfo cardInfo;
+@property (nonatomic) NSString loadType;
+@property (nonatomic) AWEIMBulletContainerClientDataExtraInfo extraInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)conversationInfo;
+- (void)setConversationInfo:;
+- (void)setLoadType:;
+- (id)uiInfo;
+- (void)setUiInfo:;
+- (id)initWithConversation:message:actionInfo:routerParams:;
+- (void)setContainerPerf:;
+- (void)__configDataWithConversation:message:actionInfo:;
+- (void)p_processDataInCombineShareIfNeed:;
+- (id)initWithDynamicPatchModel:conversation:message:;
+- (id)initWithConversation:message:actionInfo:;
+- (id)containerPerf;
+- (void)setMessageInfo:;
+- (id)messageInfo;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (id)loadType;
+- (void)setExtraInfo:;
+- (id)cardInfo;
+- (void)setCardInfo:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

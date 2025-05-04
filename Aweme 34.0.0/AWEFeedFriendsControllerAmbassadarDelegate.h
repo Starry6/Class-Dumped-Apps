@@ -1,0 +1,34 @@
+@interface AWEFeedFriendsControllerAmbassadarDelegate : NSObject
+@property (nonatomic) UIViewController<AWEFeedContainerProtocol> feedTableViewController;
+@property (nonatomic) AWEFeedFriendsController feedFriendsController;
+@property (nonatomic) NSString requestMethod;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (id)currentAweme;
+- (long long)willPlayIndex;
+- (long long)didEndPlayIndex;
+- (BOOL)emptyScrollViewHiddenState;
+- (void)insertAwemeWithUploadSuccess:;
+- (void)replaceAweme:withModel:;
+- (id)feedTableViewController;
+- (void)setFeedTableViewController:;
+- (id)feedContainer;
+- (id)_getModelSafelyForRow:;
+- (id)getBackToFeedMaskViewWithCell:isFriendsQuicklySlideMaskGuide:;
+- (id)feedFriendsController;
+- (id)familiarContainer;
+- (void)setFeedFriendsController:;
+- (void)play;
+- (id)view;
+- (long long)type;
+- (void).cxx_destruct;
+- (BOOL)isActive;
+- (long long)currentIndex;
+- (id)currentCell;
+- (id)dataController;
+- (id)requestMethod;
+- (void)setRequestMethod:;
+@end

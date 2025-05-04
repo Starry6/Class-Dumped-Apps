@@ -1,0 +1,35 @@
+@interface AWEMixCollectedUserModel : AWEBaseApiModel
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) AWEURLModel avatarThumb;
+@property (nonatomic) q followStatus;
+@property (nonatomic) q followerStatus;
+@property (nonatomic) double collectTimestamp;
+@property (nonatomic) BOOL isFromNotice;
+@property (nonatomic) q hideHerPostStatus;
+@property (nonatomic) BOOL privateAccount;
+- (long long)followStatus;
+- (id)avatarThumb;
+- (id)secUid;
+- (void)setFollowStatus:;
+- (long long)hideHerPostStatus;
+- (void)setHideHerPostStatus:;
+- (BOOL)privateAccount;
+- (void)setAvatarThumb:;
+- (long long)followerStatus;
+- (void)setSecUid:;
+- (void)setFollowerStatus:;
+- (void)setPrivateAccount:;
+- (double)collectTimestamp;
+- (BOOL)isFromNotice;
+- (void)setCollectTimestamp:;
+- (void)setIsFromNotice:;
+- (id)nickname;
+- (void)setUid:;
+- (id)uid;
+- (void).cxx_destruct;
+- (void)setNickname:;
++ (id)avatarThumbJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

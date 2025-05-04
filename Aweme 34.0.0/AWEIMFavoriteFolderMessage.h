@@ -1,0 +1,33 @@
+@interface AWEIMFavoriteFolderMessage : AWEIMMessage
+@property (nonatomic) NSNumber collectsId;
+@property (nonatomic) NSString collectsName;
+@property (nonatomic) NSNumber collectsCount;
+@property (nonatomic) NSString authorUid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getUniqueResourceId;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)authorUid;
+- (void)setAuthorUid:;
+- (id)collectsName;
+- (id)collectsId;
+- (void)setCollectsId:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)unavailableFlag;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)isDisableState;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (BOOL)isSupportForward;
+- (id)collectsCount;
+- (void)setCollectsName:;
+- (void)setCollectsCount:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

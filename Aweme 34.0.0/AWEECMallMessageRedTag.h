@@ -1,0 +1,34 @@
+@interface AWEECMallMessageRedTag : MTLModel
+@property (nonatomic) NSString localUniqID;
+@property (nonatomic) BOOL hasRedTagUnderTaked;
+@property (nonatomic) q tagType;
+@property (nonatomic) NSString tagText;
+@property (nonatomic) NSString skipURL;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) BOOL isCompensation;
+@property (nonatomic) NSArray registerParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (void)setTagText:;
+- (id)tagText;
+- (void)setRegisterParams:;
+- (id)redDotComponentID;
+- (BOOL)isCompensation;
+- (void)setLocalUniqID:;
+- (id)localUniqID;
+- (BOOL)hasRedTagUnderTaked;
+- (id)skipURL;
+- (void)setHasRedTagUnderTaked:;
+- (void)setSkipURL:;
+- (id)registerParams;
+- (void)setIsCompensation:;
+- (long long)tagType;
+- (id)extra;
+- (void).cxx_destruct;
+- (void)setTagType:;
++ (id)registerParamsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

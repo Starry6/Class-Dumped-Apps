@@ -1,0 +1,37 @@
+@interface AWEBatManGroupItemCell : UITableViewCell
+@property (nonatomic) UIImageView groupIconImageView;
+@property (nonatomic) UILabel groupNameLabel;
+@property (nonatomic) UILabel groupMemberCountLabel;
+@property (nonatomic) UILabel conditionLabel;
+@property (nonatomic) UIView tagsView;
+@property (nonatomic) UIButton joinGroupBtn;
+@property (nonatomic) NSInteger index;
+@property (nonatomic) <XPlayBusinessGroupInfo> groupInfo;
+@property (nonatomic) <BtnClickDelegate> delegate;
+- (id)groupIconImageView;
+- (id)groupNameLabel;
+- (id)tagsView;
+- (void)setTagsView:;
+- (void)setConditionLabel:;
+- (id)conditionLabel;
+- (void)setItemMode:;
+- (void)setPortaitUI;
+- (id)groupMemberCountLabel;
+- (id)joinGroupBtn;
+- (void)genTagView;
+- (id)createTagView:;
+- (void)clickJoinGroup;
+- (id)initWithGroupInfo:andWithIndex:andWithContentWith:andIsLandscape:;
+- (void)setGroupIconImageView:;
+- (void)setGroupNameLabel:;
+- (void)setGroupMemberCountLabel:;
+- (void)setJoinGroupBtn:;
+- (void)setIndex:;
+- (int)index;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)groupInfo;
+- (void)setGroupInfo:;
+@end

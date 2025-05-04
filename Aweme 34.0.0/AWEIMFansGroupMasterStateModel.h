@@ -1,0 +1,33 @@
+@interface AWEIMFansGroupMasterStateModel : IESIMBaseApiModel
+@property (nonatomic) NSArray groupList;
+@property (nonatomic) BOOL hasFansGroup;
+@property (nonatomic) AWEIMFansGroupIntroduceModel introduceModel;
+@property (nonatomic) AWEIMCreateFansGroupModel createFansGroupModel;
+@property (nonatomic) q nextCursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q showCountLimit;
+@property (nonatomic) BOOL hasCreatorFansGroupPermission;
+@property (nonatomic) BOOL showFansGroupUpdateTips;
+- (long long)nextCursor;
+- (void)setNextCursor:;
+- (BOOL)showFansGroupUpdateTips;
+- (id)introduceModel;
+- (id)createFansGroupModel;
+- (long long)showCountLimit;
+- (BOOL)hasCreatorFansGroupPermission;
+- (void)setShowCountLimit:;
+- (void)setCreateFansGroupModel:;
+- (BOOL)hasFansGroup;
+- (void)setHasFansGroup:;
+- (void)setIntroduceModel:;
+- (void)setHasCreatorFansGroupPermission:;
+- (void)setShowFansGroupUpdateTips:;
+- (void)setHasMore:;
+- (id)groupList;
+- (BOOL)hasMore;
+- (void)setGroupList:;
+- (void).cxx_destruct;
++ (id)groupListJSONTransformer;
++ (id)createFansGroupModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

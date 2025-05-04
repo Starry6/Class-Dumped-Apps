@@ -1,0 +1,38 @@
+@interface AWEMateModuleService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableFriendRebrand;
+- (BOOL)friendRebrandingAbValue;
+- (BOOL)enableFriendRebrandWithLoginUser:;
+- (BOOL)enableFriendRebrandWithUser:;
+- (BOOL)enableMateRelation:;
+- (BOOL)enablePrivateAccountAddMate;
+- (BOOL)enableMateHotActive;
+- (BOOL)enableMateManagePage;
+- (BOOL)enableMateTable;
+- (BOOL)hasAddMatePermission:;
+- (BOOL)isSocialScene:;
+- (Class)mateRelationManagerClass;
+- (Class)mateButtonHelper;
+- (id)addMateGuideBannerManager;
+- (BOOL)enableProfileAddMateButton;
+- (BOOL)enableProfileMenuRefactor;
+- (BOOL)enableNotMateCanSeeStory;
+- (id)mateOnboardingManager;
+- (BOOL)mateOnboardingHasCompleted;
+- (BOOL)showingMateOnboardingOnFamiliarFeed;
+- (BOOL)checkAndShowMateApplyOnboardingPanelIfNeededWithEnterFrom:;
+- (BOOL)enableMateVersionStoryPermissionPanel;
+- (BOOL)isStrangerStory:;
+- (Class)mateTrackManager;
+- (BOOL)enableStoryPublicVisibility;
+- (BOOL)enableOthersProfileStoryTabPublicVisibility;
+- (id)profileFriendEntry;
+- (void)updateFriendRebrandSpreadToken:;
+- (void)triggerMateHotActiveIfNeeded;
+- (BOOL)hasAddMatePermission:followStatus:followerStatus:;
+- (BOOL)checkAndShowOnboardingSheetIfNeededWithType:delay:completeBlock:;
+- (BOOL)isHitFriendRebrandSpread:;
+@end

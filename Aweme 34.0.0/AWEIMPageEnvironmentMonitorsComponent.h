@@ -1,0 +1,34 @@
+@interface AWEIMPageEnvironmentMonitorsComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMPageMemoryMonitor memoryMonitor;
+@property (nonatomic) BOOL pageOnShow;
+@property (nonatomic) NSArray extraInfoBlocks;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> extraInfoBlocksLock;
+@property (nonatomic) NSArray sampleRateInfoBlocks;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> sampleRateInfoBlocksLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewDidDisappear;
+- (void)componentDidMounted:;
+- (void)hostVC_viewDidAppear;
+- (id)initWithPageName:;
+- (void)addSampleRateKeyInfoBlock:;
+- (void)addExtraInfoBlock:;
+- (id)p_sampleRateInfoWithSession:fireType:;
+- (id)p_extraSessionInfoWithSession:fireType:;
+- (BOOL)pageOnShow;
+- (void)setPageOnShow:;
+- (id)sampleRateInfoBlocksLock;
+- (id)sampleRateInfoBlocks;
+- (void)setSampleRateInfoBlocks:;
+- (id)extraInfoBlocksLock;
+- (id)extraInfoBlocks;
+- (void)setExtraInfoBlocks:;
+- (void)setExtraInfoBlocksLock:;
+- (void)setSampleRateInfoBlocksLock:;
+- (void).cxx_destruct;
+- (id)memoryMonitor;
++ (BOOL)canCreateComponentWithContext:;
++ (id)componentWithContext:;
+@end

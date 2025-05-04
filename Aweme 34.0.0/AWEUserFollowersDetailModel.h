@@ -1,0 +1,33 @@
+@interface AWEUserFollowersDetailModel : AWEBaseApiModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString iconURLString;
+@property (nonatomic) NSNumber fansCount;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSString downloadURLString;
+@property (nonatomic) NSString packageName;
+@property (nonatomic) NSString appName;
+- (BOOL)isDouyin;
+- (void)setOpenURL:;
+- (void)setFansCount:;
+- (BOOL)isToutiao;
+- (BOOL)isHuoshan;
+- (BOOL)isDuanzi;
+- (id)fansCount;
+- (id)downloadURLString;
+- (void)setDownloadURLString:;
+- (id)packageName;
+- (void).cxx_destruct;
+- (id)appleID;
+- (void)setAppleID:;
+- (void)setAppName:;
+- (id)initWithDict:;
+- (void)setName:;
+- (id)name;
+- (id)appName;
+- (id)openURL;
+- (id)iconURLString;
+- (void)setIconURLString:;
+- (void)setPackageName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

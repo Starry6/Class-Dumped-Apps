@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionLiveExtendGuideView : UIView
+@property (nonatomic) UIView liveExtendContentView;
+@property (nonatomic) BDImageView iconContainerView;
+@property (nonatomic) UIView rightInformationContainer;
+@property (nonatomic) UIView torightInformationContainer;
+@property (nonatomic) AWELivePreviewExtendArea extendData;
+@property (nonatomic) <AWEPlayInteractionBottomButtonViewDelegateProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)extendData;
+- (void)setExtendData:;
+- (id)createPartsView:;
+- (void)setRightInformationContainer:;
+- (id)rightInformationContainer;
+- (BOOL)informationIsChanged:;
+- (id)p_getInformation:;
+- (void)loadImageWithImageView:imageURLList:;
+- (id)liveExtendContentView;
+- (id)p_parseFromDicData:;
+- (void)setTorightInformationContainer:;
+- (id)torightInformationContainer;
+- (void)setLiveExtendContentView:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (void)updateWithModel:;
+- (id)iconContainerView;
+- (void)setIconContainerView:;
+@end

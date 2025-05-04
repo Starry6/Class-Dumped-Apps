@@ -1,0 +1,37 @@
+@interface AWEWebViewPool : NSObject
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSMutableArray webviews;
+@property (nonatomic) NSTimer memoryWarningProtectTimer;
+@property (nonatomic) NSInteger maxNumberOfInstances;
+@property (nonatomic) NSInteger memoryWarningProtectDuration;
+@property (nonatomic) NSDictionary defaultSettings;
+- (id)fetchWebViewWithSettings:;
+- (void)setMaxNumberOfInstances:;
+- (void)setMemoryWarningProtectDuration:;
+- (BOOL)enableMemoryOptimizeWithNunki;
+- (void)didReceiveMemeoryDangerLevelTopNotification;
+- (int)maxNumberOfInstances;
+- (int)memoryWarningProtectDuration;
+- (BOOL)needAddInstance;
+- (BOOL)needRemoveInstance;
+- (id)memoryWarningProtectTimer;
+- (void)setMemoryWarningProtectTimer:;
+- (void)protectTimerTimeout:;
+- (void)updatePoolIfNeeded;
+- (id)webviews;
+- (void)produceWebViewWhenMainThreadIdle;
+- (id)fetchWithFrame:bridgeClass:settings:;
+- (id)generatWebView;
+- (id)fetchWebView;
+- (void)setWebviews:;
+- (id)defaultSettings;
+- (id)init;
+- (void)dealloc;
+- (void)setLock:;
+- (void)didReceiveMemoryWarning;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setDefaultSettings:;
++ (id)falconWebViewPool;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchFeelGoodBottomNotificationView : AWESearchFeelGoodElementView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView redirectImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) @? showCompletion;
+- (void)configureUI;
+- (id)showCompletion;
+- (void)setShowCompletion:;
+- (BOOL)isOnlySupportLightMode;
+- (void)setIsOnlySupportLightMode:;
+- (BOOL)p_isDarkTheme;
+- (void)p_dismissEntranceWithAnimation:;
+- (void)p_showEntrnceView;
+- (void)dismissEntrance;
+- (void)showEntrnceViewWithModel:completion:;
+- (void)dismissPopups;
+- (void)feedbackViewTapped;
+- (id)redirectImageView;
+- (void)setRedirectImageView:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setIconImageView:;
+- (void)updateUI;
+@end

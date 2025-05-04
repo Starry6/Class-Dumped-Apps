@@ -1,0 +1,37 @@
+@interface AWELiveAcqCastVideoSearchDataManager : AWEListDataController
+@property (nonatomic) BOOL hitLimit;
+@property (nonatomic) q loadmoreCount;
+@property (nonatomic) q refreshCount;
+@property (nonatomic) NSDictionary logPassback;
+@property (nonatomic) NSString backtrace;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSNumber offset;
+@property (nonatomic) <AWEHttpTask> task;
+@property (nonatomic) q hotSpotCount;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)logPassback;
+- (void)setLogPassback:;
+- (id)initWithKeyword:;
+- (id)getExpectedSizeInfo;
+- (long long)hotSpotCount;
+- (void)setHotSpotCount:;
+- (void)reloadWithPullType:Completion:;
+- (BOOL)hitLimit;
+- (long long)loadmoreCount;
+- (void)setLoadmoreCount:;
+- (void)p_filterRichAwemeIfNeed:;
+- (void)setHitLimit:;
+- (id)backtrace;
+- (void)setTask:;
+- (void)setOffset:;
+- (id)offset;
+- (id)task;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)keyword;
+- (void)setKeyword:;
+- (void)setBacktrace:;
+- (long long)refreshCount;
+- (void)setRefreshCount:;
+@end

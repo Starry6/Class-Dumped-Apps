@@ -1,0 +1,2 @@
+@interface AWELandscapeDetailViewHolder : AWEBaseListViewHolder
+@end

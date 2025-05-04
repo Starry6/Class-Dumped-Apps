@@ -1,0 +1,31 @@
+@interface AWESearchCardParagraphLabel : YYLabel
+@property (nonatomic) @? tapParagraphBlock;
+@property (nonatomic) @? tapNickNameBlock;
+@property (nonatomic) @? tapHashtagBlock;
+@property (nonatomic) @? tapSearchWordBlock;
+@property (nonatomic) @? tapParagraphSuffix;
+@property (nonatomic) @? tapParagraphPrefix;
+- (id)tapNickNameBlock;
+- (void)setTapNickNameBlock:;
+- (id)tapHashtagBlock;
+- (void)setTapHashtagBlock:;
+- (id)tapSearchWordBlock;
+- (void)setTapSearchWordBlock:;
+- (id)tapParagraphSuffix;
+- (void)setTapParagraphSuffix:;
+- (id)tapParagraphPrefix;
+- (void)setTapParagraphPrefix:;
+- (void)configWithParagraphModel:;
+- (id)tapParagraphBlock;
+- (void)setTapParagraphBlock:;
+- (id)accessibilityLabel;
+- (id)accessibilityElements;
+- (void).cxx_destruct;
+- (void)setAccessibilityElements:;
+- (BOOL)isAccessibilityElement;
+- (id)accessibilityElementAtIndex:;
+- (long long)accessibilityElementCount;
+- (long long)indexOfAccessibilityElement:;
+- (BOOL)shouldGroupAccessibilityChildren;
++ (BOOL)fixParagraphLabelRetaincircle;
+@end

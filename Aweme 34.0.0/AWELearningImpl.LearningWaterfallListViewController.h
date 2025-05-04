@@ -1,0 +1,33 @@
+@interface AWELearningImpl.LearningWaterfallListViewController : AWEBaseListViewController
+- (id)provider:;
+- (id)tabContentScrollView;
+- (id)segmentedControlItemConfigForTabList:;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (id)aweui_emptyPageEdgeInsets;
+- (void)listDidReloadDataWithCollectionView:;
+- (void)sectionControllerWillEnterWorkingRange:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (void)awe_themeReload;
+- (void)customLayoutCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (long long)workingRangeSize;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (id)cellPosition:;
+- (BOOL)canShowLongPressPanel;
+- (BOOL)markShowLongPressPanel;
+- (void)longPressPanelDidDismiss;
+- (id)containerViewControllerPosition;
+- (void)removeSection:animated:;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (id)initWithCoder:;
+- (void)setupCollectionView:;
+@end

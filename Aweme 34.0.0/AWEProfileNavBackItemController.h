@@ -1,0 +1,30 @@
+@interface AWEProfileNavBackItemController : NSObject
+@property (nonatomic) UIView backItemView;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIButton navBackButton;
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (void)backBtnClicked:;
+- (id)profileContext;
+- (id)padService;
+- (id)backItemView;
+- (id)navBackButton;
+- (void)setNavBackButton:;
+- (id)navigationItemView;
+- (BOOL)disableProfileScrollingAlphaChange;
+- (void)onNavigationStickToTop:;
+- (void)setBackItemView:;
+- (id)backButton;
+- (id)delegate;
+- (void)setBackButton:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)itemSize;
+@end

@@ -1,0 +1,2 @@
+@interface _TtGC19AWEIMShareBasicImpl21IMShareSafeDictionarySSCS_31AWEIMShareContactListDataSource_ : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionPineappleRedPacketElement : AWEPlayInteractionLeftElement
+@property (nonatomic) AFDButton redPacketButton;
+@property (nonatomic) NSObject<AFDSocialPromotionRedPacketManagerProtocol> socialRedPacketManager;
+@property (nonatomic) BOOL hasTrackedShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)initializeElement;
+- (void)videoDidActivity;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (void)viewController_viewWillDisappear;
+- (void)viewController_viewDidDisappear;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)redPacketStatusUpdatedOnAwemeID:status:;
+- (id)socialRedPacketManager;
+- (BOOL)shouldAppearWithData:;
+- (void)setHasTrackedShow:;
+- (void)p_updateRedPacketButtonWithStatus:;
+- (BOOL)hasTrackedShow;
+- (void)p_trackEvent:;
+- (id)redPacketButton;
+- (id)p_openRedPacketTrackParams;
+- (id)p_buttonTextFont;
+- (void)p_didTapRedPacketButton;
+- (void)setRedPacketButton:;
+- (void)setSocialRedPacketManager:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)context;
++ (id)p_buttonIconImage;
+@end

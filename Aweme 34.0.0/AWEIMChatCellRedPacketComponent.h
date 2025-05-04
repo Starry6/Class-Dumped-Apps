@@ -1,0 +1,36 @@
+@interface AWEIMChatCellRedPacketComponent : AWEIMChatCellComponentBase
+@property (nonatomic) Q redPacketStyle;
+@property (nonatomic) BOOL forceSetGrey;
+- (void)componentDidMounted:;
+- (void)updateComponentWhenChatUpdate:;
+- (void)onCellWillDisplay:;
+- (void)onCellWillRenderForCurrentComponent;
+- (void)completeIncentiveChatServiceUpdate:;
+- (void)incentiveChatService:relationUpdateWithRelationID:conversationID:;
+- (void)incentiveChatService:relationProgressUpdate:cacheProgress:source:;
+- (void)incentiveChatService:relationActivationUpdate:source:;
+- (void)didChangeRelationOldStatus:newStatus:conversionID:;
+- (id)presenterForSnapshot;
+- (void)onCellDidClick:;
+- (void)p_onThemeChanged;
+- (void)p_updatePresenterIfNeeded:;
+- (void)p_newUpdatePresenterIfNeeded:;
+- (BOOL)p_checkEnableShowWithChat:;
+- (void)p_createPresenterIfNeeded;
+- (BOOL)p_updateImageIfNeededWithChat:;
+- (unsigned long long)redPacketStyle;
+- (void)p_setTrackExtra;
+- (BOOL)isInActivationStatus;
+- (id)p_getPresenterConfigWithStyle:;
+- (void)p_newUpdateImageIfNeeded:;
+- (unsigned long long)p_preCalculateRedPacketStyleWithRelationProgress:;
+- (void)p_changeToNewStyle:;
+- (void)setRedPacketStyle:;
+- (void)updatePresenterConfigWithStyle:;
+- (unsigned long long)calculateRedPacketStyleWithInfo:relationProgress:;
+- (id)getAttributeStringWithText:;
+- (BOOL)forceSetGrey;
+- (void)setForceSetGrey:;
+- (void)dealloc;
++ (BOOL)canCreateComponentWithContext:;
+@end

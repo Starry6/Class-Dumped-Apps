@@ -1,0 +1,38 @@
+@interface AWELandscapeDetailViewController : AWEBaseListViewController
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) AWELandscapePageContext context;
+@property (nonatomic) AWEBinding binding;
+@property (nonatomic) @? handlerBlock;
+@property (nonatomic) <AWELandscapeSplitScreenContainerDelegate> splitScreenContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)listDidReloadDataWithCollectionView:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)bindSectionViewModel;
+- (id)splitScreenContainer;
+- (void)setSplitScreenContainer:;
+- (void)updateWithModel:context:dataController:;
+- (void)handelFetchSectionDataState:;
+- (void)setupFooterIfNeed;
+- (void)trackSlideDetailPage;
+- (id)handlerBlock;
+- (void)viewDidLoad;
+- (void)scrollViewDidEndDecelerating:;
+- (void)setContext:;
+- (void)setHandlerBlock:;
+- (void).cxx_destruct;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (id)context;
+- (id)binding;
+- (id)currentModel;
+- (void)scrollViewDidEndScrolling;
+- (void)setCurrentModel:;
+- (void)setupCollectionView:;
+- (void)setBinding:;
+@end

@@ -1,0 +1,31 @@
+@interface AWENaviDuetInputData : NSObject
+@property (nonatomic) AWENaviDuetGeneralConfig general;
+@property (nonatomic) AWENaviDuetMissionConfig mission;
+@property (nonatomic) AWENaviDuetAnchorConfig anchor;
+@property (nonatomic) AWENaviTraceNode trace;
+@property (nonatomic) AWENaviActivityNode activity;
+@property (nonatomic) NSArray others;
+@property (nonatomic) NSDictionary effectNameToEffectMapping;
+@property (nonatomic) TTKNaviModel avatar;
+@property (nonatomic) AWENaviEffectContextModel contextModel;
+- (void)setMission:;
+- (id)mission;
+- (id)contextModel;
+- (void)setContextModel:;
+- (void)setEffectNameToEffectMapping:;
+- (id)effectNameToEffectMapping;
+- (void)setGeneral:;
+- (id)trace;
+- (id)anchor;
+- (id)initWithParams:;
+- (void)setAnchor:;
+- (id)general;
+- (id)activity;
+- (void).cxx_destruct;
+- (void)setActivity:;
+- (id)others;
+- (id)avatar;
+- (void)setAvatar:;
+- (void)setTrace:;
+- (void)setOthers:;
+@end

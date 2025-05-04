@@ -1,0 +1,30 @@
+@interface AWECommentListInputSelectGroupView : UIView
+@property (nonatomic) UIImageView groupIconImageView;
+@property (nonatomic) UILabel groupNameLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) AWEIMConversationInfoModel model;
+@property (nonatomic) @? closeButtonTapBlock;
+@property (nonatomic) BOOL hasGroup;
+@property (nonatomic) BOOL inputViewRefactor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)closeButtonTapBlock;
+- (void)setCloseButtonTapBlock:;
+- (BOOL)inputViewRefactor;
+- (void)setInputViewRefactor:;
+- (void)renderModel:context:;
+- (void)triggerCloseButton;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (void)__closeButtonTapped:;
+- (id)groupIconImageView;
+- (id)groupNameLabel;
+- (id)init;
+- (id)intrinsicContentSize;
+- (id)model;
+- (void).cxx_destruct;
+- (id)closeButton;
+- (BOOL)hasGroup;
+@end

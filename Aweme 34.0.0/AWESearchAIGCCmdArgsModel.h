@@ -1,0 +1,32 @@
+@interface AWESearchAIGCCmdArgsModel : MTLModel
+@property (nonatomic) NSString targetID;
+@property (nonatomic) NSString parentID;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString nextKey;
+@property (nonatomic) BOOL isDynamicRender;
+@property (nonatomic) NSString removeID;
+@property (nonatomic) NSString replaceID;
+@property (nonatomic) BOOL isFold;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isFold;
+- (void)setIsFold:;
+- (void)setNextKey:;
+- (BOOL)isDynamicRender;
+- (void)setIsDynamicRender:;
+- (id)removeID;
+- (void)setRemoveID:;
+- (id)parentID;
+- (id)targetID;
+- (void)setKey:;
+- (id)key;
+- (void).cxx_destruct;
+- (void)setParentID:;
+- (void)setTargetID:;
+- (id)replaceID;
+- (void)setReplaceID:;
+- (id)nextKey;
++ (id)JSONKeyPathsByPropertyKey;
+@end

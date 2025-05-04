@@ -1,0 +1,36 @@
+@interface AWEEcomSearchResultOuterCardLayer : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) AWEEcommerceSearchKiwiInfoModel kiwiInfo;
+@property (nonatomic) AWEEcommerceSearchAladdinInfoModel aladdinInfo;
+@property (nonatomic) NSArray boxDetection;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel originalProductCard;
+@property (nonatomic) NSArray tabInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)kiwiInfo;
+- (id)aladdinInfo;
+- (id)originalProductCard;
+- (id)boxDetection;
+- (void)setKiwiInfo:;
+- (void)setAladdinInfo:;
+- (void)fillMerchandiseResp:;
+- (void)setOriginalProductCard:;
+- (void)setBoxDetection:;
+- (id)sections;
+- (void)setSections:;
+- (void).cxx_destruct;
+- (id)tabInfo;
+- (void)setTabInfo:;
++ (id)sectionsJSONTransformer;
++ (id)tabInfoJSONTransformer;
++ (id)aladdinInfoJSONTransformer;
++ (id)kiwiInfoJSONTransformer;
++ (id)bannerDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

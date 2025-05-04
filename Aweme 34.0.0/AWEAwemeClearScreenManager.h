@@ -1,0 +1,35 @@
+@interface AWEAwemeClearScreenManager : NSObject
+@property (nonatomic) BOOL isInClearScreen;
+@property (nonatomic) BOOL enterByLongPressPanel;
+@property (nonatomic) BOOL enterByJingXuanMore;
+@property (nonatomic) BOOL enterByBottomBarBtn;
+@property (nonatomic) BOOL enterByTabBarBtn;
+@property (nonatomic) BOOL exitByLongPressPanel;
+@property (nonatomic) double enterClearScreenTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enterByLongPressPanel;
+- (BOOL)isInClearScreen;
+- (BOOL)enterByJingXuanMore;
+- (BOOL)enterByBottomBarBtn;
+- (BOOL)enterByTabBarBtn;
+- (void)trackerEnterClearScreen:enterMethod:referStr:model:;
+- (BOOL)exitByLongPressPanel;
+- (void)trackerExitClearScreen:enterMethod:referStr:model:duration:exitMethod:;
+- (long long)getPureModeEntryPosition;
+- (long long)getPureModeType;
+- (void)setEnterByLongPressPanel:;
+- (void)setEnterByJingXuanMore:;
+- (void)setExitByLongPressPanel:;
+- (void)setEnterByTabBarBtn:;
+- (void)setIsInClearScreen:;
+- (id)commonTrackParams:;
+- (double)enterClearScreenTime;
+- (void)setEnterByBottomBarBtn:;
+- (void)trackerExitElementClearScreen:enterMethod:referStr:model:exitMethod:;
+- (void)setEnterClearScreenTime:;
+- (void)resetTracker;
++ (id)shareManager;
+@end

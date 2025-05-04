@@ -1,0 +1,35 @@
+@interface AWENearbyGrouponTabGuideModel : MTLModel
+@property (nonatomic) Q guideType;
+@property (nonatomic) Q triggerTimingType;
+@property (nonatomic) BOOL activeDaysCondition;
+@property (nonatomic) BOOL enableGuideFromServer;
+@property (nonatomic) NSString snackBarTitle;
+@property (nonatomic) NSString extraInfo;
+@property (nonatomic) NSArray triggerList;
+@property (nonatomic) AWENearbyResourceOfFrequencyInfo frequencyData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)triggerList;
+- (unsigned long long)guideType;
+- (void)setGuideType:;
+- (void)setTriggerList:;
+- (id)frequencyData;
+- (void)setFrequencyData:;
+- (BOOL)enableGuideFromServer;
+- (unsigned long long)triggerTimingType;
+- (BOOL)activeDaysCondition;
+- (id)snackBarTitle;
+- (void)setTriggerTimingType:;
+- (void)setActiveDaysCondition:;
+- (void)setEnableGuideFromServer:;
+- (void)setSnackBarTitle:;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (void)setExtraInfo:;
++ (BOOL)automaticallyDefaultMapping;
++ (id)frequencyDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)triggerListJSONTransformer;
+@end

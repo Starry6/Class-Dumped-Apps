@@ -1,0 +1,37 @@
+@interface AWEPadKeyboardProgressControl : NSObject
+@property (nonatomic) AWEPadKeyboardDoubleSpeedPlayTipsView doubleSpeedTipsView;
+@property (nonatomic) @? seekOffsetBlk;
+@property (nonatomic) @? isActiviteBlk;
+@property (nonatomic) @? trackParamsBlk;
+@property (nonatomic) @? doubleSpeedPlayBeginBlk;
+@property (nonatomic) @? doubleSpeedPlayEndBlk;
+@property (nonatomic) BOOL longPressSeekBackBegin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)trackKeyEvent:key:clickType:;
+- (void)addHandleForSeekOffset:isActivite:tackParams:doubleSpeedPlayBegin:doubleSpeedPlayEnd:;
+- (void)setKeybindings;
+- (id)isActiviteBlk;
+- (id)seekOffsetBlk;
+- (id)doubleSpeedPlayBeginBlk;
+- (id)doubleSpeedTipsView;
+- (id)doubleSpeedPlayEndBlk;
+- (void)setLongPressSeekBackBegin:;
+- (void)longPressSeekBack;
+- (void)setSeekOffsetBlk:;
+- (void)setIsActiviteBlk:;
+- (void)setTrackParamsBlk:;
+- (void)setDoubleSpeedPlayBeginBlk:;
+- (void)setDoubleSpeedPlayEndBlk:;
+- (BOOL)longPressSeekBackBegin;
+- (id)trackParamsBlk;
+- (void)setDoubleSpeedTipsView:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)reset;
++ (Class)aAWEPadModuleAdapterClass;
+@end

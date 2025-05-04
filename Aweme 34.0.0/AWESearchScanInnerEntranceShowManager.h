@@ -1,0 +1,37 @@
+@interface AWESearchScanInnerEntranceShowManager : NSObject
++ (BOOL)isTeenModeEnabled;
++ (BOOL)isBasicModeEnabled;
++ (id)syncGetInnerCameraDetailPageSearchBarConfig;
++ (id)syncGetInnerScanDetailPageSearchBarConfig;
++ (id)syncGetInnerImageDetailPageSearchBarConfig;
++ (BOOL)syncGetInnerScanEntranceClearExit;
++ (BOOL)isEntranceExp;
++ (id)scanEntranceShouldShow:extra:;
++ (BOOL)referShield:;
++ (id)getGuideFreqConfigModel:;
++ (void)trackShowSearchIconFail:;
++ (void)recordEntranceShow:;
++ (void)trackShowSearchIcon:;
++ (void)recordEntranceClick:;
++ (void)trackClickSearchIcon:;
++ (BOOL)isRichMaxShow:;
++ (void)recordTypeShowInfo:;
++ (id)getSearchScanEntryConfig:extra:;
++ (BOOL)isEcomIntent:config:;
++ (BOOL)needShow:;
++ (BOOL)shouldShield:extra:;
++ (id)downGradeScanForEcomIntentOrShieldInfo:;
++ (id)setEntranceModel:type:;
++ (id)downGradeCameraForSensitiveInfo:;
++ (id)getStorageData;
++ (id)initializeFirstShowStorageModelData:;
++ (void)saveStorageData:;
++ (id)initialzeNewDayShowModelData:showTimes:clickTimes:;
++ (double)getDayDiff:now:;
++ (id)getFreqConfigModel:;
++ (id)initializeFirstClickStorageModelData:;
++ (long long)getEntranceShowTimes:;
++ (void)saveForeverShieldTarget:;
++ (void)resetStorageData;
++ (id)shareInstance;
+@end

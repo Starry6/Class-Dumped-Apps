@@ -1,0 +1,30 @@
+@interface AWEIMGiphyContentComponent : AWEIMFlexComponent
+@property (nonatomic) NSArray imageUrls;
+@property (nonatomic) <AWEIMConversationImageCacheComponentInterface> imageCache;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addForwardMsgResourceFromComponent;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (id)imageUrls;
+- (void)setImageUrls:;
+- (id)displayViewModel;
+- (void)p_updateAccessibility:;
+- (void)cellEndDisplay:;
+- (void)coverDidTappedForShanMengMessage;
+- (BOOL)coverDidTappedForGiphyMessage;
+- (void)p_refreshGiphyUI;
+- (void)p_setupGiphyUI;
+- (void)p_refreshRandomEmojiUI;
+- (void)p_refreshPresenterProps;
+- (void)p_precheckRandomInteractiveEmojiResult;
+- (id)displayMessage;
+- (void)setScene:;
+- (long long)scene;
+- (void)setImageCache:;
+- (id)imageCache;
+- (void).cxx_destruct;
+@end

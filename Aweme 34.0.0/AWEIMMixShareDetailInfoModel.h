@@ -1,0 +1,37 @@
+@interface AWEIMMixShareDetailInfoModel : MTLModel
+@property (nonatomic) q shareTaskId;
+@property (nonatomic) NSString styleId;
+@property (nonatomic) NSString styleTitle;
+@property (nonatomic) NSString styleUrl;
+@property (nonatomic) q mixNumUpperLimit;
+@property (nonatomic) q shareTime;
+@property (nonatomic) q styleType;
+@property (nonatomic) AWEIMMixShareDetailInfoModel_PhotoInfo photoInfo;
+@property (nonatomic) AWEIMMixShareDetailInfoModel_SlotDetail loraSlotDetail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)shareTaskId;
+- (void)setShareTaskId:;
+- (long long)mixNumUpperLimit;
+- (void)setMixNumUpperLimit:;
+- (void)setStyleType:;
+- (long long)shareTime;
+- (void)setShareTime:;
+- (id)styleUrl;
+- (void)setStyleUrl:;
+- (id)styleTitle;
+- (void)setStyleTitle:;
+- (id)loraSlotDetail;
+- (void)setLoraSlotDetail:;
+- (id)photoInfo;
+- (void)setPhotoInfo:;
+- (long long)styleType;
+- (void).cxx_destruct;
+- (id)styleId;
+- (void)setStyleId:;
++ (id)photoInfoJSONTransformer;
++ (id)loraSlotDetailJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

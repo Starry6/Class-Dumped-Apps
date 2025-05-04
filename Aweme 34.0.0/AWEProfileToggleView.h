@@ -1,0 +1,32 @@
+@interface AWEProfileToggleView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView<AWESettingSwitchProtocol> toggle;
+@property (nonatomic) BOOL toggleIsOn;
+@property (nonatomic) BOOL isModelView;
+@property (nonatomic) BOOL isCardUIStyle;
+@property (nonatomic) NSString title;
+@property (nonatomic) @? toggleBlock;
+- (id)initWithTitle:isOn:isCardUIStyle:isModelView:toggleBlock:;
+- (BOOL)isModelView;
+- (BOOL)toggleIsOn;
+- (BOOL)isCardUIStyle;
+- (void)toggleSwitched:;
+- (id)toggleBlock;
+- (id)initWithTitle:isOn:isModelView:toggleBlock:;
+- (void)updateToggleState:;
+- (void)updateToggleTitle:;
+- (void)setToggleIsOn:;
+- (void)setIsModelView:;
+- (void)setIsCardUIStyle:;
+- (void)setToggleBlock:;
+- (id)intrinsicContentSize;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (void)setTitle:;
+- (void)setToggle:;
+- (id)toggle;
+- (void)setupUI;
+- (BOOL)toggleState;
+@end

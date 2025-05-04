@@ -1,0 +1,34 @@
+@interface AWEIMRecommendFansGroupModel : IESIMBaseApiModel
+@property (nonatomic) q groupId;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSString groupOwnerName;
+@property (nonatomic) q groupOwnerId;
+@property (nonatomic) NSString groupOwnerSecUid;
+@property (nonatomic) NSString groupIcon;
+@property (nonatomic) q groupMemberCount;
+@property (nonatomic) Q joinStatus;
+@property (nonatomic) BOOL needCut;
+@property (nonatomic) NSArray groupTags;
+- (id)groupIcon;
+- (void)setGroupIcon:;
+- (id)groupOwnerSecUid;
+- (void)setGroupOwnerSecUid:;
+- (void)setJoinStatus:;
+- (void)setGroupMemberCount:;
+- (BOOL)needCut;
+- (void)setNeedCut:;
+- (unsigned long long)joinStatus;
+- (id)groupTags;
+- (void)setGroupTags:;
+- (void)setGroupOwnerName:;
+- (id)groupOwnerName;
+- (long long)groupOwnerId;
+- (void)setGroupOwnerId:;
+- (void)setGroupName:;
+- (void)setGroupId:;
+- (long long)groupId;
+- (id)groupName;
+- (void).cxx_destruct;
+- (long long)groupMemberCount;
++ (id)JSONKeyPathsByPropertyKey;
+@end

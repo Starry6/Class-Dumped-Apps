@@ -1,0 +1,38 @@
+@interface AWEUserRecommendFooterView : UIView
+@property (nonatomic) UILabel promptLabel;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) AWEBinding dataStateBinding;
+@property (nonatomic) BOOL displaying;
+@property (nonatomic) BOOL hasTriggeredLoadMore;
+@property (nonatomic) <AWEUserRecommendTableViewModelProtocol> viewModel;
+@property (nonatomic) q scrollDirection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)didScrollWithVelocity:;
+- (void)willBeginDragging;
+- (void)p_loadMore;
+- (void)setDisplaying:;
+- (BOOL)displaying;
+- (id)dataStateBinding;
+- (void)setDataStateBinding:;
+- (BOOL)hasTriggeredLoadMore;
+- (void)setHasTriggeredLoadMore:;
+- (void)setScrollDirection:;
+- (long long)scrollDirection;
+- (id)promptLabel;
+- (void)setPromptLabel:;
+- (void)setLoadingView:;
+- (void)config;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)didEndDisplaying;
+- (void)willDisplay;
++ (double)height;
++ (id)headerFooterView;
+@end

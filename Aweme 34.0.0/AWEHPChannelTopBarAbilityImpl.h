@@ -1,0 +1,33 @@
+@interface AWEHPChannelTopBarAbilityImpl : AWEHPChannelBaseAbilityImpl
+@property (nonatomic) <AWEHPChannelTopBarAbilityImpl> target;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showBubbleWithModel:showCallback:clickCallback:dismissCallback:;
+- (void)hideBubbleWithCompletion:;
+- (void)showBadgeWithModel:showCallBack:hideCallBack:downgradeCallBack:;
+- (void)hideBadgeWithCompletion:;
+- (void)updateEntranceWithModel:completion:;
+- (double)tabSegmentShowPercentWithChannelId:;
+- (id)topContainerFrame;
+- (void)changeAlphaWith:;
+- (id)bottomCenterOfTabSegmentWithChannelId:;
+- (void)removeAllResourcesIfNeedBeforeChannelUnload;
+- (void)showBadgeWithModel:preCheckCallBack:showCallBack:hideCallBack:downgradeCallBack:;
+- (void)addTrackParamsWithModel:currentPercent:;
+- (BOOL)isTabVisibleWithCurrentPercent:;
+- (void)trackRedDotShowInterceptWithComponentID:tabShowPercent:;
+- (void)showBubbleWithModel:preCheckCallBack:showCallback:clickCallback:dismissCallback:;
+- (BOOL)checkTargetValid;
+- (BOOL)checkChannelValid;
+- (void)tryShowBadgeWithModel:preCheckCallBack:;
+- (void)tryShowBubbleWithModel:preCheckCallBack:;
+- (BOOL)isTabVisibleForShowBadge;
+- (void)scrollToTabSegmentWithChannelId:animated:;
+- (id)tabSegmentViewRect;
+- (id)topCenterPointOfWindowWithChannelId:;
+- (id)target;
+- (void)setTarget:;
+- (void).cxx_destruct;
+@end

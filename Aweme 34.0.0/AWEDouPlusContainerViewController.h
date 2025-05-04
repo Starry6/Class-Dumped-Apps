@@ -1,0 +1,33 @@
+@interface AWEDouPlusContainerViewController : UIViewController
+@property (nonatomic) UIView topBlankAreaView;
+@property (nonatomic) UIView coreAreaView;
+@property (nonatomic) UIView mainContainerView;
+@property (nonatomic) AWEDouPlusContainerNavigationBar navigationBar;
+@property (nonatomic) UIView navigationTopLine;
+@property (nonatomic) q navigationBarType;
+@property (nonatomic) BOOL dismissWhenClickBlankArea;
+@property (nonatomic) BOOL shouldShouldNavigationTopLineView;
+- (id)topBlankAreaView;
+- (id)coreAreaView;
+- (BOOL)shouldShouldNavigationTopLineView;
+- (id)navigationTopLine;
+- (id)mainContainerView;
+- (double)coreAreaHeight;
+- (void)addCoreAreaViewRoundedCorners:cornerRadii:;
+- (BOOL)dismissWhenClickBlankArea;
+- (void)dismissFromParentViewController;
+- (void)setDismissWhenClickBlankArea:;
+- (long long)navigationBarType;
+- (void)showInParentViewController:;
+- (void)setMainContainerView:;
+- (void)setCoreAreaView:;
+- (void)setNavigationBarType:;
+- (void)setShouldShouldNavigationTopLineView:;
+- (void)setTopBlankAreaView:;
+- (void)setNavigationTopLine:;
+- (id)navigationBar;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)setNavigationBar:;
+- (void)dismissTapped;
+@end

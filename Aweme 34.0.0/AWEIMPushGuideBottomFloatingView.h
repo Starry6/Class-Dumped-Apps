@@ -1,0 +1,31 @@
+@interface AWEIMPushGuideBottomFloatingView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIVisualEffectView backgroundBlurView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) DUXButton confirmBtn;
+@property (nonatomic) UIButton closeBtn;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) @? confirmBlock;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (void)didClickClose;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (id)confirmBtn;
+- (void)setConfirmBtn:;
+- (id)confirmBlock;
+- (void)setConfirmBlock:;
+- (void)updateTitle:btnText:;
+- (void)showBackgroundBlur:;
+- (id)initWithWidth:insets:;
+- (void)initSubviewWithInsets:;
+- (void)didClickConfirm;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)backgroundBlurView;
+- (void)setBackgroundBlurView:;
+@end

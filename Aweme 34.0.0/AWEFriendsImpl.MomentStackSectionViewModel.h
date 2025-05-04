@@ -1,0 +1,2 @@
+@interface AWEFriendsImpl.MomentStackSectionViewModel : BDMultiContentContainer.BaseContentSectionViewModel
+@end

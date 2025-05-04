@@ -1,0 +1,2 @@
+@interface AWEIMTaskDetailistSectionSelectionHeaderModel : AWEIMTaskDetailistSectionDefaultHeaderModel
+@end

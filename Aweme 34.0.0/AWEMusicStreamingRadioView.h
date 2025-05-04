@@ -1,0 +1,30 @@
+@interface AWEMusicStreamingRadioView : UIView
+@property (nonatomic) BOOL needAdaptBigFont;
+@property (nonatomic) AWEMusicRadioBox radioBox;
+@property (nonatomic) UIColor boxBorderColor;
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIButton btn;
+@property (nonatomic) double space;
+@property (nonatomic) @? selectChangedBlock;
+- (id)btn;
+- (id)radioBox;
+- (void)setRadioBox:;
+- (void)setBtn:;
+- (id)selectChangedBlock;
+- (void)setSelectChangedBlock:;
+- (id)initWithBoxBorderColor:needAdaptBigFont:;
+- (BOOL)needAdaptBigFont;
+- (void)tappedAction:;
+- (void)setNeedAdaptBigFont:;
+- (void)setLabel:;
+- (id)intrinsicContentSize;
+- (void)setup;
+- (id)label;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)layoutSubviews;
+- (double)space;
+- (id)boxBorderColor;
+- (void)setBoxBorderColor:;
+- (void)setSpace:;
+@end

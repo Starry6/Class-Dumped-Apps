@@ -1,0 +1,36 @@
+@interface AWEAwemeDetailBottomBarCoordinator : NSObject
+@property (nonatomic) NSMutableArray bottomBarControllerArray;
+@property (nonatomic) <AWEAwemeDetailBottomBarCommonContextProtocol> context;
+@property (nonatomic) NSObject<AWEAwemeDetailBottomBarController> activeBottomBarController;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView aboveSubview;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateBottomBarWithAweme:updateTiming:;
+- (void)updateCurrentAwemeModel:;
+- (void)cellDidEndDisplay:;
+- (void)updateBottomBarAlpha:;
+- (void)updateCurrentIndexPath:;
+- (void)cellWillDisplay:forRowAtIndexPath:tableView:;
+- (void)updatePlayTime:canPlayTime:totalTime:;
+- (void)setBottomBarHidden:;
+- (id)activeBottomBarController;
+- (void)registerBottomBarContext:withCreateBlock:;
+- (id)initWithContext:containerView:aboveSubview:;
+- (id)referStringWithContext:;
+- (id)bottomBarControllerArray;
+- (void)setActiveBottomBarController:;
+- (id)aboveSubview;
+- (void)hideBottomBarForAweme:;
+- (id)getCurrentPlayingStoryModelForOuterModel:;
+- (void)setBottomBarControllerArray:;
+- (void)setAboveSubview:;
+- (void)dealloc;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

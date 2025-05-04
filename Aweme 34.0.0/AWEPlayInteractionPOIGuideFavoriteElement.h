@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionPOIGuideFavoriteElement : AWEPlayInteractionBaseActionButtonElement
+@property (nonatomic) AWEPlayInteractionPOIGuideFavoriteView poiView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewController_willDisplay;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)viewDidDisposed;
+- (id)aAWEFeedModuleServiceDOUYINSSAdapter;
+- (id)poiView;
+- (void)setPoiView:;
+- (BOOL)shouldActivateButtonWithData:;
+- (void)p_layoutUI;
+- (id)p_trackCommonParams;
+- (void)p_showElementIfNeeded;
+- (BOOL)shouldShowPOIFavoriteElementWhenPlaying;
+- (void)p_lanuchShowElement;
+- (void)p_addFavoriteObserver;
+- (id)p_trackLoginParams;
+- (void)p_trackShowPOIDetailElement;
+- (void)p_trackShowPOIElement;
+- (void)p_updateShowElementLayoutWithViewConfig:;
+- (void)p_didReceiveFavoriteStatusUpdatedNotifications:;
+- (void)p_configPOIViewTouchEvent;
+- (BOOL)shouldShowPOIFavoriteElement;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
++ (id)activateInfoWithContext:;
++ (Class)aAWEFeedModuleServiceDOUYINSSAdapterClass;
+@end

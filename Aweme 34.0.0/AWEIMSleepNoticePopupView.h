@@ -1,0 +1,34 @@
+@interface AWEIMSleepNoticePopupView : AWEIMBasePopupView
+@property (nonatomic) UIImageView avatarImgView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIPickerView datePicker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)avatarImgView;
+- (void)setAvatarImgView:;
+- (void)showTitle:subTitle:setting:;
+- (id)contentAttributedStringWithString:;
+- (void)p_setupUITitle:subTitle:setting:;
+- (void)p_trackSleepNoticeSettingShow;
+- (void)confirmOpenSleepNotice;
+- (id)getSleepTimeTextWithIndex:;
+- (long long)getSleepTimeWithIndex:;
+- (void)p_trackSleepNoticeSettingConfirm:;
+- (void)hide;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (long long)numberOfComponentsInPickerView:;
+- (id)datePicker;
+- (long long)pickerView:numberOfRowsInComponent:;
+- (double)pickerView:rowHeightForComponent:;
+- (id)pickerView:viewForRow:forComponent:reusingView:;
+- (void)setDatePicker:;
+- (id)contentLabel;
+- (void)setContentLabel:;
++ (BOOL)isShowing;
+@end

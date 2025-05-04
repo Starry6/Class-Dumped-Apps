@@ -1,0 +1,33 @@
+@interface AWEIMFansGroupWelcomeMessage : AWEIMMessage
+@property (nonatomic) {CGSize=dd} contentSize;
+@property (nonatomic) NSDictionary contentAttributes;
+@property (nonatomic) NSDictionary contentDict;
+@property (nonatomic) NSAttributedString contentAttributedString;
+@property (nonatomic) @? welcomeSetClickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)attributedContent;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)contentDict;
+- (void)setContentDict:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (id)pluginsComponentsName;
+- (BOOL)supportRefactorCell;
+- (id)welcomeSetClickBlock;
+- (void)setWelcomeSetClickBlock:;
+- (void)setContentSize:;
+- (double)fontSize;
+- (id)contentAttributes;
+- (id)messageSize;
+- (id)contentSize;
+- (long long)templateType;
+- (id)style;
+- (void).cxx_destruct;
+- (void)setContentAttributes:;
+- (id)contentAttributedString;
+- (void)setContentAttributedString:;
+@end

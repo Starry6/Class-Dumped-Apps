@@ -1,0 +1,38 @@
+@interface AWEElderModeAlertManager : NSObject
+@property (nonatomic) double lastAlertTime;
+@property (nonatomic) q coldLaunchCounts;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) q userType;
+@property (nonatomic) AWEElderModeAlertView alertView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (BOOL)canShow;
+- (void)showWithCloseCallback:;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)updateColdLaunchCounts;
+- (void)updateUserType;
+- (void)showElderModeAlert;
+- (void)showElderModeAlertWithPolling;
+- (void)clickOpenElderMode;
+- (void)updateLastAlertTime;
+- (double)lastAlertTime;
+- (long long)coldLaunchCounts;
+- (void)setColdLaunchCounts:;
+- (void)setLastAlertTime:;
+- (void)triggerElderModeAlert;
+- (BOOL)isAlertShowing;
+- (id)init;
+- (long long)userType;
+- (id)alertView;
+- (void)setAlertView:;
+- (void).cxx_destruct;
+- (BOOL)hasShown;
+- (void)setHasShown:;
+- (void)setUserType:;
++ (id)sharedManager;
+@end

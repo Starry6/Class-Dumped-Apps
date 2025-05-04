@@ -1,0 +1,30 @@
+@interface AWEIMMessageTabTaskPlatformComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMTaskPlatformTracker taskPlatformTracker;
+@property (nonatomic) <AWEIMChatListInterface> chatListService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLCMessageHandlerProtocol> messageHandler;
+- (id)sessionIDList;
+- (void)stickOnTopStateDidChange:reason:;
+- (BOOL)shouldStickOnTopByDefault;
+- (void)ieslc_messageHandler:didReceiveMsg:;
+- (BOOL)stickOnTop;
+- (void)hostVC_viewDidDisappear;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)hostVC_viewDidAppear;
+- (void)setChatListService:;
+- (id)chatListService;
+- (void)handleTaskPlatformStickOnTopChange:;
+- (void)p_handleReceivedPushServiceWithMsg:;
+- (void)onCardDataChange;
+- (void)updateStickOnTopState:completion:;
+- (id)taskPlatformTracker;
+- (void)setTaskPlatformTracker:;
+- (void)dealloc;
+- (id)businessID;
+- (void).cxx_destruct;
+@end

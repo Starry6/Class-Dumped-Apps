@@ -1,0 +1,34 @@
+@interface AWECommentPanelContainerSwiftImpl.CommentViewControllerPanelTabSetting : NSObject
+@property (nonatomic) Q currentTab;
+@property (nonatomic) Q defaultLandingTab;
+@property (nonatomic) Q intentTab;
+@property (nonatomic) NSArray insertIDs;
+@property (nonatomic) NSArray insertLikerIDs;
+@property (nonatomic) NSArray insertViewerIDs;
+@property (nonatomic) NSArray insertRewarderIDs;
+@property (nonatomic) NSArray insertReqIDs;
+@property (nonatomic) NSArray insertFavoriteIDs;
+@property (nonatomic) q liteRewardCollectAmount;
+- (void)setInsertIDs:;
+- (id)insertIDs;
+- (void)setInsertReqIDs:;
+- (id)insertReqIDs;
+- (unsigned long long)intentTab;
+- (id)insertFavoriteIDs;
+- (void)setInsertFavoriteIDs:;
+- (unsigned long long)defaultLandingTab;
+- (void)setInsertLikerIDs:;
+- (id)insertLikerIDs;
+- (void)setInsertRewarderIDs:;
+- (id)insertRewarderIDs;
+- (id)insertViewerIDs;
+- (void)setDefaultLandingTab:;
+- (void)setIntentTab:;
+- (void)setInsertViewerIDs:;
+- (long long)liteRewardCollectAmount;
+- (void)setLiteRewardCollectAmount:;
+- (id)init;
+- (void).cxx_destruct;
+- (unsigned long long)currentTab;
+- (void)setCurrentTab:;
+@end

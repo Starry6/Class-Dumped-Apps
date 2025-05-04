@@ -1,0 +1,31 @@
+@interface AWELiveLifeExpoundCardLynxModuleOperator : NSObject
+@property (nonatomic) AWELiveLifeLynxView lynxModule;
+@property (nonatomic) NSString processId;
+@property (nonatomic) @? processCompletion;
+@property (nonatomic) @? closeBtnClickedBlock;
+@property (nonatomic) @? buyBtnClickedBlock;
+@property (nonatomic) @? cardClickedBlock;
+- (id)closeBtnClickedBlock;
+- (void)setCloseBtnClickedBlock:;
+- (void)setCardClickedBlock:;
+- (void)setBuyBtnClickedBlock:;
+- (void)sendCardDidAppearEventWithParams:;
+- (void)sendSeckillCardTrackerEvent;
+- (void)sendClickEventWithParams:;
+- (id)updateGaiaxDataForSpecialSence:;
+- (id)cardClickedBlock;
+- (id)buyBtnClickedBlock;
+- (id)syncProcessExpoundCardData:;
+- (void)setupLynxModule;
+- (void)setLynxModule:;
+- (id)lynxModule;
+- (id)processCompletion;
+- (void)setProcessCompletion:;
+- (id)init;
+- (void)dealloc;
+- (id)processId;
+- (BOOL)isReady;
+- (void)setProcessId:;
+- (void).cxx_destruct;
+- (id)moduleVersion;
+@end

@@ -1,0 +1,30 @@
+@interface AWETeenModeSaveButton : UIButton
+@property (nonatomic) UIView downloadingView;
+@property (nonatomic) CAShapeLayer downloadingLayer;
+@property (nonatomic) AWETeenSaveButtonModel buttonModel;
+@property (nonatomic) NSTimer scalingTimer;
+@property (nonatomic) double scalingCount;
+@property (nonatomic) @? clickBlock;
+- (void)p_setupUI;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (void)p_setupBinding;
+- (void)p_clickToDownload;
+- (void)setScalingCount:;
+- (void)p_scalingGuide;
+- (void)setScalingTimer:;
+- (id)scalingTimer;
+- (id)downloadingView;
+- (void)p_updateBGColor;
+- (id)downloadingLayer;
+- (double)scalingCount;
+- (void)setDownloadingView:;
+- (void)setDownloadingLayer:;
+- (void)endAnimation;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)beginAnimation;
+- (void)setButtonModel:;
+- (id)buttonModel;
++ (id)buttonWithModel:;
+@end

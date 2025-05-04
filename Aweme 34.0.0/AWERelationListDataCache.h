@@ -1,0 +1,35 @@
+@interface AWERelationListDataCache : NSObject
+@property (nonatomic) AWERelationFollowListCacheData cacheData;
+@property (nonatomic) q state;
+@property (nonatomic) BOOL hasCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (void)updateCleanList:;
+- (void)updateGroupCount:;
+- (void)updateFollowList:;
+- (void)trackCacheUsageWithList:error:;
+- (id)cacheData;
+- (void)markCleanList;
+- (void)markGroupCount;
+- (void)syncCache;
+- (void)setCacheData:;
+- (void)trackClearCache:;
+- (void)syncCacheForced;
+- (void)clearCache;
+- (id)init;
+- (void)dealloc;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (void)setState:;
+- (id)copyWithZone:;
+- (BOOL)hasCache;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

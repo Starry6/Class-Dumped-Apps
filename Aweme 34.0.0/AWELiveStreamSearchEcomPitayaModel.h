@@ -1,0 +1,35 @@
+@interface AWELiveStreamSearchEcomPitayaModel : MTLModel
+@property (nonatomic) NSInteger code;
+@property (nonatomic) NSInteger refresh;
+@property (nonatomic) NSInteger enter_inner_channel;
+@property (nonatomic) double valid_ts;
+@property (nonatomic) NSDictionary after_feed_params;
+@property (nonatomic) NSString pitaya_upload_info;
+@property (nonatomic) NSString room_id;
+@property (nonatomic) NSNumber business_id;
+@property (nonatomic) NSString category_name;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoom_id:;
+- (id)pitaya_upload_info;
+- (double)valid_ts;
+- (id)after_feed_params;
+- (void)setAfter_feed_params:;
+- (void)setPitaya_upload_info:;
+- (id)business_id;
+- (int)enter_inner_channel;
+- (void)setEnter_inner_channel:;
+- (void)setValid_ts:;
+- (void)setBusiness_id:;
+- (int)code;
+- (int)refresh;
+- (void)setCode:;
+- (void)setRefresh:;
+- (void).cxx_destruct;
+- (id)category_name;
+- (void)setCategory_name:;
+- (id)room_id;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,38 @@
+@interface AWELandscapeLVSelectEpisodeNumberListCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView playingContainerView;
+@property (nonatomic) LOTAnimationView playingAnimationView;
+@property (nonatomic) UILabel playingLabel;
+@property (nonatomic) UIView tagBackgroundView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel rankLabel;
+@property (nonatomic) # longVideoUtil;
+@property (nonatomic) AWELVideoEpisodeInfoModel episodeInfo;
+- (id)episodeInfo;
+- (void)setEpisodeInfo:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (Class)longVideoUtil;
+- (void)setTagBackgroundView:;
+- (id)tagBackgroundView;
+- (id)playingContainerView;
+- (id)playingAnimationView;
+- (id)playingLabel;
+- (void)updateWithSelectedStatus:;
+- (void)setPlayingContainerView:;
+- (void)setPlayingAnimationView:;
+- (void)setPlayingLabel:;
+- (void)setLongVideoUtil:;
+- (void)updateNumberingInfoWithEpisodeInfo:;
+- (void)setupSelectedUI:;
+- (void)updateWithEpisodeInfo:selected:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)rankLabel;
+- (void)setRankLabel:;
++ (id)reuseIdentifier;
+@end

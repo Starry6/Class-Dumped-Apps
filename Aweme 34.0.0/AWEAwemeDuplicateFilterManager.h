@@ -1,0 +1,32 @@
+@interface AWEAwemeDuplicateFilterManager : NSObject
+@property (nonatomic) NSMutableDictionary yesterdayDict;
+@property (nonatomic) NSMutableDictionary todayDict;
+@property (nonatomic) NSDate todayDate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)todayDate;
+- (void)setTodayDate:;
+- (id)todayDict;
+- (void)setYesterdayDict:;
+- (void)setTodayDict:;
+- (id)yesterdayDict;
+- (BOOL)enableFeedDuplicateFilterLog;
+- (void)addAwemeID:imprID:;
+- (BOOL)isDuplicateForLog:;
+- (id)lastImprIDForLog:;
+- (id)lastPlayTimeForLog:;
+- (BOOL)isDuplicateForIMPush:;
+- (id)init;
+- (id)dateForKey:;
+- (void)setDictionary:forKey:;
+- (id)dictionaryForKey:;
+- (void).cxx_destruct;
+- (BOOL)isDuplicate:;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (void)setDate:forKey:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

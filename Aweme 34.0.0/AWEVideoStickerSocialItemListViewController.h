@@ -1,0 +1,33 @@
+@interface AWEVideoStickerSocialItemListViewController : AWEHalfScreenBaseViewController
+@property (nonatomic) NSArray socialInfos;
+@property (nonatomic) @? itemSelectHander;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)p_setupView;
+- (id)socialInfos;
+- (id)itemSelectHander;
+- (id)initWithWithSocialInfos:itemSelectHander:;
+- (void)setSocialInfos:;
+- (void)setItemSelectHander:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (unsigned long long)viewStyle;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)viewDidAppear:;
+- (double)tableView:heightForHeaderInSection:;
+- (unsigned long long)animationStyle;
+- (double)tableView:heightForFooterInSection:;
+- (double)containerWidth;
++ (Class)aAWEPadModuleAdapterClass;
++ (void)showSocialItemListPopViewWithSocialInfos:itemSelectHander:;
+@end

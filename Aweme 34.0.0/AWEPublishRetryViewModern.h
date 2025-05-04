@@ -1,0 +1,32 @@
+@interface AWEPublishRetryViewModern : UIView
+@property (nonatomic) AWEPublishResultView resultView;
+@property (nonatomic) UIWindow overlayWindow;
+@property (nonatomic) @? retryAction;
+@property (nonatomic) @? closeAction;
+@property (nonatomic) @? panToDismissAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCoverImage:;
+- (void)dismiss:completion:;
+- (id)initWithType:title:subtitle:buttonTitle:;
+- (void)toggleRetryButton:;
+- (void)setPanToDismissAction:;
+- (void)indicatorButtonTapped;
+- (id)panToDismissAction;
+- (void)show;
+- (id)intrinsicContentSize;
+- (void)setCloseAction:;
+- (id)retryAction;
+- (void).cxx_destruct;
+- (id)closeAction;
+- (void)handlePanGesture:;
+- (void)setCoverImageURL:;
+- (id)resultView;
+- (void)setResultView:;
+- (id)overlayWindow;
+- (void)setOverlayWindow:;
+- (void)actionButtonTapped;
+- (void)setRetryAction:;
+@end

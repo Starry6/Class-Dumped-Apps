@@ -1,0 +1,2 @@
+@interface _TtGCV23AWEServiceKitSwiftUtils17UnfairLockGuarded7GuardedSb__ : _TtCs12_SwiftObject
+@end

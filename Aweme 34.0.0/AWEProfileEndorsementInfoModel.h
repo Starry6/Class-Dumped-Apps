@@ -1,0 +1,33 @@
+@interface AWEProfileEndorsementInfoModel : MTLModel
+@property (nonatomic) Q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString darkImageUrl;
+@property (nonatomic) NSString lightImageUrl;
+@property (nonatomic) NSString trackerLinkType;
+@property (nonatomic) Q lineBreakType;
+@property (nonatomic) AWEProfileEndorsementSubtitleInfo subtitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDarkImageUrl:;
+- (id)darkImageUrl;
+- (id)trackerLinkType;
+- (void)setTrackerLinkType:;
+- (id)lightImageUrl;
+- (void)setLightImageUrl:;
+- (unsigned long long)lineBreakType;
+- (void)setLineBreakType:;
+- (id)subtitle;
+- (void)setAction:;
+- (void)setSubtitle:;
+- (unsigned long long)type;
+- (id)action;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)subtitleJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

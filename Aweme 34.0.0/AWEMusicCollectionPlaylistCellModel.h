@@ -1,0 +1,38 @@
+@interface AWEMusicCollectionPlaylistCellModel : NSObject
+@property (nonatomic) AWEMusicCollectionPlaylistCell cell;
+@property (nonatomic) BOOL haveMorePlaylist;
+@property (nonatomic) @? gotoPlaylistBlock;
+@property (nonatomic) @? clickPlaylistBlock;
+@property (nonatomic) @? clickPlaylistCreateBlock;
+@property (nonatomic) @? didShowPlaylistBlock;
+@property (nonatomic) NSArray playlistArray;
+@property (nonatomic) <AWEMusicCollectionPlaylistCellModelProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL shouldShowHighlightAnimation;
+- (double)cellHieght;
+- (BOOL)shouldShowHighlightAnimation;
+- (id)cellForTableView:indexPath:;
+- (void)setPlaylistArray:;
+- (id)playlistArray;
+- (void)setDidShowPlaylistBlock:;
+- (void)setShouldShowHighlightAnimation:;
+- (id)didShowPlaylistBlock;
+- (void)setHaveMorePlaylist:;
+- (id)gotoPlaylistBlock;
+- (BOOL)isNeedShowFavoriteIconWithPlaylistModel:;
+- (BOOL)haveMorePlaylist;
+- (id)clickPlaylistBlock;
+- (id)clickPlaylistCreateBlock;
+- (void)setGotoPlaylistBlock:;
+- (void)setClickPlaylistBlock:;
+- (void)setClickPlaylistCreateBlock:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)cell;
+- (void)setCell:;
+- (BOOL)isCurrentUser;
+@end

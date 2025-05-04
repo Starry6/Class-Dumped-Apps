@@ -1,0 +1,35 @@
+@interface AWEAdPromise : NSObject
+@property (nonatomic) RxDeferred deferred;
+@property (nonatomic) @? task;
+@property (nonatomic) @? errorTask;
+@property (nonatomic) AWEAdPromiseContext context;
+@property (nonatomic) RxScheduler scheduler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)whenCancelled:;
+- (void)setErrorTask:;
+- (void)runTaskWithContext:;
+- (id)errorTask;
+- (BOOL)complete;
+- (id)deferred;
+- (void)setTask:;
+- (id)init;
+- (void)setDeferred:;
+- (id)task;
+- (void)resolve;
+- (void)reject;
+- (void)cancel;
+- (void)setScheduler:;
+- (id)scheduler;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)promise;
+- (id)context;
++ (id)promiseTask:;
++ (id)promiseTask:errorTask:scheduler:;
++ (id)promiseTask:errorTask:;
++ (id)defaultRejectPromise;
++ (id)defaultResolvePromise;
+@end

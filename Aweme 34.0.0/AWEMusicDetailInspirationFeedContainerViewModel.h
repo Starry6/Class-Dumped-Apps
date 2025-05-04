@@ -1,0 +1,38 @@
+@interface AWEMusicDetailInspirationFeedContainerViewModel : AWEBaseListViewModel
+@property (nonatomic) AWEMusicDetailDataContext dataContext;
+@property (nonatomic) AWEMusicDetailInspirationFeedDataContext feedDataContext;
+@property (nonatomic) AWEMusicDetailTrackInstance trackInstance;
+@property (nonatomic) AWEMusicDetailInspirationSectionViewModel inspirationViewModel;
+@property (nonatomic) AWEMusicDetailInspirationFeedSectionViewModel feedSectionViewModel;
+@property (nonatomic) AWEMusicDetailEmptyTipSectionViewModel emptyTipSectionViewModel;
+@property (nonatomic) BOOL isEmptyList;
+@property (nonatomic) BOOL hasMoreData;
+- (void)setupViewModel;
+- (id)dataContext;
+- (id)trackInstance;
+- (void)preloadDetailData;
+- (id)feedDataContext;
+- (void)prepareTrackInstance:;
+- (void)shareRecommendedAwemeCoversForIM;
+- (void)setDataContext:;
+- (void)setTrackInstance:;
+- (void)updateDataContext:;
+- (void)preparePlaceHolderView:;
+- (void)showFirstPageInspirationListDataIfNeeded:;
+- (void)showFirstPageViedeoListDataIfNeeded:;
+- (void)showEmptyTipViewIfNeeded:;
+- (id)feedSectionViewModel;
+- (BOOL)isEmptyList;
+- (double)heightForInspirationSectionView;
+- (void)loadMoreVideoListDataIfNeeded;
+- (id)currentSectionViewModelList;
+- (id)inspirationViewModel;
+- (id)emptyTipSectionViewModel;
+- (BOOL)inspirationIsEmptyList;
+- (void)setFeedDataContext:;
+- (void)setFeedSectionViewModel:;
+- (void)setInspirationViewModel:;
+- (void)setEmptyTipSectionViewModel:;
+- (void).cxx_destruct;
+- (BOOL)hasMoreData;
+@end

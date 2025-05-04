@@ -1,0 +1,2 @@
+@interface AWERVStudyController : AWERVBaseController
+@end

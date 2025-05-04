@@ -1,0 +1,31 @@
+@interface AWEPadMixVideoRotateAdapter : NSObject
+@property (nonatomic) UIPanGestureRecognizer panGesture;
+@property (nonatomic) {CGPoint=dd} startContentOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (id)aAWEPadSplitScreenAdapter;
+- (BOOL)isMixVideoSplitStyle;
+- (void)performViewWillTransToSize:withTransitionCoordinator:;
+- (void)performShowAnimationForRotateWithShow:;
+- (void)performViewWillTrans;
+- (BOOL)supportedInterfaceOrientationsFollowPreViewController;
+- (void)updatePanelControllerLayoutWithSize:;
+- (void)updatePanelContainerLayoutWithSize:;
+- (void)updatePanelPositionBeforeShowWithSize:;
+- (void)updatePanelControllerLayoutForMultiScreen;
+- (BOOL)isCurrentLandscapeWithSize:;
+- (BOOL)shouldAutorotate;
+- (void).cxx_destruct;
+- (void)setStartContentOffset:;
+- (id)startContentOffset;
+- (id)panGesture;
+- (void)setPanGesture:;
+- (id)weakTarget;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)weakTargetClass;
++ (Class)aAWEPadSplitScreenAdapterClass;
++ (BOOL)Enable;
+@end

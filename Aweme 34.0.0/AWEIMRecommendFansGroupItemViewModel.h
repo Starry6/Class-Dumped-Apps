@@ -1,0 +1,30 @@
+@interface AWEIMRecommendFansGroupItemViewModel : NSObject
+@property (nonatomic) NSString groupOwnerDesc;
+@property (nonatomic) NSString groupMemberDesc;
+@property (nonatomic) NSString joinButtonTitle;
+@property (nonatomic) BOOL joinButtonEnable;
+@property (nonatomic) {CGSize=dd} cellSize;
+@property (nonatomic) AWEIMRecommendFansGroupModel model;
+@property (nonatomic) Q scene;
+@property (nonatomic) BOOL hasShown;
+- (id)initWithModel:scene:;
+- (id)groupMemberDesc;
+- (id)joinButtonTitle;
+- (BOOL)joinButtonEnable;
+- (void)trackRecommendGroupCardShowEvent;
+- (void)setGroupMemberDesc:;
+- (void)setJoinButtonTitle:;
+- (void)setJoinButtonEnable:;
+- (id)groupOwnerDesc;
+- (void)setGroupOwnerDesc:;
+- (void)setModel:;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (id)model;
+- (void).cxx_destruct;
+- (id)cellSize;
+- (void)setCellSize:;
+- (BOOL)hasShown;
+- (void)setHasShown:;
++ (id)assembleStringWithBaseString:array:maxLength:options:attributes:context:;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMMultiSelectListPopupViewUIConfig : NSObject
+@property (nonatomic) BOOL enableMaskViewTapGes;
+@property (nonatomic) BOOL enablePopupViewPanGes;
+@property (nonatomic) BOOL considerMaxPopupViewHeight;
+@property (nonatomic) BOOL enableConfirmBtnOpt;
+@property (nonatomic) double maxExposedCellCount;
+@property (nonatomic) double listCellHeight;
+@property (nonatomic) double confirmBtnCornerRadius;
+@property (nonatomic) double listCellAvatarWidth;
+@property (nonatomic) double listCellTagHeight;
+@property (nonatomic) UIFont listCellTagFont;
+- (void)setEnableMaskViewTapGes:;
+- (void)setEnablePopupViewPanGes:;
+- (void)setConsiderMaxPopupViewHeight:;
+- (void)setEnableConfirmBtnOpt:;
+- (void)setMaxExposedCellCount:;
+- (void)setListCellHeight:;
+- (void)setConfirmBtnCornerRadius:;
+- (void)setListCellAvatarWidth:;
+- (void)setListCellTagHeight:;
+- (void)setListCellTagFont:;
+- (double)confirmBtnCornerRadius;
+- (BOOL)enablePopupViewPanGes;
+- (BOOL)enableMaskViewTapGes;
+- (BOOL)considerMaxPopupViewHeight;
+- (double)maxExposedCellCount;
+- (BOOL)enableConfirmBtnOpt;
+- (double)listCellHeight;
+- (double)listCellAvatarWidth;
+- (id)listCellTagFont;
+- (double)listCellTagHeight;
+- (id)init;
+- (void).cxx_destruct;
+@end

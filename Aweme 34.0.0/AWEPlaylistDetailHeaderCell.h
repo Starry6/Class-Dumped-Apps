@@ -1,0 +1,33 @@
+@interface AWEPlaylistDetailHeaderCell : UITableViewCell
+@property (nonatomic) AWEPlaylistInfoModel model;
+@property (nonatomic) AWEPlaylistDetailHeaderView headerView;
+@property (nonatomic) BOOL hideCollect;
+@property (nonatomic) BOOL hidePublish;
+@property (nonatomic) BOOL hideOwnerArrow;
+@property (nonatomic) <AWEPlaylistDetailHeaderCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setup;
+- (void)p_updateUI;
+- (void)headerHeightDidChangeWithFoldStatus:;
+- (void)updateConfigModel:;
+- (void)setHideCollect:;
+- (void)setHidePublish:;
+- (void)setHideOwnerArrow:;
+- (BOOL)hideCollect;
+- (BOOL)hidePublish;
+- (BOOL)hideOwnerArrow;
+- (void)updatePublishButtonGrayOut:;
+- (void)showPublishGuideBubble;
+- (void)setModel:;
+- (id)delegate;
+- (id)headerView;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+- (id)playlistDescription;
+@end

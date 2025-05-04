@@ -1,0 +1,21 @@
+@interface AWEPaySwiftImpl.CCMLeftSideBarPresenter : AWELeftSideBarBasePresenter
+- (BOOL)canDowngradeDisplay;
+- (void)downgradeDisplay;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (double)cellViewWidth;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (void)leftSideBarCellClick;
+- (void)onLeftSideBarWillOpen;
+- (void)onLeftSideBarOpen;
+- (void)onLeftSideBarClose;
+- (void)leftSideBarViewDynamicModuleRequestDataComplete:isCacheData:;
+- (void)leftSideBarViewDynamicModuleRequestDataFailed;
+- (BOOL)needUpdateLeftSideBarContextWithModuleType:withExtraData:withAmbienceIdentification:;
+- (void)updateLeftSideBarContext:withExtraData:withAmbienceIdentification:;
+- (id)init;
+- (void).cxx_destruct;
+@end

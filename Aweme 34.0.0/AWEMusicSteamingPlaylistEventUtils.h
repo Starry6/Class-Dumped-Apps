@@ -1,0 +1,33 @@
+@interface AWEMusicSteamingPlaylistEventUtils : NSObject
++ (void)reportEventChangePlaylistInfoWithEnterFrom:playlistId:options:;
++ (void)reportEventPlaylistSettingWithEnterFrom:enterMethod:options:;
++ (void)reportEventEnterAddSongWithEnterFrom:isEmpty:enterMethod:options:;
++ (void)reportEventEnterPlaylistInfoWithEnterFrom:previousPage:enterMethod:;
++ (void)reportMiniLunaEventClickCreatePlaylistEventModel:;
++ (void)reportEventPlaylistFinshWithEnterFrom:enterMethod:queueName:privacy_set:playlistID:previousPage:options:playlistActivityName:;
++ (void)reportMiniLunaEventCreatePlaylistFinishWithPlaylistID:isPublic:isSuccess:errorCode:isAuto:eventModel:;
++ (void)reportEventPlaylistCreateWithEnterFrom:queueName:enterMethod:previousPage:groupId:options:;
++ (void)reportEventClickPlaylistWithEnterFrom:playlistID:type:;
++ (void)reportMiniLunaEventClickPlaylistWithPlaylistInfo:userID:rank:eventModel:;
++ (void)reportEventPlaylistDeleteWithStatus:playlistId:playlistType:enterFrom:;
++ (void)reportMiniLunaEventFavouritePlaylistWithIsCollect:status:errorCode:playlistId:userID:eventModel:;
++ (void)reportEventShowPlaylistWithEnterFrom:type:playlistID:;
++ (void)reportMiniLunaEventClickMediaInPlaylistWithPlaylistID:groupID:mediaType:rank:eventModel:;
++ (void)reportEventShowPlaylistListWithEnterFrom:enterMethod:;
++ (void)reportShowDSPMoreWithMusicID:queueName:metaSongID:;
++ (void)reportShowAddToPlayListWithMusicID:queueName:metaSongID:enterMethod:;
++ (void)reportEventClickDSPMoreWithEnterFrom:queueName:musicID:metaSongID:;
++ (void)reportEventAddSongtoPlaylistWithEnterFrom:queueName:musicID:metaSongID:enterMethod:;
++ (void)reportEventSelectPlaylistWithId:trackParams:type:;
++ (void)reportEventPlaylistReorderWithStatus:playlistId:enterFrom:;
++ (void)reportEventSongDeleteWithStatus:musicID:playlistId:enterFrom:;
++ (void)reportEventPlaylistEditReturnClickWithPage:options:;
++ (void)reportPlaylistSettingClickWithEnterFrom:clickArea:options:;
++ (void)reportMiniLunaEventAddToPlaylistWithPlaylistID:groupID:status:fromList:searchID:searchSessionID:eventModel:;
++ (void)reportEventAddSongFinishSongNum:enterMethod:isEmpty:isCreate:enterFrom:queueName:options:;
++ (void)reportEventFavouritePlaylistWithIsCollect:playlistType:playlistId:previousPage:enterFrom:;
++ (void)reportFeedResponseWithScene:responseLength:responseFilteredLength:requestCount:;
++ (id)transferFromType:;
++ (void)reportEventEnterPlaylistPlayAllWithEnterFrom:queueName:playlistId:;
++ (id)getQueueNameWithOwnerId:secUserID:playlistType:;
+@end

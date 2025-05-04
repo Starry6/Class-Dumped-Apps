@@ -1,0 +1,33 @@
+@interface AWESearchTopicDiscussShotCommentBottomBarView : UIView
+@property (nonatomic) DUXBaseImageView shotIcon;
+@property (nonatomic) DUXBaseImageView commentIcon;
+@property (nonatomic) DUXBaseLabel shotText;
+@property (nonatomic) DUXBaseLabel commentText;
+@property (nonatomic) UIView shotBgView;
+@property (nonatomic) UIView commentBgView;
+@property (nonatomic) @? commentClickedBlock;
+@property (nonatomic) @? shotClickedBlock;
+- (id)commentIcon;
+- (void)setCommentIcon:;
+- (void)onDiscussClicked;
+- (void)onShotClicked;
+- (id)commentBgView;
+- (id)shotText;
+- (id)shotBgView;
+- (id)shotIcon;
+- (id)commentClickedBlock;
+- (id)shotClickedBlock;
+- (void)setCommentClickedBlock:;
+- (void)setShotClickedBlock:;
+- (void)setShotIcon:;
+- (void)setShotText:;
+- (void)setShotBgView:;
+- (void)setCommentBgView:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setCommentText:;
+- (id)commentText;
+- (void)updateWithModel:;
+- (void)setupLayout;
+@end

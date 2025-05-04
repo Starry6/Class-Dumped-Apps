@@ -1,0 +1,30 @@
+@interface AWEProfileExtensionAreaCreatorPlatCardController : NSObject
+@property (nonatomic) UIView<AWEProfileExtensionAreaCardViewProtocol> cardView;
+@property (nonatomic) AWEProfileExtensionAreaCommonParamModel commonParamModel;
+@property (nonatomic) <AWEProfileExtensionAreaContainerProtocol> delegate;
+@property (nonatomic) AWEPageContext<AWEProfileContextCommonProtocol> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowCard;
+- (void)passCardView:;
+- (void)cardDidClicked;
+- (void)cardWillAppear;
+- (void)configDelegate:;
+- (void)configRichContentConfig:withCardOffset:isScrollable:;
+- (void)setCommonParamModel:;
+- (id)commonParamModel;
+- (void)handleContributionGuideShow;
+- (void)dealloc;
+- (id)delegate;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (id)cardView;
+- (void)setCardView:;
++ (id)cardControllerWithCommonParam:;
++ (BOOL)shouldShowCardWithUserModel:;
++ (unsigned long long)contributionGuideShowPositionWithUserModel:;
+@end

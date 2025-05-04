@@ -1,0 +1,36 @@
+@interface AWEHotRelateSpotTableViewCell : UITableViewCell
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UILabel relateCountLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView selectImageView;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) UIImageView timeTopLineView;
+@property (nonatomic) UIImageView timeBottomLineView;
+@property (nonatomic) BOOL isLive;
+- (void)configureUI;
+- (void)setSelectImageView:;
+- (id)selectImageView;
+- (id)relateCountLabel;
+- (void)configRelatedLabel:;
+- (void)configureWithModel:indexPath:;
+- (void)setRelateCountLabel:;
+- (void)configureWithModel:indexPath:isLive:;
+- (id)timeTopLineView;
+- (id)timeBottomLineView;
+- (void)setTimeTopLineView:;
+- (void)setTimeBottomLineView:;
+- (void)setTimeLabel:;
+- (void)prepareForReuse;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (BOOL)isLive;
+- (void)setSelected:animated:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setIsLive:;
++ (id)reuseIdentifier;
++ (double)cellHeight;
+@end

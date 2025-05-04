@@ -1,0 +1,2 @@
+@interface _TtCC21AWEKnowledgeSwiftImpl30HangoutPublishInsertControllerP33_755CACBD2F5FBC1C67A7AC125166571F29HangoutMigPublishTaskRelative : _TtCs12_SwiftObject
+@end

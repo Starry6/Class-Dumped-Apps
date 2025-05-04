@@ -1,0 +1,32 @@
+@interface AWEFeedPreCreateController : AWEBaseController
+@property (nonatomic) UIViewController profileVc;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) BOOL isFinishPreCreate;
+@property (nonatomic) BOOL isUsePreCreate;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)videoPlayer:updatePlayTime:totalTime:;
+- (void)setProfileVc:;
+- (void)setIsFinishPreCreate:;
+- (void)setIsUsePreCreate:;
+- (BOOL)isUsePreCreate;
+- (BOOL)isFinishPreCreate;
+- (double)getDelayTime;
+- (BOOL)shouldUseVideoTime;
+- (void)createUserProfileViewController:;
+- (void)trackSlideProfileFinishPreCreate;
+- (void)trackSlideProfileUsePreCreate;
+- (id)profileVc;
+- (id)userProfileViewController:;
+- (void)setTimer:;
+- (id)timer;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (id)currentModel;
+- (void)setCurrentModel:;
++ (id)feedPreCreateProfileVCConfig;
+@end

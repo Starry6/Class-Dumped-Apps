@@ -1,0 +1,30 @@
+@interface AWEIMChatCellConsecutiveChatTagComponent : AWEIMChatCellComponentBase
+@property (nonatomic) <AWEIMChatListTrackerInterface> tracker;
+@property (nonatomic) AWEIMConsecutiveChatModel consecutiveChatModel;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) AWEBinding sharedExtBinding;
+@property (nonatomic) AWEBinding localExtBinding;
+@property (nonatomic) BOOL refreshOpt;
+- (void)onThemeChanged;
+- (void)afterInitialComponentAllResolved:;
+- (void)updateComponentWhenChatUpdate:;
+- (void)onPresenter:willUpdateView:;
+- (id)customIMStreakTextFont;
+- (void)asyncDidUpdateIMStreakView;
+- (id)presenterForSnapshot;
+- (void)checkHintStatusWithChat:;
+- (id)consecutiveChatModel;
+- (void)setConsecutiveChatModel:;
+- (id)sharedExtBinding;
+- (void)setSharedExtBinding:;
+- (id)localExtBinding;
+- (void)setLocalExtBinding:;
+- (BOOL)refreshOpt;
+- (void)setRefreshOpt:;
+- (id)tracker;
+- (id)conversationID;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (void)setConversationID:;
++ (BOOL)canCreateComponentWithContext:;
+@end

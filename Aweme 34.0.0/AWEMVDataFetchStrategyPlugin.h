@@ -1,0 +1,36 @@
+@interface AWEMVDataFetchStrategyPlugin : NSObject
+@property (nonatomic) <AWEMVDataControllerProtocol> cacheDataController;
+@property (nonatomic) NSMutableArray refreshCache;
+@property (nonatomic) BOOL isMockingRequest;
+@property (nonatomic) BOOL isMockRequestCancel;
+@property (nonatomic) AWEMVChannelPageContext mvContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mvContext;
+- (void)setMvContext:;
+- (void)didFilterResponse:context:;
+- (BOOL)shouldInterceptFetchWithContext:completion:;
+- (void)prepareRefreshCacheIfNeed;
+- (BOOL)isMockingRequest;
+- (BOOL)shouldUseUnconsumedDataWithContext:;
+- (id)buildUnconsumedDataWithContext:;
+- (void)mockRequestWithContext:response:withCompletion:;
+- (BOOL)shouldUseRefreshCacheWithContext:;
+- (id)popRefreshCache;
+- (void)setIsMockRequestCancel:;
+- (id)refreshCache;
+- (id)cacheDataController;
+- (void)setRefreshCache:;
+- (void)prepareRefreshCacheIfNeedWithTries:;
+- (BOOL)shouldPrepareRefreshCache;
+- (void)appendRefreshCache:;
+- (BOOL)hasPlayerCardWithModels:;
+- (void)setIsMockingRequest:;
+- (BOOL)isMockRequestCancel;
+- (void)trackerWithRequestDuration:responseModel:context:error:;
+- (void)setCacheDataController:;
+- (void).cxx_destruct;
+- (void)cancelRequestWithContext:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEECNativePrefetchManager : NSObject
+@property (nonatomic) NSMutableDictionary prefetchProcessorMap;
+@property (nonatomic) NSMutableDictionary prefetchCallbacks;
+@property (nonatomic) AWEECDynamicComponentModel preloadModel;
+- (id)gurdAccessKey;
+- (id)preloadModel;
+- (void)setPreloadModel:;
+- (id)prefetchProcessorMap;
+- (id)prefetchCallbacks;
+- (void)getForestConfigDataWithFullUrl:completion:;
+- (id)triggerNativePrefetch:channel:bundle:useForest:;
+- (id)triggerNativePrefetch:fullUrl:prefetchId:;
+- (id)triggerNativePrefetch:prefetchConfig:prefetchId:startProcessTime:;
+- (void)getForestConfigDataForSchema:channel:bundle:completion:;
+- (void)getGurdConfigDataForChannel:bundle:completion:;
+- (void)trackDynamicComponentPreloadWithModel:;
+- (id)prefetchProcessorWithRequestId:;
+- (void)prefetchDataWithRequestId:apiKey:callback:;
+- (void)removeProcessorWithRequestId:;
+- (id)triggerNativePrefetch:;
+- (void)preDecodeDynamicComponentWithKitView:WithContext:;
+- (void)registerDynamicComponentIfNeededWithKitView:;
+- (void)setPrefetchProcessorMap:;
+- (void)setPrefetchCallbacks:;
+- (id)init;
+- (void).cxx_destruct;
++ (BOOL)enableSyncPrefetch;
++ (long long)abilityConfigForSchema:configKey:;
++ (id)sharedManager;
+@end

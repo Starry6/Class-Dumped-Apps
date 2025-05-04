@@ -1,0 +1,37 @@
+@interface AWEShowLongVideoRelatedPanelCell : AWEDCFeedBaseCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImageView paidIcon;
+@property (nonatomic) UIView tagView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel subTitle;
+- (void)configWithModel:context:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (id)getVerticalCoverUrlString:;
+- (id)playletTagText:;
+- (id)playletTagTextColor:;
+- (id)playletTagBackgroundColor:;
+- (id)playletPlayCount:;
+- (id)playletContentType:;
+- (id)subtitleWithModel:;
+- (unsigned long long)playletRelatedPanelTagType:;
+- (id)getTitleAddOnString:;
+- (id)paidIcon;
+- (void)setPaidIcon:;
+- (id)initWithFrame:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setImageView:;
+- (void)setTitle:;
+- (id)imageView;
+- (void)setupUI;
+- (id)tagView;
+- (void)setTagView:;
++ (double)heightWithCellWidth:awemeModel:context:;
++ (id)getTitleString:;
++ (double)titleHeightWithString:;
++ (double)subTitleHeightWithString:;
+@end

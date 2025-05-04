@@ -1,0 +1,38 @@
+@interface AWEIMSpeakModeAssignUserViewController : AWEIMListBaseViewController
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) NSArray defaultSelectUserList;
+@property (nonatomic) IESIMConversationParticipantModel owner;
+@property (nonatomic) NSMutableSet blockedMemvberUidSet;
+@property (nonatomic) UILabel completionLabel;
+- (void)setCompletionLabel:;
+- (long long)__maxSelectCount;
+- (unsigned long long)userPrivacyGetAliasScene;
+- (void)updateMultiselectCount:;
+- (BOOL)canTapCellAtIndexPath:;
+- (long long)currentFunctin;
+- (id)defaultSelectUserList;
+- (void)setDefaultSelectUserList:;
+- (BOOL)canSelectCellAtIndexPath:;
+- (id)curConversationID;
+- (void)setBlockedMemvberUidSet:;
+- (void)__updateNavBar;
+- (void)__back;
+- (id)blockedMemvberUidSet;
+- (id)getParticipantForUid:;
+- (id)initWithConversation:blockUsers:;
+- (void)__didTapCompletionButton;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)fetchData;
+- (id)participants;
+- (void)setOwner:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void)setParticipants:;
+- (id)owner;
+- (void).cxx_destruct;
+- (id)completionLabel;
+- (id)conversation;
+- (void)setConversation:;
+- (void)prepareData:;
+@end

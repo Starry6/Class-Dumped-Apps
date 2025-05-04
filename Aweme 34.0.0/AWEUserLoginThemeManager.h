@@ -1,0 +1,33 @@
+@interface AWEUserLoginThemeManager : NSObject
+@property (nonatomic) NSMutableArray registerClasses;
+@property (nonatomic) DYAThemeResponseModel themeModel;
+@property (nonatomic) BOOL useLocalTime;
+@property (nonatomic) NSString hadDisplayThemeId;
+- (void)registerThemeManager:;
+- (void)setRegisterClasses:;
+- (id)themeModel;
+- (void)setThemeModel:;
+- (void)addThemeShowCountWithTheme:context:;
+- (void)canShowTheme:scene:completion:;
+- (id)themeModelWithThemeId:;
+- (BOOL)useNewThemeModel;
+- (id)themeIdWithScene:sceneString:;
+- (void)storeRequestResult:;
+- (void)requestThemeDataWithCompletion:;
+- (void)didShowInterceptTheme:;
+- (id)hadDisplayThemeId;
+- (void)setHadDisplayThemeId:;
+- (id)themeModelWithUserContext;
+- (void)setUseLocalTime:;
+- (BOOL)isAvailableTimeForModel:;
+- (BOOL)isReachedMaxCountWithTheme:;
+- (void)clearPeriodIfNeededWithThemeId:;
+- (void)trackFreqWithTheme:context:;
+- (BOOL)useLocalTime;
+- (id)init;
+- (void).cxx_destruct;
+- (id)registerClasses;
++ (id)currentServerDate;
++ (id)sharedInstance;
++ (id)trackInfo;
+@end

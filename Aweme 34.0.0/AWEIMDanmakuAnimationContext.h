@@ -1,0 +1,31 @@
+@interface AWEIMDanmakuAnimationContext : NSObject
+@property (nonatomic) AWEIMDanmakuEmoticonBackgroundImageConfig backgroundConfig;
+@property (nonatomic) AWEIMDanmakuEmoticonCommerceSetting commerceSetting;
+@property (nonatomic) UIImage headImage;
+@property (nonatomic) UIImage middleImage;
+@property (nonatomic) UIImage tailImage;
+@property (nonatomic) NSMutableArray decorationImageList;
+@property (nonatomic) UIImage commerceHeadImage;
+@property (nonatomic) double isPreview;
+@property (nonatomic) q maxCount;
+- (void)setMiddleImage:;
+- (id)backgroundConfig;
+- (void)setBackgroundConfig:;
+- (id)headImage;
+- (void)setHeadImage:;
+- (id)middleImage;
+- (void)setCommerceSetting:;
+- (void)setDecorationImageList:;
+- (void)setTailImage:;
+- (void)setCommerceHeadImage:;
+- (id)tailImage;
+- (BOOL)isImageValid;
+- (id)commerceSetting;
+- (id)decorationImageList;
+- (id)commerceHeadImage;
+- (void)setMaxCount:;
+- (long long)maxCount;
+- (void).cxx_destruct;
+- (double)isPreview;
+- (void)setIsPreview:;
+@end

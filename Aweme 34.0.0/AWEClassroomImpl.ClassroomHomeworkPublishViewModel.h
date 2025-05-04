@@ -1,0 +1,2 @@
+@interface AWEClassroomImpl.ClassroomHomeworkPublishViewModel : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,32 @@
+@interface AWENewEventNodeModel : AWEBaseApiModel
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString coverURLString;
+@property (nonatomic) NSString itemIDString;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) NSString eventDesc;
+@property (nonatomic) NSString eventTimestamp;
+@property (nonatomic) NSString eventLabel;
+@property (nonatomic) NSString hotspotWord;
+@property (nonatomic) q nodeType;
+- (id)coverURLString;
+- (id)eventDesc;
+- (id)hotspotWord;
+- (void)setHotspotWord:;
+- (void)setCoverURLString:;
+- (void)setItemIDString:;
+- (void)setEventDesc:;
+- (void)setGroupID:;
+- (long long)nodeType;
+- (id)groupID;
+- (id)eventID;
+- (id)eventLabel;
+- (void).cxx_destruct;
+- (void)setEventID:;
+- (void)setEventLabel:;
+- (id)eventTimestamp;
+- (void)setEventTimestamp:;
+- (void)setNodeType:;
+- (id)itemIDString;
++ (id)modelCustomPropertyMapper;
++ (id)JSONKeyPathsByPropertyKey;
+@end

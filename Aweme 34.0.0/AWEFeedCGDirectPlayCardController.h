@@ -1,0 +1,30 @@
+@interface AWEFeedCGDirectPlayCardController : AWEBaseController
+@property (nonatomic) AWEFeedCGDirectPlayPanelViewController panelVC;
+@property (nonatomic) <AWESpecialCardDelegate> cardDelegate;
+@property (nonatomic) <AWESpecialCardContextProtocol> cardContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)willRefresh;
+- (id)cardContext;
+- (void)setCardContext:;
+- (id)cardDelegate;
+- (void)setCardDelegate:;
+- (void)cardWillDisplay:withAweme:;
+- (BOOL)shouldCancelInsertCard:withAweme:isFromFeed:willInsertForRowAtIndexPath:;
+- (void)cardDidInsert:withAweme:isFromFeed:forRowAtIndexPath:;
+- (void)cardFrequencyControl:withAweme:isFromFeed:type:;
+- (void)cardDidReceive:withAweme:enterFrom:;
+- (id)trackParamsWithBusinessInfo:;
+- (id)panelViewControllerForModel:;
+- (void)removeCardIfNeeded:;
+- (id)panelVC;
+- (void)trackEvent:withModel:params:;
+- (void)setPanelVC:;
+- (id)specialCardBussinessIdentifier;
+- (void)trackFrequencyControlWithModel:reason:;
+- (void)dismissCardWithModel:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMHalfScreenContactTableViewHeaderCell : UIButton
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView iconInternalView;
+@property (nonatomic) UILabel featureLabel;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UIImageView tapImageView;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) q type;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)p_setupUIWithContext:;
+- (void)configWithType:context:;
+- (id)iconInternalView;
+- (id)tapImageView;
+- (BOOL)isExternalShareCell;
+- (void)setIconInternalView:;
+- (void)setFeatureLabel:;
+- (void)setTapImageView:;
+- (long long)type;
+- (void)setType:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (void)setIconImageView:;
+- (id)initWithType:context:;
+- (id)featureLabel;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
++ (id)identifier;
+@end

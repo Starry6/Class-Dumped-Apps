@@ -1,0 +1,38 @@
+@interface AWEGCPCommentTabController : UIViewController
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEGCPCommentTabView commentTabView;
+@property (nonatomic) AWEGCPCommentTabViewModel viewModel;
+@property (nonatomic) BOOL isFirstRender;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) double tabShowTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? scrollViewDidUpdate;
+@property (nonatomic) NSString actionWay;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)initWithAwemeModel:;
+- (void)commentThemeChanged;
+- (void)setScrollViewDidUpdate:;
+- (id)scrollViewDidUpdate;
+- (id)actionWay;
+- (void)setActionWay:;
+- (BOOL)isFirstRender;
+- (id)commentTabView;
+- (void)makeViewTrackNode;
+- (double)tabShowTime;
+- (void)setIsFirstRender:;
+- (void)setTabShowTime:;
+- (void)scrollViewDidUpdate:;
+- (void)didSetGameCPDIContext;
+- (void)setCommentTabView:;
+- (void)setIsActive:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (BOOL)isActive;
+@end

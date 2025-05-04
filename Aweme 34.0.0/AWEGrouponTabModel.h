@@ -1,0 +1,35 @@
+@interface AWEGrouponTabModel : AWEBaseApiModel
+@property (nonatomic) q tabID;
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString filterInfo;
+@property (nonatomic) NSString liveFilterInfo;
+@property (nonatomic) AWEGrouponTabIconModel tabIcon;
+@property (nonatomic) BOOL clickItemTop;
+@property (nonatomic) BOOL isFixed;
+@property (nonatomic) AWEGrouponTabRedDotModel redDot;
+@property (nonatomic) AWEGrouponTabLoadMoreFooter bottomBar;
+@property (nonatomic) q tabRank;
+- (void)setRedDot:;
+- (void)setTabID:;
+- (id)redDot;
+- (id)tabIcon;
+- (void)setTabIcon:;
+- (long long)tabRank;
+- (id)liveFilterInfo;
+- (void)setTabRank:;
+- (void)setLiveFilterInfo:;
+- (BOOL)clickItemTop;
+- (void)setClickItemTop:;
+- (void)setIsFixed:;
+- (void)setBottomBar:;
+- (id)bottomBar;
+- (void).cxx_destruct;
+- (id)filterInfo;
+- (void)setFilterInfo:;
+- (long long)tabID;
+- (id)tabName;
+- (void)setTabName:;
+- (BOOL)isFixed;
++ (BOOL)automaticallyDefaultMapping;
++ (id)JSONKeyPathsByPropertyKey;
+@end

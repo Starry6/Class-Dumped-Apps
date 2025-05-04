@@ -1,0 +1,34 @@
+@interface AWEASMusicDiscoverSuggestionTableViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UICollectionViewFlowLayout collectionLayout;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) NSArray words;
+@property (nonatomic) <AWEASMusicDiscoverSuggestionTableViewCellDelegate> delegate;
+@property (nonatomic) BOOL isHideSeparator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsHideSeparator:;
+- (BOOL)isHideSeparator;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setWords:;
+- (void)setupUI;
+- (id)collectionLayout;
+- (void)setCollectionLayout:;
+- (id)words;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+@end

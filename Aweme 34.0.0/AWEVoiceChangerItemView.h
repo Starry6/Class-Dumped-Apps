@@ -1,0 +1,34 @@
+@interface AWEVoiceChangerItemView : UIButton
+@property (nonatomic) UIView coverView;
+@property (nonatomic) AWEVoiceChangerItemCircleView circleView;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) UIImageView centerImageView;
+@property (nonatomic) BOOL useLocalImage;
+@property (nonatomic) UIImage localImage;
+@property (nonatomic) {CGSize=dd} localImageSize;
+- (void)updateImageSize:;
+- (void)setCenterImage:size:;
+- (void)setThumbnailURLList:placeholder:;
+- (void)setThumbnailURLList:;
+- (void)setThumbnailURLList:placeholder:size:;
+- (void)makeSubviewConstraints;
+- (void)setUseLocalImage:;
+- (void)setLocalImageSize:;
+- (void)setIconImage:size:;
+- (BOOL)useLocalImage;
+- (id)localImageSize;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageSize;
+- (void)setSelected:;
+- (id)coverView;
+- (void)setCoverView:;
+- (id)localImage;
+- (void)setLocalImage:;
+- (id)circleView;
+- (void)setCircleView:;
+- (void)setCoverBackgroundColor:;
+- (id)centerImageView;
+- (void)setCenterImageView:;
+@end

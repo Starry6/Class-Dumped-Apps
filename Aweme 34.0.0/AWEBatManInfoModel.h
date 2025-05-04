@@ -1,0 +1,30 @@
+@interface AWEBatManInfoModel : MTLModel
+@property (nonatomic) q batManPackageId;
+@property (nonatomic) NSString gameDeveloper;
+@property (nonatomic) NSString gameIcon;
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString packageName;
+@property (nonatomic) BOOL useMiniApk;
+@property (nonatomic) NSString versionName;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameName;
+- (void)setGameName:;
+- (id)versionName;
+- (void)setGameIcon:;
+- (void)setVersionName:;
+- (id)gameIcon;
+- (long long)batManPackageId;
+- (void)setBatManPackageId:;
+- (id)gameDeveloper;
+- (void)setGameDeveloper:;
+- (BOOL)useMiniApk;
+- (void)setUseMiniApk:;
+- (id)packageName;
+- (void).cxx_destruct;
+- (void)setPackageName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

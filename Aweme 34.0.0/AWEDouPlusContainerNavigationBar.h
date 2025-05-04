@@ -1,0 +1,32 @@
+@interface AWEDouPlusContainerNavigationBar : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEButton leftBtn;
+@property (nonatomic) AWEButton rightBtn;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) q backType;
+@property (nonatomic) q barType;
+@property (nonatomic) @? leftActionBlock;
+@property (nonatomic) @? rightActionBlock;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (id)leftBtn;
+- (id)rightBtn;
+- (void)setLeftBtn:;
+- (void)setRightBtn:;
+- (void)setBarType:;
+- (void)setBackType:;
+- (void)onLeftBtnAction;
+- (void)onRightBtnAction;
+- (id)leftActionBlock;
+- (id)rightActionBlock;
+- (long long)backType;
+- (void)setLeftActionBlock:;
+- (void)setRightActionBlock:;
+- (long long)barType;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
++ (id)navigationBarWithType:;
+@end

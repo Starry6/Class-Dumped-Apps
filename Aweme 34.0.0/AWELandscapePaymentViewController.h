@@ -1,0 +1,36 @@
+@interface AWELandscapePaymentViewController : AWELandscapeInteractionBaseController
+@property (nonatomic) AWELandscapePaymentView paymentView;
+@property (nonatomic) q currentState;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) BOOL hasTrackTrialEnd;
+@property (nonatomic) BOOL hasTrackShowPaymentView;
+- (void)player:updatePlayTime:canPlayTime:totalTime:;
+- (void)setAppear:;
+- (id)paymentView;
+- (void)didEnterLandscape;
+- (void)afterSetData:;
+- (void)bindEvents;
+- (void)willExitLandscape;
+- (BOOL)usePaidStreamControl;
+- (void)updateAppearStatusAnimated:;
+- (void)setHasTrackShowPaymentView:;
+- (void)setHasTrackTrialEnd:;
+- (void)trackTrialEndIfNeeded;
+- (void)trackClickPaymentView;
+- (void)trackShowPaymentViewIfNeeded;
+- (BOOL)hasTrackShowPaymentView;
+- (BOOL)hasTrackTrialEnd;
+- (void)addPaymentViewIfNeeded;
+- (void)setupPaymentView;
+- (void)updatePaymentView:;
+- (BOOL)shouldShowPaymentView;
+- (void)setPaymentView:;
+- (void)updateState:;
+- (void)setCurrentState:;
+- (void)viewDidLoad;
+- (long long)currentState;
+- (BOOL)isAnimating;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (void)reset;
+@end

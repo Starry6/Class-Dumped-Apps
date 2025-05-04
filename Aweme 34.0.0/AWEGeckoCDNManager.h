@@ -1,0 +1,31 @@
+@interface AWEGeckoCDNManager : NSObject
+@property (nonatomic) AWEGeckoCDNConfig config;
+@property (nonatomic) NSString resourcePrefix;
+@property (nonatomic) BOOL geckoImageUsingPreferredTheme;
+- (void)themeDidChangeNoti:;
+- (void)memoryWarningNoti:;
+- (id)getImageWithName:forTheme:block:;
+- (id)p_getImageWithNameOPT:forTheme:block:;
+- (id)p_getImageWithName:forTheme:block:;
+- (id)getImageWithName:block:;
+- (id)p_getImageWithNameOPT:forTheme:;
+- (id)p_getBundleImageWithName:;
+- (id)p_getGeckoImageWithImageName:forTheme:;
+- (id)p_getBDImageCacheWithImageName:forTheme:;
+- (id)getResourceCDNUrlWithName:;
+- (void)downloadFinshForSkinWithImage:imageName:imageFileName:urlStr:image:error1:error2:themeStyle:;
+- (void)imageDownloadWithURL:complete:;
+- (BOOL)geckoImageUsingPreferredTheme;
+- (id)getImageFromGeckoWithName:forTheme:;
+- (id)resourcePrefix;
+- (id)getImageWithName:forTheme:;
+- (id)getImageWithName:;
+- (id)convertFileNameFromImageName:;
+- (void)setResourcePrefix:;
+- (void)setGeckoImageUsingPreferredTheme:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
++ (id)getCDNDomain;
+@end

@@ -1,0 +1,32 @@
+@interface AWERewardAutoUnlockBtnConfig : AWEBaseApiModel
+@property (nonatomic) NSString storageKey;
+@property (nonatomic) q second;
+@property (nonatomic) NSString textSuffix;
+@property (nonatomic) q showFrequency;
+@property (nonatomic) Q timingType;
+@property (nonatomic) NSString vipBuySchema;
+@property (nonatomic) q hasShowCount;
+@property (nonatomic) double autoUnlockTime;
+@property (nonatomic) Q autoUnlockType;
+- (id)textSuffix;
+- (void)setTextSuffix:;
+- (long long)hasShowCount;
+- (long long)showFrequency;
+- (BOOL)enableLaunchAutoUnlock;
+- (void)setShowFrequency:;
+- (unsigned long long)timingType;
+- (void)setTimingType:;
+- (id)vipBuySchema;
+- (void)setVipBuySchema:;
+- (void)setHasShowCount:;
+- (double)autoUnlockTime;
+- (void)setAutoUnlockTime:;
+- (unsigned long long)autoUnlockType;
+- (void)setAutoUnlockType:;
+- (id)storageKey;
+- (void)setStorageKey:;
+- (long long)second;
+- (void).cxx_destruct;
+- (void)setSecond:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

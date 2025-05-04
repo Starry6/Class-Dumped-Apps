@@ -1,0 +1,35 @@
+@interface AWESearchPanelContainerViewController : UIViewController
+@property (nonatomic) UIView panelContainer;
+@property (nonatomic) UIView panelView;
+@property (nonatomic) double minHeight;
+@property (nonatomic) UITapGestureRecognizer tapGes;
+@property (nonatomic) UIPanGestureRecognizer panGes;
+@property (nonatomic) @? closeViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)panelContainer;
+- (void)setPanelContainer:;
+- (id)panGes;
+- (id)closeViewController;
+- (void)setPanGes:;
+- (void)showPanel;
+- (id)tapGes;
+- (void)setTapGes:;
+- (id)panelView;
+- (void)setPanelView:;
+- (void)setCloseViewController:;
+- (void)dismissPanel;
+- (void)setupGes;
+- (void)closeController;
+- (void)checkContainerState:;
+- (id)initWithView:;
+- (void)viewDidLoad;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)panGestureRecognizerAction:;
+- (void).cxx_destruct;
+- (void)setMinHeight:;
+- (double)minHeight;
+- (void)setupUI;
+@end

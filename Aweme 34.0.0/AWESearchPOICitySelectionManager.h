@@ -1,0 +1,31 @@
+@interface AWESearchPOICitySelectionManager : NSObject
+@property (nonatomic) NSString strUserSelectedCityName;
+@property (nonatomic) NSString strCitySelectionJSONInfo;
+@property (nonatomic) NSDictionary dictCityEditExtraInfo;
+@property (nonatomic) NSString strDisposableCitySelectionJSONInfo;
+@property (nonatomic) NSDictionary dictDisposableCityEditExtraInfo;
+@property (nonatomic) AWESearchPOICitySelectionFilterCardModel lastCitySelectionFilterCardModel;
+@property (nonatomic) NSString strCityChangeToastText;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterComponentModel citySelectFilterComponentModel;
+- (id)generateDisposableSortParams;
+- (id)generateSortParams;
+- (void)setCitySelectFilterComponentModel:;
+- (id)citySelectFilterComponentModel;
+- (void)setStrDisposableCitySelectionJSONInfo:;
+- (void)setDictDisposableCityEditExtraInfo:;
+- (void)setStrCityChangeToastText:;
+- (void)setStrUserSelectedCityName:;
+- (void)setStrCitySelectionJSONInfo:;
+- (void)setDictCityEditExtraInfo:;
+- (id)lastCitySelectionFilterCardModel;
+- (void)setLastCitySelectionFilterCardModel:;
+- (id)strCityChangeToastText;
+- (id)strUserSelectedCityName;
+- (id)strCitySelectionJSONInfo;
+- (id)dictCityEditExtraInfo;
+- (id)generateSortParamsWithCitySelectionJSONInfo:extraInfo:;
+- (id)strDisposableCitySelectionJSONInfo;
+- (id)dictDisposableCityEditExtraInfo;
+- (void).cxx_destruct;
+- (void)clean;
+@end

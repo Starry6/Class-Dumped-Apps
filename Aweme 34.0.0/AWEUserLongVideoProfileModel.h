@@ -1,0 +1,38 @@
+@interface AWEUserLongVideoProfileModel : MTLModel
+@property (nonatomic) Q accountType;
+@property (nonatomic) NSString notice;
+@property (nonatomic) NSString intro;
+@property (nonatomic) NSString introScheme;
+@property (nonatomic) Q bannerType;
+@property (nonatomic) NSString bannerScheme;
+@property (nonatomic) q longVideoCount;
+@property (nonatomic) NSString autoPlayAwemeId;
+@property (nonatomic) NSString autoPlayHighlightEpisodeId;
+@property (nonatomic) BOOL showPlayCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIntro:;
+- (id)introScheme;
+- (void)setIntroScheme:;
+- (id)bannerScheme;
+- (void)setBannerScheme:;
+- (long long)longVideoCount;
+- (void)setLongVideoCount:;
+- (id)autoPlayAwemeId;
+- (void)setAutoPlayAwemeId:;
+- (id)autoPlayHighlightEpisodeId;
+- (void)setAutoPlayHighlightEpisodeId:;
+- (BOOL)showPlayCount;
+- (void)setShowPlayCount:;
+- (void)setAccountType:;
+- (unsigned long long)accountType;
+- (void).cxx_destruct;
+- (id)notice;
+- (void)setNotice:;
+- (unsigned long long)bannerType;
+- (void)setBannerType:;
+- (id)intro;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWENoxusLongVideoStatusBarView : UIView
+@property (nonatomic) UILabel networkLabel;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) UILabel batteryLabel;
+@property (nonatomic) UIImageView batteryImageView;
+@property (nonatomic) UIImageView chongdianImageView;
+@property (nonatomic) UIView batteryView;
+@property (nonatomic) NSTimer timer;
+- (void)configureUI;
+- (void)addNotifications;
+- (void)batteryUsageUpdate;
+- (void)batteryStateUpdate;
+- (void)networkUpdate;
+- (id)networkLabel;
+- (id)chongdianImageView;
+- (id)batteryLabel;
+- (void)realBatteryUsageUpdate;
+- (id)awe_currentReachabilityString;
+- (void)updateTimeLabelByCurrentTime:;
+- (void)setNetworkLabel:;
+- (void)setBatteryLabel:;
+- (void)setChongdianImageView:;
+- (void)setTimer:;
+- (void)dealloc;
+- (void)setTimeLabel:;
+- (id)timer;
+- (void)timeUpdate;
+- (void)setBatteryView:;
+- (id)initWithFrame:;
+- (void)setBatteryImageView:;
+- (id)batteryView;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (id)batteryImageView;
+@end

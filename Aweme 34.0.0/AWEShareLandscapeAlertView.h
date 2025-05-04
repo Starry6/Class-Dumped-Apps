@@ -1,0 +1,35 @@
+@interface AWEShareLandscapeAlertView : UIView
+@property (nonatomic) UIView animationView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UITextView descriptionTextView;
+@property (nonatomic) UIView horizontalLine;
+@property (nonatomic) UIView verticalLine;
+@property (nonatomic) AWEButton buttonDeny;
+@property (nonatomic) AWEButton buttonAllow;
+- (id)verticalLine;
+- (void)setHorizontalLine:;
+- (void)setVerticalLine:;
+- (id)buttonDeny;
+- (id)buttonAllow;
+- (void)loadSubviews;
+- (void)setButtonDeny:;
+- (void)setButtonAllow:;
+- (id)init;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setImageView:;
+- (id)imageView;
+- (void)dismissAlert;
+- (id)animationView;
+- (void)setAnimationView:;
+- (id)descriptionTextView;
+- (void)setDescriptionTextView:;
+- (void)showAlert;
+- (id)horizontalLine;
++ (void)showAlertWithTitle:description:image:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+@end

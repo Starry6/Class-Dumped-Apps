@@ -1,0 +1,37 @@
+@interface AWESearchVideoFeedBridgeHandler : NSObject
++ (BOOL)isAddBtmUpdate;
++ (BOOL)shouldShowUserGuideViewInFlow;
++ (void)openMixVideoSelectChaptersController:awemeList:awemeIndex:referString:logExtra:delegate:params:;
++ (id)awemeListWithParams:;
++ (id)lynxToAwemeTableViewControllerWithParams:referString:logExtraDict:;
++ (void)updateAwemeListWithParams:sessionid:;
++ (BOOL)isNeedNewEntrance;
++ (void)videoExperienceTrack:lynxContainer:;
++ (long long)_videoFeedIndex:withIdList:;
++ (id)_videoFeedAwemeList:withIdList:;
++ (BOOL)preLynxToAwemeTable:enterParams:params:;
++ (void)mixVideoFeedWithContextProvider:params:referString:enterParams:outerDataController:;
++ (BOOL)searchResultGuideViewHasDismiss;
++ (id)detailBottomInfoForShootParams:withModel:;
++ (BOOL)isElementSearchVirtualItem:;
++ (void)videoExperienceTrackTransitionSuccess:enterFrom:;
++ (void)_propVideoFeedWithLynxContainer:params:videoFeedIndex:videoFeedArray:referString:logExtraDict:needTransition:;
++ (void)_mvVideoFeedWithLynxContainer:params:videoFeedIndex:videoFeedArray:referString:logExtraDict:needTransition:;
++ (void)_enterHotSpotFeedWithLynxContainer:enterParams:;
++ (id)openEcommerceVideoFeedWithLynxContainer:contextProvider:params:videoFeedIndex:videoFeedArray:referString:searchvideoWatchedMonitorBlock:;
++ (void)openEcomPhotoFeedWithLynxContainer:params:;
++ (id)playletVideoFeedWithContextProvider:params:referString:enterParams:needTransition:;
++ (void)propVideoFeedWithContextProvider:index:awemeList:stickerId:referString:enterFrom:logExtraDict:needTransition:;
++ (void)mvVideoFeedWithContextProvider:index:awemeList:stickerId:referString:enterFrom:logExtraDict:needTransition:;
++ (long long)videoFeedIndexInVideoFeedArray:awemeID:;
++ (id)generalLynxCellControllerFor:;
++ (id)redirectEnterIndexAndArrayFor:params:lynxContainer:generalLynxCellController:;
++ (BOOL)substitudeBriefAwemeAndCheckValidToEnter:;
++ (id)videoDetailedWatchedBlock:lynxContainer:;
++ (void)lynxContainerWillEnterFullScreen:lynxContainer:generalLynxCellController:;
++ (id)getMixVideoDetailPlayListDataController:mixId:;
++ (void)enterMixVideoFeedWithContextProvider:params:referString:awemeIndex:awemeList:outerDataController:;
++ (void)trackMixPanelShow:mixId:awemeModel:;
++ (void)openImageFullPageWithParams:;
++ (void)searchVideoFeedWithContextProvider:index:awemeList:referString:enterFrom:logExtraDict:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEECOMIMFooterTipsModel : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) NSAttributedString content;
+@property (nonatomic) Q buttonType;
+@property (nonatomic) AWEECOMIMFootDescActionItemButtonStyle rejectButtonStyle;
+@property (nonatomic) AWEECOMIMFootDescActionItemButtonStyle recoverButtonStyle;
+@property (nonatomic) NSString bizCategory;
+@property (nonatomic) BOOL isButtonFromServer;
+@property (nonatomic) NSString logoUrl;
+@property (nonatomic) NSString logoDesc;
+- (id)logoDesc;
+- (void)setLogoDesc:;
+- (BOOL)isButtonFromServer;
+- (id)bizCategory;
+- (void)setIsButtonFromServer:;
+- (void)setBizCategory:;
+- (void)setRejectButtonStyle:;
+- (void)setRecoverButtonStyle:;
+- (id)rejectButtonStyle;
+- (id)recoverButtonStyle;
+- (unsigned long long)buttonType;
+- (id)content;
+- (unsigned long long)type;
+- (void)setContent:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setButtonType:;
+- (id)logoUrl;
+- (void)setLogoUrl:;
++ (id)buttonTypeWithCardType:;
++ (void)registerButtonType:cardType:;
++ (id)getButtonTypeWithCardType:;
+@end

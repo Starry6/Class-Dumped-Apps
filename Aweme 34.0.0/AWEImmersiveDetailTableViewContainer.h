@@ -1,0 +1,2 @@
+@interface AWEImmersiveDetailTableViewContainer : UIView
+@end

@@ -1,0 +1,31 @@
+@interface AWEHPProfileSideBarHelpDeskPresenter : AWELeftSideBarBasePresenter
+@property (nonatomic) UIView<AWEHPSideBarStencilViewProtocol> containerView;
+@property (nonatomic) AWEHPSideBarStencilViewDataModel dataModel;
+@property (nonatomic) BOOL hasRequest;
+@property (nonatomic) double lastRequestTime;
+@property (nonatomic) NSString requestSchema;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (void)leftSideBarCellClick;
+- (void)onLeftSideBarOpen;
+- (BOOL)needLoadPresenter;
+- (id)jumpUrl;
+- (double)lastRequestTime;
+- (void)setLastRequestTime:;
+- (id)p_sideBarListCellDataModel:;
+- (id)aAWEProfileSettingSliderViewModelDOUYINHMAdapter;
+- (id)requestSchema;
+- (void)setRequestSchema:;
+- (BOOL)hasRequest;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)setHasRequest:;
++ (Class)aAWEProfileSettingSliderViewModelDOUYINHMAdapterClass;
+@end

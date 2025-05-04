@@ -1,0 +1,33 @@
+@interface AWECustomWebImageConfig : NSObject
+@property (nonatomic) BOOL clearMemoryOnMemoryWarning;
+@property (nonatomic) BOOL clearMemoryWhenEnteringBackground;
+@property (nonatomic) BOOL shouldUseWeakMemoryCache;
+@property (nonatomic) Q memoryCountLimit;
+@property (nonatomic) Q memorySizeLimit;
+@property (nonatomic) Q memoryAgeLimit;
+@property (nonatomic) BOOL trimDiskWhenEnteringBackground;
+@property (nonatomic) Q diskCountLimit;
+@property (nonatomic) Q diskSizeLimit;
+@property (nonatomic) Q diskAgeLimit;
+- (void)setMemoryCountLimit:;
+- (void)setDiskCountLimit:;
+- (void)setDiskSizeLimit:;
+- (void)setDiskAgeLimit:;
+- (void)setMemorySizeLimit:;
+- (BOOL)trimDiskWhenEnteringBackground;
+- (void)setClearMemoryOnMemoryWarning:;
+- (void)setClearMemoryWhenEnteringBackground:;
+- (void)setShouldUseWeakMemoryCache:;
+- (void)setTrimDiskWhenEnteringBackground:;
+- (BOOL)clearMemoryOnMemoryWarning;
+- (BOOL)clearMemoryWhenEnteringBackground;
+- (BOOL)shouldUseWeakMemoryCache;
+- (unsigned long long)memoryCountLimit;
+- (unsigned long long)memorySizeLimit;
+- (unsigned long long)diskCountLimit;
+- (unsigned long long)diskSizeLimit;
+- (unsigned long long)diskAgeLimit;
+- (unsigned long long)memoryAgeLimit;
+- (void)setMemoryAgeLimit:;
+- (id)init;
+@end

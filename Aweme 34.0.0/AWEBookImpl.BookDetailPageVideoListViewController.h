@@ -1,0 +1,34 @@
+@interface AWEBookImpl.BookDetailPageVideoListViewController : AWEBaseListViewController
+- (void)appWillResignActiveWithNotice:;
+- (void)appDidBecomeActiveWithNotice:;
+- (id)tabContentScrollView;
+- (id)segmentedControlItemConfigForTabList:;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (id)aweui_emptyPageEdgeInsets;
+- (void)listDidReloadDataWithCollectionView:;
+- (void)sectionControllerWillEnterWorkingRange:;
+- (id)zoomTransitionStartViewForOffset:;
+- (BOOL)zoomTransitionWantsTabBarAnimation;
+- (BOOL)zoomTransitionWantsTabBarBeStatic;
+- (double)zoomTransitionTargetViewCornerRadius;
+- (BOOL)zoomTransitionShouldScreenSliced;
+- (double)tabbarAnimationDuration;
+- (void)customLayoutCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (long long)workingRangeSize;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (id)initWithCoder:;
+- (void)setupCollectionView:;
++ (Class)viewModelClass;
+@end

@@ -1,0 +1,33 @@
+@interface AWEFeedInstantGameCardController : AWEBaseController
+@property (nonatomic) BOOL startCount;
+@property (nonatomic) q deleteCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWESpecialCardDelegate> cardDelegate;
+@property (nonatomic) <AWESpecialCardContextProtocol> cardContext;
+- (void)willRefresh;
+- (void)loadMoreCompletion:error:isFooterRefreshing:;
+- (id)cardContext;
+- (void)setCardContext:;
+- (id)ironManModuleService;
+- (id)cardDelegate;
+- (void)setCardDelegate:;
+- (void)cardWillDisplay:withAweme:;
+- (void)cardDidInsert:withAweme:isFromFeed:forRowAtIndexPath:;
+- (id)panelViewControllerForModel:;
+- (id)specialCardBussinessIdentifier;
+- (void)dismissCardWithModel:;
+- (BOOL)isCurrentHot;
+- (void)p_dismissCardIfNeed;
+- (id)gameManager;
+- (BOOL)enableReloadOpti;
+- (void)gameCardActionButtonClicked:;
+- (void)setStartCount:;
+- (void)viewDidLoad;
+- (long long)deleteCount;
+- (BOOL)startCount;
+- (void).cxx_destruct;
+- (void)setDeleteCount:;
+@end

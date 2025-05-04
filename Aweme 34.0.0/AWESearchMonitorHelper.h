@@ -1,0 +1,36 @@
+@interface AWESearchMonitorHelper : NSObject
+@property (nonatomic) NSMutableDictionary providers;
+@property (nonatomic) NSArray protectedKeys;
+@property (nonatomic) NSMutableDictionary nonContextMonitorCache;
+- (void)registerEventProvider:;
+- (id)protectedKeys;
+- (id)nonContextMonitorCache;
+- (void)setProtectedKeys:;
+- (void)setNonContextMonitorCache:;
+- (id)providers;
+- (id)init;
+- (void)setProviders:;
+- (void).cxx_destruct;
++ (void)searchNetworkTriggerWithSearchType:pullType:extraDict:;
++ (void)bindContext:logType:data:;
++ (id)searchNetworkMonitorInfoWithError:itemCount:;
++ (void)searchNetworkFinishWithSearchType:pullType:imprID:extraDict:;
++ (id)searchNetworkType;
++ (void)startMonitorWithContext:logType:data:;
++ (void)finishMonitorWithContext:logType:data:;
++ (void)startMonitorForLogType:data:;
++ (id)valueForKey:withLogType:context:;
++ (void)removeValueForKey:withLogType:context:;
++ (void)registerEventProvider:;
++ (id)p_createANonContextMonitorValueForLogType:;
++ (void)mergeMonitorValue:withAppendValue:;
++ (id)p_createAMonitorValueFromContext:forLogType:;
++ (id)p_getMonitorValueFromContext:forLogType:;
++ (void)p_removeAMonitorValueFromContext:forLogType:;
++ (void)eliminateMonitorValue:forKeysNotReport:;
++ (id)protectMonitorValue:;
++ (id)p_getNonContextMonitorValueForLogType:;
++ (void)p_removeANonContextMonitorValueForLogType:;
++ (void)searchMonitorWithEvent:params:;
++ (id)sharedHelper;
+@end

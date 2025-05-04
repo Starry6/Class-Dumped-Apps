@@ -1,0 +1,36 @@
+@interface AWEAdAvatarView : UIView
+@property (nonatomic) BOOL canShowVirtualAnimatedAvatarIfNeed;
+@property (nonatomic) BOOL enableLeftHandOptimize;
+@property (nonatomic) AWEButton avatarButton;
+@property (nonatomic) UIImageView decorationView;
+@property (nonatomic) BDImageView virtualAnimatedAvatarView;
+@property (nonatomic) BOOL shouldUseGrayImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)layoutSubviews;
+- (BOOL)enableLeftHandOptimize;
+- (void)setEnableLeftHandOptimize:;
+- (void)setEnableLeftHandOptimize:withPointInsideBlock:;
+- (id)virtualAnimatedAvatarView;
+- (void)updateVirtualAnimatedAvatarViewForIsHidden:;
+- (void)configWithUser:shouldShowDecoration:enterFrom:;
+- (void)configWithUser:shouldShowDecoration:enterFrom:awemodel:;
+- (void)replayDecorationAnimation;
+- (id)getAvatarFrame;
+- (void)updateDecorationLayoutToShrinkStyleWithUser:;
+- (void)setVirtualAnimatedAvatarView:;
+- (BOOL)shouldUseGrayImage;
+- (void)setShouldUseGrayImage:;
+- (void)setCanShowVirtualAnimatedAvatarIfNeed:;
+- (BOOL)canShowVirtualAnimatedAvatarIfNeed;
+- (id)init;
+- (BOOL)pointInside:withEvent:;
+- (void).cxx_destruct;
+- (void)setupConstraints;
+- (id)decorationView;
+- (void)setDecorationView:;
+- (id)avatarButton;
+- (void)setAvatarButton:;
+@end

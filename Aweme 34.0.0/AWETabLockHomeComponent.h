@@ -1,0 +1,30 @@
+@interface AWETabLockHomeComponent : AWEUserHomeBaseComponent
+@property (nonatomic) BOOL isFirstTimeViewDidLoad;
+@property (nonatomic) UIImage lockIconImage;
+@property (nonatomic) q collectsTotalStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isFirstTimeViewDidLoad;
+- (void)setIsFirstTimeViewDidLoad:;
+- (long long)collectsTotalStatus;
+- (void)setCollectsTotalStatus:;
+- (void)onDidSelectTabListIndex:actionType:hasRedDotWhenSwitched:needTrack:;
+- (void)addLocksToTabWithNoti:;
+- (void)addLocksToTab;
+- (void)updateLikeLock;
+- (BOOL)shouldShowFavoriteTabLock;
+- (BOOL)shouldIgnoreInDynamicLock:;
+- (BOOL)canShowLockIconWithIndex:;
+- (void)addLocksToTabWithIndex:;
+- (BOOL)shouldShowEntertainmentTabLock;
+- (id)lockIconImage;
+- (void)setLockIconImage:;
+- (id)init;
+- (void)addObserver;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)onInit;
+@end

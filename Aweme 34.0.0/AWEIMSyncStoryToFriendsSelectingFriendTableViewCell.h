@@ -1,0 +1,33 @@
+@interface AWEIMSyncStoryToFriendsSelectingFriendTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UIImageView selectedImageView;
+@property (nonatomic) UIView onlineDotView;
+@property (nonatomic) CAShapeLayer maskLayer;
+@property (nonatomic) Q hashFlag;
+@property (nonatomic) UIView lineView;
+- (void)updateOnlineStatus:;
+- (void)setOnlineDotView:;
+- (id)onlineDotView;
+- (void)updateIconViewNeedClipToBounds:;
+- (void)updateIconWithImage:needClipToBounds:;
+- (void)updateIconWithURL:needClipToBounds:;
+- (unsigned long long)hashFlag;
+- (void)setHashFlag:;
+- (void)updateSelectStatus:isDefaultSelected:;
+- (void)updateCellCorner:maskSize:;
+- (void)setup;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)lineView;
+- (id)maskLayer;
+- (void)setIconImageView:;
+- (void)setLineView:;
+- (void)setMaskLayer:;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+- (id)selectedImageView;
+- (void)setSelectedImageView:;
++ (id)identifier;
+@end

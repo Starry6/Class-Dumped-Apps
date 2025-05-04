@@ -1,0 +1,35 @@
+@interface AWEDylibManager : NSObject
+@property (nonatomic) NSMutableDictionary dylibRecords;
+@property (nonatomic) <AWEDylibManagerAdapterProtocol> commonAdapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bundleWillBeLoaded:fromBundle:enterTag:;
+- (void)bundleLoadFailed:fromBundle:enterTag:error:;
+- (void)bundleDidLoaded:machoHeader:fromBundle:enterTag:cost:;
+- (void)bundleDidActived:machoHeader:fromBundle:enterTag:cost:;
+- (void)preLoadBundleDidEntered:fromBundle:enterTag:;
+- (void)bundleIsLoadedByInstanceService:fromBundle:serviceName:methodName:;
+- (void)preloadIfMeetRequirement:record:needTime:;
+- (void)executeSearchTask;
+- (void)executeLiveTask;
+- (id)aAWEDylibManagerAdapterProtocol;
+- (id)commonAdapter;
+- (void)initDylibEnterRecord;
+- (void)appDidReceiveMemoryWarning;
+- (void)preloadDylib:;
+- (void)setDylibRecords:;
+- (id)dylibRecords;
+- (void)recordDylibEnter:;
+- (void)preloadDylib:inCurrentThread:;
+- (void)setCommonAdapter:;
+- (id)init;
+- (void)execute;
+- (void).cxx_destruct;
++ (void)_aweLazyRegisterLoad;
++ (void)_aweLazyRegisterStaticLoad;
++ (id)sharedIntance;
++ (Class)aAWEDylibManagerAdapterProtocolClass;
++ (void)execute;
+@end

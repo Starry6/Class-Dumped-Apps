@@ -1,0 +1,32 @@
+@interface AWEFavoriteFileEntranceCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView fileCoverImageView;
+@property (nonatomic) UIImageView fileImageView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView customMaskView;
+@property (nonatomic) UILabel fileLabel;
+@property (nonatomic) BOOL isProfileExploreStyle;
+@property (nonatomic) AWEGradientView maskLayer;
+- (void)p_setupUI;
+- (BOOL)isProfileExploreStyle;
+- (void)setIsProfileExploreStyle:;
+- (id)customMaskView;
+- (void)setCustomMaskView:;
+- (id)fileCoverImageView;
+- (void)setFileCoverImageView:;
+- (id)fileImageView;
+- (id)fileLabel;
+- (void)configWithCoverUrl:withFileNumber:isProfileExploreStyle:;
+- (void)refreshCoverImageWithProfileExploreStyle;
+- (void)refreshUIWithProfileExploreStyle;
+- (void)configWithCoverUrl:withFileNumber:;
+- (void)configWithNoFile;
+- (void)setFileImageView:;
+- (void)setFileLabel:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)maskLayer;
+- (void)setMaskLayer:;
++ (id)identifier;
+@end

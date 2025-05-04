@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentAICloneViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

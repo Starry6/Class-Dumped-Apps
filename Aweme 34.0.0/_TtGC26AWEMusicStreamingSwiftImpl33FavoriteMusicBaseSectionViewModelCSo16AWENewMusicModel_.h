@@ -1,0 +1,3 @@
+@interface _TtGC26AWEMusicStreamingSwiftImpl33FavoriteMusicBaseSectionViewModelCSo16AWENewMusicModel_ : AWEBaseListSectionViewModel
+- (id)init;
+@end

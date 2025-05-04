@@ -1,0 +1,31 @@
+@interface AWEPublishTimeTrackerResouceInfo : NSObject
+@property (nonatomic) q imageCount;
+@property (nonatomic) q videoCount;
+@property (nonatomic) double totalCount;
+@property (nonatomic) double imageTotalFileSize;
+@property (nonatomic) double videoTotalFileSize;
+@property (nonatomic) NSArray imageFileSizeList;
+@property (nonatomic) NSArray videoFileSizeList;
+@property (nonatomic) double totalFileSize;
+@property (nonatomic) NSDictionary imagesTypeCountDic;
+- (void)setTotalFileSize:;
+- (id)trackDictionary;
+- (void)setImagesTypeCountDic:;
+- (double)imageTotalFileSize;
+- (double)videoTotalFileSize;
+- (id)imageFileSizeList;
+- (id)videoFileSizeList;
+- (id)imagesTypeCountDic;
+- (void)setImageTotalFileSize:;
+- (void)setVideoTotalFileSize:;
+- (void)setImageFileSizeList:;
+- (void)setVideoFileSizeList:;
+- (double)totalCount;
+- (long long)imageCount;
+- (void).cxx_destruct;
+- (void)setImageCount:;
+- (void)setVideoCount:;
+- (long long)videoCount;
+- (void)setTotalCount:;
+- (double)totalFileSize;
+@end

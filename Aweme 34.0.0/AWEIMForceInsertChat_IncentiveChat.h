@@ -1,0 +1,33 @@
+@interface AWEIMForceInsertChat_IncentiveChat : AWEIMComponentBase
+@property (nonatomic) AWEIMChatModel chatModel;
+@property (nonatomic) AWEIMIncentiveChatCellConfDetail cellConfDetail;
+@property (nonatomic) BOOL currentColdStartDidShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (id)chatModel;
+- (void)setChatModel:;
+- (void)completeIncentiveChatServiceUpdate:;
+- (void)incentiveChatService:relationUpdateWithRelationID:conversationID:;
+- (void)incentiveChatServiceActivityExit:;
+- (id)forceInsertDecisionNode;
+- (void)didClickForceInsertChatCell:chatCell:chatListVC:;
+- (void)didRemoveForceInsertChat:;
+- (void)didShowForceInsertChat:;
+- (id)makeInsertedIncentiveChat;
+- (BOOL)p_hasEntryCell:;
+- (void)p_updateLastIncentiveChatModelDate:;
+- (void)setCellConfDetail:;
+- (double)p_getLastIncentiveChatModelDate;
+- (id)cellConfDetail;
+- (BOOL)currentColdStartDidShow;
+- (void)setCurrentColdStartDidShow:;
+- (id)p_getChatModelTimeStampKey;
+- (void)dealloc;
+- (unsigned long long)priority;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
++ (id)freqControlConfigWithNormal:;
+@end

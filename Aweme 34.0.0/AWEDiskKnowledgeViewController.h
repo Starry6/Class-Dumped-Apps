@@ -1,0 +1,33 @@
+@interface AWEDiskKnowledgeViewController : UIViewController
+@property (nonatomic) UILabel cacheTitleLabel;
+@property (nonatomic) UILabel cacheDescLabel;
+@property (nonatomic) UILabel cacheDescLabel1;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel operationLabel;
+@property (nonatomic) UILabel operationDescLabel;
+@property (nonatomic) UILabel operationDescLabel1;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (void)backBtnClick;
+- (id)operationLabel;
+- (void)setOperationLabel:;
+- (void)creatUI;
+- (id)cacheTitleLabel;
+- (id)cacheDescLabel;
+- (id)cacheDescLabel1;
+- (id)operationDescLabel;
+- (id)operationDescLabel1;
+- (void)setCacheTitleLabel:;
+- (void)setCacheDescLabel:;
+- (void)setCacheDescLabel1:;
+- (void)setOperationDescLabel:;
+- (void)setOperationDescLabel1:;
+- (id)init;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)lineView;
+- (void)setLineView:;
+@end

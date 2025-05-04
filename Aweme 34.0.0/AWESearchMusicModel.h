@@ -1,0 +1,32 @@
+@interface AWESearchMusicModel : AWEBaseApiModel
+@property (nonatomic) Q cardType;
+@property (nonatomic) <AWEStudioMusicModelProtocol> musicModel;
+@property (nonatomic) NSArray musics;
+@property (nonatomic) <AWEStudioDynamicPathModelProtocol> dynamicPatch;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q cardType;
+@property (nonatomic) AWEMusicModel musicModel;
+@property (nonatomic) NSArray musics;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEDynamicPatchModel dynamicPatch;
+- (id)musicModel;
+- (id)dynamicPatch;
+- (void)setMusicModel:;
+- (id)musics;
+- (void)setMusics:;
+- (void)setDynamicPatch:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (unsigned long long)cardType;
+- (void)setCardType:;
++ (id)hasMoreJSONTransformer;
++ (id)musicsJSONTransformer;
++ (id)musicModelJSONTransformer;
++ (id)dynamicPatchJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

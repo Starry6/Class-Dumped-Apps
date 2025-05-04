@@ -1,0 +1,9 @@
+@interface AWEHPTrackCommonAdapterFactory : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)getEnterHomepageTabTrackEnableInInitLandingWithTabID:;
+- (id)aAWEHPTrackCommonAdapter;
++ (Class)aAWEHPTrackCommonAdapterClass;
+@end

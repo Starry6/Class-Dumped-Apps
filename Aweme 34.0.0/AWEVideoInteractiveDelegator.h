@@ -1,0 +1,31 @@
+@interface AWEVideoInteractiveDelegator : NSObject
+@property (nonatomic) AWEPlayInteractionMaskController maskController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPureMode:;
+- (BOOL)detailSlide;
+- (id)maskController;
+- (BOOL)supportStickerMask;
+- (long long)videoScaleType;
+- (void)videoInteractiveViewWillShowBubbleView;
+- (void)videoInteractiveViewTapWithStickerShow;
+- (BOOL)videoInteractiveViewTapInCenter;
+- (void)videoInteractiveViewJumpScheme;
+- (void)resumePlaying;
+- (double)currentPlayerPlaybackTime;
+- (void)stickerDoubleTap:;
+- (void)stickerLongPress;
+- (BOOL)stickerLongPressShouldBegin;
+- (void)setMaskController:;
+- (BOOL)isFastCommentElementAppear;
+- (id)interactionBottomContainerView;
+- (id)interactionLeftContainerView;
+- (id)interactionRightContainerView;
+- (void).cxx_destruct;
+- (void)pause;
+- (void)pausePlaying;
+- (BOOL)isVideoPlaying;
+- (id)videoPlayerView;
+@end

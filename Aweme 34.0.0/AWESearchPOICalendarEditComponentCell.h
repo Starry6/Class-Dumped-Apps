@@ -1,0 +1,31 @@
+@interface AWESearchPOICalendarEditComponentCell : AWEMerchandiseComponentBaseCell
+@property (nonatomic) UILabel startHintLabel;
+@property (nonatomic) UILabel endHintLabel;
+@property (nonatomic) UILabel startDateLabel;
+@property (nonatomic) UILabel endDateLabel;
+@property (nonatomic) BOOL shouldDisplayDate;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterComponentModel componentModel;
+- (void)setComponentModel:;
+- (id)componentModel;
+- (void)configWithComponentModel:filterManager:;
+- (void)configDisplayUIForDefaultStyleWithModel:;
+- (void)configDisplayUIForSelectedStyleWithModel:;
+- (void)configDisplayUIForSelectingStyleWithModel:;
+- (id)startHintLabel;
+- (id)endHintLabel;
+- (id)startDateLabel;
+- (id)endDateLabel;
+- (BOOL)shouldDisplayDate;
+- (double)hintTextWidthForText:;
+- (void)setShouldDisplayDate:;
+- (void)configShouldDisplayDate:;
+- (void)configCalendarStyleWithModel:;
+- (void)setStartHintLabel:;
+- (void)setEndHintLabel:;
+- (void)setStartDateLabel:;
+- (void)setEndDateLabel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
++ (id)identifier;
+@end

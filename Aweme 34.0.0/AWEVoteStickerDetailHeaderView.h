@@ -1,0 +1,37 @@
+@interface AWEVoteStickerDetailHeaderView : UIView
+@property (nonatomic) UIView topView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeBtn;
+@property (nonatomic) AWEVoteStickerDetailHeaderOptionView leftOptionView;
+@property (nonatomic) AWEVoteStickerDetailHeaderOptionView rightOptionView;
+@property (nonatomic) UIView verticalLineView;
+@property (nonatomic) q currentSelectedIndex;
+@property (nonatomic) BOOL darkMode;
+@property (nonatomic) NSArray optionViews;
+@property (nonatomic) NSArray lineViews;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (long long)currentSelectedIndex;
+- (void)setCurrentSelectedIndex:;
+- (void)setOptionViews:;
+- (id)optionViews;
+- (BOOL)enableMutilOption;
+- (id)initWithFrame:darkMode:;
+- (id)leftOptionView;
+- (id)rightOptionView;
+- (void)setLineViews:;
+- (id)lineViews;
+- (void)configWithVoteInfo:;
+- (void)setLeftOptionView:;
+- (void)setRightOptionView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)topView;
+- (void)setTopView:;
+- (BOOL)darkMode;
+- (void)setDarkMode:;
+- (void)setVerticalLineView:;
+- (id)verticalLineView;
+@end

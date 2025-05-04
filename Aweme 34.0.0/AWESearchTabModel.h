@@ -1,0 +1,31 @@
+@interface AWESearchTabModel : AWEBaseApiModel
+@property (nonatomic) NSString tabType;
+@property (nonatomic) NSString tabName;
+@property (nonatomic) q feedType;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) AWESearchDynamicTabModel dynamicConfig;
+@property (nonatomic) q contanerType;
+@property (nonatomic) NSString originTabType;
+@property (nonatomic) BOOL isDefaultLanding;
+- (void)setExtra:;
+- (id)tabType;
+- (void)setTabType:;
+- (void)setIsDefaultLanding:;
+- (BOOL)isDefaultLanding;
+- (id)originTabType;
+- (long long)contanerType;
+- (void)setContanerType:;
+- (BOOL)isEqualToTabModel:;
+- (void)setDynamicConfig:;
+- (void)setOriginTabType:;
+- (long long)feedType;
+- (unsigned long long)hash;
+- (id)extra;
+- (void)setFeedType:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)tabName;
+- (void)setTabName:;
+- (id)dynamicConfig;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMEmoticonInfoModel : IESIMEmoticonInfoModel
+@property (nonatomic) q themeStyle;
+@property (nonatomic) NSNumber identifier;
+@property (nonatomic) NSNumber version;
+@property (nonatomic) NSString remoteURL;
+@property (nonatomic) NSString descrip;
+@property (nonatomic) AWEIMEmojiAuthor author;
+@property (nonatomic) <AWEIMEmoticonInfoAnimateIconModelProtocol> animateIcon;
+@property (nonatomic) BOOL userSelected;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSURL displayIconURL;
+@property (nonatomic) NSString uniqueId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setThemeStyle:;
+- (id)animateIcon;
+- (void)setAnimateIcon:;
+- (BOOL)userSelected;
+- (void)setUserSelected:;
+- (id)descrip;
+- (void)setDescrip:;
+- (id)accessibilityLabel;
+- (id)author;
+- (id)remoteURL;
+- (void)setIdentifier:;
+- (id)version;
+- (id)identifier;
+- (void)setVersion:;
+- (void).cxx_destruct;
+- (void)setAuthor:;
+- (long long)themeStyle;
+- (void)setRemoteURL:;
+@end

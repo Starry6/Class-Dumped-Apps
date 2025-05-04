@@ -1,0 +1,36 @@
+@interface AWEFeedTrackController : AWEBaseController
+@property (nonatomic) AWEControllerEvent listenerRegister;
+@property (nonatomic) double lastSlideDownTimeStamp;
+@property (nonatomic) double lastSlideUpTimeStamp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEFeedModuleServiceDOUYINHTSAdaper;
+- (void)trackWithTrackEventType:initialContextParams:;
+- (void)willTrackEventWithTrackEventType:initialContextParams:;
+- (id)paramsForTrackEventType:initialContextParams:;
+- (void)didTrackEventWithTrackEventType:initialContextParams:allTrackParams:;
+- (id)paramsForEnterPersonalDetail;
+- (id)paramsForSlideWithTrackEventType:initialContextParams:;
+- (void)didTrackEnterPersonalDetail;
+- (id)paramsForVideoClientShowWithInitialContextParams:;
+- (double)lastSlideDownTimeStamp;
+- (void)setLastSlideDownTimeStamp:;
+- (double)lastSlideUpTimeStamp;
+- (void)setLastSlideUpTimeStamp:;
+- (id)listenerRegister;
+- (void)reportDuplicateWithTrackEventType:forKey:listener:listenerParams:allTrackParams:;
+- (id)trackEventNameWithTrackEventType:;
+- (void)willTrackStayTimeWithInitialContextParams:;
+- (void)willTrackVideoClientShowWithInitialContextParams:;
+- (void)willTrackSlideWithTrackEventType:initialContextParams:;
+- (id)paramsForStayTimeWithInitialContextParams:;
+- (void)didTrackVideoClientShowWithAllTrackParams:;
+- (unsigned long long)trackPlatformWithTrackEventType:;
+- (void)setListenerRegister:;
+- (void)addListener:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
++ (Class)aAWEFeedModuleServiceDOUYINHTSAdaperClass;
+@end

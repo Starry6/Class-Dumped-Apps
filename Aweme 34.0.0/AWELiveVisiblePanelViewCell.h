@@ -1,0 +1,31 @@
+@interface AWELiveVisiblePanelViewCell : UITableViewCell
+@property (nonatomic) UIImageView rightIcon;
+@property (nonatomic) UILabel leftTitle;
+@property (nonatomic) UILabel leftSubTitle;
+@property (nonatomic) UIImageView leftIcon;
+@property (nonatomic) UIButton editButton;
+@property (nonatomic) AWELiveVisibleTypeModel model;
+@property (nonatomic) UIView topSeparator;
+@property (nonatomic) @? editCallback;
+- (void)configWithModel:;
+- (void)setEditCallback:;
+- (id)editCallback;
+- (void)setLeftIcon:;
+- (void)setRightIcon:;
+- (void)setLeftSubTitle:;
+- (id)leftSubTitle;
+- (void)setModel:;
+- (void)editButtonTapped;
+- (void)setEditButton:;
+- (void)setup;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)editButton;
+- (void).cxx_destruct;
+- (id)topSeparator;
+- (void)setTopSeparator:;
+- (id)leftTitle;
+- (void)setLeftTitle:;
+- (id)leftIcon;
+- (id)rightIcon;
+@end

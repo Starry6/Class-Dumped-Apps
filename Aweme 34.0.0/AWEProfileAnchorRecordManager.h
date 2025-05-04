@@ -1,0 +1,38 @@
+@interface AWEProfileAnchorRecordManager : NSObject
+@property (nonatomic) NSMutableDictionary memoryCache;
+@property (nonatomic) NSObject<OS_dispatch_queue> recordQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (id)detailTriggerEvents;
+- (void)onAppLogEvent:params:;
+- (BOOL)hasHitTabLandingReversalABTest;
+- (void)recordAnchorShown:awemeModel:referString:;
+- (void)recordAnchorClicked:awemeModel:referString:;
+- (id)otherProfileParamsWith:itemID:roomID:;
+- (void)createMemoryCacheIfNeed;
+- (void)hookLiveToolbarEvent;
+- (long long)profileTabLandingStrategy;
+- (id)otherProfileFetchParamsWith:itemID:roomID:;
+- (BOOL)hasHitTabLandingReversalABTestAll;
+- (id)currentUserTabLandingBlockMap;
+- (id)currentUserTabLandingBlockSettingsMap;
+- (void)recordAnchorAction:awemeModel:referString:isShown:;
+- (BOOL)isCurrentUserWith:;
+- (id)keyWithRecordType:authorID:extID:;
+- (id)modelWith:type:;
+- (id)prefixWith:;
+- (BOOL)blockTabLandingForCurrentUser:serviceTabType:isFromHome:;
+- (id)init;
+- (void)dealloc;
+- (id)settings;
+- (id)memoryCache;
+- (void).cxx_destruct;
+- (void)setRecordQueue:;
+- (id)recordQueue;
+- (void)setMemoryCache:;
++ (void)_aweLazyRegisterLoad;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMVoipMessage : AWEIMMessage
+@property (nonatomic) Q voipStatus;
+@property (nonatomic) NSString voipContent;
+@property (nonatomic) q cameraOff;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) Q cellStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (long long)cameraOff;
+- (void)setCameraOff:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)enableBubbleColorWithType:isQuoteReply:;
+- (BOOL)supportRefactorCell;
+- (id)bubblePaddingInset:;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)calculateAttributedContent;
+- (unsigned long long)voipStatus;
+- (void)setVoipStatus:;
+- (id)voipContent;
+- (id)voipIcon:;
+- (void)setVoipContent:;
+- (unsigned long long)cellStyle;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)mainTitle;
+- (void)setMainTitle:;
++ (id)contentAttributes;
+@end

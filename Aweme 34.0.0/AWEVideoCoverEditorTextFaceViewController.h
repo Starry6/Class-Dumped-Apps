@@ -1,0 +1,33 @@
+@interface AWEVideoCoverEditorTextFaceViewController : ACCTextTypeFaceViewController
+@property (nonatomic) AWEStoryColorChooseView colorChooseView;
+@property (nonatomic) NSArray categories;
+@property (nonatomic) UIView splitLine;
+@property (nonatomic) AWEVideoCoverEditorTextStyleCategoryView colorView;
+@property (nonatomic) AWEVideoCoverEditorTextStyleCategoryView styleView;
+@property (nonatomic) AWEVideoCoverEditorTextStyleCategoryView alignmentView;
+@property (nonatomic) BOOL isInputColorMode;
+- (void)setStyleView:;
+- (id)splitLine;
+- (void)setSplitLine:;
+- (void)configUI;
+- (void)reloadPanel;
+- (id)colorChooseView;
+- (void)updateWithColor:textStyle:textAlignment:;
+- (void)clearPanel;
+- (void)setColorChooseView:;
+- (id)styleView;
+- (id)initWithMode:isCoverEdit:;
+- (void)setIsInputColorMode:;
+- (BOOL)isInputColorMode;
+- (void)handleInputColorModel:;
+- (void)layoutUI:view:;
+- (id)alignmentView;
+- (void)setAlignmentView:;
+- (void)setCategories:;
+- (id)categories;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)colorView;
+- (void)setColorView:;
+- (void)prepareData;
+@end

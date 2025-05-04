@@ -1,0 +1,2 @@
+@interface AWESearchPreRequestProviderBaseContext : NSObject
+@end

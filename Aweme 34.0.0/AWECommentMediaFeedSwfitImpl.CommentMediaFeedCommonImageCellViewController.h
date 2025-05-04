@@ -1,0 +1,24 @@
+@interface AWECommentMediaFeedSwfitImpl.CommentMediaFeedCommonImageCellViewController : AWECommentMediaFeedSwfitImpl.CommentMediaFeedCellViewController
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (void)updateCurrentAwemeModel:;
+- (void)didChangeAlbumIndex:animated:;
+- (BOOL)currentVCIsActive;
+- (BOOL)shouldRecognizeProgressGesture;
+- (BOOL)shouldRecognizeWindowGesture;
+- (id)progressConfig;
+- (void)didUpdatePaginatedProgressWithDuration:totalCount:currentIndex:currentProcess:needAnimation:;
+- (void)richContainerDidCreateProgressView:;
+- (void)didUpdatePaginatedProgressWithIndex:totalCount:;
+- (BOOL)canPlayerPlayAfterTouch;
+- (void)actionForSingleTapWithGes:;
+- (void)doubleTapToZoomWithGes:;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)initWithCoder:;
+@end

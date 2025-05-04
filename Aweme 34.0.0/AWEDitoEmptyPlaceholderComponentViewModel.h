@@ -1,0 +1,31 @@
+@interface AWEDitoEmptyPlaceholderComponentViewModel : DitoComponentViewModel
+@property (nonatomic) NSString clickEventName;
+@property (nonatomic) AWEDitoEmptyPlaceholderComponentView cell;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString actionTitle;
+@property (nonatomic) NSString backgroundColorHex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateNode:;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (void)setClickEventName:;
+- (id)clickEventName;
+- (id)initWithNode:;
+- (id)actionTitle;
+- (void)setActionTitle:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (void)updateWithData:;
+- (id)cell;
+- (void)setCell:;
+- (void)didTapActionButton;
+- (id)backgroundColorHex;
+- (id)mainTitle;
+- (void)setBackgroundColorHex:;
+- (void)setMainTitle:;
+@end

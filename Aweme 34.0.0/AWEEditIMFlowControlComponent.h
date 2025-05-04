@@ -1,0 +1,32 @@
+@interface AWEEditIMFlowControlComponent : ACCFeatureComponent
+@property (nonatomic) ACCAnimatedButton backButton;
+@property (nonatomic) AWEEditIMFlowControlViewModel viewModel;
+@property (nonatomic) <ACCEditViewContainer> viewContainer;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) <ACCAIGCEffectServiceProtocol> aigcService;
+- (void)componentDidMount;
+- (void)componentDidAppear;
+- (unsigned long long)preferredLoadPhase;
+- (void)componentWillAppear;
+- (id)editService;
+- (void)setEditService:;
+- (void)loadComponentView;
+- (id)stickerService;
+- (id)serviceBinding;
+- (void)backClicked;
+- (id)aigcService;
+- (void)removePreUploadingTaskWhenQuit;
+- (void)setAigcService:;
+- (void)trackMango25BackButtonClick;
+- (id)backButton;
+- (void)dismissHandler;
+- (id)viewModel;
+- (void)setBackButton:;
+- (id)containerViewController;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)cancelBlock;
+- (void)setViewContainer:;
+- (id)viewContainer;
+- (void)popViewController;
+@end

@@ -1,0 +1,31 @@
+@interface AWESearchImageTextVerticalModel : AWESearchBusinessContainerNormalBaseModel
+@property (nonatomic) NSString text;
+@property (nonatomic) NSArray imageURLList;
+@property (nonatomic) NSArray avatarImageURLList;
+@property (nonatomic) NSString authorName;
+@property (nonatomic) BOOL like;
+@property (nonatomic) NSString likeNumber;
+@property (nonatomic) Q cardType;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+- (id)imageURLList;
+- (void)setImageURLList:;
+- (void)setAvatarImageURLList:;
+- (id)avatarImageURLList;
+- (void)setLike:;
+- (void)setLikeNumber:;
+- (id)likeNumber;
+- (void)setHeight:;
+- (void)setWidth:;
+- (void)setText:;
+- (id)text;
+- (double)width;
+- (BOOL)like;
+- (void).cxx_destruct;
+- (double)height;
+- (id)authorName;
+- (unsigned long long)cardType;
+- (void)setCardType:;
+- (void)setAuthorName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

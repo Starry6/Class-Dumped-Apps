@@ -1,0 +1,33 @@
+@interface AWEUserTabSetting : MTLModel
+@property (nonatomic) AWEUserEnterpriseTab enterpriseTab;
+@property (nonatomic) AWEUserPrivateTab privateTab;
+@property (nonatomic) AWETTUserShopTab ttUserShopTab;
+@property (nonatomic) AWEShowProgrammeTabModel showProgrammeTabModel;
+@property (nonatomic) BOOL hideLikeTab;
+@property (nonatomic) AWEProfileBrandTabModel brandTab;
+@property (nonatomic) AWEProfileAggregationTabModel aggregationTab;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enterpriseTab;
+- (void)setEnterpriseTab:;
+- (id)privateTab;
+- (void)setPrivateTab:;
+- (id)ttUserShopTab;
+- (void)setTtUserShopTab:;
+- (id)showProgrammeTabModel;
+- (void)setShowProgrammeTabModel:;
+- (BOOL)hideLikeTab;
+- (void)setHideLikeTab:;
+- (id)brandTab;
+- (void)setBrandTab:;
+- (id)aggregationTab;
+- (void)setAggregationTab:;
+- (void).cxx_destruct;
++ (id)enterpriseTabJSONTransformer;
++ (id)showProgrammeTabModelJSONTransformer;
++ (id)brandTabJSONTransformer;
++ (id)aggregationTabJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionBaseViewModel : NSObject
+@property (nonatomic) AWEPlayInteractionContext context;
+@property (nonatomic) <AWEPlayInteractionViewModelHelper> viewModelHelper;
+@property (nonatomic) Q eventSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (id)logExtraDict;
+- (id)fromModel;
+- (id)enterFrom;
+- (id)interactor_fromModel;
+- (id)aAWELiteUGSocialModuleAdapter;
+- (void)p_trackFollowEventWithMethod:enterMethod:;
+- (void)addClickSearchResultVideoTrackForParams:;
+- (id)viewModelHelper;
+- (void)setViewModelHelper:;
+- (void)p_trackUnFollowEventWithMethod:enterMethod:;
+- (id)awe_innnerFeedPageBtmIdentifier;
+- (void)dealloc;
+- (unsigned long long)eventSource;
+- (id)extra;
+- (id)initWithContext:;
+- (void)setEventSource:;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
++ (Class)aAWELiteUGSocialModuleAdapterClass;
+@end

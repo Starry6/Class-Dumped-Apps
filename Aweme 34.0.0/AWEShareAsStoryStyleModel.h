@@ -1,0 +1,34 @@
+@interface AWEShareAsStoryStyleModel : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL enableCornerRadius;
+@property (nonatomic) double cornerRadiusValue;
+@property (nonatomic) BOOL enableOutline;
+@property (nonatomic) NSString outlineColor;
+@property (nonatomic) double outlineWidth;
+@property (nonatomic) BOOL enableShadow;
+@property (nonatomic) AWEShareAsStoryStyleCombinedImageSizeModel combinedImageSize;
+@property (nonatomic) double ratio;
+@property (nonatomic) AWEShareAsStoryStyleComponentModel componentModel;
+- (void)setComponentModel:;
+- (id)componentModel;
+- (void)setCombinedImageSize:;
+- (id)combinedImageSize;
+- (void)setEnableCornerRadius:;
+- (BOOL)enableCornerRadius;
+- (double)cornerRadiusValue;
+- (BOOL)enableOutline;
+- (void)setEnableOutline:;
+- (void)setEnableShadow:;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (BOOL)enableShadow;
+- (double)ratio;
+- (void)setRatio:;
+- (id)outlineColor;
+- (void)setOutlineColor:;
+- (double)outlineWidth;
+- (void)setOutlineWidth:;
+- (void)setCornerRadiusValue:;
++ (id)modelCustomPropertyMapper;
+@end

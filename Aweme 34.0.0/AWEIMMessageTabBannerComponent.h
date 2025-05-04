@@ -1,0 +1,34 @@
+@interface AWEIMMessageTabBannerComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMChatListHeaderInterface> headerService;
+@property (nonatomic) AWEIMPriorityQueueSyncDispatcher bannerDispatcher;
+@property (nonatomic) UIView bannerView;
+@property (nonatomic) AWEIMComponentManager componentManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)componentContext;
+- (id)componentsNameArrayWithContext:;
+- (void)setComponentManager:;
+- (id)headerService;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)autoDispatchFloatingViewWithPriority:priorityObject:;
+- (void)setHeaderService:;
+- (void)setDelegateForBannerInteractor:;
+- (BOOL)isBannerViewShowing;
+- (BOOL)canShowCurrentHeader;
+- (id)headerViewForChatList;
+- (id)bannerDispatcher;
+- (void)addBannerView:animated:;
+- (void)dismissBannerView:animated:;
+- (BOOL)ifBannerHasPreferTheme;
+- (long long)bannerPreferThemeStyle;
+- (void)setBannerDispatcher:;
+- (id)trackIdentifier;
+- (void).cxx_destruct;
+- (id)parentViewController;
+- (id)bannerView;
+- (void)setBannerView:;
+- (id)componentManager;
+@end

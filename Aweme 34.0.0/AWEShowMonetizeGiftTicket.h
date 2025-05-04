@@ -1,0 +1,34 @@
+@interface AWEShowMonetizeGiftTicket : NSObject
+@property (nonatomic) NSHashTable handlers;
+@property (nonatomic) BOOL shouldShowGiftTicketPage;
+@property (nonatomic) NSObject<AWEPaymentEventHandlerProtocol> paymentHandler;
+@property (nonatomic) BDXBridgeEventSubscriber giftPaySubscriber;
+@property (nonatomic) BDXBridgeEventSubscriber giftTicketPageOpenSubscriber;
+@property (nonatomic) AWEShowAnnieXPageClickShowTrackUtil clickShowTrackUtil;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addFEEvent;
+- (id)getHandlersForContainerID:;
+- (void)setClickShowTrackUtil:;
+- (id)clickShowTrackUtil;
+- (void)setShouldShowGiftTicketPage:;
+- (void)createPaymentHandlerWithAweme:containerID:;
+- (void)trackGiftTicketPageShowWithErrorCode:containerID:extraParams:;
+- (void)setGiftPaySubscriber:;
+- (id)giftPaySubscriber;
+- (void)setPaymentHandler:;
+- (void)setGiftTicketPageOpenSubscriber:;
+- (id)giftTicketPageOpenSubscriber;
+- (id)paymentHandler;
+- (void)addGiftTicketHandler:;
+- (void)removeGiftTicketHandler:;
+- (void)tryToShowGetGiftTicketPageWithJson:aweme:params:containerID:completion:;
+- (BOOL)isShowingGetGiftTicketPage;
+- (BOOL)shouldShowGiftTicketPage;
+- (id)handlers;
+- (id)init;
+- (void)setHandlers:;
+- (void).cxx_destruct;
+@end

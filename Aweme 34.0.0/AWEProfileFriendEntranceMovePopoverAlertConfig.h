@@ -1,0 +1,32 @@
+@interface AWEProfileFriendEntranceMovePopoverAlertConfig : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString button;
+@property (nonatomic) q showLimit;
+@property (nonatomic) q exitHour;
+@property (nonatomic) NSString defaultToastText;
+@property (nonatomic) NSString frequencyID;
+@property (nonatomic) BOOL ignoreFrequencyRule;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)showLimit;
+- (void)setShowLimit:;
+- (long long)exitHour;
+- (void)setExitHour:;
+- (id)defaultToastText;
+- (void)setDefaultToastText:;
+- (id)frequencyID;
+- (void)setFrequencyID:;
+- (BOOL)ignoreFrequencyRule;
+- (void)setIgnoreFrequencyRule:;
+- (void)setButton:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)button;
++ (BOOL)automaticallyDefaultMapping;
+@end

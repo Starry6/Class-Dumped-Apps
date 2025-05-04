@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionExpandAreaExtendController : AWEPlayInteractionNewBaseController
+@property (nonatomic) UIView authorInnerBlankView;
+@property (nonatomic) UIView authorRightBlankView;
+@property (nonatomic) UIView descriptionRightBlankView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupGesture;
+- (BOOL)isAlbumDirectExpand;
+- (void)setupRegister;
+- (id)authorInnerBlankView;
+- (id)authorRightBlankView;
+- (id)descriptionRightBlankView;
+- (void)setupAuthorInnerBlankView;
+- (void)onDidClickBlankViewWithEnterMethod:;
+- (void)updateAuthorInnerBlankViewHiddenState;
+- (BOOL)updateAuthorRightBlankViewHiddenState;
+- (void)updateAuthorRightBlankViewLayout;
+- (BOOL)updateDescriptionRightBlankViewHiddenState;
+- (void)updateDescriptionRightBlankViewLayout;
+- (BOOL)shouldShowBlankView;
+- (long long)elementCommonBottomOffSet;
+- (void)onAuthorElementViewDidLoad:;
+- (void)onAuthorElementAlbumTagClicked:;
+- (void)onAuthorElementStoryTagClicked:;
+- (void)onAuthorElementTimeLabelClicked:;
+- (void)setAuthorInnerBlankView:;
+- (void)setAuthorRightBlankView:;
+- (void)setDescriptionRightBlankView:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setupUI;
+- (void)updateUI;
+@end

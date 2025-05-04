@@ -1,0 +1,30 @@
+@interface AWEIMEnterGroupAuditHintProvider : AWEIMChatListHintProviderComponentBase
+@property (nonatomic) <IESIMApplyJoinGroupDataManagerProtocol> dataManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (unsigned long long)typeOfProvidingHint;
+- (unsigned long long)priorityOfProvidingHint;
+- (void)reloadHintWithCellContext:;
+- (BOOL)isCompatibleWithTimeText;
+- (void)updateCellComponentWhenChatUpdate:;
+- (void)didDisplayedHint:cellContext:;
+- (void)didClickedHint:cellContext:;
+- (void)asyncUpdateHintVMWithChatModel:;
+- (void)didInsertedChatListForChats:;
+- (void)requestEnterGroupApplyWithChatModels:;
+- (void)handleReceiveJoinGroupApplyNotice:;
+- (BOOL)isSupportUpdateHintWithConversation:;
+- (void)updateHintForConversationId:content:;
+- (void)updateEnterGroupAuditHintForConversationId:unreadCount:con:;
+- (BOOL)p_disableHighLightWithCon:;
+- (BOOL)isCompatibleWithMention;
+- (id)dataManager;
+- (void)setDataManager:;
+- (void).cxx_destruct;
+- (void)addNotificationObserver;
++ (BOOL)canCreateComponentWithContext:;
+@end

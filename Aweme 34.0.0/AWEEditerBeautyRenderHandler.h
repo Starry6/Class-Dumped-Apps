@@ -1,0 +1,34 @@
+@interface AWEEditerBeautyRenderHandler : NSObject
+@property (nonatomic) <AEKMegaEditor> megaEditor;
+@property (nonatomic) AWERecordBeautyDataManager dataManager;
+@property (nonatomic) NSMutableDictionary resourceInfo;
+- (id)resourceInfo;
+- (void)setResourceInfo:;
+- (id)megaEditor;
+- (void)setMegaEditor:;
+- (float)convertRealValue:;
+- (void)megaRemoveAllEffects;
+- (void)syncRefreshAlgoAndCurrentFrame:;
+- (void)resetRender;
+- (void)megaRemoveEffectWithNodeId:;
+- (long long)effectCurrentValueWithModel:;
+- (void)applyEffectWithActionModel:megaEditor:;
+- (void)megaRemoveNotValidEffect;
+- (BOOL)hasMoreTagStatusWithActionModel:;
+- (id)resourceWithActionModel:;
+- (id)tagWithActionModel:;
+- (id)beautifyItemModelWithActionModel:;
+- (id)tagInfoWithActionModel:;
+- (float)vailedRealValue:realMinValue:realMaxValue:;
+- (id)statusModellWithActionModel:;
+- (long long)effectDefaultValueWithModel:;
+- (float)realValue:;
+- (void)prepareMegaEditorWithPublishModel:dataManager:;
+- (id)effectRealValueInfo;
+- (void)megaCommitAndRender;
+- (void)renderWithModels:;
+- (void)megaNotCommitByRemoveNotValidEffectWithMegaEditor:;
+- (id)dataManager;
+- (void)setDataManager:;
+- (void).cxx_destruct;
+@end

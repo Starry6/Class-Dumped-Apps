@@ -1,0 +1,2 @@
+@interface AWEIMShareBusinessService : NSObject
+@end

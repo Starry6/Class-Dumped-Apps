@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentMentionFeedBottomBarElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

@@ -1,0 +1,32 @@
+@interface AWERadarGroupEnterCommandView : UIView
+@property (nonatomic) NSMutableArray letters;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) NSMutableString groupCommand;
+@property (nonatomic) BOOL isFull;
+@property (nonatomic) BOOL isEmpty;
+@property (nonatomic) AWERadarSpringActivityConfigModel configModel;
+- (void)p_setupUI;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)setGroupComandText:;
+- (void)setGroupCommand:;
+- (void)deleteLetter;
+- (void)insertLetter:;
+- (id)groupCommand;
+- (void)fillGroupCommand:;
+- (void)setGroupCommandInvalid;
+- (id)p_currentLastLetter;
+- (id)textLabel;
+- (id)init;
+- (void)setLetters:;
+- (id)letters;
+- (void)clear;
+- (void)setIsEmpty:;
+- (BOOL)isEmpty;
+- (void).cxx_destruct;
+- (BOOL)isFull;
+- (void)setTextLabel:;
+- (void)setIsFull:;
++ (double)suggestHeight;
++ (double)suggestWidth;
+@end

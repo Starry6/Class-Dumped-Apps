@@ -1,0 +1,37 @@
+@interface AWEIMUserMessagePresenter : AWEIMGestureUIViewPresenter
+@property (nonatomic) AWEIMUIViewPresenter messageContainer;
+@property (nonatomic) AWEIMUIViewPresenter avatarContainer;
+@property (nonatomic) AWEIMUIViewPresenter bodyContainer;
+@property (nonatomic) AWEIMUIViewPresenter bodyHeaderContainer;
+@property (nonatomic) AWEIMUIViewPresenter bodyNameContainer;
+@property (nonatomic) AWEIMUIViewPresenter bubbleContainer;
+@property (nonatomic) AWEIMUIViewPresenter bubbleInnerContainer;
+@property (nonatomic) AWEIMUIViewPresenter bubble;
+@property (nonatomic) AWEIMUIViewPresenter foldMessageContainer;
+@property (nonatomic) AWEIMUIViewPresenter bodyFooterContainer;
+- (void)didReceiveProps:;
+- (id)bodyContainer;
+- (void)setBodyContainer:;
+- (id)messageContainer;
+- (id)bodyHeaderContainer;
+- (id)bodyFooterContainer;
+- (id)bodyNameContainer;
+- (id)bubbleInnerContainer;
+- (double)p_bubbleMaxWidth;
+- (id)foldMessageContainer;
+- (void)updateBubbleMaxWidth;
+- (void)setBodyHeaderContainer:;
+- (void)setMessageContainer:;
+- (void)setBodyNameContainer:;
+- (void)setBubbleInnerContainer:;
+- (void)setFoldMessageContainer:;
+- (void)setBodyFooterContainer:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (id)bubble;
+- (void)setBubble:;
+- (id)bubbleContainer;
+- (void)setBubbleContainer:;
+- (id)avatarContainer;
+- (void)setAvatarContainer:;
+@end

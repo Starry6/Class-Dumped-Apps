@@ -1,0 +1,32 @@
+@interface AWEIMFansGroupTopDynamicDomainTemplateView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIView dotView;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) BOOL hasRedDot;
+@property (nonatomic) <AWEIMFansGroupTopDynamicDomainDelegateProtocol> delegate;
+- (void)layoutSubviews;
+- (void)setHasRedDot:;
+- (BOOL)hasRedDot;
+- (void)configWithLightIconURL:DarkIconURL:style:labelText:ignoreTheme:;
+- (void)setupBackgroundImageViewWithLightUrl:darkUrl:ignoreTheme:;
+- (void)addDotView;
+- (void)hideDotView;
+- (void)__jumpToScheme;
+- (void)setLabel:;
+- (void)setLabelFont:;
+- (id)init;
+- (id)delegate;
+- (id)label;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)backgroundImageView;
+- (id)dotView;
+- (void)setDotView:;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setLabelColor:;
+- (double)titleWidth;
+- (void)setBackgroundImageView:;
+@end

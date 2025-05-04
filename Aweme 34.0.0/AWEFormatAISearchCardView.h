@@ -1,0 +1,30 @@
+@interface AWEFormatAISearchCardView : AWESearchCachalotBaseCardView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEFormatAISearchCardHeaderView headerView;
+@property (nonatomic) NSArray avatarInfos;
+@property (nonatomic) AWEFormatAISearchCardViewModel cardViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentWillDisplay;
+- (void)setCardViewModel:;
+- (void)setAvatarInfos:;
+- (id)cardViewModel;
+- (id)avatarInfos;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)initWithFrame:;
+- (id)tableView;
+- (id)headerView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setHeaderView:;
+- (id)componentView;
+- (void)updateWithViewModel:;
++ (id)sizeWithViewModel:width:;
+@end

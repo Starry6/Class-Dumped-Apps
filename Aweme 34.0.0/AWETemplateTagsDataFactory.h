@@ -1,0 +1,31 @@
+@interface AWETemplateTagsDataFactory : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)generateTextElementWithInfoModel:;
++ (id)generateFeedGeneralLableWithModel:;
++ (id)generateFeedGeneralLableWithContext:;
++ (id)generateImageElementWithInfoModel:;
++ (long long)getInsertPriorityWithBusinessStr:;
++ (id)findDetailDataWithDatas:reference:;
++ (BOOL)staiticLabelVerify:;
++ (BOOL)containersVerify:;
++ (BOOL)templateTypeVerify:;
++ (void)containerStyleModelVerify:;
++ (BOOL)elementsVerify:template:;
++ (BOOL)elementTypeVerifyWithElementType:verifyType:;
++ (BOOL)textInfoModelVerify:;
++ (BOOL)multiTextInfoModelVerify:;
++ (BOOL)multiImageInfoModelVerify:;
++ (void)textStyleModelVerify:;
++ (void)multiTextStyleModelVerify:;
++ (void)imageStyleModelVerify:;
++ (BOOL)imageInfoModelVerify:;
++ (BOOL)multiImageStyleModelVerify:;
++ (BOOL)candidateVerify:;
++ (id)generateTagsModelWithContext:;
++ (id)generateTagsModelWithStrategyClass:context:;
++ (id)generateMultiImageElementWithInfoModel:;
++ (id)generateMultiTextElementWithInfoModel:;
+@end

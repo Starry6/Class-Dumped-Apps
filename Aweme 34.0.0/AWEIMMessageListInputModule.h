@@ -1,0 +1,33 @@
+@interface AWEIMMessageListInputModule : AWEIMMessageListModule
+@property (nonatomic) UIViewController<AWEIMInputViewControllerProtocol> inputVC;
+@property (nonatomic) <AWEIMMessageListLayoutInterface> layoutService;
+@property (nonatomic) BOOL isHiddenByMultiSelected;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)checkAndChangeQuoteReplyInputVCStatusWithMessage:;
+- (void)didFetchFullDetailUser:fullDetailUser:;
+- (void)changeTypeToText;
+- (void)baseViewControllerFrameDidChanged;
+- (id)layoutService;
+- (void)setLayoutService:;
+- (void)didUpdateInputVCFrame:inputViewType:oldInputViewType:;
+- (void)messageListBackgroundImageDidUpdated:;
+- (void)multiSelectedStateDidChanged:;
+- (void)p_setupInputVC;
+- (void)setIsHiddenByMultiSelected:;
+- (BOOL)isHiddenByMultiSelected;
+- (id)inputVCWithFunctions:;
+- (void)p_showGifSearchViewController;
+- (void)p_setupInputVCBgColor;
+- (void)p_tryUpdateExperimentColorForView:;
+- (id)init;
+- (long long)currentInputType;
+- (void).cxx_destruct;
+- (id)inputVC;
+- (void)setInputVC:;
++ (BOOL)canCreateComponentWithContext:;
+@end

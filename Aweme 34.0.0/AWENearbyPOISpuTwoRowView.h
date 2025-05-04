@@ -1,0 +1,33 @@
+@interface AWENearbyPOISpuTwoRowView : UIView
+@property (nonatomic) UIView seperatorLine;
+@property (nonatomic) UIImageView spuImageView;
+@property (nonatomic) UILabel spuTitleLabel;
+@property (nonatomic) UILabel priceLabel;
+@property (nonatomic) UILabel originPriceLabel;
+@property (nonatomic) YYLabel discountLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDiscountLabel:;
+- (id)discountLabel;
+- (void)setOriginPriceLabel:;
+- (id)originPriceLabel;
+- (void)configViewsWithModel:;
+- (void)hiddenSeperatorLine;
+- (id)spuTitleLabel;
+- (id)spuImageView;
+- (void)configViewsWithMode:;
+- (void)updateViewsWithModelV1:;
+- (void)updateViewsWithModelV2:;
+- (void)setSpuImageView:;
+- (void)setSpuTitleLabel:;
+- (id)accessibilityLabel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)seperatorLine;
+- (void)setSeperatorLine:;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+@end

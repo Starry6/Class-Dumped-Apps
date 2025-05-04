@@ -1,0 +1,2 @@
+@interface AWEIMMessageTabCommonDefines : NSObject
+@end

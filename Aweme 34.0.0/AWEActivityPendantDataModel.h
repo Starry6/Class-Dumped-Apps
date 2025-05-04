@@ -1,0 +1,33 @@
+@interface AWEActivityPendantDataModel : MTLModel
+@property (nonatomic) Q imageType;
+@property (nonatomic) NSString staticExpandedURL;
+@property (nonatomic) NSString staticFoldedURL;
+@property (nonatomic) NSString lottiFileURL;
+@property (nonatomic) NSString compressedLottieFileMD5;
+@property (nonatomic) NSArray expandedPendantFrameList;
+@property (nonatomic) NSArray foldedPendantFrameList;
+@property (nonatomic) NSString routerURL;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)routerURL;
+- (void)setRouterURL:;
+- (id)staticExpandedURL;
+- (id)staticFoldedURL;
+- (id)expandedPendantFrameList;
+- (id)foldedPendantFrameList;
+- (id)lottiFileURL;
+- (void)setStaticExpandedURL:;
+- (void)setStaticFoldedURL:;
+- (void)setLottiFileURL:;
+- (id)compressedLottieFileMD5;
+- (void)setCompressedLottieFileMD5:;
+- (void)setExpandedPendantFrameList:;
+- (void)setFoldedPendantFrameList:;
+- (void)setImageType:;
+- (void).cxx_destruct;
+- (unsigned long long)imageType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

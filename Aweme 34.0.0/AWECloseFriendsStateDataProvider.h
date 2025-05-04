@@ -1,0 +1,37 @@
+@interface AWECloseFriendsStateDataProvider : AWESocialRelationDataProvider
+@property (nonatomic) AWESocialRelationObserver mateStatusObserver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (void)didFinishTapTAIsFriendWithUser:isFriend:;
+- (long long)fakeGenerateButtonStatusAfterClick:;
+- (id)readFromMemory:;
+- (BOOL)userIsCloseFriendsType:;
+- (BOOL)userIsReverseCloseFriendsType:;
+- (long long)getCloseFriendsStatusWithUserID:scene:;
+- (void)updateCloseFriendsUserWithProfileUser:;
+- (void)updateCloseFriendsUserForIMWithUserID:closeFriendsType:;
+- (BOOL)userIsCloseFriends:scene:;
+- (void)setMateStatusObserver:;
+- (id)mateStatusObserver;
+- (BOOL)checkReachedCloseFriendsCountLimit:;
+- (void)p_removeCloseFriendsWithUserID:action:;
+- (void)p_addCloseFriends:completion:;
+- (void)p_removeCloseFriends:completion:;
+- (void)p_batchUpdateCloseFriends:completion:;
+- (void)p_handleNetworkError:completion:;
+- (void)p_handleAddCloseFriendsWithResponseModel:userID:completion:;
+- (void)p_showToastWithResponseModel:shouldShow:;
+- (void)updateCacheAndWriteUsersToDB:deleteUsers:action:;
+- (void)p_handleRemoveCloseFriendsWithResponseModel:userID:completion:;
+- (void)p_handleBatchUpdateCloseFriendsWithResponseModel:userIDList:completion:;
+- (void)p_updateCloseFriendsUserWithUserID:closeFriendType:action:;
+- (id)init;
+- (void)dealloc;
+- (id)identifier;
+- (void).cxx_destruct;
+- (void)write:completion:;
+@end

@@ -1,0 +1,37 @@
+@interface AWELongPressPanelBigFontAdaptService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)adaptedFontSizeWithOriginSize:;
+- (double)settingsCellFontSize;
+- (id)largeIconImageSize;
+- (double)settingCellHeight;
+- (long long)lppBigFontAdaptModeConfig;
+- (double)interactiveShareContainerViewHeight;
+- (double)interactiveShareCellAvatarLength;
+- (id)avatarStateViewSize;
+- (double)avatarStateViewBorderWidth;
+- (double)airplaneWidthAndHeight;
+- (double)onlineDotWidthAndHeight;
+- (double)avatarTitleLabelHeight;
+- (double)avatarSubTitleLabelHeight;
+- (id)interactiveShareCellSize;
+- (double)shareToLabelHeight;
+- (id)shareTextBtnSize;
+- (id)shareTextBtnImageInset;
+- (id)shareTextBtnImageSize;
+- (id)interactiveShareCollectionViewUIEdgeInset;
+- (double)shareCollectionViewTopAndBottomOffset;
+- (id)activeDotSize;
+- (id)activeDotContainerSize;
+- (double)doubleAvatarViewWH;
+- (double)doubleAvatarViewOuterWidth;
+- (id)rightIconSubviewSize;
+- (double)searchPictureSubViewHeight;
+- (double)adaptedFontSizeForSpeedSegmentViewWithSize:;
+- (double)adaptedLeftSpacingForSpeedSegmentWithSpacing:;
+- (id)leftIconSubviewSize;
+- (id)iconImageSize;
+- (double)minimumLineSpacing;
+@end

@@ -1,0 +1,31 @@
+@interface AWEMusicStreamingImpl.LunaDigitalAssetInfo : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) q itemType;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) q amount;
+@property (nonatomic) q onlineDate;
+@property (nonatomic) q countPurch;
+@property (nonatomic) q salePeriod;
+@property (nonatomic) q purchCountLimit;
+@property (nonatomic) BOOL isOnSale;
+- (long long)countPurch;
+- (void)setCountPurch:;
+- (long long)onlineDate;
+- (void)setOnlineDate:;
+- (long long)salePeriod;
+- (void)setSalePeriod:;
+- (long long)purchCountLimit;
+- (void)setPurchCountLimit:;
+- (BOOL)isOnSale;
+- (long long)itemType;
+- (id)itemID;
+- (id)initWithDictionary:error:;
+- (void)setItemType:;
+- (void)setItemID:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)isEqualTo:;
+- (id)initWithCoder:;
+- (long long)amount;
+- (void)setAmount:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

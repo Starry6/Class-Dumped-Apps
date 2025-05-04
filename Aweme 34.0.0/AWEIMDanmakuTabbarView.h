@@ -1,0 +1,34 @@
+@interface AWEIMDanmakuTabbarView : UIView
+@property (nonatomic) NSArray tabArray;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView selectIndicatorView;
+@property (nonatomic) double containerViewWidth;
+@property (nonatomic) AWESlidingViewController slidingViewController;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContainerViewWidth:;
+- (double)containerViewWidth;
+- (void)updateSelectedIndex:;
+- (id)slidingViewController;
+- (void)setSlidingViewController:;
+- (id)tabArray;
+- (void)setTabArray:;
+- (void)updateSelectedLineFrame;
+- (void)slidingControllerDidScroll:animated:;
+- (void)slidingControllerDidScroll:;
+- (void)configTabbarItems:defaultTabIndex:;
+- (void)updateContainerViewWidth;
+- (void)clickItem:;
+- (id)selectIndicatorView;
+- (void)updateIndicatorViewWithScrollView:animated:;
+- (void)setSelectIndicatorView:;
+- (void)setSelectedIndex:;
+- (void)setup;
+- (id)containerView;
+- (long long)selectedIndex;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+@end

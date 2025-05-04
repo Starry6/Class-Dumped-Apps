@@ -1,0 +1,35 @@
+@interface AWEIMMessageStateComponent : AWEIMFlexComponent
+@property (nonatomic) BOOL enableReadStateDisplayTrack;
+@property (nonatomic) IESIMReadStateDisplayTrackModel readStateTrackModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellVisibleLifeCycleChanged:;
+- (void)updateCellHeight;
+- (id)p_getListVC;
+- (void)p_resendMessage:;
+- (void)updateStateUI;
+- (void)createPresenterIfNeeded;
+- (void)p_setupReadStateTracker;
+- (void)setEnableReadStateDisplayTrack:;
+- (BOOL)enableReadStateDisplayTrack;
+- (void)setReadStateTrackModel:;
+- (id)readStateTrackModel;
+- (void)p_showOrHideViewFormVM:;
+- (void)stateViewTapped;
+- (void)p_addStateVMKVO;
+- (void)p_addSendingProgressKVOIfNeeded;
+- (void)p_checkReadStateDisplayedOnScreen;
+- (void)p_updateStateColor;
+- (void)p_resendMessageWhenFormat:;
+- (void)p_trackReadStateDisplayIfNeed;
+- (BOOL)shouldTrackForDelayMessage:;
+- (void)p_didReceiveReadStatusChangeNoti:;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

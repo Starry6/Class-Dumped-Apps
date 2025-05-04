@@ -1,0 +1,32 @@
+@interface AWEECOMIMPlatformDynamicCardContextConversationInfoModel : MTLModel
+@property (nonatomic) NSString shortConversationId;
+@property (nonatomic) NSString talkId;
+@property (nonatomic) NSString talkStatus;
+@property (nonatomic) NSString isClosed;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) NSString curUid;
+@property (nonatomic) NSString otherId;
+@property (nonatomic) NSString pigeonBizType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPigeonBizType:;
+- (id)pigeonBizType;
+- (id)talkId;
+- (void)setTalkId:;
+- (id)shortConversationId;
+- (void)setShortConversationId:;
+- (id)talkStatus;
+- (void)setTalkStatus:;
+- (id)otherId;
+- (void)setOtherId:;
+- (id)isClosed;
+- (void).cxx_destruct;
+- (id)conversationId;
+- (void)setConversationId:;
+- (void)setIsClosed:;
+- (id)curUid;
+- (void)setCurUid:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

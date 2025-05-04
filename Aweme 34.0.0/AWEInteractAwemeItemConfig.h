@@ -1,0 +1,30 @@
+@interface AWEInteractAwemeItemConfig : NSObject
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString originItemID;
+@property (nonatomic) BOOL isFamiliar;
+@property (nonatomic) q type;
+@property (nonatomic) NSString referString;
+@property (nonatomic) q nearbyLevel;
+@property (nonatomic) q itemType;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) @? completionBlock;
+- (id)referString;
+- (void)setReferString:;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (BOOL)isFamiliar;
+- (void)setIsFamiliar:;
+- (long long)nearbyLevel;
+- (void)setNearbyLevel:;
+- (id)originItemID;
+- (void)setOriginItemID:;
+- (long long)itemType;
+- (id)itemID;
+- (void)setItemType:;
+- (void)setItemID:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+@end

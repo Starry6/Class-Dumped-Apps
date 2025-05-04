@@ -1,0 +1,37 @@
+@interface AWESearchAdEggLynxContainerView : UIView
+@property (nonatomic) AWESearchAdPopConfigModel adEgg;
+@property (nonatomic) AWEBDARifleView bdaRifleView;
+@property (nonatomic) AWEAdGeneralSearchLynxComponentMonitorContext lynxMonitorContext;
+@property (nonatomic) <AWESearchAdEggLynxContainerViewDelegate> delegate;
+@property (nonatomic) double loadStartTimeStamp;
+@property (nonatomic) double loadStartFirstScreenTimeStamp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bdaRifleView;
+- (void)sendEvent:params:callback:;
+- (void)rifleViewDidStartLoading:;
+- (void)rifleViewvDidFirstScreen:;
+- (void)rifleView:didFinishLoadWithURL:;
+- (void)rifleView:didLoadFailedWithURL:error:;
+- (id)lynxBridges;
+- (id)createLynxMonitorContext;
+- (void)setLynxMonitorContext:;
+- (void)setLoadStartTimeStamp:;
+- (id)lynxMonitorContext;
+- (void)updateRifleConfiguration:;
+- (double)loadStartTimeStamp;
+- (void)setBdaRifleView:;
+- (void)setLoadStartFirstScreenTimeStamp:;
+- (double)loadStartFirstScreenTimeStamp;
+- (void)setAdEgg:;
+- (id)adEgg;
+- (void)postSearchImmersiveAdEggMonitorShowEventIfNeed;
+- (void)configureBdaRifleViewWithModel:modelDict:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+@end

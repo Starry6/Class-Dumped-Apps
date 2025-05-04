@@ -1,0 +1,36 @@
+@interface AWEComposerBeautyTopBarCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIView flagDotView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView underline;
+@property (nonatomic) BOOL shouldShowUnderline;
+@property (nonatomic) UIFont selectedTitleFont;
+@property (nonatomic) UIFont unselectedTitleFont;
+@property (nonatomic) UIColor selectedTitleColor;
+@property (nonatomic) UIColor unselectedTitleColor;
+- (void)setSelectedTitleColor:;
+- (id)unselectedTitleColor;
+- (void)setUnselectedTitleColor:;
+- (void)setSelectedTitleFont:;
+- (id)selectedTitleFont;
+- (void)updateWithTitle:selected:;
+- (void)setFlagDotViewHidden:;
+- (id)flagDotView;
+- (void)setFlagDotView:;
+- (void)updateWithUserSelected:;
+- (BOOL)shouldShowUnderline;
+- (id)unselectedTitleFont;
+- (void)setShouldShowUnderline:;
+- (void)setUnselectedTitleFont:;
+- (id)accessibilityLabel;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (unsigned long long)accessibilityTraits;
+- (BOOL)isAccessibilityElement;
+- (void)setUnderline:;
+- (id)underline;
+- (id)selectedTitleColor;
++ (id)identifier;
+@end

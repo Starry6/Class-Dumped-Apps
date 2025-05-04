@@ -1,0 +1,32 @@
+@interface AWEMusicStreamingMiniLunaGuidePopupView : AWEMusicStreamingBasePopupView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIView<AWESettingSwitchProtocol> activeTipsSwitch;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UIButton linkBtn;
+@property (nonatomic) AWEMusicDSPEventModel eventModel;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)showInView:duration:;
+- (void)switchControlDidChanged:;
+- (id)activeTipsSwitch;
+- (void)setActiveTipsSwitch:;
+- (id)eventModel;
+- (void)setEventModel:;
+- (id)initWithEventModel:;
+- (id)customConfirmButton;
+- (void)p_trackClickWithClickArea:;
+- (id)linkBtn;
+- (void)p_trackShowDiversion;
+- (void)guideLinkJump;
+- (void)setLinkBtn:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupSubviews;
+- (id)hintLabel;
+- (void)setHintLabel:;
+@end

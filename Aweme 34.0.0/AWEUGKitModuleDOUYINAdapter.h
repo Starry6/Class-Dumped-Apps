@@ -1,0 +1,30 @@
+@interface AWEUGKitModuleDOUYINAdapter : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fcollectAdapter;
+- (id)pendantAdapter;
+- (id)getFCollectAchievementSchema;
+- (id)getPendantDataAdapter;
+- (id)fcollectShareManager;
+- (id)fcollectFollowManager;
+- (id)getAWEUGPendantActivityEntranceManager;
+- (id)diversionActiveUserTask;
+- (id)tributeTimingManager;
+- (id)coreSpotlightGdLabel;
+- (id)desktopGuideAdapter;
+- (id)coreSpotlightTitlePrefix;
+- (id)weakTarget;
++ (void)setupUGPendantAdapterImpl;
++ (void)setupUGF2AdapterImpl;
++ (Class)weakTargetClass;
++ (id)fcollectShareManager;
++ (id)tributeTimingManager;
++ (void)startDiversionTask;
++ (BOOL)shouldUseNewCheckNearbyMethod;
++ (BOOL)shouldUndertakeCommonStrategy;
++ (void)requestActivitySettings;
++ (void)updateDateCalibratorFromNetwork:context:;
++ (void)startFCollectShareLogic;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMForceInsertChat_BizAccountDown : AWEIMComponentBase
+@property (nonatomic) AWEIMChatModel chatModel;
+@property (nonatomic) BOOL needRemoveWhenLeaveMsgTab;
+@property (nonatomic) NSDictionary tipConfig;
+@property (nonatomic) BOOL canMarkShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (id)chatModel;
+- (void)setChatModel:;
+- (id)forceInsertDecisionNode;
+- (void)didClickForceInsertChatCell:chatCell:chatListVC:;
+- (void)didRemoveForceInsertChat:;
+- (void)didShowForceInsertChat:;
+- (void)onTabBarDidChange:;
+- (void)setCanMarkShow:;
+- (id)tipConfig;
+- (BOOL)canMarkShow;
+- (void)setNeedRemoveWhenLeaveMsgTab:;
+- (BOOL)needRemoveWhenLeaveMsgTab;
+- (void)setTipConfig:;
+- (unsigned long long)priority;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)markClickWithMaxClickCount:;
++ (void)markExitWithDay:;
++ (BOOL)markShowWithMaxShowCount:exitDay:;
+@end

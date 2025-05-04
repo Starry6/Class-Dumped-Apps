@@ -1,0 +1,34 @@
+@interface AWEBaseSettings : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> logQueue;
+@property (nonatomic) NSDictionary settings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)boolValueForKeyPath:defaultValue:stable:;
+- (BOOL)boolValueForKeyPath:defaultValue:;
+- (id)dictionaryForKeyPath:defaultValue:stable:;
+- (id)dictionaryForKeyPath:defaultValue:;
+- (id)stringForKeyPath:defaultValue:;
+- (long long)intValueForKeyPath:defaultValue:;
+- (id)stringForKeyPath:defaultValue:stable:;
+- (id)arrayForKeyPath:defaultValue:;
+- (long long)intValueForKeyPath:defaultValue:stable:;
+- (id)objectForKeyPath:defaultValue:stable:;
+- (id)arrayForKeyPath:defaultValue:stable:;
+- (double)doubleValueForKeyPath:defaultValue:stable:;
+- (id)objectForKeyPath:defaultValue:;
+- (double)doubleValueForKeyPath:defaultValue:;
+- (id)findValueInDict:path:needLock:;
+- (BOOL)isSettingsValid:;
+- (void)clearStableCacheWithKeys:;
+- (BOOL)enableLaunchCache;
+- (void)setStableSettingsWithObject:forKeyPath:;
+- (void)setSettings:;
+- (id)init;
+- (void)dealloc;
+- (id)settings;
+- (void).cxx_destruct;
+- (void)setLogQueue:;
+- (id)logQueue;
+@end

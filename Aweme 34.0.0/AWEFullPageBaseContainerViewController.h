@@ -1,0 +1,30 @@
+@interface AWEFullPageBaseContainerViewController : AWEBaseListViewController
+- (void)sectionControllerWillEnterWorkingRange:;
+- (void)sectionControllerWillDisplay:;
+- (void)sectionControllerDidEndDisplaying:;
+- (void)sectionControllerDidExitWorkingRange:;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (void)didMoveToParentViewController:;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (void)willMoveToParentViewController:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (id)initWithCoder:;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)setupCollectionView:;
++ (Class)viewModelClass;
+@end

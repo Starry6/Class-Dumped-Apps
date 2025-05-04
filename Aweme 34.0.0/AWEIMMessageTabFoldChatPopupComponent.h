@@ -1,0 +1,32 @@
+@interface AWEIMMessageTabFoldChatPopupComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMMessageTabPopupViewInterface> messageTabPopupViewInterface;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (BOOL)shouldCancelAllOtherPendingAlertsWhenShowedWithContext:;
+- (void)showWithCloseCallback:;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)setMessageTabPopupViewInterface:;
+- (id)messageTabPopupViewInterface;
+- (BOOL)isDisplayingCurrentPopupView;
+- (BOOL)canLimitShowWithinTime;
+- (void)asyncShowPopupViewIfNeeded:;
+- (id)p_fetchFoldChatPopupModel:;
+- (void)__showPopupWithCloseCallback:;
+- (void)__getFoldChatPopupModel:;
+- (BOOL)__shouldShowPopup;
+- (id)__popupViewUIConfig;
+- (void)__trackPopupShowWithItemsTotalCount:actionType:;
+- (void)__setFoldingStatesWithItems:;
+- (void)__trackPopupConfirmWithTotalCount:selectedItems:;
+- (void).cxx_destruct;
+- (void)prepareWithCompletion:;
++ (BOOL)canCreateComponentWithContext:;
++ (void)p_shouldFetchDataForExpOpt:;
++ (BOOL)p_shouldFetchDataForExp;
+@end

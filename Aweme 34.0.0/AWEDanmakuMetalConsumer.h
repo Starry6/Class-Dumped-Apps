@@ -1,0 +1,37 @@
+@interface AWEDanmakuMetalConsumer : NSObject
+@property (nonatomic) CAMetalLayer layer;
+@property (nonatomic) SkityContext skityContext;
+@property (nonatomic) AWEDanmakuDrawBufferPool danmakuBufferPool;
+@property (nonatomic) BOOL finishLayerConfig;
+- (void)clearAllDisplayingDanmakus;
+- (void)forceRefreshDisplayedDanmakus;
+- (void)setFinishLayerConfig:;
+- (void)setSkityContext:;
+- (void)setDanmakuBufferPool:;
+- (id)danmakuBufferPool;
+- (BOOL)finishLayerConfig;
+- (void)updateLayerContentsScale;
+- (void)refreshDanmakuCanvasIfNeedInAsync;
+- (void)refreshDanmakuCanvasIfNeed;
+- (void)clearAllDisplayingDanmakusWithCompletion:;
+- (id)skityContext;
+- (void)drawDanmaku:canvas:;
+- (void)drawDanmukuOnCanvas:;
+- (id)danmakuEmojiAttachmentWithText:;
+- (void)drawBackgroundIfNeedWithCanvas:metalInfo:;
+- (void)drawPrefixImageIfNeedWithCanvas:metalInfo:;
+- (void)drawDiggIfNeedWithCanvas:metalInfo:;
+- (id)createSkityImage:withContext:;
+- (id)initWithLayer:danmakuBufferPool:;
+- (void)renderDisplayedDanmakusWithMetal;
+- (void)setLayer:;
+- (void)dealloc;
+- (id)layer;
+- (void).cxx_destruct;
+- (void)reset;
++ (id)danmakuSurfaceContext;
++ (id)danmakuRefreshHandleQueue;
++ (unsigned long long)numTaskInQueue;
++ (void)modifyNumTaskInQueue:;
++ (id)danmakuQueueLock;
+@end

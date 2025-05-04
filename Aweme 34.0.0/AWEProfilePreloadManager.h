@@ -1,0 +1,37 @@
+@interface AWEProfilePreloadManager : NSObject
+@property (nonatomic) NSMutableDictionary memoryCacheDict;
+@property (nonatomic) NSDictionary preloadObjClassDict;
+@property (nonatomic) NSMutableDictionary authorRevisitDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)handleMemoryWarning:;
+- (void)preloadWithTypes:sourceType:userID:secUserID:paramDictionary:;
+- (BOOL)ifNeedPreloadWithWithType:sourceType:userID:secUserID:paramDictionary:;
+- (id)loadWithType:sourceType:userID:secUserID:paramDictionary:needCreateIfNeed:;
+- (void)removeWithType:sourceType:userID:;
+- (void)alogWarnWithContent:;
+- (id)preloadObjWithUserID:secUserID:sourceType:preloadType:paramDictionary:needCreateIfNeed:;
+- (id)preloadObjClassDict;
+- (id)memoryCacheDict;
+- (void)cleanAllMemoryCaches;
+- (void)alogInfoWithContent:;
+- (id)memoryCacheWith:;
+- (id)preloadUserObj:;
+- (id)preloadPostObj:;
+- (void)updateUserFollowStatus:status:;
+- (void)updatePostLoadType:userID:;
+- (id)authorRevisitDict;
+- (void)setAuthorRevisitDict:;
+- (void)setMemoryCacheDict:;
+- (void)setPreloadObjClassDict:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

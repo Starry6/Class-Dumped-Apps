@@ -1,0 +1,38 @@
+@interface AWESpecialRichAwemeModel : AWEBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) AWESpecialRichAwemeDescriptionModel descriptionModel;
+@property (nonatomic) AWESpecialRichAwemeProductInfoModel productInfoModel;
+@property (nonatomic) NSString detailScheme;
+@property (nonatomic) AWESpecialRichAwemeLifeCardImageInfoModel lifeCardImageInfoModel;
+@property (nonatomic) AWESpecialRichAwemeLifeEvaluationInfoModel lifeEvaluationInfoModel;
+@property (nonatomic) NSString extraInfo;
+@property (nonatomic) NSDictionary extraInfoDictionary;
+@property (nonatomic) AWESpecialRichAwemeProductCommentImageInfoModel productCommentModel;
+- (BOOL)shouldAutoPostTag;
+- (id)lifeCardImageInfoModel;
+- (id)extraInfoDictionary;
+- (id)detailScheme;
+- (id)postType;
+- (id)descriptionModel;
+- (void)setDescriptionModel:;
+- (id)productInfoModel;
+- (void)setProductInfoModel:;
+- (void)setDetailScheme:;
+- (void)setLifeCardImageInfoModel:;
+- (id)lifeEvaluationInfoModel;
+- (void)setLifeEvaluationInfoModel:;
+- (void)setExtraInfoDictionary:;
+- (id)productCommentModel;
+- (void)setProductCommentModel:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (void)setExtraInfo:;
++ (id)descriptionModelJSONTransformer;
++ (id)productInfoModelJSONTransformer;
++ (id)lifeEvaluationInfoModelJSONTransformer;
++ (id)productCommentModelJSONTransformer;
++ (id)lifeCardImageInfoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

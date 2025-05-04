@@ -1,0 +1,33 @@
+@interface AWEVoiceSearchEntranceView : UIView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIImageView iconRefreshView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView iconLottieView;
+@property (nonatomic) Q lastLottieType;
+@property (nonatomic) CAGradientLayer gradientLayer;
+- (BOOL)enableSearchBigMode;
+- (id)iconLottieView;
+- (void)setIconLottieView:;
+- (void)updateEntranceStyle;
+- (void)updateEntranceTheme:;
+- (void)updateEntranceTitleWithText:iconType:;
+- (void)animationPlayWithRefreshOfStyleC;
+- (void)animationStopWithRefreshOfStyleC;
+- (unsigned long long)lastLottieType;
+- (void)setLastLottieType:;
+- (double)calculateEntranceWidthWithTitle:;
+- (void)updateEntranceTheme:type:;
+- (void)playEntranceLottieWithTheme:type:;
+- (id)iconRefreshView;
+- (void)updateEntranceStyleForSearchResult;
+- (void)stopEntranceLottieWithTheme:type:;
+- (void)setIconRefreshView:;
+- (id)init;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+@end

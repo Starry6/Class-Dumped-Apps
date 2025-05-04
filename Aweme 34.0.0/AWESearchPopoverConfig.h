@@ -1,0 +1,33 @@
+@interface AWESearchPopoverConfig : NSObject
+@property (nonatomic) BOOL disableAutoDismiss;
+@property (nonatomic) BOOL isCenter;
+@property (nonatomic) BOOL clickable;
+@property (nonatomic) BOOL hideTaskImage;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString userFrom;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) @? hideCompletion;
+@property (nonatomic) @? showCompletion;
+@property (nonatomic) double arrowGap;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setDisableAutoDismiss:;
+- (void)setClickable:;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (void)setHideCompletion:;
+- (BOOL)disableAutoDismiss;
+- (id)hideCompletion;
+- (id)showCompletion;
+- (void)setShowCompletion:;
+- (BOOL)isCenter;
+- (void)setIsCenter:;
+- (BOOL)hideTaskImage;
+- (void)setHideTaskImage:;
+- (id)userFrom;
+- (void)setUserFrom:;
+- (double)arrowGap;
+- (void)setArrowGap:;
+- (void).cxx_destruct;
+- (BOOL)clickable;
+@end

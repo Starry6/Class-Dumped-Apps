@@ -1,0 +1,38 @@
+@interface AWEProfileMenuVerticalContainerCell : UICollectionViewCell
+@property (nonatomic) NSArray models;
+@property (nonatomic) AWEProfileMenuVerticalSectionViewModel viewModel;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) @? didSelectedBlock;
+@property (nonatomic) AWEProfileMoreMenuViewModel parentviewModel;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishCloseFriendsWithUser:status:;
+- (void)__setupUI;
+- (id)didSelectedBlock;
+- (void)setDidSelectedBlock:;
+- (BOOL)hasTopFollowListMenu;
+- (void)showSpecialFollowGuideIfNeededWithShowMethod:;
+- (id)parentviewModel;
+- (void)configWithModel:viewModel:;
+- (void)setParentviewModel:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)viewModel;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setModels:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)models;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
++ (double)heightOfCellWithModels:;
+@end

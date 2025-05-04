@@ -1,0 +1,31 @@
+@interface AWESearchCardFavorModel : NSObject
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) q favorCount;
+@property (nonatomic) BOOL userFavored;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString adEventName;
+@property (nonatomic) NSDictionary interactLogExtra;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} favorButtonFrame;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (id)adEventName;
+- (void)setAdEventName:;
+- (long long)favorCount;
+- (void)setFavorCount:;
+- (void)setUserFavored:;
+- (BOOL)userFavored;
+- (id)interactLogExtra;
+- (void)setInteractLogExtra:;
+- (id)favorButtonFrame;
+- (void)setFavorButtonFrame:;
+- (void)setGroupID:;
+- (id)init;
+- (id)groupID;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (BOOL)hidden;
+@end

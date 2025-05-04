@@ -1,0 +1,32 @@
+@interface AWEHPTabTrackManager : NSObject
+@property (nonatomic) NSMutableDictionary enterCounts;
+@property (nonatomic) AWEHPTabStayTimeTrackController tabTimingController;
+@property (nonatomic) AWEHPEntranceStayTimeTrackController entranceTimingController;
+@property (nonatomic) NSMutableDictionary currentEnterTabParamsDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackEnterTabWithModel:;
+- (void)trackLeaveTabWithModel:;
+- (void)enterHPSearchEntrance;
+- (void)leaveHPSearchEntrance;
+- (void)enterPublishEntrance;
+- (void)leavePublishEntrance;
+- (long long)getTimingStayDurationWithTabID:;
+- (id)tabTimingController;
+- (void)trakEnterHomePageTabWithTabID:trackModel:;
+- (id)currentEnterTabParamsDict;
+- (id)entranceTimingController;
+- (id)enterCounts;
+- (id)getBizEnterTrackEventNameWithTabId:;
+- (id)getEnterTabParamsWithTabID:;
+- (void)setEnterCounts:;
+- (void)setTabTimingController:;
+- (void)setEntranceTimingController:;
+- (void)setCurrentEnterTabParamsDict:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)mergeTwoBizParams:bizParams2:;
++ (id)sharedInstance;
+@end

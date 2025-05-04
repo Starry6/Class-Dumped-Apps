@@ -1,0 +1,35 @@
+@interface AWEFeedBottomBarAdActivityView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UITapGestureRecognizer recognizer;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) NSString referString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (void)configureUI;
+- (void)jumpAction;
+- (void)trackAdBottomBarEventWithLabel:;
+- (void)configureWithModel:referString:;
+- (void)trackRelatedSearchShowIfNeeded;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (id)bgColor;
+- (id)recognizer;
+- (void)setRecognizer:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

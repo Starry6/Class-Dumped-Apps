@@ -1,0 +1,38 @@
+@interface AWEIMStrangerChatListBaseViewModel : NSObject
+@property (nonatomic) <AWEIMStrangerChatListViewModelWeakVC> weakVC;
+@property (nonatomic) <AWEIMStrangerChatListViewModelActionDelegate> actionDelegate;
+@property (nonatomic) NSArray chatList;
+@property (nonatomic) NSDictionary extDict;
+@property (nonatomic) AWEIMStrangerBoxChatDataManager dataManager;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)conversationDataManager;
+- (void)loadMoreDataWithCompletion:;
+- (id)extDict;
+- (void)setExtDict:;
+- (void)markAllConversationReadWithCompletion:;
+- (id)trackerTabName;
+- (id)weakVC;
+- (void)setWeakVC:;
+- (void)setChatList:;
+- (BOOL)isTrashStrangerBox;
+- (void)exitStrangerBoxAndClearStrangersConversation;
+- (void)gotoProfileViewControllerWithChatModel:;
+- (void)configWithDataManager:;
+- (void)loadFirstPageWithCompletion:;
+- (void)gotoMessageListViewControllerWithChatModel:cellVM:;
+- (void)clearUserFlagIfNeeded;
+- (void)removeAcquaintanceChat:;
+- (id)actionDelegate;
+- (id)dataManager;
+- (id)chatList;
+- (BOOL)hasMore;
+- (long long)type;
+- (void)setDataManager:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setActionDelegate:;
+@end

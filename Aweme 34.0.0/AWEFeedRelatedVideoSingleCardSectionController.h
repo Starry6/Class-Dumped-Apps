@@ -1,0 +1,33 @@
+@interface AWEFeedRelatedVideoSingleCardSectionController : AWEBaseListSectionController
+@property (nonatomic) AWEFeedRVSingleListCardPageContext context;
+@property (nonatomic) NSIndexPath scheduledPreloadIndexPath;
+@property (nonatomic) AWEFeedRelatedVideoSingleCardCell preloadCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)configCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (id)cellForItemAtIndex:;
+- (id)cellIdentifierForModel:index:;
+- (double)interactionViewHeight;
+- (double)authorInfoViewHeight;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (id)preloadCell;
+- (void)setPreloadCell:;
+- (void)syncFollowStatus:status:;
+- (double)getCardInfoHeight:withDescriptionLimit:;
+- (double)getPlayerOriginYWithModel:;
+- (id)scheduledPreloadIndexPath;
+- (void)setScheduledPreloadIndexPath:;
+- (id)init;
+- (void)dealloc;
+- (Class)cellClass;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumLineSpacing;
+@end

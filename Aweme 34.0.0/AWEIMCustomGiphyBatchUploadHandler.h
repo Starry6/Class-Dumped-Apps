@@ -1,0 +1,38 @@
+@interface AWEIMCustomGiphyBatchUploadHandler : NSObject
+@property (nonatomic) NSMutableDictionary uploadedImagesInfo;
+@property (nonatomic) NSMutableDictionary resultInfos;
+@property (nonatomic) NSMutableArray uploadedImagesInfoArray;
+@property (nonatomic) NSMutableArray resultInfoArray;
+@property (nonatomic) NSMutableArray uploaders;
+@property (nonatomic) NSMutableDictionary uploadModelDic;
+- (id)uploaders;
+- (void)setUploaders:;
+- (void)setUploadedImagesInfo:;
+- (void)setResultInfos:;
+- (void)setUploadModelDic:;
+- (id)uploadedImagesInfo;
+- (id)resultInfos;
+- (void)p_uploadImage:data:preferredMD5:isLast:completion:;
+- (void)uploadModels:canCompress:completion:;
+- (void)setUploadedImagesInfoArray:;
+- (void)setResultInfoArray:;
+- (id)uploadedImagesInfoArray;
+- (id)resultInfoArray;
+- (void)p_uploadEmoticonStatus:;
+- (void)checkExistBeforeUploadWithCompletion:;
+- (id)uploadModelDic;
+- (void)uploadWithModel:completion:;
+- (void)uploadPhotoObj:originAssets:completion:;
+- (void)uploadImages:completion:;
+- (void)requestAddBatchEmoticonsWithParams:completion:;
+- (void).cxx_destruct;
++ (BOOL)isGifImage:;
++ (BOOL)p_enableAlphaImages;
++ (BOOL)isPNGImage:;
++ (id)p_getAssetSizeFromAsset:orImage:;
++ (BOOL)p_isSizeTooSmallWithSize:;
++ (id)p_caculateEmojiSizeWithOriginSize:;
++ (void)uploadData:uploadImage:completion:;
++ (void)checkExistedWithMd5List:completion:;
++ (id)imageDataFromImage:;
+@end

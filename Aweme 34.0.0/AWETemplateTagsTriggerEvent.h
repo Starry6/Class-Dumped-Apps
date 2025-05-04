@@ -1,0 +1,2 @@
+@interface AWETemplateTagsTriggerEvent : NSObject
+@end

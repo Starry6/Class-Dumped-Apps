@@ -1,0 +1,37 @@
+@interface AWEPOIUGCRateFoldedLoadMoreComponentViewModel : DitoComponentViewModel
+@property (nonatomic) AWEPOIDetailNGPageContext context;
+@property (nonatomic) BOOL hasTrackedShow;
+@property (nonatomic) NSArray nodeEventList;
+@property (nonatomic) BOOL didRemoveDefaultLoadMore;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL folded;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSString desc;
+- (id)commonTrackParams;
+- (void)setFolded:;
+- (void)setHasTrackedShow:;
+- (BOOL)hasTrackedShow;
+- (id)componentReuseIdentifier;
+- (void)updateNode:;
+- (id)componentSizeWithMaxWidth:;
+- (void)didLoadPageModel:;
+- (id)generalContext;
+- (void)componentViewDidCompleteShow;
+- (void)setNodeEventList:;
+- (id)nodeEventList;
+- (BOOL)didRemoveDefaultLoadMore;
+- (void)setDidRemoveDefaultLoadMore:;
+- (void)removeCommentLoadMore;
+- (id)rateContext;
+- (void)didClickFoldFooter;
+- (id)schema;
+- (id)initWithNode:;
+- (void)setSchema:;
+- (void)parseData:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (BOOL)folded;
+@end

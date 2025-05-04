@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionCoCreatorInviteElement : AWEPlayInteractionBaseActionButtonElement
+@property (nonatomic) AWEPlayInteractionCoCreatorInviteView inviteView;
+@property (nonatomic) BOOL needReverse;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (void)trackShow;
+- (BOOL)needReverse;
+- (void)setNeedReverse:;
+- (void)dismissWithAnimation;
+- (BOOL)shouldActivateButtonWithData:;
+- (BOOL)shouldShowWithModel:;
+- (BOOL)hasCoCreatorCommonButtonInfo;
+- (BOOL)shouldShowCoCreatorInviteButton;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)updateUI;
+- (id)inviteView;
+- (void)setInviteView:;
++ (id)activateInfoWithContext:;
++ (BOOL)shouldShowWithConext:;
++ (BOOL)hasCoCreatorCommonButtonInfoWithModel:;
+@end

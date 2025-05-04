@@ -1,0 +1,33 @@
+@interface AWEPLVAutoPlaySectionController : AWEPLVConstantSectionController
+@property (nonatomic) AWEPLVAutoPlaySectionViewModel viewModel;
+@property (nonatomic) BOOL processingLogin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)willStartLogin;
+- (void)didCancelLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)sectionWillDisplayCell:index:model:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didBindSectionViewModel;
+- (void)viewControllerDidAppear:;
+- (void)viewControllerWillDisappear:isBeingDismissed:isMovingFromParentViewController:;
+- (void)listAdapter:didScrollSectionController:;
+- (void)listAdapter:willBeginDraggingSectionController:;
+- (void)listAdapter:didEndDraggingSectionController:willDecelerate:;
+- (void)listAdapter:didEndDeceleratingSectionController:;
+- (void)handleAppDidBecomeActive:;
+- (void)handleAppWillResignActive:;
+- (void)setProcessingLogin:;
+- (BOOL)processingLogin;
+- (void)containerViewWillRefresh;
+- (void)changeFocusedViewToCell:;
+- (void)releaseCurrentFocusedCell;
+- (BOOL)canFocuseCell:;
+- (void)findCurrentFocusedCellWithForceFocuse:;
+- (id)init;
+- (void)dealloc;
++ (Class)sectionViewModelClass;
+@end

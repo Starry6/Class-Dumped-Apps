@@ -1,0 +1,38 @@
+@interface AWESearchAIGCDeepThinkViewModel : NSObject
+@property (nonatomic) BOOL isMultiLine;
+@property (nonatomic) BOOL showDeepThinkTitle;
+@property (nonatomic) BOOL showNetMode;
+@property (nonatomic) BOOL showDeepThinkMode;
+@property (nonatomic) BOOL hasShownDeepThinkView;
+@property (nonatomic) BOOL hasShownNetModeView;
+@property (nonatomic) BOOL hasShownNetModePanelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateShowState;
+- (BOOL)deepThinkIsOpen;
+- (id)deepThinkModelName;
+- (id)netModeList;
+- (void)switchDeepThinkOpenMode:;
+- (BOOL)showDeepThinkMode;
+- (id)deepThinkTitle;
+- (id)deepThinkIcon;
+- (BOOL)showNetMode;
+- (id)deepThinkNetModeName;
+- (BOOL)hasShownDeepThinkView;
+- (void)setHasShownDeepThinkView:;
+- (BOOL)hasShownNetModeView;
+- (void)setHasShownNetModeView:;
+- (BOOL)hasShownNetModePanelView;
+- (void)setHasShownNetModePanelView:;
+- (long long)deepThinkNetModeType;
+- (void)switchDeepThinkNetModeType:;
+- (void)switchDeepThinkInTextMultiLine:;
+- (void)switchDeepThinkInputViewStateIsRevise:;
+- (id)deepThinkPlaceholder;
+- (BOOL)showDeepThinkTitle;
+- (void)setIsMultiLine:;
+- (id)init;
+- (BOOL)isMultiLine;
+@end

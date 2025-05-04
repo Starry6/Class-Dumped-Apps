@@ -1,0 +1,36 @@
+@interface AWEFeedShowFamiliarModel : AWEBaseApiModel
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSArray userList;
+@property (nonatomic) NSArray friendIDList;
+@property (nonatomic) NSArray closeFriendsIDList;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSString hotsoonText;
+@property (nonatomic) q vcdCount;
+@property (nonatomic) q hotsoonHasMore;
+@property (nonatomic) q total;
+@property (nonatomic) BOOL totalAccurate;
+- (id)userList;
+- (void)setHotsoonHasMore:;
+- (void)setHotsoonText:;
+- (long long)hotsoonHasMore;
+- (id)hotsoonText;
+- (void)setUserList:;
+- (long long)vcdCount;
+- (void)setVcdCount:;
+- (id)friendIDList;
+- (BOOL)totalAccurate;
+- (void)setTotalAccurate:;
+- (id)closeFriendsIDList;
+- (void)setFriendIDList:;
+- (void)setCloseFriendsIDList:;
+- (id)cursor;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (long long)total;
+- (void)setTotal:;
++ (id)userListJSONTransformer;
++ (id)hasMoreJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

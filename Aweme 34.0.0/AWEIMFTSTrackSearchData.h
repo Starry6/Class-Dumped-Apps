@@ -1,0 +1,31 @@
+@interface AWEIMFTSTrackSearchData : NSObject
+@property (nonatomic) double startTimeInterval;
+@property (nonatomic) double endTimeInterval;
+@property (nonatomic) q limit;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSArray types;
+@property (nonatomic) q count;
+@property (nonatomic) BOOL hasTrackedSearchStart;
+- (void)recordStartWithTimeInterval:;
+- (BOOL)hasTrackedSearchStart;
+- (void)recordEndWithTimeInterval:;
+- (id)toSearchStartDictionary;
+- (void)setHasTrackedSearchStart:;
+- (id)toSearchEndDictionary;
+- (long long)limit;
+- (void)setLimit:;
+- (void)setCount:;
+- (long long)count;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (id)types;
+- (void)setTypes:;
+- (void)setConversationID:;
+- (id)keyword;
+- (void)setKeyword:;
+- (double)endTimeInterval;
+- (void)setEndTimeInterval:;
+- (void)setStartTimeInterval:;
+- (double)startTimeInterval;
+@end

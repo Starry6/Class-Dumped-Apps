@@ -1,0 +1,37 @@
+@interface AWEYAPChannelPopupGuideConfig : AWEBaseApiModel
+@property (nonatomic) q mainType;
+@property (nonatomic) NSString mainURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString positiveButtonTitle;
+@property (nonatomic) NSString positiveScheme;
+@property (nonatomic) NSString negativeButtonTitle;
+@property (nonatomic) AWEYAPChannelPopupGuideLynxCard lynxCard;
+@property (nonatomic) UIImage mainImage;
+@property (nonatomic) NSDictionary mainLottieJson;
+@property (nonatomic) NSDictionary imageDic;
+- (void)setMainImage:;
+- (void)setImageDic:;
+- (void)setMainLottieJson:;
+- (id)mainURL;
+- (id)lynxCard;
+- (id)mainImage;
+- (id)mainLottieJson;
+- (id)imageDic;
+- (id)negativeButtonTitle;
+- (id)positiveButtonTitle;
+- (id)positiveScheme;
+- (void)setMainType:;
+- (void)setMainURL:;
+- (void)setLynxCard:;
+- (void)setPositiveButtonTitle:;
+- (void)setPositiveScheme:;
+- (void)setNegativeButtonTitle:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (long long)mainType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

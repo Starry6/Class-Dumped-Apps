@@ -1,0 +1,30 @@
+@interface AWEIMMessageImageContent : AWEIMMessageContent
+@property (nonatomic) q coverWidth;
+@property (nonatomic) q coverHeight;
+@property (nonatomic) NSString clientKey;
+@property (nonatomic) NSString md5;
+@property (nonatomic) AWEURLModel resourceUrl;
+@property (nonatomic) BOOL isFolding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)coverWidth;
+- (void)setCoverWidth:;
+- (long long)coverHeight;
+- (void)setCoverHeight:;
+- (void)updateMessageContentWithAttachmentMD5:fileType:;
+- (void)updateMessageContentWithUploadedFileResponse:fileType:;
+- (BOOL)isFolding;
+- (void)setIsFolding:;
+- (id)clientKey;
+- (void)setClientKey:;
+- (void).cxx_destruct;
+- (id)initWithDictionary:;
+- (id)copyWithZone:;
+- (void)setMd5:;
+- (id)md5;
+- (void)setResourceUrl:;
+- (id)resourceUrl;
+- (id)contentDictionary;
+@end

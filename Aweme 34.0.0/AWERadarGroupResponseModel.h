@@ -1,0 +1,30 @@
+@interface AWERadarGroupResponseModel : AWEBaseApiModel
+@property (nonatomic) NSNumber interval;
+@property (nonatomic) q bizCode;
+@property (nonatomic) q actionType;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSString bizToast;
+@property (nonatomic) NSArray noticeList;
+@property (nonatomic) NSArray nearbyGroupUserList;
+@property (nonatomic) Q strategy;
+- (long long)bizCode;
+- (void)setBizCode:;
+- (id)noticeList;
+- (id)bizToast;
+- (id)nearbyGroupUserList;
+- (void)setNoticeList:;
+- (void)setBizToast:;
+- (void)setNearbyGroupUserList:;
+- (unsigned long long)strategy;
+- (long long)actionType;
+- (void)setGroupId:;
+- (id)groupId;
+- (void)setActionType:;
+- (id)interval;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (void)setStrategy:;
++ (id)nearbyGroupUserListJSONTransformer;
++ (id)noticeListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

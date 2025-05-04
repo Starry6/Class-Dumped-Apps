@@ -1,0 +1,35 @@
+@interface AWEIMOnlinePrivacyDisrecommendPopupView : AWEIMBasePopupView
+@property (nonatomic) UIView indicatorLineView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSMutableSet undoShareModelSet;
+@property (nonatomic) NSArray disrecommendModels;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)indicatorLineView;
+- (void)setIndicatorLineView:;
+- (void)p_setupData;
+- (void)hideWithDuration:;
+- (void)showDisrecommendPopupViewWithEnterFrom:;
+- (void)setDisrecommendModels:;
+- (void)p_configTableView;
+- (id)disrecommendModels;
+- (void)getAvatartUrlListWithShareModel:withCompletion:;
+- (id)undoShareModelSet;
+- (void)clickCell:toUndo:;
+- (void)setUndoShareModelSet:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (void)setTableView:;
+- (id)tableView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+@end

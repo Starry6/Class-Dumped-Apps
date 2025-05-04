@@ -1,0 +1,37 @@
+@interface AWEHPTabStayTimeTimingModel : NSObject
+@property (nonatomic) NSString tabId;
+@property (nonatomic) double enterTabInterval;
+@property (nonatomic) double enterTabCAMediaInterval;
+@property (nonatomic) double timingInterval;
+@property (nonatomic) double CAMediaTimingInterval;
+@property (nonatomic) q totalDuration;
+@property (nonatomic) AWEHPEnterTabTrackModel trackModel;
+@property (nonatomic) q lastShowBubbleDuration;
+@property (nonatomic) q lastShowBadgeDuration;
+@property (nonatomic) q sessionCount;
+@property (nonatomic) BOOL isTiming;
+- (void)setTrackModel:;
+- (id)trackModel;
+- (void)setIsTiming:;
+- (BOOL)isTiming;
+- (double)timingInterval;
+- (void)setTimingInterval:;
+- (double)enterTabInterval;
+- (void)setEnterTabInterval:;
+- (double)enterTabCAMediaInterval;
+- (void)setEnterTabCAMediaInterval:;
+- (double)CAMediaTimingInterval;
+- (void)setCAMediaTimingInterval:;
+- (long long)lastShowBubbleDuration;
+- (void)setLastShowBubbleDuration:;
+- (long long)lastShowBadgeDuration;
+- (void)setLastShowBadgeDuration:;
+- (id)init;
+- (long long)totalDuration;
+- (void).cxx_destruct;
+- (void)setTotalDuration:;
+- (long long)sessionCount;
+- (void)setTabId:;
+- (id)tabId;
+- (void)setSessionCount:;
+@end

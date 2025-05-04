@@ -1,0 +1,2 @@
+@interface AWEMVChannelWaterfallLayout : AWEBaseListWaterfallLayout
+@end

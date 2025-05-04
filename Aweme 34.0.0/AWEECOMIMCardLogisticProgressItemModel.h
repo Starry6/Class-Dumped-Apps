@@ -1,0 +1,32 @@
+@interface AWEECOMIMCardLogisticProgressItemModel : MTLModel
+@property (nonatomic) NSString context;
+@property (nonatomic) NSString ftime;
+@property (nonatomic) NSString time;
+@property (nonatomic) NSString site;
+@property (nonatomic) NSString state_desc;
+@property (nonatomic) NSString state;
+@property (nonatomic) NSString opcode;
+@property (nonatomic) NSString icon_url;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)icon_url;
+- (id)ftime;
+- (void)setFtime:;
+- (id)state_desc;
+- (void)setState_desc:;
+- (void)setIcon_url:;
+- (id)time;
+- (void)setTime:;
+- (id)state;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setState:;
+- (id)site;
+- (void)setSite:;
+- (id)opcode;
+- (void)setOpcode:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

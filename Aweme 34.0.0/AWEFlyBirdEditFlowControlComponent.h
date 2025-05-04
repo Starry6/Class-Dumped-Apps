@@ -1,0 +1,37 @@
+@interface AWEFlyBirdEditFlowControlComponent : ACCFeatureComponent
+@property (nonatomic) <ACCEditViewContainer> viewContainer;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) UIView<ACCLoadingViewProtocol> loadingView;
+@property (nonatomic) ACCVideoEditFlowControlViewModel viewModel;
+@property (nonatomic) UIButton saveToLocalContainerView;
+@property (nonatomic) DUXCheckBox saveBox;
+@property (nonatomic) UILabel saveToLocalLabel;
+- (void)dismissLoadingView;
+- (void)componentDidMount;
+- (void)confirmButtonDidClicked:;
+- (id)editService;
+- (void)setEditService:;
+- (void)loadComponentView;
+- (void)saveImage:;
+- (void)backButtonDidClicked:;
+- (id)serviceBinding;
+- (void)setSaveToLocalContainerView:;
+- (id)saveToLocalContainerView;
+- (void)onClickSaveBox;
+- (void)setSaveBox:;
+- (id)saveBox;
+- (void)setSaveToLocalLabel:;
+- (id)saveToLocalLabel;
+- (void)saveVideoWithPath:;
+- (void)dismissHandler;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (id)loadingView;
+- (id)containerViewController;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)showLoadingView;
+- (void)setViewContainer:;
+- (id)viewContainer;
+- (void)upload;
+@end

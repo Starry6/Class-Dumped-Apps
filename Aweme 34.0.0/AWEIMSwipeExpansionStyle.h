@@ -1,0 +1,33 @@
+@interface AWEIMSwipeExpansionStyle : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) AWEIMSwipeTarget target;
+@property (nonatomic) NSArray additionalTriggers;
+@property (nonatomic) BOOL elasticOverscroll;
+@property (nonatomic) AWEIMSwipeCompletionAnimation completionAnimation;
+@property (nonatomic) double minimumTargetOverscroll;
+@property (nonatomic) double targetOverscrollElasticity;
+@property (nonatomic) double minimumExpansionTranslation;
+- (BOOL)elasticOverscroll;
+- (BOOL)shouldExpandWithSwipeable:gesture:inSuperview:withinFrame:;
+- (double)targetOffsetForView:;
+- (double)targetOverscrollElasticity;
+- (id)completionAnimation;
+- (void)setElasticOverscroll:;
+- (void)setCompletionAnimation:;
+- (void)setAdditionalTriggers:;
+- (double)minimumExpansionTranslation;
+- (id)additionalTriggers;
+- (double)minimumTargetOverscroll;
+- (id)target;
+- (id)init;
+- (long long)type;
+- (void)setTarget:;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)destructiveReconfirmationWithBaseStyle:;
++ (id)destructiveWithAutomaticallyDelete:timing:;
++ (id)destructiveAfterFill;
++ (id)selection;
++ (id)destructive;
++ (id)fill;
+@end

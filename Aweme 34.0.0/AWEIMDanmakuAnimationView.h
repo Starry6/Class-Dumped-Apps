@@ -1,0 +1,34 @@
+@interface AWEIMDanmakuAnimationView : UIView
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString danmakuID;
+@property (nonatomic) NSDictionary playTrackParams;
+@property (nonatomic) @? willPlayBlock;
+@property (nonatomic) @? didPlayBlock;
+@property (nonatomic) @? didDismissBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)didDismissBlock;
+- (void)setDidDismissBlock:;
+- (id)danmakuID;
+- (void)setDanmakuID:;
+- (void)p_setupViews;
+- (void)playWithFilePath:onTargetView:frame:;
+- (void)setPlayTrackParams:;
+- (void)setDidPlayBlock:;
+- (void)startAnimationWithText:danmakuID:isPreview:;
+- (void)p_autoDismiss;
+- (id)willPlayBlock;
+- (void)p_startAnimationWithImageContext:isPreview:;
+- (id)didPlayBlock;
+- (void)dismissWithPlayFinished:success:;
+- (id)playTrackParams;
+- (void)setWillPlayBlock:;
+- (void)dealloc;
+- (void)setText:;
+- (id)initWithFrame:;
+- (id)text;
+- (void)dismiss;
+- (void).cxx_destruct;
+@end

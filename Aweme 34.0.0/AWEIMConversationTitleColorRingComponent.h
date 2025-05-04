@@ -1,0 +1,32 @@
+@interface AWEIMConversationTitleColorRingComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMMessageBaseViewController baseVC;
+@property (nonatomic) BOOL hasTrackedShown;
+@property (nonatomic) <AFDCloseFriendsColorRingDisplayManagerProtocol> colorRingDisplayManager;
+@property (nonatomic) <AFDCloseFriendsStoryCircleShowTrackerProtocol> storyCircleShowTracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewWillAppear;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (id)storyCircleShowTracker;
+- (void)hostVC_viewWillDisappear;
+- (void)setStoryCircleShowTracker:;
+- (id)colorRingDisplayManager;
+- (BOOL)cf_canShowColorRingWithRingStatus:;
+- (id)cf_transitionTargetView;
+- (void)setColorRingDisplayManager:;
+- (void)cf_didUpdateByColorRingChanged;
+- (id)baseVC;
+- (void)updateColorRingView;
+- (BOOL)shouldRespondToGes:;
+- (void)didClickStoryRing;
+- (BOOL)isAvatarContainsPoint:;
+- (void)p_updateColorRingWithHidden:config:;
+- (BOOL)hasTrackedShown;
+- (void)setHasTrackedShown:;
+- (void).cxx_destruct;
+- (id)avatarImageView;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEYAPChannelGuideContentInfo : AWEBaseApiModel
+@property (nonatomic) AWEYAPChannelPopupGuideConfig popupGuideConfig;
+@property (nonatomic) BOOL isHit;
+@property (nonatomic) NSString bizCode;
+@property (nonatomic) NSString sourceCode;
+@property (nonatomic) NSString ruleCode;
+@property (nonatomic) NSString ruleDesc;
+@property (nonatomic) q rulePriority;
+@property (nonatomic) NSString ruleType;
+@property (nonatomic) NSString ruleContent;
+- (id)bizCode;
+- (void)setPopupGuideConfig:;
+- (id)ruleContent;
+- (BOOL)isHit;
+- (long long)rulePriority;
+- (id)ruleCode;
+- (id)popupGuideConfig;
+- (void)setSourceCode:;
+- (void)setBizCode:;
+- (void)setIsHit:;
+- (void)setRuleCode:;
+- (id)ruleDesc;
+- (void)setRuleDesc:;
+- (void)setRulePriority:;
+- (void)setRuleContent:;
+- (id)sourceCode;
+- (void).cxx_destruct;
+- (id)ruleType;
+- (void)setRuleType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

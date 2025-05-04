@@ -1,0 +1,32 @@
+@interface AWEDTONleDraftMobLayer : MTLModel
+@property (nonatomic) NSString layerId;
+@property (nonatomic) NSString layerType;
+@property (nonatomic) NSString fontId;
+@property (nonatomic) NSString fontName;
+@property (nonatomic) NSString titleSource;
+@property (nonatomic) NSString coverTemplateId;
+@property (nonatomic) NSString textTemplateid;
+@property (nonatomic) NSString titleId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coverTemplateId;
+- (void)setCoverTemplateId:;
+- (void)setLayerType:;
+- (id)textTemplateid;
+- (void)setTextTemplateid:;
+- (id)titleId;
+- (void)setTitleId:;
+- (id)fontId;
+- (void)setFontId:;
+- (void)setFontName:;
+- (id)fontName;
+- (void).cxx_destruct;
+- (id)layerId;
+- (void)setLayerId:;
+- (id)layerType;
+- (void)setTitleSource:;
+- (id)titleSource;
++ (id)JSONKeyPathsByPropertyKey;
+@end

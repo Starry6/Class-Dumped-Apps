@@ -1,0 +1,37 @@
+@interface AWEPostPageMediaElement : AWEPostPageAnchorCheckCellElement
+@property (nonatomic) AWENewPublishAnchorTableViewCell mediumTableViewCell;
+@property (nonatomic) BDXBridgeEventSubscriber subscriber;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary extras;
+- (void)elementAppear;
+- (void)didSelectAnchorWithType:anchorDismissBlock:enterFromType:;
+- (void)addAIAnchorWithType:anchorDismissBlock:;
+- (void)setupCell:;
+- (void)refreshWithAnchorVM:;
+- (void)configPlaceholderUI;
+- (BOOL)canHandleAnchorType:;
+- (void)addAnchorMediumObserver;
+- (void)setupUIForMedium;
+- (id)mediumTableViewCell;
+- (void)didClickMediumWithCompletion:;
+- (void)openEntertainmentAnchorPanel;
+- (void)cancleSelectedMedium:;
+- (void)addMediumAnchorNotification:;
+- (void)updateMediumWithJsonString:;
+- (id)matchMission;
+- (void)setMediumTableViewCell:;
+- (void)cleanUp;
+- (id)subscriber;
+- (void)setSubscriber:;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)extras;
+- (id)cell;
+- (void)didSelect;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

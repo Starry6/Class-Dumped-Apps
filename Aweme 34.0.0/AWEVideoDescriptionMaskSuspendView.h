@@ -1,0 +1,36 @@
+@interface AWEVideoDescriptionMaskSuspendView : UIView
+@property (nonatomic) UIPanGestureRecognizer panGesture;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) UIImageView closeBackgroundView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEFeedCollectionContainerContext containerContext;
+@property (nonatomic) @? tapBlock;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastSuspendViewFrame;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (id)closeBackgroundView;
+- (void)setCloseBackgroundView:;
+- (void)recognizePanGesture:;
+- (void)recognizeTapGesture:;
+- (void)setLastSuspendViewFrame:;
+- (id)playerAboveView;
+- (id)lastSuspendViewFrame;
+- (void)setStartPoint:;
+- (id)startPoint;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)setupUI;
+- (id)containerContext;
+- (void)setContainerContext:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)panGesture;
+- (void)setPanGesture:;
+- (id)playerContainerView;
+@end

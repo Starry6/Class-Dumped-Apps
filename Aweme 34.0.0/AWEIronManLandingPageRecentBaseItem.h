@@ -1,0 +1,30 @@
+@interface AWEIronManLandingPageRecentBaseItem : UICollectionViewCell
+@property (nonatomic) UIButton bgBtn;
+@property (nonatomic) UIView headView;
+@property (nonatomic) UIImageView appIconView;
+@property (nonatomic) UILabel appNameLabel;
+@property (nonatomic) UIView infoView;
+@property (nonatomic) <AWEIronManLandingPageItemInteractionDelegate> delegate;
+@property (nonatomic) AWEIronManLandingPageDeepRelationItemModel itemModel;
+@property (nonatomic) q index;
+- (void)clickAction;
+- (id)itemModel;
+- (void)setItemModel:;
+- (void)setHeadView:;
+- (id)headView;
+- (void)setBgBtn:;
+- (id)bgBtn;
+- (void)updateToItemModel:;
+- (void)setIndex:;
+- (long long)index;
+- (id)delegate;
+- (id)appIconView;
+- (void).cxx_destruct;
+- (void)setAppNameLabel:;
+- (void)setAppIconView:;
+- (id)appNameLabel;
+- (void)setDelegate:;
+- (id)infoView;
+- (void)setInfoView:;
+- (void)setUpUI;
+@end

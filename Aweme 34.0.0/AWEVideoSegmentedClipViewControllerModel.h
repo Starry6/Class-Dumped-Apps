@@ -1,0 +1,36 @@
+@interface AWEVideoSegmentedClipViewControllerModel : NSObject
+@property (nonatomic) NSString videoPath;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString publishTitle;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) NSString liveType;
+@property (nonatomic) BOOL disableBackToTabBar;
+@property (nonatomic) q videoType;
+@property (nonatomic) @? backBlock;
+@property (nonatomic) NSString challengeId;
+@property (nonatomic) NSArray atUserInfo;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setReferString:;
+- (id)enterFrom;
+- (void)setPublishTitle:;
+- (id)publishTitle;
+- (id)challengeId;
+- (void)setChallengeId:;
+- (void)setLiveType:;
+- (id)liveType;
+- (void)setBackBlock:;
+- (id)backBlock;
+- (void)setDisableBackToTabBar:;
+- (BOOL)disableBackToTabBar;
+- (id)atUserInfo;
+- (void)setAtUserInfo:;
+- (id)contentType;
+- (void)setContentType:;
+- (long long)videoType;
+- (void).cxx_destruct;
+- (void)setVideoType:;
+- (void)setVideoPath:;
+- (id)videoPath;
+@end

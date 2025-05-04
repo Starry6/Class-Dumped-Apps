@@ -1,0 +1,33 @@
+@interface AWEECOMIMChatListTopNotifyCardCell : UICollectionViewCell
+@property (nonatomic) AWEECOMIMDynamicCardBaseElementView cardViewV2;
+@property (nonatomic) AWEECOMIMChatListTopNotifyCardModel cellModel;
+@property (nonatomic) UIView<AWEECOMIMCardComponentLoadingViewProtocol> loadingView;
+@property (nonatomic) UIView errorView;
+@property (nonatomic) @? cellClickTrackBlcok;
+@property (nonatomic) @? cellUpdateBlock;
+- (void)setCellModel:;
+- (void)didCustomInit;
+- (void)fetchDynamicDataAndUpdateCardView;
+- (void)updateTemplateModelCallback;
+- (void)cardViewDidChangeHeight;
+- (void)trackCardButtonTap:materialName:extParams:unitBtmId:responder:needSetBcm:;
+- (void)transferSchemaToSkip:unitBtmId:responder:needSetBcm:;
+- (void)addCardViewV2;
+- (id)cardViewV2;
+- (id)generateCardViewV2;
+- (void)setCardViewV2:;
+- (id)cellUpdateBlock;
+- (id)cellClickTrackBlcok;
+- (void)updateCellWithModel:cardWidth:;
+- (void)setCellClickTrackBlcok:;
+- (void)setCellUpdateBlock:;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (BOOL)isDarkTheme;
+- (void).cxx_destruct;
+- (id)cellModel;
+- (id)errorView;
+- (void)setErrorView:;
++ (double)cellHeightWithModel:cardWidth:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMEmoticonReplySelectionView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray dataList;
+@property (nonatomic) @? didSelectViewModel;
+@property (nonatomic) @? enableSelectEmojiItem;
+@property (nonatomic) @? beginHoverCell;
+@property (nonatomic) @? cancelHoverCell;
+@property (nonatomic) @? endHoverCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataList:;
+- (void)setDidSelectViewModel:;
+- (id)didSelectViewModel;
+- (void)setBeginHoverCell:;
+- (void)setCancelHoverCell:;
+- (void)setEndHoverCell:;
+- (void)setEnableSelectEmojiItem:;
+- (id)enableSelectEmojiItem;
+- (id)beginHoverCell;
+- (id)cancelHoverCell;
+- (id)endHoverCell;
+- (id)initWithLayout:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)dataList;
+@end

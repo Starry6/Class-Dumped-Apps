@@ -1,0 +1,37 @@
+@interface AWETimeLockSetTriggerTimeViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UITableViewCell bottomPaddingCell;
+@property (nonatomic) NSArray triggerTimeArray;
+@property (nonatomic) q triggerTime;
+@property (nonatomic) @? triggerTimePassingBlock;
+@property (nonatomic) BOOL preferLightTheme;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)backBtnClicked:;
+- (long long)triggerTime;
+- (void)setTriggerTime:;
+- (BOOL)preferLightTheme;
+- (void)setPreferLightTheme:;
+- (void)setTriggerTimePassingBlock:;
+- (id)bottomPaddingCell;
+- (void)setBottomPaddingCell:;
+- (id)triggerTimeArray;
+- (id)triggerTimePassingBlock;
+- (void)setTriggerTimeArray:;
+- (id)tableView:viewForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setupUI;
+- (void)setDefault;
+@end

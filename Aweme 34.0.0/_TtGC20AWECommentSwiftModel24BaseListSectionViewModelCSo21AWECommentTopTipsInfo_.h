@@ -1,0 +1,3 @@
+@interface _TtGC20AWECommentSwiftModel24BaseListSectionViewModelCSo21AWECommentTopTipsInfo_ : AWEBaseListSectionViewModel
+- (id)init;
+@end

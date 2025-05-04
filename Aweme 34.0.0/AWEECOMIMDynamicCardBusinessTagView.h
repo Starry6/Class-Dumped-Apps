@@ -1,0 +1,32 @@
+@interface AWEECOMIMDynamicCardBusinessTagView : AWEECOMIMDynamicCardBaseElementView
+@property (nonatomic) UIImageView prefixImageView;
+@property (nonatomic) UILabel prefixLabel;
+@property (nonatomic) UIImageView mainImageView;
+@property (nonatomic) UILabel mainLabel;
+@property (nonatomic) BDPCDDynamicCardDashedLineView midLine;
+@property (nonatomic) AWEECOMIMDynamicCardCommonDiffBorderRadiusView bkgView;
+- (id)mainImageView;
+- (void)setMainImageView:;
+- (id)bkgView;
+- (void)setBkgView:;
+- (void)updateWithElememtModel:;
+- (id)midLine;
+- (void)setMidLine:;
+- (double)widthWithElementModel:;
+- (double)heightWithElementModel:;
+- (id)prefixImageView;
+- (void)setPrefixImageView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setPrefixLabel:;
+- (id)prefixLabel;
+- (id)mainLabel;
+- (void)setMainLabel:;
++ (id)sizeWithElementModel:maxSize:;
++ (BOOL)checkSupportSubElementViewWithElementModel:;
++ (double)heightWithElementModel:maxSize:;
++ (double)bkgViewWidthWithModel:;
++ (double)bkgViewHeightWithModel:;
++ (BOOL)canShowMidline:;
++ (double)widthWithElementModel:maxSize:;
+@end

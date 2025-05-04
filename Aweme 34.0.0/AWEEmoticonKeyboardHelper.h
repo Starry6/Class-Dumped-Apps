@@ -1,0 +1,31 @@
+@interface AWEEmoticonKeyboardHelper : NSObject
+@property (nonatomic) AWEGrowingTextView textView;
+@property (nonatomic) <AWETextInputControllerProtocol> textInputController;
+@property (nonatomic) <AWEEmoticonKeyboardHelperDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addCommentRecentlyUsedEmoticonsDataWithModel:theme:;
+- (void)addCommentRecentlyUsedEmoticonsDataWithMiniEmoticonModel:;
+- (void)miniEmoticonPanelView:didSelectEmoticon:;
+- (void)appendNewEmoticonWithPublishGuidanceEmoticonModel:;
+- (void)appendEmoticonWithTitle:;
+- (id)getPlainText;
+- (void)emoticonView:didSelectEmoticon:theme:themeView:indexPath:;
+- (void)emoticonViewDidSelectDelete:;
+- (void)emoticonViewDidSendText:;
+- (void)emoticonViewDidTappedSearchItem:;
+- (void)trackLongPressPrevewEmoji:style:;
+- (unsigned long long)getStickerTypeWithEmoticonModel:theme:;
+- (void)__updateTypingAttributes;
+- (id)textView;
+- (void)setTextView:;
+- (id)delegate;
+- (id)textInputController;
+- (void)setTextInputController:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (BOOL)textInput:shouldDeleteTextInRange:;
++ (id)emoticonRegex;
+@end

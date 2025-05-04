@@ -1,0 +1,34 @@
+@interface AWEHPFeedTabGuideLabelStrategy : NSObject
+@property (nonatomic) AWEHPTabGuideLabelCandidate bindCandidate;
+@property (nonatomic) AWEHPTabGuideComponentInfo componentInfo;
+@property (nonatomic) AWETemplateTagsModel model;
+@property (nonatomic) AWETemplateTagsContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewController_willDisplay;
+- (id)extraTrackParams;
+- (id)initWithModel:context:;
+- (void)p_reset;
+- (void)didTriggerEvent:;
+- (void)didClickWithEvent:;
+- (id)bindCandidate;
+- (void)setBindCandidate:;
+- (BOOL)p_clickAble;
+- (void)setModel:;
+- (void)dealloc;
+- (long long)templateType;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
+- (id)componentInfo;
+- (void)setComponentInfo:;
++ (id)activeInfo;
++ (BOOL)shouldActiveWithModel:context:;
++ (BOOL)shouldHandleReplaceTriggerEvent:;
++ (void)prepareWithModel:context:;
++ (id)tryGetBindCandidateWithModel:context:isPreCheck:;
+@end

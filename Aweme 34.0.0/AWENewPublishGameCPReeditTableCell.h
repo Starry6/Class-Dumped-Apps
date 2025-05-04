@@ -1,0 +1,2 @@
+@interface AWENewPublishGameCPReeditTableCell : AWENewPublishTableCell
+@end

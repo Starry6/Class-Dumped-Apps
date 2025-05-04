@@ -1,0 +1,35 @@
+@interface AWEBizTabBarNearbyItemConfig : NSObject
+@property (nonatomic) UIButton<AWENormalModeTabBarGeneralButtonProtocol> nearbyButton;
+@property (nonatomic) UIViewController<AWETabBarItemViewControllerProtocol><AWENewNearbyViewControllerProtocol> nearbyController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isTeenModeEnabled;
+- (void)teenModeDidChange:isLogout:;
+- (void)tabBarDidSelectItemFromPreviousSelectedType:isByTap:;
+- (id)getCustomTrackParamsWithTrackInfo:;
+- (id)tabBarItemButton;
+- (id)tabBarItemViewController;
+- (BOOL)canLandingWithTabId:params:;
+- (id)selectInfoAtTabBarItemSelection;
+- (BOOL)shouldHandleTabBarItemSelectionFromPreviousSelectedType:isByTap:;
+- (id)aAWEFeedModuleServiceDOUYINHTSAdaper;
+- (id)nearbyDisplayString;
+- (id)nearbyButton;
+- (id)nearbyController;
+- (void)updateTC21NearbyTabButtonBackgroundIfNeeded;
+- (void)updateTC21NearbyTabButtonBackground:;
+- (id)nearbyInnerViewTitle;
+- (BOOL)customInnerTextView;
+- (id)aAWENearbyTabBarCommonAdapter;
+- (void)setNearbyController:;
+- (void)setNearbyButton:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setupConfig;
+- (void)setupNotification;
++ (Class)aAWEFeedModuleServiceDOUYINHTSAdaperClass;
++ (Class)aAWENearbyTabBarCommonAdapterClass;
++ (id)sharedConfig;
+@end

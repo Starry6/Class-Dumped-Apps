@@ -1,0 +1,30 @@
+@interface AWEAwemePreloadFeedManager : NSObject
+@property (nonatomic) AWEHotListDataController hotDataController;
+@property (nonatomic) NSArray feedList;
+@property (nonatomic) NSError error;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) BOOL usePreloadFlag;
+@property (nonatomic) double cacheFeedResponseDuration;
+@property (nonatomic) double feedResponseDuration;
+@property (nonatomic) BOOL finished;
+- (void)initialFetch;
+- (void)setHotDataController:;
+- (id)hotDataController;
+- (void)setUsePreloadFlag:;
+- (BOOL)preloadValid;
+- (void)setCacheFeedResponseDuration:;
+- (void)setFeedResponseDuration:;
+- (id)feedList;
+- (void)setFeedList:;
+- (BOOL)usePreloadFlag;
+- (double)cacheFeedResponseDuration;
+- (double)feedResponseDuration;
+- (BOOL)finished;
+- (void)setFinished:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setError:;
+- (void).cxx_destruct;
+- (id)error;
++ (id)sharedInstance;
+@end

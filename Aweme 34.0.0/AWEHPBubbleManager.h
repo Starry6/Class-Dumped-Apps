@@ -1,0 +1,31 @@
+@interface AWEHPBubbleManager : NSObject
+@property (nonatomic) <AWEPzEngineProtocol> engine;
+@property (nonatomic) NSDictionary bubbleHideTypeMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)createBubbleTask;
+- (void)tryShowBubbleWithTask:canShowCallBack:;
+- (BOOL)bubbleStrategyEnable;
+- (id)currentTabID;
+- (void)trackBubbleShowWithTask:;
+- (void)trackBubbleHideWithTask:dismissType:;
+- (void)tryShowBubbleWithTask:disableMigratePizza:canShowCallBack:;
+- (BOOL)bubbleMigratePizza;
+- (BOOL)needPizzaVerifyWithDisableOption:;
+- (void)tryHoldBubbleManagerWithTask:completion:;
+- (BOOL)getAWEMRBubbleRefactorPrecheckEnable;
+- (BOOL)getAWEMRBubbleRefactorShowEnable;
+- (id)generateComponentWithTask:extraVerify:;
+- (void)tryHoldBubbleManagerRefactorWithTask:canShowCallBack:;
+- (void)verifyBubbleWithTask:component:canShowCallBack:;
+- (BOOL)getAWEMRPrecheckExtraPizzaEnable;
+- (id)bubbleHideTypeMap;
+- (void)getPizzaPermissionWithBubbleModel:tabTags:verifyCompletion:;
+- (void)setBubbleHideTypeMap:;
+- (id)engine;
+- (void)setEngine:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

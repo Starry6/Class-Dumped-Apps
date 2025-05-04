@@ -1,0 +1,30 @@
+@interface AWELiveInnerFeedRefreshFooter : MJRefreshAutoFooter
+@property (nonatomic) UILabel readyLabel;
+@property (nonatomic) UILabel refreshingLabel;
+@property (nonatomic) UILabel noMoreLabel;
+@property (nonatomic) AWEUILoadingView loadingView;
+- (void)placeSubviews;
+- (void)scrollViewPanStateDidChange:;
+- (void)scrollViewContentSizeDidChange:;
+- (void)startLoadingAnim;
+- (id)refreshingLabel;
+- (id)noMoreLabel;
+- (id)createFooterLabel;
+- (void)setRefreshingLabel:;
+- (void)setNoMoreLabel:;
+- (void)stopLoadingAnim;
+- (id)readyLabel;
+- (void)setReadyLabel:;
+- (void)dealloc;
+- (void)willMoveToSuperview:;
+- (void)setLoadingView:;
+- (void)prepare;
+- (id)initWithFrame:;
+- (void)applicationWillEnterForeground:;
+- (id)loadingView;
+- (void)setTitle:forState:;
+- (void).cxx_destruct;
+- (void)setState:;
+- (void)p_addObservers;
+- (void)p_removeObservers;
+@end

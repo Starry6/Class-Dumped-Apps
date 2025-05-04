@@ -1,0 +1,31 @@
+@interface AWESwitchRecordModeViewConfig : NSObject
+@property (nonatomic) double cellSpace;
+@property (nonatomic) UIColor normalColor;
+@property (nonatomic) UIColor selectedColor;
+@property (nonatomic) q fontWeight;
+@property (nonatomic) q unSelectedFontWeight;
+@property (nonatomic) BOOL addShadow;
+@property (nonatomic) BOOL enableSelectWhenScroll;
+@property (nonatomic) {UIEdgeInsets=dddd} hitTestEdgeInsets;
+@property (nonatomic) q position;
+- (void)setCellSpace:;
+- (double)cellSpace;
+- (BOOL)addShadow;
+- (void)setAddShadow:;
+- (void)setEnableSelectWhenScroll:;
+- (long long)unSelectedFontWeight;
+- (void)setUnSelectedFontWeight:;
+- (BOOL)enableSelectWhenScroll;
+- (id)hitTestEdgeInsets;
+- (id)init;
+- (void)setHitTestEdgeInsets:;
+- (long long)position;
+- (void)setSelectedColor:;
+- (id)normalColor;
+- (void)setNormalColor:;
+- (long long)fontWeight;
+- (void).cxx_destruct;
+- (void)setFontWeight:;
+- (void)setPosition:;
+- (id)selectedColor;
+@end

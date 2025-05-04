@@ -1,0 +1,34 @@
+@interface AWEChapterInfo : MTLModel
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString descForSearch;
+@property (nonatomic) NSNumber timestamp;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) NSString detail;
+@property (nonatomic) BOOL isFake;
+@property (nonatomic) BOOL isEcomWord;
+@property (nonatomic) NSString URL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFake:;
+- (id)descForSearch;
+- (void)setDescForSearch:;
+- (BOOL)isEcomWord;
+- (void)setIsEcomWord:;
+- (id)timestamp;
+- (id)endTime;
+- (void)setEndTime:;
+- (void)setDetail:;
+- (void)setDesc:;
+- (long long)type;
+- (id)desc;
+- (void)setTimestamp:;
+- (id)URL;
+- (void)setURL:;
+- (void)setType:;
+- (id)detail;
+- (void).cxx_destruct;
+- (BOOL)isFake;
++ (id)JSONKeyPathsByPropertyKey;
+@end

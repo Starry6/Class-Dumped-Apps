@@ -1,0 +1,36 @@
+@interface AWEChapterTagComponent : NSObject
+@property (nonatomic) UIView chapterTagView;
+@property (nonatomic) UILabel chapterTagLabel;
+@property (nonatomic) BOOL isChapterGuiding;
+@property (nonatomic) AWEPlayInteractionBaseElement clickDelegate;
+@property (nonatomic) NSArray currentActivatedComponents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)tagWidth;
+- (id)clickDelegate;
+- (void)setClickDelegate:;
+- (id)currentActivatedComponents;
+- (void)setCurrentActivatedComponents:;
+- (void)onChapterTagLabelClicked:;
+- (id)chapterTagView;
+- (BOOL)enableSmartChapterKeyPoint;
+- (id)chapterTagLabel;
+- (long long)chapterTagLabelWidth;
+- (void)setIsChapterGuiding:;
+- (id)attributedStringWithChapterTagLabel:isGuide:;
+- (BOOL)isChapterGuiding;
+- (void)observerVideoPlayedPeriod;
+- (void)handleVideoPlayedPeriod;
+- (void)chapterTagLabelDoLastAnimationIfNeeded;
+- (void)setChapterTagView:;
+- (void)setChapterTagLabel:;
+- (void).cxx_destruct;
+- (void)updateWithModel:;
+- (id)tagView;
++ (BOOL)needShowWithContext:;
++ (BOOL)shouldShowIfVideoNoteExistsWithModel:;
++ (BOOL)isChapterTagInDescriptionWithContext:;
++ (id)getSpaceStringWithSpace:;
+@end

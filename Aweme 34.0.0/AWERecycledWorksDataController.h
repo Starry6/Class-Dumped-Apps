@@ -1,0 +1,35 @@
+@interface AWERecycledWorksDataController : AWEListDataController
+@property (nonatomic) NSString nextCursor;
+@property (nonatomic) q totalCount;
+@property (nonatomic) q deleteModelsCount;
+@property (nonatomic) BOOL innerDataSourceChanged;
+@property (nonatomic) BOOL outerDataSourceChanged;
+@property (nonatomic) NSMutableArray recoveredModels;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)nextCursor;
+- (void)setNextCursor:;
+- (void)fetchAwemeListWithCompletion:;
+- (id)filterDuplicatedDatasourceWithArray:;
+- (void)trackViewEventStatus:error:duration:;
+- (void)trackActionEventStatus:error:actionScene:duration:awemeIDs:action:;
+- (void)removeAwemeWithIDs:failedAwemeIDs:;
+- (void)updateTotalCountWithAwemeIDs:failedAwemeIDs:;
+- (long long)deleteModelsCount;
+- (void)setDeleteModelsCount:;
+- (id)recoveredModels;
+- (void)deleteRecycledWorksWithAwemeIDs:needDelete:actionScene:completion:;
+- (void)recoverRecycledWorksWithAwemeIDs:needDelete:actionScene:completion:;
+- (BOOL)innerDataSourceChanged;
+- (void)setInnerDataSourceChanged:;
+- (BOOL)outerDataSourceChanged;
+- (void)setOuterDataSourceChanged:;
+- (void)setRecoveredModels:;
+- (id)init;
+- (long long)totalCount;
+- (long long)count;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)reset;
+- (void)setTotalCount:;
+@end

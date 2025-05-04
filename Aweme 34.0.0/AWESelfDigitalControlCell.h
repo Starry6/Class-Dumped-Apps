@@ -1,0 +1,33 @@
+@interface AWESelfDigitalControlCell : UITableViewCell
+@property (nonatomic) UIView cellBackgroundView;
+@property (nonatomic) UIView cellMaskView;
+@property (nonatomic) UIImageView leftImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView rightArrow;
+@property (nonatomic) UILabel stateLabel;
+@property (nonatomic) AWESelfDigitalControlCellModel model;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setRightArrow:;
+- (id)cellMaskView;
+- (void)setCellMaskView:;
+- (void)setMaskViewColor:;
+- (void)setModel:;
+- (void)setHighlighted:animated:;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setSelected:animated:;
+- (void)setupUI;
+- (id)rightArrow;
+- (id)cellBackgroundView;
+- (void)setCellBackgroundView:;
+- (id)leftImageView;
+- (void)setLeftImageView:;
+- (void)setStateLabel:;
+- (id)stateLabel;
++ (id)identifier;
+@end

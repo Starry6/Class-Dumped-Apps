@@ -1,0 +1,37 @@
+@interface AWEECOMIMVideoItemModel : NSObject
+@property (nonatomic) NSString vid;
+@property (nonatomic) NSString localFilePath;
+@property (nonatomic) NSString coverURLString;
+@property (nonatomic) double duration;
+@property (nonatomic) double videoWidth;
+@property (nonatomic) double videoHeight;
+@property (nonatomic) q state;
+@property (nonatomic) UIImage coverImg;
+@property (nonatomic) {CGSize=dd} videoSize;
+@property (nonatomic) q senderRole;
+@property (nonatomic) AWEECOMIMBaseMsgModel msgModel;
+- (id)coverURLString;
+- (id)coverImg;
+- (void)setCoverImg:;
+- (id)msgModel;
+- (void)setMsgModel:;
+- (void)setCoverURLString:;
+- (void)setSenderRole:;
+- (long long)senderRole;
+- (void)setVideoWidth:;
+- (void)setDuration:;
+- (long long)state;
+- (void)setVideoHeight:;
+- (double)videoWidth;
+- (void).cxx_destruct;
+- (double)videoHeight;
+- (double)duration;
+- (void)setState:;
+- (id)videoSize;
+- (void)setVideoSize:;
+- (void)setVid:;
+- (id)vid;
+- (id)localFilePath;
+- (void)setLocalFilePath:;
++ (id)videoSizeWithModel:;
+@end

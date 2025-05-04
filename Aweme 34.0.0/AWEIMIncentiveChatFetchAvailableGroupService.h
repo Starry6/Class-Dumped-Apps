@@ -1,0 +1,30 @@
+@interface AWEIMIncentiveChatFetchAvailableGroupService : HTSService
+@property (nonatomic) AWEIMIncentiveAvailableGroupChatDataManager availableGroupChatDataManager;
+@property (nonatomic) BOOL coldStartFinish;
+@property (nonatomic) BOOL startIMFinish;
+@property (nonatomic) BOOL messageTabFirstFrameFinish;
+@property (nonatomic) NSArray remoteData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)setupAvailableGroupChatDataManager;
+- (id)currentUserAvailableGroupChat;
+- (void)messageTabFirstFrameFinishAndCanFetchDataFromDB;
+- (void)incentiveChatColdStartDataFinishAndCanFetchRemoteDataWithRemoteData:;
+- (void)setStartIMFinish:;
+- (void)setAvailableGroupChatDataManager:;
+- (id)availableGroupChatDataManager;
+- (BOOL)messageTabFirstFrameFinish;
+- (void)setMessageTabFirstFrameFinish:;
+- (BOOL)coldStartFinish;
+- (id)remoteData;
+- (void)setColdStartFinish:;
+- (void)setRemoteData:;
+- (BOOL)startIMFinish;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

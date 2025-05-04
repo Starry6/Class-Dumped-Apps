@@ -1,0 +1,33 @@
+@interface AWEWorkflow : AWEWorkflowStep
+@property (nonatomic) NSMutableArray pushSteps;
+@property (nonatomic) AWEWorkflowStep currentStep;
+@property (nonatomic) BOOL isFlowStarted;
+@property (nonatomic) NSMutableDictionary flowStore;
+@property (nonatomic) AWEDLMSession linkSession;
+@property (nonatomic) @? completion;
+@property (nonatomic) @? preStepBlock;
+- (void)onStep:linkSession:;
+- (void)setPreStepBlock:;
+- (id)initWithStoreValue:linkSession:;
+- (void)setLinkSession:;
+- (id)linkSession;
+- (id)pushSteps;
+- (BOOL)isFlowStarted;
+- (void)setIsFlowStarted:;
+- (id)preStepBlock;
+- (id)flowStore;
+- (void)setupObservation;
+- (void)completeCurrentStep;
+- (void)waitStep:;
+- (void)setPushSteps:;
+- (void)setFlowStore:;
+- (void)next;
+- (id)currentStep;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (void)stopAll;
+- (void)addStep:;
+- (void)addSteps:;
++ (id)workflowFromStep:;
+@end

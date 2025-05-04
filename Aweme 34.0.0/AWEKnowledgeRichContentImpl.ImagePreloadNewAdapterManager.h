@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.ImagePreloadNewAdapterManager : BDMultiContentContainer.DefaultImagePreloadManager
+@end

@@ -1,0 +1,32 @@
+@interface AWEUndertakeActionFeedBottomBanner : MTLModel
+@property (nonatomic) NSString iconPic;
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString actionSchema;
+@property (nonatomic) double duration;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)actionSchema;
+- (void)setActionSchema:;
+- (id)iconPic;
+- (void)setIconPic:;
+- (id)extra;
+- (void)setDuration:;
+- (void)setTitleText:;
+- (id)titleText;
+- (id)buttonText;
+- (id)descriptionText;
+- (void).cxx_destruct;
+- (double)duration;
+- (void)setDescriptionText:;
+- (void)setButtonText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

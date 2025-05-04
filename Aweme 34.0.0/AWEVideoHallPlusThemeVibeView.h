@@ -1,0 +1,2 @@
+@interface AWEVideoHallPlusThemeVibeView : UIView
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMGroupRankingList : NSObject
+@end

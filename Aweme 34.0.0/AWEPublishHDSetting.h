@@ -1,0 +1,32 @@
+@interface AWEPublishHDSetting : NSObject
+@property (nonatomic) IESVideoInfoProvider provider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)automaticallyLoadedAssetKeysAtIndex:;
+- (void)fetchHDAssetsCountWithAssets:completion:;
+- (void)setProvider:;
+- (void).cxx_destruct;
+- (id)provider;
++ (BOOL)enableWithModel:;
++ (BOOL)bubbleShowed;
++ (void)setBubbleShowed:;
++ (BOOL)hasHDState;
++ (void)userToggleState:;
++ (void)handleStateChange:model:;
++ (BOOL)userCurrentStateWithModel:;
++ (id)p_HDSaveKey;
++ (void)setHDState:;
++ (BOOL)HDState;
++ (id)p_subscription;
++ (BOOL)userCurrentState;
++ (id)userCurrentStateDescription;
++ (void)checkHDAssetCountWithAssets:completion:;
++ (BOOL)enable;
++ (void)addSubscriber:;
++ (void)removeSubscriber:;
++ (BOOL)defaultState;
++ (BOOL)toggled;
++ (void)setToggled:;
+@end

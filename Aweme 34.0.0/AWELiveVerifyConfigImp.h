@@ -1,0 +1,33 @@
+@interface AWELiveVerifyConfigImp : NSObject
+@property (nonatomic) AWELiveVerifyApi verifyApi;
+@property (nonatomic) AWELiveZMCertManager zmCertManager;
+@property (nonatomic) AWELiveVerifyReportApi verifyReportApi;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)transitionToLiveVerifyPageFrom:params:enableOptimization:completion:;
+- (BOOL)isPhoneBinded;
+- (void)needIdentityAuthenticationWithCompleteBlock:;
+- (void)needIdentityAuthenticationWithController:enterFrom:;
+- (void)needPhoneAuthenticationWithController:;
+- (void)needZMAssertWithCompleteBlock:;
+- (void)needZMAuthenticationWithController:;
+- (void)needZMAuthenticationWithController:withCompleteBlock:;
+- (void)needIdentityAuthenticationWithController:enterTrack:completionBlock:;
+- (void)needWithdrawAuthenticationWithController:;
+- (void)needReChargeAuthenticationWithController:;
+- (void)multiIDAuth:;
+- (void)verifyForMultiID:;
+- (void)antispamDownSMSVerifyTraceURL:completion:;
+- (void)openLiveCertWithParams:identifyParams:faceOnly:paramsBuilder:completion:;
+- (id)zmCertManager;
+- (void)openZYLivingBodyAuthenticationWithParams:withCompleteBlock:;
+- (id)verifyApi;
+- (void)reportVerifyResult:params:uniqueId:;
+- (void)setVerifyReportApi:;
+- (id)verifyReportApi;
+- (void)setVerifyApi:;
+- (void)setZmCertManager:;
+- (void).cxx_destruct;
+@end

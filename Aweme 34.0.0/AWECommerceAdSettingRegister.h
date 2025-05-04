@@ -1,0 +1,2 @@
+@interface AWECommerceAdSettingRegister : NSObject
+@end

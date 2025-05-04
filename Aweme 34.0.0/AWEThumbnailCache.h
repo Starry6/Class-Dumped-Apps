@@ -1,0 +1,35 @@
+@interface AWEThumbnailCache : NSObject
+@property (nonatomic) NSCache memoryCache;
+@property (nonatomic) NSOperationQueue queue;
+@property (nonatomic) NSMutableDictionary requestPool;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) NSMutableDictionary generators;
+@property (nonatomic) NSMutableArray generatorDurationArray;
+@property (nonatomic) double tolerance;
+@property (nonatomic) Q fetchFor;
+- (void)setGenerators:;
+- (void)setFetchFor:;
+- (id)getThumbnailForAsset:atTime:preferedSize:rotation:completion:;
+- (void)trackAssetImageGenerator:;
+- (id)generatorDurationArray;
+- (id)requestPool;
+- (id)keyForAsset:atTime:preferedSize:;
+- (long long)imageOrientationFromRotateType:;
+- (id)cachedImageForKey:orientation:;
+- (unsigned long long)fetchFor;
+- (void)setGeneratorDurationArray:;
+- (void)setRequestPool:;
+- (void)cancelAllRequests;
+- (id)init;
+- (void)dealloc;
+- (void)setTolerance:;
+- (void)setQueue:;
+- (double)tolerance;
+- (id)dispatchQueue;
+- (id)memoryCache;
+- (void)setDispatchQueue:;
+- (void).cxx_destruct;
+- (id)queue;
+- (id)generators;
+- (void)setMemoryCache:;
+@end

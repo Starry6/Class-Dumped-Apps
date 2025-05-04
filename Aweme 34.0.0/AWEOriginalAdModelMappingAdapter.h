@@ -1,0 +1,33 @@
+@interface AWEOriginalAdModelMappingAdapter : NSObject
++ (void)handleStyleTemplateMapping:;
++ (void)handleMappingWith:;
++ (void)handleAdDataMapping:;
++ (void)handleLokiComponentToMannor:;
++ (void)oneStationMonitorWith:;
++ (void)handleLandingPageMapping:with:;
++ (void)handleDownloadMapping:with:;
++ (void)handleInteractiveCardMapping:with:;
++ (void)handleMaskMapping:with:;
++ (void)handleButtonMapping:with:;
++ (void)handleLynxCardMapping:with:;
++ (void)handleAdLabelMapping:with:;
++ (void)handleAdCommentMapping:with:;
++ (void)handleConverseCardMapping:with:;
++ (void)handleCreativeComponentMapping:with:;
++ (void)handleBalanceCouponMapping:with:;
++ (void)handleMixedAreaMapping:with:;
++ (void)handleLiveCardMapping:with:;
++ (void)handleAnchorComponentMapping:with:;
++ (void)handleLokiComponentMapping:with:;
++ (void)handleLiveRoomButtonComponentMapping:with:;
++ (void)handleLokiComponentDrawLightInteractiveMapping:with:;
++ (id)p_newCardInfosWith:andModel:;
++ (void)handleCreativeComponentECommerceMapping:with:;
++ (void)handleCreativeComponentInteractiveMapping:with:;
++ (void)handleCreativeComponentPictureMapping:with:;
++ (void)handleCreativeComponentConsultMapping:with:;
++ (void)handleCreativeComponentFormMapping:with:;
++ (id)oneStationMonitorRuleKeyWith:;
++ (void)hmdTrackOnStationMonitor:componentModel:creativeID:styleTemplateType:rawAdData:;
++ (id)shouldTrackMonitor:componentModel:rawAdData:;
+@end

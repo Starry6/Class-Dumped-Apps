@@ -1,0 +1,32 @@
+@interface AWEPostPageGameCPElement : AWEPostPageCellElement
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary extras;
+- (void)elementAppear;
+- (void)didSelectAnchorWithType:anchorDismissBlock:enterFromType:;
+- (void)addAIAnchorWithType:anchorDismissBlock:;
+- (void)refreshWithAnchorVM:;
+- (void)reportTrackerWithEvent:extra:;
+- (id)traceReeditParams;
+- (BOOL)canHandleAnchorType:;
+- (void)setupUIForGameCP;
+- (void)reportAnchorEntranceShowTrackerIfNeed;
+- (void)addGameCPAnchorNotification:;
+- (void)addGameCPAnchorTopicNotification:;
+- (void)reportMultiAnchorEntranceShowTracker;
+- (void)reportGeneralAnchorEntranceShowTracker;
+- (id)getGameCPAnchorPublishModel;
+- (long long)p_currentAnchorScene;
+- (void)p_checkPassiveAnchor;
+- (void)p_addBindSignObserver;
+- (void)configCPTraceServiceBaseInfo;
+- (void)cleanUp;
+- (id)service;
+- (void)viewDidLoad;
+- (BOOL)isVisible;
+- (void)addObservers;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

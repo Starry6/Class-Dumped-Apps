@@ -1,0 +1,34 @@
+@interface AWEECommerceBuyButtonViewBarController : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEECommerceBuyButtonViewBarContext context;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) UIView bottomBar;
+@property (nonatomic) UIView buttonView;
+@property (nonatomic) UILabel buttonLabel;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)updateBottomBarWithAweme:updateTiming:;
+- (id)logExtraDict;
+- (BOOL)canShowBottomBarForAweme:;
+- (void)updateCurrentIndexPath:;
+- (void)updateBuyButtonWith:;
+- (id)getTrackParamsFromModel;
+- (void)tapBuyButton;
+- (void)setCurrentIndex:;
+- (void)setBottomBar:;
+- (id)buttonView;
+- (id)bottomBar;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setButtonView:;
+- (id)context;
+- (id)buttonLabel;
+- (long long)currentIndex;
+- (void)setButtonLabel:;
+- (Class)contextClass;
+- (id)bottomBarView;
+@end

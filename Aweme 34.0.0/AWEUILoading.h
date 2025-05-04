@@ -1,0 +1,37 @@
+@interface AWEUILoading : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)showLoadingAndPlaceholderOnView:;
++ (id)showLoadingAndPlaceholderOnView:animated:;
++ (id)showLoadingOnView:;
++ (void)dismissWindowLoadingWithAnimated:;
++ (id)showWindowLoadingWithTitle:animated:;
++ (void)dismissWindowLoading;
++ (id)showWindowLoading;
++ (id)showLoadingOnView:withTitle:;
++ (id)showWindowLoadingWithTitle:;
++ (id)showLoadingOnView:title:animated:;
++ (id)showTransparentLoadingAndDisableUserInteractionOnView:;
++ (id)showWindowLoadingWithAnimated:;
++ (id)showLoadingOnView:animated:;
++ (id)basicMode_showLoadingAndPlaceholderOnView:;
++ (id)showWindowLoadingWithDelegate:;
++ (id)showWindowLoadingWithDelegate:afterDelay:;
++ (id)showLoadingOnView:delegate:afterDelay:;
++ (id)showLoadingOnView:delegate:;
++ (id)showLoadingWithBackgroundOnView:delegate:;
++ (id)showLoadingAndDisableUserInteractionOnView:delegate:;
++ (id)showLoadingAndDisableUserInteractionOnView:delegate:afterDelay:;
++ (id)showLoadingWithBackgroundOnView:;
++ (id)showLoadingAndDisableUserInteractionOnView:;
++ (id)showEcomSearchLoadingWithBackgroundOnView:;
++ (void)dismissSearchLoading;
++ (id)showSearchLoadingWithBackground:;
++ (id)blendedOptimize_showLoadingAndPlaceholderOnView:;
++ (id)awe_offlineMode_showLoadingAndPlaceholderOnView:;
++ (id)showSearchLoadingWithBackgroundOnView:;
++ (void)dismissSearchLoadingWithAnimated:;
++ (BOOL)isSearchLoadingShowing;
+@end

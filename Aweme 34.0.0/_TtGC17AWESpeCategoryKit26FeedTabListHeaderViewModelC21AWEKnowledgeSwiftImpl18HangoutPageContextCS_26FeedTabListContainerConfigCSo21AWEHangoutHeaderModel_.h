@@ -1,0 +1,2 @@
+@interface _TtGC17AWESpeCategoryKit26FeedTabListHeaderViewModelC21AWEKnowledgeSwiftImpl18HangoutPageContextCS_26FeedTabListContainerConfigCSo21AWEHangoutHeaderModel_ : _TtCs12_SwiftObject
+@end

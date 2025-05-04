@@ -1,0 +1,36 @@
+@interface AWEIMStreakPetElfInviteCardProps : AWEIMUIViewPresenterProps
+@property (nonatomic) @? tapOtherBlock;
+@property (nonatomic) @? tapButtonBlock;
+@property (nonatomic) BOOL disableButtonClickInCurrentStatus;
+@property (nonatomic) BOOL disableBtn;
+@property (nonatomic) BOOL disableOtherClickArea;
+@property (nonatomic) NSAttributedString titleStr;
+@property (nonatomic) NSAttributedString subTitleStr;
+@property (nonatomic) NSString btnTitleStr;
+@property (nonatomic) UIColor btnTitleColor;
+@property (nonatomic) UIColor btnBackgroundColor;
+@property (nonatomic) NSArray iconUrlArray;
+- (id)titleStr;
+- (void)setTitleStr:;
+- (id)btnBackgroundColor;
+- (void)setBtnBackgroundColor:;
+- (id)tapButtonBlock;
+- (void)setTapButtonBlock:;
+- (void)setDisableBtn:;
+- (void)setBtnTitleColor:;
+- (void)setSubTitleStr:;
+- (void)setBtnTitleStr:;
+- (id)btnTitleStr;
+- (BOOL)disableBtn;
+- (id)subTitleStr;
+- (id)btnTitleColor;
+- (id)iconUrlArray;
+- (void)setIconUrlArray:;
+- (void)setTapOtherBlock:;
+- (void)setDisableOtherClickArea:;
+- (BOOL)disableButtonClickInCurrentStatus;
+- (void)setDisableButtonClickInCurrentStatus:;
+- (BOOL)disableOtherClickArea;
+- (id)tapOtherBlock;
+- (void).cxx_destruct;
+@end

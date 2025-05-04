@@ -1,0 +1,33 @@
+@interface AWEProfileHeaderEndorsementCell : UICollectionViewCell
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) AWEProfileHeaderContext context;
+@property (nonatomic) UIViewController rootViewController;
+@property (nonatomic) <AWEProfileHeaderEndorsementCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awe_viewController:willTransitionToSize:transitionCoordinator:;
+- (BOOL)isSame:with:;
+- (id)padService;
+- (void)configWithHeaderContext:;
+- (id)collectionView;
+- (void)dealloc;
+- (id)delegate;
+- (void)setRootViewController:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)rootViewController;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)context;
+- (id)dataSource;
+- (void)setupUI;
+@end

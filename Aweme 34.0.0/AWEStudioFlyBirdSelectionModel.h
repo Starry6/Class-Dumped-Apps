@@ -1,0 +1,31 @@
+@interface AWEStudioFlyBirdSelectionModel : NSObject
+@property (nonatomic) q albumMaxSelctionCount;
+@property (nonatomic) q albumMaxSelctionVideoDuration;
+@property (nonatomic) BOOL needBase64Info;
+@property (nonatomic) BOOL recordSaveToAlbum;
+@property (nonatomic) NSString nextButtonTitle;
+@property (nonatomic) BOOL onlyAllowPhoto;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL defaultCameraPositionBack;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOnlyAllowPhoto:;
+- (void)setRecordSaveToAlbum:;
+- (void)setAlbumMaxSelctionCount:;
+- (void)setAlbumMaxSelctionVideoDuration:;
+- (void)setDefaultCameraPositionBack:;
+- (void)setNeedBase64Info:;
+- (BOOL)needBase64Info;
+- (BOOL)recordSaveToAlbum;
+- (long long)albumMaxSelctionCount;
+- (long long)albumMaxSelctionVideoDuration;
+- (BOOL)onlyAllowPhoto;
+- (BOOL)defaultCameraPositionBack;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (id)nextButtonTitle;
+- (void)setNextButtonTitle:;
+@end

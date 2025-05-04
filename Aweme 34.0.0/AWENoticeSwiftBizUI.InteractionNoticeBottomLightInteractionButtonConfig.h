@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftBizUI.InteractionNoticeBottomLightInteractionButtonConfig : AWENoticeSwiftBizUI.InteractionNoticeBottomButtonConfig
+@end

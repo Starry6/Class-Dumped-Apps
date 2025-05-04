@@ -1,0 +1,2 @@
+@interface AWETeenAlbumCollectListViewHolder : AWEBaseListViewHolder
+@end

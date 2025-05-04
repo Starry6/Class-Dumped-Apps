@@ -1,0 +1,37 @@
+@interface AWETeenTransferManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)routerDidFailTransferingWithURLString:errorMessage:;
+- (BOOL)teenModeCanHandleURL:transferType:;
+- (BOOL)interceptorActionBeforeTransferWithURLString:userInfo:;
+- (unsigned long long)interceptorActionWhenTransferingWithTransitionInfo:;
+- (id)p_settingsConfig;
+- (void)transferToPushPageByMaskPortrait:coldLaunchAnimated:;
+- (void)forceLandToRootVCWithItemType:;
+- (void)transferToSchemaPageWithStickItemIds:enterMethod:;
+- (BOOL)p_isTeenModeSchemaURL:;
+- (id)p_getTransferString:;
+- (void)p_didHandlePush;
+- (id)p_whiteList;
+- (id)p_routerInterceptorSettingsConfig;
+- (id)p_interceptorWhiteList;
+- (id)p_interceptorBlackList;
+- (BOOL)p_addInterceptorForTeenRouter;
+- (BOOL)p_isInWhiteListWithURLString:;
+- (BOOL)p_openInterceptorForTeenRouter;
+- (BOOL)p_isInBlackListWithURLString:;
+- (BOOL)p_routerInterceptEnable;
+- (id)p_interceptorRedirectList;
+- (id)init;
+- (void)dealloc;
++ (BOOL)teenModeCanHandleURL:transferType:;
++ (BOOL)teenModePushFeatureOn;
++ (void)transferToPushPageByMaskPortrait:coldLaunchAnimated:;
++ (id)teenPushMessageEnterFrom;
++ (void)forceLandToRootVCWithItemType:;
++ (void)transferToSchemaPageWithStickItemIds:enterMethod:;
++ (void)transferToPushPageByMaskPortrait:;
++ (id)sharedInstance;
+@end

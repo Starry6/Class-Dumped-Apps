@@ -1,0 +1,36 @@
+@interface AWEAlertRegisterItem : NSObject
+@property (nonatomic) NSArray eventClasses;
+@property (nonatomic) # alertClass;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString detail;
+@property (nonatomic) NSString lineOfBusiness;
+@property (nonatomic) NSArray owners;
+@property (nonatomic) NSObject<NSCopying> alertID;
+@property (nonatomic) NSNumber priority;
+@property (nonatomic) NSArray events;
+@property (nonatomic) NSArray eventClassInfos;
+@property (nonatomic) Q alertClassStatus;
+- (void)setAlertID:;
+- (void)setLineOfBusiness:;
+- (id)lineOfBusiness;
+- (Class)alertClass;
+- (void)setAlertClass:;
+- (id)eventClassInfos;
+- (void)setEventClassInfos:;
+- (void)setEventClasses:;
+- (unsigned long long)alertClassStatus;
+- (void)setAlertClassStatus:;
+- (void)setEvents:;
+- (id)events;
+- (void)setDetail:;
+- (id)priority;
+- (void)setPriority:;
+- (id)detail;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)alertID;
+- (id)owners;
+- (void)setOwners:;
+- (id)eventClasses;
+@end

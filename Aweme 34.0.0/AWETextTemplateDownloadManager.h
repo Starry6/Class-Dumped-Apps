@@ -1,0 +1,36 @@
+@interface AWETextTemplateDownloadManager : NSObject
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) NSCache stickerDownloadProgressCache;
+@property (nonatomic) <IESServiceProvider> serviceProvider;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) double startTime;
+- (void)p_downloadSticker:;
+- (void)downloadStickerIfNeed:;
+- (id)stickerDownloadProgress:;
+- (id)editService;
+- (void)setEditService:;
+- (void)notifyObserversDidBeginDownloadSticker:;
+- (void)downloadFontIfNeed:sticker:;
+- (void)notifyObserversNeedUpdateCellDownloadedSticker:;
+- (void)notifyObserversDidChangeProgressWithSticker:progress:;
+- (void)notifyObserversDidFinishDownloadSticker:error:;
+- (void)updatePropCellDownloaded:;
+- (void)notifyObserversDidFinishDownloadSticker:extraParams:;
+- (id)stickerDownloadProgressCache;
+- (void)monitorOpenEditorDurationWithDuration:success:error:logTypeStr:;
+- (id)neededExtraPrama:;
+- (void)setStickerDownloadProgressCache:;
+- (id)init;
+- (void)removeObserver:;
+- (void)setStartTime:;
+- (id)observers;
+- (void)addObserver:;
+- (void).cxx_destruct;
+- (double)startTime;
+- (void)setObservers:;
+- (id)serviceProvider;
++ (id)fontFilePath:;
++ (id)catchResources:;
++ (void)downloadEffectWithResource:completion:;
++ (id)manager;
+@end

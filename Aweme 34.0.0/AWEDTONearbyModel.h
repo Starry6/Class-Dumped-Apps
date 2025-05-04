@@ -1,0 +1,32 @@
+@interface AWEDTONearbyModel : MTLModel
+@property (nonatomic) NSString defaultCircleId;
+@property (nonatomic) NSString douyinCircleId;
+@property (nonatomic) NSString douyinCircleName;
+@property (nonatomic) q douyinNearbyPublishMode;
+@property (nonatomic) q douyinCirclePublishType;
+@property (nonatomic) NSDictionary douyinCircleMocParams;
+@property (nonatomic) BOOL poiFootprintVideo;
+@property (nonatomic) NSString nearbyPublishDesc;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)defaultCircleId;
+- (void)setDefaultCircleId:;
+- (id)douyinCircleId;
+- (void)setDouyinCircleId:;
+- (id)douyinCircleName;
+- (void)setDouyinCircleName:;
+- (long long)douyinNearbyPublishMode;
+- (void)setDouyinNearbyPublishMode:;
+- (long long)douyinCirclePublishType;
+- (void)setDouyinCirclePublishType:;
+- (id)douyinCircleMocParams;
+- (void)setDouyinCircleMocParams:;
+- (BOOL)poiFootprintVideo;
+- (void)setPoiFootprintVideo:;
+- (id)nearbyPublishDesc;
+- (void)setNearbyPublishDesc:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWESearchHomeRecomWordsSectionController : AWEDCFeedBaseSectionController
+@property (nonatomic) AWESearchHomeRecomContainerCell containerCell;
+@property (nonatomic) AWEFeedSearchLongBarModel barModel;
+@property (nonatomic) BOOL isRecomWordsFold;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)viewControllerDidAppear:;
+- (id)containerCell;
+- (id)barModel;
+- (void)setBarModel:;
+- (void)setContainerCell:;
+- (id)aAWESearchModuleServiceDOUYINSSAdaper;
+- (void)setIsRecomWordsFold:;
+- (BOOL)isRecomWordsFold;
+- (void)homeRecSwitchChange;
+- (id)init;
+- (Class)cellClass;
+- (void).cxx_destruct;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
++ (Class)sectionViewModelClass;
++ (Class)aAWESearchModuleServiceDOUYINSSAdaperClass;
+@end

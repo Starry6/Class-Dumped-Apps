@@ -1,0 +1,38 @@
+@interface AWEECMallFeedProductModel : MTLModel
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEURLModel cover;
+@property (nonatomic) AWEECMallFeedPriceModel price;
+@property (nonatomic) NSArray tags;
+@property (nonatomic) NSDictionary reason;
+@property (nonatomic) NSString promotionId;
+@property (nonatomic) q sales;
+@property (nonatomic) NSString salesText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (long long)sales;
+- (id)promotionId;
+- (void)setPromotionId:;
+- (void)setSales:;
+- (id)salesText;
+- (void)setSalesText:;
+- (id)price;
+- (void)setProductID:;
+- (id)tags;
+- (id)productID;
+- (void)setTags:;
+- (void)setReason:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)reason;
+- (void)setTitle:;
+- (void)setPrice:;
++ (id)coverJSONTransformer;
++ (id)tagsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)priceJSONTransformer;
+@end

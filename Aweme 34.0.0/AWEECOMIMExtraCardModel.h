@@ -1,0 +1,37 @@
+@interface AWEECOMIMExtraCardModel : NSObject
+@property (nonatomic) NSString metaId;
+@property (nonatomic) NSString goodImgUrl;
+@property (nonatomic) NSString goodTitle;
+@property (nonatomic) q discountPrice;
+@property (nonatomic) q sellNum;
+@property (nonatomic) NSString skuOrderId;
+@property (nonatomic) NSArray importantMarketingLabels;
+@property (nonatomic) Q type;
+@property (nonatomic) AWEECOMIMGoodsShowPriceModel showPrice;
+@property (nonatomic) BOOL fromOrderPredict;
+@property (nonatomic) NSDictionary viewTrackInfo;
+- (id)showPrice;
+- (void)setShowPrice:;
+- (void)setGoodTitle:;
+- (id)goodTitle;
+- (id)viewTrackInfo;
+- (void)setViewTrackInfo:;
+- (void)setFromOrderPredict:;
+- (void)setGoodImgUrl:;
+- (void)setMetaId:;
+- (void)setSellNum:;
+- (void)setDiscountPrice:;
+- (void)setSkuOrderId:;
+- (id)metaId;
+- (BOOL)fromOrderPredict;
+- (id)skuOrderId;
+- (id)importantMarketingLabels;
+- (void)setImportantMarketingLabels:;
+- (id)goodImgUrl;
+- (long long)discountPrice;
+- (long long)sellNum;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)modelWithDict:;
+@end

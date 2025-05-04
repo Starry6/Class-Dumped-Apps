@@ -1,0 +1,2 @@
+@interface AWEIMOperationQueue : NSOperationQueue
+@end

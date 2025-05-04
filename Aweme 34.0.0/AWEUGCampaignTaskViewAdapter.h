@@ -1,0 +1,32 @@
+@interface AWEUGCampaignTaskViewAdapter : NSObject
+@property (nonatomic) BDUGLuckyActivityTaskModel baseInfoModel;
+@property (nonatomic) AWECampaignWatchTaskModel watchTaskModel;
+@property (nonatomic) UIView<AWEUGCountDownViewProtocol> countDownView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)countDownView;
+- (void)setCountDownView:;
+- (id)baseInfoModel;
+- (void)setBaseInfoModel:;
+- (void)taskDidEnterScene:;
+- (void)taskDidLeveaScene:;
+- (void)taskDidFinishTask;
+- (void)taskDidPauseForReason:;
+- (void)taskWillStartTiming;
+- (void)taskDidStop;
+- (void)taskUpdateProgress:withTotalTime:;
+- (void)taskDidFinishReportWithModel:;
+- (void)setupCountDownViewWithTask:;
+- (id)watchTaskModel;
+- (id)initializeCountDownViewConfigWithTask:;
+- (id)getCountDown:;
+- (id)formIncompletePopupSchema:;
+- (long long)p_getMinutes:;
+- (long long)p_getSeconds:progress:;
+- (void)setWatchTaskModel:;
+- (id)initWithTask:;
+- (void).cxx_destruct;
+- (void)taskDidStart;
+@end

@@ -1,0 +1,35 @@
+@interface AWEECShoppingAIGuideDatabase : NSObject
+@property (nonatomic) FMDatabaseQueue dbQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> databaseQueue;
+@property (nonatomic) Q agentType;
+@property (nonatomic) NSString agentName;
+- (void)setAgentType:;
+- (id)agentName;
+- (void)setAgentName:;
+- (id)filePathStr;
+- (void)openPassThrough;
+- (id)loadAllMessageModels;
+- (void)insertMessageWithModel:completion:;
+- (void)updateMessageWithModel:completion:;
+- (void)deleteAllMessage;
+- (void)deleteAllPassThrough;
+- (id)passThroughTableName;
+- (void)insertPassThroughContent:scene:sessionID:messageUniqueID:;
+- (void)updatePassThroughContent:scene:sessionID:messageUniqueID:;
+- (void)deletePassThroughContent:scene:sessionID:messageUniqueID:;
+- (id)initWithAgentType:agentName:;
+- (void)loadHistoryDataWithCompletion:;
+- (void)insertMessageWithModel:;
+- (void)updateMessageWithModel:;
+- (void)deleteAllMessageWithCompletion:;
+- (void)operatePassThroughOpt:content:scene:sessionID:messageUniqueID:;
+- (void)queryAllPassThroughInfoWithScene:isReverse:startIndex:length:messageUniqueID:completion:;
+- (id)tableName;
+- (void)open;
+- (id)databaseQueue;
+- (void).cxx_destruct;
+- (unsigned long long)agentType;
+- (void)setDatabaseQueue:;
+- (id)dbQueue;
+- (void)setDbQueue:;
+@end

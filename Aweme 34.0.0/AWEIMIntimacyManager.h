@@ -1,0 +1,30 @@
+@interface AWEIMIntimacyManager : NSObject
+@property (nonatomic) NSOrderedSet currentIntimacyUidsSet;
+@property (nonatomic) NSOrderedSet intimacyUidsSetIncludeOneWayFriends;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)currentIntimacyUidsSet;
+- (id)intimacyUidsSetIncludeOneWayFriends;
+- (void)refreshIntimacyIfNeeded;
+- (void)refreshIntimacyIfNeededWithCompletion:;
+- (BOOL)validateUserWithSecUid:inTopK:;
+- (id)findTheMaxIntimacyChatIn:;
+- (void)setCurrentIntimacyUidsSet:;
+- (void)p_requestMessageInfoWithMaxNum:maxNumIncludeOneWayFriends:completion:;
+- (void)p_shouldRefreshIntimacyOpt:;
+- (BOOL)p_shouldRefreshIntimacy;
+- (BOOL)p_checkRefreshMaxNum;
+- (BOOL)p_checkRefreshMaxNumInclueOneWayFriends;
+- (BOOL)p_checkRefreshTimeInterval;
+- (BOOL)p_checklastFetchIntimacyError;
+- (BOOL)p_checkRefreshRequestCountWhenError;
+- (BOOL)p_checkRefreshRequestIntervalTimeWhenError;
+- (void)setIntimacyUidsSetIncludeOneWayFriends:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

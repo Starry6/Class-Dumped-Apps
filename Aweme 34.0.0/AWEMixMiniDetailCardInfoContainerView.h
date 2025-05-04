@@ -1,0 +1,30 @@
+@interface AWEMixMiniDetailCardInfoContainerView : AWESingleColumnDetailCardInfoContainerView
+@property (nonatomic) UIImageView mixIcon;
+@property (nonatomic) UILabel mixNameLabel;
+@property (nonatomic) UILabel authorLabel;
+@property (nonatomic) AWECollectionButton<AWEMixVideoCollectionButtonViewProtocol> collectBtn;
+@property (nonatomic) UILabel extraInfoLabel;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) NSDictionary logExtraDict;
+- (void)setLogExtraDict:;
+- (id)logExtraDict;
+- (void)configWithModel:;
+- (void)setAuthorLabel:;
+- (id)authorLabel;
+- (id)extraInfoLabel;
+- (void)setExtraInfoLabel:;
+- (id)collectBtn;
+- (void)setCollectBtn:;
+- (id)mixNameLabel;
+- (BOOL)isCurrentYear:;
+- (id)transformToDateFromTimeStamp:format:;
+- (id)mixIcon;
+- (void)setMixIcon:;
+- (void)setMixNameLabel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)currentModel;
+- (void)setupUI;
+- (void)setCurrentModel:;
+- (void)updateWithModel:;
+@end

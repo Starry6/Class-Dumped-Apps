@@ -1,0 +1,36 @@
+@interface AWEHPTopTabEditPanelViewController : UIViewController
+@property (nonatomic) AWEHPTopTabEditPanelConfig config;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIViewController<AWEHPTopTabEditViewControllerProtocol> editTableVC;
+@property (nonatomic) AWEHPTopTabEditPanelConfigModel editPanelConfigModel;
+@property (nonatomic) double panelHeight;
+@property (nonatomic) DUXBasicSheet sheet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)panelHeight;
+- (void)sheetWillDismiss:;
+- (void)sheetDidDismiss:;
+- (id)aAWEPadModuleAdapter;
+- (void)clickCloseButton;
+- (void)setPanelHeight:;
+- (void)showPanel;
+- (id)editTableVC;
+- (id)p_generateTitle;
+- (id)editPanelConfigModel;
+- (void)callSaveBlockIfNeed;
+- (void)setEditTableVC:;
+- (void)setEditPanelConfigModel:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void)viewDidLoad;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setUpUI;
+- (id)sheet;
+- (void)setSheet:;
++ (Class)aAWEPadModuleAdapterClass;
+@end

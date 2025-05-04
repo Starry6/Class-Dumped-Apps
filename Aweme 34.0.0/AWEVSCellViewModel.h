@@ -1,0 +1,38 @@
+@interface AWEVSCellViewModel : AWELiveFeedBaseViewModel
+@property (nonatomic) BOOL didStartPlayFromHighlight;
+@property (nonatomic) BOOL didStartPlayFromHistory;
+@property (nonatomic) BOOL permissionDeniedForEpisodePurchase;
+@property (nonatomic) NSArray validRangesForEpisodePurchase;
+@property (nonatomic) AWELiveGoodsInfo goodInfo;
+- (id)roomId;
+- (id)videoJson;
+- (id)vsWatermark;
+- (BOOL)isFollow;
+- (id)headerLeftTagText;
+- (id)operationPlaceText;
+- (id)watchInfo;
+- (id)coverImageURLArray;
+- (id)previewImageUpURLArray;
+- (id)previewImageDownURLArray;
+- (id)livingStatusText;
+- (BOOL)hasChaseRecord;
+- (void)setDidStartPlayFromHighlight:;
+- (void)setDidStartPlayFromHistory:;
+- (long long)historyLocation;
+- (void)setGoodInfo:;
+- (id)goodInfo;
+- (BOOL)hasHeaderLeftTagText;
+- (long long)startLocationForReplay:;
+- (id)validRangeForPlayTime:validRanges:;
+- (BOOL)permissionDeniedForEpisodePurchase;
+- (id)validRangesForEpisodePurchase;
+- (BOOL)didStartPlayFromHighlight;
+- (BOOL)didStartPlayFromHistory;
+- (void)setPermissionDeniedForEpisodePurchase:;
+- (void)setValidRangesForEpisodePurchase:;
+- (id)URLStringForEpisodePurchase;
+- (void).cxx_destruct;
+- (id)nickName;
+- (id)episode;
++ (long long)getVSVideoFirstHighlight:;
+@end

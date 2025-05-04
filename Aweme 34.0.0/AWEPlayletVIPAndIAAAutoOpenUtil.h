@@ -1,0 +1,31 @@
+@interface AWEPlayletVIPAndIAAAutoOpenUtil : NSObject
+@property (nonatomic) <AWEPaymentEventHandlerProtocol><AWEPaymentDetailEventHandlerProtocol> paymentEventHandle;
+@property (nonatomic) BOOL isVIPSchemaShowing;
+@property (nonatomic) AWEPlayletVIPAndIAAAutoOpenUtilSetupModel setupModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)paymentEventHandle;
+- (void)handlePayEvent:;
+- (void)setPaymentEventHandle:;
+- (id)getCurrentAwemeModel;
+- (void)setSetupModel:;
+- (id)getContextModelWithAwemeModel:;
+- (void)setIsVIPSchemaShowing:;
+- (void)p_openVipSchemaInStateWithAwemeModel:;
+- (BOOL)isVIPSchemaShowing;
+- (void)registerOpenUtilWithAwemeModel:;
+- (void)resetOpenContextWithAwemeModel:;
+- (void)openVipSchemaInStateWithAwemeModel:;
+- (void)currentModelIsChangeWithAwemeModel:;
+- (BOOL)needContextWithAwemeModel:;
+- (BOOL)openVIPSchemaOfTryWatchFinishWithCurrentPlaybackTime:withAwemeModel:;
+- (void)execute;
+- (void).cxx_destruct;
+- (void)setup:;
+- (id)setupModel;
++ (unsigned long long)playletCardAutoOpenTypeWithModel:;
++ (void)openVipSchemaWithAwemeModel:object:;
++ (BOOL)isVipAutoBuyABTestExperiment;
+@end

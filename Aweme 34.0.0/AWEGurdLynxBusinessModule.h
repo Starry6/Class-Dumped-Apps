@@ -1,0 +1,30 @@
+@interface AWEGurdLynxBusinessModule : NSObject
+@property (nonatomic) NSMutableDictionary channelLoadDict;
+@property (nonatomic) NSMutableDictionary channelFinishDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)gurdWillDownloadPackageForAccessKey:channel:isPatch:;
+- (void)gurdDidFinishDownloadingPackageForAccessKey:channel:packageInfo:;
+- (void)gurdDidFinishApplyingPackageForAccessKey:channel:succeed:error:;
+- (void)setChannelFinishDict:;
+- (void)setChannelLoadDict:;
+- (id)channelLoadDict;
+- (id)channelFinishDict;
+- (void).cxx_destruct;
++ (void)syncResourcesIfNeeded;
++ (id)appAccessKey;
++ (void)setAppAccessKey:;
++ (BOOL)enableGurd;
++ (void)bytedSettingDidChange;
++ (void)syncResourcesWithChannel:isUrgent:completion:;
++ (void)_syncHighPriorityResources;
++ (void)_syncDefaultPriorityResources;
++ (void)_syncResourcesWithChannels:completion:;
++ (void)postLaunchInit;
++ (id)accessKeyDirectory;
++ (id)lynxFilePathForChannel:;
++ (BOOL)isSingleLynxFileForChannel:;
++ (id)sharedInstance;
+@end

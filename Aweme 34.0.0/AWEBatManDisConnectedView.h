@@ -1,0 +1,37 @@
+@interface AWEBatManDisConnectedView : UIView
+@property (nonatomic) UIImageView iconImage;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton retryButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) @? retryBlock;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) BOOL isRotate;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (void)setIsRotate:;
+- (BOOL)isRotate;
+- (void)retryConnectBatManAction:;
+- (void)closeConnectBatManAction:;
+- (int)batManCenterOrientation;
+- (void)rotateDisconnectedView;
+- (void)resetRotateDisconnectedView;
+- (id)iconImage;
+- (void)setIconImage:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setRetryButton:;
+- (id)retryButton;
+- (id)retryBlock;
+- (void)setRetryBlock:;
+@end

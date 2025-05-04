@@ -1,0 +1,36 @@
+@interface AWELiveVSAgainst : AWEBaseApiModel
+@property (nonatomic) NSString leftName;
+@property (nonatomic) AWEURLModel leftLogo;
+@property (nonatomic) NSString leftGoal;
+@property (nonatomic) NSString rightName;
+@property (nonatomic) AWEURLModel rightLogo;
+@property (nonatomic) NSString rightGoal;
+@property (nonatomic) q version;
+@property (nonatomic) q dataTimeStamp;
+@property (nonatomic) q diffSei2AbsSecond;
+@property (nonatomic) q matchId;
+- (long long)matchId;
+- (void)setMatchId:;
+- (void)setLeftName:;
+- (id)leftName;
+- (void)setLeftGoal:;
+- (id)leftGoal;
+- (void)setRightGoal:;
+- (id)rightGoal;
+- (void)setRightName:;
+- (id)rightName;
+- (long long)dataTimeStamp;
+- (void)setDataTimeStamp:;
+- (id)leftLogo;
+- (id)rightLogo;
+- (void)setLeftLogo:;
+- (void)setRightLogo:;
+- (long long)diffSei2AbsSecond;
+- (void)setDiffSei2AbsSecond:;
+- (long long)version;
+- (void)setVersion:;
+- (void).cxx_destruct;
++ (id)leftLogoURLJSONTransformer;
++ (id)rightLogoURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

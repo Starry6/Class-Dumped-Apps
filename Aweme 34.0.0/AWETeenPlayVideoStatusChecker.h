@@ -1,0 +1,30 @@
+@interface AWETeenPlayVideoStatusChecker : NSObject
+@property (nonatomic) NSMutableArray playVideoViewControllers;
+@property (nonatomic) AWETeenBaseVideoController lastPlayVideoViewController;
+@property (nonatomic) q playVideoViewControllerCount;
+@property (nonatomic) BOOL isBackground;
+@property (nonatomic) double lastCheckTimestamp;
+- (void)didReceiveMemoryWarningNotification;
+- (void)increasePlayVideoViewControllers;
+- (void)decreasePlayVideoViewControllers;
+- (void)updatePauseStatusWithPlayer:;
+- (void)updatePlayStatusWithPlayer:;
+- (void)setPlayVideoViewControllers:;
+- (void)setPlayVideoViewControllerCount:;
+- (void)setLastCheckTimestamp:;
+- (double)lastCheckTimestamp;
+- (void)setLastPlayVideoViewController:;
+- (id)playVideoViewControllers;
+- (long long)playVideoViewControllerCount;
+- (id)lastPlayVideoViewController;
+- (id)init;
+- (void)dealloc;
+- (void)applicationDidEnterBackground;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground;
+- (BOOL)isBackground;
+- (void)setIsBackground:;
+- (void)applicationDidBecomeActive;
+- (void)applicationWillResignActive;
++ (id)sharedInstance;
+@end

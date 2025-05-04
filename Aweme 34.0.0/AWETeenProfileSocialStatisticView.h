@@ -1,0 +1,31 @@
+@interface AWETeenProfileSocialStatisticView : UIView
+@property (nonatomic) UILabel subscribingLabel;
+@property (nonatomic) UIButton subscribingPrefixBtn;
+@property (nonatomic) AWETeenAccessibilityElement subscribingElement;
+@property (nonatomic) NSNumber subscribingCount;
+@property (nonatomic) BOOL isCurrentUser;
+@property (nonatomic) q labelFont;
+@property (nonatomic) @? subscribingClickedBlock;
+- (void)p_setUpUI;
+- (void)updateSubscribingCount:isPlaceholder:isCurrentUser:;
+- (void)setSubscribingClickedBlock:;
+- (id)subscribingPrefixBtn;
+- (id)subscribingLabel;
+- (id)subscribingElement;
+- (double)labelsGap;
+- (void)setSubscribingElement:;
+- (id)subscribingClickedBlock;
+- (id)subscribingCount;
+- (void)setSubscribingCount:;
+- (void)p_updateSocialStatisticContent:;
+- (void)setSubscribingLabel:;
+- (void)setSubscribingPrefixBtn:;
+- (void)setLabelFont:;
+- (long long)labelFont;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (BOOL)isCurrentUser;
+- (void)setIsCurrentUser:;
+- (void)handleTapGestureRecognizer:;
+@end

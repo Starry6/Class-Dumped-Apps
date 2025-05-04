@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentSendElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

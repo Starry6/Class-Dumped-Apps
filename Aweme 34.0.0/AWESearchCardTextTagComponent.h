@@ -1,0 +1,33 @@
+@interface AWESearchCardTextTagComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) AWESearchCardTextTagComponentModel componentModel;
+@property (nonatomic) double textWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)textWidth;
+- (void)setTextWidth:;
+- (void)setComponentModel:;
+- (id)componentModel;
+- (void)componentViewLayoutSubviews;
+- (id)textLabel;
+- (id)init;
+- (void)setBackgroundView:;
+- (id)contentView;
+- (id)iconView;
+- (id)backgroundView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (void)updateWithModel:;
++ (id)componentSizeForModel:width:;
++ (double)tagHeightWith:;
++ (id)tagFontWithWeight:;
+@end

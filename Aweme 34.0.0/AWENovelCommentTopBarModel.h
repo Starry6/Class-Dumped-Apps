@@ -1,0 +1,37 @@
+@interface AWENovelCommentTopBarModel : AWEBaseApiModel
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q state;
+@property (nonatomic) NSString darkIcon;
+@property (nonatomic) NSString bookId;
+@property (nonatomic) q source;
+@property (nonatomic) NSString popupData;
+- (void)setExtra:;
+- (id)darkIcon;
+- (void)setDarkIcon:;
+- (id)popupData;
+- (void)setPopupData:;
+- (id)tag;
+- (id)icon;
+- (void)setTag:;
+- (id)extra;
+- (long long)state;
+- (void)setDesc:;
+- (id)type;
+- (id)desc;
+- (void)setType:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)title;
+- (void)setSource:;
+- (void)setState:;
+- (void)setTitle:;
+- (id)bookId;
+- (void)setBookId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

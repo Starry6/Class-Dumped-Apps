@@ -1,0 +1,33 @@
+@interface AWESearchEcommerceSingleGoodsView : UIView
+@property (nonatomic) UIImageView backgroundView;
+@property (nonatomic) UIImageView ecommerceImageView;
+@property (nonatomic) UILabel ecommmercePriceLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) AWESearchEcommerceAnchorModel ecommerceModel;
+@property (nonatomic) @? clickCallBack;
+@property (nonatomic) BOOL showDesc;
+@property (nonatomic) BOOL showBorder;
+@property (nonatomic) YYLabel ecommerceTitleLabel;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setupSubViews;
+- (id)clickCallBack;
+- (void)setClickCallBack:;
+- (id)ecommerceImageView;
+- (void)setEcommerceImageView:;
+- (void)reloadEcommerceModel:;
+- (id)ecommerceTitleLabel;
+- (id)ecommmercePriceLabel;
+- (id)ecommerceModel;
+- (id)formattedPriceWithData:;
+- (BOOL)showDesc;
+- (void)setShowDesc:;
+- (void)setEcommmercePriceLabel:;
+- (void)setEcommerceTitleLabel:;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (void).cxx_destruct;
+- (void)setShowBorder:;
+- (BOOL)showBorder;
+@end

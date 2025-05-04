@@ -1,0 +1,37 @@
+@interface AWETeenMessageContentCardView : UIView
+@property (nonatomic) AWENotificationModelNew model;
+@property (nonatomic) NSAttributedString foldTruncationToken;
+@property (nonatomic) YYLabel hightToken;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIImageView contentImageView;
+@property (nonatomic) UIView unreadDotView;
+@property (nonatomic) <AWETeenMessageContentCardViewDelegate> delegate;
+- (void)p_setupUI;
+- (void)configWithModel:;
+- (void)setUnreadDotView:;
+- (id)unreadDotView;
+- (double)p_calculateYYlabelWidth;
+- (id)foldTruncationToken;
+- (void)p_makeUnfoldedCellContrain;
+- (void)p_makeFoldedCellConstrain;
+- (void)setHightToken:;
+- (void)addConstrains;
+- (void)setFoldTruncationToken:;
+- (id)hightToken;
+- (void)setModel:;
+- (void)setTimeLabel:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)contentImageView;
+- (void)setContentImageView:;
+@end

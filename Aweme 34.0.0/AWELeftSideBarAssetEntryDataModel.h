@@ -1,0 +1,32 @@
+@interface AWELeftSideBarAssetEntryDataModel : MTLModel
+@property (nonatomic) NSString entryId;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString schema;
+@property (nonatomic) q detailType;
+@property (nonatomic) NSString detailInfo;
+@property (nonatomic) AWELeftSideBarIconUrlArrayDataModel detailIcon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)entryId;
+- (void)setEntryId:;
+- (id)detailInfo;
+- (void)setDetailInfo:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)description;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)mainTitle;
+- (void)setMainTitle:;
+- (id)detailIcon;
+- (void)setDetailIcon:;
+- (long long)detailType;
+- (void)setDetailType:;
++ (id)detailIconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

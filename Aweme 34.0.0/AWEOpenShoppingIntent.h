@@ -1,0 +1,2 @@
+@interface AWEOpenShoppingIntent : INIntent
+@end

@@ -1,0 +1,31 @@
+@interface AWELiveAcqGradientBackgroundLabelView : UIView
+@property (nonatomic) UILabel tagContentLabel;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIColor startColor;
+@property (nonatomic) UIColor endColor;
+@property (nonatomic) NSString tagContentString;
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIColor textColor;
+- (void)setTagContentString:;
+- (void)showTagView;
+- (id)tagContentLabel;
+- (id)tagContentString;
+- (void)setTagContentLabel:;
+- (id)init;
+- (id)image;
+- (void)setImage:;
+- (void)setTextColor:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)textColor;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (id)endColor;
+- (void)setEndColor:;
+- (void)setStartColor:;
+- (id)startColor;
+@end

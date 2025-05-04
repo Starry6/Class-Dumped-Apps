@@ -1,0 +1,30 @@
+@interface AWEAdAutoPopupLandingPageManager : NSObject
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEAdPopupWebViewController webVC;
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> interactionViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweme;
+- (void)setAweme:;
+- (void)setInteractionViewController:;
+- (void)trackShowEvent;
+- (id)landingPageType;
+- (void)trackClickEvent;
+- (void)videoPlay;
+- (void)trackShowFailedEvent;
+- (void)videoPause;
+- (BOOL)isPopupFullScreenLandingPage;
+- (void)popupLandingPageIfNeedWithModel:playTimes:interactionViewController:;
+- (BOOL)isShowing;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)interactionViewController;
+- (void)setIsShowing:;
+- (void)setWebVC:;
+- (id)webVC;
++ (BOOL)canAutoPopupLandingPageWithModel:;
++ (BOOL)canShowEndMaskViewWithModel:;
+@end

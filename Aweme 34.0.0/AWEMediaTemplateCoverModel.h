@@ -1,0 +1,36 @@
+@interface AWEMediaTemplateCoverModel : MTLModel
+@property (nonatomic) NSString largeImageURL;
+@property (nonatomic) NSString mediumImageURL;
+@property (nonatomic) NSString smallImageURL;
+@property (nonatomic) NSString largPngURL;
+@property (nonatomic) NSString mediumPngURL;
+@property (nonatomic) NSString smallPngURL;
+@property (nonatomic) NSString url;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mediumPngURL;
+- (id)smallImageURL;
+- (id)smallPngURL;
+- (id)largPngURL;
+- (void)setSmallImageURL:;
+- (void)setLargPngURL:;
+- (void)setMediumPngURL:;
+- (void)setSmallPngURL:;
+- (id)mediumImageURL;
+- (id)largeImageURL;
+- (void)setUrl:;
+- (void)setHeight:;
+- (void)setLargeImageURL:;
+- (void)setWidth:;
+- (long long)width;
+- (void).cxx_destruct;
+- (long long)height;
+- (void)setMediumImageURL:;
+- (id)url;
+- (id)coverURL;
++ (id)JSONKeyPathsByPropertyKey;
+@end

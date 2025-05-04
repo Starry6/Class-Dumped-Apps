@@ -1,0 +1,31 @@
+@interface AWEMusicNewMatchedSongModel : AWEBaseDataModel
+@property (nonatomic) NSString songID;
+@property (nonatomic) NSString author;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString h5URL;
+@property (nonatomic) AWENewURLModel coverMediumURL;
+@property (nonatomic) NSString dspName;
+@property (nonatomic) NSString sourceID;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSString fullClipID;
+- (void)setSongID:;
+- (void)setH5URL:;
+- (void)setCoverMediumURL:;
+- (void)setDspName:;
+- (void)setFullClipID:;
+- (id)dspName;
+- (id)h5URL;
+- (id)coverMediumURL;
+- (id)fullClipID;
+- (void)setSourceID:;
+- (void)setGroupId:;
+- (id)groupId;
+- (id)sourceID;
+- (id)author;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setAuthor:;
+- (void)setTitle:;
+- (id)songID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

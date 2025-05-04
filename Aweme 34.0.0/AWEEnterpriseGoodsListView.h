@@ -1,0 +1,35 @@
+@interface AWEEnterpriseGoodsListView : AWEEnterpriseMessageBaseView
+@property (nonatomic) NSDate startLoadTimeDate;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView headerView;
+@property (nonatomic) UILabel headerLabel;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIStackView itemStack;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) AWEEnterpriseGoodsListViewModel viewModel;
+- (void)bindViewModel:;
+- (void)constraintSubviews;
+- (void)setStartLoadTimeDate:;
+- (id)itemStack;
+- (void)p_configStackViewWithShowStatus:;
+- (id)startLoadTimeDate;
+- (void)setItemStack:;
+- (id)currentContentSize;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)headerView;
+- (void)setContainerView:;
+- (id)iconImageView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setHeaderView:;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setHeaderLabel:;
+- (id)headerLabel;
+- (void)viewTapped;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+@end

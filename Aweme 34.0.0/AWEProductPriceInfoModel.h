@@ -1,0 +1,34 @@
+@interface AWEProductPriceInfoModel : AWEBaseApiModel
+@property (nonatomic) NSNumber currencyType;
+@property (nonatomic) NSNumber originAmount;
+@property (nonatomic) NSNumber currentAmount;
+@property (nonatomic) NSNumber discountAmount;
+@property (nonatomic) NSNumber deductAmount;
+@property (nonatomic) NSNumber couponAmount;
+@property (nonatomic) NSNumber diamondDeductAmount;
+@property (nonatomic) NSNumber strategyDiscountAmount;
+@property (nonatomic) NSNumber payAmount;
+@property (nonatomic) NSNumber rechargeCardAmount;
+- (void)setOriginAmount:;
+- (void)setDiscountAmount:;
+- (void)setCouponAmount:;
+- (id)discountAmount;
+- (id)originAmount;
+- (id)couponAmount;
+- (id)currencyType;
+- (void)setCurrencyType:;
+- (id)payAmount;
+- (void)setPayAmount:;
+- (id)deductAmount;
+- (void)setDeductAmount:;
+- (id)diamondDeductAmount;
+- (void)setDiamondDeductAmount:;
+- (id)strategyDiscountAmount;
+- (void)setStrategyDiscountAmount:;
+- (id)rechargeCardAmount;
+- (void)setRechargeCardAmount:;
+- (void).cxx_destruct;
+- (id)currentAmount;
+- (void)setCurrentAmount:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

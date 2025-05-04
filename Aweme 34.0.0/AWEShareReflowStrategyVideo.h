@@ -1,0 +1,35 @@
+@interface AWEShareReflowStrategyVideo : NSObject
+@property (nonatomic) Q schemaType;
+@property (nonatomic) AWEShareTokenHandlerResponseModel model;
+@property (nonatomic) NSString longURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSchemaType:;
+- (void)setLongURL:;
+- (id)longURL;
+- (void)showReflowCardView:;
+- (id)initWithModel:longURL:;
+- (BOOL)shouldAvoidSamePageWithModel:;
+- (BOOL)enableTransferDirectly;
+- (BOOL)shouldDelayTokenFind;
+- (void)transferWithModel:params:longURL:tokenFromType:;
+- (void)configReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (id)aAWELiteShareFissionInnerFeedDOUYINLiteAdapter;
+- (id)aAWELiteUGSocialModuleAdapter;
+- (BOOL)p_canTransferShareUserIDWithModel:;
+- (id)configReflowCardWithModel:tokenFromType:trackParams:reportParams:sharer:turnToShareBlock:;
+- (id)aAWEShareReflowStrategyAdapter;
+- (void)transferToVideoOrChatWithModel:tokenFromType:sharer:canSendMsg:;
+- (void)sendShareNoticeMessageWithToUserId:videoModel:jumpLogic:;
+- (void)setModel:;
+- (unsigned long long)schemaType;
+- (id)model;
+- (id)descriptionText;
+- (void).cxx_destruct;
+- (id)tokenType;
++ (Class)aAWELiteShareFissionInnerFeedDOUYINLiteAdapterClass;
++ (Class)aAWELiteUGSocialModuleAdapterClass;
++ (Class)aAWEShareReflowStrategyAdapterClass;
+@end

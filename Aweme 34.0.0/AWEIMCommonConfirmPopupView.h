@@ -1,0 +1,34 @@
+@interface AWEIMCommonConfirmPopupView : AWEIMBasePopupView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) UIView<IESIMLoadingViewProtocol> loadingView;
+@property (nonatomic) q style;
+@property (nonatomic) @? cancelBlock;
+@property (nonatomic) @? confirmBlock;
+- (id)confirmBlock;
+- (void)setConfirmBlock:;
+- (void)__setupUI;
+- (void)__handleConfirmButtonClicked:;
+- (void)__handleCancelButtonClicked:;
+- (void)showWithTitle:subtitle:cancel:confirm:;
+- (void)setCancelButton:;
+- (void)setCancelBlock:;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (id)loadingView;
+- (long long)style;
+- (void)setTitleLabel:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)cancelBlock;
+- (id)subtitleLabel;
+- (void)setStyle:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)showLoadingView;
+- (void)hideLoadingView;
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchWebContainerViewController : AWESearchResultVerticalBaseViewController
+@property (nonatomic) AWESearchCachalotWebPipeline webPipeline;
+@property (nonatomic) AWESearchCachalotWebEngine webEngine;
+@property (nonatomic) UIView<BDXViewContainerProtocol> webView;
+- (void)registerByteSync;
+- (void)fetchDataWithKeyWord:enterFrom:extraLogParams:isSearchByUserClick:isFilterSearch:animated:completion:;
+- (void)customComponentDidFinishRender:withViewModel:;
+- (void)customFeedwillRequestNetwork;
+- (void)customComponentWillDisplay:withViewModel:;
+- (BOOL)customShouldTurnOnAutoPreloadMoreWhenEndRefreshingCompleted;
+- (id)webPipeline;
+- (void)unregisterByteSync;
+- (BOOL)customSupportByteSync;
+- (BOOL)customEnableWebViewReuse;
+- (BOOL)customEnableWebViewPreload;
+- (id)customPreLoadData;
+- (BOOL)customEnableCustomBackgroundColor;
+- (id)customCustomBackgroundColor;
+- (void)setWebPipeline:;
+- (void)setWebEngine:;
+- (id)webEngine;
+- (void)preLoadWebView;
+- (BOOL)customDisconnectionByteSync;
+- (void)dealloc;
+- (double)requestStartTime;
+- (void)setWebView:;
+- (id)footerView;
+- (void)viewDidLoad;
+- (id)webView;
+- (void)loadView;
+- (void).cxx_destruct;
+- (void)createUI;
+@end

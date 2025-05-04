@@ -1,0 +1,34 @@
+@interface AWEBusinessBundleImpl : NSObject
+@property (nonatomic) AWEBusinessConfiguration configuration;
+@property (nonatomic) q bundleSize;
+@property (nonatomic) NSString relativeRootDirectory;
+@property (nonatomic) AWEBusinessBundleMetadata metadata;
+@property (nonatomic) NSString rootDirectory;
+@property (nonatomic) NSString cacheDirectory;
+@property (nonatomic) NSString tmpDirectory;
+@property (nonatomic) NSString userDataDirectory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)bundleSize;
+- (void)setBundleSize:;
+- (id)createTopBusinessLineDirectoryIfNeeded:;
+- (void)setupBundleWithTopDirectory:;
+- (void)createMetadata;
+- (id)relativeRootDirectory;
+- (void)cleanTmpResource;
+- (id)domainPath:;
+- (id)userDataDirectory;
+- (void)trackBundleInfo;
+- (id)rootDirectory;
+- (void)setConfiguration:;
+- (id)metadata;
+- (id)cacheDirectory;
+- (id)initWithConfiguration:;
+- (void).cxx_destruct;
+- (id)configuration;
+- (id)tmpDirectory;
+- (BOOL)isEqual:;
++ (id)readBundleMetadataWithPath:;
+@end

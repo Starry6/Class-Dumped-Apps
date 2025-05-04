@@ -1,0 +1,32 @@
+@interface AWEImageAlbumImagePickerCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) AWEImageAlbumImagePickerSelectIndicator selectIndicator;
+@property (nonatomic) <AWEImageAlbumImagePickerCollectionViewCellDelegate> delegate;
+@property (nonatomic) q index;
+@property (nonatomic) UILabel timeLab;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) BOOL isSlides;
+- (BOOL)isSlides;
+- (void)setIsSlides:;
+- (void)configWithImage:;
+- (void)updateWithSelected:;
+- (void)configWithImageURLList:selected:isHorizontal:;
+- (void)setTimeLab:;
+- (id)timeLab;
+- (id)timeWithDuration:;
+- (void)configWithItemExtraInfo:;
+- (void)setIndex:;
+- (long long)index;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)handleSelection;
+- (void)setIconImageView:;
+- (id)selectIndicator;
+- (void)setSelectIndicator:;
++ (id)identifier;
+@end

@@ -1,0 +1,35 @@
+@interface AWELeftSideBarRevisitUserListViewModel : NSObject
+@property (nonatomic) NSArray currentUnreadUserIDList;
+@property (nonatomic) NSArray modelsArray;
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) BOOL hasMoreUser;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString nextCursor;
+@property (nonatomic) BOOL shouldShowLatestVideo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (id)modelsArray;
+- (id)nextCursor;
+- (void)setNextCursor:;
+- (void)setModelsArray:;
+- (id)currentUnreadUserIDList;
+- (BOOL)noMoreUserData;
+- (void)loadMoreUnreadUserWithCompletion:;
+- (id)userModelWithUserID:;
+- (Class)emptyCellClass;
+- (void)refreshCurrentUnreadUserIDList;
+- (void)setCurrentUnreadUserIDList:;
+- (id)initWithUserList:;
+- (void)setShouldShowLatestVideo:;
+- (void)setHasMoreUser:;
+- (BOOL)hasMoreUser;
+- (BOOL)shouldShowLatestVideo;
+- (void)requestMoreUser:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+@end

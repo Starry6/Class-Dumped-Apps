@@ -1,0 +1,37 @@
+@interface AWEAwemeOfflineSettingsTableViewCell : UITableViewCell
+@property (nonatomic) UIButton downloadedSignal;
+@property (nonatomic) UIButton downloadButton;
+@property (nonatomic) UILabel videoCountLabel;
+@property (nonatomic) UILabel spaceCountLabel;
+@property (nonatomic) UILabel playTimeCountLabel;
+@property (nonatomic) DUXRadioBox downloadRadioBox;
+@property (nonatomic) AWEAwemeOfflineSettingsModel model;
+@property (nonatomic) BOOL checked;
+@property (nonatomic) BOOL radioSelected;
+@property (nonatomic) <AWEAwemeOfflineTableViewCellDelegate> delegate;
+- (void)setRadioSelected:;
+- (id)videoCountLabel;
+- (id)spaceCountLabel;
+- (id)playTimeCountLabel;
+- (id)downloadedSignal;
+- (id)downloadRadioBox;
+- (void)onDownloadButtonClick;
+- (BOOL)radioSelected;
+- (void)configWithModel:Index:;
+- (void)setDownloadedSignal:;
+- (void)setVideoCountLabel:;
+- (void)setSpaceCountLabel:;
+- (void)setPlayTimeCountLabel:;
+- (void)setDownloadRadioBox:;
+- (void)setModel:;
+- (id)delegate;
+- (void)setChecked:;
+- (BOOL)checked;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (void)updateUI;
+- (id)downloadButton;
+- (void)setDownloadButton:;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMChatPanelViewModel : NSObject
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) q chatPanelCouponState;
+@property (nonatomic) q chatPanelCommodityState;
+@property (nonatomic) BOOL isPigeonKeyUser;
+@property (nonatomic) NSArray platfromChatPanels;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) BOOL shouldShowShopwindow;
+@property (nonatomic) BOOL panelUseLocalConfigOnly;
+- (BOOL)panelUseLocalConfigOnly;
+- (void)setPanelUseLocalConfigOnly:;
+- (void)__addNotification;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (BOOL)isPigeonKeyUser;
+- (void)setIsPigeonKeyUser:;
+- (id)platfromChatPanels;
+- (BOOL)shouldShowShopwindow;
+- (long long)chatPanelCouponState;
+- (long long)chatPanelCommodityState;
+- (void)setChatPanelCouponState:;
+- (void)setPlatfromChatPanels:;
+- (void)__updateCouponEntryStateWithNoti:;
+- (void)__updateCommoditynEntryStateWithNoti:;
+- (void)setShouldShowShopwindow:;
+- (void)setChatPanelCommodityState:;
+- (id)initWithConversation:platformChatPanelModels:;
+- (void)updatePigeonKeyUser:;
+- (void)updateWithPlatformChatPanels:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)conversation;
+- (void)setConversation:;
+@end

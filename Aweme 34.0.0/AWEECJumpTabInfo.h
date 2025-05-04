@@ -1,0 +1,35 @@
+@interface AWEECJumpTabInfo : MTLModel
+@property (nonatomic) NSString itemId;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) BOOL supportTab;
+@property (nonatomic) BOOL supportSlide;
+@property (nonatomic) AWEECEnterMallConfigModel guideConfig;
+@property (nonatomic) AWEECEnterMallConfigModel slideConfig;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)jumpURL;
+- (void)setJumpURL:;
+- (id)guideConfig;
+- (void)setGuideConfig:;
+- (BOOL)supportTab;
+- (BOOL)supportSlide;
+- (id)slideConfig;
+- (void)setSupportTab:;
+- (void)setSupportSlide:;
+- (void)setSlideConfig:;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)itemId;
+- (void)setItemId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

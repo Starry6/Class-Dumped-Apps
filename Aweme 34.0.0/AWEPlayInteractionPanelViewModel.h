@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionPanelViewModel : AWEPlayInteractionBaseViewModel
+@property (nonatomic) UIViewController<AFDFriendsActionViewControllerProtocol> friendsActionViewController;
+@property (nonatomic) NSString sharePanelEnterMethod;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionContextProtocol> context;
+- (void)longPressDislikeVideo;
+- (void)longPressDislikeVideoWithButtonType:;
+- (void)longPressFriendsAction;
+- (id)sharePanelEnterMethod;
+- (id)friendsActionViewController;
+- (void)confirmButtonDidClicked;
+- (void)linkLabelDidTapped;
+- (id)guideShowCountStorageKey;
+- (void)trackRemoveFriendsEventWithTrackType:;
+- (void)longPressDownloadWithSelectedIndices:completion:;
+- (void)interactor_downloadFromLongPressWithSelectedIndices:completion:;
+- (void)interactor_toggleFavoriteFromLongPress;
+- (void)interactor_reportFromLongPress;
+- (void)interactor_dislikeVideoFromLongPressWithButtonType:;
+- (void)longPressDownload;
+- (void)longPressToggleFavorite;
+- (void)longPressReport;
+- (id)generateDislikeModelForSearch;
+- (void)setSharePanelEnterMethod:;
+- (void)interactor_downloadFromLongPress;
+- (void)setFriendsActionViewController:;
+- (void).cxx_destruct;
+@end

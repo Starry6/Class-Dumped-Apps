@@ -1,0 +1,30 @@
+@interface AWELandscapeMorePanelPlaySettingsSegmentView : UIView
+@property (nonatomic) NSArray items;
+@property (nonatomic) UIView labelBackView;
+@property (nonatomic) UIView animationView;
+@property (nonatomic) UILabel selectedLabel;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) <AWELandscapeMorePanelPlaySettingsSegmentViewDelegate> delegate;
+- (id)aAWEFeedModuleServiceDOUYINJXAdapter;
+- (void)setDefaultSelectIndex:;
+- (id)labelBackView;
+- (void)labelClick:isUserAction:;
+- (void)setLabelBackView:;
+- (void)labelDidClick:;
+- (id)initWithItems:;
+- (void)setSelectedIndex:;
+- (id)items;
+- (id)delegate;
+- (void)setItems:;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)animationView;
+- (void)setAnimationView:;
+- (id)initWithItems:delegate:;
+- (id)selectedLabel;
+- (void)setSelectedLabel:;
++ (Class)aAWEFeedModuleServiceDOUYINJXAdapterClass;
++ (id)segmentFont;
+@end

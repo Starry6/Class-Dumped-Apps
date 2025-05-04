@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageRecommendListV2DataController : AWESpeCategoryKitAdapter.DataControllerWrapper
+@end

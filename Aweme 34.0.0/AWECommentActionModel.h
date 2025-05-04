@@ -1,0 +1,34 @@
+@interface AWECommentActionModel : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) @? completion;
+@property (nonatomic) AWECommentModel comment;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) BOOL isSubComment;
+@property (nonatomic) q actionType;
+@property (nonatomic) NSString attitudeType;
+@property (nonatomic) BOOL attitudeWithDigg;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setReferString:;
+- (void)setExtraParams:;
+- (id)enterFrom;
+- (id)extraParams;
+- (void)setIsSubComment:;
+- (BOOL)isSubComment;
+- (id)attitudeType;
+- (void)setAttitudeType:;
+- (id)initWithComment:referString:enterFrom:previousPage:isSubComment:actionType:attitudeType:attitudeWithDigg:extraParams:completion:;
+- (void)setAttitudeWithDigg:;
+- (BOOL)attitudeWithDigg;
+- (long long)actionType;
+- (void)setActionType:;
+- (id)comment;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setComment:;
+@end

@@ -1,0 +1,34 @@
+@interface AWELiveSwiftImpl.AWEFeedLiveTabAppointmentView : UIView
+@property (nonatomic) UIImageView firstAvatar;
+@property (nonatomic) UIImageView secondAvatar;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel liveTag;
+@property (nonatomic) UIImageView liveTabImageView;
+@property (nonatomic) UIView firstLiveMarkView;
+@property (nonatomic) UIView secondLiveMarkView;
+@property (nonatomic) CAShapeLayer secondAvatarMaskLayer;
+- (id)liveTag;
+- (void)setLiveTag:;
+- (id)liveTabImageView;
+- (void)setLiveTabImageView:;
+- (id)firstLiveMarkView;
+- (void)setFirstLiveMarkView:;
+- (id)secondLiveMarkView;
+- (void)setSecondLiveMarkView:;
+- (id)secondAvatarMaskLayer;
+- (void)setSecondAvatarMaskLayer:;
+- (void)clickAppointment;
+- (void)updateWithAppointmentDataWithAppointmentData:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)initWithCoder:;
+- (void)setFirstAvatar:;
+- (id)firstAvatar;
+- (id)secondAvatar;
+- (void)setSecondAvatar:;
+@end

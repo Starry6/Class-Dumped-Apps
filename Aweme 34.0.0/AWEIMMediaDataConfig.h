@@ -1,0 +1,33 @@
+@interface AWEIMMediaDataConfig : NSObject
+@property (nonatomic) UITableViewCell selectCell;
+@property (nonatomic) BOOL isCollapse;
+@property (nonatomic) BOOL needReverse;
+@property (nonatomic) BOOL looseCheck;
+@property (nonatomic) BOOL shouldShowComment;
+@property (nonatomic) BOOL shouldShowChapterPanel;
+@property (nonatomic) Q sceneType;
+@property (nonatomic) q newestMessageCreateTime;
+@property (nonatomic) NSArray collapseMessageTypes;
+@property (nonatomic) NSDictionary extraParams;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (BOOL)shouldShowComment;
+- (BOOL)needReverse;
+- (void)setNeedReverse:;
+- (void)setShouldShowChapterPanel:;
+- (BOOL)shouldShowChapterPanel;
+- (void)setLooseCheck:;
+- (void)setIsCollapse:;
+- (BOOL)isCollapse;
+- (id)collapseMessageTypes;
+- (BOOL)looseCheck;
+- (long long)newestMessageCreateTime;
+- (void)setCollapseMessageTypes:;
+- (void)setShouldShowComment:;
+- (void)setNewestMessageCreateTime:;
+- (void).cxx_destruct;
+- (unsigned long long)sceneType;
+- (void)setSceneType:;
+- (id)selectCell;
+- (void)setSelectCell:;
+@end

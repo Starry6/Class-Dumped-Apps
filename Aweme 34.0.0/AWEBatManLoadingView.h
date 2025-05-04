@@ -1,0 +1,35 @@
+@interface AWEBatManLoadingView : UIView
+@property (nonatomic) UIImageView iconImage;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView reversalImage;
+@property (nonatomic) UILabel reversalLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) BOOL isRotated;
+@property (nonatomic) @? closeBlock;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (void)updateUIWithModel:;
+- (id)reversalLabel;
+- (id)reversalImage;
+- (void)closeBatManAction:;
+- (void)rotateLoadingViewWithModel:;
+- (void)setReversalImage:;
+- (void)setReversalLabel:;
+- (id)iconImage;
+- (void)setIconImage:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (BOOL)isRotated;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setIsRotated:;
+@end

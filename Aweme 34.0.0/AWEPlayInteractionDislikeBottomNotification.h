@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionDislikeBottomNotification : UIView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UILabel linkLabel;
+@property (nonatomic) BOOL isDismissing;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) @? withdrawBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLinkLabel:;
+- (void)startAutoHideIfNeeded;
+- (void)updateIconWithImage:;
+- (void)setShowAnimation;
+- (void)setHideAnimation;
+- (void)didClickLinkButton;
+- (id)withdrawBlock;
+- (void)setWithdrawBlock:;
+- (void)show;
+- (id)init;
+- (void)animationDidStop:finished:;
+- (BOOL)isShowing;
+- (BOOL)pointInside:withEvent:;
+- (BOOL)isDismissing;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)dismiss:;
+- (void)setContentLabel:;
+- (void)setIsDismissing:;
+- (id)linkLabel;
+- (void)setIsShowing:;
+@end

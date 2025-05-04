@@ -1,0 +1,2 @@
+@interface _TtGC4Bind10ObservableO15AWEPaySwiftImpl18ServerOffliineMode_ : _TtCs12_SwiftObject
+@end

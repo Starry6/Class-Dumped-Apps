@@ -1,0 +1,33 @@
+@interface AWELiveVisibleTypeModel : NSObject
+@property (nonatomic) NSString iconName;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL noDeeperEntry;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL editable;
+@property (nonatomic) BOOL isPaidOpenLiveNow;
+@property (nonatomic) Q representVisibilityRangeType;
+@property (nonatomic) NSInteger visibilityRangeType;
+- (BOOL)noDeeperEntry;
+- (BOOL)isPaidOpenLiveNow;
+- (int)visibilityRangeType;
+- (unsigned long long)representVisibilityRangeType;
+- (void)setNoDeeperEntry:;
+- (void)setIsPaidOpenLiveNow:;
+- (void)setRepresentVisibilityRangeType:;
+- (void)setVisibilityRangeType:;
+- (id)iconName;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setIconName:;
+- (BOOL)selected;
+- (void)setTitle:;
+- (void)setEditable:;
+- (void)setSelected:;
+- (BOOL)editable;
+@end

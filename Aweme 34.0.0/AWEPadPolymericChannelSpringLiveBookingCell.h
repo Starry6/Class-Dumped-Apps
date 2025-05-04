@@ -1,0 +1,34 @@
+@interface AWEPadPolymericChannelSpringLiveBookingCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIView lunarTimeLine;
+@property (nonatomic) UILabel lunarTimeLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) AWEPlVMultiInfoView infoView;
+@property (nonatomic) @? onBookingBtnClicked;
+- (void)duxGrid_viewDidChangeBreakPointFrom:toBreakPoint:;
+- (void)duxGrid_superViewDidChangeBreakPointFrom:toBreakPoint:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)onBookingBtnClicked:;
+- (void)setOnBookingBtnClicked:;
+- (id)onBookingBtnClicked;
+- (void)updateCoverImageWithUrlArray:completion:;
+- (void)updateViewForBreakPoint:;
+- (id)lunarTimeLine;
+- (id)lunarTimeLabel;
+- (void)setupTimeLineWithStyle:;
+- (void)setLunarTimeLabel:;
+- (void)setLunarTimeLine:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupView;
+- (id)infoView;
+- (void)setInfoView:;
++ (double)heightWithWidth:;
+@end

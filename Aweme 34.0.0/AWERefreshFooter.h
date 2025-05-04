@@ -1,0 +1,30 @@
+@interface AWERefreshFooter : MJRefreshFooter
+@property (nonatomic) BOOL newPanGesture;
+@property (nonatomic) BOOL needBounces;
+@property (nonatomic) BOOL forbidTriggerLoadMore;
+@property (nonatomic) BOOL triggerAtTracking;
+@property (nonatomic) q mj_insetBResetedOffset;
+- (void)setNeedBounces:;
+- (void)setMj_insetBResetedOffset:;
+- (void)setTriggerAtTracking:;
+- (void)scrollViewContentOffsetDidChange:;
+- (void)scrollViewPanStateDidChange:;
+- (void)scrollViewContentSizeDidChange:;
+- (void)setForbidTriggerLoadMore:;
+- (void)setHiddenAndUpdateLayout:;
+- (void)setNewPanGesture:;
+- (BOOL)forbidTriggerLoadMore;
+- (BOOL)triggerAtTracking;
+- (BOOL)newPanGesture;
+- (void)_updateScrollViewInsetBottomAnimated:completion:;
+- (void)_resetScrollViewInsetBottomAnimated:completion:;
+- (long long)mj_insetBResetedOffset;
+- (BOOL)scrollViewContentHeightBiggerThanFrameHeight;
+- (BOOL)scrollViewDidReachBottom;
+- (BOOL)scrollViewDidScrollUp;
+- (BOOL)needBounces;
+- (void)endRefreshingWithNoMoreDataCompletionBlock:;
+- (void)willMoveToSuperview:;
+- (id)initWithFrame:;
+- (void)setState:;
+@end

@@ -1,0 +1,36 @@
+@interface AWERelationSheetMateSection : AWERelationSheetBaseSection
+@property (nonatomic) UIView sectionView;
+@property (nonatomic) UIImageView avatarImageView1;
+@property (nonatomic) UIView avatarBackgroundView1;
+@property (nonatomic) UIImageView avatarImageView2;
+@property (nonatomic) UIView avatarBackgroundView2;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) BOOL hasPlayedAnimation;
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) AWEUserModel user;
+- (void)viewControllerDidAppear:;
+- (id)lottieView;
+- (void)setLottieView:;
+- (BOOL)hasPlayedAnimation;
+- (void)setHasPlayedAnimation:;
+- (id)avatarBackgroundView1;
+- (id)avatarImageView1;
+- (id)avatarBackgroundView2;
+- (id)avatarImageView2;
+- (void)setAvatarImageView1:;
+- (void)setAvatarImageView2:;
+- (void)setAvatarBackgroundView1:;
+- (void)setAvatarBackgroundView2:;
+- (void)sectionViewDidLoad;
+- (id)user;
+- (void)setUser:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (id)sectionView;
+- (void)setSectionView:;
++ (void)p_setupSpringAnimation:;
+@end

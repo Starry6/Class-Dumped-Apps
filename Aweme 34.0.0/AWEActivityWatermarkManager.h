@@ -1,0 +1,31 @@
+@interface AWEActivityWatermarkManager : NSObject
+@property (nonatomic) NSString watermarkCompressPath;
+@property (nonatomic) NSString watermarkUncompressPath;
+@property (nonatomic) NSFileManager fileManager;
+@property (nonatomic) BOOL activityWatermarkAvailable;
+@property (nonatomic) NSArray watermarkImageArray;
+@property (nonatomic) NSArray activityStickerIDArray;
+- (id)activityStickerIDArray;
+- (BOOL)needAddActivityEndWatermark;
+- (void)setActivityStickerIDArray:;
+- (BOOL)needDownloadActivityWatermark;
+- (id)watermarkCompressPath;
+- (id)watermarkUncompressPath;
+- (BOOL)uncompressActivityWaterMarkZip;
+- (void)removeAllWatermarkResources;
+- (id)activityWaterMark;
+- (BOOL)isActivityWatermarkAvailable;
+- (void)downloadActivityWatermark;
+- (id)watermarkImageArray;
+- (id)activityEndWatermarkTitle;
+- (id)activityEndWatermarkSubTitle;
+- (void)setActivityWatermarkAvailable:;
+- (void)setWatermarkImageArray:;
+- (void)setWatermarkCompressPath:;
+- (void)setWatermarkUncompressPath:;
+- (id)init;
+- (id)fileManager;
+- (void)setFileManager:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

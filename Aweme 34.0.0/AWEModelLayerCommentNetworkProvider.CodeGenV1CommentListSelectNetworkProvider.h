@@ -1,0 +1,33 @@
+@interface AWEModelLayerCommentNetworkProvider.CodeGenV1CommentListSelectNetworkProvider : AWEDataLayerRootModelGetMethodNetworkProvider
+@property (nonatomic) NSString awemeId;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSNumber count;
+@property (nonatomic) NSString commentSelectOptions;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSNumber sortOptions;
+@property (nonatomic) NSString opinionId;
+@property (nonatomic) NSNumber channelId;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (void)setAwemeId:;
+- (id)awemeId;
+- (id)commentSelectOptions;
+- (void)setCommentSelectOptions:;
+- (id)opinionId;
+- (void)setOpinionId:;
+- (id)cursor;
+- (id)sortOptions;
+- (id)init;
+- (void)setCount:;
+- (id)count;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)setSortOptions:;
+- (Class)modelClass;
+- (id)keyword;
+- (void)setKeyword:;
+- (id)channelId;
+- (void)setChannelId:;
++ (id)businessURI;
+@end

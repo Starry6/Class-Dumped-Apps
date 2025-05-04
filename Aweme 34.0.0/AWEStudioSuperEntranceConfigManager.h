@@ -1,0 +1,34 @@
+@interface AWEStudioSuperEntranceConfigManager : HTSService
+@property (nonatomic) YYCache yyCache;
+@property (nonatomic) YYCache specialPulsCache;
+@property (nonatomic) AWEStudioSpecialPlusModel specialPlusConfigModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)configModel;
+- (id)yyCache;
+- (void)setYyCache:;
+- (void)settingDidChange;
+- (id)specialPulsCache;
+- (void)updateSpecialPlusConfigModel;
+- (void)cacheSpecialPlusConfigModel:;
+- (id)specialPlusConfigModel;
+- (id)cachedSpecialPlusConfigModel;
+- (id)cachedConfigModel;
+- (void)cacheConfigModel:;
+- (void)setSpecialPulsCache:;
+- (void)setSpecialPlusConfigModel:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initPrivate;
++ (id)configModel;
++ (id)yyCache;
++ (id)specialPulsCache;
++ (id)specialPulsConfigModel;
++ (void)updateSpecialPlusConfigModel;
++ (void)cacheSpecialPlusConfigModel:;
++ (id)sharedManager;
++ (void)cleanCache;
+@end

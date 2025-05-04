@@ -1,0 +1,34 @@
+@interface AWESearchMoreCardModel : AWEBaseApiModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString searchWord;
+@property (nonatomic) NSURL relatedImageURL;
+@property (nonatomic) NSString relatedHot;
+@property (nonatomic) NSString queryInfo;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) AWEDiscoverCategoryRecordModel wordRecord;
+@property (nonatomic) AWESearchMoreCardExtraModel extraInfo;
+- (id)getDisplayWord;
+- (id)getSearchWord;
+- (id)wordRecord;
+- (void)setWordRecord:;
+- (id)relatedImageURL;
+- (void)setRelatedImageURL:;
+- (id)searchWord;
+- (void)setSearchWord:;
+- (void)setQueryInfo:;
+- (void)setRelatedHot:;
+- (id)relatedHot;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (BOOL)hasShown;
+- (void)setHasShown:;
+- (void)setExtraInfo:;
+- (id)queryInfo;
++ (id)wordRecordJSONTransformer;
++ (id)extraInfoJSONTransformer;
++ (id)relatedImageURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface AWESearchHotspotHorizontalAutoPlayCellController : AWESearchHorizontalAutoPlayCellController
+@property (nonatomic) UIImageView likeImageView;
+@property (nonatomic) YYLabel likeCountLabel;
+@property (nonatomic) YYLabel timeLabel;
+@property (nonatomic) @ adTrackerPlugin;
+@property (nonatomic) AWEFeedVideoTagView videoTagView;
+@property (nonatomic) UIView darkMaskView;
+@property (nonatomic) AWEOriginalAdModel adModel;
+- (void)cellWillDisplay;
+- (id)adModel;
+- (void)setAdModel:;
+- (void)setupSubViews;
+- (id)likeImageView;
+- (void)setLikeImageView:;
+- (id)likeCountLabel;
+- (id)videoTagView;
+- (id)darkMaskView;
+- (void)updateAccessibilityWithModel:;
+- (void)setVideoTagView:;
+- (void)setDarkMaskView:;
+- (void)setLikeCountLabel:;
+- (void)setAdTrackerPlugin:;
+- (id)adTrackerPlugin;
+- (void)setupAdTrackerPlugin;
+- (void)cellChangeInScrollView:cellFrame:;
+- (void)setTimeLabel:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (void)updateModel:;
++ (id)horizontalCellSizeWithModel:;
+@end

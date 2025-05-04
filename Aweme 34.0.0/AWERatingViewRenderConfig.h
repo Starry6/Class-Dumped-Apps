@@ -1,0 +1,37 @@
+@interface AWERatingViewRenderConfig : NSObject
+@property (nonatomic) UIImage filledImage;
+@property (nonatomic) UIImage emptyImage;
+@property (nonatomic) {CGSize=dd} starSize;
+@property (nonatomic) q numberOfStars;
+@property (nonatomic) double starSpace;
+@property (nonatomic) Q ratingType;
+@property (nonatomic) BOOL userInteractive;
+@property (nonatomic) CAGradientLayer filledImageGradientColorLayer;
+@property (nonatomic) CAGradientLayer emptyImageGradientColorLayer;
+@property (nonatomic) UIColor filledImageColor;
+@property (nonatomic) UIColor emptyImageColor;
+- (void)setStarSize:;
+- (double)starSpace;
+- (void)setFilledImage:;
+- (void)setStarSpace:;
+- (void)setRatingType:;
+- (void)setFilledImageColor:;
+- (void)setFilledImageGradientColorLayer:;
+- (void)setEmptyImageColor:;
+- (void)setEmptyImageGradientColorLayer:;
+- (id)filledImage;
+- (id)filledImageGradientColorLayer;
+- (id)emptyImageGradientColorLayer;
+- (id)filledImageColor;
+- (id)emptyImageColor;
+- (BOOL)userInteractive;
+- (void).cxx_destruct;
+- (id)emptyImage;
+- (unsigned long long)ratingType;
+- (void)setUserInteractive:;
+- (void)setEmptyImage:;
+- (long long)numberOfStars;
+- (void)setNumberOfStars:;
+- (id)starSize;
++ (id)defaultConfig;
+@end

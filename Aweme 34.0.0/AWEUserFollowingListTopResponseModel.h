@@ -1,0 +1,2 @@
+@interface AWEUserFollowingListTopResponseModel : AWEBaseApiModel
+@end

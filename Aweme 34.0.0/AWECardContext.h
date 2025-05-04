@@ -1,0 +1,31 @@
+@interface AWECardContext : NSObject
+@property (nonatomic) double itemWidth;
+@property (nonatomic) double itemHeight;
+@property (nonatomic) double itemZoomScale;
+@property (nonatomic) double itemMargin;
+@property (nonatomic) double itemCornerRadius;
+@property (nonatomic) NSString itemBorderColorActive;
+@property (nonatomic) NSString itemBorderColorDeactive;
+@property (nonatomic) double itemBorderWidthActive;
+@property (nonatomic) double itemBorderWidthDeactive;
+- (double)itemMargin;
+- (void)setItemMargin:;
+- (void)setItemBorderWidthActive:;
+- (void)setItemBorderWidthDeactive:;
+- (void)setItemZoomScale:;
+- (void)setItemBorderColorActive:;
+- (double)itemZoomScale;
+- (id)itemBorderColorActive;
+- (id)itemBorderColorDeactive;
+- (void)setItemBorderColorDeactive:;
+- (double)itemBorderWidthActive;
+- (double)itemBorderWidthDeactive;
+- (void)setItemWidth:;
+- (double)itemWidth;
+- (void).cxx_destruct;
+- (void)setItemCornerRadius:;
+- (double)itemCornerRadius;
+- (double)itemHeight;
+- (void)setItemHeight:;
++ (id)defaultContext;
+@end

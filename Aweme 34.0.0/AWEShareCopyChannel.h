@@ -1,0 +1,37 @@
+@interface AWEShareCopyChannel : AWEShareBaseChannel
+@property (nonatomic) q shareCategory;
+@property (nonatomic) BOOL copied;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)shareWithCompletion:;
+- (id)shareImage;
+- (void)didSelectShareItem:;
+- (void)shareItem:willAppear:;
+- (id)aAWEFeedModuleServiceDOUYINJXAdapter;
+- (long long)shareCategory;
+- (id)trackingLabel;
+- (BOOL)isShareItemEnabled;
+- (id)aAWEShareServiceDOUYINHTSAdapter;
+- (void)setShareCategory:;
+- (BOOL)supportMultipleOperationsWithContext:;
+- (id)bottomCenterImage;
+- (id)aAWESharePrepareURLStageCommonAdapter;
+- (void)updateContextWithShortURL:compeletion:;
+- (void)p_trackLiveShare;
+- (BOOL)copied;
+- (void)p_trackEnterForeground;
+- (void)setCopied:;
+- (void)showCopySuccessToast;
+- (BOOL)shouldHideToast;
+- (BOOL)isCommerceShowShareLink;
+- (BOOL)share;
+- (void)dealloc;
+- (id)shareType;
+- (id)shareTitle;
+- (BOOL)prepareWithContext:;
++ (Class)aAWEFeedModuleServiceDOUYINJXAdapterClass;
++ (Class)aAWEShareServiceDOUYINHTSAdapterClass;
++ (Class)aAWESharePrepareURLStageCommonAdapterClass;
+@end

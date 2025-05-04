@@ -1,0 +1,36 @@
+@interface AWETeenHotSpotCollectionView : UICollectionView
+@property (nonatomic) AWETeenHotSpotDataController dataController;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) BOOL isPresented;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) @? scrollBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataController:;
+- (void)setSelectedBlock:;
+- (id)selectedBlock;
+- (void)p_updateBottomMask;
+- (BOOL)p_didScrollAtFist;
+- (void)updateCurrentHotID:needFocus:;
+- (id)init;
+- (void)setSelectedIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (double)contentHeight;
+- (void)scrollViewDidScroll:;
+- (long long)selectedIndex;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)didDismiss;
+- (BOOL)isPresented;
+- (void)didPresent;
+- (void)setScrollBlock:;
+- (id)scrollBlock;
+- (id)dataController;
+- (void)setIsPresented:;
+@end

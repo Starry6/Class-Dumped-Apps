@@ -1,0 +1,2 @@
+@interface AWEProfileComponentOptimizeDefine : NSObject
+@end

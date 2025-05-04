@@ -1,0 +1,32 @@
+@interface AWEFamiliarFeedDeduplicateModel : NSObject
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) q awemeType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) double timestampInSeconds;
+@property (nonatomic) NSString deduplicateType;
+@property (nonatomic) Q sourceType;
+- (long long)awemeType;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setAwemeType:;
+- (id)deduplicateType;
+- (void)setDeduplicateType:;
+- (void)setSourceType:;
+- (unsigned long long)sourceType;
+- (void).cxx_destruct;
+- (id)itemId;
+- (double)timestampInSeconds;
+- (void)setTimestampInSeconds:;
+- (void)setItemId:;
++ (id)awemeType;
++ (id)enterFrom;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)deduplicateType;
++ (id)itemId;
++ (id)timestampInSeconds;
+@end

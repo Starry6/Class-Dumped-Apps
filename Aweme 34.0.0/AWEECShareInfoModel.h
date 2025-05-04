@@ -1,0 +1,2 @@
+@interface AWEECShareInfoModel : NSObject
+@end

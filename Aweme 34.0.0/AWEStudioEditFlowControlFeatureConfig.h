@@ -1,0 +1,2 @@
+@interface AWEStudioEditFlowControlFeatureConfig : AWEStudioComposerBaseFeatureConfig
+@end

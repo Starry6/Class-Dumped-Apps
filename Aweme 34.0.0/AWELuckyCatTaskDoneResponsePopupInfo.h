@@ -1,0 +1,37 @@
+@interface AWELuckyCatTaskDoneResponsePopupInfo : AWEBaseApiModel
+@property (nonatomic) q popupType;
+@property (nonatomic) q buttonType;
+@property (nonatomic) q totalNum;
+@property (nonatomic) NSString headText;
+@property (nonatomic) NSString leftText;
+@property (nonatomic) NSString rightText;
+@property (nonatomic) NSString middleText;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString buttonSchema;
+@property (nonatomic) NSString footText;
+@property (nonatomic) NSString footSchema;
+- (long long)popupType;
+- (void)setPopupType:;
+- (id)buttonSchema;
+- (long long)totalNum;
+- (void)setTotalNum:;
+- (id)headText;
+- (void)setButtonSchema:;
+- (void)setHeadText:;
+- (id)footText;
+- (void)setFootText:;
+- (id)footSchema;
+- (void)setFootSchema:;
+- (long long)buttonType;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (void)setButtonType:;
+- (void)setButtonText:;
+- (id)leftText;
+- (id)rightText;
+- (void)setLeftText:;
+- (void)setRightText:;
+- (id)middleText;
+- (void)setMiddleText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

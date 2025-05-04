@@ -1,0 +1,30 @@
+@interface AWEMateMultiAvatarView : UIView
+@property (nonatomic) NSArray models;
+@property (nonatomic) UIImageView centerAvatar;
+@property (nonatomic) UIImageView leftAvatar;
+@property (nonatomic) UIImageView rightAvatar;
+@property (nonatomic) UIImageView logoView;
+@property (nonatomic) CAShapeLayer leftLayer;
+@property (nonatomic) CAShapeLayer rightLayer;
+- (id)leftLayer;
+- (id)rightLayer;
+- (void)setLeftLayer:;
+- (void)setRightLayer:;
+- (id)leftAvatar;
+- (id)rightAvatar;
+- (void)setLeftAvatar:;
+- (void)setRightAvatar:;
+- (id)centerAvatar;
+- (void)configWithModel:avatarView:avatarWidth:;
+- (double)p_smallAvatarGap;
+- (void)updateSidesAvatarLayer:;
+- (id)addLayerWithWidth:center:cropDirectionLeft:;
+- (void)setCenterAvatar:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (id)models;
+- (void)setupUI;
+- (id)logoView;
+- (id)initWithModels:;
+- (void)setLogoView:;
+@end

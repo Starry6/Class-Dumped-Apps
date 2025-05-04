@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedVisibleCardInfo : _TtCs12_SwiftObject
+@end

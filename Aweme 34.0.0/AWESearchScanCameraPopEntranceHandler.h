@@ -1,0 +1,32 @@
+@interface AWESearchScanCameraPopEntranceHandler : NSObject
+@property (nonatomic) DUXAlertDialog dialog;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)alertDialogDidDismiss:;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (BOOL)isCurrentDialog;
+- (id)syncGetSearchScanSampleImageGuide;
+- (void)displayEnsureSampleImageGuideIfNeeded:trackParams:showOnVc:;
+- (void)displaySampleImageGuideIfNeeded:trackParams:;
+- (id)getScanCameraPopEntranceConfigModel:;
+- (void)displayEnsureSampleImageGuideDialog:completion:showOnVc:;
+- (void)displaySampleImageGuideDialog:completion:;
+- (void)updateStyleEnsureOneUI:item:completion:showCompletion:showOnVc:;
+- (void)updateStyleOneUI:item:completion:showCompletion:;
+- (void)updateStyleEnsureTwoUI:item:completion:showCompletion:showOnVc:;
+- (void)updateStyleTwoUI:item:completion:showCompletion:;
+- (void)pushSearchScanResult:;
+- (void)trackScabTabVisualGuideClick:isLoaded:configModel:;
+- (void)trackScabTabVisualGuideHide:configModel:;
+- (void)trackScabTabVisualGuideDownloadFail:;
+- (void)trackScabTabVisualGuideShow:;
+- (void)resetStatus;
+- (void).cxx_destruct;
+- (id)dialog;
+- (void)setDialog:;
++ (id)shareInstance;
+@end

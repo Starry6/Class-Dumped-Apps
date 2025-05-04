@@ -1,0 +1,33 @@
+@interface AWEIMGreetingContentComponent : AWEIMFlexComponent
+@property (nonatomic) BOOL didCheckSender;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeButtonClicked;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)reloadUI;
+- (void)__trackShowData;
+- (void)dismissGreetingGifMessage:;
+- (id)baseVC;
+- (void)sendSelectEmojiWithGreetingEmoticon:andShowedIndex:;
+- (id)p_showIdsWithShowedIndex:;
+- (void)willDisplayEmojiWithGreetingEmoticon:showedIndex:props:;
+- (double)p_stickerWidth;
+- (void)setupUIStyle;
+- (BOOL)didCheckSender;
+- (void)setDidCheckSender:;
+- (void)hiddenRecentNewsMessage:;
+- (id)__greetEmojiTrackerParams;
+- (id)__emojiTypeFrom:;
+- (id)displayMessage;
+- (void)setScene:;
+- (void)dealloc;
+- (long long)scene;
+- (void)addObservers;
+- (void)deleteMessage;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,2 @@
+@interface AWESearchBasicCardModel : AWEBaseApiModel
+@end

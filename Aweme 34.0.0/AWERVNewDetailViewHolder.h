@@ -1,0 +1,2 @@
+@interface AWERVNewDetailViewHolder : AWEBaseListViewHolder
+@end

@@ -1,0 +1,30 @@
+@interface AWEACCAPPSettingsImpl : NSObject
+@property (nonatomic) BOOL disableExifPermission;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppVersionUpdated;
+- (BOOL)disableExifPermission;
+- (id)cameraPositionConfig;
+- (void)removeVolumeViewWithVC:;
+- (BOOL)needShowErrorDescription:;
+- (BOOL)enableBOE;
+- (id)acc_deviceID;
+- (BOOL)isLowPublishActiveness;
+- (long long)userPublishActiveness;
+- (double)xmojiGeneratePollTimeoutDuration;
+- (double)xmojiGenerateProgressLineMinTime;
+- (id)xmojiGeneratePrivacyHintURLString;
+- (id)takePhotoXmojiPictureURLString;
+- (id)scanToLoginPathBlockList;
+- (BOOL)enableNLETemplateForCutsame;
+- (BOOL)enableFeatureBitsForCutsame;
+- (id)oneClickFilmingMaxConcurrentOpSetting;
+- (id)oneClickFilmingHalfLoadingConfig;
+- (id)oneClickFilmingModelList;
+- (BOOL)internal_publishEnabled;
+- (id)cameraPositionDetailSchema;
+- (id)cameraPositionCreateSchema;
+- (id)cameraPositionNotice;
+@end

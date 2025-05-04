@@ -1,0 +1,38 @@
+@interface AWETheaterEntranceGuideModel : AWEBaseApiModel
+@property (nonatomic) BOOL needGuideAdd;
+@property (nonatomic) NSString addTip;
+@property (nonatomic) AWEURLModel guideCover;
+@property (nonatomic) BOOL hitNewVersion;
+@property (nonatomic) AWETheaterEntranceGuideCoverTextModel guideCoverText;
+@property (nonatomic) q closeDuration;
+@property (nonatomic) q maxCloseNum;
+@property (nonatomic) AWETheaterEntranceGuideCoverTextMapModel guideCoverTextMap;
+@property (nonatomic) BOOL showAddPopup;
+@property (nonatomic) AWETheaterEntranceGuideFrequencyControlModel frequencyControl;
+- (id)guideCoverText;
+- (void)setGuideCoverText:;
+- (id)frequencyControl;
+- (void)setFrequencyControl:;
+- (long long)closeDuration;
+- (BOOL)needGuideAdd;
+- (void)setNeedGuideAdd:;
+- (id)addTip;
+- (id)guideCover;
+- (BOOL)hitNewVersion;
+- (id)guideCoverTextMap;
+- (long long)maxCloseNum;
+- (void)setAddTip:;
+- (void)setGuideCover:;
+- (void)setHitNewVersion:;
+- (void)setCloseDuration:;
+- (void)setMaxCloseNum:;
+- (void)setGuideCoverTextMap:;
+- (BOOL)showAddPopup;
+- (void)setShowAddPopup:;
+- (void).cxx_destruct;
++ (id)guideCoverTextJSONTransformer;
++ (id)frequencyControlJSONTransformer;
++ (id)guideCoverJSONTransformer;
++ (id)guideCoverTextMapJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

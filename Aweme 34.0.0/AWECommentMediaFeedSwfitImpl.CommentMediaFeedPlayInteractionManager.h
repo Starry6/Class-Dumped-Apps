@@ -1,0 +1,2 @@
+@interface AWECommentMediaFeedSwfitImpl.CommentMediaFeedPlayInteractionManager : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,3 @@
+@interface _TtGC20AWECommentSwiftModel24BaseListSectionViewModelC33AWECommentLongPressPanelSwiftImpl33CommentLongPressPanelHorizonModel_ : AWEBaseListSectionViewModel
+- (id)init;
+@end

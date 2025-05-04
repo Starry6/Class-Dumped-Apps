@@ -1,0 +1,34 @@
+@interface AWEFeedReportAfterInteractionController : AWEBaseController
+@property (nonatomic) AWEReportAfterInteractionViewModel viewModel;
+@property (nonatomic) BOOL shouldInsertAfterScroll;
+@property (nonatomic) BOOL hasRequest;
+@property (nonatomic) <AWEFrequencyControlStrategyProtocol> frequencyControl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)scrollViewDidScrollEndWithActive;
+- (void)initialFetchCompletion:error:;
+- (id)frequencyControl;
+- (void)setFrequencyControl:;
+- (void)getQuestionnaire:;
+- (void)onSmartQuestionnaireResult:;
+- (void)bindEvent;
+- (void)addMessage;
+- (void)addLogWithMessage:extraInfo:;
+- (void)cleanCachedInteractionSurvey;
+- (void)hasShownNonInteractionSurvey:;
+- (BOOL)shouldInsertAfterScroll;
+- (void)setShouldInsertAfterScroll:;
+- (void)triggerInsertAndFilterIfNeed;
+- (void)triggerInsertAndFilter:;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (BOOL)hasRequest;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)addNotificationObserver;
+- (void)setHasRequest:;
+@end

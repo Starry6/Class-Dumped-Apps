@@ -1,0 +1,30 @@
+@interface AWETruncateToWidthLabel : UILabel
+@property (nonatomic) double maxWidth;
+@property (nonatomic) double maxLineHeight;
+@property (nonatomic) q maxLineNumber;
+@property (nonatomic) q wordNumberOfFirstString;
+@property (nonatomic) q lineNumber;
+@property (nonatomic) NSMutableArray originText;
+@property (nonatomic) NSString firstString;
+@property (nonatomic) NSString keepString;
+- (id)originText;
+- (void)setOriginText:;
+- (id)array2String:;
+- (long long)numberOfLine:;
+- (long long)maxLineNumber;
+- (id)firstString;
+- (long long)wordNumberOfFirstString;
+- (id)keepString;
+- (void)setupLabel:;
+- (void)setMaxLineHeight:;
+- (void)setMaxLineNumber:;
+- (void)setWordNumberOfFirstString:;
+- (void)setFirstString:;
+- (void)setKeepString:;
+- (double)maxWidth;
+- (void)setLineNumber:;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (long long)lineNumber;
+- (double)maxLineHeight;
+@end

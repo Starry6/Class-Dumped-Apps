@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionPOIGuideFavoriteView : UIView
+@property (nonatomic) UIView leftView;
+@property (nonatomic) UILabel leftLabel;
+@property (nonatomic) UIView leftCenterView;
+@property (nonatomic) UIImageView leftImageView;
+@property (nonatomic) UIControl<AWEPOICollectViewProtocol> leftImageControl;
+@property (nonatomic) UIView rightView;
+@property (nonatomic) UIView rightCenterView;
+@property (nonatomic) UILabel rightLabel;
+@property (nonatomic) AWEPlayInteractionPOIGuideFavoriteConfig config;
+- (void)p_configUI;
+- (void)p_layoutUI;
+- (void)renderUIWithConfig:;
+- (void)updateUIWithIsCollected:animated:;
+- (void)p_buildUI;
+- (void)setLeftCenterView:;
+- (id)leftCenterView;
+- (void)setLeftImageControl:;
+- (id)leftImageControl;
+- (void)setRightCenterView:;
+- (id)rightCenterView;
+- (void)p_updateUIWithIsCollected:;
+- (void)setConfig:;
+- (id)config;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)leftView;
+- (id)rightView;
+- (void)setLeftView:;
+- (void)setRightView:;
+- (id)leftLabel;
+- (id)rightLabel;
+- (void)setLeftLabel:;
+- (void)setRightLabel:;
+- (id)leftImageView;
+- (void)setLeftImageView:;
+@end

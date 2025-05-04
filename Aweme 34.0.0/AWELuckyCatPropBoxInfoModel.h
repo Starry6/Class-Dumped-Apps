@@ -1,0 +1,35 @@
+@interface AWELuckyCatPropBoxInfoModel : MTLModel
+@property (nonatomic) NSString taskType;
+@property (nonatomic) BOOL readSpeedUp;
+@property (nonatomic) BOOL noticeWithPendant;
+@property (nonatomic) NSDictionary popup;
+@property (nonatomic) NSDictionary useGuide;
+@property (nonatomic) AWELuckyCatCapsuleAreaModel capsuleArea;
+@property (nonatomic) NSString propStatus;
+@property (nonatomic) NSString scrollTaskKey;
+@property (nonatomic) Q propActTimes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)readSpeedUp;
+- (void)setReadSpeedUp:;
+- (BOOL)noticeWithPendant;
+- (void)setNoticeWithPendant:;
+- (id)useGuide;
+- (void)setUseGuide:;
+- (id)capsuleArea;
+- (void)setCapsuleArea:;
+- (id)propStatus;
+- (void)setPropStatus:;
+- (id)scrollTaskKey;
+- (void)setScrollTaskKey:;
+- (unsigned long long)propActTimes;
+- (void)setPropActTimes:;
+- (id)taskType;
+- (void).cxx_destruct;
+- (id)popup;
+- (void)setPopup:;
+- (void)setTaskType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

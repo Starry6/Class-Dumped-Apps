@@ -1,0 +1,21 @@
+@interface AWEEcomSearchMerchandiseNativeInteractListController : AWEEcomSearchMerchandiseCardListController
+- (void)trackSearchResultClick:;
+- (void)collectionView:didSelectItemWithModel:atIndexPath:;
+- (id)bcmPassThroughParams;
+- (id)bcmKey;
+- (void)jumpToMerchandiseWithModel:atIndexPath:;
+- (void)jumpToFeedBoxBannerPage:;
+- (BOOL)enableETrackWithModel:;
+- (void)merchandiseClickProductTrack:atIndexPath:;
+- (void)adjustAwemeShowedBefore:;
+- (void)jumpToAwemeMerchandiseWithModel:atIndexPath:;
+- (void)jumpToLiveRoomWithModel:shouldShowGoods:indexPath:;
+- (void)jumpToImageAlbumWithModel:atIndexPath:;
+- (void)jumpToAladdinBannerWithModel:atIndexPath:;
+- (void)jumpToMarketGoodsWithModel:atIndexPath:;
+- (void)addAutoPlayToSearchResultParams:indexPath:;
+- (void)jumpToInnerAwemeWithModel:shouldShowGoods:indexPath:btm:;
+- (void)trackFeedEnter:;
+- (void)trackClickProductPicture:;
+- (void)jumpToAwemeMerchandiseWithModel:cell:;
+@end

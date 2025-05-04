@@ -1,0 +1,38 @@
+@interface AWESearchPOIHotelFilterBaseItem : UIView
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) CAShapeLayer maskLayer;
+@property (nonatomic) CAShapeLayer borderLayer;
+@property (nonatomic) BOOL selectedState;
+@property (nonatomic) BOOL isTwoLine;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterStyleModel styleModel;
+- (void)setStyleModel:;
+- (id)styleModel;
+- (BOOL)isTwoLine;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (void)setMainText:subText:icon:;
+- (void)setIsTwoLine:;
+- (void)addMaskLayerIfNeed;
+- (void)addBorderLayerIfNeed;
+- (void)updateUIWithSelectedState:;
+- (id)icon;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (BOOL)selectedState;
+- (void)setIcon:;
+- (void)setSelectedState:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)maskLayer;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)updateUI;
+- (void)setMaskLayer:;
+- (id)borderLayer;
+- (void)updateFont;
+- (void)setBorderLayer:;
+- (void)updateBorderColor;
+@end

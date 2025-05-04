@@ -1,0 +1,2 @@
+@interface AWECommentPanelHeaderSwiftImpl.CommentHeaderTemplateAnchorMusicService : _TtCs12_SwiftObject
+@end

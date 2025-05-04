@@ -1,0 +1,35 @@
+@interface AWEASSSearchMusicDynamicViewController : UIViewController
+@property (nonatomic) UIView<AWESearchDynamicContainerViewProtocol> containerView;
+@property (nonatomic) AWEDynamicPatchModel model;
+@property (nonatomic) BDXBridgeEventSubscriber bridgeEventSubscriber;
+@property (nonatomic) @? dismissKeyboard;
+@property (nonatomic) NSMutableDictionary eventParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackShowEvent;
+- (void)setEventParams:;
+- (void)removeLynxEventObservers;
+- (void)addLynxEventObservers;
+- (void)setBridgeEventSubscriber:;
+- (id)bridgeEventSubscriber;
+- (void)setDismissKeyboard:;
+- (void)sendApplicationPauseEvent;
+- (void)sendReloadEventWithParams:;
+- (void)sendStopMusicEventWithParams:;
+- (void)setModel:;
+- (void)dealloc;
+- (void)viewWillLayoutSubviews;
+- (void)addNotificationObservers;
+- (id)initWithModel:;
+- (void)viewDidLoad;
+- (id)dismissKeyboard;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)removeNotificationObservers;
+- (void)updateModel:;
+- (id)eventParams;
+@end

@@ -1,0 +1,31 @@
+@interface AWEAntiAddictConsumer : NSObject
+@property (nonatomic) <AWEAntiAddictAction> currentAction;
+@property (nonatomic) <AWEAntiAddictAction> pendingAction;
+@property (nonatomic) NSArray triggerListeners;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pendingAction;
+- (void)setupTriggerListener;
+- (BOOL)shouldAvoidCampaignPopup:;
+- (void)revokeAction:;
+- (void)configAction:;
+- (void)beginAction:;
+- (void)setPendingAction:;
+- (void)revokeAction:shouldPerformRevoke:;
+- (id)triggerListeners;
+- (void)triggerActionBeginByListener:;
+- (void)triggerActionEndByListener:;
+- (void)triggerActionRevokeByListener:shouldPerformRevoke:;
+- (id)consumeDecision:;
+- (void)revokeExpiredActions;
+- (BOOL)insertDecision:triggerImmediately:;
+- (void)setTriggerListeners:;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)currentAction;
+- (void)setCurrentAction:;
++ (id)moduleName;
+@end

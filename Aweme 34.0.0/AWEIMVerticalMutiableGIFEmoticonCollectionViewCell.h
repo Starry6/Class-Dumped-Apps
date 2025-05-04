@@ -1,0 +1,31 @@
+@interface AWEIMVerticalMutiableGIFEmoticonCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel emotionLabel;
+@property (nonatomic) UIImageView emoticonImageView;
+@property (nonatomic) <AWEIMBaseCollectionViewViewModelProtocol> viewModel;
+@property (nonatomic) <AWEIMBaseCollectionViewEventProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)configWithViewModel:;
+- (void)stopAnimationIfNeed;
+- (void)startAnimationIfNeed;
+- (id)emoticonImageView;
+- (void)setEmoticonImageView:;
+- (id)currentCellId;
+- (void)layoutSubviewsFrame;
+- (id)emoticonBDImageView;
+- (id)emotionLabel;
+- (void)setEmotionLabel:;
+- (id)delegate;
+- (void)prepareForReuse;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (long long)__scene;
++ (id)cellReuseIdentifier;
+@end

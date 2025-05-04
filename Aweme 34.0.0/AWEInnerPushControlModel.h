@@ -1,0 +1,32 @@
+@interface AWEInnerPushControlModel : NSObject
+@property (nonatomic) NSString group;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString templateId;
+@property (nonatomic) NSString templateTag;
+@property (nonatomic) q priority;
+@property (nonatomic) AWEInnerPushUiInfoModel uiInfoModel;
+@property (nonatomic) AWEInnerPushExemptInfoModel exemptInfoModel;
+@property (nonatomic) NSArray exitRuleArray;
+@property (nonatomic) NSDictionary serverTrackExt;
+- (id)uiInfoModel;
+- (void)setUiInfoModel:;
+- (void)setTemplateTag:;
+- (BOOL)isInInnerPushPlatformExperiment;
+- (id)initWithExtraStrParams:;
+- (id)templateTag;
+- (id)serverTrackExt;
+- (id)exitRuleArray;
+- (id)exemptInfoModel;
+- (id)p_serverTrackExtFromExtraParams:;
+- (void)setExemptInfoModel:;
+- (void)setExitRuleArray:;
+- (void)setGroup:;
+- (id)group;
+- (long long)priority;
+- (id)type;
+- (void)setType:;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (void)setTemplateId:;
+- (id)templateId;
+@end

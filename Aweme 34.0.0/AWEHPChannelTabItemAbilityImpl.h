@@ -1,0 +1,36 @@
+@interface AWEHPChannelTabItemAbilityImpl : AWEHPChannelBaseAbilityImpl
+@property (nonatomic) <AWEHPChannelTabItemAbilityImpl> target;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)tabBarItemStartScaleAnimation;
+- (void)updateTabItemTitle:completion:;
+- (void)showHambTopTabLottieWithParams:showCallBack:hideCallBack:;
+- (void)updateTopTabItemSelectedIndicatorWithParams:completion:;
+- (void)updateTopTabItemIndicatorIconWithParams:completion:;
+- (void)showBottomTabItemRightIcon:;
+- (void)cancelBottomTabItemRightIcon:;
+- (void)updateTopTabItemIndicatorIconHidden:completion:;
+- (void)updateAccessibilityHintText:;
+- (void)showBottomTabItemActionPopoverWithActions:preferDarkTheme:showCallback:;
+- (void)updateTopTabItemIndicatorIconRotation:completion:;
+- (void)showTopTabImageWithModel:completion:;
+- (void)cancelTopTabImageWithCompletion:;
+- (void)showBottomTabItemImage:withAnimateType:withCompletion:;
+- (void)cancelBottomTabItemImageWithCompletion:;
+- (void)removeAllResourcesIfNeedBeforeChannelUnload;
+- (void)updateBottomTabItem:;
+- (void)updateBottomTabLeftElementButtonViewModels:;
+- (void)updateBottomTabRightElementButtonViewModels:;
+- (void)updateBottomTabCompactBGColorFill:;
+- (void)p_showHambTopTabLottieWithTask:showCallBack:hideCallBack:;
+- (void)p_showTopTabItemLottieWithTask:withItemIndicatorColor:showCallBack:hideCallBack:;
+- (void)p_updateTopTabLottieWithTask:withItemIndicatorColor:withReUseComponent:;
+- (void)p_cancelTopTabLottieWithCallBack:isContainerHide:;
+- (void)updateAccessibilityValue:;
+- (void)cancelTopTabLottieWithCallBack:;
+- (id)target;
+- (void)setTarget:;
+- (void).cxx_destruct;
+@end

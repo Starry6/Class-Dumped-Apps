@@ -1,0 +1,37 @@
+@interface AWESendBookCommentRequestModel : NSObject
+@property (nonatomic) NSString bookID;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString replyID;
+@property (nonatomic) NSString replyToReplyID;
+@property (nonatomic) q channelID;
+@property (nonatomic) NSString city;
+@property (nonatomic) q timeFromInputToSend;
+@property (nonatomic) q timeFromVideoToCmt;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) float rating;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setBookID:;
+- (void)setReplyID:;
+- (void)setReplyToReplyID:;
+- (id)generateRequestParamsDict;
+- (id)replyToReplyID;
+- (id)bookID;
+- (long long)timeFromInputToSend;
+- (long long)timeFromVideoToCmt;
+- (void)setTimeFromInputToSend:;
+- (void)setTimeFromVideoToCmt:;
+- (void)setChannelID:;
+- (id)city;
+- (void)setText:;
+- (id)text;
+- (float)rating;
+- (long long)channelID;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setRating:;
+- (id)replyID;
+@end

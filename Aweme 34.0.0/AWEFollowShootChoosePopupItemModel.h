@@ -1,0 +1,37 @@
+@interface AWEFollowShootChoosePopupItemModel : AWEBaseBizConfigModel
+@property (nonatomic) AWEURLModel lightIcon;
+@property (nonatomic) UIImage lightIconImage;
+@property (nonatomic) AWEURLModel darkIcon;
+@property (nonatomic) UIImage darkIconImage;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString schema;
+@property (nonatomic) AWEFollowShootChoosePopupTrackModel clickTrack;
+@property (nonatomic) NSString handlerName;
+@property (nonatomic) NSDictionary handlerData;
+@property (nonatomic) @? handlerBlock;
+- (id)lightIcon;
+- (id)darkIcon;
+- (id)lightIconImage;
+- (id)darkIconImage;
+- (id)clickTrack;
+- (id)handlerData;
+- (void)setLightIcon:;
+- (void)setDarkIcon:;
+- (void)setLightIconImage:;
+- (void)setDarkIconImage:;
+- (void)setClickTrack:;
+- (void)setHandlerData:;
+- (id)schema;
+- (void)setSchema:;
+- (id)subtitle;
+- (id)handlerBlock;
+- (void)setSubtitle:;
+- (void)setHandlerBlock:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setHandlerName:;
+- (id)handlerName;
++ (id)JSONKeyPathsByPropertyKey;
+@end

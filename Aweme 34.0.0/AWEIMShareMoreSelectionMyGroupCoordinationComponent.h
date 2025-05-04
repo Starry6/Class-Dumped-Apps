@@ -1,0 +1,31 @@
+@interface AWEIMShareMoreSelectionMyGroupCoordinationComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMShareMoreSelectionMyGroupPanelDelegate> delegate;
+@property (nonatomic) <IESIMContactPickerMultiTabsInterface> multiTabsService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)startShareNotifyWithNeedCreateGroup:text:;
+- (void)dismissVerticalSharePanel:closeByUser:completion:;
+- (id)contactPickerSelectService:canAddIdentifier:;
+- (long long)checkerPriorityForContactPickerSelectService:;
+- (void)contactPickerSelectService:didAddSelectIdentifiers:;
+- (void)contactPickerSelectService:didRemoveSelectIdentifier:;
+- (void)sendTextService:textViewDidChange:;
+- (void)sendTextService:updateTimestampSelected:;
+- (void)sendTextService:didUpdateBottomButtonWithButtonTypes:;
+- (void)multiTabsTagFilterdidChangeToTag:;
+- (void)multiTabsPageDidShowWithTag:;
+- (void)setMultiTabsService:;
+- (id)multiTabsService;
+- (id)p_filterTypeForViewController:;
+- (void)p_trackSelectIdentifier:action:;
+- (void)p_anotherTabSendTextService:sourceSendTextService:;
+- (id)p_filterTypeForTag:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

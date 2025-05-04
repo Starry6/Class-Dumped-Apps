@@ -1,0 +1,2 @@
+@interface AWESearchMusicLynxView : UIView
+@end

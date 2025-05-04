@@ -1,0 +1,3 @@
+@interface AWEStudioSwiftImpl.AIImageUploadTask : _TtGC8AirFlowX7AFXTaskVC18AWEStudioSwiftImpl17AIImageUploadTask5InputVS2_6Output_
+- (void).cxx_destruct;
+@end

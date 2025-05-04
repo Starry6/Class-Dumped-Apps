@@ -1,0 +1,33 @@
+@interface AWEFeedDouPlusLongPressShareManager : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) <AWEFeedDouPlusLongPressShareManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (BOOL)authorIsCurrentUser;
+- (BOOL)shouldShowLocalPromotionEntrance;
+- (BOOL)authorIsPrivateAccount;
+- (id)getClickDouPlusTrackParamsNewEntrance:;
+- (id)getDouPlusShowClickTrackParams;
+- (void)handleLocalPromotion;
+- (BOOL)shouldShowDouECP;
+- (void)showPressPanelDouPLus:;
+- (void)showLocalPromotion;
+- (BOOL)needShowDouPlus;
+- (id)douPlusTitle;
+- (id)douPlusImage;
+- (id)douPlusImageForNewLongPressPanel;
+- (BOOL)prepareToClickDouPLus;
+- (void)clickDouPLus;
+- (void)showDouPLus;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (id)douPlusManagerWithModel:referString:;
+@end

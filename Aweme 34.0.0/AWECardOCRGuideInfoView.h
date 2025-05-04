@@ -1,0 +1,32 @@
+@interface AWECardOCRGuideInfoView : UIView
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSMutableArray itemsViews;
+@property (nonatomic) UIButton okButton;
+@property (nonatomic) {CGAffineTransform=dddddd} pageTransform;
+@property (nonatomic) BOOL isLandscape;
+@property (nonatomic) AWEOCRCardItemConfig config;
+@property (nonatomic) @? completion;
+- (void)hideView;
+- (id)itemsViews;
+- (id)initWithTransform:isLandscape:config:completion:;
+- (void)showGuideWithView:;
+- (void)setItemsViews:;
+- (void)setConfig:;
+- (void)setScrollView:;
+- (id)completion;
+- (id)config;
+- (void)setCompletion:;
+- (id)scrollView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setOkButton:;
+- (id)okButton;
+- (void)setupUI;
+- (void)setIsLandscape:;
+- (BOOL)isLandscape;
+- (void)setupData;
+- (id)pageTransform;
+- (void)setPageTransform:;
+@end

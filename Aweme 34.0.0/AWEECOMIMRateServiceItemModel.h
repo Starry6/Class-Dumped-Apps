@@ -1,0 +1,33 @@
+@interface AWEECOMIMRateServiceItemModel : NSObject
+@property (nonatomic) NSString starsName;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) NSString iconNameSelected;
+@property (nonatomic) NSString iconNameUnSelected;
+@property (nonatomic) NSString stars;
+@property (nonatomic) NSArray tagTitleList;
+@property (nonatomic) q itemState;
+@property (nonatomic) BOOL realSelected;
+@property (nonatomic) q type;
+@property (nonatomic) q maxCountForRow;
+- (void)setStars:;
+- (long long)maxCountForRow;
+- (void)setRealSelected:;
+- (void)setTagTitleList:;
+- (void)setMaxCountForRow:;
+- (id)tagTitleList;
+- (void)setStarsName:;
+- (void)setIconNameSelected:;
+- (void)setIconNameUnSelected:;
+- (id)starsName;
+- (id)iconNameSelected;
+- (id)iconNameUnSelected;
+- (BOOL)realSelected;
+- (id)iconName;
+- (long long)type;
+- (void)setType:;
+- (void)setItemState:;
+- (void).cxx_destruct;
+- (long long)itemState;
+- (void)setIconName:;
+- (id)stars;
+@end

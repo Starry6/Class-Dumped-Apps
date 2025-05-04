@@ -1,0 +1,2 @@
+@interface AWERichContentAdapterBasic.RichContentAdapterDataModel : _TtCs12_SwiftObject
+@end

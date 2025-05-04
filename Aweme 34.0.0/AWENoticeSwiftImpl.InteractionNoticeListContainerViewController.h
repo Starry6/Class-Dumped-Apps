@@ -1,0 +1,24 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeListContainerViewController : AWEBaseListViewController
+- (id)tabContentScrollView;
+- (id)segmentedControlItemConfigForTabList:;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (void)configWithTabItemModel:;
+- (BOOL)tabListEnableTabItemRefreshHeader;
+- (void)listDidReloadDataWithCollectionView:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (void)customLayoutCollectionView:;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)viewWillDisappear:;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)scrollViewDidScroll:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)initWithCoder:;
+- (void)setupCollectionView:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEPublishInfiniReviewStage : AWEPublishBaseStage
+@property (nonatomic) AWEVideoPublishViewModel publishViewModel;
+@property (nonatomic) <ACCSequenceEditServiceProtocol> sequenceEditService;
+@property (nonatomic) AWEPublishInfiniReviewImageStage reviewImageStage;
+@property (nonatomic) AWEPublishUploadOtherStage reviewVideoStage;
+@property (nonatomic) AWEPublishParallelStage parallelStage;
+@property (nonatomic) AWEPublishInfiniReviewSlidesStage reviewSlidesStage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)publishViewModel;
+- (void)setPublishViewModel:;
+- (id)sequenceEditService;
+- (void)setSequenceEditService:;
+- (void)stage:didChangeStatus:;
+- (void)stage:didUpdateProgress:;
+- (void)setupWithFlowModelIfNeeded;
+- (void)updateFlowModelIfNeeded;
+- (id)stageArray;
+- (id)parallelStage;
+- (id)reviewVideoStage;
+- (id)reviewSlidesStage;
+- (id)reviewImageStage;
+- (void)setReviewImageStage:;
+- (void)setReviewVideoStage:;
+- (void)setParallelStage:;
+- (void)setReviewSlidesStage:;
+- (id)init;
+- (void)run;
+- (void).cxx_destruct;
+@end

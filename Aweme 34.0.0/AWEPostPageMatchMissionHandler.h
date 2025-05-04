@@ -1,0 +1,31 @@
+@interface AWEPostPageMatchMissionHandler : NSObject
+@property (nonatomic) AWEPostPageListHandler list;
+@property (nonatomic) AWEPostPageMatchMissionListData template;
+@property (nonatomic) NSMutableDictionary registeredMap;
+@property (nonatomic) NSDictionary itemLoadInfo;
+@property (nonatomic) BOOL isVisible;
+@property (nonatomic) NSArray sortDescriptor;
+@property (nonatomic) <AWEPostPageContext> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindServices:;
+- (id)itemLoadInfo;
+- (void)expectsToAddItem:;
+- (id)registeredMap;
+- (void)setItemLoadInfo:;
+- (void)setRegisteredMap:;
+- (void)setList:;
+- (void)setIsVisible:;
+- (id)sortDescriptor;
+- (BOOL)isVisible;
+- (id)list;
+- (void).cxx_destruct;
+- (void)addItem:error:;
+- (id)context;
+- (void)setTemplate:;
+- (id)template;
+- (void)setSortDescriptor:;
++ (void)_aweLazyRegisterPostPage;
+@end

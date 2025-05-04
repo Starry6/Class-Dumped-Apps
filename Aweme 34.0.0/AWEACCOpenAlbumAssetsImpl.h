@@ -1,0 +1,31 @@
+@interface AWEACCOpenAlbumAssetsImpl : NSObject
+@property (nonatomic) ACCCanvasAdaptor canvasAdaptor;
+@property (nonatomic) AWETranslationTransitionController nextTranslationTransitionDelegate;
+@property (nonatomic) ACCAIGCLoraAlbumHelperExtension loraPlugin;
+@property (nonatomic) ACCAlbumImageAlbumNoteExtension noteEntranceExtension;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)openAlbumWithConfigure:bizName:callerBiz:extraInfo:trackerInfoInject:completion:;
+- (id)nextTranslationTransitionDelegate;
+- (void)setNextTranslationTransitionDelegate:;
+- (void)saveWorkspace:video:scene:isUserAction:completion:;
+- (id)canvasAdaptor;
+- (void)setCanvasAdaptor:;
+- (id)startEditorWith:fliePaths:completion:;
+- (void)buildEditorWithImagePathList:repoContainer:onCompletion:;
+- (void)handlePhoto2VideoenterEditorPageCompletion:repoContainer:error:completion:;
+- (id)loraPlugin;
+- (id)noteEntranceExtension;
+- (void)openAlbumWithConfigure:bizName:callerBiz:extraInfo:completion:;
+- (void)importAssetsWithPublishViewModel:WithAssets:completion:;
+- (void)enterEditorPage:fliePaths:completion:;
+- (id)getLoraPluginWith:;
+- (id)getNoteExtension;
+- (id)getIndicatorExtension;
+- (id)getILASDKExtension;
+- (void)setLoraPlugin:;
+- (void)setNoteEntranceExtension:;
+- (void).cxx_destruct;
+@end

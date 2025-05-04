@@ -1,0 +1,31 @@
+@interface AWEDCFeedSettingManager : NSObject
++ (long long)doubleColumnBigModeOptThird;
++ (long long)doubleColumnBigModeOpt;
++ (BOOL)enableOutOfTimeRefreshConfigWithReferString:;
++ (long long)timeOfOutOfTimeRefreshConfigWithReferString:;
++ (id)padDCConfig;
++ (long long)c2CardUIOptimizeStyle;
++ (BOOL)enablePadConfig;
++ (BOOL)enableFormatLogger;
++ (BOOL)enableFormatLoggerInstance;
++ (BOOL)useDefaultLogWhenDowngrade;
++ (double)padSpacing;
++ (double)cellElementLeftRightSpace;
++ (id)c2CardUIOptimizeCoverRoundedArray;
++ (BOOL)enableSetRecommendReasonV2Type;
++ (BOOL)disableCommonLynxWithReferString:;
++ (id)c2CardUIOptimizeLikeUndiggedImageWithTheme:;
++ (double)c2CardUIOptimizeLikeCountSize;
++ (id)c2CardUIOptimizeLikeUndiggedImage;
++ (long long)padHorizontalBreakPoint;
++ (BOOL)enableOptimizeCellEndDisplay;
++ (id)c2CardUIOptimizePageBackgroundColorString;
++ (BOOL)enableOptimizeSetFirstLoadDidSuccess;
++ (id)c2CardUIOptimizeCardMessageMarginArray;
++ (double)c2CardUIOptimizeCardMessageItemPadding;
++ (BOOL)enableTidyModelImageOptimize;
++ (BOOL)isSearchBarEnableBigFont;
++ (id)outOfTimeRefreshConfig;
++ (id)c2CardUIOptimizeUIConfig;
++ (id)dcFeedFormatLoggerConfig;
+@end

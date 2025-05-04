@@ -1,0 +1,38 @@
+@interface AWEFeedSwitchPreviewStackedCardCell : UICollectionViewCell
+@property (nonatomic) q cellType;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView cardWrapperView;
+@property (nonatomic) UIView cardContainerView;
+@property (nonatomic) UIView cardBorderView;
+@property (nonatomic) BOOL isSelectedCell;
+@property (nonatomic) UIView cardHolderView;
+- (BOOL)isSelectedCell;
+- (id)cardContainerView;
+- (void)setCardContainerView:;
+- (id)cardHolderView;
+- (void)configCardWrapperView:containerView:borderView:;
+- (void)showTitleLabelShowAnimation;
+- (id)cardWrapperView;
+- (id)cardBorderView;
+- (void)updateTitleLabelWithAlpha:;
+- (void)configWithCellType:selected:;
+- (double)labelLeftMargin;
+- (void)setIsSelectedCell:;
+- (void)setCardWrapperView:;
+- (void)setCardBorderView:;
+- (void)setCardHolderView:;
+- (long long)cellType;
+- (void)setCellType:;
+- (id)initWithFrame:;
+- (id)titleText;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)hideTitleLabel;
++ (double)labelAndCardMargin;
++ (double)screenWidth;
++ (double)screenHeight;
++ (double)cellWidth;
++ (id)titleLabelFont;
++ (double)cellHeight;
+@end

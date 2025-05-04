@@ -1,0 +1,36 @@
+@interface AWELandscapeLVideoCartPanelViewController : UIViewController
+@property (nonatomic) UIView container;
+@property (nonatomic) UIView titleContainer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIView<AWELongVideoLVWidgetContainerProtocol> hunterView;
+@property (nonatomic) AWELandscapePageContext pageContext;
+@property (nonatomic) @? closeAction;
+@property (nonatomic) <AWELandscapeLVideoCartPanelViewControllerDelegate> delegate;
+- (void)showPanel;
+- (void)bdx_closeWithAnimated:completion:;
+- (BOOL)bdx_shouldUseCustomClose;
+- (void)setHunterView:;
+- (id)hunterView;
+- (void)dismissPanelWithCompletion:;
+- (void)updateWithPageContext:entrance:;
+- (void)setContainer:;
+- (id)container;
+- (id)init;
+- (id)delegate;
+- (void)setCloseAction:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)closeAction;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setPageContext:;
+- (id)pageContext;
+- (void)closeButtonTapped;
+- (void)setTitleContainer:;
+- (id)titleContainer;
+- (double)panelWidth;
+@end

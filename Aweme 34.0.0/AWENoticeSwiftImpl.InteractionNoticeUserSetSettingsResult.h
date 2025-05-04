@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeUserSetSettingsResult : _TtCs12_SwiftObject
+@end

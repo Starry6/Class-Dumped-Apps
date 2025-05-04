@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputChatGroupContentElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

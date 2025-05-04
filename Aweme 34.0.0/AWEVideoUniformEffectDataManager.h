@@ -1,0 +1,32 @@
+@interface AWEVideoUniformEffectDataManager : NSObject
+@property (nonatomic) NSMutableDictionary effectDataMap;
+@property (nonatomic) double timeout;
+@property (nonatomic) NSArray effectListUseAIRecommend;
+@property (nonatomic) NSDictionary loadEffectRequestExtraParameters;
+@property (nonatomic) NSDictionary trackExtraDic;
+@property (nonatomic) double timeEditorStarted;
+- (void)setTrackExtraDic:;
+- (id)trackExtraDic;
+- (void)setLoadEffectRequestExtraParameters:;
+- (id)loadEffectRequestExtraParameters;
+- (id)getEffectListWithCategory:;
+- (void)fetchEffectDataWithCategorys:completion:;
+- (void)setTimeEditorStarted:;
+- (void)fetchEffectDataWithPropIds:extraParameters:completion:;
+- (void)fetchEffectDataWithPropIds:extraParameters:timeout:completion:;
+- (void)fetchEffectDataWithCategorys:timeout:completion:;
+- (void)fetchMyEffectWithCompletion:;
+- (void)fetchUsedEffectWithCompletion:;
+- (void)fetchEffectWithCategory:pageCount:cursor:completion:;
+- (id)effectDataMap;
+- (void)setEffectListUseAIRecommend:;
+- (double)timeEditorStarted;
+- (void)trackToolPerformanceApiWithExtraParams:;
+- (void)setFetchEffectData:forCategory:;
+- (void)fetchEffectDataForAIRecommendWithCategory:completion:;
+- (id)effectListUseAIRecommend;
+- (void)setEffectDataMap:;
+- (double)timeout;
+- (void)setTimeout:;
+- (void).cxx_destruct;
+@end

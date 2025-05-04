@@ -1,0 +1,36 @@
+@interface AWERecordInspirationFeedDataProviderImpl : NSObject
+@property (nonatomic) AWERecordInspirationDetail detail;
+@property (nonatomic) AWERecordInspirationCategoryItem categoryItem;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) q initIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (void)setCategoryItem:;
+- (void)setInitIndex:;
+- (long long)initIndex;
+- (id)initWithCategoryItem:detail:;
+- (id)initWithEffectNoAwemeInfoCategoryItem:detail:;
+- (void)configFeedContentData;
+- (id)convertDataFormatWithDetail:;
+- (long long)initializeIndex;
+- (void)configFeedContentDataWithEffectNoAwemeInfo;
+- (id)convertDataFormatWithEffectNoAwemeInfoDetail:;
+- (id)videoTemplateConvertAwemeModel:;
+- (void)bindTemplateWithAwemeModel:detail:;
+- (id)pictureTemplateConvertAwemeModel:;
+- (id)effectConvertAwemeModel:;
+- (id)initializeDataSource;
+- (BOOL)initializeHasMore;
+- (long long)localItemIndexPositionWith:;
+- (BOOL)isNeedCustomCoverPhotoStatus:;
+- (void)dealloc;
+- (void)setDetail:;
+- (id)detail;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+- (id)categoryItem;
+@end

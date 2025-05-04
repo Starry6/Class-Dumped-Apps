@@ -1,0 +1,36 @@
+@interface AWEPaymentBadgeConfig : NSObject
+@property (nonatomic) double viewHeight;
+@property (nonatomic) NSString fontName;
+@property (nonatomic) double fontSize;
+@property (nonatomic) double margin;
+@property (nonatomic) BOOL disableAddCornerBackground;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) {UIEdgeInsets=dddd} edgeInsets;
+@property (nonatomic) UIFont font;
+@property (nonatomic) BOOL ignoreVipStyle;
+@property (nonatomic) BOOL trimVipPrefix;
+- (void)setViewHeight:;
+- (void)setIgnoreVipStyle:;
+- (BOOL)disableAddCornerBackground;
+- (BOOL)trimVipPrefix;
+- (BOOL)ignoreVipStyle;
+- (void)setDisableAddCornerBackground:;
+- (void)setTrimVipPrefix:;
+- (void)setFontName:;
+- (double)margin;
+- (double)fontSize;
+- (id)edgeInsets;
+- (id)fontName;
+- (void)setTextColor:;
+- (void)setEdgeInsets:;
+- (void)setFontSize:;
+- (void)setMargin:;
+- (id)backgroundColor;
+- (id)font;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (id)textColor;
+- (double)viewHeight;
+@end

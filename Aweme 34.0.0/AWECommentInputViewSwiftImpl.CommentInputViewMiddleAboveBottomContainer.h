@@ -1,0 +1,3 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputViewMiddleAboveBottomContainer : AWECommentInputViewSwiftImpl.CommentInputViewBaseContainer
+- (id)initWithViewController:context:;
+@end

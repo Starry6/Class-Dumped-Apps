@@ -1,0 +1,32 @@
+@interface AWECampaignProfileActivityModel : MTLModel
+@property (nonatomic) AWECampaignImageModel image;
+@property (nonatomic) NSString bubbleText;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) q timeLimit;
+@property (nonatomic) q showScenery;
+@property (nonatomic) UIImage profileActicityImage;
+@property (nonatomic) BOOL isReady;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)showScenery;
+- (void)setShowScenery:;
+- (id)profileActicityImage;
+- (void)setProfileActicityImage:;
+- (void)setTimeLimit:;
+- (id)image;
+- (void)setImage:;
+- (void)setWebURL:;
+- (BOOL)isReady;
+- (BOOL)isEmpty;
+- (void).cxx_destruct;
+- (long long)timeLimit;
+- (id)webURL;
+- (void)setIsReady:;
+- (id)bubbleText;
+- (void)setBubbleText:;
++ (id)imageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

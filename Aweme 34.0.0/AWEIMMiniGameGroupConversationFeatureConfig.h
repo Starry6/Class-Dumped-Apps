@@ -1,0 +1,3 @@
+@interface AWEIMMiniGameGroupConversationFeatureConfig : AWEIMNormalGroupConversationFeatureConfig
+- (BOOL)enableInviteSyncingChangedBackgroundWithCon:peerUser:;
+@end

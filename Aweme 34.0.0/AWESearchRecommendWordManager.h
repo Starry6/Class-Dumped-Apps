@@ -1,0 +1,35 @@
+@interface AWESearchRecommendWordManager : NSObject
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) NSString lastQueryId;
+@property (nonatomic) NSString lastGroupId;
+@property (nonatomic) NSString recommendType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEIndividualWordModel lastRecommendWordModel;
+@property (nonatomic) AWEIndividualWordsResponseModel responseModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)recommendType;
+- (void)setRecommendType:;
+- (void)fetchRecommWordWithGroupId:businessID:pd:categoryName:wordsSource:enterFrom:broadcast:completion:;
+- (void)fetchRecommWordWithGroupId:businessID:pd:categoryName:wordsSource:query:query_id:enterFrom:broadcast:completion:;
+- (void)fetchRecommWordByLastQueryWithBusinessID:pd:categoryName:wordsSource:enterFrom:broadcast:completion:;
+- (void)unregisterRecommendWordUpdateObserver:;
+- (id)lastRecommendWordModel;
+- (void)setLastRecommendWordModel:;
+- (void)registerRecommendWordUpdateObserver:;
+- (id)lastGroupId;
+- (void)setLastGroupId:;
+- (id)lastQueryId;
+- (void)setLastQueryId:;
+- (id)init;
+- (id)observers;
+- (void).cxx_destruct;
+- (void)setObservers:;
+- (id)responseModel;
+- (void)setResponseModel:;
++ (id)sharedInstance;
+@end

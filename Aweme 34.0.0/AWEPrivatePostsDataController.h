@@ -1,0 +1,34 @@
+@interface AWEPrivatePostsDataController : AWEListDataController
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) AWEAwemeModel justRemovedModel;
+@property (nonatomic) q pageSize;
+@property (nonatomic) BOOL backupRequest;
+@property (nonatomic) BOOL shouldAggregateSharedPosts;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)minCursor;
+- (BOOL)shouldAggregateSharedPosts;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (void)setJustRemovedModel:;
+- (id)justRemovedModel;
+- (BOOL)removeWithItemID:;
+- (void)setBackupRequest:;
+- (void)setShouldAggregateSharedPosts:;
+- (BOOL)backupRequest;
+- (void)monitorPrivateAwemeRequest:error:;
+- (long long)removeAggregatedSharedPosts;
+- (long long)existAggregatedSharePosts;
+- (BOOL)addAwemeWithItemID:;
+- (void)insertAwemeModel:atIndex:;
+- (void)clearJustRemovedModel;
+- (BOOL)isAggregatedSharedPostsEntry:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)copyWithZone:;
+- (long long)pageSize;
+- (void)setPageSize:;
+@end

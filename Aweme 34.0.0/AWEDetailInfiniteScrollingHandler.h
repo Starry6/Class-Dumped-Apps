@@ -1,0 +1,34 @@
+@interface AWEDetailInfiniteScrollingHandler : NSObject
+@property (nonatomic) UIViewController<AWEDetailInfiniteScrollingHostViewController> host;
+@property (nonatomic) <AWEDetailViewModelProtocol> stateContext;
+@property (nonatomic) IESServiceProvider provider;
+@property (nonatomic) UIView lastLoadingContainerView;
+@property (nonatomic) UILabel hostNoMoreTipLabel;
+@property (nonatomic) UIScrollView hostScrollingView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostViewDidLoad;
+- (id)initWithHost:serviceProvider:;
+- (void)setHostNoMoreTipLabel:;
+- (void)setHostScrollingView:;
+- (void)p_handleAwemeListFetchStateChange;
+- (void)p_handleDetailInfoFetchStateChange;
+- (id)hostScrollingView;
+- (id)hostNoMoreTipLabel;
+- (void)p_showLoadingView;
+- (id)lastLoadingContainerView;
+- (void)setLastLoadingContainerView:;
+- (void)p_showNoMoreTipLabel;
+- (BOOL)p_needShowEmptyAwemeListTip;
+- (void)p_updateEmptyAwemeListTip;
+- (BOOL)p_needShowEmptyAwemeListHintView;
+- (void)setHost:;
+- (id)host;
+- (void)setProvider:;
+- (void)setStateContext:;
+- (void).cxx_destruct;
+- (id)stateContext;
+- (id)provider;
+@end

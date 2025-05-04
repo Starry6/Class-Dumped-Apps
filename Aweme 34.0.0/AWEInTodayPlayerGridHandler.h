@@ -1,0 +1,35 @@
+@interface AWEInTodayPlayerGridHandler : NSObject
+@property (nonatomic) AWEInTodayListViewController gridViewController;
+@property (nonatomic) @? dismissAction;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) NSObject<AWEMemoriesPlayerControlProtocol> playerControlManager;
+@property (nonatomic) NSObject<AWEMemoriesPlayerDataControllerProtocol> dataController;
+@property (nonatomic) AWEInTodaySchemaData schemaData;
+@property (nonatomic) AWEInTodayAggregateConfig aggregateConfig;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL gridShowed;
+@property (nonatomic) BOOL isLoading;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setDataController:;
+- (id)aggregateConfig;
+- (void)setAggregateConfig:;
+- (void)setGridShowed:;
+- (id)playerControlManager;
+- (void)removeGridViewController;
+- (void)showGridViewIsSelected:publishAction:dismissAction:shootAction:;
+- (void)setPlayerControlManager:;
+- (BOOL)gridShowed;
+- (BOOL)isLoading;
+- (id)viewController;
+- (void)setDismissAction:;
+- (id)dismissAction;
+- (void).cxx_destruct;
+- (void)setIsLoading:;
+- (void)setViewController:;
+- (id)dataController;
+- (id)gridViewController;
+- (void)setGridViewController:;
+- (id)schemaData;
+- (void)setSchemaData:;
+@end

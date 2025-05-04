@@ -1,0 +1,35 @@
+@interface AWEAnimationDisplayLink : NSObject
+@property (nonatomic) CADisplayLink displayLink;
+@property (nonatomic) NSMapTable pauseObserversWeakMap;
+@property (nonatomic) NSMapTable observersWeakMap;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) double musicAnimationDuration;
+@property (nonatomic) BOOL isPauseDuringForeground;
+- (void)onAppWillEnterForeground;
+- (void)onAppDidEnterBackground;
+- (double)musicAnimationDuration;
+- (void)addObserver:block:;
+- (void)setObserverResume:;
+- (void)setObserverPause:;
+- (void)setupDisplayLinkWithPreferredFramesPerSecond:pauseWhenPause:;
+- (void)setMusicAnimationDuration:;
+- (void)setIsPauseDuringForeground:;
+- (id)observersWeakMap;
+- (id)pauseObserversWeakMap;
+- (BOOL)isPauseDuringForeground;
+- (void)setPauseObserversWeakMap:;
+- (void)setObserversWeakMap:;
+- (BOOL)enable;
+- (void)handleDisplayLink:;
+- (id)init;
+- (void)removeObserver:;
+- (id)displayLink;
+- (void)setDisplayLink:;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (double)musicAnimationDuration;
++ (void)setMusicAnimationDuration:;
++ (BOOL)enable;
++ (long long)preferredFramesPerSecond;
++ (id)sharedLink;
+@end

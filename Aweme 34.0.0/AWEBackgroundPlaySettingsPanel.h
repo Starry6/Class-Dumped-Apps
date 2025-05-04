@@ -1,0 +1,38 @@
+@interface AWEBackgroundPlaySettingsPanel : UIViewController
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView warningView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEBackgroundPlaySettingsViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)initWithAwemeModel:logExtraParams:;
+- (id)textLabel;
+- (id)tableView:viewForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)containerView;
+- (id)tableView;
+- (void)setWarningView:;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)warningView;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setTextLabel:;
+- (id)sheet;
+- (void)setSheet:;
++ (BOOL)shouldShowWithAwemeModel:;
++ (void)showWithAwemeModel:logExtraParams:;
+@end

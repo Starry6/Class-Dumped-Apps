@@ -1,0 +1,35 @@
+@interface AWEPzComponentRow : NSObject
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSDate timeOfFirstShow;
+@property (nonatomic) NSDate timeOfLastShow;
+@property (nonatomic) NSInteger showCount;
+@property (nonatomic) NSInteger consumeCount;
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+- (id)secUid;
+- (void)setSecUid:;
+- (void)setTimeOfFirstShow:;
+- (void)setTimeOfLastShow:;
+- (int)consumeCount;
+- (void)setConsumeCount:;
+- (id)timeOfFirstShow;
+- (id)timeOfLastShow;
+- (id)initWithID:secUid:;
+- (id)description;
+- (void).cxx_destruct;
+- (void)setComponentID:;
+- (id)componentID;
+- (void)setShowCount:;
+- (int)showCount;
++ (id)secUid;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)consumeCount;
++ (id)timeOfFirstShow;
++ (id)timeOfLastShow;
++ (id)componentID;
++ (id)showCount;
+@end

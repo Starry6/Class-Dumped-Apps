@@ -1,0 +1,31 @@
+@interface AWEGDClosePageInterceptor : NSObject
+@property (nonatomic) NSString lsDomain;
+@property (nonatomic) BOOL shouldIntercept;
+@property (nonatomic) NSString handle;
+@property (nonatomic) q priority;
+@property (nonatomic) BOOL isClosing;
+@property (nonatomic) NSString transactionId;
+@property (nonatomic) NSString componentID;
+- (BOOL)shouldIntercept;
+- (void)setShouldIntercept:;
+- (void)notifyGDPageClose;
+- (id)initWithDomain:componentID:;
+- (void)setLsDomain:;
+- (void)subscribeLifeStorageChangeWithDomainAndComponentID;
+- (id)subscribeKey;
+- (id)lsDomain;
+- (void)unsubscribeLifeStorageChange;
+- (void)updateStatusByNewValue:;
+- (BOOL)isClosing;
+- (void)dealloc;
+- (void)setHandle:;
+- (id)handle;
+- (long long)priority;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (void)setTransactionId:;
+- (id)transactionId;
+- (void)setComponentID:;
+- (id)componentID;
+- (void)setIsClosing:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEVideoPlayDanmakuService : NSObject
+@property (nonatomic) q danmakuScene;
+@property (nonatomic) <AWEHttpTask> currentFetchDataTask;
+@property (nonatomic) AWEAwemeModel model;
+- (void)setDanmakuScene:;
+- (void)sendWithParams:completion:;
+- (void)fetchDanmakuWithItemId:danmakuIds:completion:;
+- (void)cancelFetchDataRequest;
+- (id)currentFetchDataTask;
+- (long long)danmakuScene;
+- (void)fetchDanmakuDataSourceControlByServerWithItemID:fromStartTime:endTime:scene:extraDict:completion:;
+- (id)initWithDanmakuScene:;
+- (id)fetchLandScapeDanmakuDataUrl;
+- (void)setCurrentFetchDataTask:;
+- (id)sendLandScapeDanmakuDataUrl;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
++ (void)danmakuPrivilegeCheckWithCompletion:;
++ (void)updateDanmakuPrivilege:level:completion:;
++ (void)deleteDanmakuWithModel:completion:;
++ (void)digDanmakuWithModel:extraParams:completion:;
++ (void)handleDislikeDanmakuWithOption:model:completion:;
++ (void)fetchDanmakuDataListWithParams:completion:;
++ (id)fetchDanmakuDataListUrl;
++ (id)danmakuDiggUpdateUrl;
++ (id)dislikeDanmakuUrl;
++ (id)danmakuDeleteUrl;
++ (id)danmakuPrivilegeUrl;
++ (id)danmakuPrivilegeUserUrl;
++ (id)fetchDanmakuByIdsUrl;
+@end

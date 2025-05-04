@@ -1,0 +1,33 @@
+@interface AWEIMMessageFloatViewController : AWEIMMessageBaseViewController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEIMMessageFloatNavigationBar floatNaviBar;
+@property (nonatomic) BOOL isSevenSpliteScreen;
+@property (nonatomic) <AWEIMMessageFloatViewControllerDelegate> delegate;
+- (BOOL)btm_autoManaged;
+- (id)btm_pageIdentifier;
+- (void)didUpdateInputVCFrame:inputViewType:oldInputViewType:;
+- (void)p_updateLayout;
+- (void)changeToMultiselect:;
+- (void)updateLayoutWithTransformToFull:;
+- (id)initWithIsSevenSpliteScreen:;
+- (BOOL)isWrapperByContainerVC;
+- (double)p_inputActionBarHeight;
+- (id)messageListVCAvailableFrame;
+- (double)inputActionBarHeightWithInputType:;
+- (double)getGiphyReplyViewHeight;
+- (double)__messageListViewAvailableHeight;
+- (void)updateLayoutWithHeightChangedOffset:;
+- (id)floatNaviBar;
+- (void)setFloatNaviBar:;
+- (BOOL)isSevenSpliteScreen;
+- (void)setIsSevenSpliteScreen:;
+- (void)viewWillDisappear:;
+- (id)delegate;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

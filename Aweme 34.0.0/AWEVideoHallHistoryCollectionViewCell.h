@@ -1,0 +1,36 @@
+@interface AWEVideoHallHistoryCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) BDImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UILabel rightBottomLabel;
+@property (nonatomic) DUXTextTag videoTag;
+@property (nonatomic) UIView updateView;
+@property (nonatomic) UILabel updateLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UIView<AWEFakeProgressSliderViewProtocol> progressBar;
+- (id)videoTag;
+- (void)setVideoTag:;
+- (void)setRightBottomLabel:;
+- (id)rightBottomLabel;
+- (void)setUpdateView:;
+- (void)setUpdateLabel:;
+- (id)gradientView;
+- (id)updateView;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)updateLabel;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)titleLabel;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setProgressBar:;
+- (id)progressBar;
+- (void)updateWithModel:;
+@end

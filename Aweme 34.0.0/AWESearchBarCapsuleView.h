@@ -1,0 +1,35 @@
+@interface AWESearchBarCapsuleView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) <AWESearchBarCapsuleViewDelegate> delegate;
+@property (nonatomic) NSNumber capsuleCornerRadius;
+@property (nonatomic) UIColor capsuleBkgColor;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) UIColor capsuleTextColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateWithTexts:;
+- (void)setCapsuleTextColor:;
+- (void)setCapsuleBkgColor:;
+- (void)setCapsuleCornerRadius:;
+- (id)capsuleCornerRadius;
+- (id)capsuleBkgColor;
+- (id)capsuleTextColor;
+- (void)capsuleDidTap:;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)iconName;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (void)setIconName:;
+- (id)dataSource;
+@end

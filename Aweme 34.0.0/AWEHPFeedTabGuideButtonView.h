@@ -1,0 +1,37 @@
+@interface AWEHPFeedTabGuideButtonView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) DUXBaseLabel descriptionLabel;
+@property (nonatomic) DUXBaseLabel actionLabel;
+@property (nonatomic) UIView divider;
+@property (nonatomic) AWEHPFeedTabGuideButtonViewConfig config;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) <AWEPlayInteractionBottomButtonViewDelegateProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (void)clickJumpGuideButton;
+- (id)p_getLabelFont;
+- (double)minActionLabelWidth;
+- (void)p_setupButtonStyle;
+- (void)setConfig:;
+- (id)delegate;
+- (void)setDescriptionLabel:;
+- (id)initWithConfig:;
+- (id)config;
+- (id)contentView;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)descriptionLabel;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)actionLabel;
+- (void)setActionLabel:;
+- (id)divider;
+- (void)setDivider:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEBottomSupernatantView : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSURL imageURL;
+@property (nonatomic) UIImage showImage;
+@property (nonatomic) UIView onlineView;
+@property (nonatomic) UIImageView secondImageView;
+@property (nonatomic) NSURL secondImageURL;
+- (id)secondImageView;
+- (void)setSecondImageView:;
+- (void)_createUIComponents;
+- (void)setOnlineView:;
+- (id)onlineView;
+- (id)secondImageURL;
+- (id)initWithText:imageURLs:;
+- (id)initWithText:imageURL:online:;
+- (id)initWithText:imageURL:;
+- (id)initWithText:image:imageSize:;
+- (void)setSecondImageURL:;
+- (id)textLabel;
+- (void)setText:;
+- (id)iconView;
+- (id)text;
+- (void)setIconView:;
+- (id)imageURL;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setImageView:;
+- (void)setImageURL:;
+- (id)imageView;
+- (void)setTextLabel:;
+- (void)setShowImage:;
+- (id)showImage;
+@end

@@ -1,0 +1,38 @@
+@interface AWEDoubleColumnSearchMerchandiseUIInfoModel : MTLModel
+@property (nonatomic) q UIStyle;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString preTitle;
+@property (nonatomic) NSString bgImgUrl;
+@property (nonatomic) NSString magnifierImgUrl;
+@property (nonatomic) q activityCardBottom;
+@property (nonatomic) BOOL shouldReplaceQuery;
+@property (nonatomic) BOOL isInBackground;
+@property (nonatomic) BOOL isInRectangleBackground;
+@property (nonatomic) Q cornerType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bgImgUrl;
+- (void)setBgImgUrl:;
+- (void)setIsInBackground:;
+- (long long)activityCardBottom;
+- (void)setActivityCardBottom:;
+- (id)preTitle;
+- (void)setPreTitle:;
+- (long long)UIStyle;
+- (void)setUIStyle:;
+- (BOOL)isInRectangleBackground;
+- (id)magnifierImgUrl;
+- (BOOL)shouldReplaceQuery;
+- (void)setMagnifierImgUrl:;
+- (void)setShouldReplaceQuery:;
+- (void)setIsInRectangleBackground:;
+- (void).cxx_destruct;
+- (BOOL)isInBackground;
+- (id)title;
+- (void)setTitle:;
+- (unsigned long long)cornerType;
+- (void)setCornerType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface AWEAdCustomHeaderWebViewNaviBar : UIView
+@property (nonatomic) UIImageView backButton;
+@property (nonatomic) UIImageView reportButton;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEAdCustomHeaderWebViewUserFollowButton followButton;
+@property (nonatomic) AWEAdCustomHeaderWebViewUserAvatarView avatar;
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString barType;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)userNameLabel;
+- (void)setUserNameLabel:;
+- (void)setBarType:;
+- (id)reportButton;
+- (id)followButton;
+- (void)updateViewWithModelIfNeed:;
+- (void)updateContentViewWithModel:;
+- (void)jumpToUserProfileWithGesture:;
+- (void)setFollowButton:;
+- (void)updateContentViewConstraintsWithModel:;
+- (void)updateNavigationButtonConstraintsWithModel:;
+- (void)setReportButton:;
+- (id)backButton;
+- (id)barType;
+- (id)initWithModel:;
+- (void)setBackButton:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)hitTest:withEvent:;
+- (id)avatar;
+- (void)setAvatar:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+@end

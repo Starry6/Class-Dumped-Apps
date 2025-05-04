@@ -1,0 +1,2 @@
+@interface AWEIMConsecutiveChatSettingRegister : NSObject
+@end

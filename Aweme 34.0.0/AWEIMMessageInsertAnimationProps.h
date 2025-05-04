@@ -1,0 +1,2 @@
+@interface AWEIMMessageInsertAnimationProps : AWEIMUIViewPresenterProps
+@end

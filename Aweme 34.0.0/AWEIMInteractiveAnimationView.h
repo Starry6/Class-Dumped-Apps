@@ -1,0 +1,31 @@
+@interface AWEIMInteractiveAnimationView : UIView
+@property (nonatomic) IESLiveVideoGiftController player;
+@property (nonatomic) NSString currentFilePath;
+@property (nonatomic) @? willPlayBlock;
+@property (nonatomic) @? didPlayBlock;
+@property (nonatomic) @? didDismissBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)didDismissBlock;
+- (void)setDidDismissBlock:;
+- (void)didFinishPlayingWithError:;
+- (void)p_setupViews;
+- (void)playWithFilePath:onTargetView:frame:;
+- (void)setDidPlayBlock:;
+- (void)p_autoDismiss;
+- (id)willPlayBlock;
+- (id)didPlayBlock;
+- (void)dismissWithPlayFinished:success:;
+- (void)setWillPlayBlock:;
+- (void)p_checkResourcesWithDirectoryPath:resourceName:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (id)player;
+- (void)setPlayer:;
+- (void).cxx_destruct;
+- (id)currentFilePath;
+- (void)setCurrentFilePath:;
+@end

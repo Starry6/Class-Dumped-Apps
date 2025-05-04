@@ -1,0 +1,33 @@
+@interface AWELongPressPanelDataManager : NSObject
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) NSDictionary pageScenesAlreadyRequestMap;
+@property (nonatomic) NSSet pageScenesAlreadyRequest;
+- (void)setMmkv:;
+- (id)mmkv;
+- (id)aAWEFeedModuleServiceDOUYINJXAdapter;
+- (id)currentSceneIdentifier;
+- (BOOL)enableGeneralConfigWithSceneIdentifier:;
+- (id)pageScenesAlreadyRequest;
+- (BOOL)shouldUseDefaultConfigWithSceneIdentifier:;
+- (id)effectiveListForOldPanel;
+- (BOOL)shouldRequestPanelConfigWithAwemeModel:;
+- (id)getPanelConfigWithAweme:;
+- (void)requestPanelConfigWithAwemeModel:completion:;
+- (id)mmkvKeyForSceneToDataHashDict;
+- (id)panelConfigDefaultDataHash;
+- (void)updatePanelConfigWithLastHash:responseModel:sceneIdentifier:;
+- (void)updatePageScenesAlreadyRequestWithScenes:;
+- (void)savePanelConfigWithResponseModel:sceneIdentifier:;
+- (id)mmkvKeyForDataHashSet;
+- (id)pageScenesAlreadyRequestMap;
+- (id)keyForPageScenesAlreadyRequest;
+- (void)setPageScenesAlreadyRequestMap:;
+- (BOOL)enableOldPanelGenralConfigWithSceneIdentifier:;
+- (void)preLoadPanelConfigIfNeedWithAwemeModel:;
+- (id)getDefaultPanelConfigWithAweme:;
+- (void)setPageScenesAlreadyRequest:;
+- (void).cxx_destruct;
++ (BOOL)enableModernLongPressPanelConfigWithSceneIdentifier:;
++ (Class)aAWEFeedModuleServiceDOUYINJXAdapterClass;
++ (id)effectiveListForModernPanel;
+@end

@@ -1,0 +1,35 @@
+@interface AWEAwemeFeedBGPlayAutoNextController : AWEAwemeNewDetailBaseController
+@property (nonatomic) BOOL isLoadMoreNoMoreData;
+@property (nonatomic) BOOL isDidAppear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)tableView:didEndDisplayingCellBeforeReset:forRowAtIndexPath:;
+- (void)loadMoreCompletion:error:isFooterRefreshing:;
+- (void)didEndConfigingCell:atIndexPath:tableView:;
+- (BOOL)isIndexValid:;
+- (void)setIsDidAppear:;
+- (void)handleFeedAutoPlayNextNotification:;
+- (BOOL)isDidAppear;
+- (void)setIsLoadMoreNoMoreData:;
+- (BOOL)isLoadMoreNoMoreData;
+- (BOOL)shouldEnableBGPlayAutoNextFeature;
+- (void)dismissMixPanel;
+- (void)updatePlayerVideoPlayEnterMethod:;
+- (void)playNext:;
+- (BOOL)tryToPlayWithIndex:isNext:;
+- (void)playWithIndex:isNext:;
+- (void)trackBackgroundParamsForEvent:;
+- (void)playPre;
+- (BOOL)shouldShowPlayChangeForRemoteControl;
+- (BOOL)shouldEnablePlayPreForRemoteControl;
+- (void)handleBackgroundPlayPrev;
+- (void)handleBackgroundPlayNext;
+- (id)init;
+- (void)viewDidLoad;
+- (void)appWillResignActive:;
+- (void)viewDidDisappear:;
+- (void)viewDidAppear:;
+- (void)reset;
+@end

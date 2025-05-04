@@ -1,0 +1,31 @@
+@interface AWEFeedRelatedVideoCardGuideView : UIView
+@property (nonatomic) NSString title;
+@property (nonatomic) UIView guideMaskView;
+@property (nonatomic) DUXLottieView lottieView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIPanGestureRecognizer horizontalPan;
+@property (nonatomic) @? dismissBlock;
+- (id)lottieView;
+- (void)setLottieView:;
+- (void)addPanGestureRecognizer;
+- (id)getDUXLottieName;
+- (id)guideMaskView;
+- (void)setGuideMaskView:;
+- (void)setHorizontalPan:;
+- (id)horizontalPan;
+- (void)disMiss;
+- (id)initWithFrame:withTitle:;
+- (void)dealloc;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setTitle:;
+- (void)setupView;
+- (void)handlePanGesture:;
+- (void)tap;
+- (void)autoRemove;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+@end

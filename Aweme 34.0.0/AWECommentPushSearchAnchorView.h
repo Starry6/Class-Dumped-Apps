@@ -1,0 +1,38 @@
+@interface AWECommentPushSearchAnchorView : UIView
+@property (nonatomic) BOOL isBgWhite;
+@property (nonatomic) double maxWidth;
+@property (nonatomic) @? itemClickBlock;
+@property (nonatomic) @? itemsDisplayBlock;
+@property (nonatomic) AWEIndividualWordModel model;
+@property (nonatomic) UIView titleView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEPushSearchAnchorItemView itemView;
+@property (nonatomic) double titleViewWidth;
+- (BOOL)isBgWhite;
+- (void)setIsBgWhite:;
+- (id)itemClickBlock;
+- (void)setItemClickBlock:;
+- (id)itemsDisplayBlock;
+- (void)setItemsDisplayBlock:;
+- (void)updateUITheme:;
+- (void)trackPushSearchAnchorShowIfNeeded;
+- (void)setTitleViewWidth:;
+- (double)titleViewWidth;
+- (void)itemDidClicked:;
+- (void)setModel:;
+- (id)titleView;
+- (void)setTitleView:;
+- (id)initWithFrame:;
+- (double)maxWidth;
+- (id)model;
+- (void)setTitleLabel:;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)itemView;
+- (void)setItemView:;
+- (void)updateWithModel:;
+- (void)updateItem;
+- (void)updateTitleView;
++ (id)createInitView;
+@end

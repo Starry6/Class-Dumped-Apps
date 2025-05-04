@@ -1,0 +1,31 @@
+@interface AWEIMShareNoticeMessageContentView : UIView
+@property (nonatomic) UIView awemeCoverBGView;
+@property (nonatomic) UIImageView awemeCoverImageView;
+@property (nonatomic) UIImageView playIconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) AWEIMShareNoticeMessageContentProps props;
+- (void)p_addGesture;
+- (void)p_addSubviews;
+- (id)playIconView;
+- (void)setPlayIconView:;
+- (void)p_initProps;
+- (void)updateWithProps:;
+- (void)p_addConstraint;
+- (void)p_onTap;
+- (id)awemeCoverImageView;
+- (void)setAwemeCoverImageView:;
+- (id)awemeCoverBGView;
+- (void)setAwemeCoverBGView:;
+- (id)props;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (id)tapAction;
+- (void)setTapAction:;
+- (void)setProps:;
+@end

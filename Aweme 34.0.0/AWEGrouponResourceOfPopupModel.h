@@ -1,0 +1,32 @@
+@interface AWEGrouponResourceOfPopupModel : MTLModel
+@property (nonatomic) NSString openSessionID;
+@property (nonatomic) AWEGrouponResourceOfCommonData commonData;
+@property (nonatomic) NSString uiConfig;
+@property (nonatomic) BOOL canDegrade;
+@property (nonatomic) BOOL needInterceptAction;
+@property (nonatomic) NSArray exclusiveCardList;
+@property (nonatomic) q pageType;
+@property (nonatomic) NSString contentURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCommonData:;
+- (id)uiConfig;
+- (id)commonData;
+- (BOOL)canDegrade;
+- (void)setUiConfig:;
+- (id)openSessionID;
+- (id)exclusiveCardList;
+- (BOOL)needInterceptAction;
+- (void)setNeedInterceptAction:;
+- (void)setOpenSessionID:;
+- (void)setCanDegrade:;
+- (void)setExclusiveCardList:;
+- (id)contentURL;
+- (void)setPageType:;
+- (void).cxx_destruct;
+- (long long)pageType;
+- (void)setContentURL:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

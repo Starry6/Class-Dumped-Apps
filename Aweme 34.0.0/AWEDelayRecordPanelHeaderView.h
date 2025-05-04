@@ -1,0 +1,33 @@
+@interface AWEDelayRecordPanelHeaderView : UIView
+@property (nonatomic) UILabel countdownTitleLabel;
+@property (nonatomic) UIView countdownButtonContainerView;
+@property (nonatomic) UILabel recordModeTitleLabel;
+@property (nonatomic) UIView recordModeButtonContainerView;
+@property (nonatomic) UIButton leftCountdownOptionButton;
+@property (nonatomic) UIButton rightCountdownOptionButton;
+@property (nonatomic) UIButton leftRecordModeOptionButton;
+@property (nonatomic) UIButton rightRecordModeOptionButton;
+- (void)addSubviews;
+- (void)addButtonCornerMaskFor:;
+- (void)updateRecordModeOptionButtonState:;
+- (void)setSelectedRecordModeButtonWithDelayType:;
+- (id)countdownTitleLabel;
+- (id)countdownButtonContainerView;
+- (id)leftCountdownOptionButton;
+- (id)rightCountdownOptionButton;
+- (id)recordModeTitleLabel;
+- (id)recordModeButtonContainerView;
+- (id)leftRecordModeOptionButton;
+- (id)rightRecordModeOptionButton;
+- (void)setSelectedCountdownButtonWithDelayMode:;
+- (void)setLeftCountdownOptionButton:;
+- (void)setRightCountdownOptionButton:;
+- (void)setLeftRecordModeOptionButton:;
+- (void)setRightRecordModeOptionButton:;
+- (void)setCountdownTitleLabel:;
+- (void)setCountdownButtonContainerView:;
+- (void)setRecordModeTitleLabel:;
+- (void)setRecordModeButtonContainerView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMNewcomerReportTextMessageViewModel : AWEIMTextMessageViewModel
+@property (nonatomic) <IESIMMessageProtocol> iesMsg;
+@property (nonatomic) BOOL disableRequest;
+@property (nonatomic) Q newcomerReportType;
+@property (nonatomic) BOOL hasWelcome;
+@property (nonatomic) NSArray welcomerUrlList;
+- (id)iesMsg;
+- (void)setIesMsg:;
+- (void)setupWithMessage:;
+- (unsigned long long)newcomerReportType;
+- (void)cellAppear;
+- (BOOL)hasWelcome;
+- (id)welcomerUrlList;
+- (void)tapWelcome;
+- (void)setNewcomerReportType:;
+- (void)setupNewcomerReportTypeReport:;
+- (void)report_cellAppear;
+- (void)report_tapWelcome;
+- (void)setHasWelcome:;
+- (void)setWelcomerUrlList:;
+- (BOOL)disableRequest;
+- (void)setDisableRequest:;
+- (void)report_updateDataWithAWEIMNewcomerWelcomerListInfo:;
+- (BOOL)report_isWelcomeOvertime;
+- (void)report_tapWelcomeTrackerWithHasWelcome:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)conversation;
+- (void)setConversation:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEHPLandingStrategyModel : MTLModel
+@property (nonatomic) NSString pitayaTraceId;
+@property (nonatomic) NSString strategyId;
+@property (nonatomic) NSString strategyType;
+@property (nonatomic) NSString tabId;
+@property (nonatomic) q expirationTime;
+@property (nonatomic) NSDictionary bizParams;
+@property (nonatomic) NSDictionary strategyConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)strategyConfig;
+- (id)pitayaTraceId;
+- (void)setPitayaTraceId:;
+- (id)bizParams;
+- (void)setStrategyType:;
+- (void)setStrategyConfig:;
+- (void)setBizParams:;
+- (id)strategyType;
+- (id)strategyId;
+- (void)setStrategyId:;
+- (BOOL)isValidWithError:;
+- (long long)expirationTime;
+- (void)setExpirationTime:;
+- (void).cxx_destruct;
+- (void)setTabId:;
+- (id)tabId;
++ (id)JSONKeyPathsByPropertyKey;
+@end

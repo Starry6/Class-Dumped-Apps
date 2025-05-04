@@ -1,0 +1,2 @@
+@interface AWERecordBeautyNoneItemModel : AWERecordBeautyItemModel
+@end

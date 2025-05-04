@@ -1,0 +1,37 @@
+@interface AWEPostPageSlidesHandler : NSObject
+@property (nonatomic) ACCVideoPublishContextSnap originSnap;
+@property (nonatomic) q needSaveBackToPublishPageSignal;
+@property (nonatomic) q noSaveBackToPublishPageSignal;
+@property (nonatomic) q publishPageJumpToEditPageSignal;
+@property (nonatomic) @? getTableViewOffsetByCoverSize;
+@property (nonatomic) BOOL isSyncingData;
+@property (nonatomic) <AWEPostPageContext> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindServices:;
+- (void)updateMusicInfo;
+- (void)originContextSnap;
+- (BOOL)isContextEdited;
+- (BOOL)isPublishTitleEdited;
+- (BOOL)isImagesEdited;
+- (long long)needSaveBackToPublishPageSignal;
+- (long long)noSaveBackToPublishPageSignal;
+- (long long)publishPageJumpToEditPageSignal;
+- (id)getTableViewOffsetByCoverSize;
+- (void)setGetTableViewOffsetByCoverSize:;
+- (BOOL)isSyncingData;
+- (void)setIsSyncingData:;
+- (void)sendNeedSaveBackToPublishPage;
+- (void)sendNoSaveBackToPublishPage;
+- (void)sendJumpToEditPage;
+- (void)setNeedSaveBackToPublishPageSignal:;
+- (void)setNoSaveBackToPublishPageSignal:;
+- (void)setPublishPageJumpToEditPageSignal:;
+- (void)setOriginSnap:;
+- (id)originSnap;
+- (void).cxx_destruct;
+- (id)context;
++ (void)_aweLazyRegisterPostPage;
+@end

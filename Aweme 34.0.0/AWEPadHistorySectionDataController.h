@@ -1,0 +1,33 @@
+@interface AWEPadHistorySectionDataController : AWEListDataController
+@property (nonatomic) NSObject<OS_dispatch_group> group;
+@property (nonatomic) q episodeHistoryCursor;
+@property (nonatomic) q seriesHistoryCursor;
+@property (nonatomic) BOOL isEpisodeRequestOnAir;
+@property (nonatomic) BOOL isSeriesRequestOnAir;
+@property (nonatomic) BOOL episodeHistoryHasMore;
+@property (nonatomic) BOOL seriesHistoryHasMore;
+@property (nonatomic) AWEPadBaseSectionViewModel<AWEPLVSectionViewModelProtocol> containerSection;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)setContainerSection:;
+- (void)fetchEpisodeSectionDataWithError:;
+- (void)fetchSeriesHistoryDataWithError:;
+- (BOOL)isEpisodeRequestOnAir;
+- (void)setIsEpisodeRequestOnAir:;
+- (long long)episodeHistoryCursor;
+- (id)containerSection;
+- (void)setEpisodeHistoryCursor:;
+- (BOOL)isSeriesRequestOnAir;
+- (void)setIsSeriesRequestOnAir:;
+- (long long)seriesHistoryCursor;
+- (void)setSeriesHistoryCursor:;
+- (BOOL)episodeHistoryHasMore;
+- (void)setEpisodeHistoryHasMore:;
+- (BOOL)seriesHistoryHasMore;
+- (void)setSeriesHistoryHasMore:;
+- (id)init;
+- (void)setGroup:;
+- (id)group;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+@end

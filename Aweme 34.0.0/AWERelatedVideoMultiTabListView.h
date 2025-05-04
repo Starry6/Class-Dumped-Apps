@@ -1,0 +1,31 @@
+@interface AWERelatedVideoMultiTabListView : UIView
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) NSArray tagList;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) <AWERelatedVideoMultiTabListViewDelegate> delegate;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tagList;
+- (void)setTagList:;
+- (void)updateSelectedIndex:;
+- (void)updateWithTagList:selectedIndex:;
+- (id)collectionView;
+- (void)setSelectedIndex:;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (long long)selectedIndex;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)bottomLine;
+- (void)setBottomLine:;
+@end

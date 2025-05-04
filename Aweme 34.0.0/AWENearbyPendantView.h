@@ -1,0 +1,32 @@
+@interface AWENearbyPendantView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) LOTAnimationView lotAnimationView;
+@property (nonatomic) YYAnimatedImageView imageView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UITapGestureRecognizer tapGestureRecognizer;
+@property (nonatomic) <AWENearbyPendantViewDelegate> delegate;
+- (void)__buildUI;
+- (void)__layoutUI;
+- (void)__configUI;
+- (void)__close:;
+- (void)__tap:;
+- (void)removeSubViewContent;
+- (void)setLotAnimationView:;
+- (id)lotAnimationView;
+- (void)__reBuildLottieAnimationViewWithFilePath:;
+- (void)__reBuildImageViewWithURLmodel:;
+- (void)setUpLotAnimationViewWithFilePath:;
+- (void)setUpImageViewWithURLModel:;
+- (void)setTapGestureRecognizer:;
+- (id)delegate;
+- (id)tapGestureRecognizer;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

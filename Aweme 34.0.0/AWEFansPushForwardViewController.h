@@ -1,0 +1,36 @@
+@interface AWEFansPushForwardViewController : UIViewController
+@property (nonatomic) AWEFansPushForwardDataController dataController;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UILabel loadMoreFooterLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (void)setDataController:;
+- (void)p_loadMoreData;
+- (void)p_refreshData:;
+- (void)p_backBtnClicked:;
+- (id)loadMoreFooterLabel;
+- (void)trackClickFowardCellAvaterAreaWithModel:;
+- (void)p_enterProfileWith:;
+- (void)setLoadMoreFooterLabel:;
+- (id)tableView:viewForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (double)tableView:heightForHeaderInSection:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
+- (id)dataController;
+@end

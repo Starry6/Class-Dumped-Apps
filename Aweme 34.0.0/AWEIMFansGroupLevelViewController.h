@@ -1,0 +1,31 @@
+@interface AWEIMFansGroupLevelViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEIMFansGroupLevelViewModel viewModel;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)backButtonClickedAction:;
+- (id)fontOfRuleDescriptionText;
+- (id)initWithViewModel:completionBlock:;
+- (void)viewWillDisappear:;
+- (id)tableView:viewForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (double)tableView:heightForHeaderInSection:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
+- (void)setupUI;
+@end

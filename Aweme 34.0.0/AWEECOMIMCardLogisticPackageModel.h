@@ -1,0 +1,30 @@
+@interface AWEECOMIMCardLogisticPackageModel : MTLModel
+@property (nonatomic) NSString com;
+@property (nonatomic) NSString goods_num;
+@property (nonatomic) NSString goods_img;
+@property (nonatomic) NSString logistics_company;
+@property (nonatomic) NSString logistics_num;
+@property (nonatomic) NSString package_name;
+@property (nonatomic) NSArray data;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)com;
+- (void)setCom:;
+- (id)goods_num;
+- (void)setGoods_num:;
+- (id)goods_img;
+- (void)setGoods_img:;
+- (id)logistics_company;
+- (void)setLogistics_company:;
+- (id)logistics_num;
+- (void)setLogistics_num:;
+- (id)package_name;
+- (void)setPackage_name:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)dataJSONTransformer;
+@end

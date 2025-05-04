@@ -1,0 +1,36 @@
+@interface AWESearchTabGuideActionModel : AWEBaseApiModel
+@property (nonatomic) q ID;
+@property (nonatomic) q showNum;
+@property (nonatomic) q clickNum;
+@property (nonatomic) q lastShowTime;
+@property (nonatomic) q lastClickTime;
+@property (nonatomic) q timeStartInterval;
+@property (nonatomic) q globalTimeStartInterval;
+@property (nonatomic) q showNumInterval;
+@property (nonatomic) q globalShowNumInterval;
+@property (nonatomic) q bubbleShowTimeToday;
+@property (nonatomic) q bubblebanedInDay;
+- (void)setLastShowTime:;
+- (long long)lastShowTime;
+- (long long)showNum;
+- (long long)clickNum;
+- (long long)lastClickTime;
+- (long long)globalTimeStartInterval;
+- (long long)timeStartInterval;
+- (long long)globalShowNumInterval;
+- (long long)showNumInterval;
+- (void)setShowNum:;
+- (void)setTimeStartInterval:;
+- (void)setShowNumInterval:;
+- (void)setGlobalTimeStartInterval:;
+- (void)setGlobalShowNumInterval:;
+- (void)setClickNum:;
+- (void)setLastClickTime:;
+- (long long)bubbleShowTimeToday;
+- (void)setBubbleShowTimeToday:;
+- (void)setBubblebanedInDay:;
+- (long long)bubblebanedInDay;
+- (void)setID:;
+- (long long)ID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

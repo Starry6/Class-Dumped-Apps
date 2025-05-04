@@ -1,0 +1,36 @@
+@interface AWECloudAlbumDataManager : NSObject
+@property (nonatomic) BOOL hasMoreRemoteData;
+@property (nonatomic) BOOL isFetchingData;
+@property (nonatomic) NSString nextCursor;
+@property (nonatomic) NSMutableArray items;
+@property (nonatomic) NSArray selectedAssets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)nextCursor;
+- (void)setNextCursor:;
+- (void)setSelectedAssets:;
+- (void)setIsFetchingData:;
+- (void)initItemData;
+- (BOOL)hasMoreRemoteData;
+- (id)EcParams;
+- (void)setHasMoreRemoteData:;
+- (BOOL)handleAlbumListData:;
+- (void)trackCreateAlbumStatus:;
+- (id)getItemAtIndex:;
+- (void)fetchRemoteAlbumList:;
+- (void)createNewAlbum:complete:;
+- (void)getNewAlbumThumbnail:;
+- (void)trackAlbumSelected:;
+- (id)transferAWEAssetModelToPHAsset:;
+- (id)init;
+- (id)items;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)addItem:;
+- (id)initWithAssets:;
+- (long long)countOfItems;
+- (id)selectedAssets;
+- (BOOL)isFetchingData;
+@end

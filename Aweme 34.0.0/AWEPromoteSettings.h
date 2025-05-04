@@ -1,0 +1,32 @@
+@interface AWEPromoteSettings : AWEBaseApiModel
+@property (nonatomic) NSNumber enable;
+@property (nonatomic) NSNumber popupLimit;
+@property (nonatomic) NSNumber popupInterval;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString linkText;
+@property (nonatomic) NSString popupURL;
+@property (nonatomic) NSNumber clickType;
+- (id)clickType;
+- (void)setClickType:;
+- (id)popupInterval;
+- (void)setPopupInterval:;
+- (long long)confirmClickType;
+- (id)popupLimit;
+- (id)popupURL;
+- (void)setPopupLimit:;
+- (void)setPopupURL:;
+- (id)enable;
+- (id)content;
+- (id)message;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setMessage:;
+- (void)setEnable:;
+- (void)setTitle:;
+- (id)linkText;
+- (void)setLinkText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

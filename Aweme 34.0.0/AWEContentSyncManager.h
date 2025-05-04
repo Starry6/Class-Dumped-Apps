@@ -1,0 +1,35 @@
+@interface AWEContentSyncManager : NSObject
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) UIWindow contentSyncAuthWindow;
+@property (nonatomic) UIWindow keyWindow;
+@property (nonatomic) AWEVCDImportFansViewController authViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applicationDidEnterBackgroundInOAuthMgr:;
+- (void)doHideOAuthViewController;
+- (void)endObservationDidAppEnterBackground;
+- (id)authViewController;
+- (void)startObservationDidAppEnterBackground;
+- (void)setAuthViewController:;
+- (BOOL)application:openURL:;
+- (void)registerProduct;
+- (void)bindConfigutation;
+- (BOOL)isAppSupported;
+- (void)showTeenAlert:;
+- (id)contentSyncAuthWindow;
+- (BOOL)askForContentSyncDidReceiveReq:completion:;
+- (void)syncContent:completionBlock:;
+- (void)setContentSyncAuthWindow:;
+- (void)dealloc;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setup;
+- (BOOL)isAppInstalled;
+- (void)didReceiveResponse:;
+- (void).cxx_destruct;
+- (id)keyWindow;
+- (void)setKeyWindow:;
++ (id)sharedInstance;
+@end

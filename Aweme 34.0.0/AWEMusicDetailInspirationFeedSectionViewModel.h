@@ -1,0 +1,36 @@
+@interface AWEMusicDetailInspirationFeedSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWEInspirationMusicAwemeListDataController dataController;
+@property (nonatomic) q hotSpotCount;
+@property (nonatomic) AWEMusicDetailTrackInstance trackInstance;
+@property (nonatomic) BOOL feedListPerfomanceHasTracked;
+@property (nonatomic) NSArray firstPageVideoLists;
+@property (nonatomic) AWEMusicDetailDataContext dataContext;
+@property (nonatomic) NSError networkError;
+- (void)setDataController:;
+- (id)dataContext;
+- (id)networkError;
+- (void)setNetworkError:;
+- (void)trackFeedEnterWithModel:;
+- (long long)hotSpotCount;
+- (void)setHotSpotCount:;
+- (id)fetchAwemeListExtraParams;
+- (id)trackInstance;
+- (void)prepareTrackInstance:;
+- (void)setDataContext:;
+- (void)setTrackInstance:;
+- (void)appendSkeletonModels;
+- (void)fetchVideoListDataWithCompletion:;
+- (void)loadMoreVideoListDataWithCompletion:;
+- (void)appendFirstPageVideoDataListModels;
+- (void)trackFeedShow:index:;
+- (void)updateFeedListPerfomanceHasTracked:;
+- (id)commonLogExtraDictForFeed;
+- (unsigned long long)numberOfSkeletonModels;
+- (id)firstPageVideoLists;
+- (void)setFirstPageVideoLists:;
+- (void)limitHotSpotTag;
+- (void)setFeedListPerfomanceHasTracked:;
+- (BOOL)feedListPerfomanceHasTracked;
+- (void).cxx_destruct;
+- (id)dataController;
+@end

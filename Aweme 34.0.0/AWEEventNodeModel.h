@@ -1,0 +1,31 @@
+@interface AWEEventNodeModel : AWEBaseApiModel
+@property (nonatomic) q nodeID;
+@property (nonatomic) q nodeType;
+@property (nonatomic) Q label;
+@property (nonatomic) NSString eventTime;
+@property (nonatomic) NSString nodeDesc;
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) AWENewHotSearchModel hotInfoModel;
+@property (nonatomic) AWEVideoInfoModel videoInfoModel;
+- (id)hotInfoModel;
+- (id)nodeDesc;
+- (id)videoInfoModel;
+- (void)setNodeDesc:;
+- (void)setHotInfoModel:;
+- (void)setVideoInfoModel:;
+- (void)setLabel:;
+- (long long)nodeType;
+- (long long)nodeID;
+- (unsigned long long)label;
+- (void).cxx_destruct;
+- (void)setEventTime:;
+- (id)eventTime;
+- (void)setNodeID:;
+- (void)setNodeType:;
+- (id)coverURL;
+- (void)setCoverURL:;
++ (id)coverURLJSONTransformer;
++ (id)hotInfoModelJSONTransformer;
++ (id)videoInfoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWENearbyGrouponHomepageCacheManager : NSObject
+@property (nonatomic) q cacheValidTimeInHour;
+@property (nonatomic) q timeoutInterval;
+@property (nonatomic) q minUseCacheAwemeNum;
+@property (nonatomic) AWENearbyGrouponListDataLocalCache grouponListCacheInMem;
+- (void)fetchSettings;
+- (void)storeGrouponCacheWithListResponse:transformerList:;
+- (id)grouponListCacheInMem;
+- (id)getCacheToken;
+- (void)checkCacheVaild:resultBlk:;
+- (void)setCacheValidTimeInHour:;
+- (void)setMinUseCacheAwemeNum:;
+- (long long)getLynxContainerType;
+- (void)configCacheFlagAwemeList:;
+- (void)checkGrouponCacheValid:resultBlock:;
+- (void)setGrouponListCacheInMem:;
+- (BOOL)hasSaaSFeedInListResponse:;
+- (long long)minUseCacheAwemeNum;
+- (long long)cacheValidTimeInHour;
+- (void)loadGrouponListCacheToMemWithCompletion:clean:;
+- (void)clearGrouponListCacheInMem;
+- (long long)timeoutInterval;
+- (id)init;
+- (void)setTimeoutInterval:;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

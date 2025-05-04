@@ -1,0 +1,30 @@
+@interface AWEChallengeAssociatedMediaButtonModel : MTLModel
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) NSString name;
+@property (nonatomic) q playButtonType;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL hasPerchaseUrl;
+@property (nonatomic) q eid;
+@property (nonatomic) q aid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)playButtonType;
+- (void)setPlayButtonType:;
+- (BOOL)hasPerchaseUrl;
+- (void)setHasPerchaseUrl:;
+- (id)schema;
+- (void)setIconURL:;
+- (void)setSchema:;
+- (id)iconURL;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (long long)eid;
+- (void)setEid:;
+- (long long)aid;
+- (void)setAid:;
++ (id)iconURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

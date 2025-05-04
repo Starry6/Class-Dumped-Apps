@@ -1,0 +1,2 @@
+@interface AWEOfflineVideoCenterViewModel : AWEBaseListViewModel
+@end

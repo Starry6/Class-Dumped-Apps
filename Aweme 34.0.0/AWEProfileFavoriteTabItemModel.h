@@ -1,0 +1,31 @@
+@interface AWEProfileFavoriteTabItemModel : NSObject
+@property (nonatomic) Q tabType;
+@property (nonatomic) Q exposeType;
+@property (nonatomic) BOOL isAhead;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q count;
+@property (nonatomic) BOOL showLock;
+@property (nonatomic) BOOL showRedDot;
+@property (nonatomic) NSString redDotAccessibilityText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)showRedDot;
+- (unsigned long long)tabType;
+- (void)setShowRedDot:;
+- (id)redDotAccessibilityText;
+- (void)setRedDotAccessibilityText:;
+- (void)setTabType:;
+- (void)setExposeType:;
+- (BOOL)isAhead;
+- (unsigned long long)exposeType;
+- (void)setIsAhead:;
+- (void)setCount:;
+- (unsigned long long)count;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setShowLock:;
+- (BOOL)showLock;
+@end

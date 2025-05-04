@@ -1,0 +1,38 @@
+@interface AWEEvaluationVideoModel : MTLModel
+@property (nonatomic) NSString videoName;
+@property (nonatomic) NSString videoURLString;
+@property (nonatomic) NSString videoCodecName;
+@property (nonatomic) NSString videoProfile;
+@property (nonatomic) q videoWidth;
+@property (nonatomic) q videoHeight;
+@property (nonatomic) q videoNBFrames;
+@property (nonatomic) double videoDuration;
+@property (nonatomic) double videoBitRate;
+@property (nonatomic) double videoAVGFrameRate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)videoName;
+- (void)setVideoURLString:;
+- (id)videoURLString;
+- (void)setVideoCodecName:;
+- (id)videoProfile;
+- (void)setVideoProfile:;
+- (long long)videoNBFrames;
+- (void)setVideoNBFrames:;
+- (double)videoAVGFrameRate;
+- (void)setVideoAVGFrameRate:;
+- (void)setVideoWidth:;
+- (void)setVideoHeight:;
+- (long long)videoWidth;
+- (void).cxx_destruct;
+- (long long)videoHeight;
+- (double)videoDuration;
+- (void)setVideoBitRate:;
+- (double)videoBitRate;
+- (void)setVideoDuration:;
+- (id)videoCodecName;
+- (void)setVideoName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

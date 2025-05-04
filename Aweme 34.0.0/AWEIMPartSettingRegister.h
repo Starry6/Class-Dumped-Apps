@@ -1,0 +1,2 @@
+@interface AWEIMPartSettingRegister : NSObject
+@end

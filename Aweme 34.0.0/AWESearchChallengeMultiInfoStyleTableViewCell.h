@@ -1,0 +1,30 @@
+@interface AWESearchChallengeMultiInfoStyleTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView challengeCoverImageView;
+@property (nonatomic) UIImageView hashtagPlaceholderImageView;
+@property (nonatomic) YYLabel hashtagNameLabel;
+@property (nonatomic) UILabel infoLabel;
+@property (nonatomic) UIButton shootButton;
+@property (nonatomic) UIView hashtagNameLabelView;
+@property (nonatomic) @? shootCallback;
+- (void)configWithModel:;
+- (id)shootButton;
+- (void)setShootButton:;
+- (id)challengeCoverImageView;
+- (id)hashtagPlaceholderImageView;
+- (id)hashtagNameLabel;
+- (void)setChallengeCoverImageView:;
+- (void)setHashtagPlaceholderImageView:;
+- (void)setHashtagNameLabel:;
+- (id)hashtagNameLabelView;
+- (id)shootCallback;
+- (void)setShootCallback:;
+- (void)setHashtagNameLabelView:;
+- (void)setHighlighted:animated:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (id)infoLabel;
+- (void)setupUI;
+- (void)setInfoLabel:;
++ (id)identifier;
++ (double)cellHeight;
+@end

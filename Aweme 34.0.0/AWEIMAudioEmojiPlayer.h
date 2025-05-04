@@ -1,0 +1,33 @@
+@interface AWEIMAudioEmojiPlayer : NSObject
+@property (nonatomic) AWEIMAudioEmojiPlayConfig config;
+@property (nonatomic) AWEIMAudioPlayStatusObserver playObserver;
+@property (nonatomic) BOOL disableAutoPlayAfterDownloadFlag;
+@property (nonatomic) Q status;
+@property (nonatomic) <AWEIMAudioEmojiPlayerDelegate> delegate;
+- (void)handleAppWillResignActiveNotification:;
+- (void)p_initObserver;
+- (id)playObserver;
+- (void)p_stopAudioPlay;
+- (void)p_startAudioPlay;
+- (void)p_downloadAudioWithEmoticon:completion:;
+- (id)p_getPlayId;
+- (void)setPlayObserver:;
+- (void)p_updateStatusWithAudioPlayStatus:;
+- (void)setDisableAutoPlayAfterDownloadFlag:;
+- (void)p_realPlayAudioWithEmoticon:conversationID:;
+- (void)p_changeStatusTo:;
+- (BOOL)disableAutoPlayAfterDownloadFlag;
+- (void)didClickAudioEmoji;
+- (void)startPlayAudio;
+- (void)stopPlayAudio;
+- (void)prefetchAudioIfNeeded;
+- (id)currentEmoticonModel;
+- (void)setConfig:;
+- (id)delegate;
+- (void)setStatus:;
+- (id)initWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (void)setDelegate:;
+@end

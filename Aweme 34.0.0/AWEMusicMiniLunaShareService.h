@@ -1,0 +1,31 @@
+@interface AWEMusicMiniLunaShareService : NSObject
+@property (nonatomic) NSString musicId;
+@property (nonatomic) <MusicService> musicService;
+@property (nonatomic) <MusicService> secondaryMusicService;
+@property (nonatomic) AWEMiniLunaContainerViewController playerVC;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL releaseWhenExit;
+- (void)setMusicId:;
+- (id)musicId;
+- (id)musicService;
+- (void)setMusicService:;
+- (id)playerVC;
+- (void)setPlayerVC:;
+- (id)secondaryMusicService;
+- (void)setReleaseWhenExit:;
+- (BOOL)hasMoreOfScene:;
+- (void)feedViewDidLoad:;
+- (void)setSecondaryMusicService:;
+- (id)initWithMusicId:;
+- (BOOL)releaseWhenExit;
+- (void)dealloc;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)pushMiniVCWithWithMusicService:secondaryMusicPlayer:isVideo:extraParams:publicParams:musicId:;
++ (void)openMiniLunaWithMusicService:secondaryMusicPlayer:musicId:isVideo:extraParams:publicParams:completion:;
+@end

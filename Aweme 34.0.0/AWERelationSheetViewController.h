@@ -1,0 +1,34 @@
+@interface AWERelationSheetViewController : AFDSheetViewController
+@property (nonatomic) UIStackView contentStackView;
+@property (nonatomic) double keyboardHeight;
+@property (nonatomic) NSLayoutConstraint bottomConstraint;
+@property (nonatomic) AFDButton closeButton;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginEditingFirstTextField;
+- (void)commitChanges:;
+- (void)p_keyboardWillChangeFrame:;
+- (void)p_closeButtonTapped:;
+- (id)sectionOfClass:;
+- (void)viewWillDisappear:;
+- (id)init;
+- (double)keyboardHeight;
+- (void)dealloc;
+- (id)sections;
+- (void)viewDidLoad;
+- (id)bottomConstraint;
+- (void)viewDidDisappear:;
+- (void)setKeyboardHeight:;
+- (void)setSections:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setBottomConstraint:;
+- (id)contentStackView;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setContentStackView:;
+@end

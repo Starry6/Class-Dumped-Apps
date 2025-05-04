@@ -1,0 +1,32 @@
+@interface AWEIMInputBarCustomPlaceholderComponent_EnterpriseConversation : AWEIMComponentBase
+@property (nonatomic) AWEIMConversationContext conversationContext;
+@property (nonatomic) q strategy;
+@property (nonatomic) <AWEIMConversationUpdateInputBarCustomPlaceholderService> customePlaceholderService;
+@property (nonatomic) BOOL actionBarHasResolved;
+@property (nonatomic) NSDictionary placeholderTextDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)didFetchPeerFullDetailUser:;
+- (void)didFetchDynamicConfigWithResultConfig:;
+- (void)actionBarDisplayStatusDidChange:;
+- (void)didResolveEnterpriseQuickReplyInputActionBarWithResult:;
+- (void)setCustomePlaceholderService:;
+- (void)__tryResolveExperimentWithRoleIDs:;
+- (void)setActionBarHasResolved:;
+- (void)__tryReloadCustomPlaceholder;
+- (id)placeholderTextDict;
+- (BOOL)actionBarHasResolved;
+- (id)customePlaceholderService;
+- (void)setPlaceholderTextDict:;
+- (long long)strategy;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setStrategy:;
+- (id)conversationContext;
+- (void)setConversationContext:;
++ (BOOL)canCreateComponentWithContext:;
+@end

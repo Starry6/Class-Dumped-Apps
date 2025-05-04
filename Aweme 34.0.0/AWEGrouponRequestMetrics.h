@@ -1,0 +1,33 @@
+@interface AWEGrouponRequestMetrics : NSObject
+@property (nonatomic) q dns;
+@property (nonatomic) q tcp;
+@property (nonatomic) q ssl;
+@property (nonatomic) q send;
+@property (nonatomic) q wait;
+@property (nonatomic) q receive;
+@property (nonatomic) BOOL reuseConnect;
+@property (nonatomic) q duration;
+@property (nonatomic) q totalReceivedBytes;
+@property (nonatomic) q start;
+- (long long)ssl;
+- (long long)totalReceivedBytes;
+- (void)setSsl:;
+- (void)setTotalReceivedBytes:;
+- (long long)tcp;
+- (BOOL)reuseConnect;
+- (void)setTcp:;
+- (void)setReuseConnect:;
+- (void)setStart:;
+- (long long)wait;
+- (void)setDuration:;
+- (long long)duration;
+- (long long)start;
+- (long long)send;
+- (void)setSend:;
+- (void)setWait:;
+- (long long)receive;
+- (void)setReceive:;
+- (long long)dns;
+- (void)setDns:;
++ (id)createMetricsWithTimingInfo:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEHotSpotChannelViewModel : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL hasReportCacheMonitor;
+@property (nonatomic) BOOL hasFixPerfData;
+@property (nonatomic) AWEHotSpotChannelFeedViewModel feedViewModel;
+@property (nonatomic) AWEHotSpotChannelSkylightViewModel skylightViewModel;
+@property (nonatomic) AWEHotSpotPerformanceViewModel performanceViewModel;
+@property (nonatomic) AWEHotSpotChannelViewState viewState;
+@property (nonatomic) NSString enterMethod;
+- (id)referString;
+- (void)setEnterMethod:;
+- (void)setReferString:;
+- (id)enterMethod;
+- (id)initWithReferString:;
+- (id)feedViewModel;
+- (void)monitorChannelPreloadWithMonitorType:;
+- (BOOL)isFromPushAndShouldShowCapsuleView;
+- (BOOL)hasFixPerfData;
+- (id)performanceViewModel;
+- (void)setHasFixPerfData:;
+- (BOOL)hasReportCacheMonitor;
+- (void)setHasReportCacheMonitor:;
+- (BOOL)diableAutoUnfoldSkylightForPush;
+- (BOOL)hideSkyLightAndShowCapsuleView;
+- (void)fixPreloadDataOrCachePerfDataWithLoadMetric:isCache:;
+- (void)monitorCacheWithAwemeID:;
+- (id)skylightViewModel;
+- (void)setFeedViewModel:;
+- (void)setSkylightViewModel:;
+- (void)setPerformanceViewModel:;
+- (void).cxx_destruct;
+- (void)setViewState:;
+- (id)viewState;
+- (void)startObserver;
+@end

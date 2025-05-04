@@ -1,0 +1,31 @@
+@interface AWEPOIEXP3ButtonViewStyle : NSObject
+@property (nonatomic) double height;
+@property (nonatomic) double marginLeft;
+@property (nonatomic) double marginRight;
+@property (nonatomic) double paddingLeft;
+@property (nonatomic) double paddingRight;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIColor bgColor;
+- (id)titleColor;
+- (id)init;
+- (void)setHeight:;
+- (double)paddingLeft;
+- (void)setPaddingRight:;
+- (void)setCornerRadius:;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (id)titleFont;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (double)paddingRight;
+- (double)height;
+- (void)setPaddingLeft:;
+- (id)bgColor;
+- (void)setBgColor:;
+- (void)setMarginRight:;
+- (double)marginLeft;
+- (double)marginRight;
+- (void)setMarginLeft:;
+@end

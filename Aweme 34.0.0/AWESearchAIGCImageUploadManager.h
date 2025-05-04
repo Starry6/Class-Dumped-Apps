@@ -1,0 +1,35 @@
+@interface AWESearchAIGCImageUploadManager : NSObject
+@property (nonatomic) BOOL hasCanceled;
+@property (nonatomic) q startTimeStamps;
+@property (nonatomic) q endCreateRequestTimeStamps;
+@property (nonatomic) q receiveResponseTimeStamps;
+@property (nonatomic) q endTimeStamps;
+@property (nonatomic) q errorCode;
+@property (nonatomic) NSString errorMessage;
+@property (nonatomic) q monitoStatus;
+- (void)resetMonitor;
+- (void)uploadImage:completion:;
+- (void)handleResponse:error:completion:;
+- (double)nowTS;
+- (void)setStartTimeStamps:;
+- (void)setEndCreateRequestTimeStamps:;
+- (void)setReceiveResponseTimeStamps:;
+- (void)uploadCompletion:model:status:;
+- (long long)getMonitoStatusFrom:;
+- (void)setMonitoStatus:;
+- (void)trackUploadMonitor;
+- (void)setEndTimeStamps:;
+- (long long)endCreateRequestTimeStamps;
+- (long long)startTimeStamps;
+- (long long)receiveResponseTimeStamps;
+- (long long)endTimeStamps;
+- (long long)monitoStatus;
+- (void)setErrorCode:;
+- (long long)errorCode;
+- (void)cancel;
+- (id)errorMessage;
+- (void).cxx_destruct;
+- (void)setHasCanceled:;
+- (BOOL)hasCanceled;
+- (void)setErrorMessage:;
+@end

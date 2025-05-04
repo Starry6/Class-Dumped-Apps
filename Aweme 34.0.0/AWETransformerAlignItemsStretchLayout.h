@@ -1,0 +1,4 @@
+@interface AWETransformerAlignItemsStretchLayout : AWETransformerAlignItemsBaseLayout
+- (void)adjustChildElementsCrossSizeWithContainerCrossSize:;
+- (void)adjustChildElementsCrossAxisOffsetWithContainerCrossSize:;
+@end

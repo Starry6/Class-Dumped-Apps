@@ -1,0 +1,30 @@
+@interface AWELiveAudienceAccessServiceInfraConfig : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSDictionary contextParams;
+@property (nonatomic) NSDictionary clickParams;
+@property (nonatomic) NSDictionary firstShowParams;
+@property (nonatomic) BOOL enableMultiSegue;
+@property (nonatomic) NSDictionary roomQueryParams;
+@property (nonatomic) NSString distributionScene;
+@property (nonatomic) NSString sourceBtmToken;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)setSourceBtmToken:;
+- (id)sourceBtmToken;
+- (id)clickParams;
+- (void)setClickParams:;
+- (void)setFirstShowParams:;
+- (id)contextParams;
+- (void)setContextParams:;
+- (void)setDistributionScene:;
+- (void)setEnableMultiSegue:;
+- (void)setRoomQueryParams:;
+- (id)roomQueryParams;
+- (id)distributionScene;
+- (BOOL)enableMultiSegue;
+- (id)firstShowParams;
+- (void).cxx_destruct;
+@end

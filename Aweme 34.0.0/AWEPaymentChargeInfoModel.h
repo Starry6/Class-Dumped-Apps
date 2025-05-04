@@ -1,0 +1,35 @@
+@interface AWEPaymentChargeInfoModel : AWEBaseApiModel
+@property (nonatomic) BOOL isChargeContent;
+@property (nonatomic) BOOL isSubscribeContent;
+@property (nonatomic) BOOL hasPaid;
+@property (nonatomic) AWEPaymentPreviewConfigModel previewConfigModel;
+@property (nonatomic) BOOL useDemotion;
+@property (nonatomic) BOOL isDeviceOver;
+@property (nonatomic) NSString hasRightText;
+@property (nonatomic) BOOL disableAutoOpenPayPage;
+@property (nonatomic) NSString noRightText;
+@property (nonatomic) NSString maskText;
+- (id)previewConfigModel;
+- (BOOL)useDemotion;
+- (void)setUseDemotion:;
+- (BOOL)isSubscribeContent;
+- (void)setIsSubscribeContent:;
+- (BOOL)hasPaid;
+- (void)setHasPaid:;
+- (BOOL)isChargeContent;
+- (void)setIsChargeContent:;
+- (void)setPreviewConfigModel:;
+- (BOOL)isDeviceOver;
+- (void)setIsDeviceOver:;
+- (id)hasRightText;
+- (void)setHasRightText:;
+- (BOOL)disableAutoOpenPayPage;
+- (void)setDisableAutoOpenPayPage:;
+- (id)noRightText;
+- (void)setNoRightText:;
+- (id)maskText;
+- (void)setMaskText:;
+- (void).cxx_destruct;
++ (id)previewConfigModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

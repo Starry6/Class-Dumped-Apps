@@ -1,0 +1,34 @@
+@interface AWEIMSearchHistoryModel : NSObject
+@property (nonatomic) Q itemType;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSArray avatarURLList;
+@property (nonatomic) BOOL useSquareAvatar;
+@property (nonatomic) BOOL online;
+@property (nonatomic) BOOL isFormat;
+@property (nonatomic) BOOL shouldFilterInSeach;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getInKey;
+- (void)setAvatarURLList:;
+- (id)avatarURLList;
+- (BOOL)isFormat;
+- (BOOL)useSquareAvatar;
+- (void)setUseSquareAvatar:;
+- (BOOL)shouldFilterInSeach;
+- (void)setIsFormat:;
+- (void)setShouldFilterInSeach:;
+- (unsigned long long)itemType;
+- (void)setOnline:;
+- (id)itemID;
+- (void)setItemType:;
+- (void)setItemID:;
+- (unsigned long long)hash;
+- (BOOL)online;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (void)setName:;
+- (id)name;
+@end

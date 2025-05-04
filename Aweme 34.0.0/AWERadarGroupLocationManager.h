@@ -1,0 +1,34 @@
+@interface AWERadarGroupLocationManager : NSObject
+@property (nonatomic) AWERadarGroupLocation location;
+@property (nonatomic) AWERadarGroupLocation groupLocation;
+@property (nonatomic) AWELocationDisposable disposable;
+@property (nonatomic) AWELocationDisposable groupDisposable;
+- (void)setDisposable:;
+- (id)disposable;
+- (void)__trackEvent:params:;
+- (void)startUpdateLocationGroup;
+- (void)stopUpdateLocationGroup;
+- (void)requestBluetoothLocationInGroup:;
+- (id)groupDisposable;
+- (id)transLocation:;
+- (void)setGroupDisposable:;
+- (id)currentLocationGroup;
+- (void)requestCurrentLocationIfNeededInGroup:;
+- (id)init;
+- (id)location;
+- (void)setLocation:;
+- (BOOL)hasPermission;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)groupLocation;
+- (void)setGroupLocation:;
++ (void)showLocationAuthAlert:trackParams:descriptionContent:completion:cancelBlock:;
++ (BOOL)clearLocationCacheWhenStopUpdate;
++ (BOOL)isValidLongitude:;
++ (BOOL)isValidLatitude:;
++ (void)trackLocationAuthAction:insideRadar:trackParams:;
++ (void)trackLocationAuthViewShow:trackParams:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMNewHalfScreenMuteSettingsViewController : AWEIMHalfScreenSettingsViewController
+@property (nonatomic) <IESIMConversationProtocol> con;
+@property (nonatomic) AWEIMHalfScreenMuteSettingsViewModel viewModel;
+@property (nonatomic) BOOL switchIsSelected;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)halfScreenContainerVCWillDismiss:;
+- (id)con;
+- (void)setCon:;
+- (void)didClickCell:;
+- (void)didTapOnEditBtn;
+- (id)initWithCon:extraParams:;
+- (void)didSwitchClickSettingsCellViewModel:;
+- (void)dismissContainerWithAnimation:completion:;
+- (BOOL)switchIsSelected;
+- (void)setSwitchIsSelected:;
+- (BOOL)collectionView:shouldSelectItemAtIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)preferredContentSize;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
++ (id)containerOfViewControllerWithCon:extraParams:;
+@end

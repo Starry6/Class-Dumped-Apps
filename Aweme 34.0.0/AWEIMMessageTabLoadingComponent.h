@@ -1,0 +1,32 @@
+@interface AWEIMMessageTabLoadingComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMMessageTabNaviBarInterface> naviBarService;
+@property (nonatomic) Q loadingViewStatus;
+@property (nonatomic) AWEIMMessageTabLoadingView loadingView;
+@property (nonatomic) AWEIMMessageTabLoadingStatusMachine statusMachine;
+@property (nonatomic) <IESIMThrottleDebounceAction> statusDebounce;
+@property (nonatomic) <AWEIMMessageTabDisconnectedTipInterface> tipService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)setNaviBarService:;
+- (id)naviBarService;
+- (BOOL)needShowLoadingView;
+- (id)makeLoadingViewReplacing:;
+- (void)setTipService:;
+- (id)statusMachine;
+- (unsigned long long)loadingViewStatus;
+- (id)statusDebounce;
+- (void)setLoadingViewStatus:;
+- (id)tipService;
+- (void)p_handleLoadingStatusUpdate:;
+- (void)setStatusMachine:;
+- (void)setStatusDebounce:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

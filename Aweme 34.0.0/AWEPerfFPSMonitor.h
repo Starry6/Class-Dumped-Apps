@@ -1,0 +1,38 @@
+@interface AWEPerfFPSMonitor : NSObject
+@property (nonatomic) BOOL active;
+- (id)endSceneWithName:context:;
+- (id)beginSceneWithName:context:;
+- (void)updateExtra:forSceneWithName:context:;
+- (void)setupDisplayLinkPaused:;
+- (void)onAppNotification:;
+- (void)onHMDANROver:;
+- (void)logRecord:withScene:extra:;
+- (id)sceneWithName:context:;
+- (id)cancelSceneWithName:context:;
+- (id)beginWithKey:;
+- (void)logScene:;
+- (id)recordWithKey:;
+- (id)pauseWithKey:;
+- (id)pauseSceneWithName:context:;
+- (void)scene_onAppNotification:;
+- (id)endWithKey:;
+- (void)beginTrackHitchTimestamp;
+- (id)endTrackHitchTimestamp;
+- (void)startTrackerFirstMinuteUIFrame;
+- (BOOL)first_min_enabled;
+- (void)swizzled_onAppNotification:;
+- (void)reportFirstMinuteUIFrame:fromSceneName:fromVC:;
+- (void)endTrackerFirstMinuteUIFrameForGlobal;
+- (void)endTrackerFirstMinuteUIFrameForFeed;
+- (id)init;
+- (id).cxx_construct;
+- (void).cxx_destruct;
+- (BOOL)isActive;
+- (void)displayLinkDidUpdate:;
+- (void)setupNotifications;
++ (void)beginCustomTracking;
++ (void)endCustomTracking;
++ (BOOL)isCustomTracking;
++ (BOOL)isEnabled;
++ (id)sharedMonitor;
+@end

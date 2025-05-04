@@ -1,0 +1,34 @@
+@interface AWEStoryDataManager : NSObject
+@property (nonatomic) AWEAwemeModel innerOfficialModel;
+@property (nonatomic) AWEAwemeModel innerNewEducationOfficialModel;
+@property (nonatomic) BOOL isHostStatus;
+@property (nonatomic) BOOL isNewEducationGuideStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didEndWithResult:error:;
+- (void)loadPreviousStoryWithAwemeModel:completion:;
+- (void)loadMoreStoryWithAwemeModel:completion:;
+- (void)fetchStoryWithAwemeModel:completion:;
+- (void)p_postRequest:completion:;
+- (id)p_commonParam:story:;
+- (void)storyLoadRequestMonitorWithAwemeModel:loadType:;
+- (void)storyLoadResponseMonitorWithAwemeModel:loadType:storyGroup:error:;
+- (void)updateStoryGroup:awemeModel:;
+- (id)p_storyLoadStatusDict:error:loadType:;
+- (void)setIsHostStatus:;
+- (id)innerOfficialModel;
+- (BOOL)isHostStatus;
+- (id)innerNewEducationOfficialModel;
+- (BOOL)isNewEducationGuideStyle;
+- (void)setInnerNewEducationOfficialModel:;
+- (void)setInnerOfficialModel:;
+- (void)fetchOfficialAwemeIsHostStatus:Completion:;
+- (void)setIsNewEducationGuideStyle:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (long long)calcDaysFromBegin:end:;
++ (id)sharedInstance;
+@end

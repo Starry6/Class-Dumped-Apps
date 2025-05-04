@@ -1,0 +1,33 @@
+@interface AWEHPChannelSkylightUndertakeHostContext : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) BOOL isTopBarVisible;
+@property (nonatomic) BOOL isCommentPanelShowing;
+@property (nonatomic) BOOL isAITextPanelShowing;
+@property (nonatomic) BOOL isLikeUserPanelShowing;
+@property (nonatomic) BOOL isRelatedVideoPanelShowing;
+@property (nonatomic) BOOL isVideoRelatedPanelShowing;
+@property (nonatomic) BOOL isFamiliarPopupShowing;
+@property (nonatomic) BOOL isMusicPlayPanelShowing;
+@property (nonatomic) BOOL isRemotePanelShowing;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (BOOL)isVideoRelatedPanelShowing;
+- (BOOL)isRelatedVideoPanelShowing;
+- (BOOL)isCommentPanelShowing;
+- (BOOL)isLikeUserPanelShowing;
+- (BOOL)isAITextPanelShowing;
+- (void)setIsCommentPanelShowing:;
+- (void)setIsAITextPanelShowing:;
+- (void)setIsLikeUserPanelShowing:;
+- (void)setIsRelatedVideoPanelShowing:;
+- (void)setIsVideoRelatedPanelShowing:;
+- (void)setIsFamiliarPopupShowing:;
+- (void)setIsMusicPlayPanelShowing:;
+- (void)setIsTopBarVisible:;
+- (BOOL)isTopBarVisible;
+- (BOOL)isFamiliarPopupShowing;
+- (BOOL)isMusicPlayPanelShowing;
+- (BOOL)isRemotePanelShowing;
+- (void)setIsRemotePanelShowing:;
+- (void).cxx_destruct;
+@end

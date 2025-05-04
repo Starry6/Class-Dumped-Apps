@@ -1,0 +1,34 @@
+@interface AWECoverEditorTextTabView : UIView
+@property (nonatomic) UIButton titleBtn;
+@property (nonatomic) UIButton templateBtn;
+@property (nonatomic) UIButton styleBtn;
+@property (nonatomic) UIButton fontBtn;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) q currentTab;
+@property (nonatomic) <AWECoverEditorTextTabViewDelegate> delegate;
+- (void)updateBottomLineToTab:;
+- (id)titleBtn;
+- (void)setTitleBtn:;
+- (BOOL)enableTextTab;
+- (void)setupUIWithTitleTab;
+- (id)templateBtn;
+- (id)styleBtn;
+- (id)fontBtn;
+- (void)templateBtnClicked;
+- (void)styleBtnClicked;
+- (void)fontBtnClicked;
+- (void)titleBtnClicked;
+- (void)setTemplateBtn:;
+- (void)setStyleBtn:;
+- (void)setFontBtn:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (long long)currentTab;
+- (void)setCurrentTab:;
+- (id)bottomLine;
+- (void)setBottomLine:;
++ (long long)tabForIndex:;
+@end

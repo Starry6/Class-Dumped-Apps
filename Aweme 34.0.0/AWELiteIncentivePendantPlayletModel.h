@@ -1,0 +1,32 @@
+@interface AWELiteIncentivePendantPlayletModel : MTLModel
+@property (nonatomic) AWELuckyCatPendant pendant;
+@property (nonatomic) AWELuckyCatCoinAwardExit coinAwardExitModel;
+@property (nonatomic) Q nextLoopDuration;
+@property (nonatomic) NSArray refreshScene;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString taskSchema;
+@property (nonatomic) BOOL isBlock;
+@property (nonatomic) AWELiteIncentivePendantTrackParams trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)pendant;
+- (void)setPendant:;
+- (id)coinAwardExitModel;
+- (void)setCoinAwardExitModel:;
+- (unsigned long long)nextLoopDuration;
+- (void)setNextLoopDuration:;
+- (id)refreshScene;
+- (void)setRefreshScene:;
+- (id)taskSchema;
+- (void)setTaskSchema:;
+- (void)setIsBlock:;
+- (void).cxx_destruct;
+- (void)setToken:;
+- (id)token;
+- (BOOL)isBlock;
++ (id)JSONKeyPathsByPropertyKey;
+@end

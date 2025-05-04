@@ -1,0 +1,33 @@
+@interface AWEALogMonitor : NSObject
+@property (nonatomic) AWEALogMertic mertic;
+@property (nonatomic) NSString scene;
+@property (nonatomic) Q bootLaunchState;
+@property (nonatomic) BOOL appIsActive;
+@property (nonatomic) BOOL alogSwitch;
+@property (nonatomic) NSTimer timer;
+- (void)setBootLaunchState:;
+- (void)_setupBootAction;
+- (BOOL)alogSwitch;
+- (void)setAlogSwitch:;
+- (void)_updateTimer:;
+- (id)mertic;
+- (void)_handleSceneDidChange:;
+- (void)_handleAppNotification:;
+- (void)setAppIsActive:;
+- (void)setMertic:;
+- (unsigned long long)bootLaunchState;
+- (void)_setupNotifications;
+- (void)setScene:;
+- (void)setTimer:;
+- (id)init;
+- (id)timer;
+- (id)scene;
+- (BOOL)appIsActive;
+- (void).cxx_destruct;
+- (void)start;
+- (void)_handleMemoryWarning:;
++ (void)_aweLazyRegisterStaticLoad;
++ (id)config;
++ (BOOL)isEnabled;
++ (id)sharedMonitor;
+@end

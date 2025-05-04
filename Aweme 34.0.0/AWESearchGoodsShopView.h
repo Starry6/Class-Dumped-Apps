@@ -1,0 +1,34 @@
+@interface AWESearchGoodsShopView : UIView
+@property (nonatomic) BOOL needUnifiedUIConfig;
+@property (nonatomic) AWESearchMerchandiseShopInfo shopInfo;
+@property (nonatomic) UIView bg;
+@property (nonatomic) UILabel shopTag;
+@property (nonatomic) UILabel shopName;
+@property (nonatomic) UILabel guideWord;
+@property (nonatomic) UIImageView arrowIcon;
+@property (nonatomic) BOOL fromPhotoSearch;
+@property (nonatomic) UIImageView shopLeftIcon;
+- (id)shopName;
+- (void)setShopName:;
+- (id)shopInfo;
+- (void)setShopInfo:;
+- (id)guideWord;
+- (id)arrowIcon;
+- (void)setArrowIcon:;
+- (id)shopTag;
+- (void)setShopTag:;
+- (BOOL)needUnifiedUIConfig;
+- (void)setNeedUnifiedUIConfig:;
+- (BOOL)fromPhotoSearch;
+- (void)setShopInfo:needUnifiedUIConfig:;
+- (void)setBg:;
+- (void)setGuideWord:;
+- (void)setFromPhotoSearch:;
+- (id)shopLeftIcon;
+- (void)setShopLeftIcon:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)bg;
++ (double)shopHeightNeedUnifiedConfig:;
+@end

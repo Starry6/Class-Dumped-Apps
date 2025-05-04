@@ -1,0 +1,33 @@
+@interface AWESearchCustomTagComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWESearchCustomTagView tagView;
+@property (nonatomic) AWESearchCustomTagComponentModel model;
+@property (nonatomic) BOOL currentModelFromSetupModelOnly;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewLayoutSubviews;
+- (void)setModelOnly:;
+- (void)setCurrentModelFromSetupModelOnly:;
+- (BOOL)currentModelFromSetupModelOnly;
+- (void)p_updateWithModel:forceUpdate:;
+- (void)setModel:;
+- (id)contentView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
+- (id)tagView;
+- (void)setTagView:;
++ (id)componentSizeForModel:width:;
++ (id)p_calculateComponentSize:withModel:;
+@end

@@ -1,0 +1,32 @@
+@interface AWENovelCommentNovelTopBarView : UIView
+@property (nonatomic) AWENovelCommentTopBarModel model;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel bookNameLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView arrow;
+@property (nonatomic) @? clickBlock;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setBookNameLabel:;
+- (id)bookNameLabel;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)onNovelBarDidClick;
+- (void)updateWithNovelBarWithModel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)lineView;
+- (void)setIconImageView:;
+- (void)setLineView:;
+- (id)arrow;
+- (void)setArrow:;
+- (void)setUpUI;
++ (BOOL)isDarkMode;
+@end

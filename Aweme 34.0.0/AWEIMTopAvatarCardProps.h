@@ -1,0 +1,33 @@
+@interface AWEIMTopAvatarCardProps : AWEIMUIViewPresenterProps
+@property (nonatomic) AWEIMUser user;
+@property (nonatomic) AWEIMImageTrackerConfig avatarTrackConfig;
+@property (nonatomic) NSString nameText;
+@property (nonatomic) NSString signature;
+@property (nonatomic) NSString recommendText;
+@property (nonatomic) NSArray tagList;
+@property (nonatomic) NSString schoolName;
+@property (nonatomic) BOOL hidProfile;
+@property (nonatomic) q signatureLines;
+@property (nonatomic) @? jumpProfileBlock;
+- (id)tagList;
+- (void)setTagList:;
+- (void)setSchoolName:;
+- (id)recommendText;
+- (void)setRecommendText:;
+- (id)avatarTrackConfig;
+- (BOOL)hidProfile;
+- (long long)signatureLines;
+- (id)jumpProfileBlock;
+- (void)setJumpProfileBlock:;
+- (void)setAvatarTrackConfig:;
+- (void)setHidProfile:;
+- (void)setSignatureLines:;
+- (id)signature;
+- (id)user;
+- (void)setUser:;
+- (void)setSignature:;
+- (void).cxx_destruct;
+- (id)nameText;
+- (void)setNameText:;
+- (id)schoolName;
+@end

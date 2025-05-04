@@ -1,0 +1,2 @@
+@interface AWESuperManRootNavigationController : UINavigationController
+@end

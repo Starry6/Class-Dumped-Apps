@@ -1,0 +1,38 @@
+@interface AWEHotSpotSynthesizedDiscussionViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSMutableArray cellViewControllers;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary logExtraDict;
+- (void)setLogExtraDict:;
+- (id)logExtraDict;
+- (void)configWithModel:;
+- (void)configUI;
+- (void)changeToFullMode:index:;
+- (void)onWillDisplay;
+- (void)onExpandViewClicked:;
+- (void)onMoreViewMaskViewClicked:;
+- (id)cellViewControllers;
+- (void)setCellViewControllers:;
+- (void)setModel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (void)dealloc;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (id)model;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)reset;
+- (void)addObservers;
+- (void)onResume;
+- (void)onPause;
+- (void)onStop;
+@end

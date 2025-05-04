@@ -1,0 +1,35 @@
+@interface AWEIMInteractPolymericCellBottomView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray dataList;
+@property (nonatomic) BOOL fromStory;
+@property (nonatomic) NSString ruleId;
+@property (nonatomic) NSDictionary routerParams;
+@property (nonatomic) BOOL showMoreIcon;
+@property (nonatomic) BOOL showAllData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataList:;
+- (id)routerParams;
+- (void)setRouterParams:;
+- (void)setShowMoreIcon:;
+- (BOOL)showMoreIcon;
+- (BOOL)showAllData;
+- (id)_getCollectionViewLayout;
+- (void)configWithDataList:;
+- (BOOL)fromStory;
+- (void)setFromStory:;
+- (void)setShowAllData:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)_setupUI;
+- (id)ruleId;
+- (void)setRuleId:;
+- (id)dataList;
+@end

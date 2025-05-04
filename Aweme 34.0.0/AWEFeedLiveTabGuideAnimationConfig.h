@@ -1,0 +1,31 @@
+@interface AWEFeedLiveTabGuideAnimationConfig : NSObject
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) double topPadding;
+@property (nonatomic) double leftPadding;
+@property (nonatomic) double labelPadding;
+@property (nonatomic) q type;
+@property (nonatomic) Q repeatCount;
+@property (nonatomic) NSString bundleName;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString title;
+- (void)setLeftPadding:;
+- (double)labelPadding;
+- (id)init;
+- (double)topPadding;
+- (id)bundleName;
+- (void)setLabelPadding:;
+- (void)setRepeatCount:;
+- (long long)type;
+- (void)setType:;
+- (id)size;
+- (void)setBundleName:;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (id)title;
+- (void)setName:;
+- (id)name;
+- (void)setTitle:;
+- (unsigned long long)repeatCount;
+- (void)setTopPadding:;
+- (double)leftPadding;
+@end

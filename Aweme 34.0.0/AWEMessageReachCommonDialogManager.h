@@ -1,0 +1,30 @@
+@interface AWEMessageReachCommonDialogManager : HTSService
+@property (nonatomic) NSMutableDictionary cacheDataModels;
+@property (nonatomic) NSDictionary dataModels;
+@property (nonatomic) NSMutableDictionary alertDic;
+@property (nonatomic) AWEHPHambListener listener;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataModels;
+- (void)setDataModels:;
+- (void)interceptorActionBeforeTriggerEventWithEvent:;
+- (void)setCacheDataModels:;
+- (id)cacheDataModels;
+- (void)setAlertDic:;
+- (void)p_handleChangeDialogData;
+- (id)p_fetchDialogData;
+- (void)p_addAlertWithTriggerEvent:componentId:dataModel:;
+- (id)alertDic;
+- (void)p_addNativeAlertWithTriggerEvent:componentId:priority:dataModel:;
+- (void)p_addLynxAlertWithTriggerEvent:componentId:priority:dataModel:;
+- (id)getDialogDataModelWithID:stable:;
+- (void)setListener:;
+- (id)init;
+- (id)listener;
+- (void).cxx_destruct;
++ (void)triggerForceDialogWithID:eventItem:dialogConfig:bizPlugin:;
++ (void)triggerForceLynxDialogWithID:eventItem:dialogConfig:;
++ (id)sharedInstance;
+@end

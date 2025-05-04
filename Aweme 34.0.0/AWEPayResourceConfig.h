@@ -1,0 +1,37 @@
+@interface AWEPayResourceConfig : NSObject
+@property (nonatomic) NSString resourceId;
+@property (nonatomic) NSString resourcePath;
+@property (nonatomic) NSString geckoPath;
+@property (nonatomic) NSDictionary rawConfig;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) double animationDelay;
+@property (nonatomic) AWEPaySpecialStyleParam userInfoConfig;
+@property (nonatomic) AWEPaySpecialStyleParam contentConfig;
+@property (nonatomic) AWEPaySpecialStyleParam btnConfig;
+- (void)setBtnConfig:;
+- (id)resourceId;
+- (void)setResourceId:;
+- (id)initWithResourceId:;
+- (void)setContentConfig:;
+- (void)p_initData;
+- (id)btnConfig;
+- (id)getLOTAnimationView;
+- (id)userInfoConfig;
+- (id)geckoPath;
+- (void)setRawConfig:;
+- (void)setUserInfoConfig:;
+- (void)setGeckoPath:;
+- (void)setHeight:;
+- (void)setWidth:;
+- (double)width;
+- (double)animationDelay;
+- (id)resourcePath;
+- (void)setAnimationDelay:;
+- (void).cxx_destruct;
+- (BOOL)isSuccess;
+- (double)height;
+- (id)contentConfig;
+- (void)setResourcePath:;
+- (id)rawConfig;
+@end

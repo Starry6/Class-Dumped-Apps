@@ -1,0 +1,32 @@
+@interface AWEScreenShootPanelViewController : UIViewController
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSArray dataArray;
+@property (nonatomic) UIImageView screenShootImageView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView divideLine;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dux_sheetShouldRecognizeAsynchronousWithGestures;
+- (id)divideLine;
+- (void)setDivideLine:;
+- (id)screenShootImageView;
+- (void)setScreenShootImageView:;
+- (id)collectionView;
+- (id)image;
+- (void)setImage:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)viewDidLoad;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)titleLabel;
+- (id)dataArray;
+- (void)setDataArray:;
+- (void)setUpUI;
++ (id)screenShootPanelViewControllerWithImage:withDataArray:;
+@end

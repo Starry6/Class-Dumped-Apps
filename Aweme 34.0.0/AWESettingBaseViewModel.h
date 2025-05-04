@@ -1,0 +1,38 @@
+@interface AWESettingBaseViewModel : NSObject
+@property (nonatomic) NSString traceEnterFrom;
+@property (nonatomic) q colorStyle;
+@property (nonatomic) <AWEUserSettingBigFontAdapterProtocol> fontAdapter;
+@property (nonatomic) <AWESettingBaseViewModelDelegate> controllerDelegate;
+@property (nonatomic) <AWESettingBaseViewModelBizAbilityProtocol> bizAbilityImpl;
+@property (nonatomic) NSArray sectionDataArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)sectionDataArray;
+- (id)traceEnterFrom;
+- (id)itemModelWithType:;
+- (void)setTraceEnterFrom:;
+- (id)fontAdapter;
+- (void)refreshAllCells;
+- (void)viewDidDisapper;
+- (id)bizAbilityImpl;
+- (id)itemModelIndexWithType:;
+- (id)sectionModelWithType:;
+- (void)insertItemModelWithType:toPath:;
+- (void)insertSectionModel:toIndex:;
+- (void)removeItemModelWithTypeIfNeed:;
+- (void)removeSectionModelWithTypeIfNeed:;
+- (void)refreshallCellsWithoutDidLoad;
+- (void)updateFontAdapter:;
+- (void)setBizAbilityImpl:;
+- (void)viewDidLoad;
+- (id)controllerDelegate;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setControllerDelegate:;
+- (void)viewDidAppear;
+- (long long)colorStyle;
+- (void)setColorStyle:;
+@end

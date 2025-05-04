@@ -1,0 +1,30 @@
+@interface AWENearbyLynxCardPreloadConfig : NSObject
+@property (nonatomic) BOOL launchEnabled;
+@property (nonatomic) BOOL grouponEnabled;
+@property (nonatomic) BOOL isFristScreenCachePriority;
+@property (nonatomic) q firstScreenCacheCount;
+@property (nonatomic) q validDays;
+@property (nonatomic) double preloadIntervalSeconds;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSArray transformerLynxConfig;
+@property (nonatomic) NSArray feedLynxConfig;
+- (BOOL)grouponEnabled;
+- (long long)validDays;
+- (BOOL)isFristScreenCachePriority;
+- (id)transformerLynxConfig;
+- (id)feedLynxConfig;
+- (long long)firstScreenCacheCount;
+- (double)preloadIntervalSeconds;
+- (void)setLaunchEnabled:;
+- (void)setGrouponEnabled:;
+- (void)setValidDays:;
+- (void)setPreloadIntervalSeconds:;
+- (void)setTransformerLynxConfig:;
+- (void)setFeedLynxConfig:;
+- (void)setIsFristScreenCachePriority:;
+- (void)setFirstScreenCacheCount:;
+- (id)schema;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (BOOL)launchEnabled;
+@end

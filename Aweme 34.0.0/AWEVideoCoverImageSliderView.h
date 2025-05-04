@@ -1,0 +1,31 @@
+@interface AWEVideoCoverImageSliderView : UIView
+@property (nonatomic) UIView selectedView;
+@property (nonatomic) UIView controlView;
+@property (nonatomic) double positionPercent;
+@property (nonatomic) <AWEVideoCoverImageSliderViewDelegate> delegate;
+@property (nonatomic) UIView controlContentView;
+@property (nonatomic) AWEImagesView coverImagesView;
+- (void)setSelectedView:;
+- (id)controlContentView;
+- (void)setControlViewCenterXWithCode:defaultWidth:;
+- (double)xValueWithPercent:defaultWidth:;
+- (id)coverImagesView;
+- (void)setControlContentView:;
+- (void)moveControlView:type:;
+- (void)setPositionPercent:;
+- (double)positionPercent;
+- (void)setCoverImagesView:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)touchesEnded:withEvent:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (id)hitTest:withEvent:;
+- (id)controlView;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (void)touchesMoved:withEvent:;
+- (BOOL)isAccessibilityElement;
+- (id)selectedView;
+- (void)setControlView:;
+@end

@@ -1,0 +1,38 @@
+@interface AWELiveCommercialNewStyleNativeCardView : UIView
+@property (nonatomic) NSArray cardImageURLList;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString appTitle;
+@property (nonatomic) NSString cardButtonText;
+@property (nonatomic) UIImageView cardImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton cardButton;
+@property (nonatomic) AWEGradientView cardGradientView;
+@property (nonatomic) UIView shadowView;
+- (void)configCardData:;
+- (void)updateCardData:;
+- (BOOL)isTappedOnButton:;
+- (id)initWithFrame:WithCardModel:;
+- (void)setCardImageURLList:;
+- (void)setCardButtonText:;
+- (id)cardImageURLList;
+- (id)cardButton;
+- (id)cardButtonText;
+- (id)cardGradientView;
+- (void)setCardButton:;
+- (void)setCardGradientView:;
+- (id)shadowView;
+- (void)setShadowView:;
+- (void)setTitleLabel:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setAppName:;
+- (id)appName;
+- (void)setNameLabel:;
+- (void)updateUI;
+- (id)cardImageView;
+- (void)setCardImageView:;
+- (id)appTitle;
+- (void)setAppTitle:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEUserLoginCarrierDataController : AWEUserLoginBaseDataController
+@property (nonatomic) q maskLoginDuration;
+@property (nonatomic) q requestTokenDuration;
+@property (nonatomic) double carrierLoginStart;
+@property (nonatomic) q tokenLoginDuration;
+@property (nonatomic) AWECarrierLoginPhoneModel carrierPhoneModel;
+@property (nonatomic) BOOL isTokenLogin;
+@property (nonatomic) NSDictionary loginResultMonitorDict;
+- (void)trackLoginDurationWithStatus:;
+- (id)loginResultMonitorDict;
+- (double)carrierLoginStart;
+- (long long)maskLoginDuration;
+- (long long)requestTokenDuration;
+- (long long)tokenLoginDuration;
+- (void)setCarrierLoginStart:;
+- (void)setMaskLoginDuration:;
+- (void)setLoginResultMonitorDict:;
+- (void)handleLoginError:ticket:;
+- (void)setRequestTokenDuration:;
+- (void)requestQuickLoginWithToken:;
+- (void)setTokenLoginDuration:;
+- (void)carrierLoginWithRequest:;
+- (void)setCarrierPhoneModel:;
+- (id)carrierPhoneModel;
+- (void)updateIsTokenLogin:;
+- (void)requestTokenDictOfCarrier;
+- (void)handleLoginSuccessAccount:ticket:nonageVerifyEnable:;
+- (BOOL)isTokenLogin;
+- (void)requestLoginWithModel:;
+- (void)setIsTokenLogin:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface AWEFeedUGSurveyFrequencyChecker : NSObject
+@property (nonatomic) q timesLimit;
+@property (nonatomic) q dayLimit;
+@property (nonatomic) q exitTimesLimit;
+@property (nonatomic) q exitDayLimit;
+@property (nonatomic) q exitDayDuration;
+@property (nonatomic) AWEFeedUGSurveyFrequencyStorageModel initialStorageModel;
+@property (nonatomic) NSMutableArray showSurveyDateRecord;
+@property (nonatomic) NSMutableArray notFilledSurveyRecord;
+- (id)showSurveyDateRecord;
+- (void)setShowSurveyDateRecord:;
+- (void)restoreRecord;
+- (BOOL)checkFrequencyValid;
+- (BOOL)checkExitPeriodValid;
+- (id)notFilledSurveyRecord;
+- (void)updateModelWithCurrentDate:;
+- (void)setInitialStorageModel:;
+- (id)initialStorageModel;
+- (void)setNotFilledSurveyRecord:;
+- (long long)dayLimit;
+- (id)filterDateRecord:currentDate:dayLimit:;
+- (long long)timesLimit;
+- (long long)exitDayLimit;
+- (long long)exitDayDuration;
+- (long long)exitTimesLimit;
+- (BOOL)isDate:withinStartDate:andEndDate:;
+- (id)initWithTimesLimit:dayLimit:exitTimesLimit:exitDayLimit:exitDayDuration:;
+- (BOOL)checkShowPrerequisitesMatched;
+- (void)recordNotFilledSurveyWithItemID:;
+- (void)recordShowSurvey;
+- (void)setTimesLimit:;
+- (void)setDayLimit:;
+- (void)setExitTimesLimit:;
+- (void)setExitDayLimit:;
+- (void)setExitDayDuration:;
+- (void).cxx_destruct;
+@end

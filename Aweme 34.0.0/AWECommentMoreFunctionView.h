@@ -1,0 +1,31 @@
+@interface AWECommentMoreFunctionView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray models;
+@property (nonatomic) NSDictionary commonParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commonParams;
+- (id)initWithFrame:models:;
+- (void)reloadModels;
+- (void)reloadWithModels:;
+- (void)setCommonParams:;
+- (void)__setupUI;
+- (void)trackOneFuctionClickWithModel:;
+- (BOOL)shouldShowYellowDotOnLuckyDraw;
+- (void)trackOneFuntionShowWithModel:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)layoutSubviews;
+- (id)models;
+- (void)willShow;
+- (void)willHide;
+@end

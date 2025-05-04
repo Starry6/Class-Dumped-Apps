@@ -1,0 +1,38 @@
+@interface AWEIMNewChatDetailSlidingViewController : AWESlidingViewController
+@property (nonatomic) UIView headerMaskView;
+@property (nonatomic) AWEIMPopExitCoordinatorGesture coordinatorGesture;
+@property (nonatomic) AWEIMNewChatDetailContext context;
+@property (nonatomic) UIView tabbarView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) <IESIMSlidingViewControllerDelegate> delegate;
+@property (nonatomic) UIScrollView contentScrollView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentScrollView;
+- (id)currentVC;
+- (Class)scrollViewClass;
+- (void)setHeaderMaskView:;
+- (id)headerMaskView;
+- (void)setupBackgroudColor;
+- (void)trackSettingPageShow;
+- (void)old_trackSettingPageShow;
+- (id)p_currentVC;
+- (BOOL)isEmptyScrollView;
+- (void)updateHeaderMaskViewWithHeight:;
+- (void)reloadAllTabVC;
+- (void)adjustCurrentVCContentOffsetWithHeaderViewFrameY:headerHeight:;
+- (void)adjustCurrentVCContentOffset:;
+- (void)adjustOtherVCContentOffset:thresholdOffsetY:forceAdjust:;
+- (void)willTransitionToViewController:;
+- (void)didTransitionToViewControllerAtIndex:;
+- (id)baseViewForHeaderView;
+- (double)contrntOffsetYOfCurrentVC;
+- (void)adjustOtherVCContentOffset:;
+- (id)coordinatorGesture;
+- (void)viewDidLoad;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

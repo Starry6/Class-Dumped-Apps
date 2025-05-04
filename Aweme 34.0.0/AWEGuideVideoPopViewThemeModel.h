@@ -1,0 +1,36 @@
+@interface AWEGuideVideoPopViewThemeModel : NSObject
+@property (nonatomic) q popViewStyle;
+@property (nonatomic) UIColor leftBtnBgColor;
+@property (nonatomic) UIColor leftBtnTitleColor;
+@property (nonatomic) UIColor rightBtnBgColor;
+@property (nonatomic) UIColor rightBtnTitleColor;
+@property (nonatomic) UIImage rightBtnIcon;
+@property (nonatomic) NSURL rightBtnIconUrl;
+@property (nonatomic) BOOL hasRemeberTips;
+@property (nonatomic) BOOL remeberTipsChecked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)popViewStyle;
+- (id)rightBtnTitleColor;
+- (id)rightBtnBgColor;
+- (id)rightBtnIcon;
+- (id)rightBtnIconUrl;
+- (id)leftBtnTitleColor;
+- (id)leftBtnBgColor;
+- (BOOL)hasRemeberTips;
+- (BOOL)remeberTipsChecked;
+- (void)setPopViewStyle:;
+- (void)setLeftBtnBgColor:;
+- (void)setLeftBtnTitleColor:;
+- (void)setRightBtnBgColor:;
+- (void)setRightBtnTitleColor:;
+- (void)setRightBtnIcon:;
+- (void)setRightBtnIconUrl:;
+- (void)setHasRemeberTips:;
+- (void)setRemeberTipsChecked:;
+- (void).cxx_destruct;
++ (id)xiguaThemeModelWithPopViewStyle:;
++ (id)qingtaoThemeModelWithPopViewStyle:;
+@end

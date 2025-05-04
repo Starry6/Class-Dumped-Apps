@@ -1,0 +1,35 @@
+@interface AWEBDPRankListViewModel : NSObject
+@property (nonatomic) NSString suffix;
+@property (nonatomic) NSString rankType;
+@property (nonatomic) NSString rankTitle;
+@property (nonatomic) NSString relationType;
+@property (nonatomic) NSNumber dataType;
+@property (nonatomic) NSString zoneId;
+@property (nonatomic) AWEBDPSelfUserInfoModel selfUserInfo;
+@property (nonatomic) NSMutableDictionary rankModelMap;
+@property (nonatomic) BOOL shouldShowRetryView;
+- (BOOL)modelCustomTransformFromDictionary:;
+- (void)setRelationType:;
+- (id)rankTitle;
+- (void)setRankTitle:;
+- (id)zoneId;
+- (void)setZoneId:;
+- (id)selfUserInfo;
+- (void)setSelfUserInfo:;
+- (id)rankModelMap;
+- (BOOL)shouldShowRetryView;
+- (BOOL)updateWithData:relationType:;
+- (void)addItemsWithModel:relationType:;
+- (void)setShouldShowRetryView:;
+- (void)setRankModelMap:;
+- (BOOL)needHideSelfItemWithRelationType:;
+- (void)setDataType:;
+- (void)resetState;
+- (void).cxx_destruct;
+- (id)dataType;
+- (void)setRankType:;
+- (void)setSuffix:;
+- (id)rankType;
+- (id)suffix;
+- (id)relationType;
+@end

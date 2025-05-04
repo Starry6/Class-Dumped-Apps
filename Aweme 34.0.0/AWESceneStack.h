@@ -1,0 +1,32 @@
+@interface AWESceneStack : NSObject
+@property (nonatomic) NSMutableArray sceneQueue;
+@property (nonatomic) UIView viewContainer;
+@property (nonatomic) BOOL isTransitioning;
+@property (nonatomic) AWESceneViewProvider sceneViewProvider;
+- (void)registerNotification;
+- (void)popScene;
+- (void)setSceneQueue:;
+- (id)sceneQueue;
+- (void)addSubView:to:;
+- (void)moveSubview:to:;
+- (void)removeSubView:from:;
+- (void)pushScene:duration:;
+- (id)sceneViewProvider;
+- (void)popSceneWithDuration:;
+- (id)topScene;
+- (void)enterBackgroundNotification;
+- (void)enterForegroundNotification;
+- (void)pushScene:;
+- (void)setSceneViewProvider:;
+- (id)initWithView:;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (void)viewDidDisappear:;
+- (BOOL)isTransitioning;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setIsTransitioning:;
+- (void)setViewContainer:;
+- (id)viewContainer;
+@end

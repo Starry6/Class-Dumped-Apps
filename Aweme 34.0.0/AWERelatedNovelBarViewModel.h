@@ -1,0 +1,32 @@
+@interface AWERelatedNovelBarViewModel : AWETemplateBaseViewModel
+@property (nonatomic) AWENovelWelfareDiversionPopupAttractionModel attractionModel;
+@property (nonatomic) NSString appID;
+@property (nonatomic) q position;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commonParams;
+- (void)openAppAction;
+- (void)openAppWithSchema:cert:;
+- (void)trackForTemplateViewShow;
+- (void)viewDidTriggerAction:;
+- (void)trackForTemplateViewClick;
+- (id)getTrackerPrams;
+- (void)setAttractionModel:;
+- (id)attractionModel;
+- (BOOL)canShowSubContent;
+- (id)popupTrackParams;
+- (void)jumpToLandingPage;
+- (void)jumpToTomatoApp;
+- (void)preprocessBarModel;
+- (long long)position;
+- (id)appID;
+- (void)setAppID:;
+- (void).cxx_destruct;
+- (void)closeAction;
+- (void)setPosition:;
++ (BOOL)isTomatoNovelInstall;
++ (BOOL)shouldActiveWithData:scene:context:;
++ (BOOL)shouldAvoidOtherElementWithData:barModel:context:scene:extraInfo:;
+@end

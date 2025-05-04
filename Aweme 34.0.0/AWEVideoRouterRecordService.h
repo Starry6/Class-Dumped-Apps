@@ -1,0 +1,31 @@
+@interface AWEVideoRouterRecordService : NSObject
+@property (nonatomic) AWEUITransitionHost transitionHost;
+@property (nonatomic) AWECustomRecordTransitionDelegate customizedTransition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleStickerShootError:;
+- (id)transitionHost;
+- (void)setTransitionHost:;
+- (id)openRecorderWithInputData:;
+- (id)createOrContinueRecordFlowWithInputData:;
+- (id)createNewRecorderAfterFinishingOldCreationWithInputData:viewController:;
+- (id)createOrContinueDynamicRecordFlowWithInputData:info:perfersPush:;
+- (id)dynamicRecordViewControllerWithInputData:;
+- (id)customizedTransition;
+- (id)p_removeRecorderVCAllAssociatedSecondaryVC:;
+- (id)createOrContinueRecordNormalFlowWithInputData:;
+- (BOOL)supportPicTemplateSceneWith:;
+- (id)createPicTemplateVideoWithEffectModel:inputData:keywords:;
+- (id)createAIStickerVideoWithEffectModel:effectId:inputData:keywords:;
+- (id)recordFlowWithInputData:;
+- (id)openRecorderPromise;
+- (id)dynamicRecordFlowWithInputData:;
+- (void)p_createNewRecorderAfterFinishingOldCreationWithInputData:viewController:completion:;
+- (void)p_startPublishmentSessionIfNeeded:;
+- (void)p_copyRepoValuesIfNeeded:;
+- (void)setCustomizedTransition:;
+- (void).cxx_destruct;
++ (id)shared;
+@end

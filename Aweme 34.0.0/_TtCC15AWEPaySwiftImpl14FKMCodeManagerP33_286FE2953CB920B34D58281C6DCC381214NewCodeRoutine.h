@@ -1,0 +1,2 @@
+@interface _TtCC15AWEPaySwiftImpl14FKMCodeManagerP33_286FE2953CB920B34D58281C6DCC381214NewCodeRoutine : _TtCs12_SwiftObject
+@end

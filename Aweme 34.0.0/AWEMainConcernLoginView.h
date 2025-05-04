@@ -1,0 +1,32 @@
+@interface AWEMainConcernLoginView : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UILabel subTipLabel;
+@property (nonatomic) UIButton loginButton;
+@property (nonatomic) @? loginBtnClickedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEFeedModuleServiceCommonAdaper;
+- (void)setLoginBtnClickedBlock:;
+- (void)updateSubTipLabelToFamiliarFeed;
+- (void)setupSubviewsPositionWithFrame:;
+- (id)concernLoginImage;
+- (id)concernLoginTipLabel;
+- (id)concernLoginSubTipLabel;
+- (id)concernLoginButton;
+- (id)subTipLabel;
+- (void)loginBtnClicked:;
+- (id)loginBtnClickedBlock;
+- (void)setSubTipLabel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setTipLabel:;
+- (id)tipLabel;
+- (void)setLoginButton:;
+- (id)loginButton;
++ (Class)aAWEFeedModuleServiceCommonAdaperClass;
+@end

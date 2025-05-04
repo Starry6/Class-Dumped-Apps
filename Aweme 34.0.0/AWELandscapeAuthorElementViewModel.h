@@ -1,0 +1,33 @@
+@interface AWELandscapeAuthorElementViewModel : NSObject
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEPageContext<AWELandscapePageContextInteractionProtocol> context;
+@property (nonatomic) BOOL doFollowing;
+@property (nonatomic) <AWELandscapeAuthorElementDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (id)coCreators;
+- (BOOL)canFollow;
+- (void)updateWithModel:context:;
+- (BOOL)shouldShowCoCreatorsView;
+- (void)handleClickUser:;
+- (void)handleClickFollow;
+- (void)handleClickCoCreator:;
+- (BOOL)shouldChangeAuthorInfo;
+- (void)realFollowAction;
+- (void)setDoFollowing:;
+- (BOOL)doFollowing;
+- (void)setModel:;
+- (id)currentUser;
+- (id)init;
+- (void)dealloc;
+- (id)delegate;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+@end

@@ -1,0 +1,33 @@
+@interface AWEHPProfileSideBarEnterprisePresenter : AWELeftSideBarBasePresenter
+@property (nonatomic) UIView<AWEHPSideBarStencilViewProtocol> containerView;
+@property (nonatomic) AWEHPSideBarStencilViewDataModel dataModel;
+@property (nonatomic) BOOL hasTrackShowEvent;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (void)leftSideBarCellClick;
+- (void)onLeftSideBarOpen;
+- (void)onLeftSideBarClose;
+- (BOOL)needLoadPresenter;
+- (void)leftSideBarViewDidDisAppear;
+- (id)aAWESettingsViewModelDOUYINHMAdapter;
+- (id)aAWEUserCenterModuleServiceCommonAdapter;
+- (id)p_sideBarListCellDataModel:;
+- (BOOL)hasTrackShowEvent;
+- (void)setHasTrackShowEvent:;
+- (void)preRenderServicePage;
+- (void)releasePreRenderedResource;
+- (id)serviceCenterURL;
+- (BOOL)shouldPreRenderServiceCenter;
+- (void)handleCustomClickedEvent;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
++ (Class)aAWESettingsViewModelDOUYINHMAdapterClass;
++ (Class)aAWEUserCenterModuleServiceCommonAdapterClass;
+@end

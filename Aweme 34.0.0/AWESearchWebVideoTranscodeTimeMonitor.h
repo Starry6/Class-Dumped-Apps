@@ -1,0 +1,32 @@
+@interface AWESearchWebVideoTranscodeTimeMonitor : NSObject
+@property (nonatomic) q clickTime;
+@property (nonatomic) q pageInitTime;
+@property (nonatomic) q pageStartTime;
+@property (nonatomic) q startTranscodeTime;
+@property (nonatomic) q transcodeDoneTime;
+@property (nonatomic) q startExtractAddressTime;
+@property (nonatomic) q extractAddressDoneTime;
+@property (nonatomic) q openTranscodePageTime;
+@property (nonatomic) q transcodePageOpenedTime;
+@property (nonatomic) q injectDoneTime;
+- (void)setPageStartTime:;
+- (long long)pageStartTime;
+- (void)setClickTime:;
+- (long long)clickTime;
+- (void)setPageInitTime:;
+- (long long)pageInitTime;
+- (void)setStartTranscodeTime:;
+- (void)setTranscodeDoneTime:;
+- (void)setStartExtractAddressTime:;
+- (void)setExtractAddressDoneTime:;
+- (void)setOpenTranscodePageTime:;
+- (long long)startTranscodeTime;
+- (long long)transcodeDoneTime;
+- (long long)startExtractAddressTime;
+- (long long)extractAddressDoneTime;
+- (long long)openTranscodePageTime;
+- (long long)transcodePageOpenedTime;
+- (void)setTranscodePageOpenedTime:;
+- (long long)injectDoneTime;
+- (void)setInjectDoneTime:;
+@end

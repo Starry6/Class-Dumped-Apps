@@ -1,0 +1,33 @@
+@interface AWEDCFeedDiggResource : NSObject
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView likeImageView;
+@property (nonatomic) UILabel likeNumberLabel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) AWEBinding diggTitleObserver;
+@property (nonatomic) AWEBinding diggIconObserver;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)themeDidChange:;
+- (id)likeImageView;
+- (id)likeNumberLabel;
+- (void)setLikeImageView:;
+- (void)setLikeNumberLabel:;
+- (void)refreshWithAwemeModel:context:;
+- (double)widthWithAwemeModel:;
+- (void)addDiggObserver;
+- (id)diggIconObserver;
+- (id)diggTitleObserver;
+- (void)setDiggTitleObserver:;
+- (void)updateLikeString;
+- (void)setDiggIconObserver:;
+- (id)likeStringWithAwemeModel:;
+- (double)likeNumberFontSize;
+- (id)containerView;
+- (id)initWithContext:;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setupViews;
+@end

@@ -1,0 +1,36 @@
+@interface AWEIMMessageTagUtil : NSObject
+@property (nonatomic) BOOL useIsAiBotPerformanceOpt;
+@property (nonatomic) BOOL disableAiInGroup;
+- (BOOL)useIsAiBotPerformanceOpt;
+- (BOOL)disableAiInGroup;
+- (id)init;
++ (BOOL)enableMessageAvatarAITagWithMessage:;
++ (BOOL)isAIBot:;
++ (id)groupParticipantModelWithContext:;
++ (BOOL)hitFansTagsABTest:;
++ (BOOL)canCreateLiveFansTagWithContext:;
++ (BOOL)canShowLiveFansTagWithContext:;
++ (id)tagWithContext:tagType:;
++ (id)tagsModelWithContext:;
++ (BOOL)canCreatePurchasedFansTagWithContext:;
++ (BOOL)canShowPurchasedFansTagWithContext:;
++ (BOOL)canCreateActiveTagWithContext:;
++ (BOOL)canShowActiveTagWithContext:;
++ (BOOL)canCreateHighValueTagWithContext:;
++ (BOOL)canShowHighValueTagWithContext:;
++ (BOOL)canCreateRoleTagWithContext:;
++ (BOOL)canShowRoleTagWithContext:;
++ (BOOL)canCreateSubscribeTagWithContext:;
++ (BOOL)canShowSubscribeTagWithContext:;
++ (id)p_conversationForContext:;
++ (BOOL)p_canDisplayNameWithContext:;
++ (BOOL)canShowFansClubTagWithContext:;
++ (BOOL)p_hitFansTagsABTest:;
++ (BOOL)p_canCreateFansGroupTagWithContext:;
++ (BOOL)p_canShowFansTagWithContext:tagType:;
++ (id)p_displayNameWithContext:;
++ (BOOL)enableMessageNameAITagWithMessage:;
++ (BOOL)canCreateFansClubTagWithContext:;
++ (id)fansClubModelWithContext:;
++ (id)sharedInstance;
+@end

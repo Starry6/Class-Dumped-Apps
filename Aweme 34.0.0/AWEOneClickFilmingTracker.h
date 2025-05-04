@@ -1,0 +1,33 @@
+@interface AWEOneClickFilmingTracker : NSObject
++ (void)trackForHalfScreenLoadingPageCloseActionWith:sourceAssetModelArray:isAlbumPanel:;
++ (void)trackForClickAIUpload:sourceAssetModelArray:isAlbumPanel:params:;
++ (void)trackForAIUploadIconShow:isAlbumPanel:;
++ (void)trackForClickAiUploadRetry:;
++ (void)addTrackMessgeForEnterEditPgae:sourceAssetModelArray:;
++ (void)trackForIntelligentLoadResultWithStatus:;
++ (void)trackForSmartVideoLoadingPageSuccessRate:publishModel:templateID:templateSize:error:errorState:;
++ (id)commonParamsForPublishModel:;
++ (id)commomParamsForAessts:;
++ (void)trackForAIUploadLoading:sourceAssetModelArray:;
++ (void)trackForClickChooseTemplate:;
++ (void)trackForEnterTemplatePreviewPage:enterMethod:;
++ (void)trackForSelectTemplate:;
++ (void)trackForCancelTemplate:;
++ (void)trackForEditTemplate:;
++ (void)trackForEditTemplateText:;
++ (void)trackForEditTemplateRange:;
++ (void)trackForClickUploadEntrance:;
++ (void)trackForEditTemplateComplete:isEdited:;
++ (void)trackForSaveTemplate:isNoTemplateVideo:;
++ (void)trackForGiveUpEffect:isChangeTemplate:;
++ (void)trackForClickTemplatePreview:enterFrom:isPlay:;
++ (void)trackForShowTemplatePopup:;
++ (void)trackForShowTemplate:templateModelId:;
++ (void)trackForAnalyzeTime:publishModel:error:materialCache:;
++ (void)trackForSingleAnalyzeTime:asset:error:;
++ (void)trackForMatchTime:publishModel:error:;
++ (void)trackForFetchTime:publishModel:error:;
++ (void)trackForRecommendTime:publishModel:error:;
++ (void)trackForTemplateImportFinishWithPublishModel:isFirstTimeImport:timeCost:templateID:templateSize:error:;
++ (void)trackForChangeTemplateLoadingSuccessRate:publishModel:templateID:templateSize:error:preload:;
+@end

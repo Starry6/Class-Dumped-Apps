@@ -1,0 +1,31 @@
+@interface AWERelatedRecommendModuleService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRequestOnAirMarkEnabled;
+- (long long)authorInfoPanelStyle;
+- (void)refreshProcessID;
+- (BOOL)relatedRecommendDCPanelEnabled;
+- (BOOL)relatedRecommendDCPanelSmartPreloadEnable;
+- (id)createRelatedRecommendPanelManagerWithContext:container:currentModel:delegate:;
+- (id)relatedRecommendDCPanelProcessID;
+- (id)relatedRecommendEnableList;
+- (id)titleClickExtraParams;
+- (double)relatedRecommendDCPanelEnterTimestamp;
+- (long long)defaultRecommendLoadMoreCount;
+- (void)registerStrategyClass:;
+- (BOOL)relatedRecommendDCPanelOpenVelocityEnable;
+- (double)relatedRecommendDCPanelOpenDuration;
+- (double)relatedRecommendDCPanelDismissDuration;
+- (BOOL)relatedRecommendDCPanelTitlePressPreloadEnable;
+- (void)updateVideoPauseSettingState:;
+- (BOOL)videoPauseSettingState;
+- (id)createRelatedRecommendViewControllerWithNavigationViewController:currentModel:shouldShowTopView:extraParams:entrancePageType:;
++ (BOOL)videoPauseShowRelatedRecommendEnable;
++ (BOOL)videoPauseShowRelatedButtonEnable;
++ (BOOL)videoPauseShowRelatedPanelEnable;
++ (long long)videoPauseRecommendPanelShowStyle;
++ (id)videoPauseRecommendAllowTypes;
++ (id)videoPauseRecommendPanelImageURLString;
+@end

@@ -1,0 +1,32 @@
+@interface AWEDemaciaBaseController : NSObject
+@property (nonatomic) UIView rootView;
+@property (nonatomic) UIViewController<AWEDemaciaContainerProtocol> viewController;
+@property (nonatomic) AWEDemaciaBaseContainer view;
+@property (nonatomic) AWEPageContext<AWEDemaciaPageContextProtocol> context;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL appear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHide:;
+- (void)setAppear:;
+- (id)viewControllerShouldConformProtocolList;
+- (id)contextShouldConformProtocolList;
+- (void)setModel:;
+- (id)view;
+- (void)viewDidLoad;
+- (id)viewController;
+- (void)setView:;
+- (id)model;
+- (void)setData:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)reset;
+- (id)context;
+- (void)setViewController:;
+- (BOOL)appear;
+- (id)rootView;
+- (void)setRootView:;
+@end

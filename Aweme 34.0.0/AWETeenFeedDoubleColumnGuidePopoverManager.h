@@ -1,0 +1,38 @@
+@interface AWETeenFeedDoubleColumnGuidePopoverManager : NSObject
+@property (nonatomic) DUXPopover guidePopover;
+@property (nonatomic) q guidePopoverShowTimes;
+@property (nonatomic) NSDate guidePopoverLastShowTime;
+@property (nonatomic) BOOL isPopoverShowing;
+@property (nonatomic) @? onCloseAlert;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShow;
+- (void)showWithCloseCallback:;
+- (void)popoverDidDisappear:;
+- (BOOL)enableTeenDoubleColumn;
+- (void)loadGuidePopoverDataFromCache;
+- (BOOL)isPopoverShowing;
+- (void)dismissPopoverIfNeeded;
+- (id)onCloseAlert;
+- (void)setOnCloseAlert:;
+- (id)guidePopover;
+- (void)setIsPopoverShowing:;
+- (void)setGuidePopover:;
+- (BOOL)p_checkGuidePopoverFreqControl;
+- (void)tryToShowDoubleColumnGuidePopover;
+- (void)setGuidePopoverShowTimes:;
+- (void)setGuidePopoverLastShowTime:;
+- (long long)guidePopoverShowTimes;
+- (long long)maxGuidePopoverShowTimes;
+- (id)guidePopoverLastShowTime;
+- (void)showTeenDoubleColumnGuidePopover;
+- (void)p_updateDoubleColumnGuidePopoverInfo;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

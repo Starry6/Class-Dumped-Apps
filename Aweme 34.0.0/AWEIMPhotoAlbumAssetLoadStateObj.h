@@ -1,0 +1,38 @@
+@interface AWEIMPhotoAlbumAssetLoadStateObj : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL finish;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSData imageData;
+@property (nonatomic) UIImage image;
+@property (nonatomic) BOOL isLivePhoto;
+@property (nonatomic) AVAsset videoAsset;
+@property (nonatomic) UIImage videoCoverImage;
+@property (nonatomic) PHAsset asset;
+@property (nonatomic) q type;
+@property (nonatomic) BOOL needSecondaryRefresh;
+@property (nonatomic) NSString logID;
+- (void)setVideoCoverImage:;
+- (id)videoCoverImage;
+- (void)setNeedSecondaryRefresh:;
+- (BOOL)needSecondaryRefresh;
+- (id)imageData;
+- (void)setImageData:;
+- (id)image;
+- (void)setIdentifier:;
+- (void)setImage:;
+- (void)setError:;
+- (id)identifier;
+- (long long)type;
+- (void)setIsLivePhoto:;
+- (BOOL)finish;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)error;
+- (BOOL)isLivePhoto;
+- (void)setAsset:;
+- (id)asset;
+- (id)videoAsset;
+- (id)logID;
+- (void)setVideoAsset:;
+- (void)setFinish:;
+@end

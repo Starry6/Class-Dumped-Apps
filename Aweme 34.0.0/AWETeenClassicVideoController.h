@@ -1,0 +1,30 @@
+@interface AWETeenClassicVideoController : AWETeenBaseVideoController
+@property (nonatomic) AWETeenModeTextLoadingView centerLoadingView;
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) UIImageView richContentImageView;
+@property (nonatomic) UIView videoDeletedView;
+- (void)updatePlayerIfNeeded;
+- (id)videoDeletedView;
+- (void)setVideoDeletedView:;
+- (void)beginTransitionAnimation;
+- (void)setCopyFromOtherVideoController:;
+- (void)stopLoadingAnimationAction;
+- (void)playLoadingAnimationAction;
+- (void)p_addVideoDeletedView;
+- (id)centerLoadingView;
+- (void)setCenterLoadingView:;
+- (BOOL)isVideoInvalid;
+- (id)richContentImageView;
+- (void)setRichContentImageView:;
+- (void)addRichContentImage:;
+- (void)setModel:;
+- (BOOL)isLoading;
+- (void)viewWillLayoutSubviews;
+- (BOOL)play:;
+- (BOOL)pause:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setIsLoading:;
+- (BOOL)pause;
+@end

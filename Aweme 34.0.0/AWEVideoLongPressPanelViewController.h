@@ -1,0 +1,37 @@
+@interface AWEVideoLongPressPanelViewController : UIViewController
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWELongPressPanelConfiguration panelConfiguration;
+@property (nonatomic) NSMutableArray gestureRecognizers;
+@property (nonatomic) AWELongPressPanelTableViewController panelTableViewController;
+@property (nonatomic) @? dismissedHandler;
+@property (nonatomic) @? willDismissedHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)dux_sheetShouldRecognizeAsynchronousWithGestures;
+- (id)dux_sheetShouldRecognizeAsynchronousScrollViewArray;
+- (id)panelTableViewController;
+- (void)addDismissedHandler:;
+- (void)addWillDismissHandler:;
+- (double)getLongPressPanelMaxHeight;
+- (id)willDismissedHandler;
+- (void)upDatePanelViewHeigth;
+- (void)setPanelConfiguration:;
+- (void)setPanelTableViewController:;
+- (void)setWillDismissedHandler:;
+- (id)panelConfiguration;
+- (double)getLongPressPanelMinimumHeight;
+- (void)updateSheetHeightWithHeight:withMinimumHeight:;
+- (void)viewDidLoad;
+- (id)gestureRecognizers;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setGestureRecognizers:;
+- (id)dismissedHandler;
+- (void)setDismissedHandler:;
+- (void)setUpUI;
++ (id)LongPressPanelViewControllerWithModel:configuration:;
+@end

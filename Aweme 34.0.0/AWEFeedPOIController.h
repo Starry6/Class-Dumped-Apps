@@ -1,0 +1,32 @@
+@interface AWEFeedPOIController : AWEBaseController
+@property (nonatomic) BOOL didEnterBackground;
+@property (nonatomic) q slideVideoCount;
+@property (nonatomic) <AWEFeedUserProfileControllerProtocol> userProfileController;
+@property (nonatomic) <AWEFeedTrackControllerProtocol> feedTrackController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)refreshCompletion:error:needAnimation:;
+- (void)willEnterUserProfileViewController;
+- (void)scrollViewDidScrollEndWithActive;
+- (id)userProfileController;
+- (id)feedTrackController;
+- (id)urlParamsForUserProfileViewControllerWithModel:;
+- (id)paramsForTrackEventType:initialContextParams:;
+- (void)setUserProfileController:;
+- (void)setFeedTrackController:;
+- (void)privacyAlertAgreed;
+- (id)paramsForEnterPersonalDetail;
+- (id)paramsForVideoClientShowWithInitialContextParams:;
+- (void)locationAlertShown;
+- (void)setSlideVideoCount:;
+- (long long)slideVideoCount;
+- (BOOL)didEnterBackground;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)setDidEnterBackground:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)applicationDidBecomeActive;
+- (void)appDidEnterBackground;
+@end

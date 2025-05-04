@@ -1,0 +1,32 @@
+@interface AWEIMFacePuzzlePicUpLoadModel : AWEBaseApiModel
+@property (nonatomic) NSString imageUri;
+@property (nonatomic) NSString imageSkey;
+@property (nonatomic) NSString md5;
+@property (nonatomic) q senseExercisePicEnum;
+@property (nonatomic) NSString signature;
+@property (nonatomic) NSString decryptImageUrl;
+@property (nonatomic) NSString mainImageSkey;
+@property (nonatomic) q featureEnum;
+- (void)setImageUri:;
+- (id)imageUri;
+- (id)decryptImageUrl;
+- (void)setImageSkey:;
+- (id)imageSkey;
+- (void)setDecryptImageUrl:;
+- (void)setFeatureEnum:;
+- (void)setMainImageSkey:;
+- (long long)featureEnum;
+- (id)mainImageSkey;
+- (void)setSenseExercisePicEnum:;
+- (long long)senseExercisePicEnum;
+- (id)signature;
+- (void)setSignature:;
+- (void).cxx_destruct;
+- (void)setMd5:;
+- (id)md5;
++ (id)sha256hmac:content:;
++ (id)convertFromEncryptImageUploadResult:withEnumInfo:;
++ (long long)convertPicEnumFromDescString:;
++ (long long)convertFeatureEnumFromFeatureString:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

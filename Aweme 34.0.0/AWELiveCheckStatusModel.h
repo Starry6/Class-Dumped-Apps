@@ -1,0 +1,30 @@
+@interface AWELiveCheckStatusModel : NSObject
+@property (nonatomic) BOOL canDirectEnter;
+@property (nonatomic) q roomStatus;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) NSString logID;
+@property (nonatomic) NSString filterReason;
+@property (nonatomic) NSError error;
+@property (nonatomic) q ntpDiffTime;
+@property (nonatomic) NSString originRoomData;
+@property (nonatomic) NSDictionary originRoomDict;
+- (long long)ntpDiffTime;
+- (void)setNtpDiffTime:;
+- (long long)roomStatus;
+- (void)setRoomStatus:;
+- (id)filterReason;
+- (void)setFilterReason:;
+- (id)originRoomDict;
+- (id)originRoomData;
+- (void)setOriginRoomDict:;
+- (void)setOriginRoomData:;
+- (void)setCanDirectEnter:;
+- (BOOL)canDirectEnter;
+- (id)roomID;
+- (void)setError:;
+- (void).cxx_destruct;
+- (id)error;
+- (void)setRoomID:;
+- (id)logID;
+- (void)setLogID:;
+@end

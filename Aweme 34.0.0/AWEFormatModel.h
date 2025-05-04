@@ -1,0 +1,32 @@
+@interface AWEFormatModel : MTLModel
+@property (nonatomic) NSNumber ownerUserID;
+@property (nonatomic) NSNumber formatID;
+@property (nonatomic) BOOL isShow;
+@property (nonatomic) NSNumber digitalID;
+@property (nonatomic) Q formatStatus;
+@property (nonatomic) NSDictionary pngDict;
+@property (nonatomic) NSNumber formatImBotId;
+@property (nonatomic) q teamType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isShow;
+- (void)setIsShow:;
+- (unsigned long long)formatStatus;
+- (id)formatImBotId;
+- (void)setFormatStatus:;
+- (id)pngDict;
+- (void)setPngDict:;
+- (void)setFormatImBotId:;
+- (id)digitalID;
+- (void)setDigitalID:;
+- (void).cxx_destruct;
+- (id)formatID;
+- (void)setFormatID:;
+- (void)setOwnerUserID:;
+- (id)ownerUserID;
+- (void)setTeamType:;
+- (long long)teamType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

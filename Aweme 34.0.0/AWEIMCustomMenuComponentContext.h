@@ -1,0 +1,33 @@
+@interface AWEIMCustomMenuComponentContext : NSObject
+@property (nonatomic) Q contextType;
+@property (nonatomic) NSDictionary extraDict;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bubbleFrameInScreen;
+@property (nonatomic) {CGPoint=dd} tapLocationInScreen;
+@property (nonatomic) NSArray menuItemList;
+@property (nonatomic) BOOL moreEmoticon;
+@property (nonatomic) UITableViewCell cell;
+@property (nonatomic) {CGPoint=dd} highLocation;
+@property (nonatomic) {CGPoint=dd} lowLocation;
+@property (nonatomic) BOOL tryHighLocationFirst;
+- (id)extraDict;
+- (void)setExtraDict:;
+- (id)bubbleFrameInScreen;
+- (void)setBubbleFrameInScreen:;
+- (id)tapLocationInScreen;
+- (void)setTapLocationInScreen:;
+- (id)menuItemList;
+- (void)setMenuItemList:;
+- (BOOL)moreEmoticon;
+- (void)setMoreEmoticon:;
+- (id)highLocation;
+- (void)setHighLocation:;
+- (id)lowLocation;
+- (void)setLowLocation:;
+- (BOOL)tryHighLocationFirst;
+- (void)setTryHighLocationFirst:;
+- (void)setContextType:;
+- (unsigned long long)contextType;
+- (void).cxx_destruct;
+- (id)cell;
+- (void)setCell:;
+@end

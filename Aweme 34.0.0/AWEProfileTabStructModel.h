@@ -1,0 +1,31 @@
+@interface AWEProfileTabStructModel : AWEBaseApiModel
+@property (nonatomic) q tabId;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString nameEn;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString tabShowName;
+@property (nonatomic) NSString tabComponentType;
+@property (nonatomic) BOOL lockIconVisible;
+@property (nonatomic) NSString mobParams;
+@property (nonatomic) AWECodeGenTabMergedGuidanceModel tabMergedGuidance;
+- (id)mobParams;
+- (void)setMobParams:;
+- (id)nameEn;
+- (void)setNameEn:;
+- (id)tabShowName;
+- (void)setTabShowName:;
+- (id)tabComponentType;
+- (void)setTabComponentType:;
+- (BOOL)lockIconVisible;
+- (void)setLockIconVisible:;
+- (id)tabMergedGuidance;
+- (void)setTabMergedGuidance:;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)url;
+- (void)setTabId:;
+- (long long)tabId;
++ (id)JSONKeyPathsByPropertyKey;
+@end

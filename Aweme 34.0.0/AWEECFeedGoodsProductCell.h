@@ -1,0 +1,30 @@
+@interface AWEECFeedGoodsProductCell : UIView
+@property (nonatomic) AWEECFeedGoodsCardProductModel model;
+@property (nonatomic) UIImageView productImageView;
+@property (nonatomic) AWEECProgressView progressView;
+@property (nonatomic) UIView priceLabelView;
+@property (nonatomic) AWEECCustomPriceLabel priceLabel;
+@property (nonatomic) UIView cellMaskView;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) @? clickCellBlock;
+- (id)priceLabelView;
+- (id)cellMaskView;
+- (void)__handleTapGesture:;
+- (id)clickCellBlock;
+- (void)updateViewWithIsSameIndex:progressValue:totalValue:;
+- (void)setPriceLabelView:;
+- (void)setCellMaskView:;
+- (void)setClickCellBlock:;
+- (void)setModel:;
+- (id)progressView;
+- (id)initWithModel:;
+- (void)setProgressView:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setupUI;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+- (id)productImageView;
+- (void)setProductImageView:;
+@end

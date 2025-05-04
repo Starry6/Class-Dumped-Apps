@@ -1,0 +1,31 @@
+@interface AWEFeedSlidingScrollView : UIScrollView
+@property (nonatomic) <AWEFeedSlidingViewControllerDelegate> homepageDelegate;
+@property (nonatomic) q originBehavior;
+@property (nonatomic) BOOL hasChangeContentOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)beforeEnterBatMan;
+- (void)afterExitBatMan;
+- (void)beforeEnterToLandscapeFeedNotification:;
+- (void)afterQuitFromLandscapeFeedNotification:;
+- (long long)originBehavior;
+- (void)setOriginBehavior:;
+- (id)homepageDelegate;
+- (void)setHomepageDelegate:;
+- (BOOL)rightEdgePan:;
+- (BOOL)p_gestureRecognizerShouldBegin:reason:;
+- (BOOL)slidingScrollViewShouldScrollWithPan:reason:;
+- (BOOL)hasChangeContentOffset;
+- (void)setHasChangeContentOffset:;
+- (void)setContentOffset:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (BOOL)allowsKeyboardScrolling;
++ (Class)aAWEPadModuleAdapterClass;
+@end

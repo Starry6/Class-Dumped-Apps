@@ -1,0 +1,3 @@
+@interface AWECommentPanelListSwiftImpl.CommentCellTimeVirtualView : _TtCV28AWECommentPanelListSwiftImpl6NEWAPI19CommentVirtualLabel
+- (void).cxx_destruct;
+@end

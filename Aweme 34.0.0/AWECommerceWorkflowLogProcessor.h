@@ -1,0 +1,31 @@
+@interface AWECommerceWorkflowLogProcessor : NSObject
+@property (nonatomic) NSMutableDictionary traceDict;
+@property (nonatomic) NSMapTable dataDict;
+@property (nonatomic) NSObject<OS_dispatch_queue> processQueue;
+@property (nonatomic) <AWECommerceWorkflowLogHelper> helper;
+@property (nonatomic) BOOL didStart;
+- (void)setDataDict:;
+- (id)dataDict;
+- (void)setProcessQueue:;
+- (void)startWithHelper:;
+- (void)startTraceWithPrimaryKey:name:dataKey:traceKey:needRecordTrace:;
+- (void)setCustomParamsWithPrimaryKey:customParams:;
+- (void)appendCustomParamsWithPrimaryKey:customParams:;
+- (void)appendTraceWithPrimaryKey:traceKey:;
+- (void)endTraceWithPrimaryKey:traceKey:;
+- (void)appendComponentTraceWithDataKey:componentKey:traceKey:;
+- (void)setTraceDict:;
+- (void)upLoadBackendLog;
+- (void)startTraceWithPrimaryKey:dataKey:traceKey:needRecordTrace:;
+- (id)traceDict;
+- (void)upLoadLogWithData:;
+- (void)startTraceWithPrimaryKey:dataKey:traceKey:;
+- (id)init;
+- (void)setHelper:;
+- (void).cxx_destruct;
+- (id)helper;
+- (BOOL)didStart;
+- (id)processQueue;
+- (void)setDidStart:;
++ (id)sharedInstance;
+@end

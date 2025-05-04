@@ -1,0 +1,30 @@
+@interface AWEFeedSyncMultiDevice : NSObject
+@property (nonatomic) BOOL isPad;
+@property (nonatomic) BOOL isPc;
+@property (nonatomic) BOOL isPhone;
+@property (nonatomic) BOOL isWeb;
+@property (nonatomic) BOOL isDesktop;
+@property (nonatomic) q deviceType;
+@property (nonatomic) q deviceID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString system;
+@property (nonatomic) @ extraData;
+- (id)initWithDic:;
+- (BOOL)isPc;
+- (BOOL)isWeb;
+- (BOOL)isDesktop;
+- (id)system;
+- (void)setDeviceType:;
+- (void)setDeviceID:;
+- (BOOL)isPhone;
+- (void).cxx_destruct;
+- (long long)deviceID;
+- (BOOL)isEqual:;
+- (void)setName:;
+- (id)name;
+- (BOOL)isPad;
+- (long long)deviceType;
+- (void)setSystem:;
+- (id)extraData;
+- (void)setExtraData:;
+@end

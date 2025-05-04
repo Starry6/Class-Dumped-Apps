@@ -1,0 +1,3 @@
+@interface AWECommentPanelListSwiftImpl.CommentProductServiceSectionViewModel : AWECommentPanelListSwiftImpl.CommentBusinessServiceSectionViewModel
+- (id)init;
+@end

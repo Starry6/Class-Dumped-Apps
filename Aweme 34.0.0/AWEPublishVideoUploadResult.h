@@ -1,0 +1,34 @@
+@interface AWEPublishVideoUploadResult : MTLModel
+@property (nonatomic) q index;
+@property (nonatomic) NSString uploadVideoUrl;
+@property (nonatomic) NSString videoResourceId;
+@property (nonatomic) NSString uploadedVideoCoverURI;
+@property (nonatomic) NSNumber uploadVideoTime;
+@property (nonatomic) NSNumber uploadWaitMergeTime;
+@property (nonatomic) NSNumber uploadType;
+@property (nonatomic) NSNumber uploadProbeSpeed;
+@property (nonatomic) NSDictionary uploadVideoMetaInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)videoResourceId;
+- (void)setVideoResourceId:;
+- (void)setUploadType:;
+- (id)uploadVideoUrl;
+- (void)setUploadVideoUrl:;
+- (id)uploadedVideoCoverURI;
+- (void)setUploadedVideoCoverURI:;
+- (id)uploadVideoTime;
+- (void)setUploadVideoTime:;
+- (id)uploadWaitMergeTime;
+- (void)setUploadWaitMergeTime:;
+- (id)uploadProbeSpeed;
+- (void)setUploadProbeSpeed:;
+- (id)uploadVideoMetaInfo;
+- (void)setUploadVideoMetaInfo:;
+- (void)setIndex:;
+- (long long)index;
+- (void).cxx_destruct;
+- (id)uploadType;
+@end

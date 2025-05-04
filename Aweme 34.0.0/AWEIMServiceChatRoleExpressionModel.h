@@ -1,0 +1,35 @@
+@interface AWEIMServiceChatRoleExpressionModel : MTLModel
+@property (nonatomic) q showType;
+@property (nonatomic) q tagType;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString textBackgroudColorDark;
+@property (nonatomic) NSString textBackgroudColorLight;
+@property (nonatomic) NSString textColorDark;
+@property (nonatomic) NSString textColorLight;
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)jumpSchema;
+- (id)textColorDark;
+- (id)textColorLight;
+- (void)setTextColorLight:;
+- (void)setTextColorDark:;
+- (void)setJumpSchema:;
+- (id)textBackgroudColorLight;
+- (id)textBackgroudColorDark;
+- (void)setTextBackgroudColorDark:;
+- (void)setTextBackgroudColorLight:;
+- (long long)tagType;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (void)setTagType:;
+- (void)setShowType:;
+- (long long)showType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWETeenNightLockDecisionTask : NSObject
+@property (nonatomic) BOOL nightLockShowing;
+@property (nonatomic) BOOL nightLockNeedToShow;
+@property (nonatomic) double lastUnlockTS;
+@property (nonatomic) UIViewController<AWETeenProtectionLockViewControllerProtocol> nightLockVC;
+@property (nonatomic) Q originOrientationMask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)teenModeDidChange:isLogout:;
+- (BOOL)onGoing;
+- (BOOL)triggerTask;
+- (BOOL)willOnGoingWithinFiveMinutes;
+- (void)readLastUnlockTS;
+- (void)clearNightLockData;
+- (void)setNightLockShowing:;
+- (void)setLastUnlockTS:;
+- (BOOL)nightLockShowing;
+- (BOOL)nightLockNeedToShow;
+- (BOOL)shouldShowNightLock;
+- (void)showNightLockIfNeeded;
+- (void)dismissNightLockIfNeeded;
+- (double)lastUnlockTS;
+- (void)setNightLockNeedToShow:;
+- (void)restoreOriginOrientation;
+- (void)setNightLockVC:;
+- (id)nightLockVC;
+- (void)setOriginOrientationMask:;
+- (unsigned long long)originOrientationMask;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (unsigned long long)taskID;
+@end

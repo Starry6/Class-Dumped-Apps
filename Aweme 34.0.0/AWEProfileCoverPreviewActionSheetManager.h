@@ -1,0 +1,32 @@
+@interface AWEProfileCoverPreviewActionSheetManager : NSObject
+@property (nonatomic) DUXActionSheet actionSheet;
+@property (nonatomic) UIViewController presenter;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) @? selectCompletion;
+@property (nonatomic) @? selectCoverFromAlbum;
+@property (nonatomic) @? confirmDynamicCoverCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)actionSheet:didClickButtonAtIndex:;
+- (void)actionSheetDidClickCancelButton:;
+- (void)actionSheetDidClickMaskArea:;
+- (void)didActionSheetDismiss:;
+- (id)selectCompletion;
+- (void)setSelectCompletion:;
+- (void)showActionSheetOnVC:;
+- (id)modelWithTitle:;
+- (id)selectCoverFromAlbum;
+- (id)confirmDynamicCoverCompletion;
+- (void)setSelectCoverFromAlbum:;
+- (void)setConfirmDynamicCoverCompletion:;
+- (id)presenter;
+- (void)setPresenter:;
+- (void).cxx_destruct;
+- (void)setActionSheet:;
+- (id)actionSheet;
+- (void)showActionSheet;
+@end

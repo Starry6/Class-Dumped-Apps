@@ -1,0 +1,33 @@
+@interface AWEDouPlusRechargeViewModel : NSObject
+@property (nonatomic) AWEDouPlusChargeOptionsResponseModel chargeOptionsModel;
+@property (nonatomic) NSArray couponModelList;
+@property (nonatomic) NSDictionary trackCommonParams;
+@property (nonatomic) NSDictionary bizParams;
+@property (nonatomic) NSArray productInfos;
+@property (nonatomic) @? clickDouPlusIAPProductBlock;
+@property (nonatomic) AWEDouPlusIAPProductModel selectedProductModel;
+- (id)bizParams;
+- (void)setTrackCommonParams:;
+- (void)setBizParams:;
+- (id)productInfos;
+- (void)setProductInfos:;
+- (id)couponModelList;
+- (void)setCouponModelList:;
+- (id)initWithParamDict:;
+- (void)setChargeOptionsModel:;
+- (id)chargeOptionsModel;
+- (void)fetchDouplusChargeOptions;
+- (void)trackerClickChargeButton;
+- (void)monitorPayStatusWithPaySuccess:payNumberString:error:;
+- (void)douPlusChargeWithProductModel:couponModel:completeBlock:;
+- (void)postStatusNotificationWithParams:douPlusWebVCList:;
+- (void)trackerDouPlusPayStatus:payNumberString:;
+- (id)trackCommonParams;
+- (void)prefetchProductInfo;
+- (id)productInfoWithIAPID:;
+- (id)clickDouPlusIAPProductBlock;
+- (void)setClickDouPlusIAPProductBlock:;
+- (id)selectedProductModel;
+- (void)setSelectedProductModel:;
+- (void).cxx_destruct;
+@end

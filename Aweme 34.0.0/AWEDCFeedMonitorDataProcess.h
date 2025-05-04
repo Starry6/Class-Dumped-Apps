@@ -1,0 +1,27 @@
+@interface AWEDCFeedMonitorDataProcess : NSObject
+- (void)setExtra:;
+- (void)setExtraForEvent:extra:;
+- (void)recordCurrentDurationForEvent:currentEventName:;
+- (void)finishWithEvent:;
+- (void)finishWithEvent:extra:;
+- (void)cancelWithEvent:;
+- (void)beginSubEventWithEvent:sub:;
+- (void)finishSubEventWithEvent:sub:;
+- (id)initWithScene:settingInfo:;
+- (void)trackAllEvent:;
+- (double)getCurrentFMPBeginTime;
+- (void)beginFMPMonitor;
+- (void)finishFMPMonitor;
+- (void)cancelFMPMonitor;
+- (id)generalJsonStringWithDict:;
+- (BOOL)checkAndUpdateCurrentEventNativeSampling:;
+- (BOOL)checkAndUpdateSubEventNativeSampling:;
+- (void)trackEvent:data:finishTime:extra:;
+- (void)recordEvent:data:finishTime:;
+- (void)recordSubWithEvent:sub:beginTime:finishTime:;
+- (id)generalSubInfoStringWithSubDict:;
+- (id)getMonitorDataWithEvent:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)beginWithEvent:;
+@end

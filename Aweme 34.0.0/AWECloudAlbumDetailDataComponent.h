@@ -1,0 +1,36 @@
+@interface AWECloudAlbumDetailDataComponent : AWECloudAlbumDetailBaseComponent
+@property (nonatomic) AWECloudAlbumDetailDataViewModel viewModel;
+@property (nonatomic) <AWECloudAlbumDetailAlertServiceProtocol> alertService;
+@property (nonatomic) <AWECloudAlbumDetailListServiceProtocol> listService;
+@property (nonatomic) BOOL isShowingAlert;
+@property (nonatomic) BOOL isUploading;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (id)listService;
+- (void)setIsUploading:;
+- (void)albumChanges:;
+- (void)albumDelChanges:;
+- (void)taskItemChanges:;
+- (void)taskProgressChanges:;
+- (void)taskStateChanges:;
+- (void)componentWillAppear;
+- (id)alertService;
+- (id)serviceBinding;
+- (void)setListService:;
+- (void)setAlertService:;
+- (void)networkStateChange;
+- (id)p_stringWithTask:;
+- (id)p_stringWithProgress:;
+- (id)p_stringWithItem:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (BOOL)isUploading;
+- (BOOL)isShowingAlert;
+- (void)setIsShowingAlert:;
++ (id)maxGiBText;
+@end

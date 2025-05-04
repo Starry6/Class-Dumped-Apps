@@ -1,0 +1,37 @@
+@interface AWEAddMateGuideBannerView : UIView
+@property (nonatomic) AWEAddMateGuideBannerConfig config;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton primaryButton;
+@property (nonatomic) @? closeBtnTapped;
+@property (nonatomic) @? addMateBtnTapped;
+- (void)awe_themeReload;
+- (id)initWithFrame:config:;
+- (void)setCloseBtnTapped:;
+- (void)setAddMateBtnTapped:;
+- (id)closeBtnTapped;
+- (id)addMateBtnTapped;
+- (void)setConfig:;
+- (void)updateWithConfig:;
+- (id)config;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)closeButtonTapped:;
+- (id)primaryButton;
+- (void)setPrimaryButton:;
+- (void)primaryButtonTapped:;
+@end

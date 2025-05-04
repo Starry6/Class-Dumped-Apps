@@ -1,0 +1,35 @@
+@interface AWESearchMerchandiseComponentDropDownExpandViewCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) YYAnimatedImageView headIcon;
+@property (nonatomic) YYAnimatedImageView tailIcon;
+@property (nonatomic) {CGSize=dd} headIconSize;
+@property (nonatomic) {CGSize=dd} tailIconSize;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterComponentModel model;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterManager filterManager;
+@property (nonatomic) BOOL isSelect;
+- (void)setIsSelect:;
+- (id)headIcon;
+- (void)setHeadIcon:;
+- (id)tailIcon;
+- (void)setTailIcon:;
+- (id)filterManager;
+- (void)setFilterManager:;
+- (id)headIconSize;
+- (void)setHeadIconSize:;
+- (id)tailIconSize;
+- (void)setTailIconSize:;
+- (void)configWithComponentModel:filterManager:isSelect:;
+- (void)updateUIDisplayStatusWithModel:isSelect:;
+- (BOOL)isSelect;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setupUI;
++ (double)titleWidthWithModel:isSelect:;
++ (id)textFontWithModel:isSelect:;
++ (id)identifier;
+@end

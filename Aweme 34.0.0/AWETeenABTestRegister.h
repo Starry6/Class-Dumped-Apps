@@ -1,0 +1,2 @@
+@interface AWETeenABTestRegister : NSObject
+@end

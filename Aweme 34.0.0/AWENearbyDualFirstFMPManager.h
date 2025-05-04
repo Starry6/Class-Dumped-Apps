@@ -1,0 +1,30 @@
+@interface AWENearbyDualFirstFMPManager : AWENearbyFMPBaseManager
+@property (nonatomic) BOOL isFirstArea;
+@property (nonatomic) q areaType;
+@property (nonatomic) BOOL isFeedShow;
+@property (nonatomic) NSString transformerFMPSdkResult;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedRequestFail;
+- (void)feedRequestEmpty;
+- (void)transformerRequestFail;
+- (void)transformerRequestEmpty;
+- (void)transformerDidShowParams:renderTime:error:;
+- (void)setTransformerFMPSdkResult:;
+- (id)transformerFMPSdkResult;
+- (void)setIsFeedShow:;
+- (id)injectCustomParams;
+- (BOOL)isFeedShow;
+- (id)injectEventName;
+- (void)feedStartSetCover;
+- (void)setIsFirstArea:;
+- (BOOL)isFirstArea;
+- (void)feedDidShowParams:;
+- (id)init;
+- (void).cxx_destruct;
+- (long long)areaType;
+- (void)setAreaType:;
++ (id)sharedInstanceWithPageType:;
+@end

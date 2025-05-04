@@ -1,0 +1,30 @@
+@interface AWEFilterBaseEditor : AEKBaseRenderEditor
+@property (nonatomic) <AEKFilterContainerConvertible> filterContainer;
+@property (nonatomic) <AEKEditorMaterial> material;
+@property (nonatomic) NSArray filters;
+@property (nonatomic) <AEKFilterOperator> firstOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)applyStashes:;
+- (id)filterEditorForMaterial:;
+- (id)firstOperator;
+- (id)filterImpls;
+- (id)filterContainer;
+- (id)aek_filterEditorForMaterial:;
+- (id)filterWithID:;
+- (id)stashWithFilter:;
+- (id)addFilterWithResource:;
+- (BOOL)hasFilterWithID:;
+- (BOOL)hasFilterUsingUmpire:;
+- (id)initWithMaterial:baseData:subscriberProvider:coreUnit:supportTypes:;
+- (id)addEmptyFilter:detailType:;
+- (void)updateFilter:resource:;
+- (void)setFilterContainer:;
+- (id)batch:;
+- (id)filters;
+- (void).cxx_destruct;
+- (id)material;
+- (void)setMaterial:;
+@end

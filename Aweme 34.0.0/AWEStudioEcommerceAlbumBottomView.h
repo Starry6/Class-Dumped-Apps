@@ -1,0 +1,35 @@
+@interface AWEStudioEcommerceAlbumBottomView : UIView
+@property (nonatomic) UIButton overlayButton;
+@property (nonatomic) UIButton nextButton;
+@property (nonatomic) UIButton finishButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSString shootWay;
+@property (nonatomic) BOOL doAnimation;
+@property (nonatomic) @? finishBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setShootWay:;
+- (id)shootWay;
+- (BOOL)doAnimation;
+- (void)setDoAnimation:;
+- (void)updateStateWith:;
+- (void)makeConstraint;
+- (void)setFinishButton:;
+- (void)clickFinish;
+- (void)clickBtnDisable;
+- (void)updateBtnState:;
+- (void)hideAllBtn;
+- (id)init;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)nextButton;
+- (void)setNextButton:;
+- (void)setFinishBlock:;
+- (id)finishBlock;
+- (id)overlayButton;
+- (void)setOverlayButton:;
+- (id)finishButton;
+@end

@@ -1,0 +1,34 @@
+@interface AWEEcomSearchResultBasicInfo : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString format;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) q resultFrom;
+@property (nonatomic) q queryCorrectType;
+@property (nonatomic) NSString ecomSearchAllPassThrough;
+@property (nonatomic) NSString imageQueryUri;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (long long)resultFrom;
+- (void)setResultFrom:;
+- (long long)queryCorrectType;
+- (void)setQueryCorrectType:;
+- (id)ecomSearchAllPassThrough;
+- (void)setEcomSearchAllPassThrough:;
+- (id)imageQueryUri;
+- (void)fillMerchandiseResp:;
+- (void)setImageQueryUri:;
+- (id)format;
+- (void)setFormat:;
+- (void).cxx_destruct;
+- (id)keyword;
+- (void)setKeyword:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

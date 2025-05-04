@@ -1,0 +1,37 @@
+@interface AWELandScapeFeedConfigInfo : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString referString;
+@property (nonatomic) Q enterScene;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) AWEAwemeModel fromModel;
+@property (nonatomic) UIViewController<AWEAwemePlayVideoViewControllerProtocol> playerViewController;
+@property (nonatomic) <AWELandscapeTransitionOuterContextProvider> transitionProvider;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) BOOL needClearStatus;
+@property (nonatomic) BOOL needAutoExitLandScape;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (void)setReferString:;
+- (id)enterMethod;
+- (id)fromModel;
+- (void)setFromModel:;
+- (id)enterFrom;
+- (unsigned long long)enterScene;
+- (void)setEnterScene:;
+- (void)setTransitionProvider:;
+- (id)initWithEnterFrom:enterScene:;
+- (BOOL)needClearStatus;
+- (void)setNeedClearStatus:;
+- (BOOL)needAutoExitLandScape;
+- (void)setNeedAutoExitLandScape:;
+- (id)transitionProvider;
+- (id)viewController;
+- (void).cxx_destruct;
+- (id)playerViewController;
+- (void)setViewController:;
+- (id)currentModel;
+- (void)setPlayerViewController:;
+- (void)setCurrentModel:;
+@end

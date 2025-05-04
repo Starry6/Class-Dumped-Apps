@@ -1,0 +1,2 @@
+@interface AWEPadModelPlaceholder : NSObject
+@end

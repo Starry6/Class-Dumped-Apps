@@ -1,0 +1,37 @@
+@interface AWELocalUserCenterService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isFriend:;
+- (void)fetchUserCenterDataWhenColdLaunch;
+- (void)clearDB;
+- (BOOL)isFamiliar:;
+- (BOOL)shouldShowLikeList:;
+- (void)updateRecommendReasonOfUserFromUserCenter:privacyContext:;
+- (id)getAllFriendUserList;
+- (id)getFriendUserListWithFriendIDList:;
+- (void)getAndCheckFriendUserListWithFriendIDList:closeFriendsIDList:isAffinity:completion:;
+- (void)trackAndUpdateLocalUserWithProfileUser:;
+- (BOOL)isFriendCountValid;
+- (id)friendsCountWithUserID:;
+- (BOOL)enableFamiliarListModifyAction;
+- (BOOL)enableLocalDataSoftDelete;
+- (BOOL)hasCloseFriendsTableSynced;
+- (BOOL)isColorRingTableValid;
+- (id)getAllUsersFromTable:;
+- (void)getAllUsersFromTable:completion:;
+- (void)updateUsers:andDeleteUsers:tableName:completion:;
+- (void)updateUsers:andDeleteUsers:tableName:shouldSendNoti:completion:;
+- (id)getUserWithUid:tableName:;
+- (id)getUsersWithUids:tableName:;
+- (id)familiarModelWithUserID:;
+- (void)compensateFriendTableWithUserIDs:completion:;
+- (void)compensateUserTableWithUserIDs:completion:;
+- (void)updateColorRingWithUsers:shouldSendNoti:;
+- (void)syncRecommendData:user:;
+- (void)updateFriendTableWithFriendIDList:closeFriendsIDList:isAffinity:completion:;
+- (void)originalUpdateWithFriendIDList:closeFriendsIDList:isAffinity:completion:;
+- (id)friendModelWithUserID:;
+- (id)familiarModelFromAwemeUser:;
+@end

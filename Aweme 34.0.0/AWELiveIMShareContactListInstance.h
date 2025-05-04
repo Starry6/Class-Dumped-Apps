@@ -1,0 +1,34 @@
+@interface AWELiveIMShareContactListInstance : NSObject
+@property (nonatomic) <IESLiveIMShareContactListDelegate> delegate;
+@property (nonatomic) IESLiveIMShareContactListConfig config;
+@property (nonatomic) HTSLiveRoom roomModel;
+@property (nonatomic) IESLiveShareContentModel contentModel;
+@property (nonatomic) <AWEIMShareContactListProtocol> contactList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)roomModel;
+- (void)handleTapOutsideOfPanel;
+- (void)setRoomModel:;
+- (void)shareContactList:hideContainerListWithCompletion:atScene:;
+- (BOOL)shareContactList:didSelectWithShareModel:atIndex:currentSelectState:;
+- (void)shareContactList:didSelectRecentShareWithShareModels:atIndex:;
+- (void)textView:bottomViewDidShow:keyboardHeight:additionTextViewNormalHeight:;
+- (id)createAdditionTextAndAppendToViewHierarchyWithShareContactList:;
+- (void)shareContactList:additionTextViewDismissed:;
+- (id)contentModel;
+- (void)setContentModel:;
+- (void)setContactList:;
+- (id)contactList;
+- (void)createContactList;
+- (id)convertShareModel:;
+- (id)initWithRoomModel:contentModel:config:delegate:;
+- (void)setConfig:;
+- (id)delegate;
+- (id)config;
+- (id)listView;
+- (void).cxx_destruct;
+- (double)height;
+- (void)setDelegate:;
+@end

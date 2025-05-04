@@ -1,0 +1,30 @@
+@interface AWECommentMediaFeedParams : NSObject
+@property (nonatomic) BOOL panelIsFullScreen;
+@property (nonatomic) Q exitType;
+@property (nonatomic) @? panelVideoHasPausedByComment;
+@property (nonatomic) BOOL isReplyPageUseCommentTreeContainer;
+@property (nonatomic) BOOL enableSceneSupportTimeTextExtra;
+@property (nonatomic) @ interactionViewController;
+@property (nonatomic) <AWECommentTrackingModelProtocol> commentTrackingModel;
+@property (nonatomic) <AWECommentViewControllerPadAdapterProtocol> padAdapter;
+@property (nonatomic) <AWECommentControlVideoStateProtocol> videoStateChangeDelegate;
+- (void)setInteractionViewController:;
+- (void)setVideoStateChangeDelegate:;
+- (id)videoStateChangeDelegate;
+- (id)padAdapter;
+- (id)commentTrackingModel;
+- (void)setCommentTrackingModel:;
+- (BOOL)panelIsFullScreen;
+- (id)panelVideoHasPausedByComment;
+- (BOOL)enableSceneSupportTimeTextExtra;
+- (BOOL)isReplyPageUseCommentTreeContainer;
+- (void)setPanelIsFullScreen:;
+- (void)setPanelVideoHasPausedByComment:;
+- (void)setEnableSceneSupportTimeTextExtra:;
+- (void)setIsReplyPageUseCommentTreeContainer:;
+- (void)setPadAdapter:;
+- (void).cxx_destruct;
+- (unsigned long long)exitType;
+- (void)setExitType:;
+- (id)interactionViewController;
+@end

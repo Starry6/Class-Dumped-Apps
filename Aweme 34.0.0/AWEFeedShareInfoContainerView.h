@@ -1,0 +1,31 @@
+@interface AWEFeedShareInfoContainerView : UIView
+@property (nonatomic) YYLabel titleLab;
+@property (nonatomic) UIView playerContainer;
+@property (nonatomic) UIView playerView;
+@property (nonatomic) UIImageView shareIconView;
+@property (nonatomic) UIImageView userIconView;
+@property (nonatomic) UILabel userNameLab;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) <AWEFeedShareInfoContainerViewDelegate> delegate;
+- (void)config:width:;
+- (id)titleLab;
+- (void)setTitleLab:;
+- (id)playerContainer;
+- (void)setPlayerContainer:;
+- (BOOL)isNonPostscript:;
+- (id)shareIconView;
+- (void)setShareIconView:;
+- (id)userIconView;
+- (id)userNameLab;
+- (void)setUserIconView:;
+- (void)setUserNameLab:;
+- (id)init;
+- (id)gradientView;
+- (id)delegate;
+- (void)setPlayerView:;
+- (id)playerView;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+@end

@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageDataController : _TtCs12_SwiftObject
+@end

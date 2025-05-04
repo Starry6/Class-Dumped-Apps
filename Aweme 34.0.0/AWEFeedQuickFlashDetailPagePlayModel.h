@@ -1,0 +1,32 @@
+@interface AWEFeedQuickFlashDetailPagePlayModel : MTLModel
+@property (nonatomic) NSString btnText;
+@property (nonatomic) NSString btnLeftIcon;
+@property (nonatomic) NSString layoutSchema;
+@property (nonatomic) NSString btnSchema;
+@property (nonatomic) NSString mobJsonString;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString cover;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (id)btnText;
+- (void)setBtnText:;
+- (id)btnLeftIcon;
+- (void)setBtnLeftIcon:;
+- (id)layoutSchema;
+- (void)setLayoutSchema:;
+- (id)btnSchema;
+- (void)setBtnSchema:;
+- (id)mobJsonString;
+- (void)setMobJsonString:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

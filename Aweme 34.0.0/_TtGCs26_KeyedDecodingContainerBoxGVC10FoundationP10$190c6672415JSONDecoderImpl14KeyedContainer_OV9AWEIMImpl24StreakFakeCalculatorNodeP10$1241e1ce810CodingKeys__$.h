@@ -1,0 +1,2 @@
+@interface _TtGCs26_KeyedDecodingContainerBoxGVC10FoundationP10$190c6672415JSONDecoderImpl14KeyedContainer_OV9AWEIMImpl24StreakFakeCalculatorNodeP10$1241e1ce810CodingKeys__$ : Swift._KeyedDecodingContainerBase
+@end

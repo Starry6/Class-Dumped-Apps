@@ -1,0 +1,30 @@
+@interface AWECommentEvaluationResultModel : NSObject
+@property (nonatomic) NSNumber score;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSArray customExpansionSelect;
+@property (nonatomic) NSArray imagesList;
+@property (nonatomic) AWECommentEvaluationStickerResultModel stickerModel;
+@property (nonatomic) NSArray textExtras;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textExtras;
+- (void)setTextExtras:;
+- (id)stickerModel;
+- (id)imagesList;
+- (void)setStickerModel:;
+- (void)setImagesList:;
+- (void)setCustomExpansionSelect:;
+- (id)customExpansionSelect;
+- (void)setScore:;
+- (id)content;
+- (id)score;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
+@end

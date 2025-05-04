@@ -1,0 +1,34 @@
+@interface AWETextReaderModel : MTLModel
+@property (nonatomic) NSString textId;
+@property (nonatomic) NSString text;
+@property (nonatomic) IESMMVideoDataClipRange textAudioRange;
+@property (nonatomic) NSString textAudioPath;
+@property (nonatomic) NSString effectId;
+@property (nonatomic) NSString streamEffectID;
+@property (nonatomic) NSString effectName;
+@property (nonatomic) AVAsset textReaderAsset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textId;
+- (void)setTextId:;
+- (id)textAudioRange;
+- (void)setTextAudioRange:;
+- (id)textAudioPath;
+- (void)setTextAudioPath:;
+- (id)effectName;
+- (void)setEffectName:;
+- (void)setStreamEffectID:;
+- (id)textReaderAsset;
+- (id)streamEffectID;
+- (void)setTextReaderAsset:;
+- (void)setText:;
+- (id)text;
+- (id)description;
+- (void).cxx_destruct;
+- (id)effectId;
+- (void)setEffectId:;
++ (id)textAudioRangeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

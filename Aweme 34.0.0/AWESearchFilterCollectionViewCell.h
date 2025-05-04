@@ -1,0 +1,31 @@
+@interface AWESearchFilterCollectionViewCell : UICollectionViewCell
+@property (nonatomic) double fontSize;
+@property (nonatomic) UILabel label;
+@property (nonatomic) AWESearchFilterCollectionViewColorConfiguration colorConfiguration;
+@property (nonatomic) UIView redDot;
+@property (nonatomic) BOOL isNewStyle;
+@property (nonatomic) BOOL needBold;
+- (void)setRedDot:;
+- (BOOL)isNewStyle;
+- (void)setIsNewStyle:;
+- (id)redDot;
+- (void)updateRedDot:;
+- (id)colorConfiguration;
+- (BOOL)needBold;
+- (void)setNeedBold:;
+- (void)setBorder;
+- (void)updateRedDotNew:;
+- (void)setColorConfiguration:;
+- (void)getRedDotFrame;
+- (void)setLabel:;
+- (double)fontSize;
+- (id)initWithFrame:;
+- (id)label;
+- (void)setFontSize:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (void)setupUI;
+- (void)updateColor;
+- (void)updateWithText:;
+@end

@@ -1,0 +1,32 @@
+@interface AWESearchVSVideoCardModel : AWEBaseApiModel
+@property (nonatomic) Q cardType;
+@property (nonatomic) NSString title;
+@property (nonatomic) q liveType;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWESearchVSVideoBottomBarModel bottomBarModel;
+@property (nonatomic) AWEURLModel backgroundImage;
+@property (nonatomic) AWEURLModel lightBackgroundImage;
+@property (nonatomic) NSDictionary vsLog;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setLiveType:;
+- (long long)liveType;
+- (id)bottomBarModel;
+- (void)setBottomBarModel:;
+- (id)lightBackgroundImage;
+- (void)setLightBackgroundImage:;
+- (id)vsLog;
+- (void)setVsLog:;
+- (id)backgroundImage;
+- (void)setBackgroundImage:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (unsigned long long)cardType;
+- (void)setCardType:;
++ (id)awemeModelJSONTransformer;
++ (id)bottomBarModelJSONTransformer;
++ (id)lightBackgroundImageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)backgroundImageJSONTransformer;
+@end

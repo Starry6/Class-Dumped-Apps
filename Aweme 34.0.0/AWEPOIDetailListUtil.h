@@ -1,0 +1,32 @@
+@interface AWEPOIDetailListUtil : NSObject
+@property (nonatomic) AWEPOIDetailBdxNotificationUtil bdxNotificationHelper;
+@property (nonatomic) <AWEPOIDetailListTrackUtilProtocol> trackUtil;
+@property (nonatomic) <AWEPOIDetailListAwemeUtilProtocol> awemeUtil;
+@property (nonatomic) <AWEPOIDetailListCoiUtilProtocol> coiUtil;
+@property (nonatomic) <AWEPOIDetailListUgcUtilProtocol> ugcUtil;
+@property (nonatomic) UIViewController detailViewController;
+@property (nonatomic) DitoGeneralContainerPageContext<AWEPOIUGCRateContextProtocol> context;
+@property (nonatomic) BOOL isFromIsolated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackUtil;
+- (void)bindStateAndAction;
+- (BOOL)isFromIsolated;
+- (void)setIsFromIsolated:;
+- (id)ugcUtil;
+- (id)bdxNotificationHelper;
+- (id)awemeUtil;
+- (id)coiUtil;
+- (void)setBdxNotificationHelper:;
+- (void)setTrackUtil:;
+- (void)setAwemeUtil:;
+- (void)setCoiUtil:;
+- (void)setUgcUtil:;
+- (id)detailViewController;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setDetailViewController:;
+@end

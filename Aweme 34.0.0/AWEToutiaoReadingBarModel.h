@@ -1,0 +1,37 @@
+@interface AWEToutiaoReadingBarModel : AWEBaseApiModel
+@property (nonatomic) NSArray spareOpenSchemas;
+@property (nonatomic) NSString articleID;
+@property (nonatomic) AWEURLModel iconURLModel;
+@property (nonatomic) NSString articleTitle;
+@property (nonatomic) NSString articleOpenURL;
+@property (nonatomic) NSString webOpenURL;
+@property (nonatomic) NSString extraParamsStr;
+@property (nonatomic) NSString openAppSchema;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString abParam;
+@property (nonatomic) BOOL disableDisplay;
+- (id)abParam;
+- (void)setAbParam:;
+- (BOOL)disableDisplay;
+- (void)setDisableDisplay:;
+- (id)iconURLModel;
+- (void)setIconURLModel:;
+- (id)articleOpenURL;
+- (void)setArticleOpenURL:;
+- (id)webOpenURL;
+- (void)setWebOpenURL:;
+- (id)extraParamsStr;
+- (void)setExtraParamsStr:;
+- (id)openAppSchema;
+- (void)setOpenAppSchema:;
+- (id)spareOpenSchemas;
+- (id)tag;
+- (void)setArticleID:;
+- (id)articleID;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)articleTitle;
+- (void)setArticleTitle:;
++ (id)iconURLModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

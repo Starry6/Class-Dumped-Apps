@@ -1,0 +1,2 @@
+@interface AWECommentDependencyHubSwiftImpl.CommentMultiContentRegister : _TtCs12_SwiftObject
+@end

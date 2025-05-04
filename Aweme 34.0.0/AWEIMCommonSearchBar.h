@@ -1,0 +1,34 @@
+@interface AWEIMCommonSearchBar : UIView
+@property (nonatomic) UITextField textField;
+@property (nonatomic) UIButton clearBtn;
+@property (nonatomic) UIImageView searchIconImageView;
+@property (nonatomic) UILabel placeholderLabel;
+@property (nonatomic) <AWEIMCommonSearchBarDelegate> delegate;
+@property (nonatomic) BOOL showClearButtonWhenSearchTextIsNotEmpty;
+- (void)initSubviews;
+- (void)clearButtonClicked:;
+- (void)addSubviews;
+- (id)clearBtn;
+- (void)setClearBtn:;
+- (void)registKVO;
+- (void)showClearButtonIfNeeded;
+- (void)showPlaceholderLabelIfNeeded;
+- (BOOL)showClearButtonWhenSearchTextIsNotEmpty;
+- (void)setShowClearButtonWhenSearchTextIsNotEmpty:;
+- (void)dealloc;
+- (id)delegate;
+- (id)textField;
+- (void)setPlaceholder:;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setTextField:;
+- (void)textDidChange:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)searchIconImageView;
+- (void)setSearchIconImageView:;
+- (id)placeholderLabel;
+- (void)setPlaceholderLabel:;
+- (void)setupLayout;
+@end

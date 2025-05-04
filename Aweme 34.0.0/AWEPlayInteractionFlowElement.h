@@ -1,0 +1,35 @@
+@interface AWEPlayInteractionFlowElement : AWEPlayInteractionRightElement
+@property (nonatomic) BDImageView flowImageView;
+@property (nonatomic) UIView backView;
+@property (nonatomic) UISelectionFeedbackGenerator generator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (void)viewController_viewWillAppear;
+- (void)viewController_viewDidDisappear;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)flowButtonClick;
+- (id)flowImageView;
+- (void)setFlowImageView:;
+- (BOOL)flowEntranceHideStatus;
+- (void)updateFlowEntranceStatus:;
+- (void)flowEntranceShowEvent;
+- (void)flowEntranceClickEvent;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)setGenerator:;
+- (void)updateLayout;
+- (id)backView;
+- (void).cxx_destruct;
+- (id)generator;
+- (void)setBackView:;
++ (id)activateInfoWithContext:;
++ (BOOL)enableFlowWithContext:;
+@end

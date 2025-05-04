@@ -1,0 +1,38 @@
+@interface AWENoWifiTipManager : NSObject
+@property (nonatomic) BOOL isAlreadyShowAlertInModernFeed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isAlertViewExist;
+@property (nonatomic) BOOL isToastExist;
+@property (nonatomic) BOOL isAlreadyPresentingAlert;
+@property (nonatomic) BOOL isAlreadyShowAlertInModernFeed;
+@property (nonatomic) BOOL hasShownToastForNoWiFi;
+- (BOOL)shouldNotShowNoWifiAlertUseNewStrategy;
+- (void)showFeedNoWifiTipWithAllowBlock:denyBlock:delayBlock:withPlayVideoVCType:isStopped:referString:;
+- (void)showFeedNoWifiTipToastIfNeed;
+- (void)checkModernFeedAlertStatus;
+- (BOOL)isAlreadyShowAlertInModernFeed;
+- (void)setAlertNotShown;
+- (void)setHasShownToastForNoWiFi:;
+- (void)setIsToastExist:;
+- (void)setIsAlertViewExist:;
+- (void)setIsAlreadyShowAlertInModernFeed:;
+- (BOOL)isAlertViewExist;
+- (BOOL)isAlreadyPresentingAlert;
+- (BOOL)isNoWifiAlertChanged;
+- (BOOL)hasShownToastForNoWiFi;
+- (void)recordClickPlayWithType:;
+- (void)recordClickPauseWithType:;
+- (void)_showSystemAlerViewWithTitles:message:allowBlock:denyBlock:delayBlock:;
+- (void)setToastExists;
+- (BOOL)isToastExist;
+- (void)setIsAlreadyPresentingAlert:;
+- (id)init;
+- (void)dealloc;
+- (void)networkStatusChanged:;
++ (id)connectMethodName;
++ (BOOL)ifWifiConnected;
++ (id)sharedManager;
+@end

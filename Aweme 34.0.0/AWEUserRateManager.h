@@ -1,0 +1,38 @@
+@interface AWEUserRateManager : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSDate lastTapTime;
+@property (nonatomic) NSString remindText;
+@property (nonatomic) NSString detailURL;
+@property (nonatomic) q rateRecordId;
+@property (nonatomic) q showDetailCountLimit;
+@property (nonatomic) q showDaysLimit;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)detailURL;
+- (void)setDetailURL:;
+- (void)setShowDaysLimit:;
+- (long long)showDaysLimit;
+- (void)updateUserRateData:;
+- (id)remindText;
+- (long long)showDetailCountLimit;
+- (id)getNowDate;
+- (void)setShowDetailCountLimit:;
+- (id)getUserInfoWithUserId:;
+- (void)clearStorageInfo;
+- (void)setRemindText:;
+- (void)updateStorageWith:;
+- (void)setRateRecordId:;
+- (long long)rateRecordId;
+- (void)resetUserRateData;
+- (BOOL)shouldShowUserRateView;
+- (void)userRateCloseWithType:;
+- (id)userID;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (void)setLastTapTime:;
+- (id)lastTapTime;
++ (id)sharedManager;
+@end

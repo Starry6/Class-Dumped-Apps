@@ -1,0 +1,36 @@
+@interface AWEHPTabGuideButtonCandidate : NSObject
+@property (nonatomic) double btnCtr;
+@property (nonatomic) AWECommonButtonInfoModel model;
+@property (nonatomic) q playPctEvent;
+@property (nonatomic) AWEHPTabGuidePitayaButtonTriggerModel triggerModel;
+@property (nonatomic) q state;
+@property (nonatomic) <AWEPzComponentProtocol> component;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSString tabID;
+@property (nonatomic) BOOL binding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTabID:;
+- (long long)playPctEvent;
+- (id)triggerModel;
+- (void)setTriggerModel:;
+- (void)setBtnCtr:;
+- (void)setPlayPctEvent:;
+- (double)btnCtr;
+- (void)setModel:;
+- (void)dealloc;
+- (id)component;
+- (long long)state;
+- (id)model;
+- (id)description;
+- (void).cxx_destruct;
+- (void)setState:;
+- (BOOL)binding;
+- (void)setComponentID:;
+- (id)componentID;
+- (void)setComponent:;
+- (id)tabID;
+- (void)setBinding:;
+@end

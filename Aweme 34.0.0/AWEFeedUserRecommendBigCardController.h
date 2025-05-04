@@ -1,0 +1,30 @@
+@interface AWEFeedUserRecommendBigCardController : AWEFeedFetchInsertBaseCardController
+@property (nonatomic) NSObject<AWEFeedShareReflowCardAndVideoManagerProtocol> shareReflowManager;
+@property (nonatomic) NSMutableDictionary processModels;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)shareReflowManager;
+- (void)cardWillDisplay:withAweme:;
+- (BOOL)shouldCancelInsertCard:withAweme:isFromFeed:willInsertForRowAtIndexPath:;
+- (id)trackParamsWithBusinessInfo:;
+- (void)setShareReflowManager:;
+- (void)setProcessModels:;
+- (void)clickShareReflowAlertOpenButton:;
+- (void)finishRequestAwemeItemInDetailVC:;
+- (void)videoDisappear:;
+- (void)showShareReflowAlert:;
+- (id)processModels;
+- (void)fetchShareReflowCard:;
+- (void)trackShareCardFilter:;
+- (void)insertShareReflowCardToListIfNeeded:delta:completion:;
+- (id)transferInfoModelToUserModel:;
+- (void)trackTokenFindReturnWithAwemeID:enterMethod:;
+- (BOOL)isVideoBelongToShareReflow:;
+- (void)insertShareReflowVideo:completion:;
+- (id)transferInfoModelToAwemeList:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

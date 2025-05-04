@@ -1,0 +1,37 @@
+@interface AWEIMGroupSpeakModeChooseCell : UICollectionViewCell
+@property (nonatomic) <IESIMConversationProtocol> conversation;
+@property (nonatomic) AWEIMGroupSpeakModeViewModel viewModel;
+@property (nonatomic) AWEIMGroupSpeakPermissionCellModel cellModel;
+@property (nonatomic) UIStackView contentStackView;
+@property (nonatomic) AWEIMGroupSpeakModeItemViewModel allMembers;
+@property (nonatomic) AWEIMGroupSpeakModeItemViewModel ownerAndAdmin;
+@property (nonatomic) AWEIMGroupSpeakModeAssignItemViewModel assignViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCellModel:;
+- (void)createComponents;
+- (void)renderWithCellModel:;
+- (void)__refreshSpeakModeCellSelectState;
+- (id)__assignSpeakModeTitle;
+- (id)assignViewModel;
+- (void)__handleDidTapViewWithMode:;
+- (void)addBottomLineToContentViews;
+- (id)allMembers;
+- (id)ownerAndAdmin;
+- (void)setAllMembers:;
+- (void)setOwnerAndAdmin:;
+- (void)setAssignViewModel:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)conversation;
+- (id)contentStackView;
+- (void)setConversation:;
+- (void)setContentStackView:;
+- (id)cellModel;
+- (void)layoutComponents;
++ (id)identifier;
+@end

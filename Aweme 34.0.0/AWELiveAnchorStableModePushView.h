@@ -1,0 +1,33 @@
+@interface AWELiveAnchorStableModePushView : UIView
+@property (nonatomic) UIView content;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UILabel actionLabel;
+@property (nonatomic) AWELiveAnchorStableModePushContent anchorContentModel;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)handleTapAction;
+- (id)notificationOperator;
+- (BOOL)disableDismissPanGesture;
+- (double)dismissTimerInterval;
+- (BOOL)tapGestureIsEnable:;
+- (void)setNotificationOperator:;
+- (void)setAnchorContentModel:;
+- (id)anchorContentModel;
+- (id)content;
+- (id)intrinsicContentSize;
+- (id)view;
+- (id)initWithFrame:;
+- (void)setContent:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (id)actionLabel;
+- (void)setActionLabel:;
+@end

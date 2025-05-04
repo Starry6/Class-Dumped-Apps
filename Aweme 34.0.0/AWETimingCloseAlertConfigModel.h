@@ -1,0 +1,36 @@
+@interface AWETimingCloseAlertConfigModel : MTLModel
+@property (nonatomic) BOOL enableTimingClose;
+@property (nonatomic) BOOL enableAvoid;
+@property (nonatomic) BOOL popupCountdown;
+@property (nonatomic) q countDownTime;
+@property (nonatomic) q backgroundLimitDuration;
+@property (nonatomic) NSString primaryTitle;
+@property (nonatomic) NSString secondaryTitle;
+@property (nonatomic) NSString leftButtonTitle;
+@property (nonatomic) NSString rightButtonTitle;
+@property (nonatomic) NSString linkTitle;
+@property (nonatomic) NSString linkSchema;
+@property (nonatomic) q pollingTimes;
+@property (nonatomic) q pollingInterval;
+@property (nonatomic) q screenOffTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)linkSchema;
+- (id)leftButtonTitle;
+- (id)rightButtonTitle;
+- (long long)countDownTime;
+- (BOOL)popupCountdown;
+- (long long)screenOffTime;
+- (BOOL)enableTimingClose;
+- (BOOL)enableAvoid;
+- (long long)pollingTimes;
+- (long long)backgroundLimitDuration;
+- (id)secondaryTitle;
+- (void).cxx_destruct;
+- (long long)pollingInterval;
+- (id)linkTitle;
+- (id)primaryTitle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

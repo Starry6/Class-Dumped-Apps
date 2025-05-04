@@ -1,0 +1,34 @@
+@interface AWEDCFeedModuleService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dcFeedViewControllerWithConfig:;
+- (id)defaultSectionViewModelWithModelArray:;
+- (id)dcFeedCellElementResourceWithType:context:;
+- (Class)livePreviewCellClass;
+- (Class)adLivePreviewCellClass;
+- (id)livePreviewElement;
+- (double)dcFeedImageBottomMargin;
+- (double)dcFeedInfoBottomMargin;
+- (double)dcFeedInfoLastBottomMargin;
+- (void)preloadPlaceholderCacheWithPayload:completion:;
+- (void)setPreloadedHistoryCache:payload:;
+- (void)recordShowTimeWithCell:model:referString:;
+- (id)getElementImageViewFromCell:;
+- (BOOL)enableOutOfTimeRefreshConfigWithReferString:;
+- (long long)timeOfOutOfTimeRefreshConfigWithReferString:;
+- (void)addDoubleColumnPlayFinishModelItemID:referString:;
+- (void)addDCFeedAwemeGid:referString:;
+- (void)addDCFeedEnterFromPage:referString:;
+- (id)dcfeedMonitorDefaultSettingDict;
+- (void)dcfeedMonitorSetDefaultSettingDictWithScene:dict:;
+- (void)beginFMPMonitorWithScene:;
+- (void)setExtraForScene:event:extra:;
+- (id)getCustomDataProcessWithScene:event:ignoreSetting:;
+- (id)defaultPreloadImageBlockWithImageBiz:;
+- (Class)getDCFeedTidyModelImageRouterViewController;
+- (Class)getDCFeedDislikePanelHelper;
+- (Class)lynxContainerAdapterCellClass;
+- (id)imageElement;
+@end

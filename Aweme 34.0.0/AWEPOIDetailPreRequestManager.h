@@ -1,0 +1,38 @@
+@interface AWEPOIDetailPreRequestManager : NSObject
+@property (nonatomic) NSArray preRequestArray;
+@property (nonatomic) AWEGoodsDetailPageContext context;
+@property (nonatomic) AWEDitoViewController<AWEPOIDetailPreRequestManagerDataSource> viewController;
+@property (nonatomic) NSDictionary baseRouterParams;
+@property (nonatomic) NSMutableDictionary preRequestDictionary;
+@property (nonatomic) NSDictionary cjInfo;
+- (id)initWithContext:viewController:baseRouterParams:schemeUrls:;
+- (void)mergeWithResponseDictionary:;
+- (void)ditoExtension:didReceiveSizeChangeWithViewTag:;
+- (void)gdContainerWillRefresh;
+- (void)updatePreRequestPageModel:;
+- (id)baseRouterParams;
+- (id)getCJSharkInfo;
+- (void)setBaseRouterParams:;
+- (id)cjInfo;
+- (void)setCjInfo:;
+- (void)setPreRequestArray:;
+- (void)setPreRequestDictionary:;
+- (void)beginPreRequest;
+- (id)preRequestDictionary;
+- (id)getBundleWithUrlString:;
+- (id)preRequestArray;
+- (void)doSettingsItemRequest:;
+- (BOOL)shouldRequestWithConfig:;
+- (id)generateRequestParamsWithConfig:;
+- (void)didReceiveNetworkResponse:forBundle:error:requestUrl:requestParams:requestTracker:;
+- (id)generateDictionaryWithSchemaQuery:;
+- (id)generateDictionaryWithCommonQuery:blackList:;
+- (BOOL)packageIsValidWithChannel:geockId:;
+- (id)filterGoodsDetailCJParams:;
+- (id)initWithContext:viewController:baseRouterParams:;
+- (id)viewController;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setViewController:;
+@end

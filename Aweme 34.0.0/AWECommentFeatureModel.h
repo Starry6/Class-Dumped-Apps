@@ -1,0 +1,35 @@
+@interface AWECommentFeatureModel : AWEBaseFeatureModel
+@property (nonatomic) NSString comment_id;
+@property (nonatomic) NSString position;
+@property (nonatomic) NSString group_id;
+@property (nonatomic) q is_cold_start;
+@property (nonatomic) q is_hot;
+@property (nonatomic) q is_author;
+@property (nonatomic) q comment_duration;
+@property (nonatomic) q content_type;
+@property (nonatomic) q comment_staytime;
+@property (nonatomic) Q comment_act;
+- (void)updateFeature:forKey:extra:;
+- (void)setGroup_id:;
+- (void)setComment_id:;
+- (void)setIs_cold_start:;
+- (void)setIs_author:;
+- (void)setIs_hot:;
+- (void)setComment_duration:;
+- (void)setComment_staytime:;
+- (void)setComment_act:;
+- (id)comment_id;
+- (long long)is_cold_start;
+- (long long)is_hot;
+- (long long)is_author;
+- (long long)comment_duration;
+- (long long)comment_staytime;
+- (unsigned long long)comment_act;
+- (id)position;
+- (void).cxx_destruct;
+- (void)setPosition:;
+- (id)group_id;
+- (long long)content_type;
+- (void)setContent_type:;
++ (id)supportFeatureKeys;
+@end

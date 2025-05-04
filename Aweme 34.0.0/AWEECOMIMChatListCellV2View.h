@@ -1,0 +1,38 @@
+@interface AWEECOMIMChatListCellV2View : UIView
+@property (nonatomic) DUXBaseImageView avatarView;
+@property (nonatomic) DUXBaseLabel nickNameLabel;
+@property (nonatomic) DUXBaseLabel officialLabel;
+@property (nonatomic) DUXBaseLabel timeLabel;
+@property (nonatomic) DUXBaseImageView sendFailView;
+@property (nonatomic) DUXBaseLabel lastMsgLabel;
+@property (nonatomic) DUXBaseImageView muteView;
+@property (nonatomic) UIView redPointView;
+@property (nonatomic) DUXBaseLabel unReadNumLabel;
+- (void)configCellWithModel:;
+- (id)nickNameLabel;
+- (void)setNickNameLabel:;
+- (id)lastMsgLabel;
+- (id)officialLabel;
+- (void)updateCellUnReadNum:;
+- (id)generateTimeStrWithLastMessageTime:dateFormatterType:;
+- (id)sendFailView;
+- (void)modifyColorByDarkTheme;
+- (id)redPointView;
+- (id)unReadNumLabel;
+- (id)muteView;
+- (void)setOfficialLabel:;
+- (void)setSendFailView:;
+- (void)setLastMsgLabel:;
+- (void)setMuteView:;
+- (void)setRedPointView:;
+- (void)setUnReadNumLabel:;
+- (void)setTimeLabel:;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (BOOL)isDarkTheme;
+- (void).cxx_destruct;
+- (id)timeLabel;
++ (id)avatarPlaceholderImage;
++ (double)cellHeight;
+@end

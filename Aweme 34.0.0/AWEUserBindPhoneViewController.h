@@ -1,0 +1,37 @@
+@interface AWEUserBindPhoneViewController : UIViewController
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UILabel nickNameLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) DUXButton confirmBtn;
+@property (nonatomic) DUXButton closeBtn;
+@property (nonatomic) DYASecurityTicketModel ticket;
+@property (nonatomic) NSDictionary authInfo;
+@property (nonatomic) BDXBridgeEventSubscriber bindConflictSubscriber;
+- (void)trackEvent:withParams:;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (id)confirmBtn;
+- (void)setConfirmBtn:;
+- (id)nickNameLabel;
+- (void)setNickNameLabel:;
+- (void)clickClose;
+- (id)bindConflictSubscriber;
+- (void)setupNav;
+- (void)bindAciton;
+- (void)clickNotLogin;
+- (id)initWithTicket:authInfo:;
+- (void)setBindConflictSubscriber:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)authInfo;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)closeAction;
+- (void)setAuthInfo:;
+- (void)setTicket:;
+- (id)ticket;
+- (void)setupUI;
+- (id)avatar;
+- (void)setAvatar:;
+@end

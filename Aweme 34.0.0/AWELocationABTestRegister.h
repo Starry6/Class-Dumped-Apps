@@ -1,0 +1,2 @@
+@interface AWELocationABTestRegister : NSObject
+@end

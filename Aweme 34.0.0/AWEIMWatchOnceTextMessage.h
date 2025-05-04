@@ -1,0 +1,34 @@
+@interface AWEIMWatchOnceTextMessage : AWEIMTextSafeExamMessage
+@property (nonatomic) BOOL watchEnd;
+@property (nonatomic) NSInteger watchCount;
+@property (nonatomic) BOOL rip;
+@property (nonatomic) Q readState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coverSize;
+- (id)getUniqueResourceId;
+- (long long)deletedAfterDisplayType;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (BOOL)isNeedReloadWithNewMessage:;
+- (BOOL)watchEnd;
+- (void)setWatchEnd:;
+- (int)watchCount;
+- (void)setWatchCount:;
+- (void)setRip:;
+- (unsigned long long)readState;
+- (void)setReadState:;
+- (void)updateWithMessage:;
+- (BOOL)isUserCellType;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)hintOnInputVCWhenQuoted;
+- (BOOL)isNeedApplyRichString;
+- (void)fillContentWith:;
+- (id)content;
+- (id)contentAttributes;
+- (BOOL)rip;
+@end

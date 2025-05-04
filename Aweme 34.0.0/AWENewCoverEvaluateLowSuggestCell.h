@@ -1,0 +1,36 @@
+@interface AWENewCoverEvaluateLowSuggestCell : UICollectionViewCell
+@property (nonatomic) UILabel suggest;
+@property (nonatomic) UILabel suggestCaption;
+@property (nonatomic) UIImageView warning;
+@property (nonatomic) UIImageView arrow;
+@property (nonatomic) BDImageView suggestImage;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) <CollectionViewLowCellDelegate> delegate;
+@property (nonatomic) AWEVideoCoverEvaluateModel evaluateModel;
+@property (nonatomic) AWEVideoCoverEvaluateLowSuggestModel model;
+- (void)configSubViews;
+- (id)evaluateModel;
+- (void)setEvaluateModel:;
+- (id)suggestCaption;
+- (void)setSuggestCaption:;
+- (id)suggestImage;
+- (void)viewConstraint;
+- (void)configCellContent;
+- (void)arrowSingleClick;
+- (void)configCellMode:indexPath:;
+- (void)setSuggestImage:;
+- (void)setModel:;
+- (id)delegate;
+- (id)indexPath;
+- (id)warning;
+- (id)initWithFrame:;
+- (void)setIndexPath:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)arrow;
+- (void)setArrow:;
+- (id)suggest;
+- (void)setSuggest:;
+- (void)setWarning:;
+@end

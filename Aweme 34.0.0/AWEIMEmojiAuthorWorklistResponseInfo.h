@@ -1,0 +1,30 @@
+@interface AWEIMEmojiAuthorWorklistResponseInfo : MTLModel
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSArray worklist;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSNumber nextCursor;
+@property (nonatomic) NSNumber totalCount;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)nextCursor;
+- (void)setNextCursor:;
+- (id)statusMsg;
+- (void)setStatusMsg:;
+- (id)worklist;
+- (void)setWorklist:;
+- (long long)statusCode;
+- (id)totalCount;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (void)setTotalCount:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)worklistJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

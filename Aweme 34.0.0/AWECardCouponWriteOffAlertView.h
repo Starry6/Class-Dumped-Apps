@@ -1,0 +1,36 @@
+@interface AWECardCouponWriteOffAlertView : UIView
+@property (nonatomic) UIView customMaskView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEUIButton groupBuyButton;
+@property (nonatomic) AWEUIButton disCountButton;
+@property (nonatomic) AWEUIButton cancelButton;
+@property (nonatomic) UIView seperatorLine;
+@property (nonatomic) UIView seperatorEntry;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)customMaskView;
+- (void)setCustomMaskView:;
+- (void)alertViewWithGroupBuyBlock:disCountBlock:;
+- (id)groupBuyButton;
+- (void)p_hindWithDuration:;
+- (id)disCountButton;
+- (id)seperatorEntry;
+- (void)customMaskViewTapAction:;
+- (void)setGroupBuyButton:;
+- (void)setDisCountButton:;
+- (void)setSeperatorEntry:;
+- (void)show;
+- (id)init;
+- (void)setCancelButton:;
+- (id)contentView;
+- (void)dismiss;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)layoutSubviews;
+- (void)cancelAlertView;
+- (id)seperatorLine;
+- (void)setSeperatorLine:;
+@end

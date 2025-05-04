@@ -1,0 +1,31 @@
+@interface AWESearchCardDiggModel : NSObject
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) BOOL userDigged;
+@property (nonatomic) q diggCount;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString adEventName;
+@property (nonatomic) NSDictionary interactLogExtra;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} diggButtonFrame;
+- (id)awemeModel;
+- (long long)diggCount;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (id)adEventName;
+- (void)setAdEventName:;
+- (BOOL)userDigged;
+- (void)setUserDigged:;
+- (void)setDiggCount:;
+- (id)interactLogExtra;
+- (void)setInteractLogExtra:;
+- (id)diggButtonFrame;
+- (void)setDiggButtonFrame:;
+- (void)setGroupID:;
+- (id)init;
+- (id)groupID;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (BOOL)hidden;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMFoldChatComponent : NSObject
+@property (nonatomic) BOOL needFoldChat;
+@property (nonatomic) q xCount;
+@property (nonatomic) q preferredCount;
+@property (nonatomic) AWEIMChatModel lastShowedChat;
+@property (nonatomic) BOOL skipCalculate;
+@property (nonatomic) Q foldStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)needFoldChat;
+- (unsigned long long)foldStatus;
+- (void)setFoldStatus:;
+- (void)didRemoveChat:whenFoldChatList:;
+- (void)calculateCountWhenLoadFirstPageChatList:;
+- (void)didAddNewChat:whenFoldChatList:;
+- (void)didMoveChat:whenFoldChatList:;
+- (void)calculateCountWhenLoadSnpashotChatList:;
+- (void)setNeedShowRecommend:;
+- (long long)preferredCount;
+- (id)lastShowedChat;
+- (void)setLastShowedChat:;
+- (void)setPreferredCount:;
+- (void)setSkipCalculate:;
+- (BOOL)skipCalculate;
+- (void)setNeedFoldChat:;
+- (BOOL)checkEnableFoldChatList:;
+- (BOOL)p_checkEnableShowUnreadCountWithChat:;
+- (void)setXCount:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
+- (long long)xCount;
+@end

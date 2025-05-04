@@ -1,0 +1,31 @@
+@interface AWEPostPageFlowElement : AWEPostPageElement
+@property (nonatomic) BOOL isViewAppear;
+@property (nonatomic) BOOL isViewAppearForDeactiveNLEIfNeed;
+@property (nonatomic) BOOL needRefreshCover;
+- (BOOL)isViewAppear;
+- (void)setIsViewAppear:;
+- (void)p_setup;
+- (id)aAWEStudioPublishAwemeAdapter;
+- (id)aACCMidVideoCreationProtocol;
+- (void)contextDidReady;
+- (void)audioSessionReset;
+- (BOOL)needObserveCaptureCurrentFrameDone;
+- (BOOL)isViewAppearForDeactiveNLEIfNeed;
+- (BOOL)p_enablePrePublish;
+- (void)setIsViewAppearForDeactiveNLEIfNeed:;
+- (void)preCheckModelValidIfNeed:;
+- (void)p_onChallengeInfoDidChangeNotification:;
+- (BOOL)needRefreshCover;
+- (void)setNeedRefreshCover:;
+- (void)viewWillDisappear:;
+- (void)addNotificationObservers;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (void)appDidBecomeActive;
++ (Class)aAWEStudioPublishAwemeAdapterClass;
++ (Class)aACCMidVideoCreationProtocolClass;
++ (void)_aweLazyRegisterPostPage;
++ (Class)featureConfigClass:;
++ (id)type;
+@end

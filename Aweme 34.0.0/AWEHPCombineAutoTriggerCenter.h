@@ -1,0 +1,35 @@
+@interface AWEHPCombineAutoTriggerCenter : NSObject
+@property (nonatomic) <AWEHPCombineAutoTriggerCenterDelegate> delegate;
+@property (nonatomic) BOOL isLoad;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) NSString currentUserID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)handleConnectionChanged:;
+- (void)p_addNotifications;
+- (void)setCurrentUserID:;
+- (void)p_invalidateTimer;
+- (void)p_removeNotifications;
+- (BOOL)isLoad;
+- (void)setIsLoad:;
+- (void)p_tryUpdateTimeWithSubscriber:;
+- (void)p_updateTimerInterval:;
+- (void)handleAccountPrivacyPolicyAgreeNotification;
+- (void)callDelegateWithScene:;
+- (void)p_timerTrigger;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (id)delegate;
+- (id)initWithDelegate:;
+- (void)setup;
+- (void)appWillEnterForeground:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)resetTimer;
+- (id)currentUserID;
+@end

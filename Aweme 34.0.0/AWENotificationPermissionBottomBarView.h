@@ -1,0 +1,35 @@
+@interface AWENotificationPermissionBottomBarView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton openButton;
+@property (nonatomic) NSString tipsText;
+@property (nonatomic) @? closeButtonPressedBlock;
+@property (nonatomic) @? openButtonPressedBlock;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString iconUrl;
+- (void)p_setupUI;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)tipsLabel;
+- (void)setTipsLabel:;
+- (id)tipsText;
+- (void)setTipsText:;
+- (id)closeButtonPressedBlock;
+- (id)openButtonPressedBlock;
+- (void)openButtonPressed;
+- (void)setCloseButtonPressedBlock:;
+- (void)setOpenButtonPressedBlock:;
+- (id)accessibilityElements;
+- (id)initWithFrame:;
+- (id)iconImageView;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setButtonText:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)openButton;
+- (void)setOpenButton:;
+- (void)closeButtonPressed:;
+@end

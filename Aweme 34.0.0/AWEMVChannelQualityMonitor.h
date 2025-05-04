@@ -1,0 +1,31 @@
+@interface AWEMVChannelQualityMonitor : NSObject
+@property (nonatomic) AWEAwemeResponseModel lastResponseModel;
+@property (nonatomic) NSMutableSet trackFilterSet;
+@property (nonatomic) BOOL isScrolled;
+@property (nonatomic) AWEMVChannelRequestDuration requestDuration;
+- (id)aAWEPadModuleAdapter;
+- (BOOL)isFirstRequest;
+- (id)lastResponseModel;
+- (void)setLastResponseModel:;
+- (void)trackDataError:requestNums:extraParams:;
+- (id)paramsForImageMonitor:;
+- (void)trackListRefreshWithRequestDuration:responseModel:requestNums:feedType:fetchType:refreshType:loadmoreType:preloadType:pullType:isCache:error:extraParams:;
+- (void)trackLoadMoreDuration:feedType:from:error:;
+- (void)trackMVChannelEntranceStrategyDuration:error:extraParams:;
+- (BOOL)isScrolled;
+- (BOOL)imageHadMonitorWithModel:;
+- (unsigned long long)imageErrorTypeWithAwemeModel:;
+- (id)trackFilterSet;
+- (void)setTrackFilterSet:;
+- (void)setIsScrolled:;
+- (id)init;
+- (id)requestDuration;
+- (void).cxx_destruct;
+- (void)setRequestDuration:;
++ (Class)aAWEPadModuleAdapterClass;
++ (void)trackImage:url:error:extraParams:;
++ (void)trackFirstFrameLoadedImageIfNeededWithInfo:;
++ (id)trackFirstImageRequestDate;
++ (void)trackRefreshWithReason:dataState:isCancel:isStop:;
++ (id)shared;
+@end

@@ -1,0 +1,34 @@
+@interface AWEMixVideoDetailListModel : MTLModel
+@property (nonatomic) NSString episodeListString;
+@property (nonatomic) NSArray list;
+@property (nonatomic) NSDictionary episodeList;
+@property (nonatomic) NSArray mixCards;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSDictionary logPB;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)minCursor;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (id)episodeList;
+- (void)setEpisodeList:;
+- (id)logPB;
+- (id)episodeListString;
+- (id)mixCards;
+- (void)setMixCards:;
+- (void)setLogPB:;
+- (void)setEpisodeListString:;
+- (void)setList:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (id)list;
+- (void).cxx_destruct;
++ (id)listJSONTransformer;
++ (id)mixCardsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

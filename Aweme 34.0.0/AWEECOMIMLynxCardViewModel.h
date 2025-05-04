@@ -1,0 +1,36 @@
+@interface AWEECOMIMLynxCardViewModel : AWEECOMIMBaseMsgModel
+@property (nonatomic) AWEECOMIMLynxViewViewModel lynxViewViewModel;
+@property (nonatomic) q preLayoutStatus;
+@property (nonatomic) q fullLoadStatus;
+@property (nonatomic) IESIMBulletContainerPreLayoutInfo preLayoutInfo;
+@property (nonatomic) BOOL needSkipPreload;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)msgCommonTrackParams;
+- (void)transferSchemaToSkip:andTrackButtonTap:materialName:extParams:;
+- (void)trackCardButtonTap:materialName:extParams:;
+- (void)trackCardButtonTap:materialName:extParams:unitBtmId:responder:needSetBcm:;
+- (void)transferSchemaToSkip:andTrackButtonTap:materialName:extParams:unitBtmId:responder:needSetBcm:;
+- (BOOL)respondsToServerNotification:uuid:cardType:;
+- (id)msgDisplayParams;
+- (void)updateMessageModel:;
+- (id)lynxViewViewModel;
+- (void)setLynxViewViewModel:;
+- (BOOL)isPlatformServiceCard;
+- (long long)preLayoutStatus;
+- (long long)fullLoadStatus;
+- (id)preLayoutInfo;
+- (BOOL)needSkipPreload;
+- (long long)preloadStrategyWithScene:;
+- (id)dynamicPatchForPreload;
+- (id)bulletContextForPreload;
+- (void)setPreLayoutStatus:;
+- (void)setFullLoadStatus:;
+- (void)setPreLayoutInfo:;
+- (void)setNeedSkipPreload:;
+- (void).cxx_destruct;
+- (id)initWithMessage:;
++ (Class)cellClass;
+@end

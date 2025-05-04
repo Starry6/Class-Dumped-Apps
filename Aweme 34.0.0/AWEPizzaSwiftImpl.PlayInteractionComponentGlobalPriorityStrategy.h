@@ -1,0 +1,2 @@
+@interface AWEPizzaSwiftImpl.PlayInteractionComponentGlobalPriorityStrategy : _TtCs12_SwiftObject
+@end

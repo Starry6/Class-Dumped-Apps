@@ -1,0 +1,35 @@
+@interface AWEPOIParamsSimpleItem : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSNumber required;
+@property (nonatomic) NSArray allowed;
+@property (nonatomic) NSArray forbidden;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString iOSVersion;
+@property (nonatomic) NSString errorMsg;
+@property (nonatomic) NSString parentName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setErrorMsg:;
+- (id)errorMsg;
+- (void)setAllowed:;
+- (id)version;
+- (id)iOSVersion;
+- (id)type;
+- (id)allowed;
+- (void)setVersion:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)required;
+- (void)setRequired:;
+- (void)setName:;
+- (id)name;
+- (id)forbidden;
+- (void)setForbidden:;
+- (id)parentName;
+- (void)setParentName:;
+- (void)setIOSVersion:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

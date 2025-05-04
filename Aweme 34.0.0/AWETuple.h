@@ -1,0 +1,35 @@
+@interface AWETuple : NSObject
+@property (nonatomic) NSArray backingArray;
+@property (nonatomic) Q count;
+@property (nonatomic) @ first;
+@property (nonatomic) @ second;
+@property (nonatomic) @ third;
+@property (nonatomic) @ fourth;
+@property (nonatomic) @ fifth;
+@property (nonatomic) @ last;
+- (id)initWithBackingArray:;
+- (id)tupleByAddingObject:;
+- (id)fifth;
+- (id)last;
+- (id)second;
+- (id)first;
+- (id)init;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (unsigned long long)count;
+- (id)objectAtIndexedSubscript:;
+- (id)description;
+- (void).cxx_destruct;
+- (id)objectAtIndex:;
+- (BOOL)isEqual:;
+- (id)allObjects;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (id)initWithCoder:;
+- (id)copyWithZone:;
+- (id)backingArray;
+- (id)third;
+- (id)fourth;
++ (id)tupleWithObjectsFromArray:convertNullsToNils:;
++ (id)tupleWithObjectsFromArray:;
++ (id)tupleWithObjects:;
+@end

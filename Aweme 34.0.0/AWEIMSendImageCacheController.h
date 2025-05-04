@@ -1,0 +1,32 @@
+@interface AWEIMSendImageCacheController : NSObject
+@property (nonatomic) NSCache memoryCache;
+@property (nonatomic) YYMemoryCache yyMemoryCache;
+@property (nonatomic) NSCache exchangeMemoryCache;
+@property (nonatomic) NSCache quoteMemoryCache;
+@property (nonatomic) q sequence;
+- (void)clearAllCache;
+- (void)cacheImage:uniqueId:;
+- (id)requestImageWithUniqueId:;
+- (void)removeImageForUniqueId:;
+- (id)quoteRequestImageWithUniqueId:;
+- (void)quoteCacheImage:uniqueId:;
+- (id)exchangeRequestImageWithUniqueId:;
+- (id)yyMemoryCache;
+- (id)exchangeMemoryCache;
+- (id)quoteMemoryCache;
+- (void)quoteRemoveImageForUniqueId:;
+- (void)quoteClearAllCache;
+- (void)exchangeCacheImage:uniqueId:;
+- (void)exchangeRemoveImageForUniqueId:;
+- (void)exchangeClearAllCache;
+- (void)setYyMemoryCache:;
+- (void)setExchangeMemoryCache:;
+- (void)setQuoteMemoryCache:;
+- (id)init;
+- (id)memoryCache;
+- (long long)sequence;
+- (void).cxx_destruct;
+- (void)setSequence:;
+- (void)setMemoryCache:;
++ (id)sharedInstance;
+@end

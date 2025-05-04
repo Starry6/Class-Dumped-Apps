@@ -1,0 +1,30 @@
+@interface AWELVideoXiguaGuideModel : AWEBaseApiModel
+@property (nonatomic) BOOL guide;
+@property (nonatomic) NSString minRatio;
+@property (nonatomic) NSString labelText;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber fullScreenControl;
+@property (nonatomic) q playDoneControl;
+@property (nonatomic) AWELVideoXiguaGuidePopupModel guidePopup;
+- (id)fullScreenControl;
+- (void)setFullScreenControl:;
+- (long long)playDoneControl;
+- (void)setPlayDoneControl:;
+- (id)guidePopup;
+- (void)setGuidePopup:;
+- (id)labelText;
+- (id)icon;
+- (void)setLabelText:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)minRatio;
+- (void)setMinRatio:;
+- (BOOL)guide;
+- (void)setGuide:;
++ (id)iconJSONTransformer;
++ (id)guidePopupJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

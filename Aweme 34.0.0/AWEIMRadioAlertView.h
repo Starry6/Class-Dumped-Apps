@@ -1,0 +1,30 @@
+@interface AWEIMRadioAlertView : AWEUIAlertView
+@property (nonatomic) BOOL iesim_radioIsSelected;
+@property (nonatomic) double customCornerRadius;
+@property (nonatomic) BOOL shouldShowIconImage;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) {UIEdgeInsets=dddd} iconImageEdgeInsets;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSAttributedString attributedTitle;
+@property (nonatomic) UILabel attributedLabel;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSAttributedString attributedMessage;
+@property (nonatomic) BOOL messageShouldAlignLeft;
+@property (nonatomic) UITextView descriptionTextView;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSAttributedString attributedText;
+@property (nonatomic) @? handleBlock;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) BOOL dismissWhenTappedInBlankArea;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)iesim_useRadioStyleDescriptionWithAttributedText:;
+- (void)__configRadioStyleDescriptionWithAttributedText:;
+- (BOOL)iesim_radioIsSelected;
+- (void)setIesim_radioIsSelected:;
+- (void)iesim_useRadioStyleDescriptionWithText:;
+@end

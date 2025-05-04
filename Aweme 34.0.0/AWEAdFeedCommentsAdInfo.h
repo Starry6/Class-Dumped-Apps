@@ -1,0 +1,32 @@
+@interface AWEAdFeedCommentsAdInfo : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber positiveRate;
+@property (nonatomic) NSNumber negativeRate;
+@property (nonatomic) NSString avatar;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSNumber adID;
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)adID;
+- (void)setAdID:;
+- (void)setCreativeID:;
+- (id)positiveRate;
+- (id)negativeRate;
+- (void)setPositiveRate:;
+- (void)setNegativeRate:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)title;
+- (void)setSource:;
+- (void)setTitle:;
+- (id)avatar;
+- (void)setAvatar:;
+- (id)creativeID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,38 @@
+@interface AWEVideoHallUtils : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEBrandColorAdapter;
++ (Class)aAWEBrandColorAdapterClass;
++ (id)getVerticalCoverUrlString:;
++ (void)getVideoHallEntranceStatus:;
++ (BOOL)isGotoLongVideoPage:;
++ (long long)paymentTypeFromAlbum:;
++ (void)didClickOpenAlert;
++ (id)tagString:;
++ (id)tagBackgroundColor:;
++ (id)tagFontColor:;
++ (BOOL)showTag:;
++ (void)addVideoHallEntranceWithIsNewVersion:completion:;
++ (void)clickAddVideoHallEntranceGuide:title:subTitle:guideCoverImage:guideCoverAnimateImage:isNewVersion:addMethod:enable:delegateObject:completion:;
++ (void)updateVideoHallEntranceGuideFrequentControl:;
++ (void)trackLVideoGuideButtonClick:buttonName:section:;
++ (BOOL)showScore:;
++ (id)updateCycleString:;
++ (id)getHistoryPageUrl;
++ (BOOL)enableLongVideoSearch;
++ (void)trackLVideoAddGuideSuccess:addMethod:;
++ (void)showAddVideoHallEntranceGuideWithTitle:subtitle:guideCoverImage:guideCoverAnimateImage:isNewVersion:addMethod:enable:delegateObject:completion:;
++ (void)trackLVideoTicketSnackBarClick:previousPage:type:;
++ (void)trackLVideoTicketSnackBarShow:previousPage:type:;
++ (void)trackLVideoTicketFailToastShow:previousPage:failCode:toastText:;
++ (id)commonGuideTrackParams:previousPage:logPb:;
++ (void)showMovieTicketsDialogsWithCouponScene:couponToken:previousPage:fromVc:completion:;
++ (void)trackLVideoGuideShow:;
++ (void)trackLVideoGuideClickAction:actionType:;
++ (void)trackLVideoButtonShow:previousPage:logPb:;
++ (void)trackLVideoButtonClick:previousPage:logPb:;
++ (void)trackLVideoButtonClickResult:previousPage:logPb:clickResult:;
++ (BOOL)shouldShowVideoHallEntranceGuideWithPageName:closeDuration:maxCloseNum:;
+@end

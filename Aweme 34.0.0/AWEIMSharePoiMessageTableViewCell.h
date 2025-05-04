@@ -1,0 +1,30 @@
+@interface AWEIMSharePoiMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) AWEIMGeneralDisableCardView disableCardView;
+@property (nonatomic) AWEIMGeneralCardView cardViewView;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UITapGestureRecognizer tapGes;
+- (id)tapGes;
+- (void)setTapGes:;
+- (void)configWithMessage:;
+- (void)p_initSubviews;
+- (id)menuTargetView;
+- (id)gestureResponseViews;
+- (void)setDisableCardView:;
+- (id)disableCardView;
+- (void)coverTapped:;
+- (void)p_changeCardStyleWithIsDisable:;
+- (id)p_getTargetView;
+- (id)cardViewView;
+- (void)setCardViewView:;
+- (id)gradientView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)menuItems;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)willDisplayCell;
++ (id)contentSizeWithMesasge:;
++ (id)p_getSubtitleWithMessage:;
++ (id)identifier;
+@end

@@ -1,0 +1,2 @@
+@interface AWEStudioRecorderFeatureLiveConfig : AWEStudioComposerBaseFeatureConfig
+@end

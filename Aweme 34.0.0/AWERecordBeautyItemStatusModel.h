@@ -1,0 +1,31 @@
+@interface AWERecordBeautyItemStatusModel : NSObject
+@property (nonatomic) AWERecordBeautyItemModel bindTo;
+@property (nonatomic) q value;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL disabled;
+@property (nonatomic) BOOL applied;
+@property (nonatomic) BOOL branchAvailable;
+@property (nonatomic) q downloadStatus;
+@property (nonatomic) BOOL available;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bindTo;
+- (BOOL)isApplied;
+- (void)setBindTo:;
+- (void)setApplied:;
+- (void)setBranchAvailable:;
+- (BOOL)isBranchAvailable;
+- (BOOL)isDisabled;
+- (void)setAvailable:;
+- (long long)value;
+- (BOOL)isAvailable;
+- (void)setValue:;
+- (void)setDisabled:;
+- (BOOL)isSelected;
+- (void).cxx_destruct;
+- (void)setSelected:;
+- (long long)downloadStatus;
+- (void)setDownloadStatus:;
+@end

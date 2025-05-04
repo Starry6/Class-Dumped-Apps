@@ -1,0 +1,34 @@
+@interface AWELiveDarkWatermarkServiceImpl : NSObject
+@property (nonatomic) AWECodeGenGetWmImgResponseModel response;
+@property (nonatomic) NSError error;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) UIImage waterImage;
+@property (nonatomic) NSDictionary watermarkConfig;
+@property (nonatomic) NSHashTable cacheViews;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)watermarkConfig;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)fetchUrl;
+- (id)cacheViews;
+- (void)sendDarkWaterMarkRequest;
+- (void)reportFailedWaterMarkWithReason:;
+- (id)waterImage;
+- (void)dealDarkWaterMarkResponse:error:report:;
+- (void)setWaterImage:;
+- (BOOL)enableLiveDarkWatermark:scene:;
+- (void)bindLiveDarkWatermarkWithImageView:;
+- (void)setWatermarkConfig:;
+- (void)setCacheViews:;
+- (id)init;
+- (void)setError:;
+- (void)addObserver;
+- (id)response;
+- (void).cxx_destruct;
+- (id)error;
+- (void)setResponse:;
++ (id)shareInstance;
+@end

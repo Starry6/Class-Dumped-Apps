@@ -1,0 +1,34 @@
+@interface AWEIMSkylightFriendSnapshot : NSObject
+@property (nonatomic) Q vmType;
+@property (nonatomic) BOOL isGroupChat;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSArray virtualAnimationAvatarURLList;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) q lastActiveTime;
+- (id)secUid;
+- (void)setLastActiveTime:;
+- (void)setSecUid:;
+- (unsigned long long)vmType;
+- (void)setVmType:;
+- (id)virtualAnimationAvatarURLList;
+- (id)transformToViewModel;
+- (void)setVirtualAnimationAvatarURLList:;
+- (void)setUid:;
+- (void)setUrl:;
+- (id)initWithViewModel:;
+- (id)uid;
+- (void)encodeWithCoder:;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)url;
+- (id)initWithCoder:;
+- (void)setConversationID:;
+- (BOOL)isGroupChat;
+- (void)setIsGroupChat:;
+- (long long)lastActiveTime;
+@end

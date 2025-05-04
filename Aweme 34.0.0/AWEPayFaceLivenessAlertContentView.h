@@ -1,0 +1,36 @@
+@interface AWEPayFaceLivenessAlertContentView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton leftBtn;
+@property (nonatomic) UIButton rightBtn;
+@property (nonatomic) NSString titleStr;
+@property (nonatomic) NSString leftBtnTitle;
+@property (nonatomic) NSString rightBtnTitle;
+@property (nonatomic) @? leftBtnAction;
+@property (nonatomic) @? rightBtnAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)duxAlertDialog_view;
+- (id)leftBtn;
+- (id)rightBtn;
+- (void)setLeftBtn:;
+- (void)setRightBtn:;
+- (id)titleStr;
+- (void)setTitleStr:;
+- (void)setRightBtnTitle:;
+- (id)rightBtnTitle;
+- (id)leftBtnTitle;
+- (void)setLeftBtnTitle:;
+- (void)p_onLeftBtnClick;
+- (void)p_onRightBtnClick;
+- (id)leftBtnAction;
+- (id)rightBtnAction;
+- (void)setLeftBtnAction:;
+- (void)setRightBtnAction:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+@end

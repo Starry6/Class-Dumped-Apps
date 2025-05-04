@@ -1,0 +1,32 @@
+@interface AWEUserCenterWhoCanMessageMeSettingViewController : AWESettingBaseViewController
+@property (nonatomic) AWEUserCenterWhoCanMessageMeDataController dataController;
+@property (nonatomic) NSString defaultOpen;
+@property (nonatomic) BOOL directlyExitPageAfterPopupDismiss;
+@property (nonatomic) NSString highlightID;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (BOOL)configWithRouterParamDict:;
+- (id)enterFrom;
+- (void)setDataController:;
+- (void)setHighlightID:;
+- (id)highlightID;
+- (void)highlightCellIfNeeded;
+- (void)setDefaultOpen:;
+- (id)defaultOpen;
+- (void)p_highlightCellIfNeeded;
+- (void)highlightCellWithIndex:;
+- (BOOL)directlyExitPageAfterPopupDismiss;
+- (void)setDirectlyExitPageAfterPopupDismiss:;
+- (id)p_highlightIndexPathWithID:;
+- (void)viewWillDisappear:;
+- (id)init;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (id)dataController;
+@end

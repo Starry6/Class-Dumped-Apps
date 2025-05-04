@@ -1,0 +1,36 @@
+@interface AWEECEcomActivityShareQRCodeBulletView : UIView
+@property (nonatomic) UIView<BDXViewContainerProtocol> qrCodeBulletView;
+@property (nonatomic) NSMutableArray qrBridgeSubscriberList;
+@property (nonatomic) AWEShareContext context;
+@property (nonatomic) BOOL containerDidFirstScreen;
+@property (nonatomic) Q lynxViewType;
+@property (nonatomic) <AWEECGoodsShareQRCodeDelegate> delegate;
+@property (nonatomic) @? shareCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerDidFirstScreen:;
+- (unsigned long long)lynxViewType;
+- (void)setLynxViewType:;
+- (id)shareCompletion;
+- (void)setShareCompletion:;
+- (void)setContainerDidFirstScreen:;
+- (BOOL)containerDidFirstScreen;
+- (id)qrCodeBulletView;
+- (void)bindQRCodeEvent;
+- (void)setQrBridgeSubscriberList:;
+- (id)qrBridgeSubscriberList;
+- (void)qrCodeBulletQRUpdateSend:;
+- (void)loadQRCodeBulletView;
+- (void)unbindQRCodeEvent;
+- (void)setQrCodeBulletView:;
+- (id)init;
+- (void)dealloc;
+- (id)delegate;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (void)setupUI;
+@end

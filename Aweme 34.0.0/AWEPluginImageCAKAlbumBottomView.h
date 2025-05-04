@@ -1,0 +1,34 @@
+@interface AWEPluginImageCAKAlbumBottomView : UIView
+@property (nonatomic) UIView seperatorLineView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton nextButton;
+@property (nonatomic) UIButton selectOriginalImageButton;
+@property (nonatomic) <AWEPluginImageCAKAlbumBottomViewDelegate> delegate;
+@property (nonatomic) BOOL isOriginalImageButtonSelected;
+@property (nonatomic) BOOL isOriginalButtonEnabled;
+@property (nonatomic) BOOL doAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (BOOL)doAnimation;
+- (void)setDoAnimation:;
+- (id)seperatorLineView;
+- (void)setSeperatorLineView:;
+- (void)setIsOriginalImageButtonSelected:;
+- (void)setIsOriginalButtonEnabled:;
+- (id)selectOriginalImageButton;
+- (void)setSelectOriginalImageButton:;
+- (void)onSwitchOriginImageSelect;
+- (BOOL)isOriginalImageButtonSelected;
+- (id)initWithDelegate:isOriginalImageButtonSelected:isOriginalButtonEnabled:isOriginalButtonHidden:;
+- (BOOL)isOriginalButtonEnabled;
+- (id)delegate;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)nextButton;
+- (void)setNextButton:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEAudioWaveformView : UIView
+@property (nonatomic) NSArray filteredSamples;
+@property (nonatomic) AVAsset asset;
+@property (nonatomic) UIColor hasRecordedColor;
+@property (nonatomic) UIColor playingColor;
+@property (nonatomic) UIColor toBePlayedColor;
+@property (nonatomic) UIColor notPlayedColor;
+@property (nonatomic) double hasRecordedLocation;
+@property (nonatomic) double playingLocation;
+@property (nonatomic) double toBePlayedLocation;
+- (double)toBePlayedLocation;
+- (void)setToBePlayedLocation:;
+- (void)setHasRecordedLocation:;
+- (void)setPlayingLocation:;
+- (double)hasRecordedLocation;
+- (id)filteredSamples;
+- (id)hasRecordedColor;
+- (void)drawWithStartLocation:endLocation:rect:filterSamples:context:color:;
+- (double)playingLocation;
+- (id)playingColor;
+- (id)toBePlayedColor;
+- (id)notPlayedColor;
+- (void)setFilteredSamples:;
+- (void)setHasRecordedColor:;
+- (void)setPlayingColor:;
+- (void)setToBePlayedColor:;
+- (void)setNotPlayedColor:;
+- (void)drawRect:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setAsset:;
+- (id)asset;
+@end

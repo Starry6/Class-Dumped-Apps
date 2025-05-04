@@ -1,0 +1,30 @@
+@interface AWESearchAIGCContainerInfoModel : MTLModel
+@property (nonatomic) NSArray businessData;
+@property (nonatomic) NSArray renderInfo;
+@property (nonatomic) AWESearchAIGCStructModel structData;
+@property (nonatomic) NSDictionary logDict;
+@property (nonatomic) NSNumber statusCode;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSDictionary businessExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)statusMsg;
+- (id)logDict;
+- (void)setLogDict:;
+- (void)setStatusMsg:;
+- (id)businessData;
+- (void)setBusinessData:;
+- (void)setRenderInfo:;
+- (id)structData;
+- (void)setStructData:;
+- (id)businessExtra;
+- (void)setBusinessExtra:;
+- (id)statusCode;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (id)renderInfo;
++ (id)structDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

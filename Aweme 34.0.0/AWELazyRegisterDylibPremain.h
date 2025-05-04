@@ -1,0 +1,2 @@
+@interface AWELazyRegisterDylibPremain : NSObject
+@end

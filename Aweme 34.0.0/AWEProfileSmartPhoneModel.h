@@ -1,0 +1,35 @@
+@interface AWEProfileSmartPhoneModel : MTLModel
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) BOOL isSmartPhone;
+@property (nonatomic) NSString phoneID;
+@property (nonatomic) NSString phoneKey;
+@property (nonatomic) NSString clueAccountID;
+@property (nonatomic) NSNumber clueSceneType;
+@property (nonatomic) NSString extraJsonString;
+@property (nonatomic) NSDictionary abArgs;
+@property (nonatomic) NSString schema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)phoneKey;
+- (void)setPhoneKey:;
+- (id)extraJsonString;
+- (void)setExtraJsonString:;
+- (void)setIsSmartPhone:;
+- (id)phoneID;
+- (BOOL)isSmartPhone;
+- (void)setPhoneID:;
+- (id)abArgs;
+- (void)setAbArgs:;
+- (id)clueAccountID;
+- (id)clueSceneType;
+- (void)setClueAccountID:;
+- (void)setClueSceneType:;
+- (id)schema;
+- (void)setSchema:;
+- (id)phoneNumber;
+- (void)setPhoneNumber:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

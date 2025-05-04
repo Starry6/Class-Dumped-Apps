@@ -1,0 +1,36 @@
+@interface AWEFeedLiveTabAvatarListCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIView<AWEFeedLiveMarkViewProtocol> liveMarkView;
+@property (nonatomic) UIView avatarBackView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIImageView liveTagImageView;
+@property (nonatomic) UILabel liveTagLabelView;
+@property (nonatomic) UILabel nickNameLabel;
+@property (nonatomic) @? avatarDidClicked;
+- (void)configWithCellModel:;
+- (void)setLiveMarkView:;
+- (id)liveMarkView;
+- (void)setupAvatarImageView;
+- (id)nickNameLabel;
+- (void)setNickNameLabel:;
+- (void)setupLiveMarkView;
+- (void)setupLiveTagView;
+- (void)setupNickNameLabel;
+- (id)avatarBackView;
+- (id)avatarBackViewSize;
+- (id)avatarDidClicked;
+- (void)playAvatarAnimationWithSyncStartTime:;
+- (id)liveTagImageView;
+- (id)liveTagLabelView;
+- (void)avatarDidClickedAction;
+- (void)stopAvatarAnimation;
+- (void)setAvatarDidClicked:;
+- (void)setAvatarBackView:;
+- (void)setLiveTagImageView:;
+- (void)setLiveTagLabelView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
++ (id)reuseIdentifier;
+@end

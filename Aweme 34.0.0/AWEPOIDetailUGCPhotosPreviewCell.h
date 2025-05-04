@@ -1,0 +1,36 @@
+@interface AWEPOIDetailUGCPhotosPreviewCell : UICollectionViewCell
+@property (nonatomic) AWEPOIDetailUGCPhotosPreviewScrollView scrollView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) AWEPOIDetailPhotoBaseInfo photo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEPOIDetailPhotosPreviewBaseViewController vc;
+- (id)zoomTransitionEndView;
+- (void)setMaxZoomScalesForCurrentBounds;
+- (void)setupScrollViewWithPreviewsScale:contentOffset:;
+- (void)updateWithPhotoInfo:;
+- (void)didUpdateScollViewWithZoomScale:contentOffset:;
+- (void)layoutImageViewToCenter;
+- (id)aspectFitWithImageSize:width:;
+- (id)alignCenterWithImageSize:;
+- (void)scrollViewDidEndZooming:withView:atScale:;
+- (void)setScrollView:;
+- (void)prepareForReuse;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)viewForZoomingInScrollView:;
+- (id)loadingView;
+- (void)scrollViewDidZoom:;
+- (id)scrollView;
+- (void)scrollViewDidEndDecelerating:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (id)photo;
+- (void)setPhoto:;
+- (id)vc;
+- (void)setVc:;
+@end

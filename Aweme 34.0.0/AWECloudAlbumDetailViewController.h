@@ -1,0 +1,35 @@
+@interface AWECloudAlbumDetailViewController : UIViewController
+@property (nonatomic) IESContainer context;
+@property (nonatomic) <AWECloudAlbumDetailComponentManager> componentManager;
+@property (nonatomic) BOOL visible;
+@property (nonatomic) AWECloudAlbumDetailTimeTracker timeTracker;
+@property (nonatomic) <AWECloudAlbumDetailInputDataProtocol> inputData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <ACCZoomContextOutterProviderProtocol> cloudAlbumTransitionDelegate;
+- (id)zoomTransitionStartViewForOffset:;
+- (void)setComponentManager:;
+- (id)initWithInputData:;
+- (void)setCloudAlbumTransitionDelegate:;
+- (id)cloudAlbumTransitionDelegate;
+- (void)viewWillDisappear:;
+- (void)close;
+- (void)dealloc;
+- (BOOL)visible;
+- (void)viewDidLoad;
+- (void)setVisible:;
+- (void)viewDidDisappear:;
+- (id)initWithNibName:bundle:;
+- (void)setContext:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)controller;
+- (id)context;
+- (id)inputData;
+- (void)setTimeTracker:;
+- (id)timeTracker;
+- (id)componentManager;
+@end

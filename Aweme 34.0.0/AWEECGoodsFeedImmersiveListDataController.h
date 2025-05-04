@@ -1,0 +1,38 @@
+@interface AWEECGoodsFeedImmersiveListDataController : AWEListDataController
+@property (nonatomic) NSString cursor;
+@property (nonatomic) q pageNum;
+@property (nonatomic) IESECGoodsFeedImmersiveResponseModel lastResponseModel;
+@property (nonatomic) <IESECGoodsFeedImmersiveShowConfigProtocol> config;
+@property (nonatomic) BOOL didLoadFirstCard;
+@property (nonatomic) NSMutableDictionary dataInitTimeMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)loadmoreHasMore;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)dataInitTimeMap;
+- (id)filterTypeForModel:;
+- (void)setPageNum:;
+- (void)setDataInitTimeMap:;
+- (id)lastResponseModel;
+- (void)requestFirstCardWithCompletion:;
+- (void)setDidLoadFirstCard:;
+- (void)requestRecommendWithCompletion:;
+- (id)getFilterString;
+- (long long)pageNum;
+- (id)recommendURLString;
+- (void)setLastResponseModel:;
+- (id)parseAwemeModel:;
+- (id)getDataInitTimeWithAwemeItemID:;
+- (BOOL)didLoadFirstCard;
+- (id)cursor;
+- (void)setConfig:;
+- (id)handleResponse:;
+- (id)initWithConfig:;
+- (id)config;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+@end

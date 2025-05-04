@@ -1,0 +1,35 @@
+@interface AWEECEcomActivitySharePosterBulletView : UIView
+@property (nonatomic) UIView<BDXViewContainerProtocol> posterBulletView;
+@property (nonatomic) NSMutableArray posterBridgeSubscriberList;
+@property (nonatomic) AWEShareContext context;
+@property (nonatomic) BOOL containerDidFirstScreen;
+@property (nonatomic) <AWEECGoodsSharePosterDelegate> delegate;
+@property (nonatomic) BOOL isQRCodeLoaded;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerDidFirstScreen:;
+- (id)posterBulletView;
+- (void)bindPosterEvent;
+- (void)setPosterBridgeSubscriberList:;
+- (void)posterQrCodeUpdateSend:;
+- (BOOL)isQRCodeLoaded;
+- (id)posterBridgeSubscriberList;
+- (void)setIsQRCodeLoaded:;
+- (void)setContainerDidFirstScreen:;
+- (void)loadPosterBulletView;
+- (void)unbindPosterEvent;
+- (void)setPosterBulletView:;
+- (BOOL)containerDidFirstScreen;
+- (id)init;
+- (void)dealloc;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)setContext:;
+- (void)willMoveToWindow:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (void)setupUI;
+@end

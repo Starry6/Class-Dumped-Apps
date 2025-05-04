@@ -1,0 +1,31 @@
+@interface AWENaviModuleService : HTSService
+@property (nonatomic) # naviManagerClass;
+@property (nonatomic) <AWENaviUIProtocol> uiProxy;
+@property (nonatomic) <AWENaviFlowObserverProtocol> flowObserver;
+@property (nonatomic) <AWENaviUserInfoProtocol> userInfo;
+@property (nonatomic) NSObject<AWENaviStickerDownloadProxy> stickerDownloader;
+@property (nonatomic) <AWENaviDataSourceProvider> dataSourceProvider;
+@property (nonatomic) <AWENaviCacheManagerProtocol> dataCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)makeRenderServiceWithGesturesSupport:;
+- (void)cancelledLoginUserEmotions;
+- (Class)naviManagerClass;
+- (void)setNaviManagerClass:;
+- (id)uiProxy;
+- (void)setUiProxy:;
+- (void)setFlowObserver:;
+- (id)stickerDownloader;
+- (void)setStickerDownloader:;
+- (void)setDataSourceProvider:;
+- (id)init;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (id)dataCache;
+- (void).cxx_destruct;
+- (id)flowObserver;
+- (void)setDataCache:;
+- (id)dataSourceProvider;
+@end

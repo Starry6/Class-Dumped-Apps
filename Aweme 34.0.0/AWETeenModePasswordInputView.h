@@ -1,0 +1,38 @@
+@interface AWETeenModePasswordInputView : UIView
+@property (nonatomic) NSMutableArray itemsArray;
+@property (nonatomic) q type;
+@property (nonatomic) double passwordInputItemViewWidth;
+@property (nonatomic) double passwordInputItemViewHeight;
+@property (nonatomic) double passwordInputItemViewSpacing;
+@property (nonatomic) @? textFieldTextDidChangeBlock;
+@property (nonatomic) AWETimeLockPasswordTextField textField;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showKeyBoard;
+- (id)passwordInputViewSize;
+- (id)initWithType:tintColor:;
+- (void)setTextFieldTextDidChangeBlock:;
+- (void)p_setupLayoutProperties;
+- (void)setupSubviewsWithColor:;
+- (id)textFieldTextDidChangeBlock;
+- (double)passwordInputItemViewWidth;
+- (double)passwordInputItemViewSpacing;
+- (double)passwordInputItemViewHeight;
+- (void)hideKeyBoard;
+- (void)setPasswordInputItemViewWidth:;
+- (void)setPasswordInputItemViewHeight:;
+- (void)setPasswordInputItemViewSpacing:;
+- (void)textFieldDidEndEditing:;
+- (id)textField;
+- (void)setTextField:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (void)clearPassword;
+- (void)textFieldTextDidChange:;
+- (id)itemsArray;
+- (void)setItemsArray:;
+@end

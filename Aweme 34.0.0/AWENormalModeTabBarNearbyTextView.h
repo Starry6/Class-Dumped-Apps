@@ -1,0 +1,37 @@
+@interface AWENormalModeTabBarNearbyTextView : AWENormalModeTabBarTextView
+@property (nonatomic) AWENormalModeTabBarNearbyTextViewUIConfig nearbyConfig;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UILabel strokeLabel;
+@property (nonatomic) NSDictionary textAttributes;
+@property (nonatomic) {CGSize=dd} gradientSize;
+@property (nonatomic) UIColor startColor;
+@property (nonatomic) UIColor endColor;
+@property (nonatomic) q direction;
+@property (nonatomic) BOOL isTeenMode;
+- (BOOL)isTeenMode;
+- (void)setIsTeenMode:;
+- (void)updateTitle:animated:completion:;
+- (void)textColorChangedWithSelectedStatus:;
+- (void)updateBackgroundWithCompletion:;
+- (void)updateTextStyle;
+- (id)nearbyConfig;
+- (id)strokeLabel;
+- (void)setStrokeLabel:;
+- (id)adjustSize:;
+- (void)setGradientSize:;
+- (id)textAttributes;
+- (long long)direction;
+- (void)setDirection:;
+- (void).cxx_destruct;
+- (void)setTextAttributes:;
+- (void)layoutSubviews;
+- (id)backgroundImageView;
+- (id)endColor;
+- (void)setEndColor:;
+- (void)setStartColor:;
+- (id)startColor;
+- (void)setBackgroundImageView:;
+- (void)updateTitle:animated:;
+- (void)updateTextColor;
+- (id)gradientSize;
+@end

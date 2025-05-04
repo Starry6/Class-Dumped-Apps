@@ -1,0 +1,31 @@
+@interface AWEAdContextManager : HTSService
+@property (nonatomic) NSDictionary anchorComplianceData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (id)logExtraDict;
+- (BOOL)isAd;
+- (BOOL)isDouPlusVideo;
+- (id)adID;
+- (id)SKANParamsString;
+- (id)getAnchorComplianceData;
+- (id)logExtraStr;
+- (id)extraAdTypeString;
+- (void)setAnchorComplianceDataWith:;
+- (id)anchorComplianceData;
+- (void)setAnchorComplianceData:;
+- (void)checkProtocolOTabBarController:;
+- (void)checkProtocolOfSlidingVC:;
+- (void)checkProtocolOfNavigationController:;
+- (id)testIfTabBarVCAndGetSelected:;
+- (id)testIfSlidingVCAndGetSelected:;
+- (id)testIfNavigationVCAndGetCarrier:;
+- (id)findNearestAdVC;
+- (id)groupID;
+- (void).cxx_destruct;
+- (id)downloadURL;
+- (id)creativeID;
+- (id)authorId;
+@end

@@ -1,0 +1,30 @@
+@interface AWESearchMusicBusinessConfigModel : AWEBaseApiModel
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWERiskPreventModel riskPreventModel;
+@property (nonatomic) AWESearchAdModel adModel;
+@property (nonatomic) NSString correctName;
+@property (nonatomic) NSString backtrace;
+@property (nonatomic) AWESearchGlobalDoodleConfigModel extraModel;
+@property (nonatomic) NSNumber renderType;
+@property (nonatomic) NSString musicFilterType;
+- (id)renderType;
+- (id)extraModel;
+- (void)setExtraModel:;
+- (id)adModel;
+- (void)setAdModel:;
+- (id)riskPreventModel;
+- (void)setRiskPreventModel:;
+- (id)correctName;
+- (void)setCorrectName:;
+- (id)musicFilterType;
+- (void)setMusicFilterType:;
+- (long long)getSelectedTab;
+- (id)backtrace;
+- (void)setHasMore:;
+- (void)setRenderType:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setBacktrace:;
++ (id)extraModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

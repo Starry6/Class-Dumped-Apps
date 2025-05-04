@@ -1,0 +1,30 @@
+@interface AWEZephyrCore : NSObject
+@property (nonatomic) BOOL shouldFetchWhenActive;
+@property (nonatomic) q fetchInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didReady;
+- (void)didUpdateInstallIDFrom:to:;
+- (void)didUpdateDeviceIDFrom:to:;
+- (void)setShouldFetchWhenActive:;
+- (void)fetchWhenActive;
+- (BOOL)shouldFetchWhenActive;
+- (id)queryVersionFromData:;
+- (void)track:errorType:errorDesc:param:;
+- (void)track:errorType:errorDesc:param:moduleVersion:;
+- (void)didFailFetchListWithError:;
+- (void)moduleData:didFetchWithError:;
+- (void)moduleData:didLoadWithError:;
+- (void)moduleData:willLoadWithError:;
+- (void)engineDidInitWithError:type:;
+- (void)engineDidRunWithError:type:;
+- (void)fetch;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (long long)fetchInterval;
+- (void)setFetchInterval:;
++ (id)shared;
+@end

@@ -1,0 +1,32 @@
+@interface AWEProfileHeaderNameAreaComponent : AWERLComponent
+@property (nonatomic) double maxWidth;
+@property (nonatomic) AWEProfileHeaderNameAreaTopContainerComponent nameAreaTopContainerComponent;
+@property (nonatomic) AWEProfileHeaderNicknameComponent nicknameComponent;
+@property (nonatomic) AWEProfileHeaderRankAreaComponent rankAreaComponent;
+@property (nonatomic) AWEProfileHeaderIdContentComponent idContentComponent;
+@property (nonatomic) AWEProfileHeaderContactRemarkComponent contactRemarkComponent;
+@property (nonatomic) AWEProfileHeaderVerificationAndIdContentAreaComponent identifyAndIdContentComponent;
+@property (nonatomic) AWERLFlexVirtualNode containerNode;
+- (id)buildSubComponents;
+- (id)virtualNodeWithChildren:;
+- (void)updateComponentData:;
+- (id)initWithData:context:maxWidth:;
+- (id)containerNode;
+- (void)setContainerNode:;
+- (BOOL)shouldQRCodeIconEnlarge;
+- (id)nameAreaTopContainerComponent;
+- (id)rankAreaComponent;
+- (id)contactRemarkComponent;
+- (id)identifyAndIdContentComponent;
+- (id)nicknameComponent;
+- (id)idContentComponent;
+- (void)setNameAreaTopContainerComponent:;
+- (void)setRankAreaComponent:;
+- (void)setIdContentComponent:;
+- (void)setContactRemarkComponent:;
+- (void)setIdentifyAndIdContentComponent:;
+- (void)setNicknameComponent:;
+- (double)maxWidth;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+@end

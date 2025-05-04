@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentAudioElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchHotSpotLiveAutoPlayCellController : AWESearchLiveAutoPlayViewController
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) YYLabel hostNameLabel;
+@property (nonatomic) Q cardStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) NSString referString;
+@property (nonatomic) q index;
+@property (nonatomic) double searchHorizontalAutoPlayCellWidth;
+@property (nonatomic) {CGSize=dd} cellSize;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) AWEOriginalAdModel adModel;
+@property (nonatomic) BOOL isResourceRecalled;
+@property (nonatomic) UIButton videoActionButton;
+@property (nonatomic) UIViewController<AWEAwemePlayVideoControllerProtocol><AWEAwemePlayVideoProtocol><AWEAwemePlayVideoTrackProtocol> playVideoViewController;
+@property (nonatomic) @? playerWillStartNextLoop;
+- (void)setLogExtraDict:;
+- (void)cellWillDisplay;
+- (void)setupSubViews;
+- (void)player:mediaSizeDidChange:;
+- (void)updateAvatarWithModel:;
+- (id)hostNameLabel;
+- (void)setHostNameLabel:;
+- (void).cxx_destruct;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (void)updateModel:;
+- (unsigned long long)cardStyle;
+- (void)setCardStyle:;
+@end

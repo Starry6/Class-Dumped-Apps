@@ -1,0 +1,31 @@
+@interface AWEIMMixPhotoCommonJobResult : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) BOOL submitSuccess;
+@property (nonatomic) NSString clientMessageID;
+@property (nonatomic) Q serverMessageID;
+@property (nonatomic) Q playID;
+@property (nonatomic) NSString converstionID;
+@property (nonatomic) NSInteger currentJoinCount;
+@property (nonatomic) NSDictionary rspTrackExt;
+@property (nonatomic) BOOL shouldShowNewMixPage;
+- (unsigned long long)serverMessageID;
+- (void)setServerMessageID:;
+- (void)setClientMessageID:;
+- (id)clientMessageID;
+- (id)converstionID;
+- (unsigned long long)playID;
+- (void)setConverstionID:;
+- (BOOL)shouldShowNewMixPage;
+- (id)rspTrackExt;
+- (int)currentJoinCount;
+- (void)setSubmitSuccess:;
+- (void)setPlayID:;
+- (void)setCurrentJoinCount:;
+- (void)setRspTrackExt:;
+- (void)setShouldShowNewMixPage:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (BOOL)submitSuccess;
++ (id)newResultWithRequestType:;
+@end

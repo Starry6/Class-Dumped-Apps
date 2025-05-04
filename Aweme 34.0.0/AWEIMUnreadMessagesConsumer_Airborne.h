@@ -1,0 +1,38 @@
+@interface AWEIMUnreadMessagesConsumer_Airborne : AWEIMBaseUnreadMessagesConsumer
+@property (nonatomic) NSMutableSet requestingUserSet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (unsigned long long)typeOfProvidingHint;
+- (unsigned long long)priorityOfProvidingHint;
+- (BOOL)isCompatibleWithTimeText;
+- (void)didDisplayedHint:cellContext:;
+- (void)didClickedHint:cellContext:;
+- (BOOL)p_disableHighLightWithCon:;
+- (BOOL)__canGenerateHintsForConversationId:filterOption:;
+- (id)targetFilterOptionsForUnreadMessagesInChat:;
+- (id)generateHintForConversation:filterOption:;
+- (BOOL)handleUnreadMessagesFromDB:conversationId:filterOption:;
+- (id)onConversationDataSourceMessagesCreated:con:;
+- (long long)hintLineBreakMode;
+- (BOOL)__filterAndCacheMessagesFrom:conversationId:filterOption:;
+- (id)__getNewestValidMessageForConversationId:filterOption:;
+- (id)__airborneHintsWithName:message:con:filterOption:;
+- (void)__queryAndCacheUserSid:;
+- (id)requestingUserSet;
+- (BOOL)__canQueryForAirboneWithChatModel:;
+- (BOOL)__filterAndCacheAllOwnerMessagesFrom:conversationId:filterOption:;
+- (BOOL)__canQueryForAirboneWithCon:;
+- (void)setRequestingUserSet:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (BOOL)enableConsumer;
++ (double)timeIntervalFromLastShowAirborneHintWithCid:;
++ (BOOL)canShowAirborneHintWithCid:;
++ (BOOL)canShowAirborneHintForFrequencyControlWithCon:;
++ (BOOL)canShowAirborneHintForMuteSettingWithCon:;
++ (void)inserGroupOwnerMeessage:toArray:;
+@end

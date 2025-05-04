@@ -1,0 +1,33 @@
+@interface AWEPostPageAssistantElement : AWEPostPageElement
+@property (nonatomic) AWEPublishAssistantResponse resultResponse;
+@property (nonatomic) DUXBottomNotification hintView;
+@property (nonatomic) NSString zipUri;
+@property (nonatomic) q hintDismissTrackType;
+@property (nonatomic) BOOL isPublisherTopView;
+- (id)zipUri;
+- (void)setZipUri:;
+- (void)dismissHint;
+- (id)trackParams:;
+- (void)reviewPostContent:;
+- (void)setHintDismissTrackType:;
+- (void)setIsPublisherTopView:;
+- (BOOL)isPublisherTopView;
+- (void)showHintIfNeeded;
+- (BOOL)isUriReviewed:;
+- (id)resultResponse;
+- (void)setResultResponse:;
+- (void)uriDidReview:;
+- (void)didReceiveReviewResponse;
+- (void)setupHintView;
+- (long long)hintDismissTrackType;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (BOOL)isEnabled;
+- (id)hintView;
+- (void)setHintView:;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

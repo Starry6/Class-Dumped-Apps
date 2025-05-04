@@ -1,0 +1,33 @@
+@interface AWEIMAudioAnimationView : UIView
+@property (nonatomic) BOOL animating;
+@property (nonatomic) UIView container;
+@property (nonatomic) CAShapeLayer circle;
+@property (nonatomic) CAShapeLayer curveLayer1;
+@property (nonatomic) CAShapeLayer curveLayer2;
+@property (nonatomic) AWEIMAudioAnimationViewConfig config;
+@property (nonatomic) @? tapBlock;
+- (void)p_setupUI;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (void)iesim_themeReload:;
+- (void)p_setupThemeDynamicConfig;
+- (id)curveLayer2;
+- (void)p_resetColor;
+- (id)curveLayer1;
+- (id)p_lineShapeLayerWithWidth:center:radius:;
+- (void)setCurveLayer1:;
+- (void)setCurveLayer2:;
+- (void)setContainer:;
+- (void)setConfig:;
+- (id)container;
+- (void)setAnimating:;
+- (id)initWithConfig:;
+- (id)intrinsicContentSize;
+- (id)config;
+- (void)startAnimation;
+- (void).cxx_destruct;
+- (void)stopAnimation;
+- (BOOL)animating;
+- (id)circle;
+- (void)setCircle:;
+@end

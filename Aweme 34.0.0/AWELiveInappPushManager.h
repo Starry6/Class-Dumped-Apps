@@ -1,0 +1,35 @@
+@interface AWELiveInappPushManager : NSObject
+@property (nonatomic) Q showTimesInThisColdLaunch;
+@property (nonatomic) NSDate livePushPrevShowTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)pushSBCCouldHandleWithMsg:payload:businessType:;
+- (void)p_showPush:;
+- (void)p_showPushIfNeeded:;
+- (void)p_delayToShowPush:;
+- (void)innerPushShowed;
+- (id)currentTopPage:;
+- (void)setLivePushPrevShowTime:;
+- (unsigned long long)showTimesInThisColdLaunch;
+- (void)setShowTimesInThisColdLaunch:;
+- (BOOL)p_isLiveBusinessType:;
+- (id)p_innerPushExemptModelWithBusinessType:eventType:;
+- (void)trackLivePushAbandonWithRoomID:anchorID:abandonReson:;
+- (BOOL)p_canRequestOrShowLiveInappPushWithExemptModel:;
+- (void)trackLivePushAbandonWithModel:eventName:;
+- (BOOL)p_canShowLiveInappPushWithPushModel:;
+- (void)showPushAfterCheckPreview:;
+- (void)stopPullStreamOverTime:withPreviewManager:;
+- (Class)p_inappPushViewClassWithPushModel:;
+- (id)livePushPrevShowTime;
+- (BOOL)p_canShowLiveInappPushPlusWithPushModel:;
+- (BOOL)p_isChatPushShowing;
+- (BOOL)p_isLivePushShowing;
+- (BOOL)p_isShakePushShowing;
+- (id)init;
+- (void).cxx_destruct;
++ (void)_aweLazyRegisterStaticLoad;
++ (id)sharedInstance;
+@end

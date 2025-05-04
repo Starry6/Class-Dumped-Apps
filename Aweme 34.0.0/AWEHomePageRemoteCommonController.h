@@ -1,0 +1,30 @@
+@interface AWEHomePageRemoteCommonController : NSObject
+@property (nonatomic) AWEHomePageRemoteProxy remoteProxy;
+@property (nonatomic) AWEHomePageRemoteContext context;
+@property (nonatomic) AWEHomePageRemoteItemDataModel dataModel;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) UIView<AWEHomePageRemoteViewProtocol> containerView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContext:extraData:;
+- (double)cellViewHeight;
+- (id)atomicDataModel;
+- (BOOL)canShowCellView;
+- (BOOL)needLoadController;
+- (id)oncreateView;
+- (void)homePageRemoteThemeDidChange:;
+- (void)setUpHomePageRemoteProxy:;
+- (id)remoteProxy;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)dataModel;
+- (void)setDataModel:;
+- (id)extraData;
+- (void)setExtraData:;
+- (void)setRemoteProxy:;
+@end

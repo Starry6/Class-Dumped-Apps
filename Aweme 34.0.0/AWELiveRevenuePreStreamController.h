@@ -1,0 +1,36 @@
+@interface AWELiveRevenuePreStreamController : NSObject
+@property (nonatomic) NSMutableArray businessElements;
+@property (nonatomic) AWELiveRoomModel roomModel;
+@property (nonatomic) AWELiveShareBottomCardModel wishListCardModel;
+@property (nonatomic) AWELiveShareBottomCardModel pkCardModel;
+@property (nonatomic) <AWELiveStreamShareDelegate> shareDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)roomModel;
+- (void)didSetAttachingDIContext;
+- (id)initWithDIContext:;
+- (void)setRoomModel:;
+- (void)createElement;
+- (void)receiveChannelMessage:;
+- (BOOL)isPKOrMultilinkerScene;
+- (void)notifyRevenueInteractShowExtendContent:isPunish:timeRemain:description:;
+- (void)setupLiveRoomModel:preStreamContainer:previewStreamScene:;
+- (void)setBusinessElements:;
+- (id)businessElements;
+- (void)parseWishListModelWith:;
+- (void)streamPlayerStartToPlay;
+- (void)streamPlayerStop;
+- (void)setPkCardModel:;
+- (void)updateBottomCardModel;
+- (id)pkCardModel;
+- (BOOL)needAutoOpenPanel;
+- (id)pkEnterRoomParams;
+- (void)setWishListCardModel:;
+- (id)wishListCardModel;
+- (void)updateStreamPlayerPlaybackState:;
+- (void).cxx_destruct;
+- (void)setShareDelegate:;
+- (id)shareDelegate;
+@end

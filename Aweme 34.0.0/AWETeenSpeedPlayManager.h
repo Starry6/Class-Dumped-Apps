@@ -1,0 +1,36 @@
+@interface AWETeenSpeedPlayManager : NSObject
+@property (nonatomic) NSArray playbackRateTypes;
+@property (nonatomic) q currentPlaybackRateType;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) BOOL isLandscape;
+@property (nonatomic) BOOL isAlbum;
+@property (nonatomic) BOOL sendTrack;
+@property (nonatomic) NSString currentVideoId;
+@property (nonatomic) q vcType;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (long long)vcType;
+- (void)setVcType:;
+- (void)setIsAlbum:;
+- (BOOL)isAlbum;
+- (id)currentVideoId;
+- (void)setCurrentVideoId:;
+- (id)playbackRateTypes;
+- (long long)currentPlaybackRateType;
+- (void)setCurrentPlaybackRateType:;
+- (void)setSendTrack:;
+- (BOOL)isActiveBtn;
+- (BOOL)sendTrack;
+- (double)p_playbackRateFromPlaybackType:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
+- (double)currentPlaybackRate;
+- (void)setIsLandscape:;
+- (BOOL)isLandscape;
+- (void)updatePlaybackRate:;
++ (id)speedPlayManager;
++ (void)activateButtonWithPlaybackRateType:buttons:normalColor:selectedColor:;
++ (long long)indexOfButton:allButtons:;
++ (id)titleFromPlaybackType:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEPrivatePostLandingPageViewController : UIViewController
+@property (nonatomic) UIViewController<AWEPrivatePostsViewControllerProtocol> privateVC;
+@property (nonatomic) BOOL isViewDidAppear;
+@property (nonatomic) BOOL isFromHome;
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL isSplitScreen;
+@property (nonatomic) NSString currentItemID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (BOOL)configWithRouterParamDict:;
+- (void)setReferString:;
+- (BOOL)isViewDidAppear;
+- (void)setIsSplitScreen:;
+- (void)userProfileTabVC:didScroll:;
+- (id)contentOffsetOfCurrentVC;
+- (double)maxBannerHeight;
+- (id)userForTabVC;
+- (double)userProfileTabHeight;
+- (void)backBtnClicked:;
+- (void)setIsViewDidAppear:;
+- (void)setCurrentItemID:;
+- (id)currentItemID;
+- (void)setIsFromHome:;
+- (id)privateVC;
+- (BOOL)isFromHome;
+- (void)setPrivateVC:;
+- (double)headerHeight;
+- (id)init;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (BOOL)isSplitScreen;
+@end

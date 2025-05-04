@@ -1,0 +1,32 @@
+@interface AWEPOILivePurchaseAtmosphereConfig : NSObject
+@property (nonatomic) q viewType;
+@property (nonatomic) double contentHeight;
+@property (nonatomic) double contentMaxWidth;
+@property (nonatomic) double contentWidth;
+@property (nonatomic) double paddingLeft;
+@property (nonatomic) UIFont xFont;
+@property (nonatomic) UIFont numberFont;
+@property (nonatomic) double enterAnimateOffsetX;
+@property (nonatomic) double leaveAnimateOffsetX;
+- (double)contentMaxWidth;
+- (void)setContentMaxWidth:;
+- (void)setXFont:;
+- (void)setNumberFont:;
+- (void)setEnterAnimateOffsetX:;
+- (void)setLeaveAnimateOffsetX:;
+- (id)xFont;
+- (double)enterAnimateOffsetX;
+- (double)leaveAnimateOffsetX;
+- (double)paddingLeft;
+- (void)setContentWidth:;
+- (double)contentHeight;
+- (double)contentWidth;
+- (void).cxx_destruct;
+- (void)setContentHeight:;
+- (void)setPaddingLeft:;
+- (long long)viewType;
+- (void)setViewType:;
+- (id)numberFont;
++ (id)shelfConfig;
++ (id)explainConfig;
+@end

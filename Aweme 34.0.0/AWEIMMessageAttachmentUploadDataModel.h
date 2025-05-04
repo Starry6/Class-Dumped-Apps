@@ -1,0 +1,30 @@
+@interface AWEIMMessageAttachmentUploadDataModel : NSObject
+@property (nonatomic) AWEIMMessageAttachmentDBModel videoCoverDBModel;
+@property (nonatomic) AWEIMSendMessageAttachmentObject sendObj;
+@property (nonatomic) NSMutableArray dbModelArray;
+@property (nonatomic) NSString messageID;
+@property (nonatomic) q messageType;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSDictionary sendContext;
+@property (nonatomic) NSMutableDictionary content;
+@property (nonatomic) NSString videoAssetIdentifier;
+- (void)setSendContext:;
+- (id)sendContext;
+- (void)setDbModelArray:;
+- (id)dbModelArray;
+- (id)sendObj;
+- (void)setSendObj:;
+- (void)setVideoCoverDBModel:;
+- (void)setVideoAssetIdentifier:;
+- (id)videoCoverDBModel;
+- (id)videoAssetIdentifier;
+- (id)content;
+- (id)messageID;
+- (id)conversationID;
+- (void)setMessageID:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (long long)messageType;
+- (void)setConversationID:;
+@end

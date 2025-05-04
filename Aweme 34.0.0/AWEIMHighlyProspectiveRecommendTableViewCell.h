@@ -1,0 +1,35 @@
+@interface AWEIMHighlyProspectiveRecommendTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIButton contactButton;
+@property (nonatomic) UIImageView removeImageView;
+@property (nonatomic) AWEIMHighlyProspectiveRecommendUserModel model;
+@property (nonatomic) <AWEIMHighlyProspectiveRecommendTableViewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)__setupUI;
+- (void)__setupLayout;
+- (id)removeImageView;
+- (void)__handleAvatarImageViewClicked;
+- (void)__handleContactButtonClicked;
+- (void)__handleRemoveImageViewClicked;
+- (void)setRemoveImageView:;
+- (void)setModel:;
+- (id)delegate;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)contactButton;
+- (void)setContactButton:;
+@end

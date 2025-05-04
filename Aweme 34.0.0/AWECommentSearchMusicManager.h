@@ -1,0 +1,31 @@
+@interface AWECommentSearchMusicManager : NSObject
+@property (nonatomic) NSMutableArray internalMusics;
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) <AWEHttpTask> suggestTask;
+@property (nonatomic) <AWEHttpTask> searchTask;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSArray musics;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (id)musics;
+- (void)setInternalMusics:;
+- (id)internalMusics;
+- (id)searchTask;
+- (id)suggestTask;
+- (void)setSearchTask:;
+- (void)searchMusicsWithKeyword:cursor:completion:;
+- (id)addNewMusicArray:;
+- (void)loadMoreMusicWithCompletion:;
+- (void)setSuggestTask:;
+- (id)cursor;
+- (id)init;
+- (void)clearResults;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (id)keyword;
+- (void)setKeyword:;
+@end

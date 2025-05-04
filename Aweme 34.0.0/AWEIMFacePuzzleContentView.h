@@ -1,0 +1,34 @@
+@interface AWEIMFacePuzzleContentView : UIView
+@property (nonatomic) AWEIMFacePuzzleContentProps props;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) UIImageView topImageView;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel subTitle;
+@property (nonatomic) UILabel des;
+@property (nonatomic) UIView btn;
+- (id)topImageView;
+- (void)setTopImageView:;
+- (id)btn;
+- (id)des;
+- (void)setDes:;
+- (void)p_addGesture;
+- (void)p_addSubviews;
+- (void)setBtn:;
+- (void)updateWithProps:;
+- (void)p_addConstraint;
+- (void)p_delete;
+- (void)p_onTap;
+- (id)props;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setBgImageView:;
+- (id)bgImageView;
+- (void)setProps:;
+@end

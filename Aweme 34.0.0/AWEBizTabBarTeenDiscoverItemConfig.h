@@ -1,0 +1,37 @@
+@interface AWEBizTabBarTeenDiscoverItemConfig : NSObject
+@property (nonatomic) AWETeenTabbarDiscoverButton teenDiscoverButton;
+@property (nonatomic) AWETeenDiscoverViewController teenDiscoverController;
+@property (nonatomic) BOOL fetchTeenDiscoverNavWhenLogin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)teenModeDidChange:isLogout:;
+- (id)tabBarItemButton;
+- (id)tabBarItemViewController;
+- (BOOL)canLandingWithTabId:params:;
+- (id)selectInfoAtTabBarItemSelection;
+- (BOOL)shouldHandleTabBarItemSelectionFromPreviousSelectedType:isByTap:;
+- (void)tabBarController:didSelectItemType:previousItemType:;
+- (void)didDismissNightLock;
+- (void)fetchTeenDiscoverNavIfNeeded;
+- (id)teenDiscoverButton;
+- (id)teenDiscoverController;
+- (void)dismissDiscoverBubbleIfNeeded;
+- (void)setFetchTeenDiscoverNavWhenLogin:;
+- (BOOL)fetchTeenDiscoverNavWhenLogin;
+- (void)redoTeenDiscoverAnimations;
+- (id)teenDiscoverInnerView;
+- (void)didSelectedDiscoverTab;
+- (void)didDiscoverTabWithRecommandRemind:;
+- (void)setTeenDiscoverController:;
+- (void)setTeenDiscoverButton:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground;
+- (void)setupConfig;
+- (void)setupNotification;
++ (id)sharedConfig;
+@end

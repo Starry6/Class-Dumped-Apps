@@ -1,0 +1,37 @@
+@interface AWEECBizTabBarCartItemConfig : NSObject
+@property (nonatomic) UIButton<AWENormalModeTabBarGeneralButtonProtocol> cartButton;
+@property (nonatomic) AWEECTabBarCartViewController cartVC;
+@property (nonatomic) <AWENormalModeTabBarItemConfigAbility> tabBarAbility;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupTabBarAbility:;
+- (void)tabBarWillUnSelectItemWithLeaveModel:;
+- (void)tabBarWillSelectItemWithEnterModel:;
+- (void)tabBarDidUnSelectItemToNextSelectedType:isByTap:;
+- (void)tabBarDidSelectItemFromPreviousSelectedType:isByTap:;
+- (id)tabBarItemButton;
+- (id)tabBarItemViewController;
+- (BOOL)canLandingWithTabId:params:;
+- (BOOL)loginIfNeededAtTabBarItemSelection:;
+- (id)loginInfoAtTabBarItemSelectionFromPreviousSelectedType:;
+- (id)selectInfoAtTabBarItemSelection;
+- (BOOL)shouldHandleTabBarItemSelectionFromPreviousSelectedType:isByTap:;
+- (void)tabBarDidDeselectItem;
+- (void)tabBarControllerDidChangedThemeFollowSystem;
+- (id)aAWENormalModeTabBarFactoryCommonAdapter;
+- (void)setTabBarAbility:;
+- (id)tabBarAbility;
+- (id)cartButton;
+- (id)cartVC;
+- (BOOL)inTabBarCart;
+- (void)handleBubbleResponseSuccess;
+- (void)handleRecordedBubbleResponse;
+- (void)setCartButton:;
+- (void)setCartVC:;
+- (void).cxx_destruct;
+- (void)updateTheme;
++ (Class)aAWENormalModeTabBarFactoryCommonAdapterClass;
++ (id)sharedConfig;
+@end

@@ -1,0 +1,36 @@
+@interface AWEUserRecommendLabel : UILabel
+@property (nonatomic) BOOL truncatesLastVisibleLine;
+@property (nonatomic) double minimumLineHeight;
+@property (nonatomic) double paragraphLineSpacing;
+@property (nonatomic) double firstLineHeadIndent;
+@property (nonatomic) double headIndent;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic) q baseWritingDirection;
+- (void)alignToCenterVertically;
+- (void)setTruncatesLastVisibleLine:;
+- (double)baselineOffsetToAlignCenterVertically;
+- (void)p_applyPropertiesToText;
+- (void)p_applyTextToProperties;
+- (BOOL)p_canOverrideDrawing;
+- (long long)p_drawingOptions;
+- (BOOL)p_needsAdjustAttributedText;
+- (double)p_limitedHeightWithMaxHeight:;
+- (id)p_adjustedAttributedText;
+- (double)paragraphLineSpacing;
+- (BOOL)truncatesLastVisibleLine;
+- (void)setParagraphLineSpacing:;
+- (void)setBaselineOffset:;
+- (void)drawTextInRect:;
+- (double)baselineOffset;
+- (id)intrinsicContentSize;
+- (void)setText:;
+- (void)setAttributedText:;
+- (long long)baseWritingDirection;
+- (double)firstLineHeadIndent;
+- (double)headIndent;
+- (double)minimumLineHeight;
+- (void)setBaseWritingDirection:;
+- (void)setFirstLineHeadIndent:;
+- (void)setHeadIndent:;
+- (void)setMinimumLineHeight:;
+@end

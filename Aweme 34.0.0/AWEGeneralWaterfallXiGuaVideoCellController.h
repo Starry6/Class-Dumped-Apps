@@ -1,0 +1,36 @@
+@interface AWEGeneralWaterfallXiGuaVideoCellController : AWEGeneralWaterfallBaseCellController
+@property (nonatomic) BOOL videoClipFinish;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didPlayError:;
+- (void)trackShow;
+- (id)createPlayerView;
+- (void)trackClick;
+- (BOOL)shouldNotActive;
+- (void)didStartShowing;
+- (void)didRecallResource;
+- (void)resetShouldActiveStatus;
+- (void)enterXiguaPersonalPage:;
+- (void)preloadTimor;
+- (id)aAWESearchModuleServiceDOUYINSSAdaper;
+- (void)cardSingleTapped:;
+- (id)getTrackBaseParams;
+- (void)userInfoTapped:;
+- (BOOL)shouldHideAnchorView;
+- (BOOL)isUseStaticCardCover;
+- (void)setVideoClipFinish:;
+- (BOOL)isCountNewStyle;
+- (id)countNewStyleFormatTimeString;
+- (BOOL)videoClipFinish;
+- (void)didBecomeActive;
+- (BOOL)hasVideo;
+- (id)videoView;
+- (void)didResignActive;
+- (id)transitionContext;
+- (void)didEnd;
+- (id)activeView;
+- (void)updateWithModel:;
++ (Class)aAWESearchModuleServiceDOUYINSSAdaperClass;
+@end

@@ -1,0 +1,33 @@
+@interface AWEVideoCoverFakeProfileView : UIView
+@property (nonatomic) double scale;
+@property (nonatomic) UIView coverView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView stickerImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) {CGPoint=dd} offset;
+@property (nonatomic) AWEInteractionStickerLocationModel location;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)stickerImageView;
+- (void)setStickerImageView:;
+- (void)updateCoverImage:;
+- (void)configScale:;
+- (void)updateStickerViewImage:;
+- (void)updateCoverPostionWithOffset:;
+- (void)updateStickerPostion:;
+- (void)p_configSubviews;
+- (id)p_createPostCoverView;
+- (id)location;
+- (void)setOffset:;
+- (id)offset;
+- (double)scale;
+- (void)setLocation:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setScale:;
+- (id)titleLabel;
+- (id)coverView;
+- (void)setCoverView:;
++ (double)viewHeight;
+@end

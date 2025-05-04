@@ -1,0 +1,35 @@
+@interface AWEIMMessageStrangerInteractor : AWEIMComponentBase
+@property (nonatomic) BOOL didTransferedToFriend;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) <IESIMStrangerChatDataManagerProtocol> dataController;
+@property (nonatomic) BOOL isStrangerTransferToFriendInCurrentController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)secUserID;
+- (void)setSecUserID:;
+- (void)didFinishFollowUser:status:error:;
+- (void)setDataController:;
+- (void)hostVC_willDealloc;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)willDeleteMessage:sendToServer:;
+- (void)fetchData:;
+- (id)vcParent;
+- (void)deleteMessage:sendToServer:;
+- (void)deleteMessage:sendToServer:completion:;
+- (BOOL)isStrangerTransferToFriendInCurrentController;
+- (void)setIsStrangerTransferToFriendInCurrentController:;
+- (void)setDidTransferedToFriend:;
+- (BOOL)isSelfConversationIdAmongIdentifiers:;
+- (void)iesim_strangerConversationDataSourceDidUpdate:updateConversationIdentifiers:reason:;
+- (BOOL)didTransferedToFriend;
+- (id)userID;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (id)dataController;
++ (BOOL)canCreateComponentWithContext:;
+@end

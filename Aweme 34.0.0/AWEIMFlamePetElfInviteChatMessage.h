@@ -1,0 +1,30 @@
+@interface AWEIMFlamePetElfInviteChatMessage : AWEIMMessage
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString title_receiver;
+@property (nonatomic) NSString sub_title;
+@property (nonatomic) NSString head_url;
+@property (nonatomic) q pet_id;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)getContentDict;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (id)displayTextWithType:;
+- (long long)pet_id;
+- (id)title_receiver;
+- (id)sub_title;
+- (id)head_url;
+- (void)setTitle_receiver:;
+- (void)setSub_title:;
+- (void)setHead_url:;
+- (void)setPet_id:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+@end

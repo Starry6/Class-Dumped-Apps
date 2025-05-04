@@ -1,0 +1,31 @@
+@interface AWEShareReflowStrategyLive : NSObject
+@property (nonatomic) Q schemaType;
+@property (nonatomic) AWEShareTokenHandlerResponseModel model;
+@property (nonatomic) NSString longURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSchemaType:;
+- (void)setLongURL:;
+- (id)longURL;
+- (id)initWithModel:longURL:;
+- (BOOL)shouldAvoidSamePageWithModel:;
+- (BOOL)enableTransferDirectly;
+- (BOOL)shouldDelayTokenFind;
+- (void)transferWithModel:params:longURL:tokenFromType:;
+- (void)configReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (void)transferToLiveWithModel:living:roomId:anchorId:tokenFromType:;
+- (void)transferToLiveWithModel:living:roomId:anchorId:tokenFromType:sourceBtmToken:;
+- (BOOL)isLiveAppointmentShareWithModel:;
+- (void)p_configLiveAppointmentReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (void)p_configLiveMessageChannelReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (void)p_configLiveNormalReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (void)p_liveShowTrackerWithModel:tokenFromType:enterMethod:anchorID:roomID:shareUserID:;
+- (void)setModel:;
+- (unsigned long long)schemaType;
+- (id)model;
+- (id)descriptionText;
+- (void).cxx_destruct;
+- (id)tokenType;
+@end

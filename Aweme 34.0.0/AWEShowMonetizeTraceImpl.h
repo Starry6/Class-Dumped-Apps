@@ -1,0 +1,35 @@
+@interface AWEShowMonetizeTraceImpl : HTSService
+@property (nonatomic) NSMutableDictionary traceInfoByID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (void)trackMonetizeLinkResultWithErrorCode:errorMsg:subErrorCode:awemeParams:extraParams:;
+- (void)trackMonetizeNodeWithName:awemeParams:extraParams:;
+- (void)trackMonetizeNodeWithName:aweme:extraParams:;
+- (void)trackMonetizeLinkResultWithErrorCode:aweme:extraParams:;
+- (void)setPaidSuccessStep:forAwemeID:;
+- (void)traceMonitorEvent:aweme:params:;
+- (void)traceMonitorEvent:awemeParams:params:;
+- (void)setPaidSuccessStep:forAwemeID:traceInfoConfigHandler:;
+- (unsigned long long)getPaidSuccessStepForAwemeID:;
+- (void)checkHasOtherPaidInProgressForWillDisplayWithAwemeID:;
+- (void)trackMonetizeLinkSucceedResultWithAweme:extraParams:;
+- (void)trackMonetizeLinkResultWithErrorCode:awemeParams:extraParams:;
+- (void)trackMonetizeLinkResultWithErrorCode:errorMsg:subErrorCode:aweme:extraParams:;
+- (void)trackCalculationTimeWithName:currentTime:calculationStep:model:extraParams:;
+- (void)setTraceInfoByID:;
+- (void)videoPlayWithNotification:;
+- (void)traceMonitorEvent:params:;
+- (id)getIndexParamsForEventParams:;
+- (id)traceInfoByID;
+- (void)traceMonetizeLinkResultWithItemID:errorCode:errorMsg:subErrorCode:awemeParams:extraParams:;
+- (id)commonParamsForAwemeParams:;
+- (id)traceAndTrackCommonEvent;
+- (id)traceParamsWithItemID:errorCode:errorMsg:subErrorCode:;
+- (void)reportStackWithErrorCode:awemeParams:extraParams:;
+- (void)traceForErrorCode:params:;
+- (id)errorNameForErrorCode:;
+- (void).cxx_destruct;
+@end

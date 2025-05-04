@@ -1,0 +1,37 @@
+@interface AWESideBarSettingPagePresenter : AWELeftSideBarBasePresenter
+@property (nonatomic) UIView<AWELeftSideBarStencilViewProtocol> settingPageView;
+@property (nonatomic) AWELeftSideBarListCellDataModel dataModel;
+@property (nonatomic) BOOL isSideBarOpen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (double)cellViewWidth;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (void)onLeftSideBarOpen;
+- (void)onLeftSideBarClose;
+- (BOOL)needUpdateLeftSideBarContextWithModuleType:withExtraData:withAmbienceIdentification:;
+- (void)updateLeftSideBarContext:withExtraData:withAmbienceIdentification:;
+- (BOOL)canDowngradeDisplay;
+- (void)downgradeDisplay;
+- (id)p_previousPage;
+- (id)p_jumpUrlString;
+- (void)setIsSideBarOpen:;
+- (BOOL)isSideBarOpen;
+- (void)showDotBadgeWithCompletion:;
+- (void)hideDotBadgeWithCompletion:;
+- (id)p_dataModelWithExtraData:;
+- (id)p_createSettingPageViewWithModuleType:;
+- (void)p_didClickSettingPageView;
+- (id)settingPageView;
+- (void)p_clearSettingPageView;
+- (void)setSettingPageView:;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
+@end

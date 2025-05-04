@@ -1,0 +1,34 @@
+@interface AWEShowMonetizeRefreshConfig : NSObject
+@property (nonatomic) Q orderType;
+@property (nonatomic) Q videoType;
+@property (nonatomic) NSString contentID;
+@property (nonatomic) NSArray awemeIDs;
+@property (nonatomic) NSString orderID;
+@property (nonatomic) double playProgress;
+@property (nonatomic) Q reason;
+@property (nonatomic) Q refreshType;
+@property (nonatomic) NSArray awemes;
+@property (nonatomic) q targetEpisode;
+- (id)orderID;
+- (double)playProgress;
+- (void)setOrderID:;
+- (void)setPlayProgress:;
+- (id)awemes;
+- (void)setAwemes:;
+- (id)awemeIDs;
+- (void)setAwemeIDs:;
+- (long long)targetEpisode;
+- (void)setTargetEpisode:;
+- (id)init;
+- (unsigned long long)videoType;
+- (void)setReason:;
+- (id)contentID;
+- (void).cxx_destruct;
+- (void)setVideoType:;
+- (unsigned long long)reason;
+- (void)setRefreshType:;
+- (unsigned long long)refreshType;
+- (void)setContentID:;
+- (unsigned long long)orderType;
+- (void)setOrderType:;
+@end

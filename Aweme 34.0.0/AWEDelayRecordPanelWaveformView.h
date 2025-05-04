@@ -1,0 +1,35 @@
+@interface AWEDelayRecordPanelWaveformView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEAudioWaveformHanderSliderView waveformSliderView;
+@property (nonatomic) AVAsset asset;
+@property (nonatomic) double assetStartLocation;
+@property (nonatomic) double assetEndLocation;
+@property (nonatomic) @? updateMusicBlock;
+@property (nonatomic) BOOL usingBarView;
+- (void)addSubviews;
+- (id)initWithFrame:model:;
+- (void)showNoMusicWaveformView:;
+- (void)updatePlayingLocation:;
+- (void)setDelegateForSliderView:;
+- (void)setUsingBarView:;
+- (double)waveBarCountForFullWidth;
+- (void)updateWaveBarWithVolumes:;
+- (void)updateHasRecordedLocation:;
+- (void)updateBottomRightLableWithMaxDuration:;
+- (void)updateToBePlayedLocation:;
+- (void)setUpdateMusicBlock:;
+- (id)waveformSliderView;
+- (BOOL)usingBarView;
+- (void)addRoundedCornerWithButtonBounds:direction:forView:;
+- (id)updateMusicBlock;
+- (void)setWaveformSliderView:;
+- (double)assetStartLocation;
+- (void)setAssetStartLocation:;
+- (double)assetEndLocation;
+- (void)setAssetEndLocation:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setAsset:;
+- (id)asset;
+@end

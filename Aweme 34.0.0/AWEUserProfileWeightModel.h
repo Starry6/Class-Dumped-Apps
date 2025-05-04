@@ -1,0 +1,34 @@
+@interface AWEUserProfileWeightModel : MTLModel
+@property (nonatomic) q avatar;
+@property (nonatomic) q nickname;
+@property (nonatomic) q signature;
+@property (nonatomic) q gender;
+@property (nonatomic) q birthday;
+@property (nonatomic) q location;
+@property (nonatomic) q school;
+@property (nonatomic) q cover;
+@property (nonatomic) q shortId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)cover;
+- (void)setCover:;
+- (long long)shortId;
+- (long long)school;
+- (void)setShortId:;
+- (void)setSchool:;
+- (long long)signature;
+- (long long)nickname;
+- (void)setSignature:;
+- (long long)birthday;
+- (long long)location;
+- (void)setGender:;
+- (void)setLocation:;
+- (long long)gender;
+- (void)setBirthday:;
+- (void)setNickname:;
+- (long long)avatar;
+- (void)setAvatar:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

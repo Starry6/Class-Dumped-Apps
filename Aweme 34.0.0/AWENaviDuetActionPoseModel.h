@@ -1,0 +1,35 @@
+@interface AWENaviDuetActionPoseModel : NSObject
+@property (nonatomic) double aweclx_actionSegWidth;
+@property (nonatomic) NSString musicId;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSArray hashtags;
+@property (nonatomic) NSArray mentions;
+@property (nonatomic) NSArray activityGroups;
+@property (nonatomic) NSArray blacklistUids;
+@property (nonatomic) BOOL hideInEditPanel;
+@property (nonatomic) IESEffectModel effect;
+@property (nonatomic) NSString effectName;
+- (void)setMusicId:;
+- (id)musicId;
+- (id)effectName;
+- (BOOL)isHideInEditPanel;
+- (id)blacklistUids;
+- (void)setHideInEditPanel:;
+- (void)setBlacklistUids:;
+- (id)initWithEffet:;
+- (double)aweclx_actionSegWidth;
+- (void)aweclx_prepare;
+- (void)setAweclx_actionSegWidth:;
+- (void)setActivityGroups:;
+- (id)displayName;
+- (id)effect;
+- (id)activityGroups;
+- (void)setDisplayName:;
+- (void).cxx_destruct;
+- (id)hashtags;
+- (void)setEffect:;
+- (void)setHashtags:;
+- (id)mentions;
+- (void)setMentions:;
++ (id)modelWithEffet:;
+@end

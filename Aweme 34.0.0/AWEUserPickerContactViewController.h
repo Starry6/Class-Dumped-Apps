@@ -1,0 +1,31 @@
+@interface AWEUserPickerContactViewController : UIViewController
+@property (nonatomic) AWEUserContactListViewController contactListController;
+@property (nonatomic) <AWEUserPickerViewControllerDelegate> delegate;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString source;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (void)setRefer:;
+- (void)backButtonClicked;
+- (id)refer;
+- (void)buildNavigationHeader;
+- (id)contactListController;
+- (void)setContactListController:;
+- (void)viewSafeAreaInsetsDidChange;
+- (id)itemID;
+- (void)setItemID:;
+- (id)delegate;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (void)setDelegate:;
+- (void)setupUI;
+@end

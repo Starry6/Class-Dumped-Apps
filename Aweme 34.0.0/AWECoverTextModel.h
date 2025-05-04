@@ -1,0 +1,33 @@
+@interface AWECoverTextModel : MTLModel
+@property (nonatomic) BOOL isStoryText;
+@property (nonatomic) BOOL isNone;
+@property (nonatomic) NSArray texts;
+@property (nonatomic) AWEStoryTextImageModel textModel;
+@property (nonatomic) NSString textEffectId;
+@property (nonatomic) AWEInteractionStickerLocationModel location;
+@property (nonatomic) Q cursorLoc;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)cursorLoc;
+- (void)setCursorLoc:;
+- (id)textModel;
+- (void)setTextModel:;
+- (BOOL)isStoryText;
+- (id)textEffectId;
+- (void)setIsStoryText:;
+- (void)setTextEffectId:;
+- (id)dtoCoverText;
+- (id)initWithDTOCoverText:;
+- (id)location;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (BOOL)isNone;
+- (void)setIsNone:;
+- (void)setTexts:;
+- (id)texts;
++ (id)textModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)locationJSONTransformer;
+@end

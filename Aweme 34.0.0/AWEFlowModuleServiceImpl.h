@@ -1,0 +1,34 @@
+@interface AWEFlowModuleServiceImpl : HTSService
+- (void)transferToMessageVCWithRouterTransitionInfo:;
+- (BOOL)enableFlowShareEntrance;
+- (id)flowCellModel;
+- (BOOL)canShowFlowShareInAwemeModel:;
+- (id)flowCellModelInAwemeModel:;
+- (void)shareAwemeToFlowWithAwemeModel:message:sendVideo:enterMethod:completion:;
+- (id)flowMessagingViewControllerWithParams:;
+- (void)openFlowMessagingViewControllerWithParams:sourceViewController:animated:;
+- (void)fadeInFlowMessagingViewControllerWithParams:sourceViewController:;
+- (BOOL)enableFlowInAweme;
+- (id)flowFeedEntranceAwemeType;
+- (id)flowFeedEntranceEventType;
+- (BOOL)flowFeedEntranceShow;
+- (id)flowFeedEntranceIcon;
+- (BOOL)flowIsBanned;
+- (id)flowChatModel;
+- (void)changeStickOnTopWithServiceModel:;
+- (void)changeMuteWithActionModel:;
+- (void)hideFlowWithActionModel:;
+- (BOOL)enableFlowInAwemeIM;
+- (id)bizStickOnTopService;
+- (BOOL)onHandleAppOpenUrl:options:;
+- (void)startFeedReadyTasks;
+- (BOOL)disableInUnauthorizedState;
+- (void)updateUserID;
+- (void)onMessageReceivedWithMessage:;
+- (void)onConnectionFailedWithState:error:;
+- (void)onChangeConnectionStatusWithState:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

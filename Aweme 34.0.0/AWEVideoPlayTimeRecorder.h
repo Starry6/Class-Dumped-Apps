@@ -1,0 +1,30 @@
+@interface AWEVideoPlayTimeRecorder : NSObject
+@property (nonatomic) NSMutableDictionary timeDic;
+@property (nonatomic) NSMutableDictionary maxTimeDic;
+@property (nonatomic) NSMutableDictionary loopDic;
+@property (nonatomic) NSMutableDictionary loopCountDic;
+@property (nonatomic) NSMutableSet landscapeRecordArray;
+- (void)recordIdentifer:playTime:;
+- (double)getPlayTime:;
+- (void)setTimeDic:;
+- (void)setMaxTimeDic:;
+- (void)setLoopDic:;
+- (void)setLoopCountDic:;
+- (void)setLandscapeRecordArray:;
+- (id)loopDic;
+- (id)maxTimeDic;
+- (id)loopCountDic;
+- (id)timeDic;
+- (id)landscapeRecordArray;
+- (void)recordIdentifer:playTime:loop:;
+- (BOOL)getLoop:;
+- (long long)getLoopCount:;
+- (void)clearLoopCount:;
+- (double)getMaxPlayTime:;
+- (void)addLandscapeRecordIdentifer:;
+- (void)removeLandscapeRecord;
+- (long long)recordVideoCount;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

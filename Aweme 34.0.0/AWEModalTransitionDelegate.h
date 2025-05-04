@@ -1,0 +1,37 @@
+@interface AWEModalTransitionDelegate : NSObject
+@property (nonatomic) UIView bgView;
+@property (nonatomic) SwipeInteractionController swipeInteractionController;
+@property (nonatomic) q durationType;
+@property (nonatomic) UIColor maskViewColor;
+@property (nonatomic) UIColor viewColor;
+@property (nonatomic) UIColor auxViewColor;
+@property (nonatomic) double scaleFactor;
+@property (nonatomic) double animationDuration;
+@property (nonatomic) @? presentCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)swipeInteractionController;
+- (void)setPresentCompletion:;
+- (id)presentCompletion;
+- (void)setViewColor:;
+- (void)setDurationType:;
+- (void)setMaskViewColor:;
+- (long long)durationType;
+- (id)maskViewColor;
+- (id)auxViewColor;
+- (void)setAuxViewColor:;
+- (id)viewColor;
+- (void)setSwipeInteractionController:;
+- (void)setScaleFactor:;
+- (double)scaleFactor;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (id)animationControllerForDismissedController:;
+- (id)interactionControllerForDismissal:;
+- (void).cxx_destruct;
+- (void)setAnimationDuration:;
+- (double)animationDuration;
+- (id)bgView;
+- (void)setBgView:;
+@end

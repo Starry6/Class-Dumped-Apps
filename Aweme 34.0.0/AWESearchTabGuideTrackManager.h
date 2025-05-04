@@ -1,0 +1,32 @@
+@interface AWESearchTabGuideTrackManager : NSObject
+@property (nonatomic) NSMutableArray trackCache;
+@property (nonatomic) NSDictionary commonParams;
+@property (nonatomic) BOOL isReady;
+@property (nonatomic) AWESearchTabGuideResponse tabGuideResponse;
+@property (nonatomic) NSDictionary extraParams;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)sendEvent:params:;
+- (id)commonParams;
+- (void)setCommonParams:;
+- (void)updateCommonParams:;
+- (void)setTabGuideResponse:;
+- (id)tabGuideResponse;
+- (void)setTrackCache:;
+- (void)sendCachedTrack;
+- (void)sendEventIfReady:params:;
+- (id)trackCache;
+- (void)handleGuideHide:hideType:;
+- (void)handleGuideReveice:isAsync:;
+- (void)handleGuideShowFail:failType:;
+- (void)handleGuideShow:;
+- (void)handleGuideClick:extraParams:;
+- (id)init;
+- (BOOL)isReady;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setIsReady:;
++ (id)hideTypeDesWithHideType:;
++ (id)failTypeDesWithFailType:;
++ (id)guideTypeWithGuide:;
+@end

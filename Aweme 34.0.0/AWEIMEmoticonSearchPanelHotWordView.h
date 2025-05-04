@@ -1,0 +1,37 @@
+@interface AWEIMEmoticonSearchPanelHotWordView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) NSArray oftenSearchWords;
+@property (nonatomic) NSArray operationWords;
+@property (nonatomic) NSArray hotwords;
+@property (nonatomic) @? didSelectHotWordBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)trackTagShow;
+- (id)didSelectHotWordBlock;
+- (void)setDidSelectHotWordBlock:;
+- (id)hotwords;
+- (void)setHotwords:;
+- (id)operationWords;
+- (void)setOperationWords:;
+- (id)oftenSearchWords;
+- (void)setOftenSearchWords:;
+- (void)renderWithHotWordArray:maxSize:;
+- (unsigned long long)p_typeOfWord:;
+- (BOOL)p_isOftenSearchWord:;
+- (void)trackTagClickWithModel:;
+- (id)tagTypeStringWithType:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (id)dataSource;
+@end

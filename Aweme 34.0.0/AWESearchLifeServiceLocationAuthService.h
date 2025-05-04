@@ -1,0 +1,30 @@
+@interface AWESearchLifeServiceLocationAuthService : AWESearchLifeServiceBaseService
+@property (nonatomic) BOOL POITopBarIsShowing;
+@property (nonatomic) AWESearchLocationAuthGuideView POITopBarView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)customFeedRecieveRequestWithResponseParams:isLoadMore:;
+- (id)filterService;
+- (id)POITopBarView;
+- (void)removePOITopBarIfNeeded;
+- (double)POIAuthTopBarHeight;
+- (void)tryToLocateAndRefreshAfterAuth;
+- (void)removePOIAuthTopBar;
+- (void)tryToLocateAndRefreshAfterAuthIfNeeded;
+- (void)displayPOIAuthTopBar;
+- (BOOL)POITopBarIsShowing;
+- (void)setPOITopBarIsShowing:;
+- (void)adjustLayoutForPOITopBarView;
+- (void)setPOITopBarView:;
+- (BOOL)shouldForbidPOIAuthPopup;
+- (void)notifyAuthStateChangeIfNeeded;
+- (void)handlePoiAuthorizationView;
+- (void)dealloc;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground;
+@end

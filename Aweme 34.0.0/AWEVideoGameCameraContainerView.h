@@ -1,0 +1,31 @@
+@interface AWEVideoGameCameraContainerView : UIView
+@property (nonatomic) UIView blurEffectView;
+@property (nonatomic) CAKeyframeAnimation animation;
+@property (nonatomic) @? appearCompletion;
+@property (nonatomic) @? disappearCompletion;
+@property (nonatomic) ACCAnimatedButton closeBtn;
+@property (nonatomic) BOOL isShowingForEffectControlGame;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissWithAnimated:completion:;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (void)showWithAnimated:completion:;
+- (id)disappearCompletion;
+- (void)setDisappearCompletion:;
+- (void)setIsShowingForEffectControlGame:;
+- (void)setAppearCompletion:;
+- (BOOL)isShowingForEffectControlGame;
+- (id)appearCompletion;
+- (id)init;
+- (void)animationDidStop:finished:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (id)animation;
+- (void)setAnimation:;
+- (void)setupUI;
+- (id)blurEffectView;
+- (void)setBlurEffectView:;
+@end

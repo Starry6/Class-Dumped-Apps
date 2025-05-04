@@ -1,0 +1,38 @@
+@interface AWEFeedConcernPOIGoodsInfoHeaderView : UIView
+@property (nonatomic) UIImageView locationImageView;
+@property (nonatomic) UILabel locationLabel;
+@property (nonatomic) UILabel distanceLabel;
+@property (nonatomic) @? tapMerchantHandle;
+@property (nonatomic) UIImageView poiAvatarImageView;
+@property (nonatomic) UILabel poiNameLabel;
+@property (nonatomic) UIView poiAvatarNameView;
+@property (nonatomic) UILabel themeLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (void)__setupUI;
+- (id)themeLabel;
+- (void)setThemeLabel:;
+- (void)__buildUI;
+- (void)setTapMerchantHandle:;
+- (void)__addAction;
+- (void)setPoiAvatarNameView:;
+- (id)poiAvatarNameView;
+- (void)setPoiAvatarImageView:;
+- (void)setPoiNameLabel:;
+- (id)poiAvatarImageView;
+- (id)poiNameLabel;
+- (id)tapMerchantHandle;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (id)distanceLabel;
+- (void)setDistanceLabel:;
+- (id)locationImageView;
+- (id)locationLabel;
+- (void)setLocationImageView:;
+- (void)setLocationLabel:;
++ (id)createInfoHeaderViewWithModel:;
+@end

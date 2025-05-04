@@ -1,0 +1,34 @@
+@interface AWEMVLargeCardCellV2 : AWEDCFeedBaseCell
+@property (nonatomic) BOOL preventContinuePlayIfFromInflow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)prepareForDisplayWithoutCoverImage;
+- (void)configWithModel:context:;
+- (id)modernTransitionContext;
+- (void)modernTransitionUpdateOffset:isScrolled:;
+- (void)modernTransitionDidCompleteWithOffset:;
+- (long long)preferScaleMode;
+- (BOOL)shouldModernTransitionUpdatePlayerControllerWithToContext:;
+- (BOOL)shouldModernTransitionUpdatePlayerControllerWithFromContext:;
+- (BOOL)shouldLayoutBeforeGenerateFeedSnapshotImageView;
+- (BOOL)updateScaleModeBeforeAnimation;
+- (void)modernMagnifyTransitionDidCompleteWithToContext:;
+- (BOOL)isHorizontalScreenVideo;
+- (BOOL)shouldNotActive;
+- (void)seekToPlayTime:completion:;
+- (id)mvPageContext;
+- (void)setPreventContinuePlayIfFromInflow:;
+- (BOOL)preventContinuePlayIfFromInflow;
+- (id)imageSceneForQualityTracker;
+- (BOOL)canResponseDislikeVCForGesture:;
+- (void)handleDoubleSpeedWithGesture:;
+- (void)prepareForReuse;
+- (void)prepareForDisplay;
+- (void)didResignActive;
+- (id)initWithFrame:;
+- (void)stop;
+- (id)videoController;
++ (id)elementArray;
+@end

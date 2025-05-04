@@ -1,0 +1,32 @@
+@interface AWECommentZeroPanelInfo : MTLModel
+@property (nonatomic) NSString biz;
+@property (nonatomic) Q style;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString urlText;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString iconLightURL;
+@property (nonatomic) NSString iconDarkURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconDarkURL;
+- (id)iconLightURL;
+- (id)biz;
+- (void)setBiz:;
+- (void)setIconLightURL:;
+- (void)setIconDarkURL:;
+- (void)setUrl:;
+- (void)setText:;
+- (id)text;
+- (unsigned long long)style;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)url;
+- (void)setStyle:;
+- (id)urlText;
+- (void)setUrlText:;
+- (void)setButtonText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

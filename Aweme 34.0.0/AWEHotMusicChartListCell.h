@@ -1,0 +1,35 @@
+@interface AWEHotMusicChartListCell : UITableViewCell
+@property (nonatomic) UIView rankView;
+@property (nonatomic) UILabel normalRankLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel musicNameLabel;
+@property (nonatomic) UIImageView heatIcon;
+@property (nonatomic) UILabel heatLabel;
+@property (nonatomic) UILabel shootSameLabel;
+@property (nonatomic) BOOL isLocatedCell;
+@property (nonatomic) @? shootSameBlock;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)setRankView:;
+- (id)rankView;
+- (BOOL)isLocatedCell;
+- (void)setIsLocatedCell:;
+- (void)setShootSameLabel:;
+- (id)shootSameLabel;
+- (id)musicNameLabel;
+- (void)setMusicNameLabel:;
+- (id)textGradientLayer;
+- (id)normalRankLabel;
+- (id)heatLabel;
+- (id)heatIcon;
+- (void)setShootSameBlock:;
+- (void)shootSame;
+- (id)shootSameBlock;
+- (void)updateMusicMetaModel:indexPath:;
+- (void)setNormalRankLabel:;
+- (void)setHeatIcon:;
+- (void)setHeatLabel:;
+- (void)prepareForReuse;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+@end

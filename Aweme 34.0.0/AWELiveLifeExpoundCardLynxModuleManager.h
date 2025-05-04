@@ -1,0 +1,33 @@
+@interface AWELiveLifeExpoundCardLynxModuleManager : NSObject
+@property (nonatomic) AWELiveLifeLynxView loadingLynxModule;
+@property (nonatomic) AWELiveLifeLynxView readyLynxModule;
+@property (nonatomic) ^{__CFRunLoopObserver=} runLoopObserver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)stopRunLoopObserver;
+- (void)cubeView:viewDidChangeContentSize:;
+- (void)cubeViewWillStartLoading:;
+- (void)cubeView:didStartFetchResourceWithURL:;
+- (void)cubeView:didFetchedResource:error:;
+- (void)cubeViewDidFirstScreen:;
+- (void)cubeView:didFinishLoadWithURL:;
+- (void)cubeView:didLoadFailedWithUrl:error:;
+- (void)cubeView:didReceiveError:;
+- (void)cleanCacheLynxModuleIfNeeded;
+- (id)readyLynxModule;
+- (void)createLynxModule;
+- (void)setReadyLynxModule:;
+- (id)currentGeckoVersion;
+- (void)setLoadingLynxModule:;
+- (void)preloadLynxMoudleIfNeeded;
+- (id)acquireReadyLynxModule;
+- (void)releaseLynxModule:;
+- (id)loadingLynxModule;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)runLoopObserver;
+- (void)setRunLoopObserver:;
++ (id)shareManager;
+@end

@@ -1,0 +1,31 @@
+@interface AWEAdHorizontalVideoTrackerPlugin : NSObject
+@property (nonatomic) NSString eventName;
+@property (nonatomic) NSString refer;
+@property (nonatomic) q order;
+@property (nonatomic) AWEOriginalAdModel adModel;
+@property (nonatomic) @ playerController;
+@property (nonatomic) BOOL allowTrackBreak;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRefer:;
+- (id)refer;
+- (id)adModel;
+- (void)setAdModel:;
+- (void)didChangePlaybackStateWithAction:;
+- (void)playerWillLoopPlayingWith:;
+- (void)horizontalVideoTrackVideoBreakWith:;
+- (void)fillAdTrackContext:;
+- (void)setAllowTrackBreak:;
+- (BOOL)allowTrackBreak;
+- (id)initWithEventName:refer:order:adModel:playerController:;
+- (long long)order;
+- (void)setPlayerController:;
+- (void)setEventName:;
+- (unsigned long long)moduleNames;
+- (id)playerController;
+- (void).cxx_destruct;
+- (void)setOrder:;
+- (id)eventName;
+@end

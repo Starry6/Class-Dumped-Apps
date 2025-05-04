@@ -1,0 +1,32 @@
+@interface AWEMediumVideoChannelCachePreloadModel : NSObject
+@property (nonatomic) BOOL isPreloading;
+@property (nonatomic) BOOL isFinishPreload;
+@property (nonatomic) BOOL isLastTryFailed;
+@property (nonatomic) BOOL isFromCache;
+@property (nonatomic) q preloadTiming;
+@property (nonatomic) NSString cachedURL;
+@property (nonatomic) NSString urlKey;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) AWEVideoBSModel bsModel;
+- (id)bsModel;
+- (void)setBsModel:;
+- (id)cachedURL;
+- (void)setIsPreloading:;
+- (BOOL)isLastTryFailed;
+- (void)setIsLastTryFailed:;
+- (void)setCachedURL:;
+- (BOOL)isFinishPreload;
+- (long long)preloadTiming;
+- (void)setIsFinishPreload:;
+- (void)setPreloadTiming:;
+- (BOOL)isFromCache;
+- (void)encodeWithCoder:;
+- (void)setIsFromCache:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)itemId;
+- (BOOL)isPreloading;
+- (void)setUrlKey:;
+- (id)urlKey;
+- (void)setItemId:;
+@end

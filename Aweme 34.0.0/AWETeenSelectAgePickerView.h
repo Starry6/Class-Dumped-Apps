@@ -1,0 +1,30 @@
+@interface AWETeenSelectAgePickerView : UIView
+@property (nonatomic) DUXPicker agePickerView;
+@property (nonatomic) NSMutableArray ageItemArray;
+@property (nonatomic) AWETeenAgeItemModel pleaseSelectItem;
+@property (nonatomic) q age;
+@property (nonatomic) @? didAgeChangeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)componentCountInDUXPicker:;
+- (long long)duxPicker:numberOfRowsInComponent:;
+- (id)duxPicker:titleForRow:forComponent:;
+- (void)setAgePickerView:;
+- (id)agePickerView;
+- (id)ageItemArray;
+- (void)setAgeItemArray:;
+- (void)updateAgeDataItems;
+- (void)setPleaseSelectItem:;
+- (id)pleaseSelectItem;
+- (long long)indexOfCurrentAge;
+- (void)removePleaseSelectIfNeeded;
+- (id)didAgeChangeBlock;
+- (void)setDidAgeChangeBlock:;
+- (id)init;
+- (long long)age;
+- (void).cxx_destruct;
+- (void)setAge:;
+- (void)setupUI;
+@end

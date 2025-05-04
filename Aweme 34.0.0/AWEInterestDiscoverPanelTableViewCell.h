@@ -1,0 +1,31 @@
+@interface AWEInterestDiscoverPanelTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIView rightContentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel durationLabel;
+@property (nonatomic) UIImageView diggIcon;
+@property (nonatomic) UILabel playLabel;
+@property (nonatomic) BOOL isLocatedCell;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)contentViewBackgroundColor;
+- (BOOL)isLocatedCell;
+- (void)setIsLocatedCell:;
+- (void)updateAwemeModel:;
+- (id)locatedContentViewBackgroundColor;
+- (id)playLabel;
+- (id)diggIcon;
+- (id)aythorLabelTextColor;
+- (void)setRightContentView:;
+- (void)setDiggIcon:;
+- (void)setPlayLabel:;
+- (void)prepareForReuse;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)rightContentView;
+- (id)durationLabel;
+- (void)setDurationLabel:;
+- (id)titleLabelTextColor;
+@end

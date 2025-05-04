@@ -1,0 +1,34 @@
+@interface AWEFriendsContactCommonView : UIView
+@property (nonatomic) BOOL shouldUseConstColor;
+@property (nonatomic) <AWEFriendsContactCommonViewDelegate> delegate;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIButton entryButton;
+@property (nonatomic) BOOL shouldHideEntryButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setShouldHideEntryButton:;
+- (id)aAFDServiceCommonAdapter;
+- (id)entryButton;
+- (void)setEntryButton:;
+- (id)initWithConstColor:;
+- (void)entryButtonDidClicked:;
+- (BOOL)shouldHideEntryButton;
+- (BOOL)shouldUseConstColor;
+- (void)setShouldUseConstColor:;
+- (id)init;
+- (id)delegate;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
++ (Class)aAFDServiceCommonAdapterClass;
+@end

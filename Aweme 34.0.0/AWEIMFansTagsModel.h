@@ -1,0 +1,36 @@
+@interface AWEIMFansTagsModel : MTLModel
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSArray tagsArray;
+@property (nonatomic) NSString belongCid;
+@property (nonatomic) NSString groupOwnerUid;
+@property (nonatomic) NSString groupOwnerNickName;
+@property (nonatomic) NSDictionary liveFansClubIconConfigDict;
+@property (nonatomic) NSDictionary purchasedFansClubIconConfigDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tagsArray;
+- (void)setTagsArray:;
+- (id)secUid;
+- (void)setSecUid:;
+- (id)groupOwnerUid;
+- (void)setGroupOwnerUid:;
+- (id)groupOwnerNickName;
+- (void)setGroupOwnerNickName:;
+- (id)withTagsEventParamsDict;
+- (id)liveFansClubIconConfigDict;
+- (id)purchasedFansClubIconConfigDict;
+- (id)belongCid;
+- (void)setBelongCid:;
+- (id)bizInfoModel;
+- (void)setLiveFansClubIconConfigDict:;
+- (void)setPurchasedFansClubIconConfigDict:;
+- (void)setUid:;
+- (id)uid;
+- (void).cxx_destruct;
++ (id)withTagsEventParamsForCurrentUserWithConversationId:con:;
++ (id)tagsArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

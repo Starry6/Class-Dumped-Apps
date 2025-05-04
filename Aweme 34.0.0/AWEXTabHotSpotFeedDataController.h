@@ -1,0 +1,36 @@
+@interface AWEXTabHotSpotFeedDataController : AWEListDataController
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) <AWESkyLightContainerProtocol> skyLightContainer;
+@property (nonatomic) NSDictionary requestParams;
+@property (nonatomic) NSDictionary firstRequestParams;
+@property (nonatomic) AWEHotSpotChannelViewModel channelViewModel;
+@property (nonatomic) BOOL disableAutoUnfoldSkylight;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)transferAwemeModelForLive:isFirstColdLaunch:;
+- (id)minCursor;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (id)transferAwemeListIfNeededWithArray:isInitFetch:;
+- (void)reloadWithPullType:Completion:;
+- (BOOL)disableAutoUnfoldSkylight;
+- (void)setDisableAutoUnfoldSkylight:;
+- (id)configRequestParamsWithParamsDict:;
+- (id)channelViewModel;
+- (void)setChannelViewModel:;
+- (void)initFetchWithCompletion:fromHotSpotVC:;
+- (void)tryUseCacheAwemeWithCompletion:fromHotSpotVC:;
+- (id)refreshTypeWithPullType:;
+- (id)skyLightContainer;
+- (id)configRequestTypeParamsWithPullType:;
+- (void)executeFetchCacheCompletion;
+- (id)firstRequestParams;
+- (void)setFirstRequestParams:;
+- (void)setSkyLightContainer:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)requestParams;
+- (void)setRequestParams:;
+@end

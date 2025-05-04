@@ -1,0 +1,32 @@
+@interface AWEVideoPaymentProductInfoModel : AWEBaseApiModel
+@property (nonatomic) NSNumber productID;
+@property (nonatomic) NSString productIDStr;
+@property (nonatomic) Q bizType;
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) AWEPaymentProductPriceInfoModel priceInfoModel;
+@property (nonatomic) AWEPaymentButtonInfo buttonInfo;
+@property (nonatomic) AWEPaymentMarketingInfoModel marketingInfoModel;
+- (unsigned long long)bizType;
+- (void)setBizType:;
+- (id)priceInfoModel;
+- (void)setPriceInfoModel:;
+- (id)marketingInfoModel;
+- (void)setMarketingInfoModel:;
+- (id)buttonInfo;
+- (void)setButtonInfo:;
+- (id)productIDStr;
+- (void)setProductIDStr:;
+- (void)setProductID:;
+- (id)productID;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)coverURL;
+- (void)setCoverURL:;
++ (id)coverURLJSONTransformer;
++ (id)priceInfoModelJSONTransformer;
++ (id)marketingInfoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)buttonInfoJSONTransformer;
+@end

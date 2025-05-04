@@ -1,0 +1,31 @@
+@interface AWEVideoPublishMixInfoModel : NSObject
+@property (nonatomic) NSString mixID;
+@property (nonatomic) NSString mixName;
+@property (nonatomic) q mixIndex;
+@property (nonatomic) q mixScene;
+@property (nonatomic) BOOL isCreatedSoon;
+@property (nonatomic) NSString coverURLString;
+@property (nonatomic) BOOL useDemotion;
+@property (nonatomic) q chargeType;
+@property (nonatomic) q chargeStyle;
+- (id)mixName;
+- (id)mixID;
+- (id)coverURLString;
+- (void)setMixName:;
+- (BOOL)useDemotion;
+- (void)setUseDemotion:;
+- (long long)chargeType;
+- (void)setChargeType:;
+- (long long)chargeStyle;
+- (void)setChargeStyle:;
+- (void)setMixID:;
+- (BOOL)isCreatedSoon;
+- (void)setIsCreatedSoon:;
+- (void)setCoverURLString:;
+- (long long)mixIndex;
+- (void)setMixIndex:;
+- (void)setMixScene:;
+- (long long)mixScene;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMNewChatDetailGroupMemberManageCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIView iconBackgroundView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) CAShapeLayer maskLayer;
+@property (nonatomic) UIView highlightMaskView;
+- (void)initSubviews;
+- (void)addSubviews;
+- (id)iconBackgroundView;
+- (void)setIconBackgroundView:;
+- (void)configWithContext:;
+- (void)setHighlightMaskView:;
+- (id)highlightMaskView;
+- (void)configWithTitle:imageName:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setHighlighted:;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)maskLayer;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setMaskLayer:;
+- (void)setupLayout;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (id)identifier;
+@end

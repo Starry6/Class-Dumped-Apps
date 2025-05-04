@@ -1,0 +1,34 @@
+@interface AWEECDynamicComponentModel : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString dynamicUrl;
+@property (nonatomic) LynxTemplateBundle bundle;
+@property (nonatomic) Q loadDynamicCompStart;
+@property (nonatomic) Q loadDynamicCompEnd;
+@property (nonatomic) Q decodeDynamicCompStart;
+@property (nonatomic) Q decodeDynamicCompEnd;
+@property (nonatomic) Q registerDynamicCompStart;
+@property (nonatomic) Q registerDynamicCompEnd;
+@property (nonatomic) q errorCode;
+- (id)dynamicUrl;
+- (void)setDynamicUrl:;
+- (unsigned long long)loadDynamicCompStart;
+- (void)setLoadDynamicCompStart:;
+- (unsigned long long)loadDynamicCompEnd;
+- (void)setLoadDynamicCompEnd:;
+- (unsigned long long)decodeDynamicCompStart;
+- (void)setDecodeDynamicCompStart:;
+- (unsigned long long)decodeDynamicCompEnd;
+- (void)setDecodeDynamicCompEnd:;
+- (unsigned long long)registerDynamicCompStart;
+- (void)setRegisterDynamicCompStart:;
+- (unsigned long long)registerDynamicCompEnd;
+- (void)setRegisterDynamicCompEnd:;
+- (id)urlString;
+- (void)setUrlString:;
+- (id)init;
+- (void)setErrorCode:;
+- (long long)errorCode;
+- (id)bundle;
+- (void).cxx_destruct;
+- (void)setBundle:;
+@end

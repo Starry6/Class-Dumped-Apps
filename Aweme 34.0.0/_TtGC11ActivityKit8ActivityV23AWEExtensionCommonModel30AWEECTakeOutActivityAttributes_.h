@@ -1,0 +1,2 @@
+@interface _TtGC11ActivityKit8ActivityV23AWEExtensionCommonModel30AWEECTakeOutActivityAttributes_ : _TtCs12_SwiftObject
+@end

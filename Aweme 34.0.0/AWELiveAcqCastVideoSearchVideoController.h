@@ -1,0 +1,32 @@
+@interface AWELiveAcqCastVideoSearchVideoController : AWELiveAcqCastVideoSearchBaseController
+@property (nonatomic) AWELiveAcqCastVideoSearchDataManager dataManager;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) <AWELiveAcqCastVideoViewModelProtocol> viewModel;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)loadMore;
+- (void)setTrackParams:;
+- (id)initWithDataManager:viewModel:trackParams:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)dataManager;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void)setCollectionView:;
+- (void)setDataManager:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setupUI;
+@end

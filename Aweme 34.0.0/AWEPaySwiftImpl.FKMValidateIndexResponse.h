@@ -1,0 +1,34 @@
+@interface AWEPaySwiftImpl.FKMValidateIndexResponse : MTLModel
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) NSString msgHint;
+@property (nonatomic) _TtC15AWEPaySwiftImpl14FKMServerExtra serverExtra;
+@property (nonatomic) NSString validStatusString;
+@property (nonatomic) BOOL indexChange;
+@property (nonatomic) NSString offlineCodeEncryptedString;
+@property (nonatomic) NSString batchCodeEncryptedString;
+@property (nonatomic) NSString serverOfflineCodeModeRawValue;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (id)msgHint;
+- (void)setMsgHint:;
+- (id)serverExtra;
+- (void)setServerExtra:;
+- (id)validStatusString;
+- (void)setValidStatusString:;
+- (id)serverOfflineCodeModeRawValue;
+- (void)setServerOfflineCodeModeRawValue:;
+- (BOOL)indexChange;
+- (void)setIndexChange:;
+- (id)offlineCodeEncryptedString;
+- (void)setOfflineCodeEncryptedString:;
+- (id)batchCodeEncryptedString;
+- (void)setBatchCodeEncryptedString:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

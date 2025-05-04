@@ -1,0 +1,37 @@
+@interface AWEAIEnhanceInfoModel : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL aiEnhanceOn;
+@property (nonatomic) NSString originImagePath;
+@property (nonatomic) NSString originCompressedImagePath;
+@property (nonatomic) NSString originCropIdentifier;
+@property (nonatomic) {CGSize=dd} originImageSize;
+@property (nonatomic) double originImageScale;
+@property (nonatomic) NSString originCommitId;
+@property (nonatomic) q intensity;
+@property (nonatomic) BOOL disablePanelPageWiperAnimation;
+- (void)setAiEnhanceOn:;
+- (void)setOriginImageScale:;
+- (BOOL)aiEnhanceOn;
+- (double)originImageScale;
+- (id)originImagePath;
+- (void)setOriginImagePath:;
+- (id)originCompressedImagePath;
+- (void)setOriginCompressedImagePath:;
+- (id)originCropIdentifier;
+- (void)setOriginCropIdentifier:;
+- (id)originCommitId;
+- (void)setOriginCommitId:;
+- (BOOL)disablePanelPageWiperAnimation;
+- (void)setOriginImageSize:;
+- (void)setDisablePanelPageWiperAnimation:;
+- (id)originImageSize;
+- (id)initWithDTOEnhanceModel:;
+- (id)dtoEnhanceModelWithDraftFolder:;
+- (id)editDiffs;
+- (long long)intensity;
+- (void).cxx_destruct;
+- (void)setIntensity:;
+@end

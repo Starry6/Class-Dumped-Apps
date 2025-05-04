@@ -1,0 +1,30 @@
+@interface AWEFeedDoubleColumnAutoPlayRule : AWEDCFeedAutoPlayBaseRule
+@property (nonatomic) double activeRatio;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} activeRect;
+@property (nonatomic) double shouldNotActiveHeight;
+@property (nonatomic) AWEDCFeedAutoPlayHandler handler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)rulePriority;
+- (double)shouldNotActiveHeight;
+- (double)activeRatio;
+- (id)getAutoPlayViewFromViews:inContainer:contentOffset:directionPoint:speedPoint:scence:;
+- (void)setAutoPlayIsPlaying:withView:playType:;
+- (double)autoPlayDefaultTimeWithView:playType:;
+- (void)autoPlayPlayerStateDidChangeWithView:state:player:;
+- (long long)autoPlayDefauleIndexWithView:playType:;
+- (void)autoPlaySliderViewStateDidChangeWithView:state:slideView:;
+- (void)setShouldNotActiveHeight:;
+- (void)setActiveRatio:;
+- (BOOL)enableAutoPlayOptimize;
+- (void)setHandler:;
+- (id)init;
+- (id)handler;
+- (void).cxx_destruct;
+- (id)activeRect;
+- (void)setActiveRect:;
+- (unsigned long long)ruleType;
++ (id)sharedInstance;
+@end

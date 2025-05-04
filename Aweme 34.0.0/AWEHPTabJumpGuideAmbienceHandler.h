@@ -1,0 +1,34 @@
+@interface AWEHPTabJumpGuideAmbienceHandler : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) AWEFeedTabJumpStorageManager storageManager;
+@property (nonatomic) NSMutableDictionary videoHandlers;
+@property (nonatomic) NSMutableArray videoHandlerArrays;
+@property (nonatomic) AWEFeedTabJumpStrategyModel strategyModel;
+@property (nonatomic) NSArray supportTabIDList;
+- (id)referString;
+- (void)setReferString:;
+- (void)addNotification;
+- (void)setStrategyModel:;
+- (id)strategyModel;
+- (void)setupSettingsConfig;
+- (void)setSupportTabIDList:;
+- (id)supportTabIDList;
+- (void)onFeedTabChangedNotification:;
+- (void)onTabBarChangedNotification:;
+- (void)setVideoHandlers:;
+- (void)setVideoHandlerArrays:;
+- (id)p_canShowHPTabJumpGuideWithModel:withIdentification:;
+- (id)videoHandlers;
+- (BOOL)p_checkAwemeModel:withStorageManager:identification:;
+- (id)videoHandlerArrays;
+- (void)p_handleUpdateLastShowTimestampWithTabID:;
+- (id)initWithReferString:withStorageManager:;
+- (id)canShowHPTabJumpGuideWithModel:;
+- (BOOL)canShowHPTabJumpGuideWithModel:withIdentification:;
+- (void)setHPTabJumpGuideComponent:withModel:;
+- (void)recoverHPTabJumpGuideIfNeedWithIdentification:withModel:;
+- (void)dealloc;
+- (void)setStorageManager:;
+- (id)storageManager;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,31 @@
+@interface AWEDDLeftElementContainerProvider : NSObject
+@property (nonatomic) AWEMultiElementContainer multiContainer;
+@property (nonatomic) AWEMultiElementContainerViewModel containerViewModel;
+@property (nonatomic) NSArray elementBuildStrategyIDs;
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> viewController;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionContextProtocol> context;
+@property (nonatomic) double containerWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)containerViewModel;
+- (id)initWithViewController:context:;
+- (void)setContainerViewModel:;
+- (id)multiContainer;
+- (void)setMultiContainer:;
+- (id)elementBuildStrategyIDs;
+- (id)elementLayoutStrategyIDs;
+- (void)setElementBuildStrategyIDs:;
+- (void)setModel:;
+- (id)container;
+- (void)layout;
+- (id)containerView;
+- (id)viewController;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setViewController:;
+- (void)rebuild;
+- (double)containerWidth;
+@end

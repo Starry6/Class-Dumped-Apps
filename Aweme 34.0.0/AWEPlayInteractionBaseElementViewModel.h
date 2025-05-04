@@ -1,0 +1,2 @@
+@interface AWEPlayInteractionBaseElementViewModel : AWEPlayInteractionBaseViewModel
+@end

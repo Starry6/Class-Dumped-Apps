@@ -1,0 +1,34 @@
+@interface AWESearchPlayerInteractorLeftTopContainerComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) <AWESearchCustomTagComponentProvider> customTagComponent;
+@property (nonatomic) <AWESearchCoverTagComponentProvider> coverTagComponent;
+@property (nonatomic) <AWESearchPaidTagComponentProvider> paidTagComponent;
+@property (nonatomic) AWESearchPlayerInteractorLeftTopContainerComponentModel leftTopModel;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewLayoutSubviews;
+- (void)p_loadComponent;
+- (id)customTagComponent;
+- (void)setCustomTagComponent:;
+- (id)coverTagComponent;
+- (id)paidTagComponent;
+- (id)leftTopModel;
+- (void)setLeftTopModel:;
+- (void)setCoverTagComponent:;
+- (void)setPaidTagComponent:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
++ (id)componentSizeForModel:width:;
++ (id)getCreatSubComponentsArrayWithModel:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEPaySKMVoiceBroadcastPlayer : NSObject
+@property (nonatomic) AVAudioPlayer audioPlayer;
+@property (nonatomic) NSDictionary audioUrlMap;
+@property (nonatomic) NSArray upperNumber;
+@property (nonatomic) NSArray upperMonetaryUnit;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) AVAssetExportSession curSession;
+@property (nonatomic) <AWEPaySKMVoiceBroadcastPlayerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCurSession:;
+- (id)curSession;
+- (id)toNumber:;
+- (void)playWithData:amountStr:;
+- (void)playWithAmountStr:;
+- (id)numberToMoney:;
+- (id)getAudioUrls:;
+- (void)mergeAVAssetWithSourceURLs:completed:;
+- (id)toMoney:;
+- (id)upperMonetaryUnit;
+- (id)upperNumber;
+- (id)audioUrlMap;
+- (void)playWithAudioTask:;
+- (void)setAudioUrlMap:;
+- (void)setUpperNumber:;
+- (void)setUpperMonetaryUnit:;
+- (id)delegate;
+- (void)setQueue:;
+- (void)setAudioPlayer:;
+- (void).cxx_destruct;
+- (id)audioPlayer;
+- (id)queue;
+- (void)setDelegate:;
+- (void)audioPlayerDecodeErrorDidOccur:error:;
+- (void)audioPlayerDidFinishPlaying:successfully:;
+@end

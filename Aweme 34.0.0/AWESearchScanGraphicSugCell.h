@@ -1,0 +1,37 @@
+@interface AWESearchScanGraphicSugCell : DUXBaseTableViewCell
+@property (nonatomic) UIImageView searchIcon;
+@property (nonatomic) UIImageView completeIcon;
+@property (nonatomic) DUXBaseLabel wordLabel;
+@property (nonatomic) DUXBaseLabel tagLabel;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) BOOL supportDarkTheme;
+@property (nonatomic) Q cellStyle;
+@property (nonatomic) @? completeTextBlock;
+- (id)wordLabel;
+- (void)setWordLabel:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (id)searchIcon;
+- (void)setSearchIcon:;
+- (void)updateWithCellModel:;
+- (void)setSupportDarkTheme:;
+- (BOOL)supportDarkTheme;
+- (void)setCompleteTextBlock:;
+- (id)completeTextBlock;
+- (void)updateWithWord:andPrefix:;
+- (void)updateWithWord:andTag:;
+- (unsigned long long)cellStyle;
+- (void)completeText;
+- (void)setFrame:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)colorNamed:;
+- (void)setCellStyle:;
+- (void)setupSubviews;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+- (id)completeIcon;
+- (void)setCompleteIcon:;
++ (id)reuseIdentifier;
+@end

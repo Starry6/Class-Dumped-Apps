@@ -1,0 +1,33 @@
+@interface AWEMediaDownloadResultItem : NSObject
+@property (nonatomic) q result;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString errorMessage;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSURL sandboxFileURL;
+@property (nonatomic) NSURL videoAssetURL;
+@property (nonatomic) NSURL videoALAssetURL;
+@property (nonatomic) NSArray clips;
+@property (nonatomic) NSDictionary livePhotoImageURLsForSlides;
+@property (nonatomic) NSDictionary livePhotoVideoURLsForSlides;
+- (void)setLivePhotoVideoURLsForSlides:;
+- (id)videoALAssetURL;
+- (void)setLivePhotoImageURLsForSlides:;
+- (id)livePhotoImageURLsForSlides;
+- (id)livePhotoVideoURLsForSlides;
+- (id)sandboxFileURL;
+- (void)setSandboxFileURL:;
+- (void)setVideoALAssetURL:;
+- (void)setResult:;
+- (id)image;
+- (void)setImage:;
+- (void)setError:;
+- (id)errorMessage;
+- (void).cxx_destruct;
+- (id)error;
+- (long long)result;
+- (void)setErrorMessage:;
+- (id)clips;
+- (void)setClips:;
+- (void)setVideoAssetURL:;
+- (id)videoAssetURL;
+@end

@@ -1,0 +1,22 @@
+@interface AWEPlayTokenAuthModel : AWEBaseApiModel
+@property (nonatomic) NSString vid;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString auth;
+@property (nonatomic) NSString tvToken;
+@property (nonatomic) NSString playAuthToken;
+@property (nonatomic) NSArray hosts;
+- (id)tvToken;
+- (void)setTvToken:;
+- (id)playAuthToken;
+- (void)setPlayAuthToken:;
+- (void).cxx_destruct;
+- (id)hosts;
+- (void)setToken:;
+- (id)token;
+- (void)setHosts:;
+- (void)setVid:;
+- (id)vid;
+- (id)auth;
+- (void)setAuth:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

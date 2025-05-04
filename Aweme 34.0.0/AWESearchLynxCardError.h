@@ -1,0 +1,2 @@
+@interface AWESearchLynxCardError : NSError
+@end

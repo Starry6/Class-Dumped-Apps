@@ -1,0 +1,35 @@
+@interface AWEMScrollViewDelegateDistribute : NSObject
+@property (nonatomic) NSHashTable distributes;
+@property (nonatomic) <UIScrollViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)distributes;
+- (void)addDistribute:;
+- (void)setDistributes:;
+- (void)scrollViewDidEndZooming:withView:atScale:;
+- (void)scrollViewDidChangeAdjustedContentInset:;
+- (id)init;
+- (id)delegate;
+- (id)initWithScrollView:;
+- (id)forwardingTargetForSelector:;
+- (BOOL)respondsToSelector:;
+- (BOOL)scrollViewShouldScrollToTop:;
+- (void)scrollViewDidScrollToTop:;
+- (id)viewForZoomingInScrollView:;
+- (void)scrollViewDidZoom:;
+- (void)scrollViewWillBeginDecelerating:;
+- (BOOL)conformsToProtocol:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (void)scrollViewDidEndDecelerating:;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (void)scrollViewWillBeginZooming:withView:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)setDelegate:;
+- (id)methodSignatureForSelector:;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+@end

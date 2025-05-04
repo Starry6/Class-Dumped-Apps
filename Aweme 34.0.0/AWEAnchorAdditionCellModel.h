@@ -1,0 +1,38 @@
+@interface AWEAnchorAdditionCellModel : MTLModel
+@property (nonatomic) NSDictionary cachedExtraDic;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q sectionType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)recommendReason;
+- (id)extraDic;
+- (id)cachedExtraDic;
+- (void)setCachedExtraDic:;
+- (id)schema;
+- (id)itemID;
+- (void)setIconURL:;
+- (void)setItemID:;
+- (void)setSchema:;
+- (id)subtitle;
+- (id)iconURL;
+- (id)extra;
+- (long long)sectionType;
+- (void)setSubtitle:;
+- (void)setSectionType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setName:;
+- (id)name;
+- (void)setTitle:;
++ (id)iconURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

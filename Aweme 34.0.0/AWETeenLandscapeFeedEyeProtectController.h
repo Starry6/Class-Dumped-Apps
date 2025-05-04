@@ -1,0 +1,35 @@
+@interface AWETeenLandscapeFeedEyeProtectController : AWEBaseController
+@property (nonatomic) BOOL initSeekEnded;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) BOOL hasTriggered;
+@property (nonatomic) double playedDuration;
+@property (nonatomic) double totalDuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isLandScape;
+- (double)playedDuration;
+- (void)setPlayedDuration:;
+- (void)playerWillLoopPlayingWithAwemeID:videoID:currentTime:;
+- (BOOL)shouldShowEyeProtection:;
+- (void)syncPlayTimeWithAwemeModel:playedDuration:totalDuration:;
+- (void)setHiddenInteractionView:completion:;
+- (id)videoCanvasImage;
+- (double)videoCanvasHeight;
+- (id)currentFeedPageContext;
+- (void)setInitSeekEnded:;
+- (void)playBackActionDidChange:isReady:;
+- (BOOL)initSeekEnded;
+- (void)didVideoChanged:;
+- (BOOL)isShowing;
+- (void)viewDidLoad;
+- (double)totalDuration;
+- (void)viewDidAppear;
+- (BOOL)hasTriggered;
+- (void)setHasTriggered:;
+- (id)currentModel;
+- (void)viewWillDisappear;
+- (void)setTotalDuration:;
+- (void)setIsShowing:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMChatListDeleteActionComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMMessageDataProtocol> messageDataController;
+@property (nonatomic) NSMutableArray messages;
+@property (nonatomic) BOOL isFirstLoad;
+@property (nonatomic) NSMutableSet messageIDSets;
+@property (nonatomic) @? fetchBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFirstLoad:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (id)messageDataController;
+- (void)setMessageDataController:;
+- (void)fetchHistoryMessageWithSessionID:messageTypeFilter:dateLimit:completionBlock:;
+- (void)setMessageIDSets:;
+- (id)messageIDSets;
+- (void)filterMessagesWithMessageType:dateLimit:;
+- (BOOL)isEffectiveMessage:;
+- (BOOL)isRedPacketEndedWithMessage:;
+- (BOOL)isTransferMessageEndedWithMessage:;
+- (unsigned long long)originalTransferMoneyMessageStatusWithMessage:;
+- (id)messages;
+- (void)setFetchBlock:;
+- (id)fetchBlock;
+- (void).cxx_destruct;
+- (void)setMessages:;
+- (BOOL)isFirstLoad;
+@end

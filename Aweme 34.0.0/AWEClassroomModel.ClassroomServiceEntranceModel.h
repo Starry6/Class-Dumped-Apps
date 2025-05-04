@@ -1,0 +1,32 @@
+@interface AWEClassroomModel.ClassroomServiceEntranceModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) q badgeNumber;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) q schemaType;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) _TtC17AWEClassroomModel29ClassroomServiceEntranceExtra extra;
+@property (nonatomic) NSDictionary logExtraMap;
+- (void)setExtra:;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (void)setSchemaType:;
+- (id)logExtraMap;
+- (void)setLogExtraMap:;
+- (id)schema;
+- (long long)schemaType;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setSchema:;
+- (id)extra;
+- (long long)badgeNumber;
+- (id)serviceType;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setServiceType:;
+- (void)setBadgeNumber:;
+- (void)setTitle:;
+- (id)initWithCoder:;
++ (id)extraJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

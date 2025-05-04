@@ -1,0 +1,32 @@
+@interface AWEUserDraftSingleColumnCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView maskBackgroundView;
+@property (nonatomic) UIView titleContainerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIView aiDraftStateView;
+@property (nonatomic) UILabel aiDraftTextLabel;
+@property (nonatomic) UIImageView aiDraftIcon;
+- (id)maskBackgroundView;
+- (void)setMaskBackgroundView:;
+- (void)updateAIDraftViewWithContent:;
+- (id)aiDraftStateView;
+- (id)aiDraftTextLabel;
+- (id)aiDraftIcon;
+- (void)setAiDraftStateView:;
+- (void)setAiDraftTextLabel:;
+- (void)setAiDraftIcon:;
+- (void)config;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setImageView:;
+- (id)imageView;
+- (id)titleContainerView;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setTitleContainerView:;
++ (id)identifier;
+@end

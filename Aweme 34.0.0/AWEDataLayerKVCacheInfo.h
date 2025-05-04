@@ -1,0 +1,30 @@
+@interface AWEDataLayerKVCacheInfo : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) @ value;
+@property (nonatomic) NSInteger valueType;
+@property (nonatomic) Q lastRead;
+@property (nonatomic) Q lastUpdate;
+@property (nonatomic) Q maxAge;
+@property (nonatomic) NSInteger cleanable;
+@property (nonatomic) NSInteger cacheType;
+@property (nonatomic) NSDictionary extra;
+- (void)setExtra:;
+- (int)cleanable;
+- (void)setCleanable:;
+- (unsigned long long)lastRead;
+- (void)setLastRead:;
+- (void)setLastUpdate:;
+- (void)setMaxAge:;
+- (id)value;
+- (unsigned long long)maxAge;
+- (void)setKey:;
+- (unsigned long long)lastUpdate;
+- (id)extra;
+- (id)key;
+- (void)setValue:;
+- (void)setValueType:;
+- (int)valueType;
+- (void).cxx_destruct;
+- (int)cacheType;
+- (void)setCacheType:;
+@end

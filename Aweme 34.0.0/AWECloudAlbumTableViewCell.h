@@ -1,0 +1,38 @@
+@interface AWECloudAlbumTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView albumIcon;
+@property (nonatomic) UIImageView plusIcon;
+@property (nonatomic) UIImageView selectedView;
+@property (nonatomic) UIView titleViewContainer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) Q cellType;
+@property (nonatomic) <AWECloudAlbumTableViewCellDelegateProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSelectedView:;
+- (void)makeConstraint;
+- (void)updateSelectedStatus:;
+- (id)albumIcon;
+- (void)onCellClicked:;
+- (id)plusIcon;
+- (id)titleViewContainer;
+- (void)setPlusIcon:;
+- (void)setTitleViewContainer:;
+- (void)setAlbumIcon:;
+- (unsigned long long)cellType;
+- (id)delegate;
+- (void)setCellType:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)updateWithItem:;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)selectedView;
++ (double)cellHeight;
+@end

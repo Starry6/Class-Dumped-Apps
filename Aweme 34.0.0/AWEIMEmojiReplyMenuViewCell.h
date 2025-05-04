@@ -1,0 +1,34 @@
+@interface AWEIMEmojiReplyMenuViewCell : UICollectionViewCell
+@property (nonatomic) q afdHoverStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView<IESIMBadgeProtocol> redDotView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIView highlightMaskView;
+@property (nonatomic) AWEIMCustomMenuModel menuItem;
+@property (nonatomic) @? didSelectBlock;
+- (void)p_setupUI;
+- (id)didSelectBlock;
+- (void)setDidSelectBlock:;
+- (id)redDotView;
+- (void)setRedDotView:;
+- (void)p_setupLayout;
+- (void)setHighlightMaskView:;
+- (id)highlightMaskView;
+- (void)hoverBegan:;
+- (void)hoverEnded:;
+- (void)hoverCancelled:;
+- (void)configWithMenuItem:;
+- (id)textLabel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)menuItem;
+- (void)setMenuItem:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setTextLabel:;
++ (id)identifier;
+@end

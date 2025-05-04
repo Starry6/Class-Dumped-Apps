@@ -1,0 +1,31 @@
+@interface AWELiveGoodsInfo : AWEBaseApiModel
+@property (nonatomic) NSDictionary MarkInfo;
+@property (nonatomic) NSDictionary ItemIcon;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString itemSKU;
+@property (nonatomic) q itemType;
+@property (nonatomic) NSArray tags;
+@property (nonatomic) NSArray imageURLs;
+@property (nonatomic) NSDictionary platformPriceList;
+@property (nonatomic) q itemSaleType;
+- (void)setItemIcon:;
+- (id)platformPriceList;
+- (id)itemSKU;
+- (id)MarkInfo;
+- (id)ItemIcon;
+- (void)setItemSKU:;
+- (void)setPlatformPriceList:;
+- (long long)itemSaleType;
+- (void)setItemSaleType:;
+- (void)setMarkInfo:;
+- (long long)itemType;
+- (id)itemID;
+- (void)setItemType:;
+- (void)setItemID:;
+- (id)tags;
+- (void)setTags:;
+- (void).cxx_destruct;
+- (id)imageURLs;
+- (void)setImageURLs:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWEStudioFormattedLogModel : NSObject
+@property (nonatomic) NSString actionName;
+@property (nonatomic) Q actionType;
+@property (nonatomic) NSString creationID;
+@property (nonatomic) NSString traceId;
+@property (nonatomic) NSArray parentTraceId;
+@property (nonatomic) NSString threadName;
+@property (nonatomic) double timeStamp;
+@property (nonatomic) NSString errorMsg;
+@property (nonatomic) NSMutableDictionary extraMsg;
+- (void)setErrorMsg:;
+- (id)errorMsg;
+- (id)creationID;
+- (void)setTraceId:;
+- (id)extraMsg;
+- (void)setExtraMsg:;
+- (void)setCreationID:;
+- (id)formattedLog;
+- (void)setParentTraceId:;
+- (id)parentTraceId;
+- (unsigned long long)actionType;
+- (void)setActionType:;
+- (id)actionName;
+- (id)traceId;
+- (void).cxx_destruct;
+- (void)setActionName:;
+- (double)timeStamp;
+- (void)setTimeStamp:;
+- (id)threadName;
+- (void)setThreadName:;
++ (id)logModelWithActionName:actionType:creationID:traceId:parentTraceIds:errorMsg:extraMsg:;
++ (id)defaultThreadName;
++ (double)defaultTimeStamp;
++ (id)logModelWithActionName:actionType:creationID:traceId:parentTraceIds:threadName:timeStamp:errorMsg:extraMsg:;
+@end

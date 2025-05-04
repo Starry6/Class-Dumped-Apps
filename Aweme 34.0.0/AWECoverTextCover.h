@@ -1,0 +1,30 @@
+@interface AWECoverTextCover : MTLModel
+@property (nonatomic) Q gradientType;
+@property (nonatomic) Q gradientOrientation;
+@property (nonatomic) NSString colorStart;
+@property (nonatomic) NSString colorEnd;
+@property (nonatomic) double offsetX;
+@property (nonatomic) double offsetY;
+@property (nonatomic) NSArray strokeConfigs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)colorStart;
+- (void)setColorStart:;
+- (id)colorEnd;
+- (void)setColorEnd:;
+- (id)strokeConfigs;
+- (void)setStrokeConfigs:;
+- (void).cxx_destruct;
+- (unsigned long long)gradientType;
+- (void)setGradientType:;
+- (double)offsetX;
+- (double)offsetY;
+- (void)setOffsetX:;
+- (void)setOffsetY:;
+- (unsigned long long)gradientOrientation;
+- (void)setGradientOrientation:;
++ (id)strokeConfigsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

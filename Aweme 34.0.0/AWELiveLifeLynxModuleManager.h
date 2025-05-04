@@ -1,0 +1,31 @@
+@interface AWELiveLifeLynxModuleManager : NSObject
+@property (nonatomic) NSMutableSet lynxModuleUnusedPool;
+@property (nonatomic) NSMutableSet lynxModuleLoadingPool;
+@property (nonatomic) NSMutableDictionary moduleStartTimeMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cubeView:viewDidChangeContentSize:;
+- (void)cubeViewWillStartLoading:;
+- (void)cubeView:didStartFetchResourceWithURL:;
+- (void)cubeView:didFetchedResource:error:;
+- (void)cubeViewDidFirstScreen:;
+- (void)cubeView:didFinishLoadWithURL:;
+- (void)cubeView:didLoadFailedWithUrl:error:;
+- (void)cubeView:didReceiveError:;
+- (void)cleanCacheLynxModuleIfNeeded;
+- (void)createLynxModule;
+- (id)currentGeckoVersion;
+- (void)preloadLynxMoudleIfNeeded;
+- (id)acquireReadyLynxModule;
+- (void)releaseLynxModule:;
+- (void)setLynxModuleUnusedPool:;
+- (void)setLynxModuleLoadingPool:;
+- (void)setModuleStartTimeMap:;
+- (id)lynxModuleUnusedPool;
+- (id)lynxModuleLoadingPool;
+- (id)moduleStartTimeMap;
+- (void).cxx_destruct;
++ (id)shareManager;
+@end

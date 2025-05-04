@@ -1,0 +1,34 @@
+@interface AWEACCTrackerSamplingImpl : NSObject
+@property (nonatomic) NSDictionary samplingInfo;
+@property (nonatomic) BOOL samplingConfigValid;
+@property (nonatomic) NSArray hundredthSamplingEventList;
+@property (nonatomic) BOOL hundredthSamplingDidHitFilter;
+@property (nonatomic) BOOL onlyHasHundredthSamplingConfig;
+@property (nonatomic) Q shiftHashUID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)samplingAbilityEnable;
+- (BOOL)shouldFilterEventWithEventKey:;
+- (void)setSamplingConfigValid:;
+- (void)setHundredthSamplingEventList:;
+- (id)hundredthSamplingEventList;
+- (void)setOnlyHasHundredthSamplingConfig:;
+- (unsigned long long)generateShiftHashUID;
+- (void)setShiftHashUID:;
+- (BOOL)didHitFilterWithRate:;
+- (void)setHundredthSamplingDidHitFilter:;
+- (BOOL)samplingConfigValid;
+- (BOOL)hundredthSamplingDidHitFilter;
+- (BOOL)onlyHasHundredthSamplingConfig;
+- (unsigned long long)shiftHashUID;
+- (id)debug_samplingInfo;
+- (id)deviceId;
+- (id)init;
+- (void)setup;
+- (unsigned long long)random;
+- (void).cxx_destruct;
+- (id)samplingInfo;
+- (void)setSamplingInfo:;
+@end

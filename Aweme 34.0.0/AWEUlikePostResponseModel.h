@@ -1,0 +1,2 @@
+@interface AWEUlikePostResponseModel : ACCBaseApiModel
+@end

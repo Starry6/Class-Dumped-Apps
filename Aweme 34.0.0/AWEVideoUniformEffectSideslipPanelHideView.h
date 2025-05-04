@@ -1,0 +1,30 @@
+@interface AWEVideoUniformEffectSideslipPanelHideView : UIView
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) BOOL supportClose;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) @? closeBlock;
+- (void)setCloseBlock:;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (id)closeBlock;
+- (void)closeButtonDidClick;
+- (BOOL)supportClose;
+- (void)configSupportClose:;
+- (void)configHideViewWithIconImage:titleLabel:;
+- (void)oneClickFilmingButtonDidClick;
+- (id)initWithClickBlock:supportClose:closeBlock:;
+- (id)iconView;
+- (void)updateConstraints;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

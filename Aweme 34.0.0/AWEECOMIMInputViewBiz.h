@@ -1,0 +1,33 @@
+@interface AWEECOMIMInputViewBiz : NSObject
+@property (nonatomic) @? onSendPhotos;
+@property (nonatomic) @? oneTakePhotoBlock;
+@property (nonatomic) NSDictionary videoSetting;
+@property (nonatomic) AWEECOMIMNetworkImp networkImp;
+@property (nonatomic) NSDictionary requestCommonParams;
+@property (nonatomic) AWEECOMIMInputViewOptions options;
+- (id)generateRequestParamsWithParams:;
+- (id)requestCommonParams;
+- (void)setRequestCommonParams:;
+- (void)setOnSendPhotos:;
+- (void)fetchMoreViewDataWithCompletion:;
+- (id)onSendPhotos;
+- (id)getMoreViewDefaultItems;
+- (void)setOneTakePhotoBlock:;
+- (void)sendPhotosWithAssets:itemType:;
+- (id)videoSetting;
+- (void)showOverSizeErrorWithCount:;
+- (id)oneTakePhotoBlock;
+- (void)setVideoSetting:;
+- (id)networkImp;
+- (id)initWithRequestCommonParams:networkImp:;
+- (void)setNetworkImp:;
+- (void)updateOptionsShopExtraConfig:;
+- (void)fetchQuickEntryDataWithCompletion:;
+- (void)preCheckEventWithIconType:completion:;
+- (void)onClickChoosePhotoWithCompletion:clickTask:;
+- (void)onClickTakePhotoWithCompletion:clickTask:;
+- (void)callMediaWithType:clickTask:;
+- (void)setOptions:;
+- (id)options;
+- (void).cxx_destruct;
+@end

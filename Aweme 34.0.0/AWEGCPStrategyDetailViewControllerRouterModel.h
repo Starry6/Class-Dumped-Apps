@@ -1,0 +1,30 @@
+@interface AWEGCPStrategyDetailViewControllerRouterModel : NSObject
+@property (nonatomic) NSString trackId;
+@property (nonatomic) Q promoteScene;
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString videoID;
+@property (nonatomic) NSString defaultRequestTabId;
+@property (nonatomic) BOOL shouldHideNaviBar;
+@property (nonatomic) BOOL isLynxComponent;
+- (id)gameName;
+- (void)setGameName:;
+- (id)gameID;
+- (void)setGameID:;
+- (void)setPromoteScene:;
+- (unsigned long long)promoteScene;
+- (void)setDefaultRequestTabId:;
+- (void)setShouldHideNaviBar:;
+- (void)setIsLynxComponent:;
+- (id)defaultRequestTabId;
+- (BOOL)shouldHideNaviBar;
+- (BOOL)isLynxComponent;
+- (id)roomID;
+- (void).cxx_destruct;
+- (id)trackId;
+- (void)setRoomID:;
+- (id)videoID;
+- (void)setVideoID:;
+- (void)setTrackId:;
+@end

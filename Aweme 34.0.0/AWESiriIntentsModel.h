@@ -1,0 +1,30 @@
+@interface AWESiriIntentsModel : MTLModel
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) AWESiriMediaIntentsModel mediaIntentsModel;
+@property (nonatomic) AWESiriOpenPageIntentsModel openPageIntentsModel;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString groupIdentifier;
+@property (nonatomic) q templateID;
+@property (nonatomic) NSDictionary originalInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mediaIntentsModel;
+- (void)setOriginalInfo:;
+- (id)openPageIntentsModel;
+- (id)originalInfo;
+- (void)setMediaIntentsModel:;
+- (void)setOpenPageIntentsModel:;
+- (void)setGroupIdentifier:;
+- (id)groupIdentifier;
+- (void)setIdentifier:;
+- (long long)templateID;
+- (void)setTemplateID:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

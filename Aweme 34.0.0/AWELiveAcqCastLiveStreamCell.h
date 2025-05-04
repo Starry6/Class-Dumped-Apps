@@ -1,0 +1,30 @@
+@interface AWELiveAcqCastLiveStreamCell : UICollectionViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) AWEGradientView bottomGradientView;
+@property (nonatomic) UIImageView tagView;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWELiveAcqCastLiveStreamContext context;
+- (void)renderModel:context:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)userNameLabel;
+- (void)setUserNameLabel:;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (void)__refreshComponents;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (id)bottomGradientView;
+- (void)setBottomGradientView:;
+- (id)tagView;
+- (void)setTagView:;
++ (id)identifier;
+@end

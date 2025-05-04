@@ -1,0 +1,30 @@
+@interface _AWECustomPropUploadInfo : NSObject
+@property (nonatomic) NSString packagePath;
+@property (nonatomic) NSString iconPath;
+@property (nonatomic) NSString coverPath;
+@property (nonatomic) NSString templateEffectId;
+@property (nonatomic) NSString customEffectId;
+@property (nonatomic) ACCDraftURS packageURS;
+@property (nonatomic) ACCDraftURS iconURS;
+@property (nonatomic) NSString exportTaskId;
+@property (nonatomic) BOOL isVideo;
+- (id)coverPath;
+- (void)setCoverPath:;
+- (id)packagePath;
+- (void)setPackageURS:;
+- (void)setIconURS:;
+- (id)packageURS;
+- (id)iconURS;
+- (void)setPackagePath:;
+- (id)templateEffectId;
+- (void)setTemplateEffectId:;
+- (id)customEffectId;
+- (void)setCustomEffectId:;
+- (id)exportTaskId;
+- (void)setExportTaskId:;
+- (BOOL)isVideo;
+- (void).cxx_destruct;
+- (id)iconPath;
+- (void)setIconPath:;
+- (void)setIsVideo:;
+@end

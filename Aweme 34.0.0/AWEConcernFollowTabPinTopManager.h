@@ -1,0 +1,31 @@
+@interface AWEConcernFollowTabPinTopManager : NSObject
+@property (nonatomic) q strategy;
+@property (nonatomic) double stayDuration;
+@property (nonatomic) NSTimer followTabPinTopTimer;
+@property (nonatomic) BOOL isFollowTabPinTopTimerMeet;
+@property (nonatomic) NSString previousAwemeId;
+- (double)stayDuration;
+- (void)setStayDuration:;
+- (BOOL)followTabPinTopExpOn;
+- (double)followTabStayDurationTime;
+- (void)didFollowTabPinTopTimerMeet;
+- (void)setFollowTabPinTopTimer:;
+- (id)followTabPinTopTimer;
+- (void)setIsFollowTabPinTopTimerMeet:;
+- (id)previousAwemeId;
+- (void)setPreviousAwemeId:;
+- (void)switchOnTimer;
+- (void)switchOffTimer;
+- (void)followTabAwemePlayBegin:;
+- (void)followTabGeneralAwemePlayEnd:;
+- (void)followTabAlbumAwemePlayEnd:;
+- (BOOL)isFollowTabPinTopTimerMeet;
+- (long long)strategy;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setStrategy:;
+- (void)pauseTimer;
+- (void)resumeTimer;
+- (id)componentID;
++ (id)sharedManager;
+@end

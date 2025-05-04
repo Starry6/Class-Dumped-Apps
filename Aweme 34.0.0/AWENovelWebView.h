@@ -1,0 +1,30 @@
+@interface AWENovelWebView : UIView
+@property (nonatomic) IESWKWebView webViewWK;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) TTWebViewBridgeEngine bridgeEngine;
+@property (nonatomic) <BDNovelWebViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)evaluateJavaScriptFromString:completionBlock:;
+- (id)bridgeEngine;
+- (id)webViewWK;
+- (void)didThemeChanged:;
+- (id)webviewSettings;
+- (void)setWebViewWK:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)scrollView;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)request;
+- (void)webViewWebContentProcessDidTerminate:;
+- (void)loadRequest:;
+- (void)webView:didFailLoadWithError:;
+- (BOOL)webView:shouldStartLoadWithRequest:navigationType:;
+- (void)webViewDidFinishLoad:;
+- (void)webViewDidStartLoad:;
+@end

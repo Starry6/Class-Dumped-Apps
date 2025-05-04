@@ -1,0 +1,35 @@
+@interface AWETeenGeneralBaseSectionController : IGListSectionController
+@property (nonatomic) BOOL shouldShowFooter;
+@property (nonatomic) AWETeenExtraParamModel extraParam;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWETeenGeneralCardDelegate> cardDelegate;
+- (double)currPlaybackTime;
+- (id)supportedElementKinds;
+- (id)viewForSupplementaryElementOfKind:atIndex:;
+- (id)sizeForSupplementaryViewOfKind:atIndex:;
+- (id)extraParam;
+- (void)setExtraParam:;
+- (id)cardDelegate;
+- (void)setCardDelegate:;
+- (void)cardShow;
+- (BOOL)playEnable;
+- (id)visibleVideoControllers;
+- (void)cellShow:atIndex:;
+- (void)didClickVideoWithAwemeModel:;
+- (BOOL)shouldShowFooter;
+- (void)interactionView:didClickPlayButton:;
+- (void)didDoubleClickVideoWithAwemeModel:isCancel:;
+- (void)setShouldShowFooter:;
+- (void)didBecomeActive;
+- (void)seekToTime:;
+- (id)init;
+- (void)play;
+- (BOOL)canPlay;
+- (void)didResignActive;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)pause;
+@end

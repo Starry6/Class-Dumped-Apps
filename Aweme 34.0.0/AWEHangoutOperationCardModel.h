@@ -1,0 +1,35 @@
+@interface AWEHangoutOperationCardModel : MTLModel
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString lightBgImageUrl;
+@property (nonatomic) NSString darkBgImageUrl;
+@property (nonatomic) double cardRatio;
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSNumber index;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)cardRatio;
+- (id)lightBgImageUrl;
+- (void)setLightBgImageUrl:;
+- (id)darkBgImageUrl;
+- (void)setDarkBgImageUrl:;
+- (void)setCardRatio:;
+- (void)setIndex:;
+- (id)schema;
+- (id)index;
+- (void)setSchema:;
+- (void)setStartTime:;
+- (id)endTime;
+- (void)setEndTime:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)startTime;
+- (id)cardID;
+- (void)setCardID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

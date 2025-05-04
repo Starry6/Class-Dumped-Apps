@@ -1,0 +1,37 @@
+@interface AWEPaySwiftImpl.CCMCardInfo : MTLModel
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString cardType;
+@property (nonatomic) NSString cardStatus;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString cityName;
+@property (nonatomic) NSString signNo;
+@property (nonatomic) NSString trafficID;
+@property (nonatomic) NSString trafficName;
+@property (nonatomic) NSString trafficMerchantID;
+@property (nonatomic) NSString trafficCardID;
+- (id)cardStatus;
+- (void)setCardStatus:;
+- (id)signNo;
+- (void)setSignNo:;
+- (id)trafficID;
+- (void)setTrafficID:;
+- (id)trafficName;
+- (void)setTrafficName:;
+- (id)trafficMerchantID;
+- (void)setTrafficMerchantID:;
+- (id)trafficCardID;
+- (void)setTrafficCardID:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)cardType;
+- (void)setCardType:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (id)cityName;
+- (void)setCityName:;
+- (id)cardID;
+- (void)setCardID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

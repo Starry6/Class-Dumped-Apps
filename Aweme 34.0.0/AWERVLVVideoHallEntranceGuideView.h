@@ -1,0 +1,35 @@
+@interface AWERVLVVideoHallEntranceGuideView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel tipContentLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) DUXButton addButton;
+@property (nonatomic) AWETheaterEntranceGuideModel model;
+@property (nonatomic) BDImageView panelImageView;
+@property (nonatomic) @? closeBtnClick;
+@property (nonatomic) @? closeBlock;
+- (void)setCloseBlock:;
+- (void)didClickActionButton;
+- (id)closeBtnClick;
+- (void)configWithModel:;
+- (id)closeBlock;
+- (void)p_closeButtonTapped;
+- (id)panelImageView;
+- (void)setPanelImageView:;
+- (id)tipContentLabel;
+- (void)setTipContentLabel:;
+- (void)setCloseBtnClick:;
+- (void)setModel:;
+- (id)init;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)addButton;
+- (void)setAddButton:;
+@end

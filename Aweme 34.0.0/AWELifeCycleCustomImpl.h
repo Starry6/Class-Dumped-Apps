@@ -1,0 +1,33 @@
+@interface AWELifeCycleCustomImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applicationLCPArrive:timestamp:;
+- (void)_exitUploadUsingInfo:;
+- (void)_setNoticeFlag;
+- (void)_reportVisitAppWithSchemaIfNeed:launchParam:sourceType:bootType:;
+- (long long)_getReportLaunchDuration:;
+- (BOOL)shouldOpenDebugAppWithLaunchParam:isGame:;
+- (BOOL)canShowUIWithV3Configuration:schema:;
+- (id)configurationWithTheme:config:;
+- (BOOL)canShowUIWithConfiguration:schema:;
+- (BOOL)isLiveCustomWithUniqueID:;
+- (id)_getExitUploadParams:;
+- (BOOL)shouldOpenWithLaunchParam:openBlk:;
+- (BOOL)hg_shouldOpenWithLaunchParam:openBlk:;
+- (void)metaSuccessWithUniqueID:model:;
+- (void)pkgDownloadFinishWithUniqueID:;
+- (void)pkgDownloadProgress:uniqueID:;
+- (void)loadFinishWithUniqueID:error:logParam:;
+- (void)firstFrameDidShow:;
+- (void)warmBootDoneWithUniqueID:;
+- (void)viewDidLoad:baseVC:launchParam:;
+- (void)workBeforeCloseWithUniqueID:;
+- (void)exitWithUniqueID:;
+- (void)enterForegroundWithUniqueID:;
+- (void)enterBackgroundWithUniqueID:;
+- (void)feedGameLaunchWithUniqueID:;
++ (id)sharedPlugin;
++ (void)_visitAppWithAppSchema:;
+@end

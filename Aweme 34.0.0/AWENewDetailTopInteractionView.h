@@ -1,0 +1,36 @@
+@interface AWENewDetailTopInteractionView : UIView
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) AWEGradientView topGradientView;
+@property (nonatomic) AWERVNewDetailAuthorInfoView authorInfoView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWERVNewDetailPageContext context;
+@property (nonatomic) @? touchUpInsideBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)backBtnClick;
+- (void)setTouchUpInsideBlock:;
+- (void)configWithAwemeModel:;
+- (id)authorInfoView;
+- (void)updateElementInteractionEnabled:;
+- (void)setAuthorInfoView:;
+- (id)backButton;
+- (void)setModel:;
+- (void)dealloc;
+- (void)setBackButton:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setupUI;
+- (id)topGradientView;
+- (void)setTopGradientView:;
+- (id)touchUpInsideBlock;
+@end

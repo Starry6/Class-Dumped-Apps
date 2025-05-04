@@ -1,0 +1,34 @@
+@interface AWEIMCommentShareTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubleWrapperView;
+@property (nonatomic) AWEIMCommentShareCommentBubleView commentBubleView;
+@property (nonatomic) AWEIMHotSpotCommentShareTableViewCellViewModel cellViewModel;
+@property (nonatomic) MASConstraint bubleWrapperViewTrailingToAvatarConstraint;
+@property (nonatomic) MASConstraint bubleWrapperViewLeadingToAvatarConstraint;
+@property (nonatomic) AWEIMMessage message;
+@property (nonatomic) UIView gradientBubbleView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellViewModel;
+- (void)setCellViewModel:;
+- (void)configWithMessage:;
+- (id)gradientBubbleView;
+- (id)bubleWrapperView;
+- (id)commentBubleView;
+- (void)setBubleWrapperViewTrailingToAvatarConstraint:;
+- (void)setBubleWrapperViewLeadingToAvatarConstraint:;
+- (id)bubleWrapperViewTrailingToAvatarConstraint;
+- (id)bubleWrapperViewLeadingToAvatarConstraint;
+- (void)p_didTapContainer;
+- (BOOL)canDoubleTapToLike;
+- (void)setBubleWrapperView:;
+- (void)setCommentBubleView:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)setupUI;
+- (void)setupSubviews;
+- (void)handleTapGesture:;
+- (void)setUpConstraints;
++ (id)contentSizeWithMesasge:;
+@end

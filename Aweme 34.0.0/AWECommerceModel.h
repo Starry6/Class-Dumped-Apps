@@ -1,0 +1,30 @@
+@interface AWECommerceModel : AWEBaseApiModel
+@property (nonatomic) AWEURLModel headerImageURL;
+@property (nonatomic) NSArray commerceLinkList;
+@property (nonatomic) NSArray challengeList;
+@property (nonatomic) NSString showcaseURL;
+@property (nonatomic) NSString showcaseName;
+@property (nonatomic) NSString showcaseSiteId;
+@property (nonatomic) NSArray taskList;
+- (id)challengeList;
+- (void)setChallengeList:;
+- (id)commerceLinkList;
+- (void)setCommerceLinkList:;
+- (id)showcaseURL;
+- (void)setShowcaseURL:;
+- (id)showcaseName;
+- (void)setShowcaseName:;
+- (id)showcaseSiteId;
+- (void)setShowcaseSiteId:;
+- (void).cxx_destruct;
+- (void)setTaskList:;
+- (id)taskList;
+- (id)headerImageURL;
+- (void)setHeaderImageURL:;
++ (id)challengeListJSONTransformer;
++ (id)headerImageURLJSONTransformer;
++ (id)commerceLinkListJSONTransformer;
++ (id)taskListJSONTransformer;
++ (id)smartPhoneModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

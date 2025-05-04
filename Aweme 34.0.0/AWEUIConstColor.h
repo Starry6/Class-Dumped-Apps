@@ -1,0 +1,32 @@
+@interface AWEUIConstColor : UIColor
+@property (nonatomic) UIColor<IESIMDynamicColorProtocol> dynamicColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? resolveBlock;
+@property (nonatomic) AWEUIDynamicColor dynamicColor;
+@property (nonatomic) UIColor currentResolvedColor;
+- (id)dynamicColor;
+- (void)setDynamicColor:;
+- (id)resolveBlock;
+- (id)currentResolvedColor;
+- (void)setResolveBlock:;
+- (void)setCurrentResolvedColor:;
+- (void)setFill;
+- (BOOL)getHue:saturation:brightness:alpha:;
+- (void)setStroke;
+- (BOOL)getRed:green:blue:alpha:;
+- (BOOL)getWhite:alpha:;
+- (void)set;
+- (unsigned long long)hash;
+- (id)CGColor;
+- (id)colorWithAlphaComponent:;
+- (id)forwardingTargetForSelector:;
+- (BOOL)_isDynamic;
+- (id)description;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)_highContrastDynamicColor;
+- (id)copyWithZone:;
+@end

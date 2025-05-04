@@ -1,0 +1,30 @@
+@interface AWEGDAlbumPhoto : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) AWEGradientView labelMask;
+@property (nonatomic) AWEGradientView photoMask;
+@property (nonatomic) UILabel label;
+@property (nonatomic) q photoIndex;
+@property (nonatomic) @? didTap;
+@property (nonatomic) AWEGDAlbumPhotoInfo photo;
+- (void)setDidTap:;
+- (id)labelMask;
+- (id)photoMask;
+- (void)photoTapAction;
+- (long long)photoIndex;
+- (void)setLabelMask:;
+- (void)setPhotoMask:;
+- (void)setPhotoIndex:;
+- (void)setLabel:;
+- (void)layout;
+- (id)initWithFrame:;
+- (id)label;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (id)photo;
+- (void)setPhoto:;
+- (void)setupUI;
+- (void)updateWithModel:;
+- (id)photoImage;
+- (id)didTap;
+@end

@@ -1,0 +1,32 @@
+@interface AWEProfileHeaderNameAreaComponent_NEWAPI : AWEProfileHeaderBaseComponent
+@property (nonatomic) double maxWidth;
+@property (nonatomic) AWEProfileHeaderNameAreaTopContainerComponent_NEWAPI nameAreaTopContainerComponent;
+@property (nonatomic) AWEProfileHeaderNicknameComponent_NEWAPI nicknameComponent;
+@property (nonatomic) AWEProfileHeaderRankAreaComponent_NEWAPI rankAreaComponent;
+@property (nonatomic) AWEProfileHeaderIdContentComponent_NEWAPI idContentComponent;
+@property (nonatomic) AWEProfileHeaderContactRemarkComponent_NEWAPI contactRemarkComponent;
+@property (nonatomic) AWEProfileHeaderVerificationAndIdContentAreaComponent_NEWAPI identifyAndIdContentComponent;
+@property (nonatomic) AWERLVirtualFlexView containerVirtualView;
+- (id)buildSubComponents;
+- (id)buildVirtualView:;
+- (void)updateComponentData:;
+- (id)initWithData:context:maxWidth:;
+- (BOOL)shouldQRCodeIconEnlarge;
+- (id)nameAreaTopContainerComponent;
+- (id)rankAreaComponent;
+- (id)contactRemarkComponent;
+- (id)identifyAndIdContentComponent;
+- (id)nicknameComponent;
+- (id)idContentComponent;
+- (void)setNameAreaTopContainerComponent:;
+- (void)setRankAreaComponent:;
+- (void)setIdContentComponent:;
+- (void)setContactRemarkComponent:;
+- (void)setIdentifyAndIdContentComponent:;
+- (id)containerVirtualView;
+- (void)setContainerVirtualView:;
+- (void)setNicknameComponent:;
+- (double)maxWidth;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+@end

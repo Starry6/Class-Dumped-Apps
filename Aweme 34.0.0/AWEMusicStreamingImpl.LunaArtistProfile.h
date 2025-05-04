@@ -1,0 +1,34 @@
+@interface AWEMusicStreamingImpl.LunaArtistProfile : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSArray alias;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl14LunaArtistBorn born;
+@property (nonatomic) NSString nameTranslation;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl16LunaArtistCareer career;
+@property (nonatomic) NSString intro;
+@property (nonatomic) NSString nationality;
+@property (nonatomic) NSString fullDisplayName;
+@property (nonatomic) NSString simpleDisplayName;
+- (id)simpleDisplayName;
+- (void)setSimpleDisplayName:;
+- (void)setFullDisplayName:;
+- (id)born;
+- (void)setBorn:;
+- (id)nameTranslation;
+- (void)setNameTranslation:;
+- (id)career;
+- (void)setCareer:;
+- (void)setIntro:;
+- (id)nationality;
+- (void)setNationality:;
+- (id)alias;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (void)setAlias:;
+- (id)initWithCoder:;
+- (id)fullDisplayName;
+- (id)intro;
++ (id)JSONKeyPathsByPropertyKey;
+@end

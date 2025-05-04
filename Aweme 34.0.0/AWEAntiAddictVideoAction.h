@@ -1,0 +1,2 @@
+@interface AWEAntiAddictVideoAction : AWEAntiAddictBaseAction
+@end

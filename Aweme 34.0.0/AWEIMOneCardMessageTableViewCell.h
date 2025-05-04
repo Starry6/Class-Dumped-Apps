@@ -1,0 +1,31 @@
+@interface AWEIMOneCardMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) UIView oneCardView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) NSTimer timer;
+- (void)awe_themeReload;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)configWithMessage:;
+- (id)menuTargetView;
+- (BOOL)canDoubleTapToLike;
+- (id)oneCardView;
+- (void)__hidenCoverImageViewWithAnimation:;
+- (void)__cancelTimer;
+- (void)__loadOneCardView;
+- (void)__loadCoverImageView;
+- (void)setOneCardView:;
+- (void)__didEndDisplayingWithTimer:;
+- (BOOL)menuViewRectContainsPoint:;
+- (void)setTimer:;
+- (id)timer;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (void)didEndDisplaying;
+- (id)bubbleView;
+- (void)setBubbleView:;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

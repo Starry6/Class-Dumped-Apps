@@ -1,0 +1,35 @@
+@interface AWEMvDetailModel : AWEBaseApiModel
+@property (nonatomic) NSString mvID;
+@property (nonatomic) NSString mvName;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) q userCount;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString desc;
+@property (nonatomic) BOOL isCollected;
+@property (nonatomic) AWEWelfareActivityModel welfareActivityModel;
+@property (nonatomic) AWEUserModel author;
+- (void)setExtra:;
+- (BOOL)isCollected;
+- (void)setIsCollected:;
+- (id)mvID;
+- (void)setMvID:;
+- (id)welfareActivityID;
+- (id)mvName;
+- (void)setMvName:;
+- (id)welfareActivityModel;
+- (void)setWelfareActivityModel:;
+- (void)setIconURL:;
+- (id)author;
+- (id)iconURL;
+- (id)extra;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (void)setAuthor:;
+- (void)setUserCount:;
+- (long long)userCount;
++ (id)iconURLJSONTransformer;
++ (id)welfareActivityModelJSONTransformer;
++ (id)placeholderModel;
++ (id)JSONKeyPathsByPropertyKey;
+@end

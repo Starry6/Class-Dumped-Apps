@@ -1,0 +1,34 @@
+@interface AWETeenRecorderGuideManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)shouldShowRecognitionGrootGuide;
++ (BOOL)shouldShowEffectGuide:;
++ (void)todayShowedEffectGuide:;
++ (void)publishedEffect:;
++ (BOOL)hasPublishedEffect:;
++ (void)showedPrivacyTip;
++ (BOOL)shouldShowPrivacyTip;
++ (BOOL)shouldShowARStableButtonRecordVideoPopover;
++ (BOOL)shouldShowARScrollButtonRecordVideoPopover;
++ (BOOL)shouldShowARScrollButtonProductARPopover;
++ (BOOL)shouldShowARScrollButtonStartRecordPopover;
++ (void)showedARStableButtonRecordVideoPopover;
++ (void)showedARScrollButtonRecordVideoPopover;
++ (void)showedARScrollButtonProductARPopover;
++ (void)showedARScrollButtonStartRecordPopover;
++ (void)publishedPrivateWork;
++ (BOOL)hasPublishedPrivateWork;
++ (BOOL)shouldShowPrivateWorkGuidePopover;
++ (void)todayShowedPrivateWorkGuide;
++ (void)showedPrivateWorkPage;
++ (id)AlogPrivateWorkInfo;
++ (BOOL)shouldShowEffectGuideInToday:;
++ (id)kAWETeenHasPublishedPrivateWorkKey;
++ (id)kAWETeenPrivateWorkPageShowedKey;
++ (BOOL)isPrivateWorkGuideShowedCountLessThanMaxCount;
++ (BOOL)shouldShowPrivateWorkGuideInToday;
++ (id)kAWETeenPrivateWorkGuideTodayShowedKey;
++ (id)kAWETeenPrivateWorkGuideShowedCountKey;
+@end

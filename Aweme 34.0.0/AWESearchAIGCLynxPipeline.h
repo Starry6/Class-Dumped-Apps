@@ -1,0 +1,31 @@
+@interface AWESearchAIGCLynxPipeline : AWESearchCachalotLynxPipeline
+- (id)customGlobalProps;
+- (void)updateComponentView:withViewModel:;
+- (id)componentViewWithViewModel:;
+- (id)componentViewSizeWithViewModel:containerWidth:;
+- (void)lynxEngine:didFailLoadWithError:;
+- (void)lynxEngine:didRecieveError:;
+- (id)generateLynxEngineWithModel:preferWidth:useBullet:shouldReuseLynxView:searchScene:defaultReuseMethod:;
+- (BOOL)shouldUseAnnieXWithViewModel:dynamicPatchModel:;
+- (void)lynxEngineSearchLynxElementDidMount:;
+- (void)lynxEngineSearchLynxElementDidBecomeActive:;
+- (void)lynxEngineSearchLynxElementWillEnterFullScreen:;
+- (void)lynxEngineSearchLynxElementDidResignActive:;
+- (id)AIGCResultContextWithViewModel:;
+- (BOOL)fixLynxCardCornerError;
+- (id)fetchControllerContextWithLynxEngine:;
+- (id)fetchViewModelWithLynxEngine:;
+- (id)getLynxSeparateRenderBlockList;
+- (Class)getSeparateRenderConfigClass;
+- (double)p_defaultNoneZeroHeight;
+- (BOOL)enableDrawFromCacheOptimize;
+- (BOOL)supportCustomPreferredLayoutWidth;
+- (double)customPreferredLayoutWidth:viewModel:;
+- (BOOL)supportCustomGlobalProps;
+- (void)sizeDidChangeWithLynxEngine:;
+- (BOOL)enableUseUpdateHeightTransaction;
++ (id)getPatchWithViewModel:stuffLog:;
++ (id)getExitDynamicPatchWithViewModel:;
++ (BOOL)disableRankProps;
++ (BOOL)disableCoverLogData;
+@end

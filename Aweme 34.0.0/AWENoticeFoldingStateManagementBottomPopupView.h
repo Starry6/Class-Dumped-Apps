@@ -1,0 +1,34 @@
+@interface AWENoticeFoldingStateManagementBottomPopupView : UIView
+@property (nonatomic) AWEIMNoticeFoldStructModel model;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) UIImageView closeView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIView foldingStateView;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UISwitch foldingStateSwitch;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (id)closeView;
+- (void)setCloseView:;
+- (void)p_addSubviews;
+- (void)p_addPositionConstraints;
+- (id)colorInLightTheme:;
+- (void)p_configContents;
+- (id)foldingStateSwitch;
+- (id)foldingStateView;
+- (void)onCloseViewTap;
+- (id)initWithModel:closeBlock:;
+- (void)setFoldingStateView:;
+- (void)setFoldingStateSwitch:;
+- (void)setModel:;
+- (void)setAvatarView:;
+- (id)avatarView;
+- (id)model;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setNameLabel:;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (int)avatarWidth;
+@end

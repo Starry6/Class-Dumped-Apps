@@ -1,0 +1,34 @@
+@interface AWECommerceComponentContext : NSObject
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> container;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) <AWECommerceDispatcherManager> dispatchManager;
+@property (nonatomic) @? isSimilarRecommendViewShowing;
+@property (nonatomic) @? adOperationGuideShowing;
+@property (nonatomic) @? hideLeftContainer;
+@property (nonatomic) @? promptModalManager;
+@property (nonatomic) @? commerceViewModel;
+@property (nonatomic) @? similarAdManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)adOperationGuideShowing;
+- (void)setDispatchManager:;
+- (id)isSimilarRecommendViewShowing;
+- (void)setIsSimilarRecommendViewShowing:;
+- (void)setAdOperationGuideShowing:;
+- (id)hideLeftContainer;
+- (void)setHideLeftContainer:;
+- (id)dispatchManager;
+- (id)similarAdManager;
+- (id)promptModalManager;
+- (id)commerceViewModel;
+- (void)setPromptModalManager:;
+- (void)setCommerceViewModel:;
+- (void)setSimilarAdManager:;
+- (void)setContainer:;
+- (id)container;
+- (void).cxx_destruct;
+@end

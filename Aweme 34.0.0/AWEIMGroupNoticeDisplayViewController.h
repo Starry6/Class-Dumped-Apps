@@ -1,0 +1,37 @@
+@interface AWEIMGroupNoticeDisplayViewController : UIViewController
+@property (nonatomic) AWEIMGroupNoticeDisplayViewModel viewModel;
+@property (nonatomic) AWEIMGroupNoticeDisplayViewView noticeDisplayView;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) q role;
+@property (nonatomic) UIScrollView scrollContainer;
+@property (nonatomic) BOOL noticeScrollable;
+@property (nonatomic) UIView tipRegion;
+@property (nonatomic) UIViewController groupSettingVC;
+@property (nonatomic) BOOL shownInHalfScreen;
+- (BOOL)configWithRouterParamDict:;
+- (void)setGroupSettingVC:;
+- (id)groupSettingVC;
+- (BOOL)shownInHalfScreen;
+- (void)setShownInHalfScreen:;
+- (void)setNoticeScrollable:;
+- (BOOL)noticeScrollable;
+- (void)backbuttonClicked:;
+- (BOOL)isGroupMaster;
+- (void)editButtonClicked:;
+- (void)setNoticeDisplayView:;
+- (id)noticeDisplayView;
+- (id)tipRegion;
+- (void)setTipRegion:;
+- (long long)role;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setRole:;
+- (void)viewWillAppear:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)conversation;
+- (id)scrollContainer;
+- (void)setScrollContainer:;
+- (void)setConversation:;
+- (id)initWithConversation:;
+@end

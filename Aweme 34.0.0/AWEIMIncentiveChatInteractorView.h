@@ -1,0 +1,31 @@
+@interface AWEIMIncentiveChatInteractorView : UIView
+@property (nonatomic) AWEIMIncentiveChatInteractorViewConfig config;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEButton confirmButton;
+@property (nonatomic) AWEButton closeButton;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) @? didClickConfirmBlock;
+@property (nonatomic) @? didClickCloseBlock;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (void)updateWithChatHasBackground:;
+- (void)updateConfigTitleString:;
+- (void)setDidClickConfirmBlock:;
+- (void)setDidClickCloseBlock:;
+- (id)didClickConfirmBlock;
+- (id)didClickCloseBlock;
+- (void)__didTapConfirmButton:;
+- (void)__didTapCloseButton:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)bottomLine;
+- (void)setBottomLine:;
+@end

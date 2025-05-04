@@ -1,0 +1,31 @@
+@interface AWEDetailCommerceDescriptionFullConfigurationImpl : NSObject
+@property (nonatomic) UIColor descriptionLabelBackgroundColor;
+@property (nonatomic) double descriptionMinLineHeight;
+@property (nonatomic) double descriptionMaxLineHeight;
+@property (nonatomic) q descriptionFoldThresholdLineCount;
+@property (nonatomic) UIFont descriptionTextFont;
+@property (nonatomic) UIColor descriptionTextColor;
+@property (nonatomic) UIFont showMoreTextFont;
+@property (nonatomic) UIColor showMoreTextColor;
+@property (nonatomic) UIFont showLessTextFont;
+@property (nonatomic) UIColor showLessTextColor;
+@property (nonatomic) UIImage arrowDownImage;
+@property (nonatomic) UIColor seperateLineColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureShowMoreAndLessButtonForDescriptionView:model:;
+- (id)descriptionLabelBackgroundColor;
+- (double)descriptionMinLineHeight;
+- (double)descriptionMaxLineHeight;
+- (long long)descriptionFoldThresholdLineCount;
+- (id)descriptionTextFont;
+- (id)showMoreTextFont;
+- (id)showLessTextFont;
+- (id)arrowDownImage;
+- (id)seperateLineColor;
+- (id)showLessTextColor;
+- (id)showMoreTextColor;
+- (id)descriptionTextColor;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMFansGroupChatListCardStyleCollectionViewCell : UICollectionViewCell
+@property (nonatomic) AWEIMFansGroupChatListViewModel viewModel;
+@property (nonatomic) UIView cardBaseView;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView placeHolderBaseView;
+@property (nonatomic) UIImageView cardPlaceHolderImageView;
+@property (nonatomic) UILabel cardPlaceHolderLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithViewModel:;
+- (void)__setupUI;
+- (void)__transferToConversationWithConversationID:;
+- (id)cardBaseView;
+- (void)setCardBaseView:;
+- (id)placeHolderBaseView;
+- (id)cardPlaceHolderImageView;
+- (id)cardPlaceHolderLabel;
+- (void)setPlaceHolderBaseView:;
+- (void)setCardPlaceHolderImageView:;
+- (void)setCardPlaceHolderLabel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
++ (id)identifier;
+@end

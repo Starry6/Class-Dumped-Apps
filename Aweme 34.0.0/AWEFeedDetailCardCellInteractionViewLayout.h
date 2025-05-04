@@ -1,0 +1,30 @@
+@interface AWEFeedDetailCardCellInteractionViewLayout : NSObject
+@property (nonatomic) q configType;
+@property (nonatomic) UIFont buttonFont;
+@property (nonatomic) double stackViewLeftOffset;
+@property (nonatomic) double stackViewRightOffset;
+@property (nonatomic) double stackViewTopOffset;
+@property (nonatomic) double stackViewBottomOffset;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) BOOL needReplaceW;
+- (void)setStackViewLeftOffset:;
+- (void)setStackViewRightOffset:;
+- (void)setStackViewTopOffset:;
+- (void)setStackViewBottomOffset:;
+- (void)setNeedReplaceW:;
+- (double)stackViewLeftOffset;
+- (double)stackViewRightOffset;
+- (double)stackViewTopOffset;
+- (double)stackViewBottomOffset;
+- (BOOL)needReplaceW;
+- (id)buttonFont;
+- (void)setIconSize:;
+- (id)iconSize;
+- (void).cxx_destruct;
+- (long long)configType;
+- (void)setConfigType:;
+- (void)setButtonFont:;
++ (id)playInteractionViewLayoutForStablePage;
++ (id)playInteractionViewLayoutForRVCard;
++ (id)playInteractionViewLayoutWithType:;
+@end

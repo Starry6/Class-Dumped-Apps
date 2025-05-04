@@ -1,0 +1,31 @@
+@interface AWEShareActivityPicConfigModel : AWEBaseApiModel
+@property (nonatomic) double top;
+@property (nonatomic) double left;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) double font;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) q textAlignment;
+@property (nonatomic) BOOL hidden;
+- (double)top;
+- (void)setHeight:;
+- (void)setWidth:;
+- (void)setTextColor:;
+- (double)width;
+- (id)backgroundColor;
+- (double)font;
+- (void)setBackgroundColor:;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (void)setTop:;
+- (double)left;
+- (void)setTextAlignment:;
+- (double)height;
+- (long long)textAlignment;
+- (id)textColor;
+- (BOOL)hidden;
+- (void)setLeft:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

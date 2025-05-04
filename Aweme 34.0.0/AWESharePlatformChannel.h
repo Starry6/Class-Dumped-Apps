@@ -1,0 +1,38 @@
+@interface AWESharePlatformChannel : AWEShareBaseChannel
+@property (nonatomic) AWEProgressLoadingView loadingView;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) q sharePlatform;
+- (void)showToast:;
+- (long long)sharePlatform;
+- (void)shareWithCompletion:;
+- (id)shareImage;
+- (id)makeItemWithStyle:inView:;
+- (long long)shareCategory;
+- (id)trackingLabel;
+- (id)aAWELiteUGSocialModuleAdapter;
+- (id)commonPreviewStat;
+- (id)shareGoodsItemImageName:;
+- (BOOL)feedLandscapeShareWithToken;
+- (void)prepareBeforeSharing:;
+- (void)cleanUpDownloadedResources;
+- (void)trackShareSuccess;
+- (void)trackSystemShareIfNeeded;
+- (BOOL)tryHandleFailure:completion:;
+- (void)trackShareFailure:;
+- (void)setLoadingView:;
+- (id)initWithPlatform:;
+- (void)finishWithResult:error:;
+- (id)loadingView;
+- (void)appDidBecomeActive:;
+- (void).cxx_destruct;
+- (id)completionHandler;
+- (void)setCompletionHandler:;
+- (id)shareType;
+- (id)shareTitle;
+- (BOOL)prepareWithContext:;
++ (id)channelWithType:;
++ (Class)aAWELiteUGSocialModuleAdapterClass;
++ (id)platformRegistry;
++ (void)registerPlatform:title:imageName:smallImageName:;
++ (id)registryEntryForPlatform:;
+@end

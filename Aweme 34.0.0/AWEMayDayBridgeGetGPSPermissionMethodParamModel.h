@@ -1,0 +1,2 @@
+@interface AWEMayDayBridgeGetGPSPermissionMethodParamModel : BDXBridgeModel
+@end

@@ -1,0 +1,34 @@
+@interface AWECommerceMissionDetailView : UIView
+@property (nonatomic) AWECommerceMissionBonusCircleView bounsView;
+@property (nonatomic) UILabel bonusTitleLabel;
+@property (nonatomic) TTTAttributedLabel detailLabel;
+@property (nonatomic) UILabel prizeLabel;
+@property (nonatomic) AWEChallengeModel challenge;
+@property (nonatomic) @? detailLabelTapBlock;
+- (id)titleAttributedStringWithTask:;
+- (id)makeGradientTextWithAttributedText:baselineOffset:;
+- (id)gradientTextImageWithAttributedText:;
+- (void)updateWithMission:;
+- (void)setDetailLabelTapBlock:;
+- (id)setupDetailLabel;
+- (id)generateDescriptionStringWithChallenge:preferredMaxWidth:;
+- (void)setBounsView:;
+- (id)setupPrizeLabel;
+- (void)setPrizeLabel:;
+- (id)prizeLabel;
+- (void)onDetailLabelTapped;
+- (id)generateCustomTruncateCharactersString;
+- (BOOL)shouldShowTrailProductDescrition:;
+- (id)detailLabelTapBlock;
+- (id)getTextColor;
+- (id)bounsView;
+- (id)bonusTitleLabel;
+- (void)setBonusTitleLabel:;
+- (id)initWithFrame:;
+- (id)challenge;
+- (void)setChallenge:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+@end

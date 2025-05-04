@@ -1,0 +1,34 @@
+@interface AWEHotSearchCommentNavigationBar : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) DUXNavigationBar navBar;
+@property (nonatomic) YYLabel discussLabel;
+@property (nonatomic) YYLabel mainTitleLabel;
+@property (nonatomic) YYLabel subTitleLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) BOOL isGray;
+- (void)awe_themeDidChange:;
+- (void)addLeftAction:;
+- (BOOL)isGray;
+- (void)setIsGray:;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (void)makeConstraint;
+- (void)updateDarkTheme;
+- (id)discussLabel;
+- (void)setDiscussLabel:;
+- (void)configWithContext:;
+- (void)p_resetGradientColor;
+- (void)setAlpha:;
+- (id)init;
+- (id)gradientView;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)updateWithContext:;
+- (id)navBar;
+- (void)setNavBar:;
+@end

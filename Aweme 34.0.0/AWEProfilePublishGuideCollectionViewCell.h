@@ -1,0 +1,34 @@
+@interface AWEProfilePublishGuideCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton shootBtn;
+@property (nonatomic) NSString shootSchema;
+@property (nonatomic) NSString challengeType;
+@property (nonatomic) double headerPadding;
+@property (nonatomic) BOOL isJunmActionForbiden;
+- (id)shootSchema;
+- (void)configWithModel:;
+- (void)setShootSchema:;
+- (void)setChallengeType:;
+- (void)forbidJumpAction:;
+- (id)shootBtn;
+- (void)setIsJunmActionForbiden:;
+- (BOOL)isJunmActionForbiden;
+- (void)trackEventForClickShootBtn;
+- (void)startShooting;
+- (void)setShootBtn:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (double)headerPadding;
+- (void)setHeaderPadding:;
+- (void)setupUI;
+- (id)challengeType;
++ (double)roughContentHeight;
++ (id)identifier;
++ (double)viewHeight;
+@end

@@ -1,0 +1,33 @@
+@interface AWEMRSubscribeManageCategorySectionController : AWEBaseListSectionController
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) AWECodeGenSubcategoryModel sheetOfSubcategory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sheetDidDismiss:;
+- (void)didBindSectionViewModel;
+- (void)configSupplementaryHeaderView:;
+- (BOOL)shouldHighlightItemAtIndex:model:;
+- (void)selectionPanel:didClickRow:;
+- (void)setSheetOfSubcategory:;
+- (void)updateSheetFrame:withPanelHeight:;
+- (void)handleSubscribeStatusChange:model:;
+- (void)handleTopContainerClickEvent:model:userInfo:;
+- (void)handleOptionValueChangeEvent:model:userInfo:;
+- (BOOL)needShowImageAtCellIndex:;
+- (id)sheetOfSubcategory;
+- (id)selectionPanel:configAtRow:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (id)sheet;
+- (Class)headerViewClass;
+- (void)setSheet:;
+@end

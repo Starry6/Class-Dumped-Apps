@@ -1,0 +1,34 @@
+@interface AWEIMShareContactListConfig : NSObject
+@property (nonatomic) AWEIMShareContactListUIConfig uiConfig;
+@property (nonatomic) AWEIMShareContactListContactsConfig contactsConfig;
+@property (nonatomic) q scene;
+@property (nonatomic) NSString subScene;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) NSArray defaultSelectedIds;
+@property (nonatomic) BOOL enableCreateGroup;
+@property (nonatomic) NSDate userStartTime;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)setShareContext:;
+- (id)subScene;
+- (id)shareContext;
+- (id)contactsConfig;
+- (id)uiConfig;
+- (id)defaultSelectedIds;
+- (BOOL)enableCreateGroup;
+- (id)userStartTime;
+- (void)setSubScene:;
+- (void)setUiConfig:;
+- (void)setContactsConfig:;
+- (void)setEnableCreateGroup:;
+- (void)setDefaultSelectedIds:;
+- (void)setUserStartTime:;
+- (void)setScene:;
+- (id)init;
+- (long long)scene;
+- (void).cxx_destruct;
+@end

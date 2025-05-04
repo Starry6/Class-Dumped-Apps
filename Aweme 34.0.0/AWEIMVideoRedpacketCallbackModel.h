@@ -1,0 +1,34 @@
+@interface AWEIMVideoRedpacketCallbackModel : NSObject
+@property (nonatomic) BOOL requestSuccess;
+@property (nonatomic) BOOL shouldShow;
+@property (nonatomic) BOOL isOpened;
+@property (nonatomic) NSString title;
+@property (nonatomic) q receiveCondition;
+@property (nonatomic) BOOL isAllReceived;
+@property (nonatomic) BOOL isOverDue;
+@property (nonatomic) AWEIMDouyinRedPacketModel infoModel;
+@property (nonatomic) q fansButtonStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)infoModel;
+- (void)setInfoModel:;
+- (void)setIsOpened:;
+- (BOOL)isOverDue;
+- (BOOL)isAllReceived;
+- (void)setIsOverDue:;
+- (void)setIsAllReceived:;
+- (BOOL)requestSuccess;
+- (void)setRequestSuccess:;
+- (long long)receiveCondition;
+- (void)setReceiveCondition:;
+- (long long)fansButtonStyle;
+- (void)setFansButtonStyle:;
+- (BOOL)isOpened;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (BOOL)shouldShow;
+- (void)setShouldShow:;
+@end

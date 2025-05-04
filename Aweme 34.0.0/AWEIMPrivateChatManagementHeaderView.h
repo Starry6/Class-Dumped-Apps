@@ -1,0 +1,33 @@
+@interface AWEIMPrivateChatManagementHeaderView : UITableViewHeaderFooterView
+@property (nonatomic) AWEIMPrivateChatManagementHeaderViewModel viewModel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView filterView;
+@property (nonatomic) UIButton filterBtn;
+@property (nonatomic) UIImageView filterImageIcon;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) <AWEIMPrivateChatManagementHeaderViewDelegate> delegate;
+- (void)configWithViewModel:;
+- (void)__setupUI;
+- (void)__addKVO;
+- (id)filterBtn;
+- (id)filterImageIcon;
+- (void)__showPrivateChatImportantBubble;
+- (void)switchIconWithSelected:;
+- (void)onFilterBtnClick;
+- (void)setFilterBtn:;
+- (void)setFilterImageIcon:;
+- (id)filterView;
+- (id)delegate;
+- (void)setFilterView:;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)initWithReuseIdentifier:;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)lineView;
+- (void)setLineView:;
++ (id)identifier;
+@end

@@ -1,0 +1,31 @@
+@interface AWEDCFeedMonitor : NSObject
+- (BOOL)currentSceneEnable:;
+- (BOOL)currentEventEnableWithScene:event:;
+- (id)getDataProcessWithScene:;
+- (BOOL)currentEventEnableTagWithScene:event:;
+- (id)getSettingInfoWithScene:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (void)beginFMPMonitorWithScene:;
++ (void)setExtraForScene:event:extra:;
++ (id)getCustomDataProcessWithScene:event:ignoreSetting:;
++ (id)defaultSettingDict;
++ (id)getCustomDataProcessWithScene:event:;
++ (void)recordCurrentDurationForScene:event:currentEvent:;
++ (void)finishFMPMonitorWithScene:;
++ (void)beginSubEventWithScene:event:sub:;
++ (void)finishSubEventWithScene:event:sub:;
++ (void)beginWithScene:event:;
++ (double)getCurrentFMPBeginTimeWithScene:;
++ (void)finishWithScene:event:;
++ (void)finishWithScene:event:extra:;
++ (void)setDefaultSettingDictWithScene:dict:;
++ (void)trackAllEvent;
++ (void)cancelWithScene:event:;
++ (void)setExtra:scene:;
++ (void)beginTimerIfNeeded;
++ (void)cancelFMPMonitorWithScene:;
++ (id)sharedInstance;
++ (void)resetTimer;
+@end

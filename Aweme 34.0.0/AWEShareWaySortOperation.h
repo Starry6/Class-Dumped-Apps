@@ -1,0 +1,33 @@
+@interface AWEShareWaySortOperation : MTLModel
+@property (nonatomic) q priority;
+@property (nonatomic) q strategy;
+@property (nonatomic) q targetIndex;
+@property (nonatomic) BOOL stableSwap;
+@property (nonatomic) NSArray relateChannels;
+@property (nonatomic) NSArray relateChannelTypes;
+@property (nonatomic) BOOL useLastRelate;
+@property (nonatomic) AWEShareWaySortOperation fallbackOperation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fallbackOperation;
+- (void)setRelateChannelTypes:;
+- (id)relateChannelTypes;
+- (id)relateChannels;
+- (BOOL)stableSwap;
+- (void)setStableSwap:;
+- (void)setRelateChannels:;
+- (BOOL)useLastRelate;
+- (void)setUseLastRelate:;
+- (void)setFallbackOperation:;
+- (long long)strategy;
+- (long long)targetIndex;
+- (long long)priority;
+- (void)setTargetIndex:;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (void)setStrategy:;
++ (id)fallbackOperationJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

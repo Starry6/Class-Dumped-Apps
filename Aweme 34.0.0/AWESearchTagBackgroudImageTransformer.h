@@ -1,0 +1,9 @@
+@interface AWESearchTagBackgroudImageTransformer : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)appendingStringForCacheKey;
+- (id)transformImageBeforeStoreWithImage:;
++ (id)sharedTransformer;
+@end

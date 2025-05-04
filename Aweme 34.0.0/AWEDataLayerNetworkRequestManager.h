@@ -1,0 +1,31 @@
+@interface AWEDataLayerNetworkRequestManager : NSObject
+@property (nonatomic) <AWEDataLayerNetworkProtocol> networkImpl;
+@property (nonatomic) NSMutableDictionary requestsMap;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} requestsMapLock;
+@property (nonatomic) NSObject<OS_dispatch_queue> requestQueue;
+@property (nonatomic) NSMapTable tokenToRequestMapTable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupNetworkImpl:;
+- (id)getAllTokenWithRequestIdentifier:;
+- (void)requestWithNetworkProvider:token:config:completion:;
+- (void)setTokenToRequestMapTable:;
+- (void)setNetworkImpl:;
+- (id)requestsMap;
+- (void)setRequestsMap:;
+- (id)tokenToRequestMapTable;
+- (void)startRequest:;
+- (void)finishRequest:response:;
+- (BOOL)enqueueRetryRequest:;
+- (id)networkImpl;
+- (void)handleWaitingRequestsWithRequest:;
+- (void)manager:handleRetryRequest:;
+- (id)requestsMapLock;
+- (void)setRequestsMapLock:;
+- (void)setRequestQueue:;
+- (id)requestQueue;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

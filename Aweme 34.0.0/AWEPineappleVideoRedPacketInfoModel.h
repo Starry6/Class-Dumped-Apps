@@ -1,0 +1,35 @@
+@interface AWEPineappleVideoRedPacketInfoModel : MTLModel
+@property (nonatomic) NSString videoRedPacketURI;
+@property (nonatomic) NSString videoRedPacketURL;
+@property (nonatomic) NSString videoRedPacketID;
+@property (nonatomic) NSString videoRedPacketOrderID;
+@property (nonatomic) NSString firstShowTime;
+@property (nonatomic) NSNumber videoRedPacketType;
+@property (nonatomic) NSString couponID;
+@property (nonatomic) NSNumber scope;
+@property (nonatomic) BOOL visible;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)firstShowTime;
+- (void)setFirstShowTime:;
+- (id)couponID;
+- (void)setCouponID:;
+- (id)videoRedPacketURL;
+- (id)videoRedPacketType;
+- (id)videoRedPacketID;
+- (id)videoRedPacketURI;
+- (void)setVideoRedPacketURI:;
+- (void)setVideoRedPacketURL:;
+- (void)setVideoRedPacketID:;
+- (id)videoRedPacketOrderID;
+- (void)setVideoRedPacketOrderID:;
+- (void)setVideoRedPacketType:;
+- (BOOL)visible;
+- (void)setVisible:;
+- (id)scope;
+- (void).cxx_destruct;
+- (void)setScope:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

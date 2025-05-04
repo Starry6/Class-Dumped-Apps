@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionMusicCollectionView : UIView
+@property (nonatomic) UIButton collectionButton;
+@property (nonatomic) UIButton collectionRedButton;
+@property (nonatomic) UIButton collectedButton;
+@property (nonatomic) AWECollectionButton gotoDSPButton;
+@property (nonatomic) LOTAnimationView collectLottieView;
+@property (nonatomic) BOOL animate;
+@property (nonatomic) q state;
+@property (nonatomic) <AWEPlayInteractionMusicCollectionViewDelegate> delegate;
+- (void)setCollectionButton:;
+- (id)collectionButton;
+- (void)p_setup;
+- (id)collectionRedButton;
+- (id)collectedButton;
+- (id)gotoDSPButton;
+- (id)collectLottieView;
+- (void)p_animateBackToNoCollectState;
+- (void)btnCliced:;
+- (void)setCollectionRedButton:;
+- (void)setCollectedButton:;
+- (void)setGotoDSPButton:;
+- (void)setCollectLottieView:;
+- (id)delegate;
+- (long long)state;
+- (BOOL)animate;
+- (id)initWithState:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (void)setState:;
+- (void)setAnimate:;
+@end

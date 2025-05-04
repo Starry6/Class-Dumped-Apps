@@ -1,0 +1,37 @@
+@interface AWEIMEmoticonReplyPanelCollectionViewCell : UICollectionViewCell
+@property (nonatomic) q afdHoverStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIView highlightMaskView;
+@property (nonatomic) @? didSelectBlock;
+@property (nonatomic) @? shouldSelectBlock;
+@property (nonatomic) @? beginHoverBlock;
+@property (nonatomic) @? cancelHoverBlock;
+@property (nonatomic) @? endHoverBlock;
+- (void)configWithViewModel:;
+- (id)didSelectBlock;
+- (void)setDidSelectBlock:;
+- (void)setHighlightMaskView:;
+- (id)highlightMaskView;
+- (void)hoverBegan:;
+- (void)hoverEnded:;
+- (void)hoverCancelled:;
+- (id)beginHoverBlock;
+- (id)cancelHoverBlock;
+- (id)endHoverBlock;
+- (void)createComponents;
+- (id)shouldSelectBlock;
+- (void)setShouldSelectBlock:;
+- (void)setBeginHoverBlock:;
+- (void)setCancelHoverBlock:;
+- (void)setEndHoverBlock:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)layoutComponents;
++ (id)identifier;
+@end

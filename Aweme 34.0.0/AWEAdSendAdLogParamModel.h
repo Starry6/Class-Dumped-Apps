@@ -1,0 +1,32 @@
+@interface AWEAdSendAdLogParamModel : BDXBridgeModel
+@property (nonatomic) NSString category;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSNumber hasAdInfo;
+@property (nonatomic) NSDictionary extParam;
+@property (nonatomic) NSString creativeID;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString logExtra;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (void)setCreativeID:;
+- (void)setRefer:;
+- (id)refer;
+- (id)hasAdInfo;
+- (id)extParam;
+- (void)setExtParam:;
+- (void)setHasAdInfo:;
+- (void)setGroupID:;
+- (void)setLabel:;
+- (id)tag;
+- (id)category;
+- (id)groupID;
+- (void)setTag:;
+- (id)label;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (id)creativeID;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

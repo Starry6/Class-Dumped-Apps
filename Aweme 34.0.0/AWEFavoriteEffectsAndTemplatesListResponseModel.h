@@ -1,0 +1,36 @@
+@interface AWEFavoriteEffectsAndTemplatesListResponseModel : MTLModel
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSArray lists;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSNumber longCursor;
+@property (nonatomic) NSNumber sortedPosition;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)statusMsg;
+- (void)setStatusMsg:;
+- (void)setLongCursor:;
+- (id)sortedPosition;
+- (void)setSortedPosition:;
+- (id)longCursor;
+- (id)cursor;
+- (long long)statusCode;
+- (id)lists;
+- (id)requestID;
+- (void)setRequestID:;
+- (void)setHasMore:;
+- (id)extra;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (void)setLists:;
++ (id)listsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

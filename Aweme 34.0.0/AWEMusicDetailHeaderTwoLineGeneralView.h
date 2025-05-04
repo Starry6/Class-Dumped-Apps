@@ -1,0 +1,33 @@
+@interface AWEMusicDetailHeaderTwoLineGeneralView : UIView
+@property (nonatomic) DUXTextTag tagLabel;
+@property (nonatomic) BOOL isNewStyle;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) @? onTap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isNewStyle;
+- (void)setIsNewStyle:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (id)initWithNewStyle:;
+- (void)configureWithTitle:subtitle:tag:;
+- (void)configureWithTitle:subtitle:tag:avatarSize:;
+- (void)updateTagStyle:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (id)onTap;
+- (void).cxx_destruct;
+- (void)setOnTap:;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)tapped;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

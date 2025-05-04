@@ -1,0 +1,38 @@
+@interface AWEPOIDetailRateCardView : UIView
+@property (nonatomic) {UIEdgeInsets=dddd} padding;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) NSArray gradeViewArray;
+@property (nonatomic) AWEPOIUGCRateFiveStarView fiveStarView;
+@property (nonatomic) AWEPOIDetailProductItemRateCard model;
+@property (nonatomic) @? showModalWithTag;
+@property (nonatomic) @? onClose;
+@property (nonatomic) AWEPOIDetailSkinConfig skinConfig;
+@property (nonatomic) AWEPOIRepeatBackgroundView textureBackgroundView;
+- (id)skinConfig;
+- (id)fiveStarView;
+- (void)setFiveStarView:;
+- (void)setSkinConfig:;
+- (void)updateSkinConfig:;
+- (id)textureBackgroundView;
+- (void)setTextureBackgroundView:;
+- (void)onTapClose;
+- (id)gradeViewArray;
+- (id)showModalWithTag;
+- (void)setGradeViewArray:;
+- (id)initWithPadding:;
+- (void)updateWithTagModel:;
+- (void)setShowModalWithTag:;
+- (void)setModel:;
+- (id)padding;
+- (id)model;
+- (void)setPadding:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)onClose;
+- (void)setOnClose:;
+@end

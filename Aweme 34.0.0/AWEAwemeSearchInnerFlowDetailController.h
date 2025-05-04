@@ -1,0 +1,31 @@
+@interface AWEAwemeSearchInnerFlowDetailController : AWEAwemeNewDetailBaseController
+@property (nonatomic) NSDictionary logExtraDictForFirstItem;
+@property (nonatomic) NSDictionary logExtraDictForNonFirstItem;
+@property (nonatomic) AWEListDataController<AWEGeneralSearchInnerFlowDataControllerProtocol> dataController;
+@property (nonatomic) BOOL originItemhasRecordInInnerFlowBackupMap;
+@property (nonatomic) NSString distinctInnerId;
+- (void)cellWillDisplay:forRowAtIndexPath:tableView:;
+- (void)setDataController:;
+- (void)initialFetchCompletion:error:;
+- (void)configCell:atIndexPath:tableView:;
+- (void)liveCellWillDisplay:forRowAtIndexPath:tableView:;
+- (BOOL)enableConfigCommentSearchCardTrackParams;
+- (void)modifySearchCommentTrackParamsWithModel:;
+- (void)setOriginItemhasRecordInInnerFlowBackupMap:;
+- (void)setDistinctInnerId:;
+- (BOOL)originItemhasRecordInInnerFlowBackupMap;
+- (void)showBackupToast;
+- (void)reportInnerDocShowWithIndexPath:;
+- (void)postInnerWillDisplayNotificationWithIndexPath:;
+- (BOOL)enableSearchInnerRerankDeleteDuplicate;
+- (id)distinctInnerId;
+- (void)modifySearchIDInLogExtraForSearchInnerRerank:atIndexPath:;
+- (id)logExtraDictForFirstItem;
+- (void)setLogExtraDictForFirstItem:;
+- (id)logExtraDictForNonFirstItem;
+- (void)setLogExtraDictForNonFirstItem:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)dataController;
+- (long long)currentCellIndex;
+@end

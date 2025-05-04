@@ -1,0 +1,32 @@
+@interface AWEIMChatMessageTransferUtility : NSObject
++ (id)messageVCWithConversationID:inNavigationController:;
++ (void)tryTransferToMessageVCWithParamsDict:fromVC:requestScene:completion:;
++ (id)targetViewControllerInitIfAvailableWithParamsDict:;
++ (BOOL)routerParamsValidationWithParamsDictionary:;
++ (id)requestSceneForRouterChatVCFromTransferParams:;
++ (void)transferToMessageVCWithRouterTransitionInfo:requestScene:;
++ (void)__tryTransferToMessageVCAfterLoginWithRouterParamsDict:fromVC:targetVC:requestScene:completion:;
++ (void)__tryTransferToMessageVCWithRouterParamsDict:fromVC:targetVC:requestScene:completion:;
++ (void)__tryTransferToLiveConsultVCWithSpUid:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (id)generateConversationIDWithParamsDictionary:;
++ (void)__tryTransferToSingleMessageVCWithChatExist:uid:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (void)__tryTransferToMessageVCWithChatExist:cid:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (void)__tryTransferToMessageVCWithUid:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (void)__tryTransferToMessageVCWithConversationID:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (void)__transferToMessageVCWithConversationID:fromVC:targetVC:paramsDict:requestScene:completion:;
++ (id)__messageVCWithConversationID:existInNavigationController:;
++ (unsigned long long)__checkParamsIfValidWithConversationID:;
++ (void)__dealWithInvalidMessageVCRouterStatus:conversationID:;
++ (id)__targetViewControllerWithNeedFloatMode:paramsDict:;
++ (void)transferToLightCameraWithFromVC:toVC:completion:;
++ (void)__defaultFloatModeRouterPushTargetVC:withParamsDict:completion:;
++ (void)__routerPushTargetVC:fromVC:withCid:paramsDict:requestScene:completion:;
++ (void)dismissSimilarViewControllerWithBlock:;
++ (BOOL)p_dealwithGroupDissovleWithConversation:;
++ (void)p_dealWithGroupRemoveWithConversation:;
++ (void)trackEvent:groupConversation:;
++ (id)p_newTargetVCWithNeedFloatMode:;
++ (void)__routerPushTargetVC:paramsDict:withCompletion:;
++ (void)transferToMediaDetailWithTargetMessageId:fromVC:toVC:requestScene:completion:;
++ (id)lightCameraReplyCompletionBlock:;
+@end

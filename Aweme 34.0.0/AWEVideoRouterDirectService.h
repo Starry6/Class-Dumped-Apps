@@ -1,0 +1,32 @@
+@interface AWEVideoRouterDirectService : NSObject
+@property (nonatomic) AWEUITransitionHost transitionHost;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)startMusicWorkFlowWithInfo:;
+- (id)createVideoFromMusic;
+- (id)startUploadPhotoWithInfo:poiInfo:commercialAnchorModel:;
+- (id)createVideoFromMusicWithInfo:missionModel:commercialAnchorModel:shouldApplySticker:;
+- (id)transitionHost;
+- (void)setTransitionHost:;
+- (id)startMusicWorkFlowWithProcessDataBlock:completion:;
+- (id)startUploadVideoWorkFlowWithRefer:;
+- (id)startUploadAssetForStickPointVideoWithInfo:initialSelectedAssets:;
+- (id)startUploadWithPublishViewModel:inputData:;
+- (id)startUploadAssetForStickPointVideoWithInfo:;
+- (id)startUploadPhotoWithInfo:poiInfo:;
+- (id)startOriginalTextWithInfo:;
+- (id)startOriginalTextWithPublishModel:;
+- (id)createVideoFromMusicWithInfo:nearbyModel:;
+- (id)startMusicWorkFlowWithInfo:missionModel:commercialAnchorModel:nearbyModel:shouldApplySticker:;
+- (id)createDynamicRecorderVideoWithInfo:PoiModel:;
+- (void)trackShootAtLongPressPlusButtonSceneWithInfo:;
+- (void)trackShootAtLongPressPlusButtonOpenAlbum;
+- (id)startMusicWorkFlowWithInfo:missionModel:commercialAnchorModel:nearbyModel:shouldApplySticker:processDataBlock:completion:;
+- (id)startMusicAndVideoWorkFlowWithInfo:;
+- (id)buildWorkFlowTrackParametersFrom:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

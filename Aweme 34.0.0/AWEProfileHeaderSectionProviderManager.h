@@ -1,0 +1,36 @@
+@interface AWEProfileHeaderSectionProviderManager : NSObject
+@property (nonatomic) NSDictionary providerClassDict;
+@property (nonatomic) NSArray providerArray;
+@property (nonatomic) NSMutableDictionary sectionViewModelDict;
+@property (nonatomic) AWEProfileHeaderContext context;
+@property (nonatomic) NSArray sectionControllerClassArray;
+@property (nonatomic) NSArray sectionViewModelArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)sectionControllerClassArray;
+- (id)sectionViewModelArray;
+- (void)configWithContext:;
+- (BOOL)supportLuckyCat;
+- (void)setProviderClassDict:;
+- (void)registerSectionProvider;
+- (void)configSectionProviderArray;
+- (void)resetSectionViewModelArray;
+- (id)buildSectionOrderArray;
+- (id)providerClassDict;
+- (void)setProviderArray:;
+- (id)providerArray;
+- (id)sectionViewModelDict;
+- (id)p_buildSectionOrderArrayTestV6;
+- (id)aAWEDYProfileHeaderActionControllerCommonAdapter;
+- (long long)previousSectionType:;
+- (void)setSectionViewModelDict:;
+- (id)init;
+- (void)dealloc;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
++ (Class)aAWEDYProfileHeaderActionControllerCommonAdapterClass;
+@end

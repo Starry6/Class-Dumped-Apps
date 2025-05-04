@@ -1,0 +1,37 @@
+@interface AWEUltraCreationPageHandler : NSObject
+@property (nonatomic) AWEUltraCreationTokenManager tokenManager;
+@property (nonatomic) @? finishResultCallback;
+@property (nonatomic) AUCDTOInputConfigTrackInfo trackInfo;
+@property (nonatomic) AWEUltraCreationAlbumHelper albumHelper;
+@property (nonatomic) q currentPage;
+@property (nonatomic) NSArray pages;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) q curPage;
+- (void)setAlbumHelper:;
+- (id)albumHelper;
+- (long long)curPage;
+- (void)onCreationFinishWithToken:creationData:UIControlHandler:;
+- (void)onCustomActionKey:token:creationData:UIControlHandler:serviceProvider:;
+- (void)onQuitCreationWithToken:UIControlHandler:;
+- (BOOL)canAssetsGoNext:;
+- (void)goNextWithAssets:creationData:viewHandler:context:;
+- (void)goNextWithAssets:creationData:viewHandler:context:directFinish:;
+- (id)finishResultCallback;
+- (id)initWithConfig:finishResultCallback:;
+- (void)configInitialToken:;
+- (void)setTokenManager:;
+- (void)setFinishResultCallback:;
+- (void)dealloc;
+- (id)createContext;
+- (long long)currentPage;
+- (void)setCurrentPage:;
+- (void).cxx_destruct;
+- (void)setRequestId:;
+- (id)requestId;
+- (id)pages;
+- (void)setPages:;
+- (void)setTrackInfo:;
+- (id)trackInfo;
+- (id)tokenManager;
++ (long long)contextTypeFromPage:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEUserRecommendCollectionViewUserCell : AWEUserRecommendCollectionViewBaseCell
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) UIButton editAliasButton;
+@property (nonatomic) UIImageView verificationImageView;
+@property (nonatomic) UIView<AWEFeedLiveMarkViewProtocol> liveMarkView;
+@property (nonatomic) AWEUserButtonStateMachine stateMachine;
+- (void)configWithModel:;
+- (void)onSelected;
+- (void)onModelUpdated;
+- (void)setLiveMarkView:;
+- (id)liveMarkView;
+- (id)editAliasButton;
+- (void)setEditAliasButton:;
+- (id)verificationImageView;
+- (void)p_close;
+- (void)p_enterLiveRoom;
+- (void)p_setupAccessibility;
+- (void)setVerificationImageView:;
+- (void)p_clickFollow;
+- (void)p_refreshLiveStatus;
+- (void)p_updateAccessibilityActions;
+- (id)p_livingMarkViewGradientColors:;
+- (id)p_vsSchema;
+- (void)p_editAlias;
+- (id)user;
+- (void)setUser:;
+- (id)initWithFrame:;
+- (void)setStateMachine:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)stateMachine;
+- (void)willDisplay;
+@end

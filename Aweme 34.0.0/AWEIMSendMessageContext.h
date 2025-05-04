@@ -1,0 +1,36 @@
+@interface AWEIMSendMessageContext : NSObject
+@property (nonatomic) NSAttributedString content;
+@property (nonatomic) NSArray mentionUsers;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) NSString quotedMessageId;
+@property (nonatomic) <IESIMMessageExternalRefContextProvider> externalRefContextProvider;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString toast;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) q sendFrom;
+@property (nonatomic) BOOL isClickWatchOnce;
+@property (nonatomic) IESIMGrowingTextView textView;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)externalRefContextProvider;
+- (void)setExternalRefContextProvider:;
+- (void)setMentionUsers:;
+- (void)setQuotedMessageId:;
+- (void)setSendFrom:;
+- (id)mentionUsers;
+- (void)setIsClickWatchOnce:;
+- (id)quotedMessageId;
+- (BOOL)isClickWatchOnce;
+- (long long)sendFrom;
+- (id)textView;
+- (void)setTextView:;
+- (id)content;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
+@end

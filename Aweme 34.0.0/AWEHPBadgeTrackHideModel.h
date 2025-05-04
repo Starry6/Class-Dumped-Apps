@@ -1,0 +1,30 @@
+@interface AWEHPBadgeTrackHideModel : AWEHPBadgeTrackBaseModel
+@property (nonatomic) NSString tabID;
+@property (nonatomic) Q dotType;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSString bizID;
+@property (nonatomic) q hideType;
+@property (nonatomic) q downgradedType;
+@property (nonatomic) BOOL isDowngradedHide;
+@property (nonatomic) double duration;
+@property (nonatomic) NSDictionary bizTrackParams;
+- (void)setBizID:;
+- (void)setTabID:;
+- (long long)downgradedType;
+- (void)setDowngradedType:;
+- (id)bizTrackParams;
+- (void)setBizTrackParams:;
+- (long long)hideType;
+- (unsigned long long)dotType;
+- (void)setDotType:;
+- (void)setHideType:;
+- (BOOL)isDowngradedHide;
+- (void)setIsDowngradedHide:;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (double)duration;
+- (void)setComponentID:;
+- (id)componentID;
+- (id)bizID;
+- (id)tabID;
+@end

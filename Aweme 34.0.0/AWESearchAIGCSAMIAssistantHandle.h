@@ -1,0 +1,34 @@
+@interface AWESearchAIGCSAMIAssistantHandle : NSObject
+@property (nonatomic) AWESearchAIGCSAMIAssistantCallback callback;
+@property (nonatomic) AWESearchAIGCSAMIAuthConfig authConfig;
+@property (nonatomic) SAMICore coreHandle;
+@property (nonatomic) <AWESearchAIGCSAMIAssistantHandleDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onMessageReceived:withBlock:;
+- (void)startTask;
+- (id)authConfig;
+- (void)setAuthConfig:;
+- (void)createHandle;
+- (void)destroyHandle;
+- (void)setCoreHandle:;
+- (void)callBackAssistantEvent:;
+- (id)coreHandle;
+- (BOOL)setHandlePropertyWithName:property:;
+- (id)initWithAuthConfig:delegate:;
+- (void)updateTTSConfig:;
+- (void)startSessionWithTask:;
+- (void)startTTSWithTask:;
+- (void)cancelSessionWithTask:;
+- (void)setCallback:;
+- (id)callback;
+- (void)dealloc;
+- (id)delegate;
+- (void)closeConnection;
+- (void)createConnection;
+- (void)finishTask;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

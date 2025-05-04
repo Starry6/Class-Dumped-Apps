@@ -1,0 +1,34 @@
+@interface AWEEEUIAnnotation : NSObject
+@property (nonatomic) <EEUIAnnotation> effectUIAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)originText;
+- (id)hintText;
+- (id)algs;
+- (BOOL)needAlgPreprocess;
+- (id)algPreprocess;
+- (long long)maxImageCount;
+- (id)croppingSize;
+- (BOOL)isMultiAssetsProp;
+- (long long)minImageCount;
+- (long long)maxTextCount;
+- (id)exportAssetSizeLimit;
+- (void)callbackImage:previewOnly:completion:;
+- (void)callbackText:completion:;
+- (void)updateVideo:audioPath:previewOnly:completion:;
+- (void)setEffectUIAnimation:;
+- (id)effectUIAnimation;
+- (BOOL)isImageEditable;
+- (BOOL)isTextEditable;
+- (void)updateVideo:previewOnly:completion:;
+- (long long)minTextCount;
+- (id)placeholder;
+- (void).cxx_destruct;
+- (unsigned long long)assetType;
+- (id)name;
+- (id)relation;
+- (long long)albumFilter;
++ (id)configWith:;
+@end

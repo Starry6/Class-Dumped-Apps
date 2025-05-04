@@ -1,0 +1,31 @@
+@interface AWEStudioPublishProgressViewController : NSObject
+@property (nonatomic) AWEPublishProgressView progressView;
+@property (nonatomic) BOOL shouldShowUploadView;
+@property (nonatomic) <AWEPublishProgressContainerInfoProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onViewDidLoad;
+- (void)onViewWillAppear;
+- (void)onViewWillLayoutSubviews;
+- (void)onViewDidDisappear;
+- (void)addProgressView;
+- (id)aAWEStudioDOUYINSSAdapter;
+- (id)aAWEStudioPublishAwemeAdapter;
+- (BOOL)shouldShowUploadView;
+- (BOOL)shouldShowUploadViewForQuickSharePublish;
+- (void)setupProgressViewIfNeeded;
+- (BOOL)shouldAddShowProgressViewWithTask:;
+- (BOOL)isExistTaskOnTab;
+- (BOOL)shouldShowUploadViewForNon24StoryLandingToHotWithTask:;
+- (void)setShouldShowUploadView:;
+- (id)initWithContainer:;
+- (void)setContainer:;
+- (id)container;
+- (id)progressView;
+- (void)setProgressView:;
+- (void).cxx_destruct;
++ (Class)aAWEStudioDOUYINSSAdapterClass;
++ (Class)aAWEStudioPublishAwemeAdapterClass;
+@end

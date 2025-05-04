@@ -1,0 +1,35 @@
+@interface AWEIMTaskCardDetailModel : AWEBaseApiModel
+@property (nonatomic) q showType;
+@property (nonatomic) BOOL unread;
+@property (nonatomic) AWEIMTaskCardStyleAttentionModel missionCardStyleAttentionInfo;
+@property (nonatomic) AWEIMTaskCardStyleListModel missionCardStyleListInfo;
+@property (nonatomic) AWEIMTaskCardStyleDefaultModel missionCardStyleNormalInfo;
+@property (nonatomic) AWEIMTaskCardStyleActivityModel missionCardStyleActivityInfo;
+@property (nonatomic) q missionSource;
+@property (nonatomic) NSString missionId;
+@property (nonatomic) NSString logExtra;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)missionId;
+- (void)setMissionId:;
+- (long long)missionSource;
+- (void)setMissionSource:;
+- (id)missionCardStyleAttentionInfo;
+- (void)setMissionCardStyleAttentionInfo:;
+- (id)missionCardStyleListInfo;
+- (void)setMissionCardStyleListInfo:;
+- (id)missionCardStyleNormalInfo;
+- (void)setMissionCardStyleNormalInfo:;
+- (id)missionCardStyleActivityInfo;
+- (void)setMissionCardStyleActivityInfo:;
+- (void)setUnread:;
+- (void).cxx_destruct;
+- (BOOL)unread;
+- (void)setShowType:;
+- (long long)showType;
++ (id)missionCardStyleAttentionInfoJSONTransformer;
++ (id)missionCardStyleListInfoJSONTransformer;
++ (id)missionCardStyleNormalInfoJSONTransformer;
++ (id)missionCardStyleActivityInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMCycleBannerPageIndicatorView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView currentPageView;
+@property (nonatomic) NSArray pageViewArray;
+@property (nonatomic) Q numberOfPages;
+@property (nonatomic) Q currentPage;
+@property (nonatomic) BOOL hidesForSinglePage;
+@property (nonatomic) UIColor pageIndicatorTintColor;
+@property (nonatomic) UIColor currentPageIndicatorTintColor;
+- (void)setCurrentPageView:;
+- (id)currentPageView;
+- (id)pageViewArray;
+- (void)layoutCurrentPageView;
+- (void)setPageViewArray:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (unsigned long long)currentPage;
+- (void)setCurrentPage:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)layoutSubviews;
+- (unsigned long long)numberOfPages;
+- (id)currentPageIndicatorTintColor;
+- (BOOL)hidesForSinglePage;
+- (id)pageIndicatorTintColor;
+- (void)setCurrentPageIndicatorTintColor:;
+- (void)setHidesForSinglePage:;
+- (void)setNumberOfPages:;
+- (void)setPageIndicatorTintColor:;
+- (void)setupSubviews;
+@end

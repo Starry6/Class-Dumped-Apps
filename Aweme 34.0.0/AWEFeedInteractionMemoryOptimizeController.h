@@ -1,0 +1,35 @@
+@interface AWEFeedInteractionMemoryOptimizeController : AWEBaseController
+@property (nonatomic) NSMutableArray cellInfoArr;
+@property (nonatomic) NSInteger memoryLevel;
+@property (nonatomic) BOOL haveRemoved;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureCell:withModel:atIndexPath:;
+- (void)viewDidLoadAfterTableviewSetup;
+- (double)secondDelayForOpt;
+- (void)delayViewDidLoadAfterTableviewSetup;
+- (void)delayViewDidDisappear;
+- (void)delayTableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (void)delayConfigureCell:withModel:atIndexPath:;
+- (void)removeOffScreenCellDirect;
+- (int)secondDisappearForOpt;
+- (void)removeValidCellIfNeed;
+- (void)releaseMemoryForSpecialScene;
+- (void)removeOffScreenCellIfNeed;
+- (void)setHaveRemoved:;
+- (void)checkValidOfCellInfo;
+- (id)beUsedInfoOfCell:;
+- (id)cellInfoArr;
+- (BOOL)haveRemoved;
+- (int)numberValidForCellNotUsed;
+- (void)setCellInfoArr:;
+- (void).cxx_destruct;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (void)viewDidDisappear;
+- (void)appDidEnterBackground;
+- (void)appWillEnterForeground;
+- (void)setMemoryLevel:;
+- (int)memoryLevel;
+@end

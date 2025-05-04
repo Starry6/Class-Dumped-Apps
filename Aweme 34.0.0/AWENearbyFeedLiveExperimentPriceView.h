@@ -1,0 +1,30 @@
+@interface AWENearbyFeedLiveExperimentPriceView : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) UILabel currencySignLabel;
+@property (nonatomic) UILabel finalPriceLabel;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) UILabel secondPriceLabel;
+@property (nonatomic) UILabel marketingToolInfoLabel;
+@property (nonatomic) AWENearbyAtmosphereExpression atmosphereExpression;
+- (void)setAtmosphereExpression:;
+- (id)atmosphereExpression;
+- (id)currencySignLabel;
+- (id)finalPriceLabel;
+- (id)secondPriceLabel;
+- (id)marketingToolInfoLabel;
+- (void)setCurrencySignLabel:;
+- (void)setFinalPriceLabel:;
+- (void)setSecondPriceLabel:;
+- (void)setMarketingToolInfoLabel:;
+- (void)setModel:;
+- (id)initWithModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)updateInfo:;
+- (void)setupUI;
+- (id)countLabel;
+- (void)setCountLabel:;
+- (void)setupLayout;
++ (id)parsePriceInfo:;
++ (id)formatPrice:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMShareChapterPresenterProps : AWEIMUIViewPresenterProps
+@property (nonatomic) AWEIMChapterShareMessageViewModel cellViewModel;
+@property (nonatomic) @? didTapChapter;
+@property (nonatomic) NSString timeString;
+@property (nonatomic) NSString chapterDescString;
+@property (nonatomic) NSString chapterDetailString;
+@property (nonatomic) NSString invisibleString;
+@property (nonatomic) Q chapterStatus;
+@property (nonatomic) BOOL awemeIsAvailable;
+@property (nonatomic) BOOL chatListHasBackgroundImg;
+- (id)cellViewModel;
+- (void)setCellViewModel:;
+- (BOOL)chatListHasBackgroundImg;
+- (void)setInvisibleString:;
+- (void)setChatListHasBackgroundImg:;
+- (id)invisibleString;
+- (unsigned long long)chapterStatus;
+- (void)setChapterStatus:;
+- (void)setDidTapChapter:;
+- (BOOL)awemeIsAvailable;
+- (void)setAwemeIsAvailable:;
+- (id)didTapChapter;
+- (id)chapterDescString;
+- (void)setChapterDescString:;
+- (id)chapterDetailString;
+- (void)setChapterDetailString:;
+- (void).cxx_destruct;
+- (void)setTimeString:;
+- (id)timeString;
+@end

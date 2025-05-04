@@ -1,0 +1,37 @@
+@interface AWESpecialCardOtherFeedControlModel : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSNumber vvLimit;
+@property (nonatomic) NSNumber timeHoursLimit;
+@property (nonatomic) NSNumber timeHoursLimitCounter;
+@property (nonatomic) q lastExemptIndex;
+@property (nonatomic) BOOL didShow;
+@property (nonatomic) Q currentVVCount;
+@property (nonatomic) Q notShowVVCount;
+@property (nonatomic) BOOL isNewNetWorkRequest;
+@property (nonatomic) double lastShowTime;
+- (id)referString;
+- (void)setReferString:;
+- (void)setDidShow:;
+- (void)setLastShowTime:;
+- (double)lastShowTime;
+- (void)setCurrentVVCount:;
+- (unsigned long long)currentVVCount;
+- (void)setNotShowVVCount:;
+- (void)setIsNewNetWorkRequest:;
+- (long long)lastExemptIndex;
+- (unsigned long long)notShowVVCount;
+- (id)vvLimit;
+- (id)timeHoursLimit;
+- (id)timeHoursLimitCounter;
+- (void)setLastExemptIndex:;
+- (id)showStrategyTimeKey;
+- (id)showStrategyTimeLimitCounterKey;
+- (id)showStrategyLastAwemeIDKey;
+- (void)configWithDictionary:referString:;
+- (BOOL)isNewNetWorkRequest;
+- (void)setVvLimit:;
+- (void)setTimeHoursLimit:;
+- (void)setTimeHoursLimitCounter:;
+- (void).cxx_destruct;
+- (BOOL)didShow;
+@end

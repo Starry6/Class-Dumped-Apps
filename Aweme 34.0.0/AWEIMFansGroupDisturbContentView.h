@@ -1,0 +1,35 @@
+@interface AWEIMFansGroupDisturbContentView : UIView
+@property (nonatomic) AWEIMFansGroupDisturbContentProps props;
+@property (nonatomic) UIView baseView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView titleIcon;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel disturbLabel;
+@property (nonatomic) UIView<IESIMSwitchProtocol> disturbSwitch;
+- (void)updateWithProps:;
+- (void)__handleCloseButtonClicked:;
+- (id)disturbLabel;
+- (id)disturbSwitch;
+- (void)setDisturbLabel:;
+- (void)setDisturbSwitch:;
+- (void)__handleDisturbSwitchChanged:;
+- (void)setBaseView:;
+- (id)props;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)baseView;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setTitleIcon:;
+- (id)titleIcon;
+- (void)setProps:;
+@end

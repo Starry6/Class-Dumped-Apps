@@ -1,0 +1,2 @@
+@interface AWEIMTaskCardNaviCollectionViewCellModel : AWEIMCellModel
+@end

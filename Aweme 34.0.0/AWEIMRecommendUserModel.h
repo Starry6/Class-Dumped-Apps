@@ -1,0 +1,33 @@
+@interface AWEIMRecommendUserModel : IESIMBaseApiModel
+@property (nonatomic) q userID;
+@property (nonatomic) NSString secUID;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) IESIMURLModel avatarThumb;
+@property (nonatomic) NSString shortID;
+@property (nonatomic) NSString uniqueID;
+@property (nonatomic) NSArray tags;
+@property (nonatomic) NSArray tagInfo;
+@property (nonatomic) q status;
+- (id)shortID;
+- (id)avatarThumb;
+- (void)setAvatarThumb:;
+- (void)setShortID:;
+- (id)secUID;
+- (void)setSecUID:;
+- (id)tagInfo;
+- (void)setTagInfo:;
+- (id)nickname;
+- (long long)userID;
+- (id)tags;
+- (void)setStatus:;
+- (id)uniqueID;
+- (void)setTags:;
+- (void)setUniqueID:;
+- (void).cxx_destruct;
+- (long long)status;
+- (void)setNickname:;
+- (void)setUserID:;
++ (id)avatarThumbJSONTransformer;
++ (id)tagInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

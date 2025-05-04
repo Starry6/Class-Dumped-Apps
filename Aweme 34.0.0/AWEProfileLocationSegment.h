@@ -1,0 +1,38 @@
+@interface AWEProfileLocationSegment : MTLModel
+@property (nonatomic) NSString firstLetter;
+@property (nonatomic) NSString code;
+@property (nonatomic) NSString cnName;
+@property (nonatomic) NSString enName;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString level;
+@property (nonatomic) NSArray children;
+@property (nonatomic) NSArray profileNewAreaChildren;
+@property (nonatomic) BOOL hasChildren;
+@property (nonatomic) NSNumber geoId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enName;
+- (id)firstLetter;
+- (void)setEnName:;
+- (id)profileNewAreaChildren;
+- (void)setCnName:;
+- (id)cnName;
+- (void)setProfileNewAreaChildren:;
+- (void)setLevel:;
+- (id)children;
+- (id)code;
+- (id)displayName;
+- (id)level;
+- (void)setCode:;
+- (void).cxx_destruct;
+- (void)setChildren:;
+- (id)geoId;
+- (void)setGeoId:;
+- (BOOL)hasChildren;
+- (BOOL)hasChildren;
++ (id)profileNewAreaChildrenJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)childrenJSONTransformer;
+@end

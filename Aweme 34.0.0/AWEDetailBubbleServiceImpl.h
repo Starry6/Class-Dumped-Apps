@@ -1,0 +1,30 @@
+@interface AWEDetailBubbleServiceImpl : NSObject
+@property (nonatomic) <AWEDetailViewModelProtocol> stateContext;
+@property (nonatomic) AWEBizUIBubble welfareHintBubble;
+@property (nonatomic) AWEBizUIBubble favoriteHintBubble;
+@property (nonatomic) DUXPopover welfareDUXPopover;
+@property (nonatomic) DUXPopover favoriteDUXPopover;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)p_getWelfareActivityModel;
+- (void)dismissWelfareHintBubble;
+- (void)setWelfareDUXPopover:;
+- (id)welfareHintBubble;
+- (void)setWelfareHintBubble:;
+- (id)welfareDUXPopover;
+- (id)favoriteDUXPopover;
+- (void)setFavoriteDUXPopover:;
+- (id)favoriteHintBubble;
+- (void)setFavoriteHintBubble:;
+- (void)showFavoriteHintBubbleOverView:anchorView:hintContent:tapBlock:;
+- (void)showWelfareHintBubbleOnView:anchorView:;
+- (void)showFavoriteHintBubbleOnView:anchorView:tapBlock:;
+- (void)showFavoriteHintBubbleOverView:anchorView:tapBlock:;
+- (void)dismissFavoriteHintBubble;
+- (id)initWithStateContext:;
+- (void)setStateContext:;
+- (void).cxx_destruct;
+- (id)stateContext;
+@end

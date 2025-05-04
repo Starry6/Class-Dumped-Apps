@@ -1,0 +1,31 @@
+@interface AWEIMTaskManager : NSObject
+@property (nonatomic) q maxConcurrentCount;
+@property (nonatomic) NSMutableArray tasks;
+@property (nonatomic) NSMutableDictionary tasksMap;
+@property (nonatomic) NSMutableDictionary taskStashPool;
+@property (nonatomic) RxReadWriteLock readWriteLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)readWriteLock;
+- (void)setReadWriteLock:;
+- (void)setMaxConcurrentCount:;
+- (id)taskWithTaskID:;
+- (id)tasksMap;
+- (void)setTasksMap:;
+- (void)removeAllTasks;
+- (void)runTasks;
+- (void)removeTaskByTaskID:;
+- (void)taskStateDidChange:;
+- (id)taskStashPool;
+- (void)__runTasksImmediately:;
+- (void)setTaskStashPool:;
+- (void)addTask:;
+- (void).cxx_destruct;
+- (void)setTasks:;
+- (id)tasks;
+- (void)cancelAllTasks;
+- (id)initWithMaxConcurrentCount:;
+- (long long)maxConcurrentCount;
+@end

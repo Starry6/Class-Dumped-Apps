@@ -1,0 +1,36 @@
+@interface AWEIMHalfScreenMuteSettingsChangeFilterViewController : UIViewController
+@property (nonatomic) AWEIMHalfScreenMuteSettingsViewModel viewModel;
+@property (nonatomic) UICollectionView filterCollectionView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton confirmBtn;
+@property (nonatomic) UIButton backBtn;
+@property (nonatomic) BOOL didClickedConfirm;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backBtn;
+- (void)setBackBtn:;
+- (id)confirmBtn;
+- (void)setConfirmBtn:;
+- (void)__setupUI;
+- (void)__backBtnClicked;
+- (id)filterCollectionView;
+- (void)setFilterCollectionView:;
+- (BOOL)didClickedConfirm;
+- (void)setDidClickedConfirm:;
+- (void)__confirmBtnClicked;
+- (void)viewWillDisappear:;
+- (id)initWithViewModel:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)viewModel;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)preferredContentSize;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)titleLabel;
+@end

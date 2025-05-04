@@ -1,0 +1,32 @@
+@interface AWESocialHeartbeatManager : NSObject
+@property (nonatomic) BOOL paused;
+@property (nonatomic) AWESocialHeartbeatModel heartbeat;
+@property (nonatomic) AWESocialHeartbeatModel localHeartbeat;
+@property (nonatomic) @? nextHeartbeatFetchBlock;
+@property (nonatomic) AWESocialHeartbeatModel currentHeartbeat;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)teenModeDidChange:isLogout:;
+- (void)resumeWithHeaders:;
+- (void)startRoundRobinFetchingHeartbeatWithHeaders:;
+- (void)stopRoundRobinFetchingHeartbeat;
+- (id)currentHeartbeat;
+- (void)setHeartbeat:;
+- (void)setLocalHeartbeat:;
+- (void)setNextHeartbeatFetchBlock:;
+- (id)nextHeartbeatFetchBlock;
+- (void)requestHeartbeatWithHeaders:completion:;
+- (id)localHeartbeat;
+- (void)applicationWillResignActive:;
+- (BOOL)paused;
+- (void)applicationDidBecomeActive:;
+- (id)init;
+- (void)dealloc;
+- (void)setPaused:;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)heartbeat;
++ (id)sharedInstance;
+@end

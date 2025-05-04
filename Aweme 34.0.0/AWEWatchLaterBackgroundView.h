@@ -1,0 +1,34 @@
+@interface AWEWatchLaterBackgroundView : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel mainLabel;
+@property (nonatomic) UILabel subLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIButton actionBtn;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) q style;
+@property (nonatomic) BOOL shouldAdaptBigFont;
+- (id)actionBtn;
+- (void)switchToDefaultUI;
+- (void)switchToActionUI;
+- (void)onActionBtnClicked;
+- (void)setShouldAdaptBigFont:;
+- (void)updateWithMainImgPath:mainTitle:subTitle:;
+- (void)updateWithMainImgPath:mainTitle:subTitle:actionTitle:actionBlock:;
+- (BOOL)shouldAdaptBigFont;
+- (void)setActionBtn:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (long long)style;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setStyle:;
+- (void)setupUI;
+- (void)setActionBlock:;
+- (id)actionBlock;
+- (id)mainLabel;
+- (void)setMainLabel:;
+- (void)setSubLabel:;
+- (id)subLabel;
+@end

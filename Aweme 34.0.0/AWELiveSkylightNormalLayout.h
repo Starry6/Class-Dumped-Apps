@@ -1,0 +1,30 @@
+@interface AWELiveSkylightNormalLayout : UICollectionViewLayout
+@property (nonatomic) NSMutableDictionary cacheCellAttributes;
+@property (nonatomic) NSMutableDictionary cacheHeaderAttributes;
+@property (nonatomic) NSMutableDictionary cacheFooterAttributes;
+@property (nonatomic) double nextItemX;
+@property (nonatomic) q nextZIndex;
+@property (nonatomic) double itemHorizontalSpace;
+- (void)setNextItemX:;
+- (void)setNextZIndex:;
+- (void)setCacheCellAttributes:;
+- (void)setCacheHeaderAttributes:;
+- (void)setCacheFooterAttributes:;
+- (double)nextItemX;
+- (id)buildAttributesWithX:itemType:indexPath:;
+- (id)cacheHeaderAttributes;
+- (double)itemHorizontalSpace;
+- (id)cacheCellAttributes;
+- (id)cacheFooterAttributes;
+- (id)flowLayoutDelegate;
+- (double)attributeYAlignmentBottom:;
+- (long long)nextZIndex;
+- (void)setItemHorizontalSpace:;
+- (void)prepareLayout;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+- (id)collectionViewContentSize;
+- (void).cxx_destruct;
+@end

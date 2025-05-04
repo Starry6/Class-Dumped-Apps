@@ -1,0 +1,2 @@
+@interface AWEPadImplAdapter : NSObject
+@end

@@ -1,0 +1,38 @@
+@interface AWELoginCustomBackgroundView : AWELoginBackgroundView
+@property (nonatomic) AWELoginAmbientView ambientView;
+@property (nonatomic) AWELoginBackgroundViewNavigationBarConfig navBarConfig;
+@property (nonatomic) NSObject<AWEUserLoginUILayoutConfig> layoutConfig;
+@property (nonatomic) NSObject<AWEUserLoginUIAmbientConfig> ambientConfig;
+@property (nonatomic) BOOL isAmbientHeadViewShown;
+@property (nonatomic) BOOL avatarFlag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)setLayoutConfig:;
+- (void)p_updateBackground;
+- (void)showHeaderView;
+- (BOOL)shouldSetupDifferentiatingTheme;
+- (id)ambientConfig;
+- (void)setAmbientConfig:;
+- (void)updateNavigationBarConfig:;
+- (id)aAWEUserLoginThemeAdapter;
+- (id)initWithAvatarFlag:;
+- (void)headerViewLoadImageWithView:;
+- (id)ambientView;
+- (void)setIsAmbientHeadViewShown:;
+- (void)p_updateNavigationBar;
+- (id)navBarConfig;
+- (BOOL)isAmbientHeadViewShown;
+- (void)setAmbientView:;
+- (void)setNavBarConfig:;
+- (void)p_setupThemeIfNeed;
+- (BOOL)avatarFlag;
+- (void)setAvatarFlag:;
+- (void).cxx_destruct;
+- (void)hideHeaderView;
+- (void)updateModel:;
+- (id)layoutConfig;
++ (Class)aAWEUserLoginThemeAdapterClass;
+@end

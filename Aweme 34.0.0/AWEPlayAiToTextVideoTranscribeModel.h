@@ -1,0 +1,33 @@
+@interface AWEPlayAiToTextVideoTranscribeModel : NSObject
+@property (nonatomic) AWEPlayVideoTranscribeResponseModel responeseModel;
+@property (nonatomic) NSMutableAttributedString text;
+@property (nonatomic) NSMutableArray videoParagraphs;
+@property (nonatomic) NSMutableArray videoSentences;
+@property (nonatomic) NSMutableArray searchWordInfos;
+@property (nonatomic) NSInteger paragraphsCount;
+@property (nonatomic) NSInteger sentenceCount;
+@property (nonatomic) @? showLogBlk;
+- (id)videoSentences;
+- (double)getLineHeight;
+- (id)searchWordInfos;
+- (void)setVideoSentences:;
+- (id)videoParagraphs;
+- (void)setVideoParagraphs:;
+- (void)setShowLogBlk:;
+- (void)setResponeseModel:;
+- (id)responeseModel;
+- (void)addParagraphStyleToParagraphs:;
+- (void)addAttributedToSentence:;
+- (void)addAttachmentToSentence:sentence:;
+- (id)showLogBlk;
+- (int)paragraphsCount;
+- (void)setSearchWordInfos:;
+- (void)setParagraphsCount:;
+- (void)setText:;
+- (id)text;
+- (void)setUp;
+- (void).cxx_destruct;
+- (int)sentenceCount;
+- (void)setSentenceCount:;
++ (id)AiToTextVideoTranscribeModelForResponseModel:withShowLogBlk:;
+@end

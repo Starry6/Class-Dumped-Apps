@@ -1,0 +1,35 @@
+@interface AWEPadECommerceBaseSplitManager : AWEPadSplitScreenBaseManager
+@property (nonatomic) UIViewController<AWESplitScreenRightBusinessViewController> rightController;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} originLeftContentViewFrame;
+@property (nonatomic) AWEInsideSplitScreenItemDetail splitDetail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)willQuitSplitScreenToFullRight:;
+- (BOOL)needShowFullRightVCWhenEnterPortrait;
+- (long long)showActionType;
+- (BOOL)needDismissWhenEnterPortrait;
+- (void)setSplitDetail:;
+- (BOOL)needCreateNewBussinessVC;
+- (BOOL)customLeftContentViewLayoutWithOffsetX:;
+- (void)didUpdateLeftContainerViewOffsetX:;
+- (BOOL)canLeftContainerScroll;
+- (BOOL)needDismissWhenUpDownSlide;
+- (BOOL)needUpdateOffsetXWhenScrollWithDirection:;
+- (BOOL)canLeftContainerTapAction;
+- (BOOL)canRightContainerScroll;
+- (BOOL)customPanGestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void)willEnterSplitScreen;
+- (void)didQuitSplitScreenToFullRight:;
+- (BOOL)needDismissWhenDisappear;
+- (BOOL)canHandleViewDidLayoutSubviews;
+- (id)splitDetail;
+- (id)originLeftContentViewFrame;
+- (void)setOriginLeftContentViewFrame:;
+- (void)postInteractionContextKey:;
+- (id)rightController;
+- (BOOL)canLeftContainerTapClose;
+- (void).cxx_destruct;
+- (id)currentInteraction;
+@end

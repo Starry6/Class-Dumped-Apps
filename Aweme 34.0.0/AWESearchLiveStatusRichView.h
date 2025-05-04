@@ -1,0 +1,30 @@
+@interface AWESearchLiveStatusRichView : UIView
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWESearchLiveOnlyStatusView statusView;
+@property (nonatomic) AWESearchLiveInfoView infoView;
+@property (nonatomic) AWESearchLiveAssistLabel assistView;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)assistView;
+- (void)configModel:;
+- (void)setAssistView:;
+- (void)configModel:withAssistText:;
+- (void)tagImageHasDownload;
+- (void)configInfoViewWithModel:;
+- (void)configInfoViewWithTagModel:;
+- (id)accessibilityLabel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)updateUI;
+- (id)infoView;
+- (void)setInfoView:;
+- (void)setStatusView:;
+- (id)statusView;
+@end

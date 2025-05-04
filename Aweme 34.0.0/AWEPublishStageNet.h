@@ -1,0 +1,37 @@
+@interface AWEPublishStageNet : NSObject
+@property (nonatomic) NSMutableArray nodes;
+@property (nonatomic) NSObject<OS_dispatch_queue> concurrentQueue;
+@property (nonatomic) <AWEPublishRunnableStageProtocol> startNode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray allNodes;
+@property (nonatomic) NSArray startNodes;
+@property (nonatomic) <AWEPublishRunnableStageProtocol> endNode;
+@property (nonatomic) AWEPublishFlowModel flowModel;
+- (void)setFlowModel:;
+- (id)flowModel;
+- (void)stage:didChangeStatus:;
+- (void)finishNode:;
+- (void)addNodesIfNeeded:;
+- (void)addEndNodeDependenciesIfNeeded:;
+- (void)setCustomEndNode:;
+- (id)addStartNodes;
+- (id)addEndNode;
+- (BOOL)checkLoop:;
+- (id)concurrentQueue;
+- (id)init;
+- (void)setConcurrentQueue:;
+- (id)allNodes;
+- (void).cxx_destruct;
+- (id)nodes;
+- (void)setNodes:;
+- (void)start;
+- (void)handleEvent:;
+- (id)endNode;
+- (void)setStartNode:;
+- (id)startNode;
+- (id)addNode;
+- (id)startNodes;
+@end

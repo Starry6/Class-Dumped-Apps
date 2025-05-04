@@ -1,0 +1,36 @@
+@interface AWEAdTrackHelper : HTSService
+@property (nonatomic) NSNumber effectivePlayTime;
+@property (nonatomic) AWEURLModel effectivePlayTrackURLList;
+@property (nonatomic) double firstClickTimeInEachLoop;
+@property (nonatomic) BOOL shouldTrackDTV;
+@property (nonatomic) BOOL hasTrackedForThisLoop;
+@property (nonatomic) BOOL hasClickedBeforeEffectivePlayTime;
+@property (nonatomic) <IESVideoPlayerProtocol> playerController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)effectivePlayTime;
+- (void)setEffectivePlayTime:;
+- (id)effectivePlayTrackURLList;
+- (void)setEffectivePlayTrackURLList:;
+- (BOOL)shouldTrackDTV;
+- (BOOL)shouldTrackDTVWithModel:;
+- (void)updateTrackStateWithModelIfNeeded:;
+- (BOOL)hasTrackedForThisLoop;
+- (BOOL)hasClickedBeforeEffectivePlayTime;
+- (void)trackDTVIfNeededWithModel:;
+- (void)trackDTVIfNeededWithAdContext:;
+- (void)fetchQCPXCouponWithModel:extraInfo:context:;
+- (id)bizTagForLive:;
+- (void)setShouldTrackDTV:;
+- (void)setHasTrackedForThisLoop:;
+- (void)setHasClickedBeforeEffectivePlayTime:;
+- (void)liveFetchAdCouponForAudience:;
+- (void)fetchQCPXCouponWithDic:showToast:;
+- (double)firstClickTimeInEachLoop;
+- (void)setFirstClickTimeInEachLoop:;
+- (void)setPlayerController:;
+- (id)playerController;
+- (void).cxx_destruct;
+@end

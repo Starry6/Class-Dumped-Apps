@@ -1,0 +1,34 @@
+@interface AWEIMEmoticonPageDataComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMEmoticonTabDataComponent> tabDataComponent;
+@property (nonatomic) <AWEIMEmoticonPanelDataComponent> panelDataComponent;
+@property (nonatomic) <AWEIMEmoticonPageMapComponent> pageMapComponent;
+@property (nonatomic) <AWEIMEmoticonPanelBoxComponent> boxComponent;
+@property (nonatomic) <AWEIMEmoticonPanelSyncComponent> syncComponent;
+@property (nonatomic) <AWEIMEmoticonDefaultLandingComponent> defaultLandingComponent;
+@property (nonatomic) NSMutableDictionary pageDictionary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (id)boxComponent;
+- (id)syncComponent;
+- (void)setBoxComponent:;
+- (void)setSyncComponent:;
+- (void)reloadThemeInfoArray:;
+- (void)p_handlePanelDataChanged:;
+- (void)p_formatPageArrayWithThemeInfoArray:;
+- (void)p_reloadSelection;
+- (id)panelDataComponent;
+- (id)pageDictionary;
+- (id)pageMapComponent;
+- (id)tabDataComponent;
+- (void)setTabDataComponent:;
+- (void)setPanelDataComponent:;
+- (void)setPageMapComponent:;
+- (id)defaultLandingComponent;
+- (void)setDefaultLandingComponent:;
+- (void)setPageDictionary:;
+- (void).cxx_destruct;
+@end

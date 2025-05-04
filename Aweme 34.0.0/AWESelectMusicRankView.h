@@ -1,0 +1,35 @@
+@interface AWESelectMusicRankView : UIView
+@property (nonatomic) UIImageView rankImageView;
+@property (nonatomic) UILabel rankLabel;
+@property (nonatomic) UILabel rankShadowLabel;
+@property (nonatomic) UILabel desLabel;
+@property (nonatomic) UILabel entranceLabel;
+@property (nonatomic) UIImageView entranceImageView;
+@property (nonatomic) AWEMusicChartRankModel rankModel;
+@property (nonatomic) @? rankClickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)rankModel;
+- (void)setRankModel:;
+- (id)entranceImageView;
+- (void)setEntranceImageView:;
+- (void)setEntranceLabel:;
+- (id)entranceLabel;
+- (id)desLabel;
+- (void)setDesLabel:;
+- (void)enterChart:;
+- (id)rankImageView;
+- (id)rankShadowLabel;
+- (id)rankClickBlock;
+- (void)setRankClickBlock:;
+- (void)setRankImageView:;
+- (void)setRankShadowLabel:;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)configureWithModel:;
+- (id)rankLabel;
+- (void)setRankLabel:;
+@end

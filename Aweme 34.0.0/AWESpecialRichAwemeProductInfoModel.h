@@ -1,0 +1,31 @@
+@interface AWESpecialRichAwemeProductInfoModel : AWEBaseApiModel
+@property (nonatomic) q productId;
+@property (nonatomic) q commentCount;
+@property (nonatomic) q price;
+@property (nonatomic) q maxPrice;
+@property (nonatomic) NSString priceDescriptionString;
+@property (nonatomic) NSString salesString;
+@property (nonatomic) NSString commodityId;
+@property (nonatomic) q commodityType;
+@property (nonatomic) q anchorType;
+- (long long)maxPrice;
+- (void)setMaxPrice:;
+- (id)priceDescriptionString;
+- (void)setPriceDescriptionString:;
+- (id)salesString;
+- (void)setSalesString:;
+- (id)commodityId;
+- (void)setCommodityId:;
+- (long long)commodityType;
+- (void)setCommodityType:;
+- (long long)price;
+- (long long)productId;
+- (void).cxx_destruct;
+- (long long)anchorType;
+- (void)setPrice:;
+- (long long)commentCount;
+- (void)setProductId:;
+- (void)setCommentCount:;
+- (void)setAnchorType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

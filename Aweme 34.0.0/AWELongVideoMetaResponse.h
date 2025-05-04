@@ -1,0 +1,36 @@
+@interface AWELongVideoMetaResponse : AWEBaseApiModel
+@property (nonatomic) AWELVideoAlbumInfoModel albumInfo;
+@property (nonatomic) AWELVideoAppointmentInfoModel appointmentInfo;
+@property (nonatomic) AWELVideoMetaBlockInfoModel blockInfo;
+@property (nonatomic) NSArray episodeList;
+@property (nonatomic) NSArray albumList;
+@property (nonatomic) NSArray entranceInfoList;
+@property (nonatomic) AWETheaterEntranceGuideModel theaterGuideInfo;
+@property (nonatomic) AWELVideoSideBarGuideResponse revistGuideConfig;
+- (id)albumInfo;
+- (void)setAlbumInfo:;
+- (id)episodeList;
+- (void)setEpisodeList:;
+- (void)setAlbumList:;
+- (id)appointmentInfo;
+- (id)entranceInfoList;
+- (void)setAppointmentInfo:;
+- (id)blockInfo;
+- (id)theaterGuideInfo;
+- (void)setTheaterGuideInfo:;
+- (id)revistGuideConfig;
+- (void)setBlockInfo:;
+- (void)setEntranceInfoList:;
+- (void)setRevistGuideConfig:;
+- (void).cxx_destruct;
+- (id)albumList;
++ (id)albumInfoJSONTransformer;
++ (id)episodeListJSONTransformer;
++ (id)albumListJSONTransformer;
++ (id)entranceInfoListJSONTransformer;
++ (id)appointmentInfoJSONTransformer;
++ (id)theaterGuideInfoJSONTransformer;
++ (id)revistGuideConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)blockInfoJSONTransformer;
+@end

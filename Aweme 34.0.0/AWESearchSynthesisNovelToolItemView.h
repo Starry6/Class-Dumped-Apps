@@ -1,0 +1,34 @@
+@interface AWESearchSynthesisNovelToolItemView : UIView
+@property (nonatomic) <AWESearchSynthesisNovelToolItemViewDelegate> delegate;
+@property (nonatomic) UIButton iconButton;
+@property (nonatomic) UILabel badgeLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWESearchSynthesisNovelToolItem item;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL dark;
+- (void)onBtnClick:;
+- (id)initWithItem:delegate:;
+- (void)updateConfigData:;
+- (void)refreshWithDark:;
+- (void)refreshWithEnable:dark:;
+- (void)configSubViews;
+- (void)updateBadge:;
+- (BOOL)enable;
+- (void)refresh;
+- (id)delegate;
+- (void)setItem:;
+- (id)item;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setEnable:;
+- (BOOL)dark;
+- (void)updateImage:;
+- (id)badgeLabel;
+- (void)setBadgeLabel:;
+- (void)setDark:;
+- (id)iconButton;
+- (void)setIconButton:;
+- (void)updateTitle:;
+@end

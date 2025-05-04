@@ -1,0 +1,36 @@
+@interface AWEIMPlayletMessage : AWEIMMessage
+@property (nonatomic) AWEIMPlayletVideoMessageContent content;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString fromUid;
+@property (nonatomic) NSString secFromUid;
+@property (nonatomic) NSString messageID;
+@property (nonatomic) q serverMessageID;
+@property (nonatomic) q aweType;
+@property (nonatomic) q quoteReplyMessageType;
+@property (nonatomic) q messageType;
+@property (nonatomic) q messageState;
+@property (nonatomic) NSDictionary syncedExt;
+@property (nonatomic) NSDictionary localExt;
+@property (nonatomic) <AWEIMMessageProtocol> quoteReplyOriginMessage;
+@property (nonatomic) NSDictionary aiExt;
+@property (nonatomic) NSDictionary aiBusinessExt;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)isSupportForward;
+- (BOOL)isAllowedForward;
+- (id)videoCoverURLs;
+- (id)content;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

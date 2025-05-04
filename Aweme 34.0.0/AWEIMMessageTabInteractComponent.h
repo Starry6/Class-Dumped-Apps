@@ -1,0 +1,38 @@
+@interface AWEIMMessageTabInteractComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMChatListHeaderInterface> headerService;
+@property (nonatomic) <AWEIMMessageTabModeInterface> messageTabService;
+@property (nonatomic) AWEIMInteractListViewController interactListVC;
+@property (nonatomic) BOOL needTrackInteractListVCShowEvent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (id)headerService;
+- (void)hostVC_viewWillAppear;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)hostVC_viewDidAppear;
+- (void)hostVC_viewWillDisappear;
+- (void)setHeaderService:;
+- (BOOL)canShowCurrentHeader;
+- (id)headerViewForChatList;
+- (void)hostViewWillTransitionToSize:withTransitionCoordinator:;
+- (void)onTabBarDidChangeNotification:;
+- (void)listViewControllerWillAppear:;
+- (void)listViewControllerDidAppear:;
+- (void)listViewControllerWillDisappear:;
+- (void)setMessageTabService:;
+- (id)messageTabService;
+- (void)updateInteractWithOffset:;
+- (id)interactListVC;
+- (double)p_interactListVCWidth;
+- (void)interactListVCDidAppear;
+- (void)setNeedTrackInteractListVCShowEvent:;
+- (BOOL)needTrackInteractListVCShowEvent;
+- (void)setInteractListVC:;
+- (void)dealloc;
+- (id)trackIdentifier;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

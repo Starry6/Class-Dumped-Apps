@@ -1,0 +1,35 @@
+@interface AWEShopShareCardInfoModel : MTLModel
+@property (nonatomic) q shopId;
+@property (nonatomic) NSString shopName;
+@property (nonatomic) AWEURLModel shopLogo;
+@property (nonatomic) NSArray tagList;
+@property (nonatomic) NSString score;
+@property (nonatomic) AWEShopXZGInfoModel shopXzgInfo;
+@property (nonatomic) NSArray shopSellingPointTags;
+@property (nonatomic) NSArray shopProductCovers;
+@property (nonatomic) q productNum;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tagList;
+- (void)setTagList:;
+- (id)shopLogo;
+- (id)shopName;
+- (long long)shopId;
+- (void)setShopLogo:;
+- (void)setShopName:;
+- (void)setShopId:;
+- (long long)productNum;
+- (id)shopProductCovers;
+- (id)shopXzgInfo;
+- (id)shopSellingPointTags;
+- (void)setShopXzgInfo:;
+- (void)setShopSellingPointTags:;
+- (void)setShopProductCovers:;
+- (void)setScore:;
+- (id)score;
+- (void).cxx_destruct;
++ (id)tagListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

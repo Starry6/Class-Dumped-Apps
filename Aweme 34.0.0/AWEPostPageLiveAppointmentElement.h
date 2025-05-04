@@ -1,0 +1,36 @@
+@interface AWEPostPageLiveAppointmentElement : AWEPostPageAnchorCheckCellElement
+@property (nonatomic) AWENewPublishTableCell liveAppointCell;
+@property (nonatomic) <AWELiveAnnouncementFinishModelProtocol> announcementFinishModel;
+@property (nonatomic) NSDictionary extras;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)liveModuleService;
+- (id)p_trackParams;
+- (void)elementAppear;
+- (id)announcementFinishModel;
+- (void)setAnnouncementFinishModel:;
+- (void)cleanAnnouncementFinishModel;
+- (void)didSelectAnchorWithType:anchorDismissBlock:enterFromType:;
+- (void)addAIAnchorWithType:anchorDismissBlock:;
+- (void)refreshWithAnchorVM:;
+- (void)configPlaceholderUI;
+- (BOOL)canHandleAnchorType:;
+- (id)liveAppointCell;
+- (BOOL)hasLiveAppointmentSticker;
+- (void)cancleSelectedArticle;
+- (id)liveAppointmentAnchorModel;
+- (void)p_openAnnouncementPanel;
+- (void)didSelectAnnouncement:;
+- (void)setLiveAppointCell:;
+- (void)cleanUp;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)cell;
+- (id)cellIdentifier;
+- (void)didSelect;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

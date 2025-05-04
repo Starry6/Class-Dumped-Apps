@@ -1,0 +1,2 @@
+@interface AWEDCFeedSkeletonSectionViewModel : AWEDCFeedBaseSectionViewModel
+@end

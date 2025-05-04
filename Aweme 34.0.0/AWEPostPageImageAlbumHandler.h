@@ -1,0 +1,38 @@
+@interface AWEPostPageImageAlbumHandler : NSObject
+@property (nonatomic) AWEPostPageContext context;
+@property (nonatomic) AWEPostPageImageAlbumServiceDependencies dependencies;
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) q shoudlEndTitleInputSignal;
+@property (nonatomic) q shouldExitTitleInputSignal;
+@property (nonatomic) <AWEPostPageSlidesService> slidesService;
+@property (nonatomic) <AWENewPublishImageAlbumTableViewCellActionDelegate> cellEventsProxy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)editService;
+- (id)imageAlbumMixed;
+- (void)bindServices:;
+- (id)slidesService;
+- (void)prepareForCanvasPublishAsImageAlbum;
+- (void)resetCanvasPublishAsImageRuntimeVaulesWhenPublishWillStartIfNeed;
+- (void)setImageAlbumEditedIfNeeded;
+- (void)sendShoudlEndTitleInputSignal;
+- (void)reloadCurrentImageData;
+- (id)cellEventsProxy;
+- (void)setSlidesService:;
+- (long long)shoudlEndTitleInputSignal;
+- (void)setShoudlEndTitleInputSignal:;
+- (long long)shouldExitTitleInputSignal;
+- (void)setShouldExitTitleInputSignal:;
+- (void)sendshouldExitTitleInputSignal;
+- (void)setCellEventsProxy:;
+- (id)dependencies;
+- (id)observers;
+- (void)addObserver:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setObservers:;
+- (void)setDependencies:;
+@end

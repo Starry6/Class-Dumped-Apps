@@ -1,0 +1,35 @@
+@interface AWERadarGameViewController : UIViewController
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWERadarGameManager manager;
+@property (nonatomic) NSArray gameList;
+@property (nonatomic) double contentHeight;
+@property (nonatomic) NSMutableArray trackArray;
+@property (nonatomic) UILabel sectionLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameList;
+- (void)setGameList:;
+- (void)updateContentHeight;
+- (void)fetchGameList:;
+- (id)sectionLabel;
+- (void)transToGameCall;
+- (void)setSectionLabel:;
+- (id)collectionView;
+- (void)setManager:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)viewDidLoad;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (double)contentHeight;
+- (id)manager;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setContentHeight:;
+- (double)cellWidth;
+- (void)setTrackArray:;
+- (id)trackArray;
+@end

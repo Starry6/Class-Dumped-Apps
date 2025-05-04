@@ -1,0 +1,36 @@
+@interface AWEPOIDetailNGPOIMallFilterComponentViewModel : DitoComponentViewModel
+@property (nonatomic) DitoNode node;
+@property (nonatomic) double originHeight;
+@property (nonatomic) double currentHeight;
+@property (nonatomic) BOOL isDataError;
+@property (nonatomic) AWEPOIDetailNGPOIMallFilterComponentView componentView;
+@property (nonatomic) NSArray filterModels;
+- (id)extraParams;
+- (void)setOriginHeight:;
+- (double)originHeight;
+- (void)setCurrentHeight:;
+- (id)channelParams;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (void)didHalfContainerOffsetChange:offset:;
+- (void)vsdContainer:offsetChange:;
+- (void)didClickTag:;
+- (id)merchantParams;
+- (id)filterModels;
+- (void)showFilterIfNeed;
+- (BOOL)isDataError;
+- (void)trackDataError:;
+- (void)initFilterParams;
+- (void)setParamsIntoSessionInfo:;
+- (void)scrollTagsViewToTopAnimiated:delayMilliSeconds:completion:;
+- (void)setFilterModels:;
+- (void)setIsDataError:;
+- (id)initWithNode:;
+- (id)node;
+- (double)currentHeight;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setComponentView:;
+- (void)setNode:;
+- (id)requestParams;
+@end

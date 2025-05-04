@@ -1,0 +1,30 @@
+@interface AWEIMSystemMessageTemplate : AWEIMFlexComponent
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEIMComponentManager componentManager;
+- (id)componentContext;
+- (id)componentsNameArrayWithContext:;
+- (id)lazyComponentsNameWithContext:;
+- (void)setComponentManager:;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)onCellWillRenderForCurrentComponent;
+- (void)afterRenderCellDidFinished;
+- (void)assembeSubComponent;
+- (id)bubblePresenter;
+- (id)headerContaienrPresenter;
+- (void)updateTopBottomPadding:bottomPadding:;
+- (void)p_setupProps;
+- (BOOL)p_isBlankGestureEnableFor:;
+- (BOOL)p_isGestureEnableFor:;
+- (void)p_updateUserInteractionEnabled;
+- (id)containerView;
+- (void).cxx_destruct;
+- (id)doubleTapGesture;
+- (id)longPressGesture;
+- (id)bubbleView;
+- (id)componentManager;
++ (BOOL)canCreateComponentWithContext:;
+@end

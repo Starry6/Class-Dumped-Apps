@@ -1,0 +1,33 @@
+@interface AWEImageAdDataModel : MTLModel
+@property (nonatomic) q imageAdType;
+@property (nonatomic) q isHideNativeCard;
+@property (nonatomic) NSNumber nativeCardShowPosition;
+@property (nonatomic) NSNumber showButtonPosition;
+@property (nonatomic) NSNumber changeColorPosition;
+@property (nonatomic) NSDictionary productDataMap;
+@property (nonatomic) double scalingRatio;
+@property (nonatomic) NSArray progressBarArea;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)imageAdType;
+- (id)productDataMap;
+- (id)showButtonPosition;
+- (id)changeColorPosition;
+- (long long)isHideNativeCard;
+- (id)nativeCardShowPosition;
+- (id)progressBarArea;
+- (void)setScalingRatio:;
+- (void)setImageAdType:;
+- (void)setIsHideNativeCard:;
+- (void)setNativeCardShowPosition:;
+- (void)setShowButtonPosition:;
+- (void)setChangeColorPosition:;
+- (void)setProductDataMap:;
+- (double)scalingRatio;
+- (void)setProgressBarArea:;
+- (void).cxx_destruct;
++ (id)productDataMapJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

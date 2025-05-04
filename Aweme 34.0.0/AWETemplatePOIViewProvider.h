@@ -1,0 +1,33 @@
+@interface AWETemplatePOIViewProvider : AWETemplateViewBaseProvider
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWETemplatePOIView barView;
+@property (nonatomic) AWETemplatePOIViewModel viewModel;
+@property (nonatomic) AWETemplateBarModel barModel;
+@property (nonatomic) AWETemplateBarContext barContext;
+@property (nonatomic) AWEPageContext pageContext;
+@property (nonatomic) Q scene;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)barModel;
+- (void)setBarModel:;
+- (void)setBarContext:;
+- (id)barContext;
+- (void)configViewModel;
+- (void)configBarView;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)extraInfo;
+- (id)barView;
+- (void)setBarView:;
+- (void)setExtraInfo:;
++ (Class)viewModelClass;
++ (Class)viewClass;
+@end

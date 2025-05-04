@@ -1,0 +1,35 @@
+@interface AWELivePreStreamLiveDesktopGuideElement : AWELiveBaseElement
+@property (nonatomic) NSDictionary message;
+@property (nonatomic) BOOL hasEnterRoom;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enterFrom;
+- (void)initializeElement;
+- (BOOL)shouldDesktopChannelGuideEvadeWithScene:enterFrom:;
+- (void)desktopChannelGuideShowFailedWithScene:enterFrom:guideType:error:extraParams:;
+- (unsigned long long)elementConfig;
+- (void)showComponentWithPitayaMessage:;
+- (void)onUserEnterLiveRoom:;
+- (void)onUserQuitLiveRoom:;
+- (void)streamPlayer_startToPlay;
+- (void)showLiveAlertElementWithCompletion:;
+- (id)createRequestModel;
+- (void)setHasEnterRoom:;
+- (BOOL)hasEnterRoom;
+- (void)showDesktopLiveChannelGuide;
+- (void)desktopChannelGuideAlreadyShowWithScene:enterFrom:guideType:extraParams:;
+- (BOOL)isShowing;
+- (void)dealloc;
+- (id)message;
+- (unsigned long long)priority;
+- (void).cxx_destruct;
+- (void)setMessage:;
+- (void)reset;
+- (id)sceneType;
+- (id)elementView;
+- (void)setIsShowing:;
++ (BOOL)shouldActivateElement;
+@end

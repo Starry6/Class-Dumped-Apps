@@ -1,0 +1,33 @@
+@interface AWESearchVideoCardKeyPhraseTextComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWESearchVideoCardBottomTextView bottomTextView;
+@property (nonatomic) AWEGeneralSearchVideoCardModel bindedModel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL currentModelFromSetupModelOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bottomTextView;
+- (void)setBottomTextView:;
+- (id)playerProvider;
+- (void)clickTimestamp;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewDidStartShowing;
+- (id)broadcastProtocolList;
+- (void)setBindedModel:;
+- (id)bindedModel;
+- (void)setModelOnly:;
+- (void)setCurrentModelFromSetupModelOnly:;
+- (BOOL)currentModelFromSetupModelOnly;
+- (void)setModel:;
+- (id)init;
+- (id)contentView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
+- (void)setupUI;
++ (id)componentSizeForModel:width:;
++ (id)calculateSizeWithModel:Width:;
+@end

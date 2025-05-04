@@ -1,0 +1,35 @@
+@interface AWELuckyCatNewExperienceTaskResourceInfo : MTLModel
+@property (nonatomic) AWELuckyCatNewExperienceTaskLottieInfo expAwardLottieInfo;
+@property (nonatomic) AWELuckyCatNewExperienceTaskLottieInfo rollAwardLottieInfo;
+@property (nonatomic) AWELuckyCatNewExperienceTaskLottieInfo goldAwardLottieInfo;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv1Image;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv2Image;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv3Image;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv4Image;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv5Image;
+@property (nonatomic) AWELuckyCatNewExperienceTaskImageInfo lv6Image;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)expAwardLottieInfo;
+- (void)setExpAwardLottieInfo:;
+- (id)rollAwardLottieInfo;
+- (void)setRollAwardLottieInfo:;
+- (id)goldAwardLottieInfo;
+- (void)setGoldAwardLottieInfo:;
+- (id)lv1Image;
+- (void)setLv1Image:;
+- (id)lv2Image;
+- (void)setLv2Image:;
+- (id)lv3Image;
+- (void)setLv3Image:;
+- (id)lv4Image;
+- (void)setLv4Image:;
+- (id)lv5Image;
+- (void)setLv5Image:;
+- (id)lv6Image;
+- (void)setLv6Image:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

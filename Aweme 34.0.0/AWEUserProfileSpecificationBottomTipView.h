@@ -1,0 +1,31 @@
+@interface AWEUserProfileSpecificationBottomTipView : UIView
+@property (nonatomic) AWEUserProfileSpecificationBottomTip bottomTip;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIButton contentView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton closeBtn;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)configWithModel:;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (void)closeBtnTapped;
+- (void)p_themeDidChange;
+- (void)setBottomTip:;
+- (id)bottomTip;
+- (void)p_setupSubviewsWithPushTip:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (id)contentView;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)hitTest:withEvent:;
+- (void)didShow;
+- (void)setIconImageView:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setupSubviews;
+- (void)jump;
+@end

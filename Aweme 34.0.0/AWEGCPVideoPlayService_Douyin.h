@@ -1,0 +1,32 @@
+@interface AWEGCPVideoPlayService_Douyin : NSObject
+@property (nonatomic) @? trackAwemePlayTime;
+@property (nonatomic) @? requestOutFlowIfNeed;
+@property (nonatomic) IESGCPPlayerTransitionContext transitionContextWrapper;
+@property (nonatomic) q firstIndexInMixOfData;
+@property (nonatomic) NSMutableArray dataSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackAwemePlayTime;
+- (void)setTrackAwemePlayTime:;
+- (void)detailTableViewController:willDisplayCell:forRowAtIndexPath:model:;
+- (void)detailTableViewController:scrollDidEndAtIndexPath:model:;
+- (void)detailTableViewControllerWillDisappear:currentAwemeModel:;
+- (void)enterDetailWithDataManager:fromContextProvider:index:trackAwemePlayTime:requestOutFlowIfNeed:referString:enablePlayList:withExtra:;
+- (void)enterDetailWithGCPAwemeModels:fromContextProvider:index:trackAwemePlayTime:referString:enablePlayList:withExtra:;
+- (Class)videoPlayManagerClass;
+- (id)getIESGCPPlayVideoViewController;
+- (id)getIESGCPLivePlayerView;
+- (void)setFirstIndexInMixOfData:;
+- (long long)firstIndexInMixOfData;
+- (id)transitionContextWrapper;
+- (void)setRequestOutFlowIfNeed:;
+- (id)addMixItemsListToDict:models:;
+- (void)trackAwemePlayTimeIfNeedWithDetailVC:;
+- (id)requestOutFlowIfNeed;
+- (void)setTransitionContextWrapper:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+@end

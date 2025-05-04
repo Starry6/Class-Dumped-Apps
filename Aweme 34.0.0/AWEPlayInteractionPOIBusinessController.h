@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionPOIBusinessController : AWEPlayInteractionBaseController
+@property (nonatomic) AWEPlayInteractionAnchorViewModel anchorViewModel;
+@property (nonatomic) BOOL isHide;
+@property (nonatomic) <AWEPlayInteractionPOIBusinessCardProtocol> poiBusinessCardManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHide:;
+- (void)resumeCardAnimation;
+- (void)cancelCardAnimation;
+- (id)poiBusinessCardManager;
+- (id)anchorViewModel;
+- (void)setAnchorViewModel:;
+- (void)setPOIBusinessManagerModel:;
+- (BOOL)poiBusinessCardIsShowing;
+- (BOOL)isHide;
+- (id)localLifeAnchorManager;
+- (void)setIsHide:;
+- (id)exposedCommonCommerceDelegate;
+- (void)p_showPOIBusinessCardWithMediaPlayedSeconds:videoDuration:loopTimes:;
+- (void)poiBusinessCardViewAppearing;
+- (void)poiBusinessCardViewDisappearing;
+- (id)poiBusinessCardViewDisplay;
+- (void)poiBusinessCardViewOpenDetail;
+- (void)poiBusinessCardDataLoadSuccess;
+- (void)poiBusinessCardBeginShowCard;
+- (void)poiBusinessCardShowCardEndding;
+- (void)setPoiBusinessCardManager:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+@end

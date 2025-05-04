@@ -1,0 +1,31 @@
+@interface AWEIMMuteSettingsModel : NSObject
+@property (nonatomic) <IESIMConversationProtocol> conversation;
+@property (nonatomic) UIImage icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSArray heads;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) NSArray firstSection;
+@property (nonatomic) NSArray secondSection;
+- (id)secondSection;
+- (long long)__currentMuteType;
+- (id)getItemWithMask:;
+- (id)heads;
+- (id)currentMuteString;
+- (void)setHeads:;
+- (void)setFirstSection:;
+- (void)setSecondSection:;
+- (id)firstSection;
+- (id)subtitle;
+- (id)sections;
+- (id)icon;
+- (void)setSubtitle:;
+- (void)setSections:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)conversation;
+- (void)setConversation:;
+- (id)initWithConversation:;
+@end

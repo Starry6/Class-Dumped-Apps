@@ -1,0 +1,35 @@
+@interface AWECountDownViewConfigModel : MTLModel
+@property (nonatomic) NSString toastText;
+@property (nonatomic) NSString anchorStartText;
+@property (nonatomic) NSString anchorEndText;
+@property (nonatomic) NSString startLableColorString;
+@property (nonatomic) NSString completeLableColorString;
+@property (nonatomic) NSString anchorBackgroundURLString;
+@property (nonatomic) NSString completeSchema;
+@property (nonatomic) NSString failureToast;
+@property (nonatomic) NSString completeImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)toastText;
+- (void)setToastText:;
+- (id)anchorStartText;
+- (void)setAnchorStartText:;
+- (id)anchorEndText;
+- (void)setAnchorEndText:;
+- (id)startLableColorString;
+- (void)setStartLableColorString:;
+- (id)completeLableColorString;
+- (void)setCompleteLableColorString:;
+- (id)anchorBackgroundURLString;
+- (void)setAnchorBackgroundURLString:;
+- (id)completeSchema;
+- (void)setCompleteSchema:;
+- (id)failureToast;
+- (void)setFailureToast:;
+- (id)completeImage;
+- (void)setCompleteImage:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

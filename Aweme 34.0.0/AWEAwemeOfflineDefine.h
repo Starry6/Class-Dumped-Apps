@@ -1,0 +1,2 @@
+@interface AWEAwemeOfflineDefine : NSObject
+@end

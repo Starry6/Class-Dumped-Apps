@@ -1,0 +1,36 @@
+@interface AWERelatedVideoInfoModel : MTLModel
+@property (nonatomic) NSString barName;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) NSString source;
+@property (nonatomic) q jumpStyle;
+@property (nonatomic) q jumpXiguaType;
+@property (nonatomic) q type;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString jumpConfirmTitle;
+@property (nonatomic) AWERelatedVideoJumpConfirmParamModel jumpConfirmModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (id)jumpConfirmTitle;
+- (void)setJumpConfirmTitle:;
+- (id)barName;
+- (void)setBarName:;
+- (long long)jumpStyle;
+- (void)setJumpStyle:;
+- (long long)jumpXiguaType;
+- (void)setJumpXiguaType:;
+- (id)jumpConfirmModel;
+- (void)setJumpConfirmModel:;
+- (id)extra;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
++ (id)jumpConfirmModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

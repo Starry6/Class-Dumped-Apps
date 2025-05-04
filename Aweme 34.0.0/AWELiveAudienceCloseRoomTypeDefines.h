@@ -1,0 +1,2 @@
+@interface AWELiveAudienceCloseRoomTypeDefines : NSObject
+@end

@@ -1,0 +1,31 @@
+@interface AWESearchCustomTagComponentModel : AWESearchComponentBasicModel
+@property (nonatomic) NSString text;
+@property (nonatomic) Q type;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString darkTextColor;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString darkBgColor;
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) NSString darkBorderColor;
+- (id)darkBgColor;
+- (void)setDarkBgColor:;
+- (void)setDarkTextColor:;
+- (id)darkBorderColor;
+- (void)setDarkBorderColor:;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (unsigned long long)type;
+- (void)setType:;
+- (unsigned long long)size;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (id)textColor;
+- (id)initWithDictionary:;
+- (id)darkTextColor;
+- (id)bgColor;
+- (void)setBgColor:;
+@end

@@ -1,0 +1,36 @@
+@interface AWESpecialCardSubscribeSheetViewController : UIViewController
+@property (nonatomic) AWESpecialCardSubscribeSheetConfig config;
+@property (nonatomic) UIImageView titleIcon;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIImageView thumbnailView;
+@property (nonatomic) UILabel thumbnailInfoLabel;
+@property (nonatomic) DUXButton leftButton;
+@property (nonatomic) DUXButton rightButton;
+@property (nonatomic) <AWESpecialCardSubscribeSheetViewControllerProtocol> delegate;
+- (void)rightButtonClick:;
+- (void)setupSheetView;
+- (void)updateSheet;
+- (id)thumbnailInfoLabel;
+- (void)leftButtonClick:;
+- (void)setThumbnailInfoLabel:;
+- (void)setConfig:;
+- (void)setLeftButton:;
+- (void)setRightButton:;
+- (id)delegate;
+- (id)leftButton;
+- (id)initWithConfig:;
+- (id)config;
+- (void)viewDidLoad;
+- (id)rightButton;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setTitleIcon:;
+- (id)thumbnailView;
+- (id)titleIcon;
+- (void)setThumbnailView:;
+@end

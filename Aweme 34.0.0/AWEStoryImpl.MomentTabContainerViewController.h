@@ -1,0 +1,32 @@
+@interface AWEStoryImpl.MomentTabContainerViewController : AWEProfileTabContainerViewController
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSString userID;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) BOOL fromHomePage;
+@property (nonatomic) BOOL tabbarHidden;
+@property (nonatomic) BOOL isSplitScreen;
+@property (nonatomic) <AWEStoryTabComponentProtocol> storyTabComponent;
+- (void)setIsSplitScreen:;
+- (BOOL)fromHomePage;
+- (void)setFromHomePage:;
+- (BOOL)tabbarHidden;
+- (void)setTabbarHidden:;
+- (id)storyTabComponent;
+- (void)setStoryTabComponent:;
+- (BOOL)hideSegmentControl;
+- (id)tabItemVCForModel:index:;
+- (void)didSelectItemAtIndex:viewController:isFromRedDot:selectType:;
+- (void)containerViewDidScroll:;
+- (id)user;
+- (void)setUser:;
+- (id)userID;
+- (id)collectionView;
+- (void)viewDidLoad;
+- (void)setCollectionView:;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (void)setUserID:;
+- (BOOL)isSplitScreen;
+- (id)getContentOffset;
+@end

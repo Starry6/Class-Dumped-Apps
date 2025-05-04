@@ -1,0 +1,33 @@
+@interface AWEIMMixVideoMessageContent : AWEIMMessageContent
+@property (nonatomic) NSArray videoCoverURLs;
+@property (nonatomic) NSArray videoCoverItems;
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) NSString mixVideoName;
+@property (nonatomic) q playCount;
+@property (nonatomic) NSString mixVideoId;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) q mixType;
+@property (nonatomic) NSDictionary mixExtra;
+- (id)mixExtra;
+- (long long)mixType;
+- (void)setMixExtra:;
+- (void)setMixType:;
+- (id)videoCoverItems;
+- (id)mixVideoId;
+- (id)mixVideoName;
+- (void)setMixVideoName:;
+- (void)setVideoCoverURLs:;
+- (void)setVideoCoverItems:;
+- (void)setMixVideoId:;
+- (id)videoCoverURLs;
+- (long long)playCount;
+- (void).cxx_destruct;
+- (void)setPlayCount:;
+- (id)initWithDictionary:;
+- (id)copyWithZone:;
+- (id)contentDictionary;
+- (id)authorID;
+- (void)setAuthorID:;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

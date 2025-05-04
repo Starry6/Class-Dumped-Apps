@@ -1,0 +1,37 @@
+@interface AWEVideoCoverFontChooseCollectionCell : UICollectionViewCell
+@property (nonatomic) NSString currentThumbURLString;
+@property (nonatomic) UIImageView thumbImageView;
+@property (nonatomic) UIImageView downloadImageView;
+@property (nonatomic) UIImageView loadingImageView;
+@property (nonatomic) UIImage originThumbImage;
+@property (nonatomic) AWEStoryFontModel fontModel;
+@property (nonatomic) UILabel titleLabel;
+- (void)setupSubViews;
+- (void)setDownloadImageView:;
+- (id)downloadImageView;
+- (void)setThumbImageView:;
+- (id)thumbImageView;
+- (void)setFontModel:;
+- (id)fontModel;
+- (void)resetCell;
+- (void)setCurrentThumbURLString:;
+- (void)setOriginThumbImage:;
+- (id)originThumbImage;
+- (id)createRotationAnimation;
+- (void)refreshFont;
+- (void)updatePlaceholderImage;
+- (id)currentThumbURLString;
+- (void)stopDownloadAnimationWithSuccess:;
+- (void)startDownloadAnimation;
+- (void)disableCell;
+- (void)refreshWithFontDownloadState;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setSelected:;
+- (id)loadingImageView;
+- (void)setLoadingImageView:;
++ (id)reuseIdentifierKey;
+@end

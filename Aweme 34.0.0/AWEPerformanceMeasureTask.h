@@ -1,0 +1,37 @@
+@interface AWEPerformanceMeasureTask : NSObject
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber loadingViewAppearedTime;
+@property (nonatomic) NSNumber responseReceivedTime;
+@property (nonatomic) NSNumber viewDisplayedTime;
+@property (nonatomic) BOOL invalid;
+@property (nonatomic) NSString event;
+@property (nonatomic) NSString eventType;
+@property (nonatomic) NSString enterFrom;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)initWithEvent:eventType:enterFrom:;
+- (void)firstShowInterrupted:;
+- (void)viewDisplayed;
+- (void)loadingViewAppeared;
+- (id)loadingViewAppearedTime;
+- (void)setLoadingViewAppearedTime:;
+- (id)responseReceivedTime;
+- (void)setResponseReceivedTime:;
+- (void)setViewDisplayedTime:;
+- (id)viewDisplayedTime;
+- (void)setEventType:;
+- (id)init;
+- (id)eventType;
+- (void)setStartTime:;
+- (void)setEvent:;
+- (void)setInvalid:;
+- (void)invalidate;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)event;
+- (id)startTime;
+- (BOOL)invalid;
+- (void)responseReceived;
++ (void)trackEnterPage:;
++ (id)networkType;
+@end

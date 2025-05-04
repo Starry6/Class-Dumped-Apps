@@ -1,0 +1,31 @@
+@interface AWEFeedMultiTabSegmentedMaskView : UIView
+@property (nonatomic) double maskWidth;
+@property (nonatomic) double leftMaskAlpha;
+@property (nonatomic) double rightMaskAlpha;
+@property (nonatomic) CAGradientLayer maskLayer;
+@property (nonatomic) UIScrollView associatedScrollView;
+@property (nonatomic) NSValue maskFrameValue;
+@property (nonatomic) @? getLeftTotalOffset;
+- (void)setMaskRasterizeIfNeeded;
+- (void)setMaskFrame:;
+- (void)updateMaskLayer;
+- (void)bindScrollView:;
+- (id)initWithMaskWidth:;
+- (double)rightMaskAlpha;
+- (double)maskWidth;
+- (void)setAssociatedScrollView:;
+- (id)associatedScrollView;
+- (double)leftMaskAlpha;
+- (void)setMaskFrameValue:;
+- (id)getLeftTotalOffset;
+- (void)setLeftMaskAlpha:;
+- (void)setRightMaskAlpha:;
+- (id)maskFrameValue;
+- (void)setGetLeftTotalOffset:;
+- (void)setMaskWidth:;
+- (id)visibleRect;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)maskLayer;
+- (void)setMaskLayer:;
+@end

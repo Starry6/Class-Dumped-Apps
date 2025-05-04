@@ -1,0 +1,35 @@
+@interface AWEIMXmojiIntroductionView : UIView
+@property (nonatomic) UIImageView leftIntroIconImgView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) NSArray exampleViews;
+@property (nonatomic) NSDictionary context;
+- (void)actionButtonClicked:;
+- (void)addSubviews;
+- (id)leftIntroIconImgView;
+- (void)setLeftIntroIconImgView:;
+- (void)configWithViewModel;
+- (id)createActionButton;
+- (id)createExampleImageView;
+- (id)stackViewWithSubviews:;
+- (double)getTopInset;
+- (id)exampleViews;
+- (void)setExampleViews:;
+- (id)stackView;
+- (void)setStackView:;
+- (void)setSubtitleLabel:;
+- (id)initWithContext:;
+- (void)commonInit;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+- (id)subtitleLabel;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)updateWithContext:;
+- (void)setUpConstraints;
+@end

@@ -1,0 +1,2 @@
+@interface _TtGC20AWECommentSwiftBizUI11ContextWeakCSo15AWERLComponent2_ : _TtCs12_SwiftObject
+@end

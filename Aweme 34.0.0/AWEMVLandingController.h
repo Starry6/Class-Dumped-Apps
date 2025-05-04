@@ -1,0 +1,36 @@
+@interface AWEMVLandingController : AWEDCFeedBaseController
+@property (nonatomic) NSDictionary currentLandingParams;
+@property (nonatomic) <AWEMVLandingStrategyProtocol> currentStrategy;
+@property (nonatomic) BOOL isViewDidLoad;
+@property (nonatomic) BOOL firstLoadNeedAppendData;
+@property (nonatomic) AWEMVChannelPageContext mvContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithRouterParamDict:;
+- (void)containerBeforeViewDidLoad;
+- (BOOL)isViewDidLoad;
+- (void)setIsViewDidLoad:;
+- (void)setCurrentStrategy:;
+- (id)mvContext;
+- (void)setMvContext:;
+- (void)willRequestWithContext:;
+- (BOOL)shouldInterceptFetchWithContext:completion:;
+- (BOOL)autoAttachToDataController:;
+- (id)forceInsertItemsWithContext:;
+- (void)landingWithParams:;
+- (id)currentLandingParams;
+- (void)handleLandingIfNeededWithParams:;
+- (void)preloadBannerCoverIfNeed;
+- (void)setCurrentLandingParams:;
+- (BOOL)shouldDisableFirstRenderCache;
+- (BOOL)firstLoadNeedAppendData;
+- (void)setFirstLoadNeedAppendData:;
+- (BOOL)needAppendDataModeWithRequestInfo:;
+- (void)handleRefresh;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)containerViewDidLoad;
+- (id)currentStrategy;
+@end

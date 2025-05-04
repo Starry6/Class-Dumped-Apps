@@ -1,0 +1,31 @@
+@interface AWEAwemeLongPressDislikeContainerCell : UICollectionViewCell
+@property (nonatomic) NSArray models;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) @? buttonClickedTrackBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (id)buttonClickedTrackBlock;
+- (void)setButtonClickedTrackBlock:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContainerView:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)models;
+- (void)setupUI;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+@end

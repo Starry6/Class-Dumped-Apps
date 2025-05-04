@@ -1,0 +1,2 @@
+@interface AWEDarkForestABRegister : NSObject
+@end

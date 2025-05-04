@@ -1,0 +1,30 @@
+@interface AWEIMUnreadMessagesConsumer_B2CReachOutMessages : AWEIMBaseUnreadMessagesConsumer
+@property (nonatomic) NSString strangerBoxLatestMsgBelongingCid;
+@property (nonatomic) <AWEIMChatListHintProviderUpdateHintInterface> updateHintInterface;
+- (void)afterInitialComponentAllResolved:;
+- (unsigned long long)typeOfProvidingHint;
+- (unsigned long long)priorityOfProvidingHint;
+- (BOOL)isCompatibleWithTimeText;
+- (id)targetFilterOption;
+- (id)targetFilterOptionsForUnreadMessagesInChat:;
+- (id)generateHintForConversation:filterOption:;
+- (BOOL)handleUnreadMessagesFromDB:conversationId:filterOption:;
+- (id)onConversationDataSourceMessagesCreated:con:;
+- (void)setUpdateHintInterface:;
+- (BOOL)canQueryWithStrangerCon:;
+- (void)setStrangerBoxLatestMsgBelongingCid:;
+- (void)setHasValidMessageWithConversationId:filterOption:hasValid:;
+- (id)generateHintForStrangerConversation:filterOptions:;
+- (id)generateHintForStrangerConversation:filterOption:;
+- (void)__tryUpdateStrangerBoxHint:filterOption:;
+- (BOOL)hasValidMessageWithConversationId:filterOption:;
+- (id)strangerBoxLatestMsgBelongingCid;
+- (id)updateHintInterface;
+- (id)generateHintModelForStrangerConversation:filterOptions:;
+- (BOOL)canQueryWithCon:;
+- (BOOL)hasValidMessageFromMessages:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (BOOL)enableConsumer;
+@end

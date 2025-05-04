@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionDislikeElementManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)dislikeButtonText;
++ (BOOL)enablePanelDislikeOptimizationWithModel:referString:;
++ (id)dislikeButtonTextForPanel:;
++ (BOOL)shouldEnablePanelDislikeProgress;
++ (BOOL)shouldCancelVibrator;
++ (BOOL)autoScrollToNextAfterDislike;
++ (long long)notiType;
++ (id)dislikeButtonTitle;
++ (void)onOptimizedDislikeButtonClickedFinishedWithMethodType:model:referString:;
++ (id)dislikeWithDrawPanelTitleText;
++ (id)dislikeWithDrawPanelSubTitleText;
++ (id)dislikeButtonTextForCanWithDraw;
++ (id)textAfterDislike;
++ (BOOL)validSceneForPanelDislikeOptimization:;
++ (void)withdratDislikeWithModel:referString:;
++ (id)configsOptimization;
++ (id)shrinkAndCancelVibratorConfig;
++ (id)dislikeWithDrawTagText;
++ (id)dislikeTagText;
++ (id)getDislikeTagView;
++ (BOOL)shouldOptimizedNewDislikeElement;
++ (BOOL)shouldEnableDislikeStyleOptimization;
++ (unsigned long long)dislikeIconStyleInOptimization;
++ (BOOL)shouldShrinkDislikeButton;
++ (id)configs;
+@end

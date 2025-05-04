@@ -1,0 +1,34 @@
+@interface AWEECJumpToMallContextModel : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEJumpToMallConfigModel grassConfig;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEJumpToMallClientExtra clientExtra;
+@property (nonatomic) double grassTime;
+@property (nonatomic) NSString productId;
+@property (nonatomic) AWEECBubbleInfo bubbleInfo;
+@property (nonatomic) NSDictionary pitayaInfo;
+@property (nonatomic) AWEECJumpTabInfo replaceJumpTabInfo;
+@property (nonatomic) NSString triggerSource;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)clientExtra;
+- (void)setClientExtra:;
+- (id)bubbleInfo;
+- (void)setBubbleInfo:;
+- (id)grassConfig;
+- (void)setPitayaInfo:;
+- (void)setReplaceJumpTabInfo:;
+- (double)grassTime;
+- (void)setGrassConfig:;
+- (void)setGrassTime:;
+- (id)pitayaInfo;
+- (id)replaceJumpTabInfo;
+- (id)productId;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setProductId:;
+- (void)setTriggerSource:;
+- (id)triggerSource;
+@end

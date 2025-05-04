@@ -1,0 +1,35 @@
+@interface AWENearbyTransformerAutoRefreshModel : NSObject
+@property (nonatomic) q sceneType;
+@property (nonatomic) q cardType;
+@property (nonatomic) q action;
+@property (nonatomic) q forceRefresh;
+@property (nonatomic) NSString refreshData;
+@property (nonatomic) NSDictionary updateData;
+@property (nonatomic) q refreshReasonType;
+@property (nonatomic) q shouldRefresh;
+@property (nonatomic) double expireTimeInterval;
+@property (nonatomic) NSString logId;
+- (id)logId;
+- (void)setLogId:;
+- (void)setUpdateData:;
+- (long long)shouldRefresh;
+- (void)setShouldRefresh:;
+- (id)logDictionary;
+- (id)initWithSceneType:cardType:action:forceRefresh:refreshData:refreshReasonType:updateData:shouldRefresh:expireTimeInterval:logId:;
+- (double)expireTimeInterval;
+- (void)setRefreshData:;
+- (void)setRefreshReasonType:;
+- (void)setExpireTimeInterval:;
+- (long long)refreshReasonType;
+- (void)setAction:;
+- (long long)action;
+- (long long)forceRefresh;
+- (void).cxx_destruct;
+- (long long)sceneType;
+- (void)setSceneType:;
+- (long long)cardType;
+- (void)setCardType:;
+- (id)updateData;
+- (void)setForceRefresh:;
+- (id)refreshData;
+@end

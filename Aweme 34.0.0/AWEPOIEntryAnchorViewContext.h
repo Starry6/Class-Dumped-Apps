@@ -1,0 +1,30 @@
+@interface AWEPOIEntryAnchorViewContext : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) @ player;
+@property (nonatomic) NSDictionary contextDict;
+@property (nonatomic) @ poiPlayInteractionVCManager;
+@property (nonatomic) UIResponder btmResponder;
+@property (nonatomic) NSString btm;
+@property (nonatomic) NSString btmStandData;
+- (id)referString;
+- (void)setEnterMethod:;
+- (id)aweme;
+- (void)setReferString:;
+- (void)setAweme:;
+- (id)contextDict;
+- (void)setContextDict:;
+- (id)enterMethod;
+- (void)setBtmResponder:;
+- (id)btm;
+- (void)setBtm:;
+- (id)btmStandData;
+- (void)setBtmStandData:;
+- (id)btmResponder;
+- (void)setPoiPlayInteractionVCManager:;
+- (id)poiPlayInteractionVCManager;
+- (id)player;
+- (void)setPlayer:;
+- (void).cxx_destruct;
+@end

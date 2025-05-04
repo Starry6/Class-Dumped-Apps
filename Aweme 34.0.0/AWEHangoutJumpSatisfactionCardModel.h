@@ -1,0 +1,38 @@
+@interface AWEHangoutJumpSatisfactionCardModel : MTLModel
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString lightBgImageUrl;
+@property (nonatomic) NSString darkBgImageUrl;
+@property (nonatomic) NSString projectID;
+@property (nonatomic) NSString parentID;
+@property (nonatomic) NSString taskID;
+@property (nonatomic) NSNumber index;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lightBgImageUrl;
+- (void)setLightBgImageUrl:;
+- (id)darkBgImageUrl;
+- (void)setDarkBgImageUrl:;
+- (id)projectID;
+- (void)setProjectID:;
+- (id)parentID;
+- (void)setIndex:;
+- (id)schema;
+- (id)index;
+- (void)setSchema:;
+- (void)setStartTime:;
+- (id)endTime;
+- (void)setEndTime:;
+- (void).cxx_destruct;
+- (void)setParentID:;
+- (void)setTaskID:;
+- (id)startTime;
+- (id)taskID;
+- (id)cardID;
+- (void)setCardID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

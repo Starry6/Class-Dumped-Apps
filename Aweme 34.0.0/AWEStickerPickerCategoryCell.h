@@ -1,0 +1,35 @@
+@interface AWEStickerPickerCategoryCell : AWEStickerPickerCategoryBaseCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView yellowDot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)yellowDot;
+- (void)setYellowDot:;
+- (void)setCategoryModel:;
+- (void)categoryDidUpdate;
+- (void)executeTwinkleAnimation;
+- (void)configWithTitle:showYellowDot:;
+- (void)layoutDot;
+- (void)configCollectionImageBackgroundColor:;
+- (void)updateTitleFontWithSelected:size:;
+- (void)configIconImageWithCategoryModel:showYellowDot:;
+- (void)configWithCollectionImage;
+- (void)showYellowDotAnimated:;
+- (id)accessibilityLabel;
+- (void)animationDidStop:finished:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setImageView:;
+- (unsigned long long)accessibilityTraits;
+- (void)setSelected:;
+- (BOOL)isAccessibilityElement;
+- (id)imageView;
+- (void)accessibilityElementDidBecomeFocused;
+- (void)setupSubviews;
+@end

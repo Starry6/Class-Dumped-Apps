@@ -1,0 +1,33 @@
+@interface AWETeenEncyKnowledgeModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber pointID;
+@property (nonatomic) NSNumber wikiID;
+@property (nonatomic) NSString abstract;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) AWEURLModel cover;
+@property (nonatomic) BOOL isNewWiki;
+@property (nonatomic) NSNumber wikiNewID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (void)setOpenURL:;
+- (id)pointID;
+- (id)wikiID;
+- (BOOL)isNewWiki;
+- (id)wikiNewID;
+- (void)setPointID:;
+- (void)setWikiID:;
+- (void)setIsNewWiki:;
+- (void)setWikiNewID:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)abstract;
+- (void)setAbstract:;
+- (id)openURL;
++ (id)coverJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

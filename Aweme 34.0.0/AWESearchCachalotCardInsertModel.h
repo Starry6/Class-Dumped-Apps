@@ -1,0 +1,33 @@
+@interface AWESearchCachalotCardInsertModel : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) q renderType;
+@property (nonatomic) q dataType;
+@property (nonatomic) @ dataModel;
+@property (nonatomic) BOOL useLocateModelIndex;
+@property (nonatomic) q locateModelIndex;
+@property (nonatomic) NSDictionary logData;
+@property (nonatomic) @ renderModel;
+@property (nonatomic) @? beforeInsertBlock;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> insertAfterAnchor;
+- (long long)renderType;
+- (id)renderModel;
+- (void)setRenderModel:;
+- (id)insertAfterAnchor;
+- (void)setInsertAfterAnchor:;
+- (void)setBeforeInsertBlock:;
+- (void)setUseLocateModelIndex:;
+- (void)setLocateModelIndex:;
+- (BOOL)useLocateModelIndex;
+- (long long)locateModelIndex;
+- (id)beforeInsertBlock;
+- (void)setDataType:;
+- (id)logData;
+- (void)setLogData:;
+- (void)setRenderType:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (long long)dataType;
+- (id)dataModel;
+- (void)setDataModel:;
+@end

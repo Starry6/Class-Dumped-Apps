@@ -1,0 +1,30 @@
+@interface AWEIMUnreadMessageConsumer_ConsultRemindation : AWEIMBaseUnreadMessagesConsumer
+@property (nonatomic) BOOL hasEnterpriseModeAccess;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)afterInitialComponentAllResolved:;
+- (unsigned long long)typeOfProvidingHint;
+- (unsigned long long)priorityOfProvidingHint;
+- (BOOL)isCompatibleWithTimeText;
+- (void)__didChangeMessageTabMode:;
+- (BOOL)__canGenerateHintsForConversationId:filterOption:;
+- (BOOL)__filterAndCacheMessagesFrom:conversationId:filterOption:checkUnread:;
+- (id)__processCreatedOrUpdatedMessages:con:checkUnread:;
+- (id)targetFilterOptionsForUnreadMessagesInChat:;
+- (id)generateHintForConversation:filterOption:;
+- (BOOL)handleUnreadMessagesFromDB:conversationId:filterOption:;
+- (id)onConversationDataSourceMessagesUpdated:con:;
+- (id)onConversationDataSourceMessagesCreated:con:;
+- (void)setHasEnterpriseModeAccess:;
+- (BOOL)__canQueryForConsultRemindationWithCon:;
+- (BOOL)hasEnterpriseModeAccess;
+- (long long)hintLineBreakMode;
+- (id)incompatibleMessageTabModes;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (BOOL)enableConsumer;
+@end

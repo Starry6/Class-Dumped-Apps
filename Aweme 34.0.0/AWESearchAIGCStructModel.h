@@ -1,0 +1,31 @@
+@interface AWESearchAIGCStructModel : MTLModel
+@property (nonatomic) q layoutType;
+@property (nonatomic) NSDictionary layoutInfoDict;
+@property (nonatomic) NSArray children;
+@property (nonatomic) NSString dataId;
+@property (nonatomic) NSString renderId;
+@property (nonatomic) NSString nodeId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)layoutInfoDict;
+- (void)setLayoutInfoDict:;
+- (id)children;
+- (void)setLayoutType:;
+- (long long)layoutType;
+- (void).cxx_destruct;
+- (void)setChildren:;
+- (id)renderId;
+- (void)setRenderId:;
+- (id)nodeId;
+- (void)setNodeId:;
+- (id)dataId;
+- (void)setDataId:;
++ (id)layoutTypeJSONTransformer;
++ (id)renderIdJSONTransformer;
++ (id)dataIdJSONTransformer;
++ (id)nodeIdJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)childrenJSONTransformer;
+@end

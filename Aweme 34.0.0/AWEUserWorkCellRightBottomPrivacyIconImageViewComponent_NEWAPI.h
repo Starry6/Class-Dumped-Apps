@@ -1,0 +1,3 @@
+@interface AWEUserWorkCellRightBottomPrivacyIconImageViewComponent_NEWAPI : AWEUserWorkCellPrivacyIconImageViewComponent_NEWAPI
++ (id)componentWithData:context:;
+@end

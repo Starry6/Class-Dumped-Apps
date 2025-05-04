@@ -1,0 +1,2 @@
+@interface _TtCC26AWEHamletCacheSwiftService15ResourceStorage4Node : _TtCs12_SwiftObject
+@end

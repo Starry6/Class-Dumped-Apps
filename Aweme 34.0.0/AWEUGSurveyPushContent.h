@@ -1,0 +1,32 @@
+@interface AWEUGSurveyPushContent : NSObject
+@property (nonatomic) AWEInnerPushCommonView currentView;
+@property (nonatomic) AWEInnerPushCommonViewModel viewModel;
+@property (nonatomic) AWEInnerNotificationRequest request;
+@property (nonatomic) AWEUGSurveyPushModel model;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)handleTapAction;
+- (id)notificationOperator;
+- (BOOL)tapGestureIsEnable:;
+- (void)setNotificationOperator:;
+- (void)updateLeftIcon;
+- (void)updateTitleAreaItems;
+- (void)updateContentArea;
+- (void)updateRightActionArea;
+- (void)setModel:;
+- (id)view;
+- (id)viewModel;
+- (id)model;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)setRequest:;
+- (id)request;
+- (void)updateProperties;
+- (void)setCurrentView:;
+- (id)currentView;
+@end

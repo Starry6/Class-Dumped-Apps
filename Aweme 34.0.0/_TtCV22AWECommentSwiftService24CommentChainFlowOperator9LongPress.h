@@ -1,0 +1,2 @@
+@interface _TtCV22AWECommentSwiftService24CommentChainFlowOperator9LongPress : _TtCs12_SwiftObject
+@end

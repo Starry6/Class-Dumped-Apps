@@ -1,0 +1,33 @@
+@interface AWEBaseAnchorViewManager : NSObject
+@property (nonatomic) <AWEPOIEntryAnchorUtilProtocol> poiAnchorUtil;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWELocalLifeAnchorActionDelegate> anchorDelegate;
+- (void)clickMultiAnchorEventHandler:;
+- (id)poiAnchorUtil;
+- (void)setPoiAnchorUtil:;
+- (id)anchorViewSize;
+- (void)updateAnchorExtraInfoWithExtraInfo:;
+- (void)triggerAnchorEvent:extraInfo:;
+- (void)updateAnchorDataWithDataBuilder:;
+- (void)clickHotZoneAnchorEventHandler:needCoverDefaultEvent:;
+- (BOOL)canShowSecondInfo;
+- (void)anchorBehaviorActionClickWithExtraInfo:;
+- (void)anchorBehaviorActionResetWithExtraInfo:;
+- (void)anchorBehaviorActionWilShowWithExtraInfo:;
+- (void)anchorBehaviorActionSuperViewAppearWithExtraInfo:;
+- (void)anchorBehaviorActionSuperViewDisappearWithExtraInfo:;
+- (void)videoPlayerBehaviorActionPlayerPeriodChangeWithExtraInfo:;
+- (void)videoPlayerBehaviorActionPlayerFinishWithExtraInfo:;
+- (void)anchorBehaviorActionSecondInfoExpandWithExtraInfo:;
+- (void)anchorBehaviorActionSecondInfoExpandEndWithExtraInfo:;
+- (void)anchorBehaviorActionVideoDidEndDisplaying:;
+- (void)anchorBehaviorActionViewDidDisappear:;
+- (void)anchorBehaviorActionAppDidEnterBackground:;
+- (void).cxx_destruct;
+- (id)anchorView;
+- (id)anchorDelegate;
+- (void)setAnchorDelegate:;
+@end

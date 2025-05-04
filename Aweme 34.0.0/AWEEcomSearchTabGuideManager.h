@@ -1,0 +1,34 @@
+@interface AWEEcomSearchTabGuideManager : NSObject
+@property (nonatomic) AWESlidingTabbarView slidingTabbarView;
+@property (nonatomic) AWEEcomSearchTabManager tabManager;
+@property (nonatomic) AWEEcomSearchBaseResultViewController searchResultViewController;
+@property (nonatomic) AWESearchTabGuideResponse tabGuideResponse;
+@property (nonatomic) AWEEcomSearchTabGuideStorageManager storageManager;
+@property (nonatomic) AWEEcomSearchTabGuideTrackManager trackManager;
+- (id)tabManager;
+- (void)setTabManager:;
+- (void)tabSelectWithIndex:currentTabType:;
+- (id)initWithSlidingTabbarView:tabManager:searchResultViewController:;
+- (void)updateTabGuideTrackParams:;
+- (void)updateWithTabGuide:;
+- (void)setSlidingTabbarView:;
+- (void)setTrackManager:;
+- (id)slidingTabbarView;
+- (id)guideWithIndex:;
+- (id)trackManager;
+- (void)setTabGuideResponse:;
+- (void)tabGuidInfoUpdate:;
+- (BOOL)checkDemotionWithTabGuide:;
+- (BOOL)checkFrequencyWithGuide:;
+- (void)tabGuideShow:;
+- (id)tabGuideResponse;
+- (void)tabGuideClick:currentTabType:;
+- (id)guideWithTabType:;
+- (id)searchResultViewController;
+- (void)setStorageManager:;
+- (id)storageManager;
+- (void)setSearchResultViewController:;
+- (void).cxx_destruct;
++ (BOOL)isECSearchTabGuideEnable;
++ (BOOL)isTabButtonVisible:;
+@end

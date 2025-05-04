@@ -1,0 +1,36 @@
+@interface AWENearbyForwardAtomicBottomPage : NSObject
+@property (nonatomic) NSMapTable subscriberDict;
+@property (nonatomic) <AWENearbyTabForwardAblityProtocol> tabForwardImp;
+@property (nonatomic) <AWEHPPinTopComponentTaskProtocol> task;
+@property (nonatomic) AWENearbyTabForwardContext context;
+@property (nonatomic) AWENearbyPageContext pageContext;
+@property (nonatomic) UIViewController<AWENearbyContainerChildProtocol> c2ViewController;
+@property (nonatomic) @? tabForwardBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addEventCenterObserver;
+- (void)unregisterBDXSubscriber;
+- (void)execTabForwardTask;
+- (void)subscribeBDXWithEventName:callback:;
+- (id)tabForwardBlock;
+- (id)tabForwardImp;
+- (id)subscriberDict;
+- (void)tryToShowForwardTabViewWith:complete:;
+- (void)preCheckoutWithBlk:;
+- (id)c2ViewController;
+- (void)setC2ViewController:;
+- (void)setTabForwardBlock:;
+- (void)setSubscriberDict:;
+- (void)setTabForwardImp:;
+- (void)setTask:;
+- (void)dealloc;
+- (id)task;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setPageContext:;
+- (id)pageContext;
+@end

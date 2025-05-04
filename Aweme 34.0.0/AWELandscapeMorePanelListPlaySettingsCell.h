@@ -1,0 +1,32 @@
+@interface AWELandscapeMorePanelListPlaySettingsCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWELandscapeMorePanelPlaySettingsSegmentView segmentView;
+@property (nonatomic) AWELandscapeMorePanelCellModel model;
+@property (nonatomic) AWELandscapePageContext landscapePageContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)segmentView;
+- (void)setSegmentView:;
+- (void)updateWithPanelCellModel:landscapePageContext:;
+- (void)trackPlaybackSettingChangeFrom:to:;
+- (void)trackPlaybackSettingChanged:;
+- (void)setLandscapePageContext:;
+- (long long)getCurrentSegmentIndex;
+- (double)segmentViewWidth;
+- (id)playbackSettingTrackDic;
+- (id)segmentArray;
+- (long long)getTargetPlaybackSettingType:;
+- (id)playbackSettingDic;
+- (id)landscapePageContext;
+- (void)segmentViewDidClick:index:;
+- (void)segmentViewDidClick:fromIndex:toIndex:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+@end

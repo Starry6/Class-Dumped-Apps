@@ -1,0 +1,4 @@
+@interface AWEKnowledgeRichContentImpl.AwemeImagePreloader : BDMultiContentContainer.DefaultImagePreloader
+- (void)didReceiveMemoryDangerLevelTopNotification;
+- (void)didReceiveMemoryBalanceRealTimeDangerLevelSecondaryNotification;
+@end

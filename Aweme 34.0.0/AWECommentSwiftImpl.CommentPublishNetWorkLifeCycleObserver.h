@@ -1,0 +1,2 @@
+@interface AWECommentSwiftImpl.CommentPublishNetWorkLifeCycleObserver : AWECommentSwiftImpl.CommentDataBaseNetWorkLifeCycle
+@end

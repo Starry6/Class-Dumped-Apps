@@ -1,0 +1,31 @@
+@interface AWEIMPickerSelectedResults : NSObject
+@property (nonatomic) NSMutableArray selectedAssetIdentifiers;
+@property (nonatomic) NSMutableDictionary localAssetMap;
+@property (nonatomic) NSMutableDictionary PHAssetMap;
+@property (nonatomic) NSMutableDictionary sendAsLivePhotoIndentifiers;
+@property (nonatomic) BOOL useOriginalImage;
+@property (nonatomic) AWEIMEditedAssetViewModel editViewModel;
+- (BOOL)useOriginalImage;
+- (BOOL)shouldSendAsLivePhotoIdentifier:;
+- (id)sendAsLivePhotoIndentifiers;
+- (id)phAssetForIdentify:;
+- (unsigned long long)indexOfAssetIdentifier:;
+- (void)removeLivePhotoAssetIdentifier:;
+- (void)removeAssetIdentifier:;
+- (void)setUseOriginalImage:;
+- (void)addLivePhotoAssetIdentifier:;
+- (void)removeAssetIdentifiers:;
+- (void)setSendAsLivePhotoIndentifiers:;
+- (id)localAssetMap;
+- (id)PHAssetMap;
+- (void)setLocalAssetMap:;
+- (void)setPHAssetMap:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)addAsset:;
+- (id)selectedAssetIdentifiers;
+- (void)setSelectedAssetIdentifiers:;
+- (BOOL)moveItemAtIndex:toIndex:;
+- (id)editViewModel;
+- (void)setEditViewModel:;
+@end

@@ -1,0 +1,36 @@
+@interface AWETabMallVisibleManager : NSObject
+@property (nonatomic) BOOL isHomePageTopMall;
+@property (nonatomic) BOOL atTopTab;
+@property (nonatomic) BOOL atBottomTab;
+@property (nonatomic) BOOL lastState;
+@property (nonatomic) NSMutableArray delegates;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL visible;
+- (void)defaultLandingTab;
+- (void)tabBarController:didSelectItemType:previousItemType:;
+- (void)handleAppBecomeActive;
+- (void)slideIn;
+- (void)slideOut;
+- (void)registerVisibleDelegate:;
+- (void)landToMall;
+- (void)unRegisterVisibleDelegate:;
+- (BOOL)isHomePageTopMall;
+- (BOOL)atTopTab;
+- (void)setAtBottomTab:;
+- (void)setAtTopTab:;
+- (void)setIsHomePageTopMall:;
+- (BOOL)atBottomTab;
+- (BOOL)visible;
+- (id)delegates;
+- (void)setDelegates:;
+- (void)setVisible:;
+- (void)setup;
+- (void).cxx_destruct;
+- (BOOL)lastState;
+- (void)handleAppWillResignActive;
+- (void)setLastState:;
++ (id)sharedManager;
+@end

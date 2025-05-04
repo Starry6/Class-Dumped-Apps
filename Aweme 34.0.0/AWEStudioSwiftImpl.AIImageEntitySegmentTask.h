@@ -1,0 +1,3 @@
+@interface AWEStudioSwiftImpl.AIImageEntitySegmentTask : _TtGC8AirFlowX7AFXTaskVC18AWEStudioSwiftImpl24AIImageEntitySegmentTask5InputVS2_6Output_
+- (void).cxx_destruct;
+@end

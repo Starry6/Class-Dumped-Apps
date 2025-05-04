@@ -1,0 +1,37 @@
+@interface AWEIMRichRecorderTitleView : AWEIMRichRecorderCommonView
+@property (nonatomic) UILabel tittleLabel;
+@property (nonatomic) NSString defaultTitle;
+@property (nonatomic) NSString highLightTitle;
+@property (nonatomic) NSString translateTitle;
+@property (nonatomic) UIColor defaultColor;
+@property (nonatomic) UIColor highLightColor;
+@property (nonatomic) NSString leftTimePreTitle;
+@property (nonatomic) NSString leftTimeCancelPreTitle;
+@property (nonatomic) NSString leftTimeTranslatePreTitle;
+- (void)startWorkWithPreState:currentState:;
+- (void)stopWorkWithPreState:currentState:;
+- (void)willStopWorkWithLeftTime:preState:currentState:;
+- (void)setCommonText:;
+- (id)leftTimePreTitle;
+- (void)setHighLightText:;
+- (id)highLightTitle;
+- (void)setHighLightTitle:;
+- (void)setHighLightColor:;
+- (void)setLeftTimePreTitle:;
+- (void)p_updateWithCurrentState:;
+- (id)tittleLabel;
+- (id)leftTimeCancelPreTitle;
+- (id)leftTimeTranslatePreTitle;
+- (id)translateTitle;
+- (void)setTranslateTitle:;
+- (void)setLeftTimeCancelPreTitle:;
+- (void)setLeftTimeTranslatePreTitle:;
+- (void)setTittleLabel:;
+- (void).cxx_destruct;
+- (id)highLightColor;
+- (id)defaultColor;
+- (void)setDefaultColor:;
+- (void)updateWithViewModel:;
+- (id)defaultTitle;
+- (void)setDefaultTitle:;
+@end

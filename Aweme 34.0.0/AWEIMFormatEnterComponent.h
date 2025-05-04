@@ -1,0 +1,32 @@
+@interface AWEIMFormatEnterComponent : AWEIMComponentBase
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSDictionary chatExtraContext;
+@property (nonatomic) NSString complianceText;
+@property (nonatomic) q teamType;
+@property (nonatomic) NSDictionary roomModelExtra;
+@property (nonatomic) q conLastHistoryMsgIndex;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSDictionary commonTrackParams;
+@property (nonatomic) EnterFormatResponse_Data roomModel;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)roomModel;
+- (id)chatExtraContext;
+- (id)complianceText;
+- (id)roomModelExtra;
+- (long long)conLastHistoryMsgIndex;
+- (id)commonTrackParams;
+- (void)hostVC_willDealloc;
+- (void)hostVC_viewWillAppear;
+- (void)hostVC_viewDidLoad;
+- (void)setRoomModel:;
+- (void)componentDidMounted:;
+- (id)groupId;
+- (id)sessionId;
+- (id)init;
+- (void).cxx_destruct;
+- (long long)teamType;
++ (BOOL)canCreateComponentWithContext:;
+@end

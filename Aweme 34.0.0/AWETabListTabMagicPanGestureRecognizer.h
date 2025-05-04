@@ -1,0 +1,2 @@
+@interface AWETabListTabMagicPanGestureRecognizer : UIPanGestureRecognizer
+@end

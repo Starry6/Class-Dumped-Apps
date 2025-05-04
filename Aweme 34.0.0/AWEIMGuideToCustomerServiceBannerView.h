@@ -1,0 +1,35 @@
+@interface AWEIMGuideToCustomerServiceBannerView : UIView
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) DUXButton actionButton;
+@property (nonatomic) AWEIMGuideToCustomerServiceBannerViewConfig config;
+- (void)awe_themeReload;
+- (void)updateIconImage;
+- (void)updateBgColor;
+- (void)updateBannerHeightWithTextHeight:;
+- (void)setConfig:;
+- (void)updateWithConfig:;
+- (id)config;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setIconImageView:;
+- (void)updateText;
+- (void)setupUI;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)closeButtonTapped:;
+- (void)actionButtonTapped:;
+@end

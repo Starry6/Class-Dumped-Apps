@@ -1,0 +1,33 @@
+@interface AWEVideoTemplateExtraInfoModel : MTLModel
+@property (nonatomic) q duration;
+@property (nonatomic) NSString provider;
+@property (nonatomic) NSString aspectRatio;
+@property (nonatomic) NSString nleSummary;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString region;
+@property (nonatomic) BOOL hasCommercialMusic;
+@property (nonatomic) NSString recommendMusic;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)nleSummary;
+- (void)setNleSummary:;
+- (BOOL)hasCommercialMusic;
+- (void)setHasCommercialMusic:;
+- (id)recommendMusic;
+- (void)setRecommendMusic:;
+- (void)setProvider:;
+- (void)setRegion:;
+- (void)setLanguage:;
+- (id)region;
+- (void)setDuration:;
+- (void)setAspectRatio:;
+- (void).cxx_destruct;
+- (long long)duration;
+- (id)provider;
+- (id)language;
+- (id)aspectRatio;
++ (id)JSONKeyPathsByPropertyKey;
+@end

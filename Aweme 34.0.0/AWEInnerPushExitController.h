@@ -1,0 +1,30 @@
+@interface AWEInnerPushExitController : NSObject
+@property (nonatomic) BOOL hasHitExitRule;
+@property (nonatomic) AWEInnerPushExitRangeMappingProcessedModel batchedRangeMappingModel;
+@property (nonatomic) AWEInnerPushExitRangeMappingProcessedModel sharedRangeMappingModel;
+- (BOOL)canShowInnerPushWithRequest:;
+- (void)didDismissInnerPushWithRequest:reason:;
+- (void)createRangeMappingModels;
+- (id)exitRuleConfigFromSettings;
+- (BOOL)didHitSharedExitWithPushControlModel:;
+- (BOOL)hitExitRuleWithGradeKey:ruleItemName:ruleArray:;
+- (BOOL)didHitBatchedExitWithPushControlModel:gradeKey:;
+- (void)setHasHitExitRule:;
+- (id)exitActionItemKeyWithGradeKey:ruleItemName:;
+- (id)sharedSetIdSetWithPushControlModel:;
+- (void)updateSharedExitDbInfoWithPushControlModel:reason:;
+- (void)updateExitActionInfoWithReason:gradeKey:ruleItemName:ruleArray:;
+- (id)totalExitRuleArrayWithPushControlModel:gradeKey:;
+- (void)updateExitActionItemInfo:rule:hitRule:;
+- (BOOL)hasHitExitRule;
+- (void)reportHitExitRule:gradeKey:;
+- (id)itemNameWithPushControlModel:gradeKey:;
+- (id)batchedApplicableExitRuleArrayWithGradeKey:itemName:;
+- (void)setBatchedRangeMappingModel:;
+- (void)setSharedRangeMappingModel:;
+- (id)batchedRangeMappingModel;
+- (id)sharedRangeMappingModel;
+- (id)totalRangeExitRuleArray;
+- (id)init;
+- (void).cxx_destruct;
+@end

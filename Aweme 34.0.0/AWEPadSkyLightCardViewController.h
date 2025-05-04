@@ -1,0 +1,37 @@
+@interface AWEPadSkyLightCardViewController : UIViewController
+@property (nonatomic) IGListAdapter listAdapter;
+@property (nonatomic) AWEBaseListAdapterDataSource dataSource;
+@property (nonatomic) NSString sectionName;
+@property (nonatomic) AWEPadBaseSectionViewModel<AWEPLVSectionViewModelProtocol> currentSectionViewModel;
+@property (nonatomic) UICollectionView listView;
+@property (nonatomic) UIView headerContainerView;
+@property (nonatomic) UIImageView headerIconView;
+@property (nonatomic) UILabel headerLabelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sectionViewModels;
+- (id)sectionControllerClassArray;
+- (id)listAdapter;
+- (void)setListAdapter:;
+- (void)setupListAdapter;
+- (id)headerIconView;
+- (id)headerLabelView;
+- (void)setCurrentSectionViewModel:;
+- (id)currentSectionViewModel;
+- (id)initWithSectionName:;
+- (void)updateSectionData:completion:;
+- (void)setHeaderIconView:;
+- (void)setHeaderLabelView:;
+- (void)viewDidLoad;
+- (id)listView;
+- (void)setListView:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+- (id)headerContainerView;
+- (void)setHeaderContainerView:;
+- (void)setSectionName:;
+- (id)sectionName;
+@end

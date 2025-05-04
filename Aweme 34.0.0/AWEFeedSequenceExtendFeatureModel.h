@@ -1,0 +1,31 @@
+@interface AWEFeedSequenceExtendFeatureModel : AWEFeedSequenceFeatureModel
+@property (nonatomic) q social_status;
+@property (nonatomic) NSNumber comment_num;
+@property (nonatomic) NSNumber comment_staytime;
+@property (nonatomic) q tag_level2_id;
+@property (nonatomic) NSNumber play_count;
+@property (nonatomic) NSNumber digg_count;
+@property (nonatomic) NSString challenge_id;
+@property (nonatomic) NSMutableArray comment_list;
+- (void)updateFeature:forKey:extra:;
+- (BOOL)modelCustomTransformToDictionary:;
+- (void)setComment_staytime:;
+- (id)comment_staytime;
+- (void)handleFeatureCommentListWithFeature:key:extra:;
+- (void)setSocial_status:;
+- (void)setComment_num:;
+- (void)setDigg_count:;
+- (void)setPlay_count:;
+- (void)setChallenge_id:;
+- (void)setTag_level2_id:;
+- (id)comment_list;
+- (long long)social_status;
+- (id)comment_num;
+- (long long)tag_level2_id;
+- (id)play_count;
+- (id)digg_count;
+- (id)challenge_id;
+- (void)setComment_list:;
+- (void).cxx_destruct;
++ (id)internalFeatures;
+@end

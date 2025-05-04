@@ -1,0 +1,35 @@
+@interface AWESearchCachalotComponent : NSObject
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> viewModel;
+@property (nonatomic) <AWESearchCachalotCardViewProtocol> view;
+@property (nonatomic) <AWESearchCachalotCardViewProtocol> wrappedView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sendEvent:params:;
+- (void)componentStickyStatusChange:;
+- (void)componentPageViewWillAppear:;
+- (void)componentPageViewDidAppear:;
+- (void)componentPageViewWillDisappear:;
+- (void)componentPageViewDidDisappear:;
+- (id)displayPercentagesForCallback:;
+- (void)componentClicked;
+- (void)componentWillDisplay;
+- (void)componentActivationDidChange:;
+- (void)componentDidEndDisplay;
+- (void)componentDisplayWithTopPercentage:isReverse:;
+- (void)componentShowingRatioWillExceed:;
+- (void)componentShowingRatioWillUnder:;
+- (void)componentHighlighted:backgroundView:;
+- (void)componentPrepareForReuse;
+- (BOOL)shouldRespondToHit:atPoint:;
+- (id)initWithView:;
+- (id)view;
+- (id)viewModel;
+- (void)setView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)wrappedView;
+- (id)componentView;
+- (void)updateWithViewModel:;
+@end

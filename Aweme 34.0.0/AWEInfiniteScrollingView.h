@@ -1,0 +1,35 @@
+@interface AWEInfiniteScrollingView : UIView
+@property (nonatomic) BOOL isObserving;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) double originalBottomInset;
+@property (nonatomic) Q state;
+@property (nonatomic) @? infiniteScrollingHandler;
+@property (nonatomic) {CGSize=dd} originalContentSize;
+@property (nonatomic) BOOL enabled;
+- (void)setInfiniteScrollingHandler:;
+- (void)setOriginalBottomInset:;
+- (void)resetScrollViewContentInset;
+- (void)setScrollViewContentInsetForInfiniteScrolling;
+- (double)originalBottomInset;
+- (void)setScrollViewContentInset:;
+- (id)infiniteScrollingHandler;
+- (void)triggerRefresh;
+- (void)resetOriginalContentSize;
+- (void)stopAnimating;
+- (BOOL)isObserving;
+- (void)setScrollView:;
+- (void)willMoveToSuperview:;
+- (id)initWithFrame:;
+- (void)setEnabled:;
+- (unsigned long long)state;
+- (id)scrollView;
+- (void)scrollViewDidScroll:;
+- (BOOL)enabled;
+- (void)setIsObserving:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)startAnimating;
+- (void)setState:;
+- (id)originalContentSize;
+- (void)setOriginalContentSize:;
+@end

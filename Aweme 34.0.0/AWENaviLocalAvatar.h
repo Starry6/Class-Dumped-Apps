@@ -1,0 +1,30 @@
+@interface AWENaviLocalAvatar : NSObject
+@property (nonatomic) NSString avatarID;
+@property (nonatomic) <AWENaviUserSwitcher> userSwitcher;
+@property (nonatomic) q version;
+@property (nonatomic) NSString avatarRelativePath;
+@property (nonatomic) NSString emotionIcon;
+@property (nonatomic) NSString emotionTitle;
+@property (nonatomic) NSString emotionMusicID;
+@property (nonatomic) NSString emotionEffectName;
+@property (nonatomic) NSString resourcePath;
+- (id)userSwitcher;
+- (void)setUserSwitcher:;
+- (id)emotionEffectName;
+- (id)emotionTitle;
+- (id)emotionMusicID;
+- (void)setAvatarID:;
+- (void)setAvatarRelativePath:;
+- (void)setEmotionTitle:;
+- (void)setEmotionIcon:;
+- (void)setEmotionMusicID:;
+- (void)setEmotionEffectName:;
+- (id)avatarID;
+- (id)avatarRelativePath;
+- (id)emotionIcon;
+- (long long)version;
+- (void)setVersion:;
+- (id)resourcePath;
+- (void).cxx_destruct;
+- (void)setResourcePath:;
+@end

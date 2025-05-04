@@ -1,0 +1,37 @@
+@interface AWEModernFeedFriendStyleLikeUserCell : AWEFriendStyleBaseCell
+@property (nonatomic) UIImageView avatarImageView1;
+@property (nonatomic) UIImageView avatarImageView2;
+@property (nonatomic) UIImageView avatarImageView3;
+@property (nonatomic) YYLabel displayLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) YYLabel showMoreLabel;
+@property (nonatomic) UIView containerBackgroundView;
+@property (nonatomic) @? userNameTappedBlock;
+@property (nonatomic) @? containerViewTappedBlock;
+@property (nonatomic) AWEFriendStyleLikeUserCellFrame likeUserCellFrame;
+- (void)setShowMoreLabel:;
+- (id)showMoreLabel;
+- (void)cancelImageRequest;
+- (id)containerBackgroundView;
+- (void)setContainerBackgroundView:;
+- (id)avatarImageView1;
+- (id)avatarImageView2;
+- (void)setAvatarImageView1:;
+- (void)setAvatarImageView2:;
+- (id)initWithStyle:reuseIdentifier:isInsStyle:;
+- (void)containerViewTapped:;
+- (void)setUserNameTappedBlock:;
+- (void)setContainerViewTappedBlock:;
+- (id)likeUserCellFrame;
+- (void)setLikeUserCellFrame:;
+- (id)avatarImageView3;
+- (id)userNameTappedBlock;
+- (id)containerViewTappedBlock;
+- (id)generateAvatarImageView;
+- (void)setAvatarImageView3:;
+- (void).cxx_destruct;
+- (void)setDisplayLabel:;
+- (id)displayLabel;
+- (id)lineView;
+- (void)setLineView:;
+@end

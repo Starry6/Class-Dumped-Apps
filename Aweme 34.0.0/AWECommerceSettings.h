@@ -1,0 +1,37 @@
+@interface AWECommerceSettings : NSObject
+@property (nonatomic) AWECommerceSettingsModel settingsModelFromClientSettings;
+@property (nonatomic) AWECommerceSettingsModel settingsModel;
+@property (nonatomic) BOOL isSettingsUpdated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awemeSettingDidChange;
+- (BOOL)isSettingsUpdated;
+- (void)fetchRequestAfterLaunch;
+- (void)fetchRequestAfterLaunch;
+- (void)fetchRequestIfNeed;
+- (void)fetchRequestIfNeed;
+- (void)updateSettingsModel:;
+- (void)updateSettingsModel:;
+- (void)updateSettingsModelFromClientSettings;
+- (void)asynJsonModelWithSettings:;
+- (id)settingsModelFromClientSettings;
+- (void)setSettingsModelFromClientSettings:;
+- (void)fetchRequest;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)updateSettings:;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (void)setSettingsModel:;
+- (id)settingsModel;
++ (void)_aweLazyRegisterLoad;
++ (BOOL)hitABTest;
++ (void)doOriginalActions;
++ (id)settingsRequestPath;
++ (void)updateSettingsWithDictionary:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

@@ -1,0 +1,32 @@
+@interface AWERVLVLanguageView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) q index;
+@property (nonatomic) NSArray languageModelList;
+@property (nonatomic) <AWERVLVSelectDelegate> delegate;
+@property (nonatomic) <AWERVLVLanguageViewDelegate> trackDelegate;
+@property (nonatomic) AWERVDetailPageContext pageContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTrackDelegate:;
+- (id)trackDelegate;
+- (void)updateWithModel:currentSelectIndex:;
+- (void)setLanguageModelList:;
+- (id)languageModelList;
+- (void)setIndex:;
+- (long long)index;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (void)setupUI;
+- (void)setPageContext:;
+- (id)pageContext;
+@end

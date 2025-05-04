@@ -1,0 +1,31 @@
+@interface AWERecommendConcernCollectionViewCell : UICollectionViewCell
+@property (nonatomic) AWEAnimatedButton changeRecommendButton;
+@property (nonatomic) AWEConcernRecommendFriendCardView recommendACardView;
+@property (nonatomic) UIView separateLineView;
+@property (nonatomic) AWEConcernRecommendFriendCardView recommendBCardView;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) @? refreshUsersBlock;
+- (id)separateLineView;
+- (void)setSeparateLineView:;
+- (void)refreshWithModels:animated:;
+- (void)setRefreshUsersBlock:;
+- (void)playRefreshAnimationWithRefreshModels:;
+- (void)refreshModelsWithoutAnimation:;
+- (id)recommendACardView;
+- (id)recommendBCardView;
+- (id)changeRecommendButton;
+- (id)refreshUsersBlock;
+- (void)playDisappearAnimationWithRecommendView:completion:;
+- (void)playAppearAnimationWithRecommendView:;
+- (void)changeRecommend:;
+- (void)setChangeRecommendButton:;
+- (void)setRecommendACardView:;
+- (void)setRecommendBCardView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)setupUI;
++ (id)identifier;
+@end

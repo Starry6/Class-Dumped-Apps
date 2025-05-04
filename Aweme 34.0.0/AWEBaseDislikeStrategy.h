@@ -1,0 +1,34 @@
+@interface AWEBaseDislikeStrategy : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEDislikeStrategyContext dislikeContext;
+- (id)enterMethod;
+- (id)dislikeContext;
+- (void)setDislikeContext:;
+- (unsigned long long)methodType;
+- (id)serverAnchorExtra;
+- (void)handleDislikeWithDislikeContext:;
+- (void)dislikeWithUser:shouldDelete:completion:;
+- (void)dislikeStrategyBeforeHandle;
+- (BOOL)shouldShowOpenPersonalRecommendPopup:;
+- (void)trackDislikeEventWithDislikeContext:;
+- (void)handleRecommendUnfollow;
+- (void)handleRequestDislikeVideo;
+- (void)dislikeStrategyAfterHandle;
+- (void)showOpenPersonalRecommendPopupWithParams:;
+- (id)commonParamsWithDislikeContext:;
+- (void)dislikeStrategyBeforeTrackDislike;
+- (BOOL)shouldTrackDislikeEvent;
+- (void)trackADWithDislikeContext:;
+- (void)newUserStaticAddAction:enterFrom:;
+- (void)dislikeStrategyAfterTrackDislike;
+- (void)dislikeUnfollowOftenWatchWithShouldDelete:completion:;
+- (id)dislikeProcessBlock;
+- (void)dislikeRecommendUserWithShouldDelete:fromUnfollowOftenWatch:;
+- (void)dislikeStrategyBeforeRequestDislike;
+- (void)requestDislikeVideoWithServerAnchorExtra:referString:completion:;
+- (void).cxx_destruct;
+- (id)requestCompletionBlock;
+@end

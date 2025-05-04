@@ -1,0 +1,38 @@
+@interface AWEFollowListRecommendCardCell : UICollectionViewCell
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableArray cardModels;
+@property (nonatomic) NSMutableSet uids;
+@property (nonatomic) <AWEFollowListRecommendCardCellDelegate> delegate;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)cardModels;
+- (void)enterUserProfile:enterfrom:enterScene:;
+- (void)leftRemoveAnimation;
+- (void)setCardModels:;
+- (void)updateWithModelList:;
+- (void)didTapFollowButtonOnCell:;
+- (void)didTapDislikeButtonOnCell:;
+- (void)updateRecommendCardUIWithModelList:;
+- (void)resetUids;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setupUI;
+- (void)setUids:;
+- (id)uids;
+@end

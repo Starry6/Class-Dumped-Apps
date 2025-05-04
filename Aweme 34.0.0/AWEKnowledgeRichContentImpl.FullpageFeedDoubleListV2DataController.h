@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullpageFeedDoubleListV2DataController : AWESpeCategoryKitAdapter.DataControllerWrapper
+@end

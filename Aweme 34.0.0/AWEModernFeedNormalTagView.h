@@ -1,0 +1,36 @@
+@interface AWEModernFeedNormalTagView : UIView
+@property (nonatomic) UIView<AWESearchTagViewUIInfoProtocol> searchTagView;
+@property (nonatomic) NSString searchKeyword;
+@property (nonatomic) <AWESearchTagViewTrackProtocol> tagTrackManager;
+@property (nonatomic) <AWESearchTagViewJumpProtocol> tagJumpManager;
+@property (nonatomic) AWEAnchorNormalInfoModel normalInfoModel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEModernFeedTagFrame tagFrame;
+@property (nonatomic) NSDictionary logData;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)searchKeyword;
+- (void)setSearchKeyword:;
+- (void)updateLayoutWithFrame:;
+- (id)tagFrame;
+- (void)setTagFrame:;
+- (void)sendShowEvent;
+- (void)singleTapped:;
+- (void)configWithModel:searchKeyWord:withLogData:;
+- (void)reuseAnchor;
+- (void)configWithModel:searchKeyWord:withLogData:referString:;
+- (void)setNormalInfoModel:;
+- (void)setModelOnly:searchKeyWord:withLogData:referString:;
+- (id)searchTagView;
+- (id)normalInfoModel;
+- (id)tagTrackManager;
+- (id)tagJumpManager;
+- (void)setSearchTagView:;
+- (BOOL)enableBcmSupport;
+- (void)sendClickEvent;
+- (void)setTagTrackManager:;
+- (void)setTagJumpManager:;
+- (id)logData;
+- (void)setLogData:;
+- (void).cxx_destruct;
+@end

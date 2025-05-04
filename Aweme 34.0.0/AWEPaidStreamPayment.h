@@ -1,0 +1,36 @@
+@interface AWEPaidStreamPayment : NSObject
+@property (nonatomic) NSHashTable paymentEventHandlers;
+@property (nonatomic) q paymentType;
+@property (nonatomic) <AWEPaidPaymentDelegate> delegate;
+@property (nonatomic) AWEPaidAuthConfig authConfig;
+@property (nonatomic) AWEPaidAuthItem authItemToPay;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)authConfig;
+- (void)setAuthConfig:;
+- (id)initWithAuthConfig:;
+- (void)sendEventPaymentPageDidAppear;
+- (void)sendEventWillExitPaymentPage;
+- (void)sendEventDidExitPaymentPage;
+- (void)registerPaymentEventHandler:;
+- (void)previewDidFinished;
+- (void)paymentDidUpdateAuthItems;
+- (void)goToPayForPaidAuthItem:paymentType:extraParameters:;
+- (void)goToPayForPaidSchema:authItem:paymentType:extraParameters:;
+- (void)sendEventToHandlers:event:;
+- (void)setAuthItemToPay:;
+- (id)authItemToPay;
+- (void)sendEventLoadPaymentPageSuccess:authItem:;
+- (void)sendEventDidAcquireAuthWithAuthItems:;
+- (id)registeredPaymentEventHandlers;
+- (void)unregisterPaymentEventHandler:;
+- (id)paymentEventHandlers;
+- (void)setPaymentEventHandlers:;
+- (long long)paymentType;
+- (id)delegate;
+- (void)setPaymentType:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

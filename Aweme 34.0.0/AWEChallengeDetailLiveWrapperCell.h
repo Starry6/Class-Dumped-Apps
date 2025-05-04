@@ -1,0 +1,2 @@
+@interface AWEChallengeDetailLiveWrapperCell : UICollectionViewCell
+@end

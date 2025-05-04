@@ -1,0 +1,33 @@
+@interface AWEContactsRequestAndUploadParamsModel : NSObject
+@property (nonatomic) BOOL showAddressbookList;
+@property (nonatomic) BOOL isFromRequestAddressBookPermission;
+@property (nonatomic) BOOL isFromUploadAddressBookOnView;
+@property (nonatomic) BOOL isPermitted;
+@property (nonatomic) BOOL isInitial;
+@property (nonatomic) BOOL isFirstRequestTime;
+@property (nonatomic) BOOL needUpload;
+@property (nonatomic) NSString requestCert;
+@property (nonatomic) NSString uploadCert;
+@property (nonatomic) BOOL authUIDAfterDIDHasAuthedInColdLaunch;
+- (void)setIsInitial:;
+- (BOOL)needUpload;
+- (void)setNeedUpload:;
+- (BOOL)isFirstRequestTime;
+- (void)setIsFirstRequestTime:;
+- (void)setIsPermitted:;
+- (void)setRequestCert:;
+- (id)requestCert;
+- (BOOL)showAddressbookList;
+- (void)setShowAddressbookList:;
+- (void)setIsFromRequestAddressBookPermission:;
+- (void)setIsFromUploadAddressBookOnView:;
+- (BOOL)authUIDAfterDIDHasAuthedInColdLaunch;
+- (void)setAuthUIDAfterDIDHasAuthedInColdLaunch:;
+- (BOOL)isFromRequestAddressBookPermission;
+- (BOOL)isFromUploadAddressBookOnView;
+- (id)uploadCert;
+- (void)setUploadCert:;
+- (BOOL)isPermitted;
+- (BOOL)isInitial;
+- (void).cxx_destruct;
+@end

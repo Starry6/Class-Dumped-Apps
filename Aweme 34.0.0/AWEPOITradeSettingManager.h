@@ -1,0 +1,35 @@
+@interface AWEPOITradeSettingManager : NSObject
++ (BOOL)shouldHandleNearbyHalfContainerSchemaChanging;
++ (BOOL)shouldEnablePrefetchLynxAtGoodsDetail;
++ (BOOL)liveToGoodsDetailShouldCheckTranceSessionId;
++ (id)tradeSettings;
++ (id)shareLynxGroup;
++ (id)fetchSignWindowCardUrl;
++ (id)goodsDetailPrefetchLynxSchemas;
++ (id)deliveryLynxPreloadSchemas;
++ (id)goodsDetailPreRequestParams;
++ (BOOL)goodsDetailPreRequestRequestUseNewData;
++ (id)goodsDetailAysncRenderExcludeBundles;
++ (BOOL)shouldDisableRefreshNetworkAfterAppear;
++ (BOOL)shouldUseLynxPageForGoodsDetailDisasterRecovery;
++ (BOOL)shouldTrackInNative;
++ (id)goodsDetailMainRequestRouterParams;
++ (id)h5DowngradeParamsInRouter;
++ (id)goodsDetailUpdateCards;
++ (id)optimizeLynxCount;
++ (id)goodsDetailAgreementViewUrl;
++ (id)goodsDetailErrorViewUrl;
++ (id)nestedScrollCardTopOffset;
++ (id)goodsNativeUrlReplaceMatches;
++ (BOOL)openWebGoodsDetailConvertToNativeFunction;
++ (id)misTrackKeysChecker;
++ (id)enableGoodsDetailGeckoExemptionExpt;
++ (BOOL)geckoDownloadInLaunch;
++ (BOOL)slardarMonitorClose;
++ (BOOL)enableProjectDetailShowCheckParams;
++ (BOOL)enableDynamicHeightPercent;
++ (BOOL)clearGoodsDetailLiveFloatRoomId;
++ (BOOL)shouldCompensateCollapseStateCallBack;
++ (BOOL)shouldPrefetchImage;
++ (BOOL)shouldEnablePayFooterCheck;
+@end

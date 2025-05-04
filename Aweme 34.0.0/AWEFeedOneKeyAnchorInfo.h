@@ -1,0 +1,38 @@
+@interface AWEFeedOneKeyAnchorInfo : NSObject
+@property (nonatomic) NSString templateId;
+@property (nonatomic) NSString templateTitle;
+@property (nonatomic) q templateSource;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL firstGuide;
+@property (nonatomic) BOOL canUseOriginTemplate;
+@property (nonatomic) BOOL usingOriginTemplate;
+@property (nonatomic) NSString albumTip;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)templateTitle;
+- (void)setTemplateTitle:;
+- (BOOL)firstGuide;
+- (void)setFirstGuide:;
+- (BOOL)canUseOriginTemplate;
+- (void)setCanUseOriginTemplate:;
+- (BOOL)usingOriginTemplate;
+- (void)setUsingOriginTemplate:;
+- (id)albumTip;
+- (void)setAlbumTip:;
+- (BOOL)shouldUseOriginTemplate;
+- (void)markShowedFirstGuide;
+- (BOOL)shouldShowFirstGuide;
+- (void)setEnabled:;
+- (BOOL)enabled;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setTemplateId:;
+- (id)templateId;
+- (id)initWithJson:;
+- (void)setTemplateSource:;
+- (long long)templateSource;
++ (BOOL)parseEnabled:;
++ (id)firstGuideImage:;
+@end

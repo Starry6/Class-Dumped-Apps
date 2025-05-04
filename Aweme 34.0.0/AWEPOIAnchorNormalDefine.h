@@ -1,0 +1,2 @@
+@interface AWEPOIAnchorNormalDefine : NSObject
+@end

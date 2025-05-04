@@ -1,0 +1,32 @@
+@interface AWESearchEntranceRecommendWordsResponse : AWEBaseApiModel
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSArray wordList;
+@property (nonatomic) NSString popBubble;
+@property (nonatomic) NSString popBubbleDelay;
+@property (nonatomic) NSString popBubbleText;
+@property (nonatomic) NSString hideWords;
+@property (nonatomic) BOOL hideSuggestWords;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) BOOL hasShown;
+- (id)hideWords;
+- (void)setHideWords:;
+- (id)wordList;
+- (void)setWordList:;
+- (void)setHideSuggestWords:;
+- (BOOL)hideSuggestWords;
+- (id)popBubble;
+- (id)popBubbleText;
+- (id)popBubbleDelay;
+- (void)setPopBubble:;
+- (void)setPopBubbleDelay:;
+- (void)setPopBubbleText:;
+- (void)setGroupID:;
+- (id)itemID;
+- (void)setItemID:;
+- (id)groupID;
+- (void).cxx_destruct;
+- (BOOL)hasShown;
+- (void)setHasShown:;
++ (id)wordListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

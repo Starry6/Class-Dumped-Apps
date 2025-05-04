@@ -1,0 +1,32 @@
+@interface AWEDitoCommonToolBarItemModel : MTLModel
+@property (nonatomic) Q type;
+@property (nonatomic) AWEDitoCommonToolBarItemIconModel iconModel;
+@property (nonatomic) AWEDitoCommonToolBarItemTextModel textModel;
+@property (nonatomic) NSDictionary style;
+@property (nonatomic) NSString clickEvent;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) DitoStyle DitoStyleModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textModel;
+- (void)setTextModel:;
+- (id)DitoStyleModel;
+- (void)setDitoStyleModel:;
+- (void)setHeight:;
+- (void)setWidth:;
+- (unsigned long long)type;
+- (id)style;
+- (void)setClickEvent:;
+- (id)width;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setIconModel:;
+- (id)height;
+- (id)clickEvent;
+- (id)iconModel;
+- (void)setStyle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

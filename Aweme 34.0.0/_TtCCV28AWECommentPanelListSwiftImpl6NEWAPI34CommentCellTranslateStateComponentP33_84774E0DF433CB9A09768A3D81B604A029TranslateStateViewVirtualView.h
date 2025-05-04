@@ -1,0 +1,5 @@
+@interface _TtCCV28AWECommentPanelListSwiftImpl6NEWAPI34CommentCellTranslateStateComponentP33_84774E0DF433CB9A09768A3D81B604A029TranslateStateViewVirtualView : _TtCV28AWECommentPanelListSwiftImpl6NEWAPI18CommentVirtualView
+- (id)layoutThatFits:;
+- (void)updateAttributesForRenderedView:;
+- (void).cxx_destruct;
+@end

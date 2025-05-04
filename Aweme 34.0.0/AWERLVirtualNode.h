@@ -1,0 +1,32 @@
+@interface AWERLVirtualNode : NSObject
+@property (nonatomic) UIView mountedView;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) {CGSize=dd} computedSize;
+@property (nonatomic) {CGPoint=dd} computedPosition;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} computedFrame;
+@property (nonatomic) AWERLProps props;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mountWithContext:;
+- (id)initWithSize:props:;
+- (id)mountedView;
+- (void)unmount;
+- (id)createLayoutNode;
+- (void)setComputedSize:;
+- (void)setComputedPosition:;
+- (void)setMountedView:;
+- (id)computedPosition;
+- (void)childrenDidMount;
+- (id)props;
+- (id)size;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (id)childAtIndex:;
+- (unsigned long long)numberOfChildren;
+- (id)computedSize;
+- (id)computedFrame;
+- (void)setComputedFrame:;
+- (void)setProps:;
+@end

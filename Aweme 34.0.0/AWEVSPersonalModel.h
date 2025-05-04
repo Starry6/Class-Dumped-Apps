@@ -1,0 +1,38 @@
+@interface AWEVSPersonalModel : MTLModel
+@property (nonatomic) NSString notice;
+@property (nonatomic) NSString desc;
+@property (nonatomic) q showCount;
+@property (nonatomic) q liveType;
+@property (nonatomic) Q accountType;
+@property (nonatomic) NSString bannerSchema;
+@property (nonatomic) NSString showInfoSchema;
+@property (nonatomic) NSString deepBackgroundColour;
+@property (nonatomic) NSString lightBackgroundColour;
+@property (nonatomic) BOOL showOriginalSoundTab;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLiveType:;
+- (long long)liveType;
+- (id)bannerSchema;
+- (void)setBannerSchema:;
+- (id)showInfoSchema;
+- (void)setShowInfoSchema:;
+- (id)deepBackgroundColour;
+- (void)setDeepBackgroundColour:;
+- (id)lightBackgroundColour;
+- (void)setLightBackgroundColour:;
+- (BOOL)showOriginalSoundTab;
+- (void)setShowOriginalSoundTab:;
+- (void)setAccountType:;
+- (unsigned long long)accountType;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)notice;
+- (void)setNotice:;
+- (void)setShowCount:;
+- (long long)showCount;
++ (id)JSONKeyPathsByPropertyKey;
+@end

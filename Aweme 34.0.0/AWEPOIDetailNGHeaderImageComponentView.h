@@ -1,0 +1,31 @@
+@interface AWEPOIDetailNGHeaderImageComponentView : AWEPOIDetailHeaderImageComponentBaseView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) AWEGradientView topMaskView;
+@property (nonatomic) AWEGradientView topMaskViewInNormalStyle;
+@property (nonatomic) AWEGradientView bottomMaskView;
+@property (nonatomic) AWEPOIDetailNGHeaderImageComponentViewModel headerImageVM;
+- (void)setBottomMaskView:;
+- (id)bottomMaskView;
+- (id)topMaskView;
+- (void)setTopMaskView:;
+- (void)hideMask;
+- (void)updateViewModel:;
+- (void)pageDidScroll:;
+- (void)bindActionAndState;
+- (void)buildSubviews;
+- (void)setDefaultImageToImageView:size:fileName:;
+- (id)adjustImageSizeWithImage:size:;
+- (BOOL)canPreview;
+- (id)headerImageVM;
+- (void)setHeaderImageVM:;
+- (id)topMaskViewInNormalStyle;
+- (void)setTopMaskViewInNormalStyle:;
+- (void)didTap:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setImageView:;
+- (id)imageView;
+@end

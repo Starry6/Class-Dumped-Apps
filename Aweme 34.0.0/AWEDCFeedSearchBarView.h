@@ -1,0 +1,37 @@
+@interface AWEDCFeedSearchBarView : UIView
+@property (nonatomic) UILabel placeholderLabel;
+@property (nonatomic) UIImageView searchIcon;
+@property (nonatomic) UIButton searchButton;
+@property (nonatomic) UIView splitLine;
+@property (nonatomic) CAShapeLayer shapeLayer;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) @? clickBarEvent;
+@property (nonatomic) @? clickButtonEvent;
+- (void)awe_themeDidChange:;
+- (void)searchButtonClickHandler;
+- (id)splitLine;
+- (void)setSplitLine:;
+- (id)searchIcon;
+- (void)setSearchIcon:;
+- (void)setClickBarEvent:;
+- (void)setClickButtonEvent:;
+- (id)getPlaceHolderText;
+- (void)setPlaceHolderText:;
+- (id)clickBarEvent;
+- (id)createSuperellipsePath;
+- (double)getScale;
+- (id)clickButtonEvent;
+- (id)searchButton;
+- (void)setShapeLayer:;
+- (id)initWithFrame:;
+- (id)shapeLayer;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)context;
+- (void)setSearchButton:;
+- (void)setupUI;
+- (void)setupAccessibility;
+- (id)placeholderLabel;
+- (void)setPlaceholderLabel:;
+@end

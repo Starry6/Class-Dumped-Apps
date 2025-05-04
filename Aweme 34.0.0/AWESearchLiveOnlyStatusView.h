@@ -1,0 +1,33 @@
+@interface AWESearchLiveOnlyStatusView : UIView
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIView<AWELivingTag> liveBackgroundView;
+@property (nonatomic) UIImageView liveTypeTagImage;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) <AWESearchLiveOnlyStatusViewDelegate> delegate;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)configModel:;
+- (id)liveBackgroundView;
+- (void)setLiveBackgroundView:;
+- (id)liveTypeTagImage;
+- (void)setLiveTypeTagImage:;
+- (void)configLivingUI;
+- (void)configReplayUI;
+- (void)textLabelSizeToFit;
+- (id)getLiveText;
+- (BOOL)notShowTagImage;
+- (id)textLabel;
+- (id)accessibilityLabel;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setTextLabel:;
+@end

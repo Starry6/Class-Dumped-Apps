@@ -1,0 +1,2 @@
+@interface AWEIMVideoMessageViewModel : AWEIMMessageViewModel
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMDanmakuEmoticonBackgroundImageConfig : MTLModel
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString defaultText;
+@property (nonatomic) AWEIMDanmakuEmoticonFontConfig fontConfig;
+@property (nonatomic) AWEIMDanmakuEmoticonURLModel previewImage;
+@property (nonatomic) AWEIMDanmakuEmoticonStretchImage staticBackground;
+@property (nonatomic) AWEIMDanmakuEmoticonAnimateBackgroundConfig animateBackground;
+@property (nonatomic) NSArray decorationList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fontConfig;
+- (void)setFontConfig:;
+- (id)staticBackground;
+- (void)setStaticBackground:;
+- (id)animateBackground;
+- (void)setAnimateBackground:;
+- (id)decorationList;
+- (void)setDecorationList:;
+- (void)setIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)previewImage;
+- (void)setDefaultText:;
+- (id)defaultText;
+- (void)setPreviewImage:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)decorationListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

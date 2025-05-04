@@ -1,0 +1,31 @@
+@interface AWESCInfoPanelServiceImp : NSObject
+@property (nonatomic) DUXContentSheet contentSheetView;
+@property (nonatomic) DUXInfoPanel infoPanel;
+@property (nonatomic) NSString prePanelIdentifier;
+@property (nonatomic) @? dismissCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetWillDismiss:;
+- (void)dismissWithAnimated:completion:;
+- (void)setDismissCompletion:;
+- (id)infoPanel;
+- (void)setInfoPanel:;
+- (long long)duxImageStyleWithType:;
+- (unsigned long long)duxButtonStyleWithType:;
+- (void)setContentSheetView:;
+- (id)contentSheetView;
+- (unsigned long long)duxContentSheetAlignmentWithType:;
+- (void)showRightPanelOn:image:imageStype:imageSize:title:detail:actions:;
+- (void)showPanelOn:image:imageStype:imageSize:title:detail:actions:;
+- (BOOL)updatePanelIdentifier:;
+- (void)showPanelOn:contentAlignment:image:imageStype:imageSize:title:detail:actions:;
+- (void)setPrePanelIdentifier:;
+- (id)prePanelIdentifier;
+- (void)showPanelOn:contentAlignment:image:imageStype:imageSize:title:detail:actions:dismissCompletion:;
+- (void)updateContentSheetWidth:;
+- (void)updateInfoPanelEdgeInsets:;
+- (void).cxx_destruct;
+- (id)dismissCompletion;
+@end

@@ -1,0 +1,29 @@
+@interface AWESingleColumnDetailLoadMoreFooter : MJRefreshBackFooter
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) BOOL isFirstAppear;
+- (void)placeSubviews;
+- (void)setLoadMoreLabelTextColor:;
+- (void)scrollViewContentOffsetDidChange:;
+- (void)scrollViewContentSizeDidChange:;
+- (void)setIsFirstAppear:;
+- (void)__addObservers;
+- (BOOL)scrollViewContentHeightBiggerThanFrameHeight;
+- (BOOL)scrollViewDidReachBottom;
+- (BOOL)scrollViewDidScrollUp;
+- (void)__removeObservers;
+- (void)__startLoadingAnim;
+- (void)__stopLoadingAnim;
+- (void)resetIdleState;
+- (void)setLabel:;
+- (void)dealloc;
+- (void)setLoadingView:;
+- (void)prepare;
+- (id)initWithFrame:;
+- (void)applicationWillEnterForeground:;
+- (id)loadingView;
+- (id)label;
+- (void).cxx_destruct;
+- (void)setState:;
+- (BOOL)isFirstAppear;
+@end

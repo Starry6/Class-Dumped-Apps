@@ -1,0 +1,38 @@
+@interface AWEFormatAISearchCardTableViewCell : DUXBaseTableViewCell
+@property (nonatomic) AWEFormatAISearchCardAvatarView avatarView;
+@property (nonatomic) DUXBaseLabel nameLab;
+@property (nonatomic) DUXBaseLabel descLab;
+@property (nonatomic) DUXBaseLabel tagLab;
+@property (nonatomic) DUXBaseLabel gotoFormatBtn;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIView centerContainerView;
+@property (nonatomic) UIView separatorView;
+@property (nonatomic) AWEFormatAISearchCardFormatInfo formatInfo;
+@property (nonatomic) @? gotoFormat;
+- (void)p_setupLayout;
+- (id)gotoFormatBtn;
+- (id)centerContainerView;
+- (id)nameLab;
+- (id)descLab;
+- (id)tagLab;
+- (void)setFormatInfo:;
+- (id)gotoFormat;
+- (void)updateCellWithModel:;
+- (void)separatorViewShown:;
+- (void)p_gotoFormat;
+- (void)setGotoFormat:;
+- (void)setNameLab:;
+- (void)setDescLab:;
+- (void)setTagLab:;
+- (void)setGotoFormatBtn:;
+- (void)setCenterContainerView:;
+- (void)setAvatarView:;
+- (id)avatarView;
+- (void)setSeparatorView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (id)separatorView;
+- (id)bgView;
+- (void)setBgView:;
+- (id)formatInfo;
+@end

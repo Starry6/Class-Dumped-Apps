@@ -1,0 +1,34 @@
+@interface AWEECShoppingAIGuideLynxMarkdownShadowNode : LynxShadowNode
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFontSize:requestReset:;
+- (void)dispatchCustomEvent:Detail:;
+- (id)initWithSign:tagName:;
+- (void)adoptNativeLayoutNode:;
+- (void)layoutDidStart;
+- (id)measureNode:withWidth:widthMode:height:heightMode:;
+- (BOOL)isBindEvent:;
+- (id)measureWithMeasureParam:MeasureContext:;
+- (void)alignWithAlignParam:AlignContext:;
+- (void)setFontWeight:requestReset:;
+- (void)setFontColor:requestReset:;
+- (void)setLineNumbers:requestReset:;
+- (void)setUseStdMarkdown:requestReset:;
+- (void)setBizOptions:requestReset:;
+- (void)setMarkdownStyle:requestReset:;
+- (void)setContent:requestReset:;
+- (id)getExtraBundle;
+- (BOOL)needsEventSet;
+- (void).cxx_destruct;
++ (void)lynxLazyLoad;
++ (id)__lynx_prop_config__1135;
++ (id)__lynx_prop_config__881;
++ (id)__lynx_prop_config__952;
++ (id)__lynx_prop_config__1013;
++ (id)__lynx_prop_config__1074;
++ (id)__lynx_prop_config__1206;
++ (id)__lynx_prop_config__1267;
++ (id)__lynx_prop_config__1328;
+@end

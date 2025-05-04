@@ -1,0 +1,35 @@
+@interface AWEDislikeEntityModel : MTLModel
+@property (nonatomic) NSNumber factorID;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString serverExtra;
+@property (nonatomic) double estimatedHeight;
+@property (nonatomic) NSString content;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) BOOL hasClicked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)serverExtra;
+- (void)setServerExtra:;
+- (id)factorID;
+- (void)setFactorID:;
+- (BOOL)hasClicked;
+- (void)setHasClicked:;
+- (id)content;
+- (void)setIdentifier:;
+- (void)setSubTitle:;
+- (id)identifier;
+- (id)subTitle;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (double)estimatedHeight;
+- (void)setEstimatedHeight:;
+- (BOOL)hasShown;
+- (void)setHasShown:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

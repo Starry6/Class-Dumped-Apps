@@ -1,0 +1,31 @@
+@interface AWEEcomPhotoSearchDataStore : NSObject
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString searchId;
+@property (nonatomic) NSArray results;
+@property (nonatomic) NSMutableArray cachedViewModels;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q shownCount;
+@property (nonatomic) q section;
+@property (nonatomic) q moreProductButtonIndex;
+- (id)searchId;
+- (void)setSearchId:;
+- (long long)shownCount;
+- (void)setShownCount:;
+- (void)setCachedViewModels:;
+- (id)cachedViewModels;
+- (long long)moreProductButtonIndex;
+- (void)setMoreProductButtonIndex:;
+- (void)setSection:;
+- (id)cursor;
+- (void)setResults:;
+- (id)results;
+- (id)init;
+- (id)channel;
+- (void)setHasMore:;
+- (void)setChannel:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (long long)section;
+- (void).cxx_destruct;
+@end

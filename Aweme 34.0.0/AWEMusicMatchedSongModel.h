@@ -1,0 +1,34 @@
+@interface AWEMusicMatchedSongModel : AWEBaseApiModel
+@property (nonatomic) NSString h5URL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString songID;
+@property (nonatomic) NSString author;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString h5URL;
+@property (nonatomic) AWEURLModel coverMediumURL;
+@property (nonatomic) NSString dspName;
+@property (nonatomic) NSString sourceID;
+@property (nonatomic) NSString fullClipID;
+- (void)setSongID:;
+- (void)setH5URL:;
+- (void)setCoverMediumURL:;
+- (void)setDspName:;
+- (void)setFullClipID:;
+- (id)dspName;
+- (id)copyrightFlag;
+- (id)h5URL;
+- (id)coverMediumURL;
+- (id)fullClipID;
+- (void)setSourceID:;
+- (id)sourceID;
+- (id)author;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setAuthor:;
+- (void)setTitle:;
+- (id)songID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

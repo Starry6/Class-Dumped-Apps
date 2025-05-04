@@ -1,0 +1,36 @@
+@interface AWEFeedHomePageContext : NSObject
+@property (nonatomic) NSString selectedTopTabId;
+@property (nonatomic) q selectedTopIndex;
+@property (nonatomic) NSArray currentTopTabIdList;
+@property (nonatomic) NSString selectedTopTabReferString;
+@property (nonatomic) NSString currentTabReferString;
+@property (nonatomic) BOOL isXTabSelected;
+@property (nonatomic) BOOL isTopTabSelected;
+@property (nonatomic) BOOL isTabBarSelected;
+@property (nonatomic) Q topBarThemeStyle;
+@property (nonatomic) AWEHomepageTopBarContext topBarContext;
+@property (nonatomic) AWEHomepageTabBarContext tabBarContext;
+- (id)currentTabReferString;
+- (long long)selectedTopIndex;
+- (id)selectedTopTabId;
+- (id)currentTopTabIdList;
+- (BOOL)isTopTabSelected;
+- (void)setTopBarContext:;
+- (id)topBarContext;
+- (void)setCurrentTabReferString:;
+- (void)setSelectedTopTabId:;
+- (void)setSelectedTopIndex:;
+- (void)setCurrentTopTabIdList:;
+- (id)selectedTopTabReferString;
+- (void)setSelectedTopTabReferString:;
+- (BOOL)isXTabSelected;
+- (void)setIsXTabSelected:;
+- (void)setIsTopTabSelected:;
+- (BOOL)isTabBarSelected;
+- (void)setIsTabBarSelected:;
+- (unsigned long long)topBarThemeStyle;
+- (void)setTopBarThemeStyle:;
+- (id)tabBarContext;
+- (void)setTabBarContext:;
+- (void).cxx_destruct;
+@end

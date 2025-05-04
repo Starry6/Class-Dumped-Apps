@@ -1,0 +1,36 @@
+@interface AWECommentAudioRecorderViewControl : NSObject
+@property (nonatomic) AWECommentAudioRecorderGradientAnimationView cancelView;
+@property (nonatomic) AWECommentAudioRecorderViewModel viewModel;
+@property (nonatomic) AWECommentAudioRecorderBezierPathAnimationView animationView;
+@property (nonatomic) Q preState;
+@property (nonatomic) Q currentState;
+@property (nonatomic) AWECommentAudioRecorderTitleView titleView;
+@property (nonatomic) AWECommentAudioRecorderVolumeIncreaseView volumeIncreaseView;
+@property (nonatomic) AWECommentAudioRecorderTitleView sendTitleView;
+@property (nonatomic) AWECommentAudioRecorderGradientAnimationView sendView;
+- (id)volumeIncreaseView;
+- (id)cancelView;
+- (void)addViewModelKVO;
+- (id)getSubViewWithType:;
+- (void)prepareToStopAllOtherWithPreState:currentState:;
+- (void)setPreState:;
+- (unsigned long long)preState;
+- (id)sendView;
+- (id)sendTitleView;
+- (void)setCancelView:;
+- (void)setSendView:;
+- (void)setSendTitleView:;
+- (void)setVolumeIncreaseView:;
+- (void)setCurrentState:;
+- (id)titleView;
+- (void)setTitleView:;
+- (void)dealloc;
+- (id)initWithViewModel:;
+- (id)viewModel;
+- (id)allViews;
+- (unsigned long long)currentState;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)animationView;
+- (void)setAnimationView:;
+@end

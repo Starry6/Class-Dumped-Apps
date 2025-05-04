@@ -1,0 +1,36 @@
+@interface AWEIMGroupNoticeBannerComponent : AWEIMCollapsibleBannerBaseComponent
+@property (nonatomic) RxPromise checkLastDisplayedGroupNoticeTimePromise;
+@property (nonatomic) double lastDisplayedGroupNoticeEditTime;
+@property (nonatomic) double displayingGroupNoticeEditTime;
+@property (nonatomic) NSString displayingNoticeText;
+@property (nonatomic) AWEIMUserViewModel fromUserViewModel;
+@property (nonatomic) AWEIMCollapsibleBannerViewModel banner;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (id)fromUserViewModel;
+- (void)setFromUserViewModel:;
+- (void)didDisplayBannerOnCollapsedModeWithViewModel:;
+- (void)didDisplayBannerOnExpandedModeWithViewModel:;
+- (void)didSelectBannerWithViewModel:;
+- (void)setLastDisplayedGroupNoticeEditTime:;
+- (void)setCheckLastDisplayedGroupNoticeTimePromise:;
+- (id)checkLastDisplayedGroupNoticeTimePromise;
+- (double)displayingGroupNoticeEditTime;
+- (void)__showBannerWithGroupNoticeDict:;
+- (id)displayingNoticeText;
+- (void)setDisplayingGroupNoticeEditTime:;
+- (void)setDisplayingNoticeText:;
+- (id)p_makeTitleTextWithNotice:userVM:;
+- (void)p_didClickBanner:;
+- (BOOL)__canModifyStickOnTopMsgs;
+- (void)__didDisplayedBanner:;
+- (id)__senderNameWithUserVM:;
+- (double)lastDisplayedGroupNoticeEditTime;
+- (id)banner;
+- (void)setBanner:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,37 @@
+@interface AWELongPressPanelAdsActionLikeView : UIView
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) NSMutableArray dataArray;
+@property (nonatomic) NSArray likeReasons;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIScrollView scrollView;
+- (id)positiveFilterWordsWithAweme:;
+- (void)setLikeReasons:;
+- (id)likeReasons;
+- (id)aAWEFeedDOUYINiPadModuleAdapter;
+- (void)cancleButtonClick;
+- (void)sendButtonClick;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setScrollView:;
+- (void)setCancelButton:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)initWithFrame:;
+- (id)tableView;
+- (id)scrollView;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)dataArray;
+- (void)setUpTableView;
+- (void)setDataArray:;
+- (id)sendButton;
+- (void)setSendButton:;
+- (void)setUpUI;
++ (Class)aAWEFeedDOUYINiPadModuleAdapterClass;
+@end

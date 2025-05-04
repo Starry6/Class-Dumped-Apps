@@ -1,0 +1,2 @@
+@interface AWENearbyDialogContainerModel : AWEBaseViewModel
+@end

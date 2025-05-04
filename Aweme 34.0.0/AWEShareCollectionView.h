@@ -1,0 +1,37 @@
+@interface AWEShareCollectionView : UICollectionView
+@property (nonatomic) <AWEShareCollectionViewHostView> hostView;
+@property (nonatomic) NSArray items;
+@property (nonatomic) Q preferredItemStyle;
+@property (nonatomic) BOOL userInteractionEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)itemWithType:;
+- (BOOL)reloadCellForItemWithType:;
+- (BOOL)scrollToCellForItemWithType:;
+- (BOOL)isCellVisibleForItemWithType:;
+- (id)cellForItemWithType:;
+- (id)initWithItems:hostView:;
+- (id)indexPathForItemWithType:;
+- (void)sendEvents:toItemAtIndexPath:;
+- (void)updateCell:withItem:;
+- (unsigned long long)preferredItemStyle;
+- (void)setPreferredItemStyle:;
+- (void)collectionView:didUnhighlightItemAtIndexPath:;
+- (void)collectionView:didHighlightItemAtIndexPath:;
+- (void)setHostView:;
+- (id)items;
+- (void)setItems:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)hostView;
+- (id)forwardingTargetForSelector:;
+- (BOOL)respondsToSelector:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
++ (Class)cellClass;
++ (id)collectionLayout;
+@end

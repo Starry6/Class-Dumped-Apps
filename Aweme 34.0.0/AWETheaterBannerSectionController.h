@@ -1,0 +1,30 @@
+@interface AWETheaterBannerSectionController : AWEBaseListSectionController
+@property (nonatomic) @? bannerPlayChangedHandler;
+@property (nonatomic) AWETheaterPageContext context;
+@property (nonatomic) AWETheaterTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)updateCellPaymentWithModel:;
+- (id)bannerPlayChangedHandler;
+- (id)bannerTrackerParamsWithIndex:;
+- (id)longVideoParamsWithIndex:bannerStyle:;
+- (void)trackBannerShowWithIndex:;
+- (void)setBannerPlayChangedHandler:;
+- (id)init;
+- (id)tracker;
+- (id)bannerStyle;
+- (Class)cellClass;
+- (void)setTracker:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+@end

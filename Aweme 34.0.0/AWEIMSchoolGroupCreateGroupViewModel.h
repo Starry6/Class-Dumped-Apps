@@ -1,0 +1,36 @@
+@interface AWEIMSchoolGroupCreateGroupViewModel : NSObject
+@property (nonatomic) NSArray avatarURLStringList;
+@property (nonatomic) NSArray leftRandomAvatarURLStringList;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) NSError error;
+@property (nonatomic) <AWEIMGroupChatPanelControllerDelegate> groupChatPanelDelegate;
+@property (nonatomic) AWEIMSchoolGroupCreateGroupContext context;
+@property (nonatomic) NSString idempotentIdentifier;
+@property (nonatomic) NSString inputName;
+@property (nonatomic) NSString avatarURLString;
+@property (nonatomic) NSString enterFrom;
+- (id)enterFrom;
+- (id)idempotentIdentifier;
+- (id)avatarURLString;
+- (void)setAvatarURLString:;
+- (id)groupChatPanelDelegate;
+- (void)setGroupChatPanelDelegate:;
+- (void)createCompletionWithConversationId:error:;
+- (void)randomAvatarImageURLString;
+- (void)prepareAvatarURLStringList;
+- (void)setLeftRandomAvatarURLStringList:;
+- (id)avatarURLStringList;
+- (void)setAvatarURLStringList:;
+- (id)leftRandomAvatarURLStringList;
+- (void)setError:;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)error;
+- (id)context;
+- (id)conversationId;
+- (void)setConversationId:;
+- (id)inputName;
+- (void)viewWillDismiss;
+- (void)setInputName:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEAwemeDetailPlayletInnerBaseInsetAdViewController : AWEAwemeNewDetailBaseController
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) NSArray progressPoints;
+@property (nonatomic) NSMutableDictionary progressState;
+@property (nonatomic) q lastReqSeriesIdx;
+@property (nonatomic) q lastAdReqTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellViewControllerDidRenderFirstFrame:;
+- (void)detailCellViewController:awemeModel:playerPlayTime:canPlayTime:totalTime:;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)setLastAdReqTime:;
+- (void)setLastReqSeriesIdx:;
+- (long long)lastReqSeriesIdx;
+- (long long)lastAdReqTime;
+- (void)trackWithName:params:;
+- (void)setProgressPoints:;
+- (void)startFrisbeeAdIfNeedWithPlayerPlayTime:totalTime:;
+- (id)progressPoints;
+- (void)requestFrisbee:;
+- (BOOL)checkShouldRequestForFrisbee:;
+- (void)requestAlgorithmPackage;
+- (void)requestComplicationWithFrisbee:;
+- (void)viewDidLoad;
+- (id)progressState;
+- (void)setProgressState:;
+- (void).cxx_destruct;
+- (id)clientParams;
+@end

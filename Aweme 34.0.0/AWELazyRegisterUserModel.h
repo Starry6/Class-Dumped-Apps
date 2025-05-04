@@ -1,0 +1,2 @@
+@interface AWELazyRegisterUserModel : NSObject
+@end

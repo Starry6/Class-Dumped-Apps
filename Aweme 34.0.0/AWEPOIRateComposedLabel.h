@@ -1,0 +1,35 @@
+@interface AWEPOIRateComposedLabel : UIView
+@property (nonatomic) AWEPOITagRateGradeModel model;
+@property (nonatomic) UIImageView rateImage;
+@property (nonatomic) UILabel rateContentLabel;
+@property (nonatomic) UILabel rateTagsLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) BOOL shouldAddGradientView;
+@property (nonatomic) BOOL shouldHaveCornerRadius;
+@property (nonatomic) BOOL shouldPickOneLabel;
+- (void)p_setupUI;
+- (double)itemMargin;
+- (void)configWithRateModel:;
+- (id)rateTagsLabel;
+- (BOOL)shouldPickOneLabel;
+- (BOOL)shouldHaveCornerRadius;
+- (id)rateImage;
+- (id)rateContentLabel;
+- (BOOL)shouldAddGradientView;
+- (double)labelCornerRadius;
+- (void)setRateImage:;
+- (void)setRateContentLabel:;
+- (void)setRateTagsLabel:;
+- (void)setShouldAddGradientView:;
+- (void)setShouldHaveCornerRadius:;
+- (void)setShouldPickOneLabel:;
+- (void)setModel:;
+- (id)gradientView;
+- (id)model;
+- (void).cxx_destruct;
+- (id)initWithScene:;
+- (void)setGradientView:;
+- (void)reset;
+- (id)imageSize;
+- (double)labelWidth;
+@end

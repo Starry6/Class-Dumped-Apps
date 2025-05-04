@@ -1,0 +1,31 @@
+@interface AWEShowMonetizeTraceInfo : NSObject
+@property (nonatomic) NSTimer timeOutTimer;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) Q step;
+@property (nonatomic) double startTime;
+@property (nonatomic) double requestStartTimeStamp;
+@property (nonatomic) double requestEndTimeStamp;
+@property (nonatomic) double cellWillShowTimeStamp;
+@property (nonatomic) double playTimeStamp;
+@property (nonatomic) AWEPaymentEventResponseModel eventResponse;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (double)playTimeStamp;
+- (id)timeOutTimer;
+- (void)setTimeOutTimer:;
+- (void)setPlayTimeStamp:;
+- (void)setRequestEndTimeStamp:;
+- (double)requestEndTimeStamp;
+- (double)requestStartTimeStamp;
+- (void)setRequestStartTimeStamp:;
+- (void)setCellWillShowTimeStamp:;
+- (double)cellWillShowTimeStamp;
+- (id)eventResponse;
+- (void)setEventResponse:;
+- (unsigned long long)step;
+- (void)dealloc;
+- (void)setStartTime:;
+- (void).cxx_destruct;
+- (void)setStep:;
+- (double)startTime;
+@end

@@ -1,0 +1,23 @@
+@interface AWECommerceSwiftImpl.FeedAdAnchorBaseConfig : AWEFeedTemplateAnchorBaseConfig
+- (void)handlerTemplateAnchorViewClicked;
+- (void)anchorViewWillShowOnSuperview;
+- (id)trackerParamsForTemplateAnchorClick;
+- (id)trackerParamsForTemplateAnchorShow;
+- (BOOL)shouldBusinessInvoke;
+- (void)willOpenPopupView;
+- (void)maskView:;
+- (void)rifleView:didEnterStatus:;
+- (void)rifleView:closeWithParams:;
+- (void)loadFailed:;
+- (void)loadFinish:;
+- (void)handleViewDidAppear:;
+- (void)handleViewDidDisappear:;
+- (void)rifleView:didDragTo:;
+- (void)trackerForTemplateAnchorShow;
+- (void)willShowDoubleLineStyleWithType:;
+- (void)trackerForTemplateAnchorClick;
+- (void)anchorConfigReset;
+- (id)init;
+- (void).cxx_destruct;
+- (void)addObservers;
+@end

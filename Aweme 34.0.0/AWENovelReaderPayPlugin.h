@@ -1,0 +1,38 @@
+@interface AWENovelReaderPayPlugin : BDNovelReaderBasePayPlugin
+@property (nonatomic) AWENovelReaderPayWallView payWallView;
+@property (nonatomic) BOOL needUpdateVip;
+@property (nonatomic) NSString lastUID;
+@property (nonatomic) BOOL isShowVipToast;
+@property (nonatomic) BDNovelVipPageData vipPageData;
+@property (nonatomic) BDReaderPageContext pageContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addSchemaCommonParams:queryParams:schemaParams:;
+- (void)onVipOpenNotify;
+- (id)vipPageData;
+- (BOOL)isShowVipToast;
+- (void)setIsShowVipToast:;
+- (void)setLastUID:;
+- (BOOL)needUpdateVip;
+- (void)setNeedUpdateVip:;
+- (id)lastUID;
+- (void)setVipPageData:;
+- (id)hostSchemaFrom:key:;
+- (void)pluginReaderDidAppear;
+- (void)pluginReaderBookInfoDidReady;
+- (id)pluginReaderVCRequestReaderPageUI:pageContext:layoutLines:;
+- (id)getNativePayWall:pageContext:;
+- (void)setPayWallView:;
+- (id)payWallView;
+- (id)publishVipSchema;
+- (void)payWallClickVipWithType:;
+- (void)jumpToVipPage;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
++ (void)managerDidFirstStart;
+@end

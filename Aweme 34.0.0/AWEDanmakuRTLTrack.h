@@ -1,0 +1,33 @@
+@interface AWEDanmakuRTLTrack : XIGDanmakuBaseTrack
+@property (nonatomic) <AWEDanmakuItemViewDelegate> itemViewdelegate;
+@property (nonatomic) double danmakuHorizontalMargin;
+- (void)unloadDanmaku:;
+- (void)addDanmaku:;
+- (void)removeAllDanmakus;
+- (void)updateWithPassingTime:;
+- (double)calculateLifeTimeForDanmakuDescriptor:;
+- (void)layoutDidChanged;
+- (void)updateDanmakuDescritor:;
+- (BOOL)canAddDanmaku:;
+- (void)danmakuContentSizeDidChanged:;
+- (void)relayoutDisplayingDanmakus;
+- (void)adjustDanmakuPositionIfNeededBetweenPrevious:current:;
+- (double)minimumSpacingFor:chasingDanmaku:;
+- (double)spacingBetweenPreviousDanmaku:chasingDanmaku:;
+- (BOOL)canDanmakuShowOnlocalPublishVirtual:;
+- (BOOL)canBookDanmaku:;
+- (id)findLastRunningDanmaku;
+- (double)calculateSpeedForDanmaku:;
+- (double)danmakuHorizontalMargin;
+- (void)setDanmakuHorizontalMargin:;
+- (id)itemViewdelegate;
+- (void)setItemViewdelegate:;
+- (BOOL)isDanmaku:canOverTakeDanmaku:;
+- (double)caculateDanmakuRemainLifeTime:;
+- (id)configDanmakuItemViewWithDescriptor:;
+- (id)init;
+- (double)length;
+- (void).cxx_destruct;
+- (double)right;
+- (id)trackType;
+@end

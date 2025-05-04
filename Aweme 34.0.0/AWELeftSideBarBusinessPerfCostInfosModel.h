@@ -1,0 +1,2 @@
+@interface AWELeftSideBarBusinessPerfCostInfosModel : AWELeftSideBarBasePerfCostInfosModel
+@end

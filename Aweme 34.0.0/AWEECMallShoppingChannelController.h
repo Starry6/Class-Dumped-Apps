@@ -1,0 +1,37 @@
+@interface AWEECMallShoppingChannelController : NSObject
+@property (nonatomic) AWEECNewBottomMallViewController contentVC;
+@property (nonatomic) NSString containerOpenTime;
+@property (nonatomic) BOOL isSafeMode;
+@property (nonatomic) NSDictionary lastFullSkinInfo;
+@property (nonatomic) BOOL isFirstLaunchChannel;
+@property (nonatomic) <IESECMallChannelConfigProtocol> config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)channelEnterWithModel:;
+- (void)channelLeaveWithModel:;
+- (id)containerOpenTime;
+- (id)contentVC;
+- (void)setContentVC:;
+- (id)getContentViewController;
+- (void)channelContextDidChange:;
+- (BOOL)isFirstLaunchChannel;
+- (void)setIsFirstLaunchChannel:;
+- (void)channelDidLoad;
+- (void)channelDidUnload;
+- (void)configContainerRealOpenTime:;
+- (void)enterSafeMode;
+- (void)mallFrameDidFinish:;
+- (void)scrapDefaultLandingPromise;
+- (BOOL)channelIsLoaded;
+- (id)lastFullSkinInfo;
+- (void)setLastFullSkinInfo:;
+- (void)setIsSafeMode:;
+- (void)setContainerOpenTime:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (BOOL)isSafeMode;
+- (void).cxx_destruct;
+@end

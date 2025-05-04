@@ -1,0 +1,36 @@
+@interface AWEAdSearchLearnMoreView : UIView
+@property (nonatomic) UIImageView leftIcon;
+@property (nonatomic) UIImageView rightArrow;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIColor toColor;
+@property (nonatomic) AWEAwemeModel awemeModel;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (BOOL)shouldShowSearchRewardCoin:;
+- (void)configWithAwemeModel:;
+- (void)setLeftIcon:;
+- (void)setRightArrow:;
+- (BOOL)isLiveAppointmentType;
+- (void)configAppointmentView;
+- (BOOL)forceDarkMode;
+- (BOOL)shouldShowWithNewStyle;
+- (id)getCoinText:;
+- (id)textStrForAppointment;
+- (void)handleAppointmentFlash;
+- (void)flashLearnMoreView:;
+- (void)configLiveVideoView;
+- (BOOL)isLiveVideoType;
+- (id)textLabel;
+- (id)defaultBackgroundColor;
+- (id)accessibilityElements;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)reset;
+- (BOOL)isAccessibilityElement;
+- (void)setTextLabel:;
+- (void)setupSubviews;
+- (id)leftIcon;
+- (id)rightArrow;
+- (id)toColor;
+- (void)setToColor:;
+@end

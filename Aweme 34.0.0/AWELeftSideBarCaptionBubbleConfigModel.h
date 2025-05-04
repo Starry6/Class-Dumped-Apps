@@ -1,0 +1,37 @@
+@interface AWELeftSideBarCaptionBubbleConfigModel : AWELeftSideBarConfigBaseModel
+@property (nonatomic) BOOL needLogin;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString businessId;
+@property (nonatomic) NSString componentId;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) double delayShowTime;
+@property (nonatomic) NSArray tabIds;
+@property (nonatomic) BOOL necessaryOpenSidebar;
+@property (nonatomic) AWELeftSideBarListCellLeftIconModel strengthIconModel;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (BOOL)needLogin;
+- (void)setNeedLogin:;
+- (double)delayShowTime;
+- (void)setDelayShowTime:;
+- (BOOL)necessaryOpenSidebar;
+- (void)setNecessaryOpenSidebar:;
+- (id)strengthIconModel;
+- (void)setStrengthIconModel:;
+- (id)tabIds;
+- (void)setTabIds:;
+- (id)schema;
+- (void)setSchema:;
+- (id)businessId;
+- (id)description;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)copyWithZone:;
+- (void)setBusinessId:;
+- (void)setComponentId:;
+- (id)componentId;
++ (id)strengthIconModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMShareTimestampView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel checkBoxLabel;
+@property (nonatomic) UIButton checkBoxBtn;
+@property (nonatomic) BOOL boxSelected;
+@property (nonatomic) double fontSize;
+@property (nonatomic) double checkBoxHeight;
+@property (nonatomic) <AWEIMShareTimestampViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithFontSize:CGFloat:;
+- (BOOL)isBoxSelected;
+- (void)updateBoxSelected:;
+- (void)configWithShareTimestampModel:;
+- (id)checkBoxLabel;
+- (void)setCheckBoxLabel:;
+- (void)tapChoiceView:;
+- (id)checkBoxBtn;
+- (double)checkBoxHeight;
+- (id)hintLabelStringWithTime:;
+- (void)setBoxSelected:;
+- (BOOL)boxSelected;
+- (void)setCheckBoxBtn:;
+- (void)setCheckBoxHeight:;
+- (double)fontSize;
+- (id)delegate;
+- (id)containerView;
+- (void)setFontSize:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+@end

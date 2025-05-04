@@ -1,0 +1,37 @@
+@interface AWESearchCardShareComponent : AWESearchComponent
+@property (nonatomic) AWESearchCardShareModel model;
+@property (nonatomic) AWESearchCardShareButton shareButton;
+@property (nonatomic) <AWEAwemePlayInteractionInteractorProtocol> interactor;
+@property (nonatomic) NSMutableArray broadCastArray;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewLayoutSubviews;
+- (id)provideProtocol;
+- (id)broadcastProtocolList;
+- (id)accessibilityElementsArr;
+- (id)p_context;
+- (id)broadCastArray;
+- (void)setBroadCastArray:;
+- (void)updateInteractor;
+- (void)shareButtonClick;
+- (void)setModel:;
+- (id)init;
+- (id)interactor;
+- (void)setInteractor:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setShareButton:;
+- (id)shareButton;
++ (id)componentSizeForModel:width:;
+@end

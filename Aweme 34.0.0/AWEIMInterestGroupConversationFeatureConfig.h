@@ -1,0 +1,26 @@
+@interface AWEIMInterestGroupConversationFeatureConfig : AWEIMBigGroupConversationFeatureConfig
+- (id)groupDescTemplateWithConversation:;
+- (id)groupDescPlaceholderWithConversation:;
+- (BOOL)enableChatDetailHistoryMediaWithConversation:permissionType:;
+- (BOOL)enableUsingFansGroupMuteStrategyWithConversation:;
+- (BOOL)enableGroupOpenNoticeMessageWithConversation:;
+- (BOOL)enableGroupWelcomeWithConversation:permissionType:;
+- (BOOL)enableEntryLimitWithConversation:permissionType:;
+- (BOOL)enableAuditWithConversation:permissionType:;
+- (BOOL)enableEditShowGroupEntranceOnUserProfileWithConversation:permissionType:;
+- (BOOL)shouldDisableByTransferGroupWithConversation:featureType:;
+- (unsigned long long)groupManagementFunctionSortStyle;
+- (BOOL)enableMutingFilterWithConversation:;
+- (BOOL)enableMuteSettingOptionFoldWithConversation:;
+- (BOOL)enableMutingFilterWithBaseConversation:;
+- (BOOL)enableMuteSettingWithConversation:;
+- (BOOL)enableGroupNumberWithConversation:permissionType:;
+- (BOOL)enableGroupAvatarWithConversation:permissionType:;
+- (BOOL)enableDissolveGroupWithConversation:permissionType:;
+- (BOOL)enableRefreshGroupManagementInfo;
+- (BOOL)enableVoteEntrance;
+- (BOOL)enableShowPushGuideTipsView;
+- (BOOL)enableInviteActiveFansJoinGroupSection;
+- (BOOL)useFansGroupStyleForGroupMemberListPage;
+- (BOOL)isFansGroupType;
+@end

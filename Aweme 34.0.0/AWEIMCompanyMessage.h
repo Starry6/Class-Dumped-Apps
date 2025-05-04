@@ -1,0 +1,38 @@
+@interface AWEIMCompanyMessage : AWEIMMessage
+@property (nonatomic) NSString originContent;
+@property (nonatomic) NSDictionary actions;
+@property (nonatomic) AWEIMLinkTextUtility textUtility;
+@property (nonatomic) q emotionCareBotFeedbackDisplayStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString pushDetail;
+- (void)setOriginContent:;
+- (id)originContent;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)enableBubbleColorWithType:isQuoteReply:;
+- (BOOL)supportRefactorCell;
+- (id)bubblePaddingInset:;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)linkArray;
+- (long long)emotionCareBotFeedbackDisplayStatus;
+- (void)setEmotionCareBotFeedbackDisplayStatus:;
+- (id)calculateAttributedContent;
+- (id)textUtility;
+- (void)setTextUtility:;
+- (id)actions;
+- (void).cxx_destruct;
+- (void)setActions:;
++ (id)getSearchMsgContent:;
++ (id)getSearchMsgContentOpt:;
++ (BOOL)searchMsgAvailable:;
++ (BOOL)searchMsgCountAvailable:;
++ (id)getDisplayContentWithContentDict:;
+@end

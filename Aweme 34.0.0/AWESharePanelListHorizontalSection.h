@@ -1,0 +1,33 @@
+@interface AWESharePanelListHorizontalSection : NSObject
+@property (nonatomic) <AWESharePanelListItem> item;
+@property (nonatomic) <AWESharePanelListCellModel> cellModel;
+@property (nonatomic) AWESharePanelListContainerCell containerCell;
+@property (nonatomic) NSMutableSet itemSets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)containerCell;
+- (void)setCellModel:;
+- (void)setContainerCell:;
+- (id)viewForHeader;
+- (id)viewForFooter;
+- (void)setItemSets:;
+- (id)itemSets;
+- (void)reloadDataInSection;
+- (void)updateDataInSection:;
+- (id)tableView:cellForRow:;
+- (id)cellModelForRow:;
+- (void)tableView:willDisplayCell:inRow:;
+- (void)setItem:;
+- (id)containerView;
+- (long long)numberOfRows;
+- (id)item;
+- (void).cxx_destruct;
+- (id)initWithItem:;
+- (id)cellModel;
+- (double)heightForRow:;
+- (double)heightForHeader;
+- (double)heightForFooter;
+- (void)reloadItem:;
+@end

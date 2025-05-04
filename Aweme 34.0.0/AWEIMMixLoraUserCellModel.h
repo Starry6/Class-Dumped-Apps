@@ -1,0 +1,33 @@
+@interface AWEIMMixLoraUserCellModel : NSObject
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString modelId;
+@property (nonatomic) UIImage avatarImage;
+@property (nonatomic) UIImage loraImage;
+@property (nonatomic) NSString loraImageURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString countInfo;
+@property (nonatomic) BOOL vacant;
+@property (nonatomic) BOOL disableCell;
+@property (nonatomic) UIColor backgroundColor;
+- (void)setLoraImageURL:;
+- (void)setLoraImage:;
+- (void)setCountInfo:;
+- (void)setVacant:;
+- (BOOL)disableCell;
+- (void)setDisableCell:;
+- (BOOL)vacant;
+- (id)loraImageURL;
+- (id)loraImage;
+- (id)countInfo;
+- (void)setUid:;
+- (void)setModelId:;
+- (id)uid;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)modelId;
+- (void)setTitle:;
+- (void)setAvatarImage:;
+- (id)avatarImage;
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMAutoSearchGiphyInterveneManager : NSObject
+@property (nonatomic) NSString checksum;
+@property (nonatomic) NSSet queryFilterSet;
+@property (nonatomic) NSSet stickerIDFilterSet;
+@property (nonatomic) BOOL disableCache;
+@property (nonatomic) NSDictionary cacheClear;
+@property (nonatomic) Q diskClearMode;
+@property (nonatomic) double diskClearTimestamp;
+@property (nonatomic) NSSet diskClearQueries;
+- (id)cacheClear;
+- (void)setCacheClear:;
+- (void)updateWithRawData:;
+- (BOOL)shouldInterveneWithSearchKey:;
+- (id)stickerIDFilterSet;
+- (void)setQueryFilterSet:;
+- (void)setStickerIDFilterSet:;
+- (void)p_deleteAllDatas;
+- (void)setDiskClearMode:;
+- (void)setDiskClearTimestamp:;
+- (void)setDiskClearQueries:;
+- (void)p_deleteCacheIfNeededWithMode:timestamp:queries:;
+- (id)queryFilterSet;
+- (unsigned long long)diskClearMode;
+- (double)diskClearTimestamp;
+- (id)diskClearQueries;
+- (void)setDisableCache:;
+- (BOOL)disableCache;
+- (id)checksum;
+- (void)setChecksum:;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFeedStablePageAuthorInfoView : UIView
+@property (nonatomic) @? followBlock;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel nickNameLabel;
+@property (nonatomic) DUXButton followButton;
+@property (nonatomic) UIView dotView;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEUserModel user;
+- (id)followButton;
+- (id)nickNameLabel;
+- (void)setNickNameLabel:;
+- (void)setFollowButton:;
+- (void)followButtonAction;
+- (id)followBlock;
+- (void)setFollowBlock:;
+- (void)updateFollowBtnWithUser:;
+- (id)user;
+- (void)setModel:;
+- (void)setUser:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)dotView;
+- (void)setDotView:;
+- (id)avatarImageView;
+- (void)configureSubviews;
+- (void)setAvatarImageView:;
+- (void)updateWithModel:;
+- (void)configureConstraints;
+@end

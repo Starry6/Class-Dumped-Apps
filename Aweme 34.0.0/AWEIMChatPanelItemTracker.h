@@ -1,0 +1,33 @@
+@interface AWEIMChatPanelItemTracker : NSObject
+@property (nonatomic) NSDictionary commonParams;
+@property (nonatomic) <AWEIMChatPanelItemTrackerDelegate> delegate;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) NSString convID;
+@property (nonatomic) NSString toUserID;
+@property (nonatomic) BOOL isSingleChat;
+@property (nonatomic) NSString formatOwnerID;
+@property (nonatomic) BOOL isFormat;
+- (id)toUserID;
+- (void)setToUserID:;
+- (id)commonParams;
+- (void)setCommonParams:;
+- (id)formatOwnerID;
+- (id)convID;
+- (id)p_chatType;
+- (void)setConvID:;
+- (BOOL)isFormat;
+- (id)p_commonParams;
+- (void)setIsFormat:;
+- (void)trackPanelSlide;
+- (void)setFormatOwnerID:;
+- (id)p_buttonNames;
+- (BOOL)isSingleChat;
+- (void)trackPanelOpen;
+- (void)trackItemClick:;
+- (void)setIsSingleChat:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)conversation;
+- (void)setConversation:;
+@end

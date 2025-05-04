@@ -1,0 +1,35 @@
+@interface AWEHotSearchBoardTabModel : MTLModel
+@property (nonatomic) Q entryWordType;
+@property (nonatomic) Q boardType;
+@property (nonatomic) NSString boardSubType;
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString tabHeaderName;
+@property (nonatomic) BOOL shouldHideListAndSubTitle;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)boardType;
+- (void)setBoardType:;
+- (id)tabHeaderName;
+- (unsigned long long)entryWordType;
+- (id)boardSubType;
+- (void)setBoardSubType:;
+- (void)setEntryWordType:;
+- (BOOL)shouldHideListAndSubTitle;
+- (void)setTabHeaderName:;
+- (id)headerIconName;
+- (void)initCallBack;
+- (void)setShouldHideListAndSubTitle:;
+- (id)init;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)tabName;
+- (void)setTabName:;
++ (id)createDefaultInstance;
++ (id)boardTypeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

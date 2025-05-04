@@ -1,0 +1,33 @@
+@interface AWELiteRedPacketStickerInfo : MTLModel
+@property (nonatomic) q actualAwardNum;
+@property (nonatomic) NSString challengeTaskKey;
+@property (nonatomic) double coefficient;
+@property (nonatomic) BOOL isRedPacket;
+@property (nonatomic) q limitAwardNum;
+@property (nonatomic) q minAwardNum;
+@property (nonatomic) q stickerType;
+@property (nonatomic) NSString toast;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStickerType:;
+- (id)challengeTaskKey;
+- (void)setChallengeTaskKey:;
+- (long long)actualAwardNum;
+- (void)setActualAwardNum:;
+- (BOOL)isRedPacket;
+- (void)setIsRedPacket:;
+- (long long)limitAwardNum;
+- (void)setLimitAwardNum:;
+- (long long)minAwardNum;
+- (void)setMinAwardNum:;
+- (double)coefficient;
+- (void).cxx_destruct;
+- (void)setValue:forUndefinedKey:;
+- (void)setToast:;
+- (id)toast;
+- (void)setCoefficient:;
+- (long long)stickerType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

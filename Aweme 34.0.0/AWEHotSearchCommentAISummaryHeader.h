@@ -1,0 +1,34 @@
+@interface AWEHotSearchCommentAISummaryHeader : UICollectionViewCell
+@property (nonatomic) AWEHotSearchCommentGradientLabel positionLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) DUXPluralAvatar avatarsView;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) AWEHotSearchCommentAISummaryHeaderModel cellModel;
+@property (nonatomic) AWECommonFeedSectionContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)awe_themeDidChange:;
+- (void)setCellModel:;
+- (BOOL)isGray;
+- (void)updateCellLayout;
+- (void)configCellWithContext:cellModel:;
+- (id)avatarsView;
+- (id)p_commentCountText:;
+- (void)p_asyncSetAvatars:;
+- (void)setAvatarsView:;
+- (BOOL)hasVideo;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+- (id)countLabel;
+- (void)setCountLabel:;
+- (id)cellModel;
+- (id)positionLabel;
+- (void)setPositionLabel:;
+@end

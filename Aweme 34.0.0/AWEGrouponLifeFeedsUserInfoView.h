@@ -1,0 +1,33 @@
+@interface AWEGrouponLifeFeedsUserInfoView : UIView
+@property (nonatomic) UIView authorContentView;
+@property (nonatomic) UIImageView authorImageView;
+@property (nonatomic) UILabel authorNameLabel;
+@property (nonatomic) UIImageView infoIconImageView;
+@property (nonatomic) UILabel infoNumberLabel;
+@property (nonatomic) AWEGrouponLifeFeedsUserInfo model;
+@property (nonatomic) BOOL shouldHideInfoView;
+@property (nonatomic) UIView infoView;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (id)authorImageView;
+- (void)setAuthorImageView:;
+- (id)infoIconImageView;
+- (void)setInfoIconImageView:;
+- (void)setShouldHideInfoView:;
+- (id)authorContentView;
+- (id)infoNumberLabel;
+- (BOOL)shouldHideInfoView;
+- (id)infoNumberWithCount:;
+- (void)handleDiggAcitonWithStatus:;
+- (void)updateDiggCount:;
+- (void)setAuthorContentView:;
+- (void)setInfoNumberLabel:;
+- (void)setModel:;
+- (id)initWithModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)infoView;
+- (void)setInfoView:;
+- (void)updateModel:;
+@end

@@ -1,0 +1,36 @@
+@interface AWESeriesIcpModel : AWEBaseApiModel
+@property (nonatomic) AWESeriesIcpPosModel horizonalPos;
+@property (nonatomic) AWESeriesIcpPosModel verticalPos;
+@property (nonatomic) AWESeriesIcpPosModel cardPos;
+@property (nonatomic) NSString fontColor;
+@property (nonatomic) q fontSize;
+@property (nonatomic) q cardFontSize;
+@property (nonatomic) q startTimeSec;
+@property (nonatomic) q disappearTimeSec;
+@property (nonatomic) NSString icpNumber;
+@property (nonatomic) NSString icpNumberSplit;
+- (id)horizonalPos;
+- (void)setHorizonalPos:;
+- (id)verticalPos;
+- (void)setVerticalPos:;
+- (id)cardPos;
+- (void)setCardPos:;
+- (long long)cardFontSize;
+- (void)setCardFontSize:;
+- (long long)startTimeSec;
+- (void)setStartTimeSec:;
+- (long long)disappearTimeSec;
+- (void)setDisappearTimeSec:;
+- (id)icpNumber;
+- (void)setIcpNumber:;
+- (id)icpNumberSplit;
+- (void)setIcpNumberSplit:;
+- (long long)fontSize;
+- (void)setFontSize:;
+- (void).cxx_destruct;
+- (id)fontColor;
+- (void)setFontColor:;
++ (id)horizonalPosJSONTransformer;
++ (id)verticalPosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

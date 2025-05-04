@@ -1,0 +1,32 @@
+@interface AWEFeedLiveTabOnePageMonitor : NSObject
+@property (nonatomic) BOOL hasReport;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) double createTime;
+@property (nonatomic) NSMutableDictionary params;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (void)didSetAttachingDIContext;
+- (void)setHasReport:;
+- (void)feedLiveTabDidLeave;
+- (void)recordEnterMethod:;
+- (void)recordPreviewFirstFrame;
+- (void)recordPreviewTabId:tabName:;
+- (void)recordPreviewResponse:error:;
+- (void)recordPreviewNetCostTime:;
+- (void)reportCountDown;
+- (void)recordRevisitResponse:error:;
+- (void)recordRevisitNetCostTime:;
+- (void)report;
+- (id)init;
+- (double)createTime;
+- (void)setup;
+- (void)setCreateTime:;
+- (void).cxx_destruct;
+- (id)params;
+- (BOOL)hasReport;
+- (void)setParams:;
+@end

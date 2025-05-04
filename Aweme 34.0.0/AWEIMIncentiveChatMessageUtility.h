@@ -1,0 +1,36 @@
+@interface AWEIMIncentiveChatMessageUtility : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)displayTextWithMessage:displayType:;
+- (void)transferToLynxPanelType:con:params:;
+- (unsigned long long)lynxPanelTypeWithSchemaKey:;
+- (BOOL)hasEstablishedRelationWithCid:;
+- (BOOL)isIncentiveGroupChatValidInFirstVersionWithCon:isAcb:;
+- (BOOL)groupIsAvailableWithConversation:;
+- (BOOL)groupIsAvailableForMangoAcbNoticeShowWithConversation:;
+- (BOOL)isGroupSignOnWithConversation:;
+- (BOOL)isGroupSignOffWithConversation:;
+- (BOOL)whetherGroupMeetsSizeRequirements:;
+- (BOOL)whetherGroupMeetsOwnerRequirements:;
+- (BOOL)enableShowMessageCardWithAweType:;
+- (BOOL)whetherMemberCount:meetsSizeRequirementsWhenSelfIsOwner:;
+- (BOOL)whetherOnlyOwnerHasEntrance;
+- (id)displayTextForBulletMessageWithMessage:displayType:;
++ (BOOL)whetherMemberCount:meetsSizeRequirementsWhenSelfIsOwner:;
++ (BOOL)whetherOnlyOwnerHasEntrance;
++ (void)trackAcceptBannerWithRelation:extraParams:;
++ (void)trackFullScreenAnimationWithType:;
++ (void)trackConTopPendantWithType:extraParams:;
++ (id)defaultGroupIncentiveMsgCardConfig;
++ (void)trackShowCardWithRelation:message:;
++ (void)trackClickCardWithRelation:message:extraParams:;
++ (id)groupIncentiveConfig;
++ (id)defaultGroupSizeConfig;
++ (void)p_openLynxPanelWithType:extraParams:;
++ (id)p_cardCommonParamsWithRelation:message:;
++ (BOOL)whetherGroupIncentiveMemberMeetsMinSizeRequirementWithCount:;
++ (void)trackMessageTabTopRedpacket:totalParams:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface AWEFeedFlameAnchorModel : MTLModel
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString tagMsg;
+@property (nonatomic) q rewardAmount;
+@property (nonatomic) q rewardShowDelay;
+@property (nonatomic) NSString publishButtonText;
+@property (nonatomic) q landingStrategy;
+@property (nonatomic) NSString taskName;
+@property (nonatomic) NSString token;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (void)setLandingStrategy:;
+- (long long)rewardAmount;
+- (void)setRewardAmount:;
+- (id)tagMsg;
+- (void)setTagMsg:;
+- (long long)rewardShowDelay;
+- (void)setRewardShowDelay:;
+- (id)publishButtonText;
+- (void)setPublishButtonText:;
+- (long long)landingStrategy;
+- (void)setTaskName:;
+- (id)taskName;
+- (void).cxx_destruct;
+- (void)setToken:;
+- (id)token;
++ (id)JSONKeyPathsByPropertyKey;
+@end

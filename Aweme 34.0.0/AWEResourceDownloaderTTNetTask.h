@@ -1,0 +1,36 @@
+@interface AWEResourceDownloaderTTNetTask : NSObject
+@property (nonatomic) BOOL cancelFlag;
+@property (nonatomic) NSString savePath;
+@property (nonatomic) NSString channel;
+@property (nonatomic) q currentLength;
+@property (nonatomic) q totalLength;
+@property (nonatomic) NSFileHandle fileHandle;
+@property (nonatomic) TTHttpTask downloadTask;
+@property (nonatomic) float lastProgressValue;
+- (float)lastProgressValue;
+- (void)setLastProgressValue:;
+- (id)initWithChannel:savePath:;
+- (id)receiveDataAndWriteToFileEnd:;
+- (id)finishAndCheckFile:;
+- (void)setSavePath:;
+- (id)tempSavePath:;
+- (void)setCurrentLength:;
+- (void)closeFileHandle;
+- (void)removeTempFileAndCloseFileHandle;
+- (void)setCancelFlag:;
+- (BOOL)cancelFlag;
+- (id)fileHandle;
+- (id)channel;
+- (id)savePath;
+- (long long)totalLength;
+- (void)cancel;
+- (void)setChannel:;
+- (void)setFileHandle:;
+- (long long)currentLength;
+- (void).cxx_destruct;
+- (void)reset;
+- (BOOL)isCancel;
+- (id)downloadTask;
+- (void)setDownloadTask:;
+- (void)setTotalLength:;
+@end

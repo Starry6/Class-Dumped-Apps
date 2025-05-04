@@ -1,0 +1,31 @@
+@interface AWEOCRCardItemConfig : MTLModel
+@property (nonatomic) q cardType;
+@property (nonatomic) AWEOCRPortraitLandscapeInfo portraitConfig;
+@property (nonatomic) AWEOCRPortraitLandscapeInfo landscapeConfig;
+@property (nonatomic) NSString guideTitle;
+@property (nonatomic) NSArray guideTexts;
+@property (nonatomic) NSString guideButton;
+@property (nonatomic) NSString scanHint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)portraitConfig;
+- (void)setPortraitConfig:;
+- (id)guideTitle;
+- (void)setGuideTitle:;
+- (id)landscapeConfig;
+- (void)setLandscapeConfig:;
+- (id)guideTexts;
+- (void)setGuideTexts:;
+- (id)scanHint;
+- (void)setScanHint:;
+- (void).cxx_destruct;
+- (long long)cardType;
+- (void)setCardType:;
+- (void)setGuideButton:;
+- (id)guideButton;
++ (id)portraitConfigJSONTransformer;
++ (id)landscapeConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

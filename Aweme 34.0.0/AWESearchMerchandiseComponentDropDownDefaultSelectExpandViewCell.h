@@ -1,0 +1,32 @@
+@interface AWESearchMerchandiseComponentDropDownDefaultSelectExpandViewCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) YYAnimatedImageView headIcon;
+@property (nonatomic) YYAnimatedImageView tailIcon;
+@property (nonatomic) {CGSize=dd} headIconSize;
+@property (nonatomic) {CGSize=dd} tailIconSize;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterComponentModel model;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterManager filterManager;
+- (id)headIcon;
+- (void)setHeadIcon:;
+- (id)tailIcon;
+- (void)setTailIcon:;
+- (id)filterManager;
+- (void)setFilterManager:;
+- (id)headIconSize;
+- (void)setHeadIconSize:;
+- (void)configWithComponentModel:filterManager:;
+- (id)tailIconSize;
+- (void)setTailIconSize:;
+- (void)updateUIDisplayStatusWithModel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setupUI;
++ (id)textFontWithModel:filterManager:;
++ (double)titleWidthWithModel:filterManager:;
++ (id)identifier;
+@end

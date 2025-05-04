@@ -1,0 +1,31 @@
+@interface AWESearchCachalotGeneralInjectViewModel : NSObject
+@property (nonatomic) Q viewType;
+@property (nonatomic) Q siteType;
+@property (nonatomic) # viewClass;
+@property (nonatomic) q priority;
+@property (nonatomic) BOOL resident;
+@property (nonatomic) double height;
+@property (nonatomic) <AWESearchCachalotCardViewProtocol> viewDelegate;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> viewModel;
+@property (nonatomic) BOOL needUpdate;
+- (BOOL)needUpdate;
+- (void)setNeedUpdate:;
+- (unsigned long long)siteType;
+- (void)setSiteType:;
+- (id)initWithViewType:siteType:viewClass:priority:resident:;
+- (Class)viewClass;
+- (void)setHeight:;
+- (void)setViewDelegate:;
+- (id)viewModel;
+- (long long)priority;
+- (id)viewDelegate;
+- (void)setPriority:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)height;
+- (unsigned long long)viewType;
+- (void)setViewType:;
+- (void)setViewClass:;
+- (BOOL)resident;
+- (void)setResident:;
+@end

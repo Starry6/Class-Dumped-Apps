@@ -1,0 +1,2 @@
+@interface AWETheaterViewHolder : AWEBaseListViewHolder
+@end

@@ -1,0 +1,31 @@
+@interface AWESearchFullScreenAdEggPreloadModel : MTLModel
+@property (nonatomic) NSString materialURL;
+@property (nonatomic) NSString materialURI;
+@property (nonatomic) q materialType;
+@property (nonatomic) NSNumber effectiveEndTime;
+@property (nonatomic) NSNumber effectiveStartTime;
+@property (nonatomic) NSString creativeID;
+@property (nonatomic) NSString dataResourcePath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCreativeID:;
+- (id)materialURL;
+- (id)effectiveEndTime;
+- (id)materialURI;
+- (id)dataResourcePath;
+- (void)setDataResourcePath:;
+- (id)effectiveStartTime;
+- (void)setMaterialURI:;
+- (void)setEffectiveEndTime:;
+- (void)setEffectiveStartTime:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (long long)materialType;
+- (void)setMaterialType:;
+- (id)creativeID;
+- (void)setMaterialURL:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWERecordBeautyItemActionsImpl : NSObject
+@property (nonatomic) CKDDExeContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)turnOnBeauty;
+- (void)turnOffBeauty;
+- (void)resetItemApplyStatusWithNodeIds:;
+- (void)applyItemStatuaWithNodeIds:;
+- (void)updateItem:value:;
+- (void)resetItemSelectStatusWithNodeIds:;
+- (void)selectCollection:;
+- (void)resetAllBeauty;
+- (void)markItemsAsDownloaded:;
+- (void)markAllItemsAsDownloaded;
+- (void)updateBeautyAvailabilities:;
+- (void)updateItemsWithDictionary:;
+- (void)p_resetSubTreeWithNode:oldState:newState:shouldResetBranchAvailability:;
+- (void)selectItem:exposeChildItemNodeIds:isNeedRenderStatus:;
+- (void)selectItems:exposeChildItemNodeIds:isNeedRenderStatus:;
+- (void)updateItems:isNeedRenderStatus:;
+- (void)updateItemsWithNotRenderAndNotAppliedStatus:;
+- (void)resetNode:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)removeItems:;
+- (void)updateItems:;
+- (void)selectItem:;
+@end

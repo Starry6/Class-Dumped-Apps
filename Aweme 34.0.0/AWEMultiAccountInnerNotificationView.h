@@ -1,0 +1,36 @@
+@interface AWEMultiAccountInnerNotificationView : UIView
+@property (nonatomic) DUXInAppNotificationMainContentView mainView;
+@property (nonatomic) AWEMultiAccountInnerNotificationConfig configModel;
+@property (nonatomic) AWEInnerNotificationRequest request;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disablePullIndicatorView;
+- (void)renderModel:context:;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)handleTapAction;
+- (void)setMainView:;
+- (id)notificationOperator;
+- (void)viewWillDisappearWithReason:;
+- (void)viewDidDisappearWithReason:;
+- (double)dismissTimerInterval;
+- (BOOL)disableUseBusinessTypeDeterminDismissTimerInterval;
+- (BOOL)tapGestureIsEnable:;
+- (BOOL)enableVibrateWhileViewDidAppear;
+- (void)customTransition:animationBlock:completion:;
+- (BOOL)isContainerBackgroundClear;
+- (void)setNotificationOperator:;
+- (id)init;
+- (id)intrinsicContentSize;
+- (id)view;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)setRequest:;
+- (id)request;
+- (id)mainView;
+- (void)updateWithModel:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMTabbarView : UIView
+@property (nonatomic) <AWEIMTabbarViewDelegate> delegate;
+@property (nonatomic) NSArray tabbarItems;
+@property (nonatomic) UIView tabbarLineView;
+@property (nonatomic) AWEIMTabbarItem selectedTabbarItem;
+@property (nonatomic) BOOL shouldHideBottomLineView;
+@property (nonatomic) q style;
+@property (nonatomic) q selectedIndex;
+- (void)updateTabbarViewStatusWithScrollView:;
+- (void)updateTabbarLineViewFrameWithIndex:;
+- (void)setTabbarItems:;
+- (void)__setupLineViewForTabbarView;
+- (BOOL)shouldHideBottomLineView;
+- (id)tabbarItems;
+- (double)__tabbarLineViewWidthAtIndex:;
+- (double)__lineViewOffsetXWithLowIndex:currentLineWidth:paddingIndexOffset:;
+- (id)tabbarLineView;
+- (void)__updateTabbarLineViewFrameWithLowIndex:offsetProcess:;
+- (void)setShouldHideBottomLineView:;
+- (BOOL)__outOfRangeWithIndex:;
+- (id)__tabbarItemAtIndex:;
+- (id)selectedTabbarItem;
+- (void)setSelectedTabbarItem:;
+- (void)configWithDelegate:tabbarItems:type:;
+- (void)setTabbarLineView:;
+- (void)setSelectedIndex:;
+- (id)delegate;
+- (long long)style;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setStyle:;
+@end

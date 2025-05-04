@@ -1,0 +1,31 @@
+@interface AWENoxusLongAwemeModel : AWEBaseApiModel
+@property (nonatomic) NSString awemeId;
+@property (nonatomic) AWEDemaciaVideoModel video;
+@property (nonatomic) AWEDemaciaAwemeStatisticsModel statistics;
+@property (nonatomic) AWENoxusEpisodeInfoModel episodeInfo;
+@property (nonatomic) AWENoxusExtraInfoModel extraInfo;
+@property (nonatomic) BOOL isLocated;
+@property (nonatomic) BOOL isLanscape;
+@property (nonatomic) NSString preadParams;
+- (void)setAwemeId:;
+- (id)awemeId;
+- (id)episodeInfo;
+- (void)setEpisodeInfo:;
+- (BOOL)isLanscape;
+- (void)setIsLanscape:;
+- (BOOL)isLocated;
+- (void)setIsLocated:;
+- (id)preadParams;
+- (void)setPreadParams:;
+- (void)setStatistics:;
+- (id)video;
+- (void)setVideo:;
+- (id)statistics;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (void)setExtraInfo:;
++ (id)videoJSONTransformer;
++ (id)isEqualBlock;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)statisticsJSONTransformer;
+@end

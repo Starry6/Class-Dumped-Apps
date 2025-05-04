@@ -1,0 +1,38 @@
+@interface AWEIMActionRecordConversationConsumeComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMConversationContext context;
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) NSMutableArray triggeringAlert;
+@property (nonatomic) BDXBridgeEventSubscriber bridgeEventSubscriber;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (void)hostVC_willDealloc;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)hostVC_viewDidAppear;
+- (void)hostVC_viewWillDisappear;
+- (void)__log:;
+- (void)actionRecordController:didAddRecord:;
+- (void)didExecuteActionRecordWithIdentifier:covnersationShortID:type:extraInfo:;
+- (void)removeLynxEventObservers;
+- (void)__consumeOpenRedPacketActionIfNeeded;
+- (id)triggeringAlert;
+- (id)__validPopupTypes;
+- (void)setTriggeringAlert:;
+- (void)addLynxEventObservers;
+- (void)__handleAppWillResignActive:;
+- (void)__handleAppDidBecomeActive:;
+- (BOOL)__canShowOpenRedPacketRecord;
+- (BOOL)__showWithRecord:;
+- (id)__alertIdentifierFromActionRecord:;
+- (void)setBridgeEventSubscriber:;
+- (id)bridgeEventSubscriber;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)__isActive;
++ (BOOL)canCreateComponentWithContext:;
+@end

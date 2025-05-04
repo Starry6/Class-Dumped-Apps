@@ -1,0 +1,33 @@
+@interface AWENearbySkylightGestureGuideView : UIView
+@property (nonatomic) UIView topView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) UILabel secondLabel;
+@property (nonatomic) UIImageView downArrowImageView;
+@property (nonatomic) @? guideInteruptedBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginGuideAnimationWithFeedView:capsuleView:currentInteractionView:skyligtView:completion:;
+- (void)setDownArrowImageView:;
+- (id)downArrowImageView;
+- (id)guideInteruptedBlock;
+- (void)setGuideInteruptedBlock:;
+- (void)animationDidStop:finished:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)touchesBegan:withEvent:;
+- (id)topView;
+- (void)setupUI;
+- (void)setTopLabel:;
+- (void)setTopView:;
+- (id)topLabel;
+- (void)setSecondLabel:;
+- (id)secondLabel;
+@end

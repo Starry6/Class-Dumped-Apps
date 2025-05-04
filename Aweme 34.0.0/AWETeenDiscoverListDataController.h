@@ -1,0 +1,31 @@
+@interface AWETeenDiscoverListDataController : AWEListDataController
+@property (nonatomic) Q cursor;
+@property (nonatomic) Q cardCursor;
+@property (nonatomic) Q albumListCount;
+@property (nonatomic) NSString pageToken;
+@property (nonatomic) NSString channelId;
+@property (nonatomic) q channelKind;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (id)pageToken;
+- (void)setPageToken:;
+- (void)p_fetchWithPullType:completion:;
+- (long long)channelKind;
+- (void)setChannelKind:;
+- (void)teen_loadMoreWithCompletion:;
+- (void)teen_refreshWithCompletion:;
+- (void)teen_initFetchWithCompletion:;
+- (void)setCardCursor:;
+- (void)setAlbumListCount:;
+- (unsigned long long)cardCursor;
+- (unsigned long long)albumListCount;
+- (unsigned long long)cursor;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)channelId;
+- (void)setChannelId:;
++ (void)fetchRecentWatchedWithCompletion:;
++ (void)p_filterRecentlyWatchSection:;
++ (void)fetchChannelDataWithCompletion:;
+@end

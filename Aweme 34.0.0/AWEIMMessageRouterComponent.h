@@ -1,0 +1,31 @@
+@interface AWEIMMessageRouterComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMEditGroupAvatarViewModel editGroupAvtarVM;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_willDealloc;
+- (void)componentDidMounted:;
+- (void)showCloseFriendsMomentDetailWithItemID:itemAuthorUID:;
+- (void)showDetailWithCell:extraParams:;
+- (void)didTapNewAwemeTipCell:;
+- (void)showMessageDetailWithMessage:cell:requestScene:;
+- (BOOL)isSuccessfulHandleTappedTemplateModel:message:requestScene:;
+- (void)transferToEditGroupAvatarPage:;
+- (void)transferToGroupDetailPage:enterMethod:enterFrom:;
+- (void)transferToSendRedPacketPageForConversationId:redPacketSource:;
+- (void)transferToSearchResultDetailForConversationId:;
+- (void)configInputVCMilestoneContentWithInfo:conversationId:;
+- (void)p_processTransferToProfileTemplate:;
+- (id)cardLevelWithClickedTemplateModel:;
+- (void)p_processTransferToAwemeTemplate:requestScene:;
+- (id)cellWithClickedTemplate:;
+- (void)__transferToEditGroupAvatarPage;
+- (id)editGroupAvtarVM;
+- (void)p_tranferToGroupDetailViewControllerWithEnterMethod:enterFrom:;
+- (id)p_getSingleChatDetailViewControllerUrl;
+- (void)setEditGroupAvtarVM:;
+- (void).cxx_destruct;
+- (id)conversation;
++ (BOOL)canCreateComponentWithContext:;
+@end

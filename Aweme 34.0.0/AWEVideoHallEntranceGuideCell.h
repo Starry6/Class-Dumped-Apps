@@ -1,0 +1,32 @@
+@interface AWEVideoHallEntranceGuideCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel tipContentLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) DUXButton addButton;
+@property (nonatomic) AWEVideoHallPageContext context;
+@property (nonatomic) AWETheaterEntranceGuideModel model;
+@property (nonatomic) BDImageView panelImageView;
+- (void)didClickActionButton;
+- (void)p_closeButtonTapped;
+- (id)panelImageView;
+- (void)setPanelImageView:;
+- (void)configWithContext:model:;
+- (id)tipContentLabel;
+- (void)setTipContentLabel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (id)iconImageView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)addButton;
+- (void)setAddButton:;
+@end

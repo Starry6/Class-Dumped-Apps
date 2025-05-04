@@ -1,0 +1,32 @@
+@interface AWESearchImmersiveContainerView : UIView
+@property (nonatomic) AWESearchImmersiveModel model;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView<AWESearchImmersiveViewProtocol> immersiveView;
+@property (nonatomic) UIView immersiveCoverView;
+@property (nonatomic) <AWESearchImmersiveContainerViewDelegate> delegate;
+- (void)hostContentOffset:;
+- (void)didRenderCompletion;
+- (void)searchImmersiveBanner:;
+- (void)searchImmersiveTransToBottom:;
+- (void)searchImmersiveOpenVideo:;
+- (id)immersiveView;
+- (void)setImmersiveView:;
+- (id)immersiveCoverView;
+- (void)setImmersiveCoverView:;
+- (void)setModel:;
+- (void)didBecomeActive;
+- (void)viewWillDisappear:;
+- (id)init;
+- (id)delegate;
+- (void)didResignActive;
+- (id)contentView;
+- (void)viewDidDisappear:;
+- (id)model;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)viewDidAppear:;
+- (void)setDelegate:;
+- (void)setupUI;
+- (void)updateWithModel:;
+@end

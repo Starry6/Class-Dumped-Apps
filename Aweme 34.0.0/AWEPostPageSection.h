@@ -1,0 +1,36 @@
+@interface AWEPostPageSection : NSObject
+@property (nonatomic) NSString diffId;
+@property (nonatomic) NSArray elements;
+@property (nonatomic) NSArray elementsSnapshots;
+@property (nonatomic) NSString headerId;
+@property (nonatomic) # headerViewClass;
+@property (nonatomic) double headerHeight;
+@property (nonatomic) NSString footerId;
+@property (nonatomic) # footerViewClass;
+@property (nonatomic) double footerHeight;
+- (id)diffIdentifier;
+- (BOOL)isEqualToDiffableObject:;
+- (void)setFooterId:;
+- (id)diffId;
+- (void)setDiffId:;
+- (id)initWithElements:center:;
+- (id)headerId;
+- (void)setHeaderId:;
+- (id)footerId;
+- (id)elementsSnapshots;
+- (void)setElementsSnapshots:;
+- (double)headerHeight;
+- (id)elements;
+- (id)description;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (void)setElements:;
+- (void)setHeaderHeight:;
+- (void)setFooterHeight:;
+- (double)footerHeight;
+- (Class)footerViewClass;
+- (Class)headerViewClass;
+- (void)setFooterViewClass:;
+- (void)setHeaderViewClass:;
++ (id)sectionWithElements:center:;
+@end

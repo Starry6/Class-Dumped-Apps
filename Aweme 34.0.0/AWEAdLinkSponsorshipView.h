@@ -1,0 +1,32 @@
+@interface AWEAdLinkSponsorshipView : AWEMarkView
+@property (nonatomic) NSString itemID;
+@property (nonatomic) AWEAdLinkModel linkModel;
+@property (nonatomic) BOOL isClosedByUser;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) BOOL disableAdTrack;
+@property (nonatomic) UIButton closeButton;
+- (id)linkModel;
+- (void)closeBtnTapped:;
+- (void)setLinkModel:;
+- (void)setupCloseButtonIfNeeded;
+- (void)setIsClosedByUser:;
+- (BOOL)disableAdTrack;
+- (void)setupNormalStyle;
+- (void)setupWeakStyle;
+- (void)setupStrongStyle;
+- (void)setupSpecialStyle;
+- (void)layoutCloseButton;
+- (void)configWithLinkModel:itemID:;
+- (BOOL)isClosedByUser;
+- (void)setDisableAdTrack:;
+- (id)itemID;
+- (void)setItemID:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
++ (double)titleHeightOfLinkModel:;
++ (double)viewHeightWithLinkModel:titleHeight:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMFileAttachmentDownloaderCancelProcess : AWEIMFileAttachmentDownloaderProcess
+@end

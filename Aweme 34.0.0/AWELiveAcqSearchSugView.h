@@ -1,0 +1,30 @@
+@interface AWELiveAcqSearchSugView : UIView
+@property (nonatomic) NSArray sugList;
+@property (nonatomic) AWELiveAcqCastVideoSearchSugManager manager;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) <AWELiveAcqCastVideoViewModelProtocol> viewModel;
+@property (nonatomic) @? didSelect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sugList;
+- (void)setSugList:;
+- (id)initWithViewModel:manager:;
+- (void)setDidSelect:;
+- (void)updateSugList:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setManager:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (id)tableView;
+- (id)manager;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setupUI;
+- (id)didSelect;
+@end

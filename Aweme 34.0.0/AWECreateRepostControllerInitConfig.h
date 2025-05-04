@@ -1,0 +1,30 @@
+@interface AWECreateRepostControllerInitConfig : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEAwemeModel fromAweme;
+@property (nonatomic) AWECommentModel replyComment;
+@property (nonatomic) AWECommentModel replySubComment;
+@property (nonatomic) @ notificationObject;
+@property (nonatomic) NSDictionary logDict;
+@property (nonatomic) @? sendRepostBlock;
+@property (nonatomic) @? needHideToastBlock;
+@property (nonatomic) @? completionBlock;
+- (id)aweme;
+- (void)setAweme:;
+- (id)logDict;
+- (id)replyComment;
+- (void)setReplyComment:;
+- (void)setLogDict:;
+- (void)setReplySubComment:;
+- (id)replySubComment;
+- (void)setFromAweme:;
+- (id)fromAweme;
+- (id)sendRepostBlock;
+- (void)setSendRepostBlock:;
+- (id)needHideToastBlock;
+- (void)setNeedHideToastBlock:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setNotificationObject:;
+- (void).cxx_destruct;
+- (id)notificationObject;
+@end

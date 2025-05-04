@@ -1,0 +1,31 @@
+@interface AWEAppFoundationSettingManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)adConfigIsClickJumpEnabled;
++ (id)adConfigInterceptList;
++ (id)adConfigInterceptTips;
++ (BOOL)adConfigIsClickJumpWithinInfoPlist;
++ (BOOL)adConfigIsAutoJumpEnabled;
++ (long long)adConfigClickJumpInterval;
++ (id)adConfigAllowClickJumpWhiteList;
++ (id)adConfigJumpAllowList;
++ (id)globalTipsNetWeak;
++ (id)globalTipsAtTooMore;
++ (id)globalTipsDraftPublish;
++ (id)globalTipsNotShare;
++ (id)globalTipsSelfSeeNotShare;
++ (id)globalTipsNotComment;
++ (BOOL)enableVirtualPhoneNumber;
++ (BOOL)sharkEnabled;
++ (id)globalTipsSearchTips;
++ (id)globalTipsShareFail;
++ (id)thirdPlatformLoginSettings;
++ (BOOL)flipChatShowLoginStatus;
++ (BOOL)networkXTokenEnable;
++ (BOOL)uiSwizzleEnable;
++ (BOOL)needTTNetRegion;
++ (BOOL)needTTNetRoute;
++ (BOOL)enableThirdPartyDataRefresh;
+@end

@@ -1,0 +1,2 @@
+@interface AWEFCoinBridgeShowCoinMethodParamModel : BDXBridgeModel
+@end

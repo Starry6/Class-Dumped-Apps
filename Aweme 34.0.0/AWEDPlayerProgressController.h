@@ -1,0 +1,30 @@
+@interface AWEDPlayerProgressController : AWEDPlayerInteractionBaseController
+@property (nonatomic) AWEDPlayerProgressView progressView;
+@property (nonatomic) BOOL shouldResponsePanGesture;
+@property (nonatomic) Q state;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)playerWillLoopPlaying:;
+- (void)player:updatePlayTime:canPlayTime:totalTime:;
+- (unsigned long long)activateType;
+- (void)seekToPlayTime:completion:;
+- (BOOL)shouldResponseGestureRecognizer:;
+- (BOOL)handleResponseGestureRecognizer:;
+- (void)updateForSimplePlayerWithVideoModel:;
+- (void)updateDPlayerState:;
+- (BOOL)shouldResponsePanGesture;
+- (void)setShouldResponsePanGesture:;
+- (void)progressViewTouchBegan:;
+- (void)progressViewTouchChanged:;
+- (void)progressViewTouchEnded:bySlideScreen:;
+- (id)progressView;
+- (void)viewDidLoad;
+- (unsigned long long)state;
+- (void)setProgressView:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setState:;
+@end

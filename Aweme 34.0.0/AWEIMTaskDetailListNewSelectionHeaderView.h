@@ -1,0 +1,35 @@
+@interface AWEIMTaskDetailListNewSelectionHeaderView : UITableViewHeaderFooterView
+@property (nonatomic) UICollectionView filterCollectionView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) AWEIMDetailListNewSelectionContext context;
+@property (nonatomic) AWEIMTaskDetailistFilterOptionModel filterModel;
+@property (nonatomic) AWEIMWorkSpaceDetailFilterInfoModel missionInfo;
+@property (nonatomic) <AWEIMTaskDetailListNewSelectionHeaderViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)setFilterModel:;
+- (id)filterModel;
+- (id)filterCollectionView;
+- (void)setFilterCollectionView:;
+- (void)setMissionInfo:;
+- (id)missionInfo;
+- (void)showSelectPopover:;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)initWithReuseIdentifier:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)context;
+- (id)dataSource;
+- (void)setupUI;
+- (void)setupLayout;
+@end

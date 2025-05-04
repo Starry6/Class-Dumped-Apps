@@ -1,0 +1,34 @@
+@interface AWEHotSpotPublishCreationTask : NSObject
+@property (nonatomic) NSString creationId;
+@property (nonatomic) NSString hotSpotId;
+@property (nonatomic) q taskType;
+@property (nonatomic) AWEGeneralSearchModel wrappedModel;
+@property (nonatomic) q barType;
+@property (nonatomic) BOOL publishOptimize;
+@property (nonatomic) NSObject<AWESearchDecoratorDelegateProtocol> searchDecoratorDelegate;
+@property (nonatomic) BOOL needInsertTry;
+@property (nonatomic) BOOL expiredAfterRefresh;
+@property (nonatomic) AWEHotSpotPublishConfigParams configParamsModel;
+- (id)creationId;
+- (void)setCreationId:;
+- (id)hotSpotId;
+- (void)setHotSpotId:;
+- (void)setBarType:;
+- (id)searchDecoratorDelegate;
+- (BOOL)publishOptimize;
+- (void)setSearchDecoratorDelegate:;
+- (id)configParamsModel;
+- (void)setConfigParamsModel:;
+- (void)setPublishOptimize:;
+- (void)setExpiredAfterRefresh:;
+- (BOOL)expiredAfterRefresh;
+- (id)wrappedModel;
+- (void)setWrappedModel:;
+- (BOOL)needInsertTry;
+- (void)setNeedInsertTry:;
+- (long long)taskType;
+- (long long)barType;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setTaskType:;
+@end

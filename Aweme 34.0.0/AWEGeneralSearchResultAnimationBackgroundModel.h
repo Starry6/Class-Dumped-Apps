@@ -1,0 +1,2 @@
+@interface AWEGeneralSearchResultAnimationBackgroundModel : AWESearchBackgroundModel
+@end

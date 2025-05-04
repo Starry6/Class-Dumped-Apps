@@ -1,0 +1,33 @@
+@interface AWEJSBridge : IESPiper
+@property (nonatomic) NSMutableDictionary preventCloseDictionary;
+@property (nonatomic) NSDictionary adInfoDictionary;
+@property (nonatomic) UIViewController webViewController;
+@property (nonatomic) BOOL shouldShowPopupWindow;
+@property (nonatomic) BOOL isPreventingCloseEvent;
+- (void)_registerJsBridge;
+- (void)_registerCommonJsBridge;
+- (void)registerPreventClose;
+- (void)setShouldShowPopupWindow:;
+- (void)setIsPreventingCloseEvent:;
+- (void)registerAWEJS2NativeHandlerBlock:forJSMethod:authType:;
+- (id)preventCloseDictionary;
+- (BOOL)isPreventingCloseEvent;
+- (id)adInfoDictionary;
+- (void)setAdInfoDictionary:;
+- (BOOL)shouldShowPopupWindow;
+- (void)setPreventCloseDictionary:;
+- (id)initWithWebView:;
+- (void).cxx_destruct;
+- (id)webViewController;
+- (void)setWebViewController:;
++ (void)registerJSBridgeHandlerBlock:forJSMethod:;
++ (void)runOnceForLazyRegister;
++ (void)registerAWEJS2NativeHandlerBlock:forJSMethod:authType:;
++ (void)unLock;
++ (void)registerJSBridgeHandlerBlock:forJSMethod:authType:;
++ (void)bridgeMethodAssert:;
++ (void)bridgeDicAssert:method:;
++ (id)JSBridgeDictionary;
++ (unsigned long long)shrinkedJSBAuth;
++ (void)lock;
+@end

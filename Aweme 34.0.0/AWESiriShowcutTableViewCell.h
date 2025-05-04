@@ -1,0 +1,35 @@
+@interface AWESiriShowcutTableViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) DUXAbandonedButton addOrEditShowCutButton;
+@property (nonatomic) UIView cellBackgroundView;
+@property (nonatomic) AWESiriShowCutModel shortcutModel;
+@property (nonatomic) @? clickAddOrEditButtonBlock;
+@property (nonatomic) BOOL bigFontModeEnable;
+@property (nonatomic) BOOL modernBigFontEnable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adaptiveFontOfSize:weight:;
+- (void)setBigFontModeEnable:;
+- (BOOL)modernBigFontEnable;
+- (BOOL)bigFontModeEnable;
+- (void)setModernBigFontEnable:;
+- (id)addOrEditShowCutButton;
+- (void)addOrEditAction;
+- (id)clickAddOrEditButtonBlock;
+- (void)setShortcutModel:;
+- (id)shortcutModel;
+- (void)setClickAddOrEditButtonBlock:;
+- (void)setAddOrEditShowCutButton:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)cellBackgroundView;
+- (void)setCellBackgroundView:;
+- (void)createUI;
+@end

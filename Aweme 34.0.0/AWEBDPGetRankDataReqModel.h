@@ -1,0 +1,32 @@
+@interface AWEBDPGetRankDataReqModel : NSObject
+@property (nonatomic) NSNumber pageNum;
+@property (nonatomic) NSNumber pageSize;
+@property (nonatomic) NSNumber dataType;
+@property (nonatomic) NSNumber priority;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString value;
+@property (nonatomic) NSString zoneId;
+@property (nonatomic) NSString rankType;
+@property (nonatomic) NSString relationType;
+- (void)setExtra:;
+- (void)setRelationType:;
+- (void)setPageNum:;
+- (id)pageNum;
+- (id)numberOfRankType;
+- (id)numberOfRelationType;
+- (id)zoneId;
+- (void)setZoneId:;
+- (id)value;
+- (void)setDataType:;
+- (id)extra;
+- (id)priority;
+- (void)setValue:;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)dataType;
+- (void)setRankType:;
+- (id)rankType;
+- (id)pageSize;
+- (void)setPageSize:;
+- (id)relationType;
+@end

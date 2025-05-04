@@ -1,0 +1,37 @@
+@interface AWEIMSchoolGroupComponents : AWEIMComponentBase
+@property (nonatomic) AWEIMStorage storage;
+@property (nonatomic) AWEIMSchoolGroupManager manager;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (double)showTimeoutWithContext:;
+- (BOOL)shouldCancelAllOtherPendingAlertsWhenShowedWithContext:;
+- (void)showWithCloseCallback:;
+- (void)componentDidMounted:;
+- (long long)messageListPopupViewStatus;
+- (void)messageListPopupViewShow;
+- (void)setEnterActionSchema:;
+- (BOOL)__isEnableToNotifyVerify;
+- (id)__conversation;
+- (void)__refreshLastNotifyVerifyTimestamp;
+- (BOOL)__lastNotiVerifyTimeIsValid;
+- (double)__lastNotifyVerifyTimeStamp;
+- (id)__verifyStorageKey;
+- (id)schema;
+- (void)setStorage:;
+- (void)setManager:;
+- (id)init;
+- (id)storage;
+- (void)setSchema:;
+- (id)manager;
+- (void).cxx_destruct;
+- (BOOL)hasShown;
+- (void)setHasShown:;
++ (BOOL)canCreateComponentWithContext:;
+@end

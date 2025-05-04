@@ -1,0 +1,37 @@
+@interface AWERelatedVideoJumpConfirmParamModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString checkBoxTitle;
+@property (nonatomic) NSString stayButtonTitle;
+@property (nonatomic) NSString jumpButtonTitle;
+@property (nonatomic) q enableReplayCount;
+@property (nonatomic) q showFrequentDay;
+@property (nonatomic) AWEURLModel videoPicture;
+@property (nonatomic) AWEURLModel groundPicture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)checkBoxTitle;
+- (void)setCheckBoxTitle:;
+- (id)stayButtonTitle;
+- (void)setStayButtonTitle:;
+- (id)jumpButtonTitle;
+- (void)setJumpButtonTitle:;
+- (long long)enableReplayCount;
+- (void)setEnableReplayCount:;
+- (long long)showFrequentDay;
+- (void)setShowFrequentDay:;
+- (id)videoPicture;
+- (void)setVideoPicture:;
+- (id)groundPicture;
+- (void)setGroundPicture:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)videoPictureJSONTransformer;
++ (id)groundPictureJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

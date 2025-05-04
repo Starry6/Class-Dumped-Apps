@@ -1,0 +1,30 @@
+@interface AWEUGTributeTask : NSObject
+@property (nonatomic) BOOL isReporting;
+@property (nonatomic) <AWEUGTimeMeterTaskProtocol> task;
+@property (nonatomic) double reportInterval;
+@property (nonatomic) q reportedProgress;
+@property (nonatomic) q ackedProgress;
+@property (nonatomic) NSString timerTaskIdentifier;
+@property (nonatomic) NSString crossToken;
+@property (nonatomic) NSDictionary taskConfig;
+- (id)taskConfig;
+- (void)setReportInterval:;
+- (double)reportInterval;
+- (BOOL)isReporting;
+- (void)setTaskConfig:;
+- (void)setIsReporting:;
+- (id)crossToken;
+- (void)setCrossToken:;
+- (void)setTimerTaskIdentifier:;
+- (long long)reportedProgress;
+- (void)taskReport;
+- (long long)ackedProgress;
+- (void)setReportedProgress:;
+- (void)setAckedProgress:;
+- (id)initWithCrossToken:timerTaskIdentifier:taskConfig:reportInterval:;
+- (void)taskProgressUpdated:;
+- (id)timerTaskIdentifier;
+- (void)setTask:;
+- (id)task;
+- (void).cxx_destruct;
+@end

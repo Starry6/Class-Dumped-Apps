@@ -1,0 +1,36 @@
+@interface AWEFeedCollectionContainerLayoutConfig : NSObject
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIColor relatedCellPlaceholderColor;
+@property (nonatomic) UIColor relatedCellCoverImageViewBGColor;
+@property (nonatomic) UIColor relatedCellDescriptionLabelTextColor;
+@property (nonatomic) UIColor relatedCellUnderDescriptionViewBGColor;
+@property (nonatomic) UIColor relatedCellAuthorNameLabelTextColor;
+@property (nonatomic) UIColor relatedCellLikeCountLabelTextColor;
+@property (nonatomic) UIColor relatedCellUnLikeIconTintColor;
+@property (nonatomic) UIColor loadMoreLabelTextColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLoadMoreLabelTextColor:;
+- (void)setRelatedCellPlaceholderColor:;
+- (void)setRelatedCellCoverImageViewBGColor:;
+- (void)setRelatedCellDescriptionLabelTextColor:;
+- (void)setRelatedCellUnderDescriptionViewBGColor:;
+- (void)setRelatedCellAuthorNameLabelTextColor:;
+- (void)setRelatedCellLikeCountLabelTextColor:;
+- (void)setRelatedCellUnLikeIconTintColor:;
+- (id)relatedCellPlaceholderColor;
+- (id)relatedCellCoverImageViewBGColor;
+- (id)relatedCellDescriptionLabelTextColor;
+- (id)relatedCellUnderDescriptionViewBGColor;
+- (id)relatedCellAuthorNameLabelTextColor;
+- (id)relatedCellLikeCountLabelTextColor;
+- (id)relatedCellUnLikeIconTintColor;
+- (id)loadMoreLabelTextColor;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
++ (id)defaultConfig;
+@end

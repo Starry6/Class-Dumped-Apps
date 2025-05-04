@@ -1,0 +1,30 @@
+@interface AWEVideoNewFriendsDailyService : HTSService
+@property (nonatomic) UIImage avatarPhoto;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isNewFriendsDailyPublishPanelExperimentStatusWithPublishModel:;
+- (BOOL)isNewFriendsDailyPublishPanelSettingStyleRadicalStatus;
+- (BOOL)isNewStoryDailyPublishPageButtonStyleStatus;
+- (BOOL)isPublishPageNewFriendsExperimentStatusWithPublishModel:isAfterStatus:;
+- (void)cachePublishBeforePanelIsFinishedLoadLastSelectedUsersCacheBlockStatus:;
+- (void)cachePublishBeforePanelIsFinishedFetchLastSelectedUsersBlockStatus:;
+- (BOOL)isPublishBeforePanelFinishedStatus;
+- (id)dontUsers;
+- (id)publishBeforePanelFriendsRelativeList;
+- (id)publishBeforePanelMateRelativeList;
+- (void)cachePublishBeforePanelFriendsRelativeList:;
+- (void)cachePublishBeforePanelMateRelativeList:;
+- (BOOL)isNewStoryPublishPageToShowFriendsDailyButtonWithRepository:;
+- (id)publishPagePublishBtnText;
+- (BOOL)supportPOIPromptCardWithModel:;
+- (BOOL)supportElementForNewFriendsDailyPublishPageStatus:publishModel:;
+- (long long)privacyPermissionTypeWithPublishModel:;
+- (void)cachedontUsersWithUids:;
+- (void)resetPublishBeforePanelFinishedStatus;
+- (unsigned long long)friendsDailyPublishPanelSettingStyle;
+- (id)avatarPhoto;
+- (void)setAvatarPhoto:;
+- (void).cxx_destruct;
+@end

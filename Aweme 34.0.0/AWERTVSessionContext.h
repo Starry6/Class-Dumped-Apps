@@ -1,0 +1,33 @@
+@interface AWERTVSessionContext : NSObject
+@property (nonatomic) q rtvType;
+@property (nonatomic) q rtvCallType;
+@property (nonatomic) q rtvEnterFrom;
+@property (nonatomic) NSNumber capacity;
+@property (nonatomic) NSArray inRTVUserIMIDs;
+@property (nonatomic) BOOL rtvIsConnected;
+@property (nonatomic) BOOL isFeedSharing;
+@property (nonatomic) BOOL isInGaming;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isFeedSharing;
+- (long long)rtvType;
+- (id)initSessionContextWithObserveRoomInfo:;
+- (id)initSessionContextWithVoipModel:;
+- (id)__inRtvUserIMIDsWithVoip:;
+- (id)__inRtvUserIMIDsWithObserveRoomInfo:;
+- (long long)rtvCallType;
+- (id)inRTVUserIMIDs;
+- (long long)rtvEnterFrom;
+- (BOOL)rtvIsConnected;
+- (long long)voipEnterFrom;
+- (BOOL)isInGaming;
+- (id)roomCapacity;
+- (id)capacity;
+- (BOOL)isConnected;
+- (long long)type;
+- (void).cxx_destruct;
+- (long long)callType;
+- (id)userIDs;
+@end

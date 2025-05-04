@@ -1,0 +1,30 @@
+@interface AWELandscapeLVideoHightLightPanelViewController : UIViewController
+@property (nonatomic) UIView container;
+@property (nonatomic) UIView effectView;
+@property (nonatomic) UIViewController highLightViewController;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWELandscapePageContext pageContext;
+@property (nonatomic) <AWELandscapeSplitScreenContainerDelegate> delegate;
+@property (nonatomic) BOOL isShowingChapter;
+- (id)createContainerView;
+- (id)createEffectView;
+- (void)setIsShowingChapter:;
+- (id)initWithPageContext:delegate:;
+- (BOOL)isShowingChapter;
+- (void)setHighLightViewController:;
+- (id)highLightViewController;
+- (void)setModel:;
+- (void)setContainer:;
+- (id)container;
+- (id)delegate;
+- (id)effectView;
+- (void)viewDidLoad;
+- (void)setEffectView:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)didDismiss;
+- (void)setDelegate:;
+- (void)setPageContext:;
+- (id)pageContext;
+- (void)updateWithModel:;
+@end

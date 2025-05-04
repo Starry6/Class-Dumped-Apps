@@ -1,0 +1,36 @@
+@interface AWEPlaylistCreateService : NSObject
+@property (nonatomic) AWEMusicPlaylistTitleInputView inputView;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) BOOL hasShow;
+@property (nonatomic) NSArray musicModels;
+@property (nonatomic) AWEPlaylistCreateConfig createConfig;
+@property (nonatomic) UIWindow appWindow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)keyboardChangedWithTransition:;
+- (BOOL)hasShow;
+- (void)setHasShow:;
+- (id)musicModels;
+- (void)setMusicModels:;
+- (id)createConfig;
+- (void)setCreateConfig:;
+- (void)createPlaylistWithDspMusicModels:createConfig:;
+- (void)inputViewTapCancel:;
+- (void)inputViewTapCompleted:text:privateSetting:;
+- (void)updateInputViewWithKeyboardFrame:;
+- (void)_createPlaylistWithTitle:privateSetting:;
+- (void)dissmiss;
+- (id)newPlaylistInfoWithTitlt:playlistId:statusInfo:privacyStatus:;
+- (void)show;
+- (void)dealloc;
+- (void)setInputView:;
+- (void).cxx_destruct;
+- (id)inputView;
+- (id)bgView;
+- (void)setBgView:;
+- (id)appWindow;
+- (void)setAppWindow:;
++ (id)shareInstance;
+@end

@@ -1,0 +1,30 @@
+@interface AWEHPTabBarBGSkinConfigModel : MTLModel
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL padEnable;
+@property (nonatomic) BOOL hotReloadEnable;
+@property (nonatomic) double endTime;
+@property (nonatomic) NSString effect;
+@property (nonatomic) NSDictionary tabs;
+@property (nonatomic) AWEHPTabBarBGSkinResource resources;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)padEnable;
+- (BOOL)hotReloadEnable;
+- (void)setPadEnable:;
+- (void)setHotReloadEnable:;
+- (BOOL)enable;
+- (id)resources;
+- (BOOL)isValidWithError:;
+- (double)endTime;
+- (id)effect;
+- (void)setEndTime:;
+- (void)setResources:;
+- (void).cxx_destruct;
+- (id)tabs;
+- (void)setEffect:;
+- (void)setEnable:;
+- (void)setTabs:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

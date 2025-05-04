@@ -1,0 +1,33 @@
+@interface AWESearchDynamicPreLayoutManager : NSObject
+@property (nonatomic) NSMutableArray taskhQueue;
+@property (nonatomic) AWESearchDynamicPreLayoutTask previousTask;
+@property (nonatomic) q layoutStrategy;
+@property (nonatomic) # preprocessClass;
+@property (nonatomic) BOOL enableMaximumExceedTime;
+@property (nonatomic) BOOL enableForceConcurrent;
+@property (nonatomic) NSString searchScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)searchScene;
+- (void)setSearchScene:;
+- (void)setPreprocessClass:;
+- (void)setEnableMaximumExceedTime:;
+- (void)setEnableForceConcurrent:;
+- (void)cancelPreviousTaskWithProcessFinish:;
+- (void)createLayoutTaskWithArray:completionBlock:;
+- (void)setPreviousTask:;
+- (id)previousTask;
+- (Class)preprocessClass;
+- (id)initWithLayoutStrategy:;
+- (BOOL)enableForceConcurrent;
+- (id)taskhQueue;
+- (BOOL)enableMaximumExceedTime;
+- (void)trackLayoutFail:;
+- (void)setTaskhQueue:;
+- (id)init;
+- (void)setLayoutStrategy:;
+- (long long)layoutStrategy;
+- (void).cxx_destruct;
+@end

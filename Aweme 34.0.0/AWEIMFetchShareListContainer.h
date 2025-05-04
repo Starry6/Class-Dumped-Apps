@@ -1,0 +1,31 @@
+@interface AWEIMFetchShareListContainer : NSObject
+@property (nonatomic) Q capacity;
+@property (nonatomic) Q currentCount;
+@property (nonatomic) Q type;
+@property (nonatomic) NSMutableArray filters;
+@property (nonatomic) BOOL isAbnormal;
+- (BOOL)checkShareValid:withDatasource:;
+- (BOOL)isServerAbnormal:;
+- (BOOL)isAbnormal;
+- (void)setIsAbnormal:;
+- (id)filters;
+- (void)setFilters:;
+- (id)init;
+- (unsigned long long)currentCount;
+- (void)setCapacity:;
+- (unsigned long long)capacity;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setCurrentCount:;
++ (id)containerWithType:;
++ (id)getTypeName:;
++ (id)commonFilter;
++ (id)disrecommendFilter;
++ (id)manualRemovedFilter;
++ (id)foldBoxFilter;
++ (id)notFriendFilter;
++ (id)notFriendSingleChatFilter;
++ (id)groupChatFilter;
++ (id)notGroupParticipantOrDissolve;
+@end

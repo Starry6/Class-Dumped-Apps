@@ -1,0 +1,36 @@
+@interface AWEEnterpriseContentEvaluateView : AWEEnterpriseMessageBaseView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) UIButton unsolvedButton;
+@property (nonatomic) UIButton solvedButton;
+@property (nonatomic) AWEEnterpriseContentEvaluateViewModel viewModel;
+@property (nonatomic) UITapGestureRecognizer tapGes;
+- (id)tapGes;
+- (void)setTapGes:;
+- (void)bindViewModel:;
+- (void)constraintSubviews;
+- (id)unsolvedButton;
+- (id)solvedButton;
+- (double)scaledPreferredMaxLayoutWidth;
+- (id)createButtonWithTitle:imageName:;
+- (void)setUnsolvedButton:;
+- (void)tapUnsolved;
+- (void)setSolvedButton:;
+- (void)tapSolved;
+- (void)p_createButtons;
+- (void)setButtonsStatus;
+- (double)widthWithoutText;
+- (id)viewModel;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)disableButtons;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
++ (double)heightWithoutText;
+@end

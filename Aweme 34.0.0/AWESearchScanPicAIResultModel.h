@@ -1,0 +1,30 @@
+@interface AWESearchScanPicAIResultModel : NSObject
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) NSArray processInfo;
+@property (nonatomic) BOOL isPitayaBusinessSuccess;
+@property (nonatomic) q pitayaErrorCode;
+@property (nonatomic) NSString pitayaErrorMessage;
+@property (nonatomic) NSString pitayaBusinessName;
+@property (nonatomic) UIImage nImage;
+@property (nonatomic) double isQuestionIntention;
+- (void)setPitayaBusinessName:;
+- (id)pitayaBusinessName;
+- (void)setIsQuestionIntention:;
+- (void)setIsPitayaBusinessSuccess:;
+- (void)setPitayaErrorCode:;
+- (void)setPitayaErrorMessage:;
+- (void)setNImage:;
+- (BOOL)isPitayaBusinessSuccess;
+- (long long)pitayaErrorCode;
+- (id)pitayaErrorMessage;
+- (id)nImage;
+- (double)isQuestionIntention;
+- (id)processInfo;
+- (void)setStartTime:;
+- (double)endTime;
+- (void)setEndTime:;
+- (void)setProcessInfo:;
+- (void).cxx_destruct;
+- (double)startTime;
+@end

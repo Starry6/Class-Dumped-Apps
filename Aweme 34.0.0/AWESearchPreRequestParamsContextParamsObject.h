@@ -1,0 +1,36 @@
+@interface AWESearchPreRequestParamsContextParamsObject : NSObject
+@property (nonatomic) BOOL isPressPreRequest;
+@property (nonatomic) NSDictionary initialProperties;
+@property (nonatomic) NSDictionary extraLogParams;
+@property (nonatomic) UIViewController targetViewController;
+@property (nonatomic) NSString clientPrefetchType;
+@property (nonatomic) NSString prefetchId;
+@property (nonatomic) AWESearchSchemaModel routerModel;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSDictionary predictFetchParams;
+@property (nonatomic) NSDictionary preRequestCustomParams;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (void)setTargetViewController:;
+- (void)setPrefetchId:;
+- (id)prefetchId;
+- (id)routerModel;
+- (void)setRouterModel:;
+- (id)extraLogParams;
+- (void)setExtraLogParams:;
+- (id)predictFetchParams;
+- (id)preRequestCustomParams;
+- (BOOL)isPressPreRequest;
+- (id)clientPrefetchType;
+- (void)setIsPressPreRequest:;
+- (void)setClientPrefetchType:;
+- (void)setPreRequestCustomParams:;
+- (void)setPredictFetchParams:;
+- (void).cxx_destruct;
+- (id)initialProperties;
+- (void)setInitialProperties:;
+- (id)keyword;
+- (void)setKeyword:;
+- (id)targetViewController;
+@end

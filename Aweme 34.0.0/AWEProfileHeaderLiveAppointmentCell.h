@@ -1,0 +1,38 @@
+@interface AWEProfileHeaderLiveAppointmentCell : UICollectionViewCell
+@property (nonatomic) UIView cornerBgView;
+@property (nonatomic) UIImageView liveImageView;
+@property (nonatomic) UILabel liveAnnounceLable;
+@property (nonatomic) UILabel liveAnnounceRightLabel;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) NSDictionary announceInfoDict;
+@property (nonatomic) AWEProfileExtensionAreaCardModel liveCardModel;
+@property (nonatomic) <AWEProfileHeaderLiveAppointmentCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)liveImageView;
+- (void)setLiveImageView:;
+- (void)configWithHeaderContext:;
+- (void)setLiveCardModel:;
+- (id)getLiveAnnouncementInfo:;
+- (id)liveAnnounceLable;
+- (id)liveAnnounceRightLabel;
+- (void)updateAppointmentInfo:;
+- (void)trackLiveAppointmentCellDidShow;
+- (id)cornerBgView;
+- (id)liveCardModel;
+- (void)setCornerBgView:;
+- (void)setLiveAnnounceLable:;
+- (void)setLiveAnnounceRightLabel:;
+- (id)announceInfoDict;
+- (void)setAnnounceInfoDict:;
+- (void)setRightButton:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)rightButton;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)initUI;
+- (void)updateUI:;
+@end

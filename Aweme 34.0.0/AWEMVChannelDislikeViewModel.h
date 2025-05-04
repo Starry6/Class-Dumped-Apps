@@ -1,0 +1,35 @@
+@interface AWEMVChannelDislikeViewModel : AWEDoubleColumnDislikeViewModel
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) q triggerAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (id)logExtraDict;
+- (void)sendDislikeRequest:extraInfo:;
+- (id)dislikeSectionData:;
+- (id)feedbackSectionData:;
+- (double)headerHeightForSection:;
+- (double)cellWidthForIndexPath:;
+- (void)setupUIInfo;
+- (id)dislikeTextConfig;
+- (id)dislikeLongPressPanelConfig;
+- (id)watchLaterSectionData:;
+- (void)trackDislikeWithType:;
+- (id)playletAndLongVideoDislikeArray:;
+- (id)videoDislikeArray;
+- (id)mixAndLongVideoFeedbackArray;
+- (id)feedBackInfoArray;
+- (BOOL)currentSectionWatchLaterEnable:;
+- (id)liveDislikeArray;
+- (void).cxx_destruct;
+- (void)setTriggerAction:;
+- (long long)triggerAction;
+- (void)setCurrentModel:;
++ (id)referString;
++ (id)enterMethod;
++ (id)logScenePrefix;
++ (void)requestRevokeFeedbackVideo:;
++ (void)trackRevokeFeedbackWithModel:andFeedbackInfo:;
+@end

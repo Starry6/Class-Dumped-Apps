@@ -1,0 +1,34 @@
+@interface AWEIMInputTextBarView : UIView
+@property (nonatomic) RxCollectionViewDiffableDataSource dataSource;
+@property (nonatomic) NSArray itemViewModels;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) BOOL hasBackgroundImage;
+@property (nonatomic) NSMutableSet showedViewModels;
+@property (nonatomic) <AWEIMInputTextBarViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)itemViewModels;
+- (void)setItemViewModels:;
+- (void)p_createComponents;
+- (id)p_createDataSource;
+- (void)p_layoutComponents;
+- (void)p_applySnapshotWithAnimatingDifferences:;
+- (id)showedViewModels;
+- (void)updateWithItemViewModels:;
+- (void)didChangeBackgroundImage:;
+- (void)setShowedViewModels:;
+- (id)collectionView;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (BOOL)hasBackgroundImage;
+- (void)setHasBackgroundImage:;
+@end

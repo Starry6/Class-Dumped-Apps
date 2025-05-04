@@ -1,0 +1,34 @@
+@interface AWELiveAcqCastVideoMixListDataManager : AWEListDataController
+@property (nonatomic) NSObject<OS_dispatch_queue> mixDataQueue;
+@property (nonatomic) @? requestFinishBlock;
+@property (nonatomic) NSString mixVideoID;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) BOOL richAwemeEnabled;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)loadPreviousWithCompletion:;
+- (id)minCursor;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (void)fetchWithCount:type:completion:;
+- (void)setMixVideoID:;
+- (id)sortArrayByExcuteDate:;
+- (id)requestFinishBlock;
+- (void)setRequestFinishBlock:;
+- (id)mixVideoID;
+- (BOOL)richAwemeEnabled;
+- (void)setRichAwemeEnabled:;
+- (void)p_filterRichAwemeIfNeed:;
+- (id)mixDataQueue;
+- (void)setMixDataQueue:;
+- (id)roomID;
+- (id)init;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)setRoomID:;
+- (id)copyWithZone:;
++ (void)requestMixVideoDetailList:cursor:count:roomID:pullDown:completeBlock:;
+@end

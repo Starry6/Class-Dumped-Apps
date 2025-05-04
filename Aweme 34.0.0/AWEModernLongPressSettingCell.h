@@ -1,0 +1,36 @@
+@interface AWEModernLongPressSettingCell : UITableViewCell
+@property (nonatomic) UIView settingContentView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView rightSubView;
+@property (nonatomic) UIView totalView;
+@property (nonatomic) UIView separator;
+@property (nonatomic) UIView customIconView;
+@property (nonatomic) AWELongPressPanelBaseViewModel longPressPanelVM;
+@property (nonatomic) CAShapeLayer contentShapeLayer;
+- (id)totalView;
+- (void)setTotalView:;
+- (id)longPressPanelVM;
+- (id)contentShapeLayer;
+- (void)setLongPressPanelVM:;
+- (void)setContentShapeLayer:;
+- (id)rightSubView;
+- (void)setRightSubView:;
+- (void)setSettingContentView:;
+- (void)resetSubviews;
+- (void)setCustomIconView:;
+- (id)settingContentView;
+- (id)customIconView;
+- (void)setSeparator:;
+- (id)separator;
+- (void)setHighlighted:animated:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (void)setSeparatorHidden:;
+- (void)setUpUI;
+- (void)updateUI:;
+@end

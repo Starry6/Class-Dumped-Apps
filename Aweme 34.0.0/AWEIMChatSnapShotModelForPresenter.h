@@ -1,0 +1,33 @@
+@interface AWEIMChatSnapShotModelForPresenter : MTLModel
+@property (nonatomic) NSString secPeerID;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) q type;
+@property (nonatomic) double updateDate;
+@property (nonatomic) BOOL stickOnTop;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) BOOL mute;
+@property (nonatomic) NSArray presenters;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)stickOnTop;
+- (void)setStickOnTop:;
+- (id)secPeerID;
+- (void)setPresenters:;
+- (void)setSecPeerID:;
+- (id)initWithChatModel:presenters:;
+- (id)transfromToChatModel;
+- (long long)unreadCount;
+- (BOOL)mute;
+- (void)setSessionId:;
+- (id)sessionId;
+- (void)setUnreadCount:;
+- (void)setMute:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)presenters;
+- (void)setUpdateDate:;
+- (double)updateDate;
+@end

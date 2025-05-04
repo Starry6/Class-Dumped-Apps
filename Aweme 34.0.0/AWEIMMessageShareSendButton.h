@@ -1,0 +1,33 @@
+@interface AWEIMMessageShareSendButton : UIButton
+@property (nonatomic) BOOL animating;
+@property (nonatomic) NSString shareTitleString;
+@property (nonatomic) NSString sentTitleString;
+@property (nonatomic) Q shareState;
+@property (nonatomic) BOOL enableDynamicTheme;
+@property (nonatomic) double selectedAlpha;
+- (void)setSelectedAlpha:;
+- (double)selectedAlpha;
+- (void)p_updateUI;
+- (BOOL)enableDynamicTheme;
+- (void)setEnableDynamicTheme:;
+- (void)setShareTitleString:;
+- (void)setSentTitleString:;
+- (id)shareTitleString;
+- (id)sentTitleString;
+- (void)p_updateUIAnimated:;
+- (id)p_backgroundColorForState:;
+- (void)setShareState:animated:;
+- (id)p_titleColorForState:;
+- (id)p_titleForState:;
+- (id)dynamicSendTextBackgroundColor;
+- (id)dynamicSendTextTitleColor;
+- (void)setAnimating:;
+- (id)initWithFrame:;
+- (void)setHighlighted:;
+- (void).cxx_destruct;
+- (BOOL)animating;
+- (unsigned long long)shareState;
+- (void)setShareState:;
++ (id)buttonWithSelectedAlpha:;
++ (id)titleFont;
+@end

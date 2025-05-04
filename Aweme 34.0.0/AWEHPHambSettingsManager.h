@@ -1,0 +1,37 @@
+@interface AWEHPHambSettingsManager : NSObject
+@property (nonatomic) BOOL isLoad;
+@property (nonatomic) NSMutableArray blocks;
+@property (nonatomic) AWEHPHambCheckerManager checkerManager;
+@property (nonatomic) AWEHPHambSettingsNetworkManager networkManager;
+@property (nonatomic) AWEHPHambDefaultSettingsFactory defaultConfigFactory;
+@property (nonatomic) AWEHPHambSettingsStorage storageManager;
+@property (nonatomic) NSDictionary defaultConfig;
+@property (nonatomic) AWEHPHambSettingsDataModel settingsModel;
+@property (nonatomic) NSLock lock;
+- (void)setNetworkManager:;
+- (id)networkManager;
+- (BOOL)isLoad;
+- (void)setIsLoad:;
+- (id)initWithCheckerManager:;
+- (void)addNewConfigBlock:;
+- (void)getSettingsWithDefaultConfig:settingsModel:;
+- (id)checkerManager;
+- (void)p_tryLoadSettings;
+- (void)p_reloadSettings:;
+- (void)p_callNewConfigBlocks:;
+- (id)defaultConfigFactory;
+- (BOOL)writeResponse:error:;
+- (void)setCheckerManager:;
+- (void)setDefaultConfigFactory:;
+- (void)setLock:;
+- (id)lock;
+- (void)setStorageManager:;
+- (id)storageManager;
+- (id)defaultConfig;
+- (void).cxx_destruct;
+- (void)setBlocks:;
+- (id)blocks;
+- (void)setSettingsModel:;
+- (id)settingsModel;
+- (void)setDefaultConfig:;
+@end

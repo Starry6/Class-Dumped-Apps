@@ -1,0 +1,32 @@
+@interface AWEHangoutCommonLynxCardModel : MTLModel
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString serverData;
+@property (nonatomic) NSNumber index;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) q cardType;
+@property (nonatomic) double cardRatio;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)serverData;
+- (void)setServerData:;
+- (double)cardRatio;
+- (void)setCardRatio:;
+- (void)setIndex:;
+- (id)schema;
+- (id)index;
+- (void)setSchema:;
+- (void)setStartTime:;
+- (id)endTime;
+- (void)setEndTime:;
+- (void).cxx_destruct;
+- (id)startTime;
+- (long long)cardType;
+- (void)setCardType:;
+- (id)cardID;
+- (void)setCardID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface AWEIMEmojiReplyUtility : NSObject
++ (id)findConfigForKey:;
++ (id)propertyManager;
++ (BOOL)hasSelfLovedMessage:key:;
++ (BOOL)fakeRemoveEmojiWithKey:fromMessage:;
++ (void)removeEmojiWithKey:fromMessage:;
++ (id)fakeAddEmojiWithKey:toMessage:params:;
++ (void)addEmojiWithKey:toMessage:replacedKey:context:;
++ (BOOL)shouldHandleEmojiReplyInnerPush;
++ (id)propertyLovedBySelf:key:;
++ (BOOL)shouldDisplayEmojiReplyViewWithMessageViewModel:;
++ (double)emojiReplyTopMargin;
++ (BOOL)canReplyByEmojiWithMessage:;
++ (double)emojiReplyHeight;
++ (void)p_trackSendMessageResponse:key:params:isSuccess:statusCode:;
++ (void)p_trackSendMessage:key:params:;
++ (id)findGroupForKey:inGroups:;
++ (void)removeEmojiWithKey:senderUid:fromPropertyGroups:isFake:;
++ (void)p_timeSortPropertyGroups:;
++ (id)propertyListOfPropertyGroups:withEmojiOnly:;
++ (id)propertyLovedBySelf:;
++ (id)p_sendInfoCacheKey:uid:messageID:;
++ (BOOL)fakeRemoveEmojiWithKey:fromMessage:context:;
++ (id)emoticonAdapterDic;
++ (id)p_selfFrontTimeSortWithPropertyArray:;
++ (void)sortProperties:;
++ (id)propertyGroupsFromTTMsg:;
++ (id)latestPropertyOfPropertyList:;
++ (void)requestPropertyEmojiMardReadWithChat:;
++ (BOOL)shouldBeDecidedByPlatformForMessage:;
++ (void)removeEmojiWithKey:senderUid:fromPropertyGroups:;
++ (void)sortPropertyGroups:;
++ (BOOL)shouldChatBeReloadedFromMessagePropertyUpdateWithChat:message:reason:needToUpdateActiveInfo:;
++ (id)displayTextForEmojiReplyWithPropertyItem:message:displayName:scene:;
++ (void)syncPropertyGroupsOrderWithMessage:updatedMessage:;
++ (id)originPropertyListDictWithMessage:;
+@end

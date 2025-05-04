@@ -1,0 +1,31 @@
+@interface AWEDiskManualCleanupTableViewCell : DUXBaseTableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) DUXButton operationBtn;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) AWEDiskCleanModel itemModel;
+@property (nonatomic) @? action;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (id)itemModel;
+- (void)setItemModel:;
+- (id)operationBtn;
+- (void)updateOperationButtonInCacheType;
+- (void)cleanAction:;
+- (void)setOperationBtn:;
+- (void)updateManageStatus;
+- (void)update;
+- (void)setAction:;
+- (id)action;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+- (void)createUI;
++ (id)identifier;
+@end

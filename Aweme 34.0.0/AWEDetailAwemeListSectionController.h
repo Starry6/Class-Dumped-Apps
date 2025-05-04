@@ -1,0 +1,32 @@
+@interface AWEDetailAwemeListSectionController : IGListSectionController
+@property (nonatomic) <AWEDetailAwemeListConfiguration> configuration;
+@property (nonatomic) IESServiceProvider provider;
+@property (nonatomic) AWEDetailDiffableMultiModelObject object;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellForItemAtIndex:;
+- (id)aAWEPadModuleAdapter;
+- (void)listAdapter:willDisplaySectionController:;
+- (void)listAdapter:didEndDisplayingSectionController:;
+- (void)listAdapter:willDisplaySectionController:cell:atIndex:;
+- (void)listAdapter:didEndDisplayingSectionController:cell:atIndex:;
+- (void)didUpdateToObject:;
+- (id)getModelWithIndex:;
+- (void)setProvider:;
+- (long long)numberOfItems;
+- (void)setConfiguration:;
+- (id)object;
+- (void).cxx_destruct;
+- (id)configuration;
+- (id)provider;
+- (id)initWithServiceProvider:;
+- (void)setObject:;
+- (void)didSelectItemAtIndex:;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (id)sizeForItemAtIndex:;
++ (Class)aAWEPadModuleAdapterClass;
+@end

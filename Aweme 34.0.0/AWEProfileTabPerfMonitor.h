@@ -1,0 +1,31 @@
+@interface AWEProfileTabPerfMonitor : NSObject
+@property (nonatomic) NSNumber currentSession;
+@property (nonatomic) NSNumber exposedSession;
+@property (nonatomic) BOOL hadDraged;
+@property (nonatomic) q requestLevel;
+@property (nonatomic) BOOL fromHome;
+@property (nonatomic) q scene;
+@property (nonatomic) BOOL isCurrentUser;
+- (BOOL)fromHome;
+- (void)setFromHome:;
+- (void)trackInnerPageTransitionFailed:extra:;
+- (void)beginRefreshRequest;
+- (void)endRefreshRequest:;
+- (void)beginLoadMoreRequest;
+- (void)endLoadMoreRequest:;
+- (void)setRequestLevel:;
+- (long long)requestLevel;
+- (id)exposedSession;
+- (void)setExposedSession:;
+- (void)setHadDraged:;
+- (BOOL)hadDraged;
+- (id)currentSession;
+- (void)setScene:;
+- (long long)scene;
+- (void)setCurrentSession:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (void).cxx_destruct;
+- (BOOL)isCurrentUser;
+- (void)setIsCurrentUser:;
+@end

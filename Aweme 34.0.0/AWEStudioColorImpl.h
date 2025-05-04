@@ -1,0 +1,30 @@
+@interface AWEStudioColorImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)standardColorS61;
+- (id)wrapperColorS1;
+- (id)standardColorS4;
+- (id)standardColorS60;
+- (id)standardColorS62;
+- (id)standardColorS65;
+- (id)standardColorS66;
+- (id)standardColorS12;
+- (id)standardColorS11;
+- (id)standardColorS40;
+- (id)standardColorS31;
+- (id)standardColorS22;
+- (id)standardColorS24;
+- (id)standardColorS14;
+- (id)standardColorS71;
+- (id)standardColorS3;
+- (id)standardColorS7;
+- (id)standardColorS6;
+- (id)standardColorS1;
+- (id)wrapperColorS2;
+- (id)wrapperColorS12;
+- (id)wrapperColorS22;
+- (id)wrapperColorS11;
+- (id)standardColorS2;
+@end

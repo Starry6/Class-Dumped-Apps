@@ -1,0 +1,31 @@
+@interface AWEShareSearchAIGCModel : AWEBaseApiModel
+@property (nonatomic) NSString hashCode;
+@property (nonatomic) NSString imMsgSchema;
+@property (nonatomic) NSString inHouseLink;
+@property (nonatomic) NSString qrCodeLink;
+@property (nonatomic) NSString screenShotLink;
+@property (nonatomic) NSString shareLink;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString shareLinkDesc;
+- (void)setShareLinkDesc:;
+- (id)shareLink;
+- (void)setShareLink:;
+- (id)shareLinkDesc;
+- (id)imMsgSchema;
+- (void)setImMsgSchema:;
+- (id)inHouseLink;
+- (void)setInHouseLink:;
+- (id)qrCodeLink;
+- (void)setQrCodeLink:;
+- (id)screenShotLink;
+- (void)setScreenShotLink:;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)hashCode;
+- (void)setHashCode:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

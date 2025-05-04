@@ -1,0 +1,2 @@
+@interface AWETransitionDiagnose : NSObject
+@end

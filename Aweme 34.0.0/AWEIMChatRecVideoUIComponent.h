@@ -1,0 +1,34 @@
+@interface AWEIMChatRecVideoUIComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMChatRecommendVideoContentView contentView;
+@property (nonatomic) NSIndexPath clickedIndexPath;
+@property (nonatomic) AWEIMChatRecommendVideoCollectionViewCell clickedCell;
+@property (nonatomic) AWEIMChatRecommendVideoCollectionViewCell presentingCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)zoomTransitionStartViewForOffset:;
+- (double)zoomTransitionTargetViewCornerRadius;
+- (double)detailTableViewControllerInitialSeekTime:;
+- (void)detailTableViewControllerDidDisappear:currentAwemeModel:;
+- (void)componentDidMounted:;
+- (id)modernTransitionContext;
+- (void)modernTransitionUpdateOffset:isScrolled:;
+- (void)showQuickReplyController;
+- (void)app_willResignActive;
+- (void)app_didBecomeActive;
+- (id)getContentViewOfType:withFrame:;
+- (void)enterFullScreenOfCell:atIndexpath:;
+- (void)didClickChatButtonAtIndexPath:;
+- (void)containerVC_willDismiss;
+- (void)awemeModelDidSent:atIndexPath:;
+- (id)clickedCell;
+- (id)clickedIndexPath;
+- (void)setClickedCell:;
+- (void)setClickedIndexPath:;
+- (id)presentingCell;
+- (void)setPresentingCell:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+@end

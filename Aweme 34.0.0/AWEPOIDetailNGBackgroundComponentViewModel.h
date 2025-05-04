@@ -1,0 +1,34 @@
+@interface AWEPOIDetailNGBackgroundComponentViewModel : DitoComponentViewModel
+@property (nonatomic) BOOL hasTracked;
+@property (nonatomic) AWEPOIOffset headImageStartOffset;
+@property (nonatomic) BOOL showLynxView;
+@property (nonatomic) BOOL showHeaderView;
+@property (nonatomic) AWEPOIDetailHeaderImageComponentBaseView componentView;
+@property (nonatomic) double headerImageHeight;
+@property (nonatomic) q backgroundOption;
+@property (nonatomic) BOOL disableTracker;
+- (BOOL)hasTracked;
+- (void)setHasTracked:;
+- (void)setDisableTracker:;
+- (BOOL)disableTracker;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (void)didLoadPageModel:;
+- (void)didHalfContainerOffsetChange:offset:;
+- (void)vsdContainer:offsetChange:;
+- (long long)backgroundOption;
+- (void)setBackgroundOption:;
+- (BOOL)showHeaderView;
+- (BOOL)showLynxView;
+- (void)buildBackgroundImageOffsetIfNeed;
+- (id)headImageStartOffset;
+- (void)setHeadImageStartOffset:;
+- (void)setShowLynxView:;
+- (void)setShowHeaderView:;
+- (id)initWithNode:;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setComponentView:;
+- (double)headerImageHeight;
+- (void)setHeaderImageHeight:;
+@end

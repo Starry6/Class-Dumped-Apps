@@ -1,0 +1,38 @@
+@interface AWEDTOChargeContentModel : MTLModel
+@property (nonatomic) q price;
+@property (nonatomic) NSString productTitle;
+@property (nonatomic) q trialTime;
+@property (nonatomic) q trialTimeType;
+@property (nonatomic) NSString musicCheckResult;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) q isSubscribeContent;
+@property (nonatomic) q paidType;
+@property (nonatomic) BOOL isManuallyChoosePaidType;
+@property (nonatomic) q trialStartTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (long long)paidType;
+- (id)productTitle;
+- (void)setProductTitle:;
+- (long long)trialTime;
+- (void)setTrialTime:;
+- (long long)trialTimeType;
+- (void)setTrialTimeType:;
+- (id)musicCheckResult;
+- (void)setMusicCheckResult:;
+- (long long)isSubscribeContent;
+- (void)setIsSubscribeContent:;
+- (void)setPaidType:;
+- (BOOL)isManuallyChoosePaidType;
+- (void)setIsManuallyChoosePaidType:;
+- (long long)trialStartTime;
+- (void)setTrialStartTime:;
+- (long long)price;
+- (id)extra;
+- (void).cxx_destruct;
+- (void)setPrice:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,2 @@
+@interface AWEPLVHalfLayoutSectionViewModel : AWEPLVConstantSectionViewModel
+@end

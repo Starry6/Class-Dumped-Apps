@@ -1,0 +1,36 @@
+@interface AWEOfflineVideoDownloadingSingleResourceCell : AWEIMSwipeCollectionViewCell
+@property (nonatomic) UIImageView cover;
+@property (nonatomic) AWEVerticalAlignedLabel titleLabel;
+@property (nonatomic) UILabel speedLabel;
+@property (nonatomic) UILabel cacheSizeLabel;
+@property (nonatomic) UILabel messageLabel;
+@property (nonatomic) AWEOfflineVideoDownloadProgressView progressView;
+@property (nonatomic) AWEOfflineVideoSingleResourceModel cellModel;
+@property (nonatomic) AWEBinding binding;
+- (id)cover;
+- (void)setCover:;
+- (void)setCellModel:;
+- (void)trackDelete;
+- (void)bindDataWithIndex:model:;
+- (void)didSelectedWithIndex:model:;
+- (id)cacheSizeLabel;
+- (void)setCacheSizeLabel:;
+- (void)singleResourceModelUpdate:;
+- (id)speedLabel;
+- (void)setSpeedLabel:;
+- (void)updateDebugLabelIfNeedWithModel:;
+- (id)progressView;
+- (void)prepareForReuse;
+- (id)messageLabel;
+- (id)initWithFrame:;
+- (void)setProgressView:;
+- (void)setTitleLabel:;
+- (void)setMessageLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)binding;
+- (void)setupView;
+- (id)cellModel;
+- (void)deleteCell;
+- (void)setBinding:;
+@end

@@ -1,0 +1,34 @@
+@interface AWEFeedPipOriginPlayerContext : NSObject
+@property (nonatomic) q index;
+@property (nonatomic) UIView playerView;
+@property (nonatomic) UIView placeholderView;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) UIViewController<AWEPlayVideoViewControllerProtocol> videoController;
+@property (nonatomic) float playbackRate;
+@property (nonatomic) @ userInfo;
+@property (nonatomic) @? bindPlayerViewBlock;
+@property (nonatomic) @? unbindPlayerViewBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setUnbindPlayerViewBlock:;
+- (id)bindPlayerViewBlock;
+- (void)setBindPlayerViewBlock:;
+- (id)unbindPlayerViewBlock;
+- (void)setIndex:;
+- (void)setPlaybackRate:;
+- (long long)index;
+- (void)setPlaceholderView:;
+- (id)placeholderView;
+- (float)playbackRate;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (void)setPlayerView:;
+- (id)playerView;
+- (void).cxx_destruct;
+- (id)videoController;
+- (void)setVideoController:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEPOILoadingView : UIView
+@property (nonatomic) Q loadingStyle;
+@property (nonatomic) LOTAnimationView animationView;
+@property (nonatomic) AWEUILoadingView platformLoadingView;
+@property (nonatomic) BOOL hasInitializedUI;
+@property (nonatomic) BOOL forceLight;
+@property (nonatomic) double verticalOffset;
+- (void)setLoadingStyle:;
+- (unsigned long long)loadingStyle;
+- (void)setupUIIfNeeded;
+- (BOOL)forceLight;
+- (void)setForceLight:;
+- (unsigned long long)localLifeLoadingExpType;
+- (id)platformLoadingView;
+- (BOOL)hasInitializedUI;
+- (void)setHasInitializedUI:;
+- (id)expSuffix;
+- (id)lotAnimationNameForExpSuffix:;
+- (BOOL)useLightTheme;
+- (void)setPlatformLoadingView:;
+- (void)stopAnimating;
+- (id)intrinsicContentSize;
+- (void).cxx_destruct;
+- (id)initWithStyle:;
+- (void)startAnimating;
+- (double)verticalOffset;
+- (void)setVerticalOffset:;
+- (id)animationView;
+- (void)setAnimationView:;
++ (void)usingLocalLifeLoading:;
+@end

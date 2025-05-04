@@ -1,0 +1,32 @@
+@interface AWEHPGreyConfigModel : MTLModel
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL hotReloadEnable;
+@property (nonatomic) double saturation;
+@property (nonatomic) double endTime;
+@property (nonatomic) q allFeedConsumeCount;
+@property (nonatomic) NSString effect;
+@property (nonatomic) NSDictionary tabs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)greyModeType;
+- (BOOL)hotReloadEnable;
+- (void)setHotReloadEnable:;
+- (long long)allFeedConsumeCount;
+- (void)setAllFeedConsumeCount:;
+- (BOOL)enable;
+- (BOOL)isValidWithError:;
+- (double)endTime;
+- (id)effect;
+- (void)setEndTime:;
+- (id)description;
+- (void).cxx_destruct;
+- (void)setSaturation:;
+- (id)tabs;
+- (void)setEffect:;
+- (void)setEnable:;
+- (double)saturation;
+- (void)setTabs:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

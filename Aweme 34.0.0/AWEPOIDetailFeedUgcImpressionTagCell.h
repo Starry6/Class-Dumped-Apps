@@ -1,0 +1,31 @@
+@interface AWEPOIDetailFeedUgcImpressionTagCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) BOOL setupUIInAB;
+@property (nonatomic) AWEPOIUgcButtonSkinConfig buttonSkinConfig;
+@property (nonatomic) BOOL ugcTagAB;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (BOOL)ugcTagAB;
+- (id)buttonSkinConfig;
+- (void)setUgcTagAB:;
+- (void)setButtonSkinConfig:;
+- (void)updateInABWithModel:;
+- (BOOL)setupUIInAB;
+- (void)setSetupUIInAB:;
+- (id)accessibilityLabel;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (unsigned long long)accessibilityTraits;
+- (id)imageView;
+- (id)countLabel;
+- (void)setCountLabel:;
+- (void)updateWithModel:;
++ (id)sizeWithModel:;
++ (id)sizeInABWithModel:;
+@end

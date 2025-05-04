@@ -1,0 +1,30 @@
+@interface AWESearchAnchorModel : MTLModel
+@property (nonatomic) BOOL isCheckedBrandWord;
+@property (nonatomic) BOOL isBrandWord;
+@property (nonatomic) NSString word;
+@property (nonatomic) NSString wordID;
+@property (nonatomic) NSString info;
+@property (nonatomic) AWESearchAnchorInfoModel infoModel;
+@property (nonatomic) NSString schema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)infoModel;
+- (void)setInfoModel:;
+- (BOOL)isCheckedBrandWord;
+- (void)setIsCheckedBrandWord:;
+- (BOOL)isBrandWord;
+- (void)setIsBrandWord:;
+- (id)schema;
+- (void)setInfo:;
+- (id)info;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (void)setWordID:;
+- (id)wordID;
+- (id)word;
+- (void)setWord:;
++ (id)infoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,38 @@
+@interface AWELocationInfoServiceImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasPermissionWithoutServiceInit;
+- (unsigned long long)getLocationAccessStatusWithoutServiceInit;
+- (void)requestLightLocationWithAccuracy:;
+- (id)getLightLocation;
+- (void)addMonitorForLightLocationDoneWithCompletion:;
+- (id)getCurrentLocationWithBDCert:encodeType:;
+- (id)transformLocationWithCLLocation:encodeType:;
+- (void)requestCurrentLocationWithBDCert:completion:;
+- (void)requestCurrentLocationWithBDCert:option:completion:;
+- (void)requestCurrentLocationWithBDCert:allErrorsCompletion:;
+- (void)serialRequestCurrentLocationWithBDCert:completion:;
+- (void)serialRequestCurrentLocationWithBDCert:option:completion:;
+- (id)subscribeLocationUpdateWithBDCert:completion:;
+- (void)subscribeLocationLevelChangeServiceForTarget:BDCert:completion:;
+- (void)requestBluetoothLocationWithBDCert:businessName:extraInfo:completion:;
+- (void)cancelLocationLevelChangeServiceForTarget:;
+- (void)addLocationSubmitObserverForKey:callback:;
+- (void)removeLocationSubmitObserverForKey:;
+- (void)reverseGeoCode:BDCert:completion:;
+- (void)requestPermissionWithBDCert:completion:;
+- (void)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:BDCert:completion:;
+- (unsigned long long)getLocationAccessStatus;
+- (void)getLocationAccessStatusWithBlock:;
+- (void)hasPermissionWithBlock:;
+- (unsigned long long)getHeadlingAccessStatus;
+- (id)subscribeHeadlingUpdateWithCompletion:;
+- (long long)getCurrentLocationAuthorizationAccuracyStatus;
+- (BOOL)isSystemLocationAlertShowned;
+- (void)setChildMode:;
+- (BOOL)hasPermission;
+- (void)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:completion:;
++ (id)sharedInstance;
+@end

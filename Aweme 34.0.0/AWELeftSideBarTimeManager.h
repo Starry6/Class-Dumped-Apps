@@ -1,0 +1,34 @@
+@interface AWELeftSideBarTimeManager : NSObject
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) double targetTriggerTime;
+@property (nonatomic) BOOL isTriggerTimer;
+@property (nonatomic) NSDate pauseStart;
+@property (nonatomic) NSDate previousFireDate;
+- (void)handleBecomeActive;
+- (void)handleResignActive;
+- (double)getCurrentServerTime;
+- (void)setPauseStart:;
+- (void)setPreviousFireDate:;
+- (id)pauseStart;
+- (id)previousFireDate;
+- (BOOL)needLoadPresenter:endTime:;
+- (BOOL)checkWhetherTheCurrentTimeIsInRangeWithStartTime:endTime:;
+- (void)checkWhetherTheCurrentTimeNeedMonitorWithStartTime:endTime:startBlock:endBlock:;
+- (void)startTimerWithDuration:repeats:block:;
+- (void)startTimerWithTriggerTime:block:;
+- (void)setIsTriggerTimer:;
+- (void)setTargetTriggerTime:;
+- (double)zeroOfTimeInterval:;
+- (double)diffZeroOfTimeInterval;
+- (void)checkWithStartTime:withEndTime:willStartBlock:processingBlock:endedBlock:errorBlock:;
+- (BOOL)isInCurrentTimePeriodWithStartTimeInterval:endTimeInterval:;
+- (double)targetTriggerTime;
+- (BOOL)isTriggerTimer;
+- (void)setTimer:;
+- (id)init;
+- (void)dealloc;
+- (id)timer;
+- (void)addObserver;
+- (void)stopTimer;
+- (void).cxx_destruct;
+@end

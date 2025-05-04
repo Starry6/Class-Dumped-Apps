@@ -1,0 +1,33 @@
+@interface AWEIMGroupBlockSwitchCollectionCell : AWEIMGroupCornerableCollectionCell
+@property (nonatomic) UIView<IESIMSettingSwitchProtocol> aSwitch;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) q type;
+@property (nonatomic) <AWEIMGroupBlockCollectionCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__setupUI;
+- (void)switchControlDidChanged:;
+- (void)configWithConversation:type:;
+- (void)renderWithCellModel:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (long long)type;
+- (void)setType:;
+- (void)setTitleLabel:;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)conversation;
+- (BOOL)accessibilityActivate;
+- (void)setConversation:;
+- (id)detailLabel;
+- (id)aSwitch;
+- (void)setASwitch:;
+- (void)setDetailLabel:;
++ (id)identifier;
+@end

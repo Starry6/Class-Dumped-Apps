@@ -1,0 +1,37 @@
+@interface AWESearchPresentContainerHeaderSearchView : AWESearchPresentContainerHeaderView
+@property (nonatomic) UIView uiSearchBar;
+@property (nonatomic) UIImageView magnifierView;
+@property (nonatomic) UILabel keywordLabel;
+@property (nonatomic) UIView keywordLabelMaskView;
+@property (nonatomic) UIView divider;
+@property (nonatomic) UILabel searchButtonText;
+@property (nonatomic) UIView searchButtonClickView;
+@property (nonatomic) UIView closeButton;
+@property (nonatomic) UIImageView closeButtonImage;
+@property (nonatomic) UIView lineView;
+- (id)closeButtonImage;
+- (void)setCloseButtonImage:;
+- (void)configureUIWithConfig:;
+- (void)setupTheme:;
+- (void)configureQueryText:;
+- (void)setUiSearchBar:;
+- (void)setSearchButtonText:;
+- (void)setSearchButtonClickView:;
+- (id)uiSearchBar;
+- (id)searchButtonText;
+- (id)keywordLabelMaskView;
+- (void)setKeywordLabelMaskView:;
+- (id)searchButtonClickView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)divider;
+- (id)keywordLabel;
+- (void)setKeywordLabel:;
+- (void)setDivider:;
+- (id)magnifierView;
+- (void)setMagnifierView:;
+@end

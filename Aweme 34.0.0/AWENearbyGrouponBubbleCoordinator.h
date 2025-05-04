@@ -1,0 +1,30 @@
+@interface AWENearbyGrouponBubbleCoordinator : NSObject
+@property (nonatomic) NSMutableDictionary bubbleStorage;
+@property (nonatomic) NSMutableDictionary bubbleExtraParamsStorage;
+- (void)appEnterBackground;
+- (id)bubbleExtraParamsStorage;
+- (id)addressOfModel:;
+- (BOOL)showBubbleWith:on:inView:onActionClick:onCloseClick:onBackgroundClick:;
+- (id)bubbleStorage;
+- (void)trackBubbleShowError:reason:;
+- (void)hideBubbleWith:dismissType:;
+- (void)trackBubbleNormalAction:action:;
+- (id)getBubbleViewFrameWithPositon:size:targetPointY:;
+- (void)trackBubbleClickError:reason:;
+- (void)hideBubbleWith:;
+- (void)hideAllBubble;
+- (void)setBubbleLogExtraParams:for:;
+- (BOOL)showBubbleWith:on:inView:;
+- (BOOL)showBubbleWith:on:inView:onActionClick:;
+- (BOOL)showBubbleWith:on:inView:onActionClick:onCloseClick:;
+- (void)hideMultiTabBuble;
+- (void)setBubbleStorage:;
+- (void)setBubbleExtraParamsStorage:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

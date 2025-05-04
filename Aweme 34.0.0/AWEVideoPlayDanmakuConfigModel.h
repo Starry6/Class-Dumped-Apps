@@ -1,0 +1,37 @@
+@interface AWEVideoPlayDanmakuConfigModel : AWEBaseApiModel
+@property (nonatomic) q confType;
+@property (nonatomic) q opacity;
+@property (nonatomic) q fontSize;
+@property (nonatomic) q speed;
+@property (nonatomic) q region;
+@property (nonatomic) BOOL danmakuSwitch;
+@property (nonatomic) BOOL antiBlockSwitch;
+@property (nonatomic) BOOL shieldWordSwitch;
+@property (nonatomic) NSString switchFrom;
+@property (nonatomic) NSString shieldWords;
+@property (nonatomic) BOOL smartModeSwitch;
+- (BOOL)smartModeSwitch;
+- (BOOL)danmakuSwitch;
+- (id)switchFrom;
+- (void)setSwitchFrom:;
+- (BOOL)antiBlockSwitch;
+- (void)setAntiBlockSwitch:;
+- (BOOL)shieldWordSwitch;
+- (void)setShieldWordSwitch:;
+- (id)shieldWords;
+- (void)setShieldWords:;
+- (void)setSmartModeSwitch:;
+- (long long)confType;
+- (void)setConfType:;
+- (void)setDanmakuSwitch:;
+- (long long)opacity;
+- (void)setOpacity:;
+- (void)setSpeed:;
+- (long long)speed;
+- (void)setRegion:;
+- (long long)fontSize;
+- (long long)region;
+- (void)setFontSize:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWEPhotoGuideManager : NSObject
+@property (nonatomic) AWEBubble photoGuideBubble;
+@property (nonatomic) NSTimer photoGuideTimer;
+@property (nonatomic) BOOL synchInfoAfterLogin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishUpdateAwemeUser;
+- (void)hidePhotoGuide;
+- (BOOL)isPhotoGuideShowing;
+- (void)showPhotoGuide;
+- (void)_showPhotoGuide;
+- (id)photoGuideBubble;
+- (id)photoGuideTimer;
+- (void)setPhotoGuideBubble:;
+- (id)AWETabBarControllerShouldShowPhotoIntruductionKey;
+- (BOOL)_customShouldShowPhotoGuide:;
+- (id)_customFirstLine;
+- (id)_customSecondLine;
+- (void)handleTapOnBubble:;
+- (void)setPhotoGuideTimer:;
+- (void)setSynchInfoAfterLogin:;
+- (BOOL)synchInfoAfterLogin;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

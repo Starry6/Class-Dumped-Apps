@@ -1,0 +1,37 @@
+@interface AWESearchProgressBarComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView progressView;
+@property (nonatomic) NSMutableArray receiveProtocolArray;
+@property (nonatomic) double progress;
+@property (nonatomic) double lastPlayDuration;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)playerPlayTime:canPlayTime:totalTime:;
+- (void)componentDidLoad;
+- (void)setLastPlayDuration:;
+- (double)lastPlayDuration;
+- (void)componentViewLayoutSubviews;
+- (id)provideProtocol;
+- (id)receiveProtocolList;
+- (void)updatePlayerCompleteWithPlayState:playedDuration:totalDuration:model:;
+- (id)receiveProtocolArray;
+- (void)setReceiveProtocolArray:;
+- (void)updateProgressBarComponentProgressWithPlayTime:totalTime:;
+- (id)progressView;
+- (double)progress;
+- (id)contentView;
+- (void)setProgressView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setProgress:;
+- (id)componentView;
++ (id)componentSizeForModel:width:;
+@end

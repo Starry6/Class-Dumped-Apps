@@ -1,0 +1,37 @@
+@interface AWETeenSearchResultCell : UICollectionViewCell
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView likeImageView;
+@property (nonatomic) UILabel likeNumberLabel;
+@property (nonatomic) UIView likeContainerView;
+@property (nonatomic) AWETeenHotSpotListLabel hotSpotLabel;
+@property (nonatomic) AWEGradientView bottomGradientMaskView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) AWEBillboardLabel authorNameLabel;
+@property (nonatomic) AWEAwemeModel model;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (id)likeImageView;
+- (id)likeNumberLabel;
+- (void)setLikeImageView:;
+- (void)setLikeNumberLabel:;
+- (id)bottomGradientMaskView;
+- (id)likeContainerView;
+- (void)setLikeContainerView:;
+- (id)hotSpotLabel;
+- (void)setHotSpotLabel:;
+- (void)setBottomGradientMaskView:;
+- (void)setModel:;
+- (void)setDescriptionLabel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)descriptionLabel;
+- (void)setupUI;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
++ (id)cellIdentifier;
++ (double)cellHeight;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMRecorderVolumeIncreaseViewConfig : NSObject
+@property (nonatomic) double itemMaxHeight;
+@property (nonatomic) double itemMinHeight;
+@property (nonatomic) UIColor itemTranslateColor;
+@property (nonatomic) UIColor itemColor;
+@property (nonatomic) double itemWeight;
+@property (nonatomic) double itemSpacing;
+@property (nonatomic) UIColor translateColor;
+@property (nonatomic) UIColor highLightColor;
+@property (nonatomic) UIColor defaultColor;
+- (void)setHighLightColor:;
+- (void)setItemWeight:;
+- (void)setItemMaxHeight:;
+- (void)setItemMinHeight:;
+- (void)setItemColor:;
+- (double)itemMinHeight;
+- (double)itemMaxHeight;
+- (double)itemWeight;
+- (void)setItemTranslateColor:;
+- (void)setTranslateColor:;
+- (id)translateColor;
+- (id)itemTranslateColor;
+- (double)itemSpacing;
+- (void)setItemSpacing:;
+- (void).cxx_destruct;
+- (id)highLightColor;
+- (id)defaultColor;
+- (void)setDefaultColor:;
+- (id)itemColor;
+@end

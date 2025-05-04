@@ -1,0 +1,37 @@
+@interface AWEMusicStreamingImpl.LunaPlaylistDetailRequest : AWEMusicStreamingImpl.LunaRequestBaseModel
+@property (nonatomic) NSString playlistID;
+@property (nonatomic) NSString cursor;
+@property (nonatomic) q count;
+@property (nonatomic) q sceneType;
+@property (nonatomic) q type;
+@property (nonatomic) BOOL onlyNeedMedia;
+@property (nonatomic) BOOL onlyNeedMediaID;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl23LunaFeedPlaylistTrigger feedTrigger;
+@property (nonatomic) NSArray media;
+- (id)secUid;
+- (void)setSecUid:;
+- (void)setPlaylistID:;
+- (BOOL)onlyNeedMedia;
+- (void)setOnlyNeedMedia:;
+- (BOOL)onlyNeedMediaID;
+- (void)setOnlyNeedMediaID:;
+- (id)feedTrigger;
+- (void)setFeedTrigger:;
+- (Class)responseModelClass;
+- (id)cursor;
+- (id)init;
+- (void)setCount:;
+- (id)path;
+- (long long)count;
+- (void)setCursor:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)media;
+- (id)params;
+- (void)setMedia:;
+- (long long)sceneType;
+- (void)setSceneType:;
+- (id)playlistID;
+@end

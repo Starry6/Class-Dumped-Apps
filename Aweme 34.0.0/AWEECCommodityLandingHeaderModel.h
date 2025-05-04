@@ -1,0 +1,38 @@
+@interface AWEECCommodityLandingHeaderModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray categories;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) AWEURLModel imageURL;
+@property (nonatomic) BOOL isOptAB;
+@property (nonatomic) q count;
+@property (nonatomic) BOOL state;
+@property (nonatomic) NSString collectTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isOptAB;
+- (void)setIsOptAB:;
+- (id)collectTitle;
+- (void)setCollectTitle:;
+- (id)scheme;
+- (void)setScheme:;
+- (void)setProductID:;
+- (void)setCategories:;
+- (id)productID;
+- (id)categories;
+- (void)setCount:;
+- (long long)count;
+- (BOOL)state;
+- (long long)type;
+- (void)setType:;
+- (id)imageURL;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setImageURL:;
+- (void)setState:;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

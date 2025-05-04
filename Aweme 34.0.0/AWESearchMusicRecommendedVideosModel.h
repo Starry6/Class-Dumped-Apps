@@ -1,0 +1,30 @@
+@interface AWESearchMusicRecommendedVideosModel : AWEBaseApiModel
+@property (nonatomic) NSString aladdinSource;
+@property (nonatomic) NSString docID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray videoList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString aladdinSource;
+@property (nonatomic) NSString docID;
+@property (nonatomic) AWESearchMusicRecommendedVideosControlModel playStatus;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray videoList;
+- (void)setVideoList:;
+- (id)videoList;
+- (id)playStatus;
+- (void)setPlayStatus:;
+- (id)aladdinSource;
+- (void)setAladdinSource:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)docID;
+- (void)setDocID:;
++ (id)docIDJSONTransformer;
++ (id)playStatusJSONTransformer;
++ (id)videoListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

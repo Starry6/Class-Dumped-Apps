@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionNewNotificationPermissionBottomElement : AWEPlayInteractionNewBottomElement
+@property (nonatomic) AWENotificationPermissionBottomBarView noticeView;
+@property (nonatomic) AWENotificationPermissionDataManager dataManager;
+@property (nonatomic) BOOL isWaitingOpenPermission;
+- (void)viewController_viewDidDisappear;
+- (id)activateInfoWithData:;
+- (id)noticeView;
+- (void)setNoticeView:;
+- (void)p_applicationWillEnterForeground:;
+- (BOOL)shouldAppearWithData:;
+- (void)setIsWaitingOpenPermission:;
+- (BOOL)isWaitingOpenPermission;
+- (void)hideMutexTempElement:;
+- (void)p_openReceivePushOnlyFromFrendsSwitch;
+- (void)p_openSystemSetting;
+- (void)p_videoPrivacyChanged;
+- (void)p_updateNoticeView;
+- (void)p_trackNotificationSwitchEvent;
+- (void)p_trackOutAppNotifyGuideEventWithType:;
+- (void)p_trackPushClick;
+- (BOOL)p_shouldShowPushGuideBottomElement;
+- (BOOL)p_canShowNoticeView;
+- (void)p_showNoticeViewWithAnimation;
+- (void)p_executeStrongExitStrategy;
+- (id)p_trackOutAppNotifyGuideEventParamsWithType:;
+- (void)p_closeButtonPressed;
+- (void)dealloc;
+- (id)dataManager;
+- (void)viewDidLoad;
+- (void)setDataManager:;
+- (void).cxx_destruct;
+- (void)tapHandler:;
+@end

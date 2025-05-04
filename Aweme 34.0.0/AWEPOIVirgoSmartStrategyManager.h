@@ -1,0 +1,36 @@
+@interface AWEPOIVirgoSmartStrategyManager : NSObject
+@property (nonatomic) <AWELiveStrategyServiceAdapter> strategyService;
+@property (nonatomic) NSMutableDictionary observersDictionary;
+@property (nonatomic) NSMutableDictionary factorKeyToLynxContainerObservers;
+@property (nonatomic) NSMutableArray factorKeys;
+@property (nonatomic) NSMutableDictionary factorKeyToValueDictionary;
+@property (nonatomic) NSMutableDictionary factorKeyToRuleTaskDictionary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)strategyResultWithKey:;
+- (id)strategyService;
+- (void)setStrategyService:;
+- (void)eventDispatcherWillDispatchValue:withFactorKey:;
+- (id)buildStrategyObserverForKey:withContainer:;
+- (id)observerForKey:withContainer:;
+- (void)addRuleTaskObserverWithFactorKey:;
+- (void)startStrategyManagement;
+- (void)addStrategyUpdateObserver:strategyKey:;
+- (void)removeStrategyUpdateObserver:strategyKey:;
+- (void)addRuleTaskObserverWithSettings;
+- (id)observersDictionary;
+- (id)factorKeys;
+- (id)factorKeyToValueDictionary;
+- (void)commitRule:factorKey:taskKey:;
+- (id)factorKeyToRuleTaskDictionary;
+- (BOOL)isValidWithTaskKey:task:;
+- (id)factorKeyToLynxContainerObservers;
+- (void)setObserversDictionary:;
+- (void)setFactorKeyToLynxContainerObservers:;
+- (void)setFactorKeys:;
+- (void)setFactorKeyToValueDictionary:;
+- (void)setFactorKeyToRuleTaskDictionary:;
+- (void).cxx_destruct;
+@end

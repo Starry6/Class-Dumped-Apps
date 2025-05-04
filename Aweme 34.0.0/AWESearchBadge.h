@@ -1,0 +1,31 @@
+@interface AWESearchBadge : UIView
+@property (nonatomic) Q style;
+@property (nonatomic) AWESearchBadgeViewConfig config;
+@property (nonatomic) UILabel label;
+@property (nonatomic) Q badgeNumber;
+@property (nonatomic) NSString badgeText;
+- (id)initWithBadgeStyle:;
+- (id)initWithBadgeStyle:withConfig:;
+- (void)setBadgeNumber:withMaxBadgeNumber:;
+- (void)resetUI_DotStyle;
+- (void)resetUI_LabelStyle;
+- (void)setLabel:;
+- (void)setConfig:;
+- (id)init;
+- (id)intrinsicContentSize;
+- (id)config;
+- (id)initWithFrame:;
+- (void)setup;
+- (id)label;
+- (unsigned long long)style;
+- (unsigned long long)badgeNumber;
+- (void).cxx_destruct;
+- (void)setBadgeNumber:;
+- (id)initWithCoder:;
+- (void)setStyle:;
+- (id)_content;
+- (id)badgeText;
+- (void)setBadgeText:;
+- (id)_badgeSize;
+- (void)resetUI;
+@end

@@ -1,0 +1,36 @@
+@interface AWEIMGroupEntryLimitsSwitchStyleTableViewCell : UITableViewCell
+@property (nonatomic) AWEIMGroupEntryLimitsSwitchStyleCellModel model;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView<IESIMSettingSwitchProtocol> aSwitch;
+@property (nonatomic) TTTAttributedLabel descLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) AWEIMCardStyleCellContainerView containerView;
+@property (nonatomic) BOOL useCardStyle;
+@property (nonatomic) <AWEIMGroupEntryLimitsSwitchStyleCellDelegate> delegate;
+- (void)configWithModel:;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)__setupUI;
+- (id)baseContentView;
+- (void)setUseCardStyle:;
+- (BOOL)useCardStyle;
+- (void)__trackSwitchClickedWithStatus:;
+- (void)__updateModelWithInfo:;
+- (void)__switchValueWillChange:;
+- (void)configWithCellCornerType:shouldShowLineAtCellBottom:;
+- (void)setModel:;
+- (id)delegate;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)lineView;
+- (void)setLineView:;
+- (id)aSwitch;
+- (void)setASwitch:;
++ (id)identifier;
+@end

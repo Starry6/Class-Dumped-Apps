@@ -1,0 +1,34 @@
+@interface AWEGeneralSearchRecommendWordsManager : NSObject
+@property (nonatomic) TTHttpTask fetchRecommWordsTask;
+@property (nonatomic) @? getDisplayItemsBlock;
+@property (nonatomic) @? getSectionControllerAtIndexBlock;
+@property (nonatomic) @? buildRecommendWordsModelBlock;
+@property (nonatomic) @? getCurrentGidBlock;
+@property (nonatomic) @? getExtraParamsBlock;
+@property (nonatomic) @? visibleIndexPathsBlock;
+@property (nonatomic) @? fetchRecommWordsTaskCompleteBlock;
+@property (nonatomic) @? recommendWordsShowingBlock;
+- (void)showRecommendWordsForSection:params:completion:;
+- (id)fetchRecommWordsTask;
+- (void)setFetchRecommWordsTask:;
+- (id)getSearchModelWithIndex:items:;
+- (void)setGetDisplayItemsBlock:;
+- (void)setBuildRecommendWordsModelBlock:;
+- (void)setGetExtraParamsBlock:;
+- (void)setGetCurrentGidBlock:;
+- (void)setFetchRecommWordsTaskCompleteBlock:;
+- (void)setRecommendWordsShowingBlock:;
+- (void)showRecommendWordsForSectionIndex:params:completion:;
+- (void)fetchRecommWordsForSectionIndex:params:completion:extraCallBack:;
+- (id)getDisplayItemsBlock;
+- (id)getExtraParamsBlock;
+- (id)recommendWordsShowingBlock;
+- (id)getCurrentGidBlock;
+- (id)buildRecommendWordsModelBlock;
+- (id)fetchRecommWordsTaskCompleteBlock;
+- (id)getSectionControllerAtIndexBlock;
+- (void)setGetSectionControllerAtIndexBlock:;
+- (id)visibleIndexPathsBlock;
+- (void)setVisibleIndexPathsBlock:;
+- (void).cxx_destruct;
+@end

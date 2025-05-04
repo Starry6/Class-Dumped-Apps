@@ -1,0 +1,38 @@
+@interface AWEPreviewVideoMaskView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView tipImageView;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UILabel subTipLabel;
+@property (nonatomic) UIVisualEffectView effectView;
+@property (nonatomic) UIImageView coverImageView;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)tipImageView;
+- (void)setTipImageView:;
+- (id)subTipLabel;
+- (void)setSubTipLabel:;
+- (void)setContainerViewHidden:;
+- (void)addEffectiveView;
+- (void)removeEffectView;
+- (void)setSubTipContent:;
+- (void)setTipImage:;
+- (void)showCoverImageWithURLArray:;
+- (void)hiddenCoverImage;
+- (void)setContainerCenterY:;
+- (void)updateCoverImageFrame:;
+- (void)showCoverImageWithImage:frame:;
+- (void)setTipImageWithURLArray:;
+- (void)setTipImageSize:;
+- (id)init;
+- (id)effectView;
+- (id)containerView;
+- (void)setEffectView:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setTipLabel:;
+- (id)tipLabel;
+- (void)setupUI;
+- (void)setTopMargin:;
+- (void)setTipContent:;
+@end

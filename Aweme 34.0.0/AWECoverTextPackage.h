@@ -1,0 +1,36 @@
+@interface AWECoverTextPackage : MTLModel
+@property (nonatomic) Q layoutType;
+@property (nonatomic) Q orientation;
+@property (nonatomic) q paddingStart;
+@property (nonatomic) q paddingEnd;
+@property (nonatomic) q paddingTop;
+@property (nonatomic) q paddingBottom;
+@property (nonatomic) double rotation;
+@property (nonatomic) NSArray textConfigs;
+@property (nonatomic) NSString effectPath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)effectPath;
+- (void)setEffectPath:;
+- (void)setPaddingEnd:;
+- (void)setPaddingStart:;
+- (id)textConfigs;
+- (long long)paddingStart;
+- (long long)paddingEnd;
+- (void)setTextConfigs:;
+- (void)setLayoutType:;
+- (unsigned long long)layoutType;
+- (void)setOrientation:;
+- (long long)paddingTop;
+- (void)setPaddingTop:;
+- (double)rotation;
+- (long long)paddingBottom;
+- (void)setRotation:;
+- (void).cxx_destruct;
+- (void)setPaddingBottom:;
+- (unsigned long long)orientation;
++ (id)textConfigsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

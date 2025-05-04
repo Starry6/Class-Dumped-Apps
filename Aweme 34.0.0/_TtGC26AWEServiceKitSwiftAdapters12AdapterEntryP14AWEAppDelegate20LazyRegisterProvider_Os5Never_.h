@@ -1,0 +1,2 @@
+@interface _TtGC26AWEServiceKitSwiftAdapters12AdapterEntryP14AWEAppDelegate20LazyRegisterProvider_Os5Never_ : AWEServiceKitSwiftAdapters.AdapterEntryBase
+@end

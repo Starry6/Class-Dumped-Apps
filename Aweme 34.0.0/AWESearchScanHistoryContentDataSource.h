@@ -1,0 +1,34 @@
+@interface AWESearchScanHistoryContentDataSource : NSObject
+@property (nonatomic) BOOL cellShouldShowDeleteIcon;
+@property (nonatomic) NSArray models;
+@property (nonatomic) NSDictionary modelDict;
+@property (nonatomic) NSArray numberOfItemsInEachSection;
+@property (nonatomic) NSArray sortedDateKeys;
+@property (nonatomic) <AWESearchScanHistoryCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)modelDict;
+- (void)setModelDict:;
+- (void)updateWithModels:;
+- (void)setCellShouldShowDeleteIcon:;
+- (void)setSortedDateKeys:;
+- (void)setNumberOfItemsInEachSection:;
+- (id)sortedDateKeys;
+- (BOOL)cellShouldShowDeleteIcon;
+- (id)numberOfItemsInEachSection;
+- (void)registerReusableView:;
+- (void)switchCellsDeleteStatusOn:status:;
+- (id)getAllHistoryItemScanID;
+- (id)init;
+- (id)delegate;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)models;
+@end

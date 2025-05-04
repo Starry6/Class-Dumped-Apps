@@ -1,0 +1,34 @@
+@interface AWEUGResourceDownloadTask : NSOperation
+@property (nonatomic) NSArray URLs;
+@property (nonatomic) NSString zipFileMD5;
+@property (nonatomic) NSString targetPath;
+@property (nonatomic) NSString unzipDirectory;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL isDownloadZip;
+@property (nonatomic) BOOL isTaskExecuting;
+@property (nonatomic) BOOL isTaskFinished;
+- (void)setTargetPath:;
+- (BOOL)isTaskFinished;
+- (void)setZipFileMD5:;
+- (void)setIsTaskExecuting:;
+- (void)setIsTaskFinished:;
+- (id)zipFileMD5;
+- (BOOL)isTaskExecuting;
+- (void)setUnzipDirectory:;
+- (void)setIsDownloadZip:;
+- (BOOL)isDownloadZip;
+- (id)unzipDirectory;
+- (id)initWithURLs:zipFileMD5:targetPath:unzipDirectory:completion:;
+- (id)initWithURLs:targetPath:completion:;
+- (id)completion;
+- (BOOL)isExecuting;
+- (void)main;
+- (void)setCompletion:;
+- (void)setURLs:;
+- (BOOL)isFinished;
+- (BOOL)isConcurrent;
+- (id)URLs;
+- (void).cxx_destruct;
+- (void)start;
+- (id)targetPath;
+@end

@@ -1,0 +1,35 @@
+@interface AWEPlayInteractionRelatedRecomendPanelView : UIView
+@property (nonatomic) UIImageView backgroundShadowImageView;
+@property (nonatomic) AWEPlayInteractionRelatedRecomendPanelHeaderView headerView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIView gradientLayerContainerView;
+@property (nonatomic) AWEPlayInteractionRelatedRecomendPanelModel model;
+@property (nonatomic) <AWEPlayInteractionRelatedRecomendPanelViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeButtonClick;
+- (id)backgroundShadowImageView;
+- (void)setBackgroundShadowImageView:;
+- (void)setModel:;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setCollectionView:;
+- (id)headerView;
+- (void)scrollViewDidScroll:;
+- (id)model;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (id)gradientLayerContainerView;
+- (void)setGradientLayerContainerView:;
+@end

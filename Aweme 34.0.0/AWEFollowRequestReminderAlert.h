@@ -1,0 +1,35 @@
+@interface AWEFollowRequestReminderAlert : NSObject
+@property (nonatomic) @? onClose;
+@property (nonatomic) <AWEIMFollowRequestReminderProtocol> followRequestReminderView;
+@property (nonatomic) UIView parentView;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) NSNumber noticeID;
+@property (nonatomic) NSDictionary extraTrackParams;
+@property (nonatomic) BOOL needsShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (void)showWithCloseCallback:;
+- (id)extraTrackParams;
+- (void)setExtraTrackParams:;
+- (void)setNoticeID:;
+- (id)noticeID;
+- (id)followRequestReminderView;
+- (void)setNeedsShow:;
+- (BOOL)needsShow;
+- (void)configWithParentView:user:noticeID:extraTrackParams:;
+- (void)setFollowRequestReminderView:;
+- (id)user;
+- (void)setUser:;
+- (id)init;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)parentView;
+- (void)setParentView:;
+- (id)onClose;
+- (void)setOnClose:;
+@end

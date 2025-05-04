@@ -1,0 +1,36 @@
+@interface AWEECShareBenefitInfo : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString subtitleHigh;
+@property (nonatomic) NSString landPage;
+@property (nonatomic) NSString landPageDec;
+@property (nonatomic) NSString groupInfo;
+@property (nonatomic) NSArray benefitPoint;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSString editText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)subtitleHigh;
+- (void)setSubtitleHigh:;
+- (id)landPage;
+- (void)setLandPage:;
+- (id)landPageDec;
+- (void)setLandPageDec:;
+- (id)benefitPoint;
+- (void)setBenefitPoint:;
+- (id)editText;
+- (void)setEditText:;
+- (id)subtitle;
+- (id)extra;
+- (void)setSubtitle:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)groupInfo;
+- (void)setGroupInfo:;
++ (id)benefitPointJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

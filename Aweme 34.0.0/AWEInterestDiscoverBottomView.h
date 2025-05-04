@@ -1,0 +1,32 @@
+@interface AWEInterestDiscoverBottomView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView roamImageView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) @? bottomBarClickAction;
+@property (nonatomic) NSString interestID;
+@property (nonatomic) NSString interestName;
+- (id)interestID;
+- (void)setInterestID:;
+- (id)interestName;
+- (void)setInterestName:;
+- (double)containerTopMargin;
+- (id)initWithFrame:interestID:interestName:;
+- (void)setBottomBarClickAction:;
+- (id)roamImageView;
+- (double)containerLeftAndRightMargin;
+- (id)bottomBarClickAction;
+- (void)clickContainer;
+- (void)setRoamImageView:;
+- (id)iconImage;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)titleLabelFont;
+- (void)setupUI;
+- (double)containerHeight;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

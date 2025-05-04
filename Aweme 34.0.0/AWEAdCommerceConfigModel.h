@@ -1,0 +1,36 @@
+@interface AWEAdCommerceConfigModel : MTLModel
+@property (nonatomic) NSString data;
+@property (nonatomic) BOOL contentEggInvalid;
+@property (nonatomic) AWEAdItemLikeEggModel itemLikeEggData;
+@property (nonatomic) AWEAdItemCommentEggGroup itemCommentEggGroup;
+@property (nonatomic) AWEAdItemContentLikeEggModel contentLikeEgg;
+@property (nonatomic) q type;
+@property (nonatomic) AWEURLModel vibrationMaterialURLList;
+@property (nonatomic) AWEAdCommerceNakedEye3DModel nakedEye3D;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)contentLikeEgg;
+- (id)itemLikeEggData;
+- (id)nakedEye3D;
+- (id)vibrationMaterialURLList;
+- (id)lokiComponent;
+- (id)itemCommentEggGroup;
+- (id)itemCommentEggGroup;
+- (void)setVibrationMaterialURLList:;
+- (void)setNakedEye3D:;
+- (BOOL)contentEggInvalid;
+- (void)setContentEggInvalid:;
+- (void)setItemLikeEggData:;
+- (void)setItemCommentEggGroup:;
+- (void)setContentLikeEgg:;
+- (long long)type;
+- (void)setType:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
++ (id)JSONTransformer;
++ (id)itemCommentEggJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

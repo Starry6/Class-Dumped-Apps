@@ -1,0 +1,22 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeSubTabListContainerViewController : AWEBaseTabListViewController
+- (id)tabContentScrollView;
+- (id)segmentedControlItemConfigForTabList:;
+- (void)configWithTabItemModel:;
+- (BOOL)tabListEnableTabItemRefreshHeader;
+- (id)initWithNibName:bundle:viewModel:;
+- (id)tabListHeaderViewController;
+- (id)tabListItemViewControllerForModel:index:;
+- (id)segmentedControlForTabList;
+- (double)heightForSegmentedControl;
+- (void)updateSegmentedControl:itemModelsArray:itemConfigsArray:;
+- (void)tabListContainerDidSelectItemAtIndex:itemViewController:isByTap:;
+- (void)segmentedControl:didTapAtIndex:;
+- (void)setupTabListWithConfig:;
+- (BOOL)enableSegmentedControlForTabList;
+- (BOOL)tabItemScrollViewKeepContentOffset;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+@end

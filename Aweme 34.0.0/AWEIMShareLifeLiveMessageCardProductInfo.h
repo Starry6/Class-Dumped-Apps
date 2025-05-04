@@ -1,0 +1,37 @@
+@interface AWEIMShareLifeLiveMessageCardProductInfo : MTLModel
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString productName;
+@property (nonatomic) AWEURLModel imageURL;
+@property (nonatomic) NSString discountPrice;
+@property (nonatomic) NSString originPrice;
+@property (nonatomic) NSString discountInfo;
+@property (nonatomic) NSString schema;
+@property (nonatomic) q sameCity;
+@property (nonatomic) NSString currencySymbol;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)originPrice;
+- (void)setOriginPrice:;
+- (id)discountInfo;
+- (void)setDiscountInfo:;
+- (void)setDiscountPrice:;
+- (id)discountPrice;
+- (void)updateWithProductInfo:;
+- (long long)sameCity;
+- (void)setSameCity:;
+- (id)schema;
+- (void)setProductName:;
+- (void)setProductID:;
+- (id)productName;
+- (id)productID;
+- (void)setSchema:;
+- (id)imageURL;
+- (void).cxx_destruct;
+- (void)setImageURL:;
+- (id)currencySymbol;
+- (void)setCurrencySymbol:;
++ (id)imageURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

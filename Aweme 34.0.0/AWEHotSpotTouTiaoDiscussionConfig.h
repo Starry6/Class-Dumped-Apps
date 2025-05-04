@@ -1,0 +1,35 @@
+@interface AWEHotSpotTouTiaoDiscussionConfig : NSObject
++ (double)bubbleCornerRadius;
++ (id)contentLabelFont;
++ (id)contentLabelColor;
++ (double)toutiaoPartHeight;
++ (double)wonderfulPointTopMargin;
++ (id)wonderfulPointLabelSize;
++ (double)wonderfulPointLabelBottomMarginToCollectionView;
++ (id)collectionCellSize;
++ (double)collectionViewBottomMargin;
++ (double)toutiaoPartTopMargin;
++ (double)toutiaoCollectionLeftRightInsets;
++ (double)toutiaoCellInteritemSpacing;
++ (id)wonderfulPointLabelFont;
++ (id)wonderfulPointLabelColor;
++ (double)wonderfulPointLeadingMargin;
++ (id)cellBackgroundGradientLayer;
++ (id)bubbleBorderColor;
++ (double)bubbleBorderWidth;
++ (double)avatarImageMargin;
++ (double)avatarImageCornerRadius;
++ (double)nickNameLeftMarginToAvatarImage;
++ (id)nickNameFont;
++ (id)nickNameColor;
++ (double)contentTopMarginToAvatarImage;
++ (double)nickNameMinTrailingMargin;
++ (double)contentBottomMarginToPics;
++ (double)picsMargin;
++ (double)picsInteritemSpacing;
++ (id)singlePicSize;
++ (id)doublePicSize;
++ (id)triplePicSize;
++ (double)contentHorizontalMargin;
++ (id)avatarImageSize;
+@end

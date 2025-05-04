@@ -1,0 +1,35 @@
+@interface AWETeenModeFeedTracker : NSObject
++ (void)trackAntiAddictedTime:enterFrom:;
++ (void)trackStayTimeWithDuration:enterFrom:;
++ (void)trackRecomAuthorVideoScrollWithAuthorID:vcType:;
++ (void)trackRecomAuthorShowWithAuthorID:vcType:;
++ (void)trackTeenEnterCreationDetailWithModel:enterFrom:;
++ (void)trackTeenHomepageRefresh:extraParams:;
++ (void)trackTeenGrootEntranceShowWithModel:enterFrom:enterPosition:pediaID:;
++ (void)trackEncyKnowledgeEntranceShowWithModel:enterFrom:enterPosition:justWatched:showType:;
++ (void)trackTeenTrendingShowWithWordsNum:wordsSource:imprID:enterFrom:enterGroupID:;
++ (void)trackTeenTrendingWordsShowWithWordsSource:wordsContent:groupID:imprID:enterFrom:enterGroupID:awemeModel:;
++ (void)shootEntranceShowWithEnterFrom:shootEntrance:fromGroupID:fromAuthorID:fromPediaID:;
++ (void)trackTeenCreationStickerShowWithModel:enterFrom:;
++ (void)trackHomepageHotSlideDownWithModel:enterPlayMethod:playMode:toGroupId:;
++ (void)trackHomepageHotSlideUpWithModel:enterPlayMethod:playMode:toGroupId:;
++ (void)trackVideoSlideDownWithModel:vcType:;
++ (void)trackVideoSlideUpWithModel:vcType:;
++ (void)trackTeenPendantShowWithActivityID:;
++ (void)trackTeenPendantHideWithActivityID:;
++ (void)trackTeenPendantClickWithActivityID:;
++ (void)trackTeenUmbrellaClick;
++ (void)trackEnterSearchWithModel:vcType:enterPosition:;
++ (void)trackEncyKnowledgeEntranceShowWithModel:enterFrom:showType:extra:;
++ (void)trackEncyKnowledgeRecomShowWithModel:enterFrom:extra:;
++ (void)trackReportSubmitWithModel:vcType:isFullscreen:extra:enterFrom:;
++ (void)trackHomepageTabChangeWithModel:vcType:enterFrom:enterMethod:;
++ (void)trackTeenTrendingWordsClickWithWordsSource:wordsContent:groupID:imprID:enterFrom:enterGroupID:awemeModel:;
++ (void)shootEntranceClickWithEnterFrom:shootWay:specialShowType:shootType:fromGroupID:fromAuthorID:fromPediaID:activityID:effectID:;
++ (void)trackTeenUmbrellaClickTimeLock;
++ (void)trackTeenUmbrellaClickAge;
++ (void)trackTeenAgeSettingUmbrellaPopup;
++ (void)trackTeenAgeSettingUmbrellaSubmit:;
++ (void)trackCreationDetailVideoShowWithModel:;
++ (void)trackPersonalWorkTabShotClick;
+@end

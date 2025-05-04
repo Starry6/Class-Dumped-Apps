@@ -1,0 +1,35 @@
+@interface AWECoCreatorMultiDetailItemView : UIView
+@property (nonatomic) BOOL isSignificant;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWECoCreatorMultiDetailTagView tagView;
+@property (nonatomic) AWECoCreatorModel itemModel;
+@property (nonatomic) NSString tagTitle;
+@property (nonatomic) NSString tagSubtitle;
+@property (nonatomic) {CGSize=dd} avatarImageSize;
+@property (nonatomic) @? clickHandler;
+- (id)itemModel;
+- (id)clickHandler;
+- (void)setItemModel:;
+- (void)setTagTitle:;
+- (id)tagTitle;
+- (void)setAvatarImageSize:;
+- (void)setClickHandler:;
+- (void)handleClickTap;
+- (id)tagSubtitle;
+- (void)setTagSubtitle:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)reset;
+- (void)setImageView:;
+- (id)imageView;
+- (BOOL)isSignificant;
+- (void)updateViews;
+- (void)setIsSignificant:;
+- (void)updateWithModel:;
+- (id)avatarImageSize;
+- (id)tagView;
+- (void)setTagView:;
+@end

@@ -1,0 +1,2 @@
+@interface AWESearchLynxBDXBridgeMethod : NSObject
+@end

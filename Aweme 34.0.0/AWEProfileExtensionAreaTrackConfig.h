@@ -1,0 +1,30 @@
+@interface AWEProfileExtensionAreaTrackConfig : NSObject
+@property (nonatomic) NSString eventName;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) AWEProfileExtensionAreaCardModel cardModel;
+@property (nonatomic) @ cardView;
+@property (nonatomic) NSString cardIndex;
+@property (nonatomic) NSDictionary bizParams;
+@property (nonatomic) NSDictionary coreParams;
+@property (nonatomic) double stayDuration;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)cardModel;
+- (id)bizParams;
+- (double)stayDuration;
+- (void)setBizParams:;
+- (void)setCardModel:;
+- (void)setStayDuration:;
+- (void)setCardIndex:;
+- (id)cardIndex;
+- (id)coreParams;
+- (void)setCoreParams:;
+- (void)setEventName:;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)eventName;
+- (id)cardView;
+- (void)setCardView:;
+@end

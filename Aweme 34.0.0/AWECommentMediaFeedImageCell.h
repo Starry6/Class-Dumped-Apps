@@ -1,0 +1,34 @@
+@interface AWECommentMediaFeedImageCell : UICollectionViewCell
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) @? pureModeBlock;
+@property (nonatomic) @? livePhotoPlayControlBlock;
+@property (nonatomic) @? doubleTapBlock;
+@property (nonatomic) @? updateSmartBGColorBlock;
+- (void)doubleTapToZoomWithGes:;
+- (void)scrollViewDidEndZooming:withView:atScale:;
+- (id)viewForZoomingInScrollView:;
+- (void)scrollViewDidZoom:;
+- (void)scrollViewWillBeginZooming:withView:;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setPureModeBlock:;
+- (void)setLivePhotoPlayControlBlock:;
+- (void)setDoubleTapBlock:;
+- (void)setUpdateSmartBGColorBlock:;
+- (void)reloadPicture:commentCameraModel:fullSizeImage:livePhotoLocal:livePhotoLocalCover:;
+- (void)cellWillOffScreenFromHorizontal:;
+- (void)cellDidOffScreenFromHorizontal:;
+- (void)cellWillOnScreenFromHorizontal:;
+- (void)cellDidOnScreenFromHorizontal:;
+- (id)pureModeBlock;
+- (id)livePhotoPlayControlBlock;
+- (id)doubleTapBlock;
+- (id)updateSmartBGColorBlock;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)initWithCoder:;
+- (void)didEndDisplaying;
+- (void)willDisplay;
+@end

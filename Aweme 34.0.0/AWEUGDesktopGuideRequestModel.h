@@ -1,0 +1,30 @@
+@interface AWEUGDesktopGuideRequestModel : MTLModel
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString passControlLevel;
+@property (nonatomic) NSString guideStyleType;
+@property (nonatomic) BOOL needLoading;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (void)setEnterFrom:;
+- (id)logExtraDict;
+- (void)setExtraParams:;
+- (id)enterFrom;
+- (id)extraParams;
+- (void)setNeedLoading:;
+- (void)setGuideStyleType:;
+- (void)setPassControlLevel:;
+- (id)sceneUniqueKey;
+- (id)passControlLevel;
+- (id)guideStyleType;
+- (BOOL)needLoading;
+- (void)setScene:;
+- (id)scene;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

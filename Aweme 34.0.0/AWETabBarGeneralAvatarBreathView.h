@@ -1,0 +1,33 @@
+@interface AWETabBarGeneralAvatarBreathView : UIView
+@property (nonatomic) UIView topImageBackView;
+@property (nonatomic) UIImageView topImageView;
+@property (nonatomic) UIView<AWEFeedLiveMarkViewProtocol> liveMarkView;
+@property (nonatomic) UILabel iconTagLabel;
+@property (nonatomic) AWEHPChannelAvatarBreathModel model;
+@property (nonatomic) double avatarSize;
+- (void)setLiveMarkView:;
+- (id)liveMarkView;
+- (id)topImageView;
+- (void)setTopImageView:;
+- (void)configAvatar;
+- (void)setupLiveTagLabel;
+- (id)topImageBackView;
+- (id)topImageBackViewSize;
+- (void)setupAvatarImageView;
+- (void)setupAvatarPendant;
+- (double)avatarBackViewBorderWidth;
+- (double)avatarBackViewPadding;
+- (double)avatarBackViewWidth;
+- (void)setTopImageBackView:;
+- (id)avatarImageViewSize;
+- (void)setIconTagLabel:;
+- (id)iconTagLabel;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (double)avatarSize;
+- (void)setAvatarSize:;
+- (void)updateWithModel:;
+- (double)avatarWidth;
+@end

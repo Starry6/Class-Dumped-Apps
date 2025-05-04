@@ -1,0 +1,38 @@
+@interface AWEMVChannelSmallCardVideoCell : AWEMVChannelSmallCardCell
+@property (nonatomic) AWEMVChannelTapGuideView tapGuideView;
+@property (nonatomic) AWEMVChannelPlayVideoViewController playerVideoController;
+@property (nonatomic) double playBeginTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)playerDidReadyForDisplay:;
+- (void)cellWillDisplay;
+- (void)player:didChangePlaybackToAction:;
+- (void)videoAutoPlay;
+- (BOOL)interceptorActionBeforeShowWithContext:;
+- (void)interceptorActionBeforeTriggerEventWithEvent:;
+- (id)tapGuideView;
+- (void)setTapGuideView:;
+- (void)bindEvents;
+- (void)configWithAwemeModel:context:;
+- (id)appendedLogExtra;
+- (void)handleJumpToInflow;
+- (void)updateCoverImageView;
+- (void)showTapGuide;
+- (void)videoAutoPause;
+- (void)cellEndDisplaying;
+- (void)addVideoPlayControllerIfNeed;
+- (void)updateVideoPlayController:context:;
+- (void)addTapGuideToAlertManager;
+- (void)removeTapGuideIfNeed;
+- (void)setPlayBeginTime:;
+- (id)playerVideoController;
+- (void)addGTapGuideViewIfNeed;
+- (double)playBeginTime;
+- (void)setPlayerVideoController:;
+- (void)prepareForTransition;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (void)reset;
+@end

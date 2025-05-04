@@ -1,0 +1,37 @@
+@interface AWEShareIMRefactoringBridgeService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)simpleShareItemDoubleAvatarOuterWidth;
+- (double)simpleShareItemDoubleAvatarSingleWidth;
+- (double)simpleShareItemSubtitleFontSize;
+- (double)simpleShareListItemWidth;
+- (double)simpleShareMainTitleFontSize;
+- (double)simpleShareItemTitleFontSize;
+- (double)simpleShareListIconWH;
+- (double)simpleShareListItemHigherHeight;
+- (double)simpleShareItemSmallIconWH;
+- (double)simpleShareChannelListContentTopOffset;
+- (double)simpleShareChannelListHeight;
+- (double)simpleShareListItemHeight;
+- (double)simpleShareIMListHeight;
+- (double)simpleShareScale;
+- (double)simpleShareIMListContentTopOffset;
+- (double)simpleShareListItemLineSpace;
+- (double)simpleShareInputViewBottomOffset;
+- (id)generateAddWechatFriendsChannel;
+- (void)trackMiniSharePlatfromIconWithContext:sharePlatform:;
+- (void)trackShareDetailWithContext:sharePlatform:;
+- (void)trackShareVideoWithContext:shareModel:extraParams:;
+- (void)trackAdShareEventWithContext:;
+- (void)trackLiveSharePanelHeadClickWithContext:shareModel:extraParams:;
+- (double)simpleShareInputViewButtonFontSize;
+- (double)simpleShareInputViewButtonImageSize;
+- (double)simpleShareInputViewHeight;
+- (double)simpleShareInputViewCoverImageTop;
+- (double)simpleShareInputViewCoverImageWH;
+- (double)simpleShareInputBottonBottomOffset;
+- (double)simpleShareInputViewTextFontSize;
+- (id)generateDoubleAvatarView;
+@end

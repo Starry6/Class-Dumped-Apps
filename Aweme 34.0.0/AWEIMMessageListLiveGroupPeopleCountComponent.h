@@ -1,0 +1,38 @@
+@interface AWEIMMessageListLiveGroupPeopleCountComponent : AWEIMMessageListTopFloatingBaseComponent
+@property (nonatomic) q livePeopleCount;
+@property (nonatomic) NSArray groupUsers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewWillAppear;
+- (id)shouldContinueForPriorityObject:;
+- (id)shouldRemoveForPriorityObject:;
+- (void)hostVC_viewWillDisappear;
+- (void)didClickTopTipViewActionBtnWithType:;
+- (void)didClickTopTipViewCloseBtnWithType:;
+- (id)groupUsers;
+- (void)setGroupUsers:;
+- (void)updateLiveGroupInfoForConversationId:numberOfPeople:groupUsers:;
+- (long long)livePeopleCount;
+- (void)setLivePeopleCount:;
+- (void)possiblyStartPollingLiveGroupInfo;
+- (void)stopPollingLiveGroupInfo;
+- (void)dismissAccordingToShowState;
+- (void)showLiveGroupPeopleCountWithNumberOfPeople:groupUsers:;
+- (BOOL)shouldUpdateWithNumberOfPeople:groupUsers:;
+- (void)updateViewWithNumberOfPeople:groupUsers:;
+- (void)trackActionBtnShowed;
+- (void)showPeopleCountNoticeTip;
+- (id)parentViewControllerCid;
+- (void)trackActionBtnClicked;
+- (id)init;
+- (id)userType;
+- (void).cxx_destruct;
+- (id)params;
+- (id)leftView;
+- (id)visibleConversations;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)shouldEnableInteractorWith:;
++ (BOOL)closedNoticeTipWithin24Hours:;
+@end

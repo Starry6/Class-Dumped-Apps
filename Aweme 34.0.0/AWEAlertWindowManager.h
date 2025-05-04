@@ -1,0 +1,34 @@
+@interface AWEAlertWindowManager : NSObject
+@property (nonatomic) UIViewController uploadContactAlertViewController;
+@property (nonatomic) AWEAlertWindow alertWindow;
+@property (nonatomic) UIViewController rootViewController;
+@property (nonatomic) UIWindow lastWindow;
+@property (nonatomic) AWEUserPolicyTermModel policyModel;
+@property (nonatomic) NSArray subPopModels;
+@property (nonatomic) @? completeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCompleteBlock:;
+- (id)completeBlock;
+- (id)lastWindow;
+- (void)setLastWindow:;
+- (void)showAlertViewController:;
+- (void)showAlertViewControllerWithParamsDict:;
+- (void)setUploadContactAlertViewController:;
+- (id)uploadContactAlertViewController;
+- (id)policyModel;
+- (void)setPolicyModel:;
+- (id)subPopModels;
+- (void)setSubPopModels:;
+- (id)init;
+- (void)dealloc;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)rootViewController;
+- (void)makeKeyAndVisible;
+- (void)setAlertWindow:;
+- (id)alertWindow;
++ (id)sharedManager;
+@end

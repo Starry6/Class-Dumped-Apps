@@ -1,0 +1,36 @@
+@interface AWEIMBatManInviteMessage : AWEIMMessage
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString coverImgURLStr;
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) Q roomStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameName;
+- (void)setGameName:;
+- (unsigned long long)roomStatus;
+- (void)setRoomStatus:;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)gameID;
+- (void)setGameID:;
+- (id)getContentDict;
+- (id)coverImgURLStr;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (void)setCoverImgURLStr:;
+- (id)scheme;
+- (void)setScheme:;
+- (id)roomID;
+- (void).cxx_destruct;
+- (void)setRoomID:;
+- (long long)messageType;
+- (id)copyWithZone:;
+@end

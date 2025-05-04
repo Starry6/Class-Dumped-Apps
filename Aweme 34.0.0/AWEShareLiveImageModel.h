@@ -1,0 +1,30 @@
+@interface AWEShareLiveImageModel : NSObject
+@property (nonatomic) NSArray previewViews;
+@property (nonatomic) {CGSize=dd} previewViewSize;
+@property (nonatomic) NSArray saveViews;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) UIImage qrCodeImage;
+@property (nonatomic) q imageCount;
+@property (nonatomic) BOOL shareImageLoadViewsSuccess;
+@property (nonatomic) BOOL shareImageLoadQRCodeImageSuccess;
+@property (nonatomic) BOOL shareImageLoadFailed;
+- (id)previewViewSize;
+- (void)setPreviewViewSize:;
+- (BOOL)shareImageLoadQRCodeImageSuccess;
+- (void)setShareImageLoadQRCodeImageSuccess:;
+- (id)saveViews;
+- (BOOL)shareImageLoadViewsSuccess;
+- (BOOL)shareImageLoadFailed;
+- (void)setPreviewViews:;
+- (id)qrCodeImage;
+- (void)setQrCodeImage:;
+- (void)setShareImageLoadViewsSuccess:;
+- (void)setSaveViews:;
+- (void)setShareImageLoadFailed:;
+- (id)previewViews;
+- (void)setCurrentIndex:;
+- (long long)imageCount;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (void)setImageCount:;
+@end

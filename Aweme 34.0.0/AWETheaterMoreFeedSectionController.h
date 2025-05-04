@@ -1,0 +1,33 @@
+@interface AWETheaterMoreFeedSectionController : AWEBaseListSectionController
+@property (nonatomic) AWETheaterPageContext context;
+@property (nonatomic) AWETheaterTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didSelectItemAtIndex:model:;
+- (void)configSupplementaryHeaderView:;
+- (id)cellIdentifierForModel:index:;
+- (void)trackClickCard:model:index:;
+- (void)trackLVideoClickWithModel:clickMethod:clickTab:;
+- (void)trackLVideoShowWithModel:;
+- (void)trackShowCard:model:index:;
+- (id)longVideoTrackerParamsWithModel:;
+- (id)init;
+- (id)tracker;
+- (void)setTracker:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (Class)headerViewClass;
++ (double)lineSpace;
+@end

@@ -1,0 +1,2 @@
+@interface AWEXBridgeKitABTestRegister : NSObject
+@end

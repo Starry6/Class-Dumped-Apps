@@ -1,0 +1,32 @@
+@interface AWEPostLocatePitayaModel : NSObject
+@property (nonatomic) NSString locateItemID;
+@property (nonatomic) BOOL hasPredictedLocate;
+@property (nonatomic) BOOL hasClickedBtn;
+@property (nonatomic) double videoPlayedDuration;
+@property (nonatomic) q videoPlayedCount;
+@property (nonatomic) NSMutableSet prefixPlayedAwemeIDSet;
+@property (nonatomic) NSMutableSet suffixPlayedAwemeIDSet;
+@property (nonatomic) BOOL hasPlayedLocateItem;
+@property (nonatomic) BOOL usedPreload;
+- (double)videoPlayedDuration;
+- (BOOL)hasPredictedLocate;
+- (id)locateItemID;
+- (id)prefixPlayedAwemeIDSet;
+- (id)suffixPlayedAwemeIDSet;
+- (void)setHasPlayedLocateItem:;
+- (void)setVideoPlayedDuration:;
+- (void)updateVideoPlay:playTime:dataSource:;
+- (void)setLocateItemID:;
+- (void)setHasPredictedLocate:;
+- (BOOL)hasClickedBtn;
+- (void)setHasClickedBtn:;
+- (long long)videoPlayedCount;
+- (void)setVideoPlayedCount:;
+- (void)setPrefixPlayedAwemeIDSet:;
+- (void)setSuffixPlayedAwemeIDSet:;
+- (BOOL)hasPlayedLocateItem;
+- (BOOL)usedPreload;
+- (void)setUsedPreload:;
+- (id)init;
+- (void).cxx_destruct;
+@end

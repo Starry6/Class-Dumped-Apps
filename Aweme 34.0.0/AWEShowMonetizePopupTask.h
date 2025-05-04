@@ -1,0 +1,36 @@
+@interface AWEShowMonetizePopupTask : NSObject
+@property (nonatomic) Q state;
+@property (nonatomic) AWEShowMonetizePopupTask targetTask;
+@property (nonatomic) Q type;
+@property (nonatomic) @? willLoad;
+@property (nonatomic) @? didFailLoad;
+@property (nonatomic) @? didLoad;
+@property (nonatomic) @? willPopup;
+@property (nonatomic) @? didFailPopup;
+@property (nonatomic) @? didPopup;
+@property (nonatomic) @? didClose;
+- (void)setDidClose:;
+- (id)didClose;
+- (void)setDidFailLoad:;
+- (void)setDidFailPopup:;
+- (id)didFailPopup;
+- (id)willLoad;
+- (id)didFailLoad;
+- (id)willPopup;
+- (id)didPopup;
+- (void)setWillLoad:;
+- (void)setWillPopup:;
+- (void)setDidPopup:;
+- (BOOL)canRun;
+- (void)run;
+- (void)cancel;
+- (unsigned long long)state;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setState:;
+- (void)setTargetTask:;
+- (id)targetTask;
+- (id)didLoad;
+- (void)setDidLoad:;
+@end

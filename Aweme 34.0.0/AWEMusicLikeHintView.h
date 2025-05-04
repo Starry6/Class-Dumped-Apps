@@ -1,0 +1,36 @@
+@interface AWEMusicLikeHintView : UIView
+@property (nonatomic) UILabel infoLabel;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIImageView arrowView;
+@property (nonatomic) UIView separateLine;
+@property (nonatomic) UITapGestureRecognizer tapGes;
+@property (nonatomic) @? entranceTapped;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tapGes;
+- (void)setTapGes:;
+- (id)separateLine;
+- (void)setSeparateLine:;
+- (void)addTapGesture;
+- (id)entranceTapped;
+- (void)setEntranceTapped:;
+- (id)accessibilityLabel;
+- (id)init;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (unsigned long long)accessibilityTraits;
+- (BOOL)isAccessibilityElement;
+- (id)arrowView;
+- (id)infoLabel;
+- (void)setArrowView:;
+- (void)tapped;
+- (void)setupView;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (void)setInfoLabel:;
+- (double)suggestedHeight;
+@end

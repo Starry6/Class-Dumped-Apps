@@ -1,0 +1,32 @@
+@interface AWEProfileJustWatchManager : NSObject
+@property (nonatomic) BOOL canDoItemHighlightAnimation;
+@property (nonatomic) Q state;
+@property (nonatomic) BOOL everSomeItemClicked;
+@property (nonatomic) BOOL everWatchedItemVisiable;
+@property (nonatomic) BOOL everShowedAnimation;
+@property (nonatomic) <AWEProfileJustWatchDelegate> delegate;
+- (void)__reset;
+- (void)onEventLocateAvailable:;
+- (void)onEventDidEndLocateItemWithResult:;
+- (void)onEventWillScrollDuringLocation;
+- (void)onEventDidPurchaseAnimation;
+- (void)onEventItemSelected:;
+- (BOOL)onEventWatchedItemUIChanged:visiable:isScroll:;
+- (void)onEventWillBeginLocateItem;
+- (BOOL)everShowedAnimation;
+- (void)setCanDoItemHighlightAnimation:;
+- (void)setEverShowedAnimation:;
+- (BOOL)everWatchedItemVisiable;
+- (void)setEverWatchedItemVisiable:;
+- (void)__checkDismiss;
+- (BOOL)canDoItemHighlightAnimation;
+- (void)setEverSomeItemClicked:;
+- (BOOL)everSomeItemClicked;
+- (id)init;
+- (id)delegate;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setState:;
++ (id)manager;
+@end

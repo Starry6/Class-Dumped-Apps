@@ -1,0 +1,31 @@
+@interface AWEPOIDetailNGUgcBottomBarComponentViewModel : DitoComponentViewModel
+@property (nonatomic) BOOL isShow;
+@property (nonatomic) NSString creationIDForToComment;
+@property (nonatomic) NSString cardKey;
+@property (nonatomic) q cardPriority;
+@property (nonatomic) BOOL isHighestPriority;
+@property (nonatomic) AWEPOIDetailResponse poiDetail;
+@property (nonatomic) AWEPOIDetailNGUgcBottomBarComponentView componentView;
+- (BOOL)isShow;
+- (void)setIsShow:;
+- (id)poiDetail;
+- (void)setPoiDetail:;
+- (void)setCardKey:;
+- (id)cardKey;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (id)creationIDForToComment;
+- (void)setCreationIDForToComment:;
+- (long long)cardPriority;
+- (void)setCardPriority:;
+- (id)trackingParamsForToComment;
+- (void)showUGCBar:;
+- (void)bottomBarDidReceiveResponse:;
+- (void)setIsHighestPriority:;
+- (BOOL)isHighestPriority;
+- (void)trackBottomBarWithResponse:;
+- (id)initWithNode:;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setComponentView:;
+@end

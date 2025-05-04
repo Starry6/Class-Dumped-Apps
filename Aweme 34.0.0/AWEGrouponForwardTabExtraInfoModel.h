@@ -1,0 +1,34 @@
+@interface AWEGrouponForwardTabExtraInfoModel : MTLModel
+@property (nonatomic) AWEURLModel imageUrl;
+@property (nonatomic) NSString pintopText;
+@property (nonatomic) NSString highlightText;
+@property (nonatomic) AWEGrouponForwardTabCouponInfoModel couponInfo;
+@property (nonatomic) NSString actionText;
+@property (nonatomic) q showTime;
+@property (nonatomic) NSString componentId;
+@property (nonatomic) NSString closeActionText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)showTime;
+- (void)setShowTime:;
+- (id)highlightText;
+- (void)setHighlightText:;
+- (id)couponInfo;
+- (void)setCouponInfo:;
+- (id)closeActionText;
+- (id)pintopText;
+- (void)setPintopText:;
+- (void)setCloseActionText:;
+- (void).cxx_destruct;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (void)setComponentId:;
+- (id)componentId;
+- (id)actionText;
+- (void)setActionText:;
++ (BOOL)automaticallyDefaultMapping;
++ (id)imageUrlJSONTransformer;
++ (id)couponInfoJSONTransformer;
+@end

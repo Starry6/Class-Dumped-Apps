@@ -1,0 +1,34 @@
+@interface AWEConcernResponseModel : AWEBaseApiModel
+@property (nonatomic) NSNumber updateItemCount;
+@property (nonatomic) NSNumber updateRoomCount;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSNumber fetchRecommend;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSArray cardList;
+@property (nonatomic) NSNumber showUploadContactNotice;
+@property (nonatomic) NSNumber isRecommed;
+- (id)minCursor;
+- (id)cardList;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (id)fetchRecommend;
+- (void)setFetchRecommend:;
+- (void)setCardList:;
+- (id)showUploadContactNotice;
+- (void)setShowUploadContactNotice:;
+- (id)isRecommed;
+- (void)setIsRecommed:;
+- (id)updateItemCount;
+- (id)updateRoomCount;
+- (void)setUpdateItemCount:;
+- (void)setUpdateRoomCount:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
++ (id)hasMoreJSONTransformer;
++ (id)cardListJSONTransformer;
++ (id)followFeed_subModelPropertyKey;
++ (id)JSONKeyPathsByPropertyKey;
+@end

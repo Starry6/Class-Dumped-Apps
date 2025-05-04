@@ -1,0 +1,35 @@
+@interface AWEProfileEditFlowViewModel : NSObject
+@property (nonatomic) NSArray steps;
+@property (nonatomic) q currentStepIndex;
+@property (nonatomic) q status;
+@property (nonatomic) AWEProfileEditFlowContext context;
+@property (nonatomic) NSMutableDictionary editStatusMap;
+@property (nonatomic) q totalSteps;
+@property (nonatomic) @? finishBlock;
+@property (nonatomic) NSString multiFlowType;
+- (void)goNextStep;
+- (id)multiFlowType;
+- (long long)indexOfStep:;
+- (void)goPreviousStep;
+- (id)editStatusMap;
+- (void)finishFlowWithTrakcer;
+- (void)setMultiFlowType:;
+- (void)setEditStatusMap:;
+- (id)currentStep;
+- (void)setStatus:;
+- (id)steps;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)context;
+- (void)setSteps:;
+- (id)stepAtIndex:;
+- (void)finishFlow;
+- (void)startFlow;
+- (void)setCurrentStepIndex:;
+- (long long)currentStepIndex;
+- (void)setFinishBlock:;
+- (id)finishBlock;
+- (id)initWithSteps:;
+- (long long)totalSteps;
+@end

@@ -1,0 +1,36 @@
+@interface AWEFollowListEntranceViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWERelationFollowCleanListDataController cleanListdataController;
+@property (nonatomic) q groupCount;
+@property (nonatomic) AWERelationCleanFollowingListResponse response;
+@property (nonatomic) AWEFollowListCategoryStatisticsModel categoryResponse;
+@property (nonatomic) NSNumber categoryFollowingGroupCount;
+@property (nonatomic) NSNumber cachedGroupCount;
+@property (nonatomic) BOOL entranceHasShowTrack;
+@property (nonatomic) BOOL unreadNeedTotal;
+- (BOOL)unreadNeedTotal;
+- (void)setUnreadNeedTotal:;
+- (void)setCategoryFollowingGroupCount:;
+- (id)categoryFollowingGroupCount;
+- (void)setCategoryResponse:;
+- (void)setCachedGroupCount:;
+- (id)categoryResponse;
+- (id)cachedGroupCount;
+- (double)classificationEntranceHeight;
+- (double)entranceHeight;
+- (BOOL)entranceHasShowTrack;
+- (void)setEntranceHasShowTrack:;
+- (id)cleanListdataController;
+- (void)cleanListEntranceUpdate:;
+- (void)refreshHeaderWithCleanResponse:isCacheData:;
+- (void)refreshHeaderWithGroupCount:;
+- (void)headerEntranceUpdate:;
+- (void)followGroupEntranceUpdate:;
+- (void)refreshGroupCount:;
+- (void)fetchCategoryCount;
+- (void)setCleanListdataController:;
+- (id)response;
+- (void).cxx_destruct;
+- (void)setResponse:;
+- (long long)groupCount;
+- (void)setGroupCount:;
+@end

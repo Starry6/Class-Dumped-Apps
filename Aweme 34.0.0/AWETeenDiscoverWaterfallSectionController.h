@@ -1,0 +1,36 @@
+@interface AWETeenDiscoverWaterfallSectionController : AWEBaseListSectionController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isAppear;
+- (void)sectionControllerWillDisplay:;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (id)enterFrom;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didBindSectionViewModel;
+- (void)viewControllerDidAppear:;
+- (void)viewControllerDidDisappear:;
+- (void)listAdapter:didScrollSectionController:;
+- (void)listAdapter:willBeginDraggingSectionController:;
+- (void)listAdapter:didEndDraggingSectionController:willDecelerate:;
+- (void)listAdapter:didEndDeceleratingSectionController:;
+- (void)didSelectItemAtIndex:model:;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (double)minimumColumnSpacing;
+- (void)updateWatchedAlbumModel:;
+- (void)sectionTrackAppear;
+- (id)p_constructMinorAlbum:;
+- (void)p_updateDynamicCoverWithWillDisplayCell:willDisplayIndexPath:;
+- (void)p_updateDynamicCover;
+- (id)separatorColor;
+- (id)init;
+- (long long)columnCount;
+- (void)dealloc;
+- (id)sectionBackgroundColor;
+- (id)inset;
+@end

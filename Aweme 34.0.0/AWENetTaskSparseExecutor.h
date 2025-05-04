@@ -1,0 +1,34 @@
+@interface AWENetTaskSparseExecutor : AWENetTaskQueue
+@property (nonatomic) AWENetTaskTimer timer;
+@property (nonatomic) double startTime;
+@property (nonatomic) BOOL allTasksFinished;
+@property (nonatomic) double interval;
+@property (nonatomic) double minDuration;
+@property (nonatomic) <AWENetTaskExecutorDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMinDuration:;
+- (BOOL)executorFinished;
+- (BOOL)executeImmediately:;
+- (void)startExecute;
+- (void)setAllTasksFinished:;
+- (void)executeTopTask;
+- (BOOL)allTasksFinished;
+- (void)updateQueueStateIfNeeded;
+- (double)interval;
+- (void)setTimer:;
+- (id)init;
+- (id)timer;
+- (void)setStartTime:;
+- (id)delegate;
+- (void)runTask:;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (double)startTime;
+- (void)enqueue:;
+- (double)minDuration;
++ (id)executorWithDelegate:interval:;
+@end

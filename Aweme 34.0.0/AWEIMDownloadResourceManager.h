@@ -1,0 +1,33 @@
+@interface AWEIMDownloadResourceManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_semaphore> semaphoreLock;
+- (id)semaphoreLock;
+- (void)setSemaphoreLock:;
+- (id)init;
+- (void).cxx_destruct;
++ (BOOL)p_canDownloadAtColdLaunchWithInAdvance:triggerType:;
++ (BOOL)p_cacheImageReourceUseBDWebImageIfNeededWithReourceModel:needPrefetch:prefetch12Urls:prefetchAllUrls:;
++ (void)downloadAndUpdateReource:complete:;
++ (void)p_autoDeleteReourceIfNeedWithResources:complete:;
++ (void)p_migrateOldResourceIfNeedWithComplete:;
++ (BOOL)shouldDownloadResource:;
++ (void)p_addDownloadingResource:;
++ (id)getDownloadResourceTypeRootPath:name:;
++ (id)getDownloadResourcePathWithModel:;
++ (void)p_removeDownloadingResource:;
++ (void)p_traceDownloadResult:error:tracker:;
++ (void)__performWithLockIfNecessary:;
++ (void)p_onResourceDownloadfinish:;
++ (BOOL)isDownloadResourceExist:;
++ (id)getDownloadResourceSubpathWithType:;
++ (BOOL)isDownloadResourceExist:forceCheck:;
++ (void)buildDownloadCacheDict;
++ (id)getDownloadResourceTypePath:;
++ (void)p_trackResourceDiskSize;
++ (void)checkAccessExpireFile:;
++ (double)p_fileSizeOfDirectory:;
++ (void)downloadAndUpdateResources:;
++ (long long)getDownloadFinishCountWith:;
++ (void)removeDownloadedResource:;
++ (BOOL)isPreDownloadResourceWithInAdvance:triggerType:;
++ (id)sharedInstance;
+@end

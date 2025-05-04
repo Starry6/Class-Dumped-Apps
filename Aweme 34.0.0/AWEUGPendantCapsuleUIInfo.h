@@ -1,0 +1,30 @@
+@interface AWEUGPendantCapsuleUIInfo : MTLModel
+@property (nonatomic) Q capsuleType;
+@property (nonatomic) NSArray text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString edgeColor;
+@property (nonatomic) NSString backGroundColor;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} capsuleUIFrame;
+@property (nonatomic) BOOL needShow;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backGroundColor;
+- (void)setBackGroundColor:;
+- (unsigned long long)capsuleType;
+- (void)setCapsuleType:;
+- (BOOL)needShow;
+- (void)setNeedShow:;
+- (id)edgeColor;
+- (void)setEdgeColor:;
+- (id)capsuleUIFrame;
+- (void)setCapsuleUIFrame:;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
++ (id)JSONKeyPathsByPropertyKey;
+@end

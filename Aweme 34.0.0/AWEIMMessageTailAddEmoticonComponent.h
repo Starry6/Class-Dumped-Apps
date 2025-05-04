@@ -1,0 +1,34 @@
+@interface AWEIMMessageTailAddEmoticonComponent : AWEIMFlexComponent
+@property (nonatomic) NSString targetMsgId;
+@property (nonatomic) BOOL hasTrackShown;
+@property (nonatomic) BOOL shouldForbideTrackShown;
+@property (nonatomic) BOOL isCellVisible;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellVisibleLifeCycleChanged:;
+- (void)p_addObserver;
+- (void)p_trackShow;
+- (void)p_addKVO;
+- (void)p_removeObserver;
+- (void)p_createPresenterIfNeeded;
+- (void)messageStateViewModelDidChanged;
+- (void)setIsCellVisible:;
+- (BOOL)p_canShowAddEmoticonBtn;
+- (BOOL)shouldForbideTrackShown;
+- (BOOL)hasTrackShown;
+- (void)p_updatePresenterWithReload:;
+- (void)handleEmoticonPanelDataChangedNotification:;
+- (void)setTargetMsgId:;
+- (void)p_didTapAddEmoticonButton;
+- (id)targetMsgId;
+- (BOOL)isCellVisible;
+- (void)setHasTrackShown:;
+- (void)setShouldForbideTrackShown:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)p_isSpecifiedGiphyMessage:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEAntiAddictPreviewControlViewModel : NSObject
+@property (nonatomic) Q previewVideoType;
+@property (nonatomic) BOOL isEditable;
+@property (nonatomic) BOOL isRestRemind;
+@property (nonatomic) NSString aid;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString videoTag;
+@property (nonatomic) NSString prePage;
+- (id)prePage;
+- (void)setPrePage:;
+- (BOOL)useDefaultTitle;
+- (id)videoTag;
+- (void)setVideoTag:;
+- (void)setIsRestRemind:;
+- (void)setPreviewVideoType:;
+- (BOOL)isRestRemind;
+- (unsigned long long)previewVideoType;
+- (void)initTitles;
+- (id)initWithAwemeID:previewVideoType:isEditable:isRestRemind:videoTag:prePage:;
+- (void)setIsEditable:;
+- (BOOL)isEditable;
+- (id)subtitle;
+- (void)setSubtitle:;
+- (void).cxx_destruct;
+- (id)mainTitle;
+- (void)setMainTitle:;
+- (id)aid;
+- (void)setAid:;
+@end

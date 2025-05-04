@@ -1,0 +1,2 @@
+@interface AWEIMBaseViewControllerNaviBarControllerModel : NSObject
+@end

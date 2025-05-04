@@ -1,0 +1,38 @@
+@interface AWEBaseListViewController : UIViewController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEBaseListViewHolder viewHolder;
+@property (nonatomic) AWEBaseListViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applyBlurEffectIfNeeded;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (void)setupViewModel;
+- (void)setupViewHolder;
+- (id)viewHolder;
+- (id)sectionViewModels;
+- (id)bdv_visibleManager;
+- (void)setViewHolder:;
+- (void)setDisableContentOffsetRestorationAnchor:;
+- (void)reloadContainer:;
+- (void)updateContainer:sync:;
+- (id)bdv_itemIDForCell:indexPath:;
+- (void)bdv_cellDidVisible:indexPath:metaData:;
+- (id)initWithViewModel:;
+- (void)viewDidLayoutSubviews;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (void)setupCollectionView;
++ (Class)viewModelClass;
++ (Class)collectionViewClass;
++ (Class)viewHolderClass;
+@end

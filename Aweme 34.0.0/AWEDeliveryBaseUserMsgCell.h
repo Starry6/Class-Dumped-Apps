@@ -1,0 +1,36 @@
+@interface AWEDeliveryBaseUserMsgCell : AWEDeliveryBaseMsgCell
+@property (nonatomic) UIImageView avatarImgView;
+@property (nonatomic) UILongPressGestureRecognizer containerLongGesture;
+@property (nonatomic) NSString userNickName;
+@property (nonatomic) UITableView cellSuperView;
+@property (nonatomic) BOOL supportResend;
+- (void)setCellModel:;
+- (id)userNickName;
+- (void)setUserNickName:;
+- (id)avatarImgView;
+- (void)setAvatarImgView:;
+- (void)didCustomInit;
+- (void)didInitSubviewLayouts;
+- (void)setContainerLongGesture:;
+- (void)onDoubleTap:;
+- (void)onClickResend;
+- (void)avatarViewViewDidTapAction:;
+- (void)bindAvatarAndBubbleViewStyle;
+- (void)updateUIWhenMessageStatusDidChanged;
+- (id)cellSuperView;
+- (void)showIndicatorImageView;
+- (void)showIndicatorLabelViewWithIsRead:;
+- (void)updateUIForSendFailedStatus;
+- (void)setCellSuperView:;
+- (BOOL)supportResend;
+- (void)setSupportResend:;
+- (id)containerLongGesture;
+- (void)stopAnimating;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void).cxx_destruct;
+- (void)startAnimating;
+- (void)layoutSubviews;
+- (void)onLongPress:;
++ (void)getSize:withModel:;
++ (id)riskTextSizeWithModel:;
+@end

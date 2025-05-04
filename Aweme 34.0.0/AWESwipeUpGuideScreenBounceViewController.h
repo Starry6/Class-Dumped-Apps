@@ -1,0 +1,35 @@
+@interface AWESwipeUpGuideScreenBounceViewController : UIViewController
+@property (nonatomic) UIView feedScreenBounceMaskView;
+@property (nonatomic) q screenBounceAnimationTimes;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) {CGPoint=dd} originOffSet;
+@property (nonatomic) UILabel slideUpDownHintLabel;
+@property (nonatomic) UIImageView handImageView;
+@property (nonatomic) BOOL enableGuideEnhance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOriginOffSet:;
+- (id)originOffSet;
+- (void)showSwipeUpGuideOnTableView:;
+- (void)dismissSwipeUpGuideManager;
+- (BOOL)enableGuideEnhance;
+- (void)setEnableGuideEnhance:;
+- (id)feedScreenBounceMaskView;
+- (id)slideUpDownHintLabel;
+- (void)bindGesture;
+- (void)beginScreenBounceGuideAnimation;
+- (long long)screenBounceAnimationTimes;
+- (void)setScreenBounceAnimationTimes:;
+- (void)setFeedScreenBounceMaskView:;
+- (void)setSlideUpDownHintLabel:;
+- (id)slideUpDownHintLabelText;
+- (void)repeatScreenBounceGuideAnimationIfNeeded:;
+- (id)init;
+- (id)handImageView;
+- (void)setTableView:;
+- (id)tableView;
+- (void).cxx_destruct;
+- (void)setHandImageView:;
+@end

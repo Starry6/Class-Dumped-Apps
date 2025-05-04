@@ -1,0 +1,2 @@
+@interface AWEComplianceABRegister : NSObject
+@end

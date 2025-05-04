@@ -1,0 +1,31 @@
+@interface AWESearchInpageSearchBarConfiguration : NSObject
+- (id)aAWESearchModuleServiceDOUYINSSAdaper;
++ (Class)aAWESearchModuleServiceDOUYINSSAdaperClass;
++ (id)searchBarconfig;
++ (id)configBeforeSearch;
++ (id)configSearching;
++ (id)configAfterSearch;
++ (id)searchBarConfigBeforeSearch;
++ (id)searchBarConfigSearching;
++ (id)searchBarConfigAfterSearch;
++ (id)searchButtonConfigBeforeSearch;
++ (id)searchButtonConfigSearching;
++ (id)searchButtonConfigAtferSearch;
++ (id)searchButtonTextColorDarkWithPhase:;
++ (id)searchButtonTextColorLightWithPhase:;
++ (long long)searchBarHeightWithPhase:;
++ (BOOL)searchButtonShowWithPhase:;
++ (BOOL)isIntegratedWithPhase:;
++ (BOOL)searchBarShowDividerWithPhase:;
++ (long long)searchButtonWidthWithPhase:;
++ (long long)searchButtonHeightWithPhase:;
++ (long long)searchBarBgResWithPhase:;
++ (BOOL)searchBarShowClearIconWithPhase:;
++ (long long)searchBarShowScanIconWithPhase:;
++ (long long)searchBarShowSearchIconWithPhase:;
++ (id)searchButtonBGColorDarkWithPhase:;
++ (id)searchButtonBGColorLightWithPhase:;
++ (long long)searchButtonTextSizeWithPhase:;
++ (long long)searchButtonBGRadiusWithPhase:;
++ (BOOL)useHyperelliptic;
+@end

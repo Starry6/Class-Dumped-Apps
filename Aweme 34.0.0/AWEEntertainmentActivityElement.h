@@ -1,0 +1,31 @@
+@interface AWEEntertainmentActivityElement : AWEPlayInteractionBaseActionButtonElement
+@property (nonatomic) UIButton button;
+@property (nonatomic) AWEVideoInteractInfo currentInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_viewWillAppear;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (BOOL)shouldActivateButtonWithData:;
+- (BOOL)shouldActiveWithModel:context:;
+- (void)setCurrentInfo:;
+- (void)logForAction:;
+- (void)updateTextIfNeeded;
+- (id)buttonForState:withList:;
+- (void)updateStateIfNeeded;
+- (BOOL)shouldShowEntertainmentElement;
+- (void)showSchemaIfNeeded;
+- (id)logParam;
+- (void)viewDidLoad;
+- (void)prepareForDisplay;
+- (void)setButton:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)button;
+- (id)currentInfo;
+- (void)didTapButton;
+- (void)setupObserver;
+@end

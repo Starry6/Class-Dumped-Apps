@@ -1,0 +1,30 @@
+@interface AWENearbyTransformerSessionTrackNode : NSObject
+@property (nonatomic) AWENearbyTransformerSessionTrackNode parentNode;
+@property (nonatomic) NSMutableArray childNode;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) NSDictionary commonParams;
+@property (nonatomic) NSDictionary schemaParams;
+@property (nonatomic) NSDictionary extraParams;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)commonParams;
+- (void)setCommonParams:;
+- (id)schemaParams;
+- (void)setSchemaParams:;
+- (id)mergedCommonParams;
+- (id)mergedTrackParams;
+- (id)mergedSchemaParams;
+- (id)mergedExtraParams;
+- (id)childNode;
+- (id)initWithSessinID:;
+- (id)mergedDict:highPriDict:;
+- (void)setChildNode:;
+- (void)setSessionID:;
+- (id)sessionID;
+- (void).cxx_destruct;
+- (id)parentNode;
+- (void)setParentNode:;
+@end

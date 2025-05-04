@@ -1,0 +1,2 @@
+@interface AWEIMShareMessageSendResponse : NSObject
+@end

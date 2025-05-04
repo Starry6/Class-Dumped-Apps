@@ -1,0 +1,2 @@
+@interface AWEIMChatForceInsertNode : AWEIMTaskPipelineNode
+@end

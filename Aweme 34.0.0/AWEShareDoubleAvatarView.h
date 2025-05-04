@@ -1,0 +1,38 @@
+@interface AWEShareDoubleAvatarView : UIView
+@property (nonatomic) Q type;
+@property (nonatomic) UIImageView firstImageView;
+@property (nonatomic) UIImageView secondImageView;
+@property (nonatomic) UIView firstImageBackgroundView;
+@property (nonatomic) double singleWidth;
+@property (nonatomic) double outerWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)updateSingleWidth:outerWidth:;
+- (void)updateWithFirstImageUrl:secondImageUrl:;
+- (id)firstImageView;
+- (id)secondImageView;
+- (void)setFirstImageView:;
+- (void)setSecondImageView:;
+- (id)firstImageBackgroundView;
+- (void)p_makeConstraint;
+- (double)outerWidth;
+- (id)p_getCommonImageView;
+- (void)setFirstImageBackgroundView:;
+- (double)singleWidth;
+- (void)setSingleWidth:;
+- (void)setOuterWidth:;
+- (id)initWithSingleWidth:outerWidth:type:;
+- (void)updateWithFirstImageUrl:firstImage:secondImageUrl:secondImage:;
+- (void)p_updateRadius;
+- (void)p_addComponents;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setBgColor:;
++ (id)doubleAvatarViewWithType:;
++ (id)doubleAvatarViewWithSingleWidth:outerWidth:type:;
++ (id)doubleAvatarView;
+@end

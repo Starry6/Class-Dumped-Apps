@@ -1,0 +1,31 @@
+@interface AWEECOMIMPigeonCacheIMPV2 : NSObject
+@property (nonatomic) YYCache cache;
+@property (nonatomic) <AWEStorageServiceFileKitResourceMetricInterface> resourceMetric;
+@property (nonatomic) NSString rootPath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getObjectOfClass:forKey:;
+- (BOOL)cacheIsWithinTheValidityPeriod:;
+- (void)loadWithName:;
+- (void)setObject:forKey:validityPeriod:;
+- (void)setResourceMetric:;
+- (id)resourceMetric;
+- (id)diskCacheRelativePath;
+- (void)setDictData:forKey:validityPeriod:;
+- (id)getDictDataForKey:;
+- (id)getDictDataFromMemoryCacheForKey:;
+- (id)getObjectFromMemoryCacheOfClass:forKey:;
+- (void)setCache:;
+- (id)cache;
+- (BOOL)containsObjectForKey:;
+- (void)removeAllObjects;
+- (void)removeObjectForKey:;
+- (void).cxx_destruct;
+- (id)rootPath;
+- (void)setObject:forKey:;
+- (void)setRootPath:;
++ (void)setDidUseCache:;
++ (BOOL)didUseCache;
+@end

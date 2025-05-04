@@ -1,0 +1,2 @@
+@interface AWECodeGenDouyinContentPayWatchRecordResponse : AWEBaseResponseModel
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMPushViewModel : NSObject
+@property (nonatomic) AWEIMChatModel chat;
+@property (nonatomic) BOOL isAggregation;
+@property (nonatomic) q config;
+@property (nonatomic) Q aggregateType;
+@property (nonatomic) BOOL hideDetailMsg;
+@property (nonatomic) BOOL needVibrate;
+@property (nonatomic) BOOL hidePrivateLetterIcon;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) NSDictionary traceContext;
+- (id)traceContext;
+- (void)setTraceContext:;
+- (id)pushControlModel;
+- (void)setIsAggregation:;
+- (BOOL)hidePrivateLetterIcon;
+- (BOOL)hideDetailMsg;
+- (BOOL)needVibrate;
+- (void)setHidePrivateLetterIcon:;
+- (void)setHideDetailMsg:;
+- (void)setNeedVibrate:;
+- (id)miximage_pushControlModel;
+- (void)setConfig:;
+- (id)displayText;
+- (id)content;
+- (long long)config;
+- (void)setDisplayText:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)chat;
+- (BOOL)isAggregation;
+- (void)setChat:;
+- (unsigned long long)aggregateType;
+- (void)setAggregateType:;
+@end

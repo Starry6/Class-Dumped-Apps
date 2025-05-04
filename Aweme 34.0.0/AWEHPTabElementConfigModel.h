@@ -1,0 +1,36 @@
+@interface AWEHPTabElementConfigModel : MTLModel
+@property (nonatomic) double endRatio;
+@property (nonatomic) double segmentControlMaskWidth;
+@property (nonatomic) AWEHPTopBarContainerConfig topBarContainerConfig;
+@property (nonatomic) AWEHPTopTabItemViewUIConfig itemViewConfig;
+@property (nonatomic) AWEHPTopTabRedDotUIConfig redDotConfig;
+@property (nonatomic) AWEHPBottomTabUIConfigModel bottomTabConfig;
+@property (nonatomic) NSNumber topRatio;
+@property (nonatomic) NSNumber topCTARatio;
+@property (nonatomic) NSNumber topBubbleRatio;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBottomTabConfig:;
+- (id)bottomTabConfig;
+- (id)topRatio;
+- (void)setTopRatio:;
+- (id)topCTARatio;
+- (void)setTopCTARatio:;
+- (id)redDotConfig;
+- (void)setRedDotConfig:;
+- (id)topBarContainerConfig;
+- (id)itemViewConfig;
+- (double)segmentControlMaskWidth;
+- (double)endRatio;
+- (void)setEndRatio:;
+- (id)topBubbleRatio;
+- (void)setTopBubbleRatio:;
+- (void)setSegmentControlMaskWidth:;
+- (void)setTopBarContainerConfig:;
+- (void)setItemViewConfig:;
+- (BOOL)isValidWithError:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

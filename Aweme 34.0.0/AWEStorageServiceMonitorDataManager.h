@@ -1,0 +1,38 @@
+@interface AWEStorageServiceMonitorDataManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> IOQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> uploadQueue;
+@property (nonatomic) NSMutableArray datas;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSString cachePath;
+@property (nonatomic) NSMutableDictionary unfinisheModels;
+@property (nonatomic) q sequence;
+- (void)recordData:;
+- (void)storageModel:withKey:;
+- (id)findModelWithKey:;
+- (void)removeModelWithKey:;
+- (void)checkLocalCacheData;
+- (void)checkUpload;
+- (void)uploadDatas:withSessionID:sequence:sessionFinish:;
+- (void)saveDataToDisk;
+- (void)setIOQueue:;
+- (id)unfinisheModels;
+- (void)setUnfinisheModels:;
+- (void)willEnterForeground:;
+- (id)init;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (id)baseDir;
+- (void)setLock:;
+- (id)cachePath;
+- (id)lock;
+- (long long)sequence;
+- (void)setUploadQueue:;
+- (void).cxx_destruct;
+- (void)setSequence:;
+- (id)uploadQueue;
+- (id)IOQueue;
+- (id)datas;
+- (void)setDatas:;
+- (void)setCachePath:;
+- (void)willTerminate:;
+@end

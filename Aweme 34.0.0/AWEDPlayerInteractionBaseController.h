@@ -1,0 +1,36 @@
+@interface AWEDPlayerInteractionBaseController : AWEBaseController
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEDPlayerVideoModel videoModel;
+@property (nonatomic) AWEDPlayerGeneralControllerConfig controllerConfig;
+@property (nonatomic) <AWEDPlayerActionDelegate> actionDelegate;
+@property (nonatomic) AWEDPlayerBaseControlContainer view;
+@property (nonatomic) AWEPageContext<AWEDPlayerPageContextProtocol> context;
+@property (nonatomic) BOOL appear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHide:;
+- (unsigned long long)activateType;
+- (id)videoModel;
+- (void)setVideoModel:;
+- (void)setAppear:;
+- (void)updateForSimplePlayerWithVideoModel:;
+- (void)updateDPlayerState:;
+- (id)controllerConfig;
+- (void)setControllerConfig:;
+- (id)actionDelegate;
+- (void)setModel:;
+- (id)container;
+- (id)view;
+- (void)viewDidLoad;
+- (id)viewController;
+- (void)setView:;
+- (id)model;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (BOOL)appear;
+- (void)setActionDelegate:;
+- (unsigned long long)controllerType;
+@end

@@ -1,0 +1,33 @@
+@interface AWEInteractNoticeGroupManager : NSObject
+@property (nonatomic) <AWEInteractNoticeGroupManagerProtocol> manager;
+- (void)assignGroupValueDictWithGroupInfoArray:;
+- (void)setManager:;
+- (id)manager;
+- (void).cxx_destruct;
++ (id)interactiveGroups;
++ (unsigned long long)interactNoticeGroup;
++ (unsigned long long)fansNoticeGroup;
++ (unsigned long long)mateNoticeGroup;
++ (unsigned long long)interactCommentNoticeGroup;
++ (unsigned long long)followNoticeGroup;
++ (unsigned long long)diggNoticeGroup;
++ (unsigned long long)commentNoticeGroup;
++ (unsigned long long)atNoticeGroup;
++ (unsigned long long)rewardNoticeGroup;
++ (unsigned long long)moreNoticeGroup;
++ (unsigned long long)moreNoticeNormalGroup;
++ (unsigned long long)moreNoticeHighFansGroup;
++ (unsigned long long)recommendNoticeGroup;
++ (unsigned long long)otherNoticeGroup;
++ (unsigned long long)flameGroup;
++ (unsigned long long)ownPostedCommentNoticeGroup;
++ (unsigned long long)ownPostedDanmakuNoticeGroup;
++ (unsigned long long)danmakuReceivedGroup;
++ (id)enableAtMeTitle;
++ (BOOL)isInvalidNoticeGroup:;
++ (BOOL)isInteractNoticeGroup:;
++ (BOOL)enablePostedDanmaku;
++ (void)assignGroupValueDictWithGroupInfoArray:;
++ (unsigned long long)interactFlameNoticeGroup;
++ (id)sharedManager;
+@end

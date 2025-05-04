@@ -1,0 +1,38 @@
+@interface AWEAdPromptPictureView : UIView
+@property (nonatomic) BDImageView pictureImageView;
+@property (nonatomic) NSString requestURL;
+@property (nonatomic) double loadDuration;
+@property (nonatomic) NSError loadError;
+@property (nonatomic) @? didFailToLoadHandler;
+@property (nonatomic) @? didFinishLoadHandler;
+@property (nonatomic) NSDictionary liveRoomInfo;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLoadDuration:;
+- (id)didFinishLoadHandler;
+- (id)didFailToLoadHandler;
+- (void)setDidFailToLoadHandler:;
+- (void)setDidFinishLoadHandler:;
+- (id)liveRoomInfo;
+- (void)setLiveRoomInfo:;
+- (void)startLoadWithCardModel:;
+- (id)pictureImageView;
+- (void)setPictureImageView:;
+- (void)setupConstraint;
+- (void)setModel:;
+- (id)view;
+- (id)requestURL;
+- (id)initWithFrame:;
+- (id)contentView;
+- (id)model;
+- (void)setRequestURL:;
+- (void).cxx_destruct;
+- (id)loadError;
+- (void)reset;
+- (double)loadDuration;
+- (void)setLoadError:;
++ (BOOL)canShowNativePictureCardView:;
+@end

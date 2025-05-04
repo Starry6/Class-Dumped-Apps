@@ -1,0 +1,35 @@
+@interface AWEStickerApplyMentionHandler : AWEStickerApplyBaseHandler
+@property (nonatomic) NSDictionary cachedUsersDic;
+@property (nonatomic) NSDictionary appliedMentionsDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)flowServiceDidUpdateDuration:;
+- (void)switchModeServiceWillChangeToMode:oldMode:;
+- (void)flowServiceDidRemoveLastSegment:;
+- (void)flowServiceDidAddFragment:;
+- (void)flowServiceDidRemoveAllSegment;
+- (void)flowServiceWillBeginTakePicture;
+- (void)flowServiceDidTakePicture:error:;
+- (void)handlerDidBecomeActive;
+- (void)camera:willApplySticker:propSource:;
+- (id)p_currentProp;
+- (void)p_addMentionIfNeeded;
+- (void)p_PrefetchAllSticerMentionsInfo;
+- (void)p_fetchMentionForStickersIfNeeded:;
+- (id)p_mentionUserIdOfSticker:;
+- (void)p_fetchMentionUserInfoWithUserID:stickerID:withNeedApplyMention:;
+- (void)p_removeAllMentions;
+- (id)appliedMentionsDic;
+- (void)p_applyMentionForUserID:stickderID:;
+- (id)p_mentionOfUserID:;
+- (BOOL)isStickerMentionUser:;
+- (void)p_removeMentionFor:;
+- (id)cachedUsersDic;
+- (void)p_configMentionFromUser:stickderID:;
+- (BOOL)p_shouldAddMentionFor:;
+- (void)setCachedUsersDic:;
+- (void)setAppliedMentionsDic:;
+- (void).cxx_destruct;
+@end

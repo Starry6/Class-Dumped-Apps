@@ -1,0 +1,30 @@
+@interface AWEPayScanImageUploadResponse : CJPayBaseResponse
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) NSString storeKey;
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSString sessionToken;
+@property (nonatomic) NSString serviceId;
+@property (nonatomic) NSString secretKey;
+@property (nonatomic) NSDictionary extension;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (void)setSecretKey:;
+- (id)storeKey;
+- (void)setServiceId:;
+- (void)setExtension:;
+- (id)serviceId;
+- (void)setStoreKey:;
+- (id)sessionToken;
+- (id)extension;
+- (id)secretKey;
+- (void).cxx_destruct;
+- (BOOL)isSuccess;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (void)setSessionToken:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

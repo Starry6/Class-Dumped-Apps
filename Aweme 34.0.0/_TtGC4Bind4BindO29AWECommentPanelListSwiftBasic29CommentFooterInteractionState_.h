@@ -1,0 +1,2 @@
+@interface _TtGC4Bind4BindO29AWECommentPanelListSwiftBasic29CommentFooterInteractionState_ : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,31 @@
+@interface AWEEditServiceFlowHandle : NSObject
+@property (nonatomic) AWEVideoPublishViewModel publishModel;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) <ACCSequenceEditServiceProtocol> sequenceEditService;
+@property (nonatomic) <ACCEditPreviewProtocol> preview;
+@property (nonatomic) <AWEPublishEditServiceManagerProtocol> editServiceManager;
+@property (nonatomic) {CGSize=dd} backupCanvasSize;
+- (id)publishModel;
+- (id)coverSize;
+- (void)setPublishModel:;
+- (id)editService;
+- (void)setEditService:;
+- (id)sequenceEditService;
+- (void)setSequenceEditService:;
+- (id)editServiceManager;
+- (void)setEditServiceManager:;
+- (BOOL)p_hadApplyCanvas;
+- (void)setBackupCanvasSize:;
+- (id)backupCanvasSize;
+- (id)initWithModel:editService:sequenceEditService:editServiceManager:;
+- (void)getCoverImageWithCompletion:;
+- (void)getFirstFrameImageWithCompletion:;
+- (void)recoverPrevewEdgeWithTaskFlowType:;
+- (void)updateCanvasForPublish:;
+- (void)activeCurrentNLEWithCompletion:;
+- (void)restoreBackupCanvas:;
+- (id)albumCoverSizeWithIndex:;
+- (BOOL)horizontalVideo;
+- (id)preview;
+- (void).cxx_destruct;
+@end

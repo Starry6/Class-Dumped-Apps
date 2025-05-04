@@ -1,0 +1,38 @@
+@interface AWEAwemeFeedPreCacheRequestManager : NSObject
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) BOOL forbiddenDurThisSession;
+@property (nonatomic) q fetchRetryCount;
+@property (nonatomic) AWEListDataController foryouFeedDataController;
+@property (nonatomic) q requestTimes;
+@property (nonatomic) BOOL forceRequestTrack;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (id)preCacheRequestTriggerAddConfig;
+- (void)setRequestTimes:;
+- (BOOL)enableVideoDownloadFailTrigger;
+- (long long)fetchRetryCount;
+- (long long)maxVideoDownloadFailRetryCount;
+- (void)setFetchRetryCount:;
+- (id)foryouFeedDataController;
+- (long long)requestTimes;
+- (long long)maxRequestNumberInCurrentTime;
+- (void)setForyouFeedDataController:;
+- (BOOL)forbiddenDurThisSession;
+- (void)setForbiddenDurThisSession:;
+- (BOOL)forceRequestTrack;
+- (BOOL)precachePreloadWithStrategyEnable;
+- (void)preloadCacheVideoWithStrategyMedia:completion:;
+- (long long)feedPrecachePrefetchSize;
+- (void)preloadCacheVideo:completion:;
+- (void)preloadVideoImages:;
+- (long long)precachePreloadPriorityLevel;
+- (BOOL)asyncPreloadVideoImagesConfig;
+- (void)p_preloadVideoImages:;
+- (id)precachePreloadStrategyConfig;
+- (id)preloadVideoImagesConfig;
+- (void)fetchCacheWithCompletion:;
+- (BOOL)undownloadVideoEnablePreloadImages;
+- (void)setForceRequestTrack:;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

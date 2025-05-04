@@ -1,0 +1,30 @@
+@interface AWEPadRightElementLayout : NSObject
+@property (nonatomic) AWEPadRightElementLayoutInfo layoutInfo;
+@property (nonatomic) double hitTestingInsetLeft;
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> viewController;
+@property (nonatomic) AWEElementContainer container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)duxGrid_superViewDidChangeBreakPointFrom:toBreakPoint:;
+- (double)layoutButton:;
+- (double)hitTestingInsetLeft;
+- (void)updateLayoutInfoV1WithBreakPoint:;
+- (void)updateLayoutInfoV2WithBreakPoint:;
+- (void)updateLayoutInfoV3WithRate:;
+- (void)updateLayoutInfoV3WithBreakPoint:;
+- (double)layoutAvatar:;
+- (double)layoutMusic:;
+- (void)setHitTestingInsetLeft:;
+- (void)setLayoutInfo:;
+- (void)setContainer:;
+- (id)container;
+- (id)init;
+- (id)viewController;
+- (id)layoutInfo;
+- (void).cxx_destruct;
+- (void)setViewController:;
++ (Class)aAWEPadModuleAdapterClass;
+@end

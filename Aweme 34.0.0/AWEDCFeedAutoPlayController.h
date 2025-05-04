@@ -1,0 +1,38 @@
+@interface AWEDCFeedAutoPlayController : AWEDCFeedBaseController
+@property (nonatomic) NSHashTable optVisibleCellsCache;
+@property (nonatomic) AWEDCFeedAutoPlayHandler autoPlayHandler;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerScrollViewDidScroll:;
+- (void)containerScrollViewDidEndDragging:willDecelerate:;
+- (void)containerScrollViewDidEndDecelerating:;
+- (void)containerScrollViewDidEndScrollingAnimation:;
+- (void)containerViewWillAppear:;
+- (void)containerViewDidAppear:;
+- (void)containerViewWillDisappear:;
+- (void)containerCollectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)containerCollectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)containerScrollViewDidScrollToTop:;
+- (void)listDidReloadData;
+- (void)listDidPerformBatchUpdates;
+- (id)autoPlayHandler;
+- (void)setAutoPlayHandler:;
+- (id)feedScrollView;
+- (BOOL)disableFeedScrollViewDelegate;
+- (void)becomeActiveNeedReset:;
+- (void)setOptVisibleCellsCache:;
+- (BOOL)shouldPreventDCAutoPlayAction;
+- (id)optVisibleCellsCache;
+- (BOOL)p_enableVideoPlay;
+- (void)becomeActive;
+- (id)init;
+- (void).cxx_destruct;
+- (id)visibleCells;
+- (void)resignActive;
+- (void)applicationDidBecomeActive;
+- (void)applicationWillResignActive;
+- (id)autoPlayConfig;
+@end

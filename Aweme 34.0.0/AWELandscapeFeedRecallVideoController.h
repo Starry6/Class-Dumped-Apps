@@ -1,0 +1,35 @@
+@interface AWELandscapeFeedRecallVideoController : AWELandscapeFeedBaseController
+@property (nonatomic) NSMutableDictionary recallVideosDict;
+@property (nonatomic) AWELandscapeRecallVideoView recallVideoView;
+@property (nonatomic) BOOL isReCallVideos;
+@property (nonatomic) NSIndexPath recalledAfterPlayIndex;
+@property (nonatomic) <AWEFeedSafetyCheckProtocol> safetyCheckHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)safetyCheckHandler;
+- (void)setSafetyCheckHandler:;
+- (void)handleVideoSafetyCheckNotification:;
+- (void)handleVideoPrivacyCheckNotification:;
+- (id)curSceneString;
+- (void)setupRegisters;
+- (void)setRecallVideosDict:;
+- (id)recallVideosDict;
+- (void)handleSafetyPreCheckNotification:;
+- (void)showRecallVideoView:;
+- (void)removeReCallVideos:;
+- (void)removeBackVideos:;
+- (void)setRecallVideoView:;
+- (id)recallVideoView;
+- (void)hideRecallVideoView:;
+- (id)recalledAfterPlayIndex;
+- (void)setIsReCallVideos:;
+- (void)setRecalledAfterPlayIndex:;
+- (void)recallWithItemID:;
+- (void)removeDrawBackVideoList:type:enterFrom:;
+- (BOOL)isReCallVideos;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

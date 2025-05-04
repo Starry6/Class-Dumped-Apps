@@ -1,0 +1,2 @@
+@interface AWEFindFriendsContactsSectionViewModel : AWEBaseListSectionViewModel
+@end

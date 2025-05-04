@@ -1,0 +1,32 @@
+@interface AWEFreeFlowAlertManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)clearAllStatus;
+- (void)chooseOption:;
+- (BOOL)shouldUseNewStrategyForNoWifi;
+- (BOOL)isInNoAlertStatus;
+- (BOOL)isInLastMonthWifiStrategy;
+- (BOOL)isInCurrentMonthWifiStrategy;
+- (long long)countForNoAlertDaysBefore25:;
+- (long long)countForNoAlertDaysAfter25:;
+- (BOOL)isNoAlertDayWithDailyModel:;
+- (long long)noWifiAlertStyle;
+- (long long)WifiAlertStyle;
+- (void)clickContinuePlay;
+- (void)clickPause;
+- (void)setNoWiFiPlaySwitchStatus:setByUser:;
+- (void)recordLaunchAppWithWifi:;
+- (void)recordHasShownWifiAlert;
+- (BOOL)noWiFiPlaySwitchStatusOpen;
+- (BOOL)isFreeFlowCardUserCloseSwitchManually;
+- (BOOL)shouldUseNewStrategyForWifi;
+- (id)currentFlowStrategyStatisticsDescription;
+- (BOOL)WifiAlertIsNeeded;
+- (id)init;
+- (void)dealloc;
++ (id)sharedManager;
+@end

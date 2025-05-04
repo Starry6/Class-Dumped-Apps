@@ -1,0 +1,32 @@
+@interface AWEFansPushContainerViewController : UIViewController
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEButton moreFunctionButton;
+@property (nonatomic) NSString userUrgeButtonText;
+@property (nonatomic) NSString myUrgeButtonText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (BOOL)configWithRouterParamDict:;
+- (id)enterFrom;
+- (id)getParams;
+- (id)buttonTexts;
+- (void)didClickedButton:;
+- (void)backBtnClicked:;
+- (id)moreFunctionButton;
+- (void)moreFunctionButtonClicked:;
+- (void)trackDidClickMoreButton;
+- (void)toggleUrgeReminder;
+- (void)trackDidClickForwardViewButton;
+- (void)trackCloseRemind;
+- (void)trackOpenRemind;
+- (void)setUserUrgeButtonText:;
+- (void)setMyUrgeButtonText:;
+- (id)userUrgeButtonText;
+- (id)myUrgeButtonText;
+- (void)setMoreFunctionButton:;
+- (id)init;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

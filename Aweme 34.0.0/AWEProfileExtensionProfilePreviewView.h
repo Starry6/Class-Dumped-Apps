@@ -1,0 +1,30 @@
+@interface AWEProfileExtensionProfilePreviewView : UIView
+@property (nonatomic) AWEProfilePreviewBannerView bannerView;
+@property (nonatomic) AWEProfilePreviewAvatarView avatarView;
+@property (nonatomic) AWEProfilePreviewNickNameView nickNameView;
+@property (nonatomic) UIView bgCornerView;
+@property (nonatomic) AWEProfilePreviewSocialView socialView;
+@property (nonatomic) AWEProfilePreviewSignatureView signatureView;
+@property (nonatomic) AWEProfilePreviewExtensionView extensionView;
+@property (nonatomic) AWEProfilePreviewFollowView followView;
+- (id)extensionView;
+- (id)followView;
+- (void)setFollowView:;
+- (id)nickNameView;
+- (void)setNickNameView:;
+- (void)setExtensionView:;
+- (id)bgCornerView;
+- (void)setBgCornerView:;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (void)setupUI;
+- (id)bannerView;
+- (void)setBannerView:;
+- (void)setSocialView:;
+- (id)socialView;
+- (void)setSignatureView:;
+- (id)signatureView;
+@end

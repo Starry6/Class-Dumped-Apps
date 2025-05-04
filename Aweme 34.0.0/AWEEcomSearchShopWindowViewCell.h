@@ -1,0 +1,38 @@
+@interface AWEEcomSearchShopWindowViewCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel rightJumpLabel;
+@property (nonatomic) UIView descriptionView;
+@property (nonatomic) UIImageView diamondShopTagImageView;
+@property (nonatomic) AWEEcomSearchFlagShipShopTag flagShipTag;
+@property (nonatomic) AWEEcomSearchWindowShopTag windowShopTag;
+@property (nonatomic) AWEEcomSearchShopWindowCellModel cellModel;
+- (void)configWithModel:;
+- (void)setExtraTrackParams:;
+- (void)setCellModel:;
+- (id)rightJumpLabel;
+- (id)diamondShopTagImageView;
+- (id)flagShipTag;
+- (id)windowShopTag;
+- (void)setRightJumpLabel:;
+- (void)setDiamondShopTagImageView:;
+- (void)setFlagShipTag:;
+- (void)setWindowShopTag:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (void)updateUI;
+- (id)descriptionView;
+- (void)setDescriptionView:;
+- (id)cellModel;
+- (void)willDisplay;
+- (void)didSelectItem;
++ (double)heightForModel:containerWidth:;
++ (id)identifier;
+@end

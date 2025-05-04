@@ -1,0 +1,30 @@
+@interface AWEGuestLikeListContainerViewHolder : AWEBaseListViewHolder
+@property (nonatomic) AWEGuestHomePageContext pageContext;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UIView vacantViewContainer;
+@property (nonatomic) DUXVacantView emptyVacantView;
+@property (nonatomic) DUXVacantView errorVacantView;
+- (void)showToast:;
+- (void)setupViewHolder;
+- (void)dismissLoadingView;
+- (id)errorVacantView;
+- (void)showErrorVacantView;
+- (void)setErrorVacantView:;
+- (void)showEmptyVacantView;
+- (id)emptyVacantView;
+- (void)setEmptyVacantView:;
+- (void)hideVacantView;
+- (id)vacantViewContainer;
+- (void)updateVacantViewLayout;
+- (void)setVacantViewContainer:;
+- (id)collectionView;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void)setCollectionView:;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (void)showLoadingView;
+- (void)setPageContext:;
+- (id)pageContext;
+@end

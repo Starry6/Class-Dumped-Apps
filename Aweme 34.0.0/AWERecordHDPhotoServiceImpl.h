@@ -1,0 +1,38 @@
+@interface AWERecordHDPhotoServiceImpl : ACCRecorderViewModel
+@property (nonatomic) AWEStudioRecorderFeatureHDPhotoConfig featureConfig;
+@property (nonatomic) ACCAdvancedRecordSettingConfigManager configManager;
+@property (nonatomic) ACCCameraSubscription subscription;
+@property (nonatomic) <ACCCameraService> cameraService;
+@property (nonatomic) <ACCRecordSwitchModeService> switchModeService;
+@property (nonatomic) BOOL hasGuideShowInLifeCycle;
+@property (nonatomic) BOOL hasShowTipInfoInLifeCycle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cameraService;
+- (void)setCameraService:;
+- (id)switchModeService;
+- (void)setSwitchModeService:;
+- (id)featureConfig;
+- (void)setFeatureConfig:;
+- (BOOL)hasGuideShowInLifeCycle;
+- (void)setHasGuideShowInLifeCycle:;
+- (BOOL)isHDPhotoCaptureOn;
+- (BOOL)enableCaptureHDPhoto;
+- (id)hdPhotoCaptureSize;
+- (BOOL)shouldShowHDPhotoSettingItem;
+- (void)notifyDidTakeHDPicture:error:;
+- (BOOL)hasShowTipInfoInLifeCycle;
+- (void)setHasShowTipInfoInLifeCycle:;
+- (id)initWithServiceProvider:featureConfig:;
+- (BOOL)checkEffectSupport;
+- (void)trackHDPhotoTakeResult:;
+- (BOOL)checkEffectContainsLabel:labelID:;
+- (id)subscription;
+- (void)setSubscription:;
+- (void).cxx_destruct;
+- (id)configManager;
+- (void)addSubscriber:;
+- (void)setConfigManager:;
+@end

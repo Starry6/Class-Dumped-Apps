@@ -1,0 +1,34 @@
+@interface AWESearchFeedVideoUserGuideView : UIView
+@property (nonatomic) LOTAnimationView userGuideLOTView;
+@property (nonatomic) UILabel guideLabelLeft;
+@property (nonatomic) UILabel guideLabelRight;
+@property (nonatomic) BOOL hasDismiss;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (id)logExtraDict;
+- (void)setHasDismiss:;
+- (BOOL)hasDismiss;
+- (void)setUpSubViews;
+- (void)dismissWithClick:;
+- (void)updateWithKeyword:;
+- (void)setUserGuideLOTView:;
+- (id)userGuideLOTView;
+- (void)setGuideLabelLeft:;
+- (id)guideLabelLeft;
+- (void)setGuideLabelRight:;
+- (id)guideLabelRight;
+- (void)trackUserGuideViewShow;
+- (void)trackUserGuideViewDismiss;
+- (void)play;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (id)keyword;
+- (void)setKeyword:;
+@end

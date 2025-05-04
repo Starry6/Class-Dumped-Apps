@@ -1,0 +1,30 @@
+@interface AWESearchAIGCChatMonitor : NSObject
+@property (nonatomic) NSMutableDictionary params;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> firstCardViewModel;
+- (void)addLog:;
+- (void)beginMonitor;
+- (BOOL)containKey:;
+- (double)nowTS;
+- (void)calculateParamsWithReason:;
+- (void)sumCount:withKey:;
+- (void)setFirstCardViewModel:;
+- (void)addTSForKey:;
+- (id)firstCardViewModel;
+- (BOOL)needAddTSForReceiveFirstWordByDictionary:;
+- (id)textDefaultContentByDictionary:;
+- (id)textQuestionContentByDictionary:;
+- (BOOL)hasUnFinishTrace;
+- (void)endMonitorWithReason:;
+- (void)receiveNewCardWithViewModel:;
+- (void)renderStartCardWithViewModel:;
+- (void)renderEndCardWithViewModel:;
+- (void)willDisplayCardWithViewModel:;
+- (void)receiveStreamDataWithDisplay:;
+- (void)sendStreamDataWithDisplay:;
+- (double)beginTime;
+- (void).cxx_destruct;
+- (id)objectForKey:;
+- (id)params;
+- (void)sendTrace;
+- (void)setParams:;
+@end

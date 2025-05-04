@@ -1,0 +1,32 @@
+@interface AWEFeedVideoLocalLifeAnchorV2UserActionUtils : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSArray handleEventAry;
+@property (nonatomic) BOOL hasStartMonitor;
+@property (nonatomic) <AWEFeedVideoLocalLifeAnchorV2UserActionDelegate> userActionDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (id)aweme;
+- (id)initWithAweme:;
+- (void)setAweme:;
+- (void)updateAweme:;
+- (void)handleDiggNotification:;
+- (void)addObserverNotification;
+- (void)setHandleEventAry:;
+- (void)setHasStartMonitor:;
+- (void)handleFavoriteNotification:;
+- (void)handleCloseShareVCNotification:;
+- (void)handleShareAwemeNotification:;
+- (void)handleShareToUseClickedNotification:;
+- (void)handleCloseCommentNotification:;
+- (BOOL)p_shouldHandleEventWithEventType:;
+- (BOOL)isOutsideShareWithShareType:;
+- (id)handleEventAry;
+- (BOOL)hasStartMonitor;
+- (void)setUserActionDelegate:;
+- (id)userActionDelegate;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

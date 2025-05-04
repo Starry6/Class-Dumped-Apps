@@ -1,0 +1,36 @@
+@interface AWEChallengeDetailHorizontalVideoViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIView maskingLayer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView likeImageView;
+@property (nonatomic) UILabel likeNumberLabel;
+@property (nonatomic) CAGradientLayer maskGradientLayer;
+@property (nonatomic) BOOL newStyle;
+@property (nonatomic) BOOL hiddenLikeImageView;
+@property (nonatomic) Q styleType;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)setStyleType:;
+- (void)configUI;
+- (id)maskingLayer;
+- (id)likeImageView;
+- (id)likeNumberLabel;
+- (void)updateBottomContentWithStyle:model:;
+- (BOOL)newStyle;
+- (BOOL)hiddenLikeImageView;
+- (id)maskGradientLayer;
+- (void)setMaskGradientLayer:;
+- (void)setMaskingLayer:;
+- (void)setLikeImageView:;
+- (void)setLikeNumberLabel:;
+- (void)setNewStyle:;
+- (void)setHiddenLikeImageView:;
+- (id)initWithFrame:;
+- (void)awakeFromNib;
+- (void)setTitleLabel:;
+- (unsigned long long)styleType;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)updateWithModel:;
++ (id)identifier;
+@end

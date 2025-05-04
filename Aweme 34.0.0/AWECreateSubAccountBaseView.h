@@ -1,0 +1,32 @@
+@interface AWECreateSubAccountBaseView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIButton addAccountBtn;
+@property (nonatomic) UIButton createAccountBtn;
+@property (nonatomic) AWECreateSubAccountHeaderView headerView;
+@property (nonatomic) AWECreateSubAccountViewConfig config;
+@property (nonatomic) <AWECreateSubAccountViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addAccountBtn;
+- (id)createAccountBtn;
+- (void)addAccountBtnTapped;
+- (void)createAccountBtnTapped;
+- (void)setAddAccountBtn:;
+- (void)setCreateAccountBtn:;
+- (void)setConfig:;
+- (id)delegate;
+- (id)initWithConfig:;
+- (id)config;
+- (id)headerView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+- (void)setupSubviews;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+@end

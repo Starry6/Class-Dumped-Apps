@@ -1,0 +1,34 @@
+@interface AWEVideoPlayRecord : NSObject
+@property (nonatomic) q internet_speed;
+@property (nonatomic) double cache_size;
+@property (nonatomic) q video_bitrate;
+@property (nonatomic) q block_cnt;
+@property (nonatomic) double block_time;
+@property (nonatomic) double play_time;
+@property (nonatomic) double tcp_rtt;
+@property (nonatomic) double tcp_bandwith;
+@property (nonatomic) double http_rtt;
+@property (nonatomic) Q actions;
+- (void)setInternet_speed:;
+- (void)setCache_size:;
+- (void)setVideo_bitrate:;
+- (void)setBlock_cnt:;
+- (void)setBlock_time:;
+- (void)setPlay_time:;
+- (void)setHttp_rtt:;
+- (void)setTcp_rtt:;
+- (void)setTcp_bandwith:;
+- (long long)internet_speed;
+- (double)cache_size;
+- (long long)block_cnt;
+- (double)block_time;
+- (double)tcp_rtt;
+- (double)tcp_bandwith;
+- (double)http_rtt;
+- (double)play_time;
+- (long long)video_bitrate;
+- (void)encodeWithCoder:;
+- (unsigned long long)actions;
+- (void)setActions:;
+- (id)initWithCoder:;
+@end

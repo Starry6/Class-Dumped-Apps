@@ -1,0 +1,31 @@
+@interface AWEIMSkylightMomentComponent : AWEIMComponentBase
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AFDSkylightMomentListControllerProtocol> momentController;
+@property (nonatomic) <AWEIMSkylightViewInterface> viewInterface;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewDidDisappear;
+- (void)hostVC_viewWillAppear;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)hostVC_viewWillDisappear;
+- (id)cf_transitionTargetView;
+- (void)skylightViewDidAppear;
+- (long long)showBubblePotentialMaxCount;
+- (id)getMomentController;
+- (void)cf_updateSkylightViewLayout;
+- (void)cf_updateCloseFriendsEntranceWithSettingStatus:;
+- (id)momentController;
+- (long long)cf_cellIndexWithIndexPath:;
+- (id)cf_avatarViewWithCell:;
+- (void)setMomentController:;
+- (id)viewInterface;
+- (void)setViewInterface:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

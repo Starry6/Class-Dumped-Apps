@@ -1,0 +1,32 @@
+@interface AWEFeedLiveTabStickerView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) q liveScrollOffsetIndex;
+@property (nonatomic) NSMutableArray cellModel;
+@property (nonatomic) @? didStickerCellShow;
+@property (nonatomic) @? didStickerCellClicked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCellModel:;
+- (void)setLiveScrollOffsetIndex:;
+- (long long)liveScrollOffsetIndex;
+- (void)refreshViewWithModel:;
+- (void)setDidStickerCellShow:;
+- (void)setDidStickerCellClicked:;
+- (id)didStickerCellClicked;
+- (id)didStickerCellShow;
+- (id)collectionView;
+- (id)init;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)invalidateLayout;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)cellSize;
+- (id)visibleItems;
+- (void)setupView;
+- (id)cellModel;
+@end

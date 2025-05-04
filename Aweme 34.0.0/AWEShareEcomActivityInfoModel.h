@@ -1,0 +1,30 @@
+@interface AWEShareEcomActivityInfoModel : MTLModel
+@property (nonatomic) AWEShareSpikeGoodsIMInfoModel imInfo;
+@property (nonatomic) NSString detailUrl;
+@property (nonatomic) NSString shareTemplate;
+@property (nonatomic) NSString qrExtra;
+@property (nonatomic) NSString tokenExtra;
+@property (nonatomic) NSString shareScene;
+@property (nonatomic) NSString ecomShareTrackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imInfo;
+- (void)setDetailUrl:;
+- (id)detailUrl;
+- (id)ecomShareTrackParams;
+- (void)setEcomShareTrackParams:;
+- (id)shareTemplate;
+- (void)setShareTemplate:;
+- (id)qrExtra;
+- (void)setQrExtra:;
+- (id)tokenExtra;
+- (void)setTokenExtra:;
+- (id)shareScene;
+- (void)setShareScene:;
+- (void).cxx_destruct;
+- (void)setImInfo:;
++ (id)imInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

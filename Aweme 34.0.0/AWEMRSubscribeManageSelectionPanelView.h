@@ -1,0 +1,30 @@
+@interface AWEMRSubscribeManageSelectionPanelView : UIView
+@property (nonatomic) q rowCount;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) <AWEMRSubscribeManageSelectionPanelDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithRowCount:selectedIndex:delegate:;
+- (double)rowHeightAtIndex:;
+- (id)cellConfigAtIndex:;
+- (long long)rowCount;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setSelectedIndex:;
+- (id)delegate;
+- (long long)numberOfSectionsInTableView:;
+- (id)intrinsicContentSize;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)initWithFrame:;
+- (id)tableView;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setDelegate:;
+- (void)setRowCount:;
+- (double)tableView:heightForFooterInSection:;
+@end

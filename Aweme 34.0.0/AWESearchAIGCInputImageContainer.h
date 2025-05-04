@@ -1,0 +1,32 @@
+@interface AWESearchAIGCInputImageContainer : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) DUXLoadingCircleView loadingView;
+@property (nonatomic) UIButton retryButton;
+@property (nonatomic) AWESearchAIGCInputImageInfo imageInfo;
+@property (nonatomic) @? deleteButtonClick;
+@property (nonatomic) @? retryButtonClick;
+- (void)deleteButtonClicked:;
+- (id)retryButtonClick;
+- (id)deleteButtonClick;
+- (void)retryButtonClicked:;
+- (void)setRetryButtonClick:;
+- (void)updateWithImageInfo:;
+- (void)setDeleteButtonClick:;
+- (void)setDeleteButton:;
+- (id)maskView;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (void)setImageView:;
+- (id)imageView;
+- (id)imageInfo;
+- (void)setImageInfo:;
+- (void)setupUI;
+- (void)setRetryButton:;
+- (id)retryButton;
+@end

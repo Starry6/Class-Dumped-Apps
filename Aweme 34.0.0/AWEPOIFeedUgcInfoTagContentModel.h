@@ -1,0 +1,30 @@
+@interface AWEPOIFeedUgcInfoTagContentModel : MTLModel
+@property (nonatomic) NSValue tagSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q contentType;
+@property (nonatomic) AWEURLModel imageUrl;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSDictionary uiParams;
+@property (nonatomic) NSDictionary clickEvent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)uiParams;
+- (void)setUiParams:;
+- (id)tagSize;
+- (void)setTagSize:;
+- (void)setText:;
+- (unsigned long long)contentType;
+- (void)setContentType:;
+- (id)text;
+- (void)setClickEvent:;
+- (void).cxx_destruct;
+- (id)clickEvent;
+- (id)imageUrl;
+- (void)setImageUrl:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

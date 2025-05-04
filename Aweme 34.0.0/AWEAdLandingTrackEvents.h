@@ -1,0 +1,30 @@
+@interface AWEAdLandingTrackEvents : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEAdLandingEvent pageview;
+@property (nonatomic) AWEAdLandingEvent closeButtonTapped;
+@property (nonatomic) AWEAdLandingEvent reportButtonTapped;
+@property (nonatomic) AWEAdLandingEvent backgroundTapped;
+@property (nonatomic) AWEAdLandingEvent draggingDownDismissal;
+@property (nonatomic) AWEAdLandingEvent draggingRightDismissal;
+@property (nonatomic) NSString renderType;
+- (id)renderType;
+- (id)aweme;
+- (id)initWithAweme:;
+- (void)setAweme:;
+- (id)pageview;
+- (id)reportButtonTapped;
+- (id)draggingDownDismissal;
+- (id)draggingRightDismissal;
+- (id)backgroundTapped;
+- (void)setPageview:;
+- (void)setCloseButtonTapped:;
+- (void)setReportButtonTapped:;
+- (void)setBackgroundTapped:;
+- (void)setDraggingDownDismissal:;
+- (void)setDraggingRightDismissal:;
+- (void)setRenderType:;
+- (void).cxx_destruct;
+- (id)closeButtonTapped;
++ (id)closeLabelWithModel:;
++ (id)tagName;
+@end

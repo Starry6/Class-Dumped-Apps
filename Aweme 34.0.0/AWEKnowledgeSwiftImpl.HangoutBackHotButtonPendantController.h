@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutBackHotButtonPendantController : AWEKnowledgeSwiftImpl.HangoutBasePendantController
+@end

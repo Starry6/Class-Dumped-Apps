@@ -1,0 +1,36 @@
+@interface AWEPluginMorePanelImpl : NSObject
+@property (nonatomic) NSArray items;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) BDPUniqueID uniqueID;
+@property (nonatomic) BDPPageIndicator pageIndicator;
+@property (nonatomic) NSLayoutConstraint heightConstraint;
+@property (nonatomic) q pageCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getUniqueID;
+- (void)event:param:;
+- (void)setPageIndicator:;
+- (id)pageIndicator;
+- (id)bdp_getMorePanelViewWithItems:WithUniqueID:;
+- (void)setupItems:;
+- (long long)pageCount;
+- (id)collectionView;
+- (void)dealloc;
+- (id)items;
+- (id)uniqueID;
+- (void)setItems:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (void)setUniqueID:;
+- (void)setPageCount:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setHeightConstraint:;
+- (id)heightConstraint;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
++ (id)sharedPlugin;
+@end

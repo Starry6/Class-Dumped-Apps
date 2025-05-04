@@ -1,0 +1,30 @@
+@interface AWEIMIncentiveChatFreqManager : NSObject
++ (BOOL)canShowAcceptBannerForShowTimeFreqControlWith:conversationID:;
++ (BOOL)canShowAcceptBanner:conversationID:;
++ (void)didClickAcceptBannerCloseBtn:conversationID:;
++ (void)didShowAndUpdateShowTimeWith:conversationID:;
++ (BOOL)canShowFullAnimation:conversationID:;
++ (void)didShowFullAnimation:conversationID:;
++ (id)baseKeyWithIsNormalCell:;
++ (BOOL)didNewUpdateQuotaTime:baseKey:isShowSingleChat:;
++ (BOOL)canShowIncentiveChat:delExitDays:notClickExitDays:maxConsecutiveExits:;
++ (BOOL)canShowRedDotIncentiveChat:;
++ (void)didClickIncentiveChat:;
++ (void)didDeleteIncentiveChat:;
++ (void)didShowIncentiveChat:threshold:;
++ (void)recordUniqueKey:toStorageKey:isAddOrRemove:;
++ (void)clearMaxShowTimeWith:conversationID:;
++ (BOOL)hasRecordedUniqueKey:inStorageKey:;
++ (id)p_getDiskStorageKeyWithRecordType:baseKey:;
++ (BOOL)didNewUpdateQuotaTime:baseKey:isShowSingleChat:shouldHandlerCell:;
++ (void)saveNextConsistencyCheckTime:;
++ (double)nextConsistencyCheckTime;
++ (void)markPushBannerShowWithMaxCount:;
++ (void)markPushBannerClick;
++ (void)markPushBannerClose;
++ (void)clearPushBannerJumpTime;
++ (BOOL)isPushBannerExit;
++ (double)getPushBannerJumpTime;
++ (void)didClickAcceptBannerConfirmBtn:conversationID:;
++ (BOOL)didNewUpdatePlayerTime:baseKey:;
+@end

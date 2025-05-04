@@ -1,0 +1,37 @@
+@interface AWESettingSectionModel : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSString sectionHeaderTitle;
+@property (nonatomic) double sectionHeaderHeight;
+@property (nonatomic) NSArray itemArray;
+@property (nonatomic) NSString sectionFooterTitle;
+@property (nonatomic) BOOL useNewFooterLayout;
+@property (nonatomic) BOOL hasClearOnce;
+@property (nonatomic) <AWEUserSettingBigFontAdapterProtocol> fontAdapter;
+@property (nonatomic) BOOL needUseCardUI;
+@property (nonatomic) BOOL shouldEmphasisTitle;
+@property (nonatomic) <AWESettingSectionModelBizAbilityProtocol> bizAbilityImpl;
+- (id)itemArray;
+- (void)setItemArray:;
+- (void)setNeedUseCardUI:;
+- (void)setShouldEmphasisTitle:;
+- (BOOL)needUseCardUI;
+- (void)setSectionFooterTitle:;
+- (id)sectionFooterTitle;
+- (id)fontAdapter;
+- (void)setHasClearOnce:;
+- (BOOL)hasClearOnce;
+- (id)bizAbilityImpl;
+- (void)setFontAdapter:;
+- (void)setBizAbilityImpl:;
+- (BOOL)useNewFooterLayout;
+- (void)setUseNewFooterLayout:;
+- (BOOL)shouldEmphasisTitle;
+- (double)sectionHeaderHeight;
+- (id)init;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setSectionHeaderHeight:;
+- (id)sectionHeaderTitle;
+- (void)setSectionHeaderTitle:;
+@end

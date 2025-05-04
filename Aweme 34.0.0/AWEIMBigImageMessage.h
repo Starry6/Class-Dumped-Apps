@@ -1,0 +1,32 @@
+@interface AWEIMBigImageMessage : AWEIMMessage
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString coverURL;
+@property (nonatomic) NSString linkURL;
+@property (nonatomic) NSString pushDetail;
+@property (nonatomic) NSString cardId;
+@property (nonatomic) NSDictionary timorInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (void)setPushDetail:;
+- (id)timorInfo;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (void)setTimorInfo:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)cardId;
+- (id)linkURL;
+- (void)setLinkURL:;
+- (void)setCardId:;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEFormatTrackCommonDefine : NSObject
+@end

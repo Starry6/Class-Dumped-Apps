@@ -1,0 +1,32 @@
+@interface AWECommentPanelListSwiftImpl.CommentBrowseAnchorView : UIView
+@property (nonatomic) NSString targetCid;
+@property (nonatomic) NSIndexPath lastBrowseIndexPath;
+@property (nonatomic) @? didDismiss;
+@property (nonatomic) @? didTap;
+@property (nonatomic) BOOL isBGWhite;
+@property (nonatomic) {CGPoint=dd} currentContentOffSize;
+@property (nonatomic) BOOL scrollToTop;
+- (void)onUIThemeChange;
+- (void)updateBottom:;
+- (id)targetCid;
+- (void)setTargetCid:;
+- (id)lastBrowseIndexPath;
+- (void)setLastBrowseIndexPath:;
+- (void)setDidTap:;
+- (BOOL)isBGWhite;
+- (void)setIsBGWhite:;
+- (id)currentContentOffSize;
+- (void)setCurrentContentOffSize:;
+- (void)showOnView:params:offset:;
+- (void)countDown:;
+- (void)tapClick;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (BOOL)scrollToTop;
+- (id)didDismiss;
+- (id)initWithCoder:;
+- (void)setScrollToTop:;
+- (id)didTap;
+- (void)setDidDismiss:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEAwesomeSplashBaseManager : HTSService
+@property (nonatomic) BOOL isBackground;
+@property (nonatomic) q feedModeType;
+@property (nonatomic) {CGPoint=dd} clickPoint;
+@property (nonatomic) <AWEFeedTableViewControllerProtocol> tableVC;
+@property (nonatomic) double feedAppearTimestamp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)feedModeType;
+- (void)skipAwesomeSplash:;
+- (void)clickOutsideConversionButton:extra:;
+- (void)showAwesomeSplash;
+- (id)tableVC;
+- (void)setTableVC:;
+- (void)viewControllerAppear:;
+- (void)setFeedModeType:;
+- (double)feedAppearTimestamp;
+- (void)setFeedAppearTimestamp:;
+- (id)init;
+- (void)dealloc;
+- (void)applicationDidEnterBackground;
+- (void).cxx_destruct;
+- (BOOL)isBackground;
+- (void)setIsBackground:;
+- (void)applicationDidBecomeActive;
+- (id)clickPoint;
+- (void)setClickPoint:;
+@end

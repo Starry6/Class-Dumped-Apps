@@ -1,0 +1,37 @@
+@interface AWERelatedVideoPlayNextMixVideoView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView mixImageView;
+@property (nonatomic) UILabel remindLabel;
+@property (nonatomic) UIButton cancleButton;
+@property (nonatomic) UIView splitLine;
+@property (nonatomic) double countdown;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) @? completion;
+- (id)splitLine;
+- (void)setSplitLine:;
+- (id)mixImageView;
+- (void)setMixImageView:;
+- (id)remindLabel;
+- (id)cancleButton;
+- (void)prepareToShowRemindTips:;
+- (void)__updateRemindLabel;
+- (void)dismissRemindLabel;
+- (void)isShowMixImage:;
+- (void)__clickCancleButton;
+- (void)showRemindView:withCompletion:;
+- (void)showRemindViewWithText:duration:completion:;
+- (void)showRemindViewWithText:duration:buttonTitle:isShowMixImage:completion:;
+- (void)setRemindLabel:;
+- (void)setCancleButton:;
+- (void)setTimer:;
+- (id)timer;
+- (id)completion;
+- (void)setCompletion:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)layoutSubviews;
+- (double)countdown;
+- (void)setCountdown:;
+@end

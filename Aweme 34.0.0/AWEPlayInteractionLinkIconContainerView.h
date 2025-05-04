@@ -1,0 +1,2 @@
+@interface AWEPlayInteractionLinkIconContainerView : UIView
+@end

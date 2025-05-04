@@ -1,0 +1,37 @@
+@interface AWEShareDetailWithSpecialQRCodePOILynxContentView : AWEShareDetailWithQRCodeBaseContentView
+@property (nonatomic) UIView<BDXViewContainerProtocol> bulletView;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) NSMutableArray bridgeSubscriberList;
+@property (nonatomic) BOOL containerDidFirstScreen;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didFinishLoadWithURL:;
+- (void)container:didLoadFailedWithUrl:error:;
+- (void)containerDidFirstScreen:;
+- (void)setShareContext:;
+- (void)dismissLoading;
+- (id)shareContext;
+- (void)bindEvent;
+- (id)imageToSaveToAlbum;
+- (id)bulletView;
+- (void)setBulletView:;
+- (id)bridgeSubscriberList;
+- (void)setBridgeSubscriberList:;
+- (void)setIsQRCodeLoaded:;
+- (void)setContainerDidFirstScreen:;
+- (BOOL)containerDidFirstScreen;
+- (void)layoutSubviewIfNeed;
+- (void)loadBulletView;
+- (void)updateQRcode;
+- (void)dealloc;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setUpSubviews;
+- (id)contentViewSize;
+- (void)showLoading;
+@end

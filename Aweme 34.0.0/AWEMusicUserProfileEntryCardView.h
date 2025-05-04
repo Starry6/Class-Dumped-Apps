@@ -1,0 +1,31 @@
+@interface AWEMusicUserProfileEntryCardView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSArray lightURLList;
+@property (nonatomic) NSArray darkURLList;
+@property (nonatomic) double cardWidth;
+- (void)configSubviews;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (void)refreshView;
+- (void)setLightURLList:;
+- (void)setDarkURLList:;
+- (id)lightURLList;
+- (id)darkURLList;
+- (void)refreshWithTitle:subtitle:lightURLList:darkURLList:;
+- (id)initWithFrame:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setIconImageView:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (double)cardWidth;
+- (void)setCardWidth:;
+@end

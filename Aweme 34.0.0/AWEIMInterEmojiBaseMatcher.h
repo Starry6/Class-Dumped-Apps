@@ -1,0 +1,36 @@
+@interface AWEIMInterEmojiBaseMatcher : NSObject
+@property (nonatomic) AWEIMInterEmojiMatcherController parent;
+@property (nonatomic) NSArray filteredResult;
+@property (nonatomic) NSPointerArray fromMessages;
+@property (nonatomic) NSArray groups;
+@property (nonatomic) AWEIMInteractiveEmojiMatchModel emojiIDsMatchModel;
+@property (nonatomic) NSString lastMsgEmojiID;
+@property (nonatomic) NSString lastMsgEmojiName;
+@property (nonatomic) NSString lastMsgEmojiKey;
+@property (nonatomic) AWEIMMessage lastMessage;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)emojiIDsMatchModel;
+- (void)p_setEmojiShownMaxIndex:forConversation:;
+- (long long)p_emojiShownMaxIndex:;
+- (BOOL)isRelationEnable:;
+- (id)lastMsgEmojiName;
+- (void)markCombineEmojiMaxIndex;
+- (long long)currentCombineEmojiMaxIndex;
+- (id)lastMsgEmojiKey;
+- (id)lastMsgEmojiID;
+- (id)filteredResult;
+- (void)setFilteredResult:;
+- (id)fromMessages;
+- (void)setFromMessages:;
+- (id)groups;
+- (void)setParent:;
+- (id)parent;
+- (id)initWithParent:;
+- (void).cxx_destruct;
+- (id)lastMessage;
+- (id)conversation;
+@end

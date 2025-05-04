@@ -1,0 +1,31 @@
+@interface AWELiveShelfExplainingItemView : UIView
+@property (nonatomic) UIView viewContainerView;
+@property (nonatomic) AWEGradientView numberContainerView;
+@property (nonatomic) UILabel numberLabel;
+@property (nonatomic) UILabel explainingLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) @? cardClickedBlock;
+- (void)setCardClickedBlock:;
+- (id)cardClickedBlock;
+- (id)explainingLabel;
+- (void)setExplainingLabel:;
+- (void)configBackgroundColor:;
+- (void)configInsets:;
+- (void)configWithNumberStr:title:;
+- (void)setViewContainerView:;
+- (id)viewContainerView;
+- (void)cardClicked:;
+- (void)setNumberContainerView:;
+- (id)numberContainerView;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)setNumberLabel:;
+- (id)numberLabel;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (double)cardHeight;
+@end

@@ -1,0 +1,38 @@
+@interface AWEProgressSectionCollectionViewInnerCell : UICollectionViewCell
+@property (nonatomic) Q style;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView iconImgView;
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) UIImage bgImage;
+@property (nonatomic) UIVisualEffectView effectView;
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lottieView;
+- (void)setLottieView:;
+- (id)iconImgView;
+- (void)setIconImgView:;
+- (void)configWithChapterModel:;
+- (id)textLabel;
+- (id)effectView;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)commonInit;
+- (void)setEffectView:;
+- (unsigned long long)style;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (void)setStyle:;
+- (void)setTextLabel:;
+- (void)setBgImageView:;
+- (id)bgImageView;
+- (id)bgImage;
+- (void)setBgImage:;
++ (id)cellInsets;
++ (double)itemWidthWithText:;
++ (id)textFont;
++ (id)identifier;
+@end

@@ -1,0 +1,32 @@
+@interface AWEViewedUserListPanelCellBusinessModel : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString accountType;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) AWEViewerListDataController dataController;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (id)enterFrom;
+- (void)setDataController:;
+- (long long)prePageType;
+- (long long)fromPageType;
+- (BOOL)shouldShowRelationTag;
+- (BOOL)shouldShowRelationButton;
+- (BOOL)relationButtonIncludesDefaultLightInteractionState;
+- (BOOL)relationButtonIncludesDefaultFollowUnfollowStates;
+- (BOOL)shouldShowMoreActionButton;
+- (BOOL)shouldShowDisclosureIndicator;
+- (double)disclosureIndicatorIconSize;
+- (id)lightActionSource;
+- (void)setAccountType:;
+- (id)accountType;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
+- (id)dataController;
+@end

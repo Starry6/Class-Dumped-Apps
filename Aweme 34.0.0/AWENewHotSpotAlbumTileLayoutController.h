@@ -1,0 +1,31 @@
+@interface AWENewHotSpotAlbumTileLayoutController : UIViewController
+@property (nonatomic) NSMutableArray imageViewsArray;
+@property (nonatomic) NSArray albumImages;
+@property (nonatomic) q lastTapIndex;
+@property (nonatomic) UIView moreOverlay;
+@property (nonatomic) UILabel moreOverlayText;
+@property (nonatomic) @? albumTappedWithIndex;
+- (id)albumImages;
+- (void)setAlbumImages:;
+- (id)moreOverlay;
+- (id)moreOverlayText;
+- (void)moreOverlayTapped;
+- (id)imageViewsArray;
+- (void)setLastTapIndex:;
+- (id)albumTappedWithIndex;
+- (long long)lastTapIndex;
+- (void)updateImageFrame;
+- (void)updateMoreOverlay;
+- (void)setAlbumTappedWithIndex:;
+- (void)setImageViewsArray:;
+- (void)setMoreOverlay:;
+- (void)setMoreOverlayText:;
+- (void)buildRightBottomShapeLayerForView:;
+- (void)updateTapIndex:;
+- (id)currentTransitionView;
+- (void)viewDidLoad;
+- (id)transitionContext;
+- (void).cxx_destruct;
+- (void)updateCornerRadius;
+- (void)updateWithModel:;
+@end

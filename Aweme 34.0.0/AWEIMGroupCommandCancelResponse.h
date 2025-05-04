@@ -1,0 +1,2 @@
+@interface AWEIMGroupCommandCancelResponse : NSObject
+@end

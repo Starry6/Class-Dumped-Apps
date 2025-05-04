@@ -1,0 +1,37 @@
+@interface AWEProcessingUnitMonitor : NSObject
+@property (nonatomic) Q processorCount;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) q interval;
+@property (nonatomic) BOOL enableTrack;
+@property (nonatomic) BOOL enableBGTrack;
+@property (nonatomic) BOOL enableThreadNameTrack;
+@property (nonatomic) BOOL isBackground;
+@property (nonatomic) double launchCPU;
+@property (nonatomic) q index;
+- (void)recordProcessingUnitUsage;
+- (BOOL)enableTrack;
+- (void)setEnableTrack:;
+- (void)onAppDidActive;
+- (void)onAppEnterBackground;
+- (double)launchCPU;
+- (void)setLaunchCPU:;
+- (void)setEnableBGTrack:;
+- (void)setEnableThreadNameTrack:;
+- (BOOL)enableThreadNameTrack;
+- (BOOL)enableBGTrack;
+- (void)setIndex:;
+- (long long)index;
+- (long long)interval;
+- (void)setTimer:;
+- (id)init;
+- (id)timer;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (BOOL)isBackground;
+- (void)setIsBackground:;
+- (unsigned long long)processorCount;
+- (void)setProcessorCount:;
+- (void)startTimerWithInterval:;
++ (id)sharedMonitor;
++ (void)start;
+@end

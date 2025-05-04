@@ -1,0 +1,32 @@
+@interface AWEIMTransferUtility : NSObject
++ (BOOL)isYouthControlEnabled;
++ (BOOL)checkTopVCIsTargetVCWithConversationID:;
++ (void)transferToMessageVCWithUid:nickname:alias:isCompanyProfile:fromVC:showKeyboard:;
++ (void)transferToMessageVCWithUid:nickname:alias:isCompanyProfile:fromVC:showKeyboard:ext:;
++ (void)transferToMessageVCWithUid:nickname:alias:showFolloweeCount:isCompanyProfile:fromVC:showKeyboard:ext:completion:;
++ (void)transferToMessageVCWithConversationID:conversationType:fromVC:extension:completion:;
++ (void)createGroupManagementVCWithConversationID:extension:completion:;
++ (id)transferToUserProfileWitUserID:secUserID:params:;
++ (void)transferToMessageVCWithUid:nickname:alias:fromVC:ext:completion:;
++ (BOOL)transferToSafeLinkWebViewWithUrl:fromCommerce:;
++ (id)getUserProfileViewControllerWitUserID:secUserID:params:;
++ (void)transferToMaxPriorityUserProfileWitUserID:secUserID:conversationID:params:completion:;
++ (void)transferToMessageVCWithUid:nickname:alias:showFolloweeCount:isCompanyProfile:fromVC:;
++ (id)transferPathWithConversationID:conversationType:extension:;
++ (void)transferToPrivateChatAIBotPanelWitUserID:secUserID:params:completion:;
++ (id)transferPathAppendHideNavBarValue:;
++ (void)transferToMessageVCWithUid:nickname:alias:isCompanyProfile:fromVC:completion:;
++ (id)findMessageVCWithCid:;
++ (id)transferPathForSafeLinkWebViewNotFromCommerceWithUrl:;
++ (void)p_checkAndCreateGroupManagementVCWithConversationID:extension:completion:;
++ (id)p_getCreateGroupManagementVCErrorWithCode:desc:;
++ (void)p_createGroupManagementVCWithConversationID:extension:completion:;
++ (void)p_toCompletionErrorWithDesc:completion:;
++ (BOOL)p_isLegalGroupWithConversationId:;
++ (id)getCreateGroupManagementPathWithConversationID:extension:;
++ (BOOL)isCorrectMessageVCWithCid:withVC:;
++ (id)findTheCorrectMessageVCFromVC:withCid:;
++ (id)p_genUserProfileCommonParam;
++ (id)topViewController;
++ (id)topNavigationController;
+@end

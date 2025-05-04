@@ -1,0 +1,31 @@
+@interface AWEACCFontImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)acc_systemFontOfSize:weight:;
+- (id)acc_fontWithName:size:;
+- (id)acc_systemFontOfSize:;
+- (id)acc_boldSystemFontOfSize:;
+- (void)p_registerFontWithURL:;
+- (id)fontOfClass:weight:;
+- (id)systemFontOfSize:weight:limit115:;
+- (BOOL)acc_bigFontModeOn;
+- (double)acc_fontScaleFactor;
+- (double)acc_outerCameraViewScaleFactor;
+- (double)acc_viewScaleFactor;
+- (id)acc_boldSystemFontOfSize:limit115:;
+- (BOOL)canConvertToDUXFontWeightWithACCFontWeight:;
+- (id)acc_fontWithName:size:limit115:;
+- (id)acc_fontOfClass:weight:;
+- (double)acc_inCameraViewScaleFactor;
+- (id)iconFontWithPath:name:size:;
+- (id)boldSystemFontOfSize:;
+- (id)systemFontOfSize:;
+- (id)systemFontOfSize:weight:;
++ (BOOL)acc_bigFontModeOn;
++ (long long)aweFontWeight:;
++ (long long)aweFontClass:;
++ (long long)duxFontWeight:;
++ (long long)duxFontClass:;
+@end

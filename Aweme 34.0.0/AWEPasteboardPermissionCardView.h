@@ -1,0 +1,30 @@
+@interface AWEPasteboardPermissionCardView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEInsetsLabel contentLabel;
+@property (nonatomic) UIButton openButton;
+@property (nonatomic) UIButton denyButton;
+@property (nonatomic) @? openBlock;
+@property (nonatomic) @? denyBlock;
+- (void)p_setupUI;
+- (void)setOpenBlock:;
+- (id)openBlock;
+- (void)openButtonTapped:;
+- (void)denyButtonTapped:;
+- (id)denyBlock;
+- (void)setDenyBlock:;
+- (id)init;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)dismiss;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)openButton;
+- (void)setOpenButton:;
+- (id)denyButton;
+- (void)setDenyButton:;
+@end

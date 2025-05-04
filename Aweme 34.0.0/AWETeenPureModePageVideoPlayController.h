@@ -1,0 +1,32 @@
+@interface AWETeenPureModePageVideoPlayController : AWEBaseController
+@property (nonatomic) AWETeenRoundRectangleBoxView boxView;
+@property (nonatomic) AWETeenRoundRectangleButton playButton;
+@property (nonatomic) AWETeenRoundRectangleButton speedButton;
+@property (nonatomic) NSArray speedNumArray;
+@property (nonatomic) Q currentSpeedIdx;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didUpdatePlayerController:;
+- (void)buttonClicked:;
+- (id)speedButton;
+- (void)setSpeedButton:;
+- (void)portraitUpdatePlaybackRate:;
+- (unsigned long long)currentSpeedIdx;
+- (id)speedNumArray;
+- (void)setCurrentSpeedIdx:;
+- (void)updatePlayButtonIcon;
+- (void)setSpeedNumArray:;
+- (id)init;
+- (void)dealloc;
+- (void)play;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)playButton;
+- (void)setPlayButton:;
+- (void)playButtonClicked:;
+- (id)boxView;
+- (void)setBoxView:;
+@end

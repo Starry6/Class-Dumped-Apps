@@ -1,0 +1,35 @@
+@interface AWEFilmTVEpisodeDataController : AWEListDataController
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSString albumID;
+@property (nonatomic) NSString mpID;
+@property (nonatomic) NSNumber sortType;
+@property (nonatomic) AWEGeneralFilmTVSourceModel sourceModel;
+@property (nonatomic) NSNumber mediumType;
+@property (nonatomic) q dataSourceType;
+@property (nonatomic) NSString alaSrc;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)loadPreviousWithCompletion:;
+- (void)setAlbumID:;
+- (id)mpID;
+- (void)setMpID:;
+- (void)fetchWithCount:type:completion:;
+- (void)setAlaSrc:;
+- (id)alaSrc;
+- (id)requestUrlString;
+- (void)loadDataWithOffset:withCount:withCompletion:;
+- (void)setMediumType:;
+- (id)cursor;
+- (id)init;
+- (long long)dataSourceType;
+- (void)setCursor:;
+- (void)setDataSourceType:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)setSortType:;
+- (id)sortType;
+- (id)sourceModel;
+- (id)albumID;
+- (id)mediumType;
+- (void)setSourceModel:;
+@end

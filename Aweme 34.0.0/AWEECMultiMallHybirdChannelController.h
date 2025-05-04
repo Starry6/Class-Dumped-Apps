@@ -1,0 +1,35 @@
+@interface AWEECMultiMallHybirdChannelController : NSObject
+@property (nonatomic) AWEECMallAnnieXViewController hybirdMallVC;
+@property (nonatomic) IESECMallCategoryTabInfoModel tabInfo;
+@property (nonatomic) AWEECMultiMallContainerModel contextModel;
+@property (nonatomic) NSDate enterDate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackEvent:params:;
+- (id)commonTrackParams;
+- (id)contextModel;
+- (void)setContextModel:;
+- (void)setEnterDate:;
+- (id)enterDate;
+- (void)updateMallConfig:;
+- (void)enterChannelWithModel:;
+- (void)leaveChannelWithModel:;
+- (id)initWithTabInfo:context:;
+- (void)updateTabInfo:;
+- (BOOL)isHybirdButNotRecommendChannel;
+- (BOOL)isRecommendChannel;
+- (void)prefetchTemplateDataIfNeeded;
+- (void)prefetchBizDataIfNeeded;
+- (id)getInitialURLString;
+- (id)getContainerConfig;
+- (void)trackEnterChannel:;
+- (void)trackLeaveChannel:;
+- (id)hybirdMallVC;
+- (void)setHybirdMallVC:;
+- (id)getContainer;
+- (void).cxx_destruct;
+- (id)tabInfo;
+- (void)setTabInfo:;
+@end

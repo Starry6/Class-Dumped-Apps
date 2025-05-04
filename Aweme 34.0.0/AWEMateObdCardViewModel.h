@@ -1,0 +1,38 @@
+@interface AWEMateObdCardViewModel : NSObject
+@property (nonatomic) AWEUserRecommendBigCardDataSource dataSource;
+@property (nonatomic) BOOL hasTrackedSkip;
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) BOOL viewHasAppeared;
+@property (nonatomic) BOOL hasImpression;
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSArray models;
+@property (nonatomic) AWEUserRecommendCardTrackManager tracker;
+- (id)aweme;
+- (void)setAweme:;
+- (void)impressCurrentModel;
+- (void)setHasImpression:;
+- (void)removeFromFeed;
+- (void)p_mateReportRate:;
+- (void)dislike:;
+- (void)showObdList;
+- (void)didRequestSuccess:;
+- (void)obdShowed:;
+- (void)trackObdCardWithAction:actionType:;
+- (BOOL)hasTrackedSkip;
+- (void)setHasTrackedSkip:;
+- (id)init;
+- (void)dealloc;
+- (id)tracker;
+- (id)initWithDataSource:;
+- (BOOL)hasImpression;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)models;
+- (void)skip;
+- (id)dataSource;
+- (BOOL)hasAction;
+- (void)setHasAction:;
+- (BOOL)viewHasAppeared;
+- (void)setViewHasAppeared:;
++ (id)textForObdCardSettings:defaultValue:;
+@end

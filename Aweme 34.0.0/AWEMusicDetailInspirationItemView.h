@@ -1,0 +1,37 @@
+@interface AWEMusicDetailInspirationItemView : UIView
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView middleView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel userCountLabel;
+@property (nonatomic) UIView placeHolderCoverView;
+@property (nonatomic) UIView placeHolderInfoView;
+@property (nonatomic) <AWEMusicDetailInspirationItemViewDelegate> delegate;
+- (id)userCountLabel;
+- (void)setUserCountLabel:;
+- (void)configWithModel:coverLoadCompletion:;
+- (void)setupPlaceHolderView;
+- (void)updatePlaceHolderViewsStatusWith:;
+- (void)updateInspirationInfoViewsStatusWith:;
+- (void)setTitleLabelText:lineSpacing:;
+- (id)buildBDBlockTransformer;
+- (id)placeHolderCoverView;
+- (id)placeHolderInfoView;
+- (id)middleView;
+- (void)onTappedRightButton;
+- (void)setMiddleView:;
+- (void)setPlaceHolderCoverView:;
+- (void)setPlaceHolderInfoView:;
+- (void)setRightButton:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)rightButton;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
+- (void)updateUI;
+@end

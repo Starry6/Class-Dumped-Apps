@@ -1,0 +1,30 @@
+@interface AWEMediaDownloadResultInnerItem : AWEMediaDownloadResultItem
+@property (nonatomic) Q itemType;
+@property (nonatomic) NSURL livePhotoImageFileURL;
+@property (nonatomic) NSURL downloadResponseURL;
+@property (nonatomic) NSNumber downloadHttpCode;
+@property (nonatomic) double downloadStartTime;
+@property (nonatomic) double watermarkStartTime;
+@property (nonatomic) NSString downloadUUID;
+@property (nonatomic) BOOL hasUploadCache;
+@property (nonatomic) BOOL hasPlayerCache;
+- (id)downloadHttpCode;
+- (id)downloadResponseURL;
+- (id)downloadUUID;
+- (BOOL)hasPlayerCache;
+- (BOOL)hasUploadCache;
+- (id)livePhotoImageFileURL;
+- (void)setDownloadHttpCode:;
+- (void)setDownloadResponseURL:;
+- (void)setDownloadUUID:;
+- (void)setHasPlayerCache:;
+- (void)setHasUploadCache:;
+- (void)setLivePhotoImageFileURL:;
+- (void)setWatermarkStartTime:;
+- (double)watermarkStartTime;
+- (unsigned long long)itemType;
+- (void)setItemType:;
+- (void)setDownloadStartTime:;
+- (void).cxx_destruct;
+- (double)downloadStartTime;
+@end

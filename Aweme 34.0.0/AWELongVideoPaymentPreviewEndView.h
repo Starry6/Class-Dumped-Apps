@@ -1,0 +1,38 @@
+@interface AWELongVideoPaymentPreviewEndView : UIView
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel authorLabel;
+@property (nonatomic) UILabel salePriceLabel;
+@property (nonatomic) UILabel originPriceLabel;
+@property (nonatomic) UILabel saleTipsLabel;
+@property (nonatomic) UIButton buyButton;
+@property (nonatomic) CAGradientLayer buyButtonBgLayer;
+@property (nonatomic) CAGradientLayer bgLayer;
+@property (nonatomic) @? didClickBuy;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)setAuthorLabel:;
+- (id)authorLabel;
+- (id)bgLayer;
+- (void)setBgLayer:;
+- (void)setOriginPriceLabel:;
+- (id)originPriceLabel;
+- (id)buyButton;
+- (void)setBuyButton:;
+- (void)configWithAwemeModel:paymentInfo:error:;
+- (void)setDidClickBuy:;
+- (void)didClickBuyButton:;
+- (id)buyButtonBgLayer;
+- (id)salePriceLabel;
+- (id)saleTipsLabel;
+- (id)didClickBuy;
+- (void)setSalePriceLabel:;
+- (void)setSaleTipsLabel:;
+- (void)setBuyButtonBgLayer:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setupUI;
+@end

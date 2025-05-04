@@ -1,0 +1,34 @@
+@interface AWERVDrawBackView : UIView
+@property (nonatomic) UIView headView;
+@property (nonatomic) UIButton leftBackButton;
+@property (nonatomic) UIView bottomContainerView;
+@property (nonatomic) AWERVDrawBackInfoView bottomInfoView;
+@property (nonatomic) AWERVDetailPageContext pageContext;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) q count;
+- (void)stopCountDown;
+- (id)leftBackButton;
+- (void)setLeftBackButton:;
+- (void)addObserve;
+- (void)backButtonAction;
+- (void)setHeadView:;
+- (id)headView;
+- (id)initWithFrame:pageContext:;
+- (id)bottomInfoView;
+- (void)setBottomInfoView:;
+- (void)startCountDownWithCompletion:;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (void)setCount:;
+- (id)initWithFrame:;
+- (long long)count;
+- (void)appWillResignActive:;
+- (void)appDidBecomeActive:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)bottomContainerView;
+- (void)setBottomContainerView:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEMusicQueueListCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView deleteView;
+@property (nonatomic) LOTAnimationView songwaveAnimationView;
+@property (nonatomic) AWEMusicSongWaveView songWaveView;
+@property (nonatomic) AWEMusicFeedViewModel model;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) <AWEMusicQueueListCellDelegate> delegate;
+- (id)deleteView;
+- (void)setDeleteView:;
+- (id)songWaveView;
+- (void)setSongWaveView:;
+- (void)showHighlightViewIsPlaying:;
+- (void)showIdleView;
+- (void)deleteTapped_IMP:;
+- (void)configWithModel:isHighlight:isPlaying:;
+- (id)songwaveAnimationView;
+- (void)setSongwaveAnimationView:;
+- (void)setModel:;
+- (void)setDeleteButton:;
+- (id)delegate;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)artistName;
+- (void)setupUI;
+- (void)deleteTapped:;
+@end

@@ -1,0 +1,2 @@
+@interface AWECommentSwiftImpl.CommentChunkListNetWorkLifeCycleObserver : AWECommentSwiftImpl.CommentDataBaseNetWorkLifeCycle
+@end

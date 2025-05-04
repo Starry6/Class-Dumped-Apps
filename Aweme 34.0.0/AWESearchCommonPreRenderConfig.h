@@ -1,0 +1,38 @@
+@interface AWESearchCommonPreRenderConfig : NSObject
+@property (nonatomic) BOOL enablePreRender;
+@property (nonatomic) BOOL enableDummyPreRender;
+@property (nonatomic) BOOL enableSlideStartPreRender;
+@property (nonatomic) BOOL enableSlideEndPreRender;
+@property (nonatomic) BOOL enableRefreshPreRender;
+@property (nonatomic) BOOL enableLoadmorePreRender;
+@property (nonatomic) NSString pitayaBusinessName;
+@property (nonatomic) q upListSize;
+@property (nonatomic) q downListSize;
+@property (nonatomic) q lagSize;
+@property (nonatomic) q intervalTime;
+- (BOOL)enablePreRender;
+- (void)setEnablePreRender:;
+- (void)setPitayaBusinessName:;
+- (long long)intervalTime;
+- (id)pitayaBusinessName;
+- (void)setEnableDummyPreRender:;
+- (void)setEnableRefreshPreRender:;
+- (void)setEnableLoadmorePreRender:;
+- (void)setEnableSlideStartPreRender:;
+- (void)setEnableSlideEndPreRender:;
+- (void)setUpListSize:;
+- (void)setDownListSize:;
+- (void)setLagSize:;
+- (void)setIntervalTime:;
+- (BOOL)enableDummyPreRender;
+- (BOOL)enableSlideEndPreRender;
+- (BOOL)enableSlideStartPreRender;
+- (BOOL)enableRefreshPreRender;
+- (BOOL)enableLoadmorePreRender;
+- (long long)upListSize;
+- (long long)downListSize;
+- (long long)lagSize;
+- (void).cxx_destruct;
+- (void)setupConfig;
++ (id)sharedInstance;
+@end

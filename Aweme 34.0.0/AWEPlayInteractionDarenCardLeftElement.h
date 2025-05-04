@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionDarenCardLeftElement : AWEPlayInteractionLeftElement
+@property (nonatomic) NSObject<AWEPOIPromptCardManager> promptCardManager;
+@property (nonatomic) BOOL promptCardAlreadyShown;
+@property (nonatomic) BOOL hideOtherElement;
+@property (nonatomic) q navigationVCCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (void)viewController_viewWillAppear;
+- (void)viewController_viewDidAppear;
+- (void)viewController_viewDidDisappear;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (void)viewDidDisposed;
+- (id)promptCardManager;
+- (void)setPromptCardAlreadyShown:;
+- (BOOL)promptCardAlreadyShown;
+- (void)setPromptCardManager:;
+- (void)setHideOtherElement:;
+- (void)setNavigationVCCount:;
+- (long long)navigationVCCount;
+- (BOOL)hideOtherElement;
+- (void)viewDidLoad;
+- (void)clear;
+- (void).cxx_destruct;
+- (void)reset;
++ (id)activateInfoWithContext:;
++ (BOOL)canShowElementWithContext:;
+@end

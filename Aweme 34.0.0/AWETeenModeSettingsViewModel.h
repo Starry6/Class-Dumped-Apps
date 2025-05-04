@@ -1,0 +1,32 @@
+@interface AWETeenModeSettingsViewModel : NSObject
+@property (nonatomic) NSArray sectionDataArray;
+@property (nonatomic) <AWETeenModeSettingViewModelDelegate> controllerDelegate;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (void)trackWithEvent:;
+- (id)constructSectionDataArray;
+- (id)_buildSettingSectionModelWithItems:;
+- (id)_buildSettingItemWithType:;
+- (void)tapGeneralSettingCell;
+- (id)aAWETeenModeSettingsViewModelCommonAdapter;
+- (id)aAWEPrivacyAgreementAdapter;
+- (id)aAWETeenModeSettingsViewModelDOUYINHMAdapter;
+- (void)tapSelfInfoInquireCell;
+- (void)tapFeedBackCell;
+- (void)tapCommunityGuidelinesCell;
+- (void)tapCredentialsCell;
+- (void)tapUserServiceCell;
+- (void)tapPrivacyPolicyCell;
+- (void)tapPrivacyPermissionCell;
+- (void)tapPrivacyThirdSDKCell;
+- (void)tapAboutAmeCell;
+- (void)tapCleanCacheCell;
+- (void)tapLogOutCell;
+- (id)controllerDelegate;
+- (void).cxx_destruct;
+- (void)setControllerDelegate:;
+- (void)logOut;
++ (Class)aAWETeenModeSettingsViewModelCommonAdapterClass;
++ (Class)aAWETeenModeSettingsViewModelDOUYINHMAdapterClass;
++ (Class)aAWEPrivacyAgreementAdapterClass;
+@end

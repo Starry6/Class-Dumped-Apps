@@ -1,0 +1,35 @@
+@interface AWEFlashMobFlashAvatarsConfig : MTLModel
+@property (nonatomic) NSNumber avatarsMarginBottom;
+@property (nonatomic) NSNumber avatarsMarginLeft;
+@property (nonatomic) NSNumber avatarsMarginRight;
+@property (nonatomic) NSNumber avatarsMarginTop;
+@property (nonatomic) NSNumber avatarsMaxCount;
+@property (nonatomic) NSNumber avatarsUserCount;
+@property (nonatomic) BOOL avatarsPicShow;
+@property (nonatomic) BOOL avatarsUserCountShow;
+@property (nonatomic) NSString avatarsUserCountColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)avatarsPicShow;
+- (id)avatarsMarginTop;
+- (id)avatarsMaxCount;
+- (BOOL)avatarsUserCountShow;
+- (id)avatarsMarginBottom;
+- (void)setAvatarsMarginBottom:;
+- (id)avatarsMarginLeft;
+- (void)setAvatarsMarginLeft:;
+- (id)avatarsMarginRight;
+- (void)setAvatarsMarginRight:;
+- (void)setAvatarsMarginTop:;
+- (void)setAvatarsMaxCount:;
+- (id)avatarsUserCount;
+- (void)setAvatarsUserCount:;
+- (void)setAvatarsPicShow:;
+- (void)setAvatarsUserCountShow:;
+- (id)avatarsUserCountColor;
+- (void)setAvatarsUserCountColor:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

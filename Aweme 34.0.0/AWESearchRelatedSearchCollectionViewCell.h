@@ -1,0 +1,35 @@
+@interface AWESearchRelatedSearchCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel wordLabel;
+@property (nonatomic) UIImageView hotIconView;
+@property (nonatomic) AWESearchMoreCardModel model;
+@property (nonatomic) double textWidth;
+@property (nonatomic) Q cardStyle;
+- (double)textWidth;
+- (void)setTextWidth:;
+- (void)awe_themeWillChange:;
+- (id)wordLabel;
+- (void)setWordLabel:;
+- (double)iconLeftMargin;
+- (double)hotIconSize;
+- (id)wordColor;
+- (double)cellRadius;
+- (id)cellBGColor;
+- (id)hotIconView;
+- (double)leftLabelMargin;
+- (double)rightLabelMargin;
+- (BOOL)hasIconURLInfo;
+- (double)wordFontSize;
+- (BOOL)wordBold;
+- (void)updateWithModel:cardStyle:;
+- (void)setHotIconView:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (void)setHighlighted:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (unsigned long long)cardStyle;
+- (void)setCardStyle:;
++ (id)identifier;
+@end

@@ -1,0 +1,38 @@
+@interface AWEFeedTemplateAnchorGameCPConfig : AWEFeedTemplateAnchorBaseConfig
+@property (nonatomic) BOOL hasFullTextShow;
+@property (nonatomic) BOOL hasTwoLineAnimation;
+@property (nonatomic) @? animationBlock;
+@property (nonatomic) NSDictionary anchorStructExtra;
+@property (nonatomic) BOOL didCreateContainer;
+- (void)anchorViewWillShowOnSuperview;
+- (void)handlerTemplateAnchorViewClicked;
+- (id)trackerParamsForTemplateAnchorClick;
+- (BOOL)shouldBusinessInvoke;
+- (void)willShowDoubleLineStyleWithType:;
+- (id)trackerCommonParamsForTemplateAnchor;
+- (void)updateWithAwemeModel:needPerformOnDisplay:;
+- (void)didShowDoubleLineStyleAnchor;
+- (id)subDesc;
+- (void)createContainerIfNeed;
+- (void)destroyContainerIfNeed;
+- (void)addAnimationBlockPeriodIfNeed;
+- (BOOL)isDefaultShowTwoLineStyle;
+- (void)removeAnimationBlockPeriodIfNeed;
+- (id)videoAnchorInterface;
+- (id)anchorContext;
+- (void)setDidCreateContainer:;
+- (BOOL)didCreateContainer;
+- (id)getAnchorMediaTypeStr;
+- (void)setHasFullTextShow:;
+- (BOOL)hasTwoLineAnimation;
+- (void)trackGameCPEventWithName:;
+- (BOOL)hasFullTextShow;
+- (void)setHasTwoLineAnimation:;
+- (id)anchorStructExtra;
+- (double)toTwoLineStyleDelay;
+- (void)setAnchorStructExtra:;
+- (id)animationBlock;
+- (void)setAnimationBlock:;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

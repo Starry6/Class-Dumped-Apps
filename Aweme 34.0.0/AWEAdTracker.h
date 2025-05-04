@@ -1,0 +1,35 @@
+@interface AWEAdTracker : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (void)trackWithContext:;
++ (void)trackWithEvent:param:;
++ (void)trackWithAwemeModel:context:;
++ (void)trackTopViewWithAwemeModel:context:;
++ (void)trackWithAdContext:;
++ (void)trackAsyncWithAwemeModel:context:;
++ (void)trackAsyncWithAdContext:;
++ (void)trackURLWithURLModel:;
++ (void)trackURLWithURLModel:contextBuilder:;
++ (BOOL)trackURLWithParams:;
++ (id)pricingTypeWith:;
++ (void)sendMannorComponentTrackWithAreaKey:eventName:componentType:params:adExtraParams:parsedTrackConfig:model:componentModel:;
++ (id)composeLogAttributesWithAdContext:;
++ (void)addAdExtraDataWith:context:;
++ (void)trackV1WithAdContext:;
++ (void)trackV3WithAdContext:;
++ (void)track3rdPartyUrlAutomaticallyWith:;
++ (void)trackApplogFromTrackerIfNeededWithContext:attributes:;
++ (void)trackUserCommerceDataIfNeededWithContext:attributes:;
++ (id)setupExtraAttributes:attributes:;
++ (BOOL)shouldTrackUniqueIdParamsWithContext:;
++ (void)addFeedADExtraDataWith:context:;
++ (void)addTopADExtraDataWith:context:;
++ (void)addLiveADExtraDataWith:context:;
++ (void)addSearchADExtraDataWith:context:;
++ (void)addUserProfileADExtraDataWith:context:;
++ (void)addFeedWidgetStyleTypeWith:context:;
++ (void)addToLiveADExtraDataWith:context:;
++ (id)buildMannorDynamicParamsWithParams:adExtraParams:model:componentModel:componentType:;
+@end

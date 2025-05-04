@@ -1,0 +1,30 @@
+@interface AWEIMFlexComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMFlexPresenter presenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)reloadCurrentPresenter;
+- (void)reloadCell;
+- (void)onCellPrepareReuseForCurrentViewModel;
+- (void)reloadCellWithAnimation:;
+- (void)reCalculateLayout;
+- (void)presenter:didUpdateWithView:;
+- (void)__updateCurrentPresenterInReload:;
+- (void)reCalculateLayoutForce:;
+- (void)reloadCellWithConfig:;
+- (void)reloadCellWithAnimation:config:;
+- (void)reloadCellWithAnimator:config:;
+- (void)p_reloadCellWithAnimator:config:;
+- (void)p_lockPresenter;
+- (void)p_unlockPresenter;
+- (void)p_findContainers:;
+- (void)presenter:didCreateView:;
+- (void)reloadCellWithAnimator:;
+- (id)init;
+- (id)presenter;
+- (void)setPresenter:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,3 @@
+@interface AWEProfilePreviewCollectionViewWaterfallLayout : AWEProfileCollectionViewWaterfallLayout
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+@end

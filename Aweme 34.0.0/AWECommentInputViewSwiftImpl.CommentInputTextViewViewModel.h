@@ -1,0 +1,3 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputTextViewViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+- (void)showToast;
+@end

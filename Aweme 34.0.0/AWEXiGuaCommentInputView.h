@@ -1,0 +1,34 @@
+@interface AWEXiGuaCommentInputView : UIView
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UIView placeView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UILabel guideLabel;
+@property (nonatomic) UIButton moreButton;
+@property (nonatomic) UIButton placeButton;
+@property (nonatomic) UIButton commentButton;
+@property (nonatomic) AWEAwemeModel currentAwemeModel;
+- (id)currentAwemeModel;
+- (void)configureUI;
+- (void)setPlaceView:;
+- (id)placeView;
+- (id)guideLabel;
+- (void)setGuideLabel:;
+- (id)commentButton;
+- (void)setCurrentAwemeModel:;
+- (void)setCommentButton:;
+- (id)placeButton;
+- (void)traceWithEvent:enterMethod:;
+- (void)moreButtonTapped;
+- (void)xiguaCommentTapped;
+- (void)setPlaceButton:;
+- (BOOL)pointInside:withEvent:;
+- (id)initWithFrame:;
+- (id)moreButton;
+- (void).cxx_destruct;
+- (void)setMoreButton:;
+- (id)lineView;
+- (void)setLineView:;
+- (id)contentLabel;
+- (void)setContentLabel:;
++ (double)viewHeight;
+@end

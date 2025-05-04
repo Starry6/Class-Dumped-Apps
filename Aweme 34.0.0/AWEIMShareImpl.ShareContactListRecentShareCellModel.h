@@ -1,0 +1,2 @@
+@interface AWEIMShareImpl.ShareContactListRecentShareCellModel : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,35 @@
+@interface AWECodeGenV1CombineMixListResponse : AWEBaseResponseModel
+@property (nonatomic) AWECodeGenExtraModel extraModel;
+@property (nonatomic) NSInteger privateAwemeCombineCount;
+@property (nonatomic) BOOL privateEntrance;
+@property (nonatomic) NSArray coverListModelArray;
+@property (nonatomic) NSArray awemeListModelArray;
+@property (nonatomic) NSInteger entranceStyle;
+@property (nonatomic) NSString entranceText;
+@property (nonatomic) NSString businessExtra;
+@property (nonatomic) BOOL recycleEntrance;
+@property (nonatomic) NSInteger recycleAwemeCount;
+- (id)extraModel;
+- (void)setExtraModel:;
+- (id)awemeListModelArray;
+- (id)entranceText;
+- (void)setEntranceText:;
+- (int)entranceStyle;
+- (id)businessExtra;
+- (void)setBusinessExtra:;
+- (void)setAwemeListModelArray:;
+- (int)privateAwemeCombineCount;
+- (void)setPrivateAwemeCombineCount:;
+- (BOOL)privateEntrance;
+- (void)setPrivateEntrance:;
+- (id)coverListModelArray;
+- (void)setCoverListModelArray:;
+- (void)setEntranceStyle:;
+- (BOOL)recycleEntrance;
+- (void)setRecycleEntrance:;
+- (int)recycleAwemeCount;
+- (void)setRecycleAwemeCount:;
+- (void).cxx_destruct;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

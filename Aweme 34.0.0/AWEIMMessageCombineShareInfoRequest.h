@@ -1,0 +1,30 @@
+@interface AWEIMMessageCombineShareInfoRequest : MTLModel
+@property (nonatomic) AWEIMCombineShareMessage combineShareMessage;
+@property (nonatomic) q originConversationId;
+@property (nonatomic) q secConversationId;
+@property (nonatomic) q secMessageId;
+@property (nonatomic) BOOL hasData;
+@property (nonatomic) NSArray contentSecMessageIdList;
+@property (nonatomic) NSArray accessChain;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)originConversationId;
+- (void)setOriginConversationId:;
+- (long long)secConversationId;
+- (void)setSecConversationId:;
+- (id)combineShareMessage;
+- (void)setCombineShareMessage:;
+- (long long)secMessageId;
+- (void)setSecMessageId:;
+- (id)contentSecMessageIdList;
+- (void)setContentSecMessageIdList:;
+- (id)accessChain;
+- (void)setAccessChain:;
+- (BOOL)hasData;
+- (void).cxx_destruct;
+- (id)initWithMessage:;
+- (void)setHasData:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

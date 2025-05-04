@@ -1,0 +1,37 @@
+@interface AWEIMShareChallengeMessage : AWEIMMessage
+@property (nonatomic) NSString title;
+@property (nonatomic) q userCount;
+@property (nonatomic) NSArray coverURLArray;
+@property (nonatomic) NSString challengeID;
+@property (nonatomic) NSString pushDetail;
+@property (nonatomic) BOOL isCommerce;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isCommerce;
+- (void)setIsCommerce:;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)coverURLArray;
+- (void)setCoverURLArray:;
+- (void)setPushDetail:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (BOOL)isSupportForward;
+- (BOOL)isAllowedForward;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)copyWithZone:;
+- (void)setUserCount:;
+- (long long)userCount;
+- (id)challengeID;
+- (void)setChallengeID:;
+@end

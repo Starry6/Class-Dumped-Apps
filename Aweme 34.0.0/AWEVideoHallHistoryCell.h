@@ -1,0 +1,38 @@
+@interface AWEVideoHallHistoryCell : UICollectionViewCell
+@property (nonatomic) AWEVideoHallBlockInfo blockInfo;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) BOOL isShowFooterView;
+@property (nonatomic) @? willDisplayHandler;
+@property (nonatomic) @? historyCellClick;
+@property (nonatomic) @? MoreBtnClick;
+@property (nonatomic) AWELVideoHallTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)blockInfo;
+- (void)setIsShowFooterView:;
+- (BOOL)isShowFooterView;
+- (void)didClickMoreCellAction;
+- (id)willDisplayHandler;
+- (void)setWillDisplayHandler:;
+- (void)setBlockInfo:;
+- (id)MoreBtnClick;
+- (id)historyCellClick;
+- (void)configWithBlockInfo:;
+- (void)setHistoryCellClick:;
+- (void)setMoreBtnClick:;
+- (id)collectionView:layout:referenceSizeForFooterInSection:;
+- (id)collectionView;
+- (id)tracker;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setupUI;
+@end

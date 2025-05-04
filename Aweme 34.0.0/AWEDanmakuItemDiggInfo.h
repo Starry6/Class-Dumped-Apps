@@ -1,0 +1,34 @@
+@interface AWEDanmakuItemDiggInfo : NSObject
+@property (nonatomic) NSMutableAttributedString numberText;
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} imageFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} numberTextFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} diggTotalFrame;
+@property (nonatomic) BOOL digged;
+@property (nonatomic) NSString diggImageName;
+@property (nonatomic) UIColor numberTextColor;
+@property (nonatomic) SkityImage skityImage;
+@property (nonatomic) SkityTextBlob textBlob;
+- (BOOL)digged;
+- (void)setDigged:;
+- (void)refreshDiggImage;
+- (id)skityImage;
+- (void)setSkityImage:;
+- (id)diggImageName;
+- (void)setDiggImageName:;
+- (id)textBlob;
+- (void)setTextBlob:;
+- (id)numberTextColor;
+- (void)setNumberTextColor:;
+- (id)numberTextFrame;
+- (void)setNumberTextFrame:;
+- (id)diggTotalFrame;
+- (void)setDiggTotalFrame:;
+- (id)image;
+- (void)setImage:;
+- (void).cxx_destruct;
+- (id)imageFrame;
+- (void)setImageFrame:;
+- (id)numberText;
+- (void)setNumberText:;
+@end

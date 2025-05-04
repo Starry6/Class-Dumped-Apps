@@ -1,0 +1,30 @@
+@interface AWEFlowModuleServiceImplForNotSupport : HTSService
+- (id)flowMessagingViewControllerWithParams:;
+- (void)openFlowMessagingViewControllerWithParams:sourceViewController:animated:;
+- (void)fadeInFlowMessagingViewControllerWithParams:sourceViewController:;
+- (BOOL)enableFlowInAweme;
+- (id)flowFeedEntranceAwemeType;
+- (id)flowFeedEntranceEventType;
+- (BOOL)flowFeedEntranceShow;
+- (id)flowFeedEntranceIcon;
+- (BOOL)flowIsBanned;
+- (id)flowChatModel;
+- (void)changeStickOnTopWithServiceModel:;
+- (void)changeMuteWithActionModel:;
+- (void)hideFlowWithActionModel:;
+- (BOOL)enableFlowInAwemeIM;
+- (id)bizStickOnTopService;
+- (BOOL)onHandleAppOpenUrl:options:;
+- (void)startFeedReadyTasks;
+- (BOOL)enableFlowShareEntrance;
+- (id)flowCellModel;
+- (BOOL)canShowFlowShareInAwemeModel:;
+- (id)flowCellModelInAwemeModel:;
+- (void)shareAwemeToFlowWithAwemeModel:message:sendVideo:enterMethod:completion:;
+- (void)transferToMessageVCWithRouterTransitionInfo:;
+- (BOOL)disableInUnauthorizedState;
+- (void)updateUserID;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

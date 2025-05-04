@@ -1,0 +1,32 @@
+@interface AWEPOICommentFeedbackView : UIView
+@property (nonatomic) AWEPOICommentFeedbackButton likeView;
+@property (nonatomic) AWEPOICommentFeedbackButton dislikeView;
+@property (nonatomic) @? block;
+@property (nonatomic) AWEPOICommentFeedbackConfig config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEPOICommentFeedbackProvider provider;
+@property (nonatomic) {CGSize=dd} layoutSize;
+- (id)likeView;
+- (void)setLikeView:;
+- (void)setDislikeView:;
+- (id)dislikeView;
+- (void)feedbackButton:didChangeStatus:toStatus:;
+- (void)setFeedUGCItemModel:;
+- (void)updateSkinConfig:;
+- (BOOL)hasDislike;
+- (BOOL)hasLike;
+- (id)initWithConfig:feedbackBlock:;
+- (id)layoutSize;
+- (void)setConfig:;
+- (void)setProvider:;
+- (id)config;
+- (void)setup;
+- (void)updateConstraints;
+- (id)block;
+- (void)setBlock:;
+- (void).cxx_destruct;
+- (id)provider;
+@end

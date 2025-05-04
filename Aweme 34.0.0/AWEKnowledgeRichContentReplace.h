@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentReplace : NSObject
+@end

@@ -1,0 +1,36 @@
+@interface AWEProgressViewUIConfig : NSObject
+@property (nonatomic) AWEProgressUIContainerConfig containerConfig;
+@property (nonatomic) BOOL enablePanGesture;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) Q trackType;
+@property (nonatomic) UIImage maximumTrackImage;
+@property (nonatomic) AWEProgressUIColorConfig progressMaximumColorConifg;
+@property (nonatomic) UIImage minimumTrackImage;
+@property (nonatomic) AWEProgressUIColorConfig progressMinimumColorConifg;
+@property (nonatomic) Q thumbType;
+@property (nonatomic) UIImage thumbImage;
+@property (nonatomic) AWEProgressUIColorConfig thumbTintColorConifg;
+- (void)setThumbImage:;
+- (id)thumbImage;
+- (id)containerConfig;
+- (void)setContainerConfig:;
+- (BOOL)enablePanGesture;
+- (id)progressMinimumColorConifg;
+- (id)progressMaximumColorConifg;
+- (id)thumbTintColorConifg;
+- (void)setMinimumTrackImage:;
+- (void)setMaximumTrackImage:;
+- (void)setEnablePanGesture:;
+- (id)maximumTrackImage;
+- (void)setProgressMaximumColorConifg:;
+- (id)minimumTrackImage;
+- (void)setProgressMinimumColorConifg:;
+- (unsigned long long)thumbType;
+- (void)setThumbType:;
+- (void)setThumbTintColorConifg:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (void)setTrackType:;
+- (unsigned long long)trackType;
+@end

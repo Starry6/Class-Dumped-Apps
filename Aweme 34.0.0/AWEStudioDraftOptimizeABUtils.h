@@ -1,0 +1,30 @@
+@interface AWEStudioDraftOptimizeABUtils : NSObject
++ (BOOL)enableDraftDegree;
++ (BOOL)enableDraftLoadErrorCode40Optimize;
++ (BOOL)enableDraftLoadErrorClassMVOptimize;
++ (BOOL)enableUnusedDraftCleanMasterSwitch;
++ (long long)draftCleanStrategy;
++ (long long)draftResourceCleanStrategy;
++ (long long)draftCleanRetentionSeconds;
++ (long long)draftResourceCleanRetentionSeconds;
++ (long long)selectAlternatingDraftCleanType;
++ (BOOL)enableValidateDraftNLEFile;
++ (BOOL)enableDraftSaveValidation;
++ (double)draftResourceValidationTimeoutValue;
++ (BOOL)enableUnusedDraftClean;
++ (long long)draftCleanLastAccessThresholdSeconds;
++ (BOOL)enableUnusedDraftResourceClean;
++ (id)unusedDraftResourceDeleteList;
++ (long long)draftResourceCleanLastAccessThresholdSeconds;
++ (BOOL)enableEditResourceValidation;
++ (BOOL)enableDraftTrackValidation;
++ (BOOL)enablePopWhenResourceValidationFailed;
++ (BOOL)enableDeleteEmptyDraft;
++ (BOOL)enableHideEmptyDraft;
++ (BOOL)enableCalculateUnreferencedDraftSize;
++ (long long)draftManagementTrackSuffixMaxValue;
++ (long long)draftSaveTrackSuffixMaxValue;
++ (BOOL)enableMockCorruptedDraft;
++ (BOOL)enableICloudExcludedIssueFix;
++ (BOOL)enableMockResourceValidationFailure;
+@end

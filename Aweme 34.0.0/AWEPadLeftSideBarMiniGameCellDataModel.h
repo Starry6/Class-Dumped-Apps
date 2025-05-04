@@ -1,0 +1,36 @@
+@interface AWEPadLeftSideBarMiniGameCellDataModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL needLogin;
+@property (nonatomic) NSArray gameList;
+@property (nonatomic) AWELeftSideBarConfigModel redDotConfig;
+@property (nonatomic) AWELeftSideBarConfigModel subTitleConfig;
+@property (nonatomic) AWEPadLeftSideBarMiniGameShowConfigModel gameShowConfig;
+@property (nonatomic) AWEPadLeftSideBarListCellBackgroundModel background;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSubTitleConfig:;
+- (BOOL)needLogin;
+- (void)setNeedLogin:;
+- (id)redDotConfig;
+- (void)setRedDotConfig:;
+- (id)subTitleConfig;
+- (id)gameList;
+- (void)setGameList:;
+- (id)gameShowConfig;
+- (void)setGameShowConfig:;
+- (id)schema;
+- (void)setSchema:;
+- (id)background;
+- (void)setBackground:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)subTitleConfigJSONTransformer;
++ (id)gameListJSONTransformer;
++ (id)gameShowConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)redDotConfigJSONTransformer;
+@end

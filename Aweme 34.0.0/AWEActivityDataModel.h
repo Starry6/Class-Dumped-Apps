@@ -1,0 +1,38 @@
+@interface AWEActivityDataModel : MTLModel
+@property (nonatomic) NSArray normalPendantData;
+@property (nonatomic) NSArray taskPendantData;
+@property (nonatomic) NSArray redPackgePendantData;
+@property (nonatomic) NSDictionary bubbleData;
+@property (nonatomic) NSArray pendantPriority;
+@property (nonatomic) NSString currentActivityStage;
+@property (nonatomic) NSArray popupTimeList;
+@property (nonatomic) BOOL hidePendantAllTime;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pendantPriority;
+- (id)redPackgePendantData;
+- (id)taskPendantData;
+- (id)normalPendantData;
+- (void)setPendantPriority:;
+- (BOOL)hidePendantAllTime;
+- (id)initWithNormalPendantData:taskPendantData:redPackgePendantData:;
+- (void)setNormalPendantData:;
+- (void)setTaskPendantData:;
+- (void)setRedPackgePendantData:;
+- (id)bubbleData;
+- (void)setBubbleData:;
+- (id)currentActivityStage;
+- (void)setCurrentActivityStage:;
+- (id)popupTimeList;
+- (void)setPopupTimeList:;
+- (void)setHidePendantAllTime:;
+- (void).cxx_destruct;
++ (id)normalPendantDataJSONTransformer;
++ (id)taskPendantDataJSONTransformer;
++ (id)redPackgePendantDataJSONTransformer;
++ (id)popupTimeListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

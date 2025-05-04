@@ -1,0 +1,38 @@
+@interface AWEIMInputKeyboardHelper : NSObject
+@property (nonatomic) BOOL autoAdjust;
+@property (nonatomic) double customKeyboardHeightInternal;
+@property (nonatomic) double systemKeyboardHeight;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) double panelContainerHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)keyboardChangedWithTransition:;
+- (double)panelContainerHeight;
+- (id)initNotification;
+- (double)cacheCustomKeyboardHeight;
+- (void)setCustomKeyboardHeightInternal:;
+- (double)customKeyboardHeightInternal;
+- (void)setSystemKeyboardHeight:;
+- (double)systemKeyboardHeight;
+- (void)saveCustomKeyboardHeight;
+- (BOOL)shouldReloadCustomKeyboard:;
+- (void)autoAdjustEmoticonKeyboardHeight:;
+- (BOOL)isShowing;
+- (BOOL)autoAdjust;
+- (void)setAutoAdjust:;
+- (void)setIsShowing:;
++ (BOOL)adjustCardMessageToKeyboardWithDistance:;
++ (void)p_handleKeyboardShowNoti:;
++ (void)p_handleKeyboardHideNoti:;
++ (void)p_startMonitor;
++ (double)p_lastHeight;
++ (id)p_currentMessageBaseViewController;
++ (void)p_saveHeight:;
++ (double)proposedKeyboardHeight;
++ (void)hideInputKeyboard;
++ (double)keyboardHeight;
++ (id)defaultManager;
++ (void)startMonitor;
+@end

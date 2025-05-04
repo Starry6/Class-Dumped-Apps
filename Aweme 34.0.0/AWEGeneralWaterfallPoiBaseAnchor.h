@@ -1,0 +1,36 @@
+@interface AWEGeneralWaterfallPoiBaseAnchor : UIView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) YYLabel titleYYLabel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEGeneralSearchPOIAnchorInfoModel anchorInfoModel;
+@property (nonatomic) NSString searchKeyword;
+- (id)searchKeyword;
+- (void)setSearchKeyword:;
+- (void)didStartShowing;
+- (void)singleTapped:;
+- (id)p_getTrackParams;
+- (id)getAnchorIconURLList;
+- (id)getAnchorIconImage;
+- (id)getAnchorText;
+- (void)setForceTheme:;
+- (id)anchorInfoModel;
+- (BOOL)isLocalImage;
+- (id)getLifeAnchorType;
+- (void)jumpToDetailPage;
+- (id)anchorTypeForStatistics;
+- (id)titleYYLabel;
+- (void)setAnchorInfoModel:;
+- (id)p_getLifeTrackParams;
+- (void)setTitleYYLabel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (id)model;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)updateWithModel:;
+- (id)getScene;
++ (id)verticalLine;
++ (double)heightForModel:;
+@end

@@ -1,0 +1,35 @@
+@interface AWECodeGenFloatTipsDataModel : AWEBaseDataModel
+@property (nonatomic) q baseTime;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) AWECodeGenFloatTipsRewardModel rewardModel;
+@property (nonatomic) NSString mainButtonText;
+@property (nonatomic) NSString subButtonText;
+@property (nonatomic) AWECodeGenDesktopWidgetFloatTipsDataModel desktopWidgetModel;
+@property (nonatomic) NSArray buttonListModelArray;
+@property (nonatomic) NSArray contentListModelArray;
+@property (nonatomic) NSString floatingVideo;
+- (void)setBaseTime:;
+- (id)contentListModelArray;
+- (long long)baseTime;
+- (id)mainButtonText;
+- (void)setMainButtonText:;
+- (void)setContentListModelArray:;
+- (id)rewardModel;
+- (void)setRewardModel:;
+- (id)subButtonText;
+- (void)setSubButtonText:;
+- (id)desktopWidgetModel;
+- (void)setDesktopWidgetModel:;
+- (id)buttonListModelArray;
+- (void)setButtonListModelArray:;
+- (id)floatingVideo;
+- (void)setFloatingVideo:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

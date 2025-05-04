@@ -1,0 +1,34 @@
+@interface AWELiveVSItemBar : AWEBaseApiModel
+@property (nonatomic) NSDictionary iconDark;
+@property (nonatomic) NSDictionary iconLight;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString seperator;
+@property (nonatomic) NSString detail;
+@property (nonatomic) NSNumber watchInfoPv;
+@property (nonatomic) NSString watchInfoHeat;
+@property (nonatomic) NSNumber collectionId;
+@property (nonatomic) NSNumber tabID;
+@property (nonatomic) NSString contentType;
+- (id)iconLight;
+- (void)setIconLight:;
+- (id)iconDark;
+- (void)setIconDark:;
+- (void)setTabID:;
+- (id)seperator;
+- (void)setSeperator:;
+- (id)watchInfoPv;
+- (void)setWatchInfoPv:;
+- (id)watchInfoHeat;
+- (void)setWatchInfoHeat:;
+- (id)contentType;
+- (void)setDetail:;
+- (void)setContentType:;
+- (id)detail;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)collectionId;
+- (void)setCollectionId:;
+- (id)tabID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

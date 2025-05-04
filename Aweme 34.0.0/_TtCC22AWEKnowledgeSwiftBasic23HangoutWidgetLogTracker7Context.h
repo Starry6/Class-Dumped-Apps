@@ -1,0 +1,2 @@
+@interface _TtCC22AWEKnowledgeSwiftBasic23HangoutWidgetLogTracker7Context : _TtCs12_SwiftObject
+@end

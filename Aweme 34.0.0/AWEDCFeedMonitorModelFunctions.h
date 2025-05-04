@@ -1,0 +1,2 @@
+@interface AWEDCFeedMonitorModelFunctions : NSObject
+@end

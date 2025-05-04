@@ -1,0 +1,32 @@
+@interface AWEPOIFeedUgcInfoTagModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) q subType;
+@property (nonatomic) double cellModeItemSpacing;
+@property (nonatomic) double picModeItemSpacing;
+@property (nonatomic) Q cellModeSplitType;
+@property (nonatomic) Q picModeSplitType;
+@property (nonatomic) AWEPOIFeedUgcInfoTagContentModel cellModeTag;
+@property (nonatomic) AWEPOIFeedUgcInfoTagContentModel picModeTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)cellModeItemSpacing;
+- (void)setCellModeItemSpacing:;
+- (double)picModeItemSpacing;
+- (void)setPicModeItemSpacing:;
+- (unsigned long long)cellModeSplitType;
+- (void)setCellModeSplitType:;
+- (unsigned long long)picModeSplitType;
+- (void)setPicModeSplitType:;
+- (id)cellModeTag;
+- (void)setCellModeTag:;
+- (id)picModeTag;
+- (void)setPicModeTag:;
+- (long long)type;
+- (long long)subType;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setSubType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

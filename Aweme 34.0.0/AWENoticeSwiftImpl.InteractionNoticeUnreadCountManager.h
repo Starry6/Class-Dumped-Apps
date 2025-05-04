@@ -1,0 +1,38 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeUnreadCountManager : NSObject
+@property (nonatomic) _TtC18AWENoticeSwiftImpl28InteractionNoticeDataContext dataContext;
+@property (nonatomic) q noticeUnreadCount;
+@property (nonatomic) q likeUnreadCount;
+@property (nonatomic) q commentUnreadCount;
+@property (nonatomic) q atUnreadCount;
+@property (nonatomic) q danmakuUnreadCount;
+@property (nonatomic) q moreUnreadCount;
+@property (nonatomic) q rewardUnreadCount;
+@property (nonatomic) q recommendUnreadCount;
+@property (nonatomic) q highFansOtherUnreadCount;
+@property (nonatomic) q mateUnreadCount;
+- (id)dataContext;
+- (long long)noticeUnreadCount;
+- (void)setNoticeUnreadCount:;
+- (long long)likeUnreadCount;
+- (void)setLikeUnreadCount:;
+- (long long)commentUnreadCount;
+- (void)setCommentUnreadCount:;
+- (long long)atUnreadCount;
+- (void)setAtUnreadCount:;
+- (long long)danmakuUnreadCount;
+- (void)setDanmakuUnreadCount:;
+- (long long)moreUnreadCount;
+- (void)setMoreUnreadCount:;
+- (long long)rewardUnreadCount;
+- (void)setRewardUnreadCount:;
+- (long long)recommendUnreadCount;
+- (void)setRecommendUnreadCount:;
+- (long long)highFansOtherUnreadCount;
+- (void)setHighFansOtherUnreadCount:;
+- (long long)mateUnreadCount;
+- (void)setMateUnreadCount:;
+- (id)initWithDataContext:;
+- (void)setupUnreadCount;
+- (id)init;
+- (void).cxx_destruct;
+@end

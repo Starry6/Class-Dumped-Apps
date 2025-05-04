@@ -1,0 +1,36 @@
+@interface AWEIMShareLiveMessageCardBenefitInfo : MTLModel
+@property (nonatomic) Q benefitMainType;
+@property (nonatomic) Q benefitType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString credit;
+@property (nonatomic) q countdownTime;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) Q showDetails;
+@property (nonatomic) NSString schema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (long long)countdownTime;
+- (void)setCountdownTime:;
+- (void)updateWithBenefitInfo:;
+- (unsigned long long)benefitType;
+- (void)setBenefitType:;
+- (unsigned long long)showDetails;
+- (void)setShowDetails:;
+- (unsigned long long)benefitMainType;
+- (void)setBenefitMainType:;
+- (id)schema;
+- (void)setSchema:;
+- (id)credit;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setCredit:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

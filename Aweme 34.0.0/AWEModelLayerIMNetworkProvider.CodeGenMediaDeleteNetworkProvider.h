@@ -1,0 +1,31 @@
+@interface AWEModelLayerIMNetworkProvider.CodeGenMediaDeleteNetworkProvider : AWEDataLayerRootModelPostMethodNetworkProvider
+@property (nonatomic) NSNumber appId;
+@property (nonatomic) NSString convId;
+@property (nonatomic) NSNumber convShortId;
+@property (nonatomic) NSNumber convType;
+@property (nonatomic) NSNumber userId;
+@property (nonatomic) NSString albumId;
+@property (nonatomic) NSString mediaId;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)convId;
+- (id)convShortId;
+- (id)convType;
+- (void)setConvId:;
+- (void)setConvType:;
+- (id)initWithConvType:mediaId:convId:convShortId:appId:userId:albumId:;
+- (void)setConvShortId:;
+- (id)albumId;
+- (void)setAlbumId:;
+- (id)init;
+- (id)userId;
+- (id)appId;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (Class)modelClass;
+- (void)setAppId:;
+- (id)mediaId;
+- (void)setMediaId:;
++ (id)businessURI;
+@end

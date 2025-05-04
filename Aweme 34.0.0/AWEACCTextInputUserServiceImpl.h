@@ -1,0 +1,38 @@
+@interface AWEACCTextInputUserServiceImpl : NSObject
+@property (nonatomic) NSObject<AFDMentionUserPickerContactDatasourceProtocol> dataSource;
+@property (nonatomic) NSArray localUserArray;
+@property (nonatomic) NSArray searchList;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) @? searchUserCompletion;
+@property (nonatomic) @? sugSearchCompletion;
+@property (nonatomic) NSDictionary logPassBack;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setup;
+- (id)sugSearchCompletion;
+- (BOOL)p_isSearchMode;
+- (void)setSugSearchCompletion:;
+- (id)logPassBack;
+- (void)setLogPassBack:;
+- (id)p_convertToACCUser:;
+- (void)p_prepareUserData;
+- (id)localUserArray;
+- (id)searchUserCompletion;
+- (void)p_tryAddUser:toArrM:filterSetM:;
+- (void)setLocalUserArray:;
+- (void)fetchUsersWithCompletion:;
+- (void)searchUsersWithKeyword:;
+- (void)loadMoreUser;
+- (BOOL)hasMoreUsers;
+- (void)setSearchUserCompletion:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+- (id)searchList;
+- (void)setSearchList:;
+- (id)keyword;
+- (void)setKeyword:;
+@end

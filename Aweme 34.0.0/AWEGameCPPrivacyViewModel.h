@@ -1,0 +1,31 @@
+@interface AWEGameCPPrivacyViewModel : AWESettingBaseViewModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (id)aAWEPadModuleAdapter;
+- (void)removeLoadingView;
+- (void)changeUserSettingsWithParam:completion:;
+- (void)tapGameStateCell;
+- (void)tapGameEvaluationDigCell;
+- (id)gamePrivacyVisibleText:;
+- (void)showGamePrivacySettingAlert;
+- (void)trackGamePrivacyClickEvent;
+- (unsigned long long)actionSheetViewStyle;
+- (unsigned long long)actionSheetAnimationStyle;
+- (double)actionSheetContainerWidth;
+- (id)settingModel:withIndex:isSelected:;
+- (void)trackGamePrivacyChangeStatus:toStatus:;
+- (void)trackGameEvaluationDigClickEventWithStatus:;
+- (void)trackGameEvaluationDigResultEventWithStatus:;
+- (void)trackGameEvaluationDigShowEventWithStatus:;
+- (id)convertGamePrivacyPermissionForTrack:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)addLoadingView;
+- (void)updateMessage;
++ (Class)aAWEPadModuleAdapterClass;
++ (id)settingSearchRegisterDic;
+@end

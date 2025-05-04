@@ -1,0 +1,31 @@
+@interface AWEECShoppingAIGuideMessageSingleViewModel : NSObject
+@property (nonatomic) AWEECShoppingGuideMessageSectionModel msgModel;
+@property (nonatomic) AWEECShoppingAIGuideMessageGroupViewModel originGroupMsgViewModel;
+@property (nonatomic) BOOL isTopInGroup;
+@property (nonatomic) BOOL isBottomInGroup;
+@property (nonatomic) BOOL isLastMsg;
+@property (nonatomic) double maxWidth;
+@property (nonatomic) NSNumber marginTop;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)msgModel;
+- (void)setMsgModel:;
+- (id)initWithMsgModel:;
+- (id)originGroupMsgViewModel;
+- (BOOL)isBottomInGroup;
+- (BOOL)isTopInGroup;
+- (void)setOriginGroupMsgViewModel:;
+- (double)singleMsgHeight;
+- (void)setIsTopInGroup:;
+- (void)setIsBottomInGroup:;
+- (void)setIsLastMsg:;
+- (BOOL)isLastMsg;
+- (double)maxWidth;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (id)marginTop;
+- (void)setMarginTop:;
++ (id)generateViewModelWithCardInfo:preferModel:;
+@end

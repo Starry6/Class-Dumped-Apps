@@ -1,0 +1,37 @@
+@interface AWELivePreStreamCheckAliveElement : AWELiveBusinessBaseElement
+@property (nonatomic) BOOL didReceiveRoomData;
+@property (nonatomic) BOOL roomHasEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_viewDidAppear;
+- (void)prepareForDisPlay;
+- (void)onSyncLiveUserNotification:;
+- (void)viewController_viewWillDisAppear;
+- (void)streamPlayer_startToPlay;
+- (void)streamPlayer_finishPlay;
+- (void)preloadElement;
+- (void)onMessageReceivce:withDict:;
+- (BOOL)didReceiveRoomData;
+- (void)prepareEndDisplay:;
+- (BOOL)p_didEndedLive;
+- (void)p_removeCurrentRoomFromEndedList;
+- (void)enterLiveEnded;
+- (void)checkRoomEndStatusWithCompletion:;
+- (BOOL)roomHasEnd;
+- (void)deletRoomForEndLiveIfNeeded;
+- (void)setRoomHasEnd:;
+- (BOOL)checkFinishOpt;
+- (void)checkCurrentRoomEndStatus;
+- (void)fetchRoomInfo;
+- (void)refreshExtendInfo;
+- (void)setDidReceiveRoomData:;
+- (void)fetchCurrentRoomEndStatus;
+- (void)p_addCurrentRoomToEndedList;
+- (void)dealloc;
+- (void)setData:;
+- (void)reset;
++ (id)endedRoomIDs;
+@end

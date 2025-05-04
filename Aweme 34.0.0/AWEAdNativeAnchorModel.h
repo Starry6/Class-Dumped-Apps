@@ -1,0 +1,33 @@
+@interface AWEAdNativeAnchorModel : MTLModel
+@property (nonatomic) BOOL isLocalAd;
+@property (nonatomic) q anchorType;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longtitude;
+@property (nonatomic) NSDictionary adEventData;
+@property (nonatomic) AWENativeButtonInfoModel buttonInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adEventData;
+- (void)setOpenURL:;
+- (id)buttonInfo;
+- (void)setButtonInfo:;
+- (BOOL)isLocalAd;
+- (void)setIsLocalAd:;
+- (void)setAdEventData:;
+- (void)setLatitude:;
+- (double)latitude;
+- (void)setWebURL:;
+- (void).cxx_destruct;
+- (long long)anchorType;
+- (id)webURL;
+- (id)openURL;
+- (double)longtitude;
+- (void)setLongtitude:;
+- (void)setAnchorType:;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)buttonInfoJSONTransformer;
+@end

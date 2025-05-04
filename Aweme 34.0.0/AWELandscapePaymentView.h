@@ -1,0 +1,30 @@
+@interface AWELandscapePaymentView : UIView
+@property (nonatomic) UIStackView containerView;
+@property (nonatomic) UILabel paymentTipsLabel;
+@property (nonatomic) UIView<AWEEntertainmentMultipleEventsViewProtocol> multipleEventsView;
+@property (nonatomic) @? didTapPaymentButtonBlock;
+@property (nonatomic) @? didTapRightEventBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTipsLabelText:;
+- (void)setButtonEventStyle:animated:;
+- (void)setButtonEventText:forIndex:;
+- (void)setDidTapPaymentButtonBlock:;
+- (void)setDidTapRightEventBlock:;
+- (void)setPaymentButtonText:;
+- (id)paymentTipsLabel;
+- (id)multipleEventsView;
+- (id)didTapPaymentButtonBlock;
+- (void)didClickPaymentButton:;
+- (id)didTapRightEventBlock;
+- (void)setPaymentTipsLabel:;
+- (void)setMultipleEventsView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)updateWithModel:;
+@end

@@ -1,0 +1,30 @@
+@interface AWETeenProfilePreloadHandler : NSObject
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSString preloadScene;
+@property (nonatomic) BOOL enabled;
+- (void)handleConnectionChanged:;
+- (void)setPreloadScene:;
+- (id)preloadScene;
+- (void)cancelPreload;
+- (id)preloaderForModel:;
+- (void)scrollViewWillBeginDragging:referString:;
+- (void)startVideoPreload:;
+- (void)scrollViewDidEndDragging:willDecelerate:referString:;
+- (void)scrollViewDidEndScrollingAnimation:referString:;
+- (void)scrollViewDidEndDecelerating:referString:;
+- (void)scrollViewDidScrollToTop:referString:;
+- (id)initWithCollectionView:preloadScene:;
+- (BOOL)shouldPreloadWithCell:collectionView:;
+- (void)preloadDataWithModel:completion:;
+- (long long)videoPreloadSize;
+- (void)__preloadActionWithModel:bsModel:urlModel:preloadSize:completion:;
+- (id)collectionView;
+- (void)dealloc;
+- (void)setEnabled:;
+- (void)setCollectionView:;
+- (void)scrollViewDidScroll:;
+- (BOOL)enabled;
+- (void).cxx_destruct;
++ (id)handlerWithCollectionView:preloadScene:;
++ (void)preloaderUpdateParallelNumberIfLeavePage:;
+@end

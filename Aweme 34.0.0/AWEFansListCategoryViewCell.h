@@ -1,0 +1,38 @@
+@interface AWEFansListCategoryViewCell : UICollectionViewCell
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) NSNumber followerCnt;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) BOOL isMine;
+@property (nonatomic) BOOL forceHidenFollowerCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishBlockUser:status:followStatus:followerStatus:;
+- (void)didFinishRemoveFansWithUser:;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (BOOL)forceHidenFollowerCount;
+- (void)setForceHidenFollowerCount:;
+- (void)updateViewsWithCategorys:selected:;
+- (void)setFollowerCnt:;
+- (id)categoryTitleWithType:;
+- (id)followerCnt;
+- (id)followerCountString:;
+- (id)__buildButtonWithString:;
+- (void)_updateButtonPadding;
+- (void)selectCategory:;
+- (void)_buttonDidClick:;
+- (void)decreaseFollowerCount;
+- (void)setScrollView:;
+- (void)dealloc;
+- (void)setButtons:;
+- (id)initWithFrame:;
+- (id)buttons;
+- (id)scrollView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (BOOL)isMine;
+- (void)setIsMine:;
+@end

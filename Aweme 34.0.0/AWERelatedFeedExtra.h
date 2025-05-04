@@ -1,0 +1,36 @@
+@interface AWERelatedFeedExtra : MTLModel
+@property (nonatomic) NSString respFrom;
+@property (nonatomic) NSString filterReason;
+@property (nonatomic) NSString placer;
+@property (nonatomic) NSString sortExtra;
+@property (nonatomic) NSString diversionTitle;
+@property (nonatomic) NSString diversionTitleUninstall;
+@property (nonatomic) NSString serverTimeCost;
+@property (nonatomic) AWERelatedFeedHotSpot hotspot;
+@property (nonatomic) AWEDouyinSelectExtraModel douyinSelectExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)respFrom;
+- (id)filterReason;
+- (void)setFilterReason:;
+- (void)setRespFrom:;
+- (id)placer;
+- (void)setPlacer:;
+- (id)sortExtra;
+- (void)setSortExtra:;
+- (id)diversionTitle;
+- (void)setDiversionTitle:;
+- (id)diversionTitleUninstall;
+- (void)setDiversionTitleUninstall:;
+- (id)serverTimeCost;
+- (void)setServerTimeCost:;
+- (id)douyinSelectExtra;
+- (void)setDouyinSelectExtra:;
+- (void).cxx_destruct;
+- (void)setHotspot:;
+- (id)hotspot;
++ (id)douyinSelectExtraJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

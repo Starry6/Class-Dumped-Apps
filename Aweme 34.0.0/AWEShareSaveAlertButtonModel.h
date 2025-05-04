@@ -1,0 +1,30 @@
+@interface AWEShareSaveAlertButtonModel : NSObject
+@property (nonatomic) Q style;
+@property (nonatomic) UIImage normalIcon;
+@property (nonatomic) NSString normalTitle;
+@property (nonatomic) UIImage shareIcon;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) UIColor shareBGColor;
+@property (nonatomic) NSString loadingTitle;
+@property (nonatomic) double loadingProgress;
+@property (nonatomic) Q buttonType;
+- (void)setShareTitle:;
+- (void)setNormalTitle:;
+- (id)normalTitle;
+- (id)normalIcon;
+- (void)setNormalIcon:;
+- (void)setShareIcon:;
+- (void)setShareBGColor:;
+- (id)shareBGColor;
+- (unsigned long long)buttonType;
+- (void)setLoadingProgress:;
+- (unsigned long long)style;
+- (void).cxx_destruct;
+- (void)setButtonType:;
+- (void)setStyle:;
+- (double)loadingProgress;
+- (id)loadingTitle;
+- (void)setLoadingTitle:;
+- (id)shareTitle;
+- (id)shareIcon;
+@end

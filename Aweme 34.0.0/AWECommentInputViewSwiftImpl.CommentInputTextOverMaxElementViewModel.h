@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputTextOverMaxElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

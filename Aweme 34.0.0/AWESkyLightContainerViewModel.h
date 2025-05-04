@@ -1,0 +1,30 @@
+@interface AWESkyLightContainerViewModel : NSObject
+@property (nonatomic) <AWESkyLightTopBarViewModelProtocol> topBarViewModel;
+@property (nonatomic) <AWESkyLightContentViewModelProtocol> contentViewModel;
+@property (nonatomic) BOOL skyLightDataReady;
+@property (nonatomic) BOOL contentDataReady;
+@property (nonatomic) BOOL isSkyLightExpanded;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initFetchWithCompletion:;
+- (id)contentViewModel;
+- (double)skyLightHeight;
+- (id)initWithSkyLightTopBarViewModel:contentViewModel:;
+- (void)setIsSkyLightExpanded:;
+- (void)setContentViewModel:;
+- (BOOL)isSkyLightExpanded;
+- (BOOL)skyLightDataReady;
+- (id)skyLightTopBar;
+- (void)skyLightStatusChanged:;
+- (id)topBarViewModel;
+- (void)setSkyLightDataReady:;
+- (void)setContentDataReady:;
+- (BOOL)contentDataReady;
+- (void)setTopBarViewModel:;
+- (id)capsuleView;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)contentViewController;
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMPlayStickerPanelDefines : NSObject
+@end

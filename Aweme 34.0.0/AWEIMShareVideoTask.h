@@ -1,0 +1,38 @@
+@interface AWEIMShareVideoTask : AWEIMUGTaskModel
+@property (nonatomic) double expireTime;
+@property (nonatomic) NSString convId;
+@property (nonatomic) NSString msgId;
+@property (nonatomic) q sendOrderIndex;
+@property (nonatomic) q convType;
+@property (nonatomic) NSString sendGroupID;
+@property (nonatomic) NSString noticeMessageID;
+@property (nonatomic) NSString noticeTip;
+- (id)convId;
+- (long long)convType;
+- (void)setConvId:;
+- (void)setConvType:;
+- (id)initWithContentDict:;
+- (void)finishTask:;
+- (void)setSendGroupID:;
+- (void)setSendOrderIndex:;
+- (void)setNoticeTip:;
+- (void)p_deletePreviousNoticeIfNeed;
+- (id)noticeTip;
+- (void)setNoticeMessageID:;
+- (void)p_saveNoticeToLocal;
+- (id)noticeMessageID;
+- (BOOL)tokenValid;
+- (void)addNotice;
+- (void)openChatPage;
+- (void)deleteNotice;
+- (long long)sendOrderIndex;
+- (id)sendGroupID;
+- (void).cxx_destruct;
+- (id)msgId;
+- (void)setMsgId:;
+- (double)expireTime;
+- (void)setExpireTime:;
++ (id)p_keyWithLocalNoticeCache;
++ (void)p_deleteLocalNoticeWithConvId:msgId:needUpdateCache:;
++ (void)deleteAllNotice;
+@end

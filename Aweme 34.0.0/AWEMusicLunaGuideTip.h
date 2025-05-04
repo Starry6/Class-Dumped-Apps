@@ -1,0 +1,33 @@
+@interface AWEMusicLunaGuideTip : UIView
+@property (nonatomic) UIImageView lunaImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIButton btn;
+@property (nonatomic) UIView line;
+@property (nonatomic) @? tappedBlock;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtTitle;
+- (id)tappedBlock;
+- (void)setTappedBlock:;
+- (id)btn;
+- (void)setBtn:;
+- (id)lunaImageView;
+- (void)setLunaImageView:;
+- (void)p_tappedAction_IMP:;
+- (id)p_buildTitleLabel;
+- (void)p_tappedAction:;
+- (void)setSubtTitle:;
+- (id)subtTitle;
+- (id)intrinsicContentSize;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setTitleLabel:;
+- (id)line;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (void)setTitle:;
+- (void)setLine:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+@end

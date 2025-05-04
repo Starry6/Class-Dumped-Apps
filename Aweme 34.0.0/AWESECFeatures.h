@@ -1,0 +1,36 @@
+@interface AWESECFeatures : NSObject
+@property (nonatomic) SECURLTrie zijieDomainTrie;
+@property (nonatomic) BOOL enableDomainTrie;
+@property (nonatomic) NSArray sharedDomains;
+@property (nonatomic) NSArray bdomains;
+@property (nonatomic) q bdomainVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awemeSettingDidChange;
+- (BOOL)is3rdPartTraffic:fromWebView:;
+- (double)is3rdPartyHost:path:;
+- (BOOL)is3rdPartyHost:;
+- (id)bizTagOfTraffic:fromWebView:;
+- (void)didUpdateNetworkDomainConfig:;
+- (BOOL)enableDomainTrie;
+- (void)setEnableDomainTrie:;
+- (id)bdomains;
+- (void)setBdomains:;
+- (long long)bdomainVersion;
+- (void)setBdomainVersion:;
+- (id)sharedDomains;
+- (void)setSharedDomains:;
+- (void)updateZijieDomains;
+- (void)setZijieDomainTrie:;
+- (id)_zijieDomains;
+- (BOOL)_is3rdPartyHost:withBDomains:;
+- (id)zijieDomainTrie;
+- (BOOL)_is3rdPartyHost:withURLTrie:;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
++ (id)sharedFeatures;
++ (BOOL)enableDomainTrie;
+@end

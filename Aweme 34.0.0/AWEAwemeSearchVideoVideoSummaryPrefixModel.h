@@ -1,0 +1,32 @@
+@interface AWEAwemeSearchVideoVideoSummaryPrefixModel : MTLModel
+@property (nonatomic) NSString descIcon;
+@property (nonatomic) NSString descIconDark;
+@property (nonatomic) q descIconWidth;
+@property (nonatomic) q descIconHeight;
+@property (nonatomic) NSString panelIconUrl;
+@property (nonatomic) NSString panelIconUrlDark;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)descIcon;
+- (void)setDescIcon:;
+- (void)setDescIconDark:;
+- (void)setDescIconWidth:;
+- (void)setDescIconHeight:;
+- (id)panelIconUrl;
+- (void)setPanelIconUrl:;
+- (id)panelIconUrlDark;
+- (void)setPanelIconUrlDark:;
+- (id)descIconDark;
+- (long long)descIconWidth;
+- (long long)descIconHeight;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

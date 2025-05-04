@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeUserRecommendManager : _TtCs12_SwiftObject
+@end

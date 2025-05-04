@@ -1,0 +1,38 @@
+@interface AWEInTodaySchemaData : MTLModel
+@property (nonatomic) BOOL hasAweme;
+@property (nonatomic) BOOL verifyAuthorization;
+@property (nonatomic) NSString scene;
+@property (nonatomic) AWEInTodaySchemaMobConfig mobConfig;
+@property (nonatomic) AWEInTodaySchemaStrategyConfig strategyConfig;
+@property (nonatomic) AWEInTodaySchemaUIConfig uiConfig;
+@property (nonatomic) AWEInTodaySchemaPublishConfig publishConfig;
+@property (nonatomic) NSString trackTitle;
+@property (nonatomic) NSString onlyThemes;
+@property (nonatomic) BOOL isFromAnchor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)strategyConfig;
+- (id)uiConfig;
+- (void)setStrategyConfig:;
+- (id)publishConfig;
+- (void)setPublishConfig:;
+- (void)setUiConfig:;
+- (id)onlyThemes;
+- (void)setOnlyThemes:;
+- (BOOL)hasAweme;
+- (id)mobConfig;
+- (BOOL)verifyAuthorization;
+- (BOOL)isFromAnchor;
+- (void)setHasAweme:;
+- (void)setVerifyAuthorization:;
+- (void)setMobConfig:;
+- (void)setIsFromAnchor:;
+- (void)setScene:;
+- (id)scene;
+- (void).cxx_destruct;
+- (void)setTrackTitle:;
+- (id)trackTitle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

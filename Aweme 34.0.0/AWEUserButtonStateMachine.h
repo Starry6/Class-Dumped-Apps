@@ -1,0 +1,33 @@
+@interface AWEUserButtonStateMachine : BDStateMachine
+@property (nonatomic) UIAccessibilityCustomAction accessibilityAction;
+@property (nonatomic) AWEBinding followStatusBinding;
+@property (nonatomic) AWESocialRelationObserver mateObserver;
+@property (nonatomic) UIButton button;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (void)didFinishUnBlockUser:status:;
+- (void)didFinishApproveUserFollowRequest:error:;
+- (void)didFinishRemoveFansWithUser:;
+- (void)clickButton;
+- (id)followStatusBinding;
+- (void)setFollowStatusBinding:;
+- (void)updateMateState:;
+- (void)setMateObserver:;
+- (id)mateObserver;
+- (id)accessibilityAction;
+- (void)accessibilityClickButton;
+- (void)setAccessibilityAction:;
+- (id)init;
+- (void)dealloc;
+- (void)setButton:;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)button;
+@end

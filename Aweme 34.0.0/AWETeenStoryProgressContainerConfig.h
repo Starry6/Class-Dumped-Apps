@@ -1,0 +1,37 @@
+@interface AWETeenStoryProgressContainerConfig : NSObject
+@property (nonatomic) UIColor progressColor;
+@property (nonatomic) double containerHeight;
+@property (nonatomic) double containerMargin;
+@property (nonatomic) double progressHeight;
+@property (nonatomic) double progressMargin;
+@property (nonatomic) double progressMinWidth;
+@property (nonatomic) q progressLeftGradientCount;
+@property (nonatomic) q progressRightGradientCount;
+@property (nonatomic) BOOL shouldLimitMinWidth;
+@property (nonatomic) BOOL forceSlide;
+@property (nonatomic) BOOL cannotShowGradient;
+- (void)setForceSlide:;
+- (void)setContainerMargin:;
+- (void)setProgressHeight:;
+- (void)setProgressMargin:;
+- (double)progressHeight;
+- (double)progressMargin;
+- (double)containerMargin;
+- (void)setShouldLimitMinWidth:;
+- (BOOL)shouldLimitMinWidth;
+- (void)setProgressMinWidth:;
+- (void)setCannotShowGradient:;
+- (double)progressMinWidth;
+- (long long)progressLeftGradientCount;
+- (void)setProgressLeftGradientCount:;
+- (long long)progressRightGradientCount;
+- (void)setProgressRightGradientCount:;
+- (BOOL)forceSlide;
+- (BOOL)cannotShowGradient;
+- (id)init;
+- (void).cxx_destruct;
+- (id)progressColor;
+- (void)setProgressColor:;
+- (double)containerHeight;
+- (void)setContainerHeight:;
+@end

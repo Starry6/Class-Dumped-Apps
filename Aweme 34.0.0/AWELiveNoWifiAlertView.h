@@ -1,0 +1,37 @@
+@interface AWELiveNoWifiAlertView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) UIView animationView;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) BOOL isStopped;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) @? cancelBlock;
+- (void)actionButtonClicked;
+- (void)handleCloseWebViewNoti:;
+- (void)showAlertWithAnimation;
+- (void)_livetrackEvent:;
+- (id)adapter_getCarrierService;
+- (BOOL)isStopped;
+- (id)init;
+- (void)setCancelButton:;
+- (void)dealloc;
+- (void)setCancelBlock:;
+- (void)dismiss;
+- (BOOL)isAnimating;
+- (void)setTitleLabel:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (id)titleLabel;
+- (id)cancelBlock;
+- (void)setupUI;
+- (void)setActionBlock:;
+- (id)actionBlock;
+- (id)actionButton;
+- (void)setActionButton:;
+- (id)animationView;
+- (void)setAnimationView:;
+- (void)setIsStopped:;
+- (void)cancelButtonClicked;
+@end

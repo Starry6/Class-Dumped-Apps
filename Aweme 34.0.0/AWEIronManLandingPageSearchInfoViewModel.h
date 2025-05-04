@@ -1,0 +1,35 @@
+@interface AWEIronManLandingPageSearchInfoViewModel : MTLModel
+@property (nonatomic) AWEIronManLandingPageDataController dataVc;
+@property (nonatomic) NSString hint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q uiVersion;
+@property (nonatomic) Q enterFrom;
+@property (nonatomic) NSDictionary bdpExtra;
+@property (nonatomic) NSDictionary commonRequestParamDict;
+@property (nonatomic) Q section;
+@property (nonatomic) NSDictionary commonTrackDict;
+- (void)setEnterFrom:;
+- (unsigned long long)enterFrom;
+- (void)setCommonTrackDict:;
+- (id)commonTrackDict;
+- (id)bdpExtra;
+- (void)trackEvent:atIndex:params:;
+- (void)setDataVc:;
+- (void)setUiVersion:;
+- (unsigned long long)uiVersion;
+- (id)dataVc;
+- (void)refreshDataWithCount:;
+- (void)setBdpExtra:;
+- (id)commonRequestParamDict;
+- (void)setCommonRequestParamDict:;
+- (void)setSection:;
+- (id)init;
+- (unsigned long long)section;
+- (void).cxx_destruct;
+- (id)hint;
+- (void)setHint:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

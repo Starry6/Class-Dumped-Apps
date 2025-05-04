@@ -1,0 +1,37 @@
+@interface AWEAwesomeSplashLiveCellAccessoryView : UIView
+@property (nonatomic) UILabel skipAdLabel;
+@property (nonatomic) UIView enterLiveBackgroundView;
+@property (nonatomic) UIView enterLiveView;
+@property (nonatomic) UILabel enterLiveLabel;
+@property (nonatomic) LOTAnimationView liveAnimationView;
+@property (nonatomic) UIView<AWESplashFakeLaunchScreenView> fakeLaunchScreenView;
+@property (nonatomic) <AWEAwesomeSplashLiveCellAccessoryViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLiveAnimationView:;
+- (id)liveAnimationView;
+- (id)fakeLaunchScreenView;
+- (void)removeFakeLaunchScreen;
+- (void)setFakeLaunchScreenView:;
+- (void)showFakeLaunchScreen;
+- (id)enterLiveBackgroundView;
+- (id)enterLiveView;
+- (id)skipAdLabel;
+- (id)enterLiveLabel;
+- (void)panGR:;
+- (void)enterLiveViewTapGR;
+- (void)skipAdLabelTapGR;
+- (void)setEnterLiveBackgroundView:;
+- (void)setEnterLiveView:;
+- (void)setSkipAdLabel:;
+- (void)setEnterLiveLabel:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)setDelegate:;
+- (void)setupSubviews;
+@end

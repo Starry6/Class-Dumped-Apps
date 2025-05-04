@@ -1,0 +1,34 @@
+@interface AWELeftSideBarTopIconView : UIView
+@property (nonatomic) <AWELeftSideBarItemContext> context;
+@property (nonatomic) AWELeftSideBarListCellDataModel cellDataModel;
+@property (nonatomic) DUXBaseImageView imageView;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)leftSideBarThemeDidChange:;
+- (void)setThemeStyle:;
+- (void)updateLeftSideBarSubTitle:;
+- (BOOL)leftSideBarSubTitleIsShow;
+- (id)leftSideBarDisplayingSubtitle;
+- (BOOL)leftSideBarRedDotIsShow;
+- (void)reloadStencilViewUI;
+- (void)updateListCellContext:cellDataModel:;
+- (void)showLeftSideBarRedDot;
+- (long long)leftSideBarRedDotStyle;
+- (void)hideLeftSideBarRedDot;
+- (double)leftSideBarStencilViewWidth;
+- (double)leftSideBarStencilViewHeight;
+- (void)setCellDataModel:;
+- (id)cellDataModel;
+- (void)setUpIconViewImageWithUrl:themeStyle:;
+- (id)initWithContext:cellDateModel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
+- (long long)themeStyle;
+@end

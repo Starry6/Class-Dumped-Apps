@@ -1,0 +1,30 @@
+@interface AWETeenModeAlertAutoCloseModel : MTLModel
+@property (nonatomic) q enlargeCloseHeight;
+@property (nonatomic) BOOL showCountDown;
+@property (nonatomic) NSString countDownSinglePre;
+@property (nonatomic) NSString countDownSingleSuf;
+@property (nonatomic) NSString countDownDoublePre;
+@property (nonatomic) NSString countDownDoubleSuf;
+@property (nonatomic) q countDownNum;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)showCountDown;
+- (long long)enlargeCloseHeight;
+- (void)setEnlargeCloseHeight:;
+- (long long)countDownNum;
+- (void)setCountDownNum:;
+- (void)setShowCountDown:;
+- (id)countDownSinglePre;
+- (void)setCountDownSinglePre:;
+- (id)countDownSingleSuf;
+- (void)setCountDownSingleSuf:;
+- (id)countDownDoublePre;
+- (void)setCountDownDoublePre:;
+- (id)countDownDoubleSuf;
+- (void)setCountDownDoubleSuf:;
+- (id)initWithDictionary:error:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

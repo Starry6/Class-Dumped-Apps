@@ -1,0 +1,30 @@
+@interface AWEHomePageChannelEnterPerfMetricsMonitorSceneParams : NSObject
+@property (nonatomic) NSString event;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString triggerReason;
+@property (nonatomic) BOOL disableEndDispatch;
+@property (nonatomic) double beginTime;
+@property (nonatomic) NSString fromChannelId;
+@property (nonatomic) NSString toChannelId;
+- (id)initWithEvent:scene:triggerReason:fromChannelId:;
+- (id)initWithEvent:scene:triggerReason:fromChannelId:toChannelId:;
+- (void)setDisableEndDispatch:;
+- (BOOL)disableEndDispatch;
+- (id)sceneIdentification;
+- (void)setFromChannelId:;
+- (void)setToChannelId:;
+- (id)fromChannelId;
+- (id)toChannelId;
+- (void)setScene:;
+- (id)scene;
+- (void)setEvent:;
+- (double)beginTime;
+- (void)setBeginTime:;
+- (id)description;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)event;
+- (id)copyWithZone:;
+- (void)setTriggerReason:;
+- (id)triggerReason;
+@end

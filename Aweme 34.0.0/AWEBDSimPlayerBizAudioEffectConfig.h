@@ -1,0 +1,29 @@
+@interface AWEBDSimPlayerBizAudioEffectConfig : BDSimBizAudioEffectConfig
+- (void)setPlayerAudioEffectType:;
+- (BOOL)useCachedVideoModelMetaDict;
+- (double)playerVolumeBalanceTargetValue;
+- (double)playerAudioEffectByServerLoudnessUpperThreshold;
+- (double)playerAudioEffectByServerLoudnessLowerThreshold;
+- (id)playerAudioEffectJSONConfig;
+- (long long)playerAudioEffectSourceType;
+- (long long)playerAudioEffectType;
+- (long long)playerAudioPlayAbilityType;
+- (BOOL)enableFeedAudioOptimize;
+- (double)playerAudioSmallPlayAbilityVolumeOffset;
+- (BOOL)playerAudioVolumeNewStrategyEnable;
+- (double)playerAudioLargePlayAbilityVolumeOffset;
+- (id)playerAdVolumePredict;
+- (void)setPlayerAudioEffectByServerLoudnessUpperThreshold:;
+- (void)setPlayerAudioEffectByServerLoudnessLowerThreshold:;
+- (void)setPlayerAudioEffectJSONConfig:;
+- (void)setPlayerAudioEffectSourceType:;
+- (void)setPlayerAudioPlayAbilityType:;
+- (void)setEnableFeedAudioOptimize:;
+- (void)setPlayerAudioSmallPlayAbilityVolumeOffset:;
+- (void)setPlayerAudioVolumeNewStrategyEnable:;
+- (void)setPlayerVolumeBalanceTargetValue:;
+- (void)setUseCachedVideoModelMetaDict:;
+- (void)setPlayerAudioLargePlayAbilityVolumeOffset:;
+- (void)setPlayerAdVolumePredict:;
+- (void).cxx_destruct;
+@end

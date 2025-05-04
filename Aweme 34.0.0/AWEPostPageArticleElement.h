@@ -1,0 +1,32 @@
+@interface AWEPostPageArticleElement : AWEPostPageAnchorCheckCellElement
+@property (nonatomic) AWENewPublishTableCell articleCell;
+@property (nonatomic) NSDictionary extras;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)elementAppear;
+- (void)didSelectAnchorWithType:anchorDismissBlock:enterFromType:;
+- (void)addAIAnchorWithType:anchorDismissBlock:;
+- (void)refreshWithAnchorVM:;
+- (BOOL)canHandleAnchorType:;
+- (id)articleCell;
+- (void)addArticleObserver;
+- (void)updateArticleWithJsonStr:;
+- (void)articleJSBResultNotification:;
+- (id)anchorPageURL;
+- (void)cancleSelectedArticle:;
+- (void)setArticleCell:;
+- (void)cleanUp;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)extras;
+- (id)cell;
+- (id)cellIdentifier;
+- (void)didSelect;
+- (void)setUpUI;
++ (void)registerJSBridgeHandler;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

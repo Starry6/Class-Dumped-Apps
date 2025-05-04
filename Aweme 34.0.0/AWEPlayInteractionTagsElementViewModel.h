@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionTagsElementViewModel : AWEPlayInteractionBaseElementViewModel
+@property (nonatomic) BOOL isFromGoldShareToIMEntrance;
+@property (nonatomic) DUXBasicSheet sheet;
+@property (nonatomic) AFDAmbassador<AWEPlayInteractionTagsElementViewModelAmbassadorProtocol> friendsAmbassador;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSString referString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickCloseButton:;
+- (void)sheetDidDismiss:;
+- (void)enterDiggedUser:;
+- (id)friendsAmbassador;
+- (id)shareConfigurationHandler;
+- (void)setFriendsAmbassador:;
+- (void)showFriendsWatchingLikeUserList;
+- (void)showLikeUserListViewController;
+- (void)postCommentButtonClickedNotificationWithGestureRecognizer:;
+- (void)setIsFromGoldShareToIMEntrance:;
+- (BOOL)isFromGoldShareToIMEntrance;
+- (void)didClickWithDrawButton;
+- (void)afd_layoutElement;
+- (void)didClickDislikeWithDrawTag;
+- (void)didClickUnreadMentionTag;
+- (void)enterRelationLabelPage:;
+- (void)enterNearbyRedPacketDetail:;
+- (void)didShowWithDrawButton;
+- (void)_onRelationLabelClicked_IMP:;
+- (void)showSharePanelOnViewController:;
+- (void)trackEnterLikeListOrCommentList:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (BOOL)isVideoPlaying;
+- (id)sheet;
+- (void)setSheet:;
+@end

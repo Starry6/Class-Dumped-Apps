@@ -1,0 +1,33 @@
+@interface AWEUGPendantTimingTaskModel : MTLModel
+@property (nonatomic) BOOL isParticipate;
+@property (nonatomic) BOOL hasVideoTask;
+@property (nonatomic) BOOL finishAll;
+@property (nonatomic) q completedCount;
+@property (nonatomic) q rewardCount;
+@property (nonatomic) NSString videoTaskId;
+@property (nonatomic) NSString rewardText;
+@property (nonatomic) NSDictionary videoTaskDetailInfo;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)rewardCount;
+- (void)setRewardCount:;
+- (void)setRewardText:;
+- (id)rewardText;
+- (BOOL)hasVideoTask;
+- (BOOL)finishAll;
+- (id)videoTaskDetailInfo;
+- (BOOL)isParticipate;
+- (void)setIsParticipate:;
+- (void)setHasVideoTask:;
+- (void)setFinishAll:;
+- (id)videoTaskId;
+- (void)setVideoTaskId:;
+- (void)setVideoTaskDetailInfo:;
+- (void).cxx_destruct;
+- (long long)completedCount;
+- (void)setCompletedCount:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

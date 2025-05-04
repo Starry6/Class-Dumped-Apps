@@ -1,0 +1,38 @@
+@interface AWELiveAlertFactoryImpl : NSObject
+@property (nonatomic) <IESLiveSettings> settings;
+@property (nonatomic) NSHashTable showingAlerts;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)showAlertWithTitle:description:headerImage:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:description:actionButtonTitle:cancelButtonTitle:customCornerRadius:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:description:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:attributedDescription:attributedLinkText:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:linkBlock:;
+- (id)showAlertWithTitle:AttributedDescription:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:AttributedDescription:customCornerRadius:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:description:buttonTitles:buttonBlocks:;
+- (id)showAlertWithTitle:AttributedDescription:buttonTitles:buttonBlocks:isButtonAlignedVertically:;
+- (id)showAlertWithTitle:AttributedDescription:buttonTitles:buttonBlocks:configuration:;
+- (id)showAlertWithTitle:AttributedDescription:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:textAlignment:;
+- (void)dismissCurrentAlert:;
+- (void)setSubTitle:toCurrentAlert:;
+- (id)showVerticalAlertWithTitle:description:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showVerticalAlertWithModernStyle:title:description:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showVerticalAlertWithModernStyle:dismissWhenTapEmptyView:title:titleAttributedString:description:actionButtonTitles:actionBlocks:actionStyles:;
+- (id)currentlyDisplayedAlerts;
+- (id)showAlertWithTitle:description:buttonTitles:buttonVertically:customCornerRadius:buttonBlocks:;
+- (void)showCustomAlertWithTitle:hostVC:customView:minHeight:actionTitle:actionBlock:cancelTitle:cancelBlock:;
+- (void)showActionSheetWithTitle:buttonTitles:styles:blocks:;
+- (void)_showNoWiFiToast;
+- (void)addShowingAlert:;
+- (long long)aweUIAlertActionStyleFromStyle:;
+- (void)removeAlertInHashTable:;
+- (id)showingAlerts;
+- (long long)styleConversionFrom:;
+- (BOOL)_isToday:;
+- (void)setShowingAlerts:;
+- (void)setSettings:;
+- (id)settings;
+- (void).cxx_destruct;
+@end

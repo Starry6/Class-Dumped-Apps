@@ -1,0 +1,30 @@
+@interface AWEFavoriteStatusUpdatedParams : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL success;
+@property (nonatomic) BOOL toastShowAddCollects;
+@property (nonatomic) NSString recommendCollectionFolderName;
+@property (nonatomic) BOOL shouldBlockSnackBar;
+@property (nonatomic) BOOL isFromInteractionButton;
+@property (nonatomic) BOOL hasFolderCache;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)aweme;
+- (void)setAweme:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)setRecommendCollectionFolderName:;
+- (id)recommendCollectionFolderName;
+- (BOOL)toastShowAddCollects;
+- (void)setToastShowAddCollects:;
+- (BOOL)shouldBlockSnackBar;
+- (void)setShouldBlockSnackBar:;
+- (BOOL)isFromInteractionButton;
+- (void)setIsFromInteractionButton:;
+- (BOOL)hasFolderCache;
+- (void)setHasFolderCache:;
+- (void)setSuccess:;
+- (void).cxx_destruct;
+- (BOOL)success;
+@end

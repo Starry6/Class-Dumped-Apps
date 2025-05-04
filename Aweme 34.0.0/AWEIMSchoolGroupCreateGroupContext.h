@@ -1,0 +1,37 @@
+@interface AWEIMSchoolGroupCreateGroupContext : NSObject
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSString avatarURLString;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString createType;
+@property (nonatomic) NSString groupDesc;
+@property (nonatomic) NSString createSource;
+@property (nonatomic) NSString idempotentIdentifier;
+@property (nonatomic) NSDictionary bizExt;
+@property (nonatomic) NSDictionary extraDict;
+@property (nonatomic) @? createCompletion;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)extraDict;
+- (void)setExtraDict:;
+- (id)bizExt;
+- (void)setIdempotentIdentifier:;
+- (void)setBizExt:;
+- (id)idempotentIdentifier;
+- (id)avatarURLString;
+- (id)initWithParamDict:;
+- (id)groupDesc;
+- (void)setGroupDesc:;
+- (void)setCreateCompletion:;
+- (id)createCompletion;
+- (id)createType;
+- (id)createSource;
+- (void)setAvatarURLString:;
+- (void)setCreateSource:;
+- (void)setCreateType:;
+- (void)setGroupName:;
+- (id)groupName;
+- (void).cxx_destruct;
+@end

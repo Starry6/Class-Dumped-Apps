@@ -1,0 +1,37 @@
+@interface AWECommentAudioModel : AWEBaseApiModel
+@property (nonatomic) NSString audioFilePath;
+@property (nonatomic) NSString vID;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString wave;
+@property (nonatomic) q duration;
+@property (nonatomic) NSArray waveArr;
+@property (nonatomic) NSArray waveHeightArr;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double commentAudioDurationAnchor;
+@property (nonatomic) double commentAudioDurationDiff;
+@property (nonatomic) Q audioStatus;
+- (id)wave;
+- (id)waveHeightArr;
+- (id)waveArr;
+- (void)setCommentAudioDurationAnchor:;
+- (double)commentAudioDurationAnchor;
+- (double)commentAudioDurationDiff;
+- (void)setCommentAudioDurationDiff:;
+- (void)setVID:;
+- (id)vID;
+- (void)setWave:;
+- (void)setWaveArr:;
+- (void)setWaveHeightArr:;
+- (void)setCurrentTime:;
+- (id)content;
+- (double)currentTime;
+- (void)setDuration:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (long long)duration;
+- (void)setAudioStatus:;
+- (unsigned long long)audioStatus;
+- (id)audioFilePath;
+- (void)setAudioFilePath:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

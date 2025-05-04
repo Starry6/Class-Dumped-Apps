@@ -1,0 +1,38 @@
+@interface AWEIMVmojiDataSourceV2 : NSObject
+@property (nonatomic) AWEIMVmojiDataFetcher briefFetcher;
+@property (nonatomic) AWEIMVmojiDataFetcher listFetcher;
+@property (nonatomic) NSMutableDictionary dataFetcherDic;
+@property (nonatomic) q currentMaxCharaterVersion;
+@property (nonatomic) AWEIMVmojiRecentComponent recentComponent;
+@property (nonatomic) AWEIMVmojiQuickStickerComponent quickStickerComponent;
+@property (nonatomic) NSSet acbStickerIDSet;
+- (void)dealloc;
+- (void)setListFetcher:;
+- (id)listFetcher;
+- (void)setupAfterLogin;
+- (void)setAcbStickerIDSet:;
+- (void)resetMemoryData;
+- (void)setBriefFetcher:;
+- (id)dataFetcherDic;
+- (void)setCurrentMaxCharaterVersion:;
+- (void)setRecentComponent:;
+- (void)setQuickStickerComponent:;
+- (id)briefFetcher;
+- (id)quickStickerComponent;
+- (id)p_defaultFetcher;
+- (id)acbStickerIDSet;
+- (long long)currentMaxCharaterVersion;
+- (void)avatarUpdated;
+- (id)dualFetcherForPeerUid:peerSecUid:;
+- (id)recentComponent;
+- (void)setDataFetcherDic:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
++ (void)removeDiskCache;
++ (id)loginUserBriefDataPath;
++ (id)loginUserListDataPath;
++ (id)dualVmojiForPeerUid:;
++ (id)vmojiDirectorForLoginUser;
++ (id)loginUserQuickSticker;
+@end

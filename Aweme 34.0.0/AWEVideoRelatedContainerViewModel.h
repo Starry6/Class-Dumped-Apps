@@ -1,0 +1,33 @@
+@interface AWEVideoRelatedContainerViewModel : AWEBaseListViewModel
+@property (nonatomic) AWEFeedCollectionContainerContext containerContext;
+@property (nonatomic) AWEListDataController dataController;
+@property (nonatomic) double requestTimeStamp;
+@property (nonatomic) AWEFeedRelatedVideoSingleCardSectionViewModel relatedRecommendViewModel;
+- (void)fetchListData;
+- (void)loadMoreListData;
+- (void)setDataController:;
+- (id)createViewModelsWithAwemeModels:;
+- (void)setRequestTimeStamp:;
+- (void)trackForNetWorkMonitor:error:;
+- (void)updateSectionViewModelsWithoutRelatedRecommend:;
+- (void)updateWithContext:andDataController:;
+- (void)recreateSectionViewModel;
+- (long long)relatedRecommendSection;
+- (long long)cellModelCount;
+- (void)handleResponse:isloadingMore:error:;
+- (id)relatedRecommendViewModel;
+- (void)preloadFirstCoverInSingleMode;
+- (void)setRelatedRecommendViewModel:;
+- (void)setDataStateForListZero;
+- (void)setDataStateForError;
+- (BOOL)secondRequestPostAvailable;
+- (id)requestTime;
+- (void)clearData;
+- (void).cxx_destruct;
+- (id)containerContext;
+- (void)setContainerContext:;
+- (id)cellModelAtIndex:;
+- (id)dataController;
+- (void)updateModels;
+- (double)requestTimeStamp;
+@end

@@ -1,0 +1,32 @@
+@interface AWEStudioDraftCleanManager : NSObject
+@property (nonatomic) Q backgroundTempTask;
+@property (nonatomic) q lastRandomChoice;
+@property (nonatomic) BOOL isCleaningInProgress;
+@property (nonatomic) q cachedCleanTaskType;
+@property (nonatomic) BOOL hasSelectedTaskType;
+- (unsigned long long)backgroundTempTask;
+- (void)setBackgroundTempTask:;
+- (long long)currentCleanTaskType;
+- (void)resetCleanedInCurrentSession;
+- (void)cancelBackgroundCleanTask;
+- (BOOL)hasCleanedInCurrentSession;
+- (void)cleanDrafts;
+- (BOOL)isCleaningInProgress;
+- (void)setLastRandomChoice:;
+- (void)setIsCleaningInProgress:;
+- (void)markCleanedInCurrentSession;
+- (void)reportDraftStats;
+- (BOOL)hasSelectedTaskType;
+- (long long)cachedCleanTaskType;
+- (void)setCachedCleanTaskType:;
+- (void)setHasSelectedTaskType:;
+- (long long)lastRandomChoice;
+- (id)init;
+- (void)dealloc;
+- (void)applicationDidEnterBackground;
+- (void)applicationDidBecomeActive;
+- (void)endBackgroundTask;
+- (void)beginBackgroundTask;
++ (void)_aweLazyRegisterStaticLoad;
++ (id)sharedManager;
+@end

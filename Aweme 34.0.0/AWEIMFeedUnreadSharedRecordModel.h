@@ -1,0 +1,31 @@
+@interface AWEIMFeedUnreadSharedRecordModel : AWEBaseApiModel
+@property (nonatomic) q serverMessageID;
+@property (nonatomic) q fromUID;
+@property (nonatomic) q conversionShortID;
+@property (nonatomic) NSString conversionID;
+@property (nonatomic) NSString messageID;
+@property (nonatomic) q attachMsgID;
+@property (nonatomic) NSString attachMsgContent;
+@property (nonatomic) NSString attachClientMessageId;
+@property (nonatomic) NSString shareId;
+- (void)setFromUID:;
+- (long long)serverMessageID;
+- (long long)fromUID;
+- (id)conversionID;
+- (void)setServerMessageID:;
+- (long long)conversionShortID;
+- (void)setConversionShortID:;
+- (void)setConversionID:;
+- (long long)attachMsgID;
+- (void)setAttachMsgID:;
+- (id)attachMsgContent;
+- (void)setAttachMsgContent:;
+- (id)attachClientMessageId;
+- (void)setAttachClientMessageId:;
+- (id)shareId;
+- (id)messageID;
+- (void)setMessageID:;
+- (void)setShareId:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMMessageUploadWaitQueueItem : NSObject
+@property (nonatomic) BOOL isStreamUploadTask;
+@property (nonatomic) BOOL isPureFileTask;
+@property (nonatomic) BOOL isManyFilesTask;
+@property (nonatomic) NSString fileID;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSArray filePaths;
+@property (nonatomic) NSString taskID;
+@property (nonatomic) q messageType;
+@property (nonatomic) NSData quickData;
+@property (nonatomic) <BDExternFileReaderInterface> fileReader;
+- (void)setQuickData:;
+- (id)quickData;
+- (BOOL)isStreamUploadTask;
+- (void)setIsStreamUploadTask:;
+- (BOOL)isPureFileTask;
+- (void)setIsPureFileTask:;
+- (BOOL)isManyFilesTask;
+- (void)setIsManyFilesTask:;
+- (id)fileReader;
+- (void)setFileReader:;
+- (id)filePath;
+- (void)setFileID:;
+- (id)fileID;
+- (id)filePaths;
+- (void)setFilePath:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (void)setTaskID:;
+- (long long)messageType;
+- (id)taskID;
+- (void)setFilePaths:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEDTOFlashMobExtraData : MTLModel
+@property (nonatomic) q mode;
+@property (nonatomic) NSString flashMobId;
+@property (nonatomic) NSString flashMobTitle;
+@property (nonatomic) BOOL autoTitle;
+@property (nonatomic) BOOL isFollowShoot;
+@property (nonatomic) NSString flashMobSpeakId;
+@property (nonatomic) BOOL isUseMusic;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)flashMobId;
+- (void)setFlashMobId:;
+- (id)flashMobTitle;
+- (void)setFlashMobTitle:;
+- (BOOL)autoTitle;
+- (void)setAutoTitle:;
+- (BOOL)isFollowShoot;
+- (void)setIsFollowShoot:;
+- (id)flashMobSpeakId;
+- (void)setFlashMobSpeakId:;
+- (BOOL)isUseMusic;
+- (void)setIsUseMusic:;
+- (void)setMode:;
+- (long long)mode;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

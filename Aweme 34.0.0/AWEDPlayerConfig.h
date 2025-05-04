@@ -1,0 +1,37 @@
+@interface AWEDPlayerConfig : NSObject
+@property (nonatomic) Q playerType;
+@property (nonatomic) BOOL optimizeFakeLandscapeLayout;
+@property (nonatomic) BOOL outerControlPlayStatus;
+@property (nonatomic) NSString demaciaFirstFrameLogKey;
+@property (nonatomic) NSString demaciaPlayErrorLogKey;
+@property (nonatomic) NSString demaciaPlayBlockLogKey;
+@property (nonatomic) BOOL disableTracker;
+@property (nonatomic) BOOL enableInteractionView;
+@property (nonatomic) AWEDPlayerInteractionViewConfig interactionViewConfig;
+@property (nonatomic) AWEPageContext<AWEDPlayerPageContextProtocol> context;
+@property (nonatomic) NSString debugInfo;
+- (void)setPlayerType:;
+- (void)setDisableTracker:;
+- (void)setOuterControlPlayStatus:;
+- (void)setInteractionViewConfig:;
+- (void)setEnableInteractionView:;
+- (BOOL)optimizeFakeLandscapeLayout;
+- (void)setOptimizeFakeLandscapeLayout:;
+- (BOOL)outerControlPlayStatus;
+- (id)demaciaFirstFrameLogKey;
+- (void)setDemaciaFirstFrameLogKey:;
+- (id)demaciaPlayErrorLogKey;
+- (void)setDemaciaPlayErrorLogKey:;
+- (id)demaciaPlayBlockLogKey;
+- (void)setDemaciaPlayBlockLogKey:;
+- (BOOL)disableTracker;
+- (BOOL)enableInteractionView;
+- (id)interactionViewConfig;
+- (id)debugInfo;
+- (id)init;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDebugInfo:;
+- (id)context;
+- (unsigned long long)playerType;
+@end

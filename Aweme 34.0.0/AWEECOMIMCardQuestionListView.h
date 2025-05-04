@@ -1,0 +1,2 @@
+@interface AWEECOMIMCardQuestionListView : UIView
+@end

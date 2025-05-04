@@ -1,0 +1,38 @@
+@interface AWEIMCommonItemExitModel : MTLModel
+@property (nonatomic) NSString prefix;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString dimension;
+@property (nonatomic) NSString exitScope;
+@property (nonatomic) q threshold;
+@property (nonatomic) double exitDays;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContentDict:;
+- (id)getContentDict;
+- (double)exitDays;
+- (void)setExitDays:;
+- (BOOL)isConversionDimension;
+- (double)getExitSeconds;
+- (BOOL)scopeIsBtnExit;
+- (BOOL)scopeIsConfigExit;
+- (BOOL)isUserDimension;
+- (BOOL)isDeviceDimension;
+- (void)setExitScope:;
+- (id)exitScope;
+- (id)prefix;
+- (long long)threshold;
+- (void)setIdentifier:;
+- (void)setPrefix:;
+- (void)setThreshold:;
+- (id)identifier;
+- (id)description;
+- (void).cxx_destruct;
+- (void)setDimension:;
+- (id)dimension;
+- (id)copyWithZone:;
+- (BOOL)isDataValid;
++ (id)modelCustomPropertyMapper;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,36 @@
+@interface AWEGrouponInnerPushModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSDictionary action;
+@property (nonatomic) NSDictionary button;
+@property (nonatomic) NSString showName;
+@property (nonatomic) AWEGrouponCommonFrequencyData frequencyData;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) q pageType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)frequencyData;
+- (void)setFrequencyData:;
+- (id)icon;
+- (void)setButton:;
+- (void)setAction:;
+- (void)setPageType:;
+- (id)action;
+- (id)descriptionText;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (long long)pageType;
+- (id)button;
+- (void)setDescriptionText:;
+- (void)setShowName:;
+- (id)showName;
++ (BOOL)automaticallyDefaultMapping;
++ (id)JSONKeyPathsByPropertyKey;
+@end

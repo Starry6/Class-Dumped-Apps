@@ -1,0 +1,3 @@
+@interface AWECommentPanelListSwiftImpl.LabelFixedHeightVirtualView : _TtCV28AWECommentPanelListSwiftImpl6NEWAPI19CommentVirtualLabel
+- (id)layoutThatFits:;
+@end

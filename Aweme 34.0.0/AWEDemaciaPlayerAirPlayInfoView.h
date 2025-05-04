@@ -1,0 +1,37 @@
+@interface AWEDemaciaPlayerAirPlayInfoView : UIView
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) UILabel deviceNameLabel;
+@property (nonatomic) UIButton exitButton;
+@property (nonatomic) UIButton changeDeviceButton;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView buttonGroupView;
+@property (nonatomic) UIView dimView;
+@property (nonatomic) @? onExitButtonTapped;
+@property (nonatomic) @? onChangeDeviceButtonTapped;
+- (id)exitButton;
+- (id)buttonGroupView;
+- (id)changeDeviceButton;
+- (id)onExitButtonTapped;
+- (id)onChangeDeviceButtonTapped;
+- (void)updateWithAirPlayDeviceName:;
+- (void)setDimViewHidden:;
+- (void)setOnExitButtonTapped:;
+- (void)setOnChangeDeviceButtonTapped:;
+- (void)setExitButton:;
+- (void)setChangeDeviceButton:;
+- (void)setButtonGroupView:;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)backgroundView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setStatusLabel:;
+- (id)dimView;
+- (void)setDimView:;
+- (id)statusLabel;
+- (id)deviceNameLabel;
+- (void)setDeviceNameLabel:;
+@end

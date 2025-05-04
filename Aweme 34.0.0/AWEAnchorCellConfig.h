@@ -1,0 +1,38 @@
+@interface AWEAnchorCellConfig : NSObject
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) q titleNumberOfLines;
+@property (nonatomic) BOOL hideAddButton;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIColor subTitleColor;
+@property (nonatomic) double titleTop;
+@property (nonatomic) UIFont selectBtnTitleFont;
+@property (nonatomic) UIColor selectBtnTitleColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) NSString selectBtnTitle;
+- (long long)titleNumberOfLines;
+- (void)setTitleNumberOfLines:;
+- (void)setupDefaultConfig;
+- (void)setHideAddButton:;
+- (void)setSubTitleColor:;
+- (void)setSelectBtnTitleColor:;
+- (void)setSelectBtnTitleFont:;
+- (void)setSelectBtnTitle:;
+- (void)setTitleTop:;
+- (BOOL)hideAddButton;
+- (id)subTitleColor;
+- (double)titleTop;
+- (id)selectBtnTitleFont;
+- (id)selectBtnTitleColor;
+- (id)selectBtnTitle;
+- (id)titleColor;
+- (id)init;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (id)backgroundColor;
+- (id)titleFont;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageSize;
+@end

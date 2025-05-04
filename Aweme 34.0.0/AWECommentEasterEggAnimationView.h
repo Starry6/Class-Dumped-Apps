@@ -1,0 +1,34 @@
+@interface AWECommentEasterEggAnimationView : UIView
+@property (nonatomic) AWECommentEasterEggAnimationModel model;
+@property (nonatomic) NSArray animationGroups;
+@property (nonatomic) NSArray animationViews;
+@property (nonatomic) NSArray specialAnimationGroups;
+@property (nonatomic) UIImageView specialAnimationView;
+@property (nonatomic) NSString animateID;
+@property (nonatomic) NSDictionary trackerParams;
+- (void)setTrackerParams:;
+- (void)configWithModel:;
+- (id)trackerParams;
+- (void)setAnimateID:;
+- (void)__prepareElements;
+- (void)__prepareSpecialElementIfNeeded;
+- (id)specialAnimationView;
+- (id)animationViews;
+- (id)animationGroups;
+- (BOOL)__checkSpecialElementHasShownTooMuch;
+- (BOOL)__shouldShowSpecialElement;
+- (id)specialAnimationGroups;
+- (void)__updateSpecialElementShowTime;
+- (void)setAnimationGroups:;
+- (void)setAnimationViews:;
+- (void)setSpecialAnimationGroups:;
+- (void)setSpecialAnimationView:;
+- (void)__specialElementClicked;
+- (id)animateID;
+- (void)setModel:;
+- (void)remove;
+- (void)play;
+- (id)model;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+@end

@@ -1,0 +1,34 @@
+@interface AWESearchVideoCardBottomDescComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEGeneralSearchVideoCardModel bindedModel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWESearchVideoCardBottomDescModel bottomDescModel;
+@property (nonatomic) BOOL currentModelFromSetupModelOnly;
+@property (nonatomic) AWESearchVideoCardBottomDescView bottomDescView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)playerProvider;
+- (void)updateWithModel:forceUpdate:;
+- (void)setBindedModel:;
+- (id)bindedModel;
+- (void)setModelOnly:;
+- (void)setCurrentModelFromSetupModelOnly:;
+- (BOOL)currentModelFromSetupModelOnly;
+- (id)bottomDescView;
+- (void)setBottomDescModel:;
+- (id)bottomDescModel;
+- (void)clickBottomDescView;
+- (void)setBottomDescView:;
+- (void)setModel:;
+- (id)init;
+- (id)contentView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
+- (void)setupUI;
++ (id)componentSizeForModel:width:;
++ (id)calculateSizeWithModel:Width:;
+@end

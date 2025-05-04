@@ -1,0 +1,33 @@
+@interface AWEIMServiceChatEnterTipsComponent : AWEIMComponentBase
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) <AWEIMMessageTabPopupViewInterface> messageTabPopupViewInterface;
+@property (nonatomic) @? onClose;
+@property (nonatomic) NSString lastShowedUid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidDismiss:;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (BOOL)shouldCancelAllOtherPendingAlertsWhenShowedWithContext:;
+- (void)showWithCloseCallback:;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidAppear;
+- (void)setMessageTabPopupViewInterface:;
+- (BOOL)canShowPopupView;
+- (id)messageTabPopupViewInterface;
+- (void)showPopupView;
+- (BOOL)isDisplayingCurrentPopupView;
+- (BOOL)canLimitShowWithinTime;
+- (void)reportServiceStatusToServer;
+- (id)lastShowedUid;
+- (void)setLastShowedUid:;
+- (BOOL)isShowing;
+- (void).cxx_destruct;
+- (void)setIsShowing:;
+- (id)onClose;
+- (void)setOnClose:;
++ (BOOL)canCreateComponentWithContext:;
+@end

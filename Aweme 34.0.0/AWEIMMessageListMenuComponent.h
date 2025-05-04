@@ -1,0 +1,34 @@
+@interface AWEIMMessageListMenuComponent : AWEIMComponentBase
+@property (nonatomic) <AWEIMMessageTableViewInterface> tableViewService;
+@property (nonatomic) <AWEIMMessageMenuInterface> currentShowMenuCellComponent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEIMComponentManager componentManager;
+- (id)componentContext;
+- (id)componentsNameArrayWithContext:;
+- (void)setComponentManager:;
+- (void)componentDidMounted:;
+- (void)viewWillAnimateAlongsideTransitionToSizeWith:;
+- (void)setTableViewService:;
+- (id)tableViewService;
+- (id)menuFrameInScreen;
+- (void)showMenuForBubbleFrameInScreen:tapLocationInScreen:menuTypeList:moreEmoticon:onCell:extra:;
+- (void)showMenuForBubbleFrameInScreen:highLocationInScreen:lowLocationInScreen:tryHighLocationFirst:menuTypeList:onCell:extra:;
+- (void)dismissMenuWithoutAnimation;
+- (void)doMenuActionFor:withMessage:msgContext:;
+- (void)setCurrentShowMenuCellComponent:;
+- (id)p_prepareShowListOnCell:menuTypeList:extra:;
+- (void)p_trackMenuClickEvent:withMessage:context:extra:;
+- (void)p_trackMenuShowEvents:withMessage:context:withExtra:;
+- (void)p_trackMenuEvent:eventType:message:context:extra:;
+- (void)p_bizTrackMenuClickItem:message:context:;
+- (id)p_addFoldMessageParams:message:context:;
+- (id)currentShowMenuCellComponent;
+- (void)dismissMenu;
+- (void).cxx_destruct;
+- (id)componentManager;
++ (BOOL)canCreateComponentWithContext:;
++ (id)lazyComponentWakeupInterface;
+@end

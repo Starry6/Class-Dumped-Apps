@@ -1,0 +1,36 @@
+@interface AWEAdLynxWebViewManager : HTSService
+@property (nonatomic) NSString eventName;
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEBDARifleViewController lynxVC;
+@property (nonatomic) NSString lynxSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (id)aweme;
+- (void)setAweme:;
+- (id)aAWEPadModuleAdapter;
+- (BOOL)openLynxViewControllerWithContext:;
+- (id)bdaRifleLynxViewControllerWithLynxSchema:withAweme:accessKey:fallbackProceessedByManager:;
+- (id)lynxSchema;
+- (void)setLynxSchema:;
+- (void)setLynxVC:;
+- (id)lynxVC;
+- (void)rifleViewControllerDidFinishLoad:;
+- (void)rifleViewController:didReceiveFirstLoad:;
+- (void)rifleViewController:didReceiveError:;
+- (void)rifleViewController:loadFailedWithErrorInfo:;
+- (void)rifleViewControllerDidClose:;
+- (id)multiWindowAssociatedControllerForNow;
+- (void)padMultiPush:withAssociatedController:;
+- (void)setEventName:;
+- (void).cxx_destruct;
+- (id)eventName;
++ (Class)aAWEPadModuleAdapterClass;
++ (void)traceAdLynxLandingPageAdTraceSelected:withAdLynxSource:;
++ (void)traceAdLynxLandingPageShowResult:withAdExtraData:;
++ (void)traceAdLynxLandingPageDataReceived:withAdLynxSource:;
++ (void)traceAdLynxLandingPageAdTraceTryShow:;
++ (id)adExtraDataForTraceWithAweme:;
+@end

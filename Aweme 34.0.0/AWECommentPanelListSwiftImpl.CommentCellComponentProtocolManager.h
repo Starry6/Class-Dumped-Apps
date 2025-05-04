@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentCellComponentProtocolManager : _TtCs12_SwiftObject
+@end

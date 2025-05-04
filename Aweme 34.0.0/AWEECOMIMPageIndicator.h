@@ -1,0 +1,33 @@
+@interface AWEECOMIMPageIndicator : UIView
+@property (nonatomic) NSMutableArray dotViews;
+@property (nonatomic) BOOL changing;
+@property (nonatomic) q numberOfPages;
+@property (nonatomic) q currentPage;
+@property (nonatomic) UIColor dotsColor;
+@property (nonatomic) UIColor selectDotColor;
+@property (nonatomic) double dotsSize;
+@property (nonatomic) double selectDotsWidthFactor;
+- (void)setProgress:fromPage:toPage:;
+- (void)setDotsSize:;
+- (void)setSelectDotsWidthFactor:;
+- (void)setSelectDotColor:;
+- (id)displayDotSelectSize;
+- (id)displayDotNormalSize;
+- (id)displayDotSelectColor;
+- (id)displayDotNormalColor;
+- (BOOL)changing;
+- (void)setChanging:;
+- (id)selectDotColor;
+- (double)dotsSize;
+- (double)selectDotsWidthFactor;
+- (id)intrinsicContentSize;
+- (long long)currentPage;
+- (void)setCurrentPage:;
+- (void).cxx_destruct;
+- (long long)numberOfPages;
+- (void)setNumberOfPages:;
+- (id)dotViews;
+- (void)setDotViews:;
+- (id)dotsColor;
+- (void)setDotsColor:;
+@end

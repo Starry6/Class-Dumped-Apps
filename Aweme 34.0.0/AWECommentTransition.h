@@ -1,0 +1,2 @@
+@interface AWECommentTransition : NSObject
+@end

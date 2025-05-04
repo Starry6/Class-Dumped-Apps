@@ -1,0 +1,35 @@
+@interface AWESinglePayEpisodeDiversionXiguaModel : MTLModel
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL xiguaOldUser;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString installedText;
+@property (nonatomic) NSString uninstalledText;
+@property (nonatomic) AWEURLModel coverUrl;
+@property (nonatomic) AWEURLModel backgroundUrl;
+@property (nonatomic) AWESinglePayEpisodeDiversionXiguaSchemaParam schemaParam;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (id)backgroundUrl;
+- (void)setBackgroundUrl:;
+- (BOOL)xiguaOldUser;
+- (void)setXiguaOldUser:;
+- (id)installedText;
+- (void)setInstalledText:;
+- (id)uninstalledText;
+- (void)setUninstalledText:;
+- (id)schemaParam;
+- (void)setSchemaParam:;
+- (BOOL)enable;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setEnable:;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

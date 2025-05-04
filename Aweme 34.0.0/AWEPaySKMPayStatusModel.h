@@ -1,0 +1,35 @@
+@interface AWEPaySKMPayStatusModel : CJPayBaseResponse
+@property (nonatomic) NSString msgId;
+@property (nonatomic) NSString msgType;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) q payStatusCode;
+@property (nonatomic) NSString payStatusMsg;
+@property (nonatomic) NSString profileImageUrl;
+@property (nonatomic) NSString pushTime;
+@property (nonatomic) NSString sendUidMask;
+@property (nonatomic) NSString sendDidMask;
+@property (nonatomic) NSString amount;
+- (id)pushTime;
+- (id)payStatusMsg;
+- (id)sendUidMask;
+- (id)sendDidMask;
+- (long long)payStatusCode;
+- (void)setPayStatusCode:;
+- (void)setPayStatusMsg:;
+- (void)setPushTime:;
+- (void)setSendUidMask:;
+- (void)setSendDidMask:;
+- (void)setNickName:;
+- (void).cxx_destruct;
+- (id)nickName;
+- (id)msgId;
+- (void)setMsgId:;
+- (id)amount;
+- (void)setAmount:;
+- (id)profileImageUrl;
+- (void)setProfileImageUrl:;
+- (id)msgType;
+- (void)setMsgType:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEFavoriteRecommendCardCell : UICollectionViewCell
+@property (nonatomic) UIView backgroundContentView;
+@property (nonatomic) q cellType;
+@property (nonatomic) UITableView recommendTableView;
+@property (nonatomic) @? closeBtnClickBlock;
+@property (nonatomic) AWEFavoriteRecommendDataController favoriteRecommendDataController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)recommendTableView;
+- (void)setRecommendTableView:;
+- (void)setCloseBtnClickBlock:;
+- (id)closeBtnClickBlock;
+- (id)favoriteRecommendDataController;
+- (void)clickCreateButton:;
+- (void)setFavoriteRecommendDataController:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)cellType;
+- (void)setCellType:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (id)backgroundContentView;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setBackgroundContentView:;
+- (void)setupUI;
++ (id)identifier;
+@end

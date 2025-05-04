@@ -1,0 +1,37 @@
+@interface AWEFollowGuideInfoStruct : NSObject
+@property (nonatomic) double watchedTime;
+@property (nonatomic) double lastWatchedTime;
+@property (nonatomic) q shownCount;
+@property (nonatomic) q currentPlayingIndex;
+@property (nonatomic) NSString creatorId;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) BOOL showedFollowGuideButton;
+@property (nonatomic) q vvCount;
+@property (nonatomic) NSString vvItemId;
+@property (nonatomic) double dismissRemainingTime;
+@property (nonatomic) NSMutableDictionary uninterestedStoragedInfo;
+- (long long)currentPlayingIndex;
+- (void)setCurrentPlayingIndex:;
+- (long long)shownCount;
+- (void)setShownCount:;
+- (long long)vvCount;
+- (void)setVvCount:;
+- (double)watchedTime;
+- (void)setWatchedTime:;
+- (double)lastWatchedTime;
+- (void)setLastWatchedTime:;
+- (id)initWithCreatorId:;
+- (id)uninterestedStoragedInfo;
+- (BOOL)showedFollowGuideButton;
+- (void)setShowedFollowGuideButton:;
+- (id)vvItemId;
+- (void)setVvItemId:;
+- (double)dismissRemainingTime;
+- (void)setDismissRemainingTime:;
+- (void)setUninterestedStoragedInfo:;
+- (void).cxx_destruct;
+- (id)itemId;
+- (id)creatorId;
+- (void)setCreatorId:;
+- (void)setItemId:;
+@end

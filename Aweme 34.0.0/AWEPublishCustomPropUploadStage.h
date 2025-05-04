@@ -1,0 +1,32 @@
+@interface AWEPublishCustomPropUploadStage : AWEPublishBaseStage
+@property (nonatomic) AWEVideoPublishViewModel publishViewModel;
+@property (nonatomic) _AWECustomPropUploadInfo backupUploadPropInfo;
+@property (nonatomic) BOOL startBackup;
+- (id)publishViewModel;
+- (void)setPublishViewModel:;
+- (void)setFlowModel:;
+- (id)flowModel;
+- (id)initWithPublishViewModel:;
+- (void)setupWithFlowModelIfNeeded;
+- (void)updateFlowModelIfNeeded;
+- (BOOL)needToUploadCustomProp;
+- (id)uploadInfoEnableURS:;
+- (void)startUploadFromURSWithInfo:;
+- (void)startUploadWithInfo:;
+- (BOOL)p_isPhotoMode;
+- (void)setBackupUploadPropInfo:;
+- (void)registerObserverCustomEffectBackupIfNeed;
+- (id)p_getAbsulatePathWithPath:templateEffectID:isVideo:isPackagePath:;
+- (void)p_uploadCustomizedEffectWithEffectID:sourceID:filePath:iconPath:coverPath:;
+- (void)p_trackForUploadCustomPackageWithState:effectID:sourceID:error:;
+- (void)p_trackCreateAigcChildEffecshootway:aigccreateway:keywordslist:originalpropid:propid:;
+- (id)backupUploadPropInfo;
+- (void)setStartBackup:;
+- (void)observeCustomSticker;
+- (void)registerObserverCustomEffectURSBackupIfNeed;
+- (id)init;
+- (void)run;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (BOOL)startBackup;
+@end

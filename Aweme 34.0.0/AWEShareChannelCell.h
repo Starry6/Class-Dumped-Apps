@@ -1,0 +1,35 @@
+@interface AWEShareChannelCell : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView smallImageView;
+@property (nonatomic) UIImageView selectImageView;
+@property (nonatomic) UIImageView selectContainer;
+@property (nonatomic) BDImageView bottomCenterImageView;
+@property (nonatomic) YYLabel descLabel;
+@property (nonatomic) BOOL scalesImageWhenHighlighted;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setSelectImageView:;
+- (id)selectImageView;
+- (BOOL)scalesImageWhenHighlighted;
+- (void)setScalesImageWhenHighlighted:;
+- (void)setSmallImageView:;
+- (id)smallImageView;
+- (void)setSelectContainer:;
+- (id)selectContainer;
+- (void)setBottomCenterImageView:;
+- (id)bottomCenterImageView;
+- (id)initWithFrame:;
+- (void)setHighlighted:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
+- (void)updateWithViewModel:;
+@end

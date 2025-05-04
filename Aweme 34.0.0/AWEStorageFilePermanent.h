@@ -1,0 +1,32 @@
+@interface AWEStorageFilePermanent : NSObject
+- (void)writeDictionary:toFileForKey:completion:;
+- (void)readDictionaryFromFileForKey:completion:;
+- (void)removeAllFileInDomainWithCompletion:;
+- (void)readArrayFromFileForKey:completion:;
+- (void)removeFileInDomainForKey:completion:;
+- (void)writeArray:toFileForKey:completion:;
+- (void)readDataFromFileForKey:completion:;
+- (void)writeData:toFileForKey:completion:;
+- (id)initWithDomain:enableSyncArchive:;
+- (void)readStringFromFileForKey:completion:;
+- (void)writeString:toFileForKey:completion:;
+- (void)readObjectFromFileForKey:completion:;
+- (void)writeObject:toFileForKey:completion:;
+- (void)readObjectFromFileForKey:queueQos:completion:;
+- (void)writeObject:toFileForKey:queueQos:completion:;
+- (void)getFriendsInfoDictionaryWithUserID:completion:;
+- (void)getFriendsFeedHistoryCacheListWithUserID:completion:;
+- (void)setFriendsFeedHistoryCacheListWithUserID:cacheList:completion:;
+- (void)removeFriendsFeedHistoryCacheListForUserID:completion:;
+- (void)setFriendsInfoDictionaryWithUserID:infoDict:completion:;
+- (void)removeFriendsInfoDictionaryWithUserID:completion:;
+- (id)friendsFeedHistoryCacheListStorageKeyWithUserID:;
+- (id)friendsInteractionInfoDictionaryStorageKeyWithUserID:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithDomain:;
++ (id)universalStorage;
++ (id)storageWithDomain:;
++ (id)feedRestorationStorageFilePermanent;
++ (id)firendsStorageFilePermanent;
+@end

@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionTruncationTokenModel : NSObject
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel dotsExtraModel;
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel editExtraModel;
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel tailExtraModel;
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel tailSpaceExtraModel;
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel moreExtraModel;
+@property (nonatomic) AWEPlayInteractionDescriptionExtraModel spaceExtraModel;
+@property (nonatomic) BOOL forceShowTail;
+@property (nonatomic) q truncationTokenType;
+@property (nonatomic) q truncationOrderType;
+@property (nonatomic) q priority;
+- (void)setTruncationTokenType:;
+- (void)setDotsExtraModel:;
+- (void)setSpaceExtraModel:;
+- (void)setMoreExtraModel:;
+- (void)setTailSpaceExtraModel:;
+- (void)setForceShowTail:;
+- (void)setTailExtraModel:;
+- (void)setEditExtraModel:;
+- (BOOL)forceShowTail;
+- (long long)truncationTokenType;
+- (id)tailExtraModel;
+- (id)getAttributedStringWithExtraModel:;
+- (void)setTruncationAttribute:attributedString:;
+- (id)tailSpaceExtraModel;
+- (id)moreExtraModel;
+- (void)setTruncationOrderType:;
+- (long long)truncationOrderType;
+- (id)dotsExtraModel;
+- (id)spaceExtraModel;
+- (id)editExtraModel;
+- (long long)priority;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)truncationToken;
+@end

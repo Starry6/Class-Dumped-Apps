@@ -1,0 +1,32 @@
+@interface AWEIMCommentFilterController : NSObject
+@property (nonatomic) <AWEIMCommentFilterControllerDelegate> delegate;
+@property (nonatomic) NSArray groupModels;
+@property (nonatomic) NSArray dataControllers;
+@property (nonatomic) AWEGroupFilterView filterView;
+@property (nonatomic) @? toggleMenuBlock;
+- (id)groupModels;
+- (void)setGroupModels:;
+- (id)dataControllers;
+- (void)setDataControllers:;
+- (id)toggleMenuBlock;
+- (void)setToggleMenuBlock:;
+- (void)updateFilterUserInteractionEnabled:;
+- (unsigned long long)currentSelectIdx;
+- (void)setupGroupsWithMaxWidth:selectBlock:;
+- (id)filterView;
+- (id)init;
+- (id)delegate;
+- (void)setFilterView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (BOOL)isOneDayDigg:;
++ (BOOL)isOneDayComment:;
++ (long long)notificationTypeFromModel:;
++ (void)trackEnterPersonalDetail:enterFrom:enterMethod:followStatus:accountType:logExtraDict:;
++ (void)transToProfileWithUser:enterFrom:enterPosition:pushID:model:;
++ (void)trackFollowEvent:model:;
++ (id)fromUserForNotificationModel:;
++ (unsigned long long)indexForGroupFilterModelType:;
++ (BOOL)hasUnfollowFamiliarRelationTagWithModel:;
++ (void)transToProfileWithUserID:enterFrom:model:;
+@end

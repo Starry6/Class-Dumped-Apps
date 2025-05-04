@@ -1,0 +1,2 @@
+@interface AWEClassroomImpl.ClassroomNewDetailFeedbackChatMsgResponseModel : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,32 @@
+@interface AWEUserProfileMutiTargetConfig : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableCollectionFolderReport;
+- (BOOL)forbidDouJury;
+- (BOOL)forbidSyncToutiaoProfile;
+- (BOOL)forbidSettingItemCooperationCode;
+- (BOOL)forbidSlideMenuUserCenter;
+- (BOOL)forbidOneDayHistory;
+- (id)feedBackURL;
+- (id)ignoredFavoriteSecondClassTabsId;
+- (BOOL)forbidPostWorkChallengePublishGuide;
+- (BOOL)forbidTaskCardPublish;
+- (id)postWorkEmptyTitle;
+- (id)postWorkEmptySubtitle;
+- (BOOL)forbidProvideServiceLongPressEdit;
+- (BOOL)forbidShopAssistant;
+- (id)aAWEUserProfileMutiTargetConfigCommonAdapter;
+- (id)targetID;
+- (id)displayName;
+- (id)brandName;
++ (BOOL)forbidCompanyEdit;
++ (BOOL)shouldSimplifyDefaultTab;
++ (BOOL)forbidPublish;
++ (BOOL)forbidDecorationEdit;
++ (BOOL)shouldShowEnterpriseRecommend;
++ (BOOL)forbidShowStarAtlas;
++ (BOOL)forbidExtensionAreaServiceWidgetShopClickDefaultValue;
++ (Class)aAWEUserProfileMutiTargetConfigCommonAdapterClass;
+@end

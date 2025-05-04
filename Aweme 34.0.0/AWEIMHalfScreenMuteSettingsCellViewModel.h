@@ -1,0 +1,31 @@
+@interface AWEIMHalfScreenMuteSettingsCellViewModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) {CGSize=dd} cellSize;
+@property (nonatomic) BOOL shouldDisplayMutingFilterEntry;
+@property (nonatomic) BOOL shouldHidenLineView;
+@property (nonatomic) q settingType;
+@property (nonatomic) q cellStyle;
+@property (nonatomic) q shapeStyle;
+- (BOOL)shouldDisplayMutingFilterEntry;
+- (BOOL)shouldHidenLineView;
+- (void)setShouldDisplayMutingFilterEntry:;
+- (void)setShouldHidenLineView:;
+- (void)setIsSelected:;
+- (id)subtitle;
+- (long long)cellStyle;
+- (void)setSubtitle:;
+- (BOOL)isSelected;
+- (void)setShapeStyle:;
+- (void).cxx_destruct;
+- (id)title;
+- (long long)shapeStyle;
+- (void)setTitle:;
+- (id)cellSize;
+- (void)setCellStyle:;
+- (void)setCellSize:;
+- (long long)settingType;
+- (void)calculateSize;
+- (void)setSettingType:;
+@end

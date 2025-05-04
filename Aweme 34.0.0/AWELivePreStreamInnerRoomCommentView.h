@@ -1,0 +1,33 @@
+@interface AWELivePreStreamInnerRoomCommentView : UIView
+@property (nonatomic) UIView commentContainer;
+@property (nonatomic) UIView dividerLine;
+@property (nonatomic) IESLiveGCDTimer showTimer;
+@property (nonatomic) UIView toCommentContainer;
+@property (nonatomic) <IESLiveLanguageService> languageService;
+@property (nonatomic) UIImageView commentIcon;
+@property (nonatomic) UILabel preText;
+@property (nonatomic) UILabel commentText;
+@property (nonatomic) UILabel commentTime;
+- (id)commentTime;
+- (void)setShowTimer:;
+- (void)setCommentTime:;
+- (id)preText;
+- (void)disableLocalizations;
+- (id)commentContainer;
+- (void)setCommentContainer:;
+- (void)setPreText:;
+- (id)commentIcon;
+- (id)languageService;
+- (void)setCommentIcon:;
+- (id)toCommentContainer;
+- (void)setToCommentContainer:;
+- (void)setLanguageService:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)showTimer;
+- (void)setupView;
+- (void)setCommentText:;
+- (id)commentText;
+- (void)setDividerLine:;
+- (id)dividerLine;
+@end

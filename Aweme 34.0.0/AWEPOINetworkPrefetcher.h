@@ -1,0 +1,35 @@
+@interface AWEPOINetworkPrefetcher : NSObject
+@property (nonatomic) GXLRUCache cache;
+@property (nonatomic) NSMutableDictionary networkCompletions;
+@property (nonatomic) NSMutableDictionary networkImpls;
+@property (nonatomic) NSMutableDictionary trackParamsMap;
+@property (nonatomic) NSMutableDictionary prefetchModelMap;
+@property (nonatomic) AWEPOIDetailPrefetchStrategy strategy;
+- (void)clearTrackParamsWithKey:;
+- (BOOL)isRequestOnAirWithKey:;
+- (id)cacheDataWithKey:;
+- (id)trackParamsForKey:;
+- (void)clearCacheDataWithKey:;
+- (void)subscribeKey:block:;
+- (id)prefetchModelWithKey:;
+- (void)updateTrackParamsWithParamKey:paramValue:forKey:;
+- (void)setNetworkCompletions:;
+- (void)setNetworkImpls:;
+- (void)setTrackParamsMap:;
+- (void)setPrefetchModelMap:;
+- (id)prefetchModelMap;
+- (id)networkImpls;
+- (void)didChunkFinishAndHasSubscriberWithKey:data:isFinished:;
+- (void)didRequestFinishWithKey:cacheData:error:isFinished:trackData:;
+- (id)networkCompletions;
+- (double)getCacheDuration:;
+- (id)trackParamsMap;
+- (id)prefetchChunkModeWithSchema:networkImpl:prefetchModel:completion:;
+- (void)setCache:;
+- (id)strategy;
+- (id)cache;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setStrategy:;
++ (id)sharedInstance;
+@end

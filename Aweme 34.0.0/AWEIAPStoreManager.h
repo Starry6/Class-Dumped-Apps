@@ -1,0 +1,31 @@
+@interface AWEIAPStoreManager : NSObject
+@property (nonatomic) <AWEYAPModuleService> payService;
+@property (nonatomic) <AWEIAPStoreManagerDelegate> delegate;
+@property (nonatomic) NSMutableDictionary productsDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startIAPWithParams:;
+- (id)productsDict;
+- (void)startupService;
+- (void)preloadIAPProductsWithIDList:finishBlock:;
+- (void)setPayService:;
+- (void)setProductsDict:;
+- (id)payService;
+- (void)payFinishWithProduct:resultType:error:;
+- (BOOL)shouldHandleThisIapID:;
+- (void)didFinishProductOrder:resultType:error:;
+- (void)didFinishProductOrderInBack:resultType:error:;
+- (BOOL)shouldHandleProduct:;
+- (id)businessIdentify:;
+- (BOOL)allowNewBuyingWithUnconfirmedProduct:newBuyingProductID:newOrderParams:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)event:params:;
++ (id)notificationParamsWithProduct:resultType:isRecharge:error:;
++ (id)trackParamsWithProduct:resultType:isRecharge:error:;
++ (id)sharedInstance;
+@end

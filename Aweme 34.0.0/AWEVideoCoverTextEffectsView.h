@@ -1,0 +1,37 @@
+@interface AWEVideoCoverTextEffectsView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q selectedEffectType;
+@property (nonatomic) NSString selectedEffectIdentifier;
+@property (nonatomic) Q lastSelectedIndex;
+@property (nonatomic) NSArray models;
+@property (nonatomic) <AWEVideoCoverTextEffectsViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)lastSelectedIndex;
+- (void)setLastSelectedIndex:;
+- (id)cellModelWithType:effectId:;
+- (void)selectAndScrollToVisibleCellType:effectId:;
+- (void)p_selectCellType:effectId:;
+- (BOOL)p_cellModelIsSelected:;
+- (unsigned long long)selectedEffectType;
+- (void)setSelectedEffectType:;
+- (void)reloadData;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (void)commonInit;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)models;
+- (id)selectedEffectIdentifier;
+- (void)setSelectedEffectIdentifier:;
+@end

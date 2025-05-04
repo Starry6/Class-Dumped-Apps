@@ -1,0 +1,38 @@
+@interface AWECommentSearchCollectionCell : UICollectionViewCell
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIImageView verifyBadgeView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIImageView selectedStateImageView;
+@property (nonatomic) UIView onlineDotView;
+@property (nonatomic) <AWEIMActiveUserInfoService> activeInfo;
+@property (nonatomic) CALayer avatarMaskLayer;
+@property (nonatomic) CALayer nameFakeLayer;
+- (id)activeInfo;
+- (void)setOnlineDotView:;
+- (id)onlineDotView;
+- (void)updateTheme:;
+- (id)verifyBadgeView;
+- (void)setVerifyBadgeView:;
+- (id)selectedStateImageView;
+- (void)setActiveInfo:;
+- (void)updateActiveUserStateWithUser:;
+- (id)nameFakeLayer;
+- (id)avatarMaskLayer;
+- (id)aAWEBrandColorAdapter;
+- (void)configWithUser:;
+- (void)showSelectedState:withSelected:;
+- (void)setSelectedStateImageView:;
+- (void)setAvatarMaskLayer:;
+- (void)setNameFakeLayer:;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setHighlighted:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setNameLabel:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
++ (Class)aAWEBrandColorAdapterClass;
++ (id)identifier;
++ (id)itemSize;
+@end

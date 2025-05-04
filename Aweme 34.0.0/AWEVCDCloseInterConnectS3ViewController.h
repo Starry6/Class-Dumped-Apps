@@ -1,0 +1,36 @@
+@interface AWEVCDCloseInterConnectS3ViewController : UIViewController
+@property (nonatomic) AWECloseInterConnectStepView stepView;
+@property (nonatomic) UIView seperateLine;
+@property (nonatomic) AWECloseInterConnectTextView textView;
+@property (nonatomic) AWEVCDNextActionButton closeInterConnectButton;
+@property (nonatomic) AWEVCDNextActionButton skipButton;
+@property (nonatomic) q buttonTag;
+@property (nonatomic) AWEAuthorizeStateManager authorizeStateManager;
+@property (nonatomic) AWEVCDAccountAlertModel model;
+@property (nonatomic) NSString enterFrom;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)closeAction:;
+- (id)seperateLine;
+- (void)setSeperateLine:;
+- (void)setNavigationBar;
+- (void)setAuthorizeStateManager:;
+- (id)authorizeStateManager;
+- (void)nextAction:;
+- (id)stepView;
+- (id)closeInterConnectButton;
+- (void)setStepView:;
+- (void)setCloseInterConnectButton:;
+- (void)setButtonTag:;
+- (long long)buttonTag;
+- (id)textView;
+- (void)setModel:;
+- (void)setTextView:;
+- (void)startLoading;
+- (void)viewDidLoad;
+- (void)stopLoading;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setSkipButton:;
+- (id)skipButton;
+@end

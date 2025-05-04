@@ -1,0 +1,31 @@
+@interface AWECircularProgressView : UIView
+@property (nonatomic) _AWECircularProgressViewKVOObject kvoObject;
+@property (nonatomic) double progress;
+@property (nonatomic) UIColor progressTintColor;
+@property (nonatomic) UIColor progressBackgroundColor;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) double backgroundWidth;
+@property (nonatomic) double progressRadius;
+@property (nonatomic) double backgroundRadius;
+- (void)setBackgroundRadius:;
+- (void)setProgressRadius:;
+- (void)setBackgroundWidth:;
+- (double)progressRadius;
+- (double)backgroundWidth;
+- (id)kvoObject;
+- (id)observableKeypaths;
+- (double)backgroundRadius;
+- (void)setKvoObject:;
+- (void)setLineWidth:;
+- (double)lineWidth;
+- (void)drawRect:;
+- (void)setupObservers;
+- (id)initWithFrame:;
+- (double)progress;
+- (void)setProgressTintColor:;
+- (void).cxx_destruct;
+- (id)progressTintColor;
+- (void)setProgress:;
+- (id)progressBackgroundColor;
+- (void)setProgressBackgroundColor:;
+@end

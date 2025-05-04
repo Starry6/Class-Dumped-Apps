@@ -1,0 +1,2 @@
+@interface AWEStudioABTestRegisterLite : NSObject
+@end

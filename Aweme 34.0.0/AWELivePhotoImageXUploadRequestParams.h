@@ -1,0 +1,34 @@
+@interface AWELivePhotoImageXUploadRequestParams : NSObject
+@property (nonatomic) NSString accessKeyId;
+@property (nonatomic) NSString secretAccessKey;
+@property (nonatomic) NSString sessionToken;
+@property (nonatomic) NSString serviceId;
+@property (nonatomic) NSString hostName;
+@property (nonatomic) NSNumber sliceSize;
+@property (nonatomic) NSNumber socketNum;
+@property (nonatomic) NSString traceId;
+@property (nonatomic) NSString convertURLPath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTraceId:;
+- (id)accessKeyId;
+- (void)setAccessKeyId:;
+- (id)secretAccessKey;
+- (void)setSecretAccessKey:;
+- (id)sliceSize;
+- (void)setSliceSize:;
+- (id)socketNum;
+- (void)setSocketNum:;
+- (id)convertURLPath;
+- (void)setConvertURLPath:;
+- (void)setServiceId:;
+- (id)serviceId;
+- (id)sessionToken;
+- (id)traceId;
+- (void).cxx_destruct;
+- (id)hostName;
+- (void)setSessionToken:;
+- (void)setHostName:;
+@end

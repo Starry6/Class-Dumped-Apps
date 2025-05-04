@@ -1,0 +1,34 @@
+@interface AWEAddressBookUploadOptionModel : NSObject
+@property (nonatomic) BOOL needLoadingView;
+@property (nonatomic) BOOL isInitiative;
+@property (nonatomic) BOOL showAddressbookList;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) <BDPrivacyCertProtocol> requestCert;
+@property (nonatomic) <BDPrivacyCertProtocol> loadCert;
+@property (nonatomic) BOOL needUpload;
+@property (nonatomic) BOOL isFirstFunction;
+@property (nonatomic) BOOL authUIDAfterDIDHasAuthedInColdLaunch;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (BOOL)needUpload;
+- (void)setNeedUpload:;
+- (id)loadCert;
+- (void)setRequestCert:;
+- (void)setLoadCert:;
+- (void)setIsFirstFunction:;
+- (id)requestCert;
+- (BOOL)isFirstFunction;
+- (BOOL)isInitiative;
+- (BOOL)showAddressbookList;
+- (void)setShowAddressbookList:;
+- (BOOL)authUIDAfterDIDHasAuthedInColdLaunch;
+- (void)setAuthUIDAfterDIDHasAuthedInColdLaunch:;
+- (BOOL)needLoadingView;
+- (void)setNeedLoadingView:;
+- (void)setIsInitiative:;
+- (id)init;
+- (void).cxx_destruct;
+@end

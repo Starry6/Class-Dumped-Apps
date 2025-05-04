@@ -1,0 +1,2 @@
+@interface AWEECOMIMModel : NSObject
+@end

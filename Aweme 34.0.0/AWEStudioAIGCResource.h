@@ -1,0 +1,30 @@
+@interface AWEStudioAIGCResource : MTLModel
+@property (nonatomic) q mediaType;
+@property (nonatomic) q materialType;
+@property (nonatomic) NSString uri;
+@property (nonatomic) AWEURLModel url;
+@property (nonatomic) NSString binaryDataStr;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)binaryDataStr;
+- (void)setBinaryDataStr:;
+- (void)setMediaType:;
+- (void)setUrl:;
+- (void)setText:;
+- (long long)mediaType;
+- (id)extra;
+- (id)text;
+- (id)uri;
+- (void)setUri:;
+- (void).cxx_destruct;
+- (id)url;
+- (long long)materialType;
+- (void)setMaterialType:;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)urlJSONTransformer;
+@end

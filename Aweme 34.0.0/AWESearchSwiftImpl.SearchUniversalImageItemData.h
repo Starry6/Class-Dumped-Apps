@@ -1,0 +1,2 @@
+@interface AWESearchSwiftImpl.SearchUniversalImageItemData : AWESearchSwiftImpl.SearchUniversalItemData
+@end

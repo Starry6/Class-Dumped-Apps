@@ -1,0 +1,34 @@
+@interface AWEIMDecisionNode : MTLModel
+@property (nonatomic) NSString nodeType;
+@property (nonatomic) NSString nodeAttribute;
+@property (nonatomic) NSString nodeOperation;
+@property (nonatomic) NSString nodeValue;
+@property (nonatomic) NSString configName;
+@property (nonatomic) NSArray subNode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString nodeIndex;
+- (id)buildIndexNodeData;
+- (void)clearIndexNodeData;
+- (void)fillIndexNodeDataWithModel:;
+- (id)nodeAttribute;
+- (id)nodeOperation;
+- (id)subNode;
+- (void)setNodeAttribute:;
+- (void)setNodeOperation:;
+- (void)setSubNode:;
+- (id)nodeType;
+- (void).cxx_destruct;
+- (id)nodeValue;
+- (void)setNodeType:;
+- (id)configName;
+- (id)nodeIndex;
+- (void)setConfigName:;
+- (void)setNodeValue:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)subNodeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

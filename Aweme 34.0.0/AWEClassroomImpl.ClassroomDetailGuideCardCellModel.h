@@ -1,0 +1,2 @@
+@interface AWEClassroomImpl.ClassroomDetailGuideCardCellModel : _TtCs12_SwiftObject
+@end

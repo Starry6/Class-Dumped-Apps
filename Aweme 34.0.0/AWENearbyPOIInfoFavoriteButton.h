@@ -1,0 +1,32 @@
+@interface AWENearbyPOIInfoFavoriteButton : UIView
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIView layoutContainer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView selectedIconImageView;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) @? actionBlock;
+- (id)layoutContainer;
+- (id)selectedIconImageView;
+- (void)updateUIStatus;
+- (void)setLayoutContainer:;
+- (void)setSelectedIconImageView:;
+- (id)accessibilityLabel;
+- (id)initWithFrame:;
+- (BOOL)isSelected;
+- (BOOL)isAnimating;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (id)titleLabel;
+- (void)setSelected:;
+- (BOOL)isAccessibilityElement;
+- (void)setSelected:animated:;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setIconImageView:;
+- (void)setActionBlock:;
+- (id)actionBlock;
+@end

@@ -1,0 +1,37 @@
+@interface AWENearbyTransformerTab : MTLModel
+@property (nonatomic) NSString background;
+@property (nonatomic) NSArray icons;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString eventName;
+@property (nonatomic) NSArray backgroundImg;
+@property (nonatomic) q cardId;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundImg;
+- (void)setBackgroundImg:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setEventName:;
+- (id)icons;
+- (id)background;
+- (void)setDesc:;
+- (long long)type;
+- (id)desc;
+- (void)setBackground:;
+- (void)setType:;
+- (void)setIcons:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)eventName;
+- (void)setTitle:;
+- (long long)cardId;
+- (void)setCardId:;
++ (id)iconsJSONTransformer;
++ (id)backgroundImgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

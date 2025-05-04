@@ -1,0 +1,30 @@
+@interface AWEECOMIMPlatformDynamicCardContextInfoModel : MTLModel
+@property (nonatomic) NSString messageType;
+@property (nonatomic) NSDictionary cardHeader;
+@property (nonatomic) AWEECOMIMPlatformDynamicCardContextConversationInfoModel conversationInfoModel;
+@property (nonatomic) AWEECOMIMPlatformDynamicCardContextMessageInfoModel messageInfoModel;
+@property (nonatomic) AWEECOMIMPlatformDynamicCardContextReportEventParamsModel reportEventParamsModel;
+@property (nonatomic) AWEECOMIMPlatformDynamicCardContextAppInfoModel appInfoModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cardHeader;
+- (void)setCardHeader:;
+- (id)conversationInfoModel;
+- (void)setConversationInfoModel:;
+- (id)messageInfoModel;
+- (void)setMessageInfoModel:;
+- (id)reportEventParamsModel;
+- (void)setReportEventParamsModel:;
+- (id)appInfoModel;
+- (void)setAppInfoModel:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (id)messageType;
++ (id)conversationInfoModelJSONTransformer;
++ (id)messageInfoModelJSONTransformer;
++ (id)reportEventParamsModelJSONTransformer;
++ (id)appInfoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

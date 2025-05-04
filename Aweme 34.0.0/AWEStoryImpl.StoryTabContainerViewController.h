@@ -1,0 +1,35 @@
+@interface AWEStoryImpl.StoryTabContainerViewController : AWEProfileTabContainerViewController
+@property (nonatomic) <AWEStoryTabComponentProtocol> tabComponent;
+@property (nonatomic) @? updateLockIconBlock;
+@property (nonatomic) BOOL isFromUserHomePage;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL isFromHomepageDetail;
+@property (nonatomic) q prePageType;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setPrePageType:;
+- (id)tabComponent;
+- (void)setTabComponent:;
+- (id)updateLockIconBlock;
+- (void)setUpdateLockIconBlock:;
+- (BOOL)isFromUserHomePage;
+- (void)setIsFromUserHomePage:;
+- (BOOL)isFromHomepageDetail;
+- (void)setIsFromHomepageDetail:;
+- (long long)prePageType;
+- (void)onTabDidSwitchSelect;
+- (BOOL)hideSegmentControl;
+- (BOOL)shouldShowBlockView;
+- (void)draftDidChange:;
+- (id)tabItemVCForModel:index:;
+- (void)didExposeItemAtIndex:isShowingRedDot:exposeType:;
+- (void)didSelectItemAtIndex:viewController:isFromRedDot:selectType:;
+- (void)containerViewDidScroll:;
+- (void)showMomentMigrationBubble;
+- (id)momentSubTabFrame;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)initWithCoder:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEStudioRecorderFeatureToolBarConfig : AWEStudioToolBarFeatureConfig
+@end

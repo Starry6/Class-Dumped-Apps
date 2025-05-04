@@ -1,0 +1,2 @@
+@interface AWEIMFileAttachmentDownloaderStage : NSObject
+@end

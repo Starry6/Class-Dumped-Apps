@@ -1,0 +1,30 @@
+@interface AWESecondPhoneAffirmUtil : NSObject
+@property (nonatomic) NSString remindContent;
+@property (nonatomic) NSString phoneStr;
+@property (nonatomic) NSArray highlightSchemes;
+@property (nonatomic) NSArray highlightContents;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString noticeType;
+@property (nonatomic) NSString noticeID;
+@property (nonatomic) NSString noticeTag;
+- (void)setNoticeType:;
+- (void)setNoticeID:;
+- (id)noticeID;
+- (void)setRemindContent:;
+- (void)setPhoneStr:;
+- (void)setHighlightContents:;
+- (void)setHighlightSchemes:;
+- (void)setNoticeTag:;
+- (id)remindContent;
+- (id)phoneStr;
+- (id)highlightSchemes;
+- (id)highlightContents;
+- (id)noticeTag;
+- (id)scheme;
+- (void)setScheme:;
+- (void).cxx_destruct;
+- (id)noticeType;
++ (void)checkSecondPhoneIfNeeded:;
++ (void)cleanRemindInfo;
++ (id)sharedInstance;
+@end

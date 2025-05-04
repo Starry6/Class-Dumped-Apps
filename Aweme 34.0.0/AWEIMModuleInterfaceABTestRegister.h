@@ -1,0 +1,2 @@
+@interface AWEIMModuleInterfaceABTestRegister : NSObject
+@end

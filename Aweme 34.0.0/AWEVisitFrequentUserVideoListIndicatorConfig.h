@@ -1,0 +1,31 @@
+@interface AWEVisitFrequentUserVideoListIndicatorConfig : NSObject
+@property (nonatomic) double dotViewNormalHeight;
+@property (nonatomic) double dotViewSelectedHeight;
+@property (nonatomic) double dotViewInnerPadding;
+@property (nonatomic) UIColor dotViewNormalColor;
+@property (nonatomic) UIColor dotViewSelectedColor;
+@property (nonatomic) double dotViewNormalBorderWidth;
+@property (nonatomic) UIColor dotViewNormalBorderColor;
+@property (nonatomic) double dotViewSelectedBorderWidth;
+@property (nonatomic) UIColor dotViewSelectedBorderColor;
+- (void)setDotViewNormalHeight:;
+- (void)setDotViewSelectedHeight:;
+- (void)setDotViewInnerPadding:;
+- (void)setDotViewNormalColor:;
+- (void)setDotViewSelectedColor:;
+- (void)setDotViewNormalBorderWidth:;
+- (void)setDotViewNormalBorderColor:;
+- (void)setDotViewSelectedBorderWidth:;
+- (void)setDotViewSelectedBorderColor:;
+- (double)dotViewNormalHeight;
+- (double)dotViewSelectedHeight;
+- (double)dotViewInnerPadding;
+- (id)dotViewNormalColor;
+- (id)dotViewSelectedColor;
+- (double)dotViewNormalBorderWidth;
+- (id)dotViewNormalBorderColor;
+- (double)dotViewSelectedBorderWidth;
+- (id)dotViewSelectedBorderColor;
+- (void).cxx_destruct;
++ (id)defaultConfig;
+@end

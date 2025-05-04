@@ -1,0 +1,30 @@
+@interface AWELifeFeedsAutoPlayPlugin : AWELifeFeedsBasePlugin
+@property (nonatomic) AWELifeFeedsBaseComponentView playingView;
+@property (nonatomic) AWELifeFeedsBaseComponentView resumePlayingView;
+@property (nonatomic) q autoPlayIndex;
+@property (nonatomic) BOOL hasTriggerAutoPlayFirstTime;
+@property (nonatomic) NSArray canPlayViews;
+- (void)playEnd;
+- (void)setHasTriggerAutoPlayFirstTime:;
+- (long long)autoPlayIndex;
+- (void)setAutoPlayIndex:;
+- (id)canPlayViews;
+- (void)autoPlay:;
+- (BOOL)hasTriggerAutoPlayFirstTime;
+- (void)startAutoPlay:;
+- (id)resumePlayingView;
+- (void)setResumePlayingView:;
+- (id)playingView;
+- (void)pageDidEndScroll:scrollView:;
+- (id)nextPlayingList:;
+- (void)setCanPlayViews:;
+- (void)setPlayingView:;
+- (void)componentStartShow:reason:;
+- (void)pageViewDidEndDragging:scrollView:willDecelerate:;
+- (void)pageViewDidEndDecelerating:scrollView:;
+- (void)hostPageDidEndScroll:scrollView:hostPageScrollViewOffset:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+@end

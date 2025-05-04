@@ -1,0 +1,35 @@
+@interface AWEIMAudioEmojiManager : NSObject
+@property (nonatomic) AWEIMEmoticonThemeModel audioEmojiThemeModel;
+@property (nonatomic) NSArray audioEmojiList;
+@property (nonatomic) AWEIMEmoticonInfoModel audioEmojiInfoModel;
+@property (nonatomic) NSDictionary abConfig;
+@property (nonatomic) NSDictionary settingConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableAudioEmojiMsg;
+- (void)setSettingConfig:;
+- (id)abConfig;
+- (void)setAbConfig:;
+- (id)settingConfig;
+- (void)prefetchDefaultAudioEmoji;
+- (BOOL)enableEmoticonTab;
+- (BOOL)enableSendSpeak;
+- (BOOL)enableAudioEmojiMsgWithMsg:;
+- (long long)audioEmojiMaxRedDotGuideCount;
+- (BOOL)isAudioEmojiPlayId:;
+- (void)trackAudioEmojiPlayWithConversation:enterMethod:enterFrom:emoticon:;
+- (id)emoticonModelWithAudioEmojiMessage:;
+- (id)audioEmojiInfoModel;
+- (id)audioEmojiThemeModel;
+- (void)setAudioEmojiInfoModel:;
+- (void)setAudioEmojiThemeModel:;
+- (id)audioEmojiList;
+- (void)setAudioEmojiList:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)resolveAudioEmojiList;
++ (id)reformatAudioEmojiModelArray:;
++ (id)sharedInstance;
+@end

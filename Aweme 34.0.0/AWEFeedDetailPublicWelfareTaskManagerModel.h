@@ -1,0 +1,33 @@
+@interface AWEFeedDetailPublicWelfareTaskManagerModel : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString refer;
+@property (nonatomic) q watchDuration;
+@property (nonatomic) q sunshine;
+@property (nonatomic) q periodAllowedCompletedTimes;
+@property (nonatomic) q requestMethod;
+@property (nonatomic) BOOL showButton;
+@property (nonatomic) NSString taskId;
+@property (nonatomic) NSString scene;
+@property (nonatomic) q timeout;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setRefer:;
+- (id)refer;
+- (long long)watchDuration;
+- (void)setWatchDuration:;
+- (long long)sunshine;
+- (void)setSunshine:;
+- (long long)periodAllowedCompletedTimes;
+- (void)setPeriodAllowedCompletedTimes:;
+- (void)setScene:;
+- (id)scene;
+- (long long)timeout;
+- (void)setTimeout:;
+- (void).cxx_destruct;
+- (id)taskId;
+- (void)setTaskId:;
+- (void)setShowButton:;
+- (BOOL)showButton;
+- (long long)requestMethod;
+- (void)setRequestMethod:;
+@end

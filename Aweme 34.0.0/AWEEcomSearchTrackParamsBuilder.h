@@ -1,0 +1,30 @@
+@interface AWEEcomSearchTrackParamsBuilder : NSObject
+@property (nonatomic) NSMutableDictionary innerParams;
+@property (nonatomic) @? searchID;
+@property (nonatomic) @? logPb;
+@property (nonatomic) @? rank;
+@property (nonatomic) NSMutableDictionary innerParams;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) @? addKVPair;
+@property (nonatomic) @? addKVString;
+@property (nonatomic) @? addKVDict;
+@property (nonatomic) @? addKVArray;
+@property (nonatomic) @? addKVInteger;
+@property (nonatomic) @? mergeDict;
+- (id)logPb;
+- (id)mergeDict;
+- (id)addKVPair;
+- (id)innerParams;
+- (void)setInnerParams:;
+- (id)addKVString;
+- (id)addKVDict;
+- (id)addKVArray;
+- (id)addKVInteger;
+- (id)decorateWith:;
+- (id)init;
+- (id)rank;
+- (void).cxx_destruct;
+- (id)params;
+- (id)searchID;
++ (id)builderWithBlock:;
+@end

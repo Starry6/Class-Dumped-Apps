@@ -1,0 +1,38 @@
+@interface AWEIMExchangeAnswerStrategyConfig : MTLModel
+@property (nonatomic) NSString textURL;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSArray backgroundColor;
+@property (nonatomic) NSArray backgroundInfo;
+@property (nonatomic) NSArray questionList;
+@property (nonatomic) q priority;
+@property (nonatomic) q randomNum;
+@property (nonatomic) BOOL shouldLoadData;
+@property (nonatomic) <IESIMExchangeAnswerResourceProtocol> resourceLoader;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundInfo;
+- (void)setBackgroundInfo:;
+- (void)setQuestionList:;
+- (id)questionList;
+- (id)textURL;
+- (void)setShouldLoadData:;
+- (long long)randomNum;
+- (void)setTextURL:;
+- (void)setRandomNum:;
+- (void)setResourceLoader:;
+- (id)version;
+- (id)resourceLoader;
+- (long long)priority;
+- (void)setVersion:;
+- (id)backgroundColor;
+- (void)setPriority:;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (BOOL)shouldLoadData;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)backgroundInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

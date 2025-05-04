@@ -1,0 +1,32 @@
+@interface AWEECOMIMChatTopInfoButtonStyle : MTLModel
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double borderRadius;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) double textSize;
+@property (nonatomic) NSArray padding;
+@property (nonatomic) NSString backgroundColorStart;
+@property (nonatomic) NSString backgroundColorEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundColorEnd;
+- (void)setBackgroundColorEnd:;
+- (id)backgroundColorStart;
+- (void)setBackgroundColorStart:;
+- (void)setBorderColor:;
+- (void)setBorderWidth:;
+- (id)padding;
+- (double)borderWidth;
+- (id)borderColor;
+- (void)setTextColor:;
+- (void)setPadding:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (double)textSize;
+- (double)borderRadius;
+- (void)setTextSize:;
+- (void)setBorderRadius:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

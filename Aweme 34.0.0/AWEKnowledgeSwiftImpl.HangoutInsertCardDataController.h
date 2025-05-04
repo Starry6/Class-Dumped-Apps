@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutInsertCardDataController : _TtCs12_SwiftObject
+@end

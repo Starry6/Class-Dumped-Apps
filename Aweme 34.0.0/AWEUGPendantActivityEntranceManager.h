@@ -1,0 +1,34 @@
+@interface AWEUGPendantActivityEntranceManager : NSObject
+@property (nonatomic) q currentSettingsVersion;
+@property (nonatomic) AWEUGPendantActivityCollectionManager feedCollectionManager;
+@property (nonatomic) UIView entranceBaseView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)feedCanPullRefresh:;
+- (long long)currentSettingsVersion;
+- (void)setupObservation;
+- (void)setupPendantBaseView:type:;
+- (void)trackLogWithKey:message:;
+- (void)cleanActivityPendantData;
+- (BOOL)isFCollectShowingPendantWithType:;
+- (id)getCurrentActivityControllerWithType:;
+- (void)syncPendantActivity:;
+- (BOOL)isShowingPendantWithType:;
+- (void)registerPendantAdapter:type:identify:;
+- (void)updateActivityData:identify:;
+- (void)setCurrentSettingsVersion:;
+- (void)updateActivityCollectionManager;
+- (void)setEntranceBaseView:;
+- (id)feedCollectionManager;
+- (BOOL)isShowingPendantWithType:level:;
+- (void)changePendantHiddenStatus:withLevel:;
+- (void)changeFCollectPendantHiddenStatus:;
+- (id)entranceBaseView;
+- (void)setFeedCollectionManager:;
+- (void)updateActivity;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,30 @@
+@interface AWEHPTabBarBGSkinResource : MTLModel
+@property (nonatomic) NSString geckoChannel;
+@property (nonatomic) NSString leftPathLight;
+@property (nonatomic) NSString leftPathDark;
+@property (nonatomic) NSString rightPathLight;
+@property (nonatomic) NSString rightPathDark;
+@property (nonatomic) NSString backgroundPathLight;
+@property (nonatomic) NSString backgroundPathDark;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)geckoChannel;
+- (void)setGeckoChannel:;
+- (id)backgroundPathDark;
+- (id)backgroundPathLight;
+- (id)leftPathDark;
+- (id)leftPathLight;
+- (id)rightPathDark;
+- (id)rightPathLight;
+- (void)setLeftPathLight:;
+- (void)setLeftPathDark:;
+- (void)setRightPathLight:;
+- (void)setRightPathDark:;
+- (void)setBackgroundPathLight:;
+- (void)setBackgroundPathDark:;
+- (BOOL)isValidWithError:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

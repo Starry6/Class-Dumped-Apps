@@ -1,0 +1,33 @@
+@interface AWELeftSideBarPerfMonitorModel : NSObject
+@property (nonatomic) AWELeftSideBarContainerPerfCostInfosModel containerPerfCostInfosModel;
+@property (nonatomic) NSMutableDictionary businessPerfCostInfosModels;
+@property (nonatomic) NSMutableDictionary openBizPageCostInfosModels;
+@property (nonatomic) NSString identification;
+@property (nonatomic) BOOL sideBarHasOpen;
+@property (nonatomic) BOOL hasContainerTrack;
+@property (nonatomic) NSString dataHash;
+- (void)setIdentification:;
+- (id)getBusinessKeyWithId:withType:;
+- (id)getBusinessPerfCostInfosModelByKey:;
+- (id)containerPerfCostInfosModel;
+- (void)setSideBarHasOpen:;
+- (BOOL)hasContainerTrack;
+- (void)setHasContainerTrack:;
+- (BOOL)sideBarHasOpen;
+- (void)resetAllPageCostInfoModel;
+- (void)traverseOpenBizPageCostInfoModelWithBlock:;
+- (void)resetOpenBizPageCostInfoModelByKey:;
+- (id)getOpenBizPageCostInfoModelByKey:;
+- (void)setContainerPerfCostInfosModel:;
+- (void)setBusinessPerfCostInfosModels:;
+- (void)setOpenBizPageCostInfosModels:;
+- (id)businessPerfCostInfosModels;
+- (id)openBizPageCostInfosModels;
+- (id)getContainerPerfCostInfoString;
+- (id)getBusinessPerfCostInfoString;
+- (id)init;
+- (id)dataHash;
+- (void).cxx_destruct;
+- (id)identification;
+- (void)setDataHash:;
+@end

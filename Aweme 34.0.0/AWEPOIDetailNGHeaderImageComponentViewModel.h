@@ -1,0 +1,34 @@
+@interface AWEPOIDetailNGHeaderImageComponentViewModel : DitoComponentViewModel
+@property (nonatomic) NSString nodeTag;
+@property (nonatomic) BOOL hasTracked;
+@property (nonatomic) BOOL showLynxView;
+@property (nonatomic) BOOL showHeaderView;
+@property (nonatomic) Q bizType;
+@property (nonatomic) NSArray imageURLList;
+@property (nonatomic) double originImageHeight;
+@property (nonatomic) AWEPOIDetailHeaderImageComponentBaseView componentView;
+- (BOOL)hasTracked;
+- (void)setHasTracked:;
+- (unsigned long long)bizType;
+- (double)originImageHeight;
+- (id)poiDetail;
+- (id)imageURLList;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (void)didLoadPageModel:;
+- (void)didHalfContainerOffsetChange:offset:;
+- (void)vsdContainer:offsetChange:;
+- (void)handleClickEvent:;
+- (id)nodeTag;
+- (void)setNodeTag:;
+- (id)generalContext;
+- (BOOL)showHeaderView;
+- (BOOL)showLynxView;
+- (void)setShowLynxView:;
+- (void)setShowHeaderView:;
+- (id)initWithNode:;
+- (double)screenWidth;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setComponentView:;
+@end

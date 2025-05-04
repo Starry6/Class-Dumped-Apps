@@ -1,0 +1,38 @@
+@interface AWERateAlertManager : NSObject
+@property (nonatomic) BOOL hasEnteredUnreadLikesList;
+@property (nonatomic) UIWindow rateWindow;
+@property (nonatomic) UIWindow lastWindow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)markEnteringLikesListWithUnreadCount:;
+- (id)lastWindow;
+- (void)tabBarController:didSelectItemType:previousItemType:;
+- (void)setLastWindow:;
+- (BOOL)isRateAlertShowing;
+- (void)showRateAlertIfNeededForType:;
+- (void)showRateAlertIfNeededForType:withCloseBlock:;
+- (BOOL)shouldShowRateAlertForType:;
+- (void)notifyUserActiveAction:;
+- (id)dayComponentsStringForToday;
+- (id)dayComponentsStringForDate:;
+- (id)rateWindow;
+- (id)versionKeyForShownupForType:;
+- (id)lastShownupKeyForType:;
+- (id)alertTypeStringFromType:;
+- (void)setRateWindow:;
+- (id)hasRepliedVersionKey;
+- (BOOL)checkCommonAlertShowUpConditionForType:;
+- (BOOL)checkSpecificAlertShowUpConditionForType:;
+- (BOOL)checkAlertHasRecentlyShownUpForType:interval:;
+- (long long)appLaunchTimesInDays:;
+- (BOOL)hasEnteredUnreadLikesList;
+- (void)setHasEnteredUnreadLikesList:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)appDidBecomeActive;
++ (void)_aweLazyRegisterLoad;
++ (id)sharedManager;
+@end

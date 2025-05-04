@@ -1,0 +1,38 @@
+@interface AWEHotSpotBarrageDataManager : NSObject
+@property (nonatomic) NSMutableArray dataList;
+@property (nonatomic) AWEHotSpotCommentManager commentListManager;
+@property (nonatomic) NSNumber offset;
+@property (nonatomic) NSNumber pageCount;
+@property (nonatomic) NSString keyWord;
+@property (nonatomic) q sentenceId;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL disableAuthorInfo;
+- (id)referString;
+- (void)setDataList:;
+- (long long)sentenceId;
+- (void)setSentenceId:;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (id)keyWord;
+- (void)fetchCommentsWithCompletion:;
+- (void)setKeyWord:;
+- (id)initWithKeyWord:sentenaceId:;
+- (void)resetShownState;
+- (BOOL)disableAuthorInfo;
+- (void)setDisableAuthorInfo:;
+- (id)commentListManager;
+- (void)setCommentListManager:;
+- (void)setModel:;
+- (id)pageCount;
+- (id)init;
+- (void)setOffset:;
+- (id)offset;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (id)model;
+- (void)setPageCount:;
+- (void).cxx_destruct;
+- (id)dataList;
+@end

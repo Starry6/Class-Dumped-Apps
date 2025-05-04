@@ -1,0 +1,30 @@
+@interface AWEIMLiveGroupUserModel : AWEBaseApiModel
+@property (nonatomic) q userId;
+@property (nonatomic) NSString userNickname;
+@property (nonatomic) AWEURLModel urlModel;
+@property (nonatomic) AWEIMLiveGroupOwnRoomModel ownRoom;
+@property (nonatomic) q secret;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString idStr;
+@property (nonatomic) NSString text;
+- (id)secUid;
+- (id)ownRoom;
+- (void)setSecUid:;
+- (id)urlModel;
+- (void)setUrlModel:;
+- (void)setUserNickname:;
+- (id)userNickname;
+- (void)setOwnRoom:;
+- (long long)userId;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (long long)secret;
+- (void)setSecret:;
+- (id)idStr;
+- (void)setIdStr:;
++ (id)urlModelJSONTransformer;
++ (id)ownRoomJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

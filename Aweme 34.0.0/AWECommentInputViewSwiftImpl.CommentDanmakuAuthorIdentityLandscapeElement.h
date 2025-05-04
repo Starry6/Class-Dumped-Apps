@@ -1,0 +1,3 @@
+@interface AWECommentInputViewSwiftImpl.CommentDanmakuAuthorIdentityLandscapeElement : AWECommentInputViewSwiftImpl.CommentDanmakuAuthorIdentityElement
+- (id)init;
+@end

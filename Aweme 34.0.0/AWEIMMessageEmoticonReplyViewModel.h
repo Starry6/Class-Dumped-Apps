@@ -1,0 +1,30 @@
+@interface AWEIMMessageEmoticonReplyViewModel : NSObject
+@property (nonatomic) Q vmType;
+@property (nonatomic) AWEIMMessagePropertyItemGroup itemGroup;
+@property (nonatomic) UIImage image;
+@property (nonatomic) YYTextLayout titleLayout;
+@property (nonatomic) {CGSize=dd} titleSize;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} itemFrame;
+@property (nonatomic) BOOL isLastInLine;
+@property (nonatomic) @? userCallback;
+@property (nonatomic) @? moreCallback;
+- (id)userCallback;
+- (void)setTitleSize:;
+- (unsigned long long)vmType;
+- (void)setVmType:;
+- (void)setItemFrame:;
+- (void)setMoreCallback:;
+- (void)setIsLastInLine:;
+- (BOOL)isLastInLine;
+- (id)moreCallback;
+- (id)image;
+- (void)setImage:;
+- (void)setItemGroup:;
+- (void).cxx_destruct;
+- (id)itemGroup;
+- (id)titleSize;
+- (void)setUserCallback:;
+- (id)titleLayout;
+- (id)itemFrame;
+- (void)setTitleLayout:;
+@end

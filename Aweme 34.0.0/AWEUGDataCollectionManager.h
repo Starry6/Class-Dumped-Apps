@@ -1,0 +1,36 @@
+@interface AWEUGDataCollectionManager : HTSService
+@property (nonatomic) NSArray strategiesData;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) NSArray datas;
+@property (nonatomic) NSArray businessData;
+@property (nonatomic) NSMutableArray dataRequestBlock;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} lock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)businessData;
+- (void)setBusinessData:;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)getUGBusinessDataWithCompletion:;
+- (void)requestUGSettingsData;
+- (void)reportTriggeredStrategy:withCompletion:;
+- (void)requestDistributionWithCompletion:;
+- (void)trackLogWithMessage:;
+- (void)notifyDataRequestCompleted;
+- (id)dataRequestBlock;
+- (void)updateNewInstallMark;
+- (double)getLastRequestTime;
+- (id)processRawStrategyConfigData:;
+- (id)strategiesData;
+- (void)setStrategiesData:;
+- (void)setDataRequestBlock:;
+- (id)init;
+- (void)setLock:;
+- (id)lock;
+- (double)getCurrentTime;
+- (void).cxx_destruct;
+- (id)datas;
+- (void)setDatas:;
+@end

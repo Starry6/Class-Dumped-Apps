@@ -1,0 +1,2 @@
+@interface AWESiriServiceDefine : NSObject
+@end

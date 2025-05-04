@@ -1,0 +1,32 @@
+@interface AWEAdPopupWebViewController : AWEAdWebViewController
+@property (nonatomic) UIView<AWEAdPopupWebViewTopBar> topBar;
+@property (nonatomic) BOOL isFullScreen;
+@property (nonatomic) DUXPartialSheet partialSheet;
+@property (nonatomic) BOOL isHalfToFull;
+@property (nonatomic) @? pageChangeCallback;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)partialSheet:didChangeFrame:withUserInteraction:;
+- (void)closeWebView;
+- (void)setIsHalfToFull:;
+- (void)popupOnViewController:completion:;
+- (void)setPageChangeCallback:;
+- (void)configViews;
+- (void)setPartialSheet:;
+- (id)partialSheet;
+- (void)showFullNavigationAnimation;
+- (void)showHalfTopBarAnimation;
+- (void)closeButtonDidClicked:;
+- (BOOL)isHalfToFull;
+- (id)pageChangeCallback;
+- (BOOL)isFullScreen;
+- (void)viewDidLoad;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)topBar;
+- (void)setTopBar:;
+- (BOOL)shouldShowProgressBar;
+- (void)setIsFullScreen:;
+@end

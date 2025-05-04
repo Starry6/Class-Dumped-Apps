@@ -1,0 +1,34 @@
+@interface AWEStoryToolBar : UIView
+@property (nonatomic) UIView lineView;
+@property (nonatomic) AWEEditGradientView gradientView;
+@property (nonatomic) q type;
+@property (nonatomic) UIButton leftButton;
+@property (nonatomic) UIButton alignmentButton;
+@property (nonatomic) UIButton textReaderButton;
+@property (nonatomic) AWEStoryFontChooseView fontChooseView;
+@property (nonatomic) AWEStoryColorChooseView colorChooseView;
+- (id)colorChooseView;
+- (id)fontChooseView;
+- (void)setColorChooseView:;
+- (id)alignmentButton;
+- (void)setFontChooseView:;
+- (void)setAlignmentButton:;
+- (void)setupChooseColorAndFontWithoutAlignUI;
+- (void)setupChooseColorAndFontUI;
+- (void)setupChooseColorFontAndTextReaderUI;
+- (void)setupChooseColorUI;
+- (id)textReaderButton;
+- (void)setTextReaderButton:;
+- (void)setLeftButton:;
+- (id)gradientView;
+- (id)leftButton;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)initWithType:;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
++ (double)barHeight;
+@end

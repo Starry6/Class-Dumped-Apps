@@ -1,0 +1,37 @@
+@interface AWEUserRecommendCampaignCellModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString mainBtnText;
+@property (nonatomic) NSString removeBtnText;
+@property (nonatomic) NSString schema;
+@property (nonatomic) q exitImprNotClickDays;
+@property (nonatomic) NSString activityType;
+@property (nonatomic) NSString activityVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)aweur_cellType;
+- (id)activityVersion;
+- (id)mainBtnText;
+- (id)removeBtnText;
+- (long long)exitImprNotClickDays;
+- (void)setExitImprNotClickDays:;
+- (void)setMainBtnText:;
+- (void)setRemoveBtnText:;
+- (void)setActivityVersion:;
+- (id)schema;
+- (id)init;
+- (void)setActivityType:;
+- (void)setSchema:;
+- (id)subtitle;
+- (id)icon;
+- (void)setSubtitle:;
+- (id)activityType;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

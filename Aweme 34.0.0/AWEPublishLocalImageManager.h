@@ -1,0 +1,35 @@
+@interface AWEPublishLocalImageManager : NSObject
+@property (nonatomic) double maxCacheAge;
+@property (nonatomic) Q maxCacheSize;
+@property (nonatomic) NSMutableDictionary cacheMetaInfo;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+- (BOOL)cacheAwemeWithId:resources:;
+- (void)onAwemeDelete:;
+- (void)removeExpiredCache;
+- (id)cacheRootPath;
+- (id)cacheMetaInfo;
+- (id)cachePathWithAwemeId:;
+- (void)trackRemoveCache:removeReason:;
+- (void)storeAwemeCacheInvalidInfoWithAwemeID:errorCode:extraErrorMsg:;
+- (BOOL)removeCacheWithAwemeId:;
+- (unsigned long long)itemSizeAtPath:;
+- (BOOL)cacheAwemeWithId:uri:filePath:;
+- (void)removeCachesExceedConstraint;
+- (id)fileCachePathWithAwemeId:uri:isVideo:;
+- (void)setExternalError:errorCode:extraErrorMsg:;
+- (BOOL)removeCacheFileWithAwemeId:;
+- (id)cachePathWithAwemeId:awemeModel:imageModel:uri:createTime:isVideo:scene:error:;
+- (BOOL)removeAllCachesWithScene:;
+- (void)debug_copyFileFailed:;
+- (void)setCacheMetaInfo:;
+- (id)init;
+- (void)setQueue:;
+- (void)setup;
+- (double)maxCacheAge;
+- (void)setMaxCacheAge:;
+- (void).cxx_destruct;
+- (id)queue;
+- (unsigned long long)maxCacheSize;
+- (void)setMaxCacheSize:;
++ (id)sharedManager;
+@end

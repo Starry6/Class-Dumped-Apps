@@ -1,0 +1,37 @@
+@interface AWEPOISessionManager : NSObject
+@property (nonatomic) NSMutableDictionary sessions;
+@property (nonatomic) NSMutableDictionary storeParams;
+@property (nonatomic) NSMutableDictionary storeEvents;
+@property (nonatomic) NSMutableDictionary keyChangeHistory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)storeInfoInSession:info:;
+- (void)updateKeyChangeHistoryById:info:caller:;
+- (BOOL)appendInfoInSession:info:targetKey:;
+- (void)startSessionWithSessionID:;
+- (BOOL)storeInfoInSession:info:caller:;
+- (BOOL)poi_setStoreParams:toSessionID:;
+- (id)poi_fetchStoreParamsWithSessionID:;
+- (BOOL)poi_callLynxEvent:params:inSession:;
+- (BOOL)poi_registerLynxEvent:containerID:inSession:;
+- (BOOL)poi_removeLynxEvent:containerID:inSession:;
+- (id)getKeyChangeHistoryById:;
+- (id)storeParams;
+- (id)storeEvents;
+- (id)keyChangeHistory;
+- (void)notifyLynxSessionInfoChanged:;
+- (void)setStoreParams:;
+- (void)setStoreEvents:;
+- (void)setKeyChangeHistory:;
+- (id)sessions;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setSessions:;
+- (id)startSession;
+- (id)fetchSessionInfo:;
+- (void)stopSession:;
++ (id)sharedManager;
+@end

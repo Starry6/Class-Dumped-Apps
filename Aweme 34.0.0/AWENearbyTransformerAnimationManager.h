@@ -1,0 +1,36 @@
+@interface AWENearbyTransformerAnimationManager : NSObject
+@property (nonatomic) Q cardType;
+@property (nonatomic) NSArray iconURLModels;
+@property (nonatomic) AWENearbySettingsResponse settingsResponse;
+@property (nonatomic) NSArray iconFrameArray;
+@property (nonatomic) double beginTime;
+- (id)settingsResponse;
+- (void)setSettingsResponse:;
+- (void)trackAnimationInteruptBySwitchTab;
+- (void)trackAnimationInteruptByCloseTransformer;
+- (void)trackAnimationInteruptByUpdate;
+- (BOOL)canShowTransformerGuideAnimation;
+- (void)trackAnimationBegin;
+- (id)iconFrameArray;
+- (id)iconURLModels;
+- (void)recordShowTransformerGuideAnimation;
+- (void)trackAnimationEnd;
+- (void)trackAnimationWithoutIconFrame;
+- (void)updateIconLayoutInfo:;
+- (void)updateIconURLModelsWithSettingsResponse:;
+- (id)__transformerAnimationGuideSettings;
+- (long long)__times;
+- (long long)__period;
+- (long long)__everyDayTimes;
+- (void)setIconURLModels:;
+- (void)setIconFrameArray:;
+- (double)beginTime;
+- (void)setBeginTime:;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (unsigned long long)cardType;
+- (void)setCardType:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEIMChatRoomInviteMessage : AWEIMMessage
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString brief;
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) BOOL hasAuthJoinRoom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)brief;
+- (void)setBrief:;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (void)setHasAuthJoinRoom:;
+- (void)updateHasAuthJoinRoom:;
+- (BOOL)hasAuthJoinRoom;
+- (id)roomID;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRoomID:;
+- (void)setTitle:;
+- (id)copyWithZone:;
+- (id)coverURL;
+- (void)setCoverURL:;
++ (long long)customMessageType;
++ (id)identifier;
+@end

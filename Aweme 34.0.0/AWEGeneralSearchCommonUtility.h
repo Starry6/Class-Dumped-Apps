@@ -1,0 +1,2 @@
+@interface AWEGeneralSearchCommonUtility : NSObject
+@end

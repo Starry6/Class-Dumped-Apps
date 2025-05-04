@@ -1,0 +1,38 @@
+@interface AWENearbySwitchChannelPanelContentView : UIView
+@property (nonatomic) <AWECityManagerProtocol> cityManager;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) q currentFeedType;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) @? channelSelectBlock;
+@property (nonatomic) @? citySelectBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)currentFeedType;
+- (void)setCurrentFeedType:;
+- (void)setCitySelectBlock:;
+- (void)switchChannel:;
+- (id)initWithFeedType:;
+- (void)reloadCitiesData;
+- (id)channelSelectBlock;
+- (id)citySelectBlock;
+- (void)onCitySelected:;
+- (void)setChannelSelectBlock:;
+- (id)collectionView:layout:referenceSizeForHeaderInSection:;
+- (id)collectionView;
+- (id)sections;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setSections:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setupUI;
+- (void)reloadData:;
+- (void)setCityManager:;
+- (id)cityManager;
+@end

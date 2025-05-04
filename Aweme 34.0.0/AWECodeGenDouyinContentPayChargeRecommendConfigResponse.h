@@ -1,0 +1,35 @@
+@interface AWECodeGenDouyinContentPayChargeRecommendConfigResponse : AWEBaseResponseModel
+@property (nonatomic) AWECodeGenDouyinContentPayChargeRecommendConfig recommendConfig;
+@property (nonatomic) NSArray trialTimeArray;
+@property (nonatomic) NSArray priceArray;
+@property (nonatomic) AWECodeGenTrailTimeThresholdModel minTrailTimeModel;
+@property (nonatomic) AWECodeGenTrailTimeThresholdModel maxTrailTimeModel;
+@property (nonatomic) q recommendTrailTime;
+@property (nonatomic) q chargeEditLimitNum;
+@property (nonatomic) NSString chargeExtra;
+- (id)trialTimeArray;
+- (void)setTrialTimeArray:;
+- (id)priceArray;
+- (void)setPriceArray:;
+- (id)minTrailTimeModel;
+- (void)setMinTrailTimeModel:;
+- (id)maxTrailTimeModel;
+- (void)setMaxTrailTimeModel:;
+- (long long)recommendTrailTime;
+- (void)setRecommendTrailTime:;
+- (long long)chargeEditLimitNum;
+- (void)setChargeEditLimitNum:;
+- (id)chargeExtra;
+- (void)setChargeExtra:;
+- (id)recommendConfig;
+- (void)setRecommendConfig:;
+- (id)limitMinTrailTimeToastContent;
+- (id)limitMaxTrailTimeToastContent;
+- (void)setMinTrailTimeSeconds:;
+- (double)minTrailTimeSeconds;
+- (void)setMaxTrailTimeSeconds:;
+- (double)maxTrailTimeSeconds;
+- (void).cxx_destruct;
++ (id)defaultConfig;
++ (id)JSONKeyPathsByPropertyKey;
+@end

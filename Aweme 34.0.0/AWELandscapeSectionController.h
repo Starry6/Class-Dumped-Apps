@@ -1,0 +1,32 @@
+@interface AWELandscapeSectionController : AWEBaseListSectionController
+@property (nonatomic) AWELandscapePreloadController preloadManager;
+@property (nonatomic) AWELandscapeMediumVideoPlayerCellPreloadController mediumCellPreloadManager;
+@property (nonatomic) UIViewController<AWEAwemePlayVideoViewControllerProtocol><AWEAwemeBizPlayVideoProtocol><AWEPlayVideoViewControllerProtocol> playerViewController;
+@property (nonatomic) AWELandscapeContext landscapeContext;
+@property (nonatomic) AWELandscapePageContext pageContext;
+- (void)configCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)viewControllerDidAppear:;
+- (void)viewControllerDidDisappear:;
+- (id)aAWEPadModuleAdapter;
+- (id)preloadManager;
+- (void)setPreloadManager:;
+- (id)landscapeContext;
+- (void)setLandscapeContext:;
+- (void)configPreloadManager;
+- (id)mediumCellPreloadManager;
+- (void)setMediumCellPreloadManager:;
+- (void)configBaseCell:index:model:;
+- (id)preloadModelAtIndex:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)playerViewController;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (void)setPlayerViewController:;
+- (void)setPageContext:;
+- (id)pageContext;
++ (Class)aAWEPadModuleAdapterClass;
+@end

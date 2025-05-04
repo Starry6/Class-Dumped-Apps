@@ -1,0 +1,31 @@
+@interface AWEDetailBottomActionViewManager : NSObject
+@property (nonatomic) <AWEDetailViewModelProtocol> viewModel;
+@property (nonatomic) IESServiceProvider serviceProvider;
+@property (nonatomic) AWEDetailBottomActionView bottomActionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)collectButton;
+- (id)shootButton;
+- (double)bottomViewHeight;
+- (void)bindViewModel;
+- (void)handleDetailInfoFetchStateChange;
+- (id)shootButtonConfig;
+- (id)bottomActionView;
+- (void)updateBottomActionButtonConfigs;
+- (id)setupBottomViewConfigs;
+- (void)resetBottomViewWithConfigs:;
+- (id)collectButtonConfig;
+- (id)shootButtonKey;
+- (id)initWithServiceProvider:viewModel:;
+- (void)updateShootButtonWithTitle:icon:;
+- (void)updateShootButtonToDefaultStyle;
+- (void)setBottomActionView:;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (id)serviceProvider;
+- (void)setServiceProvider:;
+@end

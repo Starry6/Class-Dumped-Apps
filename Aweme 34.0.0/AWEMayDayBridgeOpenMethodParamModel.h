@@ -1,0 +1,34 @@
+@interface AWEMayDayBridgeOpenMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSDictionary state;
+@property (nonatomic) BOOL replace;
+@property (nonatomic) BOOL disableAnimation;
+@property (nonatomic) BOOL useSysBrowser;
+@property (nonatomic) NSString memoryLevel;
+@property (nonatomic) NSString backToSchema;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL isRoot;
+@property (nonatomic) BOOL firstClose;
+- (BOOL)replace;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)backToSchema;
+- (void)setBackToSchema:;
+- (BOOL)firstClose;
+- (BOOL)useSysBrowser;
+- (void)setReplace:;
+- (void)setFirstClose:;
+- (void)setUseSysBrowser:;
+- (id)schema;
+- (void)setSchema:;
+- (BOOL)disableAnimation;
+- (id)state;
+- (BOOL)isRoot;
+- (void).cxx_destruct;
+- (void)setState:;
+- (void)setIsRoot:;
+- (void)setMemoryLevel:;
+- (id)memoryLevel;
+- (void)setDisableAnimation:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWEMusicCardDailyPlaylistDialogViewModel : NSObject
+@property (nonatomic) NSMutableArray songList;
+@property (nonatomic) BOOL hasMoreSong;
+@property (nonatomic) q cursor;
+@property (nonatomic) NSString lunaTrackId;
+@property (nonatomic) NSString playlistId;
+@property (nonatomic) Q sceneType;
+@property (nonatomic) NSNumber limitCount;
+@property (nonatomic) BOOL canShowSkeletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (id)playlistInfo;
+- (id)playlistId;
+- (void)setPlaylistId:;
+- (BOOL)hasMoreSong;
+- (id)songList;
+- (void)setHasMoreSong:;
+- (void)setSongList:;
+- (BOOL)canShowSkeletion;
+- (void)setCanShowSkeletion:;
+- (void)requestDailyPlaylistDetailWithCompletion:;
+- (id)lunaTrackId;
+- (void)setLunaTrackId:;
+- (long long)cursor;
+- (id)limitCount;
+- (id)init;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)setLimitCount:;
+- (unsigned long long)sceneType;
+- (void)setSceneType:;
+@end

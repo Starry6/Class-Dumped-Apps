@@ -1,0 +1,38 @@
+@interface AWETabMallRollBackView : UIView
+@property (nonatomic) BOOL hasWind;
+@property (nonatomic) UIVisualEffectView blurView;
+@property (nonatomic) UIView subMaskView;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UIButton action;
+@property (nonatomic) q styleType;
+@property (nonatomic) @? rollBackBlock;
+- (void)setStyleType:;
+- (void)setupDefaultStyle;
+- (void)updateRollBackTitle:;
+- (void)setRollBackBlock:;
+- (BOOL)hasPackUp;
+- (void)packUp;
+- (void)setupCornerOptStyle;
+- (void)setupTitleOptStyle;
+- (void)setHasWind:;
+- (void)rollBack:;
+- (void)setSubMaskView:;
+- (id)subMaskView;
+- (BOOL)hasWind;
+- (void)packUpDefaultStyle;
+- (void)packUpCornerOptStyle;
+- (id)rollBackBlock;
+- (id)init;
+- (id)blurView;
+- (id)icon;
+- (void)setBlurView:;
+- (void)setup;
+- (void)setAction:;
+- (id)action;
+- (long long)styleType;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+@end

@@ -1,0 +1,31 @@
+@interface AWENearbyFeedDualAnchorInfo : AWEBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) AWEURLModel anchorIcon;
+@property (nonatomic) NSString anchorIconText;
+@property (nonatomic) NSString name;
+@property (nonatomic) AWEURLModel groupIcon;
+@property (nonatomic) q isLocalLifeVideo;
+@property (nonatomic) q uiStyle;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString poiId;
+- (void)setAnchorIcon:;
+- (id)groupIcon;
+- (id)anchorIcon;
+- (id)anchorIconText;
+- (void)setAnchorIconText:;
+- (void)setGroupIcon:;
+- (long long)isLocalLifeVideo;
+- (void)setIsLocalLifeVideo:;
+- (id)schema;
+- (void)setUiStyle:;
+- (void)setSchema:;
+- (long long)type;
+- (void)setType:;
+- (long long)uiStyle;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)poiId;
+- (void)setPoiId:;
++ (BOOL)automaticallyDefaultMapping;
+@end

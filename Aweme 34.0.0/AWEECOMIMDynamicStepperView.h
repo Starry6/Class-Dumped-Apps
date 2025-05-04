@@ -1,0 +1,38 @@
+@interface AWEECOMIMDynamicStepperView : AWEECOMIMDynamicCardBaseElementView
+@property (nonatomic) UIControl tapControl;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) BDPCDDynamicCardDashedLineView tipLineView;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) UIView titleView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel distinctLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel timeLabel;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (id)distinctLabel;
+- (void)setDescLineNumber:;
+- (unsigned long long)descLineNumber;
+- (id)tapControl;
+- (void)setTapControl:;
+- (void)setDistinctLabel:;
+- (void)updateWithElememtModel:;
+- (double)heightWithElementModel:;
+- (id)tipLineView;
+- (void)setTipLineView:;
+- (id)titleView;
+- (void)setTitleView:;
+- (id)stackView;
+- (void)setStackView:;
+- (void)setTimeLabel:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (id)titleLabel;
++ (double)designHeightWithDescLineNum:;
++ (id)sizeWithElementModel:maxSize:;
++ (double)heightWithElementModel:maxSize:;
+@end

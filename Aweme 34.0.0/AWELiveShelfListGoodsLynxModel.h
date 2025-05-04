@@ -1,0 +1,2 @@
+@interface AWELiveShelfListGoodsLynxModel : AWELiveShelfListGoodsModel
+@end

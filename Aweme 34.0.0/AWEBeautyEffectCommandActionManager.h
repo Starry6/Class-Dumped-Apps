@@ -1,0 +1,36 @@
+@interface AWEBeautyEffectCommandActionManager : NSObject
+@property (nonatomic) AWEBeautyEffectCommandActionContext context;
+@property (nonatomic) @? effectCommandActionManagerActionChangeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateActionModels:type:;
+- (BOOL)isEditStatusWithType:;
+- (void)removeAllActionModelsWithType:;
+- (void)updateActionModel:type:;
+- (id)findAllActionModelsWithType:;
+- (void)updateActionModel:type:isResponseUpdateBlockStatus:;
+- (void)addBeautifulEffectActionModel:;
+- (void)removeBeautifulEffectActionModel:;
+- (void)removeAllBeautifulEffectActionModels;
+- (void)updateBeautifulEffectActionModel:;
+- (void)updateBeautifulEffectActionModel:isResponseUpdateBlockStatus:;
+- (void)updateBeautifulEffectActionModels:;
+- (id)findBeautifulEffectActionModelWithId:;
+- (void)applyBeautifulEffectWithCompleteHandler:;
+- (BOOL)isEditStatusByBeautifulEffect;
+- (id)effectCommandActionManagerActionChangeBlock;
+- (void)updateBeautifulEffectActionModels:isResponseUpdateBlockStatus:;
+- (id)allNodeIds;
+- (void)addActionModel:type:;
+- (void)removeActionModel:type:;
+- (void)applyWithType:completeHandler:;
+- (id)findActionModel:type:;
+- (id)nodeIdsWithModels:;
+- (BOOL)containsNodeIdWithModels:targetNodeId:;
+- (void)setEffectCommandActionManagerActionChangeBlock:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

@@ -1,0 +1,2 @@
+@interface AWEClassroomModel.ClassroomNewServiceEntranceExtra : _TtCs12_SwiftObject
+@end

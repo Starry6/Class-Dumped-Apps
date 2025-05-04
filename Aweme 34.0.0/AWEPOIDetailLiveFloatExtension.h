@@ -1,0 +1,37 @@
+@interface AWEPOIDetailLiveFloatExtension : NSObject
+@property (nonatomic) <AWELiveFloatOnTopManagerProtocol> liveManager;
+@property (nonatomic) <AWEPOILiveFloatOnTop> floatOnTopManager;
+@property (nonatomic) UIViewController preViewController;
+@property (nonatomic) NSString enterFromLiveRoom;
+@property (nonatomic) Q floatLiveWindowStatus;
+@property (nonatomic) DitoPageContext context;
+@property (nonatomic) <DitoExtensionContainerProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithRouterParamDict:;
+- (void)detachLiveFloatOnTop;
+- (void)attachLiveFloatOnTop;
+- (id)preViewController;
+- (void)initializeExtension;
+- (void)setPreViewController:;
+- (void)setEnterFromLiveRoom:;
+- (BOOL)shouldShowNewLiveFloatWindow;
+- (void)setupLiveFloatOnTopStateBlockIfNeeded;
+- (id)enterFromLiveRoom;
+- (id)liveManager;
+- (void)setFloatLiveWindowStatus:;
+- (id)floatOnTopManager;
+- (unsigned long long)floatLiveWindowStatus;
+- (void)setLiveManager:;
+- (void)setFloatOnTopManager:;
+- (void)setContainer:;
+- (id)container;
+- (void)viewDidLoad;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (id)context;
+- (void)viewWillDisappear;
+@end

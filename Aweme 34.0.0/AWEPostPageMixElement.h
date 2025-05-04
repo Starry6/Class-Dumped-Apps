@@ -1,0 +1,33 @@
+@interface AWEPostPageMixElement : AWEPostPageCellElement
+@property (nonatomic) AWENewPublishTableCell mixCell;
+@property (nonatomic) AWEPostPageMixManager manager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)publishViewModel;
+- (BOOL)isAlbumVideo;
+- (void)setupCell:;
+- (id)mixCell;
+- (void)showMixInformationList;
+- (void)updateWithMixInfo:;
+- (BOOL)defaultDynamicTheme;
+- (void)updateWithMixModel:;
+- (void)cancelJoinMix;
+- (void)AWEPostPageMixManager:currentMixDidChangeWith:placeHolder:;
+- (void)AWEPostPageMixManager:needRefreshCreateTitleWithPlaceHolder:;
+- (id)currentPublishConfig;
+- (void)setMixCell:;
+- (id)privacy;
+- (void)setManager:;
+- (id)service;
+- (void)viewDidLoad;
+- (id)manager;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)cell;
+- (void)didSelect;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

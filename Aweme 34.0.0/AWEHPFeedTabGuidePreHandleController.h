@@ -1,0 +1,33 @@
+@interface AWEHPFeedTabGuidePreHandleController : NSObject
+@property (nonatomic) q preHandleCount;
+@property (nonatomic) <AWEHPFeedTabGuidePreHandleControllerDelegate> delegate;
+- (void)addNotifications;
+- (void)handleInitialFetchCompletion:error:;
+- (void)handleRefreshCompletion:error:needAnimation:;
+- (void)handleTableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (void)handleLoadMoreCompletion:error:isFooterRefreshing:;
+- (void)setPreHandleCount:;
+- (long long)preHandleCount;
+- (void)p_updateCurrentWindowCheckResult;
+- (id)currentWindowAwemeList;
+- (void)cleanOutWindowAwemesIfNeed;
+- (id)safeAwemeAtIndex:;
+- (id)p_generateCheckModelWithAweme:;
+- (void)p_startCheckSelectWithAwemeList:;
+- (void)p_cleanCheckModelIfNeedWithAweme:;
+- (id)p_generateLabelCandidateWithTagModel:;
+- (id)filterAvailableLabelCandidatesWithAllCandidates:;
+- (id)p_generateButtonCandidateWithButtonModel:;
+- (id)filterAvailableButtonCandidatesWithAllCandidates:;
+- (BOOL)p_preHandleAndCheckBtnCandidate:;
+- (BOOL)p_preHandleAndCheckLabelCandidate:;
+- (void)handleLabelShow:;
+- (void)handleButtonShow:;
+- (void)dealloc;
+- (id)delegate;
+- (id)initWithDelegate:;
+- (void)setup;
+- (void)removeNotifications;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

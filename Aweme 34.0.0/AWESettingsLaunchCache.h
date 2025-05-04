@@ -1,0 +1,36 @@
+@interface AWESettingsLaunchCache : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> cacheQueue;
+@property (nonatomic) NSMutableSet launchKeys;
+@property (nonatomic) NSDictionary launchCache;
+@property (nonatomic) NSString launchCachePath;
+@property (nonatomic) NSString launchCacheDir;
+@property (nonatomic) NSString launchCacheFlagPath;
+@property (nonatomic) BOOL enable;
+- (void)addLaunchKeyIfNeeded:;
+- (id)valueInLaunchCache:;
+- (void)updateForNextLaunch:;
+- (void)createLaunchCache:getValueHandler:;
+- (void)setLaunchCacheDir:;
+- (id)launchCacheDir;
+- (void)setLaunchCachePath:;
+- (void)setLaunchCacheFlagPath:;
+- (id)launchCacheFlagPath;
+- (void)setLaunchKeys:;
+- (id)launchCachePath;
+- (void)setLaunchCache:;
+- (id)launchKeys;
+- (void)finishLaunch;
+- (id)launchCache;
+- (BOOL)enable;
+- (id)init;
+- (void)setup;
+- (void)setCacheQueue:;
+- (void)notifyEvent:;
+- (void).cxx_destruct;
+- (void)setEnable:;
+- (id)cacheQueue;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

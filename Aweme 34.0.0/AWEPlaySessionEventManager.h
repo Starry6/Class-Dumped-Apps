@@ -1,0 +1,33 @@
+@interface AWEPlaySessionEventManager : NSObject
+@property (nonatomic) NSDictionary playSessionEventsDict;
+@property (nonatomic) NSSet DiffwhiteSet;
+@property (nonatomic) NSSet EndwhileSet;
+@property (nonatomic) NSSet QualityWhileSet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)playSessionEvent:params:;
+- (void)onePlayEvent:;
+- (id)DiffwhiteSet;
+- (id)EndwhileSet;
+- (id)QualityWhileSet;
+- (id)playSessionEventsDict;
+- (void)trackPlaySessionEvent:eventName:session:params:;
+- (void)reportLastLaunchIncompleteEvents;
+- (void)reportUnmergeableEvent:params:;
+- (void)storeIncompleteEvents;
+- (void)reportEventWithParams:;
+- (void)storageDoLock;
+- (void)storageDoUnLock;
+- (void)sessionsDoLock;
+- (void)sessionDoUnlock;
+- (void)onePlayDoLock;
+- (void)onePlayDoUnLock;
+- (id)mergeSamePlaySessionEvents:SessionID:;
+- (void)setPlaySessionEventsDict:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)removeSession:;
++ (id)sharedInstance;
+@end

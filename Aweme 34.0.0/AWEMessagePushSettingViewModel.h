@@ -1,0 +1,33 @@
+@interface AWEMessagePushSettingViewModel : AWESettingBaseViewModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWENotificationSettingModel settingModel;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) NSString enterMethod;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)initWithNotificationSettingModel:;
+- (void)updatePushStatus;
+- (void)trackShowWithPreviousPage:enterMethod:;
+- (id)createSectionDataArray;
+- (id)generateSettingItemModelWithType:;
+- (id)getPushStatus:;
+- (id)switchChangedBlockWithFieldType:;
+- (id)switchItemModelWithTitle:needIcon:isSwitchOn:isEnable:hasLineView:switchChangeBlock:;
+- (void)__uploadPushSettingWithType:subTypeField:toValue:reloadWhenFailed:;
+- (void)resetPushStatus:pushType:;
+- (void)__statNotificationSettingValueAfterChangeWithField:subFieldType:toValue:;
+- (void)updatePushStatusWithCompleted:;
+- (void)reloadData;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setSettingModel:;
+- (id)settingModel;
++ (id)settingSearchRegisterDic;
+@end

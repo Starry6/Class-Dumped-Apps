@@ -1,0 +1,33 @@
+@interface AWESearchLiveSearchGoodsView : UIView
+@property (nonatomic) AWESearchEcommerceAnchorModel model;
+@property (nonatomic) UIControl bgControl;
+@property (nonatomic) UIImageView goodsImageView;
+@property (nonatomic) UIImageView statusIconView;
+@property (nonatomic) YYLabel infoLabel;
+@property (nonatomic) UILabel currencySymbolLabel;
+@property (nonatomic) UILabel priceLabel;
+@property (nonatomic) UILabel extraInfoLabel;
+@property (nonatomic) NSMutableAttributedString pureTitleString;
+- (id)goodsImageView;
+- (id)currencySymbolLabel;
+- (id)extraInfoLabel;
+- (void)setGoodsImageView:;
+- (void)setCurrencySymbolLabel:;
+- (void)setExtraInfoLabel:;
+- (id)formattedPriceWithOriginalPrice:;
+- (id)statusIconView;
+- (void)setStatusIconView:;
+- (id)bgControl;
+- (void)setBgControl:;
+- (id)pureTitleString;
+- (void)setPureTitleString:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)infoLabel;
+- (void)setInfoLabel:;
+- (void)updateWithModel:;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+@end

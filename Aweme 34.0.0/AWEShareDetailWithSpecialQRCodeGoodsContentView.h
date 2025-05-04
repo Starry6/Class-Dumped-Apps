@@ -1,0 +1,30 @@
+@interface AWEShareDetailWithSpecialQRCodeGoodsContentView : AWEShareDetailWithQRCodeBaseContentView
+@property (nonatomic) UIImageView playIconView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIView textContainerView;
+@property (nonatomic) UIFont priceTagFont;
+@property (nonatomic) UIFont priceIntegerFont;
+@property (nonatomic) UIFont priceDecimalFont;
+@property (nonatomic) UILabel priceLabel;
+- (id)playIconView;
+- (void)setPlayIconView:;
+- (id)priceTagFont;
+- (id)priceIntegerFont;
+- (id)priceDecimalFont;
+- (void)setPriceTagFont:;
+- (void)setPriceIntegerFont:;
+- (void)setPriceDecimalFont:;
+- (id)saveImageSize;
+- (void)syncContentFrom:;
+- (void)updateSubviewsForGenerateImage;
+- (id)iconImageView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setUpSubviews;
+- (void)setTextContainerView:;
+- (id)textContainerView;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+- (id)contentViewSize;
+@end

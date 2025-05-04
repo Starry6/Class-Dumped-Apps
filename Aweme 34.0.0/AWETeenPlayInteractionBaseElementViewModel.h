@@ -1,0 +1,2 @@
+@interface AWETeenPlayInteractionBaseElementViewModel : AWETeenPlayInteractionBaseViewModel
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchTopicCommentModel : AWEBaseApiModel
+@property (nonatomic) NSNumber commentCountTotal;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) AWEUserModel author;
+@property (nonatomic) NSString channelObjId;
+@property (nonatomic) NSString channelID;
+@property (nonatomic) NSString hotSpotID;
+@property (nonatomic) NSString topicID;
+@property (nonatomic) NSString placeHolder;
+@property (nonatomic) AWEGeneralSearchModel dataModel;
+@property (nonatomic) BOOL isSecondLevelPanel;
+- (id)commentCountTotal;
+- (void)setCommentCountTotal:;
+- (id)hotSpotID;
+- (id)channelObjId;
+- (void)setHotSpotID:;
+- (void)setChannelObjId:;
+- (BOOL)isSecondLevelPanel;
+- (void)setIsSecondLevelPanel:;
+- (id)itemID;
+- (id)author;
+- (void)setTopicID:;
+- (id)topicID;
+- (void)setItemID:;
+- (void)setChannelID:;
+- (id)channelID;
+- (void).cxx_destruct;
+- (void)setAuthor:;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)setPlaceHolder:;
+- (id)placeHolder;
+@end

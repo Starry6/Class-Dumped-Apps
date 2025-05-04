@@ -1,0 +1,31 @@
+@interface AWEIMFansGroupCommodityEntryInteractor : AWEIMComponentBase
+@property (nonatomic) AWEIMMessageBaseViewController vcParent;
+@property (nonatomic) q entryState;
+@property (nonatomic) BOOL hasShowBubble;
+@property (nonatomic) NSString unavailableToast;
+@property (nonatomic) BOOL isFetchingData;
+@property (nonatomic) BOOL hasResolved;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (BOOL)hasResolved;
+- (void)setHasResolved:;
+- (id)vcParent;
+- (void)setIsFetchingData:;
+- (BOOL)hasShowBubble;
+- (void)setHasShowBubble:;
+- (void)onTapInputPanelEntry;
+- (BOOL)canShowCommodityEntry;
+- (BOOL)canShowCommodityEntryInActionBar;
+- (void)setUnavailableToast:;
+- (id)unavailableToast;
+- (void).cxx_destruct;
+- (long long)entryState;
+- (void)setEntryState:;
+- (BOOL)isFetchingData;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)enableFansCommodityWithCon:;
++ (BOOL)tryShowCommodityGuideBubbleWithCon:anchorView:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEFeedProgressSliderGesture : UILongPressGestureRecognizer
+@end

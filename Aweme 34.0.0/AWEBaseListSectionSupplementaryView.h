@@ -1,0 +1,2 @@
+@interface AWEBaseListSectionSupplementaryView : UICollectionReusableView
+@end

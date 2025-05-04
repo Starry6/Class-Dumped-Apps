@@ -1,0 +1,33 @@
+@interface AWERadarHintManager : NSObject
+@property (nonatomic) AFDRadarActivityModel activityModel;
+@property (nonatomic) NSArray takeTurnsTitles;
+@property (nonatomic) double takeTurnsInterval;
+@property (nonatomic) q takeTurnsIndex;
+@property (nonatomic) NSTimer takeTurnsTimer;
+@property (nonatomic) BOOL isNetworkError;
+@property (nonatomic) @? updateHintBlock;
+- (id)activityModel;
+- (void)setActivityModel:;
+- (void)updateWithActivityModel:;
+- (void)updateHintLabel;
+- (void)setTakeTurnsTitles:;
+- (void)setTakeTurnsInterval:;
+- (void)setTakeTurnsIndex:;
+- (id)updateHintBlock;
+- (id)takeTurnsTimer;
+- (void)p_upateHintLabelNormalTitle;
+- (void)stopTakeTurnsTimer;
+- (double)takeTurnsInterval;
+- (void)setTakeTurnsTimer:;
+- (void)p_startTakeTurnsTimer;
+- (long long)takeTurnsIndex;
+- (id)takeTurnsTitles;
+- (id)p_getLableTitle;
+- (void)setupTakeTurnsData;
+- (void)updateHintLable:isNotFound:;
+- (void)updateHintLabelWithText:animated:;
+- (void)setIsNetworkError:;
+- (void)setUpdateHintBlock:;
+- (void).cxx_destruct;
+- (BOOL)isNetworkError;
+@end

@@ -1,0 +1,33 @@
+@interface AWESoftADAwardRequestModel : MTLModel
+@property (nonatomic) Q rewardType;
+@property (nonatomic) NSArray viewedVideo;
+@property (nonatomic) NSArray singleViewTimeList;
+@property (nonatomic) NSArray singleVideoRewardList;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) q highestReward;
+@property (nonatomic) NSString adFrom;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setRewardType:;
+- (unsigned long long)rewardType;
+- (void)setAdFrom:;
+- (id)adFrom;
+- (id)viewedVideo;
+- (void)setViewedVideo:;
+- (id)singleViewTimeList;
+- (void)setSingleViewTimeList:;
+- (id)singleVideoRewardList;
+- (void)setSingleVideoRewardList:;
+- (long long)highestReward;
+- (void)setHighestReward:;
+- (void)setCurrentIndex:;
+- (void).cxx_destruct;
+- (long long)currentIndex;
++ (id)JSONKeyPathsByPropertyKey;
+@end

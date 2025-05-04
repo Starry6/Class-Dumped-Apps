@@ -1,0 +1,29 @@
+@interface AWEKnowledgeSwiftBasic.FullPageContainerComponentManager : AWEShellControllerManager
+- (void)onScrollViewWillBeginDraggingWithScrollView:;
+- (void)onScrollViewDidScrollWithScrollView:;
+- (void)onScrollViewDidEndDraggingWithScrollView:willDecelerate:;
+- (void)onScrollViewDidEndDeceleratingWithScrollView:;
+- (void)onSetupCollectionViewWithCollectionView:;
+- (void)onScrollViewWillEndDraggingWithScrollView:withVelocity:targetContentOffset:;
+- (void)onScrollViewDidEndScrollingAnimationWithScrollView:;
+- (void)onContainerViewDidAppear;
+- (void)onContainerViewDidDisappear;
+- (void)onContainerViewDidLoad;
+- (void)onContainerViewWillAppear;
+- (void)onContainerViewWillDisappear;
+- (void)onContainerWillMoveToParent:;
+- (void)onContainerDidMoveToParent:;
+- (void)onContainerViewWillLayoutSubviews;
+- (void)onContainerViewDidLayoutSubviews;
+- (void)onContainerDidReceiveMemoryWarning;
+- (void)onContainerDidReceiveAwemeDeleteWithItemID:;
+- (void)onContainerViewDidSetup;
+- (void)appDidEnterBackground;
+- (void)appWillEnterForeground;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
+- (id)classNameArray;
+- (void)addController:;
+- (id)init;
+- (void).cxx_destruct;
+@end

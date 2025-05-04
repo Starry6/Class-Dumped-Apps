@@ -1,0 +1,32 @@
+@interface AWEIMBaseListTableViewHeader : UIView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray functionArray;
+@property (nonatomic) BOOL showAllFollower;
+@property (nonatomic) <AWEIMBaseListTableViewHeaderDelegate> delegate;
+@property (nonatomic) BOOL assignBackgroundColorIsClear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)functionArray;
+- (BOOL)showAllFollower;
+- (void)setShowAllFollower:;
+- (void)setAssignBackgroundColorIsClear:;
+- (double)functionHeight;
+- (void)setFunctionArray:;
+- (double)__heightForFunctionArray;
+- (double)__heightForFunction:;
+- (BOOL)assignBackgroundColorIsClear;
+- (id)initWithFrame:functionArray:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+@end

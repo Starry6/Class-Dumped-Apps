@@ -1,0 +1,33 @@
+@interface AWEIMChatListUpdateComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMUITaskQueue taskQueue;
+@property (nonatomic) <AWEIMChatListTableViewInterface> chatListService;
+@property (nonatomic) AWEIMChatListUpdateDebounceThrottle updateDebounceThrottle;
+@property (nonatomic) NSDate firstShowChatListDate;
+@property (nonatomic) NSArray chatList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)hostVC_viewWillAppear;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)setChatListService:;
+- (id)chatListService;
+- (void)setChatList:;
+- (void)setUpdateDebounceThrottle:;
+- (void)enqueueReloadDataTask:;
+- (void)enqueueDiffUpdateTask:;
+- (void)cancelAllUITasks;
+- (void)tryUpdateChatList:;
+- (id)firstShowChatListDate;
+- (void)setFirstShowChatListDate:;
+- (id)updateDebounceThrottle;
+- (id)mergeIDForTableView:;
+- (void)dealloc;
+- (id)chatList;
+- (id)taskQueue;
+- (void).cxx_destruct;
+- (void)setTaskQueue:;
++ (BOOL)canCreateComponentWithContext:;
+@end

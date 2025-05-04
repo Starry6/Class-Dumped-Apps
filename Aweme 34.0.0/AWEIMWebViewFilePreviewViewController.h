@@ -1,0 +1,31 @@
+@interface AWEIMWebViewFilePreviewViewController : UIViewController
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSString fileType;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) WKWebView filePreviewView;
+@property (nonatomic) UIButton leftBtn;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (void)backBtnClicked;
+- (id)leftBtn;
+- (void)setLeftBtn:;
+- (void)rightBtnClick;
+- (void)openFileWithFilePath:;
+- (id)filePreviewView;
+- (void)setFilePreviewView:;
+- (id)filePath;
+- (id)fileType;
+- (void)viewDidLoad;
+- (id)fileName;
+- (void)setFilePath:;
+- (void)setTitleLabel:;
+- (void)setFileType:;
+- (void).cxx_destruct;
+- (void)setFileName:;
+- (id)titleLabel;
+- (void)setupUI;
+@end

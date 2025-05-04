@@ -1,0 +1,2 @@
+@interface AWEFeedLLMRecommendSurveyModel : NSObject
+@end

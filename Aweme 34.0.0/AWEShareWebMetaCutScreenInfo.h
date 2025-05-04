@@ -1,0 +1,33 @@
+@interface AWEShareWebMetaCutScreenInfo : MTLModel
+@property (nonatomic) NSString bgURL;
+@property (nonatomic) NSNumber x;
+@property (nonatomic) NSNumber y;
+@property (nonatomic) NSNumber bgHeight;
+@property (nonatomic) NSNumber bgWidth;
+@property (nonatomic) NSNumber shootHeight;
+@property (nonatomic) NSNumber shootWidth;
+@property (nonatomic) UIView cutView;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bgURL;
+- (void)setBgURL:;
+- (id)cutView;
+- (void)setCutView:;
+- (id)shootWidth;
+- (id)shootHeight;
+- (id)bgWidth;
+- (id)bgHeight;
+- (void)setBgHeight:;
+- (void)setBgWidth:;
+- (void)setShootHeight:;
+- (void)setShootWidth:;
+- (id)x;
+- (void)setY:;
+- (id)y;
+- (void)setX:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

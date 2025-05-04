@@ -1,0 +1,33 @@
+@interface AWEIMCombineShareSubMessage : MTLModel
+@property (nonatomic) q uid;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) q createTime;
+@property (nonatomic) q serverMessageId;
+@property (nonatomic) q messageType;
+@property (nonatomic) q aweType;
+@property (nonatomic) BOOL showFlag;
+@property (nonatomic) NSInteger refMsgInvisible;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)secUid;
+- (long long)aweType;
+- (long long)serverMessageId;
+- (void)setServerMessageId:;
+- (void)setSecUid:;
+- (void)setAweType:;
+- (void)setShowFlag:;
+- (BOOL)showFlag;
+- (int)refMsgInvisible;
+- (void)setRefMsgInvisible:;
+- (void)setUid:;
+- (long long)createTime;
+- (long long)uid;
+- (void)setCreateTime:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (long long)messageType;
+- (id)initWithMessage:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

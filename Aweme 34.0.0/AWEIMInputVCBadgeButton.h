@@ -1,0 +1,31 @@
+@interface AWEIMInputVCBadgeButton : IESIMButton
+@property (nonatomic) UIView badgeBgView;
+@property (nonatomic) UIView badgeDotView;
+@property (nonatomic) q currentTheme;
+@property (nonatomic) NSMutableDictionary imageMap;
+@property (nonatomic) UIImage dynamicImage;
+@property (nonatomic) BOOL constThemeColor;
+- (id)initWithDefault;
+- (void)setCurrentTheme:;
+- (void)setImage:forState:withTheme:;
+- (void)setImageName:forState:;
+- (id)imageMap;
+- (void)setImageMap:;
+- (void)reloadButtonTheme:;
+- (void)reloadButtonByTintColorWithTheme:;
+- (void)setImageName:forState:withTheme:;
+- (BOOL)constThemeColor;
+- (void)p_updateBadgeColorInDark:;
+- (id)badgeBgView;
+- (id)badgeDotView;
+- (void)showBadge:;
+- (void)setConstThemeColor:;
+- (void)setBadgeBgView:;
+- (void)setBadgeDotView:;
+- (long long)currentTheme;
+- (void).cxx_destruct;
+- (BOOL)hasBadge;
+- (id)hitTest:withEvent:;
+- (id)dynamicImage;
+- (void)setDynamicImage:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEEcomImageSearchDataController : NSObject
+@property (nonatomic) BOOL firstSectionDataReceived;
+@property (nonatomic) NSArray tabItems;
+@property (nonatomic) NSMutableArray sectionData;
+@property (nonatomic) BOOL firstLoadSuccess;
+@property (nonatomic) BOOL hasPreload;
+- (BOOL)hasPreload;
+- (void)setSectionData:;
+- (id)dataStoreWithSectionId:;
+- (BOOL)isFirstSectionWithId:;
+- (void)setFirstSectionDataReceived:;
+- (BOOL)firstSectionDataReceived;
+- (id)dataStoreWithChannel:;
+- (id)dataStoreWithIndex:;
+- (void)setFirstLoadSuccess:;
+- (void)setHasPreload:;
+- (void)handleTabInfo:;
+- (id)handleResponse:withContext:;
+- (BOOL)needLoadMoreWithSection:;
+- (void)showCachedModelWithSection:;
+- (BOOL)hasSecondSection;
+- (BOOL)firstLoadSuccess;
+- (id)init;
+- (void)resetData;
+- (void).cxx_destruct;
+- (id)sectionData;
+- (id)modelAtIndexPath:;
+- (void)setTabItems:;
+- (id)tabItems;
+@end

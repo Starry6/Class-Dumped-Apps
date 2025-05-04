@@ -1,0 +1,37 @@
+@interface AWENearbyLRUCache : NSObject
+@property (nonatomic) AWENearbyLRUCacheNode headNode;
+@property (nonatomic) AWENearbyLRUCacheNode tailNode;
+@property (nonatomic) NSMutableDictionary nodeMap;
+@property (nonatomic) Q size;
+@property (nonatomic) Q capacity;
+@property (nonatomic) {_opaque_pthread_rwlock_t=q[192c]} rwlock;
+- (id)nodeMap;
+- (void)moveNodeToTop:;
+- (void)insertNodeAtTop:;
+- (void)eliminate;
+- (id)tailNode;
+- (id)popNodeFromEnd;
+- (void)setHeadNode:;
+- (void)setTailNode:;
+- (void)setNodeMap:;
+- (void)dealloc;
+- (id)initWithCapacity:;
+- (void)setCapacity:;
+- (void)removeAllObjects;
+- (unsigned long long)capacity;
+- (void)removeNode:;
+- (void)setup;
+- (unsigned long long)count;
+- (void)print;
+- (void)removeObjectForKey:;
+- (unsigned long long)size;
+- (void).cxx_destruct;
+- (id)objectForKey:;
+- (void)setSize:;
+- (id)allKeys;
+- (id)allObjects;
+- (void)setObject:forKey:;
+- (id)headNode;
+- (id)rwlock;
+- (void)setRwlock:;
+@end

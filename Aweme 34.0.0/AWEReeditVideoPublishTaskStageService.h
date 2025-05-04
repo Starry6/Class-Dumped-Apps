@@ -1,0 +1,36 @@
+@interface AWEReeditVideoPublishTaskStageService : NSObject
+@property (nonatomic) NSError error;
+@property (nonatomic) AWEReeditVideoPublishTask task;
+@property (nonatomic) AWEPublishFlowModel flowModel;
+@property (nonatomic) <AWEPublishInfiniTaskFlowMessageServiceProtocol> flowMessageService;
+@property (nonatomic) <AWEPublishInfiniTaskCoordinatorServiceProtocol> coordinatorService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFlowModel:;
+- (id)flowModel;
+- (void)bindServices:;
+- (void)stage:didChangeStatus:;
+- (void)stage:didUpdateProgress:;
+- (void)finishStage:;
+- (id)flowMessageService;
+- (id)coordinatorService;
+- (void)setCoordinatorService:;
+- (void)setFlowMessageService:;
+- (void)mergeSuccess;
+- (void)uploadSuccess;
+- (void)publishHandleAwemeSuccess;
+- (void)uploadImageFramesSuccess;
+- (void)publishFinishedSuccess;
+- (void)releaseService;
+- (id)userInfoWithStage:;
+- (void)publishFailed:;
+- (void)reeditModelSuccess;
+- (void)setTask:;
+- (void)dealloc;
+- (void)setError:;
+- (id)task;
+- (void).cxx_destruct;
+- (id)error;
+@end

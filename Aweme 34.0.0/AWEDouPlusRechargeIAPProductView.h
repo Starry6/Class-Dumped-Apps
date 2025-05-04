@@ -1,0 +1,32 @@
+@interface AWEDouPlusRechargeIAPProductView : UIView
+@property (nonatomic) AWEDouPlusProductCouponIconView couponIconView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel amountLabel;
+@property (nonatomic) UILabel moneyLabel;
+@property (nonatomic) AWEDouPlusIAPProductModel productModel;
+@property (nonatomic) AWEDouPlusCouponModel couponModel;
+@property (nonatomic) @? clickProductBlock;
+- (id)moneyLabel;
+- (void)setMoneyLabel:;
+- (void)setCouponModel:;
+- (id)couponModel;
+- (id)productModel;
+- (void)setupGestureRecognizer;
+- (void)setClickProductBlock:;
+- (void)setProductModel:;
+- (void)updateSubViewsStatus:;
+- (id)couponIconView;
+- (id)clickProductBlock;
+- (void)setCouponIconView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)iconView;
+- (void)setContainerView:;
+- (void)setIconView:;
+- (void)onTapAction;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setAmountLabel:;
+- (id)amountLabel;
+@end

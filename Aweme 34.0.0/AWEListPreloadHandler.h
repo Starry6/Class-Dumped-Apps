@@ -1,0 +1,33 @@
+@interface AWEListPreloadHandler : NSObject
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSString preloadScene;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) AWEListPreloadConfig preloadConfig;
+@property (nonatomic) <AWEListPreloadHandlerDelegate> delegate;
+- (id)preloadConfig;
+- (void)handleConnectionChanged:;
+- (void)setPreloadScene:;
+- (id)preloadScene;
+- (void)setPreloadConfig:;
+- (void)cancelPreload;
+- (void)startVideoPreload:;
+- (void)scrollViewDidEndDragging:willDecelerate:referString:;
+- (void)scrollViewDidEndScrollingAnimation:referString:;
+- (void)scrollViewDidEndDecelerating:referString:;
+- (void)scrollViewDidScrollToTop:referString:;
+- (BOOL)shouldPreloadWithCell:collectionView:;
+- (void)preloadDataWithModel:completion:;
+- (long long)videoPreloadSize;
+- (id)initWithCollectionView:preloadScene:preloadConfig:;
+- (id)collectionView;
+- (void)dealloc;
+- (id)delegate;
+- (void)setEnabled:;
+- (void)setCollectionView:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (BOOL)enabled;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (id)handlerWithCollectionView:preloadScene:preloadConfig:;
+@end

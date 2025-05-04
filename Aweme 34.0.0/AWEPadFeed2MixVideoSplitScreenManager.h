@@ -1,0 +1,37 @@
+@interface AWEPadFeed2MixVideoSplitScreenManager : NSObject
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL hideInteraction;
+@property (nonatomic) AWEFeedSplitScreenFunction feedFunction;
+@property (nonatomic) BOOL enableScroll;
+@property (nonatomic) AWEInsideSplitScreenItemDetail splitDetail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnableScroll:;
+- (void)willQuitSplitScreenToFullRight:;
+- (BOOL)enableScroll;
+- (void)setupAB;
+- (BOOL)needShowFullRightVCWhenEnterPortrait;
+- (long long)showActionType;
+- (void)setSplitDetail:;
+- (BOOL)needCreateNewBussinessVC;
+- (BOOL)canLeftContainerScroll;
+- (BOOL)needDismissWhenUpDownSlide;
+- (void)splitScreenViewDidAppear;
+- (BOOL)canLeftContainerTapAction;
+- (BOOL)canRightContainerScroll;
+- (void)willEnterSplitScreen;
+- (void)didQuitSplitScreenToFullRight:;
+- (void)splitScreenViewWillAppear;
+- (BOOL)needDismissWhenDisappear;
+- (id)splitDetail;
+- (id)feedFunction;
+- (BOOL)hideInteraction;
+- (void)setHideInteraction:;
+- (void)setFeedFunction:;
+- (BOOL)enable;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setEnable:;
+@end

@@ -1,0 +1,28 @@
+@interface AWEBDSimPlayerSuperResolutionManager : BDSimPlayerSuperResolutionManager
+- (id)is2KSet;
+- (id)is4KSet;
+- (BOOL)enableSuperResolution;
+- (void)setBizConfig:;
+- (void)trackPreloadSRResultWithModel:;
+- (void)checkSuperResolutionWithVC:;
+- (void)configSuperResolutionWithVC:;
+- (long long)superResolution720Count_preload;
+- (long long)unSuperResolution720Count_preload;
+- (BOOL)enableDowngradeGearWithSR;
+- (BOOL)is720PWithVC:;
+- (void)setBMFProcessConfig:;
+- (BOOL)isLowBattery:;
+- (void)trackerVideoPlayInfoWithVC:checked:isEndEvent:;
+- (long long)currBattery;
+- (long long)currTemperatureLevel;
+- (long long)currCpuUsage;
+- (double)currSrScore;
+- (double)cureRecScore;
+- (long long)currSpeed;
+- (BOOL)filter1080Result;
+- (void)configFlexSuperResolutionWithVC:;
+- (void)configBmfSharpWithVC:;
+- (void)setBMFFlexProcessConfig:;
+- (void)updateConfigForFrame:;
+- (void)setupData;
+@end

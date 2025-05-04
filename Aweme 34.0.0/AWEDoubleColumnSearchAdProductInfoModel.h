@@ -1,0 +1,35 @@
+@interface AWEDoubleColumnSearchAdProductInfoModel : MTLModel
+@property (nonatomic) NSNumber productID;
+@property (nonatomic) NSString productIDString;
+@property (nonatomic) NSNumber productPrice;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString coverImageUrl;
+@property (nonatomic) NSString openUrl;
+@property (nonatomic) NSString ironManUrl;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString btnText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)btnText;
+- (id)openUrl;
+- (void)setOpenUrl:;
+- (void)setBtnText:;
+- (id)coverImageUrl;
+- (void)setCoverImageUrl:;
+- (id)productPrice;
+- (void)setProductPrice:;
+- (id)ironManUrl;
+- (id)productIDString;
+- (void)setProductIDString:;
+- (void)setIronManUrl:;
+- (void)setProductID:;
+- (id)tag;
+- (id)productID;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,33 @@
+@interface AWEECFeedMallJumpGuideAction : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSError error;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL isFeedShowing;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) BOOL running;
+@property (nonatomic) AWEECJumpToMallContextModel jumpTabGrassContext;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)initWithContextModel:;
+- (void)checkCanStart;
+- (void)setIsFeedShowing:;
+- (BOOL)isFeedShowing;
+- (id)jumpTabGrassContext;
+- (void)setJumpTabGrassContext:;
+- (void)active:;
+- (void)markFeedShowing;
+- (BOOL)checkCanShowTab;
+- (void)setRunning:;
+- (void)setIsActive:;
+- (BOOL)running;
+- (id)completion;
+- (void)setError:;
+- (void)setCompletion:;
+- (void)finishWithError:;
+- (void)handleNotification:;
+- (void).cxx_destruct;
+- (id)error;
+- (BOOL)isActive;
+- (void)stop;
++ (id)mallJumpGuideActionWithContextModel:;
+@end

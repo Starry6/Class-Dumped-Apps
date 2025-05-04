@@ -1,0 +1,32 @@
+@interface AWEMVChannelRecallReason : MTLModel
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textSuffix;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString darkUrl;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) double playProgress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)playProgress;
+- (void)setPlayProgress:;
+- (id)textSuffix;
+- (void)setTextSuffix:;
+- (id)darkUrl;
+- (void)setDarkUrl:;
+- (void)setUrl:;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)url;
+- (id)bgColor;
+- (void)setBgColor:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

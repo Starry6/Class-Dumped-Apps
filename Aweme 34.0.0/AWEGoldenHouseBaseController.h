@@ -1,0 +1,36 @@
+@interface AWEGoldenHouseBaseController : AWEBaseController
+@property (nonatomic) NSTimer loadMoreTimer;
+@property (nonatomic) double loadMoreStartTime;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) q currentCount;
+@property (nonatomic) q consecutiveWeakVVCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginLoadMore;
+- (void)loadMoreCompletion:error:isFooterRefreshing:;
+- (void)endLoadMore;
+- (void)receiveWeakNetNoti:;
+- (void)onLivePredictNoti:;
+- (long long)consecutiveWeakVVCount;
+- (void)setConsecutiveWeakVVCount:;
+- (void)onLongBlockWith:;
+- (id)loadMoreTimer;
+- (void)onLoadMoreBlock;
+- (void)setLoadMoreTimer:;
+- (void)setLoadMoreStartTime:;
+- (double)loadMoreStartTime;
+- (BOOL)checkIsValid;
+- (void)insertNextCachedFeedWith:;
+- (void)insertCachedFeedWith:;
+- (BOOL)checkCurrentFeedValid;
+- (BOOL)checkIsPoolNet;
+- (long long)currentCount;
+- (void)play;
+- (void)setLock:;
+- (void)viewDidLoad;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setCurrentCount:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEGuestFollowListCell : UICollectionViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIImageView verifiedIconView;
+@property (nonatomic) DUXButton followButton;
+@property (nonatomic) NSArray avatarURLs;
+@property (nonatomic) AWEUserAccountCertInfoModel accountCertInfo;
+@property (nonatomic) q followStatus;
+- (long long)followStatus;
+- (void)setFollowStatus:;
+- (id)accountCertInfo;
+- (id)avatarURLs;
+- (void)setAccountCertInfo:;
+- (void)setupBinding;
+- (id)followButton;
+- (void)setFollowButton:;
+- (void)setAvatarURLs:;
+- (void)updateWithFollowStatus:;
+- (id)verifiedIconView;
+- (void)setVerifiedIconView:;
+- (void)updateWithVerifiedIconName:;
+- (void)followButtonDidClick;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (void)setup;
+- (id)avatarView;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setNameLabel:;
+@end

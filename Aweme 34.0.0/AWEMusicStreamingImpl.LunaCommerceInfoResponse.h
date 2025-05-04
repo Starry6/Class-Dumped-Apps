@@ -1,0 +1,37 @@
+@interface AWEMusicStreamingImpl.LunaCommerceInfoResponse : AWEMusicStreamingImpl.LunaBaseApiResponseModel
+@property (nonatomic) _TtC21AWEMusicStreamingImpl15LunaBenefitBase benefitBase;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl10LunaAssets assets;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl15LunaSceneOffers sceneOffers;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl19LunaActivityFreeVip activityFreeVip;
+@property (nonatomic) NSDictionary trade;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl14LunaMembership membership;
+@property (nonatomic) NSDictionary playEntitlements;
+@property (nonatomic) NSDictionary extra;
+- (void)setExtra:;
+- (id)benefitBase;
+- (void)setBenefitBase:;
+- (id)sceneOffers;
+- (void)setSceneOffers:;
+- (id)activityFreeVip;
+- (void)setActivityFreeVip:;
+- (id)trade;
+- (void)setTrade:;
+- (id)membership;
+- (void)setMembership:;
+- (id)playEntitlements;
+- (void)setPlayEntitlements:;
+- (id)toDic;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)extra;
+- (id)assets;
+- (void)setAssets:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)benefitBaseJSONTransformer;
++ (id)assetsJSONTransformer;
++ (id)sceneOffersJSONTransformer;
++ (id)activityFreeVipJSONTransformer;
++ (id)membershipJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

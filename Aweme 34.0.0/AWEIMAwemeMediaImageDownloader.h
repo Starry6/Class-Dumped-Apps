@@ -1,0 +1,35 @@
+@interface AWEIMAwemeMediaImageDownloader : HTSService
+@property (nonatomic) AWEIMMessageAttachmentDownloadViewModel downloadVM;
+@property (nonatomic) AWEIMMessage message;
+@property (nonatomic) UIImage currentImage;
+@property (nonatomic) BOOL hasOriginImage;
+@property (nonatomic) UIView<IESIMLoadingViewProtocol> loadingView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDownloadVM:;
+- (id)downloadVM;
+- (id)initWithMessage:context:;
+- (void)downloadAndSaveToAlbum;
+- (void)setupWithMessage:context:;
+- (void)downloadImageResourceStart:finish:;
+- (void)getOriginImageWithCompletion:;
+- (BOOL)enableImageMediumTest;
+- (void)p_configImageContainMediumImage;
+- (void)p_configImageUseOrigin;
+- (void)setHasOriginImage:;
+- (BOOL)hasOriginImage;
+- (id)imageResourceDownloadModel;
+- (void)p_configImage;
+- (void)p_saveImage;
+- (void)p_saveImageToDevice;
+- (void)p_saveAsLivePhoto:videoPath:completion:;
+- (id)message;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void).cxx_destruct;
+- (id)currentImage;
+- (void)setMessage:;
+- (void)setCurrentImage:;
+@end

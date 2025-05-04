@@ -1,0 +1,37 @@
+@interface AWENearbyColdLaunchTracker : NSObject
+@property (nonatomic) BOOL coldStartTrackFlag;
+@property (nonatomic) q preloadType;
+@property (nonatomic) BOOL isPreloadTaskRun;
+@property (nonatomic) double fstPreloadReqStartTimestamp;
+@property (nonatomic) q l3ChangeCount;
+@property (nonatomic) double fstL3ChangeTime;
+@property (nonatomic) BOOL hasSubmitLoc;
+@property (nonatomic) double fstSubmitLocTime;
+@property (nonatomic) double tstDidLoadTime;
+@property (nonatomic) double tstDidAppearTime;
+- (void)setPreloadType:;
+- (long long)l3ChangeCount;
+- (void)setL3ChangeCount:;
+- (double)fstL3ChangeTime;
+- (void)setFstL3ChangeTime:;
+- (void)trackNearbyColdStartState;
+- (void)setIsPreloadTaskRun:;
+- (void)setFstPreloadReqStartTimestamp:;
+- (void)setTstDidLoadTime:;
+- (void)setTstDidAppearTime:;
+- (BOOL)coldStartTrackFlag;
+- (void)setColdStartTrackFlag:;
+- (double)tstDidAppearTime;
+- (double)tstDidLoadTime;
+- (double)fstPreloadReqStartTimestamp;
+- (double)fstSubmitLocTime;
+- (BOOL)isPreloadTaskRun;
+- (BOOL)hasSubmitLoc;
+- (void)didLoadAwemePreloadType:;
+- (void)setHasSubmitLoc:;
+- (void)setFstSubmitLocTime:;
+- (void)didAppear;
+- (void)didLoad;
+- (long long)preloadType;
++ (id)sharedInstance;
+@end

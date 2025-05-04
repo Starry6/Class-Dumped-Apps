@@ -1,0 +1,34 @@
+@interface AWEVersionUpdateConfigModel : MTLModel
+@property (nonatomic) q style;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString detailTitle;
+@property (nonatomic) q detailTitleAlignment;
+@property (nonatomic) NSString confirmBtnTitle;
+@property (nonatomic) NSString cancelBtnTitle;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) BOOL pauseVideoOnShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setConfirmBtnTitle:;
+- (id)checkAndCorrect;
+- (void)setDetailTitleAlignment:;
+- (void)setCancelBtnTitle:;
+- (void)setPauseVideoOnShow:;
+- (id)confirmBtnTitle;
+- (id)cancelBtnTitle;
+- (long long)detailTitleAlignment;
+- (BOOL)pauseVideoOnShow;
+- (long long)style;
+- (id)imageURL;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setImageURL:;
+- (void)setTitle:;
+- (void)setStyle:;
+- (void)setDetailTitle:;
+- (id)detailTitle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

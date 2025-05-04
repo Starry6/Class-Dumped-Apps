@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionVideoAbstractElement : AWEPlayInteractionLeftElement
+@property (nonatomic) AWEPlayInteractionVideoAbstractView videoAbstractView;
+@property (nonatomic) BOOL cancelShowCommentPanel;
+@property (nonatomic) BOOL hasClicked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (void)viewController_viewDidAppear;
+- (void)viewController_viewDidDisappear;
+- (void)shouldCancelShowCommentPanel;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (void)updateViewLayout;
+- (BOOL)hasClicked;
+- (void)setHasClicked:;
+- (void)openCommentPanelWithEnterSource:delayTime:;
+- (void)viewDidDisposed;
+- (id)videoAbstractView;
+- (void)videoAbstractViewClick;
+- (void)updateSectionBtnWithPlayTime:completion:;
+- (void)trackVideoAbstractWithActionType:;
+- (void)trackVideoAbstractAppear;
+- (void)setVideoAbstractView:;
+- (void)handleClickEventWithPlayTime:playTimeStr:;
+- (void)trackVideoSummaryProgress;
+- (void)setCancelShowCommentPanel:;
+- (void)trackClickCommentBtn;
+- (BOOL)cancelShowCommentPanel;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
++ (BOOL)shouldActiveWithData:context:;
+@end

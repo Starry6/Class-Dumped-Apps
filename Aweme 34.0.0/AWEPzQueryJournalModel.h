@@ -1,0 +1,31 @@
+@interface AWEPzQueryJournalModel : NSObject
+@property (nonatomic) NSString callTraceId;
+@property (nonatomic) NSString callTraceType;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSArray scopes;
+@property (nonatomic) NSArray excludedScopes;
+@property (nonatomic) BOOL scopeShareRecord;
+@property (nonatomic) NSDate afterDate;
+@property (nonatomic) q limitCount;
+@property (nonatomic) NSString secUid;
+- (id)secUid;
+- (void)setSecUid:;
+- (id)excludedScopes;
+- (void)setScopeShareRecord:;
+- (void)setAfterDate:;
+- (void)setExcludedScopes:;
+- (void)setCallTraceType:;
+- (void)setCallTraceId:;
+- (BOOL)scopeShareRecord;
+- (id)callTraceId;
+- (id)callTraceType;
+- (id)scopes;
+- (long long)limitCount;
+- (id)init;
+- (void)setScopes:;
+- (void).cxx_destruct;
+- (void)setLimitCount:;
+- (void)setComponentID:;
+- (id)componentID;
+- (id)afterDate;
+@end

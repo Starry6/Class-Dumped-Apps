@@ -1,0 +1,2 @@
+@interface AWEIMGroupChainsBridgeModel : NSObject
+@end

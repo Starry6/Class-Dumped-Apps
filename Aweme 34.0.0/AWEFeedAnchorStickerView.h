@@ -1,0 +1,30 @@
+@interface AWEFeedAnchorStickerView : UIControl
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) AWEMarkView stickerButton;
+@property (nonatomic) AWEMarkView subStickerButton;
+@property (nonatomic) UILabel publishReasonLabel;
+@property (nonatomic) Q currentStage;
+@property (nonatomic) CAShapeLayer maskLayer;
+- (void)updateWithAwemeModel:;
+- (id)aAWEFeedFlameAnchorDOUYINHTSAdapterProtocol;
+- (void)setCurrentStage:;
+- (id)stickerButton;
+- (void)setStickerButton:;
+- (id)publishReasonLabel;
+- (void)showSubStickerBtnAndPublishReasonText;
+- (void)updateStickerFlameWithModel:;
+- (id)subStickerButton;
+- (void)setSubStickerButton:;
+- (void)setPublishReasonLabel:;
+- (void)layout;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)maskLayer;
+- (void)setupUI;
+- (void)setMaskLayer:;
+- (unsigned long long)currentStage;
++ (Class)aAWEFeedFlameAnchorDOUYINHTSAdapterProtocolClass;
+@end

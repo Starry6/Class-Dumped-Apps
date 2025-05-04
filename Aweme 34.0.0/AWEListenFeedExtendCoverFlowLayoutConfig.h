@@ -1,0 +1,36 @@
+@interface AWEListenFeedExtendCoverFlowLayoutConfig : NSObject
+@property (nonatomic) {CGSize=dd} itemSize;
+@property (nonatomic) double itemSpacing;
+@property (nonatomic) {UIEdgeInsets=dddd} sectionInset;
+@property (nonatomic) double minimumScale;
+@property (nonatomic) double minimumAlpha;
+@property (nonatomic) double maximumAngle;
+@property (nonatomic) double rateOfChange;
+@property (nonatomic) BOOL itemVerticalCenter;
+@property (nonatomic) BOOL itemHorizontalCenter;
+@property (nonatomic) {UIEdgeInsets=dddd} onlyOneSectionInset;
+@property (nonatomic) UIView colletionView;
+- (id)onlyOneSectionInset;
+- (BOOL)itemHorizontalCenter;
+- (void)setItemVerticalCenter:;
+- (void)setItemHorizontalCenter:;
+- (void)setMinimumAlpha:;
+- (void)setMaximumAngle:;
+- (void)setRateOfChange:;
+- (double)minimumAlpha;
+- (double)rateOfChange;
+- (void)setColletionView:;
+- (id)colletionView;
+- (BOOL)itemVerticalCenter;
+- (double)maximumAngle;
+- (id)init;
+- (void)setMinimumScale:;
+- (double)itemSpacing;
+- (double)minimumScale;
+- (void)setItemSpacing:;
+- (void).cxx_destruct;
+- (id)itemSize;
+- (id)sectionInset;
+- (void)setItemSize:;
+- (void)setSectionInset:;
+@end

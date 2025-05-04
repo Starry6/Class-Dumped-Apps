@@ -1,0 +1,31 @@
+@interface AWECodeGenLocationInfoModel : AWEBaseDataModel
+@property (nonatomic) NSString poiId;
+@property (nonatomic) NSString locationText;
+@property (nonatomic) q distance;
+@property (nonatomic) NSString poiLongitude;
+@property (nonatomic) NSString poiLatitude;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString poiName;
+@property (nonatomic) NSString poiAddress;
+- (id)poiName;
+- (id)poiLatitude;
+- (void)setPoiLatitude:;
+- (id)poiLongitude;
+- (void)setPoiLongitude:;
+- (id)poiAddress;
+- (void)setPoiAddress:;
+- (void)setPoiName:;
+- (void)setDistance:;
+- (id)city;
+- (long long)distance;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (id)poiId;
+- (void)setPoiId:;
+- (id)locationText;
+- (id)cityCode;
+- (void)setCityCode:;
+- (void)setLocationText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

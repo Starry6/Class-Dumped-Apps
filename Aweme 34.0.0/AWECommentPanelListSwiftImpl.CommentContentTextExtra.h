@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentContentTextExtra : _TtCs12_SwiftObject
+@end

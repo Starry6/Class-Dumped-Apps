@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionDispatcherManager : AWEShellControllerManager
+@property (nonatomic) AWEPlayInteractionConfigsHelper helper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isSlidingPorgressSlider;
+@property (nonatomic) Q playerStatus;
+- (id)classNameArray;
+- (id)aAWEPadModuleAdapter;
+- (id)currentInfoForSubUnits;
+- (id)currentInfoForUnitWithIdentifier:;
+- (id)currentInfoForUnitWithClassName:;
+- (id)aAWEFeedModuleServiceDOUYINHTSAdaper;
+- (id)aAWEPlayInteractionAdapter;
+- (id)aAWEFeedModuleServiceDOUYINLiteAdaper;
+- (id)aAWEPadTabBarAdapter;
+- (BOOL)isInteractionOptEnable;
+- (id)controllerByClassName:;
+- (id)allControllers;
+- (BOOL)enableAIPublishVideoInteractionController;
+- (id)aAWEPlayInteractionDispatcherManagerAdapter;
+- (void)setHelper:;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (id)helper;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEFeedModuleServiceDOUYINHTSAdaperClass;
++ (Class)aAWEPlayInteractionAdapterClass;
++ (Class)aAWEFeedModuleServiceDOUYINLiteAdaperClass;
++ (Class)aAWEPadTabBarAdapterClass;
++ (Class)aAWEPlayInteractionDispatcherManagerAdapterClass;
+@end

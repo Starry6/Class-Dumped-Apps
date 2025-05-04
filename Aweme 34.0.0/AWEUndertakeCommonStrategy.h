@@ -1,0 +1,34 @@
+@interface AWEUndertakeCommonStrategy : AWEUndertakeBaseStrategy
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) NSDictionary referStringSceneMap;
+@property (nonatomic) @? popupCallback;
+@property (nonatomic) BOOL undertakeFinished;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerDidClose:;
+- (BOOL)canShow;
+- (void)showWithCloseCallback:;
+- (void)setMmkv:;
+- (id)mmkv;
+- (id)getCurrentFeedAweModel;
+- (id)getCurrScene;
+- (void)trackLogWithMessage:;
+- (void)injectConditions;
+- (void)checkAllConditionsWithSkip:;
+- (id)initStrategyWithModel:;
+- (BOOL)needUndertakeOnThisLaunch;
+- (void)performUndertake;
+- (void)performUndertakeWithModel:;
+- (void)showBottomBanner:;
+- (BOOL)undertakeFinished;
+- (void)setUndertakeFinished:;
+- (id)setNotiImageView;
+- (id)configCommonParams:;
+- (id)referStringSceneMap;
+- (void)setReferStringSceneMap:;
+- (id)popupCallback;
+- (void)setPopupCallback:;
+- (void).cxx_destruct;
+@end

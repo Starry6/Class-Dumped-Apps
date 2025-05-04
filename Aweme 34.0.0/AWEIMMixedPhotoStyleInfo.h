@@ -1,0 +1,33 @@
+@interface AWEIMMixedPhotoStyleInfo : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString styleID;
+@property (nonatomic) NSString backImageUrl;
+@property (nonatomic) NSString coverImageUrl;
+@property (nonatomic) AWEIMImageResourceURLInfo coverImagePreviewUrl;
+@property (nonatomic) NSString templateType;
+@property (nonatomic) NSString showTag;
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpSchema;
+- (id)coverImageUrl;
+- (id)showTag;
+- (void)setShowTag:;
+- (void)setJumpSchema:;
+- (void)setCoverImageUrl:;
+- (void)setStyleID:;
+- (id)backImageUrl;
+- (void)setBackImageUrl:;
+- (id)coverImagePreviewUrl;
+- (void)setCoverImagePreviewUrl:;
+- (id)styleID;
+- (id)templateType;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTemplateType:;
+- (void)setTitle:;
++ (id)coverImagePreviewUrlJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

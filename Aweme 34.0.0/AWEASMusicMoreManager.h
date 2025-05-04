@@ -1,0 +1,30 @@
+@interface AWEASMusicMoreManager : NSObject
+@property (nonatomic) NSString cursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEMusicCollectionData playlist;
+@property (nonatomic) BOOL firstRequesFinished;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) NSArray banners;
+@property (nonatomic) NSString playlistId;
+@property (nonatomic) NSMutableArray collectionList;
+- (id)playlistId;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)setPlaylistId:;
+- (void)refreshDataCompletion:;
+- (void)setFirstRequesFinished:;
+- (void)loadMoreDataCompletion:;
+- (BOOL)firstRequesFinished;
+- (void)requestMusicCollectionFeedWithCursor:count:lunaPlaylistId:needBanner:completion:;
+- (id)cursor;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (id)collectionList;
+- (id)banners;
+- (void)setBanners:;
+- (id)playlist;
+- (void)setPlaylist:;
+- (void)setCollectionList:;
+@end

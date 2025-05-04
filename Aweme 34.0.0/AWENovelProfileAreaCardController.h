@@ -1,0 +1,36 @@
+@interface AWENovelProfileAreaCardController : NSObject
+@property (nonatomic) AWENovelProfileAreaCardView cardView;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) AWEProfileExtensionAreaCardModel cardModel;
+@property (nonatomic) NSDictionary extraInfoDict;
+@property (nonatomic) Q cardIndex;
+@property (nonatomic) @? reloadCardListBlock;
+@property (nonatomic) BOOL cardHasAppearedOnce;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowCard;
+- (void)passCardView:;
+- (void)cardDidClicked;
+- (void)cardWillAppear;
+- (void)cardDidDisappear;
+- (id)cardModel;
+- (void)setExtraInfoDict:;
+- (id)extraInfoDict;
+- (void)setCardModel:;
+- (double)widthOfCard;
+- (void)setReloadCardListBlock:;
+- (id)reloadCardListBlock;
+- (void)setCardIndex:;
+- (unsigned long long)cardIndex;
+- (BOOL)cardHasAppearedOnce;
+- (void)setCardHasAppearedOnce:;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)cardView;
+- (void)setCardView:;
++ (id)cardControllerWithCommonParam:;
++ (id)cardControllerWithUserModel:cardModel:cardIndex:extraInfo:reloadCardListBlock:;
+@end

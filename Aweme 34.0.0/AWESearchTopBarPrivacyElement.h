@@ -1,0 +1,2 @@
+@interface AWESearchTopBarPrivacyElement : AWESearchTopBarBaseElement
+@end

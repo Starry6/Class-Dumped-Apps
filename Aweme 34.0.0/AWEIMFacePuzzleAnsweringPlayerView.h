@@ -1,0 +1,38 @@
+@interface AWEIMFacePuzzleAnsweringPlayerView : UIView
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UILabel titlelabel;
+@property (nonatomic) UILabel decLabel;
+@property (nonatomic) UIButton backBtn;
+@property (nonatomic) UILabel loadingLabel;
+@property (nonatomic) DUXLoadingParticleView refreshLoadingView;
+@property (nonatomic) NSMutableArray binds;
+@property (nonatomic) AWEIMFacePuzzleAnsweringPlayerInfoUIState uiState;
+- (void)setTitlelabel:;
+- (id)titlelabel;
+- (id)backBtn;
+- (void)setBackBtn:;
+- (id)binds;
+- (void)setBinds:;
+- (id)refreshLoadingView;
+- (void)setRefreshLoadingView:;
+- (void)p_addConstraint;
+- (void)p_addSubView;
+- (void)p_addBind;
+- (void)setDecLabel:;
+- (void)p_backTapAction;
+- (id)decLabel;
+- (id)initWithUIState:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setNameLabel:;
+- (id)avatar;
+- (void)setAvatar:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)loadingLabel;
+- (void)setLoadingLabel:;
+- (id)uiState;
+- (void)setUiState:;
+@end

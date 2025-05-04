@@ -1,0 +1,2 @@
+@interface _TtCC21AWEMusicStreamingImpl11MUISnackBar10ActionInfo : _TtCs12_SwiftObject
+@end

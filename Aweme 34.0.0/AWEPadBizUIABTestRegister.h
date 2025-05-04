@@ -1,0 +1,2 @@
+@interface AWEPadBizUIABTestRegister : NSObject
+@end

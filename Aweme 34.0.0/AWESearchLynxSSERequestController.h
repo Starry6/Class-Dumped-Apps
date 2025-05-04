@@ -1,0 +1,35 @@
+@interface AWESearchLynxSSERequestController : NSObject
+@property (nonatomic) NSMutableDictionary requestManagerDic;
+@property (nonatomic) AWESearchLynxSSERequestManager lastSSEManager;
+@property (nonatomic) @? receiveFirstDataBlock;
+@property (nonatomic) @? receiveAllDataBlock;
+@property (nonatomic) @? receiveDataBlock;
+@property (nonatomic) @? receiveErrorBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)receiveDataBlock;
+- (void)setReceiveDataBlock:;
+- (void)startNewStreamWithCreateEventParams:;
+- (void)cancelRequestWithCloseEventParams:;
+- (void)setReceiveFirstDataBlock:;
+- (void)setReceiveAllDataBlock:;
+- (void)setReceiveErrorBlock:;
+- (void)impStartNewStreamWithCreateEventParams:;
+- (void)impCancelRequestWithCloseEventParams:;
+- (id)requestManagerDic;
+- (id)lastSSEManager;
+- (void)setLastSSEManager:;
+- (id)receiveFirstDataBlock;
+- (id)receiveAllDataBlock;
+- (id)receiveErrorBlock;
+- (void)managerDidReceiveFirstDataChunk:;
+- (void)manager:didReceiveResponseJSON:;
+- (void)managerDidReceiveAllData:;
+- (void)manager:didEndReadChunkForError:errorReason:currentResponse:;
+- (void)setRequestManagerDic:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

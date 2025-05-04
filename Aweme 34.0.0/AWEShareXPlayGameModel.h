@@ -1,0 +1,30 @@
+@interface AWEShareXPlayGameModel : NSObject
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString gameIcon;
+@property (nonatomic) NSString gameLoadingImage;
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString gameSchema;
+@property (nonatomic) NSString imMsgContent;
+@property (nonatomic) NSDictionary qrCodeParams;
+@property (nonatomic) BOOL isLandScape;
+@property (nonatomic) @? itemClickHandler;
+- (id)gameName;
+- (void)setGameName:;
+- (BOOL)isLandScape;
+- (void)setIsLandScape:;
+- (id)imMsgContent;
+- (void)setImMsgContent:;
+- (id)gameID;
+- (void)setGameID:;
+- (void)setGameSchema:;
+- (void)setQrCodeParams:;
+- (void)setGameIcon:;
+- (void)setGameLoadingImage:;
+- (void)setItemClickHandler:;
+- (id)qrCodeParams;
+- (id)itemClickHandler;
+- (id)gameLoadingImage;
+- (id)gameIcon;
+- (id)gameSchema;
+- (void).cxx_destruct;
+@end

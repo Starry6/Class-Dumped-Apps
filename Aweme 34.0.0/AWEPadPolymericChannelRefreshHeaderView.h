@@ -1,0 +1,34 @@
+@interface AWEPadPolymericChannelRefreshHeaderView : UICollectionReusableView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView titleIconView;
+@property (nonatomic) @? onReshCallback;
+@property (nonatomic) AWEPLVRefreshButton refreshButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTitleIconView:;
+- (void)showLoadingAnimation:;
+- (id)onReshCallback;
+- (void)onClickButton;
+- (void)configHeaderViewInset:;
+- (void)updateTitleIcon:;
+- (void)updateViewForBreakPoint;
+- (void)setOnReshCallback:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void)setTitleFontSize:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setTitle:;
+- (void)setupView;
+- (id)titleIconView;
+- (id)refreshButton;
+- (void)setRefreshButton:;
++ (id)sizeWithModel:collectionViewSize:contentSize:;
++ (double)heightWithBreakPoint:;
+@end

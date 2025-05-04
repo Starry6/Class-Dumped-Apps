@@ -1,0 +1,31 @@
+@interface AWEGenericTemplateModelMixinTemplateInfo : NSObject
+@property (nonatomic) CKGenericTemplateModel hostTemplateModel;
+@property (nonatomic) NSNumber isAIMattingValue;
+@property (nonatomic) NSNumber isMultiSlotsTemplateValue;
+@property (nonatomic) NSNumber isAIGCTemplateValue;
+@property (nonatomic) NSArray features;
+@property (nonatomic) BOOL hasStickersToRecover;
+- (BOOL)isAIGCTemplate;
+- (BOOL)isMultiSlotsTemplate;
+- (BOOL)isCustomInfoTemplate;
+- (id)parseMetricsDictWithPrefix:;
+- (BOOL)isAIMatting;
+- (double)generateTimeConsuming;
+- (BOOL)hasStickersToRecover;
+- (void)setHasStickersToRecover:;
+- (id)sdkExtraDictCached;
+- (id)recommendMusicID;
+- (id)hostTemplateModel;
+- (void)setHostTemplateModel:;
+- (id)isAIMattingValue;
+- (void)setIsAIMattingValue:;
+- (id)isMultiSlotsTemplateValue;
+- (void)setIsMultiSlotsTemplateValue:;
+- (id)isAIGCTemplateValue;
+- (void)setIsAIGCTemplateValue:;
+- (id)sdkExtraString;
+- (id)sdkExtraDict;
+- (id)features;
+- (void)setFeatures:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface AWENewVideoCoverEditViewControllerInputData : ACCEditViewControllerInputData
+@property (nonatomic) @? saveBlock;
+@property (nonatomic) @? willChoosePageShowBlock;
+@property (nonatomic) @? stashChangesBlock;
+@property (nonatomic) BOOL shouldShowEditVCDirectly;
+@property (nonatomic) @? updateCoverWithExportData;
+@property (nonatomic) @? updateCoverWithImage;
+@property (nonatomic) @? triggerEditorRequestRecommendText;
+@property (nonatomic) @? editHasUnsavedChange;
+@property (nonatomic) @? willChoosePageDismissBlock;
+@property (nonatomic) @? editHasEelements;
+@property (nonatomic) @? jxCoverPreviewBlock;
+- (id)createId;
+- (id)willChoosePageShowBlock;
+- (void)setWillChoosePageShowBlock:;
+- (id)stashChangesBlock;
+- (void)setStashChangesBlock:;
+- (BOOL)shouldShowEditVCDirectly;
+- (void)setShouldShowEditVCDirectly:;
+- (id)updateCoverWithExportData;
+- (void)setUpdateCoverWithExportData:;
+- (id)updateCoverWithImage;
+- (void)setUpdateCoverWithImage:;
+- (id)triggerEditorRequestRecommendText;
+- (void)setTriggerEditorRequestRecommendText:;
+- (id)editHasEelements;
+- (void)setEditHasEelements:;
+- (void)setJxCoverPreviewBlock:;
+- (id)willChoosePageDismissBlock;
+- (id)editHasUnsavedChange;
+- (void)setEditHasUnsavedChange:;
+- (void)setWillChoosePageDismissBlock:;
+- (id)jxCoverPreviewBlock;
+- (void).cxx_destruct;
+- (id)saveBlock;
+- (void)setSaveBlock:;
+@end

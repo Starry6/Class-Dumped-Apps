@@ -1,0 +1,30 @@
+@interface AWEPadFeedChannelDataMonitor : NSObject
+@property (nonatomic) NSDate requestBeginTime;
+@property (nonatomic) NSDate requestEndTime;
+@property (nonatomic) NSDate buildEndTime;
+@property (nonatomic) NSDate showEndTime;
+@property (nonatomic) NSError requestError;
+@property (nonatomic) NSString logID;
+@property (nonatomic) q action;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateRequestInfoWithError:logID:;
+- (id)requestBeginTime;
+- (id)showEndTime;
+- (void)setRequestBeginTime:;
+- (void)setShowEndTime:;
+- (void)setRequestEndTime:;
+- (void)setAction:;
+- (id)requestEndTime;
+- (long long)action;
+- (void).cxx_destruct;
+- (id)initWithDictionary:;
+- (id)logID;
+- (id)buildEndTime;
+- (void)setBuildEndTime:;
+- (void)setLogID:;
+- (id)requestError;
+- (void)setRequestError:;
+@end

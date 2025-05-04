@@ -1,0 +1,30 @@
+@interface AWEHPChannelLandingRollBackPluginController : NSObject
+@property (nonatomic) <AWEHPChannelControllerProtocol> channelController;
+@property (nonatomic) <AWEHPTabLandingRollBackComponentProtocol> rollBackComponent;
+@property (nonatomic) AWEHPLandingTabRollBackTask rollBackTask;
+@property (nonatomic) q dismissType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)channelController;
+- (void)setChannelController:;
+- (void)channelLeaveWithModel:;
+- (void)channelViewDidAppear;
+- (void)channelViewDidDisappear;
+- (void)channelLandingTabWithModel:;
+- (void)channelDidEnterBackground;
+- (void)p_dismissComponentIfNeedWithType:;
+- (id)rollBackTask;
+- (id)rollBackComponent;
+- (void)setRollBackTask:;
+- (void)p_delayShowRollBackComponentIfNeed;
+- (void)p_showRollBackComponentIfNeed;
+- (void)setDismissType:;
+- (void)p_buttonDidDismiss;
+- (void)setRollBackComponent:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWithController:;
+- (long long)dismissType;
+@end

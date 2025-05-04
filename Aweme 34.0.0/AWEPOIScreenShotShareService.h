@@ -1,0 +1,32 @@
+@interface AWEPOIScreenShotShareService : NSObject
+@property (nonatomic) UIViewController target;
+@property (nonatomic) AWEPOIInfoModel poiInfo;
+@property (nonatomic) BOOL isFavorited;
+@property (nonatomic) AWEPOIScreenShootPanelSheet currentSheet;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWEPOIDetailNGPageContext context;
+- (id)trackParams;
+- (id)poiInfo;
+- (void)setTrackParams:;
+- (void)showPanel;
+- (void)setPoiInfo:;
+- (void)setIsFavorited:;
+- (id)screenShotImage;
+- (void)didReceivePOICollectionStatusChanged:;
+- (void)removeScreenShootShareTarget:;
+- (void)addTarget:withContext:trackParams:;
+- (void)userDidTakeScreenshoot:;
+- (id)screenShotImageData;
+- (void)showFavoriceSuccessToast;
+- (void)routeToFavorite:;
+- (BOOL)isObservingPOIPage;
+- (id)target;
+- (void)setTarget:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (BOOL)isFavorited;
+- (id)currentSheet;
+- (void)setCurrentSheet:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,22 @@
+@interface AWEIMSwiftImpl.IMSMSViewController : UIViewController
+- (BOOL)configWithRouterParamDict:;
+- (void)sheetDidClickMaskArea:;
+- (void)sheetDidClickCloseButton:;
+- (void)sheetDidDragToDismiss:;
+- (BOOL)canShowInnerPush;
+- (void)keyboardWillChangeFrameNotificationWithNotification:;
+- (void)didClickSheetView;
+- (void)onThemeReloadWithNotification:;
+- (void)confirmBtnClick;
+- (void)sendVerifyBtnClick;
+- (void)changeBtnClick;
+- (void)keyboardWillhide:;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (void)keyboardWillShow:;
+- (id)initWithCoder:;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+@end

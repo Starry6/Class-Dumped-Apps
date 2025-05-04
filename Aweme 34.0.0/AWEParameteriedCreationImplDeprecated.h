@@ -1,0 +1,36 @@
+@interface AWEParameteriedCreationImplDeprecated : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)startShareImageWithStoryModel:completion:;
+- (id)createTaskWithCamera:album:editor:publish:bizData:completion:;
+- (void)appendPublishTaskWithModel:quickStory:;
+- (id)startCreatingWithEditor:publish:bizData:completion:;
+- (void)appendPublishTaskWithModel:editService:quickStory:;
+- (void)showEditorWithPublishViewModel:completion:;
+- (id)createTaskWithConfig:completion:;
+- (id)createTaskWithConfigId:completion:;
+- (id)createTaskWithConfigUrl:completion:;
+- (id)createTaskWithConfigPath:completion:;
+- (id)createTaskWithEditor:publish:bizData:publishModel:completion:;
+- (void)showCameraWithPublishViewModel:completion:;
+- (void)showEditorWithPublishViewModel:completion:cancelBlock:;
+- (void)showPublishingWithPublishViewModel:completion:cancelBlock:;
+- (id)startCreatingWithCamera:editor:publish:bizData:completion:;
+- (id)startShareImageWithJSONString:completion:;
+- (id)startShareImageWithStoryModel:completion:cancelBlock:;
+- (id)startShareVideoWithJSONString:completion:;
+- (id)startShareVideoWithStoryModel:completion:cancelBlock:;
+- (id)startShareVideoWithStoryModel:completion:;
+- (id)startCreatingWithPublish:editor:bizData:completion:;
+- (id)startCreatingSilentlyWithEditor:publish:bizData:quickStory:completion:;
+- (id)createTaskWithCamera:album:editor:publish:bizData:publishModel:completion:;
+- (void)trackShowCameraWithPublishModel:;
+- (void)startShareImageWithStoryModel:completion:creationID:cancelBlock:;
+- (void)beginShareImagePreparationWithStoryModel:;
+- (void)checkValidAndStartShareVideoWithStoryModel:completion:creationID:cancelBlock:;
+- (void)startShareVideoWithStoryModel:completion:creationID:cancelBlock:;
++ (BOOL)p_publishEnabled;
++ (void)p_notSupportPublishCallbackWithBlock:;
+@end

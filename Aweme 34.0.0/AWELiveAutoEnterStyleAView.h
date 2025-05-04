@@ -1,0 +1,38 @@
+@interface AWELiveAutoEnterStyleAView : UIView
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} liveStatusFrame;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UILabel nextTextLabel;
+@property (nonatomic) CAShapeLayer borderLayer;
+@property (nonatomic) AWELiveFeedStatusViewModel viewModel;
+@property (nonatomic) AWELiveWebPPlayer liveAnimationView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) NSDictionary configDict;
+- (void)setLiveAnimationView:;
+- (id)liveAnimationView;
+- (BOOL)isWidthChanged;
+- (void)relayoutWidthAnimation;
+- (void)startBorderAnimation;
+- (id)liveStatusFrame;
+- (id)initWithLiveStatusFrame:withViewModel:configDict:;
+- (void)setLiveStatusFrame:;
+- (id)nextTextLabel;
+- (void)startScrollTitleAnimation;
+- (void)setNextTextLabel:;
+- (id)textLabel;
+- (id)viewModel;
+- (void)setBackgroundView:;
+- (id)contentView;
+- (id)backgroundView;
+- (id)configDict;
+- (void)setConfigDict:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)layoutSubviews;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (id)borderLayer;
+- (void)updateData;
+- (void)setBorderLayer:;
+@end

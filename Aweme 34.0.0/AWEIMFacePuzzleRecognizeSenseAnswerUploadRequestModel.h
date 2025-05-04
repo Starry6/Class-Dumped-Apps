@@ -1,0 +1,34 @@
+@interface AWEIMFacePuzzleRecognizeSenseAnswerUploadRequestModel : AWEBaseApiModel
+@property (nonatomic) NSString secExerciseUserId;
+@property (nonatomic) NSString secExerciseId;
+@property (nonatomic) q useTime;
+@property (nonatomic) NSDictionary chooseSenseMap;
+@property (nonatomic) AWEIMFacePuzzlePicUpLoadModel resPicUpload;
+@property (nonatomic) q conversationShortId;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) q conversationType;
+@property (nonatomic) q serverMsgId;
+@property (nonatomic) BOOL isOutside;
+- (long long)conversationType;
+- (void)setConversationType:;
+- (long long)conversationShortId;
+- (void)setConversationShortId:;
+- (long long)serverMsgId;
+- (void)setServerMsgId:;
+- (void)setSecExerciseUserId:;
+- (void)setSecExerciseId:;
+- (BOOL)isOutside;
+- (void)setIsOutside:;
+- (void)setChooseSenseMap:;
+- (id)chooseSenseMap;
+- (void)setUseTime:;
+- (void)setResPicUpload:;
+- (id)secExerciseId;
+- (id)secExerciseUserId;
+- (long long)useTime;
+- (id)resPicUpload;
+- (void).cxx_destruct;
+- (id)conversationId;
+- (void)setConversationId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

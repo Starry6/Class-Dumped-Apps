@@ -1,0 +1,37 @@
+@interface AWENearbyShopCardBySyncMsgInfo : NSObject
+@property (nonatomic) BOOL isFirstPresentationCard;
+@property (nonatomic) q msgType;
+@property (nonatomic) NSString logId;
+@property (nonatomic) NSString poiId;
+@property (nonatomic) double serverTs;
+@property (nonatomic) double receivedTs;
+@property (nonatomic) NSDictionary msgData;
+@property (nonatomic) BOOL hasAlreadyRefreshCard;
+@property (nonatomic) BOOL isNearbyTab;
+@property (nonatomic) BOOL isFromPullMsg;
+@property (nonatomic) q bizType;
+- (long long)bizType;
+- (void)setBizType:;
+- (id)logId;
+- (void)setLogId:;
+- (id)msgData;
+- (void)setMsgData:;
+- (BOOL)isFromPullMsg;
+- (void)setIsFromPullMsg:;
+- (BOOL)hasAlreadyRefreshCard;
+- (void)setHasAlreadyRefreshCard:;
+- (id)initWithShopMsg:;
+- (double)serverTs;
+- (void)setServerTs:;
+- (double)receivedTs;
+- (void)setReceivedTs:;
+- (BOOL)isNearbyTab;
+- (void)setIsNearbyTab:;
+- (BOOL)isFirstPresentationCard;
+- (void)setIsFirstPresentationCard:;
+- (void).cxx_destruct;
+- (id)poiId;
+- (void)setPoiId:;
+- (long long)msgType;
+- (void)setMsgType:;
+@end

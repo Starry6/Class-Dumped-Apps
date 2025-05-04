@@ -1,0 +1,36 @@
+@interface AWEIMFakeStrangerChatDataManager : NSObject
+@property (nonatomic) AWEIMChatModel latestChatModel;
+@property (nonatomic) <AWEIMFakeStrangerChatDataManagerDelegate> delegate;
+@property (nonatomic) BOOL ifkickOffStrangerBoxDataSource;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)iesim_chatDataManager:chatListDidUpdateWithDeletedChats:insertedChats:firstPage:reason:;
+- (void)iesim_chatDataManager:totalUnreadCountUpdate:;
+- (void)iesim_chatDataManager:chatDidUpdate:;
+- (void)iesim_chatDataManager:MessagePropertiesDidUpdate:chat:oldPropertyMap:newPropertyMap:reason:;
+- (void)iesim_chatDataManager:unreadCountV2Update:;
+- (void)loadRemainingChatListWithCompletion:;
+- (BOOL)iesim_shouldFilterConversation:chatDataControllerType:filterReason:;
+- (long long)chatCount;
+- (id)strangerBoxChatDataManager;
+- (long long)firstPageSize;
+- (long long)iesim_compareConversationA:withConversationB:;
+- (BOOL)iesim_needUpdateSortOrder;
+- (void)iesim_didEndUpdateSortOrder;
+- (void)prepareForIMLogin;
+- (void)prepareForIMLogout;
+- (id)p_oldSortOrderVersionKey;
+- (id)latestChatModel;
+- (void)setLatestChatModel:;
+- (BOOL)ifkickOffStrangerBoxDataSource;
+- (void)setIfkickOffStrangerBoxDataSource:;
+- (long long)unreadCount;
+- (id)delegate;
+- (id)config;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

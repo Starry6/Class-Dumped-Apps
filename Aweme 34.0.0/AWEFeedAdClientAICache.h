@@ -1,0 +1,32 @@
+@interface AWEFeedAdClientAICache : HTSService
+@property (nonatomic) NSDictionary slots;
+@property (nonatomic) Q totalCost;
+@property (nonatomic) Q totalCount;
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)saveFeedWithScene:feed:slotId:cost:;
+- (id)feedWithScene:itemId:;
+- (id)slotIdWithScene:itemId:;
+- (id)fetchItemId:;
+- (void)removeSlotFeedsWithScene:slotId:;
+- (BOOL)containsFeedWithScene:itemId:;
+- (id)outsideFeedWithScene:insideItemId:;
+- (id)slotFeedsWithScene:itemId:;
+- (id)slotFeedsGroupBySlotId:;
+- (void)removeSlotFeedsWithScene:itemId:;
+- (void)removeAll:;
+- (id)init;
+- (unsigned long long)totalCount;
+- (void)setLock:;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setTotalCount:;
+- (void)setTotalCost:;
+- (unsigned long long)totalCost;
+- (id)slots;
+- (void)setSlots:;
++ (id)sharedInstance;
+@end

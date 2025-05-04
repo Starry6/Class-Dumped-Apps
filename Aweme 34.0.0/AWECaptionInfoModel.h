@@ -1,0 +1,31 @@
+@interface AWECaptionInfoModel : MTLModel
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString extraString;
+@property (nonatomic) BOOL consumed;
+@property (nonatomic) BOOL closeClicked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtraString:;
+- (id)extraString;
+- (BOOL)closeClicked;
+- (void)setCloseClicked:;
+- (double)awe_search_endTime;
+- (id)awe_search_extraDic;
+- (long long)awe_search_msgPriority;
+- (id)awe_search_msgID;
+- (BOOL)awe_search_msgNowValid;
+- (unsigned long long)awe_search_msgType;
+- (id)awe_search_toastMsgDic;
+- (id)awe_search_logPb;
+- (BOOL)consumed;
+- (void).cxx_destruct;
+- (id)link;
+- (void)setLink:;
+- (void)setConsumed:;
+- (id)keyword;
+- (void)setKeyword:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

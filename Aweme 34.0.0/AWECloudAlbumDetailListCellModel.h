@@ -1,0 +1,35 @@
+@interface AWECloudAlbumDetailListCellModel : NSObject
+@property (nonatomic) ACCCameraSubscription subscription;
+@property (nonatomic) EcAsset asset;
+@property (nonatomic) @? itemStateService;
+@property (nonatomic) q index;
+@property (nonatomic) q type;
+@property (nonatomic) # cellClass;
+@property (nonatomic) BOOL selectable;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) EcTaskItemState state;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)itemStateService;
+- (void)notifyDidChangeUploadState:;
+- (void)notifyDidChangeCanSelect:;
+- (void)notifyDidChangeSelection:;
+- (void)notifyDidChangeIndex:;
+- (void)setItemStateService:;
+- (id)subscription;
+- (long long)index;
+- (void)setSubscription:;
+- (id)state;
+- (long long)type;
+- (Class)cellClass;
+- (BOOL)selectable;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (void)setAsset:;
+- (BOOL)selected;
+- (id)asset;
+- (void)addSubscriber:;
+- (void)removeSubscriber:;
+@end

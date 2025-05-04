@@ -1,0 +1,37 @@
+@interface AWEMusicDetailHeaderLayoutInspirationLayoutManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)musicHeaderCoverHeight;
+- (double)musicHeaderCoverTopMargin;
+- (double)musicHeaderTitleCoverSpacing;
+- (double)authorLabelTopMargin;
+- (double)authorLabelHeight;
+- (double)userCountLabelHeight;
+- (double)musicHeaderActionsTopMargin;
+- (double)musicHeaderActionsHeight;
+- (double)musicHeaderActionsBottomMargin;
+- (double)leaderboardHeight;
+- (id)userCountLabelFont;
+- (id)authorLabelFont;
+- (long long)headerViewRevisionType;
+- (double)musicHeaderActionElementsSpacing;
+- (double)musicCornerHeaderCoverPadding;
+- (id)leaderboardFont;
+- (double)musicHeaderMatchedPGCHeight;
+- (id)musicHeaderMatchedPGCLabelFont;
+- (double)collectBtnWidthWhileEnhance;
+- (double)musicHeaderContainerTopMargin;
+- (double)musicHeaderContainerBottomMargin;
+- (double)topTipsContainerHeight;
+- (double)pendentViewTopMargin;
+- (double)pendentViewLeftRightMargin;
+- (double)leaderboardLeftMargin;
+- (double)PGCRelatedInfoViewTopMargin;
+- (double)PGCRelatedInfoViewHeight;
+- (double)splitViewLeftMargin;
+- (double)titleHeight;
+- (id)titleFont;
+- (double)titleTopMargin;
+@end

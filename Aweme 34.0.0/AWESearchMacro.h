@@ -1,0 +1,2 @@
+@interface AWESearchMacro : NSObject
+@end

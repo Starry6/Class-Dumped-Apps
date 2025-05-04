@@ -1,0 +1,30 @@
+@interface AWESearchLynxSSERequestManager : NSObject
+@property (nonatomic) AWESearchAIGCSSERequestManager requestManager;
+@property (nonatomic) NSDictionary createEventParams;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) <AWESearchLynxSSERequestManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didReceiveAllData;
+- (void)didReceiveFirstDataChunk;
+- (void)didEndReadChunkForError:errorReason:currentResponse:;
+- (void)didReceiveCommonJSON:;
+- (void)startNewStreamWithCreateEventParams:;
+- (void)impStartNewStreamWithCreateEventParams:;
+- (void)impCancelCurrentRequest;
+- (void)setCreateEventParams:;
+- (void)handleDataArray:;
+- (id)createEventParams;
+- (id)init;
+- (void)dealloc;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setRequestId:;
+- (id)requestManager;
+- (void)setDelegate:;
+- (id)requestId;
+- (void)cancelCurrentRequest;
+- (void)setRequestManager:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMMessageListThemeComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMChatThemeModel themeModel;
+@property (nonatomic) NSString lastChatThemeExt;
+@property (nonatomic) NSString lastBgImageExt;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onConversationDidUpdateWithConversation:;
+- (void)hostVC_willDealloc;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (id)conversationInfoOtherRequestParams;
+- (void)updateConversationInfoOtherData:source:;
+- (id)themeModel;
+- (void)setThemeModel:;
+- (id)p_createDefaultThemeModelIfNeeded;
+- (void)p_updateChatThemeIfChangeExt;
+- (void)p_onThemeExtDidChange:bgImageExt:;
+- (void)p_updateTheme:themeExt:bgImageExt:;
+- (void)trackChatTopicStatus:;
+- (id)lastChatThemeExt;
+- (void)p_onlyChangeBgImageExt:;
+- (void)setLastBgImageExt:;
+- (void)setLastChatThemeExt:;
+- (id)lastBgImageExt;
+- (void).cxx_destruct;
+- (id)conversation;
++ (BOOL)canCreateComponentWithContext:;
+@end

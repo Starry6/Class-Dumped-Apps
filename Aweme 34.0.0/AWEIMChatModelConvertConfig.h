@@ -1,0 +1,2 @@
+@interface AWEIMChatModelConvertConfig : NSObject
+@end

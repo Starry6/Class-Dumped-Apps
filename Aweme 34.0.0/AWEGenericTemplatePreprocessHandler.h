@@ -1,0 +1,30 @@
+@interface AWEGenericTemplatePreprocessHandler : NSObject
+@property (nonatomic) NSMutableDictionary blockDict;
+@property (nonatomic) NSMutableDictionary taskDict;
+@property (nonatomic) NSMutableDictionary trackModelDict;
+@property (nonatomic) NSMutableDictionary phAssetDict;
+@property (nonatomic) NSObject<OS_dispatch_queue> rwQueue;
+- (void)setTaskDict:;
+- (id)rwQueue;
+- (void)setRwQueue:;
+- (id)blockDict;
+- (void)setBlockDict:;
+- (id)retrieveAssetForLocalIdentifier:;
+- (void)appendAssetForLocalIdentifier:phasset:;
+- (id)retrieveTrackModelForRequestId:;
+- (void)removeTrackModelForRequestId:;
+- (void)appendBlockForRequestId:block:;
+- (id)retrieveBlockForRequestId:;
+- (void)appendTrackModelForRequestId:trackModel:;
+- (void)removeBlockForRequestId:;
+- (void)removeTaskForRequestId:;
+- (id)retrieveTaskForRequestId:;
+- (void)appendTaskForRequestId:task:;
+- (id)initWithRwQueue:;
+- (id)trackModelDict;
+- (void)setTrackModelDict:;
+- (id)phAssetDict;
+- (void)setPhAssetDict:;
+- (void).cxx_destruct;
+- (id)taskDict;
+@end

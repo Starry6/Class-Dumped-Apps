@@ -1,0 +1,32 @@
+@interface AWEGuestLikeListContainerViewModel : AWEBaseListViewModel
+@property (nonatomic) AWEGuestHomePageContext pageContext;
+@property (nonatomic) BOOL showLoading;
+@property (nonatomic) AWEGuestLikeListSectionViewModel likeSectionVM;
+@property (nonatomic) AWEGuestLikeListDataController dataController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)fetchListData;
+- (void)loadMoreListData;
+- (void)setupViewModel;
+- (void)setDataController:;
+- (void)setShowLoading:;
+- (BOOL)loadMoreHasMore;
+- (void)guestModeDidEnter;
+- (void)guestModeDidLeave;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (void)guestDidDiggAweme:isUndigg:;
+- (void)handleDataStateChanged;
+- (id)likeSectionVM;
+- (void)resetLikeListSection;
+- (void)initFetchWithCompletion:error:;
+- (void)loadMoreWithCompletion:error:;
+- (void)setLikeSectionVM:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)dataController;
+- (BOOL)showLoading;
+@end

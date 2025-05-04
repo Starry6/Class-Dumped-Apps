@@ -1,0 +1,36 @@
+@interface AWEStudioAIGCQueryTaskInfo : MTLModel
+@property (nonatomic) NSString taskID;
+@property (nonatomic) q taskStatus;
+@property (nonatomic) q updateTime;
+@property (nonatomic) q waitMinutes;
+@property (nonatomic) NSString waitTimeTip;
+@property (nonatomic) NSString respJson;
+@property (nonatomic) NSString effectID;
+@property (nonatomic) NSString ugcEffectID;
+@property (nonatomic) AWEStudioAIGCResourceMapModel resourceMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)resourceMap;
+- (void)setResourceMap:;
+- (void)setTaskStatus:;
+- (id)respJson;
+- (void)setEffectID:;
+- (id)waitTimeTip;
+- (void)setWaitTimeTip:;
+- (id)ugcEffectID;
+- (long long)waitMinutes;
+- (void)setWaitMinutes:;
+- (void)setRespJson:;
+- (void)setUgcEffectID:;
+- (long long)updateTime;
+- (void).cxx_destruct;
+- (void)setTaskID:;
+- (id)taskID;
+- (void)setUpdateTime:;
+- (id)effectID;
+- (long long)taskStatus;
++ (id)resourceMapJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

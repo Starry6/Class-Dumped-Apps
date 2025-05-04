@@ -1,0 +1,36 @@
+@interface AWEIMBaseCommentShareMessage : AWEIMMessage
+@property (nonatomic) NSAttributedString commentCopyText;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString commentID;
+@property (nonatomic) NSString comment;
+@property (nonatomic) NSString commentSecUid;
+@property (nonatomic) NSString commentUserName;
+@property (nonatomic) q commentType;
+@property (nonatomic) NSString commentSortTags;
+@property (nonatomic) NSString commentParentSortTags;
+@property (nonatomic) NSString commentEnterFrom;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)commentID;
+- (void)setCommentUserName:;
+- (void)setCommentID:;
+- (id)initWithContentDict:;
+- (void)setCommentType:;
+- (id)getContentDict;
+- (id)commentUserName;
+- (void)setCommentCopyText:;
+- (id)commentSecUid;
+- (id)commentCopyText;
+- (id)commentSortTags;
+- (id)commentParentSortTags;
+- (id)commentEnterFrom;
+- (void)setCommentSecUid:;
+- (long long)p_commentTypeWithContentDict:;
+- (void)setCommentSortTags:;
+- (void)setCommentParentSortTags:;
+- (void)setCommentEnterFrom:;
+- (id)comment;
+- (void).cxx_destruct;
+- (void)setComment:;
+- (long long)commentType;
+@end

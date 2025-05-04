@@ -1,0 +1,31 @@
+@interface AWEAdChanllengeLiveCardCell : UICollectionViewCell
+@property (nonatomic) UIView previewCard;
+@property (nonatomic) AWEAdChallengeLiveTipsView liveTipsView;
+@property (nonatomic) UIImageView liveAvatar;
+@property (nonatomic) UILabel liveTitle;
+@property (nonatomic) UILabel liveUserName;
+@property (nonatomic) UIView gradientView;
+@property (nonatomic) UIImageView coverPhoto;
+@property (nonatomic) HTSLiveRoom roomModel;
+- (id)roomModel;
+- (void)setRoomModel:;
+- (id)liveAvatar;
+- (id)liveUserName;
+- (void)setLiveUserName:;
+- (void)setupSubView;
+- (id)liveTipsView;
+- (id)liveTitle;
+- (void)updateWithECommerceCardModel:;
+- (id)previewCard;
+- (void)setPreviewCard:;
+- (void)setLiveTipsView:;
+- (void)setLiveAvatar:;
+- (void)setLiveTitle:;
+- (id)gradientView;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)coverPhoto;
+- (void)setCoverPhoto:;
++ (id)identifier;
+@end

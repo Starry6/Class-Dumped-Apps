@@ -1,0 +1,32 @@
+@interface AWEFeedSameStyleShootView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) double originAlpha;
+@property (nonatomic) UIColor toColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)tipsLabel;
+- (void)setTipsLabel:;
+- (void)initBackgroundColor;
+- (void)setOriginAlpha:;
+- (double)originAlpha;
+- (void)updateTips:;
+- (id)init;
+- (id)defaultBackgroundColor;
+- (void)touchesCancelled:withEvent:;
+- (id)contentView;
+- (void)updateBackgroundColor;
+- (id)iconImageView;
+- (void)touchesEnded:withEvent:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)touchesBegan:withEvent:;
+- (void)touchesMoved:withEvent:;
+- (void)setIconImageView:;
+- (id)toColor;
+- (void)setToColor:;
+@end

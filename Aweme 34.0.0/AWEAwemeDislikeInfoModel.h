@@ -1,0 +1,2 @@
+@interface AWEAwemeDislikeInfoModel : NSObject
+@end

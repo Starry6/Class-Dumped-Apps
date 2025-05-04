@@ -1,0 +1,31 @@
+@interface AWEInnerNotificationCenterBizImpl : NSObject
+@property (nonatomic) AWEInnerPushExitController exitController;
+@property (nonatomic) AWEInnerPushDidReverseExpConfig reverseExpConfig;
+@property (nonatomic) NSMutableArray pendingNotificationsByAd;
+@property (nonatomic) BOOL adHasDisappear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__addObserver;
+- (void)didShowNotificationWithRequest:;
+- (id)controlAddNotificationRequest:;
+- (void)notificationOperatorDidDismiss:reason:;
+- (void)setPendingNotificationsByAd:;
+- (void)__setupControlInfo;
+- (void)retryAddNotificationRequest;
+- (BOOL)canShowByNewReversExpr:;
+- (BOOL)canShowByReversExpr:;
+- (void)resetPriorityOfRequest:;
+- (id)exitController;
+- (BOOL)adHasDisappear;
+- (id)pendingNotificationsByAd;
+- (void)setAdHasDisappear:;
+- (BOOL)canShowByInnerPushGroupReverseExpr:;
+- (id)reverseExpConfig;
+- (void)setExitController:;
+- (void)setReverseExpConfig:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

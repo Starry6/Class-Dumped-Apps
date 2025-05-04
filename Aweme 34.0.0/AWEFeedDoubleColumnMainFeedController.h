@@ -1,0 +1,30 @@
+@interface AWEFeedDoubleColumnMainFeedController : AWEBaseController
+@property (nonatomic) NSMutableDictionary appearTimeDict;
+@property (nonatomic) BOOL feedAlreadyRender;
+@property (nonatomic) BOOL isCanceledByBackground;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellViewControllerDidRenderFirstFrame:;
+- (id)shouldPreventPauseBeforePlayStateChanged;
+- (void)trackPinchEntranceShow;
+- (long long)preloadC2CacheDelayTime;
+- (void)setFeedAlreadyRender:;
+- (void)preloadC2CacheIfAvailable;
+- (void)preloadC2DataIfNeeded;
+- (BOOL)isCanceledByBackground;
+- (void)setIsCanceledByBackground:;
+- (id)appearTimeDict;
+- (void)realTriggerPreloadC2Data;
+- (void)realPreloadC2Cache;
+- (void)trackPreloadCacheWithSuccess:isFromHistory:;
+- (void)setAppearTimeDict:;
+- (BOOL)feedAlreadyRender;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void)scrollViewWillBeginDragging:;
+- (void).cxx_destruct;
+- (void)applicationDidBecomeActive;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
+@end

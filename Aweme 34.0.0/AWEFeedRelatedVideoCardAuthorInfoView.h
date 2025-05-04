@@ -1,0 +1,37 @@
+@interface AWEFeedRelatedVideoCardAuthorInfoView : UIView
+@property (nonatomic) AWEFeedStablePageAuthorInfoView authorInfoView;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString fromPage;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setLogExtraDict:;
+- (void)didFinishLogin;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (id)logExtraDict;
+- (void)setFromPage:;
+- (void)followButtonAction;
+- (id)authorInfoView;
+- (id)userProfileViewController:;
+- (BOOL)tryTransferToXiguaApp;
+- (void)executeUnfollow;
+- (void)executeFollow;
+- (id)getRelationContext;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (BOOL)transferToUserProfile:;
+- (void)trackAuthorLabelClicked:;
+- (void)trackForFollowAction:;
+- (void)setAuthorInfoView:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setupSubviews;
+- (void)updateWithModel:;
+- (id)fromPage;
+@end

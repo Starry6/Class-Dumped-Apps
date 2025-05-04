@@ -1,0 +1,31 @@
+@interface AWENearbyPOITagsView : UIView
+@property (nonatomic) NSString accessibilityLabelText;
+@property (nonatomic) double hight;
+@property (nonatomic) double tagCornerRadius;
+@property (nonatomic) UIColor firstTextColor;
+@property (nonatomic) UIColor firstBgColor;
+@property (nonatomic) UIFont firstFont;
+@property (nonatomic) UIColor otherTextColor;
+@property (nonatomic) UIColor otherBgColor;
+- (double)hight;
+- (void)setHight:;
+- (double)contentMaxWidth;
+- (void)configTagsViewWithModel:;
+- (void)setAccessibilityLabelText:;
+- (id)createTagViewWithShadow:;
+- (id)firstTextColor;
+- (id)firstBgColor;
+- (double)tagCornerRadius;
+- (id)otherTextColor;
+- (id)otherBgColor;
+- (id)accessibilityLabelText;
+- (void)setTagCornerRadius:;
+- (void)setFirstTextColor:;
+- (void)setFirstBgColor:;
+- (void)setFirstFont:;
+- (void)setOtherTextColor:;
+- (void)setOtherBgColor:;
+- (id)accessibilityLabel;
+- (void).cxx_destruct;
+- (id)firstFont;
+@end

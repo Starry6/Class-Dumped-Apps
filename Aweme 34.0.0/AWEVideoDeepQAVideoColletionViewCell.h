@@ -1,0 +1,33 @@
+@interface AWEVideoDeepQAVideoColletionViewCell : UICollectionViewCell
+@property (nonatomic) LOTAnimationView playingIconView;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) AWEAwemeSearchVideoAbstractSectionModel sectionModel;
+@property (nonatomic) double timeLabelWidth;
+@property (nonatomic) double contentLabelHeight;
+- (void)configUI;
+- (double)contentLabelHeight;
+- (double)timeLabelWidth;
+- (void)setTimeLabelWidth:;
+- (void)setContentLabelHeight:;
+- (id)playingIconView;
+- (void)setPlayingIconView:;
+- (void)updateWithModel:lottiePath:;
+- (id)sectionModel;
+- (void)setTimeLabel:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (id)titleLabel;
+- (void)setSectionModel:;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (id)contentLabel;
+- (void)setContentLabel:;
++ (double)cellHeight:;
++ (id)getConentLabelAttributedString:;
++ (long long)getContentLabelHeight:sectionModel:;
++ (id)identifier;
+@end

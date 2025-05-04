@@ -1,0 +1,32 @@
+@interface AWEECOMIMMoreView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSMutableSet didTrackViewEventItemTitleSet;
+@property (nonatomic) @? block;
+@property (nonatomic) AWEECOMIMPageTrackUtil pageTrackUtil;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)checkIfHasRemind;
+- (id)initWithFrame:defaultItems:;
+- (id)pageTrackUtil;
+- (void)setPageTrackUtil:;
+- (void)willDisplayView;
+- (void)trackModuleViewEvents;
+- (void)setDidTrackViewEventItemTitleSet:;
+- (id)didTrackViewEventItemTitleSet;
+- (id)collectionView;
+- (id)items;
+- (void)reloadWithItems:;
+- (void)setItems:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)block;
+- (void)setCollectionView:;
+- (void)setBlock:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setupUI;
+@end

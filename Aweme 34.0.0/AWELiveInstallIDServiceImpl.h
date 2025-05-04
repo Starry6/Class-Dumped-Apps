@@ -1,0 +1,36 @@
+@interface AWELiveInstallIDServiceImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fpid;
+- (id)appVersionCode;
+- (id)updateVersionCode;
+- (BOOL)isInHouse;
+- (id)appGroupId;
+- (long long)currentAPPUIMode;
+- (BOOL)isBOEEnabled;
+- (id)webSocketAppKey;
+- (id)commonParametersWithoutL0;
+- (id)commonParametersWithUrlString:;
+- (id)liveID;
+- (BOOL)appIsLaunchFromNewInstall;
+- (BOOL)appIsLaunchFromVersionUpgrade;
+- (id)appUpgradeFromVersion;
+- (id)TTAccountToken;
+- (id)TTAccountSDKVersion;
+- (void)checkInstalledLiveWidget:;
+- (id)aAWELiveInstallIDServiceImplDOUYINAdapter;
+- (BOOL)isOriginBOEEnabled;
+- (id)channel;
+- (id)sessionKey;
+- (id)appID;
+- (id)installID;
+- (id)deviceID;
+- (id)deviceType;
+- (id)appName;
+- (unsigned long long)currentTarget;
+- (id)accessCode;
+- (id)appBuildNumber;
++ (Class)aAWELiveInstallIDServiceImplDOUYINAdapterClass;
+@end

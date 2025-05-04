@@ -1,0 +1,38 @@
+@interface AWEProfileHeaderNameAreaUtilities : NSObject
+- (id)aAWEDYProfileHeaderActionControllerDOUYINLiteAdapter;
++ (id)idStrWithUserModel:;
++ (void)recordShowContactRemarkEntranceWithContext:;
++ (void)trackShowEditRemarks:followStatus:previousPage:;
++ (void)trackCraftsManBillboardShowWithContext:;
++ (void)trackCraftsManBillboardClickWithContext:;
++ (BOOL)shouldShowIDContentViewWithContext:;
++ (id)idStrWithContext:;
++ (void)goToBrandBoardWithContext:;
++ (void)goToPlayletWithContext:;
++ (void)trackPlayletTagWithEventName:context:;
++ (void)didTapSwitchAccountButton:isAuto:;
++ (Class)aAWEDYProfileHeaderActionControllerDOUYINLiteAdapterClass;
++ (unsigned long long)multiAccountNoticeUnreadDotStyleWithContext:;
++ (BOOL)showVerifyBadgeWithContext:;
++ (id)__profileVerificationDescription:;
++ (void)showBrandInfoWithView:context:;
++ (void)trackBrandInfoShowWithContext:;
++ (void)showPlayletCraftsManBillboardWithView:context:;
++ (void)showPlayletDogCardWithView:context:;
++ (void)trackProfileRankWithEventName:context:params:;
++ (BOOL)canShowNameEditBtnWithContext:;
++ (void)didClickNicknameAction:;
++ (void)didTapEditNameButton:context:;
++ (void)trackNameEditButtonClickWith:;
++ (void)trackShowBirthdayView;
++ (void)showAliasRemarkView:context:;
++ (void)didTapMultiAccountUnreadDotView:context:isAuto:;
++ (void)didTapBirthdayView:;
++ (BOOL)showQuickSwitchWithContext:;
++ (void)qrcodeIconTappedWithContext:;
++ (BOOL)shouldShowPrivateLabelWithContext:;
++ (id)verificationDescriptionWithContext:;
++ (void)didTapVerificationLabelWithContext:;
++ (void)trackIdentifiesShowContext:;
++ (BOOL)disableShowContactRemarkNameEntrance:;
+@end

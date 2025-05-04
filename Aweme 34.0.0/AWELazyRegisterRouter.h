@@ -1,0 +1,2 @@
+@interface AWELazyRegisterRouter : NSObject
+@end

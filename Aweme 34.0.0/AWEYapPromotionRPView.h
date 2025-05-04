@@ -1,0 +1,38 @@
+@interface AWEYapPromotionRPView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView iconArea;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UIStackView titleStack;
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) NSAttributedString title;
+@property (nonatomic) NSAttributedString subTitle;
+@property (nonatomic) @? tapActionBlock;
+- (void)p_setupUI;
+- (id)tapActionBlock;
+- (void)setTapActionBlock:;
+- (void)p_addGesture;
+- (void)p_onTapCard;
+- (id)iconArea;
+- (void)setIconArea:;
+- (id)icon;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setTitle:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setStatusLabel:;
+- (id)statusLabel;
+- (void)setTitleStack:;
+- (id)titleStack;
+@end

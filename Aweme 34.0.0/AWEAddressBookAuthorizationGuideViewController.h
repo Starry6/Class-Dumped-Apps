@@ -1,0 +1,30 @@
+@interface AWEAddressBookAuthorizationGuideViewController : UIViewController
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView contactImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) DYLoginNextActionButton viewButton;
+@property (nonatomic) @? finishBlock;
+@property (nonatomic) AWEFindFriendsLoginGuideConfigModel configModel;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)skipAction;
+- (void)uploadAddressBookAuthorization;
+- (void)viewAction;
+- (id)initWithFinishBlock:;
+- (void)viewDidLoad;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)contactImageView;
+- (void)setContactImageView:;
+- (void)setViewButton:;
+- (id)viewButton;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (void)setFinishBlock:;
+- (id)finishBlock;
+@end

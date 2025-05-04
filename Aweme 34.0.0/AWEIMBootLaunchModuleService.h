@@ -1,0 +1,33 @@
+@interface AWEIMBootLaunchModuleService : HTSService
+@property (nonatomic) BFTaskCompletionSource startIMTaskSource;
+@property (nonatomic) BOOL hasLaunchOptions;
+@property (nonatomic) BOOL isDefaultLanding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q state;
+@property (nonatomic) q startIMSource;
+@property (nonatomic) BOOL isFromPush;
+@property (nonatomic) double initTime;
+- (BOOL)enableFeedReadyBootLaunchIM:;
+- (long long)getStartIMState;
+- (id)runFeedReadyIMTask:;
+- (BOOL)isFromPush;
+- (void)setIsDefaultLanding:;
+- (BOOL)isDefaultLanding;
+- (void)setIsFromPush:;
+- (id)startIMTaskSource;
+- (void)executeIMBootLaunchImmediately:;
+- (long long)startIMSource;
+- (void)setStartIMSource:;
+- (void)setStartIMTaskSource:;
+- (BOOL)hasLaunchOptions;
+- (void)setHasLaunchOptions:;
+- (id)init;
+- (long long)state;
+- (void)setInitTime:;
+- (double)initTime;
+- (void).cxx_destruct;
+- (void)setState:;
+@end

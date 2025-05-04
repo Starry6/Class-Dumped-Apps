@@ -1,0 +1,34 @@
+@interface AWELivePictureInPictureServiceImpl : NSObject
+@property (nonatomic) NSDate startPiPDate;
+@property (nonatomic) UIViewController tempBackToVC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isInPIP;
+- (void)stopPictureInPictureWithStopType:completion:;
+- (void)liveIsInterupt;
+- (void)liveResume;
+- (void)showLiveEndView:;
+- (void)enterSameRoomWhenInPIP:;
+- (BOOL)isEnterSameRoomAgain;
+- (void)changeBackVCToFinishVC:;
+- (id)currentPipRoomId;
+- (BOOL)enableInnerPipServiceInstance;
+- (void)realPlayerShouldPlay:;
+- (void)trackForPipPauseBackgroundWithReason:;
+- (void)pipSuccessStarted;
+- (void)trackForPipRealShow:;
+- (void)pipFailToStart;
+- (void)pipDidClickClose;
+- (void)pipShouldReturnBack:;
+- (void)trackForPipCanStayBackground;
+- (void)setStartPiPDate:;
+- (id)startPiPDate;
+- (void)trackForPipRealStop;
+- (id)tempBackToVC;
+- (void)setTempBackToVC:;
+- (void)dealloc;
+- (void)startPictureInPicture;
+- (void).cxx_destruct;
+@end

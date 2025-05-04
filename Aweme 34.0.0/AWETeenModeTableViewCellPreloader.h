@@ -1,0 +1,38 @@
+@interface AWETeenModeTableViewCellPreloader : NSObject
+@property (nonatomic) <AWETeenModeTableViewCellPreloaderDelegate> delegate;
+@property (nonatomic) <AWEFeedPreloadManagerProtocol> preloadManager;
+@property (nonatomic) AWEListDataController dataController;
+@property (nonatomic) AWETeenAwemeTableViewCell preloadedCell;
+@property (nonatomic) AWETeenAwemeTableViewCell willDisplayPreloadedCell;
+@property (nonatomic) double cellPreloadDelay;
+@property (nonatomic) q scheduledPreloadIndex;
+- (void)setDataController:;
+- (id)preloadManager;
+- (void)setPreloadManager:;
+- (id)willDisplayPreloadedCell;
+- (void)scheduleCellPreloading;
+- (double)cellPreloadDelay;
+- (void)setCellPreloadDelay:;
+- (BOOL)isCellPreloadingEnabled;
+- (void)setWillDisplayPreloadedCell:;
+- (void)setScheduledPreloadIndex:;
+- (void)preloadNextCellIfNeeded;
+- (long long)scheduledPreloadIndex;
+- (id)fetchPreloadedCellForRowWithModel:atIndexPath:;
+- (void)checkToPrepareForDisplay:;
+- (id)initWithPreloadManager:dataController:delegate:;
+- (void)cancelCellPreloadingIfNeeded;
+- (BOOL)willDisplayPreloadedCell:;
+- (BOOL)p_optimizePlayFlowEnable;
+- (void)p_viewControllerTransitionNotification:;
+- (void)p_cancelCellPreloading;
+- (void)p_prepareForDisplayWithCell:;
+- (void)p_clearPrelodPlayerIfNeed;
+- (void)dealloc;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)dataController;
+- (id)preloadedCell;
+- (void)setPreloadedCell:;
+@end

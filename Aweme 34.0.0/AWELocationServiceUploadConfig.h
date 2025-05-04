@@ -1,0 +1,31 @@
+@interface AWELocationServiceUploadConfig : NSObject
+@property (nonatomic) BOOL shouldCollect;
+@property (nonatomic) BOOL shouldCollectLocation;
+@property (nonatomic) BOOL shouldReportGPS;
+@property (nonatomic) BOOL shouldReportWifi;
+@property (nonatomic) BOOL shouldReportBss;
+@property (nonatomic) BOOL shouldReportDeviceInfo;
+@property (nonatomic) NSNumber reportInterval;
+@property (nonatomic) BOOL pollAtOnce;
+@property (nonatomic) BOOL bdugLocationABImpl;
+- (void)setReportInterval:;
+- (id)reportInterval;
+- (void)setShouldCollect:;
+- (void)setShouldCollectLocation:;
+- (void)setShouldReportBss:;
+- (void)setShouldReportWifi:;
+- (void)setShouldReportGPS:;
+- (void)setShouldReportDeviceInfo:;
+- (void)setPollAtOnce:;
+- (void)setBdugLocationABImpl:;
+- (BOOL)shouldCollectLocation;
+- (BOOL)shouldReportGPS;
+- (BOOL)shouldReportWifi;
+- (BOOL)shouldReportBss;
+- (BOOL)shouldReportDeviceInfo;
+- (BOOL)pollAtOnce;
+- (BOOL)bdugLocationABImpl;
+- (void).cxx_destruct;
+- (BOOL)shouldCollect;
++ (id)defaultConfig;
+@end

@@ -1,0 +1,30 @@
+@interface AWECommentInputViewElementConfigTemplateModel : NSObject
+@property (nonatomic) AWECommentInputViewSendButtonConfigModel sendElementModel;
+@property (nonatomic) BOOL atEnable;
+@property (nonatomic) BOOL emojiEnable;
+@property (nonatomic) BOOL gifEnable;
+@property (nonatomic) BOOL imageEnable;
+@property (nonatomic) BOOL audioEnable;
+@property (nonatomic) BOOL videoEnable;
+@property (nonatomic) BOOL plusEnable;
+@property (nonatomic) BOOL anonymousEnable;
+- (BOOL)atEnable;
+- (BOOL)emojiEnable;
+- (BOOL)gifEnable;
+- (BOOL)imageEnable;
+- (BOOL)audioEnable;
+- (BOOL)videoEnable;
+- (BOOL)plusEnable;
+- (BOOL)anonymousEnable;
+- (id)sendElementModel;
+- (void)setImageEnable:;
+- (void)setSendElementModel:;
+- (void)setAtEnable:;
+- (void)setEmojiEnable:;
+- (void)setGifEnable:;
+- (void)setAudioEnable:;
+- (void)setVideoEnable:;
+- (void)setPlusEnable:;
+- (void)setAnonymousEnable:;
+- (void).cxx_destruct;
+@end

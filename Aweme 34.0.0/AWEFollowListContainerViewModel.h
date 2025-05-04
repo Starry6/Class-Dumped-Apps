@@ -1,0 +1,31 @@
+@interface AWEFollowListContainerViewModel : AWEBaseListViewModel
+@property (nonatomic) AWETabContainerSectionViewModel tabBarViewModel;
+@property (nonatomic) AWEFollowListPageContext pageContext;
+@property (nonatomic) q enterScene;
+@property (nonatomic) AWESocialRelationObserver friendCountObserver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishRemoveFansWithUser:;
+- (void)fetchListData;
+- (long long)enterScene;
+- (void)setEnterScene:;
+- (void)configPageContext:;
+- (void)updateEnterScene:;
+- (void)blockUserWithType:;
+- (id)tabBarViewModel;
+- (void)updateMateCount:;
+- (void)updateFriendCount:;
+- (id)tabbarModels;
+- (void)setTabBarViewModel:;
+- (id)friendCountObserver;
+- (void)setFriendCountObserver:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
+@end

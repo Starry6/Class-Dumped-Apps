@@ -1,0 +1,35 @@
+@interface AWELandscapeChapterProgressController : AWELandscapeInteractionBaseController
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) AWEDemaciaChapterProgressSlider chapterProgress;
+@property (nonatomic) q beforeSlideState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)player:updatePlayTime:canPlayTime:totalTime:;
+- (void)didEnterLandscape;
+- (BOOL)shouldReceiveGestureRecognizer:touch:;
+- (BOOL)chapterProgressSliderEnabledInteraction;
+- (void)setBeforeSlideState:;
+- (void)showChapterProgress:;
+- (BOOL)shouldShowChapterProgressWithModel:;
+- (BOOL)isShowingChapterProgress;
+- (long long)beforeSlideState;
+- (id)chapterProgress;
+- (double)calculateProgressWidth;
+- (void)updateChapterProgressLayout;
+- (void)refreshToCurrentPlayBackTime;
+- (double)defaultPlayBackTime;
+- (void)setChapterProgress:;
+- (void)updateState:;
+- (id)gradientView;
+- (void)viewDidLoad;
+- (double)screenWidth;
+- (double)screenHeight;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (double)currentPlaybackTime;
+- (void)reset;
+- (void)seekToTime:completion:;
+@end

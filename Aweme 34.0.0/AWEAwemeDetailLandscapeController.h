@@ -1,0 +1,38 @@
+@interface AWEAwemeDetailLandscapeController : AWEAwemeNewDetailBaseController
+@property (nonatomic) NSArray landscpeInsertArray;
+@property (nonatomic) NSMutableIndexSet insertIndexs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentAweme;
+- (id)screenCastControlView;
+- (void)setLandscpeInsertArray:;
+- (void)setInsertIndexs:;
+- (void)insertRecallVideos:playModel:completion:;
+- (void)insertRemovedXiGuaVideos:playModel:completion:;
+- (void)replacePlayerWithIndex:displayModel:;
+- (id)insertIndexs;
+- (id)landscpeInsertArray;
+- (void)enterScreenCastStatusIfNeeded;
+- (void)updateScreenCastViewLayout:;
+- (BOOL)shouldUseHolderPlayer;
+- (BOOL)scrollToModel:;
+- (id)currentPlayerViewController;
+- (BOOL)shouldDispatchLandscapeEvent;
+- (BOOL)canInsertModelAfterExitLandscape:;
+- (void)insertLandscapeModelList:playModel:;
+- (BOOL)shouldScrollAndNotInsertAfterExitLandscape;
+- (void)insertLandscapeData:playModel:completion:;
+- (id)landscapeTransitionContext;
+- (void)willEnterLandscape;
+- (void)willExitLandscapeWithModel:modelList:;
+- (void)didExitLandscapeWithFromContext:;
+- (double)playerControllerMoveUpOffsetWithModel:;
+- (BOOL)useBlackMaskViewWithModel:;
+- (BOOL)useBlackMaskViewForFocusView;
+- (id)currentLandscapeController;
+- (id)currentInteractionContext;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+@end

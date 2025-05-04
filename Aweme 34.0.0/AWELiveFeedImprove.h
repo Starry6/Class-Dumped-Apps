@@ -1,0 +1,35 @@
+@interface AWELiveFeedImprove : HTSService
+@property (nonatomic) NSMutableDictionary containerMap;
+@property (nonatomic) AWELiveImproveController currentImproveController;
+@property (nonatomic) NSMutableArray roomIdArray;
+@property (nonatomic) NSMutableDictionary resolutionMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)resolutionMap;
+- (void)setResolutionMap:;
+- (void)containerLoadWithType:;
+- (void)containerDidAppearWithType:;
+- (void)containerDidDisAppearWithType:;
+- (void)containerFetchCompletion:;
+- (void)containerLoadMoreCompletion:;
+- (void)containerRefreshCompletion:;
+- (void)configureCellWithModel:atIndexPath:containerType:;
+- (void)setCurrentIndex:containerType:;
+- (void)setDataSource:containerType:;
+- (void)setReferString:containerType:;
+- (void)setDeleteAction:containerType:;
+- (void)collectPreStreamResolution:roomId:;
+- (id)getResolutionByRoomId:;
+- (BOOL)isContinuouslyLiveStream:referString:;
+- (id)getImproveControllerWithContainerType:;
+- (long long)awemeTypeFromReferString:;
+- (id)roomIdArray;
+- (id)containerMap;
+- (void)setContainerMap:;
+- (id)currentImproveController;
+- (void)setCurrentImproveController:;
+- (void)setRoomIdArray:;
+- (void).cxx_destruct;
+@end

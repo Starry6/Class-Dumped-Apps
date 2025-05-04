@@ -1,0 +1,35 @@
+@interface AWETimorFavoriteGuideViewController : UIViewController
+@property (nonatomic) UIView alertView;
+@property (nonatomic) BDPAlertControllerTheme theme;
+@property (nonatomic) BDPUniqueID uniqueId;
+@property (nonatomic) NSString userDefaultKey;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) UIImageView staticView;
+- (void)removeFromParentVC;
+- (void)closeBtnClicked:;
+- (void)setupAlertView;
+- (void)setupStaticView;
+- (void)setStaticView:;
+- (id)initWithUniqueId:userDefaultKey:staticView:extraInfo:;
+- (void)setupFavoriteSuccessLabel;
+- (void)setupAnimeView;
+- (void)setupGuideLabel;
+- (void)clickNotMindButton:;
+- (void)clickGetItButton:;
+- (id)userDefaultKey;
+- (id)initWithUniqueId:userDefaultKey:;
+- (void)setUserDefaultKey:;
+- (id)theme;
+- (void)setTheme:;
+- (id)init;
+- (void)viewDidLoad;
+- (id)alertView;
+- (void)setUniqueId:;
+- (id)uniqueId;
+- (void)setAlertView:;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (id)staticView;
+- (void)setExtraInfo:;
+- (void)setupButtons;
+@end

@@ -1,0 +1,34 @@
+@interface AWESearchEntryInterface : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isShowingSearchViewControllerWithTabType:;
+- (BOOL)isShowingSearchViewController;
+- (BOOL)isShowingMiddleViewWithController:;
+- (id)anEpisodesView;
+- (Class)getSearchFilmTVEpisodesClass;
+- (Class)getSearchVarietyEpisodeTableViewCellClass;
+- (id)aTagView;
+- (id)searchEntranceView;
+- (id)searchEntranceViewWithEnterFrom:logExtraDict:;
+- (id)searchVideoUserGuideViewWithFrame:logExtra:;
+- (id)searchFeedVideoUserGuideViewWithFrame:logExtra:;
+- (id)searchVideoFeedMaskViewWithFrame:;
+- (id)searchInnerGuideRelatedRecommendViewWithFrame:logExtra:;
+- (id)newAWESearchLiveStatusView;
+- (Class)getAWESearchLiveStatusViewClass;
+- (Class)getAWESearchHomeRecomWordsSectionControllerClass;
+- (BOOL)isRecommendWordsSectionCellModel:;
+- (Class)getAWESearchHomeRecomWordsSectionViewModelClass;
+- (id)getAWESearchHomeRecomWordsSectionSize;
+- (void)prefetchRecomWordsData;
+- (void)fetchRecomWordsDataWithCarouselTriggerTime:;
+- (void)clearGuideReferenceFrequencyLimit;
+- (long long)feedSearchBarStyle;
+- (BOOL)openSchemaWithFeedbackAnchor:schemaUrl:topView:;
+- (id)searchFeedEntranceViewControllerName;
+- (id)homeSearchEntranceViewWithStyle:;
+- (void)ackRecomWordsShow:logID:;
+- (BOOL)enableMiddlePageDoubleColumn;
+@end

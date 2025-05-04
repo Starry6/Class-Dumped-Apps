@@ -1,0 +1,30 @@
+@interface AWEAIGCAnchorInfoModel : MTLModel
+@property (nonatomic) NSString aigcStickerId;
+@property (nonatomic) NSString originalStickerId;
+@property (nonatomic) BOOL isAIGCSticker;
+@property (nonatomic) q aigcType;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString extra;
+@property (nonatomic) BOOL aigcLoraType;
+@property (nonatomic) NSString aigcTypeString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (BOOL)isAIGCSticker;
+- (long long)aigcType;
+- (id)aigcStickerId;
+- (void)setAigcType:;
+- (id)aigcTypeString;
+- (BOOL)aigcLoraType;
+- (void)setAigcStickerId:;
+- (id)originalStickerId;
+- (void)setOriginalStickerId:;
+- (void)setIsAIGCSticker:;
+- (id)extra;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

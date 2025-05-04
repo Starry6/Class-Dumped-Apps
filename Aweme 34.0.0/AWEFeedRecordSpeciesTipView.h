@@ -1,0 +1,37 @@
+@interface AWEFeedRecordSpeciesTipView : UIView
+@property (nonatomic) AWEFeedSpeciesBottomViewModel viewModel;
+@property (nonatomic) UIImageView leftImageView;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton shotButton;
+@property (nonatomic) UITapGestureRecognizer singleTap;
+@property (nonatomic) <AWEFeedRecordSpeciesTipViewProtocol> delegate;
+@property (nonatomic) BOOL shouldCancelPreviousTouch;
+- (void)setSingleTap:;
+- (void)closeButtonClicked:;
+- (void)configSubViews;
+- (void)trackForShow;
+- (id)initWithEnterFrom:reactID:paramsDic:;
+- (void)setShouldCancelPreviousTouch:;
+- (BOOL)shouldShowSpeciesTipView;
+- (void)configWithModel:indexPath:isClickToEnter:;
+- (void)fullScreenLayout;
+- (void)normalScreenLayout;
+- (void)shotButtonClicked:;
+- (BOOL)shouldCancelPreviousTouch;
+- (id)shotButton;
+- (void)setShotButton:;
+- (void)cancel:;
+- (id)delegate;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setTipLabel:;
+- (id)tipLabel;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)leftImageView;
+- (id)singleTap;
+- (void)setLeftImageView:;
+@end

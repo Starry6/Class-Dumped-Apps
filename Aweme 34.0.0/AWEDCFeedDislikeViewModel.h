@@ -1,0 +1,35 @@
+@interface AWEDCFeedDislikeViewModel : AWEDoubleColumnDislikeViewModel
+@property (nonatomic) AWEDCFeedPageContext context;
+- (void)sendDislikeRequest:extraInfo:;
+- (id)dislikeSectionData:;
+- (id)feedbackSectionData:;
+- (double)headerHeightForSection:;
+- (double)cellWidthForIndexPath:;
+- (void)recordDislikeModel:;
+- (id)dislikeTextConfig;
+- (id)liveDislikeArray:;
+- (id)videoDislikeArray:;
+- (id)liveFeedbackInfoArray:;
+- (id)feedbackInfoArray:;
+- (id)dislikeLongPressPanelConfig;
+- (id)configFeedbackTitle;
+- (id)configSectionArray;
+- (id)watchLaterSectionData:;
+- (BOOL)calculatePanelHeightAfterConfig:;
+- (BOOL)useAdaptiveHeight:;
+- (BOOL)needRearrangeDislikePanelSection:;
+- (id)reArrangedDislikePanelSectionDataWithAwemeModel:dislikeSectionData:feedbackSection:watchLaterSectionData:;
+- (void)trackDislikeWithType:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setCurrentModel:;
++ (id)referString;
++ (id)enterMethod;
++ (id)commonParams:;
++ (id)logScenePrefix;
++ (BOOL)enableUpdateWithHelper;
++ (id)businessParams:;
++ (void)requestRevokeFeedbackVideo:;
++ (void)trackRevokeFeedbackWithModel:andFeedbackInfo:;
+@end

@@ -1,0 +1,2 @@
+@interface AWECodeGenRawMapModel : AWEBaseDataModel
+@end

@@ -1,0 +1,34 @@
+@interface AWEEcomSearchPhotoSearchContentLynxView : LynxUI
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UIViewController<AWESearchPhotoSearchResultViewControllerProtocol> searchResultVC;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSDictionary paramsDict;
+@property (nonatomic) q selectedIndex;
+- (void)setExtra:;
+- (void)dismissLoadingView;
+- (void)setParamsDict:;
+- (id)paramsDict;
+- (void)updateParams:;
+- (id)searchResultVC;
+- (void)setParamsDict:requestReset:;
+- (void)setSelectedIndex:requestReset:;
+- (void)setSearchResultVC:;
+- (void)setSelectedIndex:;
+- (void)dealloc;
+- (void)setLoadingView:;
+- (id)extra;
+- (id)contentView;
+- (id)containerView;
+- (id)loadingView;
+- (long long)selectedIndex;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)showLoadingView;
+- (id)createView;
++ (void)lynxLazyLoad;
++ (id)__lynx_prop_config__601;
++ (id)__lynx_prop_config__792;
+@end

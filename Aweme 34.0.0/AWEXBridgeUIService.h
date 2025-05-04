@@ -1,0 +1,33 @@
+@interface AWEXBridgeUIService : NSObject
+@property (nonatomic) DUXActionSheet actionSheet;
+@property (nonatomic) AWEXBridgeActionSheetDelegate actionSheetDelegate;
+@property (nonatomic) AWEUITextLoadingView textLoadingView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) DUXLoadingToast loadingToast;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)alertDialogDidClickMaskArea:;
+- (void)showModalWithParamModel:completionHandler:;
+- (void)showLoadingInContainer:withParamModel:completionHandler:;
+- (void)hideLoadingInContainer:withParamModel:completionHandler:;
+- (void)showToastWithParamModel:completionHandler:;
+- (void)showActionSheetWithParamModel:completionHandler:;
+- (void)showBottomNotificationWithParamModel:completionHandler:;
+- (void)finishWithAction:completionHandler:;
+- (id)textLoadingView;
+- (id)loadingToast;
+- (void)setLoadingToast:;
+- (void)setTextLoadingView:;
+- (void)setLoadingView:;
+- (void)setActionSheetDelegate:;
+- (id)loadingView;
+- (id)actionSheetDelegate;
+- (void).cxx_destruct;
+- (id)completionHandler;
+- (void)setCompletionHandler:;
+- (void)setActionSheet:;
+- (id)actionSheet;
+@end

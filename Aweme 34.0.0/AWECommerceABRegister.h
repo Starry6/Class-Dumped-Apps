@@ -1,0 +1,2 @@
+@interface AWECommerceABRegister : NSObject
+@end

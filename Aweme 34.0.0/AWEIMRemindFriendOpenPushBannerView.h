@@ -1,0 +1,37 @@
+@interface AWEIMRemindFriendOpenPushBannerView : UIView
+@property (nonatomic) UIView topBoxView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton sureButton;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) BOOL hasBackgroundImage;
+@property (nonatomic) @? closeAction;
+@property (nonatomic) @? remindAction;
+- (void)p_onClickCancel;
+- (void)p_onClickConfirm;
+- (id)aAWEIMModuleConfigAdapterProtocol;
+- (id)topBoxView;
+- (id)sureButton;
+- (void)updateUIWithBackgroundImage:;
+- (void)p_layoutView;
+- (id)remindAction;
+- (void)setRemindAction:;
+- (void)setTopBoxView:;
+- (void)setSureButton:;
+- (void)setCancelButton:;
+- (void)setCloseAction:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)closeAction;
+- (BOOL)hasBackgroundImage;
+- (void)setHasBackgroundImage:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
++ (Class)aAWEIMModuleConfigAdapterProtocolClass;
+@end

@@ -1,0 +1,30 @@
+@interface AWEPLVMixButtonHeaderView : UICollectionReusableView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) NSMutableSet hiddenButtonSet;
+@property (nonatomic) NSMutableArray displayingButtonList;
+- (void)updateTitleIcon:;
+- (void)updateViewForBreakPoint;
+- (void)updateContainerInset:;
+- (void)insertButtonWithImage:title:action:;
+- (void)setHiddenButtonSet:;
+- (void)setDisplayingButtonList:;
+- (id)displayingButtonList;
+- (id)hiddenButtonSet;
+- (void)insertButtonWithImage:action:;
+- (void)insertButtonWithTitle:action:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)iconView;
+- (void)setContainerView:;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void)setTitleFontSize:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupView;
+- (void)updateTitle:;
++ (double)heightWithBreakPoint:;
+@end

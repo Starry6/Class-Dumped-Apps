@@ -1,0 +1,35 @@
+@interface AWEHPInvisibleWaterMarkPluginController : NSObject
+@property (nonatomic) AWEHPChannelInvisibleWaterMarkImageView invisibleWaterMarkView;
+@property (nonatomic) NSMutableDictionary channelModelDic;
+@property (nonatomic) BOOL tabBarIsHidden;
+@property (nonatomic) double tabBarAlpha;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)teenModeDidChange:isLogout:;
+- (void)basicModeDidChange:;
+- (void)topChannelController:channelEnterWithModel:;
+- (void)topChannelController:channelLeaveWithModel:;
+- (void)topChannelControllerViewDidAppear:;
+- (void)topChannelControllerViewDidDisappear:;
+- (void)bottomChannelTabBarDidSetHidden:;
+- (void)bottomChannelTabBarDidSetAlpha:;
+- (void)setTabBarAlpha:;
+- (double)tabBarAlpha;
+- (void)setChannelModelDic:;
+- (void)changeTabBarInvisibleWaterMarkImage:;
+- (id)invisibleWaterMarkView;
+- (BOOL)p_checkCanShowInvisibleWaterMarkByChannelId:;
+- (id)channelModelDic;
+- (void)setTabBarIsHidden:;
+- (void)p_updateInvisibleWaterMarkStatus;
+- (void)setInvisibleWaterMarkView:;
+- (void)p_initInvisibleWaterMarkIfNeed;
+- (BOOL)tabBarIsHidden;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

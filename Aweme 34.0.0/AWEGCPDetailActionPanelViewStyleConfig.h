@@ -1,0 +1,35 @@
+@interface AWEGCPDetailActionPanelViewStyleConfig : NSObject
+@property (nonatomic) UIFont buttonFont;
+@property (nonatomic) UIColor buttonColor;
+@property (nonatomic) double buttonImageSize;
+@property (nonatomic) double imageTitleMargin;
+@property (nonatomic) NSString likeImageName;
+@property (nonatomic) NSString likeClickedImageName;
+@property (nonatomic) NSString commentImageName;
+@property (nonatomic) NSString favoriteImageName;
+@property (nonatomic) NSString favoriteClickedImageName;
+@property (nonatomic) NSString shareImageName;
+- (void)setImageTitleMargin:;
+- (void)setLikeImageName:;
+- (void)setLikeClickedImageName:;
+- (void)setCommentImageName:;
+- (void)setFavoriteImageName:;
+- (void)setFavoriteClickedImageName:;
+- (void)setShareImageName:;
+- (double)imageTitleMargin;
+- (id)likeImageName;
+- (id)likeClickedImageName;
+- (id)commentImageName;
+- (id)favoriteImageName;
+- (id)favoriteClickedImageName;
+- (id)shareImageName;
+- (id)buttonFont;
+- (void)setButtonImageSize:;
+- (void)setButtonColor:;
+- (void).cxx_destruct;
+- (id)buttonColor;
+- (double)buttonImageSize;
+- (void)setButtonFont:;
++ (id)defaultStyleConfig;
++ (id)newStrategyStyleConfig;
+@end

@@ -1,0 +1,30 @@
+@interface AWEModernFeedSectionMeta : NSObject
+@property (nonatomic) double concreteCellWidth;
+@property (nonatomic) double concreteCellHeight;
+@property (nonatomic) double accessoryCellHeight;
+@property (nonatomic) BOOL showAccessoryCell;
+@property (nonatomic) BOOL hideCell;
+@property (nonatomic) BOOL showCellHeaderView;
+@property (nonatomic) BOOL showCellFooterView;
+@property (nonatomic) double mainCellHeight;
+@property (nonatomic) double attachmentCellHeight;
+- (BOOL)hideCell;
+- (BOOL)showAccessoryCell;
+- (void)setConcreteCellWidth:;
+- (double)concreteCellHeight;
+- (void)setMainCellHeight:;
+- (double)concreteCellWidth;
+- (void)setConcreteCellHeight:;
+- (void)setAttachmentCellHeight:;
+- (void)setAccessoryCellHeight:;
+- (void)setHideCell:;
+- (void)setShowAccessoryCell:;
+- (double)accessoryCellHeight;
+- (double)mainCellHeight;
+- (double)attachmentCellHeight;
+- (BOOL)showCellHeaderView;
+- (void)setShowCellHeaderView:;
+- (BOOL)showCellFooterView;
+- (void)setShowCellFooterView:;
+- (id)copyWithZone:;
+@end

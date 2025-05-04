@@ -1,0 +1,30 @@
+@interface AWEPackUserMaterial : AWEPackMaterial
+@property (nonatomic) AFDLocalUserModel baseInfo;
+@property (nonatomic) AWELocalDBUserModel baseInfoFromOldUC;
+@property (nonatomic) NSNumber isMate;
+@property (nonatomic) NSNumber notShow;
+@property (nonatomic) NSNumber notOtherShow;
+@property (nonatomic) NSNumber reverseNotOtherShow;
+@property (nonatomic) NSNumber block;
+@property (nonatomic) NSNumber reverseBlock;
+@property (nonatomic) NSNumber familiarConfidence;
+- (id)baseInfo;
+- (void)setBaseInfo:;
+- (void)setReverseBlock:;
+- (id)notShow;
+- (void)setNotShow:;
+- (id)familiarConfidence;
+- (id)isMate;
+- (void)setIsMate:;
+- (id)baseInfoFromOldUC;
+- (void)setBaseInfoFromOldUC:;
+- (void)setFamiliarConfidence:;
+- (id)notOtherShow;
+- (void)setNotOtherShow:;
+- (id)reverseNotOtherShow;
+- (void)setReverseNotOtherShow:;
+- (id)block;
+- (void)setBlock:;
+- (void).cxx_destruct;
+- (id)reverseBlock;
+@end

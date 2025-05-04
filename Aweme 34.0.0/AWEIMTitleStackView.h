@@ -1,0 +1,31 @@
+@interface AWEIMTitleStackView : UIStackView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIView extContainer;
+@property (nonatomic) UILabel extTitleLabel;
+@property (nonatomic) double subTitleFontSize;
+@property (nonatomic) Q style;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)subTitleFontSize;
+- (void)setSubTitleFontSize:;
+- (void)setExtContainer:;
+- (void)setExtTitleLabel:;
+- (id)extContainer;
+- (id)extTitleLabel;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (unsigned long long)style;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setStyle:;
++ (id)subtitleAttributedStringWithContent:;
++ (id)titleAttributedStringWithContent:;
++ (id)titleAttributedStringWithContent:lineBreakMode:;
++ (id)subtitleAttributedStringWithContent:fontSize:;
++ (id)extTitleAttributedStringWithContent:;
+@end

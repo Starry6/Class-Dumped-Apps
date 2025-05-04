@@ -1,0 +1,31 @@
+@interface AWELVideoFilterChildViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) DUXVacantView errorView;
+@property (nonatomic) BOOL isHiddenTopCategory;
+@property (nonatomic) double lastWidth;
+@property (nonatomic) NSArray categories;
+@property (nonatomic) AWELVideoLibraryPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsHiddenTopCategory:;
+- (BOOL)isHiddenTopCategory;
+- (void)showErrorView:;
+- (void)setCategories:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)categories;
+- (void)viewDidLayoutSubviews;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setupUI;
+- (id)errorView;
+- (void)setErrorView:;
+- (double)lastWidth;
+- (void)setLastWidth:;
+@end

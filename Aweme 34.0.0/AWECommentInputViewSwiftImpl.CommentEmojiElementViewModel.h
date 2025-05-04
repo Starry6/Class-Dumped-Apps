@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentEmojiElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

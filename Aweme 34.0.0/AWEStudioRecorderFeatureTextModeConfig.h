@@ -1,0 +1,2 @@
+@interface AWEStudioRecorderFeatureTextModeConfig : AWEStudioComposerBaseFeatureConfig
+@end

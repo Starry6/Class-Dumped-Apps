@@ -1,0 +1,34 @@
+@interface AWEFeedScreenCastController : AWEBaseController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupContextHandler;
+- (void)refreshCompletion:error:needAnimation:;
+- (void)loadMoreCompletion:error:isFooterRefreshing:;
+- (id)curSceneString;
+- (id)floatingViewService;
+- (void)enterInnerListWithUpdateScreenCastDatas:;
+- (void)updateScreenCastModels;
+- (void)castPlayVideoDidChange:;
+- (id)screenCastCurReferString;
+- (BOOL)isScreenCastInLandscape;
+- (BOOL)isCurrentCellScreenCasting;
+- (long long)screenCastFloatingViewShowType;
+- (void)screenCastFloatingViewDidClicked:;
+- (double)maxYForScreenCastFloatingViewPosition:;
+- (id)screenCastFloatingViewCurrentAwemeModel;
+- (void)addScreenCastFloatingView:;
+- (id)currentFeedCell;
+- (id)interactionControllerWithCell:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)viewDidDisappear:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)viewDidAppear:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
++ (long long)leftVideoCountToLoadMore;
+@end

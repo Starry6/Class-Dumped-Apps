@@ -1,0 +1,33 @@
+@interface AWEIMCollectCardContentPresenter : AWEIMUIViewPresenter
+@property (nonatomic) AWEIMUIImageViewPresenter backgroundView;
+@property (nonatomic) AWEIMUILabelPresenter title;
+@property (nonatomic) CAGradientLayer inactiveLayer;
+@property (nonatomic) AWEIMCollectCardMessage cardMessage;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) AWEIMUILabelPresenter subtitle;
+@property (nonatomic) AWEIMUIViewPresenter darkView;
+- (id)createViewWithContext:;
+- (void)updateView:withContext:;
+- (void)didReceiveProps:;
+- (void)setDarkView:;
+- (id)darkView;
+- (id)cardMessage;
+- (id)initWithContext:cardStyle:;
+- (void)__invokeTap:;
+- (void)__createComponentsWithContext:cardStyle:;
+- (void)__createBackgroundViewWithCardStyle:;
+- (void)__createTitleWithContext:cardStyle:;
+- (void)__createSubtitleWithContext:cardStyle:;
+- (void)__createDarkView;
+- (id)inactiveLayer;
+- (void)setInactiveLayer:;
+- (id)subtitle;
+- (void)setBackgroundView:;
+- (void)setSubtitle:;
+- (id)backgroundView;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)tapGesture;
+- (void)setTapGesture:;
+@end

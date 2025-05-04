@@ -1,0 +1,33 @@
+@interface AWEMusicChartVideoDetailController : AWEListDataController
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSString chartId;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSNumber itemId;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) NSString nowRequestMusicId;
+@property (nonatomic) NSString firstMusicId;
+@property (nonatomic) <AWEMusicChartVideoDetailControllerDelegate> delegate;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)loadPreviousWithCompletion:;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)reloadWithPullType:Completion:;
+- (id)initWithSessionId:firstMusicId:chartId:version:itemId:;
+- (id)chartId;
+- (id)firstMusicId;
+- (void)setNowRequestMusicId:;
+- (void)setFirstMusicId:;
+- (void)setChartId:;
+- (id)nowRequestMusicId;
+- (void)setSessionId:;
+- (id)sessionId;
+- (id)delegate;
+- (id)version;
+- (void)setVersion:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)setDelegate:;
+- (id)itemId;
+- (void)setItemId:;
+@end

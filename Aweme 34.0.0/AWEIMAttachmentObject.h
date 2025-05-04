@@ -1,0 +1,36 @@
+@interface AWEIMAttachmentObject : NSObject
+@property (nonatomic) NSInteger fileType;
+@property (nonatomic) NSData attachment;
+@property (nonatomic) NSString attachmentPath;
+@property (nonatomic) NSString reusedFileID;
+@property (nonatomic) NSString attachmentMD5;
+@property (nonatomic) NSString locoalVideoGalleryPath;
+@property (nonatomic) BOOL isVideoFromShareExtension;
+@property (nonatomic) NSString attachmentAssetIdentifier;
+@property (nonatomic) AVAsset attachmentAsset;
+@property (nonatomic) BOOL shouleNotGenerateQuickData;
+@property (nonatomic) NSData quickData;
+- (void)setAttachmentAsset:;
+- (void)setAttachmentAssetIdentifier:;
+- (void)setIsVideoFromShareExtension:;
+- (id)attachmentMD5;
+- (id)attachmentAssetIdentifier;
+- (id)attachmentAsset;
+- (void)setAttachmentMD5:;
+- (id)locoalVideoGalleryPath;
+- (BOOL)isVideoFromShareExtension;
+- (void)setLocoalVideoGalleryPath:;
+- (void)setQuickData:;
+- (id)quickData;
+- (BOOL)shouleNotGenerateQuickData;
+- (id)reusedFileID;
+- (void)setReusedFileID:;
+- (void)setShouleNotGenerateQuickData:;
+- (int)fileType;
+- (void)setFileType:;
+- (void).cxx_destruct;
+- (id)attachment;
+- (void)setAttachment:;
+- (void)setAttachmentPath:;
+- (id)attachmentPath;
+@end

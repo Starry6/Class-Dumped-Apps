@@ -1,0 +1,35 @@
+@interface AWEIMExchangeAnswerManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSMutableArray configArray;
+@property (nonatomic) NSMutableDictionary listConfigDict;
+@property (nonatomic) AWEIMExchangeAnswerStrategyListConfig defaultConfig;
+@property (nonatomic) AWEIMExchangeAnswerMessage displayingMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerWillDestory:;
+- (void)fetchDataIfNeeded;
+- (id)configArray;
+- (void)setConfigArray:;
+- (id)listConfigDict;
+- (void)setListConfigDict:;
+- (void)addConfig:;
+- (BOOL)__isConSupportExchangeAnswer:;
+- (void)setListConfig:forKey:;
+- (id)getListConfigForKey:;
+- (id)backgroundImageWithIdentifier:;
+- (BOOL)isGroupSupportExchangeAnswer:;
+- (BOOL)isForwardExchangeAnswerSupportGroupSharing:;
+- (BOOL)isExchangeMessageSupportAnswer:;
+- (id)displayingMessage;
+- (void)setDisplayingMessage:;
+- (id)defaultConfig;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDefaultConfig:;
++ (id)sharedInstance;
+@end

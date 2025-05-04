@@ -1,0 +1,35 @@
+@interface AWELiveShelfListSectionController : AWEBaseListSectionController
+@property (nonatomic) q cardType;
+@property (nonatomic) BOOL needUpdateVisibleIndexes;
+@property (nonatomic) AWELiveShelfPagingDataController dataController;
+@property (nonatomic) <AWELiveShelfListSectionControllerDelegate> delegate;
+@property (nonatomic) BOOL needUpdateLayout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)setDataController:;
+- (BOOL)shouldHighlightItemAtIndex:model:;
+- (double)getCardItemHeightWith:;
+- (double)getGaiaXCardHeight:;
+- (void)configGaiaXCell:index:model:;
+- (void)configLynxCell:index:model:;
+- (void)setNeedUpdateVisibleIndexes:;
+- (BOOL)needUpdateVisibleIndexes;
+- (void)updateCurrentVisibleIndexesWith:;
+- (void)setNeedUpdateLayout:;
+- (BOOL)needUpdateLayout;
+- (double)getTotalHeightWith:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (long long)cardType;
+- (void)setCardType:;
+- (id)dataController;
+@end

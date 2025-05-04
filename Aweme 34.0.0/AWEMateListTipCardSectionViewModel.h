@@ -1,0 +1,36 @@
+@interface AWEMateListTipCardSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) BOOL showSearchBar;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) AFDFrequencyCountRule showRule;
+@property (nonatomic) AFDFrequencyExitRule exitRule;
+@property (nonatomic) BOOL didShow;
+@property (nonatomic) q cardGuideType;
+- (void)setupViewModel;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (void)setDidShow:;
+- (void)setExitRule:;
+- (id)exitRule;
+- (id)p_enterFrom;
+- (void)setShowRule:;
+- (id)showRule;
+- (double)sectionHeight:;
+- (void)closeTipCardByActionType:;
+- (void)showMateApplicationAlert;
+- (void)showTipCard;
+- (void)setCardGuideType:;
+- (long long)cardGuideType;
+- (id)commonSettingKey;
+- (id)subtitle;
+- (void)setSubtitle:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (BOOL)didShow;
+- (void)setShowSearchBar:;
+- (BOOL)showSearchBar;
++ (id)textCommonSettingKey:;
++ (id)defaultSettingsWithCardType:;
+@end

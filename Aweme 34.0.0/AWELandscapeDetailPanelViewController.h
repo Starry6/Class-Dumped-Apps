@@ -1,0 +1,36 @@
+@interface AWELandscapeDetailPanelViewController : UIViewController
+@property (nonatomic) UIView container;
+@property (nonatomic) UIView effectView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIView topLine;
+@property (nonatomic) AWELandscapeDetailViewController detailViewController;
+@property (nonatomic) AWELandscapePageContext pageContext;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) <AWELandscapeSplitScreenContainerDelegate> delegate;
+- (id)createContainerView;
+- (id)createEffectView;
+- (id)initWithPageContext:;
+- (void)updateUIByData;
+- (void)updateWithModel:dataController:;
+- (id)detailViewController;
+- (void)setModel:;
+- (void)setContainer:;
+- (id)container;
+- (id)delegate;
+- (id)effectView;
+- (void)setEffectView:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setDetailViewController:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)topLine;
+- (void)setTopLine:;
+@end

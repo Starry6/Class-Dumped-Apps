@@ -1,0 +1,35 @@
+@interface AWEMusicDetailTrackInstance : NSObject
++ (void)trackShootWith:trackParams:;
++ (void)trackWhenLunaUgEntryButtonShowed:;
++ (void)trackClickSpotlightProfile:dataHelper:;
++ (void)trackFollowWithUserModel:dataHelper:;
++ (void)trackShowMuscianCard:;
++ (void)trackMusicFaultShowLunaUg:;
++ (void)trackTapCollectedToLunaToast:;
++ (void)trackShowCollectedToLunaToast:;
++ (void)trackWhenCollectToLunaButtonShowed:;
++ (void)trackDetailHeaderInfoShowed:;
++ (void)trackWhenCollectToLunaButtonClick:;
++ (void)trackDetailHeaderInfoClick:;
++ (void)trackDidTapCompleteMusicButton:;
++ (void)trackDidTapOnLeaderboardEntryView:;
++ (void)trackWhenJumpToMatchedPGCMusicDetailPage:;
++ (void)trackWhenEnterPersonalDetailPageWithUid:secUid:enterMethod:extraTrackParams:;
++ (void)trackDidTapEditTitleButton:;
++ (void)trackFeedAwemeVideoShow:index:dataContext:;
++ (void)trackFeedAwemeVideoEnterWithModel:dataContext:;
++ (void)trackSwitchPlayStatus:dataHelper:;
++ (void)trackPromoteTickerShow:;
++ (void)trackReceivedHeaderResponse:;
++ (void)trackShowLeaderboardInfo:dataHelper:;
++ (void)trackShowDecorateTag:;
++ (void)trackCompleteMusicButtonShow:;
++ (void)trackShowMatchedPGCInfoView:;
++ (void)trackInspirationCardShowWithDataContext:inspirationModel:index:;
++ (void)trackInspirationCardClickWithDataContext:inspirationModel:index:clickType:;
++ (void)trackWhenInspirationsReadyToShowWith:dataContext:;
++ (void)trackWhenClickTemplateCutSameButtonWith:trackParams:;
++ (id)commonInspirationsDidShowTrackParamsWithDataContext:;
++ (id)getInspirationCardCommonTrackParamsWithDataContext:inspirationModel:index:;
++ (void)trackDidTapLunaUgButton:;
+@end

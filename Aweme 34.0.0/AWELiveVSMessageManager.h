@@ -1,0 +1,30 @@
+@interface AWELiveVSMessageManager : NSObject
+@property (nonatomic) NSHashTable subscribersForAll;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) AWELiveVSMessageActionCreator messageActionCreator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (id)initWithDIContext:;
+- (void)uninstallMessageChannel;
+- (void)installVSMessageWithRoomID:channelType:;
+- (void)addVSProgrammeMessageubscrber:;
+- (void)removeVSProgrammeMessageSubscrber:;
+- (id)subscribersForAll;
+- (void)setSubscribersForAll:;
+- (void)setMessageActionCreator:;
+- (id)messageActionCreator;
+- (void)enumerate:sendMessage:withDict:;
+- (void)stopAndResetMessage;
+- (void)startMessageIfNeed:;
+- (void)loadNewMessageActionCreator:;
+- (void)installVSMessageWithRoomID:;
+- (id)roomID;
+- (id)init;
+- (void).cxx_destruct;
+- (void)dispatchMessage:;
+- (void)setRoomID:;
+- (void)messageReceived:;
+@end

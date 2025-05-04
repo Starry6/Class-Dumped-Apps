@@ -1,0 +1,35 @@
+@interface AWEOpenXiGuaManager : NSObject
+@property (nonatomic) NSMutableArray preloadSKStroeVeiewaContainer;
+@property (nonatomic) SKStoreProductViewController preloadViewController;
+@property (nonatomic) DUXCheckBox box;
+@property (nonatomic) @? clickAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clickAction;
+- (void)setClickAction:;
+- (void)setPreloadSKStroeVeiewaContainer:;
+- (id)preloadSKStroeVeiewaContainer;
+- (void)setPreloadViewController:;
+- (id)preloadViewController;
+- (void)labelDidClicked;
+- (void)preloadSKStroreView;
+- (void)openXiGuaWithViewController:model:pageType:enterMethod:enterFrom:;
+- (void)openAppWithViewController:model:pageType:enterMethod:enterFrom:;
+- (void)openAppStoreWithViewController:model:pageType:enterMethod:enterFrom:;
+- (void)traceWithModel:enter_from:event:type:enterMethod:;
+- (void)traceWithModel:event:enter_from:enterMethod:eventType:selectType:;
+- (void)traceOpenXiGuaWithModel:enterFrom:enterMethod:isAppStore:;
+- (void)openXiGuaWithType:model:enterFrom:enthodMethod:;
+- (void)boxValueDidChanged;
+- (id)gdLabelWithEnterFrom:;
+- (unsigned long long)methodTypeFromEnterMethod:;
+- (id)zlinkUrlWithEnterFrom:isAppStore:;
+- (BOOL)isSearchWithEnterFrom:;
+- (void)productViewControllerDidFinish:;
+- (void).cxx_destruct;
+- (void)setBox:;
+- (id)box;
++ (id)shareManager;
+@end

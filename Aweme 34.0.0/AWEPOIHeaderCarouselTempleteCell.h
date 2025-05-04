@@ -1,0 +1,2 @@
+@interface AWEPOIHeaderCarouselTempleteCell : UICollectionViewCell
+@end

@@ -1,0 +1,2 @@
+@interface AWEDetailFollowShootSeparateLineCellModel : AWEDetailFollowShootSectionModel
+@end

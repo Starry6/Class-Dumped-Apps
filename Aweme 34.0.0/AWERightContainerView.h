@@ -1,0 +1,2 @@
+@interface AWERightContainerView : UIView
+@end

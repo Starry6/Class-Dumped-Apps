@@ -1,0 +1,30 @@
+@interface AWERelationSheetApplyMessageSection : AWERelationSheetBaseSection
+@property (nonatomic) AFDTextField textField;
+@property (nonatomic) AWERelationSheetSectionView sectionView;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) NSString groupChatName;
+@property (nonatomic) NSString groupChatAlias;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupChatName;
+- (void)setGroupChatName:;
+- (id)groupChatAlias;
+- (void)setGroupChatAlias:;
+- (void)commitChanges:;
+- (id)applyMessageType;
+- (void)sectionViewDidLoad;
+- (id)p_autoFillApplyMessage;
+- (id)p_applyMessageStorageKey;
+- (id)lastApplyMessage;
+- (id)defaultApplyMessage;
+- (id)user;
+- (void)setUser:;
+- (id)textField;
+- (void)setTextField:;
+- (BOOL)textFieldShouldReturn:;
+- (void).cxx_destruct;
+- (id)sectionView;
+- (void)setSectionView:;
+@end

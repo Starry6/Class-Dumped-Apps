@@ -1,0 +1,30 @@
+@interface AWEBarrageModel : AWEBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) AWECommentModel comment;
+@property (nonatomic) AWEBarrageDiggModel digg;
+@property (nonatomic) AWEBarrageViewerModel viewer;
+@property (nonatomic) AWEBarrageCoinModel coin;
+@property (nonatomic) AWEBarrageGoldLikeModel goldLike;
+@property (nonatomic) AWEURLModel avatarURLModel;
+- (id)goldLike;
+- (void)setAvatarURLModel:;
+- (void)setGoldLike:;
+- (id)avatarURLModel;
+- (id)digg;
+- (id)viewer;
+- (void)setDigg:;
+- (void)setViewer:;
+- (void)setCoin:;
+- (id)comment;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setComment:;
+- (id)coin;
++ (id)commentJSONTransformer;
++ (id)diggUserJSONTransformer;
++ (id)viewerUserJSONTransformer;
++ (id)coinJSONTransformer;
++ (id)goldLikeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

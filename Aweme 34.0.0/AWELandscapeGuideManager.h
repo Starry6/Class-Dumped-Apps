@@ -1,0 +1,37 @@
+@interface AWELandscapeGuideManager : NSObject
+@property (nonatomic) NSMutableDictionary eventMapItemDict;
+@property (nonatomic) <AWELandscapeGuideProtocol> currentGuide;
+@property (nonatomic) NSTimer twentySecondsTimer;
+@property (nonatomic) NSTimer thirtySecondsTimer;
+@property (nonatomic) NSTimer pauseThreeSecondsTimer;
+@property (nonatomic) BOOL shouldTriggerTwentySeconds;
+@property (nonatomic) BOOL shouldTriggerThirtySeconds;
+@property (nonatomic) BOOL shouldTriggerPauseThreeSeconds;
+@property (nonatomic) <AWELandscapeGuideManagerDelegate> delegate;
+- (void)triggerEvent:;
+- (void)hideGuide;
+- (void)triggerEventWithQuiet:;
+- (void)resetPauseTimer:;
+- (void)resetStayTimer:;
+- (void)registerGuide:triggerEvent:;
+- (id)eventMapItemDict;
+- (void)setEventMapItemDict:;
+- (id)currentGuide;
+- (void)setCurrentGuide:;
+- (BOOL)shouldTriggerPauseThreeSeconds;
+- (BOOL)shouldTriggerTwentySeconds;
+- (BOOL)shouldTriggerThirtySeconds;
+- (BOOL)hasShownGuideToday:;
+- (id)twentySecondsTimer;
+- (void)setTwentySecondsTimer:;
+- (id)thirtySecondsTimer;
+- (void)setThirtySecondsTimer:;
+- (void)setShouldTriggerTwentySeconds:;
+- (void)setShouldTriggerThirtySeconds:;
+- (id)pauseThreeSecondsTimer;
+- (void)setPauseThreeSecondsTimer:;
+- (void)setShouldTriggerPauseThreeSeconds:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

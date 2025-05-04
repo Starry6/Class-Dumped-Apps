@@ -1,0 +1,30 @@
+@interface AWEUserProfileEventCommonParamsHandler : NSObject
+@property (nonatomic) NSDictionary mxbParams;
+@property (nonatomic) NSSet mbWhiteList;
+@property (nonatomic) NSSet mbBlackList;
+@property (nonatomic) BOOL enableMBMerge;
+@property (nonatomic) NSDictionary eventParams;
+@property (nonatomic) NSSet eventList;
+@property (nonatomic) NSString eventMapJson;
+- (id)eventList;
+- (void)setEventList:;
+- (void)setEventParams:;
+- (id)eventParamsWithOriginParams:event:;
+- (void)p_routerParserWithSchemeRouterParamDic:;
+- (void)p_jsonParserWithEventMapJson:;
+- (id)p_eventParamsFromMxbProtocolForEvent:;
+- (id)p_eventParamsFromMapJsonForEvent:;
+- (BOOL)enableMBMerge;
+- (void)setMxbParams:;
+- (void)setMbWhiteList:;
+- (void)setMbBlackList:;
+- (void)setEnableMBMerge:;
+- (id)mxbParams;
+- (id)mbWhiteList;
+- (id)mbBlackList;
+- (id)eventMapJson;
+- (id)initWithSchemeRouterParamDic:;
+- (id)initWithEventMapJson:;
+- (void).cxx_destruct;
+- (id)eventParams;
+@end

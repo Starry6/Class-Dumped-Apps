@@ -1,0 +1,30 @@
+@interface AWETeenU14TimeLockDecisionTask : NSObject
+@property (nonatomic) BOOL timeLockShowing;
+@property (nonatomic) double lastUseTS;
+@property (nonatomic) AWELockTimeUnPasswordViewController timeLockVC;
+@property (nonatomic) Q originOrientationMask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)onGoing;
+- (BOOL)triggerTask;
+- (BOOL)willOnGoingWithinFiveMinutes;
+- (void)restoreOriginOrientation;
+- (void)setOriginOrientationMask:;
+- (unsigned long long)originOrientationMask;
+- (BOOL)timeLockShowing;
+- (unsigned long long)todaysTimeLockLimit;
+- (void)clearLockTimeIfNeeded;
+- (void)showTimeLockIfNeeded;
+- (void)dismissTimeLockIfNeeded;
+- (void)setTimeLockShowing:;
+- (void)setTimeLockVC:;
+- (id)timeLockVC;
+- (void)setLastUseTS:;
+- (double)lastUseTS;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (unsigned long long)taskID;
+@end

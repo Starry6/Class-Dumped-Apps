@@ -1,0 +1,34 @@
+@interface AWECommentUserGuideAlertModel : AWEBaseApiModel
+@property (nonatomic) q position;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString jumpText;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) @? jumpBlock;
+@property (nonatomic) NSString scene;
+@property (nonatomic) q freqDay;
+@property (nonatomic) q freqNum;
+@property (nonatomic) NSString storageKey;
+- (id)jumpBlock;
+- (id)jumpURL;
+- (id)jumpText;
+- (void)setJumpURL:;
+- (void)setJumpText:;
+- (void)setJumpBlock:;
+- (long long)freqDay;
+- (long long)freqNum;
+- (id)storageKey;
+- (void)setStorageKey:;
+- (void)setFreqDay:;
+- (void)setFreqNum:;
+- (void)setScene:;
+- (id)content;
+- (id)scene;
+- (long long)position;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setPosition:;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

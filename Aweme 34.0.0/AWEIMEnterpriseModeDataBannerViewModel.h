@@ -1,0 +1,36 @@
+@interface AWEIMEnterpriseModeDataBannerViewModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString updateTimeTips;
+@property (nonatomic) NSArray cellVMs;
+@property (nonatomic) double interItemSpacing;
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) double extraTopPadding;
+@property (nonatomic) <AWEIMMessageTabNaviBubbleInterface> naviGuideService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpSchema;
+- (void)setJumpSchema:;
+- (void)setNaviGuideService:;
+- (id)cellVMs;
+- (BOOL)hasValidContentToDisplay;
+- (id)naviGuideService;
+- (void)setUpdateTimeTips:;
+- (double)bannerViewWidth;
+- (void)setCellVMs:;
+- (void)checkFTCIfShouldShowTipsFromContinueIndex:;
+- (id)correctedJumpSchema;
+- (void)didShowPopoverTipsOnHeader;
+- (void)didTapOnBodyArea;
+- (id)updateTimeTips;
+- (id)initWithModel:;
+- (void)setInterItemSpacing:;
+- (void).cxx_destruct;
+- (id)title;
+- (double)interItemSpacing;
+- (void)setTitle:;
+- (void)updateWithModel:;
+- (double)extraTopPadding;
+- (void)setExtraTopPadding:;
+@end

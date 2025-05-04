@@ -1,0 +1,31 @@
+@interface AWEIMVideoCommentMessage : AWEIMMessage
+@property (nonatomic) NSString commentID;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) NSString comment;
+@property (nonatomic) AWEURLModel videoCover;
+@property (nonatomic) q mediaType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commentID;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (void)setCommentID:;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)videoCover;
+- (void)setVideoCover:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)itemIDUsedForContentAvailableRefresh;
+- (void)setMediaType:;
+- (id)comment;
+- (long long)mediaType;
+- (void).cxx_destruct;
+- (void)setComment:;
+@end

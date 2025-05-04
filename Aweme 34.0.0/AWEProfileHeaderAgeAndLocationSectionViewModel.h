@@ -1,0 +1,32 @@
+@interface AWEProfileHeaderAgeAndLocationSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWEProfileHeaderContext context;
+@property (nonatomic) BOOL schoolStorySettingOn;
+@property (nonatomic) BOOL personalRecommendSwitchOn;
+@property (nonatomic) double personalTagHeight;
+@property (nonatomic) double footerHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithContext:;
+- (void)schoolStoryDidUpdatedUserSetting:;
+- (void)p_onPersonalRecommendChanged:;
+- (id)padService;
+- (void)refreshPersonalTagHeight:;
+- (double)topPaddingWithUpperSection:;
+- (double)bottomPaddingWithLowerSection:;
+- (double)personalTagHeight;
+- (void)setPersonalTagHeight:;
+- (void)setSchoolStorySettingOn:;
+- (void)setPersonalRecommendSwitchOn:;
+- (BOOL)schoolStorySettingOn;
+- (BOOL)personalRecommendSwitchOn;
+- (id)init;
+- (void)dealloc;
+- (long long)sectionType;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)sectionSize;
+- (double)footerHeight;
+@end

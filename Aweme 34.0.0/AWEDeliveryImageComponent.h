@@ -1,0 +1,33 @@
+@interface AWEDeliveryImageComponent : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView shadeView;
+@property (nonatomic) AWEDeliveryIndicatorView loadingView;
+@property (nonatomic) AWEDeliveryImageItemModel imageItem;
+@property (nonatomic) @? popMenuItems;
+@property (nonatomic) @? onClickPopMenu;
+@property (nonatomic) @? onTapImage;
+@property (nonatomic) UITableView cellSuperView;
+- (id)onTapImage;
+- (void)setOnTapImage:;
+- (id)popMenuItems;
+- (id)cellSuperView;
+- (void)setCellSuperView:;
+- (id)shadeView;
+- (void)toggleBackViewWithModel:;
+- (id)imageItem;
+- (id)onClickPopMenu;
+- (void)bindImageItem:;
+- (void)setPopMenuItems:;
+- (void)setOnClickPopMenu:;
+- (void)setShadeView:;
+- (void)setImageItem:;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (void)customInit;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (void)onLongPress:;
+- (void)tapAction:;
+@end

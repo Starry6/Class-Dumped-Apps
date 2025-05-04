@@ -1,0 +1,31 @@
+@interface AWENearbyC2CellTextData : AWEBaseApiModel
+@property (nonatomic) BOOL textConfigEnable;
+@property (nonatomic) UIColor color;
+@property (nonatomic) UIFont font;
+@property (nonatomic) BOOL textConfigEnable;
+@property (nonatomic) UIColor color;
+@property (nonatomic) UIFont font;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) double textDegree;
+@property (nonatomic) BOOL isBold;
+@property (nonatomic) q textSize;
+- (double)textDegree;
+- (void)setTextDegree:;
+- (BOOL)textConfigEnable;
+- (BOOL)textConfigEnable;
+- (BOOL)isBold;
+- (void)setText:;
+- (id)color;
+- (id)color;
+- (id)text;
+- (void)setTextColor:;
+- (id)font;
+- (id)font;
+- (void).cxx_destruct;
+- (id)textColor;
+- (void)setIsBold:;
+- (long long)textSize;
+- (void)setTextSize:;
++ (BOOL)automaticallyDefaultMapping;
+@end

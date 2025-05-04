@@ -1,0 +1,2 @@
+@interface AWECommentSwiftImpl.CommentDataBaseNetWorkLifeCycle : _TtCs12_SwiftObject
+@end

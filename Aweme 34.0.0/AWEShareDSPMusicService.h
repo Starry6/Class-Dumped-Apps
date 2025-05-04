@@ -1,0 +1,35 @@
+@interface AWEShareDSPMusicService : AWEShareCommonImpl
+@property (nonatomic) AWEMusicModel music;
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEMiniLunaShareModel miniLunaShareModel;
+@property (nonatomic) AWEShareListPanel sharePanel;
+@property (nonatomic) NSDictionary extraLogInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweme;
+- (void)setAweme:;
+- (id)contextWithAweme:;
+- (id)musicCardShareContextWithAweme:;
+- (id)contextWithLunaShareModel:isMusicCard:extraInfo:;
+- (void)closeSharePanel;
+- (id)extraLogInfo;
+- (void)showPanelWithDSPMedia:extraLogInfo:onViewController:;
+- (id)showPanelWithMiniLunaShareModel:extraInfo:onViewController:;
+- (void)setExtraLogInfo:;
+- (id)miniLunaShareModel;
+- (void)setSharePanel:;
+- (id)sharePanel;
+- (id)contextWithMusic:;
+- (id)taskWithMedia:;
+- (id)taskWithMiniLunaShareModel:;
+- (id)configurationWithMedia:;
+- (id)configurationWithMiniLunaShareModel:;
+- (void)setMiniLunaShareModel:;
+- (id)musicCardShareModelWithAweme:;
+- (id)music;
+- (void)setMusic:;
+- (void).cxx_destruct;
++ (id)musicCardShareChannels;
+@end

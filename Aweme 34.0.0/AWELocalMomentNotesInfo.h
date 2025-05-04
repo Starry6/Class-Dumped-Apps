@@ -1,0 +1,35 @@
+@interface AWELocalMomentNotesInfo : AWEBaseApiModel
+@property (nonatomic) NSString itemId;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSArray texts;
+@property (nonatomic) BOOL hasDigged;
+@property (nonatomic) NSNumber createTime;
+@property (nonatomic) NSNumber textTTL;
+@property (nonatomic) q notesType;
+@property (nonatomic) double duration;
+@property (nonatomic) BOOL isDraft;
+@property (nonatomic) Q cfItemType;
+- (unsigned long long)cfItemType;
+- (BOOL)hasDigged;
+- (void)setHasDigged:;
+- (id)textTTL;
+- (void)setNotesType:;
+- (void)setTextTTL:;
+- (BOOL)isDraft;
+- (id)createTime;
+- (void)setText:;
+- (void)setDuration:;
+- (id)text;
+- (void)setCreateTime:;
+- (void).cxx_destruct;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setIsDraft:;
+- (long long)notesType;
+- (id)itemId;
+- (void)setTexts:;
+- (id)texts;
+- (void)setItemId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

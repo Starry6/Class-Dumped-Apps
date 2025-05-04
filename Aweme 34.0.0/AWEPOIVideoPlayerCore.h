@@ -1,0 +1,32 @@
+@interface AWEPOIVideoPlayerCore : UIView
+@property (nonatomic) UIView playerView;
+@property (nonatomic) <IESVideoPlayerProtocol> playerWrapper;
+@property (nonatomic) <IESVideoPlayerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)currPlaybackTime;
+- (void)updateVideoID:playURLs:;
+- (void)setPlayerWrapper:;
+- (id)addVideoPlayer;
+- (id)createPlayerWrapper;
+- (void)updatePlayURLs:;
+- (void)seekToTime:;
+- (void)play;
+- (id)delegate;
+- (void)setMute:;
+- (void)setPlayerView:;
+- (id)playerView;
+- (void).cxx_destruct;
+- (double)videoDuration;
+- (long long)playerState;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)initWithFrame:delegate:;
+- (void)stop;
+- (void)pause;
+- (void)prepareToPlay;
+- (id)playerWrapper;
+- (void)setupPlayer;
+@end

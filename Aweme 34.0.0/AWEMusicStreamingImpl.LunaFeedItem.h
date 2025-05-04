@@ -1,0 +1,32 @@
+@interface AWEMusicStreamingImpl.LunaFeedItem : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString id;
+@property (nonatomic) NSString type;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl16DisplayEntityNew entity;
+@property (nonatomic) NSString debugInfo;
+@property (nonatomic) NSString sourceType;
+@property (nonatomic) NSString sceneName;
+@property (nonatomic) NSString subSceneName;
+@property (nonatomic) NSDictionary cardContext;
+- (id)subSceneName;
+- (void)setSubSceneName:;
+- (id)cardContext;
+- (void)setCardContext:;
+- (id)debugInfo;
+- (void)setSourceType:;
+- (id)sceneName;
+- (id)entity;
+- (id)sourceType;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)type;
+- (id)id;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setDebugInfo:;
+- (id)initWithCoder:;
+- (void)setEntity:;
+- (void)setId:;
+- (void)setSceneName:;
++ (id)entityJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

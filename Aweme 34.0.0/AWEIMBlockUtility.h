@@ -1,0 +1,35 @@
+@interface AWEIMBlockUtility : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString peerUserId;
+@property (nonatomic) NSString peerSecUserID;
+@property (nonatomic) NSString peerUserNickName;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) NSString reportEnterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)actionSheet:didClickButtonAtIndex:;
+- (id)peerSecUserID;
+- (void)blockUserWithDoubleCheckSheetWithUser:inConversationId:enterFrom:enterMethod:needReportAction:reportEnterFrom:completion:;
+- (void)blockUserWithDoubleCheckSheetWithUser:inConversationId:enterFrom:enterMethod:needReportAction:reportEnterFrom:;
+- (void)setPeerSecUserID:;
+- (id)peerUserId;
+- (void)setPeerUserId:;
+- (id)peerUserNickName;
+- (void)setPeerUserNickName:;
+- (id)reportEnterFrom;
+- (void)setReportEnterFrom:;
+- (void).cxx_destruct;
+- (id)conversationId;
+- (void)setConversationId:;
++ (void)blockUser:isFriend:completion:cancel:;
++ (void)unblockUser:completion:cancel:;
++ (void)blockUserWithoutAlertWithUid:completion:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,35 @@
+@interface AWELeftSlideNMinConfigModel : MTLModel
+@property (nonatomic) BOOL forceInsert;
+@property (nonatomic) BOOL similarRecommend;
+@property (nonatomic) q nMin;
+@property (nonatomic) BOOL useImplicitProduct;
+@property (nonatomic) NSString trafficFrom;
+@property (nonatomic) NSString sameBlockName;
+@property (nonatomic) NSString sameSceneId;
+@property (nonatomic) NSString tabId;
+@property (nonatomic) NSString isStronglyRecommend;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)nMin;
+- (BOOL)useImplicitProduct;
+- (id)sameBlockName;
+- (id)sameSceneId;
+- (id)isStronglyRecommend;
+- (id)trafficFrom;
+- (BOOL)forceInsert;
+- (BOOL)similarRecommend;
+- (void)setSameBlockName:;
+- (void)setTrafficFrom:;
+- (void)setIsStronglyRecommend:;
+- (void)setForceInsert:;
+- (void)setSimilarRecommend:;
+- (void)setNMin:;
+- (void)setUseImplicitProduct:;
+- (void)setSameSceneId:;
+- (void).cxx_destruct;
+- (void)setTabId:;
+- (id)tabId;
++ (id)JSONKeyPathsByPropertyKey;
+@end

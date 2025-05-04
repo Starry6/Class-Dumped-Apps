@@ -1,0 +1,34 @@
+@interface AWEPOINearbyHotSectionController : NSObject
+@property (nonatomic) q entranceIndex;
+@property (nonatomic) NSDictionary trackInfo;
+@property (nonatomic) NSString referStr;
+@property (nonatomic) AWEWaterFallSectionCollectionContext collectionContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)zoomTransitionStartViewForOffset:;
+- (void)rx_store:didSetWithModule:;
+- (id)collectionContext;
+- (double)minimumColumnSpacing;
+- (id)feedList;
+- (void)setCollectionContext:;
+- (void)setEntranceIndex:;
+- (long long)entranceIndex;
+- (void)p_bindStateAndAction;
+- (id)referStr;
+- (void)setReferStr:;
+- (id)init;
+- (id)items;
+- (id)store;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (id)sizeForItem:;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (void)didSelectItem:;
+- (id)cellForItem:;
+- (void)willDisplayItem:;
+- (void)setTrackInfo:;
+- (id)trackInfo;
+@end

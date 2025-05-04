@@ -1,0 +1,2 @@
+@interface AWEClassroomImpl.ClassroomDetailRecommendCellModel : _TtCs12_SwiftObject
+@end

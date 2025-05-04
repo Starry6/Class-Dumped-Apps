@@ -1,0 +1,38 @@
+@interface AWEPublishAdvanceSettingsJoinMixItem : NSObject
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) UIImage arrowImage;
+@property (nonatomic) NSString introText;
+@property (nonatomic) # cellClass;
+@property (nonatomic) NSString settingKey;
+@property (nonatomic) BOOL controlEnabled;
+@property (nonatomic) NSString toast;
+@property (nonatomic) AWEVideoPublishViewModel model;
+@property (nonatomic) AWEMixVideoModel mixModel;
+@property (nonatomic) BOOL switcherState;
+@property (nonatomic) BOOL shouldHideLineView;
+@property (nonatomic) NSNumber duetPermission;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mixModel;
+- (void)setMixModel:;
+- (BOOL)controlEnabled;
+- (void)setControlEnabled:;
+- (id)introText;
+- (void)setIntroText:;
+- (void)setModel:;
+- (id)iconImage;
+- (void)setIconImage:;
+- (Class)cellClass;
+- (id)model;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)arrowImage;
+- (void)setArrowImage:;
+- (void)setSettingKey:;
+- (id)settingKey;
+- (void)setToast:;
+- (id)toast;
+- (void)setCellClass:;
+@end

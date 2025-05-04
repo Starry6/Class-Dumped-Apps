@@ -1,0 +1,2 @@
+@interface AWEStudioSwiftImpl.AIEraserEraseFlowModel : AWEStudioSwiftImpl.AIEraserTaskBaseFlowModel
+@end

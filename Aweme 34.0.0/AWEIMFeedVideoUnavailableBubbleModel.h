@@ -1,0 +1,30 @@
+@interface AWEIMFeedVideoUnavailableBubbleModel : NSObject
+@property (nonatomic) NSAttributedString titleAttriString;
+@property (nonatomic) NSAttributedString subtitleAttriString;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} titleFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} subtitleFrame;
+@property (nonatomic) {CGSize=dd} contentSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)titleAttriString;
+- (id)subtitleAttriString;
+- (id)subtitleFrame;
+- (void)commonInitWithMsg:;
+- (void)computeLayout;
+- (id)titleAttriStringForMsg:;
+- (id)subtitleAttriStringForMsg:;
+- (id)p_artworkTitleForMessage:;
+- (id)initWithMsg:;
+- (id)p_artworkTitleForMomentMessage:;
+- (void)setTitleAttriString:;
+- (void)setSubtitleAttriString:;
+- (void)setSubtitleFrame:;
+- (void)setContentSize:;
+- (id)contentSize;
+- (void).cxx_destruct;
+- (id)titleFrame;
+- (void)setTitleFrame:;
++ (id)modelForMsg:;
+@end

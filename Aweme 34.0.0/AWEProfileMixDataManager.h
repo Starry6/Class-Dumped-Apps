@@ -1,0 +1,34 @@
+@interface AWEProfileMixDataManager : AWEListDataController
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) NSString watchingMixID;
+@property (nonatomic) NSNumber justWatchedMixEpisode;
+@property (nonatomic) NSString justWatchedItemID;
+@property (nonatomic) NSDictionary logPb;
+- (id)secUserID;
+- (void)setSecUserID:;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)setLogPb:;
+- (id)logPb;
+- (id)initWithUserID:secUserID:;
+- (id)urlForProfileMix;
+- (void)trackWithError:logid:model:;
+- (id)justWatchedMixEpisode;
+- (void)updateUserID:secUserID:watchingMixID:justWatchedMixEpisode:justWatchedItemID:;
+- (void)setJustWatchedMixEpisode:;
+- (void)setWatchingMixID:;
+- (void)setJustWatchedItemID:;
+- (id)watchingMixID;
+- (id)justWatchedItemID;
+- (id)cursor;
+- (id)userID;
+- (void)removeAll;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)params;
+- (id)copyWithZone:;
+- (void)setUserID:;
+@end

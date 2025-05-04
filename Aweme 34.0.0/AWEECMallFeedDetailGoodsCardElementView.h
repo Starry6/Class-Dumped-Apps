@@ -1,0 +1,35 @@
+@interface AWEECMallFeedDetailGoodsCardElementView : UIView
+@property (nonatomic) UICollectionView cardsView;
+@property (nonatomic) UIPageControl pageControl;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) AWEAwemeModel currentAwemeModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSDictionary trackParams;
+- (id)currentAwemeModel;
+- (void)setLogExtraDict:;
+- (id)referString;
+- (void)setReferString:;
+- (id)logExtraDict;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)updateViewWithModel:;
+- (void)setCurrentAwemeModel:;
+- (void)__handleTapGesture:;
+- (id)cardsView;
+- (void)tapGoodsCardWithPromotionID:;
+- (void)setCardsView:;
+- (void)setPageControl:;
+- (id)init;
+- (id)pageControl;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)tapGesture;
+- (void)setupUI;
+@end

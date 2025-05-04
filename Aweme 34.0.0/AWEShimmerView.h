@@ -1,0 +1,35 @@
+@interface AWEShimmerView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) CALayer contentLayer;
+@property (nonatomic) CAGradientLayer maskLayer;
+@property (nonatomic) BOOL shimmering;
+@property (nonatomic) double shimmerSpeed;
+@property (nonatomic) Q shimmerDirection;
+@property (nonatomic) double shimmerAnimationAlpha;
+- (void)setUI;
+- (BOOL)shimmering;
+- (void)setShimmering:;
+- (void)beginShimmering;
+- (void)endShimmering;
+- (void)updateMaskColors;
+- (void)updateMaskLayout;
+- (unsigned long long)shimmerDirection;
+- (void)createMaskIfNeeded;
+- (id)createSliderAnimation;
+- (void)setShimmerDirection:;
+- (double)shimmerAnimationAlpha;
+- (double)shimmerSpeed;
+- (void)setShimmerSpeed:;
+- (void)setShimmerAnimationAlpha:;
+- (id)initWithContentView:;
+- (id)contentView;
+- (id)contentLayer;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)layoutSubviews;
+- (void)stop;
+- (void)start;
+- (id)maskLayer;
+- (void)setMaskLayer:;
+- (void)setContentLayer:;
+@end

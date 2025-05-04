@@ -1,0 +1,2 @@
+@interface AWERVSearchController : AWERVBaseController
+@end

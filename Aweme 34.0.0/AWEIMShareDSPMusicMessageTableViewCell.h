@@ -1,0 +1,35 @@
+@interface AWEIMShareDSPMusicMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView cardContainer;
+@property (nonatomic) AWEIMDSPMusicDisabledCardView unavailableCard;
+@property (nonatomic) AWEIMDSPMusicCardView contentCard;
+@property (nonatomic) NSString musicCoverRequestId;
+- (void)chatBackgroundDidChangeNty:;
+- (void)configWithMessage:;
+- (id)menuTargetView;
+- (id)gestureResponseViews;
+- (BOOL)canDoubleTapToLike;
+- (void)updateUnavailableUIWhenUnavailableStateChanged;
+- (void)p_addNotificationObservation;
+- (void)p_removeNotificationObservation;
+- (void)p_messagePlayStatusChangedNotified:;
+- (id)cardContainer;
+- (id)contentCard;
+- (void)setContentCard:;
+- (void)p_playButtonTapAction;
+- (void)handleMessageTap:;
+- (id)unavailableCard;
+- (void)p_configWithMessage:animateUnavailable:;
+- (void)setCardContainer:;
+- (void)setUnavailableCard:;
+- (id)musicCoverRequestId;
+- (void)setMusicCoverRequestId:;
+- (void)dealloc;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)setupUI;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

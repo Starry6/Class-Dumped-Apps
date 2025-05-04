@@ -1,0 +1,36 @@
+@interface AWEProfileMenuHorizontalContainerCell : UICollectionViewCell
+@property (nonatomic) NSArray models;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) @? didSelectedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishPushUpdateUser:;
+- (id)aAWEPadModuleAdapter;
+- (void)__setupUI;
+- (id)aAWEPadBizUIAdapter;
+- (id)didSelectedBlock;
+- (void)configWithModel:user:;
+- (void)setDidSelectedBlock:;
+- (id)user;
+- (void)setUser:;
+- (id)collectionView;
+- (id)init;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (void)dealloc;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setModels:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)models;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEPadBizUIAdapterClass;
+@end

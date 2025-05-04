@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionLargeFontAdaptUtil : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)enableFeedLargeFontAdaptationV2;
++ (BOOL)enableEcommerceLargeFontAdaptation;
++ (id)feedAdaptiveFontWithFont:;
++ (id)feedAdaptiveSizeWithSize:;
++ (double)feedAdaptiveFontSize:;
++ (id)feedAdaptiveSizeWithSize:shouldExemptDowngradeScale:;
++ (BOOL)enableFeedLargeFontAdaptation;
++ (double)feedAdaptiveSizeWHWithValue:;
++ (id)feedAdaptiveFontWithFont:shouldExemptDowngradeScale:;
++ (BOOL)enableFeedLLMLargeFontAdaptation;
++ (id)feedAdaptiveFontWithFontSize:weight:;
++ (double)feedAdaptiveSizeWHWithValue:shouldExemptDowngradeScale:;
++ (double)feedAdaptiveFontSize:shouldExemptDowngradeScale:;
++ (BOOL)enableFeedMainModuleLargeFontAdaptation;
++ (BOOL)enableFeedTitleLargeFontAdaptation;
++ (double)feedAdaptiveLineHeightWithHeight:;
++ (BOOL)enableFeedEntertainmentLargeFontAdaptation;
++ (id)feedAdaptiveFontWithFontSize:weight:shouldExemptDowngradeScale:;
++ (BOOL)enableFeedAnchorGameCPLargeFontAdaptation;
++ (BOOL)enableFeedAnchorMediumLargeFontAdaptation;
++ (BOOL)enableFeedSoloKtvLargeFontAdaptation;
++ (BOOL)enableFeedRelatedLiveBarLargeFontAdaptation;
++ (double)scaleForBigFontAdaptationWithExemption:;
++ (id)feedAdaptiveFontWithFontSize:weight:isFixed:shouldExemptDowngradeScale:;
++ (BOOL)shouldForceDowngradeScale;
++ (BOOL)enableIncentiveIMLargeFontAdaptation;
++ (id)feedAdaptiveFontWithFontSize:weight:isFixed:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMChatSettingPanelHeaderViewProps : NSObject
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) double textAreaWidth;
+@property (nonatomic) NSAttributedString titleAttrText;
+@property (nonatomic) NSAttributedString subtitleAttrText;
+@property (nonatomic) double imageToTopMargin;
+@property (nonatomic) double titleToImageMargin;
+@property (nonatomic) double subtitleToTitleMargin;
+@property (nonatomic) double bottomToSubtitleMargin;
+- (void)setTextAreaWidth:;
+- (void)setImageToTopMargin:;
+- (void)setTitleToImageMargin:;
+- (void)setSubtitleToTitleMargin:;
+- (void)setBottomToSubtitleMargin:;
+- (void)setTitleAttrText:;
+- (void)setSubtitleAttrText:;
+- (double)textAreaWidth;
+- (id)titleAttrText;
+- (id)subtitleAttrText;
+- (double)imageToTopMargin;
+- (double)titleToImageMargin;
+- (double)subtitleToTitleMargin;
+- (double)bottomToSubtitleMargin;
+- (id)image;
+- (void)setImage:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageSize;
+@end

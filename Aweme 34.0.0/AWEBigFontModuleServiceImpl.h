@@ -1,0 +1,35 @@
+@interface AWEBigFontModuleServiceImpl : HTSService
+@property (nonatomic) @? cancelBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q elderModeDelayEffect;
+- (void)onServiceInit;
+- (void)alertDialogDidDismiss:;
+- (void)didUpdateIMSetting:source:currentModel:;
+- (void)showConfirmAlertDialogBySwitchFontMode:title:message:confirmBlock:cancelBlock:enterFrom:;
+- (void)showConfirmAlertDialogBySwitchFontMode:followSystem:title:message:confirmBlock:cancelBlock:enterFrom:;
+- (void)showConfirmAlertDialogBySwitchElderMode:title:message:confirmBlock:cancelBlock:enterFrom:;
+- (void)showConfirmAlertDialogWithTitle:message:confirmBlock:cancelBlock:enterFrom:;
+- (BOOL)systemViewZoomModeOn;
+- (unsigned long long)elderModeDelayEffect;
+- (void)setElderModeDelayEffect:;
+- (id)aAWEBigFontConfigReportAdapter;
+- (id)aAWEBigFontModuleAdapter;
+- (void)syncElderModeToServer;
+- (void)shouldTrackToday:;
+- (void)dealloc;
+- (void)setCancelBlock:;
+- (void).cxx_destruct;
+- (id)cancelBlock;
++ (id)fontStyleAttributeStorage;
++ (BOOL)fontSizeFollowSystemStorage;
++ (BOOL)ifSystemReflectDefaultOnExemptNeeded;
++ (id)getFontInfoReportReason;
++ (BOOL)shouldAvoidFrequencyControl;
++ (Class)aAWEBigFontConfigReportAdapterClass;
++ (Class)aAWEBigFontModuleAdapterClass;
++ (BOOL)elderModeStorage;
++ (unsigned long long)getAndResetDelayElderModeType;
+@end

@@ -1,0 +1,38 @@
+@interface AWELandscapeReolutionReminder : UIView
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIView splitLine;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) q state;
+@property (nonatomic) BOOL inLock;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) Q manualGearType;
+@property (nonatomic) NSTimer quietTimer;
+@property (nonatomic) <AWELandscapeReolutionReminderDelegate> delegate;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (unsigned long long)manualGearType;
+- (void)setManualGearType:;
+- (id)splitLine;
+- (void)setSplitLine:;
+- (void)triggerQuietTimerWithState:;
+- (void)resetQuietTimer;
+- (id)quietTimer;
+- (void)setQuietTimer:;
+- (void)updateLockStatus:;
+- (void)updateLayoutWithBottomOffset:;
+- (void)showOnView:changeToState:manualGearsType:bottomOffset:inLock:;
+- (void)updateUIWithState:inLock:;
+- (void)setInLock:;
+- (BOOL)inLock;
+- (BOOL)isShowing;
+- (id)delegate;
+- (id)initWithFrame:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setState:;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)dismissView;
+- (void)setIsShowing:;
+@end

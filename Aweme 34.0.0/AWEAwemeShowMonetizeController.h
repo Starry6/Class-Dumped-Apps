@@ -1,0 +1,36 @@
+@interface AWEAwemeShowMonetizeController : AWEAwemeFeedBaseController
+@property (nonatomic) <AWEShowMonetizePopupTaskQueueService> popupTaskQueue;
+@property (nonatomic) BOOL hasShowCouponPageForSceneEnter;
+@property (nonatomic) BOOL shouldUseCouponAfterClose;
+@property (nonatomic) AWEAwemeModel monetizeCurrentAweme;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithRouterParamDict:;
+- (void)onScrollDidEndWithIndexPath:;
+- (void)initialDataSourceFetchDidFinished;
+- (void)tableView:didDisplayCell:forRowAtIndexPath:;
+- (void)willReloadWithDataController:initialIndex:customAnimated:systemAnimated:;
+- (void)didReloadWithDataController:initialIndex:customAnimated:systemAnimated:;
+- (id)couponReceiveHandlerEventContainerID:;
+- (void)coupon:receivedCouponPageEventWithType:scene:timing:;
+- (void)coupon:didCloseCouponPageForScene:timing:;
+- (void)popupDidStart:;
+- (void)popupDidFinish:;
+- (id)popupReceiveHandlerEventQueueName:;
+- (void)setShouldUseCouponAfterClose:;
+- (unsigned long long)getCouponInfoScene;
+- (void)tryToPopupMonetizePageWithAweme:;
+- (void)removeAoopExecutedRulesIfNeededWithAweme:;
+- (void)setMonetizeCurrentAweme:;
+- (BOOL)shouldUseCouponAfterClose;
+- (BOOL)isHasShowCouponPageForSceneEnter;
+- (void)setHasShowCouponPageForSceneEnter:;
+- (id)monetizeCurrentAweme;
+- (id)popupTaskQueue;
+- (void)setPopupTaskQueue:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

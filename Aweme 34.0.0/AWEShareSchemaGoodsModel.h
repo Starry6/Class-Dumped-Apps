@@ -1,0 +1,35 @@
+@interface AWEShareSchemaGoodsModel : AWEBaseApiModel
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) NSString goodsName;
+@property (nonatomic) NSNumber minPrice;
+@property (nonatomic) NSNumber sales;
+@property (nonatomic) NSNumber maxPrice;
+@property (nonatomic) NSNumber markingPrice;
+@property (nonatomic) NSNumber baseMinPrice;
+@property (nonatomic) NSString basePricePrefix;
+@property (nonatomic) NSNumber discountMinPrice;
+@property (nonatomic) NSString discountPricePrefix;
+- (id)sales;
+- (void)setGoodsName:;
+- (id)goodsName;
+- (id)minPrice;
+- (void)setMinPrice:;
+- (void)setSales:;
+- (id)maxPrice;
+- (void)setMaxPrice:;
+- (id)markingPrice;
+- (void)setMarkingPrice:;
+- (id)baseMinPrice;
+- (void)setBaseMinPrice:;
+- (id)basePricePrefix;
+- (void)setBasePricePrefix:;
+- (id)discountMinPrice;
+- (void)setDiscountMinPrice:;
+- (id)discountPricePrefix;
+- (void)setDiscountPricePrefix:;
+- (void).cxx_destruct;
+- (id)coverURL;
+- (void)setCoverURL:;
++ (id)coverURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

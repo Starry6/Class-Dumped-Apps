@@ -1,0 +1,33 @@
+@interface AWEIMRTVBubbleView : UIView
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) CAShapeLayer backgroundLayer;
+@property (nonatomic) CAShapeLayer anchorLayer;
+@property (nonatomic) UIView forView;
+@property (nonatomic) UIView containerView;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (void)__configComponents;
+- (void)__drawBackgroundWithRect:;
+- (void)__drawAnchorWithRect:;
+- (id)anchorLayer;
+- (id)__contentLabelColor;
+- (id)__themeColor;
+- (id)__anchorSize;
+- (id)__anchorPoint;
+- (double)__minHorizontalMargin;
+- (id)forView;
+- (BOOL)__isLightStyle;
+- (long long)__imListNaviBarEntranceType;
+- (void)setForView:;
+- (id)__frameWithAnchorForView:containerView:;
+- (void)showWithForView:inContainerView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)dismiss;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)backgroundLayer;
+- (id)contentLabel;
+- (double)__cornerRadius;
+@end

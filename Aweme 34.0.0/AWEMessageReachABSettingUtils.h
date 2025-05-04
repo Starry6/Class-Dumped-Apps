@@ -1,0 +1,33 @@
+@interface AWEMessageReachABSettingUtils : NSObject
++ (BOOL)getAWEMRPrecheckExtraPizzaEnable;
++ (BOOL)getAWEHPMessageReachOptimizeLinkEnable;
++ (BOOL)getAWEMRLeftSideBarDotMigrateEnable;
++ (BOOL)getAWEMRLeftSideRedDotClearEnable;
++ (BOOL)getAWEMRMsgDotCountAbilityEnable;
++ (id)getAWEMRVerifyExceptionResultConfig;
++ (id)getAWEMRBubblePendingTimeConfig;
++ (double)getBubblePendingTimeDefault;
++ (id)getMessageReachComponentMoveConfigDictV2;
++ (BOOL)getAWEHPMessageReachFollowComponentEnabled;
++ (BOOL)getAWEHPMessageReachLiveComponentEnabled;
++ (BOOL)getAWEHPMessageReachMediumVideoComponentEnabled;
++ (id)getAWEHPMessageReachGeneralComponentScenes;
++ (BOOL)getAWEMRMultiRequestEnable;
++ (BOOL)getAWEMRPitayaParamsForbid;
++ (BOOL)getAWEMRForbidDefaultVerifyList;
++ (BOOL)getAWEMRPopViewCloseAbilityEnable;
++ (BOOL)getAWEMRForceAlertPizzaAccessEnable;
++ (BOOL)verifyExceptionChangeEnable;
++ (id)exceptionSuccessSourceBlackList;
++ (double)getBubblePendingTimeWithSource:;
++ (BOOL)bubblePendingTimeOptEnable;
++ (BOOL)getAWEMRMsgDotIconFix;
++ (double)getAWEMRPrecheckverifyTimeLimit;
++ (BOOL)getAWEMRBackGroundRequestForbid;
++ (BOOL)getAWEMRBubbleContainerNotReloadError;
++ (BOOL)getAWEMRBubbleParentManagerErrorOtherTab;
++ (BOOL)getAWEMRBubbleParentManagerErrorHP;
++ (BOOL)getAWEMRBubbleParentManagerErrorColdLaunch;
++ (unsigned long long)maxCountPreCheckComponents;
++ (id)getMRDotShowCountAbilityConfig;
+@end

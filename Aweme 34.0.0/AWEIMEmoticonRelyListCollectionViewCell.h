@@ -1,0 +1,38 @@
+@interface AWEIMEmoticonRelyListCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UICollectionView emoticonCollectionView;
+@property (nonatomic) UICollectionView replyUserCollectionView;
+@property (nonatomic) AWEIMEmoticonRelyListDataSource dataSource;
+@property (nonatomic) Q currentIndex;
+@property (nonatomic) <AWEIMMessageInteractiveUserDelegate> delegate;
+@property (nonatomic) AWEIMConversationContext conversationContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)p_updateLayout;
+- (id)emoticonCollectionView;
+- (id)replyUserCollectionView;
+- (void)updateWithNewIndex:;
+- (void)renderWithMessage:initialKey:;
+- (void)setEmoticonCollectionView:;
+- (void)setReplyUserCollectionView:;
+- (id)delegate;
+- (void)setCurrentIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setFrame:;
+- (void)scrollViewDidScroll:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (unsigned long long)currentIndex;
+- (id)conversationContext;
+- (void)setConversationContext:;
++ (id)identifier;
+@end

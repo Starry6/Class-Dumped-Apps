@@ -1,0 +1,37 @@
+@interface AWEAwemeControlModel : MTLModel
+@property (nonatomic) BOOL canForward;
+@property (nonatomic) BOOL canShare;
+@property (nonatomic) BOOL canComment;
+@property (nonatomic) BOOL canShowComment;
+@property (nonatomic) BOOL cannotCollect;
+@property (nonatomic) BOOL cannotDigg;
+@property (nonatomic) BOOL disableForward;
+@property (nonatomic) BOOL disableShare;
+@property (nonatomic) BOOL disableComment;
+@property (nonatomic) BOOL disableShowComment;
+@property (nonatomic) BOOL disableCollect;
+@property (nonatomic) BOOL disableDigg;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disableForward;
+- (BOOL)disableShare;
+- (BOOL)disableComment;
+- (BOOL)disableShowComment;
+- (BOOL)canComment;
+- (BOOL)canShowComment;
+- (BOOL)cannotDigg;
+- (BOOL)cannotCollect;
+- (BOOL)disableDigg;
+- (BOOL)disableCollect;
+- (void)setCanComment:;
+- (void)setCanShowComment:;
+- (void)setCannotCollect:;
+- (void)setCannotDigg:;
+- (void)setCanForward:;
+- (BOOL)canForward;
+- (BOOL)canShare;
+- (void)setCanShare:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

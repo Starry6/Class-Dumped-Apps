@@ -1,0 +1,33 @@
+@interface AWEProgressFakeViewUIConfig : NSObject
+@property (nonatomic) AWEProgressUIContainerConfig containerConfig;
+@property (nonatomic) AWEProgressUIColorConfig progressMaximumColorConifg;
+@property (nonatomic) double maximumTrackHeight;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) AWEProgressUIColorConfig progressMinimumColorConifg;
+@property (nonatomic) double minimumTrackHeight;
+@property (nonatomic) AWEProgressUIColorConfig thumbTintColorConifg;
+@property (nonatomic) double thumbViewRadius;
+@property (nonatomic) double thumbViewWidth;
+@property (nonatomic) double thumbViewHeight;
+- (id)containerConfig;
+- (void)setContainerConfig:;
+- (double)maximumTrackHeight;
+- (double)thumbViewRadius;
+- (double)thumbViewHeight;
+- (double)thumbViewWidth;
+- (id)progressMinimumColorConifg;
+- (id)progressMaximumColorConifg;
+- (id)thumbTintColorConifg;
+- (void)setThumbViewWidth:;
+- (void)setThumbViewRadius:;
+- (void)setProgressMaximumColorConifg:;
+- (void)setProgressMinimumColorConifg:;
+- (void)setThumbTintColorConifg:;
+- (void)setMaximumTrackHeight:;
+- (double)minimumTrackHeight;
+- (void)setMinimumTrackHeight:;
+- (void)setThumbViewHeight:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFeedMixVideoController : AWEBaseController
+@property (nonatomic) NSNumber currentPlaybackRate;
+@property (nonatomic) AWEAwemeModel toReplaceModel;
+@property (nonatomic) <AWEFeedUserProfileControllerProtocol> userProfileController;
+@property (nonatomic) <AWEFeedTrackControllerProtocol> feedTrackController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureCell:withModel:atIndexPath:;
+- (id)userProfileController;
+- (id)feedTrackController;
+- (id)authorForUserProfileViewControllerWithModel:;
+- (id)urlParamsForUserProfileViewControllerWithModel:;
+- (id)paramsForTrackEventType:initialContextParams:;
+- (void)setUserProfileController:;
+- (void)setFeedTrackController:;
+- (id)paramsForEnterPersonalDetail;
+- (void)onChangePlayVideoNotification:;
+- (void)onPreloadMixVideoNotification:;
+- (void)setToReplaceModel:;
+- (void)replaceVideo:withModel:;
+- (id)toReplaceModel;
+- (void)dealloc;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)currentPlaybackRate;
+- (void)setCurrentPlaybackRate:;
+@end

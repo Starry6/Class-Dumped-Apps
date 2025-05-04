@@ -1,0 +1,30 @@
+@interface AWESearchVoiceTranslateResultInfo : MTLModel
+@property (nonatomic) NSString text;
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) BOOL isInterIM;
+@property (nonatomic) BOOL isSoftFinished;
+@property (nonatomic) q indexOfOneConnection;
+@property (nonatomic) double confidence;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)indexOfOneConnection;
+- (BOOL)isInterIM;
+- (void)setIsInterIM:;
+- (void)setIndexOfOneConnection:;
+- (BOOL)isSoftFinished;
+- (void)setIsSoftFinished:;
+- (id)init;
+- (void)setConfidence:;
+- (void)setStartTime:;
+- (double)endTime;
+- (double)confidence;
+- (void)setEndTime:;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (double)startTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

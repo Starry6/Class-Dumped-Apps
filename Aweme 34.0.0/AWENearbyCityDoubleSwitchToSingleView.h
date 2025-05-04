@@ -1,0 +1,37 @@
+@interface AWENearbyCityDoubleSwitchToSingleView : UIView
+@property (nonatomic) BOOL hasShowButtonLog;
+@property (nonatomic) BOOL hasShowLittleButtonLog;
+@property (nonatomic) UIView backToSingleColumnIconContainerView;
+@property (nonatomic) UIImageView backToSingleColumnIcon;
+@property (nonatomic) UILabel backToSingleColumnLabel;
+@property (nonatomic) UIView littleBackToSingleColumnIconContainerView;
+@property (nonatomic) UIImageView littleBackToSingleColumnIcon;
+@property (nonatomic) NSDictionary logExtra;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)commonParams;
+- (id)backToSingleColumnIconImage;
+- (id)backToSingleColumnIcon;
+- (id)littleBackToSingleColumnIcon;
+- (id)backToSingleColumnLabel;
+- (void)backToSingleColumn:;
+- (void)setBackToSingleColumnIcon:;
+- (void)setLittleBackToSingleColumnIcon:;
+- (void)setBackToSingleColumnLabel:;
+- (void)trackSwitchBtnShow;
+- (void)trackSwitchBtnClick;
+- (void)feedScrollViewDidScroll:;
+- (void)didAddedToSuperview;
+- (id)backToSingleColumnIconContainerView;
+- (id)littleBackToSingleColumnIconContainerView;
+- (BOOL)hasShowButtonLog;
+- (void)setHasShowButtonLog:;
+- (BOOL)hasShowLittleButtonLog;
+- (void)setHasShowLittleButtonLog:;
+- (void)setBackToSingleColumnIconContainerView:;
+- (void)setLittleBackToSingleColumnIconContainerView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)setupUI;
+@end

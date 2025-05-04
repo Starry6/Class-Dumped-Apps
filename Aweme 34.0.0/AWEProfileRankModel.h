@@ -1,0 +1,35 @@
+@interface AWEProfileRankModel : MTLModel
+@property (nonatomic) NSString textColorStart;
+@property (nonatomic) NSString textColorEnd;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString bgColorStart;
+@property (nonatomic) NSString bgColorEnd;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString rankSchema;
+@property (nonatomic) Q rankType;
+@property (nonatomic) NSString rank;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)rankSchema;
+- (void)setRankSchema:;
+- (id)bgColorStart;
+- (id)bgColorEnd;
+- (id)textColorStart;
+- (id)textColorEnd;
+- (void)setTextColorStart:;
+- (void)setTextColorEnd:;
+- (void)setBgColorStart:;
+- (void)setBgColorEnd:;
+- (void)setText:;
+- (id)rank;
+- (id)text;
+- (void)setRank:;
+- (void).cxx_destruct;
+- (void)setRankType:;
+- (unsigned long long)rankType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

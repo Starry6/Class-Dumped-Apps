@@ -1,0 +1,37 @@
+@interface AWEGrouponFeedLiveExperimentView : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEGrouponFeedLiveExperimentPriceView priceView;
+@property (nonatomic) AWEGrouponFeedLiveExperimentProductView productView;
+@property (nonatomic) AWEGrouponC2FeedInteractionView authorContentView;
+@property (nonatomic) q liveTitleStyle;
+- (id)priceView;
+- (void)setPriceView:;
+- (long long)liveTitleStyle;
+- (void)setLiveTitleStyle:;
+- (id)productView;
+- (void)setProductView:;
+- (id)initWithFrame:model:;
+- (id)authorContentView;
+- (void)setAuthorContentView:;
+- (void)createSubViews;
+- (void)setModel:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)updateInfo:;
+- (void)setupLayout;
++ (double)cellHeight:maxWidth:;
++ (id)titleAttributedTextFromModel:;
++ (long long)numberOfLinesForTitleWithModel:;
++ (BOOL)useNewLiveCardStyleFromModel:;
++ (double)heightForTitleWithModel:maxWidth:;
++ (BOOL)needShowPriceViewWithModel:;
++ (BOOL)needShowProductViewWithModel:;
++ (long long)liveTitleStyleFromModel:;
++ (id)liveRoomTitleAttributedTextFromModel:;
++ (id)productAttributedTextFromModel:;
++ (double)maxHeightForTitleWithModel:maxWidth:;
++ (id)titleLabelFont;
+@end

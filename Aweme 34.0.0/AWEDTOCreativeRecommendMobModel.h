@@ -1,0 +1,38 @@
+@interface AWEDTOCreativeRecommendMobModel : MTLModel
+@property (nonatomic) NSString lastPlayGid;
+@property (nonatomic) NSString lastpagePlayGid;
+@property (nonatomic) NSString prepagePlayGid;
+@property (nonatomic) NSString lastpageName;
+@property (nonatomic) NSString prepageName;
+@property (nonatomic) NSString rootGid;
+@property (nonatomic) NSString lastpagePlayAuthorId;
+@property (nonatomic) NSString lastpagePlayHashtagNames;
+@property (nonatomic) NSString lastpagePlayMusicId;
+@property (nonatomic) NSString lastpagePlayPropIds;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lastPlayGid;
+- (void)setLastPlayGid:;
+- (id)lastpagePlayGid;
+- (void)setLastpagePlayGid:;
+- (id)prepagePlayGid;
+- (void)setPrepagePlayGid:;
+- (id)lastpageName;
+- (void)setLastpageName:;
+- (id)prepageName;
+- (void)setPrepageName:;
+- (id)rootGid;
+- (void)setRootGid:;
+- (id)lastpagePlayAuthorId;
+- (void)setLastpagePlayAuthorId:;
+- (id)lastpagePlayHashtagNames;
+- (void)setLastpagePlayHashtagNames:;
+- (id)lastpagePlayMusicId;
+- (void)setLastpagePlayMusicId:;
+- (id)lastpagePlayPropIds;
+- (void)setLastpagePlayPropIds:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

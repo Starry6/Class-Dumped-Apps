@@ -1,0 +1,31 @@
+@interface AWEPayBLEManager : NSObject
+@property (nonatomic) CBPeripheralManager peripheralManager;
+@property (nonatomic) CBUUID curUUID;
+@property (nonatomic) @? callback;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) Q duration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCurUUID:;
+- (id)curUUID;
+- (void)setCallback:;
+- (id)callback;
+- (void)setTimer:;
+- (id)init;
+- (void)peripheralManagerDidUpdateState:;
+- (id)timer;
+- (void)setPeripheralManager:;
+- (id)peripheralManager;
+- (void)setDuration:;
+- (void)peripheralManagerDidStartAdvertising:error:;
+- (void).cxx_destruct;
+- (unsigned long long)duration;
++ (void)postWithData:fromScene:asyncCallback:;
++ (long long)checkBLEAuthorizationStatus;
++ (void)postWithData:fromScene:duration:asyncCallback:;
++ (int)getCurAppIdentify;
++ (void)stopAdvertising;
++ (id)shared;
+@end

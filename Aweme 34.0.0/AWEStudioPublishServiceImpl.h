@@ -1,0 +1,36 @@
+@interface AWEStudioPublishServiceImpl : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isHotUser;
+- (BOOL)shouldMuteDownloadWithMusic:;
+- (void)showMuteDownloadAlertWithConfirmHandler:cancelHandler:logParams:;
+- (BOOL)isTeenMode;
+- (BOOL)enableHashtag;
+- (id)aAWEStudioDOUYINSSAdapter;
+- (void)setLogPassback:referString:;
+- (id)feedLogPassbackWithReferString:;
+- (void)tapticEngineManagerTap;
+- (void)tapticEngineManagerNotifySuccess;
+- (void)tapticEngineManagerNotifyFailure;
+- (void)requestPublishRecommendHashTagsWithParams:completion:;
+- (void)hashtagInputSuggestionAdtrackWithExtra:inputSuggestionModel:;
+- (void)updateSettingSyncWithStatus:;
+- (BOOL)isBindedToutiao;
+- (void)requestBindToToutiaoWithCompletion:;
+- (id)getIMSettingModel;
+- (id)newAwemeModel;
+- (void)savePublishedAwemeIfNeeded:publishModel:completion:;
+- (void)sharePublishedAwemeIfNeeded:publishModel:;
+- (id)image:ResizeToSize:;
+- (void)landingToSkylightWithTask:;
+- (BOOL)commonConfigShouldLandingFamiliarTab;
+- (BOOL)commonConfigFamiliarTabInHomepage;
+- (BOOL)enableShowPrivateOption;
+- (id)customAppPublishLandingTab;
+- (id)aAWEStudioPublishAwemeAdapter;
+- (id)deviceID;
++ (Class)aAWEStudioDOUYINSSAdapterClass;
++ (Class)aAWEStudioPublishAwemeAdapterClass;
+@end

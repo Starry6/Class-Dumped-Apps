@@ -1,0 +1,30 @@
+@interface AWEECOMIMTemplateCardCell : AWEECOMIMBaseUserMsgCell
+@property (nonatomic) AWEECOMIMTemplateCardView templateCardView;
+@property (nonatomic) AWEECOMIMLynxCardView lynxCardView;
+@property (nonatomic) AWEECOMIMTemplateCardModel cellModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCellModel:;
+- (void)didCustomInit;
+- (void)fetchDynamicDataAndUpdateCardView;
+- (void)updateTemplateModelCallback;
+- (void)cardViewDidChangeHeight;
+- (BOOL)canTrackCellDetailDisplay;
+- (id)cellDetailDisplayParams;
+- (void)willDisplayByMessageVisible;
+- (void)didEndDisplayingByMessageVisible;
+- (void)setLynxCardView:;
+- (id)lynxCardView;
+- (void)updateCardSize;
+- (void)msgExposureCallback:;
+- (void)setTemplateCardView:;
+- (id)templateCardView;
+- (void)fetchDynamicDataAndUpdateCardViewWithExtraBody:extraParams:extraHeader:;
+- (void)cardTouchInside;
+- (void)viewControllerDidDisappear;
+- (void)viewControllerWillAppear;
+- (void).cxx_destruct;
++ (void)getSize:withModel:;
+@end

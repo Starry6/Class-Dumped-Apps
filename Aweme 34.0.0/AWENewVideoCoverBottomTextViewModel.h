@@ -1,0 +1,2 @@
+@interface AWENewVideoCoverBottomTextViewModel : AWECoverChooseBottomViewModel
+@end

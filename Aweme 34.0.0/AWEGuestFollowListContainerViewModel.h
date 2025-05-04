@@ -1,0 +1,30 @@
+@interface AWEGuestFollowListContainerViewModel : AWEBaseListViewModel
+@property (nonatomic) AWEGuestFollowListSectionViewModel followSectionVM;
+@property (nonatomic) q totalFollowCount;
+@property (nonatomic) NSString nextPageToken;
+@property (nonatomic) BOOL showLoading;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)fetchListData;
+- (void)loadMoreListData;
+- (void)setupViewModel;
+- (void)setShowLoading:;
+- (BOOL)loadMoreHasMore;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (id)nextPageToken;
+- (void)setNextPageToken:;
+- (void)fetchListDataWithType:;
+- (id)followSectionVM;
+- (void)handleDataStateChanged;
+- (void)calculateHeaderTitle;
+- (void)resetFollowSection;
+- (void)setTotalFollowCount:;
+- (long long)totalFollowCount;
+- (void)fetchWithParams:completion:;
+- (void)setFollowSectionVM:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)showLoading;
+@end

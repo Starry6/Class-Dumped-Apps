@@ -1,0 +1,33 @@
+@interface AWEIMCustomMenuComponent : NSObject
+@property (nonatomic) AWEIMEmojiReplyMenuView menuView;
+@property (nonatomic) AWEIMMessageInteractiveUserListViewController userListVC;
+@property (nonatomic) NSArray fullReplyViewModels;
+@property (nonatomic) <AWEIMMessageListComponentCenter> componentCenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)componentCenter;
+- (void)setComponentCenter:;
+- (id)userListVC;
+- (void)setUserListVC:;
+- (void)msg_showMenuForBubbleFrameInScreen:tapLocationInScreen:menuItemList:moreEmoticon:onCell:extra:;
+- (void)msg_showMenuForBubbleFrameInScreen:highLocationInScreen:lowLocationInScreen:tryHighLocationFirst:menuItemList:onCell:extra:;
+- (void)msg_showEmojiReplyListWithCell:isDoubleLike:selectedKey:;
+- (void)msg_showEmojiReplyListComponentWithCell:isDoubleLike:selectedKey:;
+- (void)msg_dismissMenu;
+- (void)msg_dismissMenuWithoutAnimation;
+- (id)msg_menuFrameInScreen;
+- (void)p_showMenuWithContext:;
+- (id)p_message:;
+- (id)p_conversation:;
+- (void)p_bizTrackMenuClickItem:message:conversation:;
+- (id)findHostViewFromeCell:;
+- (id)p_buttonListWithMenuList:emojiList:;
+- (void)p_bizTrackShowPanelWithButtonList:withMessage:conversation:;
+- (id)fullReplyViewModels;
+- (void)setFullReplyViewModels:;
+- (void).cxx_destruct;
+- (id)menuView;
+- (void)setMenuView:;
+@end

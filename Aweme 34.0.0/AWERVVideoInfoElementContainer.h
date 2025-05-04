@@ -1,0 +1,2 @@
+@interface AWERVVideoInfoElementContainer : AWEElementContainer
+@end

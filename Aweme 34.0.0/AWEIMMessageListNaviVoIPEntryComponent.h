@@ -1,0 +1,34 @@
+@interface AWEIMMessageListNaviVoIPEntryComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMMessageVoipEntranceView voipEntranceView;
+@property (nonatomic) <AWEIMMessageListNaviBarInterface> naviBarService;
+@property (nonatomic) <AWEIMFansGroupTopDynamicDomainInteractorInterface> dynamicDomainService;
+@property (nonatomic) <AWEIMMessageTabModeInterface> messageTabModeService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (long long)naviBarPriority;
+- (id)naviBarView;
+- (long long)naviBarPosition;
+- (double)naviBarViewCustomSpacing;
+- (void)componentDidMounted:;
+- (void)didFetchPeerFullDetailUser:;
+- (void)setNaviBarService:;
+- (id)naviBarService;
+- (long long)shouldShowVoIPEntranceInNavigationBarWithConversation:;
+- (void)activeUserInfoChangeToNewValue:;
+- (void)p_createVoipEntranceViewIfNeed;
+- (void)setDynamicDomainService:;
+- (void)setMessageTabModeService:;
+- (id)dynamicDomainService;
+- (id)messageTabModeService;
+- (id)voipEntranceView;
+- (void)p_traceVoipEntranceDisplayStatus:voipEntranceView:;
+- (void)p_checkUGDidVoIPAction;
+- (BOOL)p_isEntranceShowing;
+- (void)showVoipPopViewWithVoipEntranceView:;
+- (void)setVoipEntranceView:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

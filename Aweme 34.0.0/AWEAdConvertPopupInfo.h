@@ -1,0 +1,35 @@
+@interface AWEAdConvertPopupInfo : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString pictureUrl;
+@property (nonatomic) NSString jumpUrl;
+@property (nonatomic) NSString cancelToast;
+@property (nonatomic) NSString confirmToast;
+@property (nonatomic) NSString shortContent;
+@property (nonatomic) Q convertType;
+@property (nonatomic) NSNumber cardType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpUrl;
+- (void)setJumpUrl:;
+- (void)setConvertType:;
+- (unsigned long long)convertType;
+- (id)shortContent;
+- (id)confirmToast;
+- (id)cancelToast;
+- (id)pictureUrl;
+- (void)setPictureUrl:;
+- (void)setCancelToast:;
+- (void)setConfirmToast:;
+- (void)setShortContent:;
+- (id)content;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)cardType;
+- (void)setCardType:;
++ (BOOL)automaticallyDefaultMapping;
+@end

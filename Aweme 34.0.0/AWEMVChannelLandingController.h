@@ -1,0 +1,34 @@
+@interface AWEMVChannelLandingController : AWEMVChannelBaseController
+@property (nonatomic) NSDictionary currentLandingParams;
+@property (nonatomic) <AWEMVLandingStrategyProtocol> currentStrategy;
+@property (nonatomic) BOOL isViewDidLoad;
+@property (nonatomic) BOOL firstLoadNeedAppendData;
+@property (nonatomic) AWEMVChannelPageContext mvContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithRouterParamDict:;
+- (BOOL)isViewDidLoad;
+- (void)setIsViewDidLoad:;
+- (void)setCurrentStrategy:;
+- (id)mvContext;
+- (void)setMvContext:;
+- (void)willRequestWithContext:;
+- (BOOL)shouldInterceptFetchWithContext:completion:;
+- (BOOL)autoAttachToDataController:;
+- (void)landingWithParams:;
+- (id)currentLandingParams;
+- (void)handleLandingIfNeededWithParams:;
+- (void)preloadBannerCoverIfNeed;
+- (void)setCurrentLandingParams:;
+- (BOOL)shouldDisableFirstRenderCache;
+- (BOOL)firstLoadNeedAppendData;
+- (void)setFirstLoadNeedAppendData:;
+- (BOOL)needAppendDataMode;
+- (void)handleRefresh;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)currentStrategy;
+@end

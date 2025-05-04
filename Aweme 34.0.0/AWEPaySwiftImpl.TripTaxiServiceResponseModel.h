@@ -1,0 +1,32 @@
+@interface AWEPaySwiftImpl.TripTaxiServiceResponseModel : MTLModel
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) NSString retStatus;
+@property (nonatomic) _TtC15AWEPaySwiftImpl20TripShowElementModel moreBrandsDesc;
+@property (nonatomic) NSArray supplierBrandList;
+@property (nonatomic) NSString gaodeH5Schema;
+@property (nonatomic) NSString bizSchema;
+@property (nonatomic) NSDictionary bizData;
+- (void)setBizData:;
+- (id)bizData;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (id)retStatus;
+- (void)setRetStatus:;
+- (id)moreBrandsDesc;
+- (void)setMoreBrandsDesc:;
+- (id)supplierBrandList;
+- (void)setSupplierBrandList:;
+- (id)gaodeH5Schema;
+- (void)setGaodeH5Schema:;
+- (id)bizSchema;
+- (void)setBizSchema:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)supplierBrandListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

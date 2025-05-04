@@ -1,0 +1,33 @@
+@interface AWEEcomSearchTabBarConfig : NSObject
+@property (nonatomic) UIColor normalColor;
+@property (nonatomic) UIColor selectedColor;
+@property (nonatomic) UIFont normalFont;
+@property (nonatomic) UIFont selectedFont;
+@property (nonatomic) double itemWidth;
+@property (nonatomic) double itemHeight;
+@property (nonatomic) double indicatorWidth;
+@property (nonatomic) double indicatorHeight;
+@property (nonatomic) double animationDuration;
+@property (nonatomic) CAMediaTimingFunction timingFunction;
+- (double)indicatorHeight;
+- (void)setIndicatorHeight:;
+- (void)setNormalFont:;
+- (id)selectedFont;
+- (void)setSelectedFont:;
+- (double)indicatorWidth;
+- (void)setIndicatorWidth:;
+- (id)timingFunction;
+- (void)setTimingFunction:;
+- (void)setItemWidth:;
+- (double)itemWidth;
+- (void)setSelectedColor:;
+- (id)normalColor;
+- (void)setNormalColor:;
+- (void).cxx_destruct;
+- (void)setAnimationDuration:;
+- (double)animationDuration;
+- (id)selectedColor;
+- (id)normalFont;
+- (double)itemHeight;
+- (void)setItemHeight:;
+@end

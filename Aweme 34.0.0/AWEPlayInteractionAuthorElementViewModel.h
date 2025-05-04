@@ -1,0 +1,32 @@
+@interface AWEPlayInteractionAuthorElementViewModel : AWEPlayInteractionPersonElementViewModel
+@property (nonatomic) NSString pageTypeString;
+@property (nonatomic) q fromPageType;
+@property (nonatomic) BOOL isRecommendedCard;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) NSString refer;
+@property (nonatomic) BOOL showDecoration;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionContextProtocol> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onAuthorLabelClicked:;
+- (void)onNewLiveMarkViewClicked;
+- (BOOL)isAlbumDirectExpand;
+- (void)onVerifiedIconClicked:;
+- (void)onStoryTagViewClicked:;
+- (void)onRichAwemeTagClicked:;
+- (void)onCoCreatorLabelClicked:delegate:;
+- (void)onChapterTagLabelClicked:delegate:;
+- (void)onTimeLabelClicked:;
+- (void)onClearViewClicked:;
+- (void)onStablePageEntranceClick:;
+- (void)__trackXiguaVideoAvatarClick;
+- (void)_onAuthorLabelClicked_IMP:;
+- (void)_onNewLiveMarkViewClicked_IMP;
+- (BOOL)storyCanEnterDetail;
+- (void)enterRichAweme:;
+- (void)_onStoryTagViewClicked_IMP:;
+- (BOOL)richAwemeplainTextClick;
+- (id)currentUser;
+@end

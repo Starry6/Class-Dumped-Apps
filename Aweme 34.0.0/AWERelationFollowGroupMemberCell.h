@@ -1,0 +1,38 @@
+@interface AWERelationFollowGroupMemberCell : AWEUIListTableViewCell
+@property (nonatomic) AWEAliasEditLabel nameLabel;
+@property (nonatomic) UIButton moreButton;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) @? moreIconTapAction;
+@property (nonatomic) @? followButtonTapAction;
+@property (nonatomic) BOOL hideMoreBtn;
+@property (nonatomic) BOOL isSpecialGroup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:;
+- (void)setMoreIconTapAction:;
+- (id)moreIconTapAction;
+- (void)__moreButtonClicked;
+- (id)followButtonColorModel;
+- (void)refreshFollowBtnUI;
+- (id)followButtonTapAction;
+- (BOOL)hideMoreBtn;
+- (void)hideRightActionArea;
+- (BOOL)isSpecialGroup;
+- (id)moreButtonTargetView;
+- (void)setFollowButtonTapAction:;
+- (void)setHideMoreBtn:;
+- (void)setIsSpecialGroup:;
+- (void)updateLabel;
+- (id)moreButton;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setUserModel:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setMoreButton:;
+- (id)userModel;
+- (void)setNameLabel:;
++ (id)__defaultImage;
++ (id)defaultStyleIdentifier;
+@end

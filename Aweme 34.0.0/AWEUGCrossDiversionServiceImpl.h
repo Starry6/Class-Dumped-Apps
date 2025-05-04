@@ -1,0 +1,31 @@
+@interface AWEUGCrossDiversionServiceImpl : HTSService
+@property (nonatomic) AWEUGCrossDiversionInfo crossDiversionInfo;
+@property (nonatomic) AWEUGCrossDiversionBuoyView buoyView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onAppDidEnterBackground:;
+- (void)routerDidTransferWithURLString:fromViewController:toViewController:transitionType:;
+- (id)paramsForVideoPlayInPlayer:paramsModel:;
+- (void)parseCrossDiversionScheme:;
+- (void)sceneDidAppeared:;
+- (void)videoInsertWithAwemeIDs:result:;
+- (void)crossDiversionBuoyViewClosed;
+- (void)crossDiversionBuoyViewTapped;
+- (void)setCrossDiversionInfo:;
+- (id)crossDiversionInfo;
+- (void)clearCrossDiversionBuoyView;
+- (void)showCrossDiversionBuoyWithInfo:;
+- (void)trackBuoyViewDismissWithReason:switchScene:;
+- (void)setBuoyView:;
+- (id)buoyView;
+- (void)trackBuoyViewShow;
+- (void)setupSceneSwitchObservers;
+- (void)sceneDidDisappeared:;
+- (void)onFeedDidEndDisplayCell:;
+- (void)trackBuoyViewClose;
+- (void)trackBuoyViewClick;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,33 @@
+@interface AWEVideoDraftBoxCollectionFooterView : UIView
+@property (nonatomic) UIButton checkAllButton;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) UIButton moreButton;
+@property (nonatomic) UIButton footerFeedbackButton;
+@property (nonatomic) UIButton saveLocalButton;
+@property (nonatomic) <AWEVideoDraftBoxCollectionFooterViewDelegate> delegate;
+- (void)feedbackAction;
+- (id)p_getAWEColorWithColorName:;
+- (id)p_getACCColorWithColorName:;
+- (id)footerFeedbackButton;
+- (id)saveLocalButton;
+- (BOOL)p_isDarkTheme;
+- (void)checkAllAction;
+- (void)saveLocalAction;
+- (void)updateWithSelectedCount:totalCount:;
+- (id)checkAllButton;
+- (void)setCheckAllButton:;
+- (void)setFooterFeedbackButton:;
+- (void)setSaveLocalButton:;
+- (void)setDeleteButton:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)moreButton;
+- (void)deleteAction;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (void)setMoreButton:;
+- (void)setDelegate:;
+- (id)initWithFrame:delegate:;
+- (id)buttonTextColor;
+- (void)p_init;
+@end

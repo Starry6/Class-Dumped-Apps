@@ -1,0 +1,23 @@
+@interface NSKVONotifying_AWEPlayInteractionViewController_hmd_subfix_ : AWEPlayInteractionViewController_hmd_subfix_
+- (void)setPlayerView:;
+- (void)setVideoDelegate:;
+- (void)setIsBottomHotBarShowing:;
+- (void)setIsHotSearchStatus:;
+- (void)setShowFollowStatus:;
+- (void)setAdEventName:;
+- (void)setCityInfoString:;
+- (void)setIsFromRecommendBigCard:;
+- (void)setTrackContext:;
+- (void)setHideMusicInfo:;
+- (void)setIsAWEStory:;
+- (void)setRegisterElementModel:;
+- (void)setMediaType:;
+- (void)setEnterFrom:;
+- (void)setLogExtraDict:;
+- (void)setReferString:;
+- (void)setFromModel:;
+- (void)setModel:;
+- (Class)class;
+- (void)dealloc;
+- (BOOL)_isKVOA;
+@end

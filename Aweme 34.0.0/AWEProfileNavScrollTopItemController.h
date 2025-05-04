@@ -1,0 +1,35 @@
+@interface AWEProfileNavScrollTopItemController : NSObject
+@property (nonatomic) UIButton scrollTopButton;
+@property (nonatomic) DUXPopover scrollTopGuidePopover;
+@property (nonatomic) BOOL needShow;
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (BOOL)needShow;
+- (void)setNeedShow:;
+- (id)profileContext;
+- (void)showScrollTopButton;
+- (BOOL)currentShowState;
+- (void)hideScrollTopGuidePopover;
+- (void)hideScrollTopButton;
+- (void)showScrollTopGuidePopover;
+- (id)navigationItemView;
+- (BOOL)disableProfileScrollingAlphaChange;
+- (id)scrollTopButton;
+- (id)scrollTopGuidePopover;
+- (id)scrollToTopComponent;
+- (id)postworkDetailComponent;
+- (void)setScrollTopButton:;
+- (void)setScrollTopGuidePopover:;
+- (id)delegate;
+- (void)viewDidLoad;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)itemSize;
+@end

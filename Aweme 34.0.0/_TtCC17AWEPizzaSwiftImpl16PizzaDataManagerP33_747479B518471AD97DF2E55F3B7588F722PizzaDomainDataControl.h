@@ -1,0 +1,2 @@
+@interface _TtCC17AWEPizzaSwiftImpl16PizzaDataManagerP33_747479B518471AD97DF2E55F3B7588F722PizzaDomainDataControl : _TtCs12_SwiftObject
+@end

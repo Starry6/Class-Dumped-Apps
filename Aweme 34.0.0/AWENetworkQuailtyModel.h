@@ -1,0 +1,32 @@
+@interface AWENetworkQuailtyModel : NSObject
+@property (nonatomic) q httpRtt;
+@property (nonatomic) q transportRtt;
+@property (nonatomic) q downstreamThroughputKbps;
+@property (nonatomic) q videoBitrateKbps;
+@property (nonatomic) q acMethod;
+@property (nonatomic) BOOL longConnectOn;
+@property (nonatomic) q networlEffectLevel;
+@property (nonatomic) AWENetworkPackageLoss quicLoss;
+@property (nonatomic) double lastUpdateAt;
+- (long long)networlEffectLevel;
+- (void)setHttpRtt:;
+- (long long)httpRtt;
+- (void)setDownstreamThroughputKbps:;
+- (long long)downstreamThroughputKbps;
+- (long long)transportRtt;
+- (void)setTransportRtt:;
+- (long long)videoBitrateKbps;
+- (double)lastUpdateAt;
+- (long long)acMethod;
+- (void)setLastUpdateAt:;
+- (id)quicLoss;
+- (void)setQuicLoss:;
+- (void)setVideoBitrateKbps:;
+- (void)setAcMethod:;
+- (BOOL)longConnectOn;
+- (void)setLongConnectOn:;
+- (void)setNetworlEffectLevel:;
+- (id)displayString;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

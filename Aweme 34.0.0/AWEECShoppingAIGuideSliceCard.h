@@ -1,0 +1,35 @@
+@interface AWEECShoppingAIGuideSliceCard : AWEECShoppingAIGuideBaseCard
+@property (nonatomic) AWEECShoppingAIGuideMessageSingleSliceViewModel sliceViewModel;
+@property (nonatomic) UIView sliceView;
+@property (nonatomic) AWEECShoppingAIGuideSliceXInstance sliceInstance;
+@property (nonatomic) {CGSize=dd} cardSize;
+@property (nonatomic) NSString sliceCardID;
+@property (nonatomic) @? eventAction;
+@property (nonatomic) <AWEECShoppingAIGuideSliceCardDelegate> sliceCardDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupUIWithModel:;
+- (void)triggerSliceXEvent:;
+- (void)setSliceViewModel:;
+- (id)sliceCardID;
+- (id)initWithModel:context:sliceCardDelegate:;
+- (id)sliceViewModel;
+- (void)setSliceCardID:;
+- (void)setSliceCardDelegate:;
+- (void)setSliceInstance:;
+- (id)sliceInstance;
+- (id)sliceView;
+- (void)setSliceView:;
+- (id)sliceCardDelegate;
+- (void)_triggerEvent:withEventPrams:;
+- (void)p_sendTrackLogWithEventPrams:;
+- (void)p_openSchemeWithEventPrams:;
+- (void)p_showToastWithEventPrams:;
+- (void).cxx_destruct;
+- (id)cardSize;
+- (void)setCardSize:;
+- (void)setEventAction:;
+- (id)eventAction;
+@end

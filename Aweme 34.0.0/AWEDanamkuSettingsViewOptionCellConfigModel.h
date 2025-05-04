@@ -1,0 +1,30 @@
+@interface AWEDanamkuSettingsViewOptionCellConfigModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL banBottomLine;
+@property (nonatomic) BOOL showDescButton;
+@property (nonatomic) Q cellStyle;
+@property (nonatomic) BOOL defaultSwitchValue;
+@property (nonatomic) BOOL banRightArrow;
+@property (nonatomic) @? cellClickBlock;
+@property (nonatomic) @? descButtonClickBlock;
+@property (nonatomic) @? changeMaskSwitch;
+- (void)setBanBottomLine:;
+- (void)setDefaultSwitchValue:;
+- (void)setChangeMaskSwitch:;
+- (void)setCellClickBlock:;
+- (void)setShowDescButton:;
+- (void)setDescButtonClickBlock:;
+- (void)setBanRightArrow:;
+- (BOOL)banBottomLine;
+- (BOOL)showDescButton;
+- (BOOL)defaultSwitchValue;
+- (BOOL)banRightArrow;
+- (id)cellClickBlock;
+- (id)descButtonClickBlock;
+- (id)changeMaskSwitch;
+- (unsigned long long)cellStyle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setCellStyle:;
+@end

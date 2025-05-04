@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionElementStrategyManager : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSMutableArray leftStrategies;
+@property (nonatomic) NSMutableArray rightStrategies;
+@property (nonatomic) NSMutableArray bottomStrategies;
+- (id)referString;
+- (void)setReferString:;
+- (void)registerStrategy:;
+- (id)strategyForLeftContainerWithContext:;
+- (id)mapElements:withContext:;
+- (id)filterElements:withContext:;
+- (id)strategyForRightContainerWithContext:;
+- (id)strategyForBottomContainerWithContext:;
+- (void)setupStrategies;
+- (void)setupLeftStrategies;
+- (void)setupRightStrategies;
+- (void)setupBottomStrategies;
+- (id)aAWEFeedPlayInteractionAdapter;
+- (id)leftStrategies;
+- (void)sortStrategies:;
+- (id)rightStrategies;
+- (id)bottomStrategies;
+- (id)aAWEPlayInteractionElementAdapter;
+- (void)setLeftStrategies:;
+- (void)setRightStrategies:;
+- (void)setBottomStrategies:;
+- (id)init;
+- (void).cxx_destruct;
++ (Class)aAWEFeedPlayInteractionAdapterClass;
++ (Class)aAWEPlayInteractionElementAdapterClass;
+@end

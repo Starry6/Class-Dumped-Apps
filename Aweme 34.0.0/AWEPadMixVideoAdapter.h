@@ -1,0 +1,32 @@
+@interface AWEPadMixVideoAdapter : NSObject
+@property (nonatomic) {CGPoint=dd} startContentOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadSplitScreenAdapter;
+- (void)performViewDidLoad;
+- (void)performShowPanelAnimation:;
+- (void)updateSelectMixVideoIfNeeded:;
+- (BOOL)shouldUpdateLocatedStatusAfterReloadWithReferString:;
+- (BOOL)isMixVideoSplitStyle;
+- (BOOL)autoScrollToNextVideoWhenShowingPanel;
+- (id)closePanelAnimateExtraParams;
+- (void)performPadCellWillDisplay:;
+- (void)adjustTableViewContentOffsetBeforeReload:referString:;
+- (void)adjustTableViewContentOffsetWhenTransition:referString:;
+- (void)updateDetailTableViewLogExtra:referString:;
+- (void)panelLoadWhenScrollToLocated:referString:;
+- (void)panelListViewDealSelectVideo:referString:;
+- (BOOL)enablePadCustomShouldPlayIfIsFullScreenChildVC;
+- (BOOL)closePanelWhenDidSelectedWithIsSameEpisode:;
+- (BOOL)detailTableLimitedScrollOffsetYSwitch;
+- (BOOL)detailTablePadCustomShouldPlayIfIsFullScreenChildVC;
+- (void)setStartContentOffset:;
+- (id)startContentOffset;
+- (void)handlePanGesture:;
+- (id)weakTarget;
++ (Class)weakTargetClass;
++ (Class)aAWEPadSplitScreenAdapterClass;
++ (BOOL)Enable;
+@end

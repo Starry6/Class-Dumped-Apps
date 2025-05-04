@@ -1,0 +1,30 @@
+@interface AWEInteractionVoteStickerInfoModel : MTLModel
+@property (nonatomic) NSString question;
+@property (nonatomic) NSNumber voteID;
+@property (nonatomic) NSNumber refID;
+@property (nonatomic) q refType;
+@property (nonatomic) NSArray options;
+@property (nonatomic) NSNumber selectOptionID;
+@property (nonatomic) q style;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)refType;
+- (id)voteID;
+- (void)setVoteID:;
+- (void)setRefType:;
+- (id)selectOptionID;
+- (void)setSelectOptionID:;
+- (id)refID;
+- (void)setRefID:;
+- (long long)style;
+- (void)setOptions:;
+- (id)options;
+- (void).cxx_destruct;
+- (void)setStyle:;
+- (id)question;
+- (void)setQuestion:;
++ (id)optionsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

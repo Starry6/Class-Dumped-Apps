@@ -1,0 +1,2 @@
+@interface AWEMusicPlayerService : NSObject
+@end

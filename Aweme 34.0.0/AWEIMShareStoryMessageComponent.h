@@ -1,0 +1,30 @@
+@interface AWEIMShareStoryMessageComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMShareStoryMessage message;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)preloadTasksForMessage:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)p_addKVO;
+- (void)p_createPresenterIfNeed;
+- (void)p_initProps;
+- (void)completeCoverageTaskForMessage:error:;
+- (void)storyCoverTapped:;
+- (void)p_trackVideoUnavaliableShow;
+- (id)p_defaultVideoImage;
+- (id)storyReplyStr;
+- (id)displayMessage;
+- (void)setScene:;
+- (id)message;
+- (long long)scene;
+- (id)contentSize;
+- (void).cxx_destruct;
+- (void)setMessage:;
+- (id)conversation;
+- (void)setConversation:;
++ (BOOL)canCreateComponentWithContext:;
+@end

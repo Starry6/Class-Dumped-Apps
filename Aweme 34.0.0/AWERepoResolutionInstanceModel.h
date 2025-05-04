@@ -1,0 +1,36 @@
+@interface AWERepoResolutionInstanceModel : NSObject
+@property (nonatomic) {CGSize=dd} editResolution;
+@property (nonatomic) {CGSize=dd} publishResolution;
+@property (nonatomic) {CGSize=dd} sourceResolution;
+@property (nonatomic) {CGSize=dd} originResolution;
+@property (nonatomic) LMImageQualityTrackSceneEditInfo imageQuality;
+@property (nonatomic) LMImageQualityTrackScenePublishInfo publishImageQuality;
+@property (nonatomic) ACCCanvasRuleChangelog publishCanvasChangelog;
+@property (nonatomic) ACCEditorDiff getOriginSizeLogicDiff;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sourceResolution;
+- (id)publishResolution;
+- (void)setSourceResolution:;
+- (id)originResolution;
+- (void)setOriginResolution:;
+- (id)editResolution;
+- (void)setEditResolution:;
+- (void)setPublishResolution:;
+- (id)getPublishQualityInfo;
+- (void)setPublishImageQuality:;
+- (id)draft_DTOModel;
+- (void)draft_updateWithDTOModel:;
+- (id)getOriginSizeLogicDiff;
+- (id)publishCanvasChangelog;
+- (void)setPublishCanvasChangelog:;
+- (void)setGetOriginSizeLogicDiff:;
+- (id)publishImageQuality;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)imageQuality;
+- (void)setImageQuality:;
++ (Class)draft_DTOModelClass;
+@end

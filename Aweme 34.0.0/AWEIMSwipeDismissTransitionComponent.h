@@ -1,0 +1,36 @@
+@interface AWEIMSwipeDismissTransitionComponent : NSObject
+@property (nonatomic) UIViewController container;
+@property (nonatomic) AWEIMSwipeDismissAnimator animator;
+@property (nonatomic) UIPercentDrivenInteractiveTransition interactiveAnimator;
+@property (nonatomic) double pullDownThreshold;
+@property (nonatomic) UIPanGestureRecognizer panGesture;
+@property (nonatomic) BOOL isInTransition;
+@property (nonatomic) Q direction;
+@property (nonatomic) Q preferredTriggerDirection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interactiveAnimator;
+- (void)setInteractiveAnimator:;
+- (void)setIsInTransition:;
+- (double)pullDownThreshold;
+- (void)setPreferredTriggerDirection:;
+- (void)p_handlePanGesture:;
+- (unsigned long long)preferredTriggerDirection;
+- (id)initWithContainer:;
+- (void)setContainer:;
+- (id)container;
+- (id)animator;
+- (unsigned long long)direction;
+- (id)animationControllerForDismissedController:;
+- (void)setAnimator:;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (id)interactionControllerForDismissal:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)setDirection:;
+- (void).cxx_destruct;
+- (id)panGesture;
+- (void)setPanGesture:;
+- (BOOL)isInTransition;
+@end

@@ -1,0 +1,30 @@
+@interface AWEMovieHorizontalCenterFlowLayout : UICollectionViewFlowLayout
+@property (nonatomic) AWECardModel cardModel;
+@property (nonatomic) AWECardContext context;
+@property (nonatomic) @? proposedIndexPathBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cardModel;
+- (void)setCardModel:;
+- (double)itemMargin;
+- (void)setData:extraInfo:;
+- (double)insetX;
+- (double)insetY;
+- (id)initWithData:extraInfo:;
+- (double)itemZoomScale;
+- (void)setProposedIndexPathBlock:;
+- (id)proposedIndexPathBlock;
+- (void)prepareLayout;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)layoutAttributesForElementsInRect:;
+- (double)itemWidth;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (double)minimumInteritemSpacing;
+- (id)targetContentOffsetForProposedContentOffset:withScrollingVelocity:;
+- (double)itemHeight;
++ (id)identifier;
+@end

@@ -1,0 +1,35 @@
+@interface AWEModernFeedVideoBookBarView : UIView
+@property (nonatomic) UIImageView bookIconImageView;
+@property (nonatomic) UILabel bookTitleLabel;
+@property (nonatomic) UIImageView arrowIconImageView;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) q barStayStartTime;
+@property (nonatomic) BOOL hasTrackedShow;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString keyword;
+- (id)referString;
+- (void)setReferString:;
+- (id)bookTitleLabel;
+- (void)setBookTitleLabel:;
+- (void)configUI;
+- (long long)barStayStartTime;
+- (void)setBarStayStartTime:;
+- (void)setHasTrackedShow:;
+- (BOOL)hasTrackedShow;
+- (id)arrowIconImageView;
+- (void)setArrowIconImageView:;
+- (id)bookIconImageView;
+- (void)bookBarTapped;
+- (void)trackBookBarClick;
+- (void)trackBookBarWithEvent:params:;
+- (void)trackBookBarShowWithTime:;
+- (void)setBookIconImageView:;
+- (void)setModel:;
+- (id)init;
+- (id)model;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)keyword;
+- (void)setKeyword:;
+- (void)updateWithModel:;
+@end

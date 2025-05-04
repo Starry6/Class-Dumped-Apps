@@ -1,0 +1,33 @@
+@interface AWEGuideBindMobileManager : NSObject
+@property (nonatomic) BOOL showing;
+@property (nonatomic) double lastGuideTimeInterval;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) DYABindMobileAlertModel alertModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertModel;
+- (void)setAlertModel:;
+- (BOOL)shouldShowAlert;
+- (void)showAuthorizeAlertOnFeedIfNeeded;
+- (void)observeNotifications;
+- (void)checkBindAlertOnFeed;
+- (long long)alertTypeFromSetting;
+- (long long)alertIntervalFromSetting;
+- (long long)bindGuideType;
+- (double)lastGuideTimeInterval;
+- (double)bindGuideInterval;
+- (BOOL)shouldWaitOtherNotification;
+- (void)setLastGuideTimeInterval:;
+- (id)guideBindMobileAlertSetting;
+- (id)init;
+- (BOOL)isShowing;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setShowing:;
+- (BOOL)hasShown;
+- (void)setHasShown:;
+- (void)showAlert;
++ (id)sharedInstance;
+@end

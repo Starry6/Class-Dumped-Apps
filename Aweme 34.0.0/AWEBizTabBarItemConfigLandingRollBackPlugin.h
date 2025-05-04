@@ -1,0 +1,31 @@
+@interface AWEBizTabBarItemConfigLandingRollBackPlugin : NSObject
+@property (nonatomic) <AWEBizTabBarItemConfigProtocol> itemConfig;
+@property (nonatomic) <AWEHPTabLandingRollBackComponentProtocol> rollBackComponent;
+@property (nonatomic) AWEHPLandingTabRollBackTask rollBackTask;
+@property (nonatomic) q dismissType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setItemConfig:;
+- (id)itemConfig;
+- (void)beginLandingTabWithTabId:withModel:;
+- (void)tabBarWillUnSelectItemWithLeaveModel:;
+- (void)itemViewDidAppear;
+- (void)itemViewDidDisappear;
+- (id)initWithItemConfig:channelConfig:;
+- (void)p_dismissComponentIfNeedWithType:;
+- (id)rollBackTask;
+- (id)rollBackComponent;
+- (void)setRollBackTask:;
+- (void)p_delayShowRollBackComponentIfNeed;
+- (void)p_showRollBackComponentIfNeed;
+- (void)setDismissType:;
+- (void)p_buttonDidDismiss;
+- (void)setRollBackComponent:;
+- (void)appDidEnterBackground:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (long long)dismissType;
++ (BOOL)allowInjectWithChannelConfig:;
+@end

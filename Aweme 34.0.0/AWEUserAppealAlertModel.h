@@ -1,0 +1,31 @@
+@interface AWEUserAppealAlertModel : MTLModel
+@property (nonatomic) BOOL useWebView;
+@property (nonatomic) q allowSelfUnpunish;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) AWEUserApppealButtonInfo leftButtonInfo;
+@property (nonatomic) AWEUserApppealButtonInfo rightButtonInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)useWebView;
+- (void)setUseWebView:;
+- (long long)allowSelfUnpunish;
+- (void)setAllowSelfUnpunish:;
+- (id)leftButtonInfo;
+- (void)setLeftButtonInfo:;
+- (id)rightButtonInfo;
+- (void)setRightButtonInfo:;
+- (id)content;
+- (id)message;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setMessage:;
+- (void)setTitle:;
++ (id)leftButtonInfoJSONTransformer;
++ (id)rightButtonInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

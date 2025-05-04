@@ -1,0 +1,35 @@
+@interface AWEIronManDCLaunchOptimizeService : NSObject
+@property (nonatomic) BOOL enableDCOptimizeAB;
+@property (nonatomic) BOOL enableDCOptimizeSettings;
+@property (nonatomic) NSDictionary optimizeEnableTiming;
+@property (nonatomic) NSArray settingsConfigs;
+@property (nonatomic) NSMutableArray preloadTaskArr;
+@property (nonatomic) NSMutableArray prefetchTaskArr;
+@property (nonatomic) NSMutableArray preRenderTaskArr;
+- (void)executeContainerOptimizeWithEvent:schema:;
+- (void)executeContainerOptimizeWithEvent:params:;
+- (void)setEnableDCOptimizeAB:;
+- (void)setEnableDCOptimizeSettings:;
+- (void)setOptimizeEnableTiming:;
+- (void)setSettingsConfigs:;
+- (void)setPreloadTaskArr:;
+- (void)setPrefetchTaskArr:;
+- (void)setPreRenderTaskArr:;
+- (BOOL)enableDCOptimizeAB;
+- (BOOL)enableDCOptimizeSettings;
+- (id)optimizeEnableTiming;
+- (id)settingsConfigs;
+- (BOOL)enableExecuteOptWithConfig:sceneParams:;
+- (id)getSceneInfoWithParams:;
+- (void)executeLaunchOptimizeWithActions:config:params:schema:;
+- (void)preloadResourceWithConfig:params:schema:;
+- (void)prefetchResourceWithConfig:params:schema:;
+- (void)preRenderResourceWithConfig:params:schema:;
+- (id)preloadTaskArr;
+- (id)prefetchTaskArr;
+- (id)preRenderTaskArr;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

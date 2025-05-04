@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.ContentPreloadAdapterDispatcher : BDMultiContentContainer.ContentPreloadDispatcher
+@end

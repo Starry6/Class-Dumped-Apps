@@ -1,0 +1,34 @@
+@interface AWEAdConversionAreaModel : MTLModel
+@property (nonatomic) q styleType;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSNumber showTextLink;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStyleType:;
+- (BOOL)enableLink;
+- (id)showTextLink;
+- (void)setShowTextLink:;
+- (id)icon;
+- (void)setText:;
+- (id)text;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (long long)styleType;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)appleID;
+- (id)title;
+- (void)setSource:;
+- (void)setAppleID:;
+- (void)setTitle:;
++ (id)iconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

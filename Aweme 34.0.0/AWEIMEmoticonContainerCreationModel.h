@@ -1,0 +1,34 @@
+@interface AWEIMEmoticonContainerCreationModel : NSObject
+@property (nonatomic) NSArray themeInfos;
+@property (nonatomic) q containerType;
+@property (nonatomic) BOOL needShowStoreEntry;
+@property (nonatomic) BOOL needHideBottomView;
+@property (nonatomic) BOOL needForceLightMode;
+@property (nonatomic) UIColor tabBackgroundColor;
+@property (nonatomic) UIColor panelBackgroundColor;
+@property (nonatomic) Q btnConfig;
+@property (nonatomic) BOOL needShowRecentlyUsedLittleEmoticons;
+@property (nonatomic) BOOL initialVerticalAlignmentCenter;
+- (void)setNeedHideBottomView:;
+- (void)setInitialVerticalAlignmentCenter:;
+- (void)setNeedShowStoreEntry:;
+- (void)setTabBackgroundColor:;
+- (void)setPanelBackgroundColor:;
+- (void)setBtnConfig:;
+- (id)initWithThemeInfos:containerType:;
+- (BOOL)needHideBottomView;
+- (id)panelBackgroundColor;
+- (void)setNeedForceLightMode:;
+- (void)setNeedShowRecentlyUsedLittleEmoticons:;
+- (id)themeInfos;
+- (BOOL)needShowStoreEntry;
+- (id)tabBackgroundColor;
+- (unsigned long long)btnConfig;
+- (BOOL)needForceLightMode;
+- (BOOL)needShowRecentlyUsedLittleEmoticons;
+- (BOOL)initialVerticalAlignmentCenter;
+- (void)setThemeInfos:;
+- (void).cxx_destruct;
+- (long long)containerType;
+- (void)setContainerType:;
+@end

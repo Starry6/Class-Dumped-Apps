@@ -1,0 +1,32 @@
+@interface AWEWebViewInitTask : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)bdFixAddUpdateCrash;
++ (BOOL)bdFixWKReloadFrameErrorRecoveryAttempter;
++ (BOOL)bdFixBlobCrashEnable;
++ (BOOL)bdFixWKScriptMessageCrash;
++ (BOOL)bdAdblockEnable;
++ (BOOL)bdAdblockPrecompileEnable;
++ (BOOL)bdCookieSecureEnable;
++ (id)bdSecureCookieList;
++ (BOOL)allowRecursiveRequestFlagForDefaultSchemaHandler;
++ (id)useTTNetForFalconWhiteList;
++ (BOOL)bdInSeclinkWhitelist:;
++ (BOOL)bdUserSettingADBlockEnable;
++ (BOOL)bdReportLastWebURL;
++ (BOOL)bdEnableUAFetch;
++ (long long)bdUAFetchTime;
++ (BOOL)bdEnableUAFetchWithKV;
++ (id)authDomain;
++ (BOOL)shouldDelay;
++ (void)tabBarControllerViewDidAppear;
++ (void)registerBDXBridgeAuthConfig:;
++ (void)configWebViewMonitors;
++ (void)registerPIAPlugin;
++ (void)registerAuthConfigFromGeckoBuilder:deviceId:delay:extraChannels:builtinAuthInfosEnabled:;
++ (BOOL)fixWKReleaseEarlyCrash;
++ (float)fixWKReleaseEarlyCrashKeeperTs;
++ (void)execute;
+@end

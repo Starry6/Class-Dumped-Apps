@@ -1,0 +1,32 @@
+@interface AWEStoryProgressCell : UICollectionViewCell
+@property (nonatomic) double lastValue;
+@property (nonatomic) BOOL needMini;
+@property (nonatomic) UIView progressView;
+@property (nonatomic) double progressValue;
+@property (nonatomic) double totalValue;
+@property (nonatomic) BOOL needAnimation;
+@property (nonatomic) UIColor progressColor;
+@property (nonatomic) double interval;
+- (void)setNeedAnimation:;
+- (double)widthWithProgress:totalValue:;
+- (BOOL)needAnimation;
+- (void)setNeedMini:;
+- (BOOL)needMini;
+- (double)miniWidth;
+- (void)updateProgressValue:totalValue:lastValue:needMini:animated:;
+- (double)interval;
+- (double)totalValue;
+- (double)progressValue;
+- (id)progressView;
+- (void)setInterval:;
+- (id)initWithFrame:;
+- (void)setProgressView:;
+- (void)setTotalValue:;
+- (void).cxx_destruct;
+- (double)lastValue;
+- (void)setProgressValue:;
+- (void)layoutSubviews;
+- (id)progressColor;
+- (void)setProgressColor:;
+- (void)setLastValue:;
+@end

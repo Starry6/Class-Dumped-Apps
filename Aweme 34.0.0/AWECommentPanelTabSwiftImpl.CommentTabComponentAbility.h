@@ -1,0 +1,2 @@
+@interface AWECommentPanelTabSwiftImpl.CommentTabComponentAbility : _TtCs12_SwiftObject
+@end

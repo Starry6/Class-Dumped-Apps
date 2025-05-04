@@ -1,0 +1,38 @@
+@interface AWESlider : UISlider
+@property (nonatomic) UILabel indicatorLabel;
+@property (nonatomic) <AWESliderDelegate> delegate;
+@property (nonatomic) double indicatorLabelBotttomMargin;
+@property (nonatomic) BOOL showIndicatorLabel;
+@property (nonatomic) @? valueDisplayBlock;
+@property (nonatomic) UIColor indicatorLabelTextColor;
+- (id)indicatorLabel;
+- (void)setIndicatorLabel:;
+- (void)setShowIndicatorLabel:;
+- (void)setIndicatorLabelTextColor:;
+- (void)setValueDisplayBlock:;
+- (void)setIndicatorLabelBotttomMargin:;
+- (void)valueChanged:forEvent:;
+- (void)updateIndicatorLabelDisplayAndFrame;
+- (BOOL)showIndicatorLabel;
+- (void)updateIndicatorLabelDisplay;
+- (void)updateIndicatorLabelFrame;
+- (id)valueDisplayBlock;
+- (double)indicatorLabelBotttomMargin;
+- (id)indicatorLabelTextColor;
+- (id)delegate;
+- (id)trackRectForBounds:;
+- (id)initWithFrame:;
+- (void)setMaximumValue:;
+- (void)accessibilityDecrement;
+- (void)setEnabled:;
+- (void)setValue:;
+- (void)accessibilityIncrement;
+- (void)setValue:animated:;
+- (void).cxx_destruct;
+- (void)setMinimumValue:;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (unsigned long long)accessibilityTraits;
+- (BOOL)isAccessibilityElement;
+- (void)handleValueChanged;
+@end

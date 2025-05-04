@@ -1,0 +1,37 @@
+@interface AWESearchThreadBlockMonitor : NSObject
+@property (nonatomic) HMDThreadSafeDictionary backtraceDic;
+@property (nonatomic) HMDThreadSafeDictionary trackParams;
+@property (nonatomic) NSObject<OS_dispatch_queue> timerQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> traceUploadQueue;
+@property (nonatomic) double preUploadTraceTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)stopThreadBlockMonitor:tag:;
+- (id)startThreadBlockMonitor;
+- (unsigned long long)skippedDepth;
+- (id)startThreadBlockMonitorWithTargetThread:;
+- (void)stopThreadBlockMonitor:tag:context:;
+- (id)startThreadBlockMonitorWithTargetThread:hadTargetThread:;
+- (double)preUploadTraceTime;
+- (unsigned long long)frequencyInSecond;
+- (double)p_delayInSeconds;
+- (id)backtraceDic;
+- (void)setPreUploadTraceTime:;
+- (BOOL)isUploadAllThreadTrace;
+- (BOOL)isSymbolicate;
+- (BOOL)isSuspend;
+- (id)traceUploadQueue;
+- (id)generalSearchThreadBlockMonitorSwitch;
+- (void)setBacktraceDic:;
+- (void)setTraceUploadQueue:;
+- (BOOL)enable;
+- (id)init;
+- (void).cxx_destruct;
+- (id)timerQueue;
+- (void)setTimerQueue:;
++ (id)sharedInstance;
+@end

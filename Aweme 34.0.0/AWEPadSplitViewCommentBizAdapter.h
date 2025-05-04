@@ -1,0 +1,30 @@
+@interface AWEPadSplitViewCommentBizAdapter : AWEPadSplitViewBizAdapter
+@property (nonatomic) BOOL isKeyboardShowing;
+@property (nonatomic) UIViewController<AWECommentListViewControllerProtocol> commentVC;
+@property (nonatomic) UIView dismissKeyboardView;
+@property (nonatomic) AWEAwemeModel lastAwemeModel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)commentVC;
+- (void)setCommentVC:;
+- (id)lastAwemeModel;
+- (void)setLastAwemeModel:;
+- (void)setIsKeyboardShowing:;
+- (BOOL)isKeyboardShowing;
+- (BOOL)enableVerticalSlideDismiss;
+- (void)service:willShowViewController:source:;
+- (void)service:didShowViewController:source:;
+- (void)service:didDismissViewController:source:;
+- (void)service:panGestureStartWithPanDirection:;
+- (void)service:panGestureEndWithPanDirection:;
+- (void)splitViewDismissWithStayTime:duration:;
+- (void)showCommentWithViewController:;
+- (id)dismissKeyboardView;
+- (void)didTapDismissKeyboardView;
+- (void)setDismissKeyboardView:;
+- (void)keyboardWillHide:;
+- (void)setupObservers;
+- (void).cxx_destruct;
+- (void)keyboardDidShow:;
+@end

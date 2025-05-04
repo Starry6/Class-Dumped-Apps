@@ -1,0 +1,35 @@
+@interface AWEIMWorkSpaceCardModel : AWEBaseApiModel
+@property (nonatomic) q cardType;
+@property (nonatomic) BOOL permission;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString icon;
+@property (nonatomic) BOOL unRead;
+@property (nonatomic) BOOL mute;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) AWEIMWorkSpaceCardMessage lastMessage;
+@property (nonatomic) BOOL forceJumpNewSpace;
+@property (nonatomic) NSString spaceNewSchema;
+- (BOOL)forceJumpNewSpace;
+- (id)spaceNewSchema;
+- (BOOL)unRead;
+- (void)setUnRead:;
+- (void)setForceJumpNewSpace:;
+- (void)setSpaceNewSchema:;
+- (long long)unreadCount;
+- (BOOL)mute;
+- (BOOL)permission;
+- (void)setLastMessage:;
+- (void)setPermission:;
+- (void)setUnreadCount:;
+- (id)icon;
+- (void)setMute:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)lastMessage;
+- (void)setTitle:;
+- (long long)cardType;
+- (void)setCardType:;
++ (id)lastMessageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

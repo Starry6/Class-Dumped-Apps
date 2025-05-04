@@ -1,0 +1,31 @@
+@interface AWEHPTopBarCTAItemView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView customView;
+@property (nonatomic) DUXBadge redDot;
+@property (nonatomic) DUXBadge numericalRedDot;
+@property (nonatomic) double rightPadding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)layoutSubviews;
+- (void)hideCountRedDot;
+- (void)setNumericalRedDot:;
+- (void)setRedDot:;
+- (void)showRedDot;
+- (void)setRightPadding:;
+- (void)hideRedDot;
+- (id)redDot;
+- (void)addItem:withConfig:;
+- (id)numericalRedDot;
+- (void)showRedDotWithCount:;
+- (unsigned long long)currentRedDotType;
+- (long long)currentRedDotCount;
+- (id)contentView;
+- (void)setCustomView:;
+- (id)customView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)hitTest:withEvent:;
+- (double)rightPadding;
+@end

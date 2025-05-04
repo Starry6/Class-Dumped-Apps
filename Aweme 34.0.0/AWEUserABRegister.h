@@ -1,0 +1,2 @@
+@interface AWEUserABRegister : NSObject
+@end

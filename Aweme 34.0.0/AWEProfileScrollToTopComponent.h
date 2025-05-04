@@ -1,0 +1,32 @@
+@interface AWEProfileScrollToTopComponent : AWEBaseController
+@property (nonatomic) BOOL hasShownPopover;
+@property (nonatomic) q tabType;
+@property (nonatomic) AWEBinding contentOffsetBinding;
+@property (nonatomic) double scrollTopButtonThreshold;
+@property (nonatomic) NSArray whiteTabTypeList;
+@property (nonatomic) NSArray whiteTabTypeSubList;
+@property (nonatomic) UIViewController<AWEUserProfileTabBaseMethod><AWEProfileCustomScrollToTopProtocol> selectedViewController;
+- (long long)tabType;
+- (void)setTabType:;
+- (void)setContentOffsetBinding:;
+- (id)contentOffsetBinding;
+- (id)trackCommonParams;
+- (BOOL)hasShownPopover;
+- (void)setHasShownPopover:;
+- (void)onDidSelectTabListIndex:actionType:hasRedDotWhenSwitched:needTrack:;
+- (double)scrollTopButtonThreshold;
+- (void)setScrollTopButtonThreshold:;
+- (id)scrollTopItemController;
+- (void)showScrollToTopBubbleIfNeeded;
+- (id)whiteTabTypeList;
+- (void)scrollTopButtonTrack:;
+- (void)scrollToTopButtonWith:;
+- (void)setWhiteTabTypeList:;
+- (id)whiteTabTypeSubList;
+- (void)setWhiteTabTypeSubList:;
+- (void).cxx_destruct;
+- (void)scrollToTop;
+- (void)setSelectedViewController:;
+- (id)selectedViewController;
+- (void)onInit;
+@end

@@ -1,0 +1,30 @@
+@interface AWESearchAIGCRouterManager : NSObject
+@property (nonatomic) AWESearchAIGCResultBaseViewController aigcResultVC;
+@property (nonatomic) AWESearchAIGCPanelContainerViewController aigcPanelContainer;
+@property (nonatomic) AWESearchAIGCResultBaseViewController aigcPanelResultVC;
+@property (nonatomic) AWESearchAIGCSSERequestManager requestManager;
+@property (nonatomic) BOOL coldStart;
+@property (nonatomic) double enterTimestamp;
+@property (nonatomic) double sendQueryTimestamp;
+- (double)enterTimestamp;
+- (void)setEnterTimestamp:;
+- (BOOL)coldStart;
+- (void)setColdStart:;
+- (double)nowTS;
+- (void)setAigcResultVC:;
+- (id)aigcPanelResultVC;
+- (id)aigcResultVC;
+- (id)aigcPanelContainer;
+- (void)setAigcPanelContainer:;
+- (void)setAigcPanelResultVC:;
+- (double)sendQueryTimestamp;
+- (void)setSendQueryTimestamp:;
+- (void)aigcPageEnter;
+- (void)aigcPageSendQuery;
+- (void)resetColdStartState;
+- (id)init;
+- (void).cxx_destruct;
+- (id)requestManager;
+- (void)setRequestManager:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface AWEUGPendantBubbleUIInfo : MTLModel
+@property (nonatomic) NSString bubbleText;
+@property (nonatomic) NSString bubbleTitle;
+@property (nonatomic) NSString bubbleSubtitle;
+@property (nonatomic) NSString bubbleURL;
+@property (nonatomic) q bubbleShowDuration;
+@property (nonatomic) {CGPoint=dd} adjustment;
+@property (nonatomic) Q bubbleUIType;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bubbleTitle;
+- (void)setBubbleTitle:;
+- (long long)bubbleShowDuration;
+- (void)setBubbleShowDuration:;
+- (id)bubbleSubtitle;
+- (id)bubbleURL;
+- (void)setBubbleUIType:;
+- (void)setBubbleSubtitle:;
+- (void)setBubbleURL:;
+- (unsigned long long)bubbleUIType;
+- (BOOL)isShowing;
+- (id)adjustment;
+- (void)setAdjustment:;
+- (void).cxx_destruct;
+- (id)bubbleText;
+- (void)setBubbleText:;
+- (void)setIsShowing:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

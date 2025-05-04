@@ -1,0 +1,35 @@
+@interface AWELuckyCatPendantExtendArea : MTLModel
+@property (nonatomic) NSString extendType;
+@property (nonatomic) q textMargin;
+@property (nonatomic) AWELuckyCatPendantDescTemplate title;
+@property (nonatomic) AWELuckyCatPendantDescTemplate subTitle;
+@property (nonatomic) AWELuckyCatPendantAnimate pendantAnimate;
+@property (nonatomic) AWELuckyCatPendantFrequencyControl frequencyControl;
+@property (nonatomic) q style;
+@property (nonatomic) q secondsCountDown;
+@property (nonatomic) AWELuckyCatPendantClickEvent clickEvent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)extendType;
+- (long long)secondsCountDown;
+- (void)setSecondsCountDown:;
+- (id)frequencyControl;
+- (void)setFrequencyControl:;
+- (void)setExtendType:;
+- (id)pendantAnimate;
+- (void)setPendantAnimate:;
+- (long long)textMargin;
+- (void)setTextMargin:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (long long)style;
+- (void)setClickEvent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)clickEvent;
+- (void)setStyle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

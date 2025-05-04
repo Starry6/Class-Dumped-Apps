@@ -1,0 +1,36 @@
+@interface AWEPlVMultiInfoView : UIView
+@property (nonatomic) AWEGradientView infoMaskView;
+@property (nonatomic) UIStackView containerView;
+@property (nonatomic) UILabel topTitleLabel;
+@property (nonatomic) UIView infoSeparateLine;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIStackView userInfoContentView;
+@property (nonatomic) UIImageView avartImageView;
+@property (nonatomic) UILabel nickNameLabel;
+@property (nonatomic) DUXBasicButton bottomButton;
+- (id)nickNameLabel;
+- (void)setNickNameLabel:;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (id)userInfoContentView;
+- (void)setUserInfoContentView:;
+- (id)avartImageView;
+- (id)infoMaskView;
+- (id)infoSeparateLine;
+- (void)updateInfoTopOffset:;
+- (void)setInfoMaskView:;
+- (void)setInfoSeparateLine:;
+- (void)setAvartImageView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setupView;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setTopTitleLabel:;
+- (id)topTitleLabel;
+- (id)bottomButton;
+- (void)setBottomButton:;
+@end

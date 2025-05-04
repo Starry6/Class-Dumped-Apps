@@ -1,0 +1,31 @@
+@interface AWEHotTrendsLabelModel : MTLModel
+@property (nonatomic) NSNumber hotId;
+@property (nonatomic) AWEURLModel leftIcon;
+@property (nonatomic) AWEURLModel rightIcon;
+@property (nonatomic) NSString bgLeftTopColor;
+@property (nonatomic) NSString bgRightBottomColor;
+@property (nonatomic) NSString labelText;
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpSchema;
+- (void)setJumpSchema:;
+- (id)hotId;
+- (void)setHotId:;
+- (void)setLeftIcon:;
+- (void)setRightIcon:;
+- (id)bgLeftTopColor;
+- (void)setBgLeftTopColor:;
+- (id)bgRightBottomColor;
+- (void)setBgRightBottomColor:;
+- (id)labelText;
+- (void)setLabelText:;
+- (void).cxx_destruct;
+- (id)leftIcon;
+- (id)rightIcon;
++ (id)leftIconJSONTransformer;
++ (id)rightIconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

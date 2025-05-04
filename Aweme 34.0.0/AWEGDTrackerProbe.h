@@ -1,0 +1,32 @@
+@interface AWEGDTrackerProbe : NSObject
+@property (nonatomic) NSMutableArray recordList;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) AWEGoodsDetailPageContext context;
+- (BOOL)isEnable;
+- (BOOL)gdTrackerDetectionEnable;
+- (id)analyzeRecord:;
+- (void)trackConflict:;
+- (id)deepDetectKeys;
+- (id)calDeepConflict:;
+- (id)jsonValue:;
+- (id)filterValueConflict:;
+- (id)getValueBlackConflicts:;
+- (id)joinToString:seg:;
+- (id)getValueConflicts:;
+- (id)valueConflictWhiteList;
+- (id)valueConflictBlackList;
+- (id)gdTrackerDetectionSettings;
+- (void)recordConflictKey:fromValue:toValue:from:to:;
+- (BOOL)enable;
+- (void)setQueue:;
+- (id)initWithContext:;
+- (void)finish;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)queue;
+- (id)context;
+- (void)setEnable:;
+- (id)recordList;
+- (void)setRecordList:;
+@end

@@ -1,0 +1,31 @@
+@interface AWERelatedVideoMixVideoHeadView : UIView
+@property (nonatomic) UIImageView mixImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel infoLabel;
+@property (nonatomic) UIImageView hintIcon;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) AWEMixVideoModel mixVideoModel;
+@property (nonatomic) @? closeButtonClick;
+- (id)hintIcon;
+- (id)closeButtonClick;
+- (id)mixImageView;
+- (void)setMixImageView:;
+- (id)mixVideoModel;
+- (void)setMixVideoModel:;
+- (void)updateMixInfo:;
+- (void)setHintIcon:;
+- (id)attributedStringWithTitleLabel:;
+- (void)hintIconTapped:;
+- (double)getMixVideoHeadViewHeight;
+- (void)setCloseButtonClick:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)infoLabel;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)closeButtonTapped;
+- (void)setInfoLabel:;
+@end

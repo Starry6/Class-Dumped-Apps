@@ -1,0 +1,32 @@
+@interface AWEPublishAmazingUploadImageModel : MTLModel
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSString uploadUri;
+@property (nonatomic) q originIndex;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) double imageFileSize;
+@property (nonatomic) q progress;
+@property (nonatomic) @ userInfo;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)originIndex;
+- (void)setOriginIndex:;
+- (id)uploadUri;
+- (void)setUploadUri:;
+- (double)imageFileSize;
+- (void)setImageFileSize:;
+- (id)fileURL;
+- (void)setFileURL:;
+- (void)setError:;
+- (long long)progress;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (id)description;
+- (void).cxx_destruct;
+- (id)error;
+- (void)setImageSize:;
+- (id)imageSize;
+- (void)setProgress:;
+@end

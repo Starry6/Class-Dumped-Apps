@@ -1,0 +1,32 @@
+@interface AWEAdHalfPageViewController : UIViewController
+@property (nonatomic) BOOL isFullScreen;
+@property (nonatomic) DUXPartialSheet partialSheet;
+@property (nonatomic) UIViewController<AWEAdHalfPageProtocol> popupViewController;
+@property (nonatomic) NSObject<AWEAdPopMarqueeViewManager> popTextManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)partialSheet:didChangeFrame:withUserInteraction:;
+- (void)partialSheetWillDismiss:;
+- (void)popupWithViewController:;
+- (void)setPopupViewController:;
+- (void)setPartialSheet:;
+- (id)partialSheet;
+- (void)setupUIWithPartialSheet;
+- (id)popupViewController;
+- (id)popTextView;
+- (void)setupPopManager:;
+- (void)setPopTextManager:;
+- (id)popTextManager;
+- (void)showFullNavigationAnimation;
+- (void)showHalfTopBarAnimation;
+- (void)viewControllerTransitionNotification:;
+- (void)updateContentLabelWithOffset:;
+- (BOOL)isFullScreen;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)setIsFullScreen:;
++ (void)popupViewController:;
+@end

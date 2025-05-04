@@ -1,0 +1,32 @@
+@interface AWEFeedLiveTabGuideAnimationView : UIView
+@property (nonatomic) LOTAnimationView animationView;
+@property (nonatomic) UILabel titleGuideLabel;
+@property (nonatomic) AWEFeedLiveTabGuideAnimationConfig config;
+@property (nonatomic) BOOL isAnimationPlaying;
+@property (nonatomic) Q animationCount;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) @? completionBlock;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (BOOL)isAnimationPlaying;
+- (void)addObserve;
+- (void)setIsAnimationPlaying:;
+- (id)initWithFrame:animationConfig:;
+- (void)initGuideAnimation;
+- (void)setupAnimationViewWithName:;
+- (id)titleGuideLabel;
+- (void)setTitleGuideLabel:;
+- (void)setConfig:;
+- (void)dealloc;
+- (void)play;
+- (void)setAnimationCount:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)config;
+- (unsigned long long)animationCount;
+- (void).cxx_destruct;
+- (void)stop;
+- (void)tappedAction;
+- (id)animationView;
+- (void)setAnimationView:;
+@end

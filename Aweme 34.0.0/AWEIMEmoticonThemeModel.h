@@ -1,0 +1,36 @@
+@interface AWEIMEmoticonThemeModel : IESIMEmoticonThemeModel
+@property (nonatomic) q themeStyle;
+@property (nonatomic) NSString uniqueId;
+@property (nonatomic) NSNumber version;
+@property (nonatomic) NSString icon_url;
+@property (nonatomic) NSArray stickers;
+@property (nonatomic) NSDictionary stickersDict;
+@property (nonatomic) AWEIMEmojiAuthor author;
+@property (nonatomic) NSNumber identifier;
+@property (nonatomic) NSString themeCoverIcon;
+@property (nonatomic) NSArray emoticonArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setThemeStyle:;
+- (id)icon_url;
+- (void)setIcon_url:;
+- (id)stickersDict;
+- (void)setStickersDict:;
+- (id)author;
+- (id)version;
+- (void)setUniqueId:;
+- (void)setVersion:;
+- (id)uniqueId;
+- (void).cxx_destruct;
+- (void)setAuthor:;
+- (long long)themeStyle;
+- (id)stickers;
+- (void)setStickers:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)stickersJSONTransformer;
++ (id)emoticonArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

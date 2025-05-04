@@ -1,0 +1,36 @@
+@interface AWEIMMessageNewComerReportProps : AWEIMUIViewPresenterProps
+@property (nonatomic) UIColor welcomeColor;
+@property (nonatomic) UIColor welcomeTitleColor;
+@property (nonatomic) NSString welcomeTapString;
+@property (nonatomic) NSString welcomeTitleString;
+@property (nonatomic) NSArray avatars;
+@property (nonatomic) BOOL showWelcomeTapView;
+@property (nonatomic) BOOL showAvatar;
+@property (nonatomic) double avatarMarginLeft;
+@property (nonatomic) double avatarMarginRight;
+@property (nonatomic) @? didTapAvatarAction;
+@property (nonatomic) @? didTapWelcomeAction;
+- (void)setAvatars:;
+- (BOOL)showAvatar;
+- (void)setShowAvatar:;
+- (void)setDidTapAvatarAction:;
+- (void)setDidTapWelcomeAction:;
+- (void)setShowWelcomeTapView:;
+- (void)setWelcomeTapString:;
+- (void)setWelcomeColor:;
+- (void)setWelcomeTitleColor:;
+- (void)setWelcomeTitleString:;
+- (void)setAvatarMarginLeft:;
+- (void)setAvatarMarginRight:;
+- (id)welcomeColor;
+- (id)welcomeTapString;
+- (double)avatarMarginLeft;
+- (double)avatarMarginRight;
+- (id)welcomeTitleColor;
+- (id)welcomeTitleString;
+- (BOOL)showWelcomeTapView;
+- (id)didTapWelcomeAction;
+- (id)didTapAvatarAction;
+- (void).cxx_destruct;
+- (id)avatars;
+@end

@@ -1,0 +1,33 @@
+@interface AWEPadBannerSectionViewModel : AWEPadBaseSectionViewModel
+@property (nonatomic) NSArray bannerModels;
+@property (nonatomic) AWEPadBannerCellController cellController;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) BOOL isBannerVisible;
+@property (nonatomic) AWEPadBannerCell containerCell;
+@property (nonatomic) q interval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)modelsArray;
+- (void)replaceByModels:;
+- (id)containerCell;
+- (void)setContainerCell:;
+- (id)cellController;
+- (void)setCellController:;
+- (void)bannerView:didScrollFromIndex:toIndex:;
+- (void)bannerView:didSelectedItemAtIndex:;
+- (long long)bannerViewNumberOfItems:;
+- (id)bannerView:cellForIndexPath:;
+- (void)didBannerSectionDisplay;
+- (void)didBannerSectionEndDisplay;
+- (void)setIsBannerVisible:;
+- (void)setBannerModels:;
+- (long long)interval;
+- (void)setCurrentIndex:;
+- (void)setInterval:;
+- (BOOL)isBannerVisible;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (id)bannerModels;
+@end

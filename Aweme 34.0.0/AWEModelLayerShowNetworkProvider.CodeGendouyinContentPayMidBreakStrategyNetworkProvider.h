@@ -1,0 +1,34 @@
+@interface AWEModelLayerShowNetworkProvider.CodeGendouyinContentPayMidBreakStrategyNetworkProvider : AWEDataLayerRootModelPostMethodNetworkProvider
+@property (nonatomic) NSString seriesId;
+@property (nonatomic) NSNumber productId;
+@property (nonatomic) NSNumber seriesIdx;
+@property (nonatomic) NSNumber finishVideoDuration;
+@property (nonatomic) NSNumber videoDuration;
+@property (nonatomic) NSString clientSideParams;
+@property (nonatomic) NSString serverSideParams;
+@property (nonatomic) NSNumber totalEpisode;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)seriesIdx;
+- (void)setSeriesIdx:;
+- (id)finishVideoDuration;
+- (void)setFinishVideoDuration:;
+- (id)clientSideParams;
+- (void)setClientSideParams:;
+- (id)serverSideParams;
+- (void)setServerSideParams:;
+- (id)totalEpisode;
+- (void)setTotalEpisode:;
+- (id)initWithProductId:videoDuration:totalEpisode:finishVideoDuration:clientSideParams:seriesId:serverSideParams:seriesIdx:;
+- (id)init;
+- (id)productId;
+- (void).cxx_destruct;
+- (id)videoDuration;
+- (Class)modelClass;
+- (void)setVideoDuration:;
+- (void)setProductId:;
+- (id)seriesId;
+- (void)setSeriesId:;
++ (id)businessURI;
+@end

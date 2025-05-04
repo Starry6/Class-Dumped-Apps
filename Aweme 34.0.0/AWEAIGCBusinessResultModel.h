@@ -1,0 +1,33 @@
+@interface AWEAIGCBusinessResultModel : MTLModel
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSString statusMessage;
+@property (nonatomic) NSString tipMessage;
+@property (nonatomic) NSString jsonData;
+@property (nonatomic) NSArray data;
+@property (nonatomic) NSDictionary task;
+@property (nonatomic) NSString stickerId;
+@property (nonatomic) AWEAIGCBaseBusinessCustomModel businessParseModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)stickerId;
+- (void)setStickerId:;
+- (id)tipMessage;
+- (void)setTipMessage:;
+- (id)businessParseModel;
+- (void)setBusinessParseModel:;
+- (long long)statusCode;
+- (void)setTask:;
+- (id)task;
+- (void)setData:;
+- (id)jsonData;
+- (void).cxx_destruct;
+- (id)data;
+- (void)setStatusCode:;
+- (void)setStatusMessage:;
+- (id)statusMessage;
+- (void)setJsonData:;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)dataJSONTransformer;
+@end

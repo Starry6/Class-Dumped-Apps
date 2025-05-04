@@ -1,0 +1,37 @@
+@interface AWEIronManAnchorContainerController : AWESlidingViewController
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) NSArray tabs;
+@property (nonatomic) Q tooltipsMaxTimes;
+@property (nonatomic) NSString extraJsonParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (long long)numberOfControllers:;
+- (id)slidingViewController:viewControllerAtIndex:;
+- (void)slidingViewController:didFinishTransitionFromPreviousIndex:currentIndex:transitionType:;
+- (void)closeButtonDidClick:;
+- (id)viewFrameAtIndex:;
+- (void)setTooltipsMaxTimes:;
+- (void)setExtraJsonParams:;
+- (void)preloadTalentPageIfNeed;
+- (void)showTooltips;
+- (void)ironManDidMountInCurrentTab:;
+- (id)tabbarTitleArray;
+- (unsigned long long)tooltipsMaxTimes;
+- (id)extraJsonParams;
+- (void)trackCurrentTabShow;
+- (void)dealloc;
+- (void)addObserver;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (long long)preferredStatusBarStyle;
+- (void).cxx_destruct;
+- (id)tabs;
+- (void)viewDidAppear:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setUpUI;
+- (void)setTabs:;
+@end

@@ -1,0 +1,30 @@
+@interface AWESearchAdNakedEye3DManager : HTSService
+@property (nonatomic) NSString cacheDirectory;
+@property (nonatomic) IESLiveVideoGiftController alphaVideoPlayerController;
+@property (nonatomic) AWEPlayVideoViewController playerController;
+@property (nonatomic) BOOL trackedShowBefore;
+@property (nonatomic) BOOL trackedFailBefore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didChangePlaybackStateWithAction:;
+- (void)awemePlayerWillLoopPlayingWith:;
+- (void)didChangeStallState:;
+- (BOOL)canPlay3DVideoWithModel:;
+- (id)cacheDiractory;
+- (id)alphaVideoPlayerController;
+- (void)playAlphaVideoWithModel:viewController:alphaVideo:;
+- (void)setAlphaVideoPlayerController:;
+- (void)setTrackedFailBefore:;
+- (BOOL)trackedShowBefore;
+- (void)setTrackedShowBefore:;
+- (void)downloadNaked3DResourceWithModel:reload:;
+- (BOOL)trackedFailBefore;
+- (void)setPlayerController:;
+- (id)cacheDirectory;
+- (id)playerController;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setCacheDirectory:;
+@end

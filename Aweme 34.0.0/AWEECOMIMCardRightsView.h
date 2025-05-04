@@ -1,0 +1,33 @@
+@interface AWEECOMIMCardRightsView : AWEECOMIMCustomBaseView
+@property (nonatomic) DUXBaseImageView iconView;
+@property (nonatomic) UILabel leftLabel;
+@property (nonatomic) DUXBaseLabel centerSeparate;
+@property (nonatomic) UILabel rightsLabel;
+@property (nonatomic) DUXBaseButton clickButton;
+@property (nonatomic) UIImageView rightButtonView;
+@property (nonatomic) <AWEECOMIMSubCardRightsProtocol> data;
+- (void)setClickButton:;
+- (id)clickButton;
+- (id)centerSeparate;
+- (id)rightsLabel;
+- (void)buttonClickAction:;
+- (void)setCenterSeparate:;
+- (void)setRightsLabel:;
+- (id)iconView;
+- (void)updateConstraints;
+- (void)customInit;
+- (void)setIconView:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (id)hitTest:withEvent:;
+- (void)updateWithData:;
+- (id)rightButtonView;
+- (void)setRightButtonView:;
+- (id)leftLabel;
+- (void)setLeftLabel:;
++ (double)rightLabelHeight;
++ (double)designHeightWithData:;
++ (id)labelFont;
++ (double)topPadding;
+@end

@@ -1,0 +1,2 @@
+@interface AWEDetailCollectionABTestRegister : NSObject
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMShareBasicImpl.IMShareMemberOrderSet : _TtGC19AWEIMShareBasicImpl22IMShareSwiftOrderedSetCSo28AWEIMCodeGenShareMemberModel_
+@end

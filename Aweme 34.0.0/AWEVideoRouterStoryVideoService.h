@@ -1,0 +1,31 @@
+@interface AWEVideoRouterStoryVideoService : NSObject
+@property (nonatomic) UIView<ACCTextLoadingViewProtcol> loadingView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableShareVideoAsStoryPermissionOptimation;
+- (id)startMusicShareToStoryVideoEditWithMusic:extraInfo:;
+- (id)handleVideosWithSelectedWithAssetModel:publishViewModel:fromView:;
+- (id)startVideoEditViewControllerWithBirthdayTemplates:enterFrom:;
+- (id)createStoryFromProfileWithAvatarImage:originImage:userDisplayName:hashTag:leftEffectId:rightEffectId:unmodifiablePublishParams:referString:enterFrom:directPublish:showLoading:landingAfterPublish:beforeEditPublish:;
+- (BOOL)enableShareVideoAsStory;
+- (BOOL)enableShareImageAlbumAsStory;
+- (id)shareAsStoryWithAweme:unmodifiablePublishParams:enterFrom:;
+- (id)startBirthdayVideoEditViewControllerWithEffects:currentEffect:forUser:imModel:;
+- (id)shareAsStoryWithAweme:unmodifiablePublishParams:enterFrom:trackParams:;
+- (void)createStoryFromProfileWithSignatureContent:publishButtonTitle:publishButtonClickBlock:completion:;
+- (id)shareAsStoryWithAweme:unmodifiablePublishParams:extraInfo:enterFrom:;
+- (id)shareAsStoryWithAweme:unmodifiablePublishParams:extraInfo:enterFrom:trackParams:;
+- (id)startMusicShareToStoryVideoEditWithMusicId:extraInfo:;
+- (BOOL)shouldEnableShareAsStoryWithAwemeModel:;
+- (id)p_optimizedShareImageAlbumAsStoryWithAweme:index:unmodifiablePublishParams:extraInfo:enterFrom:trackParams:;
+- (id)p_shareImageAlbumAsStoryWithAweme:index:unmodifiablePublishParams:extraInfo:enterFrom:trackParams:;
+- (id)p_shareAsStoryWithStreamEditAbility:unmodifiablePublishParams:extraInfo:enterFrom:trackParams:;
+- (id)p_shareAsStoryWithAweme:unmodifiablePublishParams:extraInfo:enterFrom:trackParams:;
+- (id)p_shareAsStoryWithAweme:commentModel:unmodifiablePublishParams:enterFrom:trackParams:;
+- (id)generateStoryTTLSwitchView:selectResultBlock:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void).cxx_destruct;
+@end

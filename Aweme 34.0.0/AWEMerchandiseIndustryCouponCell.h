@@ -1,0 +1,38 @@
+@interface AWEMerchandiseIndustryCouponCell : AWESearchCachalotECommerceBaseCell
+@property (nonatomic) YYAnimatedImageView backgroundImage;
+@property (nonatomic) YYAnimatedImageView headIcon;
+@property (nonatomic) UILabel headTextSymbolLabel;
+@property (nonatomic) UILabel headTextLabel;
+@property (nonatomic) UILabel marketingLabel;
+@property (nonatomic) UILabel trailLabel;
+@property (nonatomic) YYAnimatedImageView trailIcon;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel model;
+@property (nonatomic) NSDictionary searchInfoDict;
+- (void)configWithModel:;
+- (id)headIcon;
+- (void)setHeadIcon:;
+- (void)trackCardShow;
+- (void)setSearchInfoDict:;
+- (id)searchInfoDict;
+- (id)headTextLabel;
+- (void)setHeadTextLabel:;
+- (id)marketingLabel;
+- (id)trailLabel;
+- (id)headTextSymbolLabel;
+- (id)fontWithFontSize:isBold:;
+- (id)trailIcon;
+- (void)setHeadTextSymbolLabel:;
+- (void)setMarketingLabel:;
+- (void)setTrailLabel:;
+- (void)setTrailIcon:;
+- (id)backgroundImage;
+- (void)setModel:;
+- (void)setBackgroundImage:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setupUI;
++ (double)heightForModel:containerWidth:;
++ (id)sizeWithViewModel:width:;
++ (id)identifier;
+@end

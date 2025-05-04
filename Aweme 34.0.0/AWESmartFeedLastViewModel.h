@@ -1,0 +1,32 @@
+@interface AWESmartFeedLastViewModel : AWEBaseApiModel
+@property (nonatomic) q index;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString emptyMsg;
+@property (nonatomic) NSString emptyButtonMsg;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) Q viewType;
+@property (nonatomic) AWELastViewInteractiveButtonModel interactiveButton;
+@property (nonatomic) q toastType;
+- (id)emptyMsg;
+- (void)setEmptyMsg:;
+- (id)emptyButtonMsg;
+- (void)setEmptyButtonMsg:;
+- (id)interactiveButton;
+- (void)setInteractiveButton:;
+- (long long)toastType;
+- (void)setToastType:;
+- (void)setIndex:;
+- (long long)index;
+- (id)itemID;
+- (void)setItemID:;
+- (id)message;
+- (id)subtitle;
+- (void)setSubtitle:;
+- (void).cxx_destruct;
+- (void)setMessage:;
+- (unsigned long long)viewType;
+- (void)setViewType:;
++ (id)interactiveButtonJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

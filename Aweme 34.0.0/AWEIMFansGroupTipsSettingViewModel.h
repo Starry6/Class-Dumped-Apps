@@ -1,0 +1,32 @@
+@interface AWEIMFansGroupTipsSettingViewModel : NSObject
+@property (nonatomic) double animationDuration;
+@property (nonatomic) NSString sendButtonTitle;
+@property (nonatomic) AWEIMFansGroupMultiselectListViewModel multiselectListViewModel;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) Q settingType;
+- (id)panelTitle;
+- (id)sendButtonTitle;
+- (void)setSendButtonTitle:;
+- (double)maxContentLength;
+- (id)initWithFansGroupInfoList:settingType:;
+- (id)multiselectListViewModel;
+- (id)panelTotalSize;
+- (id)panelTitleSize;
+- (double)multiselectListHeight;
+- (id)panelTitleFont;
+- (id)placeHolderAttributesText;
+- (void)setMultiselectListViewModel:;
+- (id)__panelTitleAttributes;
+- (id)sizeWithString:attributes:maxWidth:;
+- (id)__placeHolderText;
+- (void)batchSetContentWithParams:completion:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setAnimationDuration:;
+- (double)animationDuration;
+- (unsigned long long)settingType;
+- (id)closeButtonImageName;
+- (double)bottomOffset;
+- (void)setSettingType:;
+@end

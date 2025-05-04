@@ -1,0 +1,35 @@
+@interface AWEPadGameLiveCardModel : MTLModel
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString anchorId;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSNumber watchCount;
+@property (nonatomic) NSString recommendReason;
+@property (nonatomic) NSString iconLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)roomId;
+- (void)setRoomId:;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)anchorId;
+- (void)setAnchorId:;
+- (void)setRecommendReason:;
+- (id)recommendReason;
+- (id)watchCount;
+- (void)setWatchCount:;
+- (id)schema;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (void)setRequestId:;
+- (void)setName:;
+- (id)name;
+- (id)requestId;
+- (id)iconLabel;
+- (void)setIconLabel:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

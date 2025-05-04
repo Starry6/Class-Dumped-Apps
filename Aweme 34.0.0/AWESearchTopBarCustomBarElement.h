@@ -1,0 +1,36 @@
+@interface AWESearchTopBarCustomBarElement : AWESearchTopBarBaseElement
+@property (nonatomic) BOOL needMoveCursorToEnd;
+@property (nonatomic) NSString placeHolder;
+@property (nonatomic) NSString text;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) AWECustomSearchBar searchBar;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindAction;
+- (BOOL)needMoveCursorToEnd;
+- (void)setNeedMoveCursorToEnd:;
+- (void)updateElementsLayoutWithFrame:;
+- (void)moveCursorToEnd:;
+- (void)inputElementTap;
+- (void)customBarTextFieldDidBeginEditing:;
+- (void)customBarTextFieldDidEndEditing:;
+- (void)customBarTextFieldDidChangeSelection:;
+- (BOOL)customBartextFieldShouldClear:;
+- (id)searchBar;
+- (void)setSearchBar:;
+- (void)setText:;
+- (id)initWithDelegate:;
+- (void)searchBarSearchButtonClicked:;
+- (id)text;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (void)setupUI;
+- (void)textFieldDidChange:;
+- (id)bgColor;
+- (void)setBgColor:;
+- (void)setPlaceHolder:;
+- (id)placeHolder;
+@end

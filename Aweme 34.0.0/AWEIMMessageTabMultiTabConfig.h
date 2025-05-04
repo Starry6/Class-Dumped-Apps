@@ -1,0 +1,36 @@
+@interface AWEIMMessageTabMultiTabConfig : NSObject
+@property (nonatomic) Q style;
+@property (nonatomic) BOOL isMultiTab;
+@property (nonatomic) BOOL addEmptyViewToChatListTableView;
+@property (nonatomic) BOOL shouldDisableCellSwipeAction;
+@property (nonatomic) BOOL shouldForceEnableLongPressGestureForIMChatListCells;
+@property (nonatomic) BOOL isHeaderFixedInMessageTab;
+@property (nonatomic) BOOL shouldPinIndexView;
+@property (nonatomic) Q indicatorViewStyle;
+@property (nonatomic) BOOL shouldHideIndexerLine;
+@property (nonatomic) q tabSkeletonCellSwipeType;
+@property (nonatomic) BOOL campaignShouldUpdateFakeNavBar;
+- (BOOL)addEmptyViewToChatListTableView;
+- (BOOL)shouldDisableCellSwipeAction;
+- (BOOL)isHeaderFixedInMessageTab;
+- (BOOL)shouldPinIndexView;
+- (unsigned long long)indicatorViewStyle;
+- (BOOL)shouldHideIndexerLine;
+- (BOOL)campaignShouldUpdateFakeNavBar;
+- (long long)tabSkeletonCellSwipeType;
+- (BOOL)isMultiTab;
+- (BOOL)shouldForceEnableLongPressGestureForIMChatListCells;
+- (void)setIsMultiTab:;
+- (void)setAddEmptyViewToChatListTableView:;
+- (void)setShouldDisableCellSwipeAction:;
+- (void)setShouldForceEnableLongPressGestureForIMChatListCells:;
+- (void)setIsHeaderFixedInMessageTab:;
+- (void)setShouldPinIndexView:;
+- (void)setIndicatorViewStyle:;
+- (void)setShouldHideIndexerLine:;
+- (void)setTabSkeletonCellSwipeType:;
+- (void)setCampaignShouldUpdateFakeNavBar:;
+- (unsigned long long)style;
+- (void)setStyle:;
++ (id)configWithStyle:;
+@end

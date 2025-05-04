@@ -1,0 +1,35 @@
+@interface AWEIMMessageQuoteReplyComponent : AWEIMFlexComponent
+@property (nonatomic) q lastStatus;
+@property (nonatomic) BOOL lastWatchEndFlag;
+@property (nonatomic) NSString showName;
+@property (nonatomic) NSDictionary hintDict;
+@property (nonatomic) BOOL hasLoadHintDict;
+@property (nonatomic) BOOL hasFetchNickName;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)onCellWillRenderForCurrentComponent;
+- (id)quoteReplyHintWithMesasge:;
+- (id)hintDict;
+- (void)setHintDict:;
+- (BOOL)p_isCombineShareScene;
+- (BOOL)hasFetchNickName;
+- (void)setHasFetchNickName:;
+- (void)p_didClickQuoteReply;
+- (BOOL)lastWatchEndFlag;
+- (void)p_quoteReplyHintWithUnavaliableMesasge:;
+- (void)p_showMessageDetailInCombineShare;
+- (void)setLastWatchEndFlag:;
+- (id)hintWithMessage:;
+- (id)p_content;
+- (id)p_makeShowNameWithMessage:;
+- (void)p_fetchNickNameWithUid:message:;
+- (id)p_nickNameInHintDict;
+- (BOOL)hasLoadHintDict;
+- (void)setHasLoadHintDict:;
+- (void).cxx_destruct;
+- (long long)lastStatus;
+- (void)setLastStatus:;
+- (void)setShowName:;
+- (id)showName;
++ (BOOL)canCreateComponentWithContext:;
+@end

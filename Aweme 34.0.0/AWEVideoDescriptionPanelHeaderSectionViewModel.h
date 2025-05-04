@@ -1,0 +1,2 @@
+@interface AWEVideoDescriptionPanelHeaderSectionViewModel : AWEBaseListSectionViewModel
+@end

@@ -1,0 +1,31 @@
+@interface AWEStickCollectionView : UICollectionView
+@property (nonatomic) <AWEStickCollectionViewDelegate> awestickcollectionview_delegate;
+- (void)removeObservedViews;
+- (id)awelistkit_delegateForwarder;
+- (void)setAwelistkit_isObserving:;
+- (void)setAwelistkit_lock:;
+- (id)awelistkit_observedViews;
+- (void)addObserverToView:;
+- (void)removeObserverFromView:;
+- (BOOL)awelistkit_isObserving;
+- (void)scrollView:setContentOffset:;
+- (BOOL)awelistkit_lock;
+- (void)addObservedView:;
+- (void)awelistkit_scrollViewDidEndScrolling;
+- (void)setAwelistkit_delegateForwarder:;
+- (void)setAwelistkit_observedViews:;
+- (void)scrollStickCollectionViewToTop:;
+- (void)setAwestickcollectionview_delegate:;
+- (id)awestickcollectionview_delegate;
+- (void)initialize;
+- (void)dealloc;
+- (id)delegate;
+- (void)scrollViewDidScroll:;
+- (BOOL)_gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)setDelegate:;
+- (BOOL)_gestureRecognizerShouldBegin:;
+@end

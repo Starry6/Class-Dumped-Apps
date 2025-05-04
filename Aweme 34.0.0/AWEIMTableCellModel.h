@@ -1,0 +1,2 @@
+@interface AWEIMTableCellModel : AWEIMCellModel
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMTextAndButtonMessage : AWEIMMessage
+@property (nonatomic) NSString bodyText;
+@property (nonatomic) NSAttributedString attributedBodyText;
+@property (nonatomic) double bodyTextHeight;
+@property (nonatomic) NSString pushDetail;
+@property (nonatomic) NSString hint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (void)setPushDetail:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)enableBubbleColorWithType:isQuoteReply:;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)displayTextWithType:;
+- (double)bodyTextHeight;
+- (BOOL)canEmojiReplyByDefault;
+- (id)defaultMenuTypeList;
+- (void)setBodyTextHeight:;
+- (id)bodyText;
+- (void).cxx_destruct;
+- (void)setBodyText:;
+- (long long)messageType;
+- (id)copyWithZone:;
+- (id)attributedBodyText;
+- (void)setAttributedBodyText:;
+- (id)hint;
+- (void)setHint:;
++ (Class)messageClassForContentDict:;
+@end

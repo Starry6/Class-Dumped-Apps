@@ -1,0 +1,36 @@
+@interface AWEIMMessageContentMaskView : UIView
+@property (nonatomic) UIImageView contentImageView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView iconBackgroundImageView;
+@property (nonatomic) UIImageView defaultPlayIcon;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) NSString viewLayoutHash;
+- (void)p_setupView;
+- (void)resetForReuse;
+- (id)iconBackgroundImageView;
+- (void)setIconBackgroundImageView:;
+- (void)setIconBackgroundWithName:;
+- (void)updateWithIconWidthHeight:iconAndTitleSpacing:subtitle:checkDiff:;
+- (void)showDefaultPlayIcon:;
+- (void)setIconWithName:;
+- (id)defaultPlayIcon;
+- (void)setViewLayoutHash:;
+- (id)viewLayoutHash;
+- (void)setDefaultPlayIcon:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setSubtitleLabel:;
+- (void)setTitleText:;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setIconImageView:;
+- (id)contentImageView;
+- (void)setContentImage:;
+- (void)setContentImageView:;
+@end

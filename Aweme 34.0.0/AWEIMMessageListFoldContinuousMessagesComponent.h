@@ -1,0 +1,37 @@
+@interface AWEIMMessageListFoldContinuousMessagesComponent : AWEIMComponentBase
+@property (nonatomic) <IESIMMessageProtocol> firstRealTimeMsg;
+@property (nonatomic) NSMutableArray lastTopMsgIDs;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) NSMutableSet set;
+@property (nonatomic) AWEIMMessageListContinuousFoldRuleHelper helper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)didReceiveNewMessage:;
+- (long long)foldableLimit:;
+- (id)foldIDForMsg:;
+- (id)attributedTextWithGroup:hasBg:foldAction:;
+- (id)updateFoldableDataForArray:direction:;
+- (void)willDisplayHeaderView:group:;
+- (void)setLastTopMsgIDs:;
+- (id)firstRealTimeMsg;
+- (void)setFirstRealTimeMsg:;
+- (id)topGroupsWillBeRemovedWithOrigin:;
+- (id)findContinuousVMsInArray:recordMsgMap:;
+- (id)processSplitInfo:;
+- (BOOL)isRealTimeMsgModel:;
+- (void)resolveFoldGroupArray:inArray:direction:;
+- (id)lastTopMsgIDs;
+- (void)tryMergeFoldArray:inArray:direction:;
+- (id)attr:;
+- (id)set;
+- (void)setSet:;
+- (void)setHelper:;
+- (void).cxx_destruct;
+- (id)helper;
+- (id)conversation;
+- (void)setConversation:;
++ (BOOL)canCreateComponentWithContext:;
+@end

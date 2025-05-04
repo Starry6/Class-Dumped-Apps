@@ -1,0 +1,33 @@
+@interface AWEAwemeDetailScreenCastController : AWEAwemeNewDetailBaseController
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) BOOL isCellAppeared;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellWillDisplay:forRowAtIndexPath:tableView:;
+- (void)setupContextHandler;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (void)onScrollDidEndWithIndexPath:;
+- (void)loadMoreCompletion:error:isFooterRefreshing:;
+- (void)didReloadData;
+- (BOOL)isCellAppeared;
+- (void)setIsCellAppeared:;
+- (id)curSceneString;
+- (id)floatingViewService;
+- (void)enterInnerListWithUpdateScreenCastDatas:;
+- (void)updateScreenCastModels;
+- (void)castPlayVideoDidChange:;
+- (id)screenCastCurReferString;
+- (void)castPlayVideoDidChangeFromModel:toModel:;
+- (BOOL)isCurrentCellScreenCasting;
+- (long long)screenCastFloatingViewShowType;
+- (void)screenCastFloatingViewDidClicked:;
+- (double)maxYForScreenCastFloatingViewPosition:;
+- (id)screenCastFloatingViewCurrentAwemeModel;
+- (void)addScreenCastFloatingView:;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)viewDidAppear:;
+@end

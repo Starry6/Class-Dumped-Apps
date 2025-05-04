@@ -1,0 +1,32 @@
+@interface AWECodeGenSearchCardModel : AWEBaseDataModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray queryModelArray;
+@property (nonatomic) AWECodeGenSearchCardConfigModel darkConfigModel;
+@property (nonatomic) AWECodeGenSearchCardConfigModel lightConfigModel;
+@property (nonatomic) BOOL isNewVersion;
+@property (nonatomic) q index;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) NSString modelID;
+- (BOOL)isNewVersion;
+- (void)setIsNewVersion:;
+- (id)queryModelArray;
+- (void)setQueryModelArray:;
+- (id)darkConfigModel;
+- (void)setDarkConfigModel:;
+- (id)lightConfigModel;
+- (void)setLightConfigModel:;
+- (void)setIndex:;
+- (void)setModelID:;
+- (long long)index;
+- (id)modelID;
+- (void)setStartTime:;
+- (long long)endTime;
+- (void)setEndTime:;
+- (void).cxx_destruct;
+- (id)title;
+- (long long)startTime;
+- (void)setTitle:;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

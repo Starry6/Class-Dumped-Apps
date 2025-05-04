@@ -1,0 +1,35 @@
+@interface AWECoCreatorPostListCellModel : NSObject
+@property (nonatomic) NSArray awemeList;
+@property (nonatomic) q awemeCount;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) AWECoCreatorModel fromCoCreatorModel;
+@property (nonatomic) AWECoCreatorBaseViewController viewController;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) BOOL isLargeCoActivity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeList;
+- (id)minCursor;
+- (void)setAwemeList:;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (long long)awemeCount;
+- (void)setAwemeCount:;
+- (BOOL)isLargeCoActivity;
+- (void)setIsLargeCoActivity:;
+- (id)fromCoCreatorModel;
+- (void)setFromCoCreatorModel:;
+- (BOOL)isLoading;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)setIsLoading:;
+- (void)setViewController:;
+- (id)currentModel;
+- (double)cellHeight;
+- (void)setCurrentModel:;
+@end

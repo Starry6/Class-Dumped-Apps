@@ -1,0 +1,32 @@
+@interface AWEVoipViewController : RTVVoipViewController
+@property (nonatomic) <RTVXRParticipantManagementController> participantController;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastNarrowViewFrame;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)awe_supportedInterfaceOrientations;
+- (void)rtv_awakeFromControllerInjector;
+- (void)teenModeDidChange:isLogout:;
+- (void)viewWillAppearWithIMStayTimeTracker;
+- (void)viewWillDisappearWithIMStayTimeTracker;
+- (id)imStayTimelabel;
+- (id)imStaytimeKey;
+- (void)updateNarrowRect:;
+- (id)participantController;
+- (id)lastNarrowViewFrame;
+- (void)setLastNarrowViewFrame:;
+- (void)__handleActionButtonWithType:;
+- (void)__handleActionButtonInviteWithAutoSelectOnlineUsers:;
+- (void)__inviteParticipants;
+- (void)__directInviteParticipants:;
+- (void)participantManagementController:didInviteUserIDs:groupIDs:;
+- (void)participantManagementControllerDidCancelInvite:;
+- (id)targetNarrowRect;
+- (BOOL)__needSwitchToFullScreenWhenOnTheCall;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+@end

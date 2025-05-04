@@ -1,0 +1,31 @@
+@interface AWEGeneralSegmentationCellViewController : UIViewController
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton refreshButton;
+@property (nonatomic) AWEGeneralSearchModel searchModel;
+@property (nonatomic) <AWEModernFeedCellContext> context;
+@property (nonatomic) # cardClass;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)resetContext:;
+- (void)configUI;
+- (void)trackSearchResultShowEvent;
+- (void)trackSearchResultClickEvent;
+- (void)refreshTap:;
+- (void)viewDidLoad;
+- (id)initWithContext:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+- (void)setSearchModel:;
+- (id)searchModel;
+- (void)updateWithModel:;
+- (id)fetchContext;
+- (id)refreshButton;
+- (void)setRefreshButton:;
++ (double)modernFeedCellPreferedHeightForModel:width:;
++ (void)__awe__codeRunnerRun_32;
+@end

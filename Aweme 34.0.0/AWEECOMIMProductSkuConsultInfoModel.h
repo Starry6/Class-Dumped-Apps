@@ -1,0 +1,36 @@
+@interface AWEECOMIMProductSkuConsultInfoModel : NSObject
+@property (nonatomic) NSString productId;
+@property (nonatomic) NSString skuId;
+@property (nonatomic) NSDictionary channelParams;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSString actionType;
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) NSString skuSessionId;
+@property (nonatomic) NSString hierarchicalDimension;
+@property (nonatomic) NSString serverMessageId;
+@property (nonatomic) NSString cardType;
+@property (nonatomic) NSString senderRole;
+- (id)serverMessageId;
+- (void)setServerMessageId:;
+- (id)skuId;
+- (void)setSkuId:;
+- (id)channelParams;
+- (id)skuSessionId;
+- (void)setSenderRole:;
+- (void)setSkuSessionId:;
+- (void)setHierarchicalDimension:;
+- (void)setChannelParams:;
+- (id)senderRole;
+- (id)hierarchicalDimension;
+- (id)actionType;
+- (void)setActionType:;
+- (id)uuid;
+- (id)productId;
+- (void)setUuid:;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
+- (id)cardType;
+- (void)setCardType:;
+- (void)setProductId:;
+@end

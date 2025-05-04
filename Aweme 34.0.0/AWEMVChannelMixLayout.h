@@ -1,0 +1,32 @@
+@interface AWEMVChannelMixLayout : NSObject
+@property (nonatomic) AWEAwemeModel largeCardModel;
+@property (nonatomic) NSMutableArray smallCardArray;
+@property (nonatomic) AWEAwemeModel largeBannerModel;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) UIViewController<AWEDCFeedListViewControllerProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mvPageContext;
+- (id)createSectionViewModels:requestInfo:otherInfo:;
+- (void)appendSectionViewModel:lastSectionViewModel:;
+- (id)createSkeletonSectionViewModels;
+- (Class)getSmallSectionViewModelClass;
+- (void)setLargeBannerModel:;
+- (id)largeBannerModel;
+- (void)processAwemeModelData:isRefresh:;
+- (id)largeCardModel;
+- (id)smallCardArray;
+- (BOOL)shouldAddLargeCard:;
+- (void)setLargeCardModel:;
+- (unsigned long long)transferLargeCard2SmallCard:;
+- (void)insertFirstLaunchFirstFetchModels:atIndexPath:;
+- (void)setSmallCardArray:;
+- (void)setContainer:;
+- (id)container;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)resetModel;
+- (id)context;
+@end

@@ -1,0 +1,33 @@
+@interface AWEDetailMVPreviewPageInfoModel : NSObject
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString templateTitle;
+@property (nonatomic) NSString authorName;
+@property (nonatomic) BOOL isColledted;
+@property (nonatomic) double duration;
+@property (nonatomic) Q usageAmount;
+@property (nonatomic) NSArray playURLList;
+@property (nonatomic) NSArray avatarURLList;
+@property (nonatomic) <ACCMVTemplateModelProtocol> templateModel;
+@property (nonatomic) NSArray fragments;
+- (void)setAvatarURLList:;
+- (unsigned long long)usageAmount;
+- (void)setUsageAmount:;
+- (id)playURLList;
+- (id)avatarURLList;
+- (id)templateTitle;
+- (void)setTemplateTitle:;
+- (BOOL)isColledted;
+- (void)setIsColledted:;
+- (void)setPlayURLList:;
+- (void)setError:;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (id)error;
+- (double)duration;
+- (id)authorName;
+- (void)setAuthorName:;
+- (id)fragments;
+- (void)setFragments:;
+- (void)setTemplateModel:;
+- (id)templateModel;
+@end

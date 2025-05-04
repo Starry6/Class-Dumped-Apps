@@ -1,0 +1,30 @@
+@interface AWEEcomPushTimeFeedOutLynxModel : MTLModel
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString rawData;
+@property (nonatomic) AWEEcomLynxModuleModel layout;
+@property (nonatomic) NSString robotLink;
+@property (nonatomic) q noShow;
+@property (nonatomic) q lifeCycleStrategy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)robotLink;
+- (void)setRobotLink:;
+- (long long)noShow;
+- (void)setNoShow:;
+- (long long)lifeCycleStrategy;
+- (void)setLifeCycleStrategy:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setLayout:;
+- (id)layout;
+- (void)setRawData:;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)rawData;
++ (id)layoutJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

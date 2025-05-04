@@ -1,0 +1,30 @@
+@interface AWELongVideoAlbumModel : NSObject
+@property (nonatomic) AWELVideoAlbumInfoModel albumInfo;
+@property (nonatomic) NSArray episodeList;
+@property (nonatomic) q lastPlayIndex;
+@property (nonatomic) AWELVideoAlbumHistoryInfoModel historyInfo;
+@property (nonatomic) NSArray anchorInfoList;
+@property (nonatomic) AWELVideoAppointmentInfoModel appointmentInfo;
+@property (nonatomic) AWELVideoMetaBlockInfoModel metaBlockInfo;
+@property (nonatomic) AWETheaterEntranceGuideModel theaterGuideInfo;
+@property (nonatomic) AWELVideoSideBarGuideResponse revisitGuideInfo;
+- (id)albumInfo;
+- (void)setAlbumInfo:;
+- (id)episodeList;
+- (void)setEpisodeList:;
+- (id)appointmentInfo;
+- (long long)lastPlayIndex;
+- (void)setLastPlayIndex:;
+- (id)metaBlockInfo;
+- (void)setAnchorInfoList:;
+- (void)setAppointmentInfo:;
+- (void)setMetaBlockInfo:;
+- (id)theaterGuideInfo;
+- (void)setTheaterGuideInfo:;
+- (void)setRevisitGuideInfo:;
+- (id)historyInfo;
+- (id)revisitGuideInfo;
+- (id)anchorInfoList;
+- (void)setHistoryInfo:;
+- (void).cxx_destruct;
+@end

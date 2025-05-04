@@ -1,0 +1,32 @@
+@interface AWEFollowListEntranceView : UIControl
+@property (nonatomic) UIView splitLine;
+@property (nonatomic) UILabel entranceLabel;
+@property (nonatomic) UIImageView imgView;
+@property (nonatomic) AWEFollowListUserContentModel userModel;
+@property (nonatomic) @? onTapEntranceAction;
+@property (nonatomic) @? onTapDescLabelAction;
+@property (nonatomic) UILabel descLabel;
+- (unsigned long long)awe_priorityForAccessibilityRotor;
+- (id)awe_customActionForAccessibilityRotor;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)onClicked;
+- (id)splitLine;
+- (void)setSplitLine:;
+- (id)onTapEntranceAction;
+- (void)setOnTapEntranceAction:;
+- (id)onTapDescLabelAction;
+- (void)setOnTapDescLabelAction:;
+- (void)onDescLabelClicked;
+- (void)setEntranceLabel:;
+- (id)entranceLabel;
+- (void)setImgView:;
+- (id)imgView;
+- (void)configWithContentModel:;
+- (id)initWithFrame:;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)hitTest:withEvent:;
+- (void)setupUI;
+@end

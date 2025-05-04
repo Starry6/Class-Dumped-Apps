@@ -1,0 +1,32 @@
+@interface AWEMicroAppEntranceService : HTSService
+@property (nonatomic) NSMapTable tokenToEntranceMap;
+@property (nonatomic) NSMutableDictionary jsbAutoFixResultList;
+@property (nonatomic) NSMutableDictionary jsbAutoFixConditionList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isTimorSchema:;
+- (BOOL)isEnableEntrance;
+- (BOOL)isEnableEntranceForLaunchFrom:;
+- (id)markJsbHybridSchema:APIContext:PageContext:;
+- (id)markJsbLynxSchema:LynxView:;
+- (id)markNativeSchema:subType:;
+- (id)getEntranceByToken:;
+- (BOOL)invokeMpSchemaFromScanWithSchema:extra:;
+- (BOOL)p_isShouldMarkForSchema:;
+- (id)p_autoFixSchema:distributeType:pageIdentifier:;
+- (id)jsbAutoFixConditionList;
+- (id)jsbAutoFixResultList;
+- (id)tokenToEntranceMap;
+- (id)p_getEntranceByToken:;
+- (void)p_setEntrance:ByToken:;
+- (void)setTokenToEntranceMap:;
+- (void)setJsbAutoFixResultList:;
+- (void)setJsbAutoFixConditionList:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)tryToMarkNativeSchema:;
++ (id)p_tryToMarkSchema:distributeType:subType:;
++ (id)p_tryToMarkSchema:distributeType:;
+@end

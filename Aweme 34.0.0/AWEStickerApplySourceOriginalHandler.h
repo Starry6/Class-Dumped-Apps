@@ -1,0 +1,37 @@
+@interface AWEStickerApplySourceOriginalHandler : AWEStickerApplyBaseHandler
+@property (nonatomic) IESEffectModel selectedSticker;
+@property (nonatomic) IESEffectModel readyToShowSticker;
+@property (nonatomic) <ACCRecordSidebarService> sidebarService;
+@property (nonatomic) NSMutableDictionary cachedUserNameDict;
+@property (nonatomic) AWEOriginStickerUserView originStickerUserView;
+@property (nonatomic) AWEOriginStickerUserVerticalView originStickerUserVerticalView;
+@property (nonatomic) BOOL panelShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)selectedSticker;
+- (void)setSelectedSticker:;
+- (void)shouldItemsShow:animated:;
+- (id)sidebarService;
+- (void)setSidebarService:;
+- (void)propServiceDidShowPanel:;
+- (void)handlerDidBecomeActive;
+- (void)camera:willApplySticker:propSource:;
+- (void)didChangeLayoutManager:;
+- (id)originStickerUserView;
+- (void)setOriginStickerUserView:;
+- (void)setReadyToShowSticker:;
+- (BOOL)panelShow;
+- (void)handleStickerOriginalShow:;
+- (id)cachedUserNameDict;
+- (void)showSourceOrignalViewWithUserModel:effectModel:;
+- (id)originStickerUserVerticalView;
+- (void)setPanelShow:;
+- (id)readyToShowSticker;
+- (void)p_updatePropCreatorWithUserModel:;
+- (void)p_hidePropCreatorBarItem;
+- (void)setCachedUserNameDict:;
+- (void)setOriginStickerUserVerticalView:;
+- (void).cxx_destruct;
+@end

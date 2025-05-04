@@ -1,0 +1,37 @@
+@interface AWEClassroomModel.ClassroomGoodsModel : MTLModel
+@property (nonatomic) q goodsId;
+@property (nonatomic) NSString goodsTitle;
+@property (nonatomic) NSArray squareCover;
+@property (nonatomic) q studentNumber;
+@property (nonatomic) _TtC17AWEClassroomModel31ClassroomGoodsPurchaseInfoModel purchaseInfo;
+@property (nonatomic) NSArray labels;
+@property (nonatomic) NSString ecomProductDetailSchema;
+@property (nonatomic) q defaultSkuId;
+@property (nonatomic) q bizType;
+- (long long)goodsId;
+- (void)setGoodsId:;
+- (id)goodsTitle;
+- (void)setGoodsTitle:;
+- (id)squareCover;
+- (void)setSquareCover:;
+- (long long)studentNumber;
+- (void)setStudentNumber:;
+- (id)ecomProductDetailSchema;
+- (void)setEcomProductDetailSchema:;
+- (long long)defaultSkuId;
+- (void)setDefaultSkuId:;
+- (long long)bizType;
+- (void)setBizType:;
+- (id)labels;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)purchaseInfo;
+- (void).cxx_destruct;
+- (void)setPurchaseInfo:;
+- (id)initWithCoder:;
+- (void)setLabels:;
++ (id)squareCoverJSONTransformer;
++ (id)purchaseInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)labelsJSONTransformer;
+@end

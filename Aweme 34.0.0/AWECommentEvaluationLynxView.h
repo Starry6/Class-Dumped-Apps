@@ -1,0 +1,38 @@
+@interface AWECommentEvaluationLynxView : LynxUI
+@property (nonatomic) UIView<AWECommentEvaluationCoreServiceProtocol> lynxView;
+@property (nonatomic) BOOL didConfig;
+@property (nonatomic) Q theme;
+@property (nonatomic) NSString containerTag;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) NSDictionary config;
+- (id)lynxView;
+- (void)setLynxView:;
+- (BOOL)didConfig;
+- (void)observeEvent;
+- (void)setDidConfig:;
+- (void)setConfig:requestReset:;
+- (void)setData:requestReset:;
+- (void)setTheme:requestReset:;
+- (void)setContainerTag:requestReset:;
+- (void)fetchData:withResult:;
+- (void)cleanData:withResult:;
+- (id)containerTag;
+- (void)setContainerTag:;
+- (unsigned long long)theme;
+- (void)setConfig:;
+- (void)setTheme:;
+- (id)init;
+- (id)config;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (void)render:;
+- (id)createView;
++ (void)lynxLazyLoad;
++ (id)__lynx_prop_config__661;
++ (id)__lynx_prop_config__862;
++ (id)__lynx_prop_config__983;
++ (id)__lynx_prop_config__1054;
++ (id)__lynx_ui_method_config__1145;
++ (id)__lynx_ui_method_config__1226;
+@end

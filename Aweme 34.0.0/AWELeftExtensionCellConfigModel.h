@@ -1,0 +1,31 @@
+@interface AWELeftExtensionCellConfigModel : NSObject
+@property (nonatomic) NSString iconURL;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString itemType;
+@property (nonatomic) BOOL needShowDot;
+@property (nonatomic) BOOL needBigDivider;
+@property (nonatomic) NSArray showInOthersTab;
+@property (nonatomic) NSArray schemaTrackQuery;
+@property (nonatomic) NSDictionary extraInfo;
+- (void)setNeedShowDot:;
+- (BOOL)needShowDot;
+- (id)schemaTrackQuery;
+- (void)setNeedBigDivider:;
+- (void)setShowInOthersTab:;
+- (void)setSchemaTrackQuery:;
+- (BOOL)needBigDivider;
+- (id)showInOthersTab;
+- (id)itemType;
+- (id)schema;
+- (void)setIconURL:;
+- (void)setItemType:;
+- (void)setSchema:;
+- (id)iconURL;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (void)setExtraInfo:;
++ (id)configLeftExtensionCellModelWithParams:isNormal:;
+@end

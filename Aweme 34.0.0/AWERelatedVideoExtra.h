@@ -1,0 +1,35 @@
+@interface AWERelatedVideoExtra : AWEBaseApiModel
+@property (nonatomic) NSString labelName;
+@property (nonatomic) NSString diversionSchema;
+@property (nonatomic) NSString diversionSchemaUninstall;
+@property (nonatomic) NSString labelType;
+@property (nonatomic) NSString querys;
+@property (nonatomic) NSString tags;
+@property (nonatomic) q relatedItemDiversionType;
+@property (nonatomic) AWEMatchingColorInfoModel coverBaseColorInfo;
+@property (nonatomic) NSString sourceType;
+@property (nonatomic) NSString desc;
+- (id)diversionSchema;
+- (void)setDiversionSchema:;
+- (id)diversionSchemaUninstall;
+- (void)setDiversionSchemaUninstall:;
+- (id)querys;
+- (void)setQuerys:;
+- (long long)relatedItemDiversionType;
+- (void)setRelatedItemDiversionType:;
+- (id)coverBaseColorInfo;
+- (void)setCoverBaseColorInfo:;
+- (void)setSourceType:;
+- (id)sourceType;
+- (id)tags;
+- (id)labelType;
+- (void)setLabelType:;
+- (void)setTags:;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)labelName;
+- (void)setLabelName:;
++ (id)coverBaseColorInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

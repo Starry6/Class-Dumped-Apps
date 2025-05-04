@@ -1,0 +1,2 @@
+@interface AWECommentSwiftBizUI.CommentComponentRegisterCenter : _TtCs12_SwiftObject
+@end

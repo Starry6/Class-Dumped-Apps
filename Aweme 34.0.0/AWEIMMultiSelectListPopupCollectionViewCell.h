@@ -1,0 +1,35 @@
+@interface AWEIMMultiSelectListPopupCollectionViewCell : UICollectionViewCell
+@property (nonatomic) <AWEIMMultiSelectPopupItemProtocol> model;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UIImageView isSelectedImageView;
+@property (nonatomic) <AWEIMMultiSelectListPopupCollectionViewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)p_addSubviews;
+- (void)p_addPositionConstraints;
+- (id)isSelectedImageView;
+- (id)colorInLightTheme:;
+- (void)p_configSelectedImageView;
+- (void)setIsSelectedImageView:;
+- (void)setModel:;
+- (id)delegate;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (id)model;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setNameLabel:;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (id)hintLabelFont;
+- (int)avatarWidth;
+- (id)nameLabelFont;
++ (id)identifier;
+@end

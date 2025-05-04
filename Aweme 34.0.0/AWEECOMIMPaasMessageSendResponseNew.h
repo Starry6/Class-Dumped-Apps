@@ -1,0 +1,32 @@
+@interface AWEECOMIMPaasMessageSendResponseNew : NSObject
+@property (nonatomic) BDECPigeonMessageSendResponseV2 sendResponse;
+@property (nonatomic) q status;
+@property (nonatomic) NSString logID;
+@property (nonatomic) q checkCode;
+@property (nonatomic) NSString extraInfo;
+@property (nonatomic) q sendMethodType;
+@property (nonatomic) NSDictionary responseInErrorInfo;
+@property (nonatomic) NSString checkMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)checkCode;
+- (id)checkMessage;
+- (void)setSendMethodType:;
+- (void)setResponseInErrorInfo:;
+- (void)setCheckCode:;
+- (void)setCheckMessage:;
+- (long long)sendMethodType;
+- (id)responseInErrorInfo;
+- (void)setSendResponse:;
+- (id)sendResponse;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)logID;
+- (id)extraInfo;
+- (void)setLogID:;
+- (void)setExtraInfo:;
++ (id)PaasMessageSendResponseWithPigeonMessageSendResponse:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEDeliveryMessageTableView : UITableView
+@end

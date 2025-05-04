@@ -1,0 +1,38 @@
+@interface AWEMateListSimpleCellBusinessModel : NSObject
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) NSString activeStatusIdentifier;
+@property (nonatomic) <AWEIMActiveUserInfoService> activeInfo;
+@property (nonatomic) @? refreshBlock;
+- (id)referString;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)activeInfo;
+- (id)subTitleTextColor;
+- (void)setActiveInfo:;
+- (BOOL)isFriends;
+- (unsigned long long)activeUserSourceType;
+- (void)onDidBindToCellWithRefreshBlock:;
+- (void)onActiveInfoDidUpdated:;
+- (BOOL)shouldShowVerifiedIcon;
+- (BOOL)shouldMonitorActiveStatus;
+- (BOOL)shouldShowRelationButton;
+- (BOOL)shouldShowMoreActionButton;
+- (BOOL)shouldShowBottomLineView;
+- (id)bigFontAutoFontSizeBlock;
+- (id)lightInteractionExtraParams;
+- (id)lightActionSource;
+- (id)initWithUserModel:activeStatusIdentifier:;
+- (void)setActiveStatusIdentifier:;
+- (id)activeStatusIdentifier;
+- (id)accountType;
+- (id)subTitle;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)title;
+- (double)avatarSize;
+- (id)pageIdentifier;
+- (id)refreshBlock;
+- (void)setRefreshBlock:;
++ (double)suggestedHeight;
+@end

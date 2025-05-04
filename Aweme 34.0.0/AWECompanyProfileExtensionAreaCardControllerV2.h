@@ -1,0 +1,34 @@
+@interface AWECompanyProfileExtensionAreaCardControllerV2 : NSObject
+@property (nonatomic) UIView<AWEProfileExtensionAreaCardViewProtocol> cardView;
+@property (nonatomic) AWEProfileExtensionAreaCommonParamModel commonParamModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL tracked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (BOOL)shouldShowCard;
+- (void)passCardView:;
+- (void)cardDidClicked;
+- (void)cardWillAppear;
+- (BOOL)shouldShowHashtag;
+- (id)hashtagTitle;
+- (BOOL)shouldShowBrand;
+- (BOOL)shouldShowStarGravity;
+- (void)setCommonParamModel:;
+- (id)commonParamModel;
+- (id)hashtagSubtitle;
+- (void)p_cardWillAppear;
+- (BOOL)tracked;
+- (void)setTracked:;
+- (void).cxx_destruct;
+- (id)cardView;
+- (void)setCardView:;
++ (id)cardControllerWithCommonParam:;
++ (void)handleProfileExtensionAreaActionWithType:userModel:schema:;
++ (id)configOriginAdInfoWithCardData:;
++ (void)handleProfileExtensionAreaActionWithType:userModel:schema:originCardData:;
++ (void)trackTapOriginAdInfo:userModel:;
+@end

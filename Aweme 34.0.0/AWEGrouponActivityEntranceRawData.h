@@ -1,0 +1,30 @@
+@interface AWEGrouponActivityEntranceRawData : MTLModel
+@property (nonatomic) NSString entranceName;
+@property (nonatomic) AWEURLModel staticImage;
+@property (nonatomic) q useDynamic;
+@property (nonatomic) AWEGrouponActivityEntranceDynamicImageModel dynamic;
+@property (nonatomic) double entranceRemoveTime;
+@property (nonatomic) NSArray freqRuleConfig;
+@property (nonatomic) NSDictionary trackParam;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParam;
+- (void)setTrackParam:;
+- (id)entranceName;
+- (void)setEntranceName:;
+- (long long)useDynamic;
+- (void)setUseDynamic:;
+- (double)entranceRemoveTime;
+- (void)setEntranceRemoveTime:;
+- (id)freqRuleConfig;
+- (void)setFreqRuleConfig:;
+- (void).cxx_destruct;
+- (id)dynamic;
+- (void)setDynamic:;
+- (void)setStaticImage:;
+- (id)staticImage;
++ (BOOL)automaticallyDefaultMapping;
++ (id)freqRuleConfigJSONTransformer;
+@end

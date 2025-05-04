@@ -1,0 +1,35 @@
+@interface AWESearchScanHistoryNavigationView : UIView
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton clearAllButton;
+@property (nonatomic) UIButton completeButton;
+@property (nonatomic) UIView topBarView;
+@property (nonatomic) BOOL deleteIconDidTapped;
+@property (nonatomic) @? clearAllButtonTapCallback;
+@property (nonatomic) @? trackDeleteEvent;
+- (id)completeButton;
+- (void)setCompleteButton:;
+- (void)configUI;
+- (void)setDeleteIconDidTapped:;
+- (id)trackDeleteEvent;
+- (void)trackClearButtonTapEventWithIconName:;
+- (id)clearAllButtonTapCallback;
+- (void)clearAllButtonTapped;
+- (void)completeButtonTapped;
+- (void)hiddenDeleteIcon;
+- (void)hiddenClearAllButton;
+- (BOOL)deleteIconDidTapped;
+- (void)setClearAllButtonTapCallback:;
+- (void)setTrackDeleteEvent:;
+- (void)setDeleteButton:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)clearAllButton;
+- (void)deleteButtonTapped;
+- (void)setClearAllButton:;
+- (void)setTopBarView:;
+- (id)topBarView;
+@end

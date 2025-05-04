@@ -1,0 +1,32 @@
+@interface AWEStudioScanRouterService : NSObject
+@property (nonatomic) ACCScanPhotoScanContext photoScanContext;
+@property (nonatomic) AWEACCCanvasMaker canvasMaker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeRecordPageIfRecordIsTopViewControllerWithCompletion:;
+- (BOOL)scanHomeFeedEntrance;
+- (BOOL)supportJumpScanViewWithEnterForm:;
+- (void)scanViewControllerWithCameraOnly:closeOnComplete:enableAnalysis:enterFrom:handler:;
+- (BOOL)interceptorActionBeforeTransferWithURLString:userInfo:;
+- (unsigned long long)interceptorActionWhenTransferingWithTransitionInfo:;
+- (id)scaledImageToMax1080WithImage:;
+- (void)setCanvasMaker:;
+- (id)canvasMaker;
+- (id)getScanHistory;
+- (void)deleteScanHistoryWithIds:;
+- (void)searchPageJumpEditWithSrcImage:scanResults:trackParams:;
+- (void)setTosUri:forScanId:;
+- (void)startQrCodeScanWithImage:extraLog:completed:;
+- (id)startQrCodeScanWithImage:supportMulti:extraLog:;
+- (Class)getVideoRecordNavigationControllerClass;
+- (void)jumpScanQrCodeWithUrl:trackParams:;
+- (id)readScanOriginImageOptWithScanId:;
+- (void)registerOriginScanIntercept;
+- (id)photoScanContext;
+- (BOOL)scanInterceptorSupportWithRouterParams:;
+- (void)transferToVisionCameraVCURLString:transitionInfo:;
+- (void)setPhotoScanContext:;
+- (void).cxx_destruct;
+@end

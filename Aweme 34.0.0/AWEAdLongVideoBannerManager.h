@@ -1,0 +1,33 @@
+@interface AWEAdLongVideoBannerManager : NSObject
+@property (nonatomic) AWEAwemeModel adBannerAweme;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? receiveAdDataBlock;
+@property (nonatomic) @? bannerUIDidChangeBlock;
+@property (nonatomic) @? bannerDidDisappearBlock;
+@property (nonatomic) @? bannerShowBlock;
+- (id)lynxBridge;
+- (void)lokiComponentDowngrade:errorMsg:;
+- (void)lokiShowFinish:;
+- (void)lokiClose:;
+- (void)lokiComponent:didChangeIntrinsicContentSize:;
+- (id)getLynxGlobalProps:;
+- (void)setAdBannerAweme:;
+- (id)receiveAdDataBlock;
+- (id)adBannerAweme;
+- (id)bannerDidDisappearBlock;
+- (void)startFetchLongVideoAdBannerData:;
+- (void)loadAdBannerWithContainer:hasPreBanner:;
+- (void)setReceiveAdDataBlock:;
+- (id)bannerUIDidChangeBlock;
+- (void)setBannerUIDidChangeBlock:;
+- (void)setBannerDidDisappearBlock:;
+- (id)bannerShowBlock;
+- (void)setBannerShowBlock:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
++ (BOOL)canAdBannerShowInLongVideo:;
+@end

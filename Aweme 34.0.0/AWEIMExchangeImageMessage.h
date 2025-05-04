@@ -1,0 +1,37 @@
+@interface AWEIMExchangeImageMessage : AWEIMEncryptedImageMessage
+@property (nonatomic) UIImage publishImage;
+@property (nonatomic) UIImage quoteImage;
+@property (nonatomic) q exchangeRequestSeverMessageId;
+@property (nonatomic) q exchangeResponseSeverMessageId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getUniqueResourceId;
+- (id)initWithContentDict:;
+- (void)setPublishImage:;
+- (id)publishImage;
+- (BOOL)isRequestMessage;
+- (BOOL)isResponseMessage;
+- (BOOL)isExchangeLocationMessage;
+- (long long)getContentExchangeRequestSeverMessageId;
+- (id)quoteImage;
+- (void)setQuoteImage:;
+- (long long)exchangeResponseSeverMessageId;
+- (void)setExchangeResponseSeverMessageId:;
+- (long long)exchangeRequestSeverMessageId;
+- (void)setExchangeRequestSeverMessageId:;
+- (void)updateWithMessage:;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)quoteContentComponentName;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (BOOL)isSupportForward;
+- (id)hintOnInputVCWhenQuoted;
+- (id)generateForwardMessage;
+- (id)coverSizeWhenQuotedIfHave;
+- (void).cxx_destruct;
+@end

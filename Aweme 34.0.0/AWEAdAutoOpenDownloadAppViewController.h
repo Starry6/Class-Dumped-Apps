@@ -1,0 +1,32 @@
+@interface AWEAdAutoOpenDownloadAppViewController : UIViewController
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) <AWEAdAutoOpenDownloadAppViewControllerDelegate> delegate;
+- (void)onConfirmButtonClicked;
+- (void)onCancelButtonClicked;
+- (void)setModel:;
+- (void)setCancelButton:;
+- (id)delegate;
+- (id)initWithModel:;
+- (void)viewDidLoad;
+- (id)model;
+- (void)setTitleLabel:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupUI;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

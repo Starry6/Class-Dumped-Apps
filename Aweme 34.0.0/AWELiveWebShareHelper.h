@@ -1,0 +1,30 @@
+@interface AWELiveWebShareHelper : NSObject
+@property (nonatomic) <IESLiveRoomService> room;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? completion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackContext;
+- (void)setTrackContext:;
+- (id)attachingDIContext;
+- (void)processWebShareWithParam:room:completion:;
+- (void)sharePanelDidDismiss;
+- (void)shareFinishedWithResult:;
+- (void)processH5ShareWithParams:completion:;
+- (void)processLiveShareWithParams:model:completion:;
+- (void)callbackWithCode:dict:message:;
+- (void)openImBoardWithParams:model:;
+- (void)shareToPlatformWithParams:model:;
+- (void)openSharePanelWithParams:model:;
+- (long long)getShareTypeWithPlatform:;
+- (void)showSharePanelWithContentModel:;
+- (id)getPosterActivityImageArray:;
+- (id)init;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+@end

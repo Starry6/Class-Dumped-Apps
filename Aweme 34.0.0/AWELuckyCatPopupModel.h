@@ -1,0 +1,37 @@
+@interface AWELuckyCatPopupModel : MTLModel
+@property (nonatomic) NSString key;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString lynxSchema;
+@property (nonatomic) NSString feData;
+@property (nonatomic) NSString reportPopUrl;
+@property (nonatomic) AWELuckyCatPopupUIModel uiInfo;
+@property (nonatomic) AWELuckyCatPopupManageInfo manageInfo;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) NSNumber popDelay;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)lynxSchema;
+- (id)feData;
+- (void)setFeData:;
+- (void)setLynxSchema:;
+- (id)uiInfo;
+- (void)setUiInfo:;
+- (id)reportPopUrl;
+- (void)setReportPopUrl:;
+- (id)manageInfo;
+- (void)setManageInfo:;
+- (id)popDelay;
+- (void)setPopDelay:;
+- (void)setKey:;
+- (id)key;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)uiInfoJSONTransformer;
++ (id)manageInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

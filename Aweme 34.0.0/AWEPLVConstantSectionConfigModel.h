@@ -1,0 +1,37 @@
+@interface AWEPLVConstantSectionConfigModel : AWEBaseApiModel
+@property (nonatomic) NSString sectionName;
+@property (nonatomic) AWEPLVSectionPaddingModel sectionPadding;
+@property (nonatomic) AWEPLVSectionPaddingModel contentPadding;
+@property (nonatomic) AWEPLVSectionPaddingModel headerPadding;
+@property (nonatomic) AWEPLVSectionBackgrounColorModel backgroundColor;
+@property (nonatomic) NSNumber maxLines;
+@property (nonatomic) NSNumber rowPadding;
+@property (nonatomic) NSNumber linePadding;
+@property (nonatomic) BOOL dynamicSpacing;
+@property (nonatomic) BOOL navigationBarPadding;
+- (BOOL)dynamicSpacing;
+- (id)sectionPadding;
+- (void)setSectionPadding:;
+- (void)setDynamicSpacing:;
+- (id)rowPadding;
+- (BOOL)navigationBarPadding;
+- (void)setRowPadding:;
+- (void)setNavigationBarPadding:;
+- (id)maxLines;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void)setMaxLines:;
+- (void)setContentPadding:;
+- (void).cxx_destruct;
+- (id)contentPadding;
+- (id)headerPadding;
+- (void)setHeaderPadding:;
+- (void)setSectionName:;
+- (id)sectionName;
+- (void)setLinePadding:;
+- (id)linePadding;
++ (id)sectionPaddingJSONTransformer;
++ (id)contentPaddingJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)backgroundColorJSONTransformer;
+@end

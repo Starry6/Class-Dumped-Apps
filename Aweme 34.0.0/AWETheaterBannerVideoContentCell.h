@@ -1,0 +1,30 @@
+@interface AWETheaterBannerVideoContentCell : AWETheaterBannerBaseContentCell
+@property (nonatomic) AWETheaterPlayVideoViewController videoController;
+@property (nonatomic) AWEVideoScreenRecordingBlocker screenCaptureBlocker;
+@property (nonatomic) BOOL isShowingScreenBlockToast;
+- (void)bindObserver;
+- (BOOL)isShowingScreenBlockToast;
+- (void)setIsShowingScreenBlockToast:;
+- (void)setScreenCaptureBlocker:;
+- (id)screenCaptureBlocker;
+- (void)updateCellPaymentWithModel:;
+- (void)configWithSectionItem:context:logExtraDict:;
+- (void)setAccessibility;
+- (void)seekLastPlaybackTime;
+- (void)recordPlaybackTime;
+- (double)calculateStartTime;
+- (BOOL)shouldPaymentChargePreviewConfig;
+- (void)resetPlaybackTime;
+- (void)trackHighlightPlay;
+- (BOOL)isPlaying;
+- (void)play;
+- (void).cxx_destruct;
+- (void)updateMuteStatus:;
+- (void)reset;
+- (void)stop;
+- (void)pause;
+- (void)setupUI;
+- (id)videoController;
+- (void)setVideoController:;
+- (void)handleTap;
+@end

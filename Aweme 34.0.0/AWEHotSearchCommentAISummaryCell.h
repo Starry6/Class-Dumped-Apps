@@ -1,0 +1,30 @@
+@interface AWEHotSearchCommentAISummaryCell : UICollectionViewCell
+@property (nonatomic) UIImageView topQuoteView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) AWEHotSearchCommentAISummaryCellModel cellModel;
+@property (nonatomic) AWECommonFeedSectionContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)awe_themeDidChange:;
+- (void)setCellModel:;
+- (BOOL)isGray;
+- (void)updateCellLayout;
+- (void)configCellWithContext:cellModel:;
+- (void)p_resetQuoteImage;
+- (id)topQuoteView;
+- (void)setTopQuoteView:;
+- (BOOL)hasVideo;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)cellModel;
+@end

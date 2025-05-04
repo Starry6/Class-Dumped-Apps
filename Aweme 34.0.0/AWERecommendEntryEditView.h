@@ -1,0 +1,38 @@
+@interface AWERecommendEntryEditView : UIView
+@property (nonatomic) UIView baseView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) BDImageView iconImageView;
+@property (nonatomic) BDImageView onlyIconImageView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIVisualEffectView blurEffectView;
+@property (nonatomic) AWEPlayInteractionContext context;
+@property (nonatomic) <AWERecommendEntryDelegate> delegate;
+@property (nonatomic) AWEAwemeModel model;
+- (void)closeButtonClicked:;
+- (void)exitEditMode;
+- (id)onlyIconImageView;
+- (void)updateRemoteImageFor:defaultImageName:remoteURLString:;
+- (void)setOnlyIconImageView:;
+- (void)tapEntry:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)delegate;
+- (void)setBaseView:;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (id)model;
+- (id)iconImageView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (id)baseView;
+- (void)setIconImageView:;
+- (void)setTextLabel:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)blurEffectView;
+- (void)setBlurEffectView:;
+- (void)initUI;
+@end

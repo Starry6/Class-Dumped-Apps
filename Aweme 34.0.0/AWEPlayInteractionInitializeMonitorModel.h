@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionInitializeMonitorModel : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) double viewDidLoadDuration;
+@property (nonatomic) double setupContextDuration;
+@property (nonatomic) double setupContainerDuration;
+@property (nonatomic) double makeViewConstraintsDuration;
+@property (nonatomic) double setupDispatcherManagerDuration;
+@property (nonatomic) double dispatcherManagerViewDidLoadDuration;
+@property (nonatomic) double setupLeftContainerDuration;
+@property (nonatomic) double setupRightContainerDuration;
+@property (nonatomic) double setupBottomContainerDuration;
+- (id)referString;
+- (void)setReferString:;
+- (double)viewDidLoadDuration;
+- (void)setViewDidLoadDuration:;
+- (double)setupContextDuration;
+- (void)setSetupContextDuration:;
+- (double)setupContainerDuration;
+- (void)setSetupContainerDuration:;
+- (double)makeViewConstraintsDuration;
+- (void)setMakeViewConstraintsDuration:;
+- (double)setupDispatcherManagerDuration;
+- (void)setSetupDispatcherManagerDuration:;
+- (double)dispatcherManagerViewDidLoadDuration;
+- (void)setDispatcherManagerViewDidLoadDuration:;
+- (double)setupLeftContainerDuration;
+- (void)setSetupLeftContainerDuration:;
+- (double)setupRightContainerDuration;
+- (void)setSetupRightContainerDuration:;
+- (double)setupBottomContainerDuration;
+- (void)setSetupBottomContainerDuration:;
+- (void).cxx_destruct;
+@end

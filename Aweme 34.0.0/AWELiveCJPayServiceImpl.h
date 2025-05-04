@@ -1,0 +1,33 @@
+@interface AWELiveCJPayServiceImpl : NSObject
+@property (nonatomic) @? authCallBack;
+@property (nonatomic) AWELivePayDeskDelegate payDeskCallback;
+@property (nonatomic) <AWEYAPModuleService> payService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onResponse:;
+- (id)safeUrlBase64Encode:;
+- (id)safeUrlBase64Decode:;
+- (void)openH5CashDeskWithOrderInfo:merchantId:appId:cashDeskStyle:completion:;
+- (void)openH5ModalViewFrom:toUrl:;
+- (void)setPayService:;
+- (id)payService;
+- (void)openUniversalPayDeskWithParams:callback:;
+- (id)getComponentsWithURLString:;
+- (unsigned long long)liveResultTypeWith:;
+- (void)setPayDeskCallback:;
+- (id)payDeskCallback;
+- (void)setAuthCallBack:;
+- (id)authCallBack;
+- (unsigned long long)liveAuthCallbackTypeWith:;
+- (void)openWithdrawWithURL:;
+- (void)authYapila:callback:;
+- (void)preloadPayChannelInfoWithAppId:merchantId:userId:exts:;
+- (void)openAuthDeskWithParams:callBack:;
+- (void)openSetPasswordDeskWithParams:useNavigationController:callBack:;
+- (void)enableBOE:prod:;
+- (void)openPayDeskWithConfig:orderParams:openCallback:payCallback:;
+- (id)init;
+- (void).cxx_destruct;
+@end

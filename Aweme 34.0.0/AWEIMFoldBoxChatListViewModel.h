@@ -1,0 +1,33 @@
+@interface AWEIMFoldBoxChatListViewModel : NSObject
+@property (nonatomic) <IESIMConvBoxChatDataManagerProtocol> dataManager;
+@property (nonatomic) NSArray chatArray;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q cellEntryType;
+@property (nonatomic) <AWEIMFoldBoxChatListRefreshDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)chatArray;
+- (void)setChatArray:;
+- (void)removeChat:completion:;
+- (void)loadRemainingChatListWithCompletion:;
+- (long long)cellEntryType;
+- (void)didReloadChatList;
+- (void)didReloadChat:;
+- (void)didRemoveChat:;
+- (void)didInsertChat:;
+- (void)setCellEntryType:;
+- (void)__setupData;
+- (void)refreshEntranceData;
+- (void)notDisplayChat:completion:;
+- (long long)unreadCount;
+- (id)init;
+- (id)dataManager;
+- (id)delegate;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setDataManager:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

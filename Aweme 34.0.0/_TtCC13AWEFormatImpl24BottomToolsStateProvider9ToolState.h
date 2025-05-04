@@ -1,0 +1,2 @@
+@interface _TtCC13AWEFormatImpl24BottomToolsStateProvider9ToolState : _TtCs12_SwiftObject
+@end

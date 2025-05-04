@@ -1,0 +1,33 @@
+@interface AWEProtectEyesManager : NSObject
+@property (nonatomic) UIImage lutImage;
+@property (nonatomic) UIImage HDRlutImage;
+@property (nonatomic) BOOL eyeProtectionOn;
+@property (nonatomic) q protectEyesValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didUpdateIMSetting:source:currentModel:;
+- (BOOL)eyeProtectionOn;
+- (void)setEyeProtectionOn:;
+- (void)turnOffEyeProtectionModeIfNeeded;
+- (void)turnOnEyeProtectionModeWhenAppStartIfNeeded;
+- (BOOL)isABProtectEyes;
+- (id)lutImage;
+- (void)setProtectEyesValue:;
+- (long long)protectEyesValue;
+- (void)syncProtectEyesValueToServerValue:;
+- (void)updateLiveWithMode:;
+- (void)turnOnEyeProtectionModeIfNeeded:;
+- (void)updatePreotectEyesModeFromIMSeting:;
+- (void)updateProtectEyesModeFromStorage;
+- (void)traceEyeCareModeInfo:;
+- (void)updateProtectEyesMode:;
+- (void)turnOnEyeProtectionModeUnSave:;
+- (void)turnOffEyeProtectionModeUnSave;
+- (id)HDRlutImage;
+- (void)setLutImage:;
+- (void)setHDRlutImage:;
+- (void).cxx_destruct;
++ (id)shareManager;
+@end

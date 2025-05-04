@@ -1,0 +1,32 @@
+@interface AWEIMPrivateMsgSettingViewController : UIViewController
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray dataArray;
+@property (nonatomic) q currentSelectValue;
+@property (nonatomic) @? selectedItemBlock;
+@property (nonatomic) @? closePanelBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)initWithCurrentSelectValue:;
+- (void)setSelectedItemBlock:;
+- (void)setClosePanelBlock:;
+- (long long)currentSelectValue;
+- (id)closePanelBlock;
+- (void)setCurrentSelectValue:;
+- (id)selectedItemBlock;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)titleLabel;
+- (id)dataArray;
+- (void)setDataArray:;
+@end

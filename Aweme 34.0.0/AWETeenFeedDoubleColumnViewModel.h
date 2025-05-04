@@ -1,0 +1,32 @@
+@interface AWETeenFeedDoubleColumnViewModel : AWEBaseListViewModel
+@property (nonatomic) AWETeenHotListDataController dataController;
+@property (nonatomic) AWETeenFeedDoubleColumnSectionViewModel sectionViewModel;
+@property (nonatomic) q requestCount;
+@property (nonatomic) q dataCount;
+- (BOOL)canRefresh;
+- (void)fetchListData;
+- (void)loadMoreListData;
+- (void)setupViewModel;
+- (id)sectionViewModel;
+- (BOOL)isRequestOnAir;
+- (void)setSectionViewModel:;
+- (void)setDataController:;
+- (void)syncFromDataController;
+- (void)removeModelWithAwemeID:animated:;
+- (void)p_trackQualityColdStartCancelIfNeeded;
+- (void)p_addTrackParamsForModelList:;
+- (void)preloadCoverImageWithModels:;
+- (void)preloadAuthorAvatarWithModels:;
+- (void)preloadImagesWithURLs:;
+- (void)p_trackQualityColdStartErrorIfNeeded:;
+- (void)p_trackQualityColdStartSuccessIfNeeded;
+- (void)setRequestCount:;
+- (long long)requestCount;
+- (BOOL)isValidIndexPath:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (long long)dataCount;
+- (void)setDataCount:;
+- (id)dataController;
+@end

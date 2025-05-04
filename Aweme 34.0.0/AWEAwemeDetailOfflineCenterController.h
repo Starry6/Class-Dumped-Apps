@@ -1,0 +1,36 @@
+@interface AWEAwemeDetailOfflineCenterController : AWEAwemeNewDetailBaseController
+@property (nonatomic) q videoFinishCount;
+@property (nonatomic) q videoPlayCount;
+@property (nonatomic) NSMutableArray videoUniquePlayFinishItemArray;
+@property (nonatomic) NSMutableArray videoUniquePlayItemArray;
+@property (nonatomic) BOOL hasConfigEnable;
+@property (nonatomic) BOOL enableOfflineTrackerUpload;
+@property (nonatomic) double enterTime;
+@property (nonatomic) NSString exitMethod;
+- (void)setExitMethod:;
+- (id)exitMethod;
+- (long long)videoPlayCount;
+- (void)onVideoPlayStart:;
+- (void)recordConsumptionData;
+- (void)onVideoPlayEnded:;
+- (long long)videoFinishCount;
+- (void)setVideoFinishCount:;
+- (void)setVideoUniquePlayItemArray:;
+- (void)setVideoUniquePlayFinishItemArray:;
+- (BOOL)hasConfigEnable;
+- (void)setHasConfigEnable:;
+- (void)setEnableOfflineTrackerUpload:;
+- (BOOL)enableOfflineTrackerUpload;
+- (void)setVideoPlayCount:;
+- (id)videoUniquePlayItemArray;
+- (id)videoUniquePlayFinishItemArray;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)viewDidDisappear;
+- (void)appDidEnterBackground;
+- (void)appWillEnterForeground;
+- (double)enterTime;
+- (void)setEnterTime:;
+@end

@@ -1,0 +1,31 @@
+@interface AWELVideoEntranceInfoModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString tag;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q jumpType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (long long)jumpType;
+- (void)setJumpType:;
+- (id)anchorTypeStringForMetric;
+- (id)tag;
+- (id)icon;
+- (void)setTag:;
+- (id)extra;
+- (long long)type;
+- (void)setType:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)link;
+- (void)setTitle:;
+- (void)setLink:;
++ (id)iconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

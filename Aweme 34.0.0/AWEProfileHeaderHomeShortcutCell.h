@@ -1,0 +1,36 @@
+@interface AWEProfileHeaderHomeShortcutCell : UICollectionViewCell
+@property (nonatomic) AWEProfileHeaderHomeShortcutView shortcutView;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) AWEProfileContext profileContext;
+@property (nonatomic) <AWEProfileHeaderHomeShortcutCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)profileContext;
+- (void)updateProfileCompletion:hidePercentWhenCompleted:;
+- (void)showProfileInfoCompletionAnimation;
+- (void)containerViewChangeToSize:;
+- (id)padService;
+- (void)setProfileContext:;
+- (void)onTapGestureAction:;
+- (void)handleTapGestureWithLocation:;
+- (void)configWithHeaderContext:;
+- (id)shortcutView;
+- (void)updatePadUIIfNeededWithContainerWidth:;
+- (void)updateAddBtnYellowPointCount:;
+- (void)shortCutViewDidAppear;
+- (id)addFriendsDotType;
+- (long long)addFriendsDotNumber;
+- (BOOL)showingEditGoldIcon;
+- (BOOL)showingAddGoldIcon;
+- (void)setShortcutView:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)languageDidChange;
+@end

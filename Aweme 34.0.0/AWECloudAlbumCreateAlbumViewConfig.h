@@ -1,0 +1,31 @@
+@interface AWECloudAlbumCreateAlbumViewConfig : NSObject
+@property (nonatomic) NSString albumPanelTitle;
+@property (nonatomic) NSString albumName;
+@property (nonatomic) NSString albumPlaceHolder;
+@property (nonatomic) NSString btnTitle;
+@property (nonatomic) q albumNameLength;
+@property (nonatomic) BOOL needShowBtnImage;
+@property (nonatomic) @? btnClicked;
+@property (nonatomic) @? getImageAsynBlock;
+@property (nonatomic) @? asynSetImageForView;
+- (id)btnClicked;
+- (void)setBtnClicked:;
+- (id)btnTitle;
+- (void)setBtnTitle:;
+- (id)albumPanelTitle;
+- (void)setAlbumPanelTitle:;
+- (id)albumPlaceHolder;
+- (void)setAlbumPlaceHolder:;
+- (long long)albumNameLength;
+- (void)setAlbumNameLength:;
+- (BOOL)needShowBtnImage;
+- (void)setNeedShowBtnImage:;
+- (id)getImageAsynBlock;
+- (void)setGetImageAsynBlock:;
+- (id)asynSetImageForView;
+- (void)setAsynSetImageForView:;
+- (id)albumName;
+- (id)init;
+- (void)setAlbumName:;
+- (void).cxx_destruct;
+@end

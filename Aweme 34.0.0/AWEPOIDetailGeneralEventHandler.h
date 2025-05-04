@@ -1,0 +1,35 @@
+@interface AWEPOIDetailGeneralEventHandler : NSObject
+@property (nonatomic) UIViewController baseViewController;
+@property (nonatomic) AWEModalTransitionDelegate transitionDelegate;
+@property (nonatomic) AWETranslationTransitionController nextTranslationTransitionDelegate;
+@property (nonatomic) NSString uploadImageBtnEnterMethod;
+@property (nonatomic) DitoPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)rx_store:didSetWithModule:;
+- (id)poiDetail;
+- (id)constData;
+- (void)p_bindActionAndState;
+- (void)p_gotoMapViewController;
+- (void)p_openImageUploadPreviewViewController:;
+- (void)p_createVideoWithContext:;
+- (void)p_uploadHeaderImageWithContext:;
+- (void)imagePicker:didSelectImages:assetModels:;
+- (void)photoUploaderDidFinishUploadingImages:;
+- (id)nextTranslationTransitionDelegate;
+- (void)setNextTranslationTransitionDelegate:;
+- (id)uploadImageBtnEnterMethod;
+- (void)setUploadImageBtnEnterMethod:;
+- (id)store;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setTransitionDelegate:;
+- (id)transitionDelegate;
+- (id)baseViewController;
+- (void)setBaseViewController:;
+- (id)initWithBaseViewController:;
++ (void)p_uploadHeaderImageWithContext:baseVC:delegate:transitionDelegate:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEAccountPrivacyAndUserItemAlertManager : NSObject
+@property (nonatomic) AWEAccountPrivacyAndUserItemAlertView alertView;
+@property (nonatomic) BOOL isAlertShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (void)showWithCloseCallback:;
+- (BOOL)hasAgreed;
+- (void)showQuitBasicModeAlert;
+- (void)showQuitBasicModeAlertWithAgreeBlock:cancelBlock:;
+- (void)showQuitAppInBasicModeAlertWithAgreeBlock:cancelBlock:;
+- (void)markAlertAgreed;
+- (void)basicModeDidChange:;
+- (BOOL)isAlertShowing;
+- (void)setIsAlertShowing:;
+- (BOOL)shouldConfigSelas;
+- (void)showIfNeededAndDecideHandler:;
+- (void)onceGetStorageAlertAgreedKey;
+- (void)setPrivacyAlertAgreedKey;
+- (id)init;
+- (void)dealloc;
+- (id)alertView;
+- (void)setAlertView:;
+- (void).cxx_destruct;
+- (BOOL)shouldShow;
+- (void)showIfNeeded;
++ (id)sharedInstance;
+@end

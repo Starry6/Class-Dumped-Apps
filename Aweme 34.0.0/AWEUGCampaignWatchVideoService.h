@@ -1,0 +1,37 @@
+@interface AWEUGCampaignWatchVideoService : NSObject
+@property (nonatomic) NSPointerArray delegates;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSMutableArray hasWatchedVideoIdArray;
+@property (nonatomic) Q currentPlayStatus;
+@property (nonatomic) AWEAwemeModel currentAwemeModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentAwemeModel;
+- (void)setCurrentAwemeModel:;
+- (void)trackLogWithKey:message:;
+- (void)feedTableViewControllerWillPlayAweme:;
+- (void)updateWithFeedTableVC:;
+- (void)pauseTaskTimerWithAweme:playStatus:scene:;
+- (void)startTaskTimerWithAweme:playStatus:scene:;
+- (void)setCurrentPlayStatus:;
+- (unsigned long long)currentPlayStatus;
+- (void)updateCurrentAwemeModel:playStatus:;
+- (void)sendDelegateStartMessage;
+- (void)sendDelegatePauseMessage;
+- (id)hasWatchedVideoIdArray;
+- (void)updateWithDetaiTabVC:;
+- (void)addHasWatchVideoId:;
+- (BOOL)checkIfCanStartTaskWithVideoId:;
+- (void)setHasWatchedVideoIdArray:;
+- (void)setScene:;
+- (id)init;
+- (id)delegates;
+- (id)scene;
+- (void)setDelegates:;
+- (void)addDelegate:;
+- (void).cxx_destruct;
+- (void)setupNotification;
++ (id)sharedInstance;
+@end

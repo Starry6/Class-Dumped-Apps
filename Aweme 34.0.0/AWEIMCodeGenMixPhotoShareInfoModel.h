@@ -1,0 +1,34 @@
+@interface AWEIMCodeGenMixPhotoShareInfoModel : AWEBaseDataModel
+@property (nonatomic) q shareTaskId;
+@property (nonatomic) q styleType;
+@property (nonatomic) NSString styleId;
+@property (nonatomic) NSString styleTitle;
+@property (nonatomic) NSString styleUrl;
+@property (nonatomic) q mixNumUpperLimit;
+@property (nonatomic) AWEIMCodeGenPhotoInfoModel photoModel;
+@property (nonatomic) AWEIMCodeGenLoraSlotDetailModel loraSlotDetailModel;
+@property (nonatomic) q shareTime;
+@property (nonatomic) q userID;
+- (id)photoModel;
+- (long long)shareTaskId;
+- (void)setShareTaskId:;
+- (long long)mixNumUpperLimit;
+- (void)setMixNumUpperLimit:;
+- (void)setStyleType:;
+- (long long)shareTime;
+- (void)setShareTime:;
+- (id)styleUrl;
+- (void)setStyleUrl:;
+- (id)styleTitle;
+- (void)setStyleTitle:;
+- (void)setPhotoModel:;
+- (id)loraSlotDetailModel;
+- (void)setLoraSlotDetailModel:;
+- (long long)userID;
+- (long long)styleType;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (id)styleId;
+- (void)setStyleId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

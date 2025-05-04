@@ -1,0 +1,30 @@
+@interface AWEPlayInteractionExposedCommerceController : AWEPlayInteractionNewBaseController
+@property (nonatomic) NSString componentsPriorityType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHide:;
+- (void)popUpAnchorView;
+- (void)showRedpacketAnimation;
+- (void)animateLeftBottomByXOffset:yOffset:alpha:;
+- (void)showDouPlusEntryGuideAnimation;
+- (void)p_prepareForDisplay;
+- (void)promptCardAppearWithOffset:;
+- (void)promptCardDisAppear;
+- (BOOL)checkToShowCardForCurrentPriorityComponent:;
+- (id)componentsPriorityType;
+- (void)setComponentsPriorityType:;
+- (void)animateLeftBottomByWidth:height:xOffset:yOffset:alpha:duration:exceptElements:completionBlock:;
+- (void)executeTransform:alpha:exceptElements:;
+- (void)updateComponentsPriorityType:isReCalculate:;
+- (void)setModel:;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)viewDidAppear;
+- (BOOL)isInteracting;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

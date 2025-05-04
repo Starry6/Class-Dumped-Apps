@@ -1,0 +1,30 @@
+@interface AWEDeepLinkPathManager : NSObject
+@property (nonatomic) NSMutableDictionary pathInfoDic;
+@property (nonatomic) NSMutableArray pathInfoList;
+@property (nonatomic) @? short2longResponseBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pathInfoDic;
+- (id)pathInfoList;
+- (id)short2longResponseBlock;
+- (void)setShort2longResponseBlock:;
+- (void)setPathInfoDic:;
+- (void).cxx_destruct;
+- (void)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:;
++ (void)unwrapShortURLString:completion:;
++ (void)registerPath:toHandler:;
++ (void)registerPath:rangeOffset:limitHost:toHandler:;
++ (void)registerPath:rangeOffset:toHandler:;
++ (void)registerPaths:toHandler:;
++ (void)registCustomDeepLinkPaths;
++ (id)defaultAllowedHostList;
++ (void)registerPath:rangeOffset:limitHost:hostList:toHandler:;
++ (id)pathFromURL:;
++ (BOOL)isHost:inAllowedList:;
++ (id)subPathFromPath:offset:;
++ (BOOL)isDomain:containingSubDomain:;
++ (id)handleURL:;
++ (id)sharedInstance;
+@end

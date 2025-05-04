@@ -1,0 +1,37 @@
+@interface AWETaskProgressView : UIView
+@property (nonatomic) UIView borderView;
+@property (nonatomic) UIView bgMaskView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) MBCircularProgressBarView circleProgressBar;
+@property (nonatomic) UILabel autoRetryPublishFailLabel;
+@property (nonatomic) AWEPublishBaseTask task;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) DUXActionSheet actionSheet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)bgMaskView;
+- (void)setBgMaskView:;
+- (id)circleProgressBar;
+- (void)beginPublish;
+- (void)setCircleProgressBar:;
+- (void)configPublishTask:;
+- (void)updateSubviewHidden:;
+- (id)autoRetryPublishFailLabel;
+- (void)setAutoRetryPublishFailLabel:;
+- (void)setTask:;
+- (void)updateProgress;
+- (void)dealloc;
+- (id)task;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (id)borderView;
+- (void)setBorderView:;
+- (void)setActionSheet:;
+- (id)actionSheet;
++ (void)generateDraftCover:completion:;
+@end

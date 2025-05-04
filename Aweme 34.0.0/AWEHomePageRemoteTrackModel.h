@@ -1,0 +1,34 @@
+@interface AWEHomePageRemoteTrackModel : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) q duration;
+@property (nonatomic) NSString previousModuleType;
+@property (nonatomic) NSString previousBusinessType;
+@property (nonatomic) NSString previousBusinessId;
+@property (nonatomic) NSArray consumedBusinessIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)previousModuleType;
+- (void)setPreviousModuleType:;
+- (id)previousBusinessType;
+- (void)setPreviousBusinessType:;
+- (id)previousBusinessId;
+- (void)setPreviousBusinessId:;
+- (id)consumedBusinessIDs;
+- (void)setConsumedBusinessIDs:;
+- (void)setGroupID:;
+- (id)groupID;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (long long)duration;
+- (id)authorID;
+- (void)setAuthorID:;
+@end

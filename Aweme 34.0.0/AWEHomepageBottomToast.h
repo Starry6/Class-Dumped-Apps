@@ -1,0 +1,36 @@
+@interface AWEHomepageBottomToast : MTLModel
+@property (nonatomic) NSNumber toastType;
+@property (nonatomic) NSString toast;
+@property (nonatomic) NSString jumpURLTitle;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) Q groupId;
+@property (nonatomic) Q interval;
+@property (nonatomic) Q limit;
+@property (nonatomic) Q typeLimit;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpURL;
+- (void)setJumpURL:;
+- (id)toastType;
+- (void)setToastType:;
+- (id)jumpURLTitle;
+- (void)setJumpURLTitle:;
+- (unsigned long long)typeLimit;
+- (void)setTypeLimit:;
+- (void)setGroupId:;
+- (unsigned long long)groupId;
+- (void)setIconURL:;
+- (unsigned long long)interval;
+- (unsigned long long)limit;
+- (void)setLimit:;
+- (id)iconURL;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
++ (id)iconURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

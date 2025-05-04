@@ -1,0 +1,33 @@
+@interface AWEECShoppingAIGuideInputView : UIView
+@property (nonatomic) NSMutableDictionary selectedOptions;
+@property (nonatomic) AWEECShoppingAIGuideContext context;
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) UIButton cleanButton;
+@property (nonatomic) AWEGrowingTextView textView;
+@property (nonatomic) UIView roundContainer;
+@property (nonatomic) NSDictionary queryExtra;
+@property (nonatomic) UIButton createButton;
+- (void)setCleanButton:;
+- (id)cleanButton;
+- (void)setQueryExtra:;
+- (id)roundContainer;
+- (void)updateBottomBar;
+- (BOOL)hideCreateButton;
+- (void)updateInputKey:value:;
+- (void)clearSelectedOptions;
+- (void)setRoundContainer:;
+- (id)queryExtra;
+- (id)textView;
+- (void)setTextView:;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setupUI;
+- (id)sendButton;
+- (void)setSendButton:;
+- (id)createButton;
+- (id)selectedOptions;
+- (void)setSelectedOptions:;
+- (void)setCreateButton:;
+@end

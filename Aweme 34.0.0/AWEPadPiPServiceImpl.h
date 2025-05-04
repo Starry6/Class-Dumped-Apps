@@ -1,0 +1,35 @@
+@interface AWEPadPiPServiceImpl : NSObject
+@property (nonatomic) NSArray internalPiPWhiteList;
+@property (nonatomic) NSArray internalPiPBlackList;
+@property (nonatomic) NSArray backgroundPiPWhiteList;
+@property (nonatomic) NSDictionary whiteListSceneDict;
+@property (nonatomic) q closeNotificationByHand;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL padIMPipSwitch;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)performPadPiPWithOptions:execute:;
+- (void)performPadIMPipExecute:;
+- (void)setCloseNotificationByHand:;
+- (long long)closeNotificationByHand;
+- (void)notificationDidDismiss:;
+- (void)notificationDidTapInteractiveComponent:;
+- (BOOL)IMPiPDefaultMode;
+- (id)internalPiPWhiteList;
+- (id)internalPiPBlackList;
+- (id)backgroundPiPWhiteList;
+- (id)whiteListSceneDict;
+- (void)showGoSettingInAppNoti;
+- (BOOL)padIMPipSwitch;
+- (void)setPadIMPipSwitch:;
+- (void)setInternalPiPWhiteList:;
+- (void)setInternalPiPBlackList:;
+- (void)setBackgroundPiPWhiteList:;
+- (void)setWhiteListSceneDict:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

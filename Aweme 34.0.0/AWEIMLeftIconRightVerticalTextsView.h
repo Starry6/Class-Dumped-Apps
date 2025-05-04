@@ -1,0 +1,38 @@
+@interface AWEIMLeftIconRightVerticalTextsView : UIView
+@property (nonatomic) AWEIMLeftIconRightVerticalTextsViewModel model;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView iconArea;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel topFirstText;
+@property (nonatomic) UILabel topSecondText;
+@property (nonatomic) UILabel bottomText;
+@property (nonatomic) UILabel bottomHintText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (void)onCardTap;
+- (void)addSubviews;
+- (void)addGestureRecognizers;
+- (id)iconArea;
+- (id)topFirstText;
+- (id)topSecondText;
+- (id)bottomHintText;
+- (void)setIconArea:;
+- (void)setTopFirstText:;
+- (void)setTopSecondText:;
+- (void)setBottomHintText:;
+- (void)setModel:;
+- (id)init;
+- (id)icon;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (id)model;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldRequireFailureOfGestureRecognizer:;
+- (id)bottomText;
+- (void)setBottomText:;
+- (void)addLayoutConstraints;
+@end

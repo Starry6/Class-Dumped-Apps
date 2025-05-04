@@ -1,0 +1,37 @@
+@interface AWEProfileDynamicTextManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)postLayoutSettingDualColumnTip;
++ (id)postLayoutSettingTip;
++ (id)postLayoutSettingTriColumnTip;
++ (id)favoritePrivacyDetail;
++ (id)watchHistoryUserTip;
++ (id)watchHistoryVideoTip;
++ (id)watchHistoryLiveTip;
++ (id)newFavoriteFolderPublicTip;
++ (id)privateFavoriteFolderPublicTip;
++ (id)publicFavoriteFolderPrivateTip;
++ (id)privateFavoriteFolderShareTip;
++ (id)favoriteFolderPrivacyDetail;
++ (id)likeBatchModifyTip;
++ (id)favoriteBatchModifyTip;
++ (id)getTextWithSettingKey:defaultText:;
++ (id)profileDynamicTextSettings;
++ (id)selectDynamicCoverTip;
++ (id)selectDynamicCoverPrivateAccountTip;
++ (id)defaultNickName;
++ (id)defaultEmptySignatureTip;
++ (id)defaultFollowSignatureTip;
++ (id)defaultRIPSignatureTip;
++ (id)editTextViewPlaceHolder;
++ (id)editSpecialPersonNotice;
++ (id)nameEditPlaceHolder;
++ (id)nicknameEditPagePlaceHolder;
++ (id)signatureEditPlaceHolder;
++ (id)genderEditPlaceHolder;
++ (id)birthdayEditPlaceHolder;
++ (id)locationEditPlaceHolder;
++ (id)schoolEditPlaceHolder;
+@end

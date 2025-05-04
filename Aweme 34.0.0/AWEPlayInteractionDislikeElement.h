@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionDislikeElement : AWEPlayInteractionRightElement
+@property (nonatomic) AWEPlayInteractionDislikeElementViewModel viewModel;
+@property (nonatomic) AWEFeedVideoButton dislikeButton;
+@property (nonatomic) UIView view;
+@property (nonatomic) UIButton<AWEFeedVideoButtonProtocol> button;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (id)aAWEPadModuleAdapter;
+- (void)buttonClicked;
+- (void)viewDidChangeBreakPoint;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (id)dislikeButton;
+- (void)setDislikeButton:;
+- (void)_onAwemeDeleteNotification:;
+- (void)setupPadElementSizeWithConfig:;
+- (void)updateDislikeImage;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)updateLayout;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)button;
++ (BOOL)shouldActiveWithData:context:;
++ (Class)aAWEPadModuleAdapterClass;
++ (id)activateInfoWithContext:;
++ (BOOL)isInteractionOptEnable;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMTaskNaviBarView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIView indexLineView;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) AWEIMTaskCardNaviDatasource datsource;
+@property (nonatomic) AWEIMTaskPlatformContext context;
+@property (nonatomic) <AWEIMTaskNaviBarViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (void)__addSubviews;
+- (id)__createCollectionView:cellClass:frame:;
+- (void)setDatsource:;
+- (void)setIndexLineView:;
+- (id)indexLineView;
+- (id)datsource;
+- (void)renderDatasource:context:;
+- (id)collectionView;
+- (id)init;
+- (id)delegate;
+- (void)setCollectionView:;
+- (void)setScrollProgress:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+@end

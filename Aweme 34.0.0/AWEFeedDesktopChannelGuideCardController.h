@@ -1,0 +1,37 @@
+@interface AWEFeedDesktopChannelGuideCardController : AWEBaseController
+@property (nonatomic) AWEUGDesktopChannelGuideInstallConfigModel installConfig;
+@property (nonatomic) AWEUGDesktopChannelGuideTrackerInfoModel trackerInfo;
+@property (nonatomic) BOOL isCancelClicked;
+@property (nonatomic) BOOL isInstallClicked;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWESpecialCardDelegate> cardDelegate;
+@property (nonatomic) <AWESpecialCardContextProtocol> cardContext;
+- (void)showAlineCardDesktopChannelGuideWithModel:extraParams:;
+- (id)cardContext;
+- (void)setCardContext:;
+- (id)cardDelegate;
+- (void)setCardDelegate:;
+- (void)cardDidAppear:withAweme:;
+- (void)cardDidDisappear:withAweme:;
+- (void)cardTemplateButtonClickWithParams:;
+- (void)setTrackerInfo:;
+- (void)handleRawData:pitayaModel:;
+- (void)setIsCancelClicked:;
+- (id)buildCommonParams;
+- (void)setIsInstallClicked:;
+- (id)installConfig;
+- (BOOL)isCancelClicked;
+- (BOOL)isInstallClicked;
+- (id)formatActionScheme:;
+- (void)setInstallConfig:;
+- (void)setModel:;
+- (id)trackerInfo;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)model;
+- (void).cxx_destruct;
+@end

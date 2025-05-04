@@ -1,0 +1,36 @@
+@interface AWEIMStrangerTracker : NSObject
+@property (nonatomic) NSMutableSet trackCells;
+@property (nonatomic) <AWEIMStrangerTrackeDelegate> delegate;
+- (void)trackEnterChatEvent:;
+- (void)trackClickStrangerCell:;
+- (BOOL)allowTrack:;
+- (void)addTrackCellWithModel:;
+- (void)trackEventWithDisplayCell:;
+- (void)trackEnterProfileEvent:from:;
+- (void)trackQuickSettingClearClick:;
+- (void)trackMarkAllReadPerformanceWithTime:;
+- (void)trackClickReportEvent:;
+- (void)trackClickUnBlockEvent:;
+- (void)trackClickConfirmBlockEvent:;
+- (void)trackClickBlockEvent:;
+- (void)trackShowRevealViewEvent:;
+- (void)trackTabClick:;
+- (void)setTrackCells:;
+- (id)trackCells;
+- (id)getFirstLabelWithViewModel:;
+- (id)getSecondLabelWithViewModel:;
+- (id)getRelationTagWithChatModel:;
+- (id)getToRelationTagWithChatModel:;
+- (id)labelsParamsWithVM:;
+- (void)removeTrackCellWithModel:;
+- (void)trackDeleteChatEvent:indexPath:session:enterMethod:;
+- (void)bizTrackEnterProfileEvent:enterMethod:;
+- (void)trackClickTrash;
+- (void)trackShowTrashBox;
+- (void)trackQuickSettingPanelShow;
+- (void)trackQuickSettingItemClick:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

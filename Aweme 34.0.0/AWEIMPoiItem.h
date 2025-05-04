@@ -1,0 +1,38 @@
+@interface AWEIMPoiItem : NSObject
+@property (nonatomic) BDPoiItem bdPoiItem;
+@property (nonatomic) AWEPOIInfoModel awePoiItem;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} distanceLabelFrame;
+@property (nonatomic) NSString formattedDistance;
+@property (nonatomic) NSString name;
+@property (nonatomic) {CLLocationCoordinate2D=dd} gcjCoordinate2D;
+@property (nonatomic) NSString formattedAddress;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q searchDistanceOrder;
+@property (nonatomic) q mapDistanceOrder;
+@property (nonatomic) q distance;
+- (id)getContentDict;
+- (void)setGcjCoordinate2D:;
+- (void)setAwePoiItem:;
+- (void)setBdPoiItem:;
+- (id)bdPoiItem;
+- (id)awePoiItem;
+- (id)gcjCoordinate2D;
+- (id)distanceLabelFrame;
+- (void)setDistanceLabelFrame:;
+- (long long)searchDistanceOrder;
+- (void)setSearchDistanceOrder:;
+- (long long)mapDistanceOrder;
+- (void)setMapDistanceOrder:;
+- (void)setDistance:;
+- (long long)distance;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)name;
+- (id)formattedAddress;
+- (id)formattedDistance;
+- (void)setFormattedDistance:;
++ (id)defaultDetailAddress:;
++ (id)itemWithGCJ02Coordinate:;
++ (id)itemWithBDPoiItem:;
++ (id)itemWithAWEPOIInfoModel:;
+@end

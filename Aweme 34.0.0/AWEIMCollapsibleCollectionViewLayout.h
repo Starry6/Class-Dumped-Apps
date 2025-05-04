@@ -1,0 +1,36 @@
+@interface AWEIMCollapsibleCollectionViewLayout : UICollectionViewLayout
+@property (nonatomic) BOOL wasCollapsed;
+@property (nonatomic) NSMutableArray previousAttributes;
+@property (nonatomic) NSMutableArray currentAttributes;
+@property (nonatomic) {CGSize=dd} contentSize;
+@property (nonatomic) BOOL collapsed;
+@property (nonatomic) q numberOfOverlappedCellRevealingWhenCollapsed;
+@property (nonatomic) double revealingSpaceForOverlappedCell;
+@property (nonatomic) <AWEIMCollapsibleCollectionViewLayoutDelegate> delegate;
+- (void)setNumberOfOverlappedCellRevealingWhenCollapsed:;
+- (void)setRevealingSpaceForOverlappedCell:;
+- (void)setWasCollapsed:;
+- (BOOL)wasCollapsed;
+- (id)attributesForCollapsingStatus:getContentSizeY:;
+- (long long)numberOfOverlappedCellRevealingWhenCollapsed;
+- (double)revealingSpaceForOverlappedCell;
+- (void)prepareLayout;
+- (id)finalLayoutAttributesForDisappearingItemAtIndexPath:;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)init;
+- (void)setContentSize:;
+- (id)delegate;
+- (id)initialLayoutAttributesForAppearingItemAtIndexPath:;
+- (id)contentSize;
+- (id)collectionViewContentSize;
+- (void)setCollapsed:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (BOOL)isCollapsed;
+- (id)currentAttributes;
+- (void)setCurrentAttributes:;
+- (id)previousAttributes;
+- (void)setPreviousAttributes:;
+@end

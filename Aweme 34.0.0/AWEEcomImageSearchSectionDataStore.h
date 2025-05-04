@@ -1,0 +1,33 @@
+@interface AWEEcomImageSearchSectionDataStore : NSObject
+@property (nonatomic) AWEEcomSearchResultTabItem tabItem;
+@property (nonatomic) AWEEcomImageSearchSectionParams sectionParams;
+@property (nonatomic) q shownCount;
+@property (nonatomic) q index;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel moreButtonModel;
+@property (nonatomic) NSMutableArray shownItems;
+@property (nonatomic) NSMutableArray cachedItems;
+- (id)diffIdentifier;
+- (BOOL)isEqualToDiffableObject:;
+- (long long)shownCount;
+- (void)setShownCount:;
+- (id)handleResponseItems:;
+- (id)tabItem;
+- (void)setSectionParams:;
+- (id)sectionParams;
+- (void)noMoreData;
+- (BOOL)needLoadMore;
+- (void)showCachedModel;
+- (id)shownItems;
+- (void)setTabItem:;
+- (void)setShownItems:;
+- (void)setCachedItems:;
+- (id)initWithTabInfoItem:;
+- (id)moreButtonModel;
+- (id)cachedItems;
+- (void)setMoreButtonModel:;
+- (void)setIndex:;
+- (long long)index;
+- (void)clear;
+- (void).cxx_destruct;
++ (id)dataStoreArrayWithTabItems:;
+@end

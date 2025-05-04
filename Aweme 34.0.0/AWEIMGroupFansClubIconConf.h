@@ -1,0 +1,35 @@
+@interface AWEIMGroupFansClubIconConf : AWEBaseApiModel
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) q level;
+@property (nonatomic) NSString lightUpUrl;
+@property (nonatomic) NSString unLightUpUrl;
+@property (nonatomic) NSString darkLightUpUrl;
+@property (nonatomic) NSString darkUnLightUpUrl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lightUpUrl;
+- (id)unLightUpUrl;
+- (id)darkLightUpUrl;
+- (id)darkUnLightUpUrl;
+- (void)setLightUpUrl:;
+- (void)setUnLightUpUrl:;
+- (void)setDarkLightUpUrl:;
+- (void)setDarkUnLightUpUrl:;
+- (void)setLevel:;
+- (long long)level;
+- (void).cxx_destruct;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)lightUpUrl;
++ (id)unLightUpUrl;
++ (id)darkLightUpUrl;
++ (id)darkUnLightUpUrl;
++ (id)tableName;
++ (id)level;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWEPostPageTagRecommendHandler : NSObject
+@property (nonatomic) NSObject fetchRecommendHashtagSignal;
+@property (nonatomic) NSString didClickedHashTagSignal;
+@property (nonatomic) q hashtagButtonDidClickSiganl;
+@property (nonatomic) q atButtonDidClickSiganl;
+@property (nonatomic) q switchInputButtonDidClickSiganl;
+@property (nonatomic) <AWEPostPageContext> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindServices:;
+- (id)fetchRecommendHashtagSignal;
+- (id)didClickedHashTagSignal;
+- (long long)hashtagButtonDidClickSiganl;
+- (long long)atButtonDidClickSiganl;
+- (long long)switchInputButtonDidClickSiganl;
+- (void)sendDidClickedHashTagSignal:;
+- (void)sendHashTagButtonDidClick;
+- (void)sendAtButtonDidClick;
+- (void)sendFetchRecommendHashtagSignal:model:error:;
+- (void)setFetchRecommendHashtagSignal:;
+- (void)setDidClickedHashTagSignal:;
+- (void)setHashtagButtonDidClickSiganl:;
+- (void)setAtButtonDidClickSiganl:;
+- (void)setSwitchInputButtonDidClickSiganl:;
+- (void).cxx_destruct;
+- (id)context;
++ (void)_aweLazyRegisterPostPage;
+@end

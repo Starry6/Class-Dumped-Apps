@@ -1,0 +1,33 @@
+@interface AWEECMallBubbleRecord : MTLModel
+@property (nonatomic) NSString typeStr;
+@property (nonatomic) q msgType;
+@property (nonatomic) q msgSubType;
+@property (nonatomic) NSString msgUniqId;
+@property (nonatomic) double msgShowTime;
+@property (nonatomic) q todayShowCount;
+@property (nonatomic) q totalShowCount;
+@property (nonatomic) NSArray last30DaysRecordArr;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTypeStr:;
+- (void)setTotalShowCount:;
+- (void)setMsgSubType:;
+- (void)setMsgUniqId:;
+- (id)msgUniqId;
+- (long long)msgSubType;
+- (double)msgShowTime;
+- (long long)todayShowCount;
+- (long long)totalShowCount;
+- (id)last30DaysRecordArr;
+- (void)setLast30DaysRecordArr:;
+- (void)setMsgShowTime:;
+- (void)setTodayShowCount:;
+- (void).cxx_destruct;
+- (id)typeStr;
+- (long long)msgType;
+- (void)setMsgType:;
++ (id)last30DaysRecordArrJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

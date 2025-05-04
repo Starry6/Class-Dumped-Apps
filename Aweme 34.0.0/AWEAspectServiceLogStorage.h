@@ -1,0 +1,31 @@
+@interface AWEAspectServiceLogStorage : NSObject
+@property (nonatomic) NSString logDirectory;
+@property (nonatomic) NSString logFilePath;
+@property (nonatomic) NSMutableString cache;
+@property (nonatomic) NSObject<OS_dispatch_queue> processingQueue;
+@property (nonatomic) BOOL isFeedReadyFileWritten;
+@property (nonatomic) BOOL hasDelayFileWriteTask;
+- (void)putLog:withContent:;
+- (void)processing:;
+- (BOOL)isFeedReadyFileWritten;
+- (BOOL)hasDelayFileWriteTask;
+- (void)setHasDelayFileWriteTask:;
+- (void)appendCacheToLogFile;
+- (void)setLogDirectory:;
+- (void)sortOutLogFiles:;
+- (BOOL)isThreeDaysAgo:withTimeStamp:;
+- (void)triggerFileWriteWhenFeedReady;
+- (void)setCache:;
+- (id)processingQueue;
+- (void)setProcessingQueue:;
+- (id)cache;
+- (id)init;
+- (id)logDirectory;
+- (void).cxx_destruct;
+- (BOOL)setupLogFile;
+- (id)logFilePath;
+- (BOOL)createDirectoryIfNeeded:;
+- (void)setLogFilePath:;
++ (id)sharedLogStorage;
++ (BOOL)logEnabled;
+@end

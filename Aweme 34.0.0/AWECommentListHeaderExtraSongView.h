@@ -1,0 +1,35 @@
+@interface AWECommentListHeaderExtraSongView : UIView
+@property (nonatomic) AWEMusicModel model;
+@property (nonatomic) UIImageView albumImageView;
+@property (nonatomic) UIImageView albumBackView;
+@property (nonatomic) UIImageView albumPlayView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEInsetsLabel tagLabel;
+@property (nonatomic) UILabel authorLabel;
+@property (nonatomic) BOOL isBGColorWhite;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsBGColorWhite:;
+- (BOOL)isBGColorWhite;
+- (double)customViewHeightInCommentListHeader;
+- (void)setAuthorLabel:;
+- (id)authorLabel;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (id)albumBackView;
+- (id)albumPlayView;
+- (id)initWithMusicModel:;
+- (void)setAlbumBackView:;
+- (void)setAlbumPlayView:;
+- (void)setModel:;
+- (void)refreshUI;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)albumImageView;
+- (void)setAlbumImageView:;
+- (void)_setupUI;
+@end

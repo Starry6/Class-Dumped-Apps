@@ -1,0 +1,3 @@
+@interface AWECommentMediaFeedSwfitImpl.CommentMediaFeedPlayInteractionLikeElement : AWECommentMediaFeedSwfitImpl.CommentMediaFeedPlayInteractionBaseElement
+- (void).cxx_destruct;
+@end

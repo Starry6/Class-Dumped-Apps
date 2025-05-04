@@ -1,0 +1,35 @@
+@interface AWEOpenAuthInfoUserDataV4 : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString screenName;
+@property (nonatomic) NSString avatarUrl;
+@property (nonatomic) BOOL flipchatConceal;
+@property (nonatomic) BOOL toutiaoConceal;
+@property (nonatomic) BOOL weiboConceal;
+@property (nonatomic) BOOL wxConceal;
+@property (nonatomic) BOOL qqConceal;
+@property (nonatomic) BOOL login;
+@property (nonatomic) BOOL needBindMobile;
+- (void)setAvatarUrl:;
+- (id)avatarUrl;
+- (BOOL)flipchatConceal;
+- (void)setFlipchatConceal:;
+- (BOOL)toutiaoConceal;
+- (void)setToutiaoConceal:;
+- (BOOL)weiboConceal;
+- (void)setWeiboConceal:;
+- (BOOL)wxConceal;
+- (void)setWxConceal:;
+- (BOOL)qqConceal;
+- (void)setQqConceal:;
+- (BOOL)needBindMobile;
+- (void)setNeedBindMobile:;
+- (void).cxx_destruct;
+- (void)setLogin:;
+- (BOOL)login;
+- (id)screenName;
+- (void)setScreenName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

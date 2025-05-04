@@ -1,0 +1,31 @@
+@interface AWEOriginalSoundTrackLocalTrackPage : NSObject
+@property (nonatomic) NSMutableArray mediaList;
+@property (nonatomic) NSString cursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) Q showCount;
+@property (nonatomic) BOOL canShowLoadMoreLabel;
+@property (nonatomic) NSString queueId;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) BOOL footerRequesting;
+- (id)mediaList;
+- (void)setMediaList:;
+- (void)setQueueId:;
+- (BOOL)canShowLoadMoreLabel;
+- (void)setCanShowLoadMoreLabel:;
+- (BOOL)footerRequesting;
+- (void)setFooterRequesting:;
+- (id)cursor;
+- (id)init;
+- (void)setHasMore:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)queueId;
+- (void)setShowCount:;
+- (unsigned long long)showCount;
+@end

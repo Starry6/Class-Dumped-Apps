@@ -1,0 +1,36 @@
+@interface AWEUGPendantScrollFeedService : NSObject
+@property (nonatomic) <AWEUGPendantTaskStatusProtocol> taskStatusTarget;
+@property (nonatomic) q currentViewCount;
+@property (nonatomic) q countOfDisappear;
+@property (nonatomic) <AWEUGPendantUIProtocol> pendant;
+@property (nonatomic) <AWEUGPendantScrollFeedProtocol> pendantManager;
+@property (nonatomic) AWEAwemeModel currentAwemeModel;
+@property (nonatomic) BOOL isInProcess;
+- (id)currentAwemeModel;
+- (id)pendant;
+- (void)setPendant:;
+- (id)pendantManager;
+- (void)setPendantManager:;
+- (void)setCurrentAwemeModel:;
+- (void)feedTableViewControllerWillPlayAweme:;
+- (void)updateWithFeedTableVC:;
+- (void)bindTaskStatusTarget:;
+- (void)bindPendant:;
+- (long long)currentViewCount;
+- (id)taskStatusTarget;
+- (void)setCurrentViewCount:;
+- (void)checkIfNeedFold;
+- (void)setTaskStatusTarget:;
+- (void)updateCountOfDisappear:;
+- (void)setCountOfDisappear:;
+- (long long)countOfDisappear;
+- (void)bindPendantStatusManager:;
+- (void)setIsInProcess:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)isInProcess;
+- (void)stop;
+- (void)start;
+- (void)setupNotification;
+@end

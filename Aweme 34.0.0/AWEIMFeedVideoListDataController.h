@@ -1,0 +1,38 @@
+@interface AWEIMFeedVideoListDataController : AWEListDataController
+@property (nonatomic) {_NSRange=QQ} dataSourceRange;
+@property (nonatomic) NSMutableDictionary id2AwemeModelDictM;
+@property (nonatomic) q initialIndex;
+@property (nonatomic) q previousIndex;
+@property (nonatomic) q moreIndex;
+@property (nonatomic) q pageSize;
+@property (nonatomic) NSArray itemIDArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)loadPreviousWithCompletion:;
+- (void)setMoreIndex:;
+- (void)setPreviousIndex:;
+- (long long)moreIndex;
+- (id)itemIDArray;
+- (long long)previousIndex;
+- (void)setItemIDArray:;
+- (id)createidsFromAwemeItemids:;
+- (void)new_p_addFakeAwemeIfNeededWithAwemeList:range:;
+- (void)new_refreshWithCompletion:;
+- (id)dataSourceRange;
+- (void)setDataSourceRange:;
+- (id)id2AwemeModelDictM;
+- (void)new_loadPreviousWithCompletion:;
+- (void)new_loadMoreWithCompletion:;
+- (id)initWithInitialIndex:currentModel:pageSize:itemIDArray:;
+- (void)setId2AwemeModelDictM:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (long long)pageSize;
+- (void)setPageSize:;
+- (long long)initialIndex;
+- (void)setInitialIndex:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMWorkSpaceDetailResponse : AWEBaseApiModel
+@property (nonatomic) q nextCursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q detailUnread;
+@property (nonatomic) NSArray missionCell;
+@property (nonatomic) NSArray recommendMission;
+@property (nonatomic) NSArray convCell;
+@property (nonatomic) AWEIMWorkSpaceDetailFilterInfoModel missionFilterInfo;
+@property (nonatomic) AWEIMWorkSpaceDetailNoticeModel missionNoticeInfo;
+- (long long)nextCursor;
+- (void)setNextCursor:;
+- (long long)detailUnread;
+- (void)setDetailUnread:;
+- (id)missionCell;
+- (void)setMissionCell:;
+- (id)recommendMission;
+- (void)setRecommendMission:;
+- (id)convCell;
+- (void)setConvCell:;
+- (id)missionFilterInfo;
+- (void)setMissionFilterInfo:;
+- (id)missionNoticeInfo;
+- (void)setMissionNoticeInfo:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
++ (id)missionFilterInfoJSONTransformer;
++ (id)missionCellJSONTransformer;
++ (id)recommendMissionJSONTransformer;
++ (id)convCellJSONTransformer;
++ (id)missionNoticeInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

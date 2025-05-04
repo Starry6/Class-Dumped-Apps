@@ -1,0 +1,35 @@
+@interface AWELifeShelfCardListItemCardDataMinusSaleInfo : MTLModel
+@property (nonatomic) NSString minusSaleId;
+@property (nonatomic) NSNumber minusSalePrice;
+@property (nonatomic) NSString minusType;
+@property (nonatomic) NSString minusRule;
+@property (nonatomic) NSNumber allianceTaskId;
+@property (nonatomic) NSNumber minusActivityId;
+@property (nonatomic) NSString minusSaleTicketTag;
+@property (nonatomic) NSString actualAmountTag;
+@property (nonatomic) NSString leftQuantityTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)minusSaleId;
+- (id)allianceTaskId;
+- (id)minusActivityId;
+- (void)setMinusSaleId:;
+- (void)setAllianceTaskId:;
+- (void)setMinusActivityId:;
+- (id)minusSalePrice;
+- (void)setMinusSalePrice:;
+- (id)minusType;
+- (void)setMinusType:;
+- (id)minusRule;
+- (void)setMinusRule:;
+- (id)minusSaleTicketTag;
+- (void)setMinusSaleTicketTag:;
+- (id)actualAmountTag;
+- (void)setActualAmountTag:;
+- (id)leftQuantityTag;
+- (void)setLeftQuantityTag:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

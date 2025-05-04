@@ -1,0 +1,31 @@
+@interface AWESearchMerchandiseProductRecommendInfo : AWEBaseApiModel
+@property (nonatomic) AWESearchMerchandiseCommentInfo commentInfo;
+@property (nonatomic) AWESearchMerchandiseLeaderboard leaderBoard;
+@property (nonatomic) AWESearchMerchandiseKOLInfo KOLInfo;
+@property (nonatomic) AWESearchMerchandiseShopInfo comparePriceInfo;
+@property (nonatomic) AWESearchMerchandiseShopInfo shopInfo;
+@property (nonatomic) AWESearchMerchandiseUserInfo userInfo;
+@property (nonatomic) AWESearchMerchandiseCommonInfo commonInfo;
+@property (nonatomic) AWESearchMerchandiseProductDoubleInfos doubleCommonInfo;
+@property (nonatomic) AWESearchMerchandiseIconRecommendAreaStruct iconRecommendArea;
+- (void)setCommentInfo:;
+- (id)leaderBoard;
+- (void)setLeaderBoard:;
+- (id)KOLInfo;
+- (void)setKOLInfo:;
+- (id)comparePriceInfo;
+- (void)setComparePriceInfo:;
+- (id)shopInfo;
+- (void)setShopInfo:;
+- (id)doubleCommonInfo;
+- (void)setDoubleCommonInfo:;
+- (id)iconRecommendArea;
+- (void)setIconRecommendArea:;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (void).cxx_destruct;
+- (void)setCommonInfo:;
+- (id)commonInfo;
+- (id)commentInfo;
++ (id)JSONKeyPathsByPropertyKey;
+@end

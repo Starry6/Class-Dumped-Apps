@@ -1,0 +1,31 @@
+@interface AWEUserWorkCellIconLabelStarAtlasTagLabelComponent : AWERLComponent
+@property (nonatomic) NSObject<AWERLVirtualNodeProtocol> virtualNode;
+@property (nonatomic) AWERLFlexChildVirtualNode iconViewNode;
+@property (nonatomic) AWERLVirtualNode iconViewVirtualNode;
+@property (nonatomic) AWERLFlexChildVirtualNode countLabelNode;
+@property (nonatomic) AWERLLabelVirtualNode countLabelVirtualNode;
+@property (nonatomic) AWERLFlexChildVirtualNode starAtlasTagLabelNode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)iconViewWidth;
+- (id)virtualNodeWithChildren:;
+- (id)virtualNode;
+- (void)setVirtualNode:;
+- (void)changeAlpha:;
+- (id)countLabelVirtualNode;
+- (id)iconViewVirtualNode;
+- (id)iconViewNode;
+- (id)countLabelNode;
+- (id)starAtlasTagLabelNode;
+- (id)icomImageSize:;
+- (void)setIconViewNode:;
+- (void)setIconViewVirtualNode:;
+- (void)setCountLabelNode:;
+- (void)setCountLabelVirtualNode:;
+- (void)setStarAtlasTagLabelNode:;
+- (void).cxx_destruct;
+- (id)initWithData:context:;
++ (id)componentWithData:context:;
+@end

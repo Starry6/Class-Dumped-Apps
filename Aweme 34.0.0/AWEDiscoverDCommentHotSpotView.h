@@ -1,0 +1,30 @@
+@interface AWEDiscoverDCommentHotSpotView : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)addTapGesture;
+- (id)p_anchorModel;
+- (void)updateThemeIfNeed;
+- (BOOL)p_isBGColorDark;
+- (id)p_iconImage:;
+- (void)hotSpotViewTapped;
+- (id)initWithModel:params:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)iconView;
+- (id)model;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (id)params;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (void)setParams:;
+@end

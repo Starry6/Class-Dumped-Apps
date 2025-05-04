@@ -1,0 +1,35 @@
+@interface AWEMusicStreamingImpl.BNImageLayoutView : UIView
+@property (nonatomic) q style;
+@property (nonatomic) double imageTitleSpace;
+@property (nonatomic) double verticalTitleOffset;
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIFont font;
+@property (nonatomic) NSString text;
+@property (nonatomic) BOOL isHiddenImage;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) {CGSize=dd} intrinsicContentSize;
+- (double)imageTitleSpace;
+- (void)setImageTitleSpace:;
+- (double)verticalTitleOffset;
+- (void)setVerticalTitleOffset:;
+- (BOOL)isHiddenImage;
+- (void)setIsHiddenImage:;
+- (id)image;
+- (void)setImage:;
+- (id)intrinsicContentSize;
+- (void)setText:;
+- (id)initWithFrame:;
+- (id)text;
+- (void)setTextColor:;
+- (long long)style;
+- (id)sizeThatFits:;
+- (id)font;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (void)layoutSubviews;
+- (id)textColor;
+- (id)initWithCoder:;
+- (id)imageView;
+- (void)setStyle:;
+@end

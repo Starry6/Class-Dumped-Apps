@@ -1,0 +1,33 @@
+@interface AWENearbyWidgetViewModel : NSObject
+@property (nonatomic) AWENearbyWidgetModel model;
+@property (nonatomic) q pageType;
+@property (nonatomic) q feedType;
+@property (nonatomic) BOOL hasWidgetExposedOnce;
+@property (nonatomic) BOOL hasWidgetClosedOnce;
+- (void)updateWidgetWithModel:;
+- (void)didCloseWidgetOnce;
+- (BOOL)shouldShowWidget;
+- (void)widgetLoadFailed;
+- (void)didExposeWidgetOnce;
+- (BOOL)isFullScreenWidget;
+- (void)didClickWidget:;
+- (BOOL)isCurrentAwemeSatisfy:;
+- (id)initWithPageType:feedType:;
+- (BOOL)hasWidgetClosedOnce;
+- (id)aAWENearbyWidgetViewModelCommonAdapter;
+- (void)trackWidgetResourceEvent:;
+- (BOOL)hasWidgetExposedOnce;
+- (void)setHasWidgetExposedOnce:;
+- (void)__trackWidgetEvent:extraParams:;
+- (void)__sendUpstreamMessageWithType:;
+- (void)setHasWidgetClosedOnce:;
+- (id)__freshTypeWithPageType:feedType:;
+- (void)setModel:;
+- (long long)feedType;
+- (void)setPageType:;
+- (void)setFeedType:;
+- (id)model;
+- (void).cxx_destruct;
+- (long long)pageType;
++ (Class)aAWENearbyWidgetViewModelCommonAdapterClass;
+@end

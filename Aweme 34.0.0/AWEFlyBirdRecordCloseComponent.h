@@ -1,0 +1,35 @@
+@interface AWEFlyBirdRecordCloseComponent : ACCFeatureComponent
+@property (nonatomic) BOOL isFirstAppear;
+@property (nonatomic) <ACCRecorderViewContainer> viewContainer;
+@property (nonatomic) <ACCCameraService> cameraService;
+@property (nonatomic) <ACCRecordFlowService> flowService;
+@property (nonatomic) ACCRecordCloseViewModel viewModel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFirstAppear:;
+- (id)cameraService;
+- (void)setCameraService:;
+- (void)componentDidMount;
+- (void)componentDidAppear;
+- (unsigned long long)preferredLoadPhase;
+- (void)componentWillAppear;
+- (id)flowService;
+- (void)setFlowService:;
+- (void)loadComponentView;
+- (void)shouldItemsShow:animated:;
+- (void)p_bindViewModelObserver;
+- (void)clickButtonClicked;
+- (id)viewModel;
+- (void)removeAllSegments;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)updateCloseButtonVisibility;
+- (BOOL)isFirstAppear;
+- (void)setViewContainer:;
+- (id)viewContainer;
+@end

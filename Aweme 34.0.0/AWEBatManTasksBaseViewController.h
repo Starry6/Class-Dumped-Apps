@@ -1,0 +1,36 @@
+@interface AWEBatManTasksBaseViewController : UIViewController
+@property (nonatomic) @? completion;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UILabel titleLbl;
+@property (nonatomic) UIButton backBtn;
+@property (nonatomic) <AWEBatManTasksBaseViewControllerDelegate> delegate;
+@property (nonatomic) BOOL isShowFromDialog;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backBtn;
+- (void)setBackBtn:;
+- (void)configUI;
+- (void)setTitleLbl:;
+- (id)titleLbl;
+- (void)setIsShowFromDialog:;
+- (void)onBackwardClicked:;
+- (BOOL)isShowFromDialog;
+- (void)reloadData;
+- (void)viewWillDisappear:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (id)completion;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (void)setCompletion:;
+- (id)tableView;
+- (void)dismissAnimated:completion:;
+- (void).cxx_destruct;
+- (id)initWithCompletion:;
+- (void)setDelegate:;
+- (void)presentViewController:animated:completion:;
+- (double)viewWidth;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMRichRecorderViewControl : NSObject
+@property (nonatomic) AWEIMRichRecorderViewModel viewModel;
+@property (nonatomic) Q preState;
+@property (nonatomic) Q currentState;
+@property (nonatomic) NSMutableDictionary stateObservers;
+@property (nonatomic) AWEIMRichRecorderTitleView titleView;
+@property (nonatomic) AWEIMRichRecorderGradientAnimationView cancelView;
+@property (nonatomic) AWEIMRecorderVolumeIncreaseView volumeIncreaseView;
+- (id)volumeIncreaseView;
+- (id)cancelView;
+- (void)addViewModelKVO;
+- (id)getSubViewWithType:;
+- (void)prepareToStopAllOtherWithPreState:currentState:;
+- (void)setPreState:;
+- (unsigned long long)preState;
+- (void)setCancelView:;
+- (void)setVolumeIncreaseView:;
+- (void)addView:forState:;
+- (void)setCurrentState:;
+- (id)titleView;
+- (void)setTitleView:;
+- (id)initWithViewModel:;
+- (id)viewModel;
+- (id)allViews;
+- (unsigned long long)currentState;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setStateObservers:;
+- (id)stateObservers;
+@end

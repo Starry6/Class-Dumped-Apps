@@ -1,0 +1,35 @@
+@interface AWEH5TabViewController : UIViewController
+@property (nonatomic) AWEWebViewController webViewController;
+@property (nonatomic) UIView topBarBackgroundView;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString referString;
+@property (nonatomic) double slidingHeight;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canRefresh;
+- (id)referString;
+- (void)pauseWithAnimation;
+- (void)setReferString:;
+- (BOOL)currentTabIsTop;
+- (void)animatedRefreshWithCompletion:;
+- (id)initWithUrl:referString:;
+- (void)setupWebViewWithUrl:;
+- (double)slidingHeight;
+- (id)topBarBackgroundView;
+- (void)setTopBarBackgroundView:;
+- (void)setSlidingHeight:;
+- (void)setScrollEnabled:;
+- (void)play;
+- (void)setUrl:;
+- (void)viewDidLoad;
+- (void)reload;
+- (void).cxx_destruct;
+- (id)url;
+- (void)stop;
+- (void)pause;
+- (id)webViewController;
+- (void)setWebViewController:;
+@end

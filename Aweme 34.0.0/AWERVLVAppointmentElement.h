@@ -1,0 +1,31 @@
+@interface AWERVLVAppointmentElement : AWERVVideoInfoBaseElement
+@property (nonatomic) AWERVLVAppointmentView appointmentView;
+@property (nonatomic) AWERVLVAppointmentViewModel viewModel;
+@property (nonatomic) BDImageView panelImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidDisposed;
+- (id)aAWETheaterViewControllerCommonAdapter;
+- (void)didTapAppointment;
+- (void)trackAppointmentClick;
+- (void)trackAppointmentClickResult:formerAppointmentStatus:;
+- (void)reportAppointment:;
+- (void)showPushAlertIfNeed;
+- (void)showUserNotificationAlert;
+- (void)setAppointmentView:;
+- (id)appointmentView;
+- (id)panelImageView;
+- (void)setPanelImageView:;
+- (void)superViewDidAppear;
+- (void)appointmentStatusDidChange;
+- (void)trackAppointmentShow;
+- (BOOL)appointmentAddVideoHallEntrance:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
++ (Class)aAWETheaterViewControllerCommonAdapterClass;
+@end

@@ -1,0 +1,37 @@
+@interface AWEPollStickerOptionWapperView : UIView
+@property (nonatomic) NSString placeHolder;
+@property (nonatomic) double placeHolderWidth;
+@property (nonatomic) BOOL hasAddShadow;
+@property (nonatomic) UIView optionBGView;
+@property (nonatomic) UITextView optionEditView;
+@property (nonatomic) CALayer optionShadowLayer;
+@property (nonatomic) ACCPollStickerOptionView optionDisplayView;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) <AWEPollStickerOptionWapperViewDelegate> delegate;
+- (void)updateOptionEditViewConstraints;
+- (id)sizeOfString:constrainedToHeight:font:;
+- (id)optionShadowLayer;
+- (id)optionEditView;
+- (id)initWithFrame:placeHolder:;
+- (void)showDisplayMode:;
+- (id)optionDisplayView;
+- (id)optionBGView;
+- (BOOL)hasAddShadow;
+- (void)setHasAddShadow:;
+- (void)addShadowToView:shadowLayer:withOpacity:shadowRadius:andCornerRadius:;
+- (void)actionDeleteButton;
+- (void)setOptionDisplayView:;
+- (void)setOptionBGView:;
+- (void)setOptionEditView:;
+- (void)setOptionShadowLayer:;
+- (void)setDeleteButton:;
+- (id)delegate;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (double)placeHolderWidth;
+- (void)setPlaceHolderWidth:;
+- (void)setPlaceHolder:;
+- (id)placeHolder;
+@end

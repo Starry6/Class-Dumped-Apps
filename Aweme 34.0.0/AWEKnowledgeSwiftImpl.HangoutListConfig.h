@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutListConfig : AWESpeCategoryKit.FeedListContainerConfig
+@end

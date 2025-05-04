@@ -1,0 +1,2 @@
+@interface AWEClassroomModel.ClassroomNewLessonNoteForecastModel : _TtCs12_SwiftObject
+@end

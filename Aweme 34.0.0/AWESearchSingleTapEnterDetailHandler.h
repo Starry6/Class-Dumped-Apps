@@ -1,0 +1,37 @@
+@interface AWESearchSingleTapEnterDetailHandler : NSObject
+@property (nonatomic) <AWESearchSingleTapEnterDetailProtocol> contanerVC;
+@property (nonatomic) @? willDelteBlock;
+@property (nonatomic) @? delteBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)detailTableViewController:willDisplayCell:forRowAtIndexPath:model:;
+- (id)detailVCWithInitialIndex:withExtra:;
+- (id)detailVCWithInitialIndex:;
+- (BOOL)syncGetSearchInnerFeedBackOptimizeV2;
+- (void)singleTapEnterDetail:;
+- (void)singleTapEnterDetail:withExtra:withPlayer:;
+- (BOOL)shouldUseModernFullScreenTransitionForAweme:;
+- (id)searchDetailLogExtraDictWithExtra:;
+- (BOOL)fixSearchTrackMap;
+- (BOOL)hasDuplicateItem:;
+- (BOOL)isCurrentItemIndoubleColumn:;
+- (void)setWillDelteBlock:;
+- (void)setDelteBlock:;
+- (id)contanerVC;
+- (id)ecomSceneIdParamsForLiveRoomWithEnterMethod:;
+- (id)getBCMParamsWithSearchParams:;
+- (id)setInnerVCWillDeleteBlock:;
+- (id)setInnerVCDeleteBlock:;
+- (void)singleTapEnterDetailWithExtra:withPlayer:index:;
+- (id)detailVCWithNewDatasource:withExtra:alaSrc:searchResultID:pitayaSceneArray:;
+- (id)getExtraParamsDictionaryForInnerStream;
+- (void)attachInnerFlowContextForDataController:awemeModel:;
+- (id)detailLiveInnerVCWithNewDatasource:withExtra:alaSrc:searchResultID:docType:;
+- (id)willDelteBlock;
+- (id)delteBlock;
+- (void)setContanerVC:;
+- (id)initWithViewController:;
+- (void).cxx_destruct;
+@end

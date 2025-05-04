@@ -1,0 +1,35 @@
+@interface AWEIMLifeServiceChatMenuView : UIView
+@property (nonatomic) AWEIMLifeServiceChatMenuViewModel viewModel;
+@property (nonatomic) NSArray menuButtonArray;
+@property (nonatomic) AWEIMInputVCBadgeButton switchButton;
+@property (nonatomic) UIView switchButtonBackgroundView;
+@property (nonatomic) NSArray modelArray;
+@property (nonatomic) BOOL isFromPreview;
+@property (nonatomic) <AWEIMLifeServiceChatMenuViewDelegate> delegate;
+- (void)awe_themeWillChange:;
+- (void)setModelArray:;
+- (id)modelArray;
+- (id)initWithModelArray:;
+- (void)__setupUI;
+- (id)switchButtonImage;
+- (id)p_applyAlpha:toImage:;
+- (void)setSwitchButton:;
+- (id)__buildItemButtonWithTitle:type:;
+- (id)frameOfMenuItemAtIndex:;
+- (void)setIsFromPreview:;
+- (id)menuButtonArray;
+- (BOOL)isFromPreview;
+- (id)switchButtonBackgroundView;
+- (void)setMenuButtonArray:;
+- (void)__itemButtonClick:;
+- (void)__switchButtonClick;
+- (BOOL)__canSwitchButtonClick;
+- (void)setSwitchButtonBackgroundView:;
+- (id)initWithViewModel:;
+- (id)delegate;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)switchButton;
+@end

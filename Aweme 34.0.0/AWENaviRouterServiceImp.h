@@ -1,0 +1,38 @@
+@interface AWENaviRouterServiceImp : HTSService
+@property (nonatomic) NSMutableSet fetchRequests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) TTKNaviEditorViewController editorVC;
+- (void)startCreateNaviAvatar:completion:;
+- (void)createWithCollectionName:routerConfig:completion:;
+- (void)editCurrentAvatarWithRouterConfig:completion:;
+- (void)editCurrentAvatarWithApplyFeatures:routerConfig:completion:;
+- (void)startWithInputTemplateContext:routerConfig:completion:;
+- (void)startDuetWithOtherUsers:params:completion:;
+- (void)publishAvatarWithApplyFeatures:routerConfig:completion:;
+- (id)createChooseFriendsPanelWithCompletion:;
+- (void)showCreateNaviAvatar:animated:completion:;
+- (id)showEditorWithConfig:completion:;
+- (void)startWithInputTemplateContext:routerConfig:applyFeatures:editor:completion:;
+- (void)fetchUserConfigWithCompletion:;
+- (id)mergeFeatures:withOriginFeatures:andEffectMap:;
+- (id)overWritesFeature:effectMap:;
+- (void)p_prepareInitialDataWithConfig:completion:;
+- (id)parseFeatureData:;
+- (id)showPublishWithConfig:completion:;
+- (void)prepareDataWithNaviModel:applyFeatures:routerConfig:completion:;
+- (id)createStartViewControllerWithParams:;
+- (id)createIntroViewControllerWithParams:;
+- (id)showDuetWithCompletion:;
+- (void)refreshInputDataForDuet:withUsers:asyncGetter:params:completion:;
+- (id)parseUIConfigModelWithContextModel:;
+- (void)syncColorPicker:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)editorVC;
+- (void)setEditorVC:;
+- (id)fetchRequests;
+- (void)setFetchRequests:;
+@end

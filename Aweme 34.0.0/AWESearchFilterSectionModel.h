@@ -1,0 +1,37 @@
+@interface AWESearchFilterSectionModel : AWEBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString name;
+@property (nonatomic) q filterStyle;
+@property (nonatomic) q defaultIndex;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSDictionary searchNilText;
+@property (nonatomic) NSDictionary searchLessText;
+@property (nonatomic) NSString logName;
+@property (nonatomic) NSArray words;
+@property (nonatomic) NSString currentValue;
+- (id)searchNilText;
+- (void)setSearchNilText:;
+- (void)setSearchLessText:;
+- (id)searchLessText;
+- (id)init;
+- (void)setSelectedIndex:;
+- (id)items;
+- (void)setItems:;
+- (long long)selectedIndex;
+- (long long)filterStyle;
+- (void).cxx_destruct;
+- (id)currentValue;
+- (id)title;
+- (void)setFilterStyle:;
+- (void)setName:;
+- (id)name;
+- (void)setTitle:;
+- (long long)defaultIndex;
+- (void)setDefaultIndex:;
+- (id)words;
+- (id)logName;
+- (void)setLogName:;
++ (id)itemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

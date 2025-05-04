@@ -1,0 +1,34 @@
+@interface AWECodeGenBaseNoticeFoldModel : AWEBaseDataModel
+@property (nonatomic) NSInteger group;
+@property (nonatomic) NSString name;
+@property (nonatomic) q foldStatus;
+@property (nonatomic) AWECodeGenUrlModel imageUrlModel;
+@property (nonatomic) q lastMsgTime;
+@property (nonatomic) q lastReadTime;
+@property (nonatomic) NSString text;
+@property (nonatomic) BOOL hasUnread;
+@property (nonatomic) NSInteger unreadCount;
+@property (nonatomic) q demoteState;
+- (id)imageUrlModel;
+- (void)setImageUrlModel:;
+- (long long)lastMsgTime;
+- (void)setLastMsgTime:;
+- (void)setHasUnread:;
+- (long long)foldStatus;
+- (void)setFoldStatus:;
+- (long long)lastReadTime;
+- (void)setLastReadTime:;
+- (long long)demoteState;
+- (void)setDemoteState:;
+- (int)unreadCount;
+- (void)setGroup:;
+- (void)setUnreadCount:;
+- (void)setText:;
+- (int)group;
+- (id)text;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (BOOL)hasUnread;
++ (id)JSONKeyPathsByPropertyKey;
+@end

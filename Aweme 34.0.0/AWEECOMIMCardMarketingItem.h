@@ -1,0 +1,30 @@
+@interface AWEECOMIMCardMarketingItem : MTLModel
+@property (nonatomic) Q type;
+@property (nonatomic) NSString typeString;
+@property (nonatomic) NSString subType;
+@property (nonatomic) NSString head;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString labelUrlString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (double)tagWidth;
+- (id)labelUrlString;
+- (void)setLabelUrlString:;
+- (void)setTypeString:;
+- (id)extra;
+- (void)setDesc:;
+- (unsigned long long)type;
+- (id)desc;
+- (id)subType;
+- (void)setType:;
+- (id)head;
+- (void).cxx_destruct;
+- (id)typeString;
+- (void)setSubType:;
+- (void)setHead:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

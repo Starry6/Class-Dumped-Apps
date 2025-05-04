@@ -1,0 +1,35 @@
+@interface AWEEcomSearchDataPrefetchModel : NSObject
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) Q prefetchType;
+@property (nonatomic) Q state;
+@property (nonatomic) q expire;
+@property (nonatomic) NSMutableArray results;
+@property (nonatomic) @? dataCallback;
+@property (nonatomic) @? removeModelCallback;
+- (void)setDataCallback:;
+- (id)dataCallback;
+- (unsigned long long)prefetchType;
+- (void)setPrefetchType:;
+- (id)removeModelCallback;
+- (void)setRemoveModelCallback:;
+- (void)setResults:;
+- (id)results;
+- (long long)expire;
+- (id)init;
+- (void)setUrl:;
+- (void)setKey:;
+- (id)key;
+- (unsigned long long)state;
+- (void)setExpire:;
+- (void).cxx_destruct;
+- (void)setHeaders:;
+- (id)params;
+- (id)url;
+- (void)setState:;
+- (id)headers;
+- (void)setParams:;
++ (id)modelWithKey:;
+@end

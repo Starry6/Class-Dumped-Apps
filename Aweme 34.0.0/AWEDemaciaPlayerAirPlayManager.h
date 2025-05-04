@@ -1,0 +1,38 @@
+@interface AWEDemaciaPlayerAirPlayManager : NSObject
+@property (nonatomic) AVRoutePickerView pickerView;
+@property (nonatomic) MPVolumeView volumnView;
+@property (nonatomic) BOOL connectedToAirPlay;
+@property (nonatomic) AVPlayer player;
+@property (nonatomic) BOOL didStartPlaying;
+@property (nonatomic) BOOL isConnectedToAirPlay;
+@property (nonatomic) <AWEDemaciaPlayerAirPlayManagerDelegate> delegate;
+- (void)setVolumnView:;
+- (void)audioSessionDidChange:;
+- (id)volumnView;
+- (BOOL)connectedToAirPlay;
+- (void)setConnectedToAirPlay:;
+- (void)stopAirPlay;
+- (id)currentAirPlayDeviceName;
+- (void)reCreatePlayerAndPlay:;
+- (void)setDidStartPlaying:;
+- (BOOL)isConnectedToAirPlay;
+- (BOOL)didStartPlaying;
+- (id)observingPlayerKeyPath;
+- (void)showAirPlayDevicePicker;
+- (void)startAirPlayIfNeeded;
+- (long long)currentTimeControlStatus;
+- (id)init;
+- (void)play;
+- (id)delegate;
+- (id)player;
+- (void)setPlayer:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)pause;
+- (id)pickerView;
+- (void)setPickerView:;
+- (void)appWillTerminate:;
+- (void)seekToTime:completion:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMNewcomerReportCardMessageTableViewCell : AWEIMSystemMessageTableViewCell
+@property (nonatomic) AWEIMGroupShareCommandAvatarView avatarView;
+@property (nonatomic) UIView cardView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton reportButton;
+- (void)chatBackgroundDidChangeNty:;
+- (id)reportButton;
+- (void)setReportButton:;
+- (void)configWithMessage:;
+- (void)__trackShowData;
+- (void)__updateButtonUI;
+- (void)__updateTitleText;
+- (void)__updateButtonStatusUI;
+- (void)__handelTapCloseButton:;
+- (void)__handelTapReportButton:;
+- (void)dealloc;
+- (void)setAvatarView:;
+- (void)setSubtitleLabel:;
+- (id)avatarView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setupUI;
+- (id)cardView;
+- (void)setCardView:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)willDisplayCell;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

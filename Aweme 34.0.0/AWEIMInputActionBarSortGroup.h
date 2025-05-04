@@ -1,0 +1,30 @@
+@interface AWEIMInputActionBarSortGroup : MTLModel
+@property (nonatomic) double priority;
+@property (nonatomic) q operation;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSArray sortPlaceholder;
+@property (nonatomic) NSDictionary orderPriorities;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString nodeIndex;
+- (id)buildIndexNodeData;
+- (void)clearIndexNodeData;
+- (void)fillIndexNodeDataWithModel:;
+- (id)orderPriorities;
+- (id)sortPlaceholder;
+- (void)setSortPlaceholder:;
+- (void)setOrderPriorities:;
+- (long long)operation;
+- (void)setOperation:;
+- (void)setIdentifier:;
+- (double)priority;
+- (id)identifier;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)nodeIndex;
++ (id)modelCustomPropertyMapper;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWELeftSideBarEntranceCaptionBubbleTask : NSObject
+@property (nonatomic) AWEHPChannelCaptionBubbleTask holdingTask;
+@property (nonatomic) AWELeftSideBarAmbienceObject ambienceObject;
+@property (nonatomic) AWELeftSideBarBasePresenter presenter;
+@property (nonatomic) BOOL isBusiness;
+@property (nonatomic) NSString businessId;
+@property (nonatomic) NSString businessSubId;
+@property (nonatomic) NSString componentId;
+@property (nonatomic) double showTime;
+@property (nonatomic) BOOL hasTrackClickEvent;
+- (double)showTime;
+- (void)setShowTime:;
+- (void)setBusinessSubId:;
+- (void)setHoldingTask:;
+- (id)holdingTask;
+- (id)businessSubId;
+- (id)ambienceObject;
+- (void)setAmbienceObject:;
+- (BOOL)hasTrackClickEvent;
+- (void)setHasTrackClickEvent:;
+- (id)businessId;
+- (id)presenter;
+- (void)setPresenter:;
+- (void).cxx_destruct;
+- (void)setBusinessId:;
+- (BOOL)isBusiness;
+- (void)setIsBusiness:;
+- (void)setComponentId:;
+- (id)componentId;
+@end

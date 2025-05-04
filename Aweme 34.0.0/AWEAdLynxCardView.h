@@ -1,0 +1,37 @@
+@interface AWEAdLynxCardView : AWEBDARifleView
+@property (nonatomic) AWEAdLynxCardViewModel viewModel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) double initLeftContainerHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithAweme:;
+- (void)loadURL:withConfiguration:;
+- (void)rifleView:didFinishLoadWithURL:;
+- (void)rifleView:didLoadFailedWithURL:error:;
+- (id)lynxBridges;
+- (void)bindViewModel:;
+- (double)initLeftContainerHeight;
+- (void)configSelf;
+- (void)sendVoicePlayStatus:voiceURL:;
+- (double)nativeLeftContainerViewHeight;
+- (void)setInitLeftContainerHeight:;
+- (void)tryShowAdLynxCard;
+- (void)hideNativeInfoArea;
+- (void)showNativeInfoArea;
+- (void)setModel:;
+- (void)dealloc;
+- (void)timeout;
+- (void)applicationDidEnterBackground;
+- (id)viewModel;
+- (id)model;
+- (void)viewWillAppear;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground;
+- (double)currentPlaybackTime;
+- (id)hitTest:withEvent:;
+- (void)reset;
+- (void)viewWillDisappear;
+@end

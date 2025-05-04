@@ -1,0 +1,35 @@
+@interface AWEDCFeedSearchSuggestWordView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) <UICollectionViewDelegate><UICollectionViewDataSource> delegate;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (void)updateContentHeight:;
+- (void)catchTap;
+- (void)catchPress;
+- (id)collectionView;
+- (id)gradientView;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)reload;
+- (id)contentView;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)setCollectionView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setGradientView:;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

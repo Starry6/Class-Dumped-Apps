@@ -1,0 +1,35 @@
+@interface AWEPzContinuousDisplayUnconsumedTimingStrategy : NSObject
+@property (nonatomic) BOOL isTiming;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) NSMutableArray timingComponents;
+@property (nonatomic) <AWEPzStrategyConfigProtocol> config;
+@property (nonatomic) <AWEPzContinuousDisplayUnconsumedDataModelProtocol> dataModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupWithConfig:;
+- (void)showComponent:;
+- (void)consumeComponent:;
+- (void)hideComponent:;
+- (void)setIsTiming:;
+- (BOOL)isTiming;
+- (void)endTiming;
+- (void)postEventToComponent:;
+- (BOOL)setupDataModelWithConfig:;
+- (id)timingComponents;
+- (void)popComponentAndTryStartTimingIfNeed;
+- (BOOL)removeTimingComponentIfNeed:;
+- (void)setupTimingComponentWithConfig:;
+- (void)setTimingComponents:;
+- (void)setConfig:;
+- (void)setTimer:;
+- (id)timer;
+- (id)initWithConfig:;
+- (id)config;
+- (void)stopTimer;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)startTimerWithInterval:;
+@end

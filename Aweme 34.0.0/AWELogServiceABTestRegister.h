@@ -1,0 +1,2 @@
+@interface AWELogServiceABTestRegister : NSObject
+@end

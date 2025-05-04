@@ -1,0 +1,33 @@
+@interface AWEIMGroupOwnerMessagesListCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) UILabel dateLabel;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) UILabel dateLabel;
+@property (nonatomic) <AWEIMGroupOwnerMessagesListCollectionViewCellDelegate> delegate;
+@property (nonatomic) AWEIMGroupOwnerMessagesListCellViewModel viewModel;
+- (id)userNameLabel;
+- (void)setUserNameLabel:;
+- (void)didClickContent;
+- (void)didClickAvatar;
+- (void)renderCustomizeContentWithVM:;
+- (void)renderWithVM:;
+- (id)delegate;
+- (void)setAvatarView:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)avatarView;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)preferredLayoutAttributesFittingAttributes:;
+- (id)dateLabel;
+- (void)setDateLabel:;
++ (double)preferredContentLabelWidth;
++ (id)identifier;
+@end

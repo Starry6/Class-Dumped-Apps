@@ -1,0 +1,35 @@
+@interface AWEFeedNearbyPoiUpCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView tagView;
+@property (nonatomic) AWEMarkView poiButton;
+@property (nonatomic) AWEMarkView distanceButton;
+@property (nonatomic) UIImageView userImageView;
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) double currentAlpha;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)updateWithAweme:;
+- (id)userNameLabel;
+- (id)userImageView;
+- (void)setUserImageView:;
+- (void)setUserNameLabel:;
+- (id)addBottomGradientView;
+- (id)poiButton;
+- (void)_updateTagsWithAweme:;
+- (void)setCurrentAlpha:;
+- (void)setPoiButton:;
+- (id)distanceButton;
+- (void)setDistanceButton:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (double)currentAlpha;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (id)tagView;
+- (void)setTagView:;
+@end

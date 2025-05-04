@@ -1,0 +1,30 @@
+@interface AWEIMIncentiveChatSendPrivateChatInviteConfig : NSObject
+@property (nonatomic) NSString inviterUid;
+@property (nonatomic) NSString inviteeUid;
+@property (nonatomic) Q inviteType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEIMIncentiveChatBagTask bagTask;
+@property (nonatomic) NSDictionary trackDict;
+@property (nonatomic) NSString inviterDevicePlatform;
+@property (nonatomic) NSString secActivityInfo;
+@property (nonatomic) double clickTime;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setTrackDict:;
+- (id)trackDict;
+- (void)setClickTime:;
+- (double)clickTime;
+- (id)inviterUid;
+- (void)setInviterUid:;
+- (void)setInviteeUid:;
+- (void)setInviterDevicePlatform:;
+- (void)setSecActivityInfo:;
+- (void)setBagTask:;
+- (id)inviteeUid;
+- (id)inviterDevicePlatform;
+- (id)secActivityInfo;
+- (id)bagTask;
+- (void).cxx_destruct;
+- (unsigned long long)inviteType;
+- (void)setInviteType:;
+@end

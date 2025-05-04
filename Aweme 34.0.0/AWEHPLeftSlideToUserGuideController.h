@@ -1,0 +1,38 @@
+@interface AWEHPLeftSlideToUserGuideController : AWEBaseController
+@property (nonatomic) AWEHPLeftSlideToUserGuideTask curTask;
+@property (nonatomic) BOOL isContainerAppear;
+@property (nonatomic) {CGSize=dd} preferredContentSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addNotification;
+- (void)removeNotification;
+- (void)hpSlidingViewController:willTransitionToViewController:;
+- (void)hpDidStartTransitionWithContext:;
+- (void)hpDidChangePercentDrivenTransitionWithContext:;
+- (void)hpDidCancelPercentDrivenTransitionWithContext:;
+- (void)hpDidPopDoneTransitionWithContext:;
+- (double)interactionRightContainerHeight;
+- (void)onVideoPlayTimeTriggerShowLeftToUserGuideNotification:;
+- (void)onFeedTableVCWillDisplayCellNotification:;
+- (void)onFeedTableVCDidEndDisplayingCellNotification:;
+- (BOOL)isContainerAppear;
+- (void)tryShowNoticeGuide;
+- (void)tryDismissGuide;
+- (void)setIsContainerAppear:;
+- (id)curTask;
+- (void)tryShowInteractiveGuide;
+- (void)tryUpdateInteractiveGuideWithContext:;
+- (BOOL)canShowGuideWithGuideType:;
+- (id)currentComponentID;
+- (void)setCurTask:;
+- (void)showGuideWithTask:;
+- (id)init;
+- (void)dealloc;
+- (id)containerSize;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

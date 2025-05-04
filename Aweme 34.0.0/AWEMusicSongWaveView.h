@@ -1,0 +1,31 @@
+@interface AWEMusicSongWaveView : UIView
+@property (nonatomic) NSMutableArray animationlayers;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) double gapWidth;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) NSInteger lineCount;
+@property (nonatomic) UIColor waveColor;
+- (void)awe_themeReload;
+- (id)initWithLineWidth:LineCount:;
+- (void)setWaveColor:;
+- (void)p_refreshWaveColorIfNeeded;
+- (id)animationlayers;
+- (void)setAnimationlayers:;
+- (id)waveColor;
+- (double)p_getHeightFromValueWithIndex:;
+- (double)p_getHeightToValueWithIndex:;
+- (void)setLineWidth:;
+- (double)lineWidth;
+- (BOOL)isPlaying;
+- (void)play;
+- (int)lineCount;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)layoutSubviews;
+- (void)setIsPlaying:;
+- (void)pause;
+- (double)gapWidth;
+- (void)setGapWidth:;
+- (void)setLineCount:;
+- (void)setupView;
+@end

@@ -1,0 +1,34 @@
+@interface AWESettingSwitch : UISwitch
+@property (nonatomic) UIView coverView;
+@property (nonatomic) UIColor onTintColor;
+@property (nonatomic) BOOL on;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) @? chooseBeforeStatusChangeBlock;
+@property (nonatomic) @? switchStatusChangedBlock;
+@property (nonatomic) BOOL shouldChooseBeforeChange;
+@property (nonatomic) BOOL changeBlockNeedAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)switchStatusChanged:;
+- (void)respondToSwipeGesture:;
+- (void)respondHandler;
+- (id)chooseBeforeStatusChangeBlock;
+- (BOOL)changeBlockNeedAnimation;
+- (id)switchStatusChangedBlock;
+- (void)setEnabled:disableOpacity:;
+- (void)setChooseBeforeStatusChangeBlock:;
+- (void)setSwitchStatusChangedBlock:;
+- (BOOL)shouldChooseBeforeChange;
+- (void)setShouldChooseBeforeChange:;
+- (void)setChangeBlockNeedAnimation:;
+- (id)contentSwitch;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setOn:animated:;
+- (void)updateStatus;
+- (id)coverView;
+- (void)setCoverView:;
+- (void)respondToTapGesture:;
+@end

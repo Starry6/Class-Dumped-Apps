@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputVideoContentModel : _TtCs12_SwiftObject
+@end

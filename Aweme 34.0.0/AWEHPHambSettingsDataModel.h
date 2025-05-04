@@ -1,0 +1,34 @@
+@interface AWEHPHambSettingsDataModel : AWEBaseApiModel
+@property (nonatomic) NSDictionary rawData;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSDictionary traceInfo;
+@property (nonatomic) NSDictionary userConfig;
+@property (nonatomic) NSDictionary deviceConfig;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSNumber cmdVersion;
+@property (nonatomic) NSString dataHash;
+@property (nonatomic) NSString logID;
+- (void)setExtra:;
+- (id)traceInfo;
+- (id)userConfig;
+- (void)setUserConfig:;
+- (void)setTraceInfo:;
+- (id)cmdVersion;
+- (BOOL)simplifyCheckWithError:;
+- (BOOL)completionCheckWithError:;
+- (void)setCmdVersion:;
+- (id)userID;
+- (id)extra;
+- (void)setRawData:;
+- (id)dataHash;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (id)rawData;
+- (id)logID;
+- (void)setLogID:;
+- (id)deviceConfig;
+- (void)setDeviceConfig:;
+- (void)setDataHash:;
++ (id)modelWithRawData:userID:error:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

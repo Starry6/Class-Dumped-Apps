@@ -1,0 +1,31 @@
+@interface AWELikeTabDetailComponent : AWEUserDetailBaseComponent
+@property (nonatomic) AWELikeWorkViewController likeVC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)logExtraDict;
+- (id)tabVCDelegate;
+- (id)likeVC;
+- (void)setLikeVC:;
+- (void)reloadEmptyPage;
+- (void)onRefreshHeaderView:shouldRefreshTabView:;
+- (id)supportTabTypes;
+- (id)tabViewControllerForType:;
+- (id)tabNameForLogWithType:;
+- (id)profileTabModelForType:;
+- (BOOL)shouldShowForType:;
+- (void)onResetUI;
+- (void)onUpdateHeaderHeight;
+- (void)updateUserWith:;
+- (void)setBackgroundColorWith:;
+- (void)addOtherLikeLock;
+- (id)likeTabModel;
+- (void)removeAll;
+- (void).cxx_destruct;
+- (id)title;
+- (void)viewDidAppear;
+- (id)originalTitle;
+- (void)refreshData;
+- (void)onInit;
+@end

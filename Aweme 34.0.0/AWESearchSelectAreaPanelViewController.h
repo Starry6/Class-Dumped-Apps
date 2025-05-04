@@ -1,0 +1,33 @@
+@interface AWESearchSelectAreaPanelViewController : UIViewController
+@property (nonatomic) AWESearchFilterBaseManager filterBaseManager;
+@property (nonatomic) AWESearchFilterMultipleColView filterColView;
+@property (nonatomic) NSDictionary filterData;
+@property (nonatomic) @? bridgeCallback;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseQueryModel queryModel;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseFilterComponentModel addressModel;
+@property (nonatomic) @? selectionDidEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dux_sheetShouldRecognizeAsynchronousWithGestures;
+- (id)dux_sheetShouldRecognizeAsynchronousScrollViewArray;
+- (id)dux_titleForColoseButton;
+- (id)queryModel;
+- (void)setQueryModel:;
+- (void)setAddressModel:;
+- (id)bridgeCallback;
+- (void)setSelectionDidEnd:;
+- (void)filterViewFinishFilteringWithModel:tempManager:;
+- (id)addressModel;
+- (id)initWithFilterData:;
+- (void)setFilterColView:;
+- (void)setFilterBaseManager:;
+- (id)filterColView;
+- (id)filterBaseManager;
+- (id)selectionDidEnd;
+- (void)setFilterData:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)filterData;
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMGroupImpl.GroupChainsModel : MTLModel
+@property (nonatomic) NSString chainsId;
+@property (nonatomic) NSNumber chainsJoinCount;
+@property (nonatomic) NSString chainsDescription;
+@property (nonatomic) NSString chainsExample;
+@property (nonatomic) NSString chainsAdditionalInfo;
+@property (nonatomic) NSNumber chainsLastUpdateVersion;
+@property (nonatomic) NSNumber chainsLastUpdateTime;
+@property (nonatomic) NSArray chainsEntryList;
+@property (nonatomic) NSNumber chainsStatus;
+@property (nonatomic) NSString chainsStatusText;
+- (id)chainsId;
+- (void)setChainsId:;
+- (id)chainsJoinCount;
+- (void)setChainsJoinCount:;
+- (id)chainsDescription;
+- (void)setChainsDescription:;
+- (id)chainsExample;
+- (void)setChainsExample:;
+- (id)chainsAdditionalInfo;
+- (void)setChainsAdditionalInfo:;
+- (id)chainsLastUpdateVersion;
+- (void)setChainsLastUpdateVersion:;
+- (id)chainsLastUpdateTime;
+- (void)setChainsLastUpdateTime:;
+- (id)chainsEntryList;
+- (void)setChainsEntryList:;
+- (id)chainsStatus;
+- (void)setChainsStatus:;
+- (id)chainsStatusText;
+- (void)setChainsStatusText:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)chainsEntryListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

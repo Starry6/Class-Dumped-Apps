@@ -1,0 +1,36 @@
+@interface AWEIMCommonInviteContentComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMMessage message;
+@property (nonatomic) double cellShowTrackInterval;
+@property (nonatomic) IESIMDisableCardPresenter disablePresenter;
+@property (nonatomic) AWEIMSmallCardPresenter invitePresenter;
+@property (nonatomic) <AWEIMCommonInviteTableViewCellViewModelProtocol> cellViewModel;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (id)cellViewModel;
+- (void)cellWillDisplay:;
+- (void)setCellViewModel:;
+- (void)p_createPresenter;
+- (void)p_createViewModel;
+- (void)p_updateHiddenState;
+- (void)p_updateLabelTexts;
+- (void)p_updateBackgroundColor;
+- (void)p_createCardPresenter;
+- (void)p_createDisablePresenter;
+- (id)invitePresenter;
+- (id)disablePresenter;
+- (void)didTapCard;
+- (void)setInvitePresenter:;
+- (void)setDisablePresenter:;
+- (double)cellShowTrackInterval;
+- (void)setCellShowTrackInterval:;
+- (id)displayMessage;
+- (void)setScene:;
+- (id)message;
+- (long long)scene;
+- (void).cxx_destruct;
+@end

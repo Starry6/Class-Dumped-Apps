@@ -1,0 +1,31 @@
+@interface AWEECOMIMDetailPlatformDynamicCardTestConfig : MTLModel
+@property (nonatomic) double testFetchJSCompletionDelay;
+@property (nonatomic) double testFetchJSErrorRate;
+@property (nonatomic) double testCreateViewCompletionDelay;
+@property (nonatomic) double testCreateViewErrorRate;
+@property (nonatomic) double testBindDataCompletionDelay;
+@property (nonatomic) double testBindDataErrorRate;
+@property (nonatomic) double testHandleDataCompletionDelay;
+@property (nonatomic) double testHandleDataErrorRate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)testFetchJSCompletionDelay;
+- (void)setTestFetchJSCompletionDelay:;
+- (double)testFetchJSErrorRate;
+- (void)setTestFetchJSErrorRate:;
+- (double)testHandleDataCompletionDelay;
+- (void)setTestHandleDataCompletionDelay:;
+- (double)testHandleDataErrorRate;
+- (void)setTestHandleDataErrorRate:;
+- (double)testCreateViewCompletionDelay;
+- (void)setTestCreateViewCompletionDelay:;
+- (double)testCreateViewErrorRate;
+- (void)setTestCreateViewErrorRate:;
+- (double)testBindDataCompletionDelay;
+- (void)setTestBindDataCompletionDelay:;
+- (double)testBindDataErrorRate;
+- (void)setTestBindDataErrorRate:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

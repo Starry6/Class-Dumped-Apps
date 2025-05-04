@@ -1,0 +1,35 @@
+@interface AWEPlayInteractionCoCreatorButtonView : UIView
+@property (nonatomic) <AWEPlayInteractionBottomButtonViewDelegateProtocol> delegate;
+@property (nonatomic) AWEPlayInteractionTemplateButton acceptButton;
+@property (nonatomic) AWEPlayInteractionTemplateButton refuseButton;
+@property (nonatomic) DUXLoadingCircleView loadingView;
+@property (nonatomic) NSArray configGroup;
+@property (nonatomic) AWEPlayInteractionContext context;
+@property (nonatomic) UIStackView groupView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startLoading:;
+- (void)setupBinding;
+- (id)buttonArray;
+- (id)refuseButton;
+- (void)setRefuseButton:;
+- (void)setupGroup;
+- (id)configGroup;
+- (void)playFlashAnimationIfNeeded;
+- (id)initWithConfigGroup:context:;
+- (void)setConfigGroup:;
+- (id)delegate;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (void)stopLoading:;
+- (id)acceptButton;
+- (void)setAcceptButton:;
+- (id)groupView;
+- (void)setGroupView:;
+@end

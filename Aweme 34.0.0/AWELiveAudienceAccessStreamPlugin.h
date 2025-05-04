@@ -1,0 +1,31 @@
+@interface AWELiveAudienceAccessStreamPlugin : NSObject
+@property (nonatomic) AWELiveAudienceAccessContext context;
+@property (nonatomic) AWEAwemeLiveViewCellPreloader preloader;
+@property (nonatomic) AWEAwemeLiveViewCellPreloader streamPreloader;
+@property (nonatomic) q preloaderType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)mute:;
+- (void)prePullStream;
+- (id)dequeuePlayer;
+- (long long)preloaderType;
+- (void)setPreloaderType:;
+- (void)clearPreloadPlayer;
+- (id)streamPreloader;
+- (void)setStreamPreloader:;
+- (void)stageDidChangedFrom:to:;
+- (void)cancelPreloadStream;
+- (void)enqueuePlayerIfNeedWhenEnterRoom;
+- (void)startPreloadStreamWithPlayer:;
+- (void)play;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)stop;
+- (void)pause;
+- (id)preloader;
+- (void)setPreloader:;
+@end

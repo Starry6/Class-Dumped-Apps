@@ -1,0 +1,34 @@
+@interface AWEYAPTransportTrafficCard : AWEBaseApiModel
+@property (nonatomic) NSString trafficID;
+@property (nonatomic) NSString trafficName;
+@property (nonatomic) NSString userOpenStatus;
+@property (nonatomic) BOOL recommendFlag;
+@property (nonatomic) NSString ccmCardID;
+@property (nonatomic) NSString openAction;
+@property (nonatomic) NSString openScheme;
+@property (nonatomic) AWEYAPTransportTrafficAgreement agreement;
+@property (nonatomic) NSString trafficBackImg;
+@property (nonatomic) NSString trafficLogo;
+- (BOOL)recommendFlag;
+- (id)trafficID;
+- (void)setTrafficID:;
+- (id)trafficName;
+- (void)setTrafficName:;
+- (id)userOpenStatus;
+- (void)setUserOpenStatus:;
+- (id)openAction;
+- (void)setOpenAction:;
+- (id)openScheme;
+- (void)setOpenScheme:;
+- (id)ccmCardID;
+- (void)setCcmCardID:;
+- (id)agreement;
+- (void)setAgreement:;
+- (id)trafficBackImg;
+- (void)setTrafficBackImg:;
+- (void)setTrafficLogo:;
+- (id)trafficLogo;
+- (void)setRecommendFlag:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

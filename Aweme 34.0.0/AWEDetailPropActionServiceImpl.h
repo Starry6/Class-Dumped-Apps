@@ -1,0 +1,32 @@
+@interface AWEDetailPropActionServiceImpl : NSObject
+@property (nonatomic) AWEDetailPropViewModel stateContext;
+@property (nonatomic) AWEDetailPropTracker tracker;
+@property (nonatomic) BOOL onAction;
+@property (nonatomic) BOOL isCustomPath;
+@property (nonatomic) ACCPicTemplateShootEntranceConfigHelper albumInputConfigForPicTemplate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)actionWithActionSender:;
+- (id)initWithStateContext:tracker:;
+- (void)actionWithCreateSender:;
+- (void)actionWithFriendSender:;
+- (void)actionWithCreateLoraCustomWordSelectPageWith;
+- (BOOL)isOnAction;
+- (void)setOnAction:;
+- (void)actionWithActionIsCreateAI:;
+- (id)aAWEFeedFlameAnchorDOUYINHTSAdapterProtocol;
+- (void)handleAIGCStickerIsCreate:stickerIDArray:musicModel:referString:trackInfo:info:;
+- (id)albumInputConfigForPicTemplate;
+- (void)p_handleStartShootError:;
+- (BOOL)isCustomPath;
+- (void)setIsCustomPath:;
+- (void)setAlbumInputConfigForPicTemplate:;
+- (void)setStateContext:;
+- (id)tracker;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (id)stateContext;
++ (Class)aAWEFeedFlameAnchorDOUYINHTSAdapterProtocolClass;
+@end

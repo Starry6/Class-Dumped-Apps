@@ -1,0 +1,36 @@
+@interface AWEEcomSearchImageUnChangedRequestParams : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString ecomScene;
+@property (nonatomic) NSString shopID;
+@property (nonatomic) NSString productName;
+@property (nonatomic) NSString firstCategoryID;
+@property (nonatomic) NSString searchChannel;
+@property (nonatomic) NSString productId;
+@property (nonatomic) NSString videoPlayTime;
+@property (nonatomic) NSString authorId;
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString queryImageUrl;
+- (id)roomId;
+- (void)setRoomId:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setShopID:;
+- (id)shopID;
+- (id)videoPlayTime;
+- (void)setVideoPlayTime:;
+- (id)firstCategoryID;
+- (void)setFirstCategoryID:;
+- (id)searchChannel;
+- (void)setSearchChannel:;
+- (id)ecomScene;
+- (void)setEcomScene:;
+- (id)queryImageUrl;
+- (void)setQueryImageUrl:;
+- (void)setProductName:;
+- (id)productName;
+- (id)productId;
+- (void).cxx_destruct;
+- (void)setProductId:;
+- (id)authorId;
+- (void)setAuthorId:;
+@end

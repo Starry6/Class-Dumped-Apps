@@ -1,0 +1,34 @@
+@interface AWEIMIncentiveChatRelationIdentity : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) Q interactionType;
+@property (nonatomic) Q inviteType;
+@property (nonatomic) q lastUpdateTime;
+@property (nonatomic) NSString relationID;
+@property (nonatomic) q relationLastUpdateTime;
+- (id)relationID;
+- (void)setRelationID:;
+- (id)initWithDictionary:relationID:relationLastUpdateTime:;
+- (long long)relationLastUpdateTime;
+- (void)setRelationLastUpdateTime:;
+- (id)userID;
+- (void)setLastUpdateTime:;
+- (void)setInteractionType:;
+- (void).cxx_destruct;
+- (long long)lastUpdateTime;
+- (BOOL)isEqual:;
+- (unsigned long long)interactionType;
+- (void)setUserID:;
+- (unsigned long long)inviteType;
+- (void)setInviteType:;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)relationID;
++ (id)relationLastUpdateTime;
++ (id)userID;
++ (id)tableName;
++ (id)lastUpdateTime;
++ (id)interactionType;
++ (id)inviteType;
+@end

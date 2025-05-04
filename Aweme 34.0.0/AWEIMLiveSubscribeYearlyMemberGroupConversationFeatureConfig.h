@@ -1,0 +1,2 @@
+@interface AWEIMLiveSubscribeYearlyMemberGroupConversationFeatureConfig : AWEIMLiveSubscribeMemberGroupConversationFeatureConfig
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMFansGroupCouponContentProps : AWEIMUIViewPresenterProps
+@property (nonatomic) AWEIMFansGroupCouponModel couponModel;
+@property (nonatomic) <AWEIMCommerceCouponBuilderProtocol> couponBuilder;
+@property (nonatomic) UIColor titleLabelColor;
+@property (nonatomic) UIColor subTitleLabelColor;
+@property (nonatomic) UIColor bottomTitleLabelColor;
+@property (nonatomic) UIColor couponBackgroundColor;
+@property (nonatomic) @? refreshExtWithCouponModelHandler;
+@property (nonatomic) @? processCurrentCommerceCouponHandler;
+@property (nonatomic) @? enterpriseTrackHandler;
+- (void)setCouponModel:;
+- (id)couponModel;
+- (void)setCouponBuilder:;
+- (void)setSubTitleLabelColor:;
+- (void)setBottomTitleLabelColor:;
+- (void)setCouponBackgroundColor:;
+- (void)setRefreshExtWithCouponModelHandler:;
+- (void)setProcessCurrentCommerceCouponHandler:;
+- (void)setEnterpriseTrackHandler:;
+- (id)couponBuilder;
+- (id)subTitleLabelColor;
+- (id)bottomTitleLabelColor;
+- (id)couponBackgroundColor;
+- (id)refreshExtWithCouponModelHandler;
+- (id)processCurrentCommerceCouponHandler;
+- (id)enterpriseTrackHandler;
+- (void).cxx_destruct;
+- (id)titleLabelColor;
+- (void)setTitleLabelColor:;
+@end

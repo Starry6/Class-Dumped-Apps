@@ -1,0 +1,30 @@
+@interface AWEOfflineVideoCenter : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)downloadVideoWithAwemeModel:enterFrom:;
+- (void)downloadVideoWithAwemeModels:enterFrom:;
+- (id)downloadVideoList;
+- (BOOL)hasCachedAwemeModel:;
+- (BOOL)hasDownloadedAwemeModel:;
+- (long long)videoSizeMBWithAwemodels:;
+- (long long)availableStorageGB;
+- (id)downloadVideoListWithMixInfo:;
+- (id)awemeModelFromSingleSourceModel:;
+- (id)videoCenterModel;
+- (id)configRootPath;
+- (long long)videoSizeMBWithAwemodel:;
+- (void)clearOfflineModeCache;
+- (id)init;
+- (void)setup;
+- (id)rootPath;
+- (id)currentUserID;
++ (BOOL)hasUserDownloadedVideo;
++ (void)setVideoWatched:watched:;
++ (BOOL)isVideoWatched:;
++ (id)singleModelWithAwemeModel:;
++ (id)sharedInstance;
+@end

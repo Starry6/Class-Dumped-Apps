@@ -1,0 +1,30 @@
+@interface AWEHomePageRemoteCommonButtonDataModel : AWEHomePageRemoteItemDataModel
+@property (nonatomic) q moduleType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString selectedTitle;
+@property (nonatomic) q iconPosition;
+@property (nonatomic) AWEHomePageRemoteCommonImageModel iconModel;
+@property (nonatomic) AWEHomePageRemoteCommonImageModel selectedIconModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIconPosition:;
+- (long long)iconPosition;
+- (void)setSelectedIconModel:;
+- (id)selectedIconModel;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setIconModel:;
+- (long long)moduleType;
+- (void)setTitle:;
+- (id)iconModel;
+- (id)copyWithZone:;
+- (void)setModuleType:;
+- (id)selectedTitle;
+- (void)setSelectedTitle:;
+- (BOOL)isModelValid;
++ (id)iconModelJSONTransformer;
++ (id)selectedIconModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWECommerceVisualLog : NSObject
++ (void)AWEVLogAppStoreGoodInfo:;
++ (void)AWEVLogBPEABadInfo:;
++ (void)AWEVLogGeneralGoodInfo:;
++ (void)AWEVlogGeneralInfo:;
++ (void)AWEVLogAdSplashInfo:;
++ (void)AWEVLogAdGokuInfo:;
++ (void)AWEVLogAdGokuBadInfo:;
++ (void)AWEVLogSearchAdInfo:;
++ (void)AWEVLogCommercialLotteryInfo:;
++ (void)AWEVLogCommercialLotteryGoodInfo:;
++ (void)AWEVLogCommercialLotteryBadInfo:;
++ (void)AWEVLogAnchorInfo:;
++ (void)AWEVLogAnchorBadInfo:;
++ (void)AWEVLogAppStoreBadInfo:;
++ (id)AWECMCStringWithformat:args:;
++ (void)AWEVLogGeneralBadInfo:;
++ (void)AWEVLogAdSplashGoodInfo:;
++ (void)AWEVLogAdSplashBadInfo:;
++ (void)AWEVLogAdGokuGoodInfo:;
++ (void)AWEVLogAdCardInfo:;
++ (void)AWEVLogAdCardGoodInfo:;
++ (void)AWEVLogAdCardBadInfo:;
++ (void)AWEVLogChallengeInfo:;
++ (void)AWEVLogChallengeGoodInfo:;
++ (void)AWEVLogChallengeBadInfo:;
++ (void)AWEVLogSearchAdGoodInfo:;
++ (void)AWEVLogSearchAdBadInfo:;
++ (void)AWEVLogAnchorGoodInfo:;
++ (void)AWEVLogAppStoreInfo:;
+@end

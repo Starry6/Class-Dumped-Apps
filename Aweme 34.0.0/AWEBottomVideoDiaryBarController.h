@@ -1,0 +1,30 @@
+@interface AWEBottomVideoDiaryBarController : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSObject<AWEAwemeDetailBottomBarCommonContextProtocol> context;
+@property (nonatomic) UIView bottomView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel topicLabel;
+@property (nonatomic) AWEButton publishButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)updateBottomBarWithAweme:updateTiming:;
+- (BOOL)canShowBottomBarForAweme:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)trackVideoDiaryWithEvent:;
+- (void)onPublishButtonTapped:;
+- (id)topicLabel;
+- (id)publishButton;
+- (void)setTopicLabel:;
+- (void)setPublishButton:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)bottomView;
+- (void)setBottomView:;
+- (Class)contextClass;
+- (id)bottomBarView;
+@end

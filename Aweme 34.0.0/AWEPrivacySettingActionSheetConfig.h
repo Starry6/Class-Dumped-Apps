@@ -1,0 +1,30 @@
+@interface AWEPrivacySettingActionSheetConfig : NSObject
+@property (nonatomic) NSArray models;
+@property (nonatomic) NSString headerText;
+@property (nonatomic) NSString headerTitleText;
+@property (nonatomic) BOOL needHighLight;
+@property (nonatomic) BOOL useCardUIStyle;
+@property (nonatomic) BOOL fromHalfScreen;
+@property (nonatomic) UIImage headerLabelIcon;
+@property (nonatomic) double sheetWidth;
+@property (nonatomic) BOOL adaptIpadFromHalfVC;
+- (void)setAdaptIpadFromHalfVC:;
+- (void)setFromHalfScreen:;
+- (void)setHeaderLabelIcon:;
+- (void)setHeaderTitleText:;
+- (void)setNeedHighLight:;
+- (void)setSheetWidth:;
+- (void)setUseCardUIStyle:;
+- (BOOL)useCardUIStyle;
+- (id)headerTitleText;
+- (BOOL)needHighLight;
+- (BOOL)fromHalfScreen;
+- (id)headerLabelIcon;
+- (double)sheetWidth;
+- (BOOL)adaptIpadFromHalfVC;
+- (void)setModels:;
+- (id)headerText;
+- (void).cxx_destruct;
+- (id)models;
+- (void)setHeaderText:;
+@end

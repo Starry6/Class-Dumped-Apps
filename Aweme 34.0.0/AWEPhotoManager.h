@@ -1,0 +1,35 @@
+@interface AWEPhotoManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (void)requestAuthorizationWithCompletionOnMainQueue:;
++ (int)getUIImageWithPHAsset:networkAccessAllowed:progressHandler:completion:;
++ (int)getUIImageWithPHAsset:imageSize:contentMode:networkAccessAllowed:progressHandler:completion:;
++ (void)getLatestAssetWithType:completion:;
++ (int)getUIImageWithPHAsset:targetSize:contentMode:options:resultHandler:;
++ (int)getUIImageWithPHAsset:imageSize:networkAccessAllowed:progressHandler:completion:;
++ (void)getPhotoDataWithAsset:version:completion:;
++ (void)getOriginalPhotoDataFromICloudWithAsset:progressHandler:completion:;
++ (id)privateVideoURLWithInfo:;
++ (void)getAssetsFromFetchResult:filterBlock:completion:;
++ (void)getAssetsWithAlbum:type:filterBlock:completion:;
++ (void)getAssetsWithIdentifiers:completion:;
++ (void)getAssetsAndAVAssetAndCoverImageWithIdentifiers:completion:;
++ (void)getAssetsWithType:filterBlock:completion:;
++ (void)getAssetsWithType:filterBlock:ascending:completion:;
++ (void)getAllAssetsWithType:ascending:completion:;
++ (int)getUIImageWithPHAsset:imageSize:contentMode:networkAccessAllowed:resizeMode:progressHandler:completion:;
++ (void)getOriginalPhotoDataWithAsset:completion:;
++ (void)getPhotosBytesWithArray:completion:;
++ (void)getPhotosBytesWithArray:resizeMode:completion:;
++ (id)sizeFor1080P:;
++ (id)processImageTo1080P:;
++ (id)processImageWithBlackEdgeWithOutputSize:sourceImage:;
++ (id)getMD5withPath:usedBytes:;
++ (id)timeStringWithDuration:;
++ (id)assetModelWithPHAsset:;
++ (unsigned long long)authorizationStatus;
++ (void)cancelImageRequest:;
++ (void)authorizationStatusWithCompletion:;
+@end

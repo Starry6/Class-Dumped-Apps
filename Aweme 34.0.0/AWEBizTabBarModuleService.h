@@ -1,0 +1,34 @@
+@interface AWEBizTabBarModuleService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onAppDidBecomeActive;
+- (void)resetNavigationForCurrentTab;
+- (long long)calculateTimestampDiffFromAppDidBecomeActive;
+- (BOOL)isFirstLevelPage;
+- (id)pageReferStringForTabItemType:;
+- (void)updateSelectedItemType:;
+- (void)switchToTabBarItemWithType:;
+- (void)resetSelectedTabWithAllowRepeatSelected:scene:;
+- (void)reloadTabBarWithTabItemType:reloadScene:;
+- (id)tabIDToTabBarItemTypeMap;
+- (id)tabBarItemTypes;
+- (id)tabIDWhiteList;
+- (id)generateTabBarItemTypesWithTabIDList:;
+- (id)selectedRootViewController;
+- (void)reloadTabBarItemsOnly:;
+- (void)updateNormalModeTabBarButton:withTitle:;
+- (void)updateNormalModeTabBarButton:withTitle:animated:;
+- (void)setTabBarBackgroundColorFill:animated:;
+- (void)showTabBarSeparatorLine:;
+- (double)tabBarThemeProgress;
+- (id)getTabBarController;
+- (long long)selectedItemTypeWithModeType:;
+- (id)getNormalModeItemConfigWithTabID:;
+- (void)switchToLightModeWithProgress:modeType:itemType:businessID:;
+- (void)switchToLightModeWithProgress:force:modeType:itemType:businessID:;
+- (void)addLightModeListenr:modeType:;
+- (id)applyUIControlTaskWithBizID:;
+- (long long)selectedItemType;
+@end

@@ -1,0 +1,38 @@
+@interface AWEVideoPublishMusicSelectTopTabItemData : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIColor unselectColor;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) UIFont unselectTitleFont;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) double underlineSpace;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) double titleTopOffset;
+@property (nonatomic) double buttonLeftOffset;
+@property (nonatomic) BOOL needFirstSelected;
+- (void)setSelectedBlock:;
+- (id)selectedBlock;
+- (void)setTitleTopOffset:;
+- (void)setUnselectTitleFont:;
+- (void)setUnselectColor:;
+- (void)setButtonLeftOffset:;
+- (id)initWithTitle:isLightStyle:;
+- (double)underlineSpace;
+- (void)setUnderlineSpace:;
+- (id)unselectColor;
+- (double)titleTopOffset;
+- (double)buttonLeftOffset;
+- (BOOL)needFirstSelected;
+- (void)setNeedFirstSelected:;
+- (id)unselectTitleFont;
+- (id)initWithTitle:;
+- (id)titleColor;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (id)titleFont;
+- (void).cxx_destruct;
+- (id)title;
+- (BOOL)selected;
+- (void)setTitle:;
+- (void)setSelected:;
+@end

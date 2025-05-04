@@ -1,0 +1,37 @@
+@interface AWEAdGetAdUserProfileResultModel : BDXBridgeModel
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) NSString avatar;
+@property (nonatomic) NSNumber curUserFollowed;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSNumber scenes;
+@property (nonatomic) NSNumber isLive;
+@property (nonatomic) NSNumber curAwemeDigged;
+@property (nonatomic) NSNumber curAwemeDiggCount;
+@property (nonatomic) NSNumber curAwemeCommentCount;
+- (id)secUid;
+- (void)setRefer:;
+- (id)refer;
+- (void)setSecUid:;
+- (id)curUserFollowed;
+- (void)setCurUserFollowed:;
+- (id)curAwemeDigged;
+- (void)setCurAwemeDigged:;
+- (id)curAwemeDiggCount;
+- (void)setCurAwemeDiggCount:;
+- (id)curAwemeCommentCount;
+- (void)setCurAwemeCommentCount:;
+- (id)nickname;
+- (id)scenes;
+- (id)userId;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (id)isLive;
+- (void)setNickname:;
+- (id)avatar;
+- (void)setAvatar:;
+- (void)setScenes:;
+- (void)setIsLive:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWEAnchorMusicSelectSearchViewModel : NSObject
+@property (nonatomic) NSString searchText;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSArray cellModels;
+@property (nonatomic) NSString musicId;
+@property (nonatomic) NSMutableArray allTrackIDs;
+- (void)loadMoreWithCompletion:;
+- (id)musicId;
+- (void)setCellModels:;
+- (id)cellModels;
+- (id)initWithMusicId:;
+- (void)refreshWithSearchText:completion:;
+- (void)loadMoreWithSearchText:refresh:completion:;
+- (id)allTrackIDs;
+- (void)setAllTrackIDs:;
+- (id)cursor;
+- (id)requestID;
+- (void)setRequestID:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)setSearchText:;
+- (id)searchText;
+- (id)searchID;
+- (void)setSearchID:;
+@end

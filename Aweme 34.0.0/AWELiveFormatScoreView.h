@@ -1,0 +1,34 @@
+@interface AWELiveFormatScoreView : UIView
+@property (nonatomic) UIImageView leftIcon;
+@property (nonatomic) UILabel leftName;
+@property (nonatomic) UIView scoreContianer;
+@property (nonatomic) UILabel leftGoal;
+@property (nonatomic) UILabel rightGoal;
+@property (nonatomic) UILabel startTime;
+@property (nonatomic) UILabel rightName;
+@property (nonatomic) UIImageView rightIcon;
+- (void)setLeftIcon:;
+- (void)setRightIcon:;
+- (void)setLeftName:;
+- (id)leftName;
+- (void)setScoreContianer:;
+- (void)setLeftGoal:;
+- (id)leftGoal;
+- (void)setRightGoal:;
+- (id)rightGoal;
+- (id)scoreContianer;
+- (void)setRightName:;
+- (id)rightName;
+- (void)updateToShowTime:;
+- (void)updateLeft:withIcon:;
+- (void)updateRight:withIcon:;
+- (void)updateScore:and:;
+- (void)cleanScoreViewAllData;
+- (id)init;
+- (void)setStartTime:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)startTime;
+- (id)leftIcon;
+- (id)rightIcon;
+@end

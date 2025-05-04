@@ -1,0 +1,31 @@
+@interface AWECoCreatorMultiDetailCell : UITableViewCell
+@property (nonatomic) NSMutableArray itemViews;
+@property (nonatomic) AWECoCreatorMultiDetailCellModel cellModel;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastFrame;
+@property (nonatomic) double itemPadding;
+@property (nonatomic) {CGSize=dd} itemSize;
+@property (nonatomic) double itemTopMargin;
+@property (nonatomic) @? clickHandler;
+- (id)clickHandler;
+- (void)setCellModel:;
+- (double)itemPadding;
+- (void)setItemPadding:;
+- (void)setClickHandler:;
+- (double)firstItemViewLeft;
+- (double)itemTopMargin;
+- (void)setItemTopMargin:;
+- (void)prepareForReuse;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)itemSize;
+- (void)setItemSize:;
+- (id)lastFrame;
+- (void)setLastFrame:;
+- (id)itemViews;
+- (void)setItemViews:;
+- (id)cellModel;
+- (void)updateWithModel:;
+- (id)avatarImageSize;
++ (id)identifier;
+@end

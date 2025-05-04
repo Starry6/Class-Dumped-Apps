@@ -1,0 +1,32 @@
+@interface AWEMusicStreamingImpl.LunaAssetInfo : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString assetOrderID;
+@property (nonatomic) NSString assetType;
+@property (nonatomic) NSString assetName;
+@property (nonatomic) q assetStatus;
+@property (nonatomic) q redeemExpireTime;
+@property (nonatomic) q redeemTime;
+@property (nonatomic) NSString redeemExternalAccount;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo assetImage;
+- (id)assetOrderID;
+- (void)setAssetOrderID:;
+- (long long)redeemExpireTime;
+- (void)setRedeemExpireTime:;
+- (long long)redeemTime;
+- (void)setRedeemTime:;
+- (id)redeemExternalAccount;
+- (void)setRedeemExternalAccount:;
+- (void)setAssetName:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setAssetType:;
+- (void).cxx_destruct;
+- (id)assetType;
+- (id)assetName;
+- (id)initWithCoder:;
+- (id)assetImage;
+- (void)setAssetImage:;
+- (long long)assetStatus;
+- (void)setAssetStatus:;
++ (id)assetImageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

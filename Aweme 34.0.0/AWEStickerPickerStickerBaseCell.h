@@ -1,0 +1,33 @@
+@interface AWEStickerPickerStickerBaseCell : UICollectionViewCell
+@property (nonatomic) BOOL stickerSelected;
+@property (nonatomic) BOOL enableTitleAnimationDegrade;
+@property (nonatomic) <ACCGenericEffectModel> sticker;
+@property (nonatomic) BOOL skipDownLoad;
+@property (nonatomic) BOOL stickerIconFinishLoad;
+@property (nonatomic) double stickerIconLoadTime;
+@property (nonatomic) Q stickerStatus;
+@property (nonatomic) UIColor selectedBorderColor;
+@property (nonatomic) <AWEStickerPickerStickerCellAppearanceDelegate> delegate;
+- (void)updateUIConfig:;
+- (id)selectedBorderColor;
+- (void)setSelectedBorderColor:;
+- (BOOL)stickerSelected;
+- (void)setStickerSelected:;
+- (void)setStickerSelected:animated:;
+- (void)setEnableTitleAnimationDegrade:;
+- (void)updateStickerIconImage;
+- (BOOL)enableTitleAnimationDegrade;
+- (double)stickerIconLoadTime;
+- (BOOL)stickerIconFinishLoad;
+- (void)setStickerStatus:;
+- (BOOL)skipDownLoad;
+- (void)setSkipDownLoad:;
+- (void)setStickerIconFinishLoad:;
+- (void)setStickerIconLoadTime:;
+- (unsigned long long)stickerStatus;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)sticker;
+- (void)setSticker:;
+@end

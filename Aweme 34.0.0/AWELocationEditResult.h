@@ -1,0 +1,34 @@
+@interface AWELocationEditResult : NSObject
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) NSString country;
+@property (nonatomic) NSString province;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString district;
+@property (nonatomic) NSNumber countryId;
+@property (nonatomic) NSNumber provinceId;
+@property (nonatomic) NSNumber cityId;
+@property (nonatomic) NSNumber districtId;
+@property (nonatomic) BOOL isAutoLocated;
+- (id)districtId;
+- (void)setDistrictId:;
+- (void)setProvince:;
+- (id)province;
+- (id)countryId;
+- (id)provinceId;
+- (id)cityId;
+- (id)generateIdList;
+- (void)setCountryId:;
+- (void)setProvinceId:;
+- (void)setCityId:;
+- (BOOL)isAutoLocated;
+- (void)setIsAutoLocated:;
+- (id)country;
+- (void)setCountryCode:;
+- (id)city;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (id)countryCode;
+- (void)setCountry:;
+- (void)setDistrict:;
+- (id)district;
+@end

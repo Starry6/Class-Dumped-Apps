@@ -1,0 +1,34 @@
+@interface AWEUserRecommendPlaceholderCellView : UIView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AFDSkeletonLoaderView loadingView;
+@property (nonatomic) AWEUserRecommendBaseCellViewLayout layout;
+@property (nonatomic) AWEUserRecommendPlaceholderCellModel model;
+@property (nonatomic) <AWEUserRecommendTableViewModelProtocol> viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)configWithModel:;
+- (void)setModel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setLayout:;
+- (void)setTableView:;
+- (id)layout;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)tableView;
+- (id)loadingView;
+- (id)initWithFrame:layout:;
+- (id)model;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (void)didEndDisplaying;
+- (void)willDisplay;
++ (id)cellViewWithFrame:layout:;
++ (double)heightForModel:viewModel:;
++ (double)rowHeightForViewModel:;
+@end

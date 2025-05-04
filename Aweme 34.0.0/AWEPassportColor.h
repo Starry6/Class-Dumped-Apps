@@ -1,0 +1,34 @@
+@interface AWEPassportColor : NSObject
+@property (nonatomic) <AWEPassportColor> implementation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)implementation;
+- (void)setImplementation:;
+- (void).cxx_destruct;
++ (void)setupImplementation:;
++ (id)standardColorS4;
++ (id)standardColorS12;
++ (id)standardColorS11;
++ (id)standardColorS22;
++ (id)standardColorS14;
++ (id)standardColorS3;
++ (id)standardColorS1;
++ (id)standardColorS2;
++ (id)standardColorS1_D;
++ (id)standardColorS10;
++ (id)standardColorS10_D;
++ (id)standardColorS11_D;
++ (id)standardColorS12_D;
++ (id)standardColorS13;
++ (id)standardColorS13_D;
++ (id)standardColorS20;
++ (id)standardColorS21;
++ (id)standardColorS30;
++ (id)standardColorS5;
++ (id)standardColorS64;
++ (id)wrapperColor_T5_M2;
++ (id)wrapperColor_T13_M14;
++ (id)sharedInstance;
+@end

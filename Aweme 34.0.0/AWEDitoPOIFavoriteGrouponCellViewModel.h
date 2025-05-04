@@ -1,0 +1,38 @@
+@interface AWEDitoPOIFavoriteGrouponCellViewModel : DitoComponentViewModel
+@property (nonatomic) AWEPOISpuModel spuModel;
+@property (nonatomic) AWEPOIContentItemModel poiInfo;
+@property (nonatomic) AWEDitoPOIFavoritePageContext context;
+@property (nonatomic) BOOL hasTrackShow;
+@property (nonatomic) NSNumber inTheSameCity;
+@property (nonatomic) NSDictionary itemModel;
+@property (nonatomic) double componentWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)poiInfo;
+- (id)itemModel;
+- (void)setItemModel:;
+- (void)setPoiInfo:;
+- (void)setHasTrackShow:;
+- (BOOL)hasTrackShow;
+- (id)componentReuseIdentifier;
+- (void)bindStateAndAction;
+- (id)componentSizeWithMaxWidth:;
+- (id)tagsView:tagViewForItemAtIndex:;
+- (id)trackParamsForAutoTrackWithEventName:params:;
+- (void)componentViewDidCompleteShow;
+- (void)handleTapContainerView:;
+- (void)handleTapPoiName:;
+- (void)setSpuModel:;
+- (id)spuModel;
+- (id)inTheSameCity;
+- (id)configView:withTagModel:;
+- (void)setInTheSameCity:;
+- (id)initWithNode:;
+- (void)trackEvent:;
+- (long long)numberOfItems;
+- (void).cxx_destruct;
+- (double)componentWidth;
+- (void)setComponentWidth:;
+@end

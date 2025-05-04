@@ -1,0 +1,38 @@
+@interface AWEVisibleScopeListCell : UITableViewCell
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView selectImageView;
+@property (nonatomic) UILabel relationLabel;
+@property (nonatomic) UIView relationView;
+@property (nonatomic) MASConstraint titleTopConstraint;
+@property (nonatomic) MASConstraint titleCenterConstraint;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (id)relationLabel;
+- (void)setRelationLabel:;
+- (void)setSelectImageView:;
+- (id)selectImageView;
+- (void)updateSelected:;
+- (id)relationView;
+- (void)setRelationView:;
+- (void)configUserForSearching:isSelected:isDisableSelect:;
+- (void)setDisableSelectForChatGroupAndUser;
+- (void)configUser:isSelected:isDisableSelect:;
+- (void)setDisableStyle;
+- (id)relationForAwemeUser:;
+- (void)pr_configCellTitle:desc:relation:isSelected:isDisableSelect:;
+- (void)setTitleTopConstraint:;
+- (void)setTitleCenterConstraint:;
+- (id)titleTopConstraint;
+- (id)titleCenterConstraint;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (void)setupUI;
++ (id)identifier;
++ (double)cellHeight;
+@end

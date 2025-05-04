@@ -1,0 +1,34 @@
+@interface AWECommerceSearchBrand3DModel : MTLModel
+@property (nonatomic) BOOL showBaseLine;
+@property (nonatomic) AWECommerceSearchAlphaVideoModel searchAlphaVideoModel;
+@property (nonatomic) NSArray interactionDisable;
+@property (nonatomic) NSNumber preloadTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSMutableDictionary componentStages;
+@property (nonatomic) <AWEAdPreloadComponentContext> componentContext;
+- (id)componentContext;
+- (void)setComponentContext:;
+- (id)preloadTime;
+- (void)setPreloadTime:;
+- (id)searchAlphaVideoModel;
+- (id)componentRefer;
+- (id)componentCreativeID;
+- (id)componentLogExtra;
+- (id)componentGroupID;
+- (id)componentExtraID;
+- (id)componentStages;
+- (void)setComponentStages:;
+- (BOOL)showBaseLine;
+- (void)setShowBaseLine:;
+- (void)setSearchAlphaVideoModel:;
+- (id)interactionDisable;
+- (void)setInteractionDisable:;
+- (id)init;
+- (id)componentType;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
++ (unsigned long long)storageBehaviorForPropertyWithKey:;
+@end

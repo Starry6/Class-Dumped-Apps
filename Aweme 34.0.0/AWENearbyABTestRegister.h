@@ -1,0 +1,2 @@
+@interface AWENearbyABTestRegister : NSObject
+@end

@@ -1,0 +1,30 @@
+@interface AWECoproduceIdentityOptionCell : UITableViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIView limitLabelContainer;
+@property (nonatomic) UILabel limitLabel;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) UIImageView selectImageView;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setSelectImageView:;
+- (id)selectImageView;
+- (id)limitLabel;
+- (void)setLimitLabel:;
+- (void)setUI;
+- (void)updateSelected:;
+- (id)limitLabelContainer;
+- (void)updateTitleText:isSelected:;
+- (void)updateTitleText:descText:limitCounts:isSelected:;
+- (void)setLimitLabelContainer:;
+- (void)setIsSelected:;
+- (void)prepareForReuse;
+- (id)containerView;
+- (BOOL)isSelected;
+- (void)setContainerView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+@end

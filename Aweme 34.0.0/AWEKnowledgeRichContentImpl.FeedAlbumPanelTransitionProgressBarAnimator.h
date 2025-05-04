@@ -1,0 +1,3 @@
+@interface AWEKnowledgeRichContentImpl.FeedAlbumPanelTransitionProgressBarAnimator : _TtGC22AWEKnowledgeSwiftBasic27TenetTransitionBaseAnimatorPSo47AWEFeedAlbumPanelTransitionOuterContextProvider_PSo47AWEFeedAlbumPanelTransitionInnerContextProvider__
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMGameRoomMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) AWEIMGameRoomInviteMessage gameMessage;
+@property (nonatomic) AWEIMGeneralCardView cardView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) AWEIMRefreshImageView coverImgView;
+@property (nonatomic) UIControl inviteContainerView;
+- (id)coverImgView;
+- (void)configWithMessage:;
+- (void)setGameMessage:;
+- (id)gameMessage;
+- (void)p_refreshUIWithStatus:;
+- (void)p_enterBtnTapped;
+- (void)p_requestRoomStatusWithGameID:roomID:completion:;
+- (void)afterMessageConfigured;
+- (void)p_trackGameCardDidAppear;
+- (void)p_trackGameDidTapped;
+- (id)inviteContainerView;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)cardView;
+- (void)setCardView:;
+- (void)willDisplayCell;
+- (id)statusLabel;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

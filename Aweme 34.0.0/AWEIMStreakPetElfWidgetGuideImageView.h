@@ -1,0 +1,30 @@
+@interface AWEIMStreakPetElfWidgetGuideImageView : UIView
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) UIView smallWidgetContainerView;
+@property (nonatomic) UIView smallWidgetContainerBGView;
+@property (nonatomic) UIImageView streakPetElfImageView;
+@property (nonatomic) UIImageView streakIcon;
+@property (nonatomic) AWEIMStreakPetElfWidgetGuideSmallAvatarView avatarImageView;
+@property (nonatomic) UILabel chatDaysLabel;
+@property (nonatomic) UILabel textLabel;
+- (void)p_setupUI;
+- (void)renderWithViewModel:;
+- (id)chatDaysLabel;
+- (void)setChatDaysLabel:;
+- (id)streakPetElfImageView;
+- (id)smallWidgetContainerView;
+- (void)setSmallWidgetContainerView:;
+- (id)smallWidgetContainerBGView;
+- (void)setSmallWidgetContainerBGView:;
+- (void)setStreakPetElfImageView:;
+- (id)streakIcon;
+- (void)setStreakIcon:;
+- (id)textLabel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setTextLabel:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (void)setBgImageView:;
+- (id)bgImageView;
+@end

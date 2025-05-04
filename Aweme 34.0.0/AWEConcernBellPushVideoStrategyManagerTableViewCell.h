@@ -1,0 +1,32 @@
+@interface AWEConcernBellPushVideoStrategyManagerTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) Q cornerType;
+@property (nonatomic) BOOL useCardUIStyle;
+- (void)setUseCardUIStyle:;
+- (BOOL)useCardUIStyle;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (void)setupCorners;
+- (void)configWithModel:strategy:;
+- (void)configWithLiveUserModel:;
+- (void)setAvatarView:;
+- (void)prepareForReuse;
+- (id)iconView;
+- (id)avatarView;
+- (void)awakeFromNib;
+- (void)setIconView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setSelected:animated:;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (BOOL)isDarkMode;
+- (unsigned long long)cornerType;
+- (void)setCornerType:;
++ (id)identifier;
++ (double)cellHeight;
+@end

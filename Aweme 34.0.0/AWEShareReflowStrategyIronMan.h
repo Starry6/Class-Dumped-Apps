@@ -1,0 +1,26 @@
+@interface AWEShareReflowStrategyIronMan : NSObject
+@property (nonatomic) Q schemaType;
+@property (nonatomic) AWEShareTokenHandlerResponseModel model;
+@property (nonatomic) NSString longURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSchemaType:;
+- (void)setLongURL:;
+- (id)longURL;
+- (id)initWithModel:longURL:;
+- (BOOL)shouldAvoidSamePageWithModel:;
+- (BOOL)enableTransferDirectly;
+- (BOOL)shouldDelayTokenFind;
+- (void)transferWithModel:params:longURL:tokenFromType:;
+- (void)configReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (id)exchangeAvailableSchemaWithOriginSchema:;
+- (void)showIronManAlertWithAppInfo:URL:platformType:tokenParams:;
+- (void)setModel:;
+- (unsigned long long)schemaType;
+- (id)model;
+- (id)descriptionText;
+- (void).cxx_destruct;
+- (id)tokenType;
+@end

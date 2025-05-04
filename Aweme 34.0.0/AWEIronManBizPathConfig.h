@@ -1,0 +1,36 @@
+@interface AWEIronManBizPathConfig : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) q validTimeDuration;
+@property (nonatomic) NSNumber clientSampleRate;
+@property (nonatomic) BOOL useHighSample;
+@property (nonatomic) NSArray defaultIndexParams;
+@property (nonatomic) NSDictionary defaultMatchParams;
+@property (nonatomic) NSArray defaultGetParams;
+@property (nonatomic) NSArray additionalCommonParams;
+@property (nonatomic) NSArray stages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStages:;
+- (long long)validTimeDuration;
+- (void)setValidTimeDuration:;
+- (void)setClientSampleRate:;
+- (BOOL)useHighSample;
+- (void)setUseHighSample:;
+- (id)defaultIndexParams;
+- (void)setDefaultIndexParams:;
+- (id)defaultMatchParams;
+- (void)setDefaultMatchParams:;
+- (id)defaultGetParams;
+- (void)setDefaultGetParams:;
+- (id)additionalCommonParams;
+- (void)setAdditionalCommonParams:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)stages;
+- (id)clientSampleRate;
++ (id)stagesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

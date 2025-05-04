@@ -1,0 +1,37 @@
+@interface AWEFollowListRecommendCardViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWEFollowListRecommendCardDataController dataController;
+@property (nonatomic) NSMutableArray cardModels;
+@property (nonatomic) BOOL didClickCancelSectionButton;
+@property (nonatomic) BOOL didRecommendCardNeedRefreshUI;
+@property (nonatomic) BOOL isInitFetch;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (void)didFinishSetRemarkWithUser:;
+- (void)didReceiveFollowUserResponse:context:error:;
+- (void)setDataController:;
+- (void)fetchSectionData;
+- (void)followUser:completion:;
+- (void)unfollowUser:completion:;
+- (void)loadMoreSectionData;
+- (void)setIsInitFetch:;
+- (BOOL)isInitFetch;
+- (id)cardModels;
+- (void)setCardModels:;
+- (void)dislikeRecommendUserWithUid:;
+- (void)setDidClickCancelSectionButton:;
+- (void)setDidRecommendCardNeedRefreshUI:;
+- (id)relationContextForUser:;
+- (void)setUpRecommendCardViewModel;
+- (void)fetchListData:;
+- (BOOL)didClickCancelSectionButton;
+- (BOOL)didRecommendCardNeedRefreshUI;
+- (void)dealloc;
+- (void)addObserver;
+- (void).cxx_destruct;
+- (id)dataController;
+@end

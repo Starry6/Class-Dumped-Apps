@@ -1,0 +1,37 @@
+@interface AWEIMUIButtonPresenterProps : AWEIMUIViewPresenterProps
+@property (nonatomic) NSString title;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) double selectedAlpha;
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) q buttonType;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) UIImage normalStateBackgroundImage;
+@property (nonatomic) UIImage highlightStateBackgroundImage;
+@property (nonatomic) @? tapBlock;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (void)setSelectedAlpha:;
+- (double)selectedAlpha;
+- (id)normalStateBackgroundImage;
+- (void)setNormalStateBackgroundImage:;
+- (id)highlightStateBackgroundImage;
+- (void)setHighlightStateBackgroundImage:;
+- (long long)buttonType;
+- (BOOL)enable;
+- (void)setTintColor:;
+- (id)titleColor;
+- (id)init;
+- (id)image;
+- (id)tintColor;
+- (void)setImage:;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (id)titleFont;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setButtonType:;
+- (void)setEnable:;
+- (void)setTitle:;
+@end

@@ -1,0 +1,33 @@
+@interface AWECompanyProfileExtensionAreaCardController : NSObject
+@property (nonatomic) AWECompanyProfileExtensionAreaCard cardView;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) AWEProfileExtensionAreaCardModel cardModel;
+@property (nonatomic) @? reloadCardListBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowCard;
+- (void)cardWillAppear;
+- (id)cardModel;
+- (void)setCardModel:;
+- (double)widthOfCard;
+- (id)initWithUserModel:cardModel:cardIndex:extraInfo:reloadCardListBlock:;
+- (BOOL)shouldShowHashtag;
+- (id)hashtagTitle;
+- (id)hashtagSubTitle;
+- (void)setReloadCardListBlock:;
+- (BOOL)shouldShowBrand;
+- (BOOL)shouldShowStarGravity;
+- (id)reloadCardListBlock;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)cardView;
+- (void)setCardView:;
++ (void)handleProfileExtensionAreaActionWithType:userModel:schema:;
++ (id)configOriginAdInfoWithCardData:;
++ (void)handleProfileExtensionAreaActionWithType:userModel:schema:originCardData:;
++ (void)trackTapOriginAdInfo:userModel:;
++ (id)cardControllerWithUserModel:cardModel:cardIndex:extraInfo:reloadCardListBlock:;
+@end

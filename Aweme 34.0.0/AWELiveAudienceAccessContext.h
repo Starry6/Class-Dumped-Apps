@@ -1,0 +1,34 @@
+@interface AWELiveAudienceAccessContext : NSObject
+@property (nonatomic) Q stage;
+@property (nonatomic) AWELiveRoomModel roomModel;
+@property (nonatomic) AWELiveAudienceAccessServiceConfig config;
+@property (nonatomic) UIViewController containerViewController;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) IESLiveEnterRoomAisle roomAisle;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) UIViewController<IESLiveAudienceViewControllerProtocol> audienceViewController;
+@property (nonatomic) UIViewController<IESLiveInnerFeedViewControllerProtocol> innerFeedViewController;
+@property (nonatomic) BOOL isEntering;
+- (id)roomModel;
+- (void)setRoomModel:;
+- (void)setEventContext:;
+- (id)roomAisle;
+- (void)setRoomAisle:;
+- (id)innerFeedViewController;
+- (void)setInnerFeedViewController:;
+- (BOOL)isEntering;
+- (void)setIsEntering:;
+- (void)setConfig:;
+- (void)setStage:;
+- (void)prepareForReuse;
+- (id)config;
+- (unsigned long long)stage;
+- (void)setContainerViewController:;
+- (id)containerView;
+- (id)containerViewController;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (id)audienceViewController;
+- (void)setAudienceViewController:;
+@end

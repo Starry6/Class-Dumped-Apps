@@ -1,0 +1,35 @@
+@interface AWELocalUserCompensateResponseModel : AWEBaseApiModel
+@property (nonatomic) NSArray familiarArray;
+@property (nonatomic) NSArray friendArray;
+@property (nonatomic) NSArray userArray;
+@property (nonatomic) NSArray colorRingArray;
+@property (nonatomic) NSArray closeFriendsArray;
+@property (nonatomic) NSArray followArray;
+@property (nonatomic) NSString tableMeta;
+@property (nonatomic) NSString currentUserID;
+- (id)userArray;
+- (void)setCurrentUserID:;
+- (id)friendArray;
+- (void)setFriendArray:;
+- (void)setUserArray:;
+- (id)tableMeta;
+- (void)setTableMeta:;
+- (id)followArray;
+- (id)currentArrayWithTableName:;
+- (void)setFollowArray:;
+- (id)familiarArray;
+- (id)colorRingArray;
+- (id)closeFriendsArray;
+- (void)setFamiliarArray:;
+- (void)setColorRingArray:;
+- (void)setCloseFriendsArray:;
+- (void).cxx_destruct;
+- (id)currentUserID;
++ (id)userArrayJSONTransformer;
++ (id)followArrayJSONTransformer;
++ (id)familiarArrayJSONTransformer;
++ (id)friendArrayJSONTransformer;
++ (id)colorRingArrayJSONTransformer;
++ (id)closeFriendsArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

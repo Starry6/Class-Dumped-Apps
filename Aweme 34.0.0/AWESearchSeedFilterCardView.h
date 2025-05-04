@@ -1,0 +1,32 @@
+@interface AWESearchSeedFilterCardView : AWESearchCachalotBaseCardView
+@property (nonatomic) AWESearchSeedContentView contentView;
+@property (nonatomic) AWESearchSeedFilterModel filterModel;
+@property (nonatomic) AWESearchCachalotResultContext context;
+@property (nonatomic) <AWESearchSeedFilterCardViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configUI;
+- (void)setFilterModel:;
+- (id)filterModel;
+- (id)unselectedLabelFont;
+- (id)selectedLabelFont;
+- (void)updateWithFilterCardModel:;
+- (void)selectedIndexPath:;
+- (unsigned long long)preferSearchTheme;
+- (void)doubleSectionViewItemClick:selectedIndex:lastSelected:;
+- (id)congfigPosition;
+- (id)congfigContent;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setDelegate:;
+- (id)context;
+- (id)componentView;
+- (void)updateWithViewModel:;
++ (id)sizeWithViewModel:width:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEMusicMVTemplateInfo : MTLModel
+@property (nonatomic) q templateID;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString style;
+@property (nonatomic) NSString expr;
+@property (nonatomic) q numSegs;
+@property (nonatomic) BOOL isCommon;
+@property (nonatomic) q source;
+@property (nonatomic) NSString zipURL;
+@property (nonatomic) NSArray videoSegs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExpr:;
+- (void)setIsCommon:;
+- (void)setVideoSegs:;
+- (id)expr;
+- (id)videoSegs;
+- (long long)numSegs;
+- (void)setNumSegs:;
+- (id)zipURL;
+- (void)setZipURL:;
+- (id)tag;
+- (void)setTag:;
+- (long long)templateID;
+- (void)setTemplateID:;
+- (id)style;
+- (void).cxx_destruct;
+- (long long)source;
+- (void)setSource:;
+- (void)setStyle:;
+- (BOOL)isCommon;
++ (id)videoSegsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

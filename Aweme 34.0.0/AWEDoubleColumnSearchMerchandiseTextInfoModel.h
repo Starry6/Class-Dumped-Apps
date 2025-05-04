@@ -1,0 +1,38 @@
+@interface AWEDoubleColumnSearchMerchandiseTextInfoModel : MTLModel
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString noResultType;
+@property (nonatomic) NSString upTitle;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSDictionary background;
+@property (nonatomic) NSDictionary leftContent;
+@property (nonatomic) NSDictionary rightContent;
+@property (nonatomic) NSInteger styleVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)upTitle;
+- (id)rightContent;
+- (id)leftContent;
+- (id)noResultType;
+- (int)styleVersion;
+- (void)setNoResultType:;
+- (void)setUpTitle:;
+- (void)setLeftContent:;
+- (void)setRightContent:;
+- (void)setStyleVersion:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)background;
+- (id)type;
+- (void)setBackground:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

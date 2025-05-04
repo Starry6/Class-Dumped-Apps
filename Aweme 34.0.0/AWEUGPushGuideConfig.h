@@ -1,0 +1,31 @@
+@interface AWEUGPushGuideConfig : NSObject
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) double timeDelay;
+@property (nonatomic) NSDictionary blockedViewControllers;
+@property (nonatomic) NSDictionary allowedViewControllers;
+@property (nonatomic) <AWEUGPushGuideLifeCycleProtocol> lifeCycleDelegate;
+@property (nonatomic) Q unselectiveViewStyle;
+@property (nonatomic) Q selectiveViewStyle;
+@property (nonatomic) BOOL needToast;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)lifeCycleDelegate;
+- (void)setLifeCycleDelegate:;
+- (double)timeDelay;
+- (void)setTimeDelay:;
+- (void)setBlockedViewControllers:;
+- (void)setNeedToast:;
+- (id)allowedViewControllers;
+- (id)blockedViewControllers;
+- (void)setUnselectiveViewStyle:;
+- (void)setSelectiveViewStyle:;
+- (void)setAllowedViewControllers:;
+- (unsigned long long)unselectiveViewStyle;
+- (unsigned long long)selectiveViewStyle;
+- (BOOL)needToast;
+- (id)init;
+- (void).cxx_destruct;
+- (id)params;
+- (void)setParams:;
+@end

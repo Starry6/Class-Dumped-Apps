@@ -1,0 +1,33 @@
+@interface AWEIMNextGenerationUploadFileController : NSObject
+@property (nonatomic) <AWEIMNextGenerationUploadFileClientProtocol> quickUploadClient;
+@property (nonatomic) <AWEIMNextGenerationUploadFileClientProtocol> originUploadClient;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString uploadURL;
+@property (nonatomic) @ parameters;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSString mimeType;
+- (void)eventManagerDidUpdate:;
+- (void)uploadWithContext:;
+- (BOOL)shouldIgnoreVerifyImageForUploadFileType:;
+- (void)p_uploadWithContext:leftRetryCount:;
+- (void)trackRetryWithType:code:;
+- (id)generateUploadClientOfFileType:useStreamReader:config:;
+- (void)setQuickUploadClient:;
+- (void)setOriginUploadClient:;
+- (BOOL)shouldRetry:;
+- (id)quickUploadClient;
+- (id)originUploadClient;
+- (id)parameters;
+- (id)init;
+- (void)setParameters:;
+- (void)setUploadURL:;
+- (id)mimeType;
+- (void).cxx_destruct;
+- (id)uploadURL;
+- (void)setMimeType:;
+- (void)setHeaders:;
+- (id)headers;
+@end

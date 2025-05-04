@@ -1,0 +1,30 @@
+@interface AWEIMFansGroupMultiselectListTableViewModel : NSObject
+@property (nonatomic) NSArray fansGroupInfoList;
+@property (nonatomic) NSArray fansGroupInfoOriginalFakeModelList;
+@property (nonatomic) NSArray fansGroupInfoFakeModelList;
+@property (nonatomic) AWEIMBaseListPrepareModel fakeModel;
+@property (nonatomic) NSMutableArray selectedModelList;
+@property (nonatomic) BOOL hasSelectedAll;
+- (id)fakeModel;
+- (void)setFakeModel:;
+- (void)__setup;
+- (id)fansGroupInfoList;
+- (void)setFansGroupInfoList:;
+- (id)selectedModelList;
+- (id)initWithFansGroupInfoList:selectList:;
+- (void)setSelectedModelList:;
+- (id)fansGroupInfoFakeModelList;
+- (void)selectedListRemoveModel:;
+- (void)selectedListAddModel:;
+- (id)fansGroupInfoOriginalFakeModelList;
+- (void)setHasSelectedAll:;
+- (void)setFansGroupInfoOriginalFakeModelList:;
+- (void)setFansGroupInfoFakeModelList:;
+- (BOOL)selectedListContainsModel:;
+- (void)selectedAll;
+- (void)unSelectedAll;
+- (BOOL)hasSelectedAll;
+- (long long)numberOfItems;
+- (void).cxx_destruct;
+- (id)title;
+@end

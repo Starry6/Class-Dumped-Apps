@@ -1,0 +1,31 @@
+@interface AWEBatManRoomInviteModel : NSObject
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString coverImageURL;
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString outerScheme;
+@property (nonatomic) NSString callingPushScheme;
+@property (nonatomic) NSString callingPushOuterScheme;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameName;
+- (void)setGameName:;
+- (id)gameID;
+- (void)setGameID:;
+- (void)setOuterScheme:;
+- (void)setCallingPushScheme:;
+- (void)setCallingPushOuterScheme:;
+- (id)callingPushScheme;
+- (id)callingPushOuterScheme;
+- (id)outerScheme;
+- (id)scheme;
+- (void)setScheme:;
+- (id)roomID;
+- (void).cxx_destruct;
+- (void)setRoomID:;
+- (id)coverImageURL;
+- (void)setCoverImageURL:;
+@end

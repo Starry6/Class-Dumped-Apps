@@ -1,0 +1,34 @@
+@interface AWELandscapeGeneralSearchDataController : AWEListDataController
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) q offset;
+@property (nonatomic) <AWEHttpTask> httpTask;
+@property (nonatomic) NSString logPb;
+@property (nonatomic) NSMutableSet itemIDSet;
+@property (nonatomic) AWEListDataController originDataController;
+- (void)loadMoreWithCompletion:;
+- (void)setLogPb:;
+- (id)logPb;
+- (void)setHttpTask:;
+- (id)httpTask;
+- (id)filterAwemeModels:;
+- (void)setItemIDSet:;
+- (id)itemIDSet;
+- (id)originDataController;
+- (void)handleOriginDataSource;
+- (void)handleOriginSearchID;
+- (void)trackInvalidGeneralSearchModel:;
+- (id)initWithOriginDataController:searchParams:;
+- (void)setOriginDataController:;
+- (void)setOffset:;
+- (long long)offset;
+- (void).cxx_destruct;
+- (id)params;
+- (id)keyword;
+- (void)setKeyword:;
+- (id)searchID;
+- (void)setSearchID:;
++ (BOOL)isValidGeneralSearchModel:;
++ (BOOL)isValidExternalGeneralSearchModel:;
++ (BOOL)isValidGeneralSearchLoadMoreModel:;
+@end

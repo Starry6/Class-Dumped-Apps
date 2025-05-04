@@ -1,0 +1,24 @@
+@interface AWELearningImpl.LearningTabHeaderViewControllerV2 : AWEBaseListViewController
+- (id)provider:;
+- (void)configWithHeaderModel:;
+- (void)listDidReloadDataWithCollectionView:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (void)handleClickWithMute:;
+- (void)customLayoutCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (long long)workingRangeSize;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (id)targetContentOffsetForProposedContentOffset:originalTargetContentOffset:;
+- (void)viewDidLoad;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)initWithCoder:;
+- (void)setupCollectionView:;
+- (double)heightForHeaderView;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMHalfScreenContactTableViewHeaderContext : NSObject
+@property (nonatomic) Q style;
+@property (nonatomic) BOOL needWechatHeader;
+@property (nonatomic) Q disableItemOption;
+@property (nonatomic) q weChatCellType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL useUniformStyle;
+@property (nonatomic) NSString faceToFaceCellTag;
+@property (nonatomic) NSDictionary paramDict;
+@property (nonatomic) BOOL shouldDowngradeInviteWechat;
+@property (nonatomic) BOOL disableWechatAndQQ;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)paramDict;
+- (void)setParamDict:;
+- (void)setUseUniformStyle:;
+- (void)setNeedWechatHeader:;
+- (BOOL)useUniformStyle;
+- (BOOL)needWechatHeader;
+- (unsigned long long)disableItemOption;
+- (void)setDisableItemOption:;
+- (long long)weChatCellType;
+- (void)setWeChatCellType:;
+- (id)faceToFaceCellTag;
+- (void)setFaceToFaceCellTag:;
+- (BOOL)shouldDowngradeInviteWechat;
+- (void)setShouldDowngradeInviteWechat:;
+- (BOOL)disableWechatAndQQ;
+- (void)setDisableWechatAndQQ:;
+- (unsigned long long)style;
+- (void).cxx_destruct;
+- (void)setStyle:;
+@end

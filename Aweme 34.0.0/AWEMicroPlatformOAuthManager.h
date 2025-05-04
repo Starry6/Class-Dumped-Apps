@@ -1,0 +1,34 @@
+@interface AWEMicroPlatformOAuthManager : NSObject
+@property (nonatomic) BOOL isInLogin;
+@property (nonatomic) BDPlatformSDKNetApi sdkNetApi;
+@property (nonatomic) NSDictionary normalScopes;
+@property (nonatomic) NSDictionary pageDetail;
+@property (nonatomic) BDPOpenPlatformAuthModel authModel;
+@property (nonatomic) <AWEMicroPlatformOAuthManagerDelegate> delegate;
+- (id)authModel;
+- (BOOL)canSkipConfirm;
+- (id)joinedScopesString;
+- (id)genericClientKey;
+- (id)normalScopes;
+- (void)setNormalScopes:;
+- (id)normalScopeItems;
+- (void)fetchUserInfo;
+- (void)setAuthModel:;
+- (id)sdkNetApi;
+- (void)authorizeWithScope:;
+- (void)setPageDetail:;
+- (id)pageDetail;
+- (void)setItemCellHeightWithItem:;
+- (id)identityScopeString;
+- (void)fetchTicket;
+- (void)setItemTitle:scopeMap:;
+- (BOOL)isInLogin;
+- (void)setIsInLogin:;
+- (void)setSdkNetApi:;
+- (id)delegate;
+- (id)initWithModel:;
+- (long long)maxWidth;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (id)errorWithErrMsg:code:;
+@end

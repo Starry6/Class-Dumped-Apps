@@ -1,0 +1,34 @@
+@interface AWEIMNoticeOnSideViewController : NSObject
+@property (nonatomic) AWEIMNoticeOnSideDataController dataController;
+@property (nonatomic) AWEIMNoticeOnSideViewControllerContentView contentView;
+@property (nonatomic) AWEIMNoticeSideContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? dataCallBack;
+@property (nonatomic) NSArray dataArray;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)setDataController:;
+- (void)__setupUI;
+- (void)setDataCallBack:;
+- (void)__fetchData;
+- (void)__updateUIByLocalData;
+- (id)dataCallBack;
+- (void)__clearData;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (void)dealloc;
+- (id)contentView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)context;
+- (id)dataArray;
+- (id)detailView;
+- (void)setDataArray:;
+- (id)dataController;
+- (void)refreshData;
+@end

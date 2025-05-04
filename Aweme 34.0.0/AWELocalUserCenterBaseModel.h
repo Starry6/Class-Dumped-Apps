@@ -1,0 +1,30 @@
+@interface AWELocalUserCenterBaseModel : AWEBaseApiModel
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) NSString userID;
+@property (nonatomic) q updateTime;
+@property (nonatomic) NSString targetTable;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) BOOL isDeleted;
+@property (nonatomic) q modifyTime;
+- (long long)modifyTime;
+- (id)userPropertyDetail;
+- (void)updateTargetTable:;
+- (id)userID;
+- (void)setIsDeleted:;
+- (long long)updateTime;
+- (BOOL)isValid;
+- (BOOL)isDeleted;
+- (void).cxx_destruct;
+- (id)targetTable;
+- (id)copyWithZone:;
+- (void)setUserID:;
+- (void)setUpdateTime:;
+- (void)setModifyTime:;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)userID;
++ (id)isDeleted;
+@end

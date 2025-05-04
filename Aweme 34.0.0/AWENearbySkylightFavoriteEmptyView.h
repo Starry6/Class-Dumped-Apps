@@ -1,0 +1,32 @@
+@interface AWENearbySkylightFavoriteEmptyView : UIView
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView subContentView;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView subImageView;
+@property (nonatomic) UILabel recommendTitle;
+@property (nonatomic) BOOL isSingle;
+- (id)recommendTitle;
+- (void)setRecommendTitle:;
+- (void)__buildUI;
+- (void)__layoutUI;
+- (void)__configUI;
+- (void)setIsSingle:;
+- (BOOL)isSingle;
+- (id)initWithFrame:isSingle:;
+- (id)subContentView;
+- (id)subImageView;
+- (void)hiddenCollectButton:;
+- (void)setSubContentView:;
+- (void)setSubImageView:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)backgroundImageView;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setBackgroundImageView:;
+@end

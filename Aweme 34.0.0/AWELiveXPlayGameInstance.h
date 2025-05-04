@@ -1,0 +1,33 @@
+@interface AWELiveXPlayGameInstance : NSObject
+@property (nonatomic) BOOL isCloudPlayer;
+@property (nonatomic) <XPlayItemProtocol> xPlayItem;
+@property (nonatomic) BOOL isShowingGuideCloudPlayer;
+@property (nonatomic) <XPlayCloudPlayerProtocol> mainCloudPlayer;
+@property (nonatomic) <XPlayCloudPlayerProtocol> guideCloudPlayer;
+@property (nonatomic) BOOL isPause;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isPause;
+- (id)xPlayItem;
+- (BOOL)isCloudPlayer;
+- (BOOL)isShowingGuideCloudPlayer;
+- (id)guideCloudPlayer;
+- (id)mainCloudPlayer;
+- (id)initWithGameModel:;
+- (void)setIsCloudPlayer:;
+- (void)setXPlayItem:;
+- (void)setIsShowingGuideCloudPlayer:;
+- (void)setMainCloudPlayer:;
+- (void)setGuideCloudPlayer:;
+- (BOOL)isShowing;
+- (id)view;
+- (void).cxx_destruct;
+- (id)controller;
+- (long long)orientation;
+- (id)pictureView;
+- (void)setIsShowing:;
+- (id)gameModel;
+- (void)setGameModel:;
+@end

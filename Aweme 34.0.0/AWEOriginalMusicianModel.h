@@ -1,0 +1,36 @@
+@interface AWEOriginalMusicianModel : AWEBaseApiModel
+@property (nonatomic) NSNumber musicCount;
+@property (nonatomic) NSNumber musicUsedCount;
+@property (nonatomic) AWEURLModel musicQRCodeURL;
+@property (nonatomic) AWEURLModel musicCoverURL;
+@property (nonatomic) NSNumber diggCount;
+@property (nonatomic) NSNumber fullMusicCount;
+@property (nonatomic) NSNumber forceMusicItemCount;
+@property (nonatomic) AWEOriginalLunaDiversionModel lunaDiversionInfo;
+@property (nonatomic) AWEMusicianMusicCardDataModel musicCardData;
+- (id)diggCount;
+- (void)setDiggCount:;
+- (id)musicCoverURL;
+- (void)setMusicCoverURL:;
+- (id)musicQRCodeURL;
+- (void)setMusicQRCodeURL:;
+- (id)musicCount;
+- (void)setMusicCount:;
+- (id)musicUsedCount;
+- (void)setMusicUsedCount:;
+- (id)fullMusicCount;
+- (void)setFullMusicCount:;
+- (id)forceMusicItemCount;
+- (void)setForceMusicItemCount:;
+- (id)lunaDiversionInfo;
+- (void)setLunaDiversionInfo:;
+- (id)musicCardData;
+- (void)setMusicCardData:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithDict:;
++ (id)musicCoverURLJSONTransformer;
++ (id)musicQRCodeURLJSONTransformer;
++ (id)lunaDiversionInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface AWEIMFTSPinyinSpliter : NSObject
+@property (nonatomic) NSArray oneShengmuList;
+@property (nonatomic) NSArray twoShengmuList;
+@property (nonatomic) NSArray oneYunmuList;
+@property (nonatomic) NSArray twoYunmuList;
+@property (nonatomic) NSArray threeYunmuList;
+@property (nonatomic) NSArray tailYunmuList;
+@property (nonatomic) NSArray allList;
+@property (nonatomic) NSMutableArray solutionList;
+@property (nonatomic) NSString text;
+- (void)setSolutionList:;
+- (void)splitAtIndex:lastComponent:splitText:;
+- (id)solutionList;
+- (id)allList;
+- (id)oneShengmuList;
+- (id)twoShengmuList;
+- (id)oneYunmuList;
+- (BOOL)p_checkComponentIsShengmu:;
+- (BOOL)p_checkComponentIsDependentOneYunmu:;
+- (BOOL)p_checkComponnent:canJoinLastComponent:;
+- (BOOL)p_checkComponentIsJoinYunmu:;
+- (id)tailYunmuList;
+- (void)setOneShengmuList:;
+- (void)setTwoShengmuList:;
+- (void)setOneYunmuList:;
+- (id)twoYunmuList;
+- (void)setTwoYunmuList:;
+- (id)threeYunmuList;
+- (void)setThreeYunmuList:;
+- (void)setTailYunmuList:;
+- (void)setAllList:;
+- (void)setText:;
+- (id)text;
+- (id)initWithText:;
+- (void).cxx_destruct;
+- (id)split;
+@end

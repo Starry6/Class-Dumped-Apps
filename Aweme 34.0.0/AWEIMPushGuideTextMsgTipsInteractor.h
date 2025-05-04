@@ -1,0 +1,33 @@
+@interface AWEIMPushGuideTextMsgTipsInteractor : AWEIMComponentBase
+@property (nonatomic) BOOL hasPushGuideNoticeOnScreen;
+@property (nonatomic) Q requestServerCount;
+@property (nonatomic) <AWEIMMessageListPushGuideBannerComponentInterface> pushGuideBannerService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)didReceiveSendMessageResponse:message:result:;
+- (void)didFetchMsgWithMessageGroupArray:hasMore:direction:shouldAutoLoadMore:isFirstLoad:;
+- (id)vcParent;
+- (void)pushGuideMessageOnScreenAgain;
+- (void)showPushGuideNoticeMessageTipIfNeeded;
+- (id)pushGuideBannerService;
+- (void)setHasPushGuideNoticeOnScreen:;
+- (id)p_calculateFakeNoticeWithContent:title:;
+- (void)p_pubishInsertNoticeMessageGlobalIndex:isNew:;
+- (void)p_markPushGuideNoticeTip;
+- (void)addLocalNoticeMessageWithContent:title:imageURL:btnText:;
+- (BOOL)p_canShowPushGuideNoticeMessageTip;
+- (unsigned long long)requestServerCount;
+- (void)setRequestServerCount:;
+- (void)showCardStyleNoticeIfNeeded;
+- (void)showCardStyleNoticeIfNeededByLocalMcok;
+- (void)showTextStyleNoticeIfNeeded;
+- (BOOL)hasPushGuideNoticeOnScreen;
+- (BOOL)p_shouldShowPushGuideMessageTip;
+- (double)p_lastTimeShowGuideNoitce;
+- (void)setPushGuideBannerService:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

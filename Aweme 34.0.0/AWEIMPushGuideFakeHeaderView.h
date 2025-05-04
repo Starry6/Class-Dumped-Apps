@@ -1,0 +1,30 @@
+@interface AWEIMPushGuideFakeHeaderView : UIView
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UIImageView tipsIcon;
+@property (nonatomic) UIView tipsIconBackView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView titlePlaceholder;
+@property (nonatomic) UIView contentPlaceholder;
+- (void)__setupUI;
+- (id)tipsIcon;
+- (void)setTipsIcon:;
+- (id)tipsIconBackView;
+- (id)contentPlaceholder;
+- (void)setContentPlaceholder:;
+- (void)setTipsIconBackView:;
+- (void)updateWithConfig:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)avatar;
+- (id)contentLabel;
+- (void)setAvatar:;
+- (void)setContentLabel:;
+- (void)setTitlePlaceholder:;
+- (id)titlePlaceholder;
+@end

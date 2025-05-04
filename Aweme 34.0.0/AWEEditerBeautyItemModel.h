@@ -1,0 +1,22 @@
+@interface AWEEditerBeautyItemModel : AWERecordBeautyItemModel
+- (BOOL)isCollection;
+- (id)childExtraNodes;
+- (id)beautifyItemModels;
+- (id)initWithIESEffect:shouldUseComposerParams:;
+- (void)addChildExtraNodes:;
+- (void)removeAllChildNodes;
+- (void)removeAllChildExtraNodes;
+- (void)setChildExtraNodes:;
+- (id)initWithIESEffect:;
+- (id)firstBeautifyItemModel;
+- (void).cxx_destruct;
+- (id)childNodes;
+- (id)parentNode;
+- (id)childItems;
+- (void)setChildItems:;
+- (void)setParentNode:;
+- (void)addChildNode:;
+- (id)nodeName;
+- (id)nodeId;
+- (void)setChildNodes:;
+@end

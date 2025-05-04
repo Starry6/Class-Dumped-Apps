@@ -1,0 +1,35 @@
+@interface AWELiveLocalLifeControlDataModel : MTLModel
+@property (nonatomic) NSString cardUrl;
+@property (nonatomic) q cardStyle;
+@property (nonatomic) q showSeconds;
+@property (nonatomic) q showDuration;
+@property (nonatomic) q needShow;
+@property (nonatomic) q updateOnlySticker;
+@property (nonatomic) q delayFadeTime;
+@property (nonatomic) Q liveStickerStyle;
+@property (nonatomic) q isStickerProduct;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)showDuration;
+- (void)setShowDuration:;
+- (long long)needShow;
+- (id)cardUrl;
+- (void)setCardUrl:;
+- (void)setNeedShow:;
+- (unsigned long long)liveStickerStyle;
+- (long long)updateOnlySticker;
+- (long long)delayFadeTime;
+- (void)setUpdateOnlySticker:;
+- (void)setDelayFadeTime:;
+- (void)setLiveStickerStyle:;
+- (long long)isStickerProduct;
+- (void)setIsStickerProduct:;
+- (void).cxx_destruct;
+- (void)setShowSeconds:;
+- (long long)showSeconds;
+- (long long)cardStyle;
+- (void)setCardStyle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface AWELoginPriorityQueue : NSObject
++ (void)showFailDowngradeWithCurrentStyle:;
++ (void)showManualDowngradeWithCurrentStyle:;
++ (void)showManualDowngradeWithCurrentStyle:customType:;
++ (void)startShowLogin:;
++ (void)showFailDowngradeWithCurrentStyle:customType:;
++ (void)testLoginGuideABTestShow;
++ (void)failShowLoginStyle:isStartShow:;
++ (void)startShowSMSLogin;
++ (void)startShowCombineLogin;
++ (void)startShowTrustUserLogin;
++ (void)manualShowLoginStyle:currentViewController:;
++ (void)showManualDowngradeWithCurrentStyle:customType:currentViewController:;
++ (void)startShowCarrierLogin;
++ (void)startShowSharedLogin;
++ (void)startShowLastLogin;
++ (void)failDowngradeToSMSLogin:;
++ (void)failDowngradeToTrustLogin:;
++ (void)failDowngradeToSharedLogin:;
++ (void)failDowngradeToCarrierLogin:;
++ (void)failDowngradeToLastLogin:;
++ (void)startShowLastLoginThirdParty;
++ (void)failDowngradeToLastThirdParty:;
++ (void)failDowngradeToCombineLogin;
++ (void)manualDowngradeToSMSLoginCurrentViewController:;
++ (void)manualDowngradeToTrustLoginCurrentViewController:;
++ (void)manualDowngradeToSharedLoginCurrentViewController:;
++ (void)manualDowngradeToCarrierLoginCurrentViewController:;
++ (void)manualDowngradeToLastLoginCurrentViewController:;
++ (void)manualDowngradeToLastLoginThirdPartyCurrentViewController:;
++ (void)manualDowngradeToCombineLoginCurrentViewController:;
++ (void)lastThirdPartyLoginWithSecurityTicket:isManualDowngrade:completionBlock:;
++ (void)startShowFailDowngradeWithCurrentStyle:;
++ (void)lastLoginWithSecurityTicket:isManualDowngrade:completionBlock:;
++ (void)showManualDowngradeWithCurrentStyle:currentViewController:;
++ (id)shareInstance;
+@end

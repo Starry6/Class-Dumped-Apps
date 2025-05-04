@@ -1,0 +1,33 @@
+@interface AWEPOIDetailNGSketchComponentView : DitoComponentView
+@property (nonatomic) UIImageView sketchView;
+@property (nonatomic) UIView errorContainerView;
+@property (nonatomic) UILabel errorTitleLabel;
+@property (nonatomic) UILabel errorDescriptionLabel;
+@property (nonatomic) UIButton retryButton;
+@property (nonatomic) MASConstraint topConstraint;
+@property (nonatomic) AWEPOIDetailNGPageContext ngPageContext;
+@property (nonatomic) BOOL hasTrackedErrorShow;
+- (void)retry:;
+- (void)updateViewModel:;
+- (id)sketchView;
+- (void)setSketchView:;
+- (id)errorContainerView;
+- (void)setErrorContainerView:;
+- (void)bindActionAndState;
+- (BOOL)hasTrackedErrorShow;
+- (void)setHasTrackedErrorShow:;
+- (id)errorDescriptionLabel;
+- (void)toggleLoading:;
+- (void)showErrorState:;
+- (id)ngPageContext;
+- (void)setErrorDescriptionLabel:;
+- (void)setTopConstraint:;
+- (id)initWithFrame:;
+- (id)topConstraint;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setRetryButton:;
+- (id)retryButton;
+- (id)errorTitleLabel;
+- (void)setErrorTitleLabel:;
+@end

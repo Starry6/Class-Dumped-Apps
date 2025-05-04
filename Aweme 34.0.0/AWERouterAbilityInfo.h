@@ -1,0 +1,36 @@
+@interface AWERouterAbilityInfo : NSObject
+@property (nonatomic) q ability_status;
+@property (nonatomic) q support_type;
+@property (nonatomic) @ objectId;
+@property (nonatomic) @ object;
+@property (nonatomic) NSDictionary routerParams;
+@property (nonatomic) ACCRecordViewControllerInputData inputData;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q abilityMaskOption;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)routerParams;
+- (void)setRouterParams:;
+- (void)setAbility_status:;
+- (id)parametersPromiseCheck;
+- (void)abilityAssemblyWithCompletion:;
+- (id)abilityTrackData;
+- (void)cancelOperationTask;
+- (long long)ability_status;
+- (long long)support_type;
+- (void)setSupport_type:;
+- (unsigned long long)abilityMaskOption;
+- (void)setAbilityMaskOption:;
+- (void)jumpShootInputDataProcessing;
+- (void)setError:;
+- (id)object;
+- (void).cxx_destruct;
+- (id)objectId;
+- (id)error;
+- (void)setObject:;
+- (void)setObjectId:;
+- (id)inputData;
+- (void)setInputData:;
+@end

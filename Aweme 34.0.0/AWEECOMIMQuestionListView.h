@@ -1,0 +1,37 @@
+@interface AWEECOMIMQuestionListView : UIView
+@property (nonatomic) UITableView questionTableView;
+@property (nonatomic) AWEECOMIMTextComponent textComponentView;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) AWEECOMIMQuestionItemCardModel questionModel;
+@property (nonatomic) <AWEECOMIMQuestionListViewDelegate> delegate;
+@property (nonatomic) UITableView cellSuperView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellSuperView;
+- (void)setCellSuperView:;
+- (id)textComponentView;
+- (void)setTextComponentView:;
+- (void)setQuestionModel:;
+- (id)questionModel;
+- (void)updateQuestionListData:;
+- (id)questionTableView;
+- (void)setQuestionTableView:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setDelegate:;
+- (id)bottomLine;
+- (void)setBottomLine:;
++ (double)questionViewHeightWithData:;
++ (double)questionViewTopPadding;
++ (double)questionViewBottomPadding;
++ (double)questionContentHeightWithData:;
++ (double)singleQuestionCellHeight;
++ (id)headerTitleFont;
+@end

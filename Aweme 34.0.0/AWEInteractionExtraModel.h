@@ -1,0 +1,38 @@
+@interface AWEInteractionExtraModel : MTLModel
+@property (nonatomic) NSString stickerID;
+@property (nonatomic) q type;
+@property (nonatomic) NSString popIcon;
+@property (nonatomic) NSString popText;
+@property (nonatomic) NSString popImage;
+@property (nonatomic) NSString offlineToast;
+@property (nonatomic) NSString schemeURL;
+@property (nonatomic) NSString clickableOpenURL;
+@property (nonatomic) NSString clickableWebURL;
+@property (nonatomic) double heightOfView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStickerID:;
+- (id)stickerID;
+- (id)schemeURL;
+- (void)setSchemeURL:;
+- (id)popText;
+- (id)popIcon;
+- (void)setPopIcon:;
+- (void)setPopText:;
+- (id)offlineToast;
+- (id)clickableWebURL;
+- (id)clickableOpenURL;
+- (void)setHeightOfView:;
+- (double)heightOfView;
+- (id)popImage;
+- (void)setPopImage:;
+- (void)setOfflineToast:;
+- (void)setClickableOpenURL:;
+- (void)setClickableWebURL:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

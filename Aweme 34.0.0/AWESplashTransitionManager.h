@@ -1,0 +1,32 @@
+@interface AWESplashTransitionManager : HTSService
+@property (nonatomic) BDImageView imageView;
+@property (nonatomic) NSDictionary config;
+@property (nonatomic) q animationStatus;
+@property (nonatomic) UIButton tipButton;
+@property (nonatomic) NSDictionary framesDic;
+@property (nonatomic) <AWESplashTransitionManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startAnimationTransitionWithImage:config:;
+- (id)framesDic;
+- (void)setFramesDic:;
+- (void)onAnimationFailed;
+- (void)setAnimationStatus:;
+- (void)startPlayTransitionImage;
+- (id)tipButton;
+- (void)onEggClicked;
+- (void)setTipButton:;
+- (void)transferToTargetFrame;
+- (void)sendLogWithEvent:;
+- (long long)animationStatus;
+- (void)setConfig:;
+- (id)delegate;
+- (id)config;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+@end

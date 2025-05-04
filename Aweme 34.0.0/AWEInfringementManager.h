@@ -1,0 +1,37 @@
+@interface AWEInfringementManager : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSDate lastTapTime;
+@property (nonatomic) NSString infringementReportId;
+@property (nonatomic) NSString remindText;
+@property (nonatomic) NSString detailURL;
+@property (nonatomic) q showDetailCountLimit;
+@property (nonatomic) q showDaysLimit;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)detailURL;
+- (void)setDetailURL:;
+- (void)setShowDaysLimit:;
+- (long long)showDaysLimit;
+- (id)infringementReportId;
+- (id)remindText;
+- (long long)showDetailCountLimit;
+- (id)getNowDate;
+- (void)setShowDetailCountLimit:;
+- (id)getUserInfoWithUserId:;
+- (void)clearStorageInfo;
+- (void)resetInfringementData;
+- (void)setInfringementReportId:;
+- (void)setRemindText:;
+- (void)updateStorageWith:;
+- (BOOL)shouldShowInfringementView;
+- (void)infringementCloseWithType:;
+- (void)updateInfringementData:;
+- (id)userID;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (void)setLastTapTime:;
+- (id)lastTapTime;
++ (id)sharedManager;
+@end

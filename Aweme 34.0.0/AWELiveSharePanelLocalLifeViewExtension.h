@@ -1,0 +1,31 @@
+@interface AWELiveSharePanelLocalLifeViewExtension : NSObject
+@property (nonatomic) AWEShareContext context;
+@property (nonatomic) UIViewController<AWESharePanel> sharePanel;
+@property (nonatomic) AWELiveShareCouponViewController shareCouponVC;
+@property (nonatomic) BOOL hasShown;
+@property (nonatomic) NSValue tempLynxViewSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackWithEvent:param:;
+- (void)setSharePanel:;
+- (id)sharePanel;
+- (void)sharePanelWillAppear:;
+- (void)sharePanelDidAppear:;
+- (id)getSharePanelInfoWithContext:;
+- (void)didChangeIntrinsicContentSize:;
+- (id)getSharePanelExtraLogWithContext:;
+- (void)setTempLynxViewSize:;
+- (id)shareCouponVCInitBaseData:context:;
+- (id)shareCouponVC;
+- (void)setShareCouponVC:;
+- (id)tempLynxViewSize;
+- (id)getLifeShareShowTrackParamsWithPanelInfo:extraLog:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)updateWithContext:;
+- (BOOL)hasShown;
+- (void)setHasShown:;
+@end

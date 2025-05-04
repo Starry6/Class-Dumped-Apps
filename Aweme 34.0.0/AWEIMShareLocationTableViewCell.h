@@ -1,0 +1,30 @@
+@interface AWEIMShareLocationTableViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView selectImageView;
+@property (nonatomic) UILabel distanceLabel;
+@property (nonatomic) UIView distanceLine;
+@property (nonatomic) AWEIMPoiItem poiItem;
+- (void)p_setupUI;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setSelectImageView:;
+- (id)selectImageView;
+- (void)updateSelected:;
+- (void)setDistanceLine:;
+- (id)distanceLine;
+- (id)poiItem;
+- (void)setPoiItem:;
+- (void)prepareForReuse;
+- (void)touchesCancelled:withEvent:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void)touchesEnded:withEvent:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)distanceLabel;
+- (void)setDistanceLabel:;
+- (void)updateModel:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMTaskNaviBarItemCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView redDotView;
+@property (nonatomic) UIView unreadDotView;
+@property (nonatomic) UILabel unreadLabel;
+@property (nonatomic) AWEIMTaskCardListCellItem model;
+@property (nonatomic) AWEIMTaskPlatformContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (id)redDotView;
+- (void)setRedDotView:;
+- (void)__addSubviews;
+- (id)unreadLabel;
+- (id)convertUnreadCountToAttrString:;
+- (void)setUnreadLabel:;
+- (void)setUnreadDotView:;
+- (id)unreadDotView;
+- (void)__updateUnreadView;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+@end

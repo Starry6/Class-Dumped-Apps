@@ -1,0 +1,38 @@
+@interface AWEGrouponBubbleModel : MTLModel
+@property (nonatomic) NSString style;
+@property (nonatomic) Q bubbleCategory;
+@property (nonatomic) double liveSeconds;
+@property (nonatomic) AWEGrouponBubbleModelButton button;
+@property (nonatomic) NSString target;
+@property (nonatomic) NSString guideElement;
+@property (nonatomic) NSString jumpUrl;
+@property (nonatomic) AWEGrouponBubbleModelContent content;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWEGrouponCommonFrequencyData frequencyData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)jumpUrl;
+- (void)setJumpUrl:;
+- (unsigned long long)bubbleCategory;
+- (id)frequencyData;
+- (double)liveSeconds;
+- (void)setBubbleCategory:;
+- (void)setLiveSeconds:;
+- (id)guideElement;
+- (void)setGuideElement:;
+- (void)setFrequencyData:;
+- (id)target;
+- (id)content;
+- (void)setButton:;
+- (void)setTarget:;
+- (id)style;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)button;
+- (void)setStyle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

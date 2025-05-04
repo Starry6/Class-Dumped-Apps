@@ -1,0 +1,34 @@
+@interface AWEEffectResourceDownloadAsyncTask : NSObject
+@property (nonatomic) AWERecordResourceEffectModel effectModel;
+@property (nonatomic) @? resourceDownloadCompletion;
+@property (nonatomic) BOOL effectLoadFinish;
+@property (nonatomic) BOOL musicLoadFinish;
+@property (nonatomic) NSString taskIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)extraInfoDict;
+- (id)effectModel;
+- (void)setEffectModel:;
+- (id)p_sortEffects:WithIDArray:;
+- (void)setResourceDownloadCompletion:;
+- (void)beginDownloadEffect;
+- (BOOL)effectLoadFinish;
+- (void)downloadEffectZipWithCurrentModels:allEffectModels:bindEffects:error:;
+- (void)bindEffectParamCallback;
+- (void)downloadEffectModelWithId:downloadCompleted:;
+- (void)setEffectLoadFinish:;
+- (void)setMusicLoadFinish:;
+- (void)resourceAllReadyCallBack;
+- (void)downloadEffectBindMusicInfoIfNeedWithEffectModel:;
+- (void)constructionResourceWithCurrentEffect:allEffects:bindEffects:error:;
+- (BOOL)musicLoadFinish;
+- (id)resourceDownloadCompletion;
+- (BOOL)currentTaskIsExistWith:;
+- (unsigned long long)taskType;
+- (id)taskIdentifier;
+- (void).cxx_destruct;
+- (void)setTaskIdentifier:;
++ (id)downloadTaskWithResourceModel:completion:;
+@end

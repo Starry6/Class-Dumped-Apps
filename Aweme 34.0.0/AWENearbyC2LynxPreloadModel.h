@@ -1,0 +1,30 @@
+@interface AWENearbyC2LynxPreloadModel : NSObject
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString bundle;
+@property (nonatomic) NSString cardData;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) Q category;
+@property (nonatomic) q createCount;
+@property (nonatomic) BOOL hasPreload;
+@property (nonatomic) q unloadCoverImage;
+@property (nonatomic) q cardType;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (BOOL)hasPreload;
+- (void)setHasPreload:;
+- (void)setUnloadCoverImage:;
+- (long long)unloadCoverImage;
+- (unsigned long long)category;
+- (void)setUrl:;
+- (id)bundle;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (id)url;
+- (void)setBundle:;
+- (id)cardData;
+- (long long)cardType;
+- (void)setCardType:;
+- (void)setCardData:;
+- (void)setCreateCount:;
+- (long long)createCount;
+@end

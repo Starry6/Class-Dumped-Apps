@@ -1,0 +1,31 @@
+@interface AWERecorderLoraSuiteCardHeader : UICollectionReusableView
+@property (nonatomic) UIImageView contentView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIView labelContainerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UIImageView nextView;
+@property (nonatomic) ACCAIGCLoraProfileModel profileModel;
+@property (nonatomic) <AWERecorderLoraSuiteCardHeaderDelegate> delegate;
+- (id)nextView;
+- (void)setNextView:;
+- (void)addSubViews;
+- (void)onCreateClicked;
+- (void)updateAvatarView:;
+- (id)delegate;
+- (void)setDescriptionLabel:;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (id)avatarView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)descriptionLabel;
+- (void)setDelegate:;
+- (id)labelContainerView;
+- (void)setLabelContainerView:;
+- (id)profileModel;
+- (void)setProfileModel:;
+@end

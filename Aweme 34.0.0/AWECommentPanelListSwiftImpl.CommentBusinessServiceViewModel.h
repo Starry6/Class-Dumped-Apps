@@ -1,0 +1,30 @@
+@interface AWECommentPanelListSwiftImpl.CommentBusinessServiceViewModel : NSObject
+@property (nonatomic) NSArray insertIDs;
+@property (nonatomic) NSArray insertCommentIDs;
+@property (nonatomic) q serviceID;
+- (BOOL)custom_commentInputViewShouldReturn:;
+- (void)configContext:;
+- (void)setInsertIDs:;
+- (void)setInsertCommentIDs:;
+- (id)insertIDs;
+- (void)changeServiceContainerPage:;
+- (id)insertCommentIDs;
+- (void)footerDidEndDisplayForIdentifier:atIndexPath:;
+- (void)footerWillDisplayForIdentifier:atIndexPath:;
+- (void)reusableViewDidEndDisplayForIdentifier:atIndexPath:;
+- (void)reusableViewWillDisplayForIdentifier:atIndexPath:;
+- (id)identifierForFooterAtIndexPath:;
+- (void)configTFooter:identifier:atIndexPath:;
+- (double)footerHeightForIdentifier:section:;
+- (double)heightForRowForIdentifier:atIndexPath:;
+- (id)identifierForResuableViewAtIndexPath:;
+- (void)configTCell:identifier:atIndexPath:;
+- (long long)numberOfItemsForSection:;
+- (void)registerReusableView:contextDelegate:completionBlock:;
+- (void)commentUIThemeChange;
+- (id)init;
+- (void)setServiceID:;
+- (long long)serviceID;
+- (void).cxx_destruct;
+- (void)didSelectRowAtIndexPath:;
+@end

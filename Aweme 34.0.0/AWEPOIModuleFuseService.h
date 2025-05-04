@@ -1,0 +1,30 @@
+@interface AWEPOIModuleFuseService : HTSService
+@property (nonatomic) AWEFusePOIDetailNGManager pOIDetailNGManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (Class)getHalfScreenContainer;
+- (void)showSubmitRatingPanelFromViewController:poiID:poiName:objectID:objectType:couponID:spuID:trackerData:;
+- (BOOL)isShowingPOIModalView;
+- (BOOL)shouldPreventPauseVideoWhenGoodsDetailPopup;
+- (void)goodsDetailPreload;
+- (void)goodsDetailPreloadWithBizCode:;
+- (BOOL)enablePrefetchWithBizCode:;
+- (BOOL)hasPrefetchCacheWithBizCode:keyMap:;
+- (void)requestWithParams:bizCode:activityID:cacheFrom:completion:;
+- (void)stopAllPreRequestTask;
+- (void)openPOIPreviewPageWithParams:;
+- (BOOL)storeInfoInSession:info:;
+- (id)prefetchManager;
+- (id)POIDetailNGManager;
+- (id)requestHeaderParamsManager;
+- (id)getBcmChainForFantaPureFeatureWithExtraInfo:localLifeBcmChainConfig:;
+- (void)startPreviewWithOpenUrl:context:;
+- (id)generatePOISessionWithLiveInfo:schemeParams:traceSessionId:;
+- (id)pOIDetailNGManager;
+- (id)convertAweContext:;
+- (void)setPOIDetailNGManager:;
+- (void).cxx_destruct;
+- (id)startSession;
+@end

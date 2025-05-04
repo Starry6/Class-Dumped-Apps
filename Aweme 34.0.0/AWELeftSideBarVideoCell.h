@@ -1,0 +1,35 @@
+@interface AWELeftSideBarVideoCell : UIView
+@property (nonatomic) AWELeftSideBarVideoCellConfig config;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) q index;
+@property (nonatomic) DUXBaseImageView coverImageView;
+@property (nonatomic) DUXBaseLabel mainTitleLabel;
+@property (nonatomic) DUXBaseLabel subTitleLabel;
+@property (nonatomic) UIView topLeftView;
+- (void)leftSideBarThemeDidChange:;
+- (void)setThemeStyle:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (id)topLeftView;
+- (void)setTopLeftView:;
+- (void)p_resetUI;
+- (void)p_resetData;
+- (void)p_tapAction;
+- (void)p_updateCoverImage:;
+- (id)initWithConfig:withThemeStyle:withIndex:;
+- (void)setIndex:;
+- (void)setConfig:;
+- (long long)index;
+- (void)updateWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (long long)themeStyle;
+- (void)p_init;
++ (double)mainTitleLabelHeight;
++ (double)subTitleLabelHeight;
+@end

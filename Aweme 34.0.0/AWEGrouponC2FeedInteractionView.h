@@ -1,0 +1,33 @@
+@interface AWEGrouponC2FeedInteractionView : UIView
+@property (nonatomic) UIView authorContentView;
+@property (nonatomic) UIImageView authorImageView;
+@property (nonatomic) UILabel authorNameLabel;
+@property (nonatomic) UIImageView infoIconImageView;
+@property (nonatomic) UILabel infoNumberLabel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL shouldHideInfoView;
+@property (nonatomic) UIView infoView;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (id)authorImageView;
+- (void)setAuthorImageView:;
+- (id)infoIconImageView;
+- (void)setInfoIconImageView:;
+- (void)updateInfoWithModel:;
+- (void)setShouldHideInfoView:;
+- (id)authorContentView;
+- (id)infoNumberLabel;
+- (BOOL)shouldHideInfoView;
+- (id)infoNumberWithCount:;
+- (id)initWithModel:infoViewHidden:;
+- (void)handleDiggAcitonWithStatus:;
+- (void)updateDiggCount:;
+- (void)setAuthorContentView:;
+- (void)setInfoNumberLabel:;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)infoView;
+- (void)setInfoView:;
+@end

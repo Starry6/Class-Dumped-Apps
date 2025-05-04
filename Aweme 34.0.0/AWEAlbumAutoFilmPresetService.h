@@ -1,0 +1,33 @@
+@interface AWEAlbumAutoFilmPresetService : NSObject
+@property (nonatomic) NPGenericTemplateService_OC service;
+@property (nonatomic) NPPresetRecommendService_OC recommendService;
+@property (nonatomic) NSArray recommendFeatureTypes;
+@property (nonatomic) BOOL recommendIlaRealTimeFeatureExtractionEnabled;
+@property (nonatomic) NSString recommendScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)businessScene;
+- (id)featureConfig;
+- (id)recommendFeatureTypesStringArray;
+- (void)setRecommendFeatureTypes:;
+- (id)recommendFeatureTypes;
+- (void)setRecommendIlaRealTimeFeatureExtractionEnabled:;
+- (BOOL)c3FeatureEnabled;
+- (BOOL)recommendIlaRealTimeFeatureExtractionEnabled;
+- (BOOL)supportFunctionForStage:;
+- (unsigned long long)frameExtractionStrategy;
+- (id)videoFrameSizeForVideo:forStage:;
+- (id)requestTimesForVideo:forStage:;
+- (BOOL)enableAccurateFrameExtractionForVEFeature;
+- (id)bimAlgorithmModelList;
+- (id)recommendService;
+- (void)setRecommendService:;
+- (id)recommendScene;
+- (void)setRecommendScene:;
+- (id)init;
+- (id)service;
+- (void)setService:;
+- (void).cxx_destruct;
+@end

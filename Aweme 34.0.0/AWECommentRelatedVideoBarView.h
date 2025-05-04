@@ -1,0 +1,33 @@
+@interface AWECommentRelatedVideoBarView : UIView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSArray iconURLList;
+@property (nonatomic) BOOL isBGColorWhite;
+@property (nonatomic) @? linkClickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsBGColorWhite:;
+- (BOOL)isBGColorWhite;
+- (double)customViewHeightInCommentListHeader;
+- (void)initView;
+- (void)setIconURLList:;
+- (void)configIconView;
+- (void)initGesutures;
+- (void)tapTitleAction;
+- (id)iconURLList;
+- (id)linkClickBlock;
+- (void)setLinkClickBlock:;
+- (id)init;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setTipLabel:;
+- (id)tipLabel;
+- (void)updateColors;
+- (void)updateWithModel:;
+@end

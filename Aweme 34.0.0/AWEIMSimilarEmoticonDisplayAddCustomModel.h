@@ -1,0 +1,33 @@
+@interface AWEIMSimilarEmoticonDisplayAddCustomModel : NSObject
+@property (nonatomic) NSNumber identifier;
+@property (nonatomic) NSNumber heycanIdentifier;
+@property (nonatomic) NSString animationURI;
+@property (nonatomic) NSString staticURI;
+@property (nonatomic) NSString animationURL;
+@property (nonatomic) NSString staticURL;
+@property (nonatomic) NSNumber packageId;
+@property (nonatomic) NSInteger stickerType;
+@property (nonatomic) AWEIMEmoticonModel imEmoticonModel;
+@property (nonatomic) BOOL fromSimilar;
+- (void)setStickerType:;
+- (id)packageId;
+- (id)heycanIdentifier;
+- (id)animationURI;
+- (id)animationURL;
+- (id)staticURI;
+- (void)setStaticURI:;
+- (void)setHeycanIdentifier:;
+- (void)setPackageId:;
+- (void)setAnimationURL:;
+- (void)setAnimationURI:;
+- (void)setStaticURL:;
+- (id)staticURL;
+- (id)imEmoticonModel;
+- (void)setImEmoticonModel:;
+- (BOOL)fromSimilar;
+- (void)setFromSimilar:;
+- (void)setIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (int)stickerType;
+@end

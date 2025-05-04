@@ -1,0 +1,38 @@
+@interface AWESearchFeedTagView : UIView
+@property (nonatomic) CALayer animationLayer;
+@property (nonatomic) UIView pointView;
+@property (nonatomic) UIView tagView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView searchIconImage;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) AWESearchStickerModel searchTagModel;
+@property (nonatomic) {CGSize=dd} textRect;
+@property (nonatomic) BOOL isReverse;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pointView;
+- (void)setPointView:;
+- (BOOL)isReverse;
+- (void)setIsReverse:;
+- (void)setSearchIconImage:;
+- (id)searchIconImage;
+- (void)showHeartAnimation;
+- (void)setTextRect:;
+- (void)setSearchTagModel:;
+- (id)searchTagModel;
+- (void)updateWithModel:isReverse:;
+- (id)init;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)animationLayer;
+- (void)setAnimationLayer:;
+- (id)textRect;
+- (id)arrowImage;
+- (void)setArrowImage:;
+- (id)tagView;
+- (void)setTagView:;
+@end

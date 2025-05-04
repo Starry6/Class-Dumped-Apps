@@ -1,0 +1,30 @@
+@interface AWEIMOnlinePrivacyManager : NSObject
+@property (nonatomic) BOOL didShowOnlineStatusPopupView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)externalAssignTopDragHeight;
+- (BOOL)didShowOnlineStatusPopupView;
+- (void)setDidShowOnlineStatusPopupView:;
++ (id)showOnlinePrivacyPopupView:;
++ (id)showOnlinePrivacyPopupView:useCardUIStyle:;
++ (id)frequencyControlModel;
++ (id)showDisrecommendPopupViewWithEnterFrom:;
++ (id)showOnlinePrivacyPopupView:withUIstyle:;
++ (id)showOnlinePrivacyOptionPopupViewTitle:subtitle:setting:enterFrom:style:;
++ (void)updatePrivacyPopupViewShown;
++ (void)showToastForStyle:isError:;
++ (void)switchOnlinePrivacySetWithStyle:userList:onView:;
++ (void)writeOnlinePrivacyDataToDiskFromServer:;
++ (void)fetchLastOnlinePrivacyDataCompletion:;
++ (id)showOnlinePrivacyPopupView;
++ (id)showOnlinePrivacyPopupViewTitle:subtitle:setting:enterFrom:;
++ (id)onlineFriendsListForOnlinePopView;
++ (void)trackOnlineStatusGuideClickWithClickType:enterFrom:;
++ (void)showOnlinePrivacySelectPartExclusiveListVCWithUserArray:topVC:enterFrom:;
++ (void)fetchLastOnlinePrivacyData;
++ (id)readLastOnlinePrivacyDataFromDisk;
++ (void)writeLastOnlinePrivacyDataToDisk:;
++ (id)sharedManager;
+@end

@@ -1,0 +1,34 @@
+@interface AWEConcernFansToolNoticeView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) AWEButton heatButton;
+@property (nonatomic) <AWEConcernNoticeDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)initWithAwemeModel:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)__setupUI;
+- (void)configNoticeViewWithModel:;
+- (id)__createShadowView;
+- (id)heatButton;
+- (id)__createIndicatorView;
+- (void)trackWithWindowShow;
+- (void)setHeatButton:;
+- (id)delegate;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+@end

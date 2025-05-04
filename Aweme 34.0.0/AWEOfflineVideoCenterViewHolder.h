@@ -1,0 +1,2 @@
+@interface AWEOfflineVideoCenterViewHolder : AWEBaseListViewHolder
+@end

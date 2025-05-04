@@ -1,0 +1,30 @@
+@interface AWERVNewDetailDataController : AWEListDataController
+@property (nonatomic) q requestNums;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) AWERVNewDetailPageContext context;
+- (void)loadMoreWithCompletion:;
+- (void)loadMoreWithFilteredCompletion:;
+- (id)minCursor;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (void)loadmoreWithCompletion:;
+- (long long)requestNums;
+- (void)setRequestNums:;
+- (void)fetchWithCompletion:fetchType:;
+- (void)trackRelatedWithModel:error:;
+- (void)trackListRefreshWithRequestDuration:responseModel:error:;
+- (void)setupWithRelatedPreloadVideos:;
+- (void)setModel:;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)reset;
+- (id)context;
+- (id)itemId;
+- (void)setItemId:;
+@end

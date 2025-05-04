@@ -1,0 +1,32 @@
+@interface AWEEcomSearchResultEmptyConfig : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWESearchNilInfoModel searchNilInfo;
+@property (nonatomic) AWESearchNilTextModel searchNilText;
+@property (nonatomic) AWESearchGoodsFeedbackModel feedbackConfig;
+@property (nonatomic) AWESearchNoResultModel noResultConfig;
+@property (nonatomic) BOOL feedDisableScroll;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)feedbackConfig;
+- (void)setFeedbackConfig:;
+- (id)noResultConfig;
+- (void)setNoResultConfig:;
+- (id)searchNilText;
+- (void)setSearchNilText:;
+- (id)searchNilInfo;
+- (BOOL)feedDisableScroll;
+- (void)setFeedDisableScroll:;
+- (void)fillMerchandiseResp:;
+- (void)setSearchNilInfo:;
+- (void).cxx_destruct;
++ (id)searchNilInfoJSONTransformer;
++ (id)searchNilTextJSONTransformer;
++ (id)feedbackConfigJSONTransformer;
++ (id)noResultConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

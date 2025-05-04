@@ -1,0 +1,37 @@
+@interface AWEPOICOIDoubleItemDisplayInfoModel : MTLModel
+@property (nonatomic) NSArray locationTexts;
+@property (nonatomic) NSArray singleLocationTexts;
+@property (nonatomic) NSArray titleGroup;
+@property (nonatomic) NSArray rateGroup;
+@property (nonatomic) NSArray subtitleGroup;
+@property (nonatomic) NSArray infoGroup;
+@property (nonatomic) NSArray thirdGroup;
+@property (nonatomic) AWEPOICOIDoubleItemDisplayMobInfoModel mobInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)locationTexts;
+- (void)setLocationTexts:;
+- (id)singleLocationTexts;
+- (void)setSingleLocationTexts:;
+- (id)titleGroup;
+- (void)setTitleGroup:;
+- (id)rateGroup;
+- (void)setRateGroup:;
+- (id)subtitleGroup;
+- (void)setSubtitleGroup:;
+- (id)infoGroup;
+- (void)setInfoGroup:;
+- (id)thirdGroup;
+- (void)setThirdGroup:;
+- (id)mobInfo;
+- (void)setMobInfo:;
+- (void).cxx_destruct;
++ (id)thirdGroupJSONTransformer;
++ (id)titleGroupJSONTransformer;
++ (id)rateGroupJSONTransformer;
++ (id)subtitleGroupJSONTransformer;
++ (id)infoGroupJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

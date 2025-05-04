@@ -1,0 +1,2 @@
+@interface AWEIMChatListServiceRegisterConfigModel : NSObject
+@end

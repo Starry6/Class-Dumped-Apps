@@ -1,0 +1,30 @@
+@interface AWEFindFriendsContactsCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView topIconImageView;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel subTitle;
+@property (nonatomic) AFDButton mainButton;
+@property (nonatomic) UIButton linkButton;
+@property (nonatomic) @? clickContactBlock;
+@property (nonatomic) @? clickLinkBlock;
+- (void)setClickLinkBlock:;
+- (id)clickLinkBlock;
+- (void)layoutPageSubviews;
+- (void)setTopIconImageView:;
+- (id)topIconImageView;
+- (void)p_tapContactsBtn;
+- (void)p_tapLinksBtn;
+- (void)setClickContactBlock:;
+- (id)clickContactBlock;
+- (void)configWithMainText:subTitleText:linkText:clickContactBlock:clickLinkBlock:;
+- (void)setLinkButtonHidden:;
+- (id)initWithFrame:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)linkButton;
+- (void)setLinkButton:;
+- (id)mainButton;
+- (void)setMainButton:;
+@end

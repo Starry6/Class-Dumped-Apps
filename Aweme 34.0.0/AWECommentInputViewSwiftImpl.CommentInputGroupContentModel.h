@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputGroupContentModel : _TtCs12_SwiftObject
+@end

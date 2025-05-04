@@ -1,0 +1,31 @@
+@interface AWEDeepLinkTokenCreator : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString tokenkey;
+@property (nonatomic) NSDictionary pathParams;
+@property (nonatomic) NSDictionary queryParams;
+@property (nonatomic) Q dpPageType;
+@property (nonatomic) Q requireLoginType;
+@property (nonatomic) BOOL skipURLTransfer;
+@property (nonatomic) BOOL resetToRoot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSkipURLTransfer:;
+- (BOOL)skipURLTransfer;
+- (void)setDpPageType:;
+- (void)setRequireLoginType:;
+- (void)setResetToRoot:;
+- (id)tokenkey;
+- (BOOL)resetToRoot;
+- (unsigned long long)dpPageType;
+- (unsigned long long)requireLoginType;
+- (void)setTokenkey:;
+- (id)urlString;
+- (void)setUrlString:;
+- (void).cxx_destruct;
+- (id)queryParams;
+- (void)setQueryParams:;
+- (id)pathParams;
+- (void)setPathParams:;
+@end

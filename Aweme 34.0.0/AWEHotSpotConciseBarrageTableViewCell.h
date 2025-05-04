@@ -1,0 +1,38 @@
+@interface AWEHotSpotConciseBarrageTableViewCell : UITableViewCell
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) <AWEHotSpotCommentModelDelegate> dataSource;
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) <AWEHotSpotBarrageTableViewCellDelegate> delegate;
+@property (nonatomic) q backgroundViewType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awe_configWithModel:indexPath:;
+- (void)setBackgroundViewType:;
+- (id)addTapGestureForView:selector:;
+- (void)p_setupBasicUI;
+- (long long)backgroundViewType;
+- (void)didTapToSelectedCell:;
+- (void)configWithModel:indexPath:;
+- (id)delegate;
+- (id)indexPath;
+- (void)setIndexPath:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)bubbleView;
+- (void)setBubbleView:;
++ (double)awe_cellHeightWithModel:indexPath:;
++ (id)awe_reuseIdentifier;
++ (double)backgroundViewWidthForText:;
++ (double)cellHeightWithModel:indexPath:;
++ (id)generateAttributeStringWithModel:;
++ (id)getRangeOfNickName:withAttributes:;
++ (id)reuseIdentifier;
+@end

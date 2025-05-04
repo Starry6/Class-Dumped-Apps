@@ -1,0 +1,3 @@
+@interface AWEStudioSwiftImpl.AIImageReviewTask : _TtGC8AirFlowX7AFXTaskVC18AWEStudioSwiftImpl17AIImageReviewTask5InputVS2_6Output_
+- (void).cxx_destruct;
+@end

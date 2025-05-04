@@ -1,0 +1,38 @@
+@interface AWEFriendsImpl.RichContentNewListViewModel : BDMultiContentContainer.BaseContentListViewModel
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) <AFDRichContentBaseSectionViewModelProtocol> currentSectionVM;
+@property (nonatomic) <AFDRichContentHandlerProtocol> listContentHandler;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) BOOL enableEnteringProfile;
+@property (nonatomic) BOOL isFrameAnimationActive;
+@property (nonatomic) BOOL shouldPrepareForDisplay;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)trackMultiGroupSlideWithCurrentIndex:withMethod:;
+- (id)listContentHandler;
+- (id)currentSectionVM;
+- (long long)sectionIndexWithAwemeModel:;
+- (long long)getTotalItemCount;
+- (void)trackDiaryFolderSlideFromIndex:toIndex:withMethod:;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (id)currentAwemeModel;
+- (void)setupViewModel;
+- (void)setEnableEnteringProfile:;
+- (BOOL)shouldPrepareForDisplay;
+- (void)setShouldPrepareForDisplay:;
+- (BOOL)enableEnteringProfile;
+- (BOOL)isFrameAnimationActive;
+- (void)setIsFrameAnimationActive:;
+- (BOOL)shouldShowPaginatedProgressView;
+- (void)createFinishTrackTriggerIfNeeded;
+- (void)transferFinishTrackTriggerTo:;
+- (void)resetFinishTrackTrigger;
+- (void)onDeleteNotificationWithNoti:;
+- (id)init;
+- (void)dealloc;
+- (BOOL)isValid;
+- (void)setIsValid:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

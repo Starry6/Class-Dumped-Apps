@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentCellTranslateComponentUntil : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,38 @@
+@interface AWEMusicDetailInspirationTemplateBodyModel : AWEBaseApiModel
+@property (nonatomic) NSArray templateList;
+@property (nonatomic) NSArray lvTemplateList;
+@property (nonatomic) NSArray awemeTemplateList;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) BOOL collectionTab;
+@property (nonatomic) BOOL coverType;
+@property (nonatomic) q videoMinLimit;
+@property (nonatomic) NSArray awemeList;
+@property (nonatomic) NSString nextCursor;
+@property (nonatomic) BOOL hasMore;
+- (id)nextCursor;
+- (void)setNextCursor:;
+- (id)awemeList;
+- (void)setAwemeList:;
+- (BOOL)coverType;
+- (id)templateList;
+- (void)setTemplateList:;
+- (id)lvTemplateList;
+- (void)setLvTemplateList:;
+- (id)awemeTemplateList;
+- (void)setAwemeTemplateList:;
+- (BOOL)collectionTab;
+- (void)setCollectionTab:;
+- (void)setCoverType:;
+- (long long)videoMinLimit;
+- (void)setVideoMinLimit:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (id)tagName;
+- (void)setTagName:;
++ (id)awemeListJSONTransformer;
++ (id)templateListJSONTransformer;
++ (id)lvTemplateListJSONTransformer;
++ (id)awemeTemplateListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

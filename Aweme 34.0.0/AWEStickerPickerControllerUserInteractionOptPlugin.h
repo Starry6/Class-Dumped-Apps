@@ -1,0 +1,38 @@
+@interface AWEStickerPickerControllerUserInteractionOptPlugin : NSObject
+@property (nonatomic) <ACCSideslipPropPanelControllerProtocol> controller;
+@property (nonatomic) <ACCSideslipPropViewContainerProtocol> viewContainer;
+@property (nonatomic) <ACCSideslipPropPanelTrackerService> sideslipTrackerService;
+@property (nonatomic) <ACCPropPickerService> propPickerService;
+@property (nonatomic) <ACCSideslipPropPanelFavoriteService> sideslipFavoriteService;
+@property (nonatomic) <ACCRecorderSideslipViewContainerProtocol> recorderSideslipViewContainer;
+@property (nonatomic) BOOL isFavoriteButtonClicked;
+@property (nonatomic) BOOL isDiscoveryButtonClicked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)propPickerService;
+- (void)setPropPickerService:;
+- (void)controllerViewDidLoad:;
+- (void)controllerViewLayout:;
+- (id)sideslipTrackerService;
+- (void)setSideslipTrackerService:;
+- (id)sideslipFavoriteService;
+- (void)setSideslipFavoriteService:;
+- (id)recorderSideslipViewContainer;
+- (void)setRecorderSideslipViewContainer:;
+- (void)onFavoriteButtonClick;
+- (void)didTapOnCollectionViewForTap:;
+- (BOOL)isFavoriteButtonClicked;
+- (BOOL)isDiscoveryButtonClicked;
+- (void)onDiscoverButtonClick;
+- (void)setIsFavoriteButtonClicked:;
+- (void)setIsDiscoveryButtonClicked:;
+- (void)setController:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void).cxx_destruct;
+- (id)controller;
+- (void)setViewContainer:;
+- (id)viewContainer;
+@end

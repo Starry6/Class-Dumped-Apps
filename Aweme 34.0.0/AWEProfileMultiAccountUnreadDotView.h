@@ -1,0 +1,32 @@
+@interface AWEProfileMultiAccountUnreadDotView : UIButton
+@property (nonatomic) UILabel dotLabel;
+@property (nonatomic) q count;
+@property (nonatomic) double kHeight;
+@property (nonatomic) double kHorizontalPadding;
+@property (nonatomic) Q style;
+- (id)dotLabel;
+- (void)_disappear;
+- (void)_appear;
+- (void)setDotLabel:;
+- (long long)countOfShowingNum;
+- (void)setDotTextColor:;
+- (id)initWithStyle:scaleRate:;
+- (void)setKHorizontalPadding:;
+- (void)setKHeight:;
+- (double)kHeight;
+- (double)kHorizontalPadding;
+- (void)setLabelHidden:;
+- (void)setCount:;
+- (long long)count;
+- (unsigned long long)style;
+- (void).cxx_destruct;
+- (id)initWithStyle:;
+- (void)setStyle:;
+- (void)updateWithCount:;
+- (void)setDotColor:;
+- (void)updateWithText:;
++ (id)defaultDotColor;
++ (id)defaultDotTextColor;
++ (void)setDefaultDotColor:;
++ (void)setDefaultDotTextColor:;
+@end

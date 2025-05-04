@@ -1,0 +1,34 @@
+@interface AWEActivityTimerTask : NSObject
+@property (nonatomic) Q status;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) BOOL shouldRepeat;
+@property (nonatomic) @? fireBlock;
+@property (nonatomic) NSTimer taskTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)taskTimer;
+- (void)setTaskTimer:;
+- (void)startTaskTimer;
+- (void)pauseTaskTimer;
+- (void)resumeTaskTimer;
+- (void)resetTaskTimer;
+- (void)taskFire:;
+- (id)initWithTimerInterval:fireBlock:;
+- (id)initWithTimerInterval:shouldRepeat:fireBlock:;
+- (void)startTaskIfNeed;
+- (void)pauseTaskIfNeed;
+- (void)resumeTaskIfNeed;
+- (void)stopTaskIfNeed;
+- (double)timeInterval;
+- (id)fireBlock;
+- (void)setStatus:;
+- (void)setTimeInterval:;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (void)reset;
+- (void)setFireBlock:;
+- (void)setShouldRepeat:;
+- (BOOL)shouldRepeat;
+@end

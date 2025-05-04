@@ -1,0 +1,32 @@
+@interface AWEPlayInteractionNewRelatedSearchElement : AWEPlayInteractionNewBottomElement
+@property (nonatomic) UIView<AWEFeedCommerceBottomTipProtocol> relatedSearchTipView;
+@property (nonatomic) BOOL showedBefore;
+@property (nonatomic) BOOL hasReset;
+- (void)initializeElement;
+- (void)viewController_viewDidAppear;
+- (unsigned long long)elementVisibleType;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (BOOL)hasReset;
+- (void)setHasReset:;
+- (void)viewDidDisposed;
+- (void)setShowedBefore:;
+- (BOOL)showedBefore;
+- (id)aAWEFeedModuleServiceDOUYINSSAdapter;
+- (BOOL)shouldAppearWithData:;
+- (void)hideMutexTempElement:;
+- (void)p_showAntiAddictedNoticeBarViewWithCompletion:;
+- (void)trackOnDisplay:;
+- (void)showTipsNotification:;
+- (id)relatedSearchTipView;
+- (void)setRelatedSearchTipView:;
+- (BOOL)disableHasResetTag;
+- (id)getBottomBarSearchWord:;
+- (void)configRelatedSearchBarModelIfNeededWithAweme:responseModel:;
+- (void)updateRelatedSearchTipView;
+- (void)viewDidLoad;
+- (id)identifier;
+- (void).cxx_destruct;
+- (void)reset;
++ (Class)aAWEFeedModuleServiceDOUYINSSAdapterClass;
+@end

@@ -1,0 +1,37 @@
+@interface AWEUserBrandInfoModel : MTLModel
+@property (nonatomic) NSNumber categoryID;
+@property (nonatomic) NSString categoryName;
+@property (nonatomic) NSNumber brandID;
+@property (nonatomic) NSString brandName;
+@property (nonatomic) AWEURLModel logoURL;
+@property (nonatomic) NSNumber heat;
+@property (nonatomic) NSNumber rank;
+@property (nonatomic) NSNumber rankDiff;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHeat:;
+- (id)heat;
+- (id)rankDiff;
+- (void)setRankDiff:;
+- (void)setCategoryID:;
+- (id)rank;
+- (void)setRank:;
+- (void).cxx_destruct;
+- (id)brandName;
+- (id)initWithDict:;
+- (id)categoryID;
+- (void)setBrandName:;
+- (id)tagName;
+- (id)categoryName;
+- (void)setCategoryName:;
+- (id)logoURL;
+- (void)setLogoURL:;
+- (void)setTagName:;
+- (id)brandID;
+- (void)setBrandID:;
++ (id)logoURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

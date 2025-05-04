@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentAutoDisposable : _TtCs12_SwiftObject
+@end

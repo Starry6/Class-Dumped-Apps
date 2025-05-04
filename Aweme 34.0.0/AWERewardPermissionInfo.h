@@ -1,0 +1,34 @@
+@interface AWERewardPermissionInfo : MTLModel
+@property (nonatomic) q rewardTabAuthStatus;
+@property (nonatomic) q rewardBtnAuthStatus;
+@property (nonatomic) q rewardBtnStatus;
+@property (nonatomic) q rewardIconAuthStatus;
+@property (nonatomic) BOOL isClickRecently;
+@property (nonatomic) BOOL isFiftyAuthorStableFans;
+@property (nonatomic) BOOL isIronFansInAwemePost;
+@property (nonatomic) BOOL exitAdmireInAwemePost;
+@property (nonatomic) BOOL authorCanAdmire;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)rewardTabAuthStatus;
+- (void)setRewardTabAuthStatus:;
+- (long long)rewardBtnAuthStatus;
+- (void)setRewardBtnAuthStatus:;
+- (long long)rewardBtnStatus;
+- (void)setRewardBtnStatus:;
+- (long long)rewardIconAuthStatus;
+- (void)setRewardIconAuthStatus:;
+- (BOOL)isClickRecently;
+- (void)setIsClickRecently:;
+- (BOOL)isFiftyAuthorStableFans;
+- (void)setIsFiftyAuthorStableFans:;
+- (BOOL)isIronFansInAwemePost;
+- (void)setIsIronFansInAwemePost:;
+- (BOOL)exitAdmireInAwemePost;
+- (void)setExitAdmireInAwemePost:;
+- (BOOL)authorCanAdmire;
+- (void)setAuthorCanAdmire:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

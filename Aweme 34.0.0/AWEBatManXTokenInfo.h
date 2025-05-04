@@ -1,0 +1,12 @@
+@interface AWEBatManXTokenInfo : MTLModel
+@property (nonatomic) NSArray tokens;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tokens;
+- (void)setTokens:;
+- (void).cxx_destruct;
++ (id)tokensJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

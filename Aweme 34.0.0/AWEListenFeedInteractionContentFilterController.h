@@ -1,0 +1,30 @@
+@interface AWEListenFeedInteractionContentFilterController : AWEListenFeedInteractionBaseController
+@property (nonatomic) BOOL isContentFilterShowing;
+@property (nonatomic) UIView contentFilterAnimationMask;
+@property (nonatomic) UIView contentFilterMaskView;
+@property (nonatomic) double filterViewHeight;
+@property (nonatomic) double filterMastViewRadius;
+- (void)showContentFilterView:;
+- (void)checkIfFilterViewShowing;
+- (double)filterViewHeight;
+- (void)realShowFilterAnimation:;
+- (void)setFilterViewHeight:;
+- (void)setFilterMastViewRadius:;
+- (id)contentFilterMaskView;
+- (BOOL)isContentFilterShowing;
+- (void)setIsContentFilterShowing:;
+- (void)resetContentFilterViewIfNeed;
+- (void)setContentFilterMaskView:;
+- (void)prepareForFilterViewAnimation:;
+- (id)contentFilterAnimationMask;
+- (void)setContentFilterAnimationMask:;
+- (id)getFilterAnimationMask;
+- (void)realShowContentFilterView;
+- (void)finishFilterViewAnimation:;
+- (void)realHideContentFilterView;
+- (id)getContentFilterMaskViewMasker;
+- (double)filterMastViewRadius;
+- (void)viewDidLoad;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void).cxx_destruct;
+@end

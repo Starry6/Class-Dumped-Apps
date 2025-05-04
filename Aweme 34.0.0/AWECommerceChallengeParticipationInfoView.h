@@ -1,0 +1,35 @@
+@interface AWECommerceChallengeParticipationInfoView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) UIView seperateLine;
+@property (nonatomic) UIView userImageContentView;
+@property (nonatomic) UIImageView statusImageView;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) AWETaskModel mission;
+- (void)setMission:;
+- (id)mission;
+- (void)updateWithMission:;
+- (void)invalidateCountdownTimer;
+- (void)setUserImageContentView:;
+- (id)userImageContentView;
+- (void)updateTextColorWithChallenge:;
+- (id)seperateLine;
+- (void)refreshCountLabel:;
+- (void)startCountdownTimerIfNeeded;
+- (void)setSeperateLine:;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)reset;
+- (void)setStatusLabel:;
+- (id)statusImageView;
+- (void)setStatusImageView:;
+- (id)statusLabel;
+@end

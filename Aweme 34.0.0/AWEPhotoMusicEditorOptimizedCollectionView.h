@@ -1,0 +1,36 @@
+@interface AWEPhotoMusicEditorOptimizedCollectionView : UICollectionView
+@property (nonatomic) UILabel emptyCollectionLabel;
+@property (nonatomic) UIButton retryButton;
+@property (nonatomic) UIImageView loadingMoreImageView;
+@property (nonatomic) AWEMusicLoadingAnimationCell animationView;
+@property (nonatomic) @? retryBlock;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} firstLoadingAnimationFrame;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startFirstLoadingAnimation;
+- (void)stopFirstLoadingAnimation;
+- (void)hideRetryButton;
+- (id)emptyCollectionLabel;
+- (void)setFirstLoadingAnimationFrame:;
+- (void)startLoadingMoreAnimating;
+- (void)stopLoadingMoreAnimating;
+- (void)setEmptyCollectionLabel:;
+- (void)retryButtonClicked:;
+- (void)setLoadingMoreImageView:;
+- (id)loadingMoreImageView;
+- (id)firstLoadingAnimationFrame;
+- (id)initWithFrame:collectionViewLayout:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setupViews;
+- (id)animationView;
+- (void)setAnimationView:;
+- (void)setRetryButton:;
+- (void)showRetryButton;
+- (id)retryButton;
+- (id)retryBlock;
+- (void)setRetryBlock:;
+@end

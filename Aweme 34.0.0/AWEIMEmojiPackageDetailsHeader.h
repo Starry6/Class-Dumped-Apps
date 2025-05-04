@@ -1,0 +1,36 @@
+@interface AWEIMEmojiPackageDetailsHeader : UICollectionReusableView
+@property (nonatomic) AWEIMEmojiPackageHeader header;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) AWEIMEmojiPackageAuthorView authorView;
+@property (nonatomic) NSMutableArray authorArray;
+@property (nonatomic) BOOL isSubscribe;
+@property (nonatomic) UITapGestureRecognizer singeTapGesture;
+@property (nonatomic) AWEIMEmojiPackageDetailInfo packageDetail;
+@property (nonatomic) <AWEIMEmojiPackageDetailsHeaderDelegate> delegate;
+- (void)setIsSubscribe:;
+- (BOOL)isSubscribe;
+- (id)authorView;
+- (void)setAuthorView:;
+- (id)authorArray;
+- (void)setAuthorArray:;
+- (void)__setupUIs;
+- (void)__setupActions;
+- (void)__refreshAddButtonUI;
+- (BOOL)__containedInAuthorArray:;
+- (id)packageDetail;
+- (void)__didClickAdd;
+- (void)__didTapAuthorView;
+- (void)setSingeTapGesture:;
+- (id)singeTapGesture;
+- (void)setPackageDetail:;
+- (void)refreshPackageAddedState;
+- (id)getAddButtonFrameInHeader;
+- (id)header;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setHeader:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+@end

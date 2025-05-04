@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionVREntryController : AWEPlayInteractionBaseController
+@property (nonatomic) UITapGestureRecognizer singleTap;
+@property (nonatomic) UIView entryBackgroundView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configBeforEnterToPicoVRPage;
+- (id)contentLabelFont;
+- (void)setSingleTap:;
+- (id)contentLabelTextColor;
+- (id)contentLabelText;
+- (void)backgroundControlClick;
+- (id)entryBackgroundView;
+- (void)adjustEntryPositionIfNeeded;
+- (double)backgroundViewHeight;
+- (double)spaceBetweenIconAndBackground;
+- (double)spaceBetweenIconAndLabel;
+- (double)spaceBetweenLabelAndBackground;
+- (void)quitFromPicoVRPage:;
+- (double)backgroundViewWidth;
+- (void)setEntryBackgroundView:;
+- (void)viewDidLoad;
+- (double)iconWidth;
+- (id)iconImageView;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)setIconImageView:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (double)iconHeight;
+- (id)singleTap;
+- (void)initUI;
+@end

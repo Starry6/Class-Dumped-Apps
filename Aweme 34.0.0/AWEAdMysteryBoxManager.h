@@ -1,0 +1,31 @@
+@interface AWEAdMysteryBoxManager : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> interactionVC;
+@property (nonatomic) AWEMysteryBoxRifleView animationView;
+@property (nonatomic) <AWECommerceComponentContext> commerceContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweme;
+- (void)setAweme:;
+- (id)commerceContext;
+- (void)setCommerceContext:;
+- (id)interactionVC;
+- (void)setInteractionVC:;
+- (void)loadAnimationView;
+- (void)setupContainerWithInteractionViewController:model:;
+- (void)hideAnimationView;
+- (void)showAnimationView;
+- (void)handleShowAnimationContainerWithIndex:;
+- (void)prepareForDisplay;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)animationView;
+- (void)setAnimationView:;
++ (BOOL)canShowComponentWithContext:;
++ (id)adComponentWithAdModel:;
++ (BOOL)shouldShowMysteryBoxAnimationViewWithModel:;
++ (BOOL)isMysteryBoxAdWithComponent:;
+@end

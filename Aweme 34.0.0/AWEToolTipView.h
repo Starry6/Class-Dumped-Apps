@@ -1,0 +1,36 @@
+@interface AWEToolTipView : UIView
+@property (nonatomic) NSLayoutConstraint contentLayoutGuideTopConstraint;
+@property (nonatomic) NSLayoutConstraint contentLayoutGuideLeadingConstraint;
+@property (nonatomic) NSLayoutConstraint contentLayoutGuideBottomConstraint;
+@property (nonatomic) NSLayoutConstraint contentLayoutGuideTrailingConstraint;
+@property (nonatomic) Q style;
+@property (nonatomic) Q anchorBehavior;
+@property (nonatomic) UILayoutGuide contentLayoutGuide;
+@property (nonatomic) {UIEdgeInsets=dddd} imageInherentEdgeInsets;
+@property (nonatomic) UIImageView leadingImageView;
+@property (nonatomic) UIImageView trailingImageView;
+- (unsigned long long)anchorBehavior;
+- (void)setImageInherentEdgeInsets:;
+- (void)setAnchorBehavior:;
+- (id)imageInherentEdgeInsets;
+- (id)contentLayoutGuideTopConstraint;
+- (void)setContentLayoutGuideTopConstraint:;
+- (id)contentLayoutGuideLeadingConstraint;
+- (void)setContentLayoutGuideLeadingConstraint:;
+- (id)contentLayoutGuideBottomConstraint;
+- (void)setContentLayoutGuideBottomConstraint:;
+- (id)contentLayoutGuideTrailingConstraint;
+- (void)setContentLayoutGuideTrailingConstraint:;
+- (id)initWithFrame:style:;
+- (id)initWithFrame:;
+- (unsigned long long)style;
+- (void)setCenter:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setTranslatesAutoresizingMaskIntoConstraints:;
+- (id)contentLayoutGuide;
+- (id)leadingImageView;
+- (id)trailingImageView;
++ (id)toolTipViewWithContentView:style:;
++ (id)toolTipViewWithText:font:textColor:style:;
+@end

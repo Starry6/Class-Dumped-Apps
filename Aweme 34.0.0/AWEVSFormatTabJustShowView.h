@@ -1,0 +1,34 @@
+@interface AWEVSFormatTabJustShowView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView rowIcon;
+@property (nonatomic) UIButton coverButton;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView loadingImageView;
+@property (nonatomic) BOOL isDown;
+@property (nonatomic) @? clickBlock;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (id)loadingAnimation;
+- (void)addMasonry;
+- (id)coverButton;
+- (void)buttonClick:;
+- (void)updateRowDirect:;
+- (void)buttonClickBlock:;
+- (void)hideByClick;
+- (id)rowIcon;
+- (void)setRowIcon:;
+- (void)setCoverButton:;
+- (void)startLoading;
+- (id)initWithFrame:;
+- (void)stopLoading;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (BOOL)isDown;
+- (void)setIsDown:;
+- (id)loadingImageView;
+- (void)setLoadingImageView:;
+- (void)createUI;
+@end

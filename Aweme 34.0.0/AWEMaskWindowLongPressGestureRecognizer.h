@@ -1,0 +1,2 @@
+@interface AWEMaskWindowLongPressGestureRecognizer : UILongPressGestureRecognizer
+@end

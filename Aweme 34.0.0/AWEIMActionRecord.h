@@ -1,0 +1,36 @@
+@interface AWEIMActionRecord : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString conversationShortID;
+@property (nonatomic) q type;
+@property (nonatomic) q priority;
+@property (nonatomic) q lifeCycle;
+@property (nonatomic) NSDate generatedTime;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSDictionary ext;
+- (void)setExt:;
+- (id)conversationShortID;
+- (void)updateSchema:;
+- (long long)lifeCycle;
+- (void)setConversationShortID:;
+- (void)setLifeCycle:;
+- (void)setGeneratedTime:;
+- (id)generatedTime;
+- (id)initWithIdentifier:covnersationShortID:type:;
+- (void)updateExt:;
+- (void)updateGeneratedTime:;
+- (void)updatePriority:;
+- (void)updateLifeCycle:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setIdentifier:;
+- (void)encodeWithCoder:;
+- (long long)priority;
+- (id)identifier;
+- (long long)type;
+- (id)description;
+- (void)setType:;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)ext;
+@end

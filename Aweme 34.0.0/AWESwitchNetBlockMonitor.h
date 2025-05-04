@@ -1,0 +1,31 @@
+@interface AWESwitchNetBlockMonitor : NSObject
+@property (nonatomic) NSString lastItemID;
+@property (nonatomic) double totalBlockDuration;
+@property (nonatomic) double startBlockTime;
+@property (nonatomic) q maxBlockCount;
+@property (nonatomic) q blockCount;
+@property (nonatomic) NSTimer caculateLeftTimer;
+@property (nonatomic) <AWESwitchNetLongBlockProtocol> delegate;
+- (void)setBlockCount:;
+- (void)invaildTimer;
+- (void)setLastItemID:;
+- (void)setTotalBlockDuration:;
+- (id)lastItemID;
+- (void)setStartBlockTime:;
+- (double)totalBlockDuration;
+- (void)startTimerWith:;
+- (double)startBlockTime;
+- (void)onBlocked;
+- (long long)maxBlockCount;
+- (id)caculateLeftTimer;
+- (void)setCaculateLeftTimer:;
+- (void)onBlock:;
+- (void)setMaxBlockCount:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)appDidEnterBackground;
+- (void)resetBlock;
+- (long long)blockCount;
+@end

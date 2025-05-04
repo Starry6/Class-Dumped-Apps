@@ -1,0 +1,34 @@
+@interface AWEIMNewPhotoPickerToolbarView : UIView
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) UIButton watchOnceSendButton;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) UIView bottomView;
+@property (nonatomic) Q toobarType;
+@property (nonatomic) BOOL automaticDisable;
+@property (nonatomic) BOOL albumNewStyle;
+@property (nonatomic) Q sendCount;
+@property (nonatomic) NSString sendButtonTitle;
+- (void)p_setupUI;
+- (id)sendButtonTitle;
+- (void)setSendButtonTitle:;
+- (id)initWithFrame:withUnselectImage:withSelectImage:;
+- (id)watchOnceSendButton;
+- (void)setAlbumNewStyle:;
+- (id)initWithFrame:withUnselectImage:withSelectImage:toobarType:;
+- (void)setToobarType:;
+- (unsigned long long)toobarType;
+- (BOOL)albumNewStyle;
+- (BOOL)automaticDisable;
+- (void)setAutomaticDisable:;
+- (void)setWatchOnceSendButton:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (void)setBottomView:;
+- (id)sendButton;
+- (void)setSendButton:;
+- (unsigned long long)sendCount;
+- (void)setSendCount:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+@end

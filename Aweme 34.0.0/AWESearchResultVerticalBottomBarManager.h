@@ -1,0 +1,34 @@
+@interface AWESearchResultVerticalBottomBarManager : NSObject
+@property (nonatomic) BOOL isCurrentVCSelected;
+@property (nonatomic) AWESearchCachalotVerticalBottomBarConfigModel model;
+@property (nonatomic) AWESearchResultVerticalBottomBarHolder bottomBarHolder;
+@property (nonatomic) q bottomBarType;
+@property (nonatomic) <AWESearchResultVerticalContainerInsertCardProtocol> insertDelegate;
+- (long long)bottomBarType;
+- (void)setBottomBarType:;
+- (id)insertDelegate;
+- (void)setInsertDelegate:;
+- (void)showCommentInputPanelWithLogExtra:;
+- (void)dismissCommentInputPanel;
+- (void)updateUIWithExtra:Container:log:;
+- (BOOL)entranceViewIsShow;
+- (void)removeEntranceViewFromContainer;
+- (void)addEntranceViewToContainer:belowView:;
+- (void)updateEntranceFrameWithContainerWidth:Height:;
+- (id)generateModelFromExtra:;
+- (void)setBottomBarHolder:;
+- (id)bottomBarHolder;
+- (BOOL)isCurrentVCSelected;
+- (id)addTopView;
+- (void)setIsCurrentVCSelected:;
+- (void)moveBottomBarToTopView:;
+- (void)moveBottomBarToContainer:;
+- (void)setupBottomViewClikedEnable:;
+- (void)updatePositionForTopView:;
+- (void)updatePositionForContainer:;
+- (BOOL)entranceViewIsShowOnTop;
+- (void)setModel:;
+- (id)init;
+- (id)model;
+- (void).cxx_destruct;
+@end

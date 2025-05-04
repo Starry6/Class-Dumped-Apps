@@ -1,0 +1,31 @@
+@interface AWELiveStoryBrowserTagView : UIView
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) CAGradientLayer tagLayer;
+@property (nonatomic) double fontSize;
+@property (nonatomic) {CGPoint=dd} labelPadding;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) ^{CGColor=} borderColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (id)initWithFrame:fontSize:labelPadding:;
+- (id)tagLayer;
+- (void)updateFrame:;
+- (void)setTagLayer:;
+- (void)setlabelPadding:;
+- (void)setBorderColor:;
+- (void)setBorderWidth:;
+- (id)labelPadding;
+- (double)borderWidth;
+- (double)fontSize;
+- (id)borderColor;
+- (void)setLabelPadding:;
+- (id)initWithFrame:;
+- (void)setFontSize:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setGradientColor:;
+@end

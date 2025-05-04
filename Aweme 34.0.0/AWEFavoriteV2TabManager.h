@@ -1,0 +1,30 @@
+@interface AWEFavoriteV2TabManager : NSObject
+@property (nonatomic) NSArray tabItemArray;
+@property (nonatomic) q collectsTotalStatus;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) Q publicCollectionLandingTab;
+- (id)storageKey;
+- (void)fetchListDataWithCompletion:;
+- (long long)collectsTotalStatus;
+- (void)setCollectsTotalStatus:;
+- (unsigned long long)updateLandingForFirstTabRedDot;
+- (unsigned long long)updateLandingOnTabDetailRequestFinished:defaultFavoriteLandingType:tagDataResponceModel:;
+- (unsigned long long)updateLandingInDefaultScene;
+- (void)setPublicCollectionLandingTab:;
+- (unsigned long long)updateLandingTypeWithScene:params:;
+- (id)buildDefaultTabItemArray;
+- (void)setTabItemArray:;
+- (void)updateLockIconVisibleStatus;
+- (id)tabItemArray;
+- (void)fetchListDataWithNoNeedParsedParamsToServer:completion:;
+- (BOOL)isLockIconVisibleWithType:;
+- (BOOL)itemShouldShowRedDot:;
+- (id)tabItemArrayFromStorage;
+- (unsigned long long)publicCollectionLandingTab;
+- (id)othersStorageKey;
+- (id)user;
+- (void)setUser:;
+- (void).cxx_destruct;
++ (void)storeCollectsTotalStatus:userID:;
++ (long long)collectsTotalStatusWithUserID:;
+@end

@@ -1,0 +1,37 @@
+@interface AWEShowPaidAuthManager : NSObject
+@property (nonatomic) IESLiveIMPaaSWorker work;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSMutableArray authModels;
+@property (nonatomic) NSHashTable connectObjs;
+@property (nonatomic) BDXBridgeEventSubscriber paymentSubscriber;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addConnectObj:;
+- (void)removeConnectObj:;
+- (void)updatePlayletPaymentInfoWithModels:;
+- (void)addSubscriber;
+- (void)setPaymentSubscriber:;
+- (id)paymentSubscriber;
+- (void)handleAuthStateWithModel:enterFrom:source:containerID:trackParams:;
+- (void)setupChannel;
+- (id)connectObjs;
+- (id)authModels;
+- (void)sendMessageToFE:;
+- (unsigned long long)transformForItemVideoType:;
+- (unsigned long long)transformForItemOrderType:;
+- (void)removeAuthStateWithItemID:containerID:;
+- (void)setProcessStateWithItemID:containerID:;
+- (BOOL)getProcessStateWithItemID:containerID:;
+- (void)setAuthModels:;
+- (void)setConnectObjs:;
+- (void)setModel:;
+- (id)init;
+- (id)model;
+- (void)setWork:;
+- (id)work;
+- (void).cxx_destruct;
+- (void)messageReceived:;
++ (id)shared;
+@end

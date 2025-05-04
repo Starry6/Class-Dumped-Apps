@@ -1,0 +1,30 @@
+@interface AWEPublishShareAsStoryCoverModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) double videoWidth;
+@property (nonatomic) double videoHeight;
+@property (nonatomic) UIImage userIconImage;
+@property (nonatomic) UIImage originVideoCoverImage;
+@property (nonatomic) UIColor startColor;
+@property (nonatomic) UIColor endColor;
+@property (nonatomic) BOOL isNonPostscript;
+- (id)userIconImage;
+- (void)setUserIconImage:;
+- (void)setOriginVideoCoverImage:;
+- (void)setIsNonPostscript:;
+- (id)originVideoCoverImage;
+- (BOOL)isNonPostscript;
+- (id)nickname;
+- (void)setVideoWidth:;
+- (void)setVideoHeight:;
+- (double)videoWidth;
+- (void).cxx_destruct;
+- (double)videoHeight;
+- (id)title;
+- (void)setTitle:;
+- (void)setNickname:;
+- (id)endColor;
+- (void)setEndColor:;
+- (void)setStartColor:;
+- (id)startColor;
+@end

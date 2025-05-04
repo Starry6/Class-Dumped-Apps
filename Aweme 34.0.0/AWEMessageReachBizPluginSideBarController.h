@@ -1,0 +1,33 @@
+@interface AWEMessageReachBizPluginSideBarController : AWEMessageReachBizPluginBaseController
+@property (nonatomic) q badgeCount;
+@property (nonatomic) NSMutableDictionary badgeToShowMap;
+@property (nonatomic) <AWELeftSideBarManagerAbilityProtocol> sideBarManagerAbility;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)onLeftSideBarDidOpen:;
+- (void)onLeftSideBarDidCreate:;
+- (void)sendDataToChannelPluginWithSceneModel:paramContext:;
+- (void)setSideBarManagerAbility:;
+- (void)updateSideBarNoticeWithResult:component:paramContext:;
+- (id)badgeToShowMap;
+- (id)getBadgeModelWithBadgeInfo:component:paramContext:;
+- (void)sideBarCurrentBadgeDidHide;
+- (void)hideLeftSideBarBadgeWithBussinessId:hideType:completion:;
+- (id)sideBarManagerAbility;
+- (void)showBadgeWithResult:component:paramContext:;
+- (id)getPresenterWithBussunessId:;
+- (void)leftSideBarShowSuccess:bussinessId:;
+- (void)showLeftSideBarBussinessEntranceRedDot:model:showCallBack:hideCallBack:downgradeCallBack:;
+- (void)hideLeftSideBarBussinessEntranceRedDot:hideType:completion:;
+- (id)getRedDotShowParamsWithBadgeInfo:component:paramContext:;
+- (long long)getLeftSideBarBadgeCount;
+- (void)setBadgeToShowMap:;
+- (id)initWithDelegate:;
+- (long long)badgeCount;
+- (id)channelID;
+- (void).cxx_destruct;
+- (void)setBadgeCount:;
+@end

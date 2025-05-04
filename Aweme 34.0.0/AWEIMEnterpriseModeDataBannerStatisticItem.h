@@ -1,0 +1,31 @@
+@interface AWEIMEnterpriseModeDataBannerStatisticItem : MTLModel
+@property (nonatomic) q key;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString value;
+@property (nonatomic) q tag;
+@property (nonatomic) NSString bubbleNotice;
+@property (nonatomic) NSString bubbleNoticeJumpSchema;
+@property (nonatomic) NSNumber bubbleNoticeIntervalDays;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bubbleNoticeIconName;
+- (id)bubbleNotice;
+- (void)setBubbleNotice:;
+- (id)bubbleNoticeJumpSchema;
+- (void)setBubbleNoticeJumpSchema:;
+- (id)bubbleNoticeIntervalDays;
+- (void)setBubbleNoticeIntervalDays:;
+- (id)value;
+- (long long)tag;
+- (void)setKey:;
+- (void)setTag:;
+- (long long)key;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)tagConfig;
++ (id)JSONKeyPathsByPropertyKey;
+@end

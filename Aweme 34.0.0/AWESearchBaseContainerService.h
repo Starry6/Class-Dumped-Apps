@@ -1,0 +1,30 @@
+@interface AWESearchBaseContainerService : NSObject
+@property (nonatomic) NSString serviceID;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) q priority;
+@property (nonatomic) <AWESearchBaseContainerProtocol> container;
+@property (nonatomic) <AWESearchServiceManagerProtocol> serviceManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContainer:;
+- (id)container;
+- (void)viewWillDisappear:;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (long long)priority;
+- (void)setServiceID:;
+- (void)setServiceName:;
+- (void)viewDidDisappear:;
+- (id)serviceID;
+- (void)setPriority:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (id)serviceManager;
+- (void)viewDidAppear:;
+- (id)serviceName;
+- (void)setServiceManager:;
+@end

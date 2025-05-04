@@ -1,0 +1,32 @@
+@interface AWECampaignBubbleController : NSObject
+@property (nonatomic) AWEBubble tabbarCampaignBubble;
+@property (nonatomic) AWEToolTipView toolTipView;
+@property (nonatomic) BOOL shouldPostpone;
+@property (nonatomic) BOOL hasEnteredIntoCampaignByNonProfileMeans;
+@property (nonatomic) BOOL hasBlockByMeTab;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissBubble;
+- (void)setupObservation;
+- (void)presentMyTabCampaignBubbleImmediatelyIfNeeded;
+- (void)presentMyTabCampaignBubbleWhenAvailable;
+- (void)_presentMyTabCampaignBubbleImmediatelyIfNeeded;
+- (void)presentBubbleOnReceivingBubbleData:;
+- (BOOL)hasEnteredIntoCampaignByNonProfileMeans;
+- (BOOL)presentBubbleWithTitle:image:andDuration:;
+- (BOOL)_presentBubbleWithTitle:image:andDuration:;
+- (void)_dismissBubble;
+- (id)tabbarCampaignBubble;
+- (BOOL)shouldPostpone;
+- (void)setTabbarCampaignBubble:;
+- (void)setShouldPostpone:;
+- (void)setHasEnteredIntoCampaignByNonProfileMeans:;
+- (BOOL)hasBlockByMeTab;
+- (void)setHasBlockByMeTab:;
+- (id)toolTipView;
+- (void)setToolTipView:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

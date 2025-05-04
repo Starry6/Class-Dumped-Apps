@@ -1,0 +1,31 @@
+@interface AWEECOMIMMsgReferenceModel : NSObject
+@property (nonatomic) NSString msgId;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString contentText;
+@property (nonatomic) q referenceType;
+@property (nonatomic) q rootMessageId;
+@property (nonatomic) q status;
+@property (nonatomic) NSString senderID;
+@property (nonatomic) NSString senderRole;
+@property (nonatomic) BOOL isShark;
+- (long long)rootMessageId;
+- (void)setSenderRole:;
+- (void)setIsShark:;
+- (void)setRootMessageId:;
+- (id)senderRole;
+- (BOOL)enableReferenceWithPigeonBizType:;
+- (BOOL)isShark;
+- (id)senderID;
+- (void)setStatus:;
+- (void)setNickName:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)nickName;
+- (void)setSenderID:;
+- (id)msgId;
+- (void)setMsgId:;
+- (void)setContentText:;
+- (id)contentText;
+- (long long)referenceType;
+- (void)setReferenceType:;
+@end

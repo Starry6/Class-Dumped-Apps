@@ -1,0 +1,32 @@
+@interface AWEIronManLandingPageCouponItem : AWEIronManLandingPageRecentBaseItem
+@property (nonatomic) UIImageView leftBgView;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) UILabel conditionLabel;
+@property (nonatomic) UILabel mainLabel;
+@property (nonatomic) UIImageView rightBgView;
+@property (nonatomic) UIButton actionBtn;
+@property (nonatomic) UILabel infoTitleLabel;
+@property (nonatomic) UILabel descTitleLabel;
+- (void)awe_themeDidChange:;
+- (id)actionBtn;
+- (void)setActionBtn:;
+- (void)updateToItemModel:;
+- (void)setLeftBgView:;
+- (id)leftBgView;
+- (void)setConditionLabel:;
+- (id)conditionLabel;
+- (void)setRightBgView:;
+- (id)rightBgView;
+- (void)setInfoTitleLabel:;
+- (id)infoTitleLabel;
+- (void)setDescTitleLabel:;
+- (id)descTitleLabel;
+- (void)transferCouponInfo;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)countLabel;
+- (id)mainLabel;
+- (void)setCountLabel:;
+- (void)setMainLabel:;
+- (void)setUpUI;
+@end

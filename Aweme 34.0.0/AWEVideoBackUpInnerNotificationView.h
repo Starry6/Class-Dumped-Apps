@@ -1,0 +1,31 @@
+@interface AWEVideoBackUpInnerNotificationView : UIView
+@property (nonatomic) DUXInAppNotificationMainContentView mainView;
+@property (nonatomic) AWEVideoBackUpInnerNotificationConfig configModel;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disablePullIndicatorView;
+- (void)renderModel:context:;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)handleTapAction;
+- (void)setMainView:;
+- (id)notificationOperator;
+- (void)viewDidDisappearWithReason:;
+- (double)dismissTimerInterval;
+- (BOOL)disableUseBusinessTypeDeterminDismissTimerInterval;
+- (BOOL)tapGestureIsEnable:;
+- (void)customTransition:animationBlock:completion:;
+- (BOOL)isContainerBackgroundClear;
+- (void)setNotificationOperator:;
+- (void)dismissToEdit;
+- (id)init;
+- (id)intrinsicContentSize;
+- (id)view;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (id)mainView;
+- (void)updateWithModel:;
+@end

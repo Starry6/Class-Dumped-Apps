@@ -1,0 +1,30 @@
+@interface AWEBaseGuideView : UIView
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) YYLabel descriptionLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)makeSubviewConstrains;
+- (void)configAvatarImageView;
+- (void)configTitleLabel;
+- (void)configDescriptionLabel;
+- (void)remakeSubviewConstrains;
+- (void)setDescriptionLabel:;
+- (id)initWithFrame:;
+- (void)touchesCancelled:withEvent:;
+- (void)setTitleLabel:;
+- (void)touchesEnded:withEvent:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (id)titleLabel;
+- (id)descriptionLabel;
+- (void)setupUI;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (double)viewHeight;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

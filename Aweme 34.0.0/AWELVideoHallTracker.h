@@ -1,0 +1,38 @@
+@interface AWELVideoHallTracker : NSObject
+@property (nonatomic) NSMutableSet uploadedSet;
+@property (nonatomic) AWELVideoBasePageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commonParams;
+- (void)trackStayTimeWithEnterFrom:duration:;
+- (void)trackLVideoClickWithLogExtraDict:;
+- (id)uploadedSet;
+- (void)trackBaseLVideoShowWithLogExtraDict:withTrackName:;
+- (BOOL)needTrackLVideoShow:;
+- (void)updateUploadedSet:;
+- (void)trackBaseBannerPlayWithLogExtraDict:withTrackName:;
+- (void)trackFavouriteVideo:isCancel:;
+- (void)trackVideoPlayFinishWithLogExtraDict:;
+- (void)trackFinishViewShowWithModel:;
+- (void)trackFinishPaymentTrialEndWithModel:;
+- (void)trackEnterLVideoPage:;
+- (void)trackEnterFilterPage:tabName:;
+- (void)trackLVideoShowWithLogExtraDict:;
+- (void)trackBannerLVideoShowWithLogExtraDict:;
+- (void)trackBannerPlayWithLogExtraDict:;
+- (void)trackBannerPlayFinishWithLogExtraDict:;
+- (void)trackBannerPlayTimeWithLogExtraDict:;
+- (void)reportLongVideoDisplayedWithModel:;
+- (void)trackVajraShowWithLogExtraDict:filterName:;
+- (void)trackFeedSharePannelWithScheme:;
+- (void)trackLVideoEntranceGuideShow;
+- (void)trackSearchButtonShow;
+- (void)setUploadedSet:;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
+@end

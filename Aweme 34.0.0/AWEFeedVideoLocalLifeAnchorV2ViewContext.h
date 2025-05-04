@@ -1,0 +1,38 @@
+@interface AWEFeedVideoLocalLifeAnchorV2ViewContext : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSString referString;
+@property (nonatomic) q scene;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) @ player;
+@property (nonatomic) NSDictionary contextDict;
+@property (nonatomic) @ poiPlayInteractionVCManager;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) UIResponder btmResponder;
+@property (nonatomic) NSString btm;
+@property (nonatomic) NSString btmStandData;
+- (id)referString;
+- (void)setEnterMethod:;
+- (id)aweme;
+- (void)setReferString:;
+- (void)setAweme:;
+- (id)logExtra;
+- (id)contextDict;
+- (void)setContextDict:;
+- (id)enterMethod;
+- (void)setBtmResponder:;
+- (id)initCommentViewContext;
+- (id)btm;
+- (void)setBtm:;
+- (id)btmStandData;
+- (void)setBtmStandData:;
+- (id)btmResponder;
+- (void)setPoiPlayInteractionVCManager:;
+- (id)exhcangeToOldViewViewContext;
+- (id)poiPlayInteractionVCManager;
+- (void)setScene:;
+- (long long)scene;
+- (id)initWithBuilder:;
+- (id)player;
+- (void)setPlayer:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMInputActionBarMaker_LiveConsult : NSObject
+@property (nonatomic) UIView<AWEIMInputActionBarProtocol> actionBar;
+@property (nonatomic) Q type;
+@property (nonatomic) AWEIMInputFAQListViewModel faqListViewModel;
+@property (nonatomic) NSString typeString;
+@property (nonatomic) UIView blurContentView;
+@property (nonatomic) <AWEIMInputActionBarMakerDataSource> dataSource;
+@property (nonatomic) NSArray calculatedItems;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)actionBarHeight;
+- (id)faqListViewModel;
+- (id)actionBar;
+- (void)setActionBar:;
+- (id)blurContentView;
+- (void)setBlurContentView:;
+- (id)calculatedItems;
+- (id)makeActionBar;
+- (void)setActionBarToNil;
+- (id)recalculateEntryItems;
+- (BOOL)entryItemContainReplacedSpecialEmoji;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (void)setDataSource:;
+- (id)typeString;
+- (id)dataSource;
+@end

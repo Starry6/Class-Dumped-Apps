@@ -1,0 +1,2 @@
+@interface AWEIMABRegister : NSObject
+@end

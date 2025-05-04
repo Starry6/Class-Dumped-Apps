@@ -1,0 +1,2 @@
+@interface AWEVideoDescriptionPanelRelatedRecommendTitleSectionViewModel : AWEBaseListSectionViewModel
+@end

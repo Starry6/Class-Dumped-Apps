@@ -1,0 +1,34 @@
+@interface AWEPOIPreviewContainerManager : NSObject
+@property (nonatomic) AWEPOILynxContainerView lynxView;
+@property (nonatomic) AWEPOITouchThroughView containerView;
+@property (nonatomic) double height;
+@property (nonatomic) NSString lynxURL;
+@property (nonatomic) NSString rawData;
+@property (nonatomic) NSString lynxCommonData;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)setLynxURL:;
+- (id)lynxView;
+- (id)lynxURL;
+- (void)setLynxView:;
+- (void)cubeView:viewDidChangeContentSize:;
+- (id)lynxCommonData;
+- (void)setLynxCommonData:;
+- (void)updateWithContainerModel:;
+- (id)createLynxViewWithModel:extraParams:delegate:;
+- (void)updateLynxView:extraParams:withModel:;
+- (void)reloadLynxView:extraParams:withModel:;
+- (void)setHeight:;
+- (id)containerView;
+- (void)setRawData:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (double)height;
+- (id)initWithDictionary:;
+- (id)rawData;
+@end

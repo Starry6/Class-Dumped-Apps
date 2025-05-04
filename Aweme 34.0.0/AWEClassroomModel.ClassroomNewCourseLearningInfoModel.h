@@ -1,0 +1,2 @@
+@interface AWEClassroomModel.ClassroomNewCourseLearningInfoModel : _TtCs12_SwiftObject
+@end

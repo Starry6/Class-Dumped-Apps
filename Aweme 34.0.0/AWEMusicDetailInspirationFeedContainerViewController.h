@@ -1,0 +1,36 @@
+@interface AWEMusicDetailInspirationFeedContainerViewController : AWEBaseListViewController
+@property (nonatomic) AWEMusicDetailInspirationFeedDataContext feedDataContext;
+@property (nonatomic) UIViewController hostVC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tabContentScrollView;
+- (id)segmentedControlItemConfigForTabList:;
+- (void)configWithTabItemModel:;
+- (id)zoomTransitionStartViewForOffset:;
+- (BOOL)awe_shouldAutorotate;
+- (unsigned long long)awe_supportedInterfaceOrientations;
+- (id)aAWEPadModuleAdapter;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (BOOL)supportRotationForTabList;
+- (void)bindViewModel;
+- (void)preloadDetailData;
+- (id)feedDataContext;
+- (void)prepareTrackInstance:;
+- (void)shareRecommendedAwemeCoversForIM;
+- (id)hostVC;
+- (void)setHostVC:;
+- (void)bindSectionViewModel;
+- (void)showShimmerViewIfNeeded:;
+- (BOOL)isEmptyList;
+- (id)titleForSegmentedControl;
+- (void)viewWillDisappear:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (BOOL)hasMoreData;
+- (void)setupCollectionView:;
++ (Class)aAWEPadModuleAdapterClass;
+@end

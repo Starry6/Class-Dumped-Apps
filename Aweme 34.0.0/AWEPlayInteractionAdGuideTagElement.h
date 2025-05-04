@@ -1,0 +1,32 @@
+@interface AWEPlayInteractionAdGuideTagElement : AWEPlayInteractionLeftElement
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel guideLabel;
+@property (nonatomic) AWEAwemeModel lastShowedModel;
+@property (nonatomic) NSDictionary currentInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (id)activateInfoWithData:;
+- (id)guideLabel;
+- (void)setGuideLabel:;
+- (void)setLastShowedModel:;
+- (id)lastShowedModel;
+- (void)tryShowAdGuideTagWithNotification:;
+- (void)videoShowAdTagTimerWithNotification:;
+- (void)videoHideAdTagTimerWithNotification:;
+- (void)setupSubViewWithText:;
+- (void)setCurrentInfo:;
+- (void)tryShowAdGuideTag;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void)clearData;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)currentInfo;
++ (id)activateInfoWithContext:;
+@end

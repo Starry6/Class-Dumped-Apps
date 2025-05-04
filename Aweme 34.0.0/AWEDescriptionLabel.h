@@ -1,0 +1,37 @@
+@interface AWEDescriptionLabel : YYLabel
+@property (nonatomic) BOOL isExpanded;
+@property (nonatomic) BOOL isAccessibilityTraitButton;
+@property (nonatomic) BOOL isAds;
+@property (nonatomic) @? touchBeganBlock;
+@property (nonatomic) @? touchCancelBlock;
+@property (nonatomic) @? hitTestBlock;
+- (BOOL)isAds;
+- (void)setIsAds:;
+- (BOOL)enablePredictFetch;
+- (id)touchBeganBlock;
+- (void)setTouchBeganBlock:;
+- (id)hitTestBlock;
+- (void)setHitTestBlock:;
+- (id)entityWordAccessibilityLabel:;
+- (id)fullTextAccessibilityLabel;
+- (BOOL)isAccessibilityTraitButton;
+- (void)setIsAccessibilityTraitButton:;
+- (void)setTouchCancelBlock:;
+- (BOOL)enableHitBlock;
+- (id)touchCancelBlock;
+- (void)setIsExpanded:;
+- (id)accessibilityLabel;
+- (BOOL)isExpanded;
+- (id)accessibilityElements;
+- (void)touchesCancelled:withEvent:;
+- (void)setAttributedText:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (void)setAccessibilityElements:;
+- (id)hitTest:withEvent:;
+- (BOOL)isAccessibilityElement;
+- (id)accessibilityElementAtIndex:;
+- (long long)accessibilityElementCount;
+- (long long)indexOfAccessibilityElement:;
+- (BOOL)shouldGroupAccessibilityChildren;
+@end

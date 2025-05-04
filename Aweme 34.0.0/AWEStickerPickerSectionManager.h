@@ -1,0 +1,30 @@
+@interface AWEStickerPickerSectionManager : NSObject
+@property (nonatomic) NSArray lookedStickers;
+@property (nonatomic) NSArray likedStickers;
+@property (nonatomic) NSArray usedStickers;
+@property (nonatomic) NSArray lastFetchUsedStickers;
+@property (nonatomic) @? stickerFilterBlock;
+@property (nonatomic) BOOL isTeenMode;
+- (BOOL)isTeenMode;
+- (void)setIsTeenMode:;
+- (void)setStickerFilterBlock:;
+- (void)generateUsedSectionToFavorite:stickers:;
+- (void)generateUsedSectionToFavorite:;
+- (BOOL)isSectionEnabledWithCategory:;
+- (id)usedStickers;
+- (void)p_fetchUsedEffectsWithCategory:completion:;
+- (id)lastFetchUsedStickers;
+- (id)stickerFilterBlock;
+- (void)setUsedStickers:;
+- (void)setLastFetchUsedStickers:;
+- (void)p_getEffectsWithCacheKey:completion:;
+- (void)fetchUsedEffectsWithCategory:completion:;
+- (id)p_getStickerIdsFromCacheWithKey:;
+- (id)lookedStickers;
+- (void)setLookedStickers:;
+- (id)likedStickers;
+- (void)setLikedStickers:;
+- (void).cxx_destruct;
++ (BOOL)isSameSectionWithSticker:otherSticher:;
++ (id)sectionNameMap;
+@end

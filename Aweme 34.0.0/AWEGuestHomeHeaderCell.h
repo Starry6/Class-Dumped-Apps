@@ -1,0 +1,32 @@
+@interface AWEGuestHomeHeaderCell : UICollectionViewCell
+@property (nonatomic) AWEGuestHomeHeaderBgView bgView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIView topCornerContainerView;
+@property (nonatomic) UIView followContainer;
+@property (nonatomic) UILabel followNumLabel;
+@property (nonatomic) UILabel followSuffixLabel;
+- (void)duxGrid_viewDidChangeBreakPointFrom:toBreakPoint:;
+- (void)setupBinding;
+- (id)followContainer;
+- (void)setFollowContainer:;
+- (void)didClickAvatar;
+- (id)topCornerContainerView;
+- (id)followNumLabel;
+- (id)followSuffixLabel;
+- (void)didClickName;
+- (void)didClickFollowNum;
+- (void)setFollowNumLabel:;
+- (void)setTopCornerContainerView:;
+- (void)setFollowSuffixLabel:;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setNameLabel:;
+- (void)setupUI;
+@end

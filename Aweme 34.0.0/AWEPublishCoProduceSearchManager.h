@@ -1,0 +1,30 @@
+@interface AWEPublishCoProduceSearchManager : NSObject
+@property (nonatomic) NSMutableArray userArray;
+@property (nonatomic) NSArray presentedUserArrayString;
+@property (nonatomic) <AWEHttpTask> currentTask;
+@property (nonatomic) q offset;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSArray coProduceUserList;
+@property (nonatomic) NSMutableArray presentedUserArray;
+- (void)loadMoreWithCompletion:;
+- (id)userArray;
+- (id)presentedUserArray;
+- (void)setPresentedUserArray:;
+- (BOOL)isUserSelected:;
+- (void)setUserArray:;
+- (void)fetchSearchUserListWithQuery:presentedUserArray:completion:;
+- (id)coProduceUserList;
+- (void)fetchSearchParams:completion:;
+- (void)fetchSearchSugWithQuery:presentedUserArray:completion:;
+- (void)setCoProduceUserList:;
+- (id)presentedUserArrayString;
+- (void)setPresentedUserArrayString:;
+- (void)setOffset:;
+- (long long)offset;
+- (id)currentTask;
+- (void)setCurrentTask:;
+- (void).cxx_destruct;
+- (id)keyword;
+- (void)setKeyword:;
++ (BOOL)shouldCoproduceSerachViewUseFullPageStyle;
+@end

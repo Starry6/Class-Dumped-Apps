@@ -1,0 +1,34 @@
+@interface AWESpeCategoryKit.FeedTabListContainerViewController : AWEBaseTabListViewController
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (id)initWithNibName:bundle:viewModel:;
+- (id)tabListHeaderViewController;
+- (id)tabListItemViewControllerForModel:index:;
+- (id)segmentedControlForTabList;
+- (double)heightForSegmentedControl;
+- (void)updateSegmentedControl:itemModelsArray:itemConfigsArray:;
+- (void)tabListContainerDidSelectItemAtIndex:itemViewController:isByTap:;
+- (void)tabListContainerScrollViewDidScroll:;
+- (void)tabListContainerScrollViewWillBeginDragging:;
+- (void)tabListContainerScrollViewDidEndDragging:willDecelerate:;
+- (BOOL)tabContentUseMaxHeight;
+- (void)tabListContainerScrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)setupTabListWithConfig:;
+- (id)containerViewControllerPosition;
+- (BOOL)tabItemScrollViewKeepContentOffset;
+- (id)createLoadingViewWithSuperView:;
+- (void)showLoadingViewWithLoadingView:;
+- (void)hideLoadingViewWithLoadingView:;
+- (void)updateTabViewControllerStateWithState:;
+- (BOOL)tabListShouldLazyAccessTabItemViewController;
+- (BOOL)tabListAddTabItemAsChildViewController;
+- (void)viewWillDisappear:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (id)initWithNibName:bundle:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)initWithCoder:;
+@end

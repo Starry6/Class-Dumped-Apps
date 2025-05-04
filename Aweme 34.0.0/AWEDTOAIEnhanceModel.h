@@ -1,0 +1,36 @@
+@interface AWEDTOAIEnhanceModel : MTLModel
+@property (nonatomic) BOOL aiEnhanceOn;
+@property (nonatomic) q intensity;
+@property (nonatomic) double originImageWidth;
+@property (nonatomic) double originImageHeight;
+@property (nonatomic) double originImageScale;
+@property (nonatomic) NSString originImagePath;
+@property (nonatomic) NSString originCompressedImagePath;
+@property (nonatomic) NSString originCropIdentifier;
+@property (nonatomic) NSString originCommitId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAiEnhanceOn:;
+- (void)setOriginImageWidth:;
+- (void)setOriginImageHeight:;
+- (void)setOriginImageScale:;
+- (BOOL)aiEnhanceOn;
+- (double)originImageWidth;
+- (double)originImageHeight;
+- (double)originImageScale;
+- (id)originImagePath;
+- (void)setOriginImagePath:;
+- (id)originCompressedImagePath;
+- (void)setOriginCompressedImagePath:;
+- (id)originCropIdentifier;
+- (void)setOriginCropIdentifier:;
+- (id)originCommitId;
+- (void)setOriginCommitId:;
+- (id)init;
+- (long long)intensity;
+- (void).cxx_destruct;
+- (void)setIntensity:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

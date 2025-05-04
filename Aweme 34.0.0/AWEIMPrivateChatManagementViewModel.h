@@ -1,0 +1,36 @@
+@interface AWEIMPrivateChatManagementViewModel : AWEIMChatListControllerViewModel
+@property (nonatomic) q filterViewStyle;
+@property (nonatomic) AWEIMPrivateChatManagementDataManager dataManager;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) AWEIMPrivateChatManagementHeaderViewModel headerViewModel;
+@property (nonatomic) AWEIMPrivateChatManagementFilterViewModel filterViewModel;
+@property (nonatomic) NSString pageTitle;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)switchTabWithType:;
+- (id)filterViewModel;
+- (void)setFilterViewModel:;
+- (void)didFinishLoadWithSourceData:;
+- (unsigned long long)currentFilterTabType;
+- (void)showBubbleIfNeed;
+- (long long)filterViewStyle;
+- (void)switchHeaderIconWithSelected:;
+- (BOOL)__showHeaderBubbleIfNeed;
+- (void)setFilterViewStyle:;
+- (void)setHeaderViewModel:;
+- (void)fetchData;
+- (id)init;
+- (id)dataManager;
+- (void)setDataManager:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+- (id)headerViewModel;
+- (id)pageTitle;
+- (void)setPageTitle:;
+@end

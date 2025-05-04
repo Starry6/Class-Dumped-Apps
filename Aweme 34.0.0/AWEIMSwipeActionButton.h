@@ -1,0 +1,30 @@
+@interface AWEIMSwipeActionButton : UIButton
+@property (nonatomic) AWEIMSwipeAction action;
+@property (nonatomic) UIFont titleLabelFont;
+@property (nonatomic) UIColor highlightedBackgroundColor;
+@property (nonatomic) double spacing;
+@property (nonatomic) double maximumImageHeight;
+- (id)titleBoundingRectWithSize:;
+- (double)maximumImageHeight;
+- (id)buttonEdgeInsetsFromOptions:;
+- (double)preferredWidthMaximum:;
+- (void)updateReconfirmStatus:;
+- (void)setMaximumImageHeight:;
+- (double)spacing;
+- (void)setSpacing:;
+- (void)setAction:;
+- (id)imageRectForContentRect:;
+- (id)titleRectForContentRect:;
+- (void)setHighlighted:;
+- (id)action;
+- (id)initWithAction:;
+- (void).cxx_destruct;
+- (double)currentSpacing;
+- (id)alignmentRect;
+- (id)highlightedBackgroundColor;
+- (void)setHighlightedBackgroundColor:;
+- (id)titleLabelFont;
+- (void)setTitleLabelFont:;
+- (double)imageHeight;
++ (id)centerRect:size:;
+@end

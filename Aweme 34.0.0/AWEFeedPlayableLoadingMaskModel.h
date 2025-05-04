@@ -1,0 +1,32 @@
+@interface AWEFeedPlayableLoadingMaskModel : MTLModel
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) AWEFeedPlayableIconModel icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString capsuleTitle;
+@property (nonatomic) NSString capsuleSubtitle;
+@property (nonatomic) NSString loadingBGM;
+@property (nonatomic) NSString loadingFinishBGM;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)capsuleTitle;
+- (void)setCapsuleTitle:;
+- (id)loadingBGM;
+- (id)loadingFinishBGM;
+- (id)capsuleSubtitle;
+- (void)setCapsuleSubtitle:;
+- (void)setLoadingBGM:;
+- (void)setLoadingFinishBGM:;
+- (id)subtitle;
+- (id)icon;
+- (void)setSubtitle:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)bgColor;
+- (void)setBgColor:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

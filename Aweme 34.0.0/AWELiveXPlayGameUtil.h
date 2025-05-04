@@ -1,0 +1,30 @@
+@interface AWELiveXPlayGameUtil : NSObject
+@property (nonatomic) AWEUIAlertView queueAlertView;
+@property (nonatomic) NSMutableDictionary clocks;
+- (void)dismissQueueAlertView;
+- (void)setupDurationTracker;
+- (void)commitDurationTime:;
+- (id)duration:end:;
+- (void)monitorSendCustomMessage:type:;
+- (void)pushDurationTracker:;
+- (void)showLaunchFailAlertWithReason:actionBlock:cancelBlock:;
+- (void)showDeviceOfflineAlert:cancelBlock:;
+- (void)showForceStopAlert:;
+- (void)showExceptionAlertWithTitle:description:cancelTitle:actionBlock:cancelBlock:;
+- (long long)netStatusTransfer:;
+- (id)queueTypeWithQueueConfiguration:;
+- (void)showQueueAlertViewWithRanking:abortQueueCallback:;
+- (void)showInvalidAlert:cancelBlock:;
+- (void)showUnsupportAlert:cancelBlock:;
+- (void)showAppVersionTooLowAlert:cancelBlock:;
+- (void)showBannedAlert:cancelBlock:;
+- (void)showResourceFullAlert:cancelBlock:;
+- (void)_showAlertWithTitle:description:actionTitle:cancelTitle:actionBlock:cancelBlock:;
+- (id)queueAlertView;
+- (void)setQueueAlertView:;
+- (double)getTime:;
+- (void)showNetworkErrorAlert:cancelBlock:;
+- (void).cxx_destruct;
+- (id)clocks;
+- (void)setClocks:;
+@end

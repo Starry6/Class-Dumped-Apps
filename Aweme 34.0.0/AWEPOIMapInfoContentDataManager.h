@@ -1,0 +1,32 @@
+@interface AWEPOIMapInfoContentDataManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_group> group;
+@property (nonatomic) AWEPOINearbyHotPrefetcher prefetcher;
+@property (nonatomic) AWEPOINearbyRecommendationDataResponse nearbyRecResponse;
+@property (nonatomic) NSError nearbyRecResponseError;
+@property (nonatomic) AWEPOINearbyHotListDataResponse nearbyHotListResponse;
+@property (nonatomic) BOOL shouldDisplayNearbyRecSection;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString poiId;
+- (void)setPrefetcher:;
+- (id)initWithPrefetcher:;
+- (void)requestDataWithPOIId:saleChannel:shouldFetchHotVideo:completion:;
+- (void)p_requestNearbyRecData:;
+- (void)p_requestNearbyHotVideoData;
+- (void)p_resolveResponse;
+- (id)prefetcher;
+- (void)setNearbyHotListResponse:;
+- (void)setNearbyRecResponseError:;
+- (void)setNearbyRecResponse:;
+- (id)nearbyRecResponse;
+- (id)nearbyHotListResponse;
+- (id)nearbyRecResponseError;
+- (BOOL)shouldDisplayNearbyRecSection;
+- (void)setShouldDisplayNearbyRecSection:;
+- (id)completion;
+- (void)setGroup:;
+- (id)group;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (id)poiId;
+- (void)setPoiId:;
+@end

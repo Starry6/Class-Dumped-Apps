@@ -1,0 +1,2 @@
+@interface _TtCC13AWEHamletImpl12WorldManager14WorldRoomState : _TtCs12_SwiftObject
+@end

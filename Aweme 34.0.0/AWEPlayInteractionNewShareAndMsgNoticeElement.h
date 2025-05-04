@@ -1,0 +1,34 @@
+@interface AWEPlayInteractionNewShareAndMsgNoticeElement : AWEPlayInteractionRightElement
+@property (nonatomic) UIView<AWEAntiAddictedNoticeBarViewProtocol> antiAddictedNoticeBarView;
+@property (nonatomic) UIViewController topViewController;
+@property (nonatomic) <AWEIMQuickReplyControllerHandlerPortocol> quickReplyHandler;
+@property (nonatomic) <AWEIMShareModelProtocol> shareModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)awe_viewController:willTransitionToSize:transitionCoordinator:;
+- (void)viewController_willDisplay;
+- (void)viewController_viewWillDisappear;
+- (id)activateInfoWithData:;
+- (void)setQuickReplyHandler:;
+- (id)quickReplyHandler;
+- (void)shareFriendText;
+- (BOOL)shouldAppearWithData:;
+- (void)showSuccessShareVideoNoticeBar:;
+- (id)antiAddictedNoticeBarView;
+- (void)hideNoticeBarImmediately;
+- (void)hideMutexTempElement:;
+- (void)setAntiAddictedNoticeBarView:;
+- (id)topViewController;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
+- (void)setShareModel:;
+- (id)shareModel;
+- (void)setTopViewController:;
++ (id)activateInfoWithContext:;
+@end

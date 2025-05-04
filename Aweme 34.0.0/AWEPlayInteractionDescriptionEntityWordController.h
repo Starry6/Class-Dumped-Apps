@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionDescriptionEntityWordController : NSObject
+@property (nonatomic) NSMutableArray searchWordArray;
+@property (nonatomic) BOOL hasSearchText;
+@property (nonatomic) NSMutableDictionary searchWordShowMark;
+@property (nonatomic) q trendingWordsShowTrackPostMark;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHasSearchText:;
+- (long long)trendingWordsShowTrackPostMark;
+- (void)setTrendingWordsShowTrackPostMark:;
+- (id)searchWordArray;
+- (void)setSearchWordArray:;
+- (id)searchWordShowMark;
+- (void)setSearchWordShowMark:;
+- (id)parserAttributesForDescriptionWithContext:;
+- (void)willParserExtraModelsWithContext:;
+- (void)viewController_viewWillDisappearWithContext:;
+- (void)viewController_didEndDisplayingWithContext:;
+- (void)descriptionLabelDidClickIsExpand:parserContext:;
+- (void)resetController;
+- (BOOL)isEntityWordSearchNSLink:;
+- (BOOL)awe_isHotSpotTagNSLink:;
+- (void)trackTrendingWordsShowByMode:parserContext:;
+- (void)trackTrendingShowWithContext:;
+- (id)addEntityWordResearchNSLinkAttributeWithContext:;
+- (void)handleLinksForDescriptionAttributedStringWithContext:;
+- (void)handleEntityWordSearchNSLinkForDescriptionWithContext:;
+- (void)recordFalseTouchWithContext:;
+- (void)trackTrendingWordsClickWithContext:linkExtraMoel:;
+- (void)trackTrendingWordsShow:withWordsPosition:withGroupId:parserContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (BOOL)hasSearchText;
+@end

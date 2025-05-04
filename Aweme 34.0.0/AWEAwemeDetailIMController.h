@@ -1,0 +1,2 @@
+@interface AWEAwemeDetailIMController : AWEAwemeNewDetailBaseController
+@end

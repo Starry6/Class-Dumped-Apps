@@ -1,0 +1,31 @@
+@interface AWENoxusEpisodeInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString episodeID;
+@property (nonatomic) NSString albumID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString originTitle;
+@property (nonatomic) NSString intro;
+@property (nonatomic) NSNumber playCount;
+@property (nonatomic) NSNumber currentNum;
+@property (nonatomic) NSNumber startTime;
+- (void)setAlbumID:;
+- (void)setIntro:;
+- (void)setEpisodeID:;
+- (id)currentNum;
+- (id)originTitle;
+- (void)setOriginTitle:;
+- (void)setCurrentNum:;
+- (void)setStartTime:;
+- (id)playCount;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (id)startTime;
+- (void)setTitle:;
+- (void)setPlayCount:;
+- (id)intro;
+- (id)albumID;
+- (id)episodeID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

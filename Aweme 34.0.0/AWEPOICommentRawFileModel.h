@@ -1,0 +1,30 @@
+@interface AWEPOICommentRawFileModel : NSObject
+@property (nonatomic) NSString fileId;
+@property (nonatomic) NSNumber fileType;
+@property (nonatomic) NSString fileUrl;
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSString vid;
+@property (nonatomic) NSNumber duration;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) NSString videoCoverURL;
+- (id)videoCoverURL;
+- (void)setVideoCoverURL:;
+- (id)fileType;
+- (void)setHeight:;
+- (void)setWidth:;
+- (void)setDuration:;
+- (id)uri;
+- (id)width;
+- (void)setUri:;
+- (void)setFileType:;
+- (void).cxx_destruct;
+- (id)duration;
+- (id)height;
+- (id)fileUrl;
+- (void)setFileUrl:;
+- (id)fileId;
+- (void)setFileId:;
+- (void)setVid:;
+- (id)vid;
+@end

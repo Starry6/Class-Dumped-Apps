@@ -1,0 +1,37 @@
+@interface AWEPaySwiftImpl.CCMOpenNewCardResponse : MTLModel
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) _TtC15AWEPaySwiftImpl15CCMGatewayExtra gatewayExtra;
+@property (nonatomic) NSString retStatus;
+@property (nonatomic) NSString openResultInner;
+@property (nonatomic) _TtC15AWEPaySwiftImpl11CCMCardInfo cardInfo;
+@property (nonatomic) _TtC15AWEPaySwiftImpl18CCMPayChannelModel payChannel;
+@property (nonatomic) NSString originBlockNumber;
+@property (nonatomic) _TtC15AWEPaySwiftImpl23CCMMemberGuideInfoModel memberGuideInfo;
+@property (nonatomic) _TtC15AWEPaySwiftImpl30CCMOpenNewCardSuccessPageModel successPage;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (id)gatewayExtra;
+- (void)setGatewayExtra:;
+- (id)retStatus;
+- (void)setRetStatus:;
+- (id)openResultInner;
+- (void)setOpenResultInner:;
+- (id)payChannel;
+- (void)setPayChannel:;
+- (id)originBlockNumber;
+- (void)setOriginBlockNumber:;
+- (id)memberGuideInfo;
+- (void)setMemberGuideInfo:;
+- (id)successPage;
+- (void)setSuccessPage:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)cardInfo;
+- (void)setCardInfo:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

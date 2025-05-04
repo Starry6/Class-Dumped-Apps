@@ -1,0 +1,2 @@
+@interface AWEPOIDotOverLay : MKPolyline
+@end

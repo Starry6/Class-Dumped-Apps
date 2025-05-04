@@ -1,0 +1,31 @@
+@interface AWEPaidStreamIAAUnlockManager : NSObject
+@property (nonatomic) AWEPaidAuthConfig authConfig;
+@property (nonatomic) q retryCount;
+@property (nonatomic) q currentWatchCount;
+@property (nonatomic) NSMutableArray successUnlockArray;
+@property (nonatomic) NSMutableArray successUnlockRankArray;
+@property (nonatomic) NSMutableArray failUnlockArray;
+- (id)authConfig;
+- (void)setAuthConfig:;
+- (id)initWithAuthConfig:;
+- (id)arrayToJsonString:;
+- (long long)currentWatchCount;
+- (void)setCurrentWatchCount:;
+- (unsigned long long)unlockedRewardCount;
+- (unsigned long long)unlockedSuccessRanks;
+- (id)unlockedPaidAuthItems;
+- (void)unlockRewardWithAwardConfig:watchCount:adExtraInfo:extraInfo:completion:;
+- (id)modelToJsonDictionary:;
+- (id)successUnlockArray;
+- (void)cacheUnlockedRank:;
+- (id)failUnlockArray;
+- (id)successUnlockRankArray;
+- (BOOL)unlockSuccess;
+- (void)setSuccessUnlockArray:;
+- (void)setSuccessUnlockRankArray:;
+- (void)setFailUnlockArray:;
+- (void)setRetryCount:;
+- (void)resetData;
+- (long long)retryCount;
+- (void).cxx_destruct;
+@end

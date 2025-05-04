@@ -1,0 +1,35 @@
+@interface AWEVideoPaymentBasePresenter : NSObject
+@property (nonatomic) <AWEVideoPaymentPresenterDelegate> delegate;
+@property (nonatomic) AWEPlayInteractionContext context;
+- (void)didClickCloseButton;
+- (void)didClickBuyButton:;
+- (BOOL)shouldShowViewWithPeriod:;
+- (BOOL)shouldAnimateWhenShown;
+- (BOOL)shouldAnimateWhenHidden;
+- (BOOL)shouldDisableProgress;
+- (id)initWithView:model:referString:logExtra:context:;
+- (BOOL)shouldCheckViewStatusWhenDisplay;
+- (void)checkVideoShouldUnlockIfNeed;
+- (void)didClickBuyButton;
+- (void)hasShownView;
+- (void)didClickRepurchaseButton:;
+- (void)reportMaskViewShow;
+- (BOOL)shouldStopVideoPlayWhenPreviewEnd;
+- (id)buySchemaParameters;
+- (void)updateCoverImageWithImage:frame:;
+- (void)updateUnlockProgressWithModel:;
+- (void)didClickBuyPlayletVIPButton;
+- (void)didClickFreeWatchButton:;
+- (void)updateDetailViewWithNewModel:;
+- (void)updateRepurchaseButtonStatus;
+- (BOOL)shouldShowReserveView;
+- (void)updateRepurchaseViewWithModel:;
+- (void)didClickIAAUnlockButton;
+- (id)delegate;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (void)willDisplay;
++ (BOOL)shouldActiveWithData:referString:logExtra:;
+@end

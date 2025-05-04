@@ -1,0 +1,38 @@
+@interface AWEIMDefaultFloatViewModel : NSObject
+@property (nonatomic) q priority;
+@property (nonatomic) q type;
+@property (nonatomic) NSString icon;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString additionTitle;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) BOOL needCloseButton;
+@property (nonatomic) BOOL needRoundIcon;
+@property (nonatomic) AWEIMDefaultFloatViewTracker tracker;
+@property (nonatomic) BOOL allRegionEnableTap;
+@property (nonatomic) <AWEIMDefaultFloatViewLayer> viewLayer;
+- (BOOL)allRegionEnableTap;
+- (id)initWithTitle:priority:icon:buttonTitle:needCloseButton:tracker:;
+- (void)viewDidLayoutSubview;
+- (id)additionTitle;
+- (void)setAdditionTitle:;
+- (BOOL)needCloseButton;
+- (void)setNeedCloseButton:;
+- (BOOL)needRoundIcon;
+- (void)setNeedRoundIcon:;
+- (void)setAllRegionEnableTap:;
+- (id)viewLayer;
+- (void)setViewLayer:;
+- (id)iconImage;
+- (id)tracker;
+- (void)setIconImage:;
+- (id)icon;
+- (long long)priority;
+- (long long)type;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)buttonTitle;
+- (void)setButtonTitle:;
+@end

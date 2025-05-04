@@ -1,0 +1,30 @@
+@interface AWEECFeedGoodsCardProductModel : MTLModel
+@property (nonatomic) NSString productId;
+@property (nonatomic) AWEURLModel productImg;
+@property (nonatomic) NSNumber price;
+@property (nonatomic) NSArray avatarList;
+@property (nonatomic) q goodCommentCount;
+@property (nonatomic) NSArray comments;
+@property (nonatomic) NSString cardUrl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)avatarList;
+- (void)setAvatarList:;
+- (id)cardUrl;
+- (void)setCardUrl:;
+- (void)setProductImg:;
+- (id)productImg;
+- (long long)goodCommentCount;
+- (void)setGoodCommentCount:;
+- (id)price;
+- (id)productId;
+- (void).cxx_destruct;
+- (id)comments;
+- (void)setComments:;
+- (void)setPrice:;
+- (void)setProductId:;
++ (id)productImgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

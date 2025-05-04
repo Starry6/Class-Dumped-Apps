@@ -1,0 +1,31 @@
+@interface AWEFeedSubtitleSwitchLanguagePanel : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEFeedSubtitleSwitchLanguageViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)sheetDidClickReturnButton:;
+- (id)aAWEPadModuleAdapter;
+- (id)dux_titleForColoseButton;
+- (id)initWithAwemeModel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)sheet;
+- (void)setSheet:;
++ (Class)aAWEPadModuleAdapterClass;
++ (void)showSwitchLanguagePanelWithModel:;
+@end

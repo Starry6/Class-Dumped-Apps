@@ -1,0 +1,30 @@
+@interface AWEECShoppingAIGuideSliceCardSettingModel : MTLModel
+@property (nonatomic) Q cardType;
+@property (nonatomic) NSString templateName;
+@property (nonatomic) NSString templateVersion;
+@property (nonatomic) NSString templateUrl;
+@property (nonatomic) NSString templateType;
+@property (nonatomic) q height;
+@property (nonatomic) q estimateHeight;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)estimateHeight;
+- (void)setEstimateHeight:;
+- (void)setHeight:;
+- (id)templateType;
+- (void).cxx_destruct;
+- (long long)height;
+- (void)setTemplateType:;
+- (unsigned long long)cardType;
+- (void)setCardType:;
+- (id)templateVersion;
+- (void)setTemplateVersion:;
+- (void)setTemplateName:;
+- (id)templateName;
+- (void)setTemplateUrl:;
+- (id)templateUrl;
++ (id)JSONKeyPathsByPropertyKey;
+@end

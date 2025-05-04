@@ -1,0 +1,38 @@
+@interface AWEChallengeDetailFeedFactory : NSObject
+@property (nonatomic) UIViewController<AWEChallengeDetailContainerContextProtocol> containerViewController;
+@property (nonatomic) UIViewController feedViewController;
+@property (nonatomic) UIViewController currentFeedViewController;
+@property (nonatomic) NSMutableDictionary subChallengeIds;
+@property (nonatomic) <AWEChallengeDetailFeedFactoryDelegate> delegate;
+@property (nonatomic) Q currentIndexOfFeedViews;
+@property (nonatomic) BOOL isMultipleFeedVC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFeedViewController:;
+- (void)feedViewControllerDidScrollUp:;
+- (void)feedViewControllerDidScrollDown:;
+- (void)setIsMultipleFeedVC:;
+- (id)createSubFeedViewControllerWithSectionViewModel:;
+- (void)createFeedViewControllerWithSectionViewModel:;
+- (void)changeIndexOfFeedViewsIfNeeded:;
+- (void)selectHeaderVideoAtIndex:;
+- (id)multiFeedViewControllerWithSectionViewModel:;
+- (BOOL)isMultipleFeedVC;
+- (id)subChallengeIds;
+- (void)setCurrentFeedViewController:;
+- (id)currentFeedViewController;
+- (void)feedDidScrollUp;
+- (void)feedDidScrollDown;
+- (unsigned long long)currentIndexOfFeedViews;
+- (void)setCurrentIndexOfFeedViews:;
+- (void)setSubChallengeIds:;
+- (id)delegate;
+- (void)setContainerViewController:;
+- (id)containerViewController;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)feedViewController;
++ (id)factoryWithContainerViewController:;
+@end

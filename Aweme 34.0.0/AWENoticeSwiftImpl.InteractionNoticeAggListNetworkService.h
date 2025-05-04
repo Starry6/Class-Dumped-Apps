@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeAggListNetworkService : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,32 @@
+@interface AWECloudAlbumResourceNavigationView : UIView
+@property (nonatomic) q themeType;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) CAKAlbumSelectAlbumButton selectAlbumButton;
+@property (nonatomic) q maxUploadCount;
+@property (nonatomic) UIButton enableMultiSelectButton;
+@property (nonatomic) UIButton selectAllAssetsBtn;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)setMaxUploadCount:;
+- (long long)maxUploadCount;
+- (void)onSwitch;
+- (id)initWithThemeType:;
+- (id)selectAlbumButton;
+- (void)setSelectAlbumButton:;
+- (void)hideSelectAllAssetsBtnIfNeedWith:hide:;
+- (id)selectAllAssetsBtn;
+- (void)setSelectAllAssetsBtn:;
+- (id)init;
+- (void)setTitleLabel:;
+- (long long)themeType;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setThemeType:;
+@end

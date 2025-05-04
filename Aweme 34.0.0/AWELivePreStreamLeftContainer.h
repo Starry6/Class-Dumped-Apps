@@ -1,0 +1,34 @@
+@interface AWELivePreStreamLeftContainer : AWELiveBaseElementContainer
+@property (nonatomic) NSMutableDictionary rightMoveDic;
+@property (nonatomic) NSMutableDictionary alphaTokenDic;
+@property (nonatomic) AWELiveElementPriorityManager priorityManager;
+@property (nonatomic) AWELiveElementConfig elementConfig;
+@property (nonatomic) AWELivePreStreamConfigCenter configCenter;
+@property (nonatomic) <AWELivePreStreamBizStatusService> bizStatusService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)elementConfig;
+- (void)setElementConfig:;
+- (BOOL)attachElement:;
+- (id)priorityManager;
+- (void)setPriorityManager:;
+- (id)bizStatusService;
+- (void)setBizStatusService:;
+- (void)onRightAreaChange:;
+- (void)setConfigCenter:;
+- (id)configCenter;
+- (void)setupElementPriorityManager;
+- (id)alphaTokenDic;
+- (void)updateContainerViewAlpha;
+- (void)setContainerViewAlpha:token:;
+- (void)clearAlphaTokenDic;
+- (void)setAlphaTokenDic:;
+- (void)setupLeftContainer;
+- (void)setRightMoveDic:;
+- (id)rightMoveDic;
+- (id)containerView;
+- (void).cxx_destruct;
+- (void)removeElement:;
+@end

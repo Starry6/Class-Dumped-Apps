@@ -1,0 +1,36 @@
+@interface AWECommentAreaAuthorizationViewController : UIViewController
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView headerImageView;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton leftButton;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) BOOL authorizationState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeAuthorization:;
+- (void)closeButtonDidClick:;
+- (void)openAuthorization:;
+- (void)closeViewByMethod:;
+- (void)setLeftButton:;
+- (void)viewWillDisappear:;
+- (void)setRightButton:;
+- (id)leftButton;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (id)containerView;
+- (id)rightButton;
+- (void)setAuthorizationState:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (BOOL)authorizationState;
+- (void)viewDidAppear:;
+- (void)setupUI;
+- (void)updateUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)headerImageView;
+- (void)setHeaderImageView:;
+- (void)tapGestureHandler:;
+@end

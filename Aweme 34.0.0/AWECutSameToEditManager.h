@@ -1,0 +1,36 @@
+@interface AWECutSameToEditManager : NSObject
+@property (nonatomic) AWEVideoPublishViewModel publishModel;
+@property (nonatomic) LVTemplateDataManager dataManager;
+@property (nonatomic) <ACCMVTemplateModelProtocol> currentTemplateModel;
+@property (nonatomic) NSArray templatesArray;
+@property (nonatomic) AWESelectTemplateDataProvider selectTemplateDataProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)publishModel;
+- (void)setPublishModel:;
+- (void)startCutSameDataProcessWithPublishModel:materialAssets:templateModel:progressHandle:completion:;
+- (id)transformMVTemplateModelFromJSON:extraJSON:;
+- (id)templatesArray;
+- (void)setTemplatesArray:;
+- (void)setCurrentTemplateModel:;
+- (id)currentTemplateModel;
+- (void)dynamicSlotPipelineWithAssets:templateModel:pipelineError:;
+- (void)p_addChallengeInfosForCutSame;
+- (id)p_getAssetModels:;
+- (id)p_generateDisplayFragments;
+- (id)selectTemplateDataProvider;
+- (void)setSelectTemplateDataProvider:;
+- (id)dataManager;
+- (void)setDataManager:;
+- (void).cxx_destruct;
++ (void)addCutSameNLEModel:publishModel:templateModel:;
++ (double)calculateMaterialDurationUseWithMaterialArray:templateModel:;
++ (void)addCutSameNLETemplateModel:publishModel:templateModel:;
++ (void)addCutSame:publishModel:toNLE:templateModel:;
++ (void)copyResourcesFromLemonDraft:publishModel:;
++ (void)trimCutsameModel:newModel:;
++ (void)recursionForMergeFolder:desPath:;
++ (void)addCutSameNLETemplateModel:publishModel:templateModel:toNLE:;
+@end

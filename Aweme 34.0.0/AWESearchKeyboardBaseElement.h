@@ -1,0 +1,31 @@
+@interface AWESearchKeyboardBaseElement : NSObject
+@property (nonatomic) AWESearchKeyboardTabBarContext context;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewDidDisappear;
+- (void)hostVC_viewWillAppear;
+- (void)hostVC_viewDidLoad;
+- (void)hostVC_viewDidAppear;
+- (void)hostVC_viewWillDisappear;
+- (void)hostVC_setupContext:;
+- (void)hostVC_updateContext:;
+- (void)host_elementViewDidSetup;
+- (void)host_themeChange:;
+- (void)host_tabbarHidden:;
+- (void)host_elementViewUpdateNewUISize:hasText:uiInfo:;
+- (void)hostVC_keyboardWillShow:;
+- (void)hostVC_keyboardDidShow:;
+- (void)hostVC_keyboardWillHide:;
+- (void)hostVC_showMiddleViewController;
+- (void)hostVC_showSugViewController;
+- (void)hostVC_showResultViewController;
+- (id)init;
+- (id)contentView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)context;
+@end

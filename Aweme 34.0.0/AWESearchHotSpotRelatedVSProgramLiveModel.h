@@ -1,0 +1,32 @@
+@interface AWESearchHotSpotRelatedVSProgramLiveModel : AWEBaseApiModel
+@property (nonatomic) AWELiveVSEpisode episode;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) AWEURLModel posterURL;
+@property (nonatomic) NSString videoTitle;
+@property (nonatomic) NSString videoStage;
+@property (nonatomic) q liveType;
+@property (nonatomic) NSString episodeExtra;
+- (id)episodeExtra;
+- (void)setEpisodeExtra:;
+- (void)setLiveType:;
+- (long long)liveType;
+- (id)posterURL;
+- (void)setPosterURL:;
+- (id)videoTitle;
+- (void)setVideoTitle:;
+- (id)videoStage;
+- (void)setVideoStage:;
+- (id)roomID;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRoomID:;
+- (void)setTitle:;
+- (id)episode;
+- (void)setEpisode:;
+- (id)authorID;
+- (void)setAuthorID:;
++ (id)posterURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

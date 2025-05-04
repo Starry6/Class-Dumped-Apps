@@ -1,0 +1,38 @@
+@interface AWELiteGoldLikeModel : MTLModel
+@property (nonatomic) BOOL isLeftElementItem;
+@property (nonatomic) q entranceType;
+@property (nonatomic) q tabType;
+@property (nonatomic) q giftType;
+@property (nonatomic) q diggNum;
+@property (nonatomic) BOOL userDigged;
+@property (nonatomic) q userDiggNum;
+@property (nonatomic) q userDiggAmount;
+@property (nonatomic) q onceDiggAmount;
+@property (nonatomic) NSString itemToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)tabType;
+- (BOOL)userDigged;
+- (void)setItemToken:;
+- (void)setUserDigged:;
+- (long long)diggNum;
+- (void)setTabType:;
+- (long long)entranceType;
+- (void)setEntranceType:;
+- (void)setGiftType:;
+- (void)setDiggNum:;
+- (long long)userDiggNum;
+- (void)setUserDiggNum:;
+- (long long)userDiggAmount;
+- (void)setUserDiggAmount:;
+- (long long)onceDiggAmount;
+- (void)setOnceDiggAmount:;
+- (id)itemToken;
+- (BOOL)isLeftElementItem;
+- (void)setIsLeftElementItem:;
+- (void).cxx_destruct;
+- (long long)giftType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

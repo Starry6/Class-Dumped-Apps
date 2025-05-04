@@ -1,0 +1,37 @@
+@interface AWEQuickStorySaveTableViewCell : UITableViewCell
+@property (nonatomic) UIView saveLocalView;
+@property (nonatomic) UIView saveDraftView;
+@property (nonatomic) UIView savePersonalView;
+@property (nonatomic) UILabel downloadingLabel;
+@property (nonatomic) UIImageView downloadingImageView;
+@property (nonatomic) UIView loadingView;
+@property (nonatomic) CAShapeLayer loadingLayer;
+@property (nonatomic) NSArray dataSource;
+- (id)loadingLayer;
+- (void)setLoadingLayer:;
+- (id)saveLocalView;
+- (void)addSubiewToContentWithView:;
+- (id)saveDraftView;
+- (id)savePersonalView;
+- (void)saveLocalClicked;
+- (void)saveDraftClicked;
+- (void)savePersonalClicked;
+- (id)downloadingLabel;
+- (id)downloadingImageView;
+- (void)setUpUIWithData:;
+- (void)p_addLoadingViewIfNeeded;
+- (void)setSaveLocalView:;
+- (void)setSaveDraftView:;
+- (void)setSavePersonalView:;
+- (void)setDownloadingLabel:;
+- (void)setDownloadingImageView:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+- (void)updateProgress:;
+- (void)downloadComplete;
+- (void)downloadStart;
+@end

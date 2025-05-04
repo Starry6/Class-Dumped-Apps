@@ -1,0 +1,38 @@
+@interface AWESearchDiscussDynamicInsertController : NSObject
+@property (nonatomic) NSMutableSet queries;
+@property (nonatomic) NSMutableSet insertedQueries;
+@property (nonatomic) BOOL queryNewKeyword;
+@property (nonatomic) NSString currentTab;
+@property (nonatomic) NSString currentQuery;
+@property (nonatomic) BOOL userDidScroll;
+@property (nonatomic) AWESearchDiscussViewController container;
+@property (nonatomic) AWEPageContext pageContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setQueryNewKeyword:;
+- (BOOL)queryNewKeyword;
+- (void)setUserDidScroll:;
+- (id)insertedQueries;
+- (BOOL)userDidScroll;
+- (id)buildInsertModelWith:;
+- (void)cachalotFeedDidScroll:;
+- (BOOL)couldDynamicInsert;
+- (void)prepareDynamicInsertWithCompletion:;
+- (void)setInsertedQueries:;
+- (id)queries;
+- (void)setContainer:;
+- (id)container;
+- (id)init;
+- (id)currentQuery;
+- (void).cxx_destruct;
+- (void)setQueries:;
+- (void)addObservers;
+- (void)setPageContext:;
+- (id)pageContext;
+- (void)setCurrentQuery:;
+- (id)currentTab;
+- (void)setCurrentTab:;
++ (id)sharedInstance;
+@end

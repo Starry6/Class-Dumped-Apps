@@ -1,0 +1,35 @@
+@interface AWEIncentiveChatTokenShareGuideViewController : UIViewController
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWEButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIStackView phaseStackView;
+@property (nonatomic) AWEButton button;
+@property (nonatomic) q shareType;
+@property (nonatomic) AWEIncentiveChatTokenSharePlatform platform;
+@property (nonatomic) @? confirmBlock;
+- (id)confirmBlock;
+- (void)setConfirmBlock:;
+- (void)p_addObserver;
+- (id)phaseStackView;
+- (id)createSeparatorImageView;
+- (id)initWithShareType:externalSharePlatform:confirmBlock:;
+- (void)setPhaseStackView:;
+- (void)viewDidLoad;
+- (void)setButton:;
+- (id)contentView;
+- (void)dismissViewControllerAnimated:completion:;
+- (void)setTitleLabel:;
+- (id)platform;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)viewDidAppear:;
+- (id)titleLabel;
+- (void)setPlatform:;
+- (void)applicationDidEnterBackground:;
+- (id)button;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setShareType:;
+- (long long)shareType;
++ (id)createTitleArrowGradientView;
+@end

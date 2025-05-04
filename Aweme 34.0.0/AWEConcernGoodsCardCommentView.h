@@ -1,0 +1,36 @@
+@interface AWEConcernGoodsCardCommentView : UIView
+@property (nonatomic) NSArray comments;
+@property (nonatomic) NSMutableArray commentViews;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) q maxDisplayCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateViewLayout;
+- (void)__updateHeightWithCount:;
+- (id)commentViews;
+- (void)startRowAnimation;
+- (void)updateDataWithItems:;
+- (void)setCommentViews:;
+- (void)pauseRowAnimation;
+- (void)resumeRowAnimation;
+- (void)configViewsWithComments:;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (void)setCurrentIndex:;
+- (void)startTimer;
+- (id)initWithFrame:;
+- (void)startAnimation;
+- (BOOL)isAnimating;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (long long)currentIndex;
+- (id)comments;
+- (void)setComments:;
+- (long long)maxDisplayCount;
+- (void)setMaxDisplayCount:;
+@end

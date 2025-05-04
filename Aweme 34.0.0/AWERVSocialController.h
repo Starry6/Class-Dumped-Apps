@@ -1,0 +1,2 @@
+@interface AWERVSocialController : AWERVBaseController
+@end

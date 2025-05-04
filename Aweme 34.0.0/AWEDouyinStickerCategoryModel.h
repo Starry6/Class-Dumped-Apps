@@ -1,0 +1,34 @@
+@interface AWEDouyinStickerCategoryModel : AWEStickerCategoryModel
+@property (nonatomic) double cachedWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray selectedIconUrls;
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} titleFrame;
+@property (nonatomic) double titleFontSize;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} imageFrame;
+@property (nonatomic) {CGSize=dd} cellSize;
+- (id)selectedIconUrls;
+- (id)categoryImage;
+- (id)initWithIESCategoryModel:;
+- (void)setupForFavorite;
+- (void)setupForSearch;
+- (void)parseExtra;
+- (double)titleFontSize;
+- (id)init;
+- (id)image;
+- (void)setImage:;
+- (void)setTitleFontSize:;
+- (void).cxx_destruct;
+- (BOOL)isFavorite;
+- (id)cellSize;
+- (void)setCellSize:;
+- (id)titleFrame;
+- (id)imageFrame;
+- (void)setImageFrame:;
+- (void)setTitleFrame:;
++ (id)searchCategoryModel;
++ (id)favoriteCategoryModel;
+@end

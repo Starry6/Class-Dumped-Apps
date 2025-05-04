@@ -1,0 +1,30 @@
+@interface AWENewHotSpotCellCommonConfig : NSObject
++ (id)contentParagraphStyle;
++ (double)actionPanelHeight;
++ (double)containerLeftMargin;
++ (double)authorInfoAvatarBadgeSize;
++ (double)commentSourceArrowSize;
++ (double)authorInfoAvatarSize;
++ (double)titleContentFontSize;
++ (id)generalTitleHilightFont;
++ (double)titleContentLineSpacing;
++ (id)mediaContentViewAdjustedNewSizeWithRawSize:width:;
++ (id)commmentSourceFont;
++ (id)actionPanelTextFont;
++ (id)videoTitleFont;
++ (id)titleUserFont;
++ (id)titleUserColor;
++ (double)actionPanelButtonWidth;
++ (long long)getMaxNumberOfRowsIfDisplayFullTextNeeded:withWidth:;
++ (double)getScreenHeight;
++ (id)commentImageAdjustedSizeWithRawSize:width:;
++ (double)containerTopMargin;
++ (double)containerBottomMarginWithComment:;
++ (double)mediaTopMargin;
++ (double)actionPanelTopMargin;
++ (id)timeLabelFont;
++ (double)containerRightMargin;
++ (double)contentTopMargin;
++ (id)timeLabelColor;
++ (id)nameLabelFont;
+@end

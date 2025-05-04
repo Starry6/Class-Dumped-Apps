@@ -1,0 +1,30 @@
+@interface AWEClassroomModel.ClassroomBannerModel : MTLModel
+@property (nonatomic) q id;
+@property (nonatomic) NSString idStr;
+@property (nonatomic) NSString schema;
+@property (nonatomic) _TtC17AWEClassroomModel22ClassroomRichTextModel title;
+@property (nonatomic) NSArray subTitle;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString buttonText;
+- (id)schema;
+- (void)setLabel:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setSchema:;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)label;
+- (long long)id;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)setId:;
+- (void)setButtonText:;
+- (id)idStr;
+- (void)setIdStr:;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)titleJSONTransformer;
++ (id)subTitleJSONTransformer;
+@end

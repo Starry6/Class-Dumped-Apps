@@ -1,0 +1,36 @@
+@interface AWESBCDefaultNotificationView : UIView
+@property (nonatomic) <AWESBCDefaultNotificationViewDelegate> delegate;
+@property (nonatomic) UIView contentBaseView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIImageView extAvatarBackground;
+@property (nonatomic) UIImageView extAvatarImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel extTagLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton replyButton;
+- (void)handleTapAction;
+- (void)setExtTagLabel:;
+- (id)extTagLabel;
+- (id)contentBaseView;
+- (id)extAvatarImageView;
+- (void)setContentBaseView:;
+- (void)setExtAvatarImageView:;
+- (void)__addSubviews;
+- (id)extAvatarBackground;
+- (void)setExtAvatarBackground:;
+- (void)updateConfigurablePushView;
+- (id)delegate;
+- (id)intrinsicContentSize;
+- (id)initWithDelegate:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)avatarImageView;
+- (id)contentLabel;
+- (void)setAvatarImageView:;
+- (void)setContentLabel:;
+- (void)setReplyButton:;
+- (id)replyButton;
+@end

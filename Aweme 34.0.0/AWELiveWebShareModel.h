@@ -1,0 +1,34 @@
+@interface AWELiveWebShareModel : NSObject
+@property (nonatomic) BOOL isLiveShare;
+@property (nonatomic) q liveShareType;
+@property (nonatomic) BOOL needPoster;
+@property (nonatomic) NSDictionary posterData;
+@property (nonatomic) BOOL needLogin;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString platform;
+@property (nonatomic) NSDictionary liveShareExtraParams;
+@property (nonatomic) BOOL isPreLive;
+@property (nonatomic) NSDictionary trackParams;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (BOOL)needLogin;
+- (void)setNeedLogin:;
+- (id)liveShareExtraParams;
+- (void)setLiveShareExtraParams:;
+- (BOOL)isLiveShare;
+- (long long)liveShareType;
+- (BOOL)isPreLive;
+- (void)setIsPreLive:;
+- (BOOL)needPoster;
+- (void)setIsLiveShare:;
+- (void)setLiveShareType:;
+- (void)setNeedPoster:;
+- (id)initWithParams:;
+- (void)setUrl:;
+- (id)platform;
+- (void).cxx_destruct;
+- (void)setPlatform:;
+- (id)url;
+- (id)posterData;
+- (void)setPosterData:;
+@end

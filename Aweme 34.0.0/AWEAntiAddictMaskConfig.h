@@ -1,0 +1,37 @@
+@interface AWEAntiAddictMaskConfig : NSObject
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) q antiAddictType;
+@property (nonatomic) Q antiAddictMaskType;
+@property (nonatomic) Q antiAddictVideoType;
+@property (nonatomic) BOOL isAntiAddictOfficialMask;
+@property (nonatomic) BOOL enableAutoVideoControl;
+@property (nonatomic) BOOL isPreviewMode;
+@property (nonatomic) BOOL disablePreviewModeEdit;
+@property (nonatomic) NSString previewMainTitle;
+@property (nonatomic) NSString previewSubTitle;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (BOOL)isPreviewMode;
+- (void)setIsPreviewMode:;
+- (long long)antiAddictType;
+- (void)setAntiAddictType:;
+- (unsigned long long)antiAddictMaskType;
+- (void)setAntiAddictMaskType:;
+- (unsigned long long)antiAddictVideoType;
+- (void)setAntiAddictVideoType:;
+- (void)setIsAntiAddictOfficialMask:;
+- (void)setEnableAutoVideoControl:;
+- (void)setDisablePreviewModeEdit:;
+- (void)setPreviewMainTitle:;
+- (void)setPreviewSubTitle:;
+- (id)previewMainTitle;
+- (id)previewSubTitle;
+- (BOOL)isAntiAddictOfficialMask;
+- (BOOL)enableAutoVideoControl;
+- (BOOL)disablePreviewModeEdit;
+- (id)initWithModel:;
+- (void).cxx_destruct;
+@end

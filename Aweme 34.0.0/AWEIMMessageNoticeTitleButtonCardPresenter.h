@@ -1,0 +1,31 @@
+@interface AWEIMMessageNoticeTitleButtonCardPresenter : AWEIMUIViewPresenter
+@property (nonatomic) AWEIMUIImageViewPresenter iconPresenter;
+@property (nonatomic) AWEIMUIViewPresenter iconBoxPresenter;
+@property (nonatomic) AWEIMUILabelPresenter titlePresenter;
+@property (nonatomic) AWEIMUILabelPresenter subtitlePresenter;
+@property (nonatomic) AWEIMUIViewPresenter titleBoxPresenter;
+@property (nonatomic) AWEIMUILabelPresenter rightButtonTitlePresenter;
+@property (nonatomic) AWEIMGestureUIViewPresenter rightButtonPresenter;
+- (id)createViewWithContext:;
+- (void)didReceiveProps:;
+- (void)adaptBackgroundImageChanged;
+- (void)p_setupPresenters;
+- (id)iconPresenter;
+- (id)titlePresenter;
+- (id)subtitlePresenter;
+- (id)rightButtonTitlePresenter;
+- (id)rightButtonPresenter;
+- (void)setIconPresenter:;
+- (void)setIconBoxPresenter:;
+- (void)setTitlePresenter:;
+- (void)setSubtitlePresenter:;
+- (void)setTitleBoxPresenter:;
+- (void)setRightButtonTitlePresenter:;
+- (void)setRightButtonPresenter:;
+- (id)iconBoxPresenter;
+- (id)titleBoxPresenter;
+- (id)initWithContext:;
+- (void).cxx_destruct;
++ (id)titleWithContent:;
++ (id)subtitleWithContent:;
+@end

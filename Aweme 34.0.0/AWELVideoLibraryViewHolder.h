@@ -1,0 +1,2 @@
+@interface AWELVideoLibraryViewHolder : AWEBaseListViewHolder
+@end

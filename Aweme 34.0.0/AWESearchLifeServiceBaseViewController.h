@@ -1,0 +1,33 @@
+@interface AWESearchLifeServiceBaseViewController : AWESearchResultVerticalBaseViewController
+@property (nonatomic) NSDictionary commonPassWithFilterParams;
+@property (nonatomic) AWESearchLifeCommonPatchManager commonPatchManager;
+@property (nonatomic) UIView<BDXViewContainerProtocol> couponPopUpView;
+@property (nonatomic) AWESearchResultCachalotDataResponse dataResponse;
+@property (nonatomic) AWESearchSchemaModel routerModel;
+@property (nonatomic) UIView view;
+@property (nonatomic) UIView<AWESearchCachalotViewInterface> cachalotView;
+@property (nonatomic) AWESearchCachalotDataController dataController;
+@property (nonatomic) AWESearchResultViewController searchResultViewController;
+@property (nonatomic) AWESearchResultRefreshHeader refreshHeaderView;
+@property (nonatomic) AWESearchLoadMoreFooter footerView;
+@property (nonatomic) AWESearchCachalotResultContext cachalotContext;
+@property (nonatomic) BOOL isSearchLoading;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)useParamsProvider;
+- (void)paramsContextDidReady:;
+- (void)chunkHandleClearResponse:;
+- (Class)customLoadmoreFooterClass;
+- (void)chunkHandleReciverCardsPatchResponse:;
+- (id)commonPassWithFilterParams;
+- (void)setCommonPassWithFilterParams:;
+- (void)prepareRequestDataWithKeyWord:extraLogParams:isFilterSearch:;
+- (id)commonPatchManager;
+- (void)prepareRequestDataWithKeyWordServiceOnly:extraLogParams:isFilterSearch:;
+- (id)lifeServiceManager;
+- (void)setCommonPatchManager:;
+- (void).cxx_destruct;
++ (id)paramsProviders;
+@end

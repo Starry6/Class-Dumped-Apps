@@ -1,0 +1,31 @@
+@interface AWEIMTextActionBaseModel : NSObject
+@property (nonatomic) Q actionType;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString link;
+@property (nonatomic) q originTextLength;
+@property (nonatomic) q textLength;
+@property (nonatomic) q originIndex;
+@property (nonatomic) {_NSRange=QQ} range;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) NSDictionary extInfo;
+- (void)setExtInfo:;
+- (id)extInfo;
+- (long long)originIndex;
+- (void)setOriginIndex:;
+- (id)initWithActionInfo:;
+- (void)setOriginTextLength:;
+- (long long)originTextLength;
+- (id)range;
+- (void)setRange:;
+- (unsigned long long)actionType;
+- (void)setActionType:;
+- (long long)textLength;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (void)setTextLength:;
+- (void)setName:;
+- (id)name;
+- (id)textColor;
+- (id)link;
+- (void)setLink:;
+@end

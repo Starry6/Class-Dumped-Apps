@@ -1,0 +1,35 @@
+@interface AWEIMChatListOnlineGreetComponent : AWEIMComponentBase
+@property (nonatomic) q firstFrameDuration;
+@property (nonatomic) q cacheValidTimeMin;
+@property (nonatomic) q cacheValidTimeMax;
+@property (nonatomic) double viewWillAppearTime;
+@property (nonatomic) NSMutableDictionary lastResults;
+@property (nonatomic) NSMutableDictionary lastResultExpireTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)app_willEnterForeground;
+- (void)hostVC_viewDidDisappear;
+- (void)hostVC_viewWillAppear;
+- (void)componentDidMounted:;
+- (void)app_willResignActive;
+- (void)app_didBecomeActive;
+- (void)hostVC_afterFirstRender;
+- (BOOL)shouldShowOnlineGreetIcon:chat:oldOnlineState:;
+- (void)setFirstFrameDuration:;
+- (void)setCacheValidTimeMin:;
+- (void)setCacheValidTimeMax:;
+- (void)setLastResultExpireTime:;
+- (id)lastResultExpireTime;
+- (long long)firstFrameDuration;
+- (long long)cacheValidTimeMax;
+- (long long)cacheValidTimeMin;
+- (void)setLastResults:;
+- (void).cxx_destruct;
+- (id)lastResults;
+- (void)setViewWillAppearTime:;
+- (double)viewWillAppearTime;
++ (BOOL)canCreateComponentWithContext:;
++ (void)reportFTSDataCountIfNeeded;
+@end

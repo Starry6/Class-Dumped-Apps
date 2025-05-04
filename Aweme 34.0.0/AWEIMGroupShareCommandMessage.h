@@ -1,0 +1,35 @@
+@interface AWEIMGroupShareCommandMessage : AWEIMMessage
+@property (nonatomic) AWEIMShareCommandModel commandData;
+@property (nonatomic) NSString token;
+@property (nonatomic) q tokenLines;
+@property (nonatomic) double expireTime;
+@property (nonatomic) NSString pasteDescription;
+@property (nonatomic) AWEIMShareDataModel shareData;
+@property (nonatomic) BOOL isFetchedSuccessfully;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (long long)tokenLines;
+- (id)pasteDescription;
+- (void)setPasteDescription:;
+- (BOOL)shouldHideWithCon:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (BOOL)isFetchedSuccessfully;
+- (id)commandData;
+- (void)setTokenLines:;
+- (void)setIsFetchedSuccessfully:;
+- (void)setCommandData:;
+- (long long)templateType;
+- (void).cxx_destruct;
+- (void)setToken:;
+- (id)token;
+- (double)expireTime;
+- (void)setExpireTime:;
+- (id)shareData;
+- (void)setShareData:;
+@end

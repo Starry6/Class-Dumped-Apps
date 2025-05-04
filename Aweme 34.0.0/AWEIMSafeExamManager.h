@@ -1,0 +1,35 @@
+@interface AWEIMSafeExamManager : NSObject
+@property (nonatomic) NSArray controllerInfoArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)reportFailedAnswerResults;
+- (void)onExamAnswerResult:;
+- (long long)examAnswerStatusForMessage:;
+- (id)__examControlInfos;
+- (void)setControllerInfoArray:;
+- (id)__failReportInfoStoreKey;
+- (void)__reportFailedAnswerResults:;
+- (void)__onExamAnswerResult:;
+- (BOOL)__needAnswerExam:message:;
+- (BOOL)__isValidSuccessAnswered:message:;
+- (BOOL)__isExeedRetryTimes:message:;
+- (id)__answerCountStoreKeyForExamID:;
+- (void)__updateAnswerCountForExamID:;
+- (id)__answerSucceedValidTimeStoreKeyForExamID:;
+- (void)__clearAnswerCountForExamID:;
+- (void)__saveReportFailExamInfo:;
+- (void)__removeReportFailExamInfo:;
+- (void)__updateServerAnswerPassResultWithExamId:subID:examResult:tryTimes:completion:;
+- (id)__controlInfoWithExamInfo:;
+- (id)controllerInfoArray;
+- (BOOL)needElderAnswerForMessage:;
+- (void)openSafeExamPageWithInfo:message:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

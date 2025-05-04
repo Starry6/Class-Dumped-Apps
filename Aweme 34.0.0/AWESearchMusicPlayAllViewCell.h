@@ -1,0 +1,30 @@
+@interface AWESearchMusicPlayAllViewCell : DUXBaseTableViewCell
+@property (nonatomic) BDImageView playIcon;
+@property (nonatomic) CATextLayer titleLabel;
+@property (nonatomic) DUXBaseButton playButton;
+@property (nonatomic) AWESearchMusicHeaderInfoModel model;
+@property (nonatomic) <AWESearchMusicPlayAllViewDelegate> delegate;
+@property (nonatomic) q renderType;
+- (long long)renderType;
+- (void)configWithModel:;
+- (void)configUI;
+- (id)playIcon;
+- (void)setPlayIcon:;
+- (BOOL)isUseCachalotSearchMusic;
+- (double)getRealScreenWidth;
+- (void)updateSubViewFrame;
+- (void)playAllButtonClicked:;
+- (void)setModel:;
+- (id)delegate;
+- (void)setRenderType:;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)playButton;
+- (void)setPlayButton:;
++ (id)identifier;
+@end

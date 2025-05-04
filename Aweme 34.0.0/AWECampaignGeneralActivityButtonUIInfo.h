@@ -1,0 +1,30 @@
+@interface AWECampaignGeneralActivityButtonUIInfo : MTLModel
+@property (nonatomic) Q btnType;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString schema;
+@property (nonatomic) AWECampaignGeneralActivityButtonChangeInfo colorChange;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)btnType;
+- (void)setBtnType:;
+- (id)colorChange;
+- (void)setColorChange:;
+- (id)schema;
+- (void)setSchema:;
+- (id)icon;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)bgColor;
+- (void)setBgColor:;
++ (id)bottomBarJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

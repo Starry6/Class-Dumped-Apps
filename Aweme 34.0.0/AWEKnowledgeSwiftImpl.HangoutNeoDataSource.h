@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutNeoDataSource : AWESpeCategoryKit.FeedListBaseDataSource
+@end

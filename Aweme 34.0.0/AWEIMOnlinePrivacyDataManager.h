@@ -1,0 +1,37 @@
+@interface AWEIMOnlinePrivacyDataManager : NSObject
+@property (nonatomic) NSMutableArray selectedSecUidList;
+@property (nonatomic) NSArray lastSelectedList;
+@property (nonatomic) AWEListDataController<AWEFriendsListDataControllerProtocol> friendsDataController;
+@property (nonatomic) NSOrderedSet intimateFriendsSet;
+@property (nonatomic) NSMutableArray realFriendsList;
+@property (nonatomic) NSMutableArray sectionHeaderTitles;
+@property (nonatomic) NSMutableArray sectionData;
+@property (nonatomic) BOOL isRequestFriendsListOnAir;
+- (id)sectionHeaderTitles;
+- (void)setSectionHeaderTitles:;
+- (void)setSectionData:;
+- (void)setFriendsDataController:;
+- (id)friendsDataController;
+- (BOOL)isRequestFriendsListOnAir;
+- (BOOL)isUserSelected:;
+- (id)selectedSecUidList;
+- (BOOL)canAddSelectedUser;
+- (id)realFriendsList;
+- (void)setIsRequestFriendsListOnAir:;
+- (void)p_fetchLocalFriendsDataUseLocalUidsWithCompletion:;
+- (void)setIntimateFriendsSet:;
+- (id)intimateFriendsSet;
+- (void)setRealFriendsList:;
+- (void)fetchLocalContactListWithFriendsIds:isDiskCache:completion:;
+- (id)lastSelectedList;
+- (id)initWithSelectedUserList:;
+- (BOOL)checkAndAddOrRemoveSearchUser:;
+- (BOOL)checkAndAddOrRemoveUser:;
+- (void)fetchFamiliarFriendsListWithCompletion:;
+- (void)setSelectedSecUidList:;
+- (void)setLastSelectedList:;
+- (void).cxx_destruct;
+- (id)sectionData;
++ (BOOL)isLightStyle;
++ (id)maxSelectCountToast;
+@end

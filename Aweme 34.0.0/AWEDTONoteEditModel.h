@@ -1,0 +1,32 @@
+@interface AWEDTONoteEditModel : MTLModel
+@property (nonatomic) BOOL skipEditToPublish;
+@property (nonatomic) NSString templateId;
+@property (nonatomic) NSString templateCategoryId;
+@property (nonatomic) NSString templateType;
+@property (nonatomic) NSString templateName;
+@property (nonatomic) BOOL isParsedTemplateCategory;
+@property (nonatomic) BOOL hasErased;
+@property (nonatomic) NSString aiEraserOriginImagePath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aiEraserOriginImagePath;
+- (void)setAiEraserOriginImagePath:;
+- (BOOL)skipEditToPublish;
+- (void)setSkipEditToPublish:;
+- (BOOL)isParsedTemplateCategory;
+- (void)setIsParsedTemplateCategory:;
+- (BOOL)hasErased;
+- (void)setHasErased:;
+- (id)templateCategoryId;
+- (void)setTemplateCategoryId:;
+- (id)templateType;
+- (void).cxx_destruct;
+- (void)setTemplateType:;
+- (void)setTemplateId:;
+- (id)templateId;
+- (void)setTemplateName:;
+- (id)templateName;
++ (id)JSONKeyPathsByPropertyKey;
+@end

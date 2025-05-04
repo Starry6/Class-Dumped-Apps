@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutBasePendantController : _TtCs12_SwiftObject
+@end

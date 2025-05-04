@@ -1,0 +1,33 @@
+@interface AWEIMEmojiResourceSearchResponseModel : MTLModel
+@property (nonatomic) NSNumber statusCode;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSString searchId;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSNumber nextOffset;
+@property (nonatomic) NSNumber totalCount;
+@property (nonatomic) NSArray resources;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)searchId;
+- (void)setSearchId:;
+- (id)statusMsg;
+- (void)setStatusMsg:;
+- (void)setNextOffset:;
+- (id)statusCode;
+- (id)resources;
+- (id)totalCount;
+- (void)setHasMore:;
+- (void)setResources:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (id)nextOffset;
+- (void)setTotalCount:;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)resourcesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

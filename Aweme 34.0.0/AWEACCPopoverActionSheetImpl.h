@@ -1,0 +1,32 @@
+@interface AWEACCPopoverActionSheetImpl : NSObject
+@property (nonatomic) AWEPopoverActionSheet sheet;
+@property (nonatomic) DUXPopover duxPopover;
+@property (nonatomic) NSMutableArray actions;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithAlignmentModel:;
+- (void)addActionWithTitle:handler:;
+- (void)addActionWithImage:title:titleColor:handler:;
+- (void)addActionWithImage:imagePosition:title:titleColor:handler:;
+- (id)showForView:sourceRect:direction:;
+- (void)dimiss;
+- (void)setFixedContentWidth:;
+- (void)setDuxPopover:;
+- (id)duxPopover;
+- (BOOL)isPopoverReplaceABTestOn;
+- (unsigned long long)transDUXPopoverPosition:;
+- (long long)transSheetStyle:;
+- (unsigned long long)transSheetDirection:;
+- (id)init;
+- (id)actions;
+- (void)setColorMode:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setActions:;
+- (void)moveToFront;
+- (id)sheet;
+- (void)setSheet:;
+@end

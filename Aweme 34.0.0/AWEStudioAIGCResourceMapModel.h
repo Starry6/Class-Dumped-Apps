@@ -1,0 +1,32 @@
+@interface AWEStudioAIGCResourceMapModel : MTLModel
+@property (nonatomic) NSArray images;
+@property (nonatomic) NSArray videos;
+@property (nonatomic) NSArray texts;
+@property (nonatomic) NSArray livephotos;
+@property (nonatomic) NSArray cover;
+@property (nonatomic) NSArray watermarkImages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (id)livephotos;
+- (id)watermarkImages;
+- (void)setLivephotos:;
+- (void)setWatermarkImages:;
+- (id)images;
+- (void)setImages:;
+- (void).cxx_destruct;
+- (id)videos;
+- (void)setVideos:;
+- (void)setTexts:;
+- (id)texts;
++ (id)coverJSONTransformer;
++ (id)videosJSONTransformer;
++ (id)textsJSONTransformer;
++ (id)livephotosJSONTransformer;
++ (id)watermarkImagesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)imagesJSONTransformer;
+@end

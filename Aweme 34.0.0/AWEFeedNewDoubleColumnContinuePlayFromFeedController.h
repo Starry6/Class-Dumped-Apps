@@ -1,0 +1,33 @@
+@interface AWEFeedNewDoubleColumnContinuePlayFromFeedController : AWEDCFeedBaseController
+@property (nonatomic) AWEAwemeModel currentClickedAweme;
+@property (nonatomic) q currentImageIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)currentImageIndex;
+- (void)fullPageFeedViewDidDisappear:;
+- (void)containerBeforeViewDidLoad;
+- (void)containerBeforeViewWillAppear:;
+- (void)containerViewDidAppear:;
+- (void)containerCollectionView:didSelectItemAtIndexPath:;
+- (void)containerCollectionView:startDidSelectItemAtIndexPath:;
+- (void)onLoadPlaceholderDataEndWithResult:placeholderData:;
+- (void)setCurrentImageIndex:;
+- (void)adjustCellPositionWithIndexPath:;
+- (BOOL)needForceRefreshForOutOfTimeFromController;
+- (BOOL)shouldRearrange;
+- (void)resetContinuePlayInsertAweme;
+- (void)insertAwemeWithIndexPath:;
+- (id)getLeftFirstSectionIndex;
+- (void)recordContinuePlayInsertAweme:;
+- (void)triggerEnterAnimation;
+- (id)getEnterTargetCellFrame;
+- (id)getEnterTargetButtonFrame;
+- (void)setCurrentClickedAweme:;
+- (id)currentClickedAweme;
+- (double)getVisiblePercent:;
+- (void)updatePayloadIfNeedWithPayload:model:cell:;
+- (void).cxx_destruct;
+- (void)appWillEnterForeground;
+@end

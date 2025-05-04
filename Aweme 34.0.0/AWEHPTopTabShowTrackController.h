@@ -1,0 +1,36 @@
+@interface AWEHPTopTabShowTrackController : AWEBaseController
+@property (nonatomic) q state;
+@property (nonatomic) q reloadSessionID;
+@property (nonatomic) q scrollSessionID;
+@property (nonatomic) NSDate scrollDate;
+@property (nonatomic) BOOL delayTrackFromScroll;
+@property (nonatomic) q lastScrollType;
+@property (nonatomic) {CGSize=dd} preferredContentSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hpBeginReloadTopTabWithDetail:;
+- (void)hpEndReloadTopTabWithDetail:;
+- (void)hpTopTabDidScrollWithScrollType:;
+- (void)p_trackTopTabShowWithReason:editComponentID:editBizTrackParams:;
+- (long long)reloadSessionID;
+- (void)setReloadSessionID:;
+- (void)setLastScrollType:;
+- (void)p_hpTopTabDidScrollDelay:;
+- (long long)scrollSessionID;
+- (void)setScrollSessionID:;
+- (void)setScrollDate:;
+- (BOOL)delayTrackFromScroll;
+- (void)setDelayTrackFromScroll:;
+- (id)scrollDate;
+- (long long)lastScrollType;
+- (BOOL)p_needAddTopUIParamsWithReportReason:;
+- (id)p_generateTopUIParamsWithContext:;
+- (id)p_generateItemInfoWithTabInfo:;
+- (id)init;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)setState:;
+@end

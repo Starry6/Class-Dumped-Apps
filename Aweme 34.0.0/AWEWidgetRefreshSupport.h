@@ -1,0 +1,33 @@
+@interface AWEWidgetRefreshSupport : NSObject
+@property (nonatomic) NSMutableDictionary registerWidgets;
+@property (nonatomic) NSMutableArray reloadTimelineWidgets;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) BOOL isLoginStatusChange;
+@property (nonatomic) BOOL isTeenModeChange;
+@property (nonatomic) BOOL isBasicModeChange;
+@property (nonatomic) BOOL isPersonalRecommendChange;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReloadTimelineFlagWithKind:;
+- (void)registerWidgetKind:needRefreshType:;
+- (void)setRegisterWidgets:;
+- (void)setReloadTimelineWidgets:;
+- (id)registerWidgets;
+- (id)reloadTimelineWidgets;
+- (void)setIsLoginStatusChange:;
+- (void)setIsTeenModeChange:;
+- (void)setIsBasicModeChange:;
+- (void)setIsPersonalRecommendChange:;
+- (void)reloadTimelineWidget;
+- (BOOL)isTeenModeChange;
+- (BOOL)isLoginStatusChange;
+- (BOOL)isBasicModeChange;
+- (BOOL)isPersonalRecommendChange;
+- (void)setCommonParamsAndReloadTimelineIfNeed;
+- (void)setLock:;
+- (id)lock;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,33 @@
+@interface AWEStudioCreativeAIGCServiceImpl : NSObject
+@property (nonatomic) BOOL isInPushLoraDetailPage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)presentRoleProfileDetailPage:enterScene:showStatus:isLoraUGC:;
+- (BOOL)isInPushLoraDetailPage;
+- (void)setIsInPushLoraDetailPage:;
+- (id)syncGetSelectLoraPersonInfo;
+- (id)syncGetLoraProfileModel;
+- (void)addObserverSelectProfileChanged:selectProfileChanged:;
+- (void)preloadLoraProfileModel:;
+- (id)preLoadAIGCLibraryDataWith:;
+- (void)updateDataSource:profileModel:;
+- (void)addObserverLoraUpdate:profileModel:updateCallback:;
+- (void)updateDataSource:needRefreshProfile:;
+- (void)presentAIGCLibraryPage:dismissBlock:;
+- (id)getProfileCacheImage;
+- (id)syncGetDefaultLoraPersonInfo;
+- (void)enterCreateAILoraProfileVC:isDarkMode:trackInfo:enterCreateCallBlock:didCreateProfileBlock:createLoraViewControllerDismiss:;
+- (void)enterSelectAILoraProfileVCWithDarkMode:didEnterVC:trackInfo:didClickButtonBlock:userCloseLoadingBlock:;
+- (void)requestAiProcessWithTaskId:slotNumber:roleType:slotList:imCallbackArgs:reqSource:shareTaskId:actualInitiatorModelId:stickerId:styleId:attendIdempotentKey:completion:;
+- (void)queryMultiPortraitState:conversationShortId:serverMsgId:completion:;
+- (void)startAigcLoraPublishWithSchema:track:;
+- (id)modelAvatarWithGender:;
+- (void)startMixPhotoWithStickerID:loraStyleId:maxMember:selectLoraId:stickerCoverURL:isLora:dark:trackInfo:;
+- (void)queryMultiPortraitState:imEnter:conversationShortId:serverMsgId:completion:;
+- (void)handleRoleNoticeRouterWithParams:completion:;
+- (id)getCachedDefaultLoraPersonModel;
+- (void)createMultiPortrait:stickerId:slotNumber:styleId:imCallbackArgs:completion:;
+- (void)participateInMultiPortrait:stickerId:loraId:styleId:attendIdempotentKey:imCallbackArgs:completion:;
+@end

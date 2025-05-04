@@ -1,0 +1,35 @@
+@interface AWEConcernBellPushVideoStrategyPanelTableViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView checkIcon;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) BOOL useCardUIStyle;
+@property (nonatomic) Q bellPushType;
+@property (nonatomic) Q cornerType;
+- (void)setUseCardUIStyle:;
+- (BOOL)useCardUIStyle;
+- (void)initViews;
+- (void)setBellPushType:;
+- (unsigned long long)bellPushType;
+- (void)setCheckIcon:;
+- (void)setupCorners;
+- (id)titleForLabelWithBellPushStrategy:;
+- (id)nameForIconWithBellPushStrategy:;
+- (void)configWithBellPushStrategy:bellPushType:isCheck:;
+- (void)prepareForReuse;
+- (id)iconView;
+- (void)awakeFromNib;
+- (void)setIconView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setSelected:animated:;
+- (id)lineView;
+- (void)setLineView:;
+- (unsigned long long)cornerType;
+- (void)setCornerType:;
+- (id)checkIcon;
++ (id)identifier;
++ (double)cellHeight;
+@end

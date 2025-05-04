@@ -1,0 +1,38 @@
+@interface AWECodeGenSubcategoryModel : AWEBaseDataModel
+@property (nonatomic) NSString subcategoryId;
+@property (nonatomic) NSString subcategoryName;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) BOOL unsubCanSet;
+@property (nonatomic) BOOL isButtonLinkage;
+@property (nonatomic) NSArray channelListModelArray;
+@property (nonatomic) q updateTime;
+@property (nonatomic) NSString bizExtra;
+@property (nonatomic) NSInteger appId;
+@property (nonatomic) NSString subcategoryDesc;
+@property (nonatomic) NSInteger actionType;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)bizExtra;
+- (void)setBizExtra:;
+- (id)subcategoryId;
+- (void)setSubcategoryId:;
+- (void)setSubcategoryName:;
+- (id)subcategoryName;
+- (id)channelListModelArray;
+- (BOOL)isButtonLinkage;
+- (BOOL)unsubCanSet;
+- (void)setUnsubCanSet:;
+- (void)setIsButtonLinkage:;
+- (void)setChannelListModelArray:;
+- (id)subcategoryDesc;
+- (void)setSubcategoryDesc:;
+- (int)actionType;
+- (void)setActionType:;
+- (long long)updateTime;
+- (int)appId;
+- (void).cxx_destruct;
+- (void)setUpdateTime:;
+- (void)setAppId:;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

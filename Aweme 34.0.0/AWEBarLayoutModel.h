@@ -1,0 +1,34 @@
+@interface AWEBarLayoutModel : AWEBaseApiModel
+@property (nonatomic) double height;
+@property (nonatomic) double width;
+@property (nonatomic) NSNumber topMargin;
+@property (nonatomic) NSNumber bottomMargin;
+@property (nonatomic) NSNumber leftMargin;
+@property (nonatomic) NSNumber rightMargin;
+@property (nonatomic) NSNumber topInset;
+@property (nonatomic) NSNumber bottomInset;
+@property (nonatomic) NSNumber leftInset;
+@property (nonatomic) NSNumber rightInset;
+- (id)topInset;
+- (id)leftMargin;
+- (void)setLeftInset:;
+- (void)setHeight:;
+- (id)rightInset;
+- (void)setWidth:;
+- (void)setTopInset:;
+- (id)bottomInset;
+- (void)setLeftMargin:;
+- (void)setRightInset:;
+- (id)bottomMargin;
+- (double)width;
+- (id)leftInset;
+- (void).cxx_destruct;
+- (id)rightMargin;
+- (double)height;
+- (void)setBottomInset:;
+- (id)topMargin;
+- (void)setRightMargin:;
+- (void)setBottomMargin:;
+- (void)setTopMargin:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

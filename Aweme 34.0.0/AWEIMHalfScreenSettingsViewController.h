@@ -1,0 +1,30 @@
+@interface AWEIMHalfScreenSettingsViewController : UIViewController
+@property (nonatomic) AWEIMHalfScreenContainerViewController container;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeBtn;
+@property (nonatomic) UICollectionView settingsCollectionView;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (void)didClickCell:;
+- (void)didTapOnEditBtn;
+- (id)settingsCollectionView;
+- (void)__closeBtnClicked;
+- (void)setSettingsCollectionView:;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (void)setContainer:;
+- (id)container;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)preferredContentSize;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)titleLabel;
+- (void)setupUI;
+@end

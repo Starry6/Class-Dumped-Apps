@@ -1,0 +1,33 @@
+@interface AWESearchKeyboardTabBarContext : NSObject
+@property (nonatomic) q pageType;
+@property (nonatomic) q positionType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSDictionary historyConfig;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) UIView topView;
+@property (nonatomic) double keyBoardHeight;
+@property (nonatomic) <AWESearchKeyboardVoiceSearchDelegate> voiceSearchDelegate;
+@property (nonatomic) <AWESearchKeyboardAISearchDelegate> aiSearchDelegate;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setThemeStyle:;
+- (void)setPositionType:;
+- (id)historyConfig;
+- (void)setKeyBoardHeight:;
+- (double)keyBoardHeight;
+- (void)setHistoryConfig:;
+- (id)aiSearchDelegate;
+- (id)voiceSearchDelegate;
+- (void)setVoiceSearchDelegate:;
+- (void)setAiSearchDelegate:;
+- (void)setGroupID:;
+- (id)groupID;
+- (void)setPageType:;
+- (void).cxx_destruct;
+- (long long)pageType;
+- (id)topView;
+- (void)setTopView:;
+- (long long)themeStyle;
+- (long long)positionType;
+@end

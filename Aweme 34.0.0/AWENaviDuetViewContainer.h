@@ -1,0 +1,33 @@
+@interface AWENaviDuetViewContainer : NSObject
+@property (nonatomic) NSMutableDictionary barItemDictionary;
+@property (nonatomic) NSMutableArray barItems;
+@property (nonatomic) AWENaviDuetRToolBarView rtoolBarView;
+@property (nonatomic) AWENaviDuetMaskView maskView;
+@property (nonatomic) UIView rootView;
+@property (nonatomic) UIView interactionView;
+@property (nonatomic) UIView preview;
+@property (nonatomic) UIView panelView;
+@property (nonatomic) UIView toolBarView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewContainerDidLoad;
+- (BOOL)addRightBarItem:;
+- (void)toggleToolBarViewVisibility:;
+- (id)panelView;
+- (id)toolBarView;
+- (id)barItemDictionary;
+- (void)setBarItemDictionary:;
+- (id)rtoolBarView;
+- (id)initWithRootView:;
+- (void)setRtoolBarView:;
+- (id)preview;
+- (id)interactionView;
+- (id)maskView;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (id)rootView;
+- (id)barItems;
+- (void)setBarItems:;
+@end

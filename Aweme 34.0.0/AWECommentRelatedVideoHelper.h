@@ -1,0 +1,29 @@
+@interface AWECommentRelatedVideoHelper : NSObject
+- (id)aAWECommentXIGAttributionCommonAdapter;
++ (id)getDurationAndPercentParamsFromPlayer:;
++ (id)playerParamsWithPlayer:;
++ (void)trackShowRelatedBarWithAWEModel:extraInfo:;
++ (void)recordRelatedVideoBarShown;
++ (void)preloadMpWithModel:;
++ (void)trackClickRelatedBarWithAWEModel:extraInfo:;
++ (void)openXiguaWithModel:extraInfo:;
++ (void)recordRelatedVideoBarClick;
++ (id)commentTrackParamsWithModel:extraInfo:;
++ (BOOL)isXiguaAppInstalled;
++ (Class)aAWECommentXIGAttributionCommonAdapterClass;
++ (void)openXiguaAppWithModel:extraInfo:;
++ (void)openMpUrlWithModel:;
++ (void)trackAlertClickActionWithAWEModel:clickConfirm:extraInfo:;
++ (void)trackZlinkWithModel:;
++ (void)doOpenXiguaAppWithModel:;
++ (void)trackAlertShowWithAWEModel:extraInfo:;
++ (BOOL)isAwemeLiteWithModel:;
++ (id)getGroupIDForRelatedModel:;
++ (id)getGroupIDForCommentRelatedModel:;
++ (id)getGroupIDForMpOpenUrl:andOpenAppSchema:;
++ (id)getGroupIDFromMpOpenUrl:;
++ (id)getGroupIDFromAppScheme:;
++ (void)didShowWithAWEModel:extraInfo:;
++ (void)didClickWithAWEModel:extraInfo:;
++ (BOOL)isSameVideoForRelatedVideo:andCommentRelatedVideo:;
+@end

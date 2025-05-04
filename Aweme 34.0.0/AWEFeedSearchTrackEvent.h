@@ -1,0 +1,32 @@
+@interface AWEFeedSearchTrackEvent : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary logPb;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSString searchResultId;
+@property (nonatomic) NSString authorId;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) NSString duration;
+@property (nonatomic) NSNumber percentage;
+@property (nonatomic) NSDictionary redundancyDic;
+- (void)setLogExtraDict:;
+- (void)setEnterFrom:;
+- (id)logExtraDict;
+- (id)enterFrom;
+- (id)searchResultId;
+- (void)setSearchResultId:;
+- (void)setLogPb:;
+- (id)logPb;
+- (id)redundancyDic;
+- (id)searchVideoPlay;
+- (id)searchPlayTime;
+- (void)setRedundancyDic:;
+- (void)setGroupId:;
+- (id)groupId;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (id)duration;
+- (id)percentage;
+- (void)setPercentage:;
+- (id)authorId;
+- (void)setAuthorId:;
+@end

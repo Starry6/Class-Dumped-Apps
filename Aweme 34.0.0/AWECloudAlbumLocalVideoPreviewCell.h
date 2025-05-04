@@ -1,0 +1,32 @@
+@interface AWECloudAlbumLocalVideoPreviewCell : AWECloudAlbumPreviewCell
+@property (nonatomic) UIImage coverImage;
+@property (nonatomic) UIImageView pauseImageView;
+@property (nonatomic) UIView playerView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCoverImage:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)pauseImageView;
+- (void)setPauseImageView:;
+- (void)setupZoomScrollView;
+- (void)resetCell;
+- (void)configWithModel:playFrame:;
+- (void)setPlayerLayer:withPlayerFrame:;
+- (void)removeCoverImageView;
+- (BOOL)play;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)viewForZoomingInScrollView:;
+- (void)scrollViewDidZoom:;
+- (void)handleDoubleTap:;
+- (void)setPlayerView:;
+- (id)playerView;
+- (void).cxx_destruct;
+- (BOOL)stop;
+- (BOOL)pause;
+- (id)coverImage;
+@end

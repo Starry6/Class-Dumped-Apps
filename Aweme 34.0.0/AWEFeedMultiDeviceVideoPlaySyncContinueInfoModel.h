@@ -1,0 +1,35 @@
+@interface AWEFeedMultiDeviceVideoPlaySyncContinueInfoModel : MTLModel
+@property (nonatomic) q userID;
+@property (nonatomic) q itemID;
+@property (nonatomic) q itemType;
+@property (nonatomic) q playTime;
+@property (nonatomic) NSString cover;
+@property (nonatomic) q fromDeviceID;
+@property (nonatomic) NSInteger fromDeviceType;
+@property (nonatomic) NSInteger recordType;
+@property (nonatomic) q uploadScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (void)setPlayTime:;
+- (long long)uploadScene;
+- (void)setUploadScene:;
+- (long long)fromDeviceID;
+- (int)fromDeviceType;
+- (void)setFromDeviceID:;
+- (void)setFromDeviceType:;
+- (long long)itemType;
+- (long long)itemID;
+- (long long)userID;
+- (void)setItemType:;
+- (void)setItemID:;
+- (int)recordType;
+- (long long)playTime;
+- (void).cxx_destruct;
+- (void)setRecordType:;
+- (void)setUserID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

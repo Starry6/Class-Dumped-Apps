@@ -1,0 +1,2 @@
+@interface AWENaviDuetMatchModel : NSObject
+@end

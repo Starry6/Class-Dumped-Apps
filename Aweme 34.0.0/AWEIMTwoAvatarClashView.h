@@ -1,0 +1,35 @@
+@interface AWEIMTwoAvatarClashView : UIView
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) BOOL newStyle;
+@property (nonatomic) UIImageView avatarImageView1;
+@property (nonatomic) UIImageView avatarImageView2;
+@property (nonatomic) UIView avatarBackgroundView1;
+@property (nonatomic) UIView avatarBackgroundView2;
+- (id)lottieView;
+- (void)setLottieView:;
+- (BOOL)newStyle;
+- (void)setNewStyle:;
+- (id)initWithNewStyle:;
+- (void)showAvatarWithoutAnimation;
+- (void)playClashAnimation;
+- (void)configSubview;
+- (double)getViewWidth;
+- (double)getViewHeight;
+- (id)avatarBackgroundView1;
+- (double)getAvatarDistance;
+- (id)avatarImageView1;
+- (double)getAvatarDiameter;
+- (id)avatarBackgroundView2;
+- (id)avatarImageView2;
+- (void)setAvatarImageView1:;
+- (void)setAvatarImageView2:;
+- (void)setAvatarBackgroundView1:;
+- (void)setAvatarBackgroundView2:;
+- (id)init;
+- (BOOL)isPlaying;
+- (void).cxx_destruct;
+- (void)setIsPlaying:;
+- (double)getTopMargin;
++ (void)p_setupSpringAnimation:;
+@end

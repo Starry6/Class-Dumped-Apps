@@ -1,0 +1,32 @@
+@interface AWEApplogDynamicFreqStrategy : NSObject
+@property (nonatomic) BOOL isValidNow;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) NSString strategyName;
+@property (nonatomic) NSString strategyClass;
+@property (nonatomic) q uploadFrequency;
+@property (nonatomic) Q priority;
+@property (nonatomic) <AWEApplogDynamicFreqStrategyDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onStrategyInit;
+- (long long)uploadFrequency;
+- (id)initWithStrategyName:config:delegate:;
+- (void)setIsValidNow:;
+- (id)strategyClass;
+- (void)setStrategyClass:;
+- (void)setUploadFrequency:;
+- (BOOL)isValidNow;
+- (BOOL)enable;
+- (id)delegate;
+- (unsigned long long)priority;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setEnable:;
+- (void)setStrategyName:;
+- (id)strategyName;
++ (id)createInstanceWithStrategyName:config:delegate:;
++ (id)strategyClassList;
+@end

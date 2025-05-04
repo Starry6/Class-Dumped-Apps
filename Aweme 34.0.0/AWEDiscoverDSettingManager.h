@@ -1,0 +1,37 @@
+@interface AWEDiscoverDSettingManager : NSObject
+- (id)aAWEFeedModuleServiceDOUYINHTSAdaper;
+- (id)aAWEFeedModuleServiceDOUYINLiteAdaper;
++ (Class)aAWEFeedModuleServiceDOUYINHTSAdaperClass;
++ (Class)aAWEFeedModuleServiceDOUYINLiteAdaperClass;
++ (BOOL)postVideoCanBindHotSpot;
++ (long long)timelineLoadMoreCount;
++ (id)feedHotListCardSchema;
++ (id)mixVideoPaymentCardLynxSchema;
++ (id)discoverDGrayScaleTimestampArray;
++ (id)hotSearchCommentLynxSchema;
++ (double)discoverDHotSpotDiscussionScrollSpeed;
++ (double)discoverDHotSpotEmbeddedDiscussionScrollSpeed;
++ (id)hotSpotBrandLynxSchema;
++ (id)hotSpotBottomBarLynxSchema;
++ (id)playletBottomBarLynxSchema;
++ (id)hotSpotXTabSkylightSchema;
++ (long long)playletSeriesTabRequestCount;
++ (BOOL)playletFeedRecommendSwitch;
++ (BOOL)canUpdatePlayletBottomViewSwitch;
++ (BOOL)playletSeriesTabEnableFixEpisode;
++ (id)playletPaymentBoardSchema;
++ (id)hotPointPanelPopularAuthorSchema;
++ (id)playletPaymentUserPromptScheme;
++ (id)newHotSpotFeedLynxCardSchema;
++ (BOOL)showNewHotSpotBottomBarEntrance;
++ (id)playletPaymentPlayletIDs;
++ (unsigned long long)playletNewTailCountDownDuration;
++ (BOOL)playletRecommendPlaySwitch;
++ (BOOL)enableNewMovieHorizontalCardSwitchView;
++ (id)mixVideoPaymentPopupLynxSchema;
++ (long long)realTimeLimitCountForChannelContent;
++ (long long)viewContentCountBeforePopover;
++ (long long)feedHotListCardMaxShowCount;
++ (double)paymentVideoRecordUploadMinVideoDuation;
++ (double)paymentVideoRecordUploadMinWatchSecounds;
+@end

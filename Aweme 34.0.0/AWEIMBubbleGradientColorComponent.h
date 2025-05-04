@@ -1,0 +1,36 @@
+@interface AWEIMBubbleGradientColorComponent : AWEIMComponentBase
+@property (nonatomic) NSString identifier;
+@property (nonatomic) UIImage bubbleGradientImage;
+@property (nonatomic) Q currentColorType;
+@property (nonatomic) NSDictionary gradientImageDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (id)peerUserID;
+- (void)componentDidMounted:;
+- (void)didReceiveNewMessage:reason:;
+- (void)onChatThemeDidChange:;
+- (void)setGradientImageDict:;
+- (void)changeBubbleColorWithIsCFColor:cid:;
+- (void)changeBubbleColorWithThemeIdentifier:cid:;
+- (id)bubbleGradientImage;
+- (void)handleCloseFriendsRelationDidChange:;
+- (void)p_updateBubbleGradientImageWithBubbleModel:;
+- (void)setBubbleGradientImage:;
+- (unsigned long long)currentColorType;
+- (void)setCurrentColorType:;
+- (id)imageWithColorType:;
+- (BOOL)p_enableSetCFColor;
+- (void)p_updateBubbleGradientImage:;
+- (void)p_autoSetBubbleColorWithStatus:;
+- (id)gradientImageDict;
+- (void)dealloc;
+- (void)setIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
++ (id)makeGradientImageDict;
++ (void)gradientColorForDark:isCFColor:startColor:endColor:;
+@end

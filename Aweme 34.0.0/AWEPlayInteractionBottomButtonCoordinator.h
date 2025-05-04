@@ -1,0 +1,35 @@
+@interface AWEPlayInteractionBottomButtonCoordinator : NSObject
+@property (nonatomic) AWEPlayInteractionBottomButtonComponentProxy componentProxy;
+@property (nonatomic) AWEPlayInteractionContext context;
+@property (nonatomic) NSArray activateComponentArray;
+@property (nonatomic) <AWEPlayInteractionBottomButtonCoordinatorDelegate> coordinatorDelegate;
+@property (nonatomic) UIViewController<AWEPlayInteractionViewControllerProtocol> viewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowTemplateButtonRepeatedly;
+- (void)configWithModel:context:;
+- (void)showBottomButtonWithTriggerType:;
+- (void)hideBottomButton;
+- (void)handleClickEventWithModel:clickBlock:;
+- (BOOL)isBottomButtonElementAppear;
+- (double)bottomButtonElementWidth;
+- (void)showBottomButtonWithTriggerType:animate:;
+- (void)setComponentProxy:;
+- (void)setActivateComponentArray:;
+- (id)activateComponentArray;
+- (void)setCoordinatorDelegate:;
+- (id)componentProxy;
+- (id)coordinatorDelegate;
+- (BOOL)shouldShowTemplateButton;
+- (long long)priority;
+- (id)viewController;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
+- (void)setViewController:;
+- (id)currentComponent;
++ (Class)componentClassForModel:context:;
+@end

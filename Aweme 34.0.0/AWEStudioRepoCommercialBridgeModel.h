@@ -1,0 +1,32 @@
+@interface AWEStudioRepoCommercialBridgeModel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEStudioVideoPublishExtraModel ironManExtraModel;
+@property (nonatomic) NSString ccVid;
+@property (nonatomic) NSString douplusDraftID;
+@property (nonatomic) NSData ironManExtraJson;
+@property (nonatomic) <ACCPublishRepository> repoDeprecated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ironManExtraModel;
+- (void)setIronManExtraModel:;
+- (id)ccVid;
+- (void)setCcVid:;
+- (id)douplusDraftID;
+- (void)setDouplusDraftID:;
+- (id)ironManExtraJson;
+- (void)setIronManExtraJson:;
+- (id)repoDeprecated;
+- (void)setRepoDeprecated:;
+- (id)acc_publishRequestParams:;
+- (id)initWithDraft:;
+- (void)saveWithDraft:;
+- (void)draftWillBeSavedWithID:;
+- (void)modelDidRetrievedFromDraftWithID:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMOnlineFriendsViewController : AWEHalfScreenBaseViewController
+@property (nonatomic) NSArray users;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSMutableSet didClickUsers;
+@property (nonatomic) NSString trackEnterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPureMode:;
+- (void)setTrackEnterFrom:;
+- (id)trackEnterFrom;
+- (BOOL)didClickGreetWithUser:;
+- (void)clickGreetWithUser:;
+- (void)clickVoiceWithUser:;
+- (void)clickCellContentWithUser:;
+- (void)setDidClickUsers:;
+- (id)didClickUsers;
+- (void)viewWillDisappear:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)dealloc;
+- (id)users;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)viewDidAppear:;
+- (void)setUsers:;
+- (id)initWithUsers:;
++ (BOOL)showing;
+@end

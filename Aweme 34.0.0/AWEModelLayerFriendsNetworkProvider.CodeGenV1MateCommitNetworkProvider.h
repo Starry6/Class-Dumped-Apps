@@ -1,0 +1,31 @@
+@interface AWEModelLayerFriendsNetworkProvider.CodeGenV1MateCommitNetworkProvider : AWEDataLayerRootModelPostMethodNetworkProvider
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSNumber actionType;
+@property (nonatomic) NSString applyMessage;
+@property (nonatomic) NSNumber from;
+@property (nonatomic) NSNumber fromPre;
+@property (nonatomic) NSNumber channelId;
+@property (nonatomic) NSNumber fromAction;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)applyMessage;
+- (void)setApplyMessage:;
+- (id)fromPre;
+- (void)setFromPre:;
+- (id)fromAction;
+- (void)setFromAction:;
+- (id)initWithActionType:userId:;
+- (id)actionType;
+- (void)setActionType:;
+- (id)init;
+- (id)userId;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (Class)modelClass;
+- (void)setFrom:;
+- (id)from;
+- (id)channelId;
+- (void)setChannelId:;
++ (id)businessURI;
+@end

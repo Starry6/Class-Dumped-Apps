@@ -1,0 +1,30 @@
+@interface AWEGrouponHalfScreenContainerPerfModel : NSObject
+@property (nonatomic) double containerInitTime;
+@property (nonatomic) double containerCost;
+@property (nonatomic) double halfScreenInitTime;
+@property (nonatomic) double halfScreenCost;
+@property (nonatomic) double contentInitTime;
+@property (nonatomic) double contentCost;
+@property (nonatomic) double fmpTime;
+@property (nonatomic) double totalCost;
+@property (nonatomic) Q enterType;
+- (double)containerInitTime;
+- (void)setContainerInitTime:;
+- (double)containerCost;
+- (void)setContainerCost:;
+- (double)halfScreenInitTime;
+- (void)setHalfScreenInitTime:;
+- (double)halfScreenCost;
+- (void)setHalfScreenCost:;
+- (double)contentInitTime;
+- (void)setContentInitTime:;
+- (double)contentCost;
+- (void)setContentCost:;
+- (double)fmpTime;
+- (void)setFmpTime:;
+- (id)init;
+- (unsigned long long)enterType;
+- (void)setEnterType:;
+- (void)setTotalCost:;
+- (double)totalCost;
+@end

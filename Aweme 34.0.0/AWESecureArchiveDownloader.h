@@ -1,0 +1,35 @@
+@interface AWESecureArchiveDownloader : NSObject
+@property (nonatomic) TTHttpTask currentTask;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) NSArray URLs;
+@property (nonatomic) NSURL archiveFileURL;
+@property (nonatomic) NSURL autoUnarchiveURL;
+@property (nonatomic) BOOL removeArchiveFileWhenDone;
+@property (nonatomic) NSString archivePassword;
+@property (nonatomic) NSString expectedFileMD5;
+@property (nonatomic) @? completion;
+- (void)setArchiveFileURL:;
+- (void)setAutoUnarchiveURL:;
+- (void)setExpectedFileMD5:;
+- (void)setRemoveArchiveFileWhenDone:;
+- (id)archiveFileURL;
+- (void)resumeWithCurrentIndex:error:;
+- (void)completeWithSuccess:error:;
+- (id)expectedFileMD5;
+- (id)autoUnarchiveURL;
+- (id)archivePassword;
+- (BOOL)removeArchiveFileWhenDone;
+- (void)downloadResourceWithURL:archiveFileURL:autoUnarchiveURL:expectedFileMD5:completion:;
+- (void)setArchivePassword:;
+- (void)setCurrentIndex:;
+- (id)completion;
+- (BOOL)resume;
+- (void)setCompletion:;
+- (id)currentTask;
+- (void)setCurrentTask:;
+- (void)cancel;
+- (void)setURLs:;
+- (id)URLs;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+@end

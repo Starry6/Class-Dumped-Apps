@@ -1,0 +1,38 @@
+@interface AWEPublishPrivacySettingHandlerImpl : NSObject
+@property (nonatomic) AWEVideoPublishViewModel publishModel;
+@property (nonatomic) ACCCameraSubscription subscription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEStudioGlobalConfig;
+- (id)publishModel;
+- (void)setPublishModel:;
+- (BOOL)isNewFriendsDailyPublishPanelSettingStyleRadicalStatus;
+- (BOOL)isNewFriendsDailyPublishPanelExperimentStatus;
+- (void)handleSelectExclusionListWithUserList:;
+- (id)initWithPublishModel:;
+- (void)refreshWithPublishViewModel:;
+- (void)showRedpacketPrivatePublishToastIfNeeded;
+- (void)p_configExclusionModelIfNeed;
+- (BOOL)p_needShowRedpacketPrivatePublishToast;
+- (void)p_markPrivacyChangeRedPacketAlertShowed;
+- (void)didSelectPrivacy:isUserSelect:isTrackable:;
+- (void)p_updateVideoSyncWithPrivacyOption:originalPrivacyType:;
+- (void)didSelectPrivacyForStory:;
+- (void)didSelectPrivacyForNormal:isUserSelect:;
+- (void)resetNewFriendsDailyPrivacyExtraIfNeeded;
+- (void)handleSelectCloseFriendsConfigPrivacyExtraModel;
+- (void)handleSelectMateDontShareListWithUserList:;
+- (BOOL)p_preventSyncToApps;
+- (void)updatePrivacyData;
+- (BOOL)p_isRedpacketTaskAcitivity;
+- (id)p_redpacketPrivatePublishToastLastShowDate;
+- (void)didSelectPrivacy:isExclusionSelected:exclusionSecUidList:exclusionUserList:isPartOfVisibleSelected:partOfVisibleUsers:isCloseFriendsSelected:isMutualCFAndFriendSeeSelected:isFriendVisibleAndDontShareSelected:friendsAndDontShareUids:isMateSelected:isMateAndDontShareSelected:mateAndDontShareUids:isHideSearch:param:isUserSelect:isTrackable:;
+- (id)subscription;
+- (void)setSubscription:;
+- (void).cxx_destruct;
+- (void)addSubscriber:;
+- (void)removeSubscriber:;
++ (Class)aAWEStudioGlobalConfigClass;
+@end

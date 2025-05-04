@@ -1,0 +1,34 @@
+@interface AWECodeGenWannaJumpCardModel : AWEBaseDataModel
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) NSString lightCoverUrl;
+@property (nonatomic) NSString darkCoverUrl;
+@property (nonatomic) NSString projectId;
+@property (nonatomic) NSString parentId;
+@property (nonatomic) NSString taskId;
+@property (nonatomic) q index;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) NSString modelID;
+- (id)jumpSchema;
+- (void)setJumpSchema:;
+- (id)lightCoverUrl;
+- (void)setLightCoverUrl:;
+- (id)darkCoverUrl;
+- (void)setDarkCoverUrl:;
+- (void)setIndex:;
+- (id)projectId;
+- (void)setModelID:;
+- (long long)index;
+- (id)modelID;
+- (void)setStartTime:;
+- (long long)endTime;
+- (void)setEndTime:;
+- (void)setProjectId:;
+- (void).cxx_destruct;
+- (long long)startTime;
+- (id)taskId;
+- (void)setTaskId:;
+- (id)parentId;
+- (void)setParentId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

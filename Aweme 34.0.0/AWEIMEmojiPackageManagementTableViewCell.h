@@ -1,0 +1,38 @@
+@interface AWEIMEmojiPackageManagementTableViewCell : UITableViewCell
+@property (nonatomic) UIView customContentView;
+@property (nonatomic) UIImageView emojiImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) MASConstraint deleteBtnLeading;
+@property (nonatomic) UIButton fakeReorderControl;
+@property (nonatomic) AWEIMmoticonThemeResponseModel emojiPackage;
+@property (nonatomic) <AWEIMEmojiPackageManagementTableViewCellDelegate> delegate;
+- (id)emojiPackage;
+- (void)setEmojiImageView:;
+- (id)emojiImageView;
+- (void)__setupUIs;
+- (void)setEmojiPackage:;
+- (void)__renderPackageData;
+- (id)deleteBtnLeading;
+- (id)fakeReorderControl;
+- (void)setDeleteBtnLeading:;
+- (void)__didClickDelete;
+- (void)setFakeReorderControl:;
+- (void)setDeleteButton:;
+- (id)delegate;
+- (void)setCustomContentView:;
+- (void)setEditing:animated:;
+- (id)customContentView;
+- (void)setSubtitleLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)subtitleLabel;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

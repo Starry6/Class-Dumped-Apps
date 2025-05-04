@@ -1,0 +1,33 @@
+@interface AWESearchLifeServiceVideoPlayRule : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} activeRect;
+@property (nonatomic) double activeRectTop;
+@property (nonatomic) double activeRectBottom;
+@property (nonatomic) double shouldNotActiveHeight;
+@property (nonatomic) BOOL shouldFilterStaticCard;
+@property (nonatomic) double flingSpeedLimit;
+@property (nonatomic) AWESearchAutoPlayHandler handler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)shouldNotActiveHeight;
+- (void)setActiveRectTop:;
+- (void)setActiveRectBottom:;
+- (void)setShouldNotActiveHeight:;
+- (void)setShouldFilterStaticCard:;
+- (BOOL)shouldFilterStaticCard;
+- (double)activeRectTop;
+- (double)activeRectBottom;
+- (double)_calculateRelativeCenterY:;
+- (id)getAutoPlayViewFromViews:inContainer:contentOffset:directionPoint:speedPoint:;
+- (void)setFlingSpeedLimit:;
+- (id)_calculateActiveRectWithContainer:;
+- (double)flingSpeedLimit;
+- (void)setHandler:;
+- (id)initWithConfig:;
+- (id)handler;
+- (void).cxx_destruct;
+- (id)activeRect;
+- (void)setActiveRect:;
+- (unsigned long long)ruleType;
+@end

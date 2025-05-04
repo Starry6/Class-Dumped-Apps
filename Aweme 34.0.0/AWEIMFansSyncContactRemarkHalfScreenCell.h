@@ -1,0 +1,33 @@
+@interface AWEIMFansSyncContactRemarkHalfScreenCell : UITableViewCell
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel leftLabel;
+@property (nonatomic) UIImageView arrow;
+@property (nonatomic) UILabel rightLabel;
+@property (nonatomic) UIStackView nameContainer;
+@property (nonatomic) @? clickCheckBoxBlock;
+@property (nonatomic) DUXCheckBox checkBox;
+- (void)themeDidChangeNoti:;
+- (id)checkBox;
+- (void)setCheckBox:;
+- (void)setClickCheckBoxBlock:;
+- (void)layoutLabelWithNickname:contactName:;
+- (void)addCorner:;
+- (double)computeSize:;
+- (id)nameContainer;
+- (id)clickCheckBoxBlock;
+- (void)clickCheckBox;
+- (void)configIconURL:nickname:contactName:hasCorner:isChecked:clickCheckBoxBlock:;
+- (void)setNameContainer:;
+- (void)dealloc;
+- (id)icon;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)leftLabel;
+- (id)rightLabel;
+- (id)arrow;
+- (void)setArrow:;
+- (void)setLeftLabel:;
+- (void)setRightLabel:;
+@end

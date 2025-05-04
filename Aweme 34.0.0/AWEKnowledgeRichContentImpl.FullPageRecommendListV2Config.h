@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageRecommendListV2Config : AWESpeCategoryKit.FeedListContainerConfig
+@end

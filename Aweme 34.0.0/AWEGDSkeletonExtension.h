@@ -1,0 +1,32 @@
+@interface AWEGDSkeletonExtension : NSObject
+@property (nonatomic) AWEGDSkeletonView skeletonView;
+@property (nonatomic) AWEGDSkeletonFooterView footerView;
+@property (nonatomic) DitoPageContext context;
+@property (nonatomic) <DitoExtensionContainerProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)skeletonView;
+- (void)setSkeletonView:;
+- (void)didEndRequestWithResponse:error:;
+- (BOOL)isJumpToMiddlePage:;
+- (void)ditoExtension:cubeView:didLoadSuccessWithUrl:;
+- (BOOL)isBodyStartLoad;
+- (BOOL)isShowSkeleton;
+- (void)setupSkeletonUI;
+- (void)checkHitImageCache;
+- (void)sendLogWithEvent:params:;
+- (BOOL)removeSkeletonUI;
+- (void)skeletonFooterView:onClickConfirmBtn:;
+- (void)setContainer:;
+- (id)container;
+- (void)setFooterView:;
+- (id)footerView;
+- (void)viewDidLoad;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)didLayout;
+- (id)context;
+- (id)getProductID;
+@end

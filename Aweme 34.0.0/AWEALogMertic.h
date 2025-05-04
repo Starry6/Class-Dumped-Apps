@@ -1,0 +1,37 @@
+@interface AWEALogMertic : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSMutableArray messages;
+@property (nonatomic) NSMutableSet aloneSet;
+@property (nonatomic) double repeatTemporary;
+@property (nonatomic) double temporary;
+@property (nonatomic) Q limit;
+@property (nonatomic) double scale;
+@property (nonatomic) double repeatInterval;
+@property (nonatomic) Q longTextLimit;
+- (void)_handleLogMessage:;
+- (void)handleLogMessage:;
+- (unsigned long long)longTextLimit;
+- (void)setLongTextLimit:;
+- (id)aloneSet;
+- (void)setAloneSet:;
+- (double)repeatTemporary;
+- (void)setRepeatTemporary:;
+- (void)report;
+- (unsigned long long)limit;
+- (void)setTemporary:;
+- (id)init;
+- (void)setLimit:;
+- (double)repeatInterval;
+- (double)scale;
+- (void)setQueue:;
+- (id)messages;
+- (void)setRepeatInterval:;
+- (void)_reset;
+- (double)temporary;
+- (void).cxx_destruct;
+- (void)setScale:;
+- (id)queue;
+- (void)reset;
+- (void)_report;
+- (void)setMessages:;
+@end

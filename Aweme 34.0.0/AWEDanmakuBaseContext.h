@@ -1,0 +1,38 @@
+@interface AWEDanmakuBaseContext : AWEPageContext
+@property (nonatomic) BOOL useCommonDanmakuSwitch;
+@property (nonatomic) q danmakuPlayerStatus;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) NSDictionary logExtraForDanmakuSettingPanel;
+@property (nonatomic) NSString accountType;
+@property (nonatomic) BOOL isFromMessageDetailVideo;
+@property (nonatomic) NSDictionary messageDetailVideoParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)setEnterFrom:;
+- (void)addKey:handler:;
+- (id)enterFrom;
+- (void)postForKey:;
+- (id)initWithUseCommonDanmakuSwitch:;
+- (BOOL)useCommonDanmakuSwitch;
+- (long long)danmakuPlayerStatus;
+- (void)setDanmakuPlayerStatus:;
+- (id)logExtraForDanmakuSettingPanel;
+- (void)setLogExtraForDanmakuSettingPanel:;
+- (BOOL)isFromMessageDetailVideo;
+- (void)setIsFromMessageDetailVideo:;
+- (id)messageDetailVideoParams;
+- (void)setMessageDetailVideoParams:;
+- (void)setUseCommonDanmakuSwitch:;
+- (void)setAccountType:;
+- (id)accountType;
+- (void)setBool:forKey:;
+- (void)setDictionary:forKey:;
+- (void).cxx_destruct;
+- (void)setFloat:forKey:;
+- (id)previousPage;
+- (void)setPreviousPage:;
+@end

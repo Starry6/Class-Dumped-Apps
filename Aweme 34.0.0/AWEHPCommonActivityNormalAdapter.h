@@ -1,0 +1,36 @@
+@interface AWEHPCommonActivityNormalAdapter : NSObject
+@property (nonatomic) <AWEHPChannelControllerConfigProtocol> config;
+@property (nonatomic) AWEFeedActivityChannelInfoModel infoModel;
+@property (nonatomic) UIViewController<AWEFeedTabItemViewControllerProtocol> contentVC;
+@property (nonatomic) <AWEHPCommonActivityContainer> activityContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)infoModel;
+- (void)setInfoModel:;
+- (id)contentVC;
+- (void)setContentVC:;
+- (id)activityContainer;
+- (void)setActivityContainer:;
+- (id)topBarItemConfig;
+- (id)badgeArray;
+- (id)bubbleArray;
+- (unsigned long long)topTabTheme;
+- (unsigned long long)bottomTabTheme;
+- (id)initWithActivityContainer:channelConfig:;
+- (BOOL)activityAllowReloadWithConfig:;
+- (void)activityWillReloadWithConfig:;
+- (void)activityDidReload;
+- (BOOL)activityIsAvailableWithError:;
+- (id)getActivityViewController;
+- (void)destroyActivityViewController;
+- (void)activityDidLoadWithType:;
+- (id)p_getInfoModelFromDict:;
+- (BOOL)p_checkActivityTabDataWithError:;
+- (BOOL)p_canShow;
+- (void)setConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (id)activityID;
+@end

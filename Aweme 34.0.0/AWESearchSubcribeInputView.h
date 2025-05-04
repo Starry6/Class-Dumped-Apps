@@ -1,0 +1,30 @@
+@interface AWESearchSubcribeInputView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) AWESearchSubcribeAlertTextField textField;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) AWESearchSubcribeAlertButtonContainer buttonsView;
+@property (nonatomic) MASConstraint textFieldToButtonsConstraint;
+@property (nonatomic) MASConstraint errorLabelToButtonsConstraint;
+@property (nonatomic) BOOL isShowingError;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setTextFieldToButtonsConstraint:;
+- (void)setErrorLabelToButtonsConstraint:;
+- (id)errorLabelToButtonsConstraint;
+- (id)textFieldToButtonsConstraint;
+- (void)showPhoneError;
+- (BOOL)isShowingError;
+- (id)textField;
+- (id)initWithFrame:;
+- (void)setTextField:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setButtonsView:;
+- (id)buttonsView;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (void)clearError;
+- (void)showError:;
+@end

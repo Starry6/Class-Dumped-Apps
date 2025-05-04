@@ -1,0 +1,31 @@
+@interface AWEAdLiveLynxCardAdInfoResultModel : BDXBridgeModel
+@property (nonatomic) NSDictionary adInfo;
+@property (nonatomic) NSString adID;
+@property (nonatomic) NSNumber adType;
+@property (nonatomic) NSNumber cid;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSArray trackUrlList;
+@property (nonatomic) NSString SKANParameters;
+@property (nonatomic) NSNumber videoDuration;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)adID;
+- (void)setAdID:;
+- (void)setTrackUrlList:;
+- (void)setSKANParameters:;
+- (void)setAdInfo:;
+- (id)adInfo;
+- (id)trackUrlList;
+- (id)SKANParameters;
+- (id)adType;
+- (id)cid;
+- (void)setGroupID:;
+- (id)groupID;
+- (void).cxx_destruct;
+- (id)videoDuration;
+- (void)setVideoDuration:;
+- (void)setAdType:;
+- (void)setCid:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

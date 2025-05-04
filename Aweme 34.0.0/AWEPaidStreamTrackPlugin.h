@@ -1,0 +1,32 @@
+@interface AWEPaidStreamTrackPlugin : NSObject
+@property (nonatomic) AWEPaidTraceTool trackTool;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)paidStreamWillStart:;
+- (void)paidStreamDidStop:;
+- (void)paidStreamDidClose:;
+- (void)paidStreamTrialDidStart:;
+- (void)paidStreamTrialDidStop:;
+- (void)paidStream:loadPaymentPageWithPayment:isSuccess:paidAuthItem:;
+- (void)paidStream:didAcquirePaidAuthWithPaidAuthItems:;
+- (void)willExitPaymentPageWithPaidStream:;
+- (void)didExitPaymentPageWithPaidStream:;
+- (void)paidStream:willDisplayForBlockType:;
+- (void)paidStream:didEndDisplayForBlockType:;
+- (void)sendEventDidUpdateAuthWithAuthItems:;
+- (void)traceWithEventName:parameters:;
+- (id)trackTool;
+- (void)setTrackTool:;
+- (void).cxx_destruct;
+- (id)previousPage;
+- (void)setPreviousPage:;
+@end

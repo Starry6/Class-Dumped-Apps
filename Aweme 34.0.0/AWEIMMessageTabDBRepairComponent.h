@@ -1,0 +1,31 @@
+@interface AWEIMMessageTabDBRepairComponent : AWEIMComponentBase
+@property (nonatomic) UIViewController popup;
+@property (nonatomic) BOOL hasPoppedupMsgDBRepairPage;
+@property (nonatomic) BOOL canTrace;
+@property (nonatomic) BOOL enableDBRepairTopPriority;
+@property (nonatomic) <AWEIMMessageTabPopupViewInterface> messageTabPopupViewInterface;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (BOOL)shouldCancelAllOtherPendingAlertsWhenShowedWithContext:;
+- (void)showWithCloseCallback:;
+- (void)afterInitialComponentAllResolved:;
+- (void)setMessageTabPopupViewInterface:;
+- (BOOL)canShowPopupView;
+- (id)messageTabPopupViewInterface;
+- (void)showPopupView;
+- (BOOL)isDisplayingCurrentPopupView;
+- (void)setCanTrace:;
+- (void)setEnableDBRepairTopPriority:;
+- (BOOL)enableDBRepairTopPriority;
+- (BOOL)hasPoppedupMsgDBRepairPage;
+- (BOOL)canTrace;
+- (void)setHasPoppedupMsgDBRepairPage:;
+- (void).cxx_destruct;
+- (id)popup;
+- (void)setPopup:;
+@end

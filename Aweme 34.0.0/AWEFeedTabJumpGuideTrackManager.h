@@ -1,0 +1,37 @@
+@interface AWEFeedTabJumpGuideTrackManager : NSObject
+@property (nonatomic) BOOL status;
+@property (nonatomic) BOOL processing;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSMutableDictionary awemeTrackInfoDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTrackParams:;
+- (void)setTrackStatus:;
+- (id)getTabJumpGuideParamsWithTabID:;
+- (void)trackGuideFreshButtonRequestRecvWithAwemeList:isLoadMore:;
+- (void)trackGuideFreshButtonVideoShowWithAweme:;
+- (void)trackGuideFreshButtonVideoAction:withAweme:;
+- (void)trackGuideFreshButtonNotShowWithAweme:;
+- (void)saveBtnCantShowReason:forAweme:;
+- (void)saveBtnTriggerEvent:forAweme:;
+- (void)setLandingProcessing:;
+- (void)saveBtnDidShowForAweme:;
+- (id)btnTriggerOfAweme:;
+- (void)savePlayProgress:forAweme:;
+- (void)trackGuideFreshButtonVideoActionWithEvent:aweme:;
+- (id)awemeTrackInfoDict;
+- (void)setAwemeTrackInfoDict:;
+- (BOOL)isValidGudieBtnAweme:;
+- (id)trackInfoForAweme:;
+- (id)triggerStringForFeedTabJumpStrategyEventType:;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (BOOL)status;
+- (id)params;
+- (BOOL)processing;
+- (void)setParams:;
+- (void)setProcessing:;
++ (id)sharedManager;
+@end

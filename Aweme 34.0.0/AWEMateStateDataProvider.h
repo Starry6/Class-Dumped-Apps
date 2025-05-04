@@ -1,0 +1,37 @@
+@interface AWEMateStateDataProvider : AWESocialRelationDataProvider
+@property (nonatomic) NSMutableSet hasSentMateApplicationUidSet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)interceptor_write:completion:;
+- (id)interceptor_readFromMemory:;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishBlockUser:status:;
+- (void)didFinishRemoveFansWithUser:;
+- (void)didReceiveUnfollowUserResponse:context:error:;
+- (id)readFromMemory:;
+- (BOOL)isMateWithUserID:scene:;
+- (BOOL)hasMateApplicationFromUser:;
+- (BOOL)hasMateApplicationToUser:;
+- (BOOL)hasSentMateApplicationAfterAppLaunchToUser:;
+- (id)mateCreateTimeForUser:;
+- (BOOL)isMate:scene:;
+- (void)setHasSentMateApplicationUidSet:;
+- (id)hasSentMateApplicationUidSet;
+- (void)p_addMate:completion:;
+- (void)p_batchAddMate:completion:;
+- (void)p_removeMate:completion:;
+- (void)p_updateMateCreateTime:withOriginalRelationModel:;
+- (BOOL)p_isMateRelation:equalTo:;
+- (void)p_addLocalMateDataWithUserIDs:;
+- (void)p_deleteLocalMateDataWithUserID:localModifyAction:;
+- (void)p_localRemoveMateIfNeeded:user:localModifyAction:;
+- (id)init;
+- (void)dealloc;
+- (id)identifier;
+- (void).cxx_destruct;
+- (void)write:completion:;
++ (void)monitorMateRelation:logID:scene:;
++ (long long)p_checkMateRelation:followStatus:followerStatus:followerRequestStatus:;
+@end

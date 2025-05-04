@@ -1,0 +1,30 @@
+@interface AWENoticePrivacySettingActionSheetCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) BOOL onlyBottomLine;
+@property (nonatomic) BOOL drawLine;
+@property (nonatomic) AWEBinding binding;
+@property (nonatomic) UIImageView checkImageView;
+@property (nonatomic) CAShapeLayer topLine;
+@property (nonatomic) CAShapeLayer bottomLine;
+- (void)configModel:;
+- (void)setDrawLine:;
+- (void)setOnlyBottomLine:;
+- (BOOL)drawLine;
+- (BOOL)onlyBottomLine;
+- (void)setSubtitleLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)subtitleLabel;
+- (id)binding;
+- (id)checkImageView;
+- (void)setCheckImageView:;
+- (id)topLine;
+- (id)bottomLine;
+- (void)setBottomLine:;
+- (void)setTopLine:;
+- (void)setBinding:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMEnterpriseContentProps : AWEIMUIViewPresenterProps
+@property (nonatomic) q messageType;
+@property (nonatomic) BOOL viewInteractionEnabled;
+@property (nonatomic) @? didClickSubmitBlock;
+@property (nonatomic) @? didUpdateCellContentSizeBlock;
+@property (nonatomic) @? loadDurationBlock;
+@property (nonatomic) BOOL hasBind;
+@property (nonatomic) AWEEnterpriseIMMessageCardBaseViewModel enterpriseViewModel;
+@property (nonatomic) UIColor viewBackgroundColor;
+@property (nonatomic) AWEUIDynamicColor dynamicColor;
+@property (nonatomic) double cornerRadius;
+- (id)dynamicColor;
+- (id)didClickSubmitBlock;
+- (id)loadDurationBlock;
+- (id)didUpdateCellContentSizeBlock;
+- (void)setDidClickSubmitBlock:;
+- (void)setDidUpdateCellContentSizeBlock:;
+- (void)setLoadDurationBlock:;
+- (void)setEnterpriseViewModel:;
+- (BOOL)viewInteractionEnabled;
+- (void)setViewInteractionEnabled:;
+- (BOOL)hasBind;
+- (void)setHasBind:;
+- (id)enterpriseViewModel;
+- (void)setViewBackgroundColor:;
+- (void)setDynamicColor:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (void)setMessageType:;
+- (long long)messageType;
+- (id)viewBackgroundColor;
+@end

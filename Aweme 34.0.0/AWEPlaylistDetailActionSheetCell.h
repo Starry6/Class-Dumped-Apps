@@ -1,0 +1,32 @@
+@interface AWEPlaylistDetailActionSheetCell : UITableViewCell
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString content;
+@property (nonatomic) BOOL enable;
+- (BOOL)enable;
+- (id)iconImage;
+- (id)content;
+- (unsigned long long)type;
+- (id)titleText;
+- (void)setContent:;
+- (void)setType:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setEnable:;
+- (id)lineView;
+- (void)setIconImageView:;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (double)heightWithCellType:;
+@end

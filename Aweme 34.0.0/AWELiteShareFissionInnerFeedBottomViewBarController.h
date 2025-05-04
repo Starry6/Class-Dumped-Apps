@@ -1,0 +1,35 @@
+@interface AWELiteShareFissionInnerFeedBottomViewBarController : NSObject
+@property (nonatomic) UIView bottomBarView;
+@property (nonatomic) NSObject<AWEAwemeDetailBottomBarCommonContextProtocol> context;
+@property (nonatomic) UIImageView shareButtonView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) DUXBaseLabel shareTipsLabel;
+@property (nonatomic) UIView shareContentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateBottomBarWithAweme:updateTiming:;
+- (BOOL)canShowBottomBarForAweme:;
+- (void)cellWillDisplay:forRowAtIndexPath:tableView:;
+- (id)aAWELiteShareFissionInnerFeedDOUYINLiteAdapter;
+- (void)updateShareElementRewardInfo:shareAmount:taskStatus:statusCode:rewardText:;
+- (void)setBottomBarView:;
+- (id)shareButtonView;
+- (id)shareContentView;
+- (id)shareTipsLabel;
+- (void)setShareButtonView:;
+- (void)setShareTipsLabel:;
+- (void)setShareContentView:;
+- (id)init;
+- (void)dealloc;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (Class)contextClass;
+- (id)bottomBarView;
+- (void)shareButtonTapped;
++ (Class)aAWELiteShareFissionInnerFeedDOUYINLiteAdapterClass;
+@end

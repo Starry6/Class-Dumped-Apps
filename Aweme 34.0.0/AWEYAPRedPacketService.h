@@ -1,0 +1,38 @@
+@interface AWEYAPRedPacketService : HTSService
+@property (nonatomic) BDXBridgeEventSubscriber subscriber;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) double routerInvokeTimeStamp;
+@property (nonatomic) NSString teaSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)teaSource;
+- (void)getCoverInfoWithCoverID:fromCache:completion:;
+- (void)getCoverImage:imageType:completion:;
+- (void)getCoverImage:imageType:size:completion:;
+- (void)openSendRedPacketWithModel:;
+- (id)getTransferManager;
+- (id)getVideoManager;
+- (BOOL)isRedPacketEndWithMessage:;
+- (void)p_subscribeEvent;
+- (void)setTeaSource:;
+- (id)getRedpacketSettingsAction:;
+- (void)p_unsubscribeEvent;
+- (BOOL)p_couldOpenSendRedPacketWithModel:;
+- (void)setRouterInvokeTimeStamp:;
+- (void)p_processSendEventWithParam:;
+- (void)p_processSendLoadedEvent;
+- (double)routerInvokeTimeStamp;
+- (BOOL)p_enableIMRPNewSendPageWithModel:;
+- (id)init;
+- (void)dealloc;
+- (id)completion;
+- (id)subscriber;
+- (void)setSubscriber:;
+- (void)setCompletion:;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (void)setConversationID:;
+@end

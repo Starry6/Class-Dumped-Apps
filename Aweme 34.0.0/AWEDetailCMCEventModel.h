@@ -1,0 +1,33 @@
+@interface AWEDetailCMCEventModel : AWEDetailCommonDiffableModel
+@property (nonatomic) NSString webTitle;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString CMCEventName;
+@property (nonatomic) NSDictionary CMCEventInfo;
+@property (nonatomic) double topInset;
+@property (nonatomic) double bottomInset;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setWebTitle:;
+- (void)setOpenURL:;
+- (id)webTitle;
+- (id)CMCEventName;
+- (void)setCMCEventName:;
+- (id)CMCEventInfo;
+- (void)setCMCEventInfo:;
+- (double)topInset;
+- (id)iconImage;
+- (id)displayText;
+- (void)setTopInset:;
+- (double)bottomInset;
+- (void)setWebURL:;
+- (void)setDisplayText:;
+- (void).cxx_destruct;
+- (void)setBottomInset:;
+- (id)webURL;
+- (id)openURL;
+@end

@@ -1,0 +1,37 @@
+@interface AWEAwemeDetailPlayletController : AWEAwemeNewDetailBaseController
+@property (nonatomic) BOOL currentCellHasRecord;
+@property (nonatomic) AWEFeedPreloadManager playletPreloadManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellViewControllerDidRenderFirstFrame:;
+- (void)playerWillStartNextLoop:;
+- (void)onScrollDidEndWithIndexPath:;
+- (id)awemeModelWithIndexPath:;
+- (void)configCell:atIndexPath:tableView:;
+- (void)detailCellViewController:awemeModel:playerPlayTime:canPlayTime:totalTime:;
+- (void)onChangePlayVideoNotification:;
+- (void)configurePlayletPreloadManager;
+- (id)playletPreloadManager;
+- (void)setPlayletPreloadManager:;
+- (void)preloadVideoWithIndex:;
+- (void)updatePlayletModelWithNoti:;
+- (id)currentWatermarkView;
+- (void)savePlayletPlayDuration:duration:;
+- (void)showPlayletWatermarkWithNeedRelayout:;
+- (void)showAdInsetTrack;
+- (void)willDisplayMonetizeTraceReportWithModel:;
+- (id)dictionaryForADTrackerParamsWithModel:;
+- (void)setCurrentCellHasRecord:;
+- (BOOL)canSavePlayletHistory;
+- (void)showWaterViewWithCell:;
+- (BOOL)currentCellHasRecord;
+- (void)viewWillDisappear:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (void)orientationChanged;
+@end

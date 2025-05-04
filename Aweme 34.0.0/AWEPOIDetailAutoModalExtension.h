@@ -1,0 +1,36 @@
+@interface AWEPOIDetailAutoModalExtension : NSObject
+@property (nonatomic) BOOL showAutoOpenService;
+@property (nonatomic) BOOL showIronManModalView;
+@property (nonatomic) double ironManModalViewStartTime;
+@property (nonatomic) BOOL shouldTrackIronManModalViewStayTime;
+@property (nonatomic) DitoPageContext context;
+@property (nonatomic) <DitoExtensionContainerProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithRouterParamDict:;
+- (id)poiDetail;
+- (void)didLoadPageModel:;
+- (void)initializeExtension;
+- (id)constData;
+- (id)generalContext;
+- (void)handleIronManExitNotification;
+- (void)setShowIronManModalView:;
+- (BOOL)showIronManModalView;
+- (void)setShowAutoOpenService:;
+- (void)setIronManModalViewStartTime:;
+- (void)setShouldTrackIronManModalViewStayTime:;
+- (BOOL)showAutoOpenService;
+- (void)p_showIronManModalViewWithUrl:;
+- (void)p_showAutoOpenServiceModalView;
+- (BOOL)shouldTrackIronManModalViewStayTime;
+- (double)ironManModalViewStartTime;
+- (void)p_mergePublishParams:toDict:;
+- (void)setContainer:;
+- (id)container;
+- (void)dealloc;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

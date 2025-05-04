@@ -1,0 +1,36 @@
+@interface AWEVideoRelatedDislikeManager : NSObject
+@property (nonatomic) BOOL disableToast;
+@property (nonatomic) DUXBottomNotification bottomNotification;
+@property (nonatomic) DUXBasicSheet sheet;
+@property (nonatomic) @? dislikeV2MultipleSelectionBlock;
+@property (nonatomic) @? dislikePanelCancelBlock;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickMaskArea:;
+- (void)sheetDidClickCloseButton:;
+- (void)sheetDidDismiss:;
+- (void)sheetDidDragToDismiss:;
+- (id)bottomNotification;
+- (void)setBottomNotification:;
+- (void)dislikeV2PanelOnVC:awemeModel:trackExtra:multipleSelectionBlock:cancelBlock:;
+- (BOOL)disableToast;
+- (void)setDisableToast:;
+- (void)submitWithInfos:awemeModel:logExtra:;
+- (void)didClickCancel:logExtra:;
+- (void)didClickClose:logExtra:;
+- (id)createBottomNotification:dismiss:;
+- (void)setDislikePanelCancelBlock:;
+- (void)setDislikeV2MultipleSelectionBlock:;
+- (id)dislikePanelCancelBlock;
+- (id)dislikeV2MultipleSelectionBlock;
+- (void)showBubbleWithToast:awemeModel:onVC:buttonText:bottomOffset:clicked:dismiss:;
+- (BOOL)isShowing;
+- (void).cxx_destruct;
+- (id)sheet;
+- (void)setIsShowing:;
+- (void)setSheet:;
++ (id)sharedInstance;
+@end

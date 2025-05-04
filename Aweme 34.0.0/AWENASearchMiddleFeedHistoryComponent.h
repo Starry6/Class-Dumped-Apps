@@ -1,0 +1,36 @@
+@interface AWENASearchMiddleFeedHistoryComponent : UIView
+@property (nonatomic) UICollectionView wordsCollectionView;
+@property (nonatomic) UICollectionViewFlowLayout layout;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> bindingViewModel;
+@property (nonatomic) <AWESearchMiddleProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentPrepareForReuse;
+- (void)handleMessage:callback:;
+- (id)wordsCollectionView;
+- (void)setWordsCollectionView:;
+- (id)p_getCurrentModel;
+- (void)setBindingViewModel:;
+- (id)bindingViewModel;
+- (void)p_deleteHistoryWithContent:;
+- (void)p_handleHistoryClick:;
+- (void)p_reloadHistorys;
+- (void)p_fetchUpdatedHistory:;
+- (void)p_insertHistoryAtTop:;
+- (id)init;
+- (id)delegate;
+- (void)setLayout:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)layout;
+- (long long)numberOfSectionsInCollectionView:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDelegate:;
+- (id)componentView;
+- (void)updateWithViewModel:;
++ (id)sizeWithViewModel:width:;
++ (double)p_heightWithWords:;
+@end

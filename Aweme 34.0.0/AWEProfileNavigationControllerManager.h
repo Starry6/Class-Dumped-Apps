@@ -1,0 +1,31 @@
+@interface AWEProfileNavigationControllerManager : NSObject
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) NSDictionary itemControllerDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onReloadUI:isCache:;
+- (void)onWillRefreshWithUser:;
+- (void)onDidRequestUser:error:;
+- (void)onThemeChange:;
+- (id)leftNavigationDataSource;
+- (id)rightNavigationDataSource;
+- (void)lifeCycleDistributeWithSelector:;
+- (void)createItemControllers;
+- (id)dataSourceWithFixArray:dynamicArray:dynamicMaxCount:;
+- (id)allItemControllers;
+- (void)setItemControllerDic:;
+- (id)itemControllerDic;
+- (id)init;
+- (id)delegate;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

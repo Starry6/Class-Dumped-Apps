@@ -1,0 +1,31 @@
+@interface AWEIMGroupSPActionBarSettings : NSObject
+@property (nonatomic) BOOL filterAwardTask;
+@property (nonatomic) NSString titleColor;
+@property (nonatomic) NSString titleColorDark;
+@property (nonatomic) NSString titleColorWithBackgroundImage;
+@property (nonatomic) NSString titleColorDarkWithBackgroundImage;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString backgroundColorDark;
+@property (nonatomic) NSString backgroundColorWithBackgroundImage;
+@property (nonatomic) NSString backgroundColorDarkWithBackgroundImage;
+- (BOOL)filterAwardTask;
+- (void)setFilterAwardTask:;
+- (id)titleColorDark;
+- (void)setTitleColorDark:;
+- (id)titleColorWithBackgroundImage;
+- (void)setTitleColorWithBackgroundImage:;
+- (id)titleColorDarkWithBackgroundImage;
+- (void)setTitleColorDarkWithBackgroundImage:;
+- (id)backgroundColorWithBackgroundImage;
+- (void)setBackgroundColorWithBackgroundImage:;
+- (id)backgroundColorDarkWithBackgroundImage;
+- (void)setBackgroundColorDarkWithBackgroundImage:;
+- (id)titleColor;
+- (id)backgroundColorDark;
+- (void)setBackgroundColorDark:;
+- (void)setTitleColor:;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)initWithDictionary:;
+@end

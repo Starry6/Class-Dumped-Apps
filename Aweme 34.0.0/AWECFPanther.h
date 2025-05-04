@@ -1,0 +1,38 @@
+@interface AWECFPanther : NSObject
+@property (nonatomic) Q stringEncoding;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSString boundary;
+@property (nonatomic) @ body;
+@property (nonatomic) Q bodyContentLength;
+@property (nonatomic) NSInputStream inputStream;
+@property (nonatomic) BOOL hasInitialBoundary;
+@property (nonatomic) BOOL hasFinalBoundary;
+@property (nonatomic) BOOL bytesAvailable;
+@property (nonatomic) Q contentLength;
+- (void)setBodyContentLength:;
+- (void)setHasInitialBoundary:;
+- (void)setHasFinalBoundary:;
+- (BOOL)transitionToNextPhase;
+- (BOOL)hasInitialBoundary;
+- (id)stringForHeaders;
+- (BOOL)hasFinalBoundary;
+- (long long)readData:intoBuffer:maxLength:;
+- (unsigned long long)bodyContentLength;
+- (unsigned long long)contentLength;
+- (id)init;
+- (long long)read:maxLength:;
+- (void)dealloc;
+- (id)body;
+- (void)setInputStream:;
+- (BOOL)hasBytesAvailable;
+- (id)inputStream;
+- (void).cxx_destruct;
+- (void)setHeaders:;
+- (id)headers;
+- (void)setBody:;
+- (id)copyWithZone:;
+- (void)setStringEncoding:;
+- (unsigned long long)stringEncoding;
+- (id)boundary;
+- (void)setBoundary:;
+@end

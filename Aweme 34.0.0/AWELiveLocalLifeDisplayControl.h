@@ -1,0 +1,36 @@
+@interface AWELiveLocalLifeDisplayControl : MTLModel
+@property (nonatomic) NSString payPrice;
+@property (nonatomic) NSString prePriceText;
+@property (nonatomic) NSNumber isCouponProduct;
+@property (nonatomic) NSString mantleText;
+@property (nonatomic) BOOL isSupportBuy;
+@property (nonatomic) NSString clickBuyTips;
+@property (nonatomic) NSString buttonJumpUrl;
+@property (nonatomic) Q buttonJumpUrlType;
+@property (nonatomic) NSNumber isButtonGrayed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)buttonJumpUrlType;
+- (id)buttonJumpUrl;
+- (id)isCouponProduct;
+- (id)getTrackProductStockType;
+- (id)payPrice;
+- (void)setPayPrice:;
+- (id)prePriceText;
+- (void)setPrePriceText:;
+- (void)setIsCouponProduct:;
+- (id)mantleText;
+- (void)setMantleText:;
+- (BOOL)isSupportBuy;
+- (void)setIsSupportBuy:;
+- (id)clickBuyTips;
+- (void)setClickBuyTips:;
+- (void)setButtonJumpUrl:;
+- (void)setButtonJumpUrlType:;
+- (id)isButtonGrayed;
+- (void)setIsButtonGrayed:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

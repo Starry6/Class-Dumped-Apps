@@ -1,0 +1,35 @@
+@interface AWEIronManLandingPageRecentSectionCell : UITableViewCell
+@property (nonatomic) UITableView listTableView;
+@property (nonatomic) AWEIronManLandingPageDataEmptyView emptyView;
+@property (nonatomic) AWEIronManLandingPageRecentListHeaderView headerView;
+@property (nonatomic) <AWEIronManLandingPageRecentSectionCellDelegate> delegate;
+@property (nonatomic) AWEIronManLandingPageRecentlyUsedViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackModuleShow;
+- (void)trackItemShowWithItemModel:event:extra:;
+- (void)didSelectRowAtIndex:;
+- (void)showPopoverMenuWithIndex:;
+- (void)trackModuleClick:index:;
+- (void)trackUserClickDeleteEventWithItemModel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)addObserver;
+- (id)viewModel;
+- (id)headerView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+- (id)emptyView;
+- (void)setEmptyView:;
+- (void)setUpUI;
+- (id)listTableView;
+- (void)setListTableView:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMFastReplyEditItemCell : UICollectionViewCell
+@property (nonatomic) AWEIMFastReplyEditItemModel model;
+@property (nonatomic) AWEIMFastReplyEditItemView editItemView;
+@property (nonatomic) AWEIMFastReplyEditAddView addView;
+@property (nonatomic) @? removeActionBlock;
+@property (nonatomic) @? addActionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addView;
+- (void)configCellWithModel:;
+- (void)setAddView:;
+- (id)removeActionBlock;
+- (void)setRemoveActionBlock:;
+- (id)addActionBlock;
+- (void)setAddActionBlock:;
+- (id)editItemView;
+- (void)setEditItemView:;
+- (BOOL)isActivedTextField;
+- (void)setModel:;
+- (void)textFieldDidEndEditing:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)model;
+- (BOOL)textFieldShouldReturn:;
+- (void).cxx_destruct;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (void)setupSubviews;
+@end

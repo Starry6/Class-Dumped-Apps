@@ -1,0 +1,36 @@
+@interface AWEIMMessageNotice_Tracker_Plugin : AWEIMFlexComponent
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)linkTextBehaviorOccursWith:message:;
+- (void)trackAppealNotice;
+- (void)p_trackNoticeMessageShow:withDisplayOption:;
+- (void)p_trackGroupNoticeMessageShow:withDisplayOption:;
+- (void)p_trackCommonNoticeMessageShow:;
+- (void)p_messageNoticeCommonTrackWithTemplateModels:actionType:;
+- (void)p_trackAchieveMateNotice:option:type:;
+- (void)p_trackNotice:option:;
+- (void)p_trackChangeChatBackgroundNotice:option:;
+- (void)p_trackLikeExchangeAnswerNotice:option:;
+- (void)p_trackConsecutiveAndFlamePetNotice:option:;
+- (void)p_trackShareDiggNotice:option:;
+- (void)p_trackRTVNotice:option:;
+- (void)p_trackStopAutoSyncingLiveAndWorkNotice:option:;
+- (void)p_trackRemindFriendOpenPushNotice:option:;
+- (void)p_trackEmployeeNotice:option:;
+- (void)p_trackSendMessageUpperLimitNotice:option:;
+- (void)p_trackSchoolSessionEmojiNotice:option:;
+- (void)p_trackVirtualAccountNotice:option:;
+- (void)p_trackChangeBackgroundResponseNotice:option:;
+- (void)p_trackCollectCardGroupNotice:option:;
+- (void)p_trackGroupSPNotice:option:;
+- (void)p_trackChangeGroupNameNotice:option:;
+- (void)p_trackRemarkNameNotice:option:;
+- (void)p_trackCreateGroupAfterCoSee;
+- (void)p_trackMateUnlockTopic:;
+- (void)p_groupNoticeCommonTrackWithTemplateModels:actionType:;
+- (void)dealloc;
+@end

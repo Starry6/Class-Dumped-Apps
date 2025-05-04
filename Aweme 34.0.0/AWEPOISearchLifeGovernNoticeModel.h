@@ -1,0 +1,30 @@
+@interface AWEPOISearchLifeGovernNoticeModel : MTLModel
+@property (nonatomic) NSString violationTimeUtc;
+@property (nonatomic) NSString violationReason;
+@property (nonatomic) NSString punishStartTimeUtc;
+@property (nonatomic) NSString punishEndTimeUtc;
+@property (nonatomic) NSString punishmentId;
+@property (nonatomic) q source;
+@property (nonatomic) NSString violationDetailSchema;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)violationTimeUtc;
+- (void)setViolationTimeUtc:;
+- (id)violationReason;
+- (void)setViolationReason:;
+- (id)punishStartTimeUtc;
+- (void)setPunishStartTimeUtc:;
+- (id)punishEndTimeUtc;
+- (void)setPunishEndTimeUtc:;
+- (id)punishmentId;
+- (void)setPunishmentId:;
+- (id)violationDetailSchema;
+- (void)setViolationDetailSchema:;
+- (void).cxx_destruct;
+- (long long)source;
+- (void)setSource:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

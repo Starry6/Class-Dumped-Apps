@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.EvaluationInputViewConfiguration : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,33 @@
+@interface AWENaviPublishRouterConfig : NSObject
+@property (nonatomic) NSString publishTitle;
+@property (nonatomic) NSString publishDailyHint;
+@property (nonatomic) NSString previewVideoHint;
+@property (nonatomic) AWENaviTraceNode trace;
+@property (nonatomic) AWENaviAnchorNode anchor;
+@property (nonatomic) AWENaviActivityNode activity;
+@property (nonatomic) BOOL checkDaily;
+@property (nonatomic) BOOL autoSave;
+@property (nonatomic) BOOL enableDaily;
+@property (nonatomic) BOOL isLandingWithLokiItems;
+@property (nonatomic) NSString guideCheckPublishToast;
+@property (nonatomic) BOOL ignoreHiddens;
+- (id)publishTitle;
+- (BOOL)enableDaily;
+- (BOOL)isLandingWithLokiItems;
+- (id)publishDailyHint;
+- (id)previewVideoHint;
+- (id)guideCheckPublishToast;
+- (BOOL)autoSave;
+- (void)setIsLandingWithLokiItems:;
+- (void)setAutoSave:;
+- (BOOL)ignoreHiddens;
+- (void)setIgnoreHiddens:;
+- (BOOL)checkDaily;
+- (void)setGuideCheckPublishToast:;
+- (id)trace;
+- (id)anchor;
+- (id)initWithParams:;
+- (id)init;
+- (id)activity;
+- (void).cxx_destruct;
+@end

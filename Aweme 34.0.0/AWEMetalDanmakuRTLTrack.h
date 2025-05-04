@@ -1,0 +1,35 @@
+@interface AWEMetalDanmakuRTLTrack : XIGDanmakuBaseTrack
+@property (nonatomic) <AWEDanmakuMetalRenderReusePool> resumePool;
+@property (nonatomic) double danmakuHorizontalMargin;
+@property (nonatomic) double danmakuLifeTime;
+- (void)unloadDanmaku:;
+- (void)addDanmaku:;
+- (void)updateWithPassingTime:;
+- (double)calculateLifeTimeForDanmakuDescriptor:;
+- (void)layoutDidChanged;
+- (void)updateDanmakuDescritor:;
+- (double)danmakuLifeTime;
+- (void)setDanmakuLifeTime:;
+- (BOOL)canAddDanmaku:;
+- (void)applyNewLifeTimeWithFactor:;
+- (void)danmakuContentSizeDidChanged:;
+- (void)relayoutDisplayingDanmakus;
+- (void)adjustDanmakuLifeTimeToFitNewFrame:;
+- (BOOL)is:canOverTake:;
+- (void)adjustDanmakuPositionIfNeededBetweenPrevious:current:;
+- (double)minimumSpacingFor:chasingDanmaku:;
+- (double)spacingBetweenPreviousDanmaku:chasingDanmaku:;
+- (BOOL)canDanmakuShowOnlocalPublishVirtual:;
+- (BOOL)canBookDanmaku:;
+- (id)findLastRunningDanmaku;
+- (double)calculateSpeedForDanmaku:;
+- (double)danmakuHorizontalMargin;
+- (void)setDanmakuHorizontalMargin:;
+- (void)setResumePool:;
+- (id)resumePool;
+- (id)init;
+- (double)length;
+- (void).cxx_destruct;
+- (double)right;
+- (id)trackType;
+@end

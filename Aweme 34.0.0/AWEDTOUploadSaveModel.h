@@ -1,0 +1,32 @@
+@interface AWEDTOUploadSaveModel : MTLModel
+@property (nonatomic) BOOL isWaterMark;
+@property (nonatomic) BOOL isSaveLocal;
+@property (nonatomic) NSString localTempPath;
+@property (nonatomic) NSString localFinalPath;
+@property (nonatomic) q saveType;
+@property (nonatomic) BOOL saveToAlbum;
+@property (nonatomic) BOOL savePrivatePath;
+@property (nonatomic) BOOL enableSilentEnhancement;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isWaterMark;
+- (void)setIsWaterMark:;
+- (BOOL)isSaveLocal;
+- (void)setIsSaveLocal:;
+- (id)localTempPath;
+- (void)setLocalTempPath:;
+- (id)localFinalPath;
+- (void)setLocalFinalPath:;
+- (long long)saveType;
+- (void)setSaveType:;
+- (BOOL)saveToAlbum;
+- (void)setSaveToAlbum:;
+- (BOOL)savePrivatePath;
+- (void)setSavePrivatePath:;
+- (BOOL)enableSilentEnhancement;
+- (void)setEnableSilentEnhancement:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

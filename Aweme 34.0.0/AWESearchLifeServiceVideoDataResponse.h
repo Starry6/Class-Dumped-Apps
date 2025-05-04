@@ -1,0 +1,2 @@
+@interface AWESearchLifeServiceVideoDataResponse : AWESearchResultLifeServiceBaseDataResponse
+@end

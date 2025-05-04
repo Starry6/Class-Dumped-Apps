@@ -1,0 +1,30 @@
+@interface AWESearchHotSpotRelatedInfoModel : AWEBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray userList;
+@property (nonatomic) NSArray backgroundList;
+@property (nonatomic) AWESearchHotSpotRelatedVSProgramVideoModel vsVideoModel;
+@property (nonatomic) AWESearchHotSpotRelatedVSProgramLiveModel vsLiveModel;
+@property (nonatomic) AWESearchHotSpotRelatedVSProgramUserModel vsUserModel;
+- (id)userList;
+- (void)setUserList:;
+- (id)backgroundList;
+- (void)setBackgroundList:;
+- (id)vsVideoModel;
+- (void)setVsVideoModel:;
+- (id)vsLiveModel;
+- (void)setVsLiveModel:;
+- (id)vsUserModel;
+- (void)setVsUserModel:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)userListJSONTransformer;
++ (id)backgroundListJSONTransformer;
++ (id)vsVideoModelJSONTransformer;
++ (id)vsLiveModelJSONTransformer;
++ (id)vsUserModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

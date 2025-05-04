@@ -1,0 +1,36 @@
+@interface AWEFeedFilterFromHotManager : NSObject
+@property (nonatomic) NSMutableSet itemExistSet;
+@property (nonatomic) NSMutableDictionary itemIncrementMap;
+@property (nonatomic) BOOL needReloadItemIncrementMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (BOOL)isExistNeedDetect;
+- (void)trackForDuplicateWithPage:comeFrom:duplicateID:awemeType:;
+- (void)clearExistSet;
+- (id)duplicateModelWithAwemeID:;
+- (id)itemExistSet;
+- (id)itemIncrementMap;
+- (void)setIncrementToDiskWithModel:;
+- (BOOL)needReloadItemIncrementMap;
+- (void)setNeedReloadItemIncrementMap:;
+- (void)updateIncrementIfNeeded;
+- (void)clearIncrementSet;
+- (BOOL)isIncrementNeedDetect;
+- (void)recordHotPlayedItem:;
+- (void)debug_removeItemRecord:;
+- (void)debug_removeAllItemRecord;
+- (void)setItemExistSet:;
+- (void)setItemIncrementMap:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)isDuplicate:;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

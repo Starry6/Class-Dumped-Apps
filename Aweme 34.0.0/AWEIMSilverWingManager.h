@@ -1,0 +1,38 @@
+@interface AWEIMSilverWingManager : NSObject
+@property (nonatomic) q agreeStatus;
+@property (nonatomic) q emotionBotAgreeStatus;
+@property (nonatomic) NSString feedbackContent;
+@property (nonatomic) NSString feedbackSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (BOOL)canShowMessage:;
+- (id)addAI:metionNameWithTagIfNeeded:attributes:colorName:;
+- (id)attachmentAttributedStringWithKernSize:color:;
+- (void)storeAgreementStatus:;
+- (void)storeEmotionBotAgreementStatus:;
+- (BOOL)emotionBotAgreementStatus;
+- (void)invokeSilverWingInfoPanelWithWithBot:conversationID:enterSource:trackerParams:;
+- (void)showGroupManageAICloneViewControllerWithAIClone:con:didRemoveAICloneBlock:trackParams:completion:;
+- (void)showGroupAddAICloneViewControllerWithUserID:con:didAddBlock:trackParams:completion:;
+- (id)feedbackContent;
+- (void)setFeedbackContent:;
+- (id)feedbackSchema;
+- (void)setFeedbackSchema:;
+- (void)setAgreeStatus:;
+- (long long)agreeStatus;
+- (long long)emotionBotAgreeStatus;
+- (void)setEmotionBotAgreeStatus:;
+- (id)attachmentWithsize:color:;
+- (unsigned long long)profileEnterSourceWithSource:;
+- (void)p_showAIPanelWithBotID:con:trackParams:;
+- (void)invokeSilverWingInfoPanelWithWithBot:conversationID:trackerParams:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)agreementStatus;
++ (BOOL)isSilverWingChatBotWithConversation:;
++ (BOOL)isSupportSendWithMessageType:;
++ (id)shareInstance;
+@end

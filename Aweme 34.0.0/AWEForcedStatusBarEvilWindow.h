@@ -1,0 +1,2 @@
+@interface AWEForcedStatusBarEvilWindow : UIWindow
+@end

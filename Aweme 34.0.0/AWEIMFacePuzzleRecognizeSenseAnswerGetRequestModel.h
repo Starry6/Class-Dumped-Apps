@@ -1,0 +1,34 @@
+@interface AWEIMFacePuzzleRecognizeSenseAnswerGetRequestModel : AWEBaseApiModel
+@property (nonatomic) NSString secExerciseUserId;
+@property (nonatomic) NSString secExerciseId;
+@property (nonatomic) NSString secAnswerUserId;
+@property (nonatomic) q conversationShortId;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) q conversationType;
+@property (nonatomic) q serverMsgId;
+@property (nonatomic) BOOL needUserInfo;
+@property (nonatomic) q answerGetSourceType;
+@property (nonatomic) NSString secExerciseAnswerId;
+- (long long)conversationType;
+- (void)setConversationType:;
+- (long long)conversationShortId;
+- (void)setConversationShortId:;
+- (long long)serverMsgId;
+- (void)setServerMsgId:;
+- (void)setSecExerciseUserId:;
+- (void)setSecExerciseId:;
+- (void)setSecAnswerUserId:;
+- (void)setAnswerGetSourceType:;
+- (void)setSecExerciseAnswerId:;
+- (void)setNeedUserInfo:;
+- (id)secExerciseId;
+- (id)secExerciseUserId;
+- (id)secAnswerUserId;
+- (id)secExerciseAnswerId;
+- (BOOL)needUserInfo;
+- (long long)answerGetSourceType;
+- (void).cxx_destruct;
+- (id)conversationId;
+- (void)setConversationId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

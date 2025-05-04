@@ -1,0 +1,38 @@
+@interface AWERangeSlider : AWESlider
+@property (nonatomic) UIView defaultIndicator;
+@property (nonatomic) UIView bgMaskView;
+@property (nonatomic) UIView backgroundTrackView;
+@property (nonatomic) BOOL showDefaultIndicator;
+@property (nonatomic) BOOL enableSliderAdsorbToDefault;
+@property (nonatomic) double defaultIndicatorPosition;
+@property (nonatomic) double minimumAdsorptionDistance;
+@property (nonatomic) double originPosition;
+@property (nonatomic) UIColor rangeMinimumTrackColor;
+@property (nonatomic) UIColor rangeMaximumTrackColor;
+- (id)bgMaskView;
+- (void)setBgMaskView:;
+- (double)originPosition;
+- (void)setOriginPosition:;
+- (void)setRangeMinimumTrackColor:;
+- (void)setRangeMaximumTrackColor:;
+- (void)setEnableSliderAdsorbToDefault:;
+- (void)updateRange;
+- (void)rangeSliderValueChange:forEvent:;
+- (void)setDefaultIndicatorPosition:;
+- (void)setShowDefaultIndicator:;
+- (BOOL)enableSliderAdsorbToDefault;
+- (id)rangeMinimumTrackColor;
+- (id)rangeMaximumTrackColor;
+- (id)defaultIndicator;
+- (double)defaultIndicatorPosition;
+- (double)minimumAdsorptionDistance;
+- (void)setDefaultIndicator:;
+- (id)backgroundTrackView;
+- (void)setBackgroundTrackView:;
+- (BOOL)showDefaultIndicator;
+- (void)setMinimumAdsorptionDistance:;
+- (id)initWithFrame:;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (void)handleValueChanged;
+@end

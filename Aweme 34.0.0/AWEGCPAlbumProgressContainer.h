@@ -1,0 +1,36 @@
+@interface AWEGCPAlbumProgressContainer : UIView
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView progressContainer;
+@property (nonatomic) NSMutableArray progressArr;
+@property (nonatomic) q progressTotalCount;
+@property (nonatomic) AWEGCPAlbumProgressView currentProgress;
+@property (nonatomic) Q currentProgressIndex;
+@property (nonatomic) IESGCPAlbumProgressConfig config;
+@property (nonatomic) double lastWidth;
+- (void)updateProgressWithDuration:totalCount:currentIndex:currentProcess:needAnimation:;
+- (void)updateProgressWithDuration:currentIndex:currentProcess:needAnimation:;
+- (id)progressContainer;
+- (void)setProgressContainer:;
+- (void)setCurrentProgressIndex:;
+- (unsigned long long)currentProgressIndex;
+- (void)setProgressTotalCount:;
+- (long long)progressTotalCount;
+- (id)progressArr;
+- (void)setProgressArr:;
+- (void)setProgressUIWithTotalCount:;
+- (void)setProgressUIWithConfig:totalCount:;
+- (void)resetProgressUIWithConfig:totalCount:;
+- (void)setProgressUI;
+- (void)setProgressUIWithConfig:;
+- (void)setConfig:;
+- (id)init;
+- (long long)totalCount;
+- (id)currentProgress;
+- (id)config;
+- (void)setBackgroundView:;
+- (id)backgroundView;
+- (void)setCurrentProgress:;
+- (void).cxx_destruct;
+- (double)lastWidth;
+- (void)setLastWidth:;
+@end

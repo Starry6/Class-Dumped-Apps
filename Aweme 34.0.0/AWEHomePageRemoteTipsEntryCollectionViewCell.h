@@ -1,0 +1,33 @@
+@interface AWEHomePageRemoteTipsEntryCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIView shadowView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) q themeType;
+@property (nonatomic) AWEHomePageRemoteCommonButtonDataModel model;
+@property (nonatomic) UIVisualEffectView blurView;
+- (void)configWithModel:;
+- (void)updatePanelThemeStyle:;
+- (void)updateImageAndColor;
+- (id)iconImageUrlArray;
+- (id)iconPlaceholderImage;
+- (void)setModel:;
+- (id)shadowView;
+- (id)blurView;
+- (void)setBlurView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (void)setShadowView:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (long long)themeType;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (void)setThemeType:;
+- (id)titleLabelTextColor;
+@end

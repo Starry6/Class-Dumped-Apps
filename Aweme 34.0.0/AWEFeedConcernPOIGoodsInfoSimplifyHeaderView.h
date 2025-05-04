@@ -1,0 +1,36 @@
+@interface AWEFeedConcernPOIGoodsInfoSimplifyHeaderView : UIView
+@property (nonatomic) UIView poiAvatarImageBackgroundView;
+@property (nonatomic) Q cardType;
+@property (nonatomic) @? tapMerchantHandle;
+@property (nonatomic) UIImageView poiAvatarImageView;
+@property (nonatomic) UILabel poiNameLabel;
+@property (nonatomic) UIView poiAvatarNameView;
+@property (nonatomic) UILabel themeLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (void)__setupUI;
+- (id)themeLabel;
+- (void)setThemeLabel:;
+- (void)__buildUI;
+- (void)setTapMerchantHandle:;
+- (void)__addAction;
+- (void)setPoiAvatarNameView:;
+- (id)poiAvatarNameView;
+- (void)setPoiAvatarImageView:;
+- (void)setPoiNameLabel:;
+- (id)poiAvatarImageView;
+- (id)poiNameLabel;
+- (id)tapMerchantHandle;
+- (void)setPoiAvatarImageBackgroundView:;
+- (id)poiAvatarImageBackgroundView;
+- (id)attributedTextWithString:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (unsigned long long)cardType;
+- (void)setCardType:;
++ (id)createInfoHeaderViewWithModel:;
+@end

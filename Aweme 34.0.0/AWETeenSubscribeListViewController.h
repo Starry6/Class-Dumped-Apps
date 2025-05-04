@@ -1,0 +1,38 @@
+@interface AWETeenSubscribeListViewController : UIViewController
+@property (nonatomic) AWETeenSubscribeListDataController dataController;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UIView backGroundView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (id)aweui_emptyPageEdgeInsets;
+- (void)setDataController:;
+- (void)loadMoreData;
+- (id)backGroundView;
+- (void)setBackGroundView:;
+- (void)didUpdateSubscribeStatus:secUserID:;
+- (void)didUpdateBlockStatus:secUserID:;
+- (void)updateLoadingStatus:;
+- (double)getLabelHeightWithFixedWidth:andFixedFont:andContent:;
+- (id)collectionView;
+- (id)init;
+- (void)dealloc;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setLoadingView:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setupUI;
+- (id)dataController;
+- (void)refreshData;
+- (void)back;
+@end

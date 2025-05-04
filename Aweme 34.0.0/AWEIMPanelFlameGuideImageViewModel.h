@@ -1,0 +1,30 @@
+@interface AWEIMPanelFlameGuideImageViewModel : AWEIMPanelViewModel
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSURL avatarUrl;
+@property (nonatomic) NSURL flameUrl;
+@property (nonatomic) UIImage flameImage;
+@property (nonatomic) NSString name;
+@property (nonatomic) q chatDaysCount;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) BOOL canShowPetElfIcon;
+- (void)setAvatarUrl:;
+- (id)avatarUrl;
+- (id)flameImage;
+- (void)setFlameImage:;
+- (BOOL)canShowPetElfIcon;
+- (id)flameUrl;
+- (id)getChatDaysString;
+- (long long)chatDaysCount;
+- (void)setFlameUrl:;
+- (void)setChatDaysCount:;
+- (void)setCanShowPetElfIcon:;
+- (id)init;
+- (id)image;
+- (void)setImage:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (void)setName:;
+- (id)name;
+- (id)getNameString;
+@end

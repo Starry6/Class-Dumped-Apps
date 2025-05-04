@@ -1,0 +1,34 @@
+@interface AWEVideoUploadSpeedModel : MTLModel
+@property (nonatomic) BOOL enableSpeed;
+@property (nonatomic) BOOL enableRoute;
+@property (nonatomic) q routeMode;
+@property (nonatomic) q routeWeight;
+@property (nonatomic) q speedThreshold;
+@property (nonatomic) q singleHostTotalTimeout;
+@property (nonatomic) q fileSize;
+@property (nonatomic) q retryCount;
+@property (nonatomic) q cacheExpired;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableRoute;
+- (void)setEnableRoute:;
+- (BOOL)enableSpeed;
+- (long long)cacheExpired;
+- (long long)routeWeight;
+- (void)setEnableSpeed:;
+- (void)setRouteWeight:;
+- (long long)singleHostTotalTimeout;
+- (void)setSingleHostTotalTimeout:;
+- (void)setCacheExpired:;
+- (void)setRetryCount:;
+- (void)setFileSize:;
+- (long long)retryCount;
+- (long long)fileSize;
+- (void)setSpeedThreshold:;
+- (long long)speedThreshold;
+- (long long)routeMode;
+- (void)setRouteMode:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

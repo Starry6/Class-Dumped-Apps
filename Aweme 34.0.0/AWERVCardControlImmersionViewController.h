@@ -1,0 +1,38 @@
+@interface AWERVCardControlImmersionViewController : UIViewController
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEFeedRVCardVideoControlContext context;
+@property (nonatomic) AWEFeedRelatedVideoCardControlViewController controlViewController;
+@property (nonatomic) NSArray elementContainers;
+@property (nonatomic) AWEElementContainer leftContainer;
+@property (nonatomic) AWEElementContainer rightContainer;
+@property (nonatomic) AWEElementContainer bottomContainer;
+@property (nonatomic) UIView gradientBackgroundView;
+@property (nonatomic) CAGradientLayer gradientLayer;
+- (void)setGradientBackgroundView:;
+- (id)leftContainer;
+- (id)rightContainer;
+- (void)setRightContainer:;
+- (void)setLeftContainer:;
+- (void)initContainer;
+- (void)registerBottomElement;
+- (id)initWithControlViewController:context:;
+- (id)controlViewController;
+- (void)setControlViewController:;
+- (id)elementContainers;
+- (void)setupGradientBackgroundView;
+- (void)registerLeftElement;
+- (void)registerRightElement;
+- (void)setElementContainers:;
+- (void)setModel:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (id)gradientBackgroundView;
+- (id)bottomContainer;
+- (void)setBottomContainer:;
+@end

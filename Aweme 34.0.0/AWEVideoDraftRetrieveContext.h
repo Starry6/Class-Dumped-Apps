@@ -1,0 +1,31 @@
+@interface AWEVideoDraftRetrieveContext : NSObject
+@property (nonatomic) BOOL isCancelled;
+@property (nonatomic) BOOL isEdit;
+@property (nonatomic) BOOL skipLoadVideo;
+@property (nonatomic) BOOL skipLoadResource;
+@property (nonatomic) BOOL isBackupProject;
+@property (nonatomic) AWEVideoDraftTracer tracer;
+@property (nonatomic) BOOL mergeDuringEdit;
+@property (nonatomic) NSString projectUUID;
+@property (nonatomic) ACCRepositoryWorkspace workspace;
+- (void)setIsEdit:;
+- (id)projectUUID;
+- (void)setSkipLoadResource:;
+- (void)setMergeDuringEdit:;
+- (void)setProjectUUID:;
+- (BOOL)skipLoadResource;
+- (void)setSkipLoadVideo:;
+- (BOOL)skipLoadVideo;
+- (BOOL)isBackupProject;
+- (BOOL)mergeDuringEdit;
+- (void)setIsBackupProject:;
+- (id)workspace;
+- (id)init;
+- (void)setIsCancelled:;
+- (BOOL)isCancelled;
+- (void)setWorkspace:;
+- (void).cxx_destruct;
+- (id)tracer;
+- (void)setTracer:;
+- (BOOL)isEdit;
+@end

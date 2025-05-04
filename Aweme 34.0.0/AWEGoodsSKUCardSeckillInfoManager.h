@@ -1,0 +1,34 @@
+@interface AWEGoodsSKUCardSeckillInfoManager : NSObject
+@property (nonatomic) NSArray goodsModels;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double timeGap;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) NSMutableDictionary states;
+@property (nonatomic) Q currentShowIndex;
+- (void)setCurrentShowIndex:;
+- (unsigned long long)currentShowIndex;
+- (void)setupDataWithModels:;
+- (void)updateCurrentTime:;
+- (id)goodsModels;
+- (long long)seckillStateForGoods:;
+- (id)timeTextForIndex:;
+- (id)timeTextForForGoods:;
+- (id)initWithGoods:;
+- (long long)seckillStateForIndex:;
+- (id)timeTextForCurrentShowIndex;
+- (BOOL)inActivityForGoods:;
+- (void)setGoodsModels:;
+- (void)setupTimer;
+- (void)setCurrentTime:;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (double)currentTime;
+- (void).cxx_destruct;
+- (id)states;
+- (void)setStates:;
+- (double)timeGap;
+- (void)setTimeGap:;
++ (long long)seckillStateForGoods:currentTime:;
++ (id)seckillPriceForGoods:;
+@end

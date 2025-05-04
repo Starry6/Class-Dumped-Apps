@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionAiTextPanelController : AWEPlayInteractionBaseController
+@property (nonatomic) AWEPlayAiToTextPanelManager aiToTextPanelManager;
+@property (nonatomic) BOOL aiTextPanelshowed;
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (BOOL)isPanelShowed;
+- (BOOL)shouldAITextEntranceInLongPressPanelWithModel:referString:;
+- (void)openAiToTextPanelWithTabType:defaultTab:;
+- (void)onFeedTabChangedNotification:;
+- (void)onTabBarChangedNotification:;
+- (BOOL)aiTextPanelshowed;
+- (id)aiToTextPanelManager;
+- (void)setAiTextPanelshowed:;
+- (void)setPureModeForAITextPanel:;
+- (void)showAITextPanelFromNotice:;
+- (void)showAiToTextPanel:;
+- (void)showAiToTextPanel:TabType:defaultTab:;
+- (void)setAiToTextPanelManager:;
+- (void)showAiToTextPanel:withExtraDict:;
+- (void)aiToTextPanelWillDismiss:;
+- (void)aiToTextPanelDidDismiss:;
+- (void)aiToTextPanel:didChangeFrame:withUserInteraction:;
+- (void)onXTabTabChangedNotification:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

@@ -1,0 +1,32 @@
+@interface AWEEcomSearchBannerModel : MTLModel
+@property (nonatomic) NSArray contentList;
+@property (nonatomic) NSDictionary imageList;
+@property (nonatomic) NSDictionary textList;
+@property (nonatomic) NSDictionary backgroundImage;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) double scanTime;
+@property (nonatomic) NSString direction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setImageList:;
+- (void)setTextList:;
+- (id)backgroundImage;
+- (void)setBackgroundImage:;
+- (id)direction;
+- (id)textList;
+- (id)backgroundColor;
+- (void)setDirection:;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)contentList;
+- (double)scanTime;
+- (void)setScanTime:;
+- (id)imageList;
+- (void)setContentList:;
++ (id)imageListJSONTransformer;
++ (id)contentListJSONTransformer;
++ (id)textListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

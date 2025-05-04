@@ -1,0 +1,30 @@
+@interface AWESearchGoodsRecommendPriceView : UIView
+@property (nonatomic) AWESearchMerchandiseProductRightStruct recommendPriceInfo;
+@property (nonatomic) UILabel firstTagLabel;
+@property (nonatomic) UILabel secondTagLabel;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView firstTagView;
+@property (nonatomic) UIView secondTagView;
+@property (nonatomic) BOOL needUnifiedUIConfig;
+- (id)firstTagLabel;
+- (id)secondTagLabel;
+- (void)setFirstTagLabel:;
+- (void)setSecondTagLabel:;
+- (BOOL)needUnifiedUIConfig;
+- (void)setNeedUnifiedUIConfig:;
+- (id)recommendPriceInfo;
+- (id)firstTagView;
+- (id)secondTagView;
+- (void)setRecommendPriceInfo:needUnifiedUIConfig:;
+- (void)setRecommendPriceInfo:;
+- (void)setFirstTagView:;
+- (void)setSecondTagView:;
+- (id)icon;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+@end

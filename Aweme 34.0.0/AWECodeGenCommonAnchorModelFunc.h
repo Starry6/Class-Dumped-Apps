@@ -1,0 +1,2 @@
+@interface AWECodeGenCommonAnchorModelFunc : NSObject
+@end

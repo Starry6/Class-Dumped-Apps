@@ -1,0 +1,35 @@
+@interface AWEUserListener : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLCMessageHandlerProtocol> messageHandler;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishFollowUser:status:error:;
+- (void)ieslc_messageHandler:didReceiveMsg:;
+- (void)teenModeDidChange:isLogout:;
+- (void)onAccountSessionExpired:;
+- (BOOL)isUserLogin;
+- (void)didReceiveThirdPartyTokenForUploadAtPlatform:authInfo:error:;
+- (void)synchronizeCookiesWithExtension;
+- (void)uploadTokenOnColdStartIfNeeded;
+- (void)didReceiveApiResponse:URL:;
+- (void)checkAntiAddictedAndShowAlertIfNeededWithLockHint:forbidToastHint:completion:;
+- (BOOL)showVideoUploadingAlertIfNeeded;
+- (void)showDigitalWellbeingLockViewIfNeededWithCompletion:;
+- (void)didXTTTokenChanged:;
+- (void)p_didReceiveApiResponse:URL:;
+- (BOOL)shouldLogoutWithErrorCode:;
+- (BOOL)isValidThirdInfo:error:;
+- (void)uploadTokenWithPlatformTokenInfoModel:;
+- (void)p_didFinishLogout;
+- (void)p_didFinishFollowUser:status:error:;
+- (BOOL)shouldUploadToken;
+- (void)p_uploadTokenOnColdStartIfNeeded;
+- (void)p_handleLostConnectionMessageWithMsg:;
+- (void)p_handleVerificationCodeLoginMessageWithMsg:;
+- (id)init;
+- (void)dealloc;
++ (id)sharedInstance;
+@end

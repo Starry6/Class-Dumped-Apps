@@ -1,0 +1,2 @@
+@interface AWECommentPanelHeaderSwiftImpl.CommentHeaderTemplateAnchorDefaultService : _TtCs12_SwiftObject
+@end

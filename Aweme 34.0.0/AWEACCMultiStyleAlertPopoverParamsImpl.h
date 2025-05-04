@@ -1,0 +1,31 @@
+@interface AWEACCMultiStyleAlertPopoverParamsImpl : AWEACCMultiStyleAlertTemplateParamsImpl
+@property (nonatomic) UIView sourceView;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} sourceRect;
+@property (nonatomic) Q arrowDirection;
+@property (nonatomic) double fixedContentWidth;
+@property (nonatomic) double fixedContentHeight;
+@property (nonatomic) double fixedOffsetY;
+@property (nonatomic) q alignmentMode;
+@property (nonatomic) BOOL reconfigBeforeShow;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)fixedContentWidth;
+- (double)fixedContentHeight;
+- (double)fixedOffsetY;
+- (void)setFixedContentWidth:;
+- (void)setFixedContentHeight:;
+- (void)setFixedOffsetY:;
+- (unsigned long long)arrowDirection;
+- (void)setSourceRect:;
+- (void)setSourceView:;
+- (id)sourceView;
+- (id)sourceRect;
+- (void).cxx_destruct;
+- (void)setArrowDirection:;
+- (long long)alignmentMode;
+- (void)setAlignmentMode:;
+- (id)createAction;
+@end

@@ -1,0 +1,30 @@
+@interface AWEGrouponLocationChangeTrackModel : NSObject
+@property (nonatomic) q result;
+@property (nonatomic) BOOL hasRequest;
+@property (nonatomic) BOOL requestResult;
+@property (nonatomic) NSString errorMsg;
+@property (nonatomic) q errorCode;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString nearbyLabelName;
+@property (nonatomic) NSString nearbyTabName;
+@property (nonatomic) q reqFrom;
+- (void)setErrorMsg:;
+- (id)errorMsg;
+- (void)setReqFrom:;
+- (long long)reqFrom;
+- (id)nearbyTabName;
+- (void)setNearbyTabName:;
+- (id)nearbyLabelName;
+- (void)setNearbyLabelName:;
+- (void)setResult:;
+- (void)setErrorCode:;
+- (BOOL)hasRequest;
+- (long long)errorCode;
+- (void).cxx_destruct;
+- (long long)result;
+- (id)cityCode;
+- (void)setCityCode:;
+- (void)setHasRequest:;
+- (BOOL)requestResult;
+- (void)setRequestResult:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEFriendsContactCardView : UIView
+@property (nonatomic) AWEFriendsShareCell weChatShareCell;
+@property (nonatomic) AWEFriendsShareCell QQShareCell;
+@property (nonatomic) UIView shareCells;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIView gradientView;
+@property (nonatomic) BOOL isConstColor;
+@property (nonatomic) UIView<AWEFriendsContactCommonViewProtocol> contactCommonView;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL needGradientLayer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (BOOL)needGradientLayer;
+- (void)setNeedGradientLayer:;
+- (id)enterFrom;
+- (void)setIsConstColor:;
+- (void)setShouldHideEntryButton:;
+- (id)weChatShareCell;
+- (id)QQShareCell;
+- (BOOL)isConstColor;
+- (id)contactCommonView;
+- (void)p_setupViewsWithTopPadding:shareCellsBottom:maxNumOfShareChannels:;
+- (id)shareCells;
+- (void)setContactCommonView:;
+- (id)initWithFrame:isConstColor:shareCellsBottom:maxNumOfShareChannels:;
+- (void)setWeChatShareCell:;
+- (void)setQQShareCell:;
+- (void)setShareCells:;
+- (id)gradientView;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+@end

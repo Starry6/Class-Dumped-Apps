@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionPadInviteWatchGuideController : AWEPlayInteractionNewBaseController
+@property (nonatomic) NSTimer playbackTimer;
+@property (nonatomic) BOOL inviteWatchTriggered;
+@property (nonatomic) double triggerVideoDuration;
+@property (nonatomic) double triggerStayTime;
+@property (nonatomic) double triggerStayRatio;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)setupEvent;
+- (id)awemeTypeWhiteList;
+- (void)padAdapter_triggerInviteWatchToolTip;
+- (void)setTriggerVideoDuration:;
+- (void)setTriggerStayTime:;
+- (void)setTriggerStayRatio:;
+- (id)referStringWhiteList;
+- (void)triggerInviteWatchGuide;
+- (double)triggerVideoDuration;
+- (double)triggerStayRatio;
+- (double)triggerStayTime;
+- (BOOL)inviteWatchTriggered;
+- (void)setInviteWatchTriggered:;
+- (void)startTimer;
+- (void)viewDidLoad;
+- (void)stopTimer;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)didEndDisplaying;
+- (id)playbackTimer;
+- (void)setPlaybackTimer:;
+- (id)shareButton;
+- (void)willDisplay;
++ (Class)aAWEPadModuleAdapterClass;
+@end

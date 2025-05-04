@@ -1,0 +1,37 @@
+@interface AWESocialPromotionPushModel : NSObject
+@property (nonatomic) NSNumber pushShowType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSURL imageUrl;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSNumber gid;
+@property (nonatomic) NSNumber rid;
+@property (nonatomic) NSString businessType;
+@property (nonatomic) NSNumber dismissTimeInterval;
+@property (nonatomic) NSDictionary payLoad;
+@property (nonatomic) NSDictionary extra;
+- (void)setExtra:;
+- (void)setOpenURL:;
+- (void)setBusinessType:;
+- (id)pushShowType;
+- (void)setPushShowType:;
+- (id)dismissTimeInterval;
+- (void)setDismissTimeInterval:;
+- (void)setPayLoad:;
+- (id)payLoad;
+- (id)content;
+- (id)gid;
+- (id)businessType;
+- (void)setGid:;
+- (id)extra;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)initWithDictionary:;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (id)openURL;
+- (void)setRid:;
+- (id)rid;
+@end

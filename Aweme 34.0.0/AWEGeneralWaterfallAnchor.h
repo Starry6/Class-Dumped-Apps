@@ -1,0 +1,31 @@
+@interface AWEGeneralWaterfallAnchor : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEAnchorInfoModel anchorModel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSString searchKeyword;
+- (void)setAnchorModel:;
+- (id)searchKeyword;
+- (void)setSearchKeyword:;
+- (id)anchorModel;
+- (void)didStartShowing;
+- (void)singleTapped:;
+- (long long)visualSearchCardUiStyle;
+- (double)getIconSize:;
+- (id)getAnchorIconURLList;
+- (id)getAnchorIconImage;
+- (id)getAnchorText;
+- (BOOL)showNewLargeFontStyle;
+- (void)setForceTheme:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (id)model;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)updateWithModel:;
++ (double)heightForModel:;
+@end

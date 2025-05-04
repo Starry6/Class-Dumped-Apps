@@ -1,0 +1,38 @@
+@interface AWESearchLandingPageViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWESearchLandingPageDataController dataController;
+@property (nonatomic) Q landingPageType;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString alasrc;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (BOOL)configWithRouterParamDict:;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (BOOL)aweui_sf_enableErrorButtonLimit;
+- (void)setDataController:;
+- (void)backBtnClicked;
+- (void)setLandingPageType:;
+- (unsigned long long)landingPageType;
+- (void)loadMoreData;
+- (id)alasrc;
+- (void)setAlasrc:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)fetchData;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)endRefreshing;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setupUI;
+- (id)keyword;
+- (void)setKeyword:;
+- (id)dataController;
+@end

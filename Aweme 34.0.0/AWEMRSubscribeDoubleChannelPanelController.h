@@ -1,0 +1,31 @@
+@interface AWEMRSubscribeDoubleChannelPanelController : UIViewController
+@property (nonatomic) AWECodeGenCommonSubscribePopStModel originPopupModel;
+@property (nonatomic) NSNumber isOriginContainSubscribed;
+@property (nonatomic) AWECodeGenCommonSubscribePopStModel popupModel;
+@property (nonatomic) AWECodeGenSubcategoryModel subcategory;
+@property (nonatomic) AWEMRSubscribeDoubleChannelPanelView panelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)panelView;
+- (void)setPanelView:;
+- (void)bindEvent;
+- (void)updateButtonStatus;
+- (id)getPanelView;
+- (void)setOriginPopupModel:;
+- (id)initWithPopupModel:;
+- (id)originPopupModel;
+- (void)bindModel;
+- (void)leftValueDidChange;
+- (void)rightValueDidChange;
+- (void)handlePositiveButtonDidClick;
+- (id)isOriginContainSubscribed;
+- (void)setIsOriginContainSubscribed:;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setSubcategory:;
+- (id)subcategory;
+- (id)popupModel;
+- (void)setPopupModel:;
+@end

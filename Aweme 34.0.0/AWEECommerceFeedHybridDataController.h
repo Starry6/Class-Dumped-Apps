@@ -1,0 +1,33 @@
+@interface AWEECommerceFeedHybridDataController : AWEListDataController
+@property (nonatomic) NSArray pendingAwemeList;
+@property (nonatomic) q pageNum;
+@property (nonatomic) q cursor;
+@property (nonatomic) NSString apiPathString;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSString outerReqId;
+@property (nonatomic) BOOL waitingFirstItem;
+- (void)loadMoreWithCompletion:;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)initFetchWithCompletion:;
+- (void)requestNextPageWithCompletion:;
+- (void)setPageNum:;
+- (long long)pageNum;
+- (void)fetchAwemeListWithParameters:completion:;
+- (void)setWaitingFirstItem:;
+- (BOOL)waitingFirstItem;
+- (void)setPendingAwemeList:;
+- (id)pendingAwemeList;
+- (id)apiPathString;
+- (void)setApiPathString:;
+- (void)setOuterReqId:;
+- (void)loadFirstItemWithCompletion:;
+- (void)requestFirstItemWithCompletion:;
+- (id)outerReqId;
+- (void)fetchFirstAwemeWithParameters:completion:;
+- (long long)cursor;
+- (id)init;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+@end

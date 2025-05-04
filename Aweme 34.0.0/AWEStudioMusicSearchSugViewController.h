@@ -1,0 +1,31 @@
+@interface AWEStudioMusicSearchSugViewController : NSObject
+@property (nonatomic) UIViewController<AWESearchSugViewControllerProtocol> targetViewController;
+@property (nonatomic) @? sugTapBlock;
+@property (nonatomic) @? sugComplementTapBlock;
+@property (nonatomic) BOOL whiteStyle;
+@property (nonatomic) Q currentTabType;
+@property (nonatomic) NSDictionary logAdditionParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTargetViewController:;
+- (void)setSugTapBlock:;
+- (unsigned long long)currentTabType;
+- (void)setCurrentTabType:;
+- (BOOL)isWhiteStyle;
+- (void)setWhiteStyle:;
+- (id)logAdditionParams;
+- (id)sugTapBlock;
+- (id)sugComplementTapBlock;
+- (void)trackSearchButtonClickReturnWithQuery:;
+- (void)setLogAdditionParams:;
+- (void)setSugComplementTapBlock:;
+- (void)fetchSugWithQuery:tabType:;
+- (id)targetSugVC;
+- (void)setViewHidden:;
+- (id)view;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)targetViewController;
+@end

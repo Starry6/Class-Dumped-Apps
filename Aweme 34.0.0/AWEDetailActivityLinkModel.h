@@ -1,0 +1,34 @@
+@interface AWEDetailActivityLinkModel : AWEDetailCommonDiffableModel
+@property (nonatomic) NSString webTitle;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) AWEDetailURLModel iconURLModel;
+@property (nonatomic) BOOL isShowingConfiguredActivity;
+@property (nonatomic) q style;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double topInset;
+@property (nonatomic) double bottomInset;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) NSString displayText;
+- (void)setWebTitle:;
+- (id)webTitle;
+- (id)iconURLModel;
+- (void)setIconURLModel:;
+- (id)routeURLString;
+- (BOOL)isShowingConfiguredActivity;
+- (void)setIsShowingConfiguredActivity:;
+- (double)topInset;
+- (id)iconImage;
+- (id)displayText;
+- (void)setTopInset:;
+- (double)bottomInset;
+- (void)setWebURL:;
+- (long long)style;
+- (void)setDisplayText:;
+- (void).cxx_destruct;
+- (void)setBottomInset:;
+- (id)webURL;
+- (void)setStyle:;
+@end

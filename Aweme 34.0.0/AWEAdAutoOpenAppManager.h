@@ -1,0 +1,34 @@
+@interface AWEAdAutoOpenAppManager : HTSService
+@property (nonatomic) NSMutableDictionary preDict;
+@property (nonatomic) NSMutableDictionary toOpenDict;
+@property (nonatomic) DUXBasicSheet sheetView;
+@property (nonatomic) BOOL isOpening;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidDismiss:;
+- (void)clearAllTask;
+- (void)onAppDidEnterBackground:;
+- (void)setSheetView:;
+- (void)setPreDict:;
+- (void)setToOpenDict:;
+- (void)onAppStoreDismissWithNoti:;
+- (id)toOpenDict;
+- (id)preDict;
+- (id)startAutoOpenTimerWithModel:expireTime:;
+- (void)dismissDuxSheetView;
+- (void)handleAutoOpenTask:;
+- (void)setIsOpening:;
+- (void)openAutoOpenAppDialogWithModel:;
+- (void)tryAutoOpenDownloadAppWithModel:;
+- (void)onAuthorizeDialogClosed:;
+- (void)onAuthorizeDialogClickedOpen:;
+- (void)prepareAutoOpenTaskWithModel:;
+- (id)init;
+- (void)dealloc;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)sheetView;
+- (BOOL)isOpening;
+@end

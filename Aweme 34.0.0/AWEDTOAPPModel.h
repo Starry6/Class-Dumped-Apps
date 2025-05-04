@@ -1,0 +1,35 @@
+@interface AWEDTOAPPModel : MTLModel
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString appUrl;
+@property (nonatomic) NSString appTitle;
+@property (nonatomic) NSString reserved_kw_description;
+@property (nonatomic) NSString cardImage;
+@property (nonatomic) NSString cardCode;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSString aliasId;
+@property (nonatomic) NSString videoSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)appUrl;
+- (void)setAppUrl:;
+- (id)reserved_kw_description;
+- (void)setReserved_kw_description:;
+- (id)cardCode;
+- (void)setCardCode:;
+- (id)aliasId;
+- (void)setAliasId:;
+- (id)extra;
+- (id)appId;
+- (void).cxx_destruct;
+- (void)setAppId:;
+- (id)cardImage;
+- (void)setCardImage:;
+- (void)setVideoSource:;
+- (id)videoSource;
+- (id)appTitle;
+- (void)setAppTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

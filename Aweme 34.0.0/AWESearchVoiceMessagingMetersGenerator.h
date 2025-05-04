@@ -1,0 +1,36 @@
+@interface AWESearchVoiceMessagingMetersGenerator : NSObject
+@property (nonatomic) NSTimer meterTimer;
+@property (nonatomic) NSArray groups;
+@property (nonatomic) q peakIndex;
+@property (nonatomic) double targetValue;
+@property (nonatomic) q frameCount;
+@property (nonatomic) double maxSample;
+@property (nonatomic) q frecnt;
+@property (nonatomic) <AWESearchVoiceMessagingMetersGeneratorDelegate> delegate;
+- (void)startVoiceWave;
+- (void)cancelVoiceWave;
+- (void)setMaxSample:;
+- (void)setFrecnt:;
+- (void)voiceTimerHandler;
+- (double)maxSample;
+- (long long)peakIndex;
+- (long long)generateRandomBase:exclude:;
+- (void)setPeakIndex:;
+- (void)updateGroupTarget:;
+- (double)generateRandomFrom:to:;
+- (id)meterTimer;
+- (void)setMeterTimer:;
+- (long long)frecnt;
+- (id)groups;
+- (id)init;
+- (void)setGroups:;
+- (id)delegate;
+- (void)setTargetValue:;
+- (void).cxx_destruct;
+- (double)targetValue;
+- (long long)frameCount;
+- (void)setDelegate:;
+- (void)setFrameCount:;
+- (void)updateValue;
+- (void)updateTarget:;
+@end

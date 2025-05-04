@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionEntertainmentBaseMaskPresenter : AWEEntertainmentBaseVideoTrialPresenter
+@property (nonatomic) NSString containerID;
+@property (nonatomic) AWEPaymentEventHandler eventHandler;
+@property (nonatomic) <AWEEntertainmentVideoTrialDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithModel:context:;
+- (id)productTitle;
+- (id)getSchemaParams;
+- (id)createAnnieXCardConfig;
+- (BOOL)disableVideoRepeat;
+- (id)getCoverImageURLArray;
+- (BOOL)shouldUsePreviewMask;
+- (BOOL)shouldHiddenEffectMaskContainer;
+- (BOOL)shouldRemovePreviewMask;
+- (BOOL)shouldOffsetMask;
+- (BOOL)shouldShowMaskInTrial;
+- (double)loadMaskDelayTime;
+- (void)cardDidFinishLoad;
+- (void)setContainerID:;
+- (void)setEventHandler:;
+- (id)containerID;
+- (void).cxx_destruct;
+- (id)eventHandler;
+- (void)reset;
+- (id)getCacheData;
+- (id)cardIdentifier;
+- (BOOL)shouldPreload;
+@end

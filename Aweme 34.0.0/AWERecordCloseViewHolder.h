@@ -1,0 +1,33 @@
+@interface AWERecordCloseViewHolder : NSObject
+@property (nonatomic) FPStateFlow stateFlow;
+@property (nonatomic) ACCAnimatedButton closeButton;
+@property (nonatomic) @? backAlertConfig;
+@property (nonatomic) NSObject<ACCMultiStyleAlertProtocol> backAlert;
+@property (nonatomic) UIAlertController alertController;
+@property (nonatomic) <FPUIComponent> typeErasedComponent;
+- (id)typeErasedComponent;
+- (void)setTypeErasedComponent:;
+- (void)setBackAlertConfig:;
+- (id)backAlert;
+- (void)setBackAlert:;
+- (id)backAlertConfig;
+- (void)onCloseButtonTap;
+- (id)stateFlow;
+- (void)setStateFlow:;
+- (id)closeComponent;
+- (void)updateCloseButtonStyle:closeButton:;
+- (void)configAlertUIWithStyle:;
+- (id)alertConfigWithoutAction;
+- (id)exitActionConfig;
+- (id)reShootActionConfig;
+- (id)saveDraftActionConfig;
+- (id)cancelActionConfig;
+- (void)addStateFlowStateChanged;
+- (void).cxx_destruct;
+- (id)initWith:;
+- (id)alertController;
+- (void)setAlertController:;
+- (void)setCloseButton:;
+- (id)closeButton;
++ (Class)componentType;
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMMixPhotoInitiatePageSheetViewModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString describe;
+@property (nonatomic) NSString negativeText;
+@property (nonatomic) NSString positiveText;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) AWEIMMixPhotoAIModelInfoViewModel aiModel;
+@property (nonatomic) BOOL hasSelected;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) NSDictionary trackExtra;
+@property (nonatomic) BOOL positiveButtonDisable;
+- (void)setDescribe:;
+- (id)trackExtra;
+- (id)negativeText;
+- (void)setNegativeText:;
+- (id)positiveText;
+- (void)setPositiveText:;
+- (void)didSelected;
+- (void)refreshAIModel;
+- (BOOL)positiveButtonDisable;
+- (void)vcDidDealloc;
+- (void)vcDidLoad;
+- (id)aiModel;
+- (void)setPositiveButtonDisable:;
+- (void)updateWithStyleModel:styleItemModelMap:;
+- (void)setAiModel:;
+- (id)initWithConversation:styleModel:styleItemModelMap:trackExtra:;
+- (id)sections;
+- (void)setSections:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)conversation;
+- (id)describe;
+- (id)selectedItem;
+- (BOOL)hasSelected;
+- (void)setHasSelected:;
+@end

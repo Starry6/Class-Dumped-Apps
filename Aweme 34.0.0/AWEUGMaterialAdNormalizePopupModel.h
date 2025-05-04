@@ -1,0 +1,32 @@
+@interface AWEUGMaterialAdNormalizePopupModel : MTLModel
+@property (nonatomic) NSString originScheme;
+@property (nonatomic) NSString popupCover;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString confirmButtonText;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSDictionary popupAbility;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)originScheme;
+- (void)setOriginScheme:;
+- (id)popupCover;
+- (void)setPopupCover:;
+- (void)setConfirmButtonText:;
+- (id)popupAbility;
+- (void)setPopupAbility:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)confirmButtonText;
++ (id)JSONKeyPathsByPropertyKey;
+@end

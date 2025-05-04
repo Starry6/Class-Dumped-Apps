@@ -1,0 +1,33 @@
+@interface AWEIMDouyinRedpacketTrackerUtility : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackRedPacketDetailEvent:message:info:param:;
+- (void)trackSendRedPacketEvent:conversation:param:;
+- (void)trackRedPacketMessageEvent:message:info:param:;
+- (void)trackRedPacketNoticeMessageEvent:message:param:;
+- (void)trackRedPacketWindowEvent:message:info:param:;
+- (void)trackVideoRedPacketEvent:info:coverModel:param:;
+- (void)trackBridgeInvokeWithMethod:paramModel:;
+- (void)trackBridgeCallbackWithMethod:resultModel:status:;
+- (void)trackEvent:param:;
+- (id)redPacketTypeString:;
+- (id)redPacketSubtypeString:;
+- (id)redPacketInfoStatusString:;
+- (id)redPacketSourceString:;
+- (id)redPacketTypeNewString:;
+- (id)redPacketProductString:;
+- (BOOL)isAcquaintanceGroupWithConversationId:;
+- (BOOL)isMessageSendFromMe:;
+- (id)detailRedPacketInfoStatusString:;
+- (id)getRedpacketCommonParams;
+- (id)p_imCommonParamWithInfo:message:;
+- (void)trackEvent:totalParam:param:conversation:;
+- (void)trackEvent:totalParam:param:;
+- (id)redPacketSourceTypeStringWithInfo:;
+- (id)p_isOwnerStringWithInfo:isSendFromMe:;
+- (id)orderIdFromMessage:;
+- (id)redPacketSourceTypeStringWithMessage:;
+- (id)p_isOwnerStringWithMessage:;
+@end

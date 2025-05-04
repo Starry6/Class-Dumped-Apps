@@ -1,0 +1,38 @@
+@interface AWEFeedDCMidSearchStateController : AWEDCFeedBaseController
+@property (nonatomic) NSTimer checkStateTimer;
+@property (nonatomic) NSMutableSet hasShownItemID;
+@property (nonatomic) NSMutableSet showingItemID;
+@property (nonatomic) NSMutableArray invisibleCells;
+@property (nonatomic) BOOL isViewShowing;
+- (void)containerScrollViewDidScroll:;
+- (void)containerScrollViewDidEndDragging:willDecelerate:;
+- (void)containerScrollViewDidEndDecelerating:;
+- (void)containerViewDidAppear:;
+- (void)containerViewDidDisappear:;
+- (void)containerCollectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)onFetchListDataEndWithReason:response:error:;
+- (void)addNotification;
+- (id)hasShownItemID;
+- (void)resetShownState;
+- (void)createStateTimer;
+- (void)setHasShownItemID:;
+- (void)setShowingItemID:;
+- (void)setInvisibleCells:;
+- (void)switchTabLeaveDC;
+- (void)switchTabEnterDC;
+- (void)dcFeedPageDidDisAppear;
+- (void)dcFeedPageDidAppear;
+- (void)setIsViewShowing:;
+- (void)checkCellState;
+- (BOOL)isViewShowing;
+- (void)addToShowingItems:;
+- (id)invisibleCells;
+- (id)showingItemID;
+- (void)postShowStateIfNeeded;
+- (void)stateTimerTick;
+- (void)setCheckStateTimer:;
+- (id)checkStateTimer;
+- (void)postStateSuccess;
+- (void).cxx_destruct;
+- (void)containerViewDidLoad;
+@end

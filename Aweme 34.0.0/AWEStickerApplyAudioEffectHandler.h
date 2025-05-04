@@ -1,0 +1,31 @@
+@interface AWEStickerApplyAudioEffectHandler : AWEStickerApplyBaseHandler
+@property (nonatomic) <ACCAudioPortService> audioPortService;
+@property (nonatomic) <ACCRecorderProtocol> recorder;
+@property (nonatomic) BOOL isComponentAppeared;
+@property (nonatomic) q currentMusicPlayMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startAudioCaptureIfNeeded;
+- (void)componentDidAppear;
+- (void)componentDidDisappear;
+- (void)setIsComponentAppeared:;
+- (BOOL)isComponentAppeared;
+- (void)switchModeServiceDidChangeMode:oldMode:;
+- (void)flowServiceDidAddFragment:;
+- (id)currentSticker;
+- (void)handlerDidBecomeActive;
+- (void)camera:didApplySticker:success:;
+- (void)camera:willApplySticker:propSource:;
+- (void)setCurrentMusicPlayMode:;
+- (void)setAudioPortService:;
+- (id)audioPortService;
+- (long long)musicPlayNodeWithIOPort:;
+- (void)updateMusicPlayMode:;
+- (BOOL)disableAutoStartAudioCaptureAfterApplyGameControlProp;
+- (long long)currentMusicPlayMode;
+- (void).cxx_destruct;
+- (void)setRecorder:;
+- (id)recorder;
+@end

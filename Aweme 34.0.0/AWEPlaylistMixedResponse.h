@@ -1,0 +1,37 @@
+@interface AWEPlaylistMixedResponse : AWEBaseApiModel
+@property (nonatomic) NSArray myLists;
+@property (nonatomic) BOOL myHasMore;
+@property (nonatomic) NSArray mixedList;
+@property (nonatomic) BOOL mixedHasMore;
+@property (nonatomic) q myCursor;
+@property (nonatomic) NSNumber myTotalCount;
+@property (nonatomic) NSArray collectionLists;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q cursor;
+@property (nonatomic) NSNumber totalCount;
+- (id)mixedList;
+- (id)myLists;
+- (BOOL)myHasMore;
+- (long long)myCursor;
+- (void)setMyHasMore:;
+- (BOOL)mixedHasMore;
+- (void)setMixedHasMore:;
+- (void)setMyCursor:;
+- (void)setMyLists:;
+- (void)setMixedList:;
+- (id)myTotalCount;
+- (void)setMyTotalCount:;
+- (id)collectionLists;
+- (void)setCollectionLists:;
+- (long long)cursor;
+- (id)totalCount;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)setTotalCount:;
++ (id)myListsJSONTransformer;
++ (id)collectionListsJSONTransformer;
++ (id)mixedListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

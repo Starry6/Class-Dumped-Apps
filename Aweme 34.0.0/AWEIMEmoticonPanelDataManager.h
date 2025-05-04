@@ -1,0 +1,36 @@
+@interface AWEIMEmoticonPanelDataManager : NSObject
+@property (nonatomic) NSString currentLoginUser;
+@property (nonatomic) NSDictionary dynamicEmotions;
+@property (nonatomic) NSString lastUsedThemeInfoUniqueId;
+@property (nonatomic) NSArray localEmotionInfos;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (id)currentLoginUser;
+- (void)setCurrentLoginUser:;
+- (void)addCommentRecentlyUsedEmoticonsDataWithModel:theme:scene:;
+- (void)updateRecentUsedEmoticon:;
+- (id)dynamicEmotions;
+- (BOOL)isLargerThanMaxCountWithArtID:;
+- (id)localEmotionInfos;
+- (void)setLastUsedThemeInfoUniqueId:;
+- (id)recentIMMessageUserStickersWithType:;
+- (void)updateIMMessageRecentUsedEmoticon:withType:sessionType:scene:;
+- (id)lastUsedThemeInfoUniqueId;
+- (void)stickerDownloaded:;
+- (void)storeEmojiPackagesChanged;
+- (id)recentUserStickers;
+- (void)resetRecentUserStickers:;
+- (void)resetRecentlyEmoticons:WithType:;
+- (void)p_cacheLastUsedEmoticonUniqueID:;
+- (void)loadLastUsedThemeInfoUniqueId;
+- (BOOL)isLargerThanMaxCountWithAIThemeModel:;
+- (void)updateLastUsedTabWithThemeInfoUniqueId:;
+- (void)loadLastUsedThemeInfoUniqueIdIfNeeded;
+- (void)setDynamicEmotions:;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

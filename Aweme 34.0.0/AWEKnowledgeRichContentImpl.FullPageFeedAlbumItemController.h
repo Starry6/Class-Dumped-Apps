@@ -1,0 +1,22 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedAlbumItemController : AWEKnowledgeSwiftBasic.FullPageBaseItemController
+- (void)executePageModeChangeAnimation:;
+- (void)onPageModeWillChange:;
+- (double)getDeltaHeightWhenPageModeChange:;
+- (void)didSelectImageAtIndex:;
+- (void)imageConfigMsg:;
+- (BOOL)sliderShouldAddProgressView;
+- (void)sliderDidCreateProgressView:;
+- (void)sliderScrollViewWillBeginDragging:;
+- (void)sliderScrollViewDidEndDragging:;
+- (void)sliderDidUpdatePaginatedProgressWithIndex:totalCount:;
+- (void)sliderDidScrollTo:totalCount:slideMethod:;
+- (void)viewControllerDidAppear:;
+- (void)configCellWithCell:viewModel:;
+- (void)cellDidEndDisplayWithCell:viewModel:;
+- (void)cellWillDisplayWithCell:viewModel:;
+- (void)sectionControllerWillDisplay;
+- (void)sectionControllerDidEndDisplaying;
+- (id)initWithViewModel:;
+- (Class)cellClass;
+- (void).cxx_destruct;
+@end

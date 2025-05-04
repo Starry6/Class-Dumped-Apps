@@ -1,0 +1,35 @@
+@interface AWEIMStickOnTopMessageBannerWrapperViewModel : NSObject
+@property (nonatomic) AWEIMUserViewModel fromUserViewModel;
+@property (nonatomic) <AWEIMStickOnTopMessageBannerWrapperViewModelDelegate> delegate;
+@property (nonatomic) AWEIMMessage message;
+@property (nonatomic) AWEIMCollapsibleBannerViewModel banner;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString barText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)barText;
+- (id)initWithMessage:delegate:;
+- (void)didUpdateContentTitleForMessage:;
+- (void)didUpdateUnavailableStatusForMessage:;
+- (void)didEditContentTitleForMessage:;
+- (id)fromUserViewModel;
+- (void)setFromUserViewModel:;
+- (void)bindVM;
+- (void)setBarText:;
+- (id)__senderName;
+- (void)__recalculateContent;
+- (id)__contentWithMessage:;
+- (id)initWithMessage:banner:delegate:;
+- (id)banner;
+- (id)content;
+- (void)dealloc;
+- (id)message;
+- (id)delegate;
+- (void)setBanner:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (void)setMessage:;
+- (void)setDelegate:;
+@end

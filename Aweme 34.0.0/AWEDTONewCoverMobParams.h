@@ -1,0 +1,32 @@
+@interface AWEDTONewCoverMobParams : MTLModel
+@property (nonatomic) BOOL isText;
+@property (nonatomic) BOOL isCoverTemplate;
+@property (nonatomic) BOOL isTextTemplate;
+@property (nonatomic) BOOL isPicAdjust;
+@property (nonatomic) BOOL isNewText;
+@property (nonatomic) q textNum;
+@property (nonatomic) NSString coverTemplateId;
+@property (nonatomic) NSString coverTabName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsText:;
+- (BOOL)isCoverTemplate;
+- (void)setIsCoverTemplate:;
+- (BOOL)isTextTemplate;
+- (void)setIsTextTemplate:;
+- (BOOL)isPicAdjust;
+- (void)setIsPicAdjust:;
+- (BOOL)isNewText;
+- (void)setIsNewText:;
+- (long long)textNum;
+- (void)setTextNum:;
+- (id)coverTemplateId;
+- (void)setCoverTemplateId:;
+- (id)coverTabName;
+- (void)setCoverTabName:;
+- (void).cxx_destruct;
+- (BOOL)isText;
++ (id)JSONKeyPathsByPropertyKey;
+@end

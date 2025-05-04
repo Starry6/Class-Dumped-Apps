@@ -1,0 +1,2 @@
+@interface AWENearbyDebugHelper : NSObject
+@end

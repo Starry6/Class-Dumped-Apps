@@ -1,0 +1,38 @@
+@interface AWEPlayInteractionLongVideoPlusInfoWithCoverLeftNewElement : AWEPlayInteractionLeftElement
+@property (nonatomic) # longVideoUtil;
+@property (nonatomic) BDImageView coverImageView;
+@property (nonatomic) UIImage placeholderImage;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel backTitleLabel;
+@property (nonatomic) UILabel infoLabel;
+@property (nonatomic) BOOL tracked;
+- (void)viewController_willDisplay;
+- (void)viewController_didEndDisplaying;
+- (void)viewController_viewDidAppear;
+- (void)viewController_viewDidDisappear;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (long long)getEntertainmentCommentTabMediaType:;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (Class)longVideoUtil;
+- (void)trackForShow;
+- (void)setLongVideoUtil:;
+- (id)getAlbumTypeNameString;
+- (id)getRealAlbumName;
+- (id)getTitleAddOnString;
+- (id)backTitleLabel;
+- (void)longVideoPanelClick;
+- (void)setBackTitleLabel:;
+- (id)placeholderImage;
+- (void)setPlaceholderImage:;
+- (void)viewDidLoad;
+- (BOOL)tracked;
+- (void)setTitleLabel:;
+- (void)setTracked:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)infoLabel;
+- (void)setInfoLabel:;
++ (BOOL)shouldActiveWithModel:context:;
+@end

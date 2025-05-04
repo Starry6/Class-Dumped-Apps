@@ -1,0 +1,35 @@
+@interface AWESwitchModeSingleTabConfig : NSObject
+@property (nonatomic) q recordModeId;
+@property (nonatomic) ACCRecordMode mode;
+@property (nonatomic) BOOL showRedDot;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL regularIcon;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString info;
+@property (nonatomic) NSArray imageURLArray;
+@property (nonatomic) NSString topRightTipText;
+@property (nonatomic) double cellGapPadding;
+@property (nonatomic) @? customizeBadge;
+- (BOOL)showRedDot;
+- (void)setShowRedDot:;
+- (id)imageURLArray;
+- (void)setImageURLArray:;
+- (long long)recordModeId;
+- (void)setCellGapPadding:;
+- (void)setRegularIcon:;
+- (BOOL)regularIcon;
+- (id)topRightTipText;
+- (void)setTopRightTipText:;
+- (double)cellGapPadding;
+- (id)customizeBadge;
+- (void)setCustomizeBadge:;
+- (void)setInfo:;
+- (id)info;
+- (void)setMode:;
+- (id)mode;
+- (void)setImageName:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)imageName;
+- (void)setTitle:;
+@end

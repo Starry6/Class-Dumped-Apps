@@ -1,0 +1,36 @@
+@interface AWENearbySkyLightSwitchBtnMask : UIView
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} holeRect;
+@property (nonatomic) double holeRadius;
+@property (nonatomic) double alphaDuration;
+@property (nonatomic) double drawerAnimateDuration;
+@property (nonatomic) double drawerInitialWidth;
+@property (nonatomic) double drawerFinallWidth;
+@property (nonatomic) double drawerAnimateWidth;
+@property (nonatomic) CAShapeLayer fillLayer;
+@property (nonatomic) @? clickBlk;
+- (void)setClickBlk:;
+- (id)clickBlk;
+- (void)setHoleRect:;
+- (void)setHoleRadius:;
+- (void)setAlphaDuration:;
+- (void)setDrawerAnimateDuration:;
+- (void)setDrawerInitialWidth:;
+- (void)setDrawerFinallWidth:;
+- (double)drawerFinallWidth;
+- (double)drawerInitialWidth;
+- (void)setDrawerAnimateWidth:;
+- (id)holeRect;
+- (double)holeRadius;
+- (double)alphaDuration;
+- (double)drawerAnimateDuration;
+- (void)addMask;
+- (id)initWithFrame:holeRect:holdRadius:alphaDuration:drawerAnimateDuration:drawerInitialWidth:drawerFinallWidth:;
+- (double)drawerAnimateWidth;
+- (void)setFillLayer:;
+- (void)show;
+- (id)fillLayer;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)tap;
+@end

@@ -1,0 +1,2 @@
+@interface AWEPublishAndAdvanceSettingsPopupItemBaseExtraConfig : NSObject
+@end

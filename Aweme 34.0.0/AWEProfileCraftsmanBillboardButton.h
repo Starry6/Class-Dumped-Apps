@@ -1,0 +1,34 @@
+@interface AWEProfileCraftsmanBillboardButton : UIView
+@property (nonatomic) BOOL shouldHide;
+@property (nonatomic) NSString rankString;
+@property (nonatomic) NSString rankTitle;
+@property (nonatomic) UILabel rankTitleLabel;
+@property (nonatomic) UIImageView crownImageView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIView billboardTitleBackgroundView;
+@property (nonatomic) double scaleRate;
+@property (nonatomic) double maxWidth;
+- (id)rankTitle;
+- (void)setRankTitle:;
+- (void)setRankString:;
+- (id)rankTitleLabel;
+- (id)rankTitleRect;
+- (id)shorterCraftsmanTitleWithShortCityName:career:billboardType:index:;
+- (id)rankString;
+- (id)crownImageView;
+- (id)billboardTitleBackgroundView;
+- (void)setCrownImageView:;
+- (void)setBillboardTitleBackgroundView:;
+- (void)setRankTitleLabel:;
+- (double)scaleRate;
+- (void)setScaleRate:;
+- (void)setCraftsmanTitle:shortCityName:career:billboardType:index:;
+- (double)maxWidth;
+- (void)updateLayout;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (void)setShouldHide:;
+- (BOOL)shouldHide;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

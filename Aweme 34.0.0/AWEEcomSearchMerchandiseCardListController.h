@@ -1,0 +1,31 @@
+@interface AWEEcomSearchMerchandiseCardListController : AWEEcomSearchListBaseController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)removeModel:;
+- (void)refreshResultWithIsFromSelectBoard:trackParams:;
+- (id)filterManager;
+- (void)p_endAutoPlay;
+- (void)p_beginAutoPlayWithReset:;
+- (void)p_holdAutoPlayForReload;
+- (void)recordPreviousVisibleIndexPaths;
+- (void)willEnterFullScreen:model:;
+- (void)reloadCurrentCell:model:needTrackShow:;
+- (void)forceBecomeActive:model:;
+- (id)videoFeedScrollView;
+- (void)scrollToDisplayItemWithOffset:index:animated:;
+- (void)jumpToVideoDetailTableView:model:params:;
+- (BOOL)removeCellOfModel:animated:;
+- (void)updateHeightForCell:model:;
+- (void)updateHeightForCommonCell:model:;
+- (void)updateComponentModel:isSelect:;
+- (void)updateBusinessInfo:isSelect:dataID:;
+- (void)updateExtraInfo:;
+- (id)getCurrentStateForIndex:model:;
+- (void)slideToTabWithTabType:enterMethod:extra:;
+- (void)jumpToUserWindowLiveRoomWithModel:logExtraDict:;
+- (void)recalculateToAutoPlay;
+- (void)updateQuery:;
+- (id)srp;
+@end

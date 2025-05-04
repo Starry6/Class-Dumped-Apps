@@ -1,0 +1,34 @@
+@interface AWEIMRemoveGroupAdminViewController : AWEIMListBaseViewController
+@property (nonatomic) UIButton leftButton;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) UIView<IESIMLoadingViewProtocol> loadingView;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) @? removeGroupAdminBlock;
+@property (nonatomic) NSString previousPage;
+- (id)conversationDataManager;
+- (void)p_save;
+- (void)p_dismiss;
+- (unsigned long long)userPrivacyGetAliasScene;
+- (void)changeToMultiselect:;
+- (void)updateMultiselectCount:;
+- (long long)currentFunctin;
+- (id)curConversationID;
+- (void)setRemoveGroupAdminBlock:;
+- (void)__trackEditGroupManagerWithParticipantIDs:;
+- (id)removeGroupAdminBlock;
+- (void)setLeftButton:;
+- (void)setRightButton:;
+- (void)fetchData;
+- (id)leftButton;
+- (void)viewDidLayoutSubviews;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setLoadingView:;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (id)rightButton;
+- (void).cxx_destruct;
+- (id)conversation;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setConversation:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMImagePreviewUtility : NSObject
++ (BOOL)isPictureResizeOptimizeEnable;
++ (BOOL)isLongImageSize:;
++ (BOOL)isPictureFormatOptimizeEnable;
++ (id)getLimitSizeWithImageSize:;
++ (id)downsampleWithAsset:limitSize:data:;
++ (id)croppedImageWithImage:;
++ (id)processPickedImage:userOrigin:;
++ (BOOL)isGif:;
++ (id)downsampleWithData:limitSize:forceJpeg:useOrigin:;
++ (BOOL)isLongOrWideImageSize:;
++ (BOOL)isLongPictureOptimizeDisplayEnable;
++ (id)getImageCoverDataWithImageData:;
++ (id)downsampleWithAsset:limitSize:data:forceJpeg:useOrigin:;
++ (id)getOriginLimitSizeWithImageSize:;
++ (id)webpImageDataWithMaxDataSize:image:;
++ (id)hmacSHA256WithKey:data:;
++ (id)processExchangePickedImage:;
++ (id)getLongPictureLimitSize;
++ (id)getImageLimitResolution;
++ (BOOL)isLongPictureOptimizeResEnable;
++ (id)downsampleWithAsset:limitSize:data:forceJpeg:;
++ (id)downsampleWithData:limitSize:useOrigin:forceJpeg:type:;
++ (id)getLimitSizeWithResSize:;
++ (id)cropImageWithImage:size:;
++ (id)cropImageWithImage:size:longImageClipAtMiddle:;
++ (id)getTopCropRectWithRect:size:;
++ (BOOL)isWideImageSize:;
++ (id)getWidePictureLimitSize;
++ (id)getLongPictureV2Config;
++ (id)downsampleWithData:limitSize:useOrigin:forceJpeg:;
++ (BOOL)isPictureHEIFOptimizeEnable;
++ (id)getLongPictureLimitSizeWithSize:;
++ (id)getWidePictureLimitSizeWithSize:;
+@end

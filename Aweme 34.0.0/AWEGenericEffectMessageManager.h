@@ -1,0 +1,32 @@
+@interface AWEGenericEffectMessageManager : NSObject
+@property (nonatomic) <IESServiceProvider> serviceProvider;
+@property (nonatomic) AWEVideoPublishViewModel repository;
+@property (nonatomic) Q scene;
+@property (nonatomic) NSArray messageHandlers;
+@property (nonatomic) <ACCCameraService> cameraService;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cameraService;
+- (void)setCameraService:;
+- (id)editService;
+- (void)setEditService:;
+- (BOOL)consumeMessage:isGlobal:;
+- (id)initWithScene:serviceContainer:;
+- (void)sendEffectMessage:messageId:taskId:isGlobal:;
+- (void)p_composeHandlers;
+- (BOOL)p_isAvaiablePath;
+- (id)p_messageHandlersForRecord;
+- (id)p_messageHandlersForEdit;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (id)repository;
+- (void)setMessageHandlers:;
+- (void).cxx_destruct;
+- (void)setRepository:;
+- (id)serviceProvider;
+- (void)setServiceProvider:;
+- (id)messageHandlers;
+@end

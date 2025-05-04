@@ -1,0 +1,2 @@
+@interface AWEPOIHeaderContentDataManager : NSObject
+@end

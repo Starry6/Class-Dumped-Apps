@@ -1,0 +1,36 @@
+@interface AWEFeedSubtitleSettingsPanel : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEFeedSubtitleSettingsViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (double)panelHeight;
+- (void)sheetWillDismiss:;
+- (id)aAWEPadModuleAdapter;
+- (id)dux_titleForColoseButton;
+- (id)initWithAwemeModel:;
+- (void)updateViewController;
+- (void)changeSubtitleSelectedLanguageID:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)dealloc;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)reloadSection:;
+- (id)sheet;
+- (void)setSheet:;
++ (Class)aAWEPadModuleAdapterClass;
++ (void)showWithAwemeModel:;
+@end

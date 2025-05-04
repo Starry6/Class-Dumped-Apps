@@ -1,0 +1,31 @@
+@interface AWEStudioImageToVideoGeneratorImpl : NSObject
+@property (nonatomic) NLEInterface_OC nle;
+@property (nonatomic) NLEModel_OC model;
+@property (nonatomic) AWEStudioImageToVideoConfig config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)IESEditorlogToLocal:andLevel:;
+- (id)nle;
+- (void)setNle:;
+- (BOOL)checkInputConfig;
+- (void)p_reportFailWithError:;
+- (void)p_reportProgress:;
+- (void)p_startGenerateVideo;
+- (BOOL)copyImageAndEffectInfo;
+- (void)p_initNLE;
+- (BOOL)p_setupMainTrack;
+- (void)p_setupEffectTrack;
+- (void)p_startExportVideo;
+- (void)p_reportSuccessWithVideoPath:;
+- (void)runWithConfig:;
+- (void)setModel:;
+- (void)setConfig:;
+- (id)config;
+- (void)cancel;
+- (id)model;
+- (void).cxx_destruct;
++ (id)placeholderImagePath;
++ (id)exportFilePathWithConfig:;
+@end

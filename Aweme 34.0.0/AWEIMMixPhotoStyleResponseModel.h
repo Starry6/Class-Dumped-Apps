@@ -1,0 +1,37 @@
+@interface AWEIMMixPhotoStyleResponseModel : MTLModel
+@property (nonatomic) NSNumber version;
+@property (nonatomic) NSNumber timeInterval;
+@property (nonatomic) NSArray mountModelList;
+@property (nonatomic) AWEIMMixPhotoStyleModel privateStyleModel;
+@property (nonatomic) AWEIMMixPhotoStyleModel groupStyleModel;
+@property (nonatomic) AWEIMMixPhotoStyleModel mangoStyleModel;
+@property (nonatomic) NSDictionary styleItemModelMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)styleItemModelMap;
+- (id)mountModelList;
+- (id)privateStyleModel;
+- (id)groupStyleModel;
+- (void)setMountModelList:;
+- (void)setPrivateStyleModel:;
+- (void)setGroupStyleModel:;
+- (id)mangoStyleModel;
+- (void)setMangoStyleModel:;
+- (void)setStyleItemModelMap:;
+- (id)timeInterval;
+- (id)version;
+- (void)setVersion:;
+- (void)setTimeInterval:;
+- (void).cxx_destruct;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
++ (id)p_jsonParsingError;
++ (id)mountModelListJSONTransformer;
++ (id)privateStyleModelJSONTransformer;
++ (id)groupStyleModelJSONTransformer;
++ (id)mangoStyleModelJSONTransformer;
++ (id)styleItemModelMapJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

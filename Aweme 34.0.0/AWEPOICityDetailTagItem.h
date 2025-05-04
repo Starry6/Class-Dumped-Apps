@@ -1,0 +1,31 @@
+@interface AWEPOICityDetailTagItem : NSObject
+@property (nonatomic) NSString requestString;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BOOL didTrackTabShow;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) q optionType;
+@property (nonatomic) NSString tabId;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) {CGPoint=dd} pageOffset;
+@property (nonatomic) @? didClickTag;
+- (void)setOptionType:;
+- (void)setDidTrackTabShow:;
+- (id)requestString;
+- (id)didClickTag;
+- (void)setDidClickTag:;
+- (void)setRequestString:;
+- (BOOL)didTrackTabShow;
+- (id)displayText;
+- (id)initWithData:;
+- (void)setDisplayText:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (BOOL)selected;
+- (void)setSelected:;
+- (id)pageOffset;
+- (void)setPageOffset:;
+- (long long)optionType;
+- (void)setTabId:;
+- (id)tabId;
+@end

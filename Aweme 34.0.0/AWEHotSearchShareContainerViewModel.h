@@ -1,0 +1,30 @@
+@interface AWEHotSearchShareContainerViewModel : NSObject
+@property (nonatomic) AWEShareHotSearchModel hotSearchModel;
+@property (nonatomic) AWEShareHotSearchModel weakHotSearchModel;
+@property (nonatomic) AWEHotSearchSharePerformanceModel performanceModel;
+@property (nonatomic) AWEHotSearchShareContainerViewState viewState;
+@property (nonatomic) BOOL hasTrackError;
+@property (nonatomic) <AWEHotSearchShareContainerViewModelDelegate> delegate;
+- (id)hotSearchModel;
+- (void)setHotSearchModel:;
+- (id)initWithHotSearchModel:shouldWeakRef:;
+- (id)performanceModel;
+- (BOOL)shouldOptimizeToast;
+- (void)shareFailedWithErrorType:;
+- (void)trackWithErrorType:extra:;
+- (void)trackPerformance;
+- (void)resetHotSearchModel;
+- (void)setWeakHotSearchModel:;
+- (BOOL)hasTrackError;
+- (void)setHasTrackError:;
+- (void)setPerformanceModel:;
+- (id)weakHotSearchModel;
+- (void)requestData;
+- (id)delegate;
+- (double)currentTime;
+- (void)addObserver;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setViewState:;
+- (id)viewState;
+@end

@@ -1,0 +1,2 @@
+@interface AWECommentSwiftService.CommentMemoryLeakInfoCenter : _TtCs12_SwiftObject
+@end

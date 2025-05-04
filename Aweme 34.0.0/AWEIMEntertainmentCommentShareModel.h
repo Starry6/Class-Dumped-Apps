@@ -1,0 +1,30 @@
+@interface AWEIMEntertainmentCommentShareModel : NSObject
+@property (nonatomic) AWECommentModel commentModel;
+@property (nonatomic) NSString jumpUrl;
+@property (nonatomic) NSDictionary yszCoverUrl;
+@property (nonatomic) NSString yszName;
+@property (nonatomic) NSString yszCid;
+@property (nonatomic) NSString yszType;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) BOOL commentUnavailable;
+- (void)setExtraParams:;
+- (id)commentModel;
+- (void)setCommentModel:;
+- (id)extraParams;
+- (id)jumpUrl;
+- (void)setJumpUrl:;
+- (BOOL)commentUnavailable;
+- (id)initWithCommentModel:extraParams:;
+- (void)setCommentUnavailable:;
+- (id)yszCoverUrl;
+- (id)yszName;
+- (id)yszCid;
+- (id)yszType;
+- (void)setYszName:;
+- (void)setYszCid:;
+- (void)setYszType:;
+- (void)setYszCoverUrl:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+@end

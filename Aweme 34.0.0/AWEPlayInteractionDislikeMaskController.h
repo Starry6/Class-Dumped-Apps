@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionDislikeMaskController : AWEPlayInteractionBaseController
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UIView withdrawButton;
+@property (nonatomic) UIView withdrawContentView;
+@property (nonatomic) UIImageView withdrawIcon;
+@property (nonatomic) UILabel withdrawLabel;
+@property (nonatomic) UIView scrollTipContainerView;
+@property (nonatomic) UILabel scrollTipLabel;
+@property (nonatomic) UIImageView scrollTipIcon;
+- (void)trackShow;
+- (id)scrollTipLabel;
+- (void)setScrollTipLabel:;
+- (id)withdrawButton;
+- (id)withdrawContentView;
+- (id)withdrawIcon;
+- (id)withdrawLabel;
+- (id)scrollTipContainerView;
+- (id)scrollTipIcon;
+- (void)didClickWithdraw:;
+- (void)setWithdrawButton:;
+- (void)setWithdrawContentView:;
+- (void)setWithdrawIcon:;
+- (void)setWithdrawLabel:;
+- (void)setScrollTipContainerView:;
+- (void)setScrollTipIcon:;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setupUI;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (void)setupNotification;
+@end

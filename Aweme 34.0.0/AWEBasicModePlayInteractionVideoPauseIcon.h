@@ -1,0 +1,5 @@
+@interface AWEBasicModePlayInteractionVideoPauseIcon : UIImageView
+- (void)playAnimationWithPaused:duration:;
+- (id)init;
+- (void)reset;
+@end

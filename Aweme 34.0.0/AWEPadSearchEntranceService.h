@@ -1,0 +1,37 @@
+@interface AWEPadSearchEntranceService : HTSService
+@property (nonatomic) UIView<AWEHPDiscoverFeedEntranceViewProtocol> discoverEntranceView;
+@property (nonatomic) <AWESearchRecommendWordProtocol> recommendWordManager;
+@property (nonatomic) AWEPadSearchEntranceView padSearchEntranceView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (id)recommendWordManager;
+- (id)discoverEntranceView;
+- (void)setDiscoverEntranceView:;
+- (void)configAlpha:transform:;
+- (void)themeDidChange:;
+- (void)setRecommendWordManager:;
+- (void)updateRelatedWord:;
+- (void)updateRecommendWord:awemeModel:;
+- (id)getSearchURLWithPageName:itemID:videoInfoExtra:clickIntoSearchTime:;
+- (void)containerViewController:onDiscoverButtonClicked:;
+- (BOOL)setupDiscoverEntranceView:;
+- (BOOL)updateDiscoverEntranceViewFrame:withConstraintView:withContainerView:;
+- (void)fetchRecommendWordWithEnterFrom:;
+- (void)fetchRelatedWordWithGroupID:enterFrom:;
+- (void)trackEventTrendingWordShow:enterFromSecond:gid:wordSource:;
+- (void)trackEventTrendingWordClick:groupID:gid:wordSource:;
+- (void)fetchRecommWordWithGroupId:businessID:pd:categoryName:wordsSource:enterFrom:broadcast:completion:;
+- (void)fetchRecommWordWithGroupId:businessID:pd:categoryName:wordsSource:query:query_id:enterFrom:broadcast:completion:;
+- (void)fetchRecommWordByLastQueryWithBusinessID:pd:categoryName:wordsSource:enterFrom:broadcast:completion:;
+- (id)padSearchEntranceView;
+- (id)typeToReferString:;
+- (void)setPadSearchEntranceView:;
+- (id)trendingWordsFrom;
+- (void)recommendWordDidChange:requestParams:;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (Class)aAWEPadModuleAdapterClass;
+@end

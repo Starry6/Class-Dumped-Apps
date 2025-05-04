@@ -1,0 +1,34 @@
+@interface AWEFeedMeetMusicView : UIView
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIImageView arrowView;
+@property (nonatomic) UIView separator;
+@property (nonatomic) UILabel mainLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) AWEMusicAnchorModel anchor;
+@property (nonatomic) BOOL isFolded;
+@property (nonatomic) {CGSize=dd} layoutSize;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setIsFolded:;
+- (void)updateAnchor:;
+- (void)startFoldAnimationWithCompletion:;
+- (id)initWithIsFolded:;
+- (void)updateFoldStateUI;
+- (id)layoutSize;
+- (id)anchor;
+- (void)setAnchor:;
+- (void)setSeparator:;
+- (id)gradientView;
+- (id)separator;
+- (void)setup;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)arrowView;
+- (void)setArrowView:;
+- (id)mainLabel;
+- (void)setMainLabel:;
+- (BOOL)isFolded;
+@end

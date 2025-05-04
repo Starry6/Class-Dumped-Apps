@@ -1,0 +1,30 @@
+@interface AWEBootTaskMaker : NSObject
+@property (nonatomic) NSMutableDictionary data;
+@property (nonatomic) @? desc;
+@property (nonatomic) @? uniqueId;
+@property (nonatomic) @? mainThread;
+@property (nonatomic) @? validExist;
+@property (nonatomic) @? qos;
+@property (nonatomic) @? delay;
+@property (nonatomic) @? enabled;
+@property (nonatomic) @? invalidTargets;
+@property (nonatomic) @? validTargets;
+- (id)invalidTargets;
+- (id)validExist;
+- (id)validTargets;
+- (id)mainThread;
+- (id)init;
+- (id)desc;
+- (id)enabled;
+- (id)uniqueId;
+- (id)delay;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (id)qos;
+- (id)toDictionary;
++ (void)setDelayOrForbidTaskConfig:;
++ (void)setChangeTaskQosConfig:;
++ (unsigned int)qosForConfig:;
++ (id)make;
+@end

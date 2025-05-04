@@ -1,0 +1,35 @@
+@interface AWEIMNextGenerationStreamUploadVideoClient : NSObject
+@property (nonatomic) AWEIMNextGenerationUploadConfigModel config;
+@property (nonatomic) BDVideoUploaderClient client;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) <BDExternFileReaderInterface> fileStreamReader;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)videoUpload:didFinish:error:;
+- (void)videoUpload:progressDidUpdate:;
+- (long long)videoUploadGetNetState:;
+- (id)videoUploadGetMetaString:;
+- (void)videoUpload:onLogInfo:;
+- (void)videoUpload:updateVideoStage:timestamp:;
+- (void)uploadWithContext:;
+- (id)uploadCustomParameterString;
+- (id)fileStreamReader;
+- (void)setFileStreamReader:;
+- (id)p_checkContext:;
+- (id)createVideoUploaderClient;
+- (id)createVideoUploaderClient_backup;
+- (id)p_errorWithCode:info:;
+- (id)progressBlock;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setClient:;
+- (id)config;
+- (id)client;
+- (void)setProgressBlock:;
+- (void).cxx_destruct;
+@end

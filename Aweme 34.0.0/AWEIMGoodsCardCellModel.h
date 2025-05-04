@@ -1,0 +1,2 @@
+@interface AWEIMGoodsCardCellModel : AWEIMCellModel
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMHotSpotCommentShareMessageComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMHotSpotCommentShareMessage message;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) AWEIMHotSpotCommentShareTableViewCellViewModel cellViewModel;
+@property (nonatomic) double lastUpdateTime;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (id)cellViewModel;
+- (void)cellWillDisplay:;
+- (void)setCellViewModel:;
+- (void)p_createPresenterIfNeed;
+- (void)p_initProps;
+- (void)p_didTapContainer;
+- (id)displayMessage;
+- (void)setScene:;
+- (void)refresh;
+- (void)setLastUpdateTime:;
+- (id)message;
+- (long long)scene;
+- (id)contentSize;
+- (void).cxx_destruct;
+- (double)lastUpdateTime;
+- (void)setMessage:;
+- (id)conversation;
+- (void)setConversation:;
+- (void)handleTapGesture:;
++ (BOOL)canCreateComponentWithContext:;
+@end

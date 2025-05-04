@@ -1,0 +1,2 @@
+@interface AWELifeFeedsHAPlugin : AWELifeFeedsBasePlugin
+@end

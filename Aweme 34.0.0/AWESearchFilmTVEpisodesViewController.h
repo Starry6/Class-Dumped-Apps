@@ -1,0 +1,30 @@
+@interface AWESearchFilmTVEpisodesViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) @? buttonClickedBlock;
+@property (nonatomic) BOOL varietyStyle;
+@property (nonatomic) NSArray modelArray;
+@property (nonatomic) BOOL showPeriod;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setModelArray:;
+- (id)modelArray;
+- (void)setButtonClickedBlock:;
+- (void)setShowPeriod:;
+- (id)buttonClickedBlock;
+- (BOOL)showPeriod;
+- (BOOL)varietyStyle;
+- (void)setVarietyStyle:;
+- (void)updateModelList:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)reloadTableView;
+@end

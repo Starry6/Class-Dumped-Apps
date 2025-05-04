@@ -1,0 +1,38 @@
+@interface AWEAnimateImageProgressView : UIView
+@property (nonatomic) NSMutableArray progressViewArray;
+@property (nonatomic) q progressTotalCount;
+@property (nonatomic) AWEStoryProgressContainerConfig config;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) double lastProcess;
+@property (nonatomic) <AWEStoryProgressSlideViewDelegate> delegate;
+@property (nonatomic) Q currentProgressIndex;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} currentProgressViewFrame;
+@property (nonatomic) double currentProgressPercentage;
+@property (nonatomic) {CGSize=dd} currentProgressViewProgressSize;
+- (double)currentProgressPercentage;
+- (void)updateProgressWithDuration:totalCount:currentIndex:currentProcess:currentDotFromCenter:needScrollAnimation:needAnimation:;
+- (id)initWithCurrentIndex:totalCount:config:;
+- (void)updateProgressWithDuration:totalCount:currentIndex:currentProcess:needAnimation:;
+- (void)updateProgressWithDuration:currentIndex:currentProcess:needAnimation:;
+- (void)setCurrentProgressIndex:;
+- (unsigned long long)currentProgressIndex;
+- (id)currentProgressViewFrame;
+- (id)currentProgressViewProgressSize;
+- (void)setProgressTotalCount:;
+- (void)setupUIWithConfig:;
+- (long long)progressTotalCount;
+- (void)clearDetailView;
+- (id)progressViewArray;
+- (double)lastProcess;
+- (void)setLastProcess:;
+- (void)onProgressBarTapped:;
+- (void)setProgressViewArray:;
+- (void)setConfig:;
+- (id)delegate;
+- (void)setCurrentIndex:;
+- (long long)totalCount;
+- (id)config;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (long long)currentIndex;
+@end

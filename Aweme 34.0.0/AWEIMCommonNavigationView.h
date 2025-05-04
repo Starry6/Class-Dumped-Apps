@@ -1,0 +1,33 @@
+@interface AWEIMCommonNavigationView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView leftBtnsContainerView;
+@property (nonatomic) UIView rightBtnsContainerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView arrowImgView;
+@property (nonatomic) UIView titleView;
+@property (nonatomic) {UIEdgeInsets=dddd} titleEdgeInsets;
+- (void)p_setupUI;
+- (id)rightBtnsContainerView;
+- (void)addTitleView:;
+- (id)leftBtnsContainerView;
+- (void)addLeftNaviBarBtnView:;
+- (void)addRightNaviBarBtnView:;
+- (void)setLeftBtnsContainerView:;
+- (void)p_updateTitleViewConstrains;
+- (void)setRightBtnsContainerView:;
+- (id)arrowImgView;
+- (void)setArrowImgView:;
+- (void)addTitleLabel:;
+- (void)addArrowImgView:;
+- (id)titleView;
+- (void)setTitleView:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)titleEdgeInsets;
+- (void)setTitleEdgeInsets:;
+- (void)setNavTitle:;
+@end

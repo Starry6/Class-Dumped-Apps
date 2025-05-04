@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentCellBusinessController : AWECommentPanelListSwiftImpl.CommentCellBusinessBaseController
+@end

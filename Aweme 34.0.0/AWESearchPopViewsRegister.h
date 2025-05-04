@@ -1,0 +1,2 @@
+@interface AWESearchPopViewsRegister : NSObject
+@end

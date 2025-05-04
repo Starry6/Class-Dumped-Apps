@@ -1,0 +1,30 @@
+@interface AWEIMBulletContainerUIInfo : MTLModel
+@property (nonatomic) NSNumber locationType;
+@property (nonatomic) NSNumber styleType;
+@property (nonatomic) NSNumber layoutType;
+@property (nonatomic) NSNumber zoomScreenWidth;
+@property (nonatomic) NSNumber zoomRatio;
+@property (nonatomic) NSNumber zoomScreenHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStyleType:;
+- (void)setZoomRatio:;
+- (void)configWithUIInfo:;
+- (void)configWithTIMUIInfo:;
+- (void)__setupForBigFontStyleIfNeeded;
+- (void)setZoomScreenWidth:;
+- (void)setZoomScreenHeight:;
+- (id)zoomScreenWidth;
+- (id)zoomRatio;
+- (id)zoomScreenHeight;
+- (void)setLocationType:;
+- (id)locationType;
+- (void)setLayoutType:;
+- (id)layoutType;
+- (id)init;
+- (id)styleType;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

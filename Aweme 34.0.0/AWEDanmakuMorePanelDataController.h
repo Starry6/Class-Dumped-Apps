@@ -1,0 +1,33 @@
+@interface AWEDanmakuMorePanelDataController : NSObject
+@property (nonatomic) NSArray sectionList;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEVideoPlayDanmakuModel danmakuModel;
+@property (nonatomic) <AWEDanmakuMorePanelDelegate> delegate;
+@property (nonatomic) @? dismissBlock;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)aAWEPadModuleAdapter;
+- (id)aAWEPlayInteractionAdapter;
+- (id)danmakuModel;
+- (void)setDanmakuModel:;
+- (id)danmakuCopyCellModel;
+- (id)danmakuReportCellModelWithDanmakuModel:;
+- (id)danmakuSwitchCellModel;
+- (id)danmakuSettingsCellModel;
+- (id)danmakuManagerCellModel;
+- (id)toastForTurnOffDanmakuSwitch;
+- (void)updateWithAwemeModel:danmakuModel:;
+- (id)cellModelWithIndexPath:;
+- (long long)numberOfSections;
+- (id)delegate;
+- (long long)numberOfRowsInSection:;
+- (long long)numberOfRows;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+- (void)setSectionList:;
+- (id)sectionList;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEPlayInteractionAdapterClass;
+@end

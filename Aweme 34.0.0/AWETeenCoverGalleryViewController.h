@@ -1,0 +1,34 @@
+@interface AWETeenCoverGalleryViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray coverImageArray;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (BOOL)configWithRouterParamDict:;
+- (void)backBtnClicked:;
+- (void)configNavigationBar;
+- (id)coverImageArray;
+- (void)setCoverImageArray:;
+- (long long)isContainedInCoverGallery;
+- (void)selectCoverWithIndex:;
+- (void)selectCoverWithParameters:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (void)setSelectedIndex:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (id)tableView;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)checkState;
+- (void)setupUI;
+- (void)refreshData;
+@end

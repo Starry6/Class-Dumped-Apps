@@ -1,0 +1,25 @@
+@interface AWEFeedVideoTradeAnchorV2Manager : AWEFeedVideoBaseAnchorV2Manager
+- (void)anchorViewWillShowOnSuperview;
+- (id)trackerParamsForTemplateAnchorClick;
+- (id)trackerParamsForTemplateAnchorShow;
+- (BOOL)shouldBusinessInvoke;
+- (void)willShowDoubleLineStyleWithType:;
+- (id)trackerCommonParamsForTemplateAnchor;
+- (void)didShowDoubleLineStyleAnchor;
+- (void)trackAdPoiPointShow;
+- (void)handlePlayerPlayedPeriodChanged:;
+- (void)handleDidEndDisplaying;
+- (void)handleDidDisappear;
+- (void)handleAppDidEnterBackground;
+- (void)handleAnchorElementLeftInteractionShow;
+- (void)handlePlayerPlayedLoopTimes:;
+- (void)updateAnchorViewWithViewContext:;
+- (void)handlerTemplateAnchorViewClicked:extraInfo:;
+- (void)handleUserActionToShowTwoLine;
+- (id)initWithViewContext:;
+- (id)p_createFeedTrackAnchorContext;
+- (id)p_createFeedAnchorContext:;
+- (void)p_tradeAnchorRenderTimeTrackWithContext:scene:;
+- (void)trackTradeAdEventWithLabelName:;
+- (void)reset;
+@end

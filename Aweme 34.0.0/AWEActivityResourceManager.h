@@ -1,0 +1,34 @@
+@interface AWEActivityResourceManager : NSObject
+@property (nonatomic) AWESecureArchiveDownloader downloader;
+@property (nonatomic) NSBundle remoteResourcesBundle;
+@property (nonatomic) q retryLoadCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackService:status:extra:;
+- (void)downloadAllResourceWithModelIfNeeded:;
+- (void)loadLottieFromModel:isRedRain:completion:;
+- (void)loadPNGImageFromModel:isRedRain:completion:;
+- (void)setRetryLoadCount:;
+- (void)setupRootFolder:;
+- (BOOL)needDownLoadResourceWithModel:;
+- (void)downloadAllResource;
+- (BOOL)resourceFileLottieExisted:;
+- (BOOL)resourceFilePNGExisted:;
+- (void)loadPNGImageFromModel:completion:;
+- (void)loadLottieFromModel:completion:;
+- (void)p_downloadResourceWithModel:;
+- (void)setRemoteResourcesBundle:;
+- (id)lottieNamed:;
+- (long long)retryLoadCount;
+- (id)remoteResourcesBundle;
+- (id)pathForResource:ofType:bundle:;
+- (BOOL)resourceIsExisted:;
+- (void)postResourceIsReadyNotify;
+- (void)cleanRootFolder:;
+- (id)downloader;
+- (void).cxx_destruct;
+- (void)setDownloader:;
++ (id)sharedInstance;
+@end

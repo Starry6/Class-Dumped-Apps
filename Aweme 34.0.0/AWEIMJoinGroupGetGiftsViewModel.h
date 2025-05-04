@@ -1,0 +1,32 @@
+@interface AWEIMJoinGroupGetGiftsViewModel : NSObject
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString subtitleText;
+@property (nonatomic) AWEIMCouponListViewModel couponListViewModel;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) BOOL didTrackShow;
+@property (nonatomic) BOOL showErrorPage;
+@property (nonatomic) NSString emptyDescribeText;
+@property (nonatomic) NSString emptyTransferText;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)setCouponListViewModel:;
+- (id)couponListViewModel;
+- (void)fetchDataWithCompletion:;
+- (BOOL)showErrorPage;
+- (BOOL)didTrackShow;
+- (void)setDidTrackShow:;
+- (id)initWithExtraParams:;
+- (void)setShowErrorPage:;
+- (id)emptyDescribeText;
+- (id)emptyTransferText;
+- (void)didCkickedEmptyTransferButton;
+- (void)didClickedCouponFunctionButtonWithItemViewModel:completion:;
+- (void)__confirmTrackerWithClickType:;
+- (void)__showTracker;
+- (id)subtitleText;
+- (void)setTitleText:;
+- (id)titleText;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)setSubtitleText:;
+@end

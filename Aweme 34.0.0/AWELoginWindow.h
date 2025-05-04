@@ -1,0 +1,2 @@
+@interface AWELoginWindow : UIWindow
+@end

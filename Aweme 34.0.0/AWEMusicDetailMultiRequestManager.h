@@ -1,0 +1,30 @@
+@interface AWEMusicDetailMultiRequestManager : NSObject
+@property (nonatomic) AWEMusicDetailDataContext dataContext;
+@property (nonatomic) Q detailRequestStatus;
+@property (nonatomic) Q inspirationRequestStatus;
+@property (nonatomic) NSNumber inspirationCount;
+@property (nonatomic) BOOL allRequestSuccess;
+@property (nonatomic) NSMutableArray allRequestSuccessTaskBlockArray;
+- (id)dataContext;
+- (id)initWithDataContext:;
+- (void)updateDetailRequestStatus:;
+- (void)setDataContext:;
+- (void)addAllRequestSuccessTaskBlock:;
+- (void)updateInspirationRequestStatus:inspirationCount:;
+- (void)setDetailRequestStatus:;
+- (void)onSomeRequestStatusDidChange;
+- (void)setInspirationRequestStatus:;
+- (void)setInspirationCount:;
+- (BOOL)allRequestSuccess;
+- (id)allRequestSuccessTaskBlockArray;
+- (void)judgeIsAllRequestSuccess;
+- (unsigned long long)detailRequestStatus;
+- (unsigned long long)inspirationRequestStatus;
+- (void)setAllRequestSuccess:;
+- (void)onAllRequestDidSuccess;
+- (void)executeAllRequestSuccessTask;
+- (void)trackAllRequestSuccess;
+- (void)setAllRequestSuccessTaskBlockArray:;
+- (id)inspirationCount;
+- (void).cxx_destruct;
+@end

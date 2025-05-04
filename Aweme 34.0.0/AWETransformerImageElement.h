@@ -1,0 +1,30 @@
+@interface AWETransformerImageElement : AWETransformerSingleElement
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImage placeHolderImage;
+@property (nonatomic) NSString src;
+@property (nonatomic) NSString activeSrc;
+@property (nonatomic) BOOL active;
+@property (nonatomic) NSString placeholder;
+@property (nonatomic) q contentMode;
+- (void)loadViewWithCache:delegate:;
+- (void)renderElement;
+- (void)updateWithNewElement:;
+- (void)__updateImageElement;
+- (id)activeSrc;
+- (void)setActiveSrc:;
+- (void)setActive:;
+- (void)setPlaceholder:;
+- (void)loadView;
+- (BOOL)active;
+- (id)placeholder;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (long long)contentMode;
+- (id)imageView;
+- (void)setContentMode:;
+- (void)setSrc:;
+- (id)src;
+- (id)placeHolderImage;
+- (void)setPlaceHolderImage:;
++ (id)elementType;
+@end

@@ -1,0 +1,32 @@
+@interface AWEHPChannelTopTabItemIndicatorIconParams : NSObject
+@property (nonatomic) UIImage selectedImage;
+@property (nonatomic) UIImage unselectedImage;
+@property (nonatomic) q distance;
+@property (nonatomic) q iconSize;
+@property (nonatomic) q position;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) BOOL rotation;
+@property (nonatomic) q iconColor;
+- (void)setDistance:;
+- (id)init;
+- (long long)distance;
+- (long long)position;
+- (void)setIconSize:;
+- (BOOL)rotation;
+- (void)setRotation:;
+- (long long)iconSize;
+- (id)description;
+- (void)setSelectedImage:;
+- (BOOL)isValid;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (BOOL)hidden;
+- (void)setPosition:;
+- (id)selectedImage;
+- (id)copyWithZone:;
+- (BOOL)isValidWithReason:;
+- (id)unselectedImage;
+- (long long)iconColor;
+- (void)setIconColor:;
+- (void)setUnselectedImage:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEAwemeSpeedCollectionViewCell : UICollectionViewCell
+@property (nonatomic) NSArray speedModels;
+@property (nonatomic) UICollectionView speedCollectionView;
+@property (nonatomic) UIImageView polygonImageView;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) @? buttonClickedTrackBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (void)configWithModel:;
+- (id)buttonClickedTrackBlock;
+- (void)setButtonClickedTrackBlock:;
+- (id)speedModels;
+- (void)setSpeedModels:;
+- (id)speedCollectionView;
+- (id)polygonImageView;
+- (void)updatePolygonImageView;
+- (void)updateSelectedCell:model:;
+- (void)setSpeedCollectionView:;
+- (void)setPolygonImageView:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+- (void)createUI;
++ (Class)aAWEPadModuleAdapterClass;
+@end

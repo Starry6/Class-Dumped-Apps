@@ -1,0 +1,33 @@
+@interface AWEProfileRedDotManager : NSObject
+@property (nonatomic) NSMutableDictionary adapterDic;
+@property (nonatomic) NSMutableDictionary nodesDic;
+@property (nonatomic) NSMutableDictionary needBindNodesBeforeSetup;
+@property (nonatomic) NSMutableDictionary needBindAdaptersBeforeSetup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindShowView:adapterType:;
+- (id)nodeForType:;
+- (void)registerNode:nodeType:;
+- (void)registerAdapter:adapterType:;
+- (void)setupAdapter;
+- (void)addRedDotNode:adapterType:;
+- (void)bindShowView:nodeType:;
+- (void)setupRootNode;
+- (id)needBindAdaptersBeforeSetup;
+- (id)adapterWithType:;
+- (void)setNeedBindAdaptersBeforeSetup:;
+- (id)needBindNodesBeforeSetup;
+- (void)setNeedBindNodesBeforeSetup:;
+- (id)nodesDic;
+- (id)adapterDic;
+- (void)setupRootRedDotNodeWithType:;
+- (void)unregisterNode:;
+- (void)setupRedDotStruct;
+- (void)setAdapterDic:;
+- (void)setNodesDic:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

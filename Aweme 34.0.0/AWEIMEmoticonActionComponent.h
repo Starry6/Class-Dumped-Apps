@@ -1,0 +1,32 @@
+@interface AWEIMEmoticonActionComponent : AWEIMComponentBase
+@property (nonatomic) UIView<AWEIMEmoticonContainerViewProtocol> containerView;
+@property (nonatomic) <AWEIMEmoticonKeyBoardDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)didSelectedWithTabType:;
+- (void)didSelectedTabStore;
+- (void)didSelectedTabSearch;
+- (void)didSelectedCustomAdd;
+- (void)didSelectedDanmuEditEntry;
+- (void)didSelectedTrendingSearch;
+- (void)didSelectedStoreAuthorFooterWithThemeModel:;
+- (void)didSelectEmoticonModel:themeModel:emoticonView:indexPath:;
+- (void)didSelectAIStyle:;
+- (void)trackDefaultEmoticonModel:section:;
+- (void)didSelectedXmojiPlaceholder;
+- (void)didSelectedHiEmoji;
+- (void)didSelectedCreateVmoji;
+- (void)didSelectedChangeVmoji;
+- (void)didSelectedDelete;
+- (void)didSelectedSendText;
+- (void)didBeginPreviewEmotionModel:themeModel:;
+- (void)didChangedSelectedTab;
+- (id)delegate;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

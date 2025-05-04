@@ -1,0 +1,2 @@
+@interface AWEVideoDraftRouter : NSObject
+@end

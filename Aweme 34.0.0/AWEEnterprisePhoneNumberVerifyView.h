@@ -1,0 +1,32 @@
+@interface AWEEnterprisePhoneNumberVerifyView : AWEEnterpriseMessageBaseView
+@property (nonatomic) AWEEnterprisePhoneNumberVerifyViewModel viewModel;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton verifyPhoneBtn;
+@property (nonatomic) UILabel phoneLabel;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIView lineView;
+- (id)tipsLabel;
+- (void)setTipsLabel:;
+- (void)bindViewModel:;
+- (void)constraintSubviews;
+- (void)setPhoneLabel:;
+- (id)verifyPhoneBtn;
+- (void)tapVerifyPhone;
+- (void)setVerifyPhoneBtn:;
+- (id)currentContentSize;
+- (id)viewModel;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)phoneLabel;
+@end

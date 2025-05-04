@@ -1,0 +1,35 @@
+@interface AWENearbyC2TopContainerViewModel : AWEBaseViewModel
+@property (nonatomic) double topContainerHeight;
+@property (nonatomic) double topContainerOffsetY;
+@property (nonatomic) NSArray topLynxModelList;
+@property (nonatomic) double cardGap;
+@property (nonatomic) BOOL isTopContainerShowing;
+@property (nonatomic) double currentDisplayPct;
+@property (nonatomic) Q lastRefreshType;
+@property (nonatomic) AWENearbyPageContext pageContext;
+- (id)initWithPageContext:;
+- (double)topContainerHeight;
+- (double)topContainerOffsetY;
+- (void)updateScrollerOffset:;
+- (void)topContainerDidAppear;
+- (void)topContainerDidDisapper;
+- (unsigned long long)lastRefreshType;
+- (BOOL)isTopContainerShowing;
+- (double)cardGap;
+- (void)enterToNearby;
+- (void)setTopLynxModelList:;
+- (void)setTopContainerHeight:;
+- (void)setTopContainerOffsetY:;
+- (double)currentDisplayPct;
+- (void)updateTopContainerPct:;
+- (void)updateTopContainerShowStatus:;
+- (void)setCurrentDisplayPct:;
+- (void)setIsTopContainerShowing:;
+- (id)topLynxModelList;
+- (void)setCardGap:;
+- (void)setLastRefreshType:;
+- (void)addObserver;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
+@end

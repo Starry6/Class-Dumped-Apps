@@ -1,0 +1,31 @@
+@interface AWEFeedAnchorAnimationViewConfig : AWEFeedAnchorBaseConfig
+@property (nonatomic) AWEMarkView generalAnchorView;
+@property (nonatomic) AWEFeedAnchorBasePresenter presenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (void)anchorViewWillShowOnSuperview;
+- (void)updateWithAwemeModel:needPerformOnDisplay:;
+- (id)anchorViewWithModel:;
+- (id)layoutWithAwemeModel:commonLayoutInfo:;
+- (id)generalAnchorView;
+- (void)alogWithInfo:;
+- (void)updateAnchorIconImage:;
+- (void)updateAnchorForLargeFontAdaptIfNeeded;
+- (void)setGeneralAnchorView:;
+- (void)showWelfareAnchorInTwoLinesIfNeed;
+- (void)handleAnchorViewTapped;
+- (void)triggerViewAnimationWithType:text:;
+- (id)presenter;
+- (void)setPresenter:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)interactionContext;
+- (void)setInteractionContext:;
++ (BOOL)hasAnchorViewDataWithAwemeModelForFeed:extraInfo:;
++ (BOOL)hasAnchorViewDataWithAwemeModelForBulletScreen:extraInfo:;
++ (id)anchorType;
+@end

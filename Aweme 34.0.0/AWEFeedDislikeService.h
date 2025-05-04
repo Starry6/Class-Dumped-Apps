@@ -1,0 +1,36 @@
+@interface AWEFeedDislikeService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dislikeButtonText;
+- (BOOL)shouldShowDislikeSecondStagePanelWithAwemeModel:referString:;
+- (void)dislikeSecondStagePanelOnVC:awemeModel:trackExtra:completion:;
+- (BOOL)shouldShowBottomNotificationForLongPressPanel:referString:;
+- (BOOL)shouldShowDislikeV2Panel:referString:;
+- (void)dislikeBottomNotificationPanelOnVC:awemeModel:trackExtra:dismissNotificationWhenClickOutSide:click:;
+- (void)dislikePanelOnVC:awemeModel:trackExtra:multipleSelection:cancel:;
+- (void)dislikeV2PanelOnVC:awemeModel:trackExtra:multipleSelection:cancel:;
+- (long long)dislikeActionPosition;
+- (BOOL)enablePanelDislikeOptimizationWithModel:referString:;
+- (id)dislikeButtonTextForPanel:;
+- (BOOL)enableDislikeTextAndIconOptimize;
+- (id)optimizedDislikeButtonText;
+- (id)optimizedDislikeIcon;
+- (id)optimizedDislikeShareIconV2;
+- (id)optimizedDislikeShareIcon;
+- (id)optimizedDislikeShareIconForDarkStyle;
+- (void)addDislikeModelIfNeededWithReferString:model:;
+- (id)searchQueryDislikeDictWithReferString:;
+- (id)latestDislikeItemsStringWithReferString:;
+- (id)longPressDislikePanelConfig;
+- (void)recordVideoPlayInteraction:;
+- (void)recordUserDislikeInteraction:;
+- (void)recordUserSkipInteraction:;
+- (void)recordUserSkipInteractionForDislike:;
+- (void)cleanRecordUserSkipInteractionForDislike;
+- (BOOL)userHasSkippedEnoughVideosForDislikeToast;
+- (id)getDislikeItemsInSessionArray;
+- (id)getSkipItemsInSessionArray;
+- (BOOL)shouldShowDislikeInPanel:;
+@end

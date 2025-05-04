@@ -1,0 +1,38 @@
+@interface AWETeenTimeLockSettingViewController : UIViewController
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) UIImageView timeIconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel useTimeTitleLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) NSString password;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (BOOL)configWithRouterParamDict:;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)backBtnClicked:;
+- (void)p_setupData;
+- (void)p_trackTimeLimitSettingPageShow;
+- (id)timeIconImageView;
+- (id)useTimeTitleLabel;
+- (void)setTimeIconImageView:;
+- (void)setUseTimeTitleLabel:;
+- (id)password;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setPassword:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setDataSource:;
+- (id)titleLabel;
+- (id)dataSource;
+@end

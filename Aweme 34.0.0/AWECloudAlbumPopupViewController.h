@@ -1,0 +1,36 @@
+@interface AWECloudAlbumPopupViewController : UIViewController
+@property (nonatomic) <AFDModalViewHelperProtocol> helper;
+@property (nonatomic) UINavigationController innerNavigation;
+@property (nonatomic) UIViewController<AWECloudAlbumPopupContentVCProtocol> contentVC;
+@property (nonatomic) double dragDistance;
+@property (nonatomic) BOOL isResetting;
+@property (nonatomic) UIView topViewForVoiceOver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)wantsDimmingTransitionBackground;
+- (void)transitionBackgroundViewTapped:;
+- (void)setIsResetting:;
+- (id)contentVC;
+- (void)setContentVC:;
+- (void)addPanGesture;
+- (void)setInnerNavigation:;
+- (id)innerNavigation;
+- (double)dragDistance;
+- (void)setDragDistance:;
+- (void)dismissPopupVCWithCompletion:;
+- (id)topViewForVoiceOver;
+- (id)initWithContentVC:;
+- (void)panGestureDidFinshed;
+- (void)setTopViewForVoiceOver:;
+- (BOOL)isResetting;
+- (void)viewDidLoad;
+- (void)pan:;
+- (void)setHelper:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)helper;
++ (void)showPopupVCWithContentVC:completion:;
++ (void)showPopupVCWithContentView:completion:;
+@end

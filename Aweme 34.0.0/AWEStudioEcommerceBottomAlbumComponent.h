@@ -1,0 +1,36 @@
+@interface AWEStudioEcommerceBottomAlbumComponent : ACCFeatureComponent
+@property (nonatomic) <ACCRecorderViewContainer> viewContainer;
+@property (nonatomic) <ACCCameraService> cameraService;
+@property (nonatomic) <ACCRecordSwitchModeService> switchModeService;
+@property (nonatomic) <AUCBottomModeAlbumService> bottomModeAlbumService;
+@property (nonatomic) <AUCPresentedAlbumCustomConfigService> presentedAlbumService;
+@property (nonatomic) NSArray selectedAssets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cameraService;
+- (void)setCameraService:;
+- (void)componentDidMount;
+- (void)componentDidAppear;
+- (void)componentWillDisappear;
+- (unsigned long long)preferredLoadPhase;
+- (void)componentWillAppear;
+- (void)componentDidDisappear;
+- (void)bindServices:;
+- (id)switchModeService;
+- (void)setSwitchModeService:;
+- (void)setSelectedAssets:;
+- (void)updatePresentedAlbumInputDataIfNeeded:;
+- (void)albumGoEditorPageWithAssets:;
+- (void)albumDidCompleteWithAssets:;
+- (void)updateAlbumInputDataIfNeeded:;
+- (id)bottomModeAlbumService;
+- (void)setBottomModeAlbumService:;
+- (id)presentedAlbumService;
+- (void)setPresentedAlbumService:;
+- (void).cxx_destruct;
+- (id)selectedAssets;
+- (void)setViewContainer:;
+- (id)viewContainer;
+@end

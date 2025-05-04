@@ -1,0 +1,35 @@
+@interface AWELandscapMixVideoSwitcher : NSObject
+@property (nonatomic) AWEAwemeModel currentCellModel;
+@property (nonatomic) q currentCellIndex;
+@property (nonatomic) @? currentCellModelBlock;
+@property (nonatomic) @? replaceCurrentModelBlock;
+@property (nonatomic) @? scrollToItemBlock;
+@property (nonatomic) @? currentPlaybackTimeBlock;
+- (void)setupContextHandler;
+- (void)recreateMixDataControllerIfNeeded;
+- (void)requestMixVideoEpisodesFrom:completion:;
+- (void)updateModelsIfNeededWith:;
+- (void)completedWith:callback:;
+- (BOOL)shouldUpdateMixControllerWith:;
+- (void)preLoadMixContinuesDataIfNeededWith:;
+- (id)currentCellModel;
+- (void)scrollToItemAt:animated:;
+- (id)errorWith:;
+- (void)replaceCurrentModelWith:;
+- (long long)currentCellIndex;
+- (void)requestMixVideoEpisodesIfNeeded;
+- (BOOL)autoPlayMixContinusVideo;
+- (BOOL)needShowMixContinusPlayReminder;
+- (void)insertAndScrollWith:scrollTo:;
+- (id)currentCellModelBlock;
+- (void)setCurrentCellModelBlock:;
+- (id)replaceCurrentModelBlock;
+- (void)setReplaceCurrentModelBlock:;
+- (id)scrollToItemBlock;
+- (void)setScrollToItemBlock:;
+- (id)currentPlaybackTimeBlock;
+- (void)setCurrentPlaybackTimeBlock:;
+- (id)initWithFeedViewModel:pageContext:;
+- (id)init;
+- (void).cxx_destruct;
+@end

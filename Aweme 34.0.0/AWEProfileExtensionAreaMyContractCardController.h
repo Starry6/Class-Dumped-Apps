@@ -1,0 +1,32 @@
+@interface AWEProfileExtensionAreaMyContractCardController : NSObject
+@property (nonatomic) UIView<AWEProfileExtensionAreaCardViewProtocol> cardView;
+@property (nonatomic) AWEProfileExtensionAreaCommonParamModel commonParamModel;
+@property (nonatomic) <AWEProfileExtensionAreaContainerProtocol> delegate;
+@property (nonatomic) NSString dotEvent;
+@property (nonatomic) BOOL shouldShowRedDot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowCard;
+- (void)passCardView:;
+- (void)cardDidClicked;
+- (void)cardWillAppear;
+- (void)configDelegate:;
+- (void)setCommonParamModel:;
+- (id)commonParamModel;
+- (void)setShouldShowRedDot:;
+- (BOOL)shouldShowRedDot;
+- (void)setDotEvent:;
+- (id)dotEvent;
+- (id)dotEventKey;
+- (void)recordRedDotConsume;
+- (id)delegate;
+- (id)uid;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)cardView;
+- (void)setCardView:;
+- (void)startTimerIfNeeded;
++ (id)cardControllerWithCommonParam:;
+@end

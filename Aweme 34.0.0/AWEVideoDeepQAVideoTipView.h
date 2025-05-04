@@ -1,0 +1,34 @@
+@interface AWEVideoDeepQAVideoTipView : UIView
+@property (nonatomic) LOTAnimationView playingIconView;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) YYLabel textLabel;
+@property (nonatomic) double timeLableWidth;
+@property (nonatomic) BOOL hasArriveFirstSection;
+@property (nonatomic) YYLabel tokenLabel;
+@property (nonatomic) double textLabelWidth;
+@property (nonatomic) double tockenWidth;
+@property (nonatomic) Q videoSizeType;
+- (void)configUI;
+- (id)tokenLabel;
+- (void)setTokenLabel:;
+- (BOOL)hasArriveFirstSection;
+- (id)playingIconView;
+- (unsigned long long)videoSizeType;
+- (double)timeLableWidth;
+- (double)tockenWidth;
+- (double)textLabelWidth;
+- (void)setTockenWidth:;
+- (void)setVideoSizeType:;
+- (void)setHasArriveFirstSection:;
+- (void)setTextLabelWidth:;
+- (void)setTimeLableWidth:;
+- (void)setPlayingIconView:;
+- (void)updateWithModel:lottiePath:count:videoSizeType:;
+- (id)textLabel;
+- (id)init;
+- (void)setTimeLabel:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (void)layoutSubviews;
+- (void)setTextLabel:;
+@end

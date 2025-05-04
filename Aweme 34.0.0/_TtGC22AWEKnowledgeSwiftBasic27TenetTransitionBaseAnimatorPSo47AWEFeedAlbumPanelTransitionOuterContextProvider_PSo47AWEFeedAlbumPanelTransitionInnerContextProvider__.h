@@ -1,0 +1,4 @@
+@interface _TtGC22AWEKnowledgeSwiftBasic27TenetTransitionBaseAnimatorPSo47AWEFeedAlbumPanelTransitionOuterContextProvider_PSo47AWEFeedAlbumPanelTransitionInnerContextProvider__ : NSObject
+- (id)init;
+- (void).cxx_destruct;
+@end

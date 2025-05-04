@@ -1,0 +1,35 @@
+@interface AWENearbyHotSpotTopTitleView : UIView
+@property (nonatomic) UIView titleWrapper;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) CAGradientLayer topLayer;
+@property (nonatomic) UIView topContainer;
+@property (nonatomic) UILabel hotNameLabel;
+@property (nonatomic) UIView subtitleWrapper;
+@property (nonatomic) UIImageView poiIcon;
+@property (nonatomic) UILabel cityLabel;
+@property (nonatomic) AWENearbyHotSpotTableViewModel viewModel;
+- (id)topLayer;
+- (id)poiIcon;
+- (void)setPoiIcon:;
+- (id)topContainer;
+- (void)setTopContainer:;
+- (void)updateTopTitleView:animate:;
+- (id)titleWrapper;
+- (id)hotNameLabel;
+- (id)subtitleWrapper;
+- (id)cityLabel;
+- (void)updateTopTitleView:;
+- (id)topLabelFont;
+- (void)setTitleWrapper:;
+- (void)setHotNameLabel:;
+- (void)setSubtitleWrapper:;
+- (void)setCityLabel:;
+- (void)setTopLayer:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setTopLabel:;
+- (id)topLabel;
+@end

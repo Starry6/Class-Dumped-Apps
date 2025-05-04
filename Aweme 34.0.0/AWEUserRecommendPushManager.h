@@ -1,0 +1,37 @@
+@interface AWEUserRecommendPushManager : NSObject
+@property (nonatomic) NSString insertUID;
+@property (nonatomic) NSString targetUID;
+@property (nonatomic) BOOL hasUpdatedSubTab;
+@property (nonatomic) BOOL needUpdatedSubTab;
+@property (nonatomic) AWEUserRecommendBigCardDataSource friendFromPushDataSource;
+@property (nonatomic) BOOL isFetchingData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)insertUID;
+- (void)setInsertUID:;
+- (BOOL)hasUserRecommendPushInsertUIDInFamiliarFeed;
+- (void)fetchUserRecommendPushIfNeeded:;
+- (BOOL)canFetchUserRecommendPushCard;
+- (void)clearUserRecommendPushInsertUIDInFamiliarFeed;
+- (id)insertUserRecommendPushIfNeededWithList:;
+- (void)setIsFetchingData:;
+- (unsigned long long)landingPageForRecommendPush;
+- (void)setUserRecommendPushInsertUID:targetUID:;
+- (id)userRecommendPushInsertUIDInFamiliarFeed;
+- (void)setFriendFromPushDataSource:;
+- (id)friendFromPushDataSource;
+- (BOOL)hasUpdatedSubTab;
+- (BOOL)needUpdatedSubTab;
+- (void)setHasUpdatedSubTab:;
+- (void)setNeedUpdatedSubTab:;
+- (id)userRecommendPushTargetUIDInFamiliarFeed;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setTargetUID:;
+- (id)targetUID;
+- (BOOL)isFetchingData;
++ (id)shareInstance;
+@end

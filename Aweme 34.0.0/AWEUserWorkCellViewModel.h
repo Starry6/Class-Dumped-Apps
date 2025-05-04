@@ -1,0 +1,37 @@
+@interface AWEUserWorkCellViewModel : NSObject
+@property (nonatomic) NSObject<AWEUserWorkCellBaseComponentProtocol> rootComponent;
+@property (nonatomic) NSObject<AWEUserWorkCellUnifiedComponentContainerProtocol> componentTree;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) double width;
+@property (nonatomic) AWEUserWorkCollectionViewComponentCell currentCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentTree:changeBoundsToSize:;
+- (void)componentContainer:changeBoundsToSize:;
+- (void)performPadUILayoutUpdate:;
+- (void)showLongPressPanel;
+- (id)aAWEPadUserPageAdapter;
+- (id)rootComponent;
+- (void)setRootComponent:;
+- (void)renderWithContainer:maxSize:;
+- (void)markDetachedFromContainer;
+- (id)componentTree;
+- (void)setComponentTree:;
+- (id)awe_sizeForPostWorkItemOfWaterfallLayout:indexPath:screenWidth:;
+- (BOOL)enableCellSizeCalculateOptimize;
+- (id)initWithData:componentConfig:;
+- (id)accessibilityLabelWith:;
+- (void)refreshWithWidth:indexPath:;
+- (id)indexPath;
+- (void)setWidth:;
+- (id)containerView;
+- (void)setIndexPath:;
+- (double)width;
+- (void).cxx_destruct;
+- (void)setCurrentCell:;
+- (id)currentCell;
+- (id)cellContext;
++ (Class)aAWEPadUserPageAdapterClass;
+@end

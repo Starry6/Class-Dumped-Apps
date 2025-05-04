@@ -1,0 +1,35 @@
+@interface AWEUserLoginPadEmailViewController : AWEUserLoginBaseViewController
+@property (nonatomic) AWEUserLoginEmailViewModel viewModel;
+@property (nonatomic) UIView navigationBar;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEUserLoginErrorInfoLabel errorLabel;
+@property (nonatomic) UILabel subTitleLabel;
+- (id)pageBtm;
+- (void)setupContainerView;
+- (void)handleKeyboardWillChange:;
+- (void)addErrorLabel:;
+- (void)setupBgViewIfNeed;
+- (void)setupLoginComponentView;
+- (void)startBind;
+- (void)updateBottomUtilWithHighlyCompact:isKeyboardShow:;
+- (void)updateViewLayoutWithViewSize:;
+- (id)navigationBar;
+- (id)init;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (id)containerView;
+- (void)viewDidDisappear:;
+- (long long)preferredStatusBarStyle;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setNavigationBar:;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)hideError;
+- (void)setupNavigationBar;
+- (id)errorLabel;
+- (void)setErrorLabel:;
+@end

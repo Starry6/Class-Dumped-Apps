@@ -1,0 +1,33 @@
+@interface AWEIMSilverWingRecommendListTextView : UIView
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UILabel emojiLabel;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) BOOL hasBackgroundImage;
+@property (nonatomic) BOOL backgroundImageIsBright;
+@property (nonatomic) AWEIMSilverWingRecommendListViewModel renderModel;
+- (void)p_setupUI;
+- (id)renderModel;
+- (void)setRenderModel:;
+- (void)renderWithModel:;
+- (void)setBackgroundImageIsBright:;
+- (BOOL)backgroundImageIsBright;
+- (void)p_constraintSubViews;
+- (void)updateViewWithBackgroundImage:isBright:;
+- (void)updateTextConstraint;
+- (void)setEmojiLabel:;
+- (id)textLabel;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)textColor;
+- (id)emojiLabel;
+- (void)setTextLabel:;
+- (BOOL)hasBackgroundImage;
+- (void)setHasBackgroundImage:;
+@end

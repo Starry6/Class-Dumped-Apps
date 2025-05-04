@@ -1,0 +1,22 @@
+@interface AWEKnowledgeSwiftImpl.KnowledgeHangoutServiceImpl : HTSService
+- (Class)hangoutWaterfallSectionControllerClass;
+- (id)createHangoutWaterfallCommonLynxSectionViewModel:cellWidth:cellHeight:itemModel:cardID:schema:serverData:useHunterHeight:placeHolderColor:disableRemoveSection:totalRequestTimes:requestMethod:;
+- (id)createNativeSectionViewModel:totalRequestTimes:requestMethod:;
+- (id)createHangoutLongPressPanelViewController:enterFrom:enterMethod:logExtra:location:contentRect:isDislikeIconActive:;
+- (void)bindContext:toSectionController:;
+- (id)contextForSectionController:;
+- (Class)hangoutWaterfallCommonLynxSectionControllerClass;
+- (id)createHangoutTabViewController;
+- (id)hangoutTopTabName;
+- (id)hangoutContextProvider;
+- (id)createHangoutWaterfallDataControllerWithPayload:;
+- (id)createHangoutPageContext;
+- (void)addIntoHangoutFeatureSequenceWithAwemeId:awemeModel:feedScene:sequence:customParams:;
+- (id)experienceSearchHangoutWidgetParamsWithPreviousPage:;
+- (id)hangoutSingleFeedDataController:;
+- (BOOL)isHangoutWidgetInstalled;
+- (id)createHangoutWaterfallSectionViewModel:;
+- (id)createHangoutWaterfallCommonLynxSectionViewModel:;
+- (id)init;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,34 @@
+@interface AWEDTOVoiceChangeModel : MTLModel
+@property (nonatomic) NSString voiceChangerId;
+@property (nonatomic) NSString challengeId;
+@property (nonatomic) NSString challengeName;
+@property (nonatomic) NSArray voiceEffects;
+@property (nonatomic) q isVoiceConversion;
+@property (nonatomic) NSString voiceConversionSpeakerId;
+@property (nonatomic) NSArray voiceConversionAudioPaths;
+@property (nonatomic) NSArray voiceConversionPlayRanges;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)challengeName;
+- (void)setChallengeName:;
+- (id)challengeId;
+- (void)setChallengeId:;
+- (id)voiceChangerId;
+- (void)setVoiceChangerId:;
+- (id)voiceEffects;
+- (void)setVoiceEffects:;
+- (long long)isVoiceConversion;
+- (void)setIsVoiceConversion:;
+- (id)voiceConversionSpeakerId;
+- (void)setVoiceConversionSpeakerId:;
+- (id)voiceConversionAudioPaths;
+- (void)setVoiceConversionAudioPaths:;
+- (id)voiceConversionPlayRanges;
+- (void)setVoiceConversionPlayRanges:;
+- (void).cxx_destruct;
++ (id)voiceEffectsJSONTransformer;
++ (id)voiceConversionPlayRangesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

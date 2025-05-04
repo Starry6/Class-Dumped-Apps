@@ -1,0 +1,37 @@
+@interface AWESuperManModel : NSObject
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString gameIconURL;
+@property (nonatomic) BOOL gamePortrait;
+@property (nonatomic) NSString clickID;
+@property (nonatomic) NSString appleID;
+@property (nonatomic) BOOL isRealAuthor;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) NSString authorName;
+@property (nonatomic) NSString authorIconURL;
+@property (nonatomic) BOOL needFollow;
+- (id)gameName;
+- (void)setGameName:;
+- (BOOL)isRealAuthor;
+- (void)setIsRealAuthor:;
+- (id)clickID;
+- (void)setClickID:;
+- (id)gameID;
+- (void)setGameID:;
+- (void)setGameIconURL:;
+- (void)setGamePortrait:;
+- (void)setAuthorIconURL:;
+- (void)setNeedFollow:;
+- (BOOL)gamePortrait;
+- (BOOL)needFollow;
+- (id)gameIconURL;
+- (id)authorIconURL;
+- (id)validate;
+- (void).cxx_destruct;
+- (id)appleID;
+- (void)setAppleID:;
+- (id)authorName;
+- (void)setAuthorName:;
+- (id)authorID;
+- (void)setAuthorID:;
+@end

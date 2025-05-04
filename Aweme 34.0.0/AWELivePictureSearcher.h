@@ -1,0 +1,36 @@
+@interface AWELivePictureSearcher : NSObject
+@property (nonatomic) AWESearchScanDataContext searchDataContext;
+@property (nonatomic) NSString pageType;
+@property (nonatomic) BOOL showBG;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString searchFrom;
+@property (nonatomic) NSString searchFromSecond;
+@property (nonatomic) BOOL showSelector;
+@property (nonatomic) NSDictionary logExtraDic;
+@property (nonatomic) NSString federationInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)logExtraDic;
+- (void)setLogExtraDic:;
+- (void)setShowBG:;
+- (void)setShowSelector:;
+- (void)setFederationInfo:;
+- (void)setSearchFromSecond:;
+- (void)setSearchFrom:;
+- (id)federationInfo;
+- (id)searchDataContext;
+- (void)jumpToScanPageWithImage:;
+- (BOOL)showSelector;
+- (void)setSearchDataContext:;
+- (id)searchFrom;
+- (id)searchFromSecond;
+- (BOOL)showBG;
+- (id)init;
+- (void)setPageType:;
+- (void).cxx_destruct;
+- (id)pageType;
+@end

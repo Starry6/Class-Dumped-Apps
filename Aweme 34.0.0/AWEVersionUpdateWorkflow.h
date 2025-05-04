@@ -1,0 +1,36 @@
+@interface AWEVersionUpdateWorkflow : NSObject
+@property (nonatomic) UIView loadingWindow;
+@property (nonatomic) DUXLoadingToast loadingToast;
+@property (nonatomic) BOOL showLoading;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) @? workflowCompletion;
+@property (nonatomic) <AWEVersionUpdateWorkflowDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startVersionUpdateWorkflow:completion:;
+- (void)DUXLoadingToastDidClosed:;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (void)dismissLoadingView;
+- (void)setShowLoading:;
+- (id)loadingToast;
+- (void)setLoadingToast:;
+- (void)setLoadingWindow:;
+- (id)loadingWindow;
+- (void)setWorkflowCompletion:;
+- (void)tryCancelWorkflow;
+- (void)finishWorkflow:;
+- (id)workflowCompletion;
+- (BOOL)cancelled;
+- (void)setCancelled:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)showLoadingView;
+- (void)openAppStore;
+- (BOOL)showLoading;
++ (void)themeDynamicWithStoreVC:;
+@end

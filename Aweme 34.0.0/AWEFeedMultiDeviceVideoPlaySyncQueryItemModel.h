@@ -1,0 +1,33 @@
+@interface AWEFeedMultiDeviceVideoPlaySyncQueryItemModel : MTLModel
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) q playProgress;
+@property (nonatomic) NSInteger clientType;
+@property (nonatomic) NSInteger recordType;
+@property (nonatomic) q createTime;
+@property (nonatomic) q uploadScene;
+@property (nonatomic) NSInteger fromClient;
+@property (nonatomic) q fromDeviceId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (long long)playProgress;
+- (void)setPlayProgress:;
+- (long long)uploadScene;
+- (void)setUploadScene:;
+- (int)fromClient;
+- (long long)fromDeviceId;
+- (void)setFromClient:;
+- (void)setFromDeviceId:;
+- (int)clientType;
+- (long long)createTime;
+- (int)recordType;
+- (void)setCreateTime:;
+- (void).cxx_destruct;
+- (void)setRecordType:;
+- (void)setClientType:;
++ (id)awemeModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

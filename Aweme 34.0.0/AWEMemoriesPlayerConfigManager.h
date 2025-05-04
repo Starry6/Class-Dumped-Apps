@@ -1,0 +1,31 @@
+@interface AWEMemoriesPlayerConfigManager : NSObject
+@property (nonatomic) @? tileModelChanged;
+@property (nonatomic) AWEMemoriesPlayerConfigTopBuilder topBuilder;
+@property (nonatomic) AWEMemoriesPlayerConfigBottomBuilder bottomBuilder;
+@property (nonatomic) AWEMemoriesPlayerConfigGestureBuilder gestureBuilder;
+@property (nonatomic) AWEMemoriesPlayerConfigContentDisplayAreaBuilder contetnAreaBuilder;
+@property (nonatomic) NSString emptyViewText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEmptyViewText:;
+- (void)configTopBarWithBuilder:;
+- (void)configBottomBarWithBuilder:;
+- (void)configGestureWithBuilder:;
+- (id)topBuilder;
+- (void)updatePlayerFromCurrentPlayerTileModelChanged:;
+- (id)bottomBuilder;
+- (void)setTopBuilder:;
+- (void)setBottomBuilder:;
+- (id)contetnAreaBuilder;
+- (void)setContetnAreaBuilder:;
+- (id)gestureBuilder;
+- (void)setGestureBuilder:;
+- (id)tileModelChanged;
+- (void)setTileModelChanged:;
+- (void)configContentAreaWithBuilder:;
+- (id)emptyViewText;
+- (void)updateCurrentPlayerTileModel:;
+- (void).cxx_destruct;
+@end

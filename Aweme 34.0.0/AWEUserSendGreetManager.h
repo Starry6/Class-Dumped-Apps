@@ -1,0 +1,30 @@
+@interface AWEUserSendGreetManager : NSObject
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL isFirstGreetShow;
+@property (nonatomic) BOOL isInProcessing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerTapOnPopupMask:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (BOOL)isInProcessing;
+- (void)setIsFirstGreetShow:;
+- (void)sendGreetBtnClicked;
+- (void)requestGreetFrequency;
+- (void)setIsInProcessing:;
+- (void)handleResponseWithModel:;
+- (id)updateSchemaWithSchema:;
+- (BOOL)isFirstGreetShow;
+- (void)trackGreetingHalfPopupClick;
+- (id)initWithUser:enterFrom:;
+- (void)trackGreetBtnWithEventName:;
+- (id)user;
+- (void)setUser:;
+- (id)requestURL;
+- (void).cxx_destruct;
++ (void)sendGreetBtnClickedWithUser:enterFrom:;
++ (id)defaultManager;
+@end

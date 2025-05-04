@@ -1,0 +1,34 @@
+@interface AWEComposerBeautyCacheMigration : NSObject
+@property (nonatomic) AWEComposerBeautyCacheViewModel beautyCacheManager;
+@property (nonatomic) NSNumber lastABGroup;
+@property (nonatomic) NSString panelName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCacheManager:panelName:;
+- (void)setLastABGroup:;
+- (void)migrateAppliedEffectListWithCategories:;
+- (void)migrateAppliedEffectItemWithCategories:;
+- (id)beautyCacheManager;
+- (void)migrateAppliedEffectForCategory:;
+- (void)migrateAppliedChildEffect:;
+- (void)migrateEffectItem:inEffect:;
+- (void)migrateAppliedEffectForCategory:forGender:;
+- (id)oldCacheKeyForCategory:gender:;
+- (void)migrateAppliedChildEffect:forGender:;
+- (id)oldCacheKeyForEffect:gender:;
+- (void)migrateEffectItem:inEffect:forGender:;
+- (id)oldCacheKeyForEffectItem:inEffect:gender:;
+- (id)ratioNumberForTag_920:;
+- (void)migrateAppliedEffectsWithEffects:forGender:;
+- (void)startCacheDataMigration:lastABGroup:completion:;
+- (void)setBeautyCacheManager:;
+- (id)lastABGroup;
+- (void).cxx_destruct;
+- (id)panelName;
+- (void)setPanelName:;
++ (id)migrationCacheKeyWithPanelName:;
++ (BOOL)needUpdateCacheWithPanelName:;
++ (void)markMigrationCompleteWithPanelName:;
+@end

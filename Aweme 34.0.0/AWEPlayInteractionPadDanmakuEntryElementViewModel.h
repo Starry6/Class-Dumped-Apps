@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionPadDanmakuEntryElementViewModel : NSObject
+@property (nonatomic) BOOL hasFakeDanmakuSwitch;
+@property (nonatomic) BOOL danmakuPostPauseVideoPlay;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionContextProtocol> context;
+@property (nonatomic) <AWEPlayInteractionViewModelHelper> viewModelHelper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (id)logExtraDict;
+- (id)fromModel;
+- (id)enterFrom;
+- (id)aAWEPadModuleAdapter;
+- (id)interactor_fromModel;
+- (id)aAWEPlayInteractionAdapter;
+- (void)setDanmakuPostPauseVideoPlay:;
+- (BOOL)danmakuPostPauseVideoPlay;
+- (BOOL)shouldShowPadDanmakuEntryWithModel:;
+- (void)onClickDanmakuIcon;
+- (void)onClickDanmakuInputView;
+- (void)setHasFakeDanmakuSwitch:;
+- (void)handleDanmakuInputViewClick;
+- (BOOL)isFromDanmakuMessage;
+- (BOOL)hasFakeDanmakuSwitch;
+- (id)viewModelHelper;
+- (void)setViewModelHelper:;
+- (id)extra;
+- (id)initWithContext:;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEPlayInteractionAdapterClass;
+@end

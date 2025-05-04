@@ -1,0 +1,31 @@
+@interface AWELocalFriendModel : AWELocalUserCenterBaseModel
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) q createTimeIndex;
+@property (nonatomic) double affinityIndex;
+@property (nonatomic) q closeFriendStatus;
+@property (nonatomic) double closeFriendTime;
+- (long long)closeFriendStatus;
+- (void)setCloseFriendStatus:;
+- (double)affinityIndex;
+- (void)setAffinityIndex:;
+- (id)userPropertyDetail;
+- (long long)createTimeIndex;
+- (double)closeFriendTime;
+- (void)setCreateTimeIndex:;
+- (void)setCloseFriendTime:;
+- (id)targetTable;
++ (id)modifyTime;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)closeFriendStatus;
++ (id)affinityIndex;
++ (id)createTimeIndex;
++ (id)closeFriendTime;
++ (id)userID;
++ (id)updateTime;
++ (id)isDeleted;
++ (id)JSONKeyPathsByPropertyKey;
+@end

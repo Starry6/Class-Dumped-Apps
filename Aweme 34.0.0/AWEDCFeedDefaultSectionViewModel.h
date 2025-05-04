@@ -1,0 +1,2 @@
+@interface AWEDCFeedDefaultSectionViewModel : AWEDCFeedBaseSectionViewModel
+@end

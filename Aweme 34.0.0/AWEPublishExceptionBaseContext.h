@@ -1,0 +1,2 @@
+@interface AWEPublishExceptionBaseContext : NSObject
+@end

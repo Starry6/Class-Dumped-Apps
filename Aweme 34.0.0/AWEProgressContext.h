@@ -1,0 +1,31 @@
+@interface AWEProgressContext : AWEPageContext
+@property (nonatomic) Q scene;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEProgressConfigs configs;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) AWEPageContext outerContext;
+@property (nonatomic) UISlider progressSlider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setReferString:;
+- (id)enterFrom;
+- (void)setConfigs:;
+- (id)outerContext;
+- (void)setOuterContext:;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (id)extraInfo;
+- (id)progressSlider;
+- (void)setProgressSlider:;
+- (id)configs;
+- (void)setExtraInfo:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFallCardStructModel : AWEBaseApiModel
+@property (nonatomic) NSString recommendReason;
+@property (nonatomic) NSDictionary highValueArea;
+@property (nonatomic) AWEFeedDoubleColumnCellCoverInfo cellBaseColorInfo;
+@property (nonatomic) AWEFeedDoubleColumnCellRecommendReasonFallLabel bottomRecommendReason;
+@property (nonatomic) NSString recommendReasonV2;
+@property (nonatomic) BOOL canExtendPlay;
+@property (nonatomic) BOOL canSwitchToFall;
+@property (nonatomic) BOOL isTidy;
+- (void)setRecommendReason:;
+- (id)recommendReason;
+- (id)highValueArea;
+- (void)setHighValueArea:;
+- (id)cellBaseColorInfo;
+- (void)setCellBaseColorInfo:;
+- (id)bottomRecommendReason;
+- (void)setBottomRecommendReason:;
+- (id)recommendReasonV2;
+- (void)setRecommendReasonV2:;
+- (BOOL)canExtendPlay;
+- (void)setCanExtendPlay:;
+- (BOOL)canSwitchToFall;
+- (void)setCanSwitchToFall:;
+- (BOOL)isTidy;
+- (void)setIsTidy:;
+- (void).cxx_destruct;
++ (id)cellBaseColorInfoJSONTransformer;
++ (id)bottomRecommendReasonJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

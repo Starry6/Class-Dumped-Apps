@@ -1,0 +1,31 @@
+@interface AWESearchClientAIBaseManager : NSObject
+@property (nonatomic) NSMutableDictionary lastTaskTimeDict;
+@property (nonatomic) AWESearchClientAIBaseManagerConfig config;
+@property (nonatomic) NSDictionary inputParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)managerPrecheck;
+- (void)managerPrecheckFail;
+- (BOOL)managerCheckPackage;
+- (void)managerPackageNotFound;
+- (BOOL)managerCheckInputModel;
+- (void)managerInputModelInvalid;
+- (void)managerRunPTYTask;
+- (BOOL)enableDownLoadSearchPitayaPackageopt;
+- (BOOL)checkTimeWithGapTime:andMethodName:;
+- (void)managerGetPTYTaskData:;
+- (void)managerPTYOutputError;
+- (id)lastTaskTimeDict;
+- (id)managerFetchInputParams;
+- (void)startClientAITask;
+- (void)setLastTaskTimeDict:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (void)showMessage:;
+- (void)setInputParams:;
+- (id)inputParams;
+@end

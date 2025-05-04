@@ -1,0 +1,2 @@
+@interface AWEStudioRecorderFeatureSpeedControlConfig : AWEStudioComposerBaseFeatureConfig
+@end

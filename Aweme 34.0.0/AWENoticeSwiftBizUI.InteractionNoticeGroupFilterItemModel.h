@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftBizUI.InteractionNoticeGroupFilterItemModel : _TtCs12_SwiftObject
+@end

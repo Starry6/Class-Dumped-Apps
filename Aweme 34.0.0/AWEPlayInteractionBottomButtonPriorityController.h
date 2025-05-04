@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionBottomButtonPriorityController : AWEPlayInteractionBaseController
+@property (nonatomic) NSPointerArray allButtonElements;
+@property (nonatomic) NSMapTable buttonMapTable;
+@property (nonatomic) AWEPlayInteractionBaseElement<AWEPlayInteractionBottomButtonPriorityProtocol> currentButtonElement;
+@property (nonatomic) NSArray specialHandlers;
+@property (nonatomic) NSArray commonHandlers;
+@property (nonatomic) q currentPriority;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleSpecialButtonPriority:;
+- (unsigned long long)handleCommonButtonPriority:;
+- (void)setCurrentPriority:;
+- (id)specialHandlers;
+- (id)commonHandlers;
+- (void)setSpecialHandlers:;
+- (void)setCommonHandlers:;
+- (void)setupSpecialButtonHandlers;
+- (void)setupCommonButtonHandlers;
+- (void)handleButtonPriority:;
+- (void)setCurrentButtonElement:;
+- (void)setAllButtonElements:;
+- (void)setButtonMapTable:;
+- (id)allButtonElements;
+- (id)currentButtonElement;
+- (id)buttonMapTable;
+- (BOOL)shouldActivateButtonWithElementName:;
+- (BOOL)shouldActivateButtonWithHandlerName:;
+- (void)viewDidLoad;
+- (void)resetCache;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (long long)currentPriority;
+@end

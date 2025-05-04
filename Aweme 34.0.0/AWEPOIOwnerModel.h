@@ -1,0 +1,31 @@
+@interface AWEPOIOwnerModel : AWEBaseApiModel
+@property (nonatomic) NSString ownerID;
+@property (nonatomic) NSString ownerName;
+@property (nonatomic) NSString ownerSignature;
+@property (nonatomic) NSString ownerAvatarURL;
+@property (nonatomic) NSString businessDay;
+@property (nonatomic) NSString businessHour;
+@property (nonatomic) NSString claimURLString;
+@property (nonatomic) NSString verifyReson;
+@property (nonatomic) NSString securedOwnerID;
+- (id)ownerSignature;
+- (void)setOwnerSignature:;
+- (id)ownerAvatarURL;
+- (void)setOwnerAvatarURL:;
+- (id)businessDay;
+- (void)setBusinessDay:;
+- (id)businessHour;
+- (void)setBusinessHour:;
+- (id)claimURLString;
+- (void)setClaimURLString:;
+- (id)verifyReson;
+- (void)setVerifyReson:;
+- (id)securedOwnerID;
+- (void)setSecuredOwnerID:;
+- (void)setOwnerName:;
+- (void).cxx_destruct;
+- (id)ownerName;
+- (id)ownerID;
+- (void)setOwnerID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

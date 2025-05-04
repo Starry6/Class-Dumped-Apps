@@ -1,0 +1,2 @@
+@interface AWEIMPhotoPickerToolbarViewModel : NSObject
+@end

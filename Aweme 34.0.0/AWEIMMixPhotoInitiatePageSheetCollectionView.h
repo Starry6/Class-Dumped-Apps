@@ -1,0 +1,34 @@
+@interface AWEIMMixPhotoInitiatePageSheetCollectionView : UIView
+@property (nonatomic) AWEIMMixPhotoInitiatePageSheetViewModel viewModel;
+@property (nonatomic) RxCollectionViewDiffableDataSource dataSource;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableSet showedStyleIdSet;
+@property (nonatomic) <AWEIMMixPhotoInitiatePageSheetCollectionViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_applySnapshotWithAnimatingDifferences:;
+- (void)createComponents;
+- (void)configComponents;
+- (id)showedStyleIdSet;
+- (void)setShowedStyleIdSet:;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (id)initWithViewModel:;
+- (id)delegate;
+- (id)viewModel;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (long long)showCount;
+- (void)layoutComponents;
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMCycleBannerView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWEIMCycleBannerPageIndicatorView pageIndicatorView;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) AWEIMCycleBannerViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithViewModel:;
+- (void)setPageIndicatorView:;
+- (id)pageIndicatorView;
+- (void)adjustCurrentPage;
+- (id)collectionView;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)willDisappear;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)setupSubviews;
+- (void)willAppear;
+@end

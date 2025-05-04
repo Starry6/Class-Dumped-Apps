@@ -1,0 +1,16 @@
+@interface AWEBranchBillboardWeeklyModel : AWEBaseDataModel
+@property (nonatomic) NSString billboardID;
+@property (nonatomic) NSInteger billboardEditionNumber;
+@property (nonatomic) NSString startTime;
+@property (nonatomic) NSString endTime;
+- (void)setBillboardID:;
+- (void)setBillboardEditionNumber:;
+- (id)billboardID;
+- (int)billboardEditionNumber;
+- (void)setStartTime:;
+- (id)endTime;
+- (void)setEndTime:;
+- (void).cxx_destruct;
+- (id)startTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

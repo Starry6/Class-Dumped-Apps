@@ -1,0 +1,34 @@
+@interface AWEIMLinkPreviewCardView : UIView
+@property (nonatomic) AWEIMGeneralCardView cardView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) AWEIMMessageViewModel viewModel;
+@property (nonatomic) AWEIMLinkPreviewDataController dataController;
+@property (nonatomic) AWEIMLinkPreviewDataController weakDataController;
+@property (nonatomic) double titleMaxWidth;
+@property (nonatomic) AWEIMAlphaTapGesture tapGes;
+- (void)setDataController:;
+- (id)textMsg;
+- (id)tapGes;
+- (id)currentDataController;
+- (void)p_initSubviews;
+- (void)coverTapped;
+- (double)titleMaxWidth;
+- (id)weakDataController;
+- (void)setWeakDataController:;
+- (void)p_requestUrlInfo;
+- (void)p_configCardUIWithTitle:imageUrl:;
+- (id)p_getSubtitleAttributeStringWithSubtitle:;
+- (void)p_configImageWithUrl:msgId:;
+- (void)configWithViewModel:dataController:;
+- (void)setTitleMaxWidth:;
+- (id)init;
+- (id)viewModel;
+- (id)iconImageView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (id)cardView;
+- (void)setCardView:;
+- (id)dataController;
++ (id)getSubtitleAttributeStringWithString:;
+@end

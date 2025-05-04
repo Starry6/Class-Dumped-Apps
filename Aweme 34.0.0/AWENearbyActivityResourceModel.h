@@ -1,0 +1,33 @@
+@interface AWENearbyActivityResourceModel : AWEBaseApiModel
+@property (nonatomic) AWENearbyActivityBubbleResource bubbleResource;
+@property (nonatomic) AWENearbyActivityResourceBaseModel tab2StatusBarBackground;
+@property (nonatomic) AWENearbyActivityResourceBaseModel tab2TopBackground;
+@property (nonatomic) AWENearbyActivityResourceBaseModel homepageTopBackground;
+@property (nonatomic) AWENearbyActivityResourceBaseModel homepageRoamBackground;
+@property (nonatomic) AWENearbyActivityTabResourceModel tabButtonResource;
+- (BOOL)isInActivityPeriod;
+- (id)bubbleResource;
+- (BOOL)isInTabButtonBackgroundDisplayPeriod;
+- (id)tabButtonResource;
+- (id)tab2TopBackground;
+- (id)tab2StatusBarBackground;
+- (id)homepageTopBackground;
+- (BOOL)isHomePageInBackgroundDisplayPeriod;
+- (id)homepageRoamBackground;
+- (BOOL)is2TabInBackgroundDisplayPeriod;
+- (void)setBubbleResource:;
+- (void)setTab2StatusBarBackground:;
+- (void)setTab2TopBackground:;
+- (void)setHomepageTopBackground:;
+- (void)setHomepageRoamBackground:;
+- (void)setTabButtonResource:;
+- (void).cxx_destruct;
+- (double)currentTimeStamp;
++ (id)bubbleResourceJSONTransformer;
++ (id)tab2StatusBarBackgroundJSONTransformer;
++ (id)tab2TopBackgroundJSONTransformer;
++ (id)homepageTopBackgroundJSONTransformer;
++ (id)homepageRoamBackgroundJSONTransformer;
++ (id)tabButtonResourceJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

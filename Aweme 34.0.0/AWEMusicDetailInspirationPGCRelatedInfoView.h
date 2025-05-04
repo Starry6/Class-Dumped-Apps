@@ -1,0 +1,33 @@
+@interface AWEMusicDetailInspirationPGCRelatedInfoView : UIView
+@property (nonatomic) AWEMusicDetailHeaderDataHelper dataHelper;
+@property (nonatomic) AWEMusicDetailHeaderLayoutInspirationLayoutManager layoutManager;
+@property (nonatomic) AWEMusicDetailHeaderPGCMusicInfoContainerView matchedPGCMusicContainerView;
+@property (nonatomic) AWEMusicDetailHeaderMatchedLunaBarView matchedLunaBarView;
+@property (nonatomic) <AWEMusicDetailPGCRelatedInfoViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataHelper;
+- (void)setDataHelper:;
+- (void)jumpToMatchedPGCMusicDetailPage;
+- (void)weakBindDataHelper:;
+- (void)jumpToMatchedLunaMusic;
+- (id)initWithLayoutManager:;
+- (void)updateDummyHeaderView;
+- (void)updateDetailPGCRelatedView;
+- (void)updateDetailPGCRelatedViewConstraint;
+- (id)matchedPGCMusicContainerView;
+- (id)matchedLunaBarView;
+- (void)updateViewsVisibleByType:;
+- (void)p_updateMusicPGCInfoView;
+- (BOOL)shouldShowPGCRelatedView;
+- (void)setMatchedPGCMusicContainerView:;
+- (void)setMatchedLunaBarView:;
+- (id)layoutManager;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setLayoutManager:;
+- (void)setupUI;
+@end

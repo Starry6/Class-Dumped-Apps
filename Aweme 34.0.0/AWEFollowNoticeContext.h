@@ -1,0 +1,35 @@
+@interface AWEFollowNoticeContext : NSObject
+@property (nonatomic) q unreadCount;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString ruleId;
+@property (nonatomic) NSString showedUserIDs;
+@property (nonatomic) NSString gdLabel;
+@property (nonatomic) UIView unreadBubble;
+@property (nonatomic) NSString topNoticeIDs;
+@property (nonatomic) BOOL shouldUseOptimizedBgprimary;
+@property (nonatomic) BOOL hasNavBar;
+@property (nonatomic) BOOL isFirstLoaded;
+@property (nonatomic) AWEPageContext pageContext;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)gdLabel;
+- (BOOL)shouldUseOptimizedBgprimary;
+- (void)setGdLabel:;
+- (id)unreadBubble;
+- (void)setShouldUseOptimizedBgprimary:;
+- (void)setHasNavBar:;
+- (void)setIsFirstLoaded:;
+- (BOOL)hasNavBar;
+- (id)showedUserIDs;
+- (void)setShowedUserIDs:;
+- (BOOL)isFirstLoaded;
+- (id)topNoticeIDs;
+- (void)setTopNoticeIDs:;
+- (long long)unreadCount;
+- (void)setUnreadCount:;
+- (void).cxx_destruct;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)ruleId;
+- (void)setRuleId:;
+@end

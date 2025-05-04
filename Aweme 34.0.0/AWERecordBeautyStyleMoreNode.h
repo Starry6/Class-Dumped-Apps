@@ -1,0 +1,32 @@
+@interface AWERecordBeautyStyleMoreNode : AWERecordBeautyItemModel
+@property (nonatomic) NSString currentNodeId;
+@property (nonatomic) NSString currentNodeName;
+@property (nonatomic) NSString currentIconImageName;
+@property (nonatomic) NSArray currentIconURLs;
+- (void)updateIconImageName:;
+- (id)childExtraNodes;
+- (id)exposeNodeId;
+- (void)updateNodeId:;
+- (void)updateNodeName:;
+- (void)updateIconURLs:;
+- (void)addChildExtraNodes:;
+- (void)setChildExtraNodes:;
+- (id)currentNodeId;
+- (id)currentNodeName;
+- (id)currentIconImageName;
+- (id)currentIconURLs;
+- (void)setCurrentNodeId:;
+- (void)setCurrentNodeName:;
+- (void)setCurrentIconImageName:;
+- (void)setCurrentIconURLs:;
+- (void).cxx_destruct;
+- (id)iconImageName;
+- (id)childNodes;
+- (id)parentNode;
+- (id)iconURLs;
+- (void)setParentNode:;
+- (void)addChildNode:;
+- (id)nodeName;
+- (id)nodeId;
+- (void)setChildNodes:;
+@end

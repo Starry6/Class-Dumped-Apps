@@ -1,0 +1,31 @@
+@interface AWEPOIDetailNGModalViewBar : DitoComponentView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView barView;
+@property (nonatomic) {CGSize=dd} cacheSize;
+@property (nonatomic) double modalViewBarHeight;
+@property (nonatomic) AWEPOIDetailNGModalViewBarViewModel barVM;
+@property (nonatomic) AWEPOIRepeatBackgroundView backgroundView;
+- (void)updateViewModel:;
+- (double)modalViewBarHeight;
+- (void)setupMaskLayerWithFrame:;
+- (void)setBarVM:;
+- (id)barVM;
+- (id)getBackgroundColor;
+- (void)updateBarViewAlpha:;
+- (void)setModalViewBarHeight:;
+- (id)cacheSize;
+- (void)didTap:;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setFrame:;
+- (id)backgroundView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setCacheSize:;
+- (id)context;
+- (void)setupUI;
+- (id)barView;
+- (void)setBarView:;
+@end

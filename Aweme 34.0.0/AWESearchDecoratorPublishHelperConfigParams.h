@@ -1,0 +1,33 @@
+@interface AWESearchDecoratorPublishHelperConfigParams : NSObject
+@property (nonatomic) NSString topicChallengeId;
+@property (nonatomic) NSArray challengeIdList;
+@property (nonatomic) NSDictionary logParams;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString shootWay;
+@property (nonatomic) NSString musicId;
+@property (nonatomic) NSString effectId;
+@property (nonatomic) NSString sentence;
+@property (nonatomic) NSString moduleId;
+@property (nonatomic) q moduleType;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setShootWay:;
+- (void)setMusicId:;
+- (id)shootWay;
+- (id)musicId;
+- (id)challengeIdList;
+- (void)setChallengeIdList:;
+- (id)moduleId;
+- (void)setModuleId:;
+- (id)logParams;
+- (void)setLogParams:;
+- (id)topicChallengeId;
+- (void)setTopicChallengeId:;
+- (void).cxx_destruct;
+- (long long)moduleType;
+- (void)setModuleType:;
+- (id)effectId;
+- (id)sentence;
+- (void)setSentence:;
+- (void)setEffectId:;
+@end

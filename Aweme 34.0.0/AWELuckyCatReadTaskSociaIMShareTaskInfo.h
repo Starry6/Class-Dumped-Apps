@@ -1,0 +1,32 @@
+@interface AWELuckyCatReadTaskSociaIMShareTaskInfo : MTLModel
+@property (nonatomic) NSString taskKey;
+@property (nonatomic) q taskID;
+@property (nonatomic) q rewardAmount;
+@property (nonatomic) q dailyTotalCount;
+@property (nonatomic) q currentTotalCount;
+@property (nonatomic) q displayIntervalNum;
+@property (nonatomic) AWELuckyCatReadTaskSociaExitRules exitRules;
+@property (nonatomic) q displayPosition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)rewardAmount;
+- (void)setRewardAmount:;
+- (id)taskKey;
+- (void)setTaskKey:;
+- (long long)displayPosition;
+- (void)setDisplayPosition:;
+- (long long)dailyTotalCount;
+- (void)setDailyTotalCount:;
+- (long long)currentTotalCount;
+- (void)setCurrentTotalCount:;
+- (long long)displayIntervalNum;
+- (void)setDisplayIntervalNum:;
+- (id)exitRules;
+- (void)setExitRules:;
+- (void).cxx_destruct;
+- (void)setTaskID:;
+- (long long)taskID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

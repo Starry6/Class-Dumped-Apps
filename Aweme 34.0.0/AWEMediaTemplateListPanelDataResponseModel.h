@@ -1,0 +1,34 @@
+@interface AWEMediaTemplateListPanelDataResponseModel : MTLModel
+@property (nonatomic) q appID;
+@property (nonatomic) NSString regionKey;
+@property (nonatomic) q panelID;
+@property (nonatomic) NSString panelKey;
+@property (nonatomic) NSString panelName;
+@property (nonatomic) NSString iconUri;
+@property (nonatomic) NSArray categoryModel;
+@property (nonatomic) AWEMediaTemplateDataListResponseModel defaultDataList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUri;
+- (void)setIconUri:;
+- (id)regionKey;
+- (void)setRegionKey:;
+- (id)panelKey;
+- (id)defaultDataList;
+- (void)setDefaultDataList:;
+- (long long)panelID;
+- (id)categoryModel;
+- (void)setCategoryModel:;
+- (void)setPanelID:;
+- (void)setPanelKey:;
+- (long long)appID;
+- (void)setAppID:;
+- (void).cxx_destruct;
+- (id)panelName;
+- (void)setPanelName:;
++ (id)categoryModelJSONTransformer;
++ (id)defaultDataListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

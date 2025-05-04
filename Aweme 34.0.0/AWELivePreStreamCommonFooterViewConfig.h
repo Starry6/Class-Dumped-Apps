@@ -1,0 +1,36 @@
+@interface AWELivePreStreamCommonFooterViewConfig : NSObject
+@property (nonatomic) NSString mainText;
+@property (nonatomic) NSString subText;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString tagText;
+@property (nonatomic) NSArray userListArray;
+@property (nonatomic) @? didClickBtn;
+@property (nonatomic) @? didClickMask;
+@property (nonatomic) @? didLongPress;
+@property (nonatomic) NSString guideScene;
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL hasScrollInnerFeed;
+- (id)referString;
+- (void)setReferString:;
+- (void)setTagText:;
+- (id)tagText;
+- (id)subText;
+- (id)didClickBtn;
+- (void)setSubText:;
+- (void)setUserListArray:;
+- (id)userListArray;
+- (void)setDidClickBtn:;
+- (id)didClickMask;
+- (void)setDidClickMask:;
+- (id)guideScene;
+- (void)setGuideScene:;
+- (BOOL)hasScrollInnerFeed;
+- (void)setHasScrollInnerFeed:;
+- (id)didLongPress;
+- (void)setDidLongPress:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)mainText;
+- (void)setButtonText:;
+- (void)setMainText:;
+@end

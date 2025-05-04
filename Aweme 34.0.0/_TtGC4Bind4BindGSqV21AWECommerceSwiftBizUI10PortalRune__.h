@@ -1,0 +1,2 @@
+@interface _TtGC4Bind4BindGSqV21AWECommerceSwiftBizUI10PortalRune__ : _TtCs12_SwiftObject
+@end

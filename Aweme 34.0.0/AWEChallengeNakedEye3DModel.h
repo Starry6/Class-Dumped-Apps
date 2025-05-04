@@ -1,0 +1,32 @@
+@interface AWEChallengeNakedEye3DModel : MTLModel
+@property (nonatomic) AWEURLModel backgroundVideo;
+@property (nonatomic) AWEURLModel backgroundCoverImage;
+@property (nonatomic) AWEURLModel foregroundAnim;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString complianceData;
+@property (nonatomic) q gestureType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOpenURL:;
+- (void)setComplianceData:;
+- (id)complianceData;
+- (void)setBackgroundVideo:;
+- (id)backgroundCoverImage;
+- (void)setBackgroundCoverImage:;
+- (id)foregroundAnim;
+- (void)setForegroundAnim:;
+- (void)setWebURL:;
+- (void).cxx_destruct;
+- (id)webURL;
+- (void)setGestureType:;
+- (long long)gestureType;
+- (id)openURL;
+- (id)backgroundVideo;
++ (id)backgroundVideoJSONTransformer;
++ (id)backgroundCoverImageJSONTransformer;
++ (id)foregroundAnimJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

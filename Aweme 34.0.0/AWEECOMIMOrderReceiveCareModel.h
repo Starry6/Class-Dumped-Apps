@@ -1,0 +1,35 @@
+@interface AWEECOMIMOrderReceiveCareModel : AWEECOMIMBaseCardModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString goodTitle;
+@property (nonatomic) NSString goodImg;
+@property (nonatomic) NSString goodNum;
+@property (nonatomic) NSString showPrice;
+@property (nonatomic) NSString orderId;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) NSString singleLineDesc;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)showPrice;
+- (void)setShowPrice:;
+- (id)orderId;
+- (void)setOrderId:;
+- (void)updateModelWithData:encrypted:;
+- (void)setGoodTitle:;
+- (void)setGoodImg:;
+- (void)setGoodNum:;
+- (id)goodImg;
+- (id)goodTitle;
+- (id)goodNum;
+- (id)singleLineDesc;
+- (void)setSingleLineDesc:;
+- (void)setButtons:;
+- (id)buttons;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)careNoticeMsgType;
++ (BOOL)isCareCard;
++ (Class)cardViewClass;
+@end

@@ -1,0 +1,36 @@
+@interface AWEModelLayerNoticeNetworkProvider.CodeGenV1NoticeActionDispatchNetworkProvider : AWEDataLayerRootModelGetMethodNetworkProvider
+@property (nonatomic) NSNumber noticeId;
+@property (nonatomic) NSString requestTag;
+@property (nonatomic) NSString requestExtra;
+@property (nonatomic) NSString requestButton;
+@property (nonatomic) NSNumber actionType;
+@property (nonatomic) NSString itemDisable;
+@property (nonatomic) NSString noticeDisable;
+@property (nonatomic) NSNumber interactiveBizId;
+@property (nonatomic) NSString disableSelectInfo;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)requestTag;
+- (void)setRequestTag:;
+- (id)requestExtra;
+- (void)setRequestExtra:;
+- (id)requestButton;
+- (void)setRequestButton:;
+- (id)itemDisable;
+- (void)setItemDisable:;
+- (id)noticeDisable;
+- (void)setNoticeDisable:;
+- (id)interactiveBizId;
+- (void)setInteractiveBizId:;
+- (id)disableSelectInfo;
+- (void)setDisableSelectInfo:;
+- (id)noticeId;
+- (void)setNoticeId:;
+- (id)actionType;
+- (void)setActionType:;
+- (id)init;
+- (void).cxx_destruct;
+- (Class)modelClass;
++ (id)businessURI;
+@end

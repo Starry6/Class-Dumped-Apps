@@ -1,0 +1,34 @@
+@interface AWEPostPageAggregateAnchorHandler : NSObject
+@property (nonatomic) AWENewPublishAggregateAnchorTableViewCell elementCell;
+@property (nonatomic) <AWEPostPageAnchorService> anchorService;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q removeBadgeSignal;
+@property (nonatomic) BOOL isPOIAnchorWhenSelected;
+@property (nonatomic) BOOL anchorHasMounted;
+@property (nonatomic) <AWEPostPageContext> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)anchorService;
+- (void)bindServices:;
+- (BOOL)anchorHasMounted;
+- (void)setIsPOIAnchorWhenSelected:;
+- (BOOL)isPOIAnchorWhenSelected;
+- (void)updateAggregateAnchorElementCell:;
+- (id)elementCellIconImage;
+- (id)elementCellTitleLabelText;
+- (id)elementCellDetailViewIconImage;
+- (id)elementCellDetailViewTagText;
+- (long long)removeBadgeSignal;
+- (void)setRemoveBadgeSignal:;
+- (void)setAnchorHasMounted:;
+- (void)setElementCell:;
+- (id)elementCell;
+- (void)setAnchorService:;
+- (void)setIsEnabled:;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)context;
++ (void)_aweLazyRegisterPostPage;
+@end

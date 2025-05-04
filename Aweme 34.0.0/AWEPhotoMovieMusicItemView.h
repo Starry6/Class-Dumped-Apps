@@ -1,0 +1,30 @@
+@interface AWEPhotoMovieMusicItemView : UIButton
+@property (nonatomic) UIImageView musicImageView;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) AWEPhotoMovieMusicItemCircleView circleView;
+@property (nonatomic) UIImageView gradientImageView;
+@property (nonatomic) UILabel durationLabel;
+- (id)initWithRectangleImageSize:radius:;
+- (void)setMusicThumbnailURLList:;
+- (id)musicImageView;
+- (id)initWithRectangleImageSize:circleViewOffset:radius:lineWidth:;
+- (void)setMusicThumbnailURLList:placeholder:;
+- (id)p_timeStringWithDuration:;
+- (id)initWithRectangleImageSize:circleViewOffset:radius:;
+- (void)setMusicBackgroundColor:;
+- (void)setDuration:show:;
+- (void)setMusicImageView:;
+- (void)setImage:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageSize;
+- (void)setSelected:;
+- (id)durationLabel;
+- (void)setDurationLabel:;
+- (id)circleView;
+- (void)setCircleView:;
+- (id)initWithImageSize:;
+- (id)gradientImageView;
+- (void)setGradientImageView:;
+@end

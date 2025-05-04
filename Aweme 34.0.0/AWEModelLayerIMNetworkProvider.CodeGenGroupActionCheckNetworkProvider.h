@@ -1,0 +1,34 @@
+@interface AWEModelLayerIMNetworkProvider.CodeGenGroupActionCheckNetworkProvider : AWEDataLayerRootModelGetMethodNetworkProvider
+@property (nonatomic) NSNumber actionCheckType;
+@property (nonatomic) NSNumber actionCheckSource;
+@property (nonatomic) NSNumber groupType;
+@property (nonatomic) NSNumber conversationShortId;
+@property (nonatomic) NSString userOwnerId;
+@property (nonatomic) NSString bizExt;
+@property (nonatomic) NSString bizExtJson;
+@property (nonatomic) NSDictionary params;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)bizExt;
+- (id)actionCheckType;
+- (void)setActionCheckType:;
+- (id)actionCheckSource;
+- (void)setActionCheckSource:;
+- (id)conversationShortId;
+- (void)setConversationShortId:;
+- (id)userOwnerId;
+- (void)setUserOwnerId:;
+- (void)setBizExt:;
+- (id)bizExtJson;
+- (void)setBizExtJson:;
+- (id)initWithActionCheckSource:actionCheckType:groupType:;
+- (void)setGroupType:;
+- (id)groupType;
+- (id)init;
+- (void).cxx_destruct;
+- (id)params;
+- (Class)modelClass;
+- (void)setParams:;
++ (id)businessURI;
+@end

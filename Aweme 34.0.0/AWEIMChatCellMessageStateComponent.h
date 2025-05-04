@@ -1,0 +1,33 @@
+@interface AWEIMChatCellMessageStateComponent : AWEIMChatCellComponentBase
+@property (nonatomic) <AWEIMMessageHintContentInterface> messageHintService;
+@property (nonatomic) <AWEIMChatCellHintComponentInterface> hintService;
+@property (nonatomic) NSAttributedString stateAttributedStringForMessageHint;
+@property (nonatomic) AWEIMMessage kvoLatestMessage;
+@property (nonatomic) AWEIMMessage kvoLatestHintMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)updateComponentWhenChatUpdate:;
+- (void)didUpdateWithHintType:;
+- (id)hintService;
+- (void)setHintService:;
+- (id)stateAttributedStringForMessageHint;
+- (void)setMessageHintService:;
+- (id)messageHintService;
+- (void)p_observeLatestMessageState:;
+- (void)p_updateMessageStateHint:;
+- (void)p_updateMessageStateIcon:;
+- (void)setStateAttributedStringForMessageHint:;
+- (id)p_messageProgressContent:;
+- (id)kvoLatestMessage;
+- (id)kvoLatestHintMessage;
+- (void)setKvoLatestMessage:;
+- (void)setKvoLatestHintMessage:;
+- (id)p_chatLogInfo:;
+- (id)p_msgLogInfo:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

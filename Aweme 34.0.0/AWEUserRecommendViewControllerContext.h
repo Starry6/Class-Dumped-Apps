@@ -1,0 +1,36 @@
+@interface AWEUserRecommendViewControllerContext : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString userNickname;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) NSString recommendScene;
+@property (nonatomic) q prePageType;
+@property (nonatomic) q fromAction;
+@property (nonatomic) q showMethod;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) @? deleteAllUserBlock;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setPrePageType:;
+- (long long)fromAction;
+- (void)setFromAction:;
+- (long long)prePageType;
+- (void)setShowMethod:;
+- (long long)showMethod;
+- (id)recommendScene;
+- (void)setRecommendScene:;
+- (void)setUserNickname:;
+- (void)setDeleteAllUserBlock:;
+- (id)deleteAllUserBlock;
+- (id)userNickname;
+- (id)userID;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)setActionBlock:;
+- (id)actionBlock;
+@end

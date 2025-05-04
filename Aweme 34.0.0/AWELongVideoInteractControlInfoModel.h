@@ -1,0 +1,32 @@
+@interface AWELongVideoInteractControlInfoModel : MTLModel
+@property (nonatomic) BOOL canShare;
+@property (nonatomic) BOOL canCollect;
+@property (nonatomic) BOOL canComment;
+@property (nonatomic) BOOL canDigg;
+@property (nonatomic) NSString noShareReason;
+@property (nonatomic) NSString noCollectReason;
+@property (nonatomic) NSString noCommentReason;
+@property (nonatomic) NSString noDiggReason;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canCollect;
+- (BOOL)canComment;
+- (void)setCanComment:;
+- (void)setCanCollect:;
+- (BOOL)canDigg;
+- (void)setCanDigg:;
+- (id)noShareReason;
+- (void)setNoShareReason:;
+- (id)noCollectReason;
+- (void)setNoCollectReason:;
+- (id)noCommentReason;
+- (void)setNoCommentReason:;
+- (id)noDiggReason;
+- (void)setNoDiggReason:;
+- (void).cxx_destruct;
+- (BOOL)canShare;
+- (void)setCanShare:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

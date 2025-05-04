@@ -1,0 +1,36 @@
+@interface AWEAwemeDetailFeedDoubleColumnController : AWEAwemeNewDetailBaseController
+@property (nonatomic) UIView hintView;
+@property (nonatomic) AWEFeedDoubleColumnDetailInerMaskView innerMaskView;
+@property (nonatomic) BOOL isShowingHintView;
+@property (nonatomic) BOOL preventShow;
+@property (nonatomic) UITapGestureRecognizer tap;
+- (void)playerWillStartNextLoop:;
+- (void)onScrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (BOOL)doubleColumnScenesEnable;
+- (void)setMetricsInfo;
+- (void)showInnerHintView:;
+- (id)innerMaskView;
+- (void)hideInnerHintViewWithAnimated:;
+- (BOOL)isShowingHintView;
+- (void)setIsShowingHintView:;
+- (void)setInnerMaskView:;
+- (BOOL)preventShow;
+- (void)setPreventShow:;
+- (BOOL)shouldShowInnerHintView;
+- (void)setHintViewHasShow;
+- (void)pureFirstCellInteractionVCWithEnter:;
+- (id)getCurrentInteractionVC;
+- (id)getCurrentPlayer;
+- (void)tap:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)scrollViewWillBeginDragging:;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)viewWillDisappear;
+- (id)hintView;
+- (void)setHintView:;
+- (id)tap;
+- (void)setTap:;
+- (void)timerAction;
+@end

@@ -1,0 +1,35 @@
+@interface AWEECOMIMPaasGetIconsNew : NSObject
+@property (nonatomic) BDECPigeonGetIconsModelV2 getIconsModel;
+@property (nonatomic) q type;
+@property (nonatomic) q subType;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString toastContent;
+@property (nonatomic) NSString displayType;
+@property (nonatomic) NSString iconURL;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) NSString iconCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)toastContent;
+- (void)setToastContent:;
+- (id)iconCode;
+- (void)setIconCode:;
+- (void)setGetIconsModel:;
+- (id)getIconsModel;
+- (id)schema;
+- (void)setIconURL:;
+- (void)setSchema:;
+- (id)iconURL;
+- (id)iconName;
+- (id)displayType;
+- (void)setDisplayType:;
+- (long long)type;
+- (long long)subType;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setIconName:;
+- (void)setSubType:;
++ (id)PaasGetIconsModelWithPigeonGetIconsModel:;
+@end

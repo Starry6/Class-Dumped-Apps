@@ -1,0 +1,36 @@
+@interface AWEIMFaceToFaceActivityManager : NSObject
+@property (nonatomic) Q settingsType;
+@property (nonatomic) AWEIMSpringFaceToFaceActivityModel faceToFaceActivityModel;
+@property (nonatomic) <IESIMBackpackSPCommandMsgNotifierProtocol> faceToFacecommandMsgNotifier;
+@property (nonatomic) AWEIMFaceToFaceImageGeckoSetting geckoImageSetting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)faceToFacePanelKeyboardData;
+- (id)pushModel;
+- (id)faceToFaceViewConfig;
+- (void)personalSettingsUpdate;
+- (void)setFaceToFaceActivityModel:;
+- (id)__currentPushModel;
+- (id)faceToFaceActivityModel;
+- (id)geckoImageSetting;
+- (void)iesim_didReceiveBackpackSPCommandMessage:;
+- (id)faceToFacecommandMsgNotifier;
+- (void)setFaceToFacecommandMsgNotifier:;
+- (void)setGeckoImageSetting:;
+- (id)init;
+- (void)setSettingsType:;
+- (void)dealloc;
+- (unsigned long long)settingsType;
+- (void).cxx_destruct;
++ (BOOL)shouldReportForAPI:;
++ (BOOL)__isSpringFestivalActive;
++ (BOOL)__enablePushFeature;
++ (BOOL)__enableFaceToFaceSpringActivityFeature;
++ (double)__reportSampleForAPI:;
++ (id)__faceToFaceSettingConfig;
++ (BOOL)__enableFaceToFaceSpringAutoPop;
++ (id)faceToFaceSchemaModel;
++ (id)sharedInstance;
+@end

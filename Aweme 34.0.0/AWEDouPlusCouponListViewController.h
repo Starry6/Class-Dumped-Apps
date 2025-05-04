@@ -1,0 +1,36 @@
+@interface AWEDouPlusCouponListViewController : AWEDouPlusContainerViewController
+@property (nonatomic) UILabel headerLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEDouPlusCouponListEmptyView emptyView;
+@property (nonatomic) AWEDouPlusCouponListViewModel viewModel;
+@property (nonatomic) q originSeletedIndex;
+@property (nonatomic) BOOL isConfirm;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissFromParentViewController;
+- (void)setOriginSeletedIndex:;
+- (void)setIsConfirm:;
+- (void)setupNavigationBarActionHandler;
+- (BOOL)isConfirm;
+- (long long)originSeletedIndex;
+- (void)updateHeaderLabel;
+- (void)handleSelectedCouponModel:;
+- (void)reloadData;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)initWithViewModel:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setupUI;
+- (void)setHeaderLabel:;
+- (id)headerLabel;
+- (id)emptyView;
+- (void)setEmptyView:;
+@end

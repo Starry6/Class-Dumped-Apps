@@ -1,0 +1,31 @@
+@interface AWEAdCardClickParamModel : BDXBridgeModel
+@property (nonatomic) NSString enter_from;
+@property (nonatomic) NSString open_url;
+@property (nonatomic) NSString web_url;
+@property (nonatomic) NSString playable_url;
+@property (nonatomic) NSString web_title;
+@property (nonatomic) NSString mp_url;
+@property (nonatomic) NSString lynx_url;
+@property (nonatomic) NSString clickRefer;
+@property (nonatomic) BOOL disable_light_web_url;
+- (void)setPlayable_url:;
+- (id)playable_url;
+- (id)lynx_url;
+- (void)setLynx_url:;
+- (id)open_url;
+- (void)setOpen_url:;
+- (id)enter_from;
+- (void)setEnter_from:;
+- (id)web_url;
+- (void)setWeb_url:;
+- (id)web_title;
+- (void)setWeb_title:;
+- (id)mp_url;
+- (void)setMp_url:;
+- (id)clickRefer;
+- (void)setClickRefer:;
+- (BOOL)disable_light_web_url;
+- (void)setDisable_light_web_url:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWENearbyAnimationView : UIView
+@property (nonatomic) UIImageView staticImageView;
+@property (nonatomic) BDImageView animatedImageView;
+@property (nonatomic) BOOL isAnimationPause;
+@property (nonatomic) BOOL showStaticImage;
+@property (nonatomic) @? tapHandler;
+- (void)__setupUI;
+- (id)animatedImageView;
+- (void)setAnimatedImageView:;
+- (void)contentTapped;
+- (void)stopImageAnimation;
+- (void)configViewWithStaticImageURLs:completion:;
+- (void)startImageAnimationWithDelay:playTimes:;
+- (void)configViewWithStaticImageURLs:animatedImageURLs:showStaticImage:completion:;
+- (void)pauseImageAnimation;
+- (void)resumeImageAnimation;
+- (void)setShowStaticImage:;
+- (void)__loadStaticImageURLs:animatedImageURLs:completion:;
+- (void)startDelayWithPlayTimes:;
+- (id)staticImageView;
+- (void)setIsAnimationPause:;
+- (BOOL)showStaticImage;
+- (BOOL)isAnimationPause;
+- (void)configViewWithAnimatedImageURLs:completion:;
+- (void)setStaticImageView:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setTapHandler:;
+- (id)tapHandler;
+@end

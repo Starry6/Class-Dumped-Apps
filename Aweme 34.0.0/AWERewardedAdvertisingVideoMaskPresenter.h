@@ -1,0 +1,30 @@
+@interface AWERewardedAdvertisingVideoMaskPresenter : AWEVideoPaymentBasePresenter
+@property (nonatomic) AWEPreviewVideoMaskView maskView;
+@property (nonatomic) AWEAwemeModel currentModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSDictionary logExtra;
+- (id)referString;
+- (void)setReferString:;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (void)updateCoverImage;
+- (id)imageURLArray;
+- (void)configDetailView;
+- (BOOL)shouldShowEffectiveView;
+- (BOOL)shouldShowViewWithPeriod:;
+- (BOOL)shouldAnimateWhenShown;
+- (BOOL)shouldAnimateWhenHidden;
+- (void)updateMaskViewOffsetYForPad;
+- (void)updateMaskViewOffsetY;
+- (id)initWithView:model:referString:logExtra:context:;
+- (BOOL)shouldCheckViewStatusWhenDisplay;
+- (id)init;
+- (id)maskView;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (void)setDelegate:;
+- (id)currentModel;
+- (void)setCurrentModel:;
+- (void)willDisplay;
++ (BOOL)shouldActiveWithData:referString:logExtra:;
+@end

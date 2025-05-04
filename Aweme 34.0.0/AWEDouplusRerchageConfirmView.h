@@ -1,0 +1,37 @@
+@interface AWEDouplusRerchageConfirmView : UIView
+@property (nonatomic) UIView agreementBgView;
+@property (nonatomic) UIView confirmBgView;
+@property (nonatomic) YYLabel agreementLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel amountLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UIButton rechargeBtn;
+@property (nonatomic) AWEDouPlusIAPProductModel productModel;
+@property (nonatomic) AWEDouPlusCouponModel couponModel;
+@property (nonatomic) @? confirmRerchageBlock;
+- (void)setCouponModel:;
+- (id)couponModel;
+- (id)productModel;
+- (void)setProductModel:;
+- (void)setConfirmRerchageBlock:;
+- (id)agreementBgView;
+- (id)confirmBgView;
+- (id)agreementLabel;
+- (id)rechargeBtn;
+- (id)confirmRerchageBlock;
+- (void)rechargeBtnClicked;
+- (void)setAgreementBgView:;
+- (void)setConfirmBgView:;
+- (void)setAgreementLabel:;
+- (void)setRechargeBtn:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (void)setAmountLabel:;
+- (id)amountLabel;
+- (void)updateDetailText;
+@end

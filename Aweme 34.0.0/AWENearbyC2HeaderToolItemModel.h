@@ -1,0 +1,32 @@
+@interface AWENearbyC2HeaderToolItemModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray entranceConfig;
+@property (nonatomic) AWENearbyC2HeaderToolItemActionModel action;
+@property (nonatomic) NSString showName;
+@property (nonatomic) AWENearbyC2HeaderToolItemRedDotModel redDot;
+@property (nonatomic) AWENearbyGrouponBubbleModel bubble;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRedDot:;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)entranceConfig;
+- (void)setEntranceConfig:;
+- (id)redDot;
+- (void)setAction:;
+- (id)action;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)bubble;
+- (void)setBubble:;
+- (void)setShowName:;
+- (id)showName;
++ (BOOL)automaticallyDefaultMapping;
++ (id)entranceConfigJSONTransformer;
++ (id)bubbleJSONTransformer;
++ (id)actionJSONTransformer;
+@end

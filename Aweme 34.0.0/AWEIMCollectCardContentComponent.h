@@ -1,0 +1,37 @@
+@interface AWEIMCollectCardContentComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMCollectCardMessage collectCardMsg;
+@property (nonatomic) {CGSize=dd} containerSize;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) AWEIMComponentManager componentManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q scene;
+- (id)componentContext;
+- (id)componentsNameArrayWithContext:;
+- (void)setComponentManager:;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (id)collectCardMsg;
+- (void)__createPresenter;
+- (void)__setupMsgStatusUpdateBlock;
+- (void)__updatePropsWithStatus:;
+- (void)__trackCardClick;
+- (void)__didTapCell;
+- (id)__cardTypeForTrack;
+- (id)__chatTypeForTrack;
+- (void)__trackCardShow;
+- (id)displayMessage;
+- (void)setScene:;
+- (void)dealloc;
+- (long long)scene;
+- (id)containerSize;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (id)conversation;
+- (id)componentManager;
++ (BOOL)canCreateComponentWithContext:;
+@end

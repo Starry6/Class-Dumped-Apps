@@ -1,0 +1,31 @@
+@interface AWESearchHomeWeatherController : AWEDCFeedBaseController
+@property (nonatomic) UIView<AWESearchHomeWeatherViewProtocol> weatherView;
+@property (nonatomic) NSTimer textChangedTimer;
+@property (nonatomic) BOOL isAppearing;
+@property (nonatomic) BOOL isDidLoad;
+@property (nonatomic) AWESearchHomeWeatherModel model;
+- (void)containerScrollViewDidScroll:;
+- (void)containerViewDidAppear:;
+- (void)containerViewDidDisappear:;
+- (BOOL)isDidLoad;
+- (void)setIsDidLoad:;
+- (void)setTextChangedTimer:;
+- (id)textChangedTimer;
+- (id)weatherView;
+- (void)setWeatherView:;
+- (void)fetchWeatherData;
+- (BOOL)showWeatherView;
+- (void)fireFetchTimer;
+- (BOOL)isEmptyData:;
+- (void)setModel:;
+- (id)init;
+- (void)dealloc;
+- (BOOL)isAppearing;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setIsAppearing:;
+- (void)invalidateTimer;
+- (void)applicationDidBecomeActive;
+- (void)appDidEnterBackground;
+- (void)containerViewDidLoad;
+@end

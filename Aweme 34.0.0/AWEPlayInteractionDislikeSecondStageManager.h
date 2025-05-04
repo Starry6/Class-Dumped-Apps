@@ -1,0 +1,32 @@
+@interface AWEPlayInteractionDislikeSecondStageManager : NSObject
+@property (nonatomic) DUXBasicSheet secondStagePanelSheet;
+@property (nonatomic) AWEAwemeModel secondStagePanelAwemeModel;
+@property (nonatomic) NSDictionary secondStagePanelTrackExtra;
+@property (nonatomic) @? secondStageCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickMaskArea:;
+- (void)sheetDidClickCloseButton:;
+- (void)dislikeSecondStagePanelOnVC:awemeModel:trackExtra:completion:;
+- (id)selectionPanel:optionNameAtRow:;
+- (id)selectionPanel:iconURLAtRow:;
+- (id)headerForSelectionPanel:;
+- (void)selectionPanel:didClickRow:;
+- (void)trackQuitDislikeReasonWithQuitMethod:;
+- (void)setSecondStagePanelAwemeModel:;
+- (void)setSecondStagePanelTrackExtra:;
+- (void)setSecondStageCompletion:;
+- (void)setSecondStagePanelSheet:;
+- (id)secondStagePanelSheet;
+- (id)secondStageCompletion;
+- (void)trackDislikeReasonToastShow;
+- (id)secondStagePanelAwemeModel;
+- (void)trackDislikeSecondStagePanelReasonClickedWith:;
+- (id)secondStagePanelTrackExtra;
+- (void)selectionPanelDidClickConfirmButton:;
+- (void)selectionPanelDidClickSecondaryButton:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

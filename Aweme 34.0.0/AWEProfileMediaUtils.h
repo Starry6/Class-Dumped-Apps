@@ -1,0 +1,32 @@
+@interface AWEProfileMediaUtils : NSObject
+@property (nonatomic) UIImage prePublishAvatar;
+@property (nonatomic) NSMutableArray uploadImages;
+@property (nonatomic) NSDictionary trackInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUploadImages:;
+- (id)uploadImages;
+- (void)setPrePublishAvatar:;
+- (id)prePublishAvatar;
+- (void).cxx_destruct;
+- (void)setTrackInfo:;
+- (id)trackInfo;
++ (void)showAvatarPreviewWithImage:imageURL:userID:;
++ (void)selectedImageWithConfig:;
++ (void)selectAvatarWithSourceView:selectedBlock:otherActions:needUpload:completionBlock:;
++ (void)selectAvatar:sender:completionBlock:;
++ (void)submitAvatarWithImage:param:completionBlock:;
++ (BOOL)enableSetVideoPickerTitle;
++ (BOOL)backToImagePickerFromAvatarCrop;
++ (BOOL)isEnterpriseUser;
++ (void)selectAvatar:sender:trackInfo:completionBlock:;
++ (void)selectAvatarWithSourceView:selectedBlock:otherActions:needUpload:trackInfo:completionBlock:;
++ (void)submitAvatarWithImage:noStickerImage:param:complexCompletionBlock:enterFrom:;
++ (void)showAvatarEditWithConfig:completionBlock:;
++ (void)submitAvatarWithImage:param:completionBlock:enterFrom:;
++ (void)submitAvatarWithImage:param:complexCompletionBlock:enterFrom:;
++ (void)showAvatarPreviewWithImageURL:userID:type:enterFrom:;
++ (id)sharedInstance;
+@end

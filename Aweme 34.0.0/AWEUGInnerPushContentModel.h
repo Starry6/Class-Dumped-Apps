@@ -1,0 +1,32 @@
+@interface AWEUGInnerPushContentModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString singleScene;
+@property (nonatomic) BOOL openAllScene;
+@property (nonatomic) AWEUGInnerPushExtraModel extraModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)extraModel;
+- (void)setExtraModel:;
+- (id)singleScene;
+- (BOOL)openAllScene;
+- (void)setSingleScene:;
+- (void)setOpenAllScene:;
+- (id)content;
+- (id)extra;
+- (void)setContent:;
+- (id)imageURL;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setImageURL:;
+- (void)setTitle:;
++ (id)extraModelJSONTransformer;
++ (id)extraModelFromJsonString:;
++ (id)extraModelFromDictionary:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMIncentiveChatContent_single_plugin : AWEIMFlexComponent
+@property (nonatomic) BOOL isApproving;
+@property (nonatomic) AWEIMIncentiveChatMsgCardConfig cardConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)setCardConfig:;
+- (id)cardConfig;
+- (void)incentiveChatService:relationUpdateWithRelationID:conversationID:;
+- (void)incentiveChatService:quotaUpdateWithChatType:;
+- (void)p_createPresenter;
+- (void)presenter:didUpdateWithView:;
+- (void)didFetchPeerFullDetailUser:;
+- (id)incentiveMessage;
+- (BOOL)isApproving;
+- (void)setIsApproving:;
+- (void)p_checkOutSiteApproveStatusWithUser:;
+- (void)p_updateProps:withStatus:;
+- (unsigned long long)p_calculateStatus;
+- (void)p_trackCardTitleAndBtnTextIsFromServer;
+- (BOOL)p_isColdUpErrorAndCanShowMessageCard;
+- (id)p_configDictWithSettingConfigKey:;
+- (id)p_coldUpErrorGetSettingKey;
+- (void)didTapSubtitle;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)didTapButton;
++ (BOOL)canCreateComponentWithContext:;
+@end

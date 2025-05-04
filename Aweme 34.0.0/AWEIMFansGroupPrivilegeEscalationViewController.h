@@ -1,0 +1,34 @@
+@interface AWEIMFansGroupPrivilegeEscalationViewController : AWEIMHalfScreenContainerViewController
+@property (nonatomic) AWEIMFansGroupPrivilegeEscalationViewModel viewModel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton transferButton;
+@property (nonatomic) UIButton confirmButton;
+- (void)__setupUI;
+- (id)transferButton;
+- (void)setTransferButton:;
+- (void)__configViewModel;
+- (void)__handleCloseButtonCkicked:;
+- (void)__handleTransferButtonCkicked:;
+- (void)__handleConfirmButtonCkicked:;
+- (id)initWithViewModel:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setIconImageView:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setCloseButton:;
+- (id)closeButton;
++ (double)__subtitleHeightWithContent:;
++ (double)__preferredContentHeightWithSubTitleText:;
+@end

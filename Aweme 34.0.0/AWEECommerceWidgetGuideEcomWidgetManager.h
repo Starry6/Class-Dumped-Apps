@@ -1,0 +1,31 @@
+@interface AWEECommerceWidgetGuideEcomWidgetManager : NSObject
+@property (nonatomic) AWEECommerceWidgetGuideEntranceModel entranceModel;
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) NSMutableArray hasPreloadEntranceList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldDesktopChannelGuideEvadeWithScene:enterFrom:;
+- (void)desktopChannelGuideAlreadyShowWithScene:enterFrom:guideType:extraParams:config:;
+- (void)desktopChannelGuideShowFailedWithScene:enterFrom:guideType:error:extraParams:;
+- (id)preloadConfig;
+- (id)entranceModel;
+- (void)setEntranceModel:;
+- (void)setHasPreloadEntranceList:;
+- (id)hasPreloadEntranceList;
+- (void)trackerWithAction:state:entrance:;
+- (void)checkCanShowWithParams:completion:;
+- (void)showGuidePanelWithParams:completion:;
+- (void)preloadWithEntrance:completion:;
+- (BOOL)shouldCheckCanShow;
+- (id)commonRequestModel;
+- (id)init;
+- (void)dealloc;
+- (id)position;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
+- (id)tabID;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface AWEMVExtendConsumptionBottomBarController : NSObject
+@property (nonatomic) AWEMVExtendConsumptionBottomBarContext context;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEElementContainer elementContainer;
+@property (nonatomic) AWEAwemeModel lastShowedModel;
+@property (nonatomic) AWEAwemeModel lastTrackedModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateBottomBarWithAweme:updateTiming:;
+- (BOOL)canShowBottomBarForAweme:;
+- (void)bottomBarAddedToContainer:;
+- (void)updateBottomBarAlpha:;
+- (void)cellWillDisplay:forRowAtIndexPath:tableView:;
+- (id)elementContainer;
+- (void)setElementContainer:;
+- (void)setLastTrackedModel:;
+- (void)setLastShowedModel:;
+- (void)setupElementContainerUI;
+- (void)updateElementsWithAwemeModel:;
+- (id)currentContainerViewController;
+- (double)getTopPadding;
+- (double)getElementContainerHeight;
+- (id)lastShowedModel;
+- (id)lastTrackedModel;
+- (id)currentShowingElement;
+- (id)currentInteractionContext;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (Class)contextClass;
+- (void)handleAction:;
+- (id)bottomBarView;
+@end

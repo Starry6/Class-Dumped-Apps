@@ -1,0 +1,2 @@
+@interface AWERecycledWorksVCRouter : NSObject
+@end

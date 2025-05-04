@@ -1,0 +1,35 @@
+@interface AWEMVPadAuthorRecommendSectionController : AWEBaseListSectionController
+@property (nonatomic) AWEMVChannelPageContext context;
+@property (nonatomic) AWEMVChannelViewModel containerViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didBindSectionViewModel;
+- (void)viewControllerDidAppear:;
+- (id)sizeForFooterWithCollectionViewSize:;
+- (id)containerViewModel;
+- (long long)waterfallColumnCount;
+- (void)didSelectItemAtIndex:model:;
+- (void)configSupplementaryHeaderView:;
+- (void)viewControllerWillAppear:isBeingPresented:isMovingToParentViewController:;
+- (void)configSupplementaryFooterView:;
+- (void)customUpdateBackgroundConfig:;
+- (void)setContainerViewModel:;
+- (void)didTapChangeButtonOnHeader;
+- (id)init;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (Class)footerViewClass;
+- (Class)headerViewClass;
+@end

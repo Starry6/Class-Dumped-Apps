@@ -1,0 +1,31 @@
+@interface AWECommentAnchorView : UIView
+@property (nonatomic) @? tapAnchorView;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel extraLabel;
+@property (nonatomic) UIView verticalSeparator;
+@property (nonatomic) BOOL showingExtraLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)descLabel;
+- (id)extraLabel;
+- (BOOL)isShowingExtraLabel;
+- (void)updateWithCommentAnchorModel:;
+- (void)setDescLabel:;
+- (void)setExtraLabel:;
+- (void)setShowingExtraLabel:;
+- (void)tapAnchor;
+- (void)setTapAnchorView:;
+- (id)tapAnchorView;
+- (void)updateIconWidth:;
+- (id)accessibilityLabel;
+- (id)icon;
+- (id)initWithFrame:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setVerticalSeparator:;
+- (id)verticalSeparator;
+@end

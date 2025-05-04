@@ -1,0 +1,2 @@
+@interface AWEVideoCoverEditorTextStickerHandler : ACCTextStickerHandler
+@end

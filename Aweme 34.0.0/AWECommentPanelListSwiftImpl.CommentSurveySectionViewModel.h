@@ -1,0 +1,3 @@
+@interface AWECommentPanelListSwiftImpl.CommentSurveySectionViewModel : _TtGC20AWECommentSwiftModel24BaseListSectionViewModelC28AWECommentPanelListSwiftImpl18CommentSurveyModel_
+- (id)init;
+@end

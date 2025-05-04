@@ -1,0 +1,35 @@
+@interface AWEVideoEngineStrategyService : NSObject
+@property (nonatomic) NSLock dataSourceLock;
+@property (nonatomic) NSArray currentDataSource;
+@property (nonatomic) NSDictionary daspSignalGroup;
+@property (nonatomic) NSDictionary daspPortraitGroup;
+@property (nonatomic) NSDictionary daspDynamicPortraitGroup;
+@property (nonatomic) NSTimer daspSampleTimer;
+@property (nonatomic) NSArray daspDynamicArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)vodStrategy:getMediaPortrait:name:source:;
+- (void)daspSignalInputWithModel:bsModel:traceID:extraSignal:;
+- (void)getSignalAndInput;
+- (id)getSampleSignalWithKey:;
+- (id)getPortraitSignalWithKey:;
+- (id)daspDynamicArray;
+- (void)setDataSourceLock:;
+- (id)daspSignalGroup;
+- (void)setDaspSignalGroup:;
+- (id)daspPortraitGroup;
+- (void)setDaspPortraitGroup:;
+- (id)daspDynamicPortraitGroup;
+- (void)setDaspDynamicPortraitGroup:;
+- (id)daspSampleTimer;
+- (void)setDaspSampleTimer:;
+- (void)setDaspDynamicArray:;
+- (id)init;
+- (id)currentDataSource;
+- (void)setCurrentDataSource:;
+- (void).cxx_destruct;
+- (id)dataSourceLock;
++ (id)sharedInstance;
+@end

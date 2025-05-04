@@ -1,0 +1,32 @@
+@interface AWELiveStreamInstantEcomResponseModel : AWEBaseApiModel
+@property (nonatomic) NSString roomID;
+@property (nonatomic) double validTime;
+@property (nonatomic) NSDictionary after_feed_params;
+@property (nonatomic) NSString pitaya_upload_info;
+@property (nonatomic) NSString log_id;
+@property (nonatomic) NSArray items;
+@property (nonatomic) q indexPath;
+@property (nonatomic) NSString iconImg;
+@property (nonatomic) NSString title;
+- (id)iconImg;
+- (void)setIconImg:;
+- (void)setLog_id:;
+- (double)validTime;
+- (void)setValidTime:;
+- (id)pitaya_upload_info;
+- (id)after_feed_params;
+- (void)setAfter_feed_params:;
+- (void)setPitaya_upload_info:;
+- (id)roomID;
+- (id)items;
+- (long long)indexPath;
+- (void)setItems:;
+- (void)setIndexPath:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRoomID:;
+- (void)setTitle:;
+- (id)log_id;
++ (id)itemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

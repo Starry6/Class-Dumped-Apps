@@ -1,0 +1,30 @@
+@interface AWENearbyPendantViewController : UIViewController
+@property (nonatomic) AWENearbyPendantView pendantView;
+@property (nonatomic) AWENearbyPendantModel pendantModel;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} foldFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} unfoldFrame;
+@property (nonatomic) BOOL isFolding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pendantView;
+- (void)setPendantView:;
+- (void)setPendantModel:;
+- (id)pendantModel;
+- (void)setFoldFrame:;
+- (id)foldFrame;
+- (BOOL)isFolding;
+- (void)setIsFolding:;
+- (void)pendantView:didSelectedWithType:;
+- (void)__closePendent;
+- (void)__jumpToPendantLandingPage;
+- (void)updateIfNeedsWithNearbyPendantModel:;
+- (void)starAnimationIfNeeds;
+- (void)stopAnimationIfNeeds;
+- (id)unfoldFrame;
+- (void)setUnfoldFrame:;
+- (id)store;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+@end

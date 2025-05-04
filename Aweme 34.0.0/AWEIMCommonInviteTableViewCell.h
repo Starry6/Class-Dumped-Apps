@@ -1,0 +1,32 @@
+@interface AWEIMCommonInviteTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) <AWEIMCommonInviteTableViewCellViewModelProtocol> cellViewModel;
+@property (nonatomic) AWEIMGeneralCardView cardView;
+@property (nonatomic) AWEIMGeneralDisableCardView unavailableView;
+- (id)cellViewModel;
+- (void)setCellViewModel:;
+- (void)configWithMessage:;
+- (void)p_enterBtnTapped;
+- (void)traceCellWillDisplay;
+- (id)unavailableView;
+- (void)p_addsubViews;
+- (void)p_configWithMessageCore:;
+- (void)configContentWithCellViewModel:;
+- (void)p_configTitle:;
+- (void)p_configCoverImageURLStr:;
+- (void)p_configDetailLabel:;
+- (void)p_configCoverImage;
+- (void)p_configHidden;
+- (void)p_refreshMessageInfoIfNeeded:;
+- (void)setUnavailableView:;
+- (void)updateView;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)cardView;
+- (void)setCardView:;
+- (void)willDisplayCell;
++ (id)contentSizeWithMesasge:;
++ (id)viewModelWithMessage:conversation:;
++ (id)identifier;
+@end

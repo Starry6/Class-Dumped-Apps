@@ -1,0 +1,35 @@
+@interface AWEDeliveryBannerView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel stateLabel;
+@property (nonatomic) UILabel detailInfoLabel;
+@property (nonatomic) UILabel disclosureLabel;
+@property (nonatomic) UIImageView rightArrowImageView;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) AWEDeliveryChatTopInfoModel item;
+@property (nonatomic) <AWEDeliveryBannerViewDelegate> delegate;
+- (id)detailInfoLabel;
+- (id)rightArrowImageView;
+- (void)refreshWithItem:;
+- (void)setDetailInfoLabel:;
+- (void)setDisclosureLabel:;
+- (void)setRightArrowImageView:;
+- (id)delegate;
+- (void)setItem:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)item;
+- (void)updateConstraints;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (id)disclosureLabel;
+- (id)bottomLine;
+- (void)setBottomLine:;
+- (void)tapAction:;
+- (void)setStateLabel:;
+- (id)stateLabel;
++ (double)height;
+@end

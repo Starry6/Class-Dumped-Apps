@@ -1,0 +1,30 @@
+@interface AWEIMTaskDetailistSectionDefaultHeaderView : UITableViewHeaderFooterView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIButton button;
+@property (nonatomic) AWEIMTaskDetailistSectionDefaultHeaderModel model;
+@property (nonatomic) <AWEIMTaskDetailistSectionHeaderFooterViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)renderModel:context:;
+- (void)addSubviews;
+- (void)addContrans;
+- (void)onDetailButtonClick;
+- (void)setModel:;
+- (id)delegate;
+- (void)setButton:;
+- (id)iconView;
+- (void)setSubtitleLabel:;
+- (id)model;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)initWithReuseIdentifier:;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)subtitleLabel;
+- (id)button;
+@end

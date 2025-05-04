@@ -1,0 +1,30 @@
+@interface AWETextTemplateNewDefaultEffectUIConfiguration : NSObject
+@property (nonatomic) @? effectListReloadHanlder;
+@property (nonatomic) double effectHeight;
+@property (nonatomic) {UIEdgeInsets=dddd} effectInsets;
+@property (nonatomic) UIColor templateSelectedBorderColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)selectedBorderColor;
+- (void)setSelectedBorderColor:;
+- (id)stickerListViewLayout;
+- (id)effectListReloadHanlder;
+- (id)effectListViewBackgroundColor;
+- (double)effectListViewHeight;
+- (Class)stickerItemCellClass;
+- (id)effectListErrorView;
+- (void)setEffectListReloadHanlder:;
+- (void)setEffectHeight:;
+- (void)setEffectInsets:;
+- (void)setEffectListViewHeight:;
+- (id)effectListLoadingView;
+- (double)effectHeight;
+- (BOOL)isNewTextTemplateConfig;
+- (id)effectInsets;
+- (void)setTemplateSelectedBorderColor:;
+- (id)templateSelectedBorderColor;
+- (id)init;
+- (void).cxx_destruct;
+@end

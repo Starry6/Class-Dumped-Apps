@@ -1,0 +1,30 @@
+@interface AWEMinorCreationSticker : MTLModel
+@property (nonatomic) NSString resourceID;
+@property (nonatomic) NSString effectID;
+@property (nonatomic) Q creationStickerType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString buttonDesc;
+@property (nonatomic) NSArray authorList;
+@property (nonatomic) q restAuthorsCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buttonDesc;
+- (void)setButtonDesc:;
+- (void)setEffectID:;
+- (id)authorList;
+- (void)setAuthorList:;
+- (long long)restAuthorsCount;
+- (unsigned long long)creationStickerType;
+- (void)setCreationStickerType:;
+- (void)setRestAuthorsCount:;
+- (id)resourceID;
+- (void)setResourceID:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)effectID;
++ (id)authorListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

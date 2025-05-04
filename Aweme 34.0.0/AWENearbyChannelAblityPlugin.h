@@ -1,0 +1,35 @@
+@interface AWENearbyChannelAblityPlugin : NSObject
+@property (nonatomic) <AWENearbyChannelContextAblityProtocol> nearbyChannelContextAblityImp;
+@property (nonatomic) <AWENearbyTabDotAblityProtocol> nearbyChannelTabDotAblityImp;
+@property (nonatomic) <AWENearbyBubbleAblityProtocol> nearbyChannelBubbleAblityImp;
+@property (nonatomic) <AWENearbyChannelContextAblityProtocol> grouponChannelContextAblityImp;
+@property (nonatomic) <AWENearbyTabDotAblityProtocol> grouponChannelTabDotAblityImp;
+@property (nonatomic) <AWENearbyBubbleAblityProtocol> grouponChannelBubbleAblityImp;
+@property (nonatomic) <AWENearbyTabForwardAblityProtocol> grouponChannelTabForwardAblityImp;
+@property (nonatomic) <AWENearbyChannelAbilityProtocol> nearbyChannelAbility;
+@property (nonatomic) <AWENearbyChannelAbilityProtocol> grouponChannelAbility;
+- (id)nearbyChannelAbility;
+- (id)grouponChannelAbility;
+- (id)nearbyChannelContextAblityImp;
+- (void)setNearbyChannelContextAblityImp:;
+- (id)nearbyChannelTabDotAblityImp;
+- (void)setNearbyChannelTabDotAblityImp:;
+- (id)nearbyChannelBubbleAblityImp;
+- (void)setNearbyChannelBubbleAblityImp:;
+- (id)grouponChannelContextAblityImp;
+- (void)setGrouponChannelContextAblityImp:;
+- (id)grouponChannelTabDotAblityImp;
+- (void)setGrouponChannelTabDotAblityImp:;
+- (id)grouponChannelBubbleAblityImp;
+- (void)setGrouponChannelBubbleAblityImp:;
+- (id)grouponChannelTabForwardAblityImp;
+- (void)setGrouponChannelTabForwardAblityImp:;
+- (void)setNearbyChannelAbility:;
+- (void)setGrouponChannelAbility:;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)channelAbilityWithPageType:;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

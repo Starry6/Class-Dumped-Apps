@@ -1,0 +1,2 @@
+@interface AWEMixDetailInformationPaymentController : AWEMixDetailInformationBaseController
+@end

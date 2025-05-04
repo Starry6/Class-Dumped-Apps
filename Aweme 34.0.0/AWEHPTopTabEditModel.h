@@ -1,0 +1,31 @@
+@interface AWEHPTopTabEditModel : MTLModel
+@property (nonatomic) NSArray tabList;
+@property (nonatomic) q timeStamp;
+@property (nonatomic) BOOL isEditedTopTabs;
+@property (nonatomic) BOOL isEditedBottomTabs;
+@property (nonatomic) NSString bottomReplaceTab;
+@property (nonatomic) NSArray editTypes;
+@property (nonatomic) NSArray editPreTabList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tabList;
+- (void)setTabList:;
+- (BOOL)isEditedTopTabs;
+- (id)bottomReplaceTab;
+- (void)setBottomReplaceTab:;
+- (void)setIsEditedTopTabs:;
+- (BOOL)isEditedBottomTabs;
+- (void)setIsEditedBottomTabs:;
+- (id)editPreTabList;
+- (void)setEditPreTabList:;
+- (id)editTypes;
+- (void)setEditTypes:;
+- (void).cxx_destruct;
+- (long long)timeStamp;
+- (void)setTimeStamp:;
++ (id)tabListJSONTransformer;
++ (id)editPreTabListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

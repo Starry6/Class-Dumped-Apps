@@ -1,0 +1,2 @@
+@interface AWENaviDuetDressUpViewModel : AWENaviDuetBaseFeatureComponentViewModel
+@end

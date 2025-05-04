@@ -1,0 +1,36 @@
+@interface AWETaskAnchorModel : MTLModel
+@property (nonatomic) NSString anchorID;
+@property (nonatomic) NSString anchorContent;
+@property (nonatomic) q anchorType;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) NSString extra;
+@property (nonatomic) BOOL canModifyAnchor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)anchorID;
+- (void)setOpenURL:;
+- (void)setAnchorID:;
+- (id)anchorContent;
+- (void)setAnchorContent:;
+- (BOOL)canModifyAnchor;
+- (void)setCanModifyAnchor:;
+- (id)icon;
+- (id)extra;
+- (void)setWebURL:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (long long)anchorType;
+- (id)title;
+- (id)webURL;
+- (void)setTitle:;
+- (id)openURL;
+- (void)setAnchorType:;
++ (id)iconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

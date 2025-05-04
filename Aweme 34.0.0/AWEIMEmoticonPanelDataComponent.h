@@ -1,0 +1,32 @@
+@interface AWEIMEmoticonPanelDataComponent : AWEIMComponentBase
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray listData;
+@property (nonatomic) <AWEIMEmoticonTrackComponent> trackComponent;
+@property (nonatomic) <AWEIMEmoticonPanelSyncComponent> syncComponent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)p_scrollViewDidEndScroll:;
+- (id)syncComponent;
+- (void)setSyncComponent:;
+- (id)listData;
+- (void)setListData:;
+- (id)trackComponent;
+- (void)setTrackComponent:;
+- (void)updateWithListData:;
+- (void)reloadDataWithUniqueID:;
+- (void)allNeedsReloadViewModel;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)scrollViewDidEndDecelerating:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+@end

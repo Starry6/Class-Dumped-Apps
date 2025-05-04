@@ -1,0 +1,38 @@
+@interface AWEDoubleColumnSearchMerchandiseIndustryCouponModel : MTLModel
+@property (nonatomic) AWEURLModel headIcon;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseCouponInfoContentTextModel headText;
+@property (nonatomic) NSArray contentText;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseActionButton actionButton;
+@property (nonatomic) NSString background;
+@property (nonatomic) NSString dataID;
+@property (nonatomic) NSDictionary rebackParams;
+@property (nonatomic) NSString endTime;
+@property (nonatomic) NSString couponType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)couponType;
+- (void)setCouponType:;
+- (id)headIcon;
+- (void)setHeadIcon:;
+- (id)rebackParams;
+- (void)setRebackParams:;
+- (id)headText;
+- (void)setHeadText:;
+- (id)endTime;
+- (void)setEndTime:;
+- (id)background;
+- (void)setBackground:;
+- (void).cxx_destruct;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setContentText:;
+- (id)contentText;
+- (id)dataID;
+- (void)setDataID:;
++ (id)headIconJSONTransformer;
++ (id)contentTextJSONTransformer;
++ (id)actionButtonJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

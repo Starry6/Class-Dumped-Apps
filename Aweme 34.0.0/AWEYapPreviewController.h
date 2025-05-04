@@ -1,0 +1,36 @@
+@interface AWEYapPreviewController : UIViewController
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UILabel titleView;
+@property (nonatomic) AWEIMDouyinRedPacketView rpCardView;
+@property (nonatomic) AWEIMDouyinRedPacketCoverModel coverModel;
+@property (nonatomic) AWEPayRPOpenRedPacketViewController openVC;
+@property (nonatomic) AWEYAPRPDetailViewController detailVC;
+- (void)p_setupUI;
+- (void)transition_didPopDoneTransitionWithContext:;
+- (void)setCoverModel:;
+- (id)coverModel;
+- (id)detailVC;
+- (void)setDetailVC:;
+- (void)p_setupNavBar;
+- (void)p_back;
+- (void)setOpenVC:;
+- (id)openVC;
+- (id)initWithCoverModel:;
+- (void)p_setupRpCardView;
+- (void)setRpCardView:;
+- (void)p_tapRP;
+- (void)p_presentOpenVc;
+- (void)p_openDetail;
+- (id)rpCardView;
+- (id)titleView;
+- (void)setTitleView:;
+- (void)dealloc;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidDisappear:;
+- (long long)preferredStatusBarStyle;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)avatar;
+- (void)setAvatar:;
+@end

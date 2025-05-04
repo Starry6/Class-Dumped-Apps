@@ -1,0 +1,30 @@
+@interface AWESearchMarketShopView : UIView
+@property (nonatomic) AWEDoubleColumnSearchMarketInfoModel marketInfo;
+@property (nonatomic) UIImageView shopImageView;
+@property (nonatomic) UIView shopImageCover;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) UILabel bottomLeftLabel;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) UILabel bottomRightLabel;
+@property (nonatomic) NSInteger bottomShowPriority;
+- (id)marketInfo;
+- (void)setMarketInfo:;
+- (id)shopImageView;
+- (id)bottomLeftLabel;
+- (id)bottomRightLabel;
+- (id)shopImageCover;
+- (int)bottomShowPriority;
+- (void)setShopImageView:;
+- (void)setShopImageCover:;
+- (void)setBottomLeftLabel:;
+- (void)setBottomRightLabel:;
+- (void)setBottomShowPriority:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setTopLabel:;
+- (id)topLabel;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
++ (double)shopHeight;
+@end

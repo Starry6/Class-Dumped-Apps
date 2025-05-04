@@ -1,0 +1,36 @@
+@interface AWEECOMIMGoodsCardLabelsModel : MTLModel
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) AWEECOMIMImageLabelModel imageModel;
+@property (nonatomic) Q showLabelType;
+@property (nonatomic) NSString prefix;
+@property (nonatomic) NSString suffix;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageModel;
+- (void)setImageModel:;
+- (unsigned long long)showLabelType;
+- (void)setShowLabelType:;
+- (id)prefix;
+- (void)setBorderColor:;
+- (id)content;
+- (id)borderColor;
+- (void)setText:;
+- (id)text;
+- (void)setPrefix:;
+- (void)setTextColor:;
+- (id)backgroundColor;
+- (void)setContent:;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (void)setSuffix:;
+- (id)textColor;
+- (id)suffix;
++ (id)imageModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

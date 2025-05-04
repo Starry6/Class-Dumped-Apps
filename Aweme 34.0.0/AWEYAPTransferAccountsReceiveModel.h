@@ -1,0 +1,37 @@
+@interface AWEYAPTransferAccountsReceiveModel : AWEBaseApiModel
+@property (nonatomic) NSString orderId;
+@property (nonatomic) NSString bizCode;
+@property (nonatomic) NSString bizMsg;
+@property (nonatomic) NSString yapManageUrl;
+@property (nonatomic) NSString verificationInfo;
+@property (nonatomic) q amount;
+@property (nonatomic) q transferTime;
+@property (nonatomic) q refundTime;
+@property (nonatomic) q receiveTime;
+@property (nonatomic) NSString refundDesc;
+@property (nonatomic) NSString recvResultPageInfo;
+- (id)bizCode;
+- (id)orderId;
+- (void)setOrderId:;
+- (void)setBizCode:;
+- (id)bizMsg;
+- (id)refundDesc;
+- (long long)receiveTime;
+- (long long)refundTime;
+- (void)setRefundDesc:;
+- (id)verificationInfo;
+- (id)yapManageUrl;
+- (void)setReceiveTime:;
+- (void)setVerificationInfo:;
+- (void)setBizMsg:;
+- (void)setYapManageUrl:;
+- (void)setRefundTime:;
+- (id)recvResultPageInfo;
+- (void)setRecvResultPageInfo:;
+- (void).cxx_destruct;
+- (long long)amount;
+- (void)setAmount:;
+- (void)setTransferTime:;
+- (long long)transferTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

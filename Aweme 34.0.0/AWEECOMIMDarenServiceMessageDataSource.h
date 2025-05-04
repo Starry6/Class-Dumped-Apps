@@ -1,0 +1,34 @@
+@interface AWEECOMIMDarenServiceMessageDataSource : NSObject
+@property (nonatomic) <BDECIMCloudMessagesInConversationDataSourceV2Interface> messageDataSource;
+@property (nonatomic) BDECPigeonClientConfigV2 clientConfig;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSObject<OS_dispatch_queue> messageDataQueue;
+@property (nonatomic) NSArray preMessageIds;
+@property (nonatomic) Q messageCountPerPage;
+@property (nonatomic) BOOL firstLoad;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasOlderMessages;
+- (unsigned long long)messageCountPerPage;
+- (void)setMessageCountPerPage:;
+- (void)messageDataSource:didUpdateWithUpdate:completion:;
+- (void)setMessageDataSource:;
+- (id)messageDataSource;
+- (void)setPreMessageIds:;
+- (void)loadHistoryMessagesWithCurrentNewMessages:completion:;
+- (void)messageLoadProcessWithCurrentNewMessages:error:completion:;
+- (id)messageDataQueue;
+- (id)preMessageIds;
+- (void)loadHistoryMessagesWithCompletion:;
+- (void)setMessageDataQueue:;
+- (id)initWithBizConversationID:options:belongeClientConfig:;
+- (id)clientConfig;
+- (id)conversationID;
+- (void)setClientConfig:;
+- (void).cxx_destruct;
+- (void)setConversationID:;
+- (BOOL)firstLoad;
+- (void)setFirstLoad:;
+@end

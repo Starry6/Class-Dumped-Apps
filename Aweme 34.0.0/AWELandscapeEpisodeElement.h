@@ -1,0 +1,32 @@
+@interface AWELandscapeEpisodeElement : AWELandscapeInteractionBaseElement
+@property (nonatomic) UIButton lVideoAlbumButton;
+@property (nonatomic) AWELandscapeLVideoAlbumViewController lVideoAlbumPanel;
+@property (nonatomic) BOOL isShowLVideoAlbumPanel;
+@property (nonatomic) BOOL hasSetupHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupContextHandler;
+- (void)hideAllPanels;
+- (BOOL)shouldFailedGestureRecognizer:;
+- (BOOL)handleResponseGestureRecognizer:;
+- (BOOL)isShowingPanel;
+- (void)configUIForFeedShare:allowSelectEpisode:;
+- (void)refreshWithEpisodeInfo:playMode:;
+- (id)lVideoAlbumButton;
+- (BOOL)isShowLVideoAlbumPanel;
+- (void)hideLongVideoAlbumPanelWithCompletion:;
+- (BOOL)hasSetupHandler;
+- (void)setHasSetupHandler:;
+- (id)lVideoAlbumPanel;
+- (void)setIsShowLVideoAlbumPanel:;
+- (void)traceAlbumButtonClicked;
+- (void)showLongVideoAlbumPanel;
+- (void)setLVideoAlbumButton:;
+- (void)setLVideoAlbumPanel:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (BOOL)isInteracting;
+@end

@@ -1,0 +1,34 @@
+@interface AWENearbyPOISpuView : UIView
+@property (nonatomic) <AWENearbyPOIInfoCardModel> model;
+@property (nonatomic) UIView itemContainerView;
+@property (nonatomic) UIView seperatorLine;
+@property (nonatomic) UIImageView itemIconView;
+@property (nonatomic) UILabel itemIconLabel;
+@property (nonatomic) UILabel itemTitleLabel;
+@property (nonatomic) UILabel itemPriceLabel;
+@property (nonatomic) UILabel itemCountLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setItemContainerView:;
+- (void)configViewsWithModel:;
+- (id)itemIconView;
+- (id)itemPriceLabel;
+- (id)itemCountLabel;
+- (void)hiddenSeperatorLine;
+- (void)setItemIconView:;
+- (id)itemIconLabel;
+- (void)setItemIconLabel:;
+- (void)setItemPriceLabel:;
+- (void)setItemCountLabel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)itemContainerView;
+- (id)seperatorLine;
+- (void)setSeperatorLine:;
+- (id)itemTitleLabel;
+- (void)setItemTitleLabel:;
+@end

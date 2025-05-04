@@ -1,0 +1,31 @@
+@interface AWERVLVRelatedPanelViewModel : AWERVLVBasePanelViewModel
+@property (nonatomic) UIViewController<AWERelatedVideoDetailVideoRelatedVideoViewControllerProtocol> relatedView;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)panelVC;
+- (void)startRequestAnimating;
+- (void)refreshModel:params:;
+- (BOOL)canScrollToDownDirection;
+- (void)setupWithRelatedPreloadVideos:forModel:;
+- (void)trackRelatedTabClick:;
+- (id)panelID;
+- (void)panelDidAppear;
+- (BOOL)slidingPanelAvailable;
+- (id)slidingPanelTitle;
+- (void)didScrollToPanel:prevPanel:;
+- (void)didPanelButtonClicked;
+- (void)scrollPanelToTop;
+- (void)scrollPanelToTop:;
+- (void)refreshRelatedVideos:scene:params:awemeModel:completion:;
+- (id)rightPanelTitle;
+- (double)rightPanelTopPadding;
+- (void)setModel:;
+- (id)scrollOffset;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setRelatedView:;
+- (id)relatedView;
+@end

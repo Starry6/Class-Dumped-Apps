@@ -1,0 +1,32 @@
+@interface AWERelatedVideoPlayLagLoadElement : AWERelatedVideoPlayBaseElement
+@property (nonatomic) UIView lagLoadingView;
+@property (nonatomic) UILabel lagLoadingLabel;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) NSTimer networkSpeedTimer;
+@property (nonatomic) NSTimer delayLoadingTimer;
+- (void)initializeElement;
+- (void)setHide:;
+- (void)bindEvent;
+- (id)lagLoadingView;
+- (id)lagLoadingLabel;
+- (void)startLagLoading:;
+- (void)stopLagLoading;
+- (id)networkSpeedTimer;
+- (void)setNetworkSpeedTimer:;
+- (id)delayLoadingTimer;
+- (void)setDelayLoadingTimer:;
+- (void)resetDelayLoadingTimer:;
+- (id)getLoadingLayerWithFrame:lineWidth:lineColor:;
+- (id)getLoadingAnimation;
+- (void)setNetworkSpeed;
+- (void)resetNetworkSpeedTimer;
+- (id)networkSpeedString;
+- (void)setLagLoadingView:;
+- (void)setLagLoadingLabel:;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+@end

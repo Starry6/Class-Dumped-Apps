@@ -1,0 +1,38 @@
+@interface AWEUserRecommendUserWorkCellView : UIView
+@property (nonatomic) UIView highlightView;
+@property (nonatomic) AWEUserRecommendPersonCellView personCellView;
+@property (nonatomic) AFDUserWorkCollectionView userWorkCollectionView;
+@property (nonatomic) <AFDUserWorkCollectionViewDataSource> userWorkDataSource;
+@property (nonatomic) AWEBinding yellowDotBinding;
+@property (nonatomic) AWEUserRecommendUserWorkCellModel model;
+@property (nonatomic) <AWEUserRecommendTableViewModelProtocol> viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)configWithModel:;
+- (void)onSelected;
+- (id)p_userWorkDataSource;
+- (void)setUserWorkDataSource:;
+- (id)userWorkDataSource;
+- (id)yellowDotBinding;
+- (void)setYellowDotBinding:;
+- (void)setPersonCellView:;
+- (id)personCellView;
+- (id)userWorkCollectionView;
+- (void)p_didEnterAwemeDetail;
+- (void)setUserWorkCollectionView:;
+- (void)setModel:;
+- (void)setHighlightView:;
+- (void)setHighlighted:animated:;
+- (id)highlightView;
+- (id)viewModel;
+- (id)initWithFrame:layout:;
+- (id)model;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)willDisplay;
++ (id)cellViewWithFrame:layout:;
++ (double)heightForModel:viewModel:;
+@end

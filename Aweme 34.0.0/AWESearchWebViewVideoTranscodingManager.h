@@ -1,0 +1,34 @@
+@interface AWESearchWebViewVideoTranscodingManager : NSObject
+@property (nonatomic) BOOL currentTranscodeResults;
+@property (nonatomic) q transcodingMark;
+@property (nonatomic) BOOL isTranscodingAtCommitNavigationValid;
+@property (nonatomic) BOOL isTranscodingAtFinishNavigationValid;
+@property (nonatomic) double settingsMaximumJumpTime;
+@property (nonatomic) double webJumpMaxtimeFrom;
+- (void)resetWebJumpMaximumTime;
+- (void)resetTranscodingValid;
+- (BOOL)checkIfValidToJump;
+- (BOOL)isTranscodingAtCommitNavigationValid;
+- (void)didTranscodingAtCommitNavigation;
+- (BOOL)isTranscodingAtFinishNavigationValid;
+- (void)didTranscodingAtFinishNavigationValid;
+- (long long)getTranscodingMark:;
+- (void)onTransCodingMaxTimeReach:isDetailPage:videoTranscodingDataSuccess:videoAddressTranscodingDataSuccess:requestURL:searchParams:;
+- (void)reportVideoTranscodeJSFetchResult:url:injectTime:;
+- (void)reportVideoTranscodeInjectTime:;
+- (void)reportVideoTranscodeGetServerDataResult:url:totalCost:requestCost:decryptCost:;
+- (BOOL)isTranscodingSuccess;
+- (void)onTransCodingSuccess;
+- (void)reportVideoTranscodeState:isPreTranscode:isDetailPage:withAddress:withResultData:requestURL:searchParams:;
+- (void)setWebJumpMaxtimeFrom:;
+- (double)webJumpMaxtimeFrom;
+- (double)settingsMaximumJumpTime;
+- (long long)transcodingMark;
+- (void)setTranscodingMark:;
+- (void)setCurrentTranscodeResults:;
+- (BOOL)currentTranscodeResults;
+- (void)setIsTranscodingAtCommitNavigationValid:;
+- (void)setIsTranscodingAtFinishNavigationValid:;
+- (void)setSettingsMaximumJumpTime:;
+- (id)init;
+@end

@@ -1,0 +1,37 @@
+@interface AWEVideoPlayRecordsManager : NSObject
+@property (nonatomic) AWENetworkQuailityManager nqeManager;
+@property (nonatomic) double tcp_rtt;
+@property (nonatomic) double tcp_bandwith;
+@property (nonatomic) double http_rtt;
+@property (nonatomic) NSMutableArray records;
+@property (nonatomic) NSMutableArray historyRecords;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEFeedModuleServiceDOUYINLiteAdaper;
+- (void)networkQualityManger:didChangeQuailty:;
+- (void)setNqeManager:;
+- (id)nqeManager;
+- (void)setHttp_rtt:;
+- (void)setTcp_rtt:;
+- (void)setTcp_bandwith:;
+- (double)tcp_rtt;
+- (double)tcp_bandwith;
+- (double)http_rtt;
+- (void)didEnterBackground;
+- (id)records;
+- (void)setRecords:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)historyRecords;
+- (void)setHistoryRecords:;
++ (Class)aAWEFeedModuleServiceDOUYINLiteAdaperClass;
++ (id)getLastestVideoPlayRecords:;
++ (double)last_http_rtt;
++ (double)last_tcp_rtt;
++ (double)last_tcp_bandwith;
++ (void)addPlayRecord:;
++ (id)lastThreeRecords;
++ (id)sharedInstance;
+@end

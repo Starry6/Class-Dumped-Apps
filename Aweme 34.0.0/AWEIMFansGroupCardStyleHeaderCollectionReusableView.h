@@ -1,0 +1,30 @@
+@interface AWEIMFansGroupCardStyleHeaderCollectionReusableView : UICollectionReusableView
+@property (nonatomic) AWEIMFansGroupManagementPlateInfoViewModel viewModel;
+@property (nonatomic) UIView headerBaseView;
+@property (nonatomic) UILabel headerTitleLabel;
+@property (nonatomic) UIButton headerActionBtn;
+@property (nonatomic) UIImageView headerImageView;
+@property (nonatomic) UIView headerDotView;
+@property (nonatomic) @? actionBlock;
+- (void)configWithViewModel:;
+- (void)__setupUI;
+- (id)headerBaseView;
+- (void)setHeaderBaseView:;
+- (id)headerActionBtn;
+- (void)__btnClicked;
+- (void)setHeaderActionBtn:;
+- (void)__updateLayout;
+- (id)headerDotView;
+- (void)setHeaderDotView:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setActionBlock:;
+- (id)actionBlock;
+- (id)headerImageView;
+- (void)setHeaderImageView:;
+- (id)headerTitleLabel;
+- (void)setHeaderTitleLabel:;
++ (id)identifierWithType:;
+@end

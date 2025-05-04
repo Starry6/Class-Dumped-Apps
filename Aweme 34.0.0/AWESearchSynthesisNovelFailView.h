@@ -1,0 +1,31 @@
+@interface AWESearchSynthesisNovelFailView : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIButton retryBtn;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) NSError error;
+@property (nonatomic) @? onFailReloadHandler;
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) UIImage netFailedImage;
+@property (nonatomic) UIImage netFailedDarkImage;
+- (void)onReloadAction:;
+- (id)onFailReloadHandler;
+- (void)setOnFailReloadHandler:;
+- (id)retryBtn;
+- (void)setRetryBtn:;
+- (void)handleError;
+- (void)configSubViewsLayout;
+- (id)netFailedImage;
+- (void)setNetFailedImage:;
+- (id)netFailedDarkImage;
+- (void)setNetFailedDarkImage:;
+- (void)setTintColor:;
+- (id)tintColor;
+- (void)setError:;
+- (id)initWithFrame:error:;
+- (void).cxx_destruct;
+- (id)error;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setTipLabel:;
+- (id)tipLabel;
+@end

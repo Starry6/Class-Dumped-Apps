@@ -1,0 +1,31 @@
+@interface AWELocoalGifMessageController : NSObject
+@property (nonatomic) NSArray messageGroupArray;
+@property (nonatomic) AWEIMMessageViewModel lastGreetingMessageVM;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL hasTryFiltered;
+@property (nonatomic) BOOL hasTryAddLocoal;
+@property (nonatomic) BOOL didAddLocoal;
+@property (nonatomic) NSArray gifCreaters;
+@property (nonatomic) AWEIMMessageBaseViewController vcParent;
+- (id)vcParent;
+- (id)messageGroupArray;
+- (void)setVcParent:;
+- (void)filterGreetingGifInGroup:completion:;
+- (void)tryAddLocoalGifFor:completion:;
+- (void)setMessageGroupArray:;
+- (BOOL)p_canFilerGreetingMessage;
+- (void)setHasTryFiltered:;
+- (BOOL)hasTryAddLocoal;
+- (BOOL)didAddLocoal;
+- (void)setLastGreetingMessageVM:;
+- (id)lastGreetingMessageVM;
+- (void)setHasTryAddLocoal:;
+- (void)p_returnBackGreetingMessage;
+- (id)gifCreaters;
+- (void)setDidAddLocoal:;
+- (BOOL)hasTryFiltered;
+- (void)setGifCreaters:;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+@end

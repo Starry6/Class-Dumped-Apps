@@ -1,0 +1,30 @@
+@interface AWEIMLivingContainerView : UIView
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) LOTAnimationView avartarLiveTagMusicView;
+@property (nonatomic) AWEIMUser user;
+@property (nonatomic) Q style;
+@property (nonatomic) <AWEIMLivingContainerViewProtocol> delegate;
+- (void)addGesture;
+- (void)p_setupUIWithStyle:;
+- (id)avartarLiveTagMusicView;
+- (void)setAvartarLiveTagMusicView:;
+- (id)initWithFrame:user:style:;
+- (void)startWithUser:ignoreAnimation:;
+- (void)didTapAvatarImage;
+- (void)loadAvatarImageIgnoreAnimation:;
+- (void)p_setupLivingStyleUI;
+- (void)p_setupLivingWithoutAvatarStyleUI;
+- (void)addMaskLayer;
+- (id)user;
+- (void)setUser:;
+- (id)delegate;
+- (unsigned long long)style;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)setStyle:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+@end

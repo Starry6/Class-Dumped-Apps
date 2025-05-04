@@ -1,0 +1,34 @@
+@interface AWERiskModel : AWEBaseApiModel
+@property (nonatomic) NSNumber voting;
+@property (nonatomic) NSNumber warning;
+@property (nonatomic) NSNumber riskSinking;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSNumber notice;
+@property (nonatomic) NSNumber type;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString postContent;
+@property (nonatomic) Q warnLevel;
+@property (nonatomic) NSString iconUrl;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)voting;
+- (void)setVoting:;
+- (id)riskSinking;
+- (void)setRiskSinking:;
+- (void)setPostContent:;
+- (unsigned long long)warnLevel;
+- (void)setWarnLevel:;
+- (id)content;
+- (void)setUrl:;
+- (id)warning;
+- (id)type;
+- (void)setContent:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)url;
+- (id)notice;
+- (void)setNotice:;
+- (id)postContent;
+- (void)setWarning:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

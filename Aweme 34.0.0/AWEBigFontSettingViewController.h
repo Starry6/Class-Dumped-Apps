@@ -1,0 +1,38 @@
+@interface AWEBigFontSettingViewController : UIViewController
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString referString;
+@property (nonatomic) AWEBigFontPreview previewView;
+@property (nonatomic) AWEBigFontSettingBottomView bottomView;
+@property (nonatomic) UIView rightNaviBarButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setEnterFrom:;
+- (BOOL)configWithRouterParamDict:;
+- (void)setReferString:;
+- (id)enterFrom;
+- (void)awe_themeReload;
+- (void)backButtonClicked;
+- (void)addNotifications;
+- (id)aAWEPadBizUIAdapter;
+- (BOOL)adapterPadGridEnable;
+- (void)systemFontSizeChanged;
+- (void)setupDeprecatedUI;
+- (void)ensureButtonClicked;
+- (unsigned long long)getSystemReflectFontSelectIndex;
+- (void)showElderAlertIfNeeded;
+- (void)setRightNaviBarButton:;
+- (id)rightNaviBarButton;
+- (id)init;
+- (void)dealloc;
+- (void)setPreviewView:;
+- (id)previewView;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (void)setupUI;
+- (void)setBottomView:;
++ (Class)aAWEPadBizUIAdapterClass;
+@end

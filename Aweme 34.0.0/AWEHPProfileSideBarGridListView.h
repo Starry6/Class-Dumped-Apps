@@ -1,0 +1,35 @@
+@interface AWEHPProfileSideBarGridListView : UIView
+@property (nonatomic) <AWELeftSideBarItemContext> context;
+@property (nonatomic) <AWEHPSideBarStencilViewDataModelProtocol> dataModel;
+@property (nonatomic) DUXBaseImageView iconView;
+@property (nonatomic) DUXBaseLabel titleLabel;
+@property (nonatomic) DUXBadge dotView;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)setThemeStyle:;
+- (void)hideBadge;
+- (void)showBadgeWithModel:completion:;
+- (id)initWithContext:withDataModel:;
+- (double)sideBarStencilViewHeight;
+- (void)sideBarThemeDidChange:;
+- (void)updateDataModel:;
+- (long long)sideBarRedDotStyle;
+- (void)p_reloadStencilViewUI;
+- (void)p_setUpIconViewImageWithUrl:themeStyle:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+- (id)dotView;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)setDotView:;
+- (long long)themeStyle;
+@end

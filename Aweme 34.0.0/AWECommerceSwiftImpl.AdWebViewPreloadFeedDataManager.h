@@ -1,0 +1,2 @@
+@interface AWECommerceSwiftImpl.AdWebViewPreloadFeedDataManager : _TtCs12_SwiftObject
+@end

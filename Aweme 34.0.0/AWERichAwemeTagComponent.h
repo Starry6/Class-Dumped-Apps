@@ -1,0 +1,30 @@
+@interface AWERichAwemeTagComponent : NSObject
+@property (nonatomic) AWEVideoTypeTagView richAwemeTagView;
+@property (nonatomic) AWEPlayInteractionBaseElement clickDelegate;
+@property (nonatomic) NSArray currentActivatedComponents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)tagWidth;
+- (id)clickDelegate;
+- (void)setClickDelegate:;
+- (id)currentActivatedComponents;
+- (void)setCurrentActivatedComponents:;
+- (BOOL)currentTagNeedPlaceHolder;
+- (BOOL)needHiddenWhenShowPlaceHolder;
+- (id)richAwemeTagView;
+- (BOOL)enableAdaptLargeFontMode;
+- (Class)largeFontAdaptUtilClass;
+- (void)onRichAwemeTagClicked:;
+- (void)showImageAlbumNoteIconIfNeededWithModel:tagModel:;
+- (void)setRichAwemeTagView:;
+- (void).cxx_destruct;
+- (void)updateWithModel:;
+- (id)tagView;
++ (BOOL)needShowWithContext:;
++ (BOOL)richAwemeTagNeedShowWithModel:;
++ (id)newAlbumTag:;
++ (BOOL)albumIsAutoPlay:;
++ (BOOL)albumIsMusicBeatOn:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEECShoppingAIGuideLynxMarkdownLabel : LynxUI
+@property (nonatomic) AWEECShoppingAIGuideGrowingLabel markdownLabel;
+@property (nonatomic) NSString ec_fontColorStr;
+@property (nonatomic) UIColor ec_fontColor;
+@property (nonatomic) Q ec_fontSize;
+@property (nonatomic) Q ec_fontWeight;
+@property (nonatomic) AWEECShoppingAIGuideLynxMarkdownBundle bundle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onReceiveUIOperation:;
+- (id)markdownLabel;
+- (void)setMarkdownLabel:;
+- (id)ec_fontColorStr;
+- (void)setEc_fontColorStr:;
+- (id)ec_fontColor;
+- (void)setEc_fontColor:;
+- (unsigned long long)ec_fontSize;
+- (void)setEc_fontSize:;
+- (unsigned long long)ec_fontWeight;
+- (void)setEc_fontWeight:;
+- (id)init;
+- (id)bundle;
+- (void).cxx_destruct;
+- (void)setBundle:;
+- (id)createView;
++ (void)lynxLazyLoad;
++ (id)updateMarkdownLabel:bundle:;
+@end

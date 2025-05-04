@@ -1,0 +1,32 @@
+@interface AWEXBridgeShowInnerPushMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString titlePrefix;
+@property (nonatomic) NSString titleSuffix;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString businessType;
+@property (nonatomic) NSDictionary trackParams;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)setBusinessType:;
+- (id)titleSuffix;
+- (void)setTitleSuffix:;
+- (id)schema;
+- (void)setSchema:;
+- (id)businessType;
+- (id)subtitle;
+- (void)setSubtitle:;
+- (id)imageURL;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setImageURL:;
+- (void)setTitle:;
+- (void)setButtonText:;
+- (void)setTitlePrefix:;
+- (id)titlePrefix;
++ (id)requiredKeyPaths;
++ (id)JSONKeyPathsByPropertyKey;
+@end

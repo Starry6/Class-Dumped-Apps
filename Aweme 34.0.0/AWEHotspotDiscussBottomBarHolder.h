@@ -1,0 +1,35 @@
+@interface AWEHotspotDiscussBottomBarHolder : AWESearchResultVerticalBottomBarHolder
+@property (nonatomic) <AWECommentInputViewManagerProtocol> commentInputViewManager;
+@property (nonatomic) NSMutableArray sendedCommentCid;
+@property (nonatomic) AWESearchCommentInputViewConfiguration inputConfig;
+@property (nonatomic) AWESearchCommentCustomBottomBar customedBottomBar;
+@property (nonatomic) <AWECommentInputViewContextProtocol> commentContext;
+- (id)inputConfig;
+- (void)setInputConfig:;
+- (id)commentContext;
+- (void)setCommentContext:;
+- (id)commentInputViewManager;
+- (void)handleCommentInput:;
+- (id)commentContextWithGroupID:;
+- (id)getCommentInputViewManagerFromContext:;
+- (void)setCommentInputViewManager:;
+- (id)customedBottomBar;
+- (void)clearSendedCommentCid;
+- (id)getBottomBarView;
+- (id)getLogExtraFromModel;
+- (long long)getServiceIdInteger;
+- (void)updateContainerClientExtra:;
+- (id)sendedCommentCid;
+- (void)showCommentInputPanelWithLogExtra:;
+- (void)dismissCommentInputPanel;
+- (void)setCustomedBottomBar:;
+- (void)setSendedCommentCid:;
+- (void)bottomBarInputAreaClicked;
+- (id)getLogWithCommentId:;
+- (id)init;
+- (void)dealloc;
+- (id)getGroupId;
+- (void)dismissKeyboard;
+- (void).cxx_destruct;
+- (void)updateWithModel:;
+@end

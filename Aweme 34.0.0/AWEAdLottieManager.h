@@ -1,0 +1,30 @@
+@interface AWEAdLottieManager : NSObject
+@property (nonatomic) NSDate lastPlayTime;
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) UIButton clickButton;
+@property (nonatomic) NSString laysWebUrl;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) AWEAwemeModel awemeModel;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)lastPlayTime;
+- (void)setLastPlayTime:;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (void)setClickButton:;
+- (id)clickButton;
+- (id)lottieView;
+- (void)setLottieView:;
+- (void)displayOnView:awemeModel:leftContainer:eggModel:finishBlock:clickBlock:;
+- (void)resetLottieView;
+- (void)displayLaysEggOnView:leftContainer:eggModel:finishBlock:clickBlock:;
+- (void)displayOnView:sourceURL:finishBlock:;
+- (void)clickButtonDidClicked:;
+- (void)setLaysWebUrl:;
+- (id)laysWebUrl;
+- (void).cxx_destruct;
++ (void)downloadLottieWithURL:completion:;
++ (id)getLottieWithURL:;
++ (id)findLottieJSONPath:;
++ (void)removeLottieWithURL:;
+@end

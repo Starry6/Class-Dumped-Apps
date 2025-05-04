@@ -1,0 +1,32 @@
+@interface AWEIMSingleChatMenuDispatcherComponent : AWEIMComponentBase
+@property (nonatomic) NSMutableDictionary providerStatusMap;
+@property (nonatomic) NSMutableArray providerArray;
+@property (nonatomic) <AWEIMSingleChatMenuProviderProtocol> lastShowProvider;
+@property (nonatomic) AWEIMSingleChatMenuDispatcherTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)didFetchFullDetailUser:fullDetailUser:;
+- (void)didGetLocalUser:;
+- (void)didFetchServerUser:;
+- (void)registerMenuProvider:;
+- (void)provider:completedFetchingMenu:;
+- (void)setEnterForm:;
+- (void)startTrackMenuFetchWithLocalUser:;
+- (void)endTrackMenuFetchWithMenuType:;
+- (void)setProviderArray:;
+- (id)providerArray;
+- (id)providerStatusMap;
+- (void)__checkDecisionMakingConditions;
+- (void)__notifyHighestProvierToShowMenu;
+- (id)lastShowProvider;
+- (void)setLastShowProvider:;
+- (void)setProviderStatusMap:;
+- (id)init;
+- (id)tracker;
+- (void)setTracker:;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,32 @@
+@interface AWELuckyCatPendantScrollNumbers : MTLModel
+@property (nonatomic) q position;
+@property (nonatomic) q rewardType;
+@property (nonatomic) q initialNumber;
+@property (nonatomic) q finalNumber;
+@property (nonatomic) NSString fontName;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) BOOL needBold;
+@property (nonatomic) Q textSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRewardType:;
+- (long long)rewardType;
+- (long long)initialNumber;
+- (void)setInitialNumber:;
+- (long long)finalNumber;
+- (void)setFinalNumber:;
+- (BOOL)needBold;
+- (void)setNeedBold:;
+- (void)setFontName:;
+- (id)fontName;
+- (long long)position;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (void)setPosition:;
+- (unsigned long long)textSize;
+- (void)setTextSize:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

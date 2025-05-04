@@ -1,0 +1,35 @@
+@interface AWEDesktopSystemPopupGuideViewController : UIViewController
+@property (nonatomic) AWEDesktopSystemPopupGuideView guideView;
+@property (nonatomic) AWEDesktopSystemPopupGuideViewModel viewModel;
+@property (nonatomic) AWEDesktopSystemPopupGuidePIP guidePIP;
+@property (nonatomic) DUXContentSheet basicSheet;
+@property (nonatomic) @? dismissCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickMaskArea:;
+- (void)sheetDidDismiss:;
+- (void)onAppDidBecomeActive;
+- (void)onAppWillResignActive;
+- (void)setDismissCompletion:;
+- (id)initWithGuideViewModel:;
+- (void)setBasicSheet:;
+- (id)basicSheet;
+- (void)setupGuideView;
+- (void)desktopSystemPopupGuideView:leftButtonClick:;
+- (void)desktopSystemPopupGuideView:rightButtonClick:;
+- (void)desktopSystemPopupGuideView:closeButtonClick:;
+- (void)desktopSystemPopupGuideView:desktopButtonClick:;
+- (void)setupGuideViewTopImage;
+- (void)setupGuideViewMediumImage;
+- (void)setupGuideViewVideo;
+- (id)guidePIP;
+- (void)setGuidePIP:;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)dismissCompletion;
+- (id)guideView;
+- (void)setGuideView:;
+@end

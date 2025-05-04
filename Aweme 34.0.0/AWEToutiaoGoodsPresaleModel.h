@@ -1,0 +1,35 @@
+@interface AWEToutiaoGoodsPresaleModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) double deliveryTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) double currentTime;
+@property (nonatomic) NSString deliveryTextTag;
+@property (nonatomic) NSString deliveryText;
+@property (nonatomic) NSString buyBtnPrefix;
+@property (nonatomic) NSString endText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServerTime:;
+- (void)setDeliveryTime:;
+- (double)deliveryTime;
+- (double)initTimeinterval;
+- (void)setInitTimeinterval:;
+- (id)deliveryTextTag;
+- (void)setDeliveryTextTag:;
+- (id)deliveryText;
+- (void)setDeliveryText:;
+- (id)buyBtnPrefix;
+- (void)setBuyBtnPrefix:;
+- (id)endText;
+- (void)setEndText:;
+- (id)init;
+- (double)endTime;
+- (double)currentTime;
+- (void)setEndTime:;
+- (double)serverTime;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface AWERTVXRRoomApplicationService : NSObject
+@property (nonatomic) <RxInjector> injector;
+@property (nonatomic) <RTVXRRoomManagerInterface> roomManager;
+@property (nonatomic) <RTVSettingsManager> settingsManager;
+@property (nonatomic) <RTVReachabilityManagerInterface> reachabilityManager;
+@property (nonatomic) <RTVAccountServiceInterface> accountService;
+@property (nonatomic) BOOL canPullRoom;
+@property (nonatomic) <RTVLiveCommunicationKitService> lckService;
+@property (nonatomic) RTVXRDegradeService degradeService;
+@property (nonatomic) AWERTVIMCommandMessageDispatchCenter imCommandMessageDispatcher;
+@property (nonatomic) <RTVMultipleDelegateInterface><RTVXRRoomServiceObserver> observers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIWindow window;
+- (void)rxAwakeFromPropertyInjection;
+- (void)accountDidLogin;
+- (void)application:didCompleteLaunchWithOptions:;
+- (void)addServiceObserver:;
+- (void)removeServiceObserver:;
+- (BOOL)canPullRoom;
+- (void)setCanPullRoom:;
+- (id)roomManager;
+- (void)__pullRoomWithReason:;
+- (id)lckService;
+- (void)reachabilityManager:reachableStatusChangeTo:;
+- (id)degradeService;
+- (id)imCommandMessageDispatcher;
+- (id)reachabilityManager;
+- (id)settingsManager;
+- (void)applicationWillEnterForeground:;
+- (id)observers;
+- (id)injector;
+- (void).cxx_destruct;
+- (id)accountService;
+@end

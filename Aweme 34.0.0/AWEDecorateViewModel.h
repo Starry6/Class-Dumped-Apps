@@ -1,0 +1,32 @@
+@interface AWEDecorateViewModel : AWEBaseApiModel
+@property (nonatomic) Q type;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) double itemWidth;
+@property (nonatomic) double itemHeight;
+@property (nonatomic) double topOffset;
+@property (nonatomic) double leftOffset;
+@property (nonatomic) double bottomOffset;
+@property (nonatomic) double rightOffset;
+- (void)setLeftOffset:;
+- (void)setRightOffset:;
+- (double)leftOffset;
+- (double)rightOffset;
+- (void)setTopOffset:;
+- (double)topOffset;
+- (id)itemID;
+- (void)setItemID:;
+- (void)setIdentifier:;
+- (void)setItemWidth:;
+- (double)itemWidth;
+- (id)identifier;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (double)itemHeight;
+- (double)bottomOffset;
+- (void)setBottomOffset:;
+- (void)setItemHeight:;
++ (id)JSONKeyPathsByPropertyKey;
++ (Class)classForParsingJSONDictionary:;
+@end

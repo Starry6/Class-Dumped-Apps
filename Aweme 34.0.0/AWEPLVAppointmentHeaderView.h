@@ -1,0 +1,32 @@
+@interface AWEPLVAppointmentHeaderView : UICollectionReusableView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) DUXBasicButton refreshButton;
+@property (nonatomic) UILabel refreshLabel;
+@property (nonatomic) @? onBookCallback;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRefreshLabel:;
+- (id)refreshLabel;
+- (void)showLoadingAnimation:;
+- (void)configHeaderViewInset:;
+- (void)updateViewForBreakPoint;
+- (void)setOnBookCallback:;
+- (void)onBookBtnClicked:;
+- (id)onBookCallback;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setTitle:;
+- (void)setupView;
+- (id)refreshButton;
+- (void)setRefreshButton:;
++ (id)sizeWithModel:collectionViewSize:contentSize:;
++ (double)heightWithBreakPoint:;
+@end

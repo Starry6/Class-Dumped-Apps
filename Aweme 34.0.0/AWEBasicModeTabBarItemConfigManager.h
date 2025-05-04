@@ -1,0 +1,37 @@
+@interface AWEBasicModeTabBarItemConfigManager : NSObject
+@property (nonatomic) NSDictionary bottomReloadSceneToChannelReloadType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)callBeginLandingTabWithChannel:tabID:model:;
+- (void)callItemEnterWithChannel:enterModel:;
+- (void)callItemLeaveWithChannel:leaveModel:;
+- (void)callEndLandingTabWithChannel:tabID:model:;
+- (void)callTabBarDidSetHidden:;
+- (void)callTabBarDidSetAlpha:;
+- (void)consumeComponentWhenEnterIfNeed:;
+- (id)callGetCustomTrackParamsWithChannel:trackInfo:;
+- (void)channel:showBubbleWithModel:showCallback:clickCallback:dismissCallback:;
+- (void)channel:hideBubbleWithCompletion:;
+- (void)channel:showBackgroundImagesWithProgress:;
+- (void)channel:showActionPopover:preferDarkTheme:showCallback:clickCallback:dismissCallback:;
+- (unsigned long long)currentBadgeTypeWithChannel:;
+- (void)channel:hideBadgeWithAnimate:withCompletion:isBeforeChannelUnload:;
+- (void)channel:showBadgeWithModel:showCallBack:hideCallBack:downgradeCallBack:;
+- (void)channel:updateLeftElementButtonViewModels:;
+- (void)channel:updateRightElementButtonViewModels:;
+- (void)channel:updateCompactBGColorFill:;
+- (void)viewDidLoadForViewController:;
+- (void)viewWillAppearForViewController:;
+- (void)viewDidAppearForViewController:;
+- (void)viewWillDisappearForViewController:;
+- (void)viewDidDisappearForViewController:;
+- (void)channel:showBadgeWithModel:task:;
+- (void)tabBarController:didReloadWithNewButtonTypeList:oldButtonTypeList:reloadScene:;
+- (BOOL)p_channel:shouldBlockEmptyIDWithModel:isBadgeType:;
+- (id)bottomReloadSceneToChannelReloadType;
+- (void)setBottomReloadSceneToChannelReloadType:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

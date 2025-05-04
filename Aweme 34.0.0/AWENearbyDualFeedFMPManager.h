@@ -1,0 +1,31 @@
+@interface AWENearbyDualFeedFMPManager : AWENearbyFMPBaseManager
+@property (nonatomic) Q finishCoverCount;
+@property (nonatomic) double startSetCoverTime;
+@property (nonatomic) Q finishActualCoverCount;
+@property (nonatomic) BOOL isFeedShow;
+@property (nonatomic) NSTimer coverLoadTimeoutTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedRequestFail;
+- (void)feedRequestEmpty;
+- (double)startSetCoverTime;
+- (void)setStartSetCoverTime:;
+- (void)setIsFeedShow:;
+- (unsigned long long)finishActualCoverCount;
+- (void)setFinishActualCoverCount:;
+- (id)coverLoadTimeoutTimer;
+- (void)setCoverLoadTimeoutTimer:;
+- (unsigned long long)finishCoverCount;
+- (void)setFinishCoverCount:;
+- (id)injectCustomParams;
+- (BOOL)isFeedShow;
+- (id)injectEventName;
+- (void)feedStartSetCover;
+- (void)feedFinishActualCoverTimeStamp:totalCoverCount:;
+- (void)feedFinishCoverTimeStamp:totalCoverCount:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstanceWithPageType:;
+@end

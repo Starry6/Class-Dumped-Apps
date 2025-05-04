@@ -1,0 +1,30 @@
+@interface AWEStoryStickerGuideViewController : AWEHalfScreenBaseViewController
+@property (nonatomic) UIImageView effectIcon;
+@property (nonatomic) UILabel effectTitle;
+@property (nonatomic) NSArray effectIDs;
+@property (nonatomic) IESEffectModel effectModel;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)effectModel;
+- (void)setEffectModel:;
+- (void)updateWithEffectModel:;
+- (void)setEffectIcon:;
+- (id)effectIcon;
+- (void)setEffectTitle:;
+- (id)effectTitle;
+- (void)jumpToCamera;
+- (void)configWithEffectIDs:;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)effectIDs;
+- (void)setEffectIDs:;
++ (void)openCameraWithEffectModel:logExtra:;
++ (void)openCameraWithEffectIDs:logExtra:;
+@end

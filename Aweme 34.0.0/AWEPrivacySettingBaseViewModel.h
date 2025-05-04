@@ -1,0 +1,34 @@
+@interface AWEPrivacySettingBaseViewModel : AWESettingBaseViewModel
+@property (nonatomic) NSMutableArray sectionModels;
+@property (nonatomic) NSMutableSet displayedItemTypes;
+@property (nonatomic) <AWEPrivacySettingBaseViewModelDelegate> delegate;
+@property (nonatomic) BOOL loading;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (id)sectionModels;
+- (void)setSectionModels:;
+- (void)updateItemModel:;
+- (id)itemModelAtIndexPath:;
+- (BOOL)shouldAutoBeginEditingItemModel:;
+- (void)willDisplayItemModel:;
+- (void)insertSectionModel:atIndex:;
+- (void)deleteSectionModelAtIndex:;
+- (id)indexPathOfItemModel:;
+- (void)updateItemModelAtIndexPath:;
+- (void)recordDisplayItemModel:;
+- (id)displayedItemTypes;
+- (void)addSectionModel:;
+- (void)deleteSectionModel:;
+- (BOOL)hasDisplayedItemModel:;
+- (void)requestUserSetting:completion:;
+- (void)setDisplayedItemTypes:;
+- (id)init;
+- (id)delegate;
+- (void)endUpdates;
+- (void).cxx_destruct;
+- (BOOL)loading;
+- (void)setDelegate:;
+- (void)beginUpdates;
+- (void)setUserInteractionEnabled:;
+- (void)setLoading:;
+@end

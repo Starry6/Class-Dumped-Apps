@@ -1,0 +1,21 @@
+@interface AWEIMBigGroupConversationFeatureConfig : AWEIMNormalGroupConversationFeatureConfig
+- (id)groupDescTemplateWithConversation:;
+- (id)groupDescPlaceholderWithConversation:;
+- (BOOL)enableInviteSyncingChangedBackgroundWithCon:peerUser:;
+- (BOOL)enableGroupInviteWithConversation:permissionType:;
+- (BOOL)enableGroupDescWithConversation:permissionType:;
+- (BOOL)enableGroupAdminWithConversation:permissionType:;
+- (BOOL)enableEntryLimitWithConversation:permissionType:;
+- (BOOL)enableAllowMemberInviteWithConversation:permissionType:;
+- (BOOL)enableAuditWithConversation:permissionType:;
+- (BOOL)enableAutoSyncLiveWithConversation:permissionType:;
+- (BOOL)enableAutoSyncWorkWithConversation:permissionType:;
+- (BOOL)enableGroupShareWithConversation:permissionType:;
+- (BOOL)enableGroupNumberWithConversation:permissionType:;
+- (BOOL)enableGroupAvatarWithConversation:permissionType:;
+- (BOOL)enableGroupNameWithConversation:permissionType:;
+- (BOOL)enableGroupManagementEntryWithConversation:permissionType:;
+- (BOOL)shouldUseBigGroupStrategyForStickOnTopMessagesPromptNotice;
+- (id)groupDetailShareButtonTitleWithConversation:;
+- (BOOL)useColorfulRoleTagForGroupMemberListPage;
+@end

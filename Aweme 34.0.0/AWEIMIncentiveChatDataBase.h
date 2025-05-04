@@ -1,0 +1,37 @@
+@interface AWEIMIncentiveChatDataBase : NSObject
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString dbPath;
+@property (nonatomic) WCTDatabase database;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) BOOL appWillTerminate;
+- (BOOL)appWillTerminate;
+- (void)setDbPath:;
+- (id)initWithUserID:;
+- (void)handleAppWillTerminateNotification:;
+- (void)p_trackLanchIO:;
+- (void)setAppWillTerminate:;
+- (void)p_prepareDatabase;
+- (BOOL)p_isCorrupted:;
+- (void)loadChatInfoWithCompletion:;
+- (void)updateWithChatInfo:completion:;
+- (void)removeDataBaseDataWithChatType:;
+- (void)loadDataBaseDataWithChatType:completion:;
+- (void)updateWithChatRelation:;
+- (void)removeDataWithConversationID:relationID:;
+- (void)updateWithRelationProgress:;
+- (void)relationProgressWithRelationID:completion:;
+- (void)p_fillMemoryDataAndCleanDBWithChatIdentity:validConvIDSet:validChatRelationIDSet:;
+- (void)p_asyncOperationWithBlock:;
+- (BOOL)p_createTables;
+- (BOOL)p_createTableWithTableName:class:error:;
+- (void)setDatabase:;
+- (id)database;
+- (id)userId;
+- (void)setQueue:;
+- (id)dbPath;
+- (void).cxx_destruct;
+- (id)queue;
+- (void)setUserId:;
++ (void)removeDataBaseWithUserID:;
++ (id)dbDirectoryPathWithUserID:;
+@end

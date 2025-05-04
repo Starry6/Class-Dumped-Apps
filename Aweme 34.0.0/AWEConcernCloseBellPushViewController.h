@@ -1,0 +1,37 @@
+@interface AWEConcernCloseBellPushViewController : UIViewController
+@property (nonatomic) NSMutableArray videoStrategyAllUsersArray;
+@property (nonatomic) NSMutableArray liveStrategyAllUsersArray;
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (BOOL)configWithRouterParamDict:;
+- (void)backBtnClick:;
+- (void)showLoadingOnTableView;
+- (void)hideLoadingOnTableView;
+- (void)setVideoStrategyAllUsersArray:;
+- (void)setLiveStrategyAllUsersArray:;
+- (id)liveStrategyAllUsersArray;
+- (id)videoStrategyAllUsersArray;
+- (void)showVideoSettingPanel:;
+- (void)showLiveSettingPanel:;
+- (void)reloadData;
+- (id)tableView:viewForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (BOOL)isLoading;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setIsLoading:;
+- (void)setupUI;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMChatThemeUtility : NSObject
+@property (nonatomic) NSArray defaultSingleChatThemeList;
+@property (nonatomic) NSArray defaultGroupChatThemeList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)defaultSingleChatThemeList;
+- (void)setDefaultSingleChatThemeList:;
+- (id)defaultGroupChatThemeList;
+- (void)setDefaultGroupChatThemeList:;
+- (void).cxx_destruct;
++ (id)getUnexpiresURLListWithURLList:;
++ (void)requestDecryptBDImageWithURL:cachename:skey:complete:;
++ (void)requestSetChatThemeWithContext:completion:;
++ (void)requestGetChatThemeWithKey:completion:;
++ (id)parseChatThemeExtWithCon:themeKey:updateTime:;
++ (id)parseBackgroundV2ExtWithCon:;
++ (BOOL)enableBubbleThemeWithMessage:;
++ (BOOL)isHitChatThemeEntrance;
++ (BOOL)isHitChatThemeDefaultAllSet;
++ (long long)getChatThemeShowToastTimes;
++ (BOOL)isHitChatThemeBackup;
++ (BOOL)isHitChatThemeAddFriendTheme;
++ (id)chatThemeDiskCacheWithCid:;
++ (BOOL)setChatThemeDiskCache:forCid:;
++ (id)lastChatThemeExtWithCid:;
++ (void)setLastChatThemeExt:forCid:;
++ (id)lastChatBackgroundImageExtWithCid:;
++ (void)setLastChatBackgroundImageExt:forCid:;
++ (id)getChatThemeExperimentDic;
++ (id)shareInstance;
+@end

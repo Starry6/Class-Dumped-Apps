@@ -1,0 +1,32 @@
+@interface AWEStudioRawTypePropViewModel : ACCRecorderViewModel
+@property (nonatomic) BOOL isTakingPicture;
+@property (nonatomic) <ACCRecordFlowService> flowService;
+@property (nonatomic) <ACCCameraService> cameraService;
+@property (nonatomic) <ACCRecordSwitchModeService> switchModeService;
+@property (nonatomic) <ACCRecordPropService> propService;
+@property (nonatomic) <AWEStudioRawTypePropViewModelDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cameraService;
+- (void)setCameraService:;
+- (id)flowService;
+- (void)setFlowService:;
+- (id)switchModeService;
+- (id)propService;
+- (void)setSwitchModeService:;
+- (void)setPropService:;
+- (void)flowServiceDidTakePicture:error:;
+- (BOOL)isOnRawTypeTakePictureMode;
+- (void)cancelRawTypePicture;
+- (BOOL)canStartWithSource:;
+- (void)startRecordFlowWithSource:;
+- (BOOL)canStopWithSource:;
+- (void)p_takeRawTypePicture;
+- (BOOL)isTakingPicture;
+- (void)setIsTakingPicture:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

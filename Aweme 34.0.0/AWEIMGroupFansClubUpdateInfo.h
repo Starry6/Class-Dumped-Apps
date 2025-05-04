@@ -1,0 +1,30 @@
+@interface AWEIMGroupFansClubUpdateInfo : AWEBaseApiModel
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) NSString cid;
+@property (nonatomic) NSDate localLastUpdateDate;
+@property (nonatomic) NSNumber serverLastUpdateTimeInMS;
+@property (nonatomic) q expireIntervalInMS;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)localLastUpdateDate;
+- (id)serverLastUpdateTimeInMS;
+- (long long)expireIntervalInMS;
+- (void)setLocalLastUpdateDate:;
+- (void)setServerLastUpdateTimeInMS:;
+- (void)setExpireIntervalInMS:;
+- (id)cid;
+- (void).cxx_destruct;
+- (void)setCid:;
++ (id)objectRelationalMappingForWCDB;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)localLastUpdateDate;
++ (id)serverLastUpdateTimeInMS;
++ (id)expireIntervalInMS;
++ (id)cid;
++ (id)tableName;
+@end

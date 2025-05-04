@@ -1,0 +1,38 @@
+@interface AWEAwemeSearchVideoAbstractModel : MTLModel
+@property (nonatomic) q displayType;
+@property (nonatomic) q position;
+@property (nonatomic) AWEAwemeSearchVideoAbstractSectionPrefixModel prefix;
+@property (nonatomic) NSNumber jumpTime;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSArray textExtras;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) q sectionsType;
+@property (nonatomic) double offsetX;
+@property (nonatomic) NSString displayTitle;
+@property (nonatomic) AWEAwemeSearchVideoShortAnswerModel shortAnswerModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textExtras;
+- (void)setTextExtras:;
+- (id)shortAnswerModel;
+- (id)jumpTime;
+- (id)prefix;
+- (id)content;
+- (id)sections;
+- (long long)position;
+- (long long)displayType;
+- (void)setPrefix:;
+- (void)setSections:;
+- (void).cxx_destruct;
+- (void)setPosition:;
+- (id)displayTitle;
+- (long long)sectionsType;
+- (double)offsetX;
+- (void)setOffsetX:;
++ (id)sectionsJSONTransformer;
++ (id)textExtrasJSONTransformer;
++ (id)prefixJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

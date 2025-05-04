@@ -1,0 +1,31 @@
+@interface AWEDTOVideoCutInfo : MTLModel
+@property (nonatomic) q start;
+@property (nonatomic) q end;
+@property (nonatomic) double speed;
+@property (nonatomic) q rotate;
+@property (nonatomic) q mediaType;
+@property (nonatomic) AWEDTOVideoCutInfo aiClipRange;
+@property (nonatomic) AWEDTOVideoCutInfo userClipRange;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aiClipRange;
+- (void)setAiClipRange:;
+- (id)userClipRange;
+- (void)setUserClipRange:;
+- (void)setStart:;
+- (void)setEnd:;
+- (void)setMediaType:;
+- (void)setSpeed:;
+- (double)speed;
+- (long long)end;
+- (long long)mediaType;
+- (void).cxx_destruct;
+- (long long)start;
+- (long long)rotate;
+- (void)setRotate:;
++ (id)aiClipRangeJSONTransformer;
++ (id)userClipRangeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

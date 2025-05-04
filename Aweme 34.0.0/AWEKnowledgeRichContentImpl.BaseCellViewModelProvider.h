@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.BaseCellViewModelProvider : _TtCs12_SwiftObject
+@end

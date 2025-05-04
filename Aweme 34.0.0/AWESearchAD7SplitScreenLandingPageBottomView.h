@@ -1,0 +1,33 @@
+@interface AWESearchAD7SplitScreenLandingPageBottomView : UIView
+@property (nonatomic) UIView topLineView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel authorNameLabel;
+@property (nonatomic) UILabel contentDescLabel;
+@property (nonatomic) UIButton conversionButton;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) @? didClickViewBlock;
+@property (nonatomic) @? didClickTransformButtonBlock;
+- (void)updateWithAwemeModel:;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (void)setDidClickViewBlock:;
+- (void)setDidClickTransformButtonBlock:;
+- (void)setupTapGesture;
+- (id)contentDescLabel;
+- (id)conversionButton;
+- (void)didClickButton:;
+- (void)didClickView:;
+- (id)didClickViewBlock;
+- (id)didClickTransformButtonBlock;
+- (void)setContentDescLabel:;
+- (void)setConversionButton:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (void)setupSubviews;
+- (void)setTopLineView:;
+- (id)topLineView;
+@end

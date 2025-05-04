@@ -1,0 +1,33 @@
+@interface AWEIMVideoContentView : UIView
+@property (nonatomic) UIImageView playIconImageView;
+@property (nonatomic) UITapGestureRecognizer tapGestureRecognizer;
+@property (nonatomic) AWEIMSocialEffectCoplayView coplayContainer;
+@property (nonatomic) UIImageView videoPosterImageView;
+@property (nonatomic) @? coverTapAction;
+@property (nonatomic) @? coplayTapAction;
+@property (nonatomic) @? didSetImageBlock;
+- (id)playIconImageView;
+- (void)setPlayIconImageView:;
+- (void)p_coplayDidTaped;
+- (void)p_coverDidTapped:;
+- (void)p_setupSubview;
+- (void)setDidSetImageBlock:;
+- (void)setCoplayTapAction:;
+- (id)didSetImageBlock;
+- (void)setCoplayViewHidden:atPosition:bottomOffset:;
+- (id)coplayTapAction;
+- (void)setEnableDisplayCoplayJoinBtn:;
+- (void)setCoplyViewScaleRadius:;
+- (id)coplayContainer;
+- (void)setCoplayContainer:;
+- (void)setCoverTapAction:;
+- (id)coverTapAction;
+- (void)setPlayIconHidden:;
+- (id)videoPosterImageView;
+- (void)setVideoPosterImageView:;
+- (void)setTapGestureRecognizer:;
+- (id)tapGestureRecognizer;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)updateWithImage:;
+@end

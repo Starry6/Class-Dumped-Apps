@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftBizUI.InteractionNoticeCommentButtonDiggStyleConfig : AWENoticeSwiftBizUI.InteractionNoticeBottomButtonConfig
+@end

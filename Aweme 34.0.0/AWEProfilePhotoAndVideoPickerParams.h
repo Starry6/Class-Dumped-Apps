@@ -1,0 +1,36 @@
+@interface AWEProfilePhotoAndVideoPickerParams : NSObject
+@property (nonatomic) UIView sourceView;
+@property (nonatomic) NSString reason;
+@property (nonatomic) Q source;
+@property (nonatomic) Q editorType;
+@property (nonatomic) Q cropingStyle;
+@property (nonatomic) UIImage coverMaskImage;
+@property (nonatomic) {CGSize=dd} rato;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) @? cancelActionBlock;
+@property (nonatomic) @? completionBlock;
+- (void)setSelectedBlock:;
+- (void)setCancelActionBlock:;
+- (void)setEditorType:;
+- (void)setCropingStyle:;
+- (void)setCoverMaskImage:;
+- (id)cancelActionBlock;
+- (unsigned long long)editorType;
+- (unsigned long long)cropingStyle;
+- (id)coverMaskImage;
+- (id)selectedBlock;
+- (void)setRato:;
+- (id)rato;
+- (void)setSourceView:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)sourceView;
+- (id)actions;
+- (void)setReason:;
+- (void).cxx_destruct;
+- (unsigned long long)source;
+- (void)setSource:;
+- (id)reason;
+- (void)setActions:;
+@end

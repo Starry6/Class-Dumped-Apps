@@ -1,0 +1,36 @@
+@interface AWESearchTabGuideExitRuleModel : AWEBaseApiModel
+@property (nonatomic) q dailyTabMaxShowNum;
+@property (nonatomic) q dailyTotalTabMaxShowNum;
+@property (nonatomic) q maxGuideNum;
+@property (nonatomic) q maxClickNum;
+@property (nonatomic) q maxShowNum;
+@property (nonatomic) q dailyClickShowNum;
+@property (nonatomic) q noClickMaxShowNum;
+@property (nonatomic) q noClickShowSecond;
+@property (nonatomic) q bubbleShowGapSecond;
+@property (nonatomic) q showSecond;
+@property (nonatomic) q singleClickNotShowSecond;
+- (long long)maxShowNum;
+- (void)setMaxShowNum:;
+- (long long)showSecond;
+- (void)setShowSecond:;
+- (long long)maxClickNum;
+- (long long)noClickShowSecond;
+- (long long)noClickMaxShowNum;
+- (long long)singleClickNotShowSecond;
+- (long long)maxGuideNum;
+- (long long)dailyTotalTabMaxShowNum;
+- (long long)dailyTabMaxShowNum;
+- (void)setDailyTabMaxShowNum:;
+- (void)setDailyTotalTabMaxShowNum:;
+- (void)setMaxGuideNum:;
+- (void)setMaxClickNum:;
+- (void)setDailyClickShowNum:;
+- (void)setNoClickMaxShowNum:;
+- (void)setNoClickShowSecond:;
+- (void)setBubbleShowGapSecond:;
+- (void)setSingleClickNotShowSecond:;
+- (long long)dailyClickShowNum;
+- (long long)bubbleShowGapSecond;
++ (id)JSONKeyPathsByPropertyKey;
+@end

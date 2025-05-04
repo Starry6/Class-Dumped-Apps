@@ -1,0 +1,34 @@
+@interface AWEYAPTransportContext : AWEPageContext
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString cityName;
+@property (nonatomic) NSString trafficID;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString pageFrom;
+@property (nonatomic) NSString codeNo;
+@property (nonatomic) NSString posterPosition;
+@property (nonatomic) NSDictionary customExtra;
+@property (nonatomic) BOOL isGuideLogin;
+@property (nonatomic) q refreshTimestampMS;
+- (id)posterPosition;
+- (id)trafficID;
+- (void)setTrafficID:;
+- (void)setPosterPosition:;
+- (void)setCustomExtra:;
+- (id)codeNo;
+- (id)pageFrom;
+- (BOOL)isGuideLogin;
+- (long long)refreshTimestampMS;
+- (void)setPageFrom:;
+- (void)setIsGuideLogin:;
+- (void)setRefreshTimestampMS:;
+- (id)customExtra;
+- (void)setCodeNo:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (id)cityName;
+- (void)setCityName:;
+@end

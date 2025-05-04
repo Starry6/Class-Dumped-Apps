@@ -1,0 +1,31 @@
+@interface AWEMixVideoCollectionListViewModel : NSObject
+@property (nonatomic) AWEMixVideoCollectionListContext context;
+@property (nonatomic) NSString referString;
+@property (nonatomic) AWEMixVideoCollectionListDataController dataController;
+@property (nonatomic) AWEMixVideoCollectionListViewController viewController;
+- (id)referString;
+- (void)setReferString:;
+- (void)setDataController:;
+- (void)loadMoreListDataWithCompletion:;
+- (void)refreshListDataWithCompletion:;
+- (id)getIndexPathForUserID:;
+- (id)mixCollectedUserModelForIndexPath:;
+- (void)handleFollowButtonTapped:;
+- (void)handleAuthorTapped:;
+- (id)userModelWithIndexPath:;
+- (void)executeUnfollowWithUserModel:indexPath:;
+- (void)executeFollowWithUserModel:indexPath:;
+- (id)getRelationContextWithUserModel:;
+- (void)updateFollowStatusWithUserModel:indexPath:;
+- (void)trackFollowWithEvent:userModel:;
+- (long long)numberOfSections;
+- (long long)numberOfRowsInSection:;
+- (id)initWithContext:;
+- (id)viewController;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setViewController:;
+- (id)dataController;
+- (double)cellHeightForIndexPath:;
+@end

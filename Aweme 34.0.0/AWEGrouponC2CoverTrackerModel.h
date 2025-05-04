@@ -1,0 +1,37 @@
+@interface AWEGrouponC2CoverTrackerModel : AWEGrouponC2TrackerModel
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) double loadTime;
+@property (nonatomic) BOOL successed;
+@property (nonatomic) q from;
+@property (nonatomic) q order;
+@property (nonatomic) q isBlackOrWhite;
+@property (nonatomic) BOOL isFirstPull;
+@property (nonatomic) Q type;
+@property (nonatomic) Q loadType;
+@property (nonatomic) q pageType;
+@property (nonatomic) NSDictionary freshImageShowtimeParams;
+- (id)aweme;
+- (void)setAweme:;
+- (void)setLoadType:;
+- (void)setLoadTime:;
+- (void)setSuccessed:;
+- (void)setIsFirstPull:;
+- (void)setIsBlackOrWhite:;
+- (BOOL)successed;
+- (long long)isBlackOrWhite;
+- (BOOL)isFirstPull;
+- (id)freshImageShowtimeParams;
+- (void)setFreshImageShowtimeParams:;
+- (id)init;
+- (long long)order;
+- (void)setPageType:;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setOrder:;
+- (long long)pageType;
+- (double)loadTime;
+- (void)setFrom:;
+- (long long)from;
+- (unsigned long long)loadType;
+@end

@@ -1,0 +1,32 @@
+@interface AWEOpenPlatformAuthUserCell : UITableViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel nameTipsLabel;
+@property (nonatomic) DUXRadioBox checkImageView;
+@property (nonatomic) q authUICase;
+@property (nonatomic) AWEOpenPlatformUserInfoItem userInfo;
+- (long long)authUICase;
+- (void)setAuthUICase:;
+- (id)initWithStyle:reuseIdentifier:uiCase:isHalf:;
+- (id)nameTipsLabel;
+- (void)updateWithUserInfoItem:style:;
+- (void)updateCheckMarkVisible:;
+- (void)setNameTipsLabel:;
+- (id)containerView;
+- (void)setFrame:;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (void)awakeFromNib;
+- (void)setContainerView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setSelected:animated:;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (id)avatarImageView;
+- (id)checkImageView;
+- (void)setAvatarImageView:;
+- (void)setCheckImageView:;
+@end

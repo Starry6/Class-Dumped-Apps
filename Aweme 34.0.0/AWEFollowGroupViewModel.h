@@ -1,0 +1,36 @@
+@interface AWEFollowGroupViewModel : AWEBaseViewModel
+@property (nonatomic) q total;
+@property (nonatomic) q cursor;
+@property (nonatomic) q perPageCount;
+@property (nonatomic) q maxMemberCount;
+@property (nonatomic) q groupType;
+@property (nonatomic) q sourceType;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q showLimit;
+@property (nonatomic) NSMutableArray groupArray;
+- (void)loadMoreWithCompletion:;
+- (id)groupArray;
+- (void)setGroupArray:;
+- (long long)maxMemberCount;
+- (void)setMaxMemberCount:;
+- (BOOL)updateOneGroupName:newName:;
+- (void)updateOneGroupMemberInfo:completion:;
+- (long long)showLimit;
+- (void)setPerPageCount:;
+- (long long)perPageCount;
+- (void)setShowLimit:;
+- (BOOL)deleteOneGroupWithGroupID:;
+- (long long)cursor;
+- (void)setSourceType:;
+- (long long)sourceType;
+- (void)setGroupType:;
+- (long long)groupType;
+- (id)initWithGroupType:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (long long)total;
+- (void)setTotal:;
+@end

@@ -1,0 +1,37 @@
+@interface AWEHPPinTopMallCoupon : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView containerBGView;
+@property (nonatomic) UILabel couponAmountLabel;
+@property (nonatomic) UIView couponSubContainer;
+@property (nonatomic) UILabel couponTitleLabel;
+@property (nonatomic) UILabel couponDescLabel;
+@property (nonatomic) CAGradientLayer maskLayer;
+@property (nonatomic) AWEHPPinTopUIMallCouponModel configModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)pinTopComponentDidShow;
+- (void)pinTopComponentDidDismiss;
+- (id)containerBGView;
+- (id)couponAmountLabel;
+- (id)couponSubContainer;
+- (id)couponTitleLabel;
+- (id)couponDescLabel;
+- (void)setContainerBGView:;
+- (void)setCouponAmountLabel:;
+- (void)setCouponSubContainer:;
+- (void)setCouponTitleLabel:;
+- (void)setCouponDescLabel:;
+- (id)initWithConfig:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)maskLayer;
+- (void)setupUI;
+- (void)setMaskLayer:;
+- (double)viewWidth;
+@end

@@ -1,0 +1,31 @@
+@interface AWELivePreStreamPullStreamElement : AWELiveBusinessBaseElement
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) BOOL hadCollectionStrategyInfo;
+@property (nonatomic) NSTimer demandCheckTimer;
+- (void)preloadWithModel:;
+- (void)resetPreload;
+- (void)prepareForDisPlay;
+- (void)preloadStreamABTestAI:preloadPull:interval:ignorePeakTime:;
+- (void)preloadStreamABTestAIHotStart:interval:ignorePeakTime:;
+- (void)preloadStreamAIStop:;
+- (void)streamPlayer_startToPlay;
+- (void)preloadElement;
+- (BOOL)isEcomCart:;
+- (void)collectStrategyInfo:;
+- (void)setHadCollectionStrategyInfo:;
+- (void)preloadStreamABTestStrategy:;
+- (BOOL)hadCollectionStrategyInfo;
+- (id)demandCheckTimer;
+- (void)setDemandCheckTimer:;
+- (void)bandWidthOptPreloadStreamIsAiPreload:interval:;
+- (void)trackPreloadStreamWithType:;
+- (void)trackDemandLevel:checkCount:isHitLimit:;
+- (void)invalidateDemandCheckTimer;
+- (unsigned long long)preStreamOrientation:;
+- (void)addRealTimeFeature:liveRoom:;
+- (BOOL)isShowing;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setIsShowing:;
+@end

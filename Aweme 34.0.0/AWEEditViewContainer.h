@@ -1,0 +1,35 @@
+@interface AWEEditViewContainer : NSObject
+@property (nonatomic) UIView rootView;
+@property (nonatomic) <ACCPanelViewController> panelViewController;
+@property (nonatomic) <ACCEditTRBarItemContainerView> topRightBarItemContainer;
+@property (nonatomic) <ACCEditBarItemContainerView> bottomBarItemContainer;
+@property (nonatomic) ACCEditContainerView containerView;
+@property (nonatomic) UIView mediaView;
+@property (nonatomic) UIView gestureView;
+@property (nonatomic) @? interactionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)panelViewController;
+- (void)setPanelViewController:;
+- (void)viewContainerDidLoad;
+- (id)initWithRootView:;
+- (void)addToolBarBarItem:;
+- (id)viewWithBarItemID:;
+- (void)injectTopRightBarItemContainer:;
+- (void)injectBottomBarItemContainer:;
+- (id)topRightBarItemContainer;
+- (id)bottomBarItemContainer;
+- (void)setTopRightBarItemContainer:;
+- (void)setBottomBarItemContainer:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)mediaView;
+- (id)rootView;
+- (void)setRootView:;
+- (id)interactionBlock;
+- (void)setInteractionBlock:;
+- (id)gestureView;
+@end

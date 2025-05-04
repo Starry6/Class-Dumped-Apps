@@ -1,0 +1,33 @@
+@interface AWEDeliveryInputViewOptions : NSObject
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString pigeonBizType;
+@property (nonatomic) BOOL isEnableIM;
+@property (nonatomic) NSString sourceOrderId;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString imcloudConversationId;
+@property (nonatomic) NSString imcloudConversationShortId;
+@property (nonatomic) NSString isTop;
+@property (nonatomic) NSString isMute;
+@property (nonatomic) NSString urlContextParams;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setIsMute:;
+- (void)setPigeonBizType:;
+- (id)pigeonBizType;
+- (void)setIsTop:;
+- (void)setIsEnableIM:;
+- (void)setSourceOrderId:;
+- (void)setImcloudConversationId:;
+- (void)setImcloudConversationShortId:;
+- (void)setUrlContextParams:;
+- (BOOL)isEnableIM;
+- (id)imcloudConversationId;
+- (id)sourceOrderId;
+- (id)imcloudConversationShortId;
+- (id)urlContextParams;
+- (void)setScene:;
+- (id)scene;
+- (void).cxx_destruct;
+- (id)isTop;
+- (id)isMute;
+@end

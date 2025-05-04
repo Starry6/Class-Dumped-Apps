@@ -1,0 +1,31 @@
+@interface AWESearchVideoDeduplicationHelper : NSObject
+@property (nonatomic) NSMutableDictionary timeAccumulateDict;
+@property (nonatomic) NSMutableDictionary alreadyDeduplicationDict;
+@property (nonatomic) NSMutableDictionary shouldDeduplicationDict;
+@property (nonatomic) NSMutableDictionary alreadyPlayInDetailDict;
+@property (nonatomic) NSMutableDictionary alreadyPlayInResultDict;
+@property (nonatomic) q maxShowIndex;
+- (void)setMaxShowIndex:;
+- (id)alreadyDeduplicationDict;
+- (id)timeAccumulateDict;
+- (id)shouldDeduplicationDict;
+- (id)alreadyPlayInDetailDict;
+- (id)alreadyPlayInResultDict;
+- (long long)maxShowIndex;
+- (BOOL)checkIfCardTypeIsInTarget:withConfigModel:;
+- (BOOL)shouldRemoveWithGeneralSearchModel:index:;
+- (void)videoHasBeenDeduplicationWithAwemeId:;
+- (id)findDuplicatVideoIndexsWithAwemeId:configModel:inSearchModels:displayCount:;
+- (BOOL)accumulatePlayTime:;
+- (id)findDuplicatVideoIndexsWithAwemeId:inSearchModels:;
+- (double)accumulatePlayTime:withIdentifier:;
+- (void)setTimeAccumulateDict:;
+- (void)setAlreadyDeduplicationDict:;
+- (void)setShouldDeduplicationDict:;
+- (void)setAlreadyPlayInDetailDict:;
+- (void)setAlreadyPlayInResultDict:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
++ (id)watchedMonitorConfig;
+@end

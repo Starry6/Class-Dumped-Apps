@@ -1,0 +1,30 @@
+@interface AWEStudioIMAIEmojiDataModel : NSObject
+@property (nonatomic) NSArray AIEmojiStyles;
+@property (nonatomic) <ACCAIEmojiStyleModelProtocol> initialStyle;
+@property (nonatomic) <ACCAIEmojiStyleModelProtocol> selectedStyle;
+@property (nonatomic) IESMMFaceAttributeDetectResultData detectData;
+@property (nonatomic) BOOL didCurrentStyleReachLimit;
+@property (nonatomic) q currentCameraPosition;
+@property (nonatomic) @? didSelectAIEmojiStyleBlock;
+@property (nonatomic) NSDictionary aiEmojiTrackParam;
+@property (nonatomic) BOOL isRetake;
+- (long long)currentCameraPosition;
+- (void)setCurrentCameraPosition:;
+- (void)setIsRetake:;
+- (id)aiEmojiTrackParam;
+- (void)setDetectData:;
+- (BOOL)didCurrentStyleReachLimit;
+- (id)AIEmojiStyles;
+- (id)detectData;
+- (BOOL)isRetake;
+- (void)setAIEmojiStyles:;
+- (void)setAiEmojiTrackParam:;
+- (void)setDidSelectAIEmojiStyleBlock:;
+- (id)didSelectAIEmojiStyleBlock;
+- (void)setDidCurrentStyleReachLimit:;
+- (void).cxx_destruct;
+- (id)selectedStyle;
+- (void)setSelectedStyle:;
+- (void)setInitialStyle:;
+- (id)initialStyle;
+@end

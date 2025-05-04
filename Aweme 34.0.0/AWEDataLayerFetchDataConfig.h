@@ -1,0 +1,34 @@
+@interface AWEDataLayerFetchDataConfig : NSObject
+@property (nonatomic) q fetchPolicy;
+@property (nonatomic) q frequencyControl;
+@property (nonatomic) q timeout;
+@property (nonatomic) q retryTimes;
+@property (nonatomic) Q cacheOptions;
+@property (nonatomic) NSString domain;
+@property (nonatomic) Q maxAge;
+@property (nonatomic) Q freshnessTime;
+@property (nonatomic) BOOL cleanable;
+@property (nonatomic) NSString userId;
+- (void)setFetchPolicy:;
+- (void)setCacheOptions:;
+- (long long)retryTimes;
+- (void)setRetryTimes:;
+- (long long)frequencyControl;
+- (void)setFrequencyControl:;
+- (long long)fetchPolicy;
+- (unsigned long long)freshnessTime;
+- (void)setFreshnessTime:;
+- (BOOL)cleanable;
+- (void)setCleanable:;
+- (void)setMaxAge:;
+- (unsigned long long)maxAge;
+- (id)init;
+- (id)userId;
+- (long long)timeout;
+- (void)setDomain:;
+- (id)domain;
+- (void)setTimeout:;
+- (void).cxx_destruct;
+- (unsigned long long)cacheOptions;
+- (void)setUserId:;
+@end

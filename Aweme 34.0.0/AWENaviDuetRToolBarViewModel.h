@@ -1,0 +1,2 @@
+@interface AWENaviDuetRToolBarViewModel : AWENaviDuetBaseFeatureComponentViewModel
+@end

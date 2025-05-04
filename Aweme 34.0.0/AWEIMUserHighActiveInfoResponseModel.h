@@ -1,0 +1,31 @@
+@interface AWEIMUserHighActiveInfoResponseModel : AWEBaseApiModel
+@property (nonatomic) Q highActiveStatus;
+@property (nonatomic) Q unreadCount;
+@property (nonatomic) Q limitCount;
+@property (nonatomic) BOOL alwaysLanding;
+@property (nonatomic) NSInteger activeLevel;
+@property (nonatomic) BOOL showGuide;
+@property (nonatomic) NSInteger landingInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)showGuide;
+- (void)setShowGuide:;
+- (int)activeLevel;
+- (void)setActiveLevel:;
+- (BOOL)alwaysLanding;
+- (unsigned long long)highActiveStatus;
+- (int)landingInterval;
+- (void)setHighActiveStatus:;
+- (void)setAlwaysLanding:;
+- (void)setLandingInterval:;
+- (unsigned long long)unreadCount;
+- (unsigned long long)limitCount;
+- (void)setUnreadCount:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)initWithCoder:;
+- (void)setLimitCount:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

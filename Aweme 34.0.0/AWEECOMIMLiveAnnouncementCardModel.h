@@ -1,0 +1,31 @@
+@interface AWEECOMIMLiveAnnouncementCardModel : AWEECOMIMBaseCardModel
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL isExpired;
+@property (nonatomic) NSString liveText;
+@property (nonatomic) NSString liveTimeStr;
+@property (nonatomic) NSString livePreview;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)livePreview;
+- (void)setLivePreview:;
+- (void)updateModelWithData:encrypted:;
+- (void)setLiveText:;
+- (void)setLiveTimeStr:;
+- (id)liveTimeStr;
+- (void)didSkipButtonClick:;
+- (BOOL)isSameDay:timestamp:;
+- (BOOL)isSameYear:timestamp:;
+- (id)dateStringWithFormat:date:;
+- (BOOL)isExpired;
+- (void)setButtons:;
+- (id)buttons;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)liveText;
+- (void)setIsExpired:;
++ (Class)cardViewClass;
+@end

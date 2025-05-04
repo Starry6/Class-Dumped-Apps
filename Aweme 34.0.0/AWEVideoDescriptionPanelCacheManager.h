@@ -1,0 +1,37 @@
+@interface AWEVideoDescriptionPanelCacheManager : NSObject
+@property (nonatomic) q cacheNum;
+@property (nonatomic) NSMutableDictionary caches;
+@property (nonatomic) NSArray allModels;
+@property (nonatomic) NSMutableDictionary mentionModels;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (id)getRelatedRecommendModelsWithItemID:referString:;
+- (id)mentionModelWithItemID:;
+- (void)cacheRelatedRecommendModels:itemID:referString:;
+- (void)cacheRelatedRecommendMentionModel:itemID:;
+- (void)addNotification;
+- (void)setCaches:;
+- (void)onAwemeDiggNotification:;
+- (id)allModels;
+- (void)setAllModels:;
+- (void)onAwemeFavoriteNotification:;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (void)guestDidDiggAweme:isUndigg:;
+- (void)setCacheNum:;
+- (void)setMentionModels:;
+- (id)getCacheModelWithItemID:cacheModelList:;
+- (long long)cacheNum;
+- (void)deleteMentionModelIfNeeded;
+- (id)getCurrentAllModels;
+- (id)mentionModels;
+- (void)onAwemeDislikeNotification:;
+- (void)dealloc;
+- (id)caches;
+- (void).cxx_destruct;
++ (id)sharedInstance;
++ (id)sharedManager;
+@end

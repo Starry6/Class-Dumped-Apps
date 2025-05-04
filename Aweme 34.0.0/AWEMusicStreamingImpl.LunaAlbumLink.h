@@ -1,0 +1,37 @@
+@interface AWEMusicStreamingImpl.LunaAlbumLink : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo urlPlayerBg;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo urlPic;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo coverImgURLInfo;
+@property (nonatomic) NSString id;
+@property (nonatomic) NSString name;
+@property (nonatomic) q releaseDate;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo cover;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo playerBg;
+@property (nonatomic) NSArray coverGradientColors;
+@property (nonatomic) NSString backgroundColor;
+- (id)urlPlayerBg;
+- (id)urlPic;
+- (id)coverImgURLInfo;
+- (id)cover;
+- (void)setCover:;
+- (id)playerBg;
+- (void)setPlayerBg:;
+- (id)coverGradientColors;
+- (void)setCoverGradientColors:;
+- (long long)releaseDate;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)id;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (void)setReleaseDate:;
+- (id)initWithCoder:;
+- (void)setId:;
++ (id)coverJSONTransformer;
++ (id)playerBgJSONTransformer;
++ (id)coverGradientColorsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface AWELiveAcqCastVideoBasePanel : UIView
+@property (nonatomic) UIImageView closeImageView;
+@property (nonatomic) UIView expandableView;
+@property (nonatomic) double originalHeight;
+@property (nonatomic) UIView headView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView endImageView;
+@property (nonatomic) BOOL showBackIcon;
+@property (nonatomic) <AWELiveAcqCastVideoViewModelProtocol> viewModel;
+- (void)onClickClose;
+- (void)onClickBack;
+- (void)setupBaseUI;
+- (void)setHeadView:;
+- (id)headView;
+- (id)endImageView;
+- (void)setShowBackIcon:;
+- (void)setEndImageView:;
+- (BOOL)showBackIcon;
+- (double)originalHeight;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setOriginalHeight:;
+- (id)initWithFrame:viewModel:;
+- (id)expandableView;
+- (void)setExpandableView:;
+- (id)closeImageView;
+- (void)setCloseImageView:;
+@end

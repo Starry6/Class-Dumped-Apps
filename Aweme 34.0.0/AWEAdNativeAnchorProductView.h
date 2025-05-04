@@ -1,0 +1,35 @@
+@interface AWEAdNativeAnchorProductView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) YYLabel descriptionLabel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) q componentType;
+@property (nonatomic) q buttonHeight;
+@property (nonatomic) @? adClickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (void)setUpConstraint;
+- (void)onAnchorClicked:;
+- (id)adClickBlock;
+- (void)setUpDescriptionLabel;
+- (void)setupAccessibilityWith:;
+- (void)setAdClickBlock:;
+- (void)setModel:;
+- (void)setDescriptionLabel:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (long long)componentType;
+- (id)model;
+- (void)setContainerView:;
+- (void)setComponentType:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (long long)buttonHeight;
+- (id)descriptionLabel;
+- (void)setIconImageView:;
+- (void)setButtonHeight:;
+- (void)setUpUI;
+@end

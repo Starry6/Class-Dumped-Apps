@@ -1,0 +1,33 @@
+@interface AWEModelLayerIMNetworkProvider.CodeGenMixPhotoShareInfoReqModel : NSObject
+@property (nonatomic) NSString styleId;
+@property (nonatomic) NSString photo;
+@property (nonatomic) NSNumber mixNumUpperLimit;
+@property (nonatomic) NSNumber styleType;
+@property (nonatomic) NSNumber shareTime;
+@property (nonatomic) NSString styleUrl;
+@property (nonatomic) NSNumber shareTaskId;
+@property (nonatomic) NSString styleTitle;
+@property (nonatomic) NSString loraSlotDetail;
+- (id)toJSONString;
+- (id)shareTaskId;
+- (void)setShareTaskId:;
+- (id)mixNumUpperLimit;
+- (void)setMixNumUpperLimit:;
+- (void)setStyleType:;
+- (id)shareTime;
+- (void)setShareTime:;
+- (id)styleUrl;
+- (void)setStyleUrl:;
+- (id)styleTitle;
+- (void)setStyleTitle:;
+- (id)loraSlotDetail;
+- (void)setLoraSlotDetail:;
+- (id)initWithStyleId:photo:mixNumUpperLimit:styleType:shareTime:styleUrl:shareTaskId:styleTitle:loraSlotDetail:;
+- (id)init;
+- (id)styleType;
+- (void).cxx_destruct;
+- (id)photo;
+- (void)setPhoto:;
+- (id)styleId;
+- (void)setStyleId:;
+@end

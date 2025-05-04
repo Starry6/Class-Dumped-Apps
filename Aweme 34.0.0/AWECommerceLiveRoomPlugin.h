@@ -1,0 +1,36 @@
+@interface AWECommerceLiveRoomPlugin : NSObject
+@property (nonatomic) NSMutableSet openURLHistory;
+@property (nonatomic) BDADLiveRoomWindmillPlugin windmillPlugin;
+@property (nonatomic) BDADPreviewToRoomModel modelToLiveRoom;
+@property (nonatomic) BDLiveCommerceFragment component;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)showAlertOpenOtherWithAdInfo:openURL:actionHandler:;
+- (BOOL)routeToWebURL:playableURLIfNeed:adInfo:queries:;
+- (BOOL)routeToLynxURL:adInfo:queries:;
+- (void)componentBindService;
+- (void)componentMount;
+- (void)componentCreate;
+- (void)addNotifications;
+- (BOOL)isCommercialComponentInToolbar;
+- (void)addMessages;
+- (id)windmillPlugin;
+- (void)postLiveLandingPageUpdateNotification:;
+- (void)handleIronManURLLandingEventNotification;
+- (void)handleClearNotification:;
+- (void)handlePlayableLandingPageOpenAppStoreNotification;
+- (void)handleLiveCardRenderFinishNotification:;
+- (void)handleLiveLandingPageLoadFailNotification:;
+- (void)handleLiveLandingPageLoadSucceedNotification:;
+- (id)modelToLiveRoom;
+- (id)openURLHistory;
+- (void)setModelToLiveRoom:;
+- (void)setOpenURLHistory:;
+- (void)setWindmillPlugin:;
+- (id)component;
+- (void).cxx_destruct;
+- (void)setComponent:;
+- (void)messageReceived:;
+@end

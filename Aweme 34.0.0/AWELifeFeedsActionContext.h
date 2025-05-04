@@ -1,0 +1,35 @@
+@interface AWELifeFeedsActionContext : NSObject
+@property (nonatomic) AWEContextStore context;
+@property (nonatomic) NSString actionType;
+@property (nonatomic) NSDictionary actionParams;
+@property (nonatomic) @? customBlock;
+- (void)setCustomBlock:;
+- (id)customBlock;
+- (id)actionType;
+- (void)setActionType:;
+- (void)setDouble:forKey:;
+- (id)init;
+- (void)setInteger:forKey:;
+- (float)floatForKey:;
+- (id)arrayForKey:;
+- (id)stringForKey:;
+- (void)setBool:forKey:;
+- (void)setArray:forKey:;
+- (void)setDictionary:forKey:;
+- (void)setString:forKey:;
+- (id)dictionaryForKey:;
+- (id)initWithAction:;
+- (void)removeObjectForKey:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)objectForKey:;
+- (double)doubleForKey:;
+- (void)setFloat:forKey:;
+- (BOOL)boolForKey:;
+- (id)context;
+- (long long)integerForKey:;
+- (void)setObject:forKey:;
+- (id)initWithActionType:;
+- (id)actionParams;
+- (void)setActionParams:;
+@end

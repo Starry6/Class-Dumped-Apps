@@ -1,0 +1,31 @@
+@interface AWEIMTaskPlatformTracker : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isStickOnTop;
+- (void)trackEnterTaskListPage:noticeType:enterMethod:showCount:taskCount:;
+- (void)trackCooperationCellShow:pageItem:;
+- (void)trackEnterChat:pageItem:;
+- (void)trackBusinessTaskDetailClick:taskType:clickMethod:taskStatus:taskID:logExtra:;
+- (void)trackRecommendTaskClick:logExtra:;
+- (void)trackBusinessTaskDetailShow:taskType:taskStatus:taskID:logExtra:;
+- (void)trackRecommendTaskShow:logExtra:;
+- (void)trackWorkbenchViewMore:index:;
+- (void)trackScreenSettingClick:statusIdentifier:;
+- (void)trackScreenSettingShow:statusIdentifier:;
+- (void)trackScreenSettingConfirm:statusIdentifier:;
+- (void)trackSettingsWorkbenchShow;
+- (void)trackWorkbenchEventName:chatModel:;
+- (void)trackWorkbenchTopShow:isStickOnTop:;
+- (void)trackWorkbenchTopShow:;
+- (void)trackWorkbenchTopClick:isStickOnTop:;
+- (void)trackWorkbenchDeleteShow:;
+- (void)trackWorkbenchDeleteClick:;
+- (void)trackSettingWorkbenchShow;
+- (void)trackExitSettingWorkbench:;
++ (id)sharedIntance;
++ (id)urlAddMonitorParams:;
++ (void)trackSettingsClick:settingStatus:;
++ (id)p_getStringFromCardType:;
+@end

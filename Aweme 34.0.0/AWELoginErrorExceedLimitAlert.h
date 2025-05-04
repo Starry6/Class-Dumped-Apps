@@ -1,0 +1,30 @@
+@interface AWELoginErrorExceedLimitAlert : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionTextView;
+@property (nonatomic) YYAnimatedImageView avatarView;
+@property (nonatomic) UILabel nickNameLable;
+@property (nonatomic) UIView sepLineH;
+@property (nonatomic) AWEButton buttonAllow;
+- (id)buttonAllow;
+- (void)loadSubviews;
+- (void)setButtonAllow:;
+- (void)showAlertWithAnimation;
+- (id)nickNameLable;
+- (id)sepLineH;
+- (void)setNickNameLable:;
+- (void)setSepLineH:;
+- (id)init;
+- (void)setAvatarView:;
+- (id)contentView;
+- (id)avatarView;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)dismissAlert;
+- (id)descriptionTextView;
+- (void)setDescriptionTextView:;
++ (id)replaceStringWithStar:;
++ (void)showAlertWithTitle:description:image:nickName:platform:actionButtonTitle:actionBlock:;
+@end

@@ -1,0 +1,36 @@
+@interface AWESearchDotAnimationView : UIView
+@property (nonatomic) UIView flashView;
+@property (nonatomic) UIView centerView;
+@property (nonatomic) UIButton button;
+@property (nonatomic) CAAnimationGroup expandGroups;
+@property (nonatomic) CAAnimationGroup centerGroups;
+@property (nonatomic) double animationDuration;
+@property (nonatomic) double backgroundMaxWidth;
+@property (nonatomic) double centerDotWidth;
+@property (nonatomic) @? dotClickedBlk;
+- (void)buttonClicked;
+- (void)startFlashAnimation;
+- (double)backgroundMaxWidth;
+- (double)centerDotWidth;
+- (id)dotClickedBlk;
+- (id)expandGroups;
+- (void)stopFlashAnimation;
+- (void)setBackgroundMaxWidth:;
+- (void)setCenterDotWidth:;
+- (void)setDotClickedBlk:;
+- (void)setExpandGroups:;
+- (id)centerView;
+- (id)initWithFrame:;
+- (void)setButton:;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (void)setAnimationDuration:;
+- (void)setCenterView:;
+- (double)animationDuration;
+- (void)layoutSubviews;
+- (id)button;
+- (id)centerGroups;
+- (void)setCenterGroups:;
+- (id)flashView;
+- (void)setFlashView:;
+@end

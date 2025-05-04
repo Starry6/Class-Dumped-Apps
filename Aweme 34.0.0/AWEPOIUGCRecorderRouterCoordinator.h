@@ -1,0 +1,33 @@
+@interface AWEPOIUGCRecorderRouterCoordinator : NSObject
+@property (nonatomic) BOOL isTransferToImageAlbum;
+@property (nonatomic) NSDate startNextTime;
+@property (nonatomic) BOOL dismissed;
+@property (nonatomic) ACCRecordViewControllerInputData sourceViewControllerInputData;
+@property (nonatomic) ACCEditViewControllerInputData targetViewControllerInputData;
+@property (nonatomic) UIViewController sourceViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSourceViewController:targetViewControllerInputData:;
+- (id)handleTargetViewControllerInputData;
+- (void)routeWithAnimated:completion:;
+- (id)sourceViewControllerInputData;
+- (void)setSourceViewControllerInputData:;
+- (id)targetViewControllerInputData;
+- (void)setTargetViewControllerInputData:;
+- (void)p_dismissSelf;
+- (BOOL)isTransferToImageAlbum;
+- (void)setIsTransferToImageAlbum:;
+- (void)setStartNextTime:;
+- (id)editPageEnterFrom;
+- (id)editPageEnterMethod;
+- (void)uploadImageWithPublishModel:completion:;
+- (void)openEditPageWithPublishModel:completion:;
+- (id)startNextTime;
+- (BOOL)dismissed;
+- (void)setDismissed:;
+- (id)sourceViewController;
+- (void)setSourceViewController:;
+- (void).cxx_destruct;
+@end

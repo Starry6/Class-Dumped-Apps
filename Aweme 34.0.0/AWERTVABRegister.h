@@ -1,0 +1,2 @@
+@interface AWERTVABRegister : NSObject
+@end

@@ -1,0 +1,36 @@
+@interface AWEIMCouponPlusPanelEntryComponent : AWEIMComponentBase
+@property (nonatomic) q entryState;
+@property (nonatomic) BOOL isFetchingData;
+@property (nonatomic) NSString unavailableToast;
+@property (nonatomic) AWEIMChatPanelModel plusPanelItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (BOOL)canShowInPlusPanelWithContext:;
+- (id)plusPanelItemModel;
+- (id)conversationInfoOtherRequestParams;
+- (void)updateConversationInfoOtherData:source:;
+- (void)p_onItemDidSelectedFromChatPanel;
+- (id)plusPanelItem;
+- (void)setPlusPanelItem:;
+- (void)setIsFetchingData:;
+- (BOOL)canShowCouponEntryInActionBar;
+- (void)updateLocalFansCouponStatus;
+- (void)onTapEntry;
+- (BOOL)p_canShowInputPanelEntryWithCon:;
+- (void)p_fetchServerState;
+- (void)p_tryOpenCouponPage;
+- (BOOL)p_enableFansCouponWithCon:;
+- (void)setUnavailableToast:;
+- (long long)p_sendStatusToEntryState:;
+- (void)p_sendCouponMessageFailed;
+- (id)unavailableToast;
+- (void)p_insertOrUpdateCouponEntry;
+- (void).cxx_destruct;
+- (long long)entryState;
+- (void)setEntryState:;
+- (BOOL)isFetchingData;
++ (BOOL)canCreateComponentWithContext:;
+@end

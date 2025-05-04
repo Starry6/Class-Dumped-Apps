@@ -1,0 +1,2 @@
+@interface _TtGC18AWEServiceKitSwift12ServiceEntryC14AWEIMShareImpl16ShareServiceImpl_ : AWEServiceKitSwift.AnyServiceEntry
+@end

@@ -1,0 +1,2 @@
+@interface AWERTVShowSecurityCallAlertLynxBridgeResponse : BDXBridgeModel
+@end

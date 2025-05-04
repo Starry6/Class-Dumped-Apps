@@ -1,0 +1,33 @@
+@interface AWEAdActionMaskDetailService : HTSService
+@property (nonatomic) NSMutableDictionary interactiveDic;
+@property (nonatomic) NSMutableDictionary actionMaskInfoDict;
+@property (nonatomic) NSMutableArray interactiveIdArrays;
+@property (nonatomic) q maxCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (void)logInteractiveEvent:with:from:;
+- (id)actionMaskDetailStrParam;
+- (void)logNoInteractiveEvent:;
+- (void)didChangePlaybackStateWithAction:;
+- (void)awemePlayerWillLoopPlayingWith:;
+- (void)setInteractiveDic:;
+- (void)setActionMaskInfoDict:;
+- (void)setInteractiveIdArrays:;
+- (id)actionMaskDetailStrParamCount:;
+- (id)interactiveDic;
+- (void)deleteOldValue;
+- (id)actionMaskInfoParamCount:;
+- (id)actionMaskInfoDict;
+- (id)interactiveIdArrays;
+- (void)updateValue:awemeModel:;
+- (void)updateActionMaskInfoWithScene:context:;
+- (id)actionMaskInfoParam;
+- (void)setMaxCount:;
+- (long long)maxCount;
+- (unsigned long long)moduleNames;
+- (unsigned long long)getValue:;
+- (void).cxx_destruct;
+@end

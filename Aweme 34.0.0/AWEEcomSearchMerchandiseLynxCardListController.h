@@ -1,0 +1,38 @@
+@interface AWEEcomSearchMerchandiseLynxCardListController : AWEEcomSearchMerchandiseCardListController
+@property (nonatomic) UIView hideTopCornerWhiteView;
+@property (nonatomic) NSMutableArray lynxCardUpdateHeightArray;
+@property (nonatomic) NSNumber sortFilterShowIndex;
+- (void)registerCollectionViewCell:;
+- (double)doubleColumnCardWidth;
+- (id)collectionView:sizeForItemAtIndexPath:withModel:;
+- (id)identifierForModel:;
+- (void)configCell:withModel:atIndexPath:;
+- (id)eCardTacker;
+- (void)sendRefreshRequestWithSearchQueryParmas:;
+- (void)managerSearchKeywordCallBack;
+- (void)scrollToDisplayItemWithOffset:index:animated:;
+- (void)jumpToVideoDetailTableView:model:params:;
+- (void)updateHeightForCell:model:;
+- (void)updateHeightForCommonCell:model:;
+- (id)componentCell;
+- (double)feedLynxCardWidth:;
+- (void)updateLayoutAndCanBeCanceled;
+- (id)lynxCardUpdateHeightArray;
+- (void)setLynxCardUpdateHeightArray:;
+- (Class)classForModelType:;
+- (long long)awemeOffsetWithAwemeIndex:withIdList:;
+- (id)hideTopCornerWhiteView;
+- (void)setHideTopCornerWhiteView:;
+- (void)setSortFilterShowIndex:;
+- (id)identifierForModel:version:;
+- (Class)getSingleColClassWithModelType:;
+- (Class)getDoubleColClassWithModelType:;
+- (Class)classForModelVersion:model:;
+- (Class)cellClassForModel:version:;
+- (BOOL)isInstantTab;
+- (void)_configCell:withModel:atIndexPath:;
+- (id)sortFilterShowIndex;
+- (double)contentWidth;
+- (void).cxx_destruct;
+- (unsigned long long)columnType;
+@end

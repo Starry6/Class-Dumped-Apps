@@ -1,0 +1,35 @@
+@interface AWEIMInteractionRouterRegisterUtil : NSObject
++ (id)schemaByReplacingPlaceHoldersInSchema:withConversationContext:;
++ (id)schemaByReplacingPlaceHoldersInSchema:conversationID:;
++ (id)getResponderTopMessageBaseVC;
++ (id)schemaByAddingCustomParamsInSchema:params:encodeHashtag:;
++ (id)schemaByReplacingPlaceHoldersInSchema:withConversationContext:addTrackParams:;
++ (id)schemaByReplacingPlaceHoldersInSchema:withShareModelContext:;
++ (id)schemaByAddingCustomParamsInSchema:params:;
++ (unsigned long long)typeWithSchema:;
++ (id)actionBarExeuntParamsWithScheme:;
++ (id)routeUrlSchemeTypeMap;
++ (void)sendGiphyMessageWithTransitionInfo:emoticon:theme:aweType:syncExt:;
++ (id)schemaByReplacingPlaceHoldersInSchema:conversationPeerId:;
++ (id)schemaByReplacingPlaceHoldersInSchema:conversationPeerSecId:;
++ (id)schemaByReplacingPlaceHoldersInSchema:enterFrom:;
++ (id)schemaByReplacingPlaceHoldersInSchema:extraData:;
++ (void)sendGiphyMessageWithTransitionInfo:content:syncExt:;
++ (BOOL)interactiveEmojiRegisterURLValidationWithURLString:paramsDictionary:;
++ (void)interactiveEmojiTransferWithTransitionInfo:;
++ (BOOL)danmakuEmoticonEditPanelRegisterURLValidationWithURLString:paramsDictionary:;
++ (void)danmakuEmoticonEditPanelTransferWithTransitionInfo:;
++ (long long)voipTypeWithSchema:;
++ (BOOL)checkEnableInvokeVoipInConversation:rtvType:;
++ (id)schemaByReplacingPlaceHoldersInSchema:replacements:;
++ (id)setupTraceInfoWithEnterMethodIfNeed:matchUid:;
++ (BOOL)aimojiRegisterURLValidationWithURLString:paramsDictionary:;
++ (void)aimojiTransferWithTransitionInfo:;
++ (unsigned long long)getReplayDisplayTypeWithSceneType:;
++ (void)addDefaultDiggWithMessage:toConversation:;
++ (void)p_tapGameWithConversation:;
++ (void)blockOrUnblockUserWithUserId:conversationID:;
++ (id)p_getConversationReportNetworkJsonStringFromConversation:;
++ (void)requestActionbarCallbackWithConversationId:key:extraParams:completionBlock:;
++ (void)openSendTransferMoneyPage;
+@end

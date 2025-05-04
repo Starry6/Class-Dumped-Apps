@@ -1,0 +1,38 @@
+@interface AWERadarViewManager : NSObject
+@property (nonatomic) NSMutableArray unResolveNoticeArray;
+@property (nonatomic) AWERadarNoticeModel handlingNotice;
+@property (nonatomic) UIView parentView;
+@property (nonatomic) AFDRadarActivityModel activityModel;
+@property (nonatomic) q availableFollowBackDialogs;
+@property (nonatomic) BOOL showingRelationView;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString referString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setReferString:;
+- (id)enterFrom;
+- (id)activityModel;
+- (void)setActivityModel:;
+- (void)updateWithActivityModel:;
+- (BOOL)showingRelationView;
+- (void)handleFollowResponseIfNeeded:user:;
+- (void)handleNoticeList:;
+- (void)relationViewDidDismissCompleted:;
+- (BOOL)p_isNeedHandleNotice:;
+- (long long)availableFollowBackDialogs;
+- (id)unResolveNoticeArray;
+- (void)setAvailableFollowBackDialogs:;
+- (void)handleNextNoticeIfNeeded;
+- (id)handlingNotice;
+- (void)setHandlingNotice:;
+- (void)setShowingRelationView:;
+- (void)setUnResolveNoticeArray:;
+- (void).cxx_destruct;
+- (id)initWithParentView:;
+- (id)parentView;
+- (void)setParentView:;
+@end

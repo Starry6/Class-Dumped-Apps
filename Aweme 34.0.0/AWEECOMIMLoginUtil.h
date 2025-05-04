@@ -1,0 +1,37 @@
+@interface AWEECOMIMLoginUtil : NSObject
+@property (nonatomic) <AWEECOMIMPaasClientBridgeProtocol> pigeonClient;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)pigeonSign;
+- (id)pigeonClient;
+- (void)setPigeonClient:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)isLogin;
++ (id)commonParams;
++ (long long)appVersionCode;
++ (id)imsdkConfig;
++ (id)customBizID;
++ (BOOL)websocketUseDY;
++ (id)imClient;
++ (id)pigeonClient;
++ (id)generateNotificationKeyWithKey:;
++ (id)shortLinkServerURLString;
++ (id)wsServerURLsArr;
++ (long long)fpServiceIntegerValue;
++ (long long)bizWsServiceIntegerValue;
++ (id)wsCustomHeadersDict;
++ (void)setupPigeonClientWithDefaultConfigWithCompletion:;
++ (id)shopBizType;
++ (id)instantRetailBizType;
++ (id)authorBizType;
++ (long long)authorInbox;
++ (long long)shopInbox;
++ (long long)instantRetailInbox;
++ (id)commonIMCloudParams;
++ (id)additionalIMCloudParams;
++ (id)shared;
+@end

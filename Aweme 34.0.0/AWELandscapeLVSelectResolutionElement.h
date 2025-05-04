@@ -1,0 +1,31 @@
+@interface AWELandscapeLVSelectResolutionElement : AWELandscapeInteractionBaseElement
+@property (nonatomic) UIButton resolutionButton;
+@property (nonatomic) UIView<AWENoxusPlayerSettingTypeView> selectResolutionView;
+@property (nonatomic) BOOL isShowingResolutionPanel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onPlayer:didChangePlaybackStateWithAction:;
+- (void)hideAllPanels;
+- (void)didEnterLandscape;
+- (void)noxusSettingTypeListSelectModel:;
+- (void)noxusSettingTypeDismiss:;
+- (BOOL)isShowingPanel;
+- (id)resolutionButton;
+- (void)refreshResolutionButton:;
+- (void)trackResolutionButtonShow;
+- (BOOL)isShowingResolutionPanel;
+- (void)dismissResolutionSettingView;
+- (id)selectResolutionView;
+- (void)setIsShowingResolutionPanel:;
+- (void)trackResolutionTypeSelected:resolutionBefore:;
+- (void)showResolutionSettingView;
+- (id)resolutionTextWithType:;
+- (void)setResolutionButton:;
+- (void)setSelectResolutionView:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (BOOL)isInteracting;
+@end

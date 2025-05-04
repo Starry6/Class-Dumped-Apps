@@ -1,0 +1,33 @@
+@interface AWELeftSideBarExitTrackModel : NSObject
+@property (nonatomic) NSString identification;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString entranceStatus;
+@property (nonatomic) double duration;
+@property (nonatomic) double panelDuration;
+@property (nonatomic) BOOL isSlide;
+@property (nonatomic) BOOL isClick;
+@property (nonatomic) NSDictionary badgeExtra;
+@property (nonatomic) q entryLastBadgeTime;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (BOOL)isClick;
+- (void)setIdentification:;
+- (void)setIsClick:;
+- (id)entranceStatus;
+- (void)setEntranceStatus:;
+- (long long)entryLastBadgeTime;
+- (void)setPanelDuration:;
+- (void)setIsSlide:;
+- (void)setBadgeExtra:;
+- (void)setEntryLastBadgeTime:;
+- (double)panelDuration;
+- (BOOL)isSlide;
+- (id)badgeExtra;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (double)duration;
+- (id)identification;
+@end

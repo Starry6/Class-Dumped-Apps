@@ -1,0 +1,34 @@
+@interface AWELivePreStreamMessageElement : AWELiveBusinessBaseElement
+@property (nonatomic) AWELivePreStreamMessageManager messageDispatchManager;
+@property (nonatomic) AWELivePreStreamMessageActionCreator messageActionCreator;
+@property (nonatomic) AWELivePreStreamSEIManager preSEIManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)prepareForDisPlay;
+- (void)logEvent:params:;
+- (void)setMessageActionCreator:;
+- (id)messageActionCreator;
+- (void)loadNewMessageActionCreator;
+- (void)onUserEnterLiveRoom:;
+- (void)streamPlayer_startToPlay;
+- (void)streamPlayer_willStopWithToken:;
+- (void)stopAndResetMessage;
+- (void)preloadElement;
+- (BOOL)enablePreWs;
+- (id)syncDataClsNames;
+- (id)preSEIManager;
+- (void)loadPreSEIManagerIfNeed;
+- (void)loadPreMessageDispatcherManagerIfNeed;
+- (void)configMessageIfNeed;
+- (void)p_stopAndResetMessage;
+- (void)startMessageIfNeed:;
+- (void)setPreSEIManager:;
+- (id)messageDispatchManager;
+- (void)setMessageDispatchManager:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

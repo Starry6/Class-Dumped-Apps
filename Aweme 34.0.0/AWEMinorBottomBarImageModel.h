@@ -1,0 +1,30 @@
+@interface AWEMinorBottomBarImageModel : MTLModel
+@property (nonatomic) q top;
+@property (nonatomic) q bottom;
+@property (nonatomic) q left;
+@property (nonatomic) q right;
+@property (nonatomic) AWEURLModel urlInfo;
+@property (nonatomic) q cornerRadius;
+@property (nonatomic) BOOL hasLayer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasLayer;
+- (void)setHasLayer:;
+- (long long)top;
+- (void)setCornerRadius:;
+- (void)setBottom:;
+- (void).cxx_destruct;
+- (long long)cornerRadius;
+- (long long)right;
+- (void)setTop:;
+- (long long)left;
+- (long long)bottom;
+- (void)setLeft:;
+- (void)setRight:;
+- (id)urlInfo;
+- (void)setUrlInfo:;
++ (id)urlInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

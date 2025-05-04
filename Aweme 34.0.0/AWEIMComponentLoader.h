@@ -1,0 +1,30 @@
+@interface AWEIMComponentLoader : NSObject
+@property (nonatomic) NSArray clzNames;
+@property (nonatomic) NSArray lazyClzNames;
+@property (nonatomic) AWEIMComponentContext context;
+@property (nonatomic) NSDictionary lazyInterfaceMap;
+@property (nonatomic) <AWEIMComponentLoaderDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initialMakeComponents;
+- (id)resolveLazyComponentWithInterface:;
+- (void)setLazyClzNames:;
+- (void)setClzNames:;
+- (id)clzNames;
+- (id)createComponent:context:;
+- (BOOL)p_canCreateComponent:context:;
+- (id)p_createComponent:context:;
+- (void)p_didLoaderCreateNewComponent:;
+- (id)p_findLazyComponentLoaderWithInterface:;
+- (id)lazyInterfaceMap;
+- (id)lazyClzNames;
+- (id)initWithClassNames:lazyClassNames:context:;
+- (void)setLazyInterfaceMap:;
+- (id)delegate;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+@end

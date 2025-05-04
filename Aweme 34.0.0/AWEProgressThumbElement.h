@@ -1,0 +1,31 @@
+@interface AWEProgressThumbElement : AWEBaseElement
+@property (nonatomic) AWEProgressThumbView thumbView;
+@property (nonatomic) AWEProgressThumbPresenter presenter;
+@property (nonatomic) AWEProgressUIConfig config;
+@property (nonatomic) AWEPageContext<AWEProgressContextProtocol> context;
+@property (nonatomic) <AWEProgressElementDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (id)initWithConfig:context:;
+- (void)viewDidDisposed;
+- (void)progressValueChangedTo:animated:;
+- (void)changeProgressStatusTo:withAction:animate:;
+- (void)setConfig:;
+- (id)delegate;
+- (id)config;
+- (void)viewDidLoad;
+- (id)presenter;
+- (id)thumbView;
+- (void)setPresenter:;
+- (void)setData:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)configuration;
+- (void)reset;
+- (void)setDelegate:;
+- (id)context;
+- (void)setThumbView:;
+@end

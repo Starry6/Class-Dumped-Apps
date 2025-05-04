@@ -1,0 +1,33 @@
+@interface AWETeenSwipeUpGuideManager : NSObject
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) LOTAnimationView playingView;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) {CGPoint=dd} originOffSet;
+@property (nonatomic) q repeatCount;
+@property (nonatomic) BOOL isShowingGuide;
+- (void)p_setupUI;
+- (BOOL)isShowingGuide;
+- (void)setIsShowingGuide:;
+- (void)p_setupBind;
+- (void)setOriginOffSet:;
+- (id)originOffSet;
+- (void)showSwipeUpGuideOnTableView:;
+- (id)playingView;
+- (void)setPlayingView:;
+- (void)dismissSwipeUpGuide;
+- (void)p_bindGesture;
+- (void)p_beginGuideAnimation;
+- (void)p_repeatGuideAnimationIfNeeded;
+- (id)init;
+- (void)dealloc;
+- (void)setTableView:;
+- (id)containerView;
+- (id)tableView;
+- (void)setRepeatCount:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (long long)repeatCount;
+- (id)hintLabel;
+- (void)setHintLabel:;
+@end

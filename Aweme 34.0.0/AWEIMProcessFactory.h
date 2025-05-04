@@ -1,0 +1,31 @@
+@interface AWEIMProcessFactory : NSObject
+@property (nonatomic) NSMutableSet keepLifeCycleProcessSet;
+@property (nonatomic) NSHashTable eventListeners;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sendVideo:;
+- (id)sendImage:;
+- (id)sendCombineShareMsg:;
+- (void)registEventListener:;
+- (id)preTranscodeVideo:;
+- (id)sendVoice:;
+- (void)unRegistEventListener:;
+- (void)onProcessDidStartWithProcess:;
+- (void)onProcessDidFinishWithProcess:;
+- (void)onProcessStageDidStartWithStage:process:;
+- (void)onProcessStageDidFinishWithStage:process:;
+- (id)sendLocalEmoji:;
+- (id)resend:conversation:;
+- (void)setKeepLifeCycleProcessSet:;
+- (id)keepLifeCycleProcessSet;
+- (void)keepLifeCycleUntilFinish:;
+- (id)p_getTypeWithMessage:;
+- (void).cxx_destruct;
+- (id)eventListeners;
+- (id)sendFile:;
+- (id)sendLocation:;
+- (void)setEventListeners:;
++ (id)shareInstance;
+@end

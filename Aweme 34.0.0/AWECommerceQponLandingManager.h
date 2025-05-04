@@ -1,0 +1,32 @@
+@interface AWECommerceQponLandingManager : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) UIView container;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) NSObject<AWEAdLandingPageLokiManager> lokiManager;
+@property (nonatomic) BOOL isCardExpand;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweme;
+- (void)setAweme:;
+- (void)handleWebLandingPageEventWithAwemeIfNeed:container:scrollView:;
+- (void)handleLynxLandingPageEventWithAwemeIfNeed:container:rifleView:;
+- (void)handleLandingPageEventWithAwemeIfNeed:container:scrollView:;
+- (void)setIsCardExpand:;
+- (void)setupLoki;
+- (void)observePanGesture;
+- (void)observeScrollViewOffset;
+- (id)lokiManager;
+- (void)setLokiManager:;
+- (BOOL)isSlideUp;
+- (BOOL)isCardExpand;
+- (void)sendCardShowEvent;
+- (void)setContainer:;
+- (id)container;
+- (void)setScrollView:;
+- (id)scrollView;
+- (void).cxx_destruct;
+- (void)reset;
++ (BOOL)landingPageCouponStyleCanShowWithAweme:;
+@end

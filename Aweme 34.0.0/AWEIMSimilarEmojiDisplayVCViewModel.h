@@ -1,0 +1,32 @@
+@interface AWEIMSimilarEmojiDisplayVCViewModel : NSObject
+@property (nonatomic) AWEIMEmoticonDisplayViewControllerConfig context;
+@property (nonatomic) AWEIMEmoticonThemeModel themeModel;
+@property (nonatomic) @? reloadBlock;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)themeModel;
+- (void)setThemeModel:;
+- (BOOL)enableShowSimilarEmoticon;
+- (void)loadQuickLookSection;
+- (void)loadSimilarEmoticonListSection;
+- (id)similarEmoticonDisplaySection;
+- (id)sectionClasses;
+- (id)getSectionWithSessionType:;
+- (id)loadSimilarEmoticonTaskWithRequestModel:;
+- (void)toNotifyReloadWithReloadModel:;
+- (BOOL)updateSimilarEmoticonDataWithResponseModel:;
+- (id)parseRequestParams:;
+- (id)getSectionWithSection:;
+- (id)sections;
+- (id)initWithContext:;
+- (void)setSections:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setupData;
+- (void)setReloadBlock:;
+- (id)reloadBlock;
+@end

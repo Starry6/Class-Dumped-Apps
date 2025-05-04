@@ -1,0 +1,34 @@
+@interface AWELiveSoloKTVPublishConfigImpl : NSObject
+@property (nonatomic) NSNumber songId;
+@property (nonatomic) NSArray publishTags;
+@property (nonatomic) NSString publishContent;
+@property (nonatomic) NSNumber anchorId;
+@property (nonatomic) NSString anchorTitle;
+@property (nonatomic) NSString anchorTag;
+@property (nonatomic) NSString anchorContent;
+@property (nonatomic) NSString anchorIconURL;
+@property (nonatomic) NSString enterSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enterSource;
+- (void)setEnterSource:;
+- (id)anchorId;
+- (void)setAnchorId:;
+- (void)setSongId:;
+- (id)anchorContent;
+- (void)setAnchorContent:;
+- (id)anchorTitle;
+- (void)setAnchorTitle:;
+- (id)anchorTag;
+- (id)publishTags;
+- (void)setPublishTags:;
+- (id)publishContent;
+- (void)setPublishContent:;
+- (void)setAnchorTag:;
+- (id)anchorIconURL;
+- (void)setAnchorIconURL:;
+- (void).cxx_destruct;
+- (id)songId;
+@end

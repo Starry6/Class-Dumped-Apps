@@ -1,0 +1,38 @@
+@interface AWEAppNoticeSettingManager : NSObject
++ (id)privacyReminder;
++ (BOOL)enableNoticeMoveToModularizon;
++ (BOOL)enableCommentNoticeMoveToModularizon;
++ (BOOL)enableNoticeAbnormalMonitor;
++ (int)officialNoticeUnreadCountMaxLimitSetting;
++ (int)officialNoticeUnreadCountSetting;
++ (long long)noticeCardNumberOfLines;
++ (BOOL)enablewWalletCellOpt;
++ (BOOL)enableShowNormalCellSupplement;
++ (BOOL)enableShowSupplement;
++ (id)noticeEmptyContentCutSuffixConfig;
++ (BOOL)enableInteractReplyIconOpt;
++ (long long)stickerShowInNoticeStrategy;
++ (BOOL)isInteractiveCellDelNoticeTextControlByClient;
++ (long long)noticeRequestDelayTime;
++ (unsigned long long)live_pushDisplayInterval;
++ (unsigned long long)live_maxiumDisplayTimesAtColdLanuch;
++ (unsigned long long)live_minimumDisplayTimesAtColdLanuch;
++ (unsigned long long)live_pushUnclickedThresholdTimes;
++ (BOOL)noticeListPreLoad;
++ (BOOL)noticeListLoadMoreOptimize;
++ (BOOL)enableCountAndMultiLog;
++ (id)awemenotice_cache;
++ (unsigned long long)dismissThresholdOfTodayInThePast;
++ (unsigned long long)dismissThresholdOfWeekInThePast;
++ (BOOL)enableInteractMessageLimitFollowStatusFriends;
++ (unsigned long long)interactiveNoticeCacheExpiredTime;
++ (unsigned long long)fansNoticeCacheExpiredTime;
++ (id)commentDescriptionStringForInteract;
++ (id)disturbingTipsTitle;
++ (long long)disturbingTipsUnreadCountLimit;
++ (long long)disturbingTipsIntervalDayLimit;
++ (id)disturbingTipsCurrentConfigUniqueKey;
++ (long long)sidebarNoticeContentCount;
++ (BOOL)enableSidebarCustomerService;
++ (BOOL)enableSocialInnerPushTransferToPlatformNormativeContainer;
+@end

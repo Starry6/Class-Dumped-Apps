@@ -1,0 +1,32 @@
+@interface AWEInTodaySchemaPublishConfig : MTLModel
+@property (nonatomic) NSString activityVideoType;
+@property (nonatomic) NSArray infoStickerIds;
+@property (nonatomic) NSNumber stickerOffsetX;
+@property (nonatomic) NSNumber stickerOffsetY;
+@property (nonatomic) NSArray musicIds;
+@property (nonatomic) AWEInTodaySchemaAnchor anchor;
+@property (nonatomic) NSDictionary anchorDic;
+@property (nonatomic) NSArray hashtagList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activityVideoType;
+- (void)setActivityVideoType:;
+- (id)musicIds;
+- (void)setMusicIds:;
+- (void)setHashtagList:;
+- (id)hashtagList;
+- (id)infoStickerIds;
+- (id)anchorDic;
+- (void)setInfoStickerIds:;
+- (id)stickerOffsetX;
+- (void)setStickerOffsetX:;
+- (id)stickerOffsetY;
+- (void)setStickerOffsetY:;
+- (void)setAnchorDic:;
+- (id)anchor;
+- (void)setAnchor:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

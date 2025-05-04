@@ -1,0 +1,33 @@
+@interface AWEButtonUnitModel : MTLModel
+@property (nonatomic) AWEButtonTextInfoModel content;
+@property (nonatomic) AWEButtonIconInfoModel icon;
+@property (nonatomic) q position;
+@property (nonatomic) AWEButtonClickActionInfoModel clickAction;
+@property (nonatomic) AWEButtonContainerStyleModel containerStyle;
+@property (nonatomic) q exitType;
+@property (nonatomic) NSArray btnDataKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clickAction;
+- (void)setClickAction:;
+- (id)btnDataKeys;
+- (void)setBtnDataKeys:;
+- (void)setContainerStyle:;
+- (id)content;
+- (id)icon;
+- (long long)position;
+- (void)setContent:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setPosition:;
+- (long long)exitType;
+- (id)containerStyle;
+- (void)setExitType:;
++ (id)iconJSONTransformer;
++ (id)clickActionJSONTransformer;
++ (id)containerStyleJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)contentJSONTransformer;
+@end

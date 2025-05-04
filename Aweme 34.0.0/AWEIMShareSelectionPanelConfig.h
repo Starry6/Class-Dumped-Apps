@@ -1,0 +1,30 @@
+@interface AWEIMShareSelectionPanelConfig : NSObject
+@property (nonatomic) @? publishStoryBlock;
+@property (nonatomic) @? goNextBlock;
+@property (nonatomic) @? publishNormalBlock;
+@property (nonatomic) NSArray bottomButtons;
+@property (nonatomic) NSDictionary extraLogDict;
+@property (nonatomic) NSString momentType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL enableMessageTabSort;
+@property (nonatomic) BOOL enableUseNewSecondSharePanel;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setPublishStoryBlock:;
+- (void)setGoNextBlock:;
+- (void)setPublishNormalBlock:;
+- (void)setBottomButtons:;
+- (void)setExtraLogDict:;
+- (void)setEnableMessageTabSort:;
+- (void)setMomentType:;
+- (id)momentType;
+- (id)extraLogDict;
+- (void)setEnableUseNewSecondSharePanel:;
+- (id)bottomButtons;
+- (BOOL)enableMessageTabSort;
+- (id)publishStoryBlock;
+- (id)goNextBlock;
+- (id)publishNormalBlock;
+- (BOOL)enableUseNewSecondSharePanel;
+- (void).cxx_destruct;
+@end

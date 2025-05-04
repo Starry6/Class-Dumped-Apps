@@ -1,0 +1,32 @@
+@interface AWEIMEditorFacePuzzleFullScreenLoadingComponent : ACCFeatureComponent
+@property (nonatomic) <ACCEditViewContainer> viewContainer;
+@property (nonatomic) UIView wrapperView;
+@property (nonatomic) UIView loadingWrapperView;
+@property (nonatomic) UILabel progressTipsLabel;
+@property (nonatomic) UIView<_TtP9AWELottie13AWELottieView_> loadingView;
+@property (nonatomic) DUXButton cancelButton;
+- (void)playing:currentProgress:;
+- (void)__setupUI;
+- (void)componentDidMount;
+- (void)loadComponentView;
+- (void)__cancelAction;
+- (BOOL)__shouldMount;
+- (id)__generateAttriButedString:;
+- (void)__showSelfWithProgress:;
+- (void)__hideSelf;
+- (id)__generateAttriButedStringWithProgress:;
+- (void)__updateProgress:;
+- (id)loadingWrapperView;
+- (void)setLoadingWrapperView:;
+- (id)progressTipsLabel;
+- (void)setProgressTipsLabel:;
+- (void)setCancelButton:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (id)wrapperView;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (void)setViewContainer:;
+- (id)viewContainer;
+- (void)setWrapperView:;
+@end

@@ -1,0 +1,31 @@
+@interface AWECodeGenBottomToolBarModel : AWEBaseDataModel
+@property (nonatomic) NSString source;
+@property (nonatomic) NSInteger modelID;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) BOOL residentType;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString uniqueID;
+- (void)setExtra:;
+- (void)setResidentType:;
+- (BOOL)residentType;
+- (void)setModelID:;
+- (id)scheme;
+- (void)setScheme:;
+- (int)modelID;
+- (id)uniqueID;
+- (id)icon;
+- (id)extra;
+- (void)setDesc:;
+- (void)setUniqueID:;
+- (id)desc;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)title;
+- (void)setSource:;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWESearchNearbyEntranceColorConfig : MTLModel
+@property (nonatomic) NSString startColor;
+@property (nonatomic) NSString midColor;
+@property (nonatomic) NSString endColor;
+@property (nonatomic) double startPointX;
+@property (nonatomic) double startPointY;
+@property (nonatomic) double endPointX;
+@property (nonatomic) double endPointY;
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) {CGPoint=dd} endPoint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMidColor:;
+- (double)startPointX;
+- (double)startPointY;
+- (double)endPointX;
+- (double)endPointY;
+- (id)midColor;
+- (void)setStartPointX:;
+- (void)setStartPointY:;
+- (void)setEndPointX:;
+- (void)setEndPointY:;
+- (id)endPoint;
+- (void)setStartPoint:;
+- (void)setEndPoint:;
+- (id)startPoint;
+- (void).cxx_destruct;
+- (id)endColor;
+- (void)setEndColor:;
+- (void)setStartColor:;
+- (id)startColor;
++ (id)JSONKeyPathsByPropertyKey;
+@end

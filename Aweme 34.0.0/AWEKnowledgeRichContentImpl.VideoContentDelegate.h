@@ -1,0 +1,38 @@
+@interface AWEKnowledgeRichContentImpl.VideoContentDelegate : NSObject
+@property (nonatomic) BOOL muted;
+@property (nonatomic) BOOL isPlayerReady;
+@property (nonatomic) BOOL enableSR;
+@property (nonatomic) @? playerWillLoopPlayingBlock;
+@property (nonatomic) @? playbackTimeBlock;
+@property (nonatomic) AWEVideoModel video;
+@property (nonatomic) UIView playerView;
+@property (nonatomic) <IESVideoPlayerProtocol> playerController;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) @? didReadyBlock;
+- (BOOL)enableSR;
+- (void)setEnableSR:;
+- (id)didReadyBlock;
+- (void)setDidReadyBlock:;
+- (id)playerWillLoopPlayingBlock;
+- (void)setPlayerWillLoopPlayingBlock:;
+- (void)setPlaybackTimeBlock:;
+- (BOOL)isPlayerReady;
+- (id)updateVideoScaleModeIsInFullPage:albumContentMode:;
+- (id)takeAwayPlayerController;
+- (void)updateWithAnotherPlayerAdapter:;
+- (id)playbackTimeBlock;
+- (BOOL)muted;
+- (id)video;
+- (void)setVideo:;
+- (void)seekToTime:;
+- (id)init;
+- (void)play;
+- (void)setMuted:;
+- (id)containerView;
+- (id)playerController;
+- (void)setContainerView:;
+- (id)playerView;
+- (void).cxx_destruct;
+- (void)stop;
+- (void)pause;
+@end

@@ -1,0 +1,36 @@
+@interface AWEFeedSchedulePostReviewViewController : UIViewController
+@property (nonatomic) AWEFeedSchedulePostReviewViewModel viewModel;
+@property (nonatomic) DUXBaseImageView iconImageView;
+@property (nonatomic) DUXBaseLabel titleLabel;
+@property (nonatomic) DUXBaseLabel messageLabel;
+@property (nonatomic) DUXBaseStackView buttonStackView;
+@property (nonatomic) DUXBaseButton cancelButton;
+@property (nonatomic) DUXBaseButton confirmButton;
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dux_titleForColoseButton;
+- (void)cancelButtonDidTap:;
+- (void)confirmButtonDidTap:;
+- (void)setCancelButton:;
+- (id)initWithViewModel:;
+- (id)messageLabel;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void)setMessageLabel:;
+- (id)cancelButton;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (id)buttonStackView;
+- (void)setButtonStackView:;
+- (id)sheet;
+- (void)setSheet:;
+@end

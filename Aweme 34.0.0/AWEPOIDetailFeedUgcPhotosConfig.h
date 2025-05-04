@@ -1,0 +1,34 @@
+@interface AWEPOIDetailFeedUgcPhotosConfig : NSObject
+@property (nonatomic) q maxPhotoCount;
+@property (nonatomic) q numberOfColumns;
+@property (nonatomic) double photoRadius;
+@property (nonatomic) BOOL radiusOnOuterOnly;
+@property (nonatomic) double maxWidth;
+@property (nonatomic) double lineSpacing;
+@property (nonatomic) double itemSpacing;
+@property (nonatomic) double singlePhotoSize;
+@property (nonatomic) BOOL hiddenCountTipView;
+@property (nonatomic) double containerWidth;
+- (id)initWithContainerWidth:;
+- (double)photoRadius;
+- (void)setPhotoRadius:;
+- (BOOL)radiusOnOuterOnly;
+- (void)setRadiusOnOuterOnly:;
+- (double)singlePhotoSize;
+- (void)setSinglePhotoSize:;
+- (BOOL)hiddenCountTipView;
+- (void)setHiddenCountTipView:;
+- (id)init;
+- (double)itemSpacing;
+- (long long)maxPhotoCount;
+- (double)maxWidth;
+- (void)setLineSpacing:;
+- (void)setItemSpacing:;
+- (void)setMaxWidth:;
+- (long long)numberOfColumns;
+- (double)lineSpacing;
+- (void)setNumberOfColumns:;
+- (void)setMaxPhotoCount:;
+- (double)containerWidth;
+- (void)setContainerWidth:;
+@end

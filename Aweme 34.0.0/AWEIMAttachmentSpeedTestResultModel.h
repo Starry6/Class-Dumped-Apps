@@ -1,0 +1,31 @@
+@interface AWEIMAttachmentSpeedTestResultModel : NSObject
+@property (nonatomic) NSString context;
+@property (nonatomic) NSInteger speed;
+@property (nonatomic) NSInteger speedThreshold;
+@property (nonatomic) NSNumber customSliceSize;
+@property (nonatomic) NSNumber customSocketNum;
+@property (nonatomic) NSDate cacheDate;
+@property (nonatomic) q networkStatus;
+@property (nonatomic) NSError error;
+- (id)customSliceSize;
+- (void)setCustomSliceSize:;
+- (id)customSocketNum;
+- (void)setCustomSocketNum:;
+- (void)setSpeed:;
+- (int)speed;
+- (id)init;
+- (void)setNetworkStatus:;
+- (void)setError:;
+- (void)encodeWithCoder:;
+- (long long)networkStatus;
+- (void)setCacheDate:;
+- (id)description;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)error;
+- (id)context;
+- (id)initWithCoder:;
+- (id)cacheDate;
+- (void)setSpeedThreshold:;
+- (int)speedThreshold;
+@end

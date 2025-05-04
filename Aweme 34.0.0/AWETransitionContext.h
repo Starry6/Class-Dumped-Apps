@@ -1,0 +1,36 @@
+@interface AWETransitionContext : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) Q interaction;
+@property (nonatomic) Q triggerDirection;
+@property (nonatomic) Q pinchZoomType;
+@property (nonatomic) {CGPoint=dd} currentPanLocation;
+@property (nonatomic) double percentCompleteForPercentageDriven;
+@property (nonatomic) UIViewController fromViewController;
+@property (nonatomic) UIViewController toViewController;
+@property (nonatomic) @ fromContextProvider;
+@property (nonatomic) @ toContextProvider;
+@property (nonatomic) <AWETransitionContextProvider> contextProvider;
+- (unsigned long long)triggerDirection;
+- (id)toContextProvider;
+- (id)fromContextProvider;
+- (void)setFromViewController:;
+- (void)setFromContextProvider:;
+- (void)setToContextProvider:;
+- (id)currentPanLocation;
+- (double)percentCompleteForPercentageDriven;
+- (void)setTriggerDirection:;
+- (unsigned long long)pinchZoomType;
+- (void)setPinchZoomType:;
+- (void)setCurrentPanLocation:;
+- (void)setPercentCompleteForPercentageDriven:;
+- (void)setToViewController:;
+- (unsigned long long)interaction;
+- (id)fromViewController;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)toViewController;
+- (void)setInteraction:;
+- (id)contextProvider;
+- (void)setContextProvider:;
+@end

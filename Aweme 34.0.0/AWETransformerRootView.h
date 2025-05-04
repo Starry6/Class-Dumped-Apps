@@ -1,0 +1,33 @@
+@interface AWETransformerRootView : UIView
+@property (nonatomic) AWETransformerGroupElement rootElement;
+@property (nonatomic) <AWETransformerRootViewDelegate> delegate;
+- (void)__updateLayout;
+- (id)lynxViews;
+- (id)cardElements;
+- (id)globalParams;
+- (void)sendLynxEvent:params:;
+- (void)didLoadTransformerRootView:isSuccess:;
+- (id)tempoViewWithCardType:;
+- (void)sendTempoEvent:params:;
+- (id)findViewInTempoViewWithName:;
+- (id)initWithElement:cardCache:delegate:;
+- (void)updateLayoutWithoutClean;
+- (void)__sendLynxEvent:params:toElement:;
+- (void)__sendTempoEvent:params:toElement:;
+- (id)__lynxViewInElement:;
+- (id)__tempoViewInElement:cardType:;
+- (id)findViewInTempoElement:name:;
+- (BOOL)hasDiffWithNewRootElement:;
+- (void)updateWithRootElement:;
+- (id)delegate;
+- (void)layout;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (id)rootElement;
+- (void)setDelegate:;
+- (void)viewDidAppear;
+- (void)render;
+- (void)viewWillDisappear;
+- (void)setRootElement:;
+- (id)initWithElement:;
+@end

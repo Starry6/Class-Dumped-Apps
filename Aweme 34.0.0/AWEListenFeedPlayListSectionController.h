@@ -1,0 +1,36 @@
+@interface AWEListenFeedPlayListSectionController : AWEBaseListSectionController
+@property (nonatomic) AWEListenFeedContext context;
+@property (nonatomic) AWEListenFeedPlayModel playModel;
+@property (nonatomic) double cellHeight;
+@property (nonatomic) BOOL isSupportedExtendStyleEnterFrom;
+@property (nonatomic) @? didClickDeleteBlock;
+@property (nonatomic) @? didLongPressCell;
+@property (nonatomic) @? cellSwipeToDeleteBlock;
+- (void)configCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)handleConnectionChanged:;
+- (BOOL)enableMovementAtIndex:model:;
+- (void)setPlayModel:;
+- (id)playModel;
+- (void)setIsSupportedExtendStyleEnterFrom:;
+- (BOOL)isSupportedExtendStyleEnterFrom;
+- (void)handleCellLongPressEvent:model:userInfo:;
+- (void)handleCellDeleteEvent:model:userInfo:;
+- (id)cellSwipeToDeleteBlock;
+- (id)didClickDeleteBlock;
+- (id)didLongPressCell;
+- (void)handleCellSwipeToDeleteEvent:model:userInfo:;
+- (void)setDidClickDeleteBlock:;
+- (void)setDidLongPressCell:;
+- (void)setCellSwipeToDeleteBlock:;
+- (id)init;
+- (void)dealloc;
+- (Class)cellClass;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (double)cellHeight;
+- (void)setCellHeight:;
+- (void)updateContext:;
++ (Class)sectionViewModelClass;
+@end

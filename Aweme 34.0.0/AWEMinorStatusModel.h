@@ -1,0 +1,32 @@
+@interface AWEMinorStatusModel : AWEBaseApiModel
+@property (nonatomic) BOOL quickSwitchEnable;
+@property (nonatomic) AWETeenModeAlertConfigModel windowConfig;
+@property (nonatomic) BOOL minorMode;
+@property (nonatomic) q minorModeType;
+@property (nonatomic) q screenTime;
+@property (nonatomic) BOOL hasAge;
+@property (nonatomic) BOOL hasPassword;
+@property (nonatomic) BOOL hasPhoneNumber;
+@property (nonatomic) NSNumber enterFourTeenModeTS;
+- (BOOL)minorMode;
+- (long long)minorModeType;
+- (id)windowConfig;
+- (void)setQuickSwitchEnable:;
+- (void)setMinorMode:;
+- (void)setMinorModeType:;
+- (void)setWindowConfig:;
+- (BOOL)quickSwitchEnable;
+- (id)enterFourTeenModeTS;
+- (void)setEnterFourTeenModeTS:;
+- (BOOL)hasPassword;
+- (BOOL)hasAge;
+- (void).cxx_destruct;
+- (void)setHasAge:;
+- (BOOL)hasPhoneNumber;
+- (long long)screenTime;
+- (void)setScreenTime:;
+- (void)setHasPhoneNumber:;
+- (void)setHasPassword:;
++ (id)windowConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

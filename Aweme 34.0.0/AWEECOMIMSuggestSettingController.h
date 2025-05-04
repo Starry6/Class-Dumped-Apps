@@ -1,0 +1,30 @@
+@interface AWEECOMIMSuggestSettingController : UIViewController
+@property (nonatomic) UISwitch suggestSwitch;
+@property (nonatomic) NSString shopID;
+@property (nonatomic) NSDictionary requestCommonParams;
+@property (nonatomic) AWEECOMIMNetworkImp networkImp;
+@property (nonatomic) @? switchChanged;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dux_titleForColoseButton;
+- (void)setShopID:;
+- (id)shopID;
+- (id)requestCommonParams;
+- (void)setRequestCommonParams:;
+- (id)networkImp;
+- (void)setNetworkImp:;
+- (id)initWithShopID:requestCommonParams:networkImp:;
+- (void)setSwitchChanged:;
+- (void)updateSuggestSwitchState:;
+- (void)updateSuggestSwitchStateToServer:;
+- (void)setSuggestSwitch:;
+- (id)suggestSwitch;
+- (void)onSwitchChanged:;
+- (void)setInputSuggestConfigWithIsOn:completion:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)switchChanged;
++ (void)setInputSuggestConfigWithShopID:isOn:requestCommonParams:networkImp:completion:;
+@end

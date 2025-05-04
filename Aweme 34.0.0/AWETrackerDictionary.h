@@ -1,0 +1,32 @@
+@interface AWETrackerDictionary : NSObject
+@property (nonatomic) <AWETrackerConsumableNode> currentNode;
+@property (nonatomic) <AWETrackerConsumableNode> applyNode;
+@property (nonatomic) Q count;
+- (id)safeObjectForKey:withClass:;
+- (void)setApplyNode:;
+- (id)applyNode;
+- (id)init;
+- (id)initWithCapacity:;
+- (void)removeObjectsForKeys:;
+- (void)removeAllObjects;
+- (void)setDictionary:;
+- (unsigned long long)count;
+- (id)keyEnumerator;
+- (id)description;
+- (void)removeObjectForKey:;
+- (void)setObject:forKeyedSubscript:;
+- (void).cxx_destruct;
+- (id)objectForKey:;
+- (id)objectForKeyedSubscript:;
+- (id)debugDescription;
+- (id)mutableCopyWithZone:;
+- (void)addEntriesFromDictionary:;
+- (id)copyWithZone:;
+- (void)setObject:forKey:;
+- (void)setCurrentNode:;
+- (id)currentNode;
++ (id)init;
++ (id)initWithCapacity:;
++ (id)dictionary;
++ (id)dictionaryWithCapacity:;
+@end

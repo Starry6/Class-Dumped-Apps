@@ -1,0 +1,31 @@
+@interface AWEFeedPlayableGCDTimer : NSObject
+@property (nonatomic) @? block;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) BOOL repeats;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) NSObject<OS_dispatch_source> realTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithTimeInterval:block:repeats:dispatchQueue:;
+- (id)realTimer;
+- (double)timeInterval;
+- (void)setTimer:;
+- (void)dealloc;
+- (id)timer;
+- (void)resume;
+- (void)timerFired;
+- (void)setRepeats:;
+- (id)dispatchQueue;
+- (void)invalidate;
+- (id)block;
+- (void)setBlock:;
+- (void)fire;
+- (BOOL)repeats;
+- (void)setDispatchQueue:;
+- (void)setTimeInterval:;
+- (void).cxx_destruct;
++ (id)scheduledTimerWithTimeInterval:block:repeats:dispatchQueue:;
+@end

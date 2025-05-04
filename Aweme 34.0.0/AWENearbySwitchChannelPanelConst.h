@@ -1,0 +1,2 @@
+@interface AWENearbySwitchChannelPanelConst : NSObject
+@end

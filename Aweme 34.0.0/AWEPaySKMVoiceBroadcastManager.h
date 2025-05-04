@@ -1,0 +1,32 @@
+@interface AWEPaySKMVoiceBroadcastManager : NSObject
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString switchKey;
+@property (nonatomic) NSNumber isAudioSwitchOn;
+@property (nonatomic) AWEPaySKMVoiceBroadcastTaskManager voiceTaskManager;
+@property (nonatomic) BOOL isAlertShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (BOOL)isAlertShowing;
+- (void)setIsAlertShowing:;
+- (void)voicePlayWithAmount:audioUrl:completion:;
+- (void)getVoiceSwitchStatusCompletion:;
+- (void)setVoiceSwitchStatus:completion:notiCert:goSettingsCert:;
+- (void)didComeback;
+- (void)setIsAudioSwitchOn:;
+- (id)isAudioSwitchOn;
+- (void)setSwitchKey:;
+- (id)switchKey;
+- (void)voicePlayWithData:;
+- (id)voiceTaskManager;
+- (void)registerVoiceBroadcastInnerPushEvent;
+- (void)voicePlayWithAmount:;
+- (void)setVoiceTaskManager:;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
++ (id)defaultManager;
+@end

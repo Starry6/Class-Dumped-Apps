@@ -1,0 +1,33 @@
+@interface AWEYapRPDetailPromotionInfo : AWEBaseApiModel
+@property (nonatomic) NSString promotionDesc;
+@property (nonatomic) NSString promotionIconURL;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString buttonURL;
+@property (nonatomic) NSString activityID;
+@property (nonatomic) NSString promotionBizCode;
+@property (nonatomic) NSString groupNo;
+@property (nonatomic) NSString promotionType;
+@property (nonatomic) NSString pageUrl;
+@property (nonatomic) BOOL isValid;
+- (id)promotionDesc;
+- (void)setPromotionDesc:;
+- (id)promotionIconURL;
+- (id)promotionBizCode;
+- (id)groupNo;
+- (void)setPromotionIconURL:;
+- (void)setPromotionBizCode:;
+- (void)setGroupNo:;
+- (id)pageUrl;
+- (BOOL)isValid;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (void)setPageUrl:;
+- (void)setButtonText:;
+- (id)activityID;
+- (void)setActivityID:;
+- (id)buttonURL;
+- (id)promotionType;
+- (void)setButtonURL:;
+- (void)setPromotionType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

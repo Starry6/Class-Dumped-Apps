@@ -1,0 +1,30 @@
+@interface AWEIMRecommendInvitationUserDetailView : UIView
+@property (nonatomic) UICollectionViewFlowLayout layout;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray userIDs;
+@property (nonatomic) NSMutableArray selectedUserIDs;
+@property (nonatomic) <AWEIMRecommendInvitationUserDetailViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (id)selectedUserIDs;
+- (void)configWithMessage:;
+- (id)invitationUserIDs;
+- (id)allRecommendUserIDs;
+- (void)configWithUserIDs:selectedUserIDs:;
+- (void)__configComponentsWithMessage:;
+- (id)__userVMWithID:secUserID:;
+- (id)collectionView;
+- (id)init;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)layout;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)userIDs;
+@end

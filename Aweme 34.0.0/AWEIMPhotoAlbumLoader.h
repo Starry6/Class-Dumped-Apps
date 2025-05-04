@@ -1,0 +1,38 @@
+@interface AWEIMPhotoAlbumLoader : NSObject
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSArray identifiers;
+@property (nonatomic) NSDictionary livePhotoIDs;
+@property (nonatomic) NSMutableDictionary loadStatusObjs;
+@property (nonatomic) q iCloudAssetCount;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) BOOL enableLowQualityEarlyReturn;
+- (BOOL)enableLowQualityEarlyReturn;
+- (void)setEnableLowQualityEarlyReturn:;
+- (void)loadAssets:livePhotoIDs:iCloudCallback:completion:;
+- (void)loadAssets:iCloudCallback:completion:;
+- (void)fetchSlowMotionResouceUsingNetworkByAsset:complete:;
+- (void)fetchHighQulityAVAssetUsingNetworkByAsset:complete:;
+- (void)loadAssets:enableLowQualityEarlyReturn:iCloudCallback:completion:;
+- (void)fetchLivePhotoResouceUsingNetworkByAsset:complete:;
+- (id)livePhotoRequestOptions;
+- (id)loadStatusObjs;
+- (void)setLivePhotoIDs:;
+- (void)setLoadStatusObjs:;
+- (id)livePhotoIDs;
+- (long long)iCloudAssetCount;
+- (void)setICloudAssetCount:;
+- (void)handleRequestResultImage:info:assetIdentifier:isVideoAsset:asset:;
+- (void)fetchOpportunisticQulityImageUsingNetworkByAsset:complete:;
+- (void)handleRequestResultURLAsset:info:asset:requestDate:;
+- (void)handleRequestWithAsset:imageData:info:assetIdentifier:;
+- (void)checkAllFinished;
+- (BOOL)allTaskFinished;
+- (void)loadAssets:enableLowQualityEarlyReturn:livePhotoIDs:iCloudCallback:completion:;
+- (void)setIdentifiers:;
+- (void)setDate:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)identifiers;
+- (void).cxx_destruct;
+- (id)date;
+@end

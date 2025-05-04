@@ -1,0 +1,30 @@
+@interface AWEInteractionNoticeErrorHandlerManager : NSObject
+@property (nonatomic) NSArray checkGroups;
+@property (nonatomic) NSMutableDictionary noticeModelMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)updateNoticeCheckGroups:;
+- (void)preprocessInteractionNoticeCountWithModel:;
+- (void)interactionNoticeCountDidUpdateWithModel:;
+- (void)didReadInteractionNoticeWithGroupID:;
+- (id)checkGroups;
+- (void)setCheckGroups:;
+- (BOOL)isDowngradeNoticeWithGroupID:;
+- (BOOL)shouldUseBackupNoticeCountWithModel:;
+- (void)useBackupNoticeCountWithModel:;
+- (BOOL)canSaveInteractionNoticeCountModel:;
+- (void)saveInteractionNoticeCountModel:;
+- (id)interactionNoticeCountModelWithGroupID:;
+- (BOOL)isABEnable;
+- (void)reportInvalidCaseWithModel:;
+- (id)noticeModelMap;
+- (void)setNoticeModelMap:;
+- (id)init;
+- (void)resetCache;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

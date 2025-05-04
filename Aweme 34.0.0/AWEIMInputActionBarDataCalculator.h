@@ -1,0 +1,30 @@
+@interface AWEIMInputActionBarDataCalculator : NSObject
++ (id)p_getValidActionBarConfigWithConversation:activitySource:;
++ (id)p_getCalculatedEntryItemsWithBarConfig:calculatorContext:;
++ (id)p_sortedEntryItemsWithCalculatedItems:;
++ (void)p_sortCalculatedItems:withSortGroups:;
++ (id)p_supportedButtonConfigsForBarConfig:;
++ (id)p_convertButtonConfig:calculatorContext:;
++ (BOOL)p_canShowButtonConfig:calculatorContext:;
++ (BOOL)p_resolveShowInfoWithConfig:forActionBarItem:inConversation:;
++ (void)reconfigActionItemAfterResolvedShowInfo:withAllowedFunctions:inConversation:;
++ (BOOL)canShowActionBarItemAfterResolvedShowInfo:withConversation:;
++ (id)actionBarEntryTypeToPlusPanelTypeFilterMap;
++ (id)voip2In1ShowTypesWithAllowedTypes:inConversation:;
++ (BOOL)isShowInfo:validForType:inConversation:;
++ (id)p_getEmoticonModelForHitInfo:;
++ (void)associateHelloEmoticonModelIfNeededWithItem:;
++ (id)p_getVmojiModelWithShowInfo:schemaUrl:;
++ (BOOL)p_isTimeValidCountDownEndWithResolvedShowInfo:;
++ (BOOL)p_isValidButtonConfig:;
++ (BOOL)p_isValidConfig:inConversation:;
++ (BOOL)p_isTimeValidForStartTime:endTime:;
++ (BOOL)p_isTimeValidForShowInfo:;
++ (BOOL)p_isResourceConfigs:validForType:inConversation:;
++ (BOOL)isVaildForActionBarCallBack:inConversaiton:;
++ (id)getFallbackServerConfigWithCurrentConversation:activitySource:;
++ (id)p_getSortedCalculatedEntryItemsWithBarConfig:calculatorContext:;
++ (BOOL)containReplacedSpecialEmojiInEntryItems:;
++ (id)getRandomValidResourceConfigWithShowInfo:forType:inConversation:;
++ (void)resetCalculateFlag;
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchCardCachalotAdapterCellController : UIViewController
+@property (nonatomic) <AWEModernFeedCellContext> context;
+@property (nonatomic) <AWESearchCachalotCardViewProtocol> card;
+@property (nonatomic) # cardClass;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didStartShowing;
+- (void)didBecomeActiveForReason:;
+- (void)didResignActiveForReason:;
+- (void)didEndShowing;
+- (void)didBeingSelected;
+- (void)setCardClass:;
+- (Class)cardClass;
+- (void)viewWillDisappear:;
+- (id)card;
+- (void)viewWillLayoutSubviews;
+- (void)prepareForReuse;
+- (void)setCard:;
+- (void)viewDidLoad;
+- (id)initWithContext:;
+- (id)transitionContext;
+- (void)viewDidDisappear:;
+- (void)setContext:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)context;
+- (void)updateWithModel:;
++ (double)modernFeedCellPreferedHeightForModel:width:;
++ (double)modernFeedCellPreferedHeightForModel:width:cardClass:;
+@end

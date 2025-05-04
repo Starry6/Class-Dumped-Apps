@@ -1,0 +1,32 @@
+@interface AWEAnchorIntentionalBehavior : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSArray handleEventAry;
+@property (nonatomic) BOOL hasStartMonitor;
+@property (nonatomic) <AWEAnchorIntentionalBehaviorDelegate> behaviorDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (id)aweme;
+- (id)initWithAweme:;
+- (void)setAweme:;
+- (void)updateAweme:;
+- (void)handleDiggNotification:;
+- (void)addObserverNotification;
+- (void)setHandleEventAry:;
+- (void)setHasStartMonitor:;
+- (void)handleFavoriteNotification:;
+- (void)handleCloseShareVCNotification:;
+- (void)handleShareAwemeNotification:;
+- (void)handleShareToUseClickedNotification:;
+- (void)handleCloseCommentNotification:;
+- (BOOL)p_shouldHandleEventWithEventType:;
+- (BOOL)isOutsideShareWithShareType:;
+- (id)handleEventAry;
+- (BOOL)hasStartMonitor;
+- (id)behaviorDelegate;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setBehaviorDelegate:;
+@end

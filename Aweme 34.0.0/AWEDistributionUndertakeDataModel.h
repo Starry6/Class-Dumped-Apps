@@ -1,0 +1,30 @@
+@interface AWEDistributionUndertakeDataModel : MTLModel
+@property (nonatomic) NSString task_id;
+@property (nonatomic) NSString task_interaction_type;
+@property (nonatomic) NSString task_token;
+@property (nonatomic) NSString source;
+@property (nonatomic) AWEDistributionFinishInfo finish;
+@property (nonatomic) AWEDistributionReportInfo reportInfo;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)reportInfo;
+- (void)setReportInfo:;
+- (id)task_id;
+- (void)setTask_id:;
+- (id)task_interaction_type;
+- (void)setTask_interaction_type:;
+- (id)task_token;
+- (void)setTask_token:;
+- (id)finish;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (id)extraData;
+- (void)setExtraData:;
+- (void)setFinish:;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

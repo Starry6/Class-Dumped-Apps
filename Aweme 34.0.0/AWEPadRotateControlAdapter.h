@@ -1,0 +1,34 @@
+@interface AWEPadRotateControlAdapter : NSObject
+@property (nonatomic) q lastOrientation;
+@property (nonatomic) BOOL enablePadSnapshotOpt;
+@property (nonatomic) UIViewController fakeLaunchViewController;
+@property (nonatomic) UIViewController tempWindowRootViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRotationEnvironment;
+- (void)setupHybirdCustomOrientationChange;
+- (BOOL)enablePadSnapshotOpt;
+- (BOOL)enablePadSnapshotOptV2;
+- (void)appDidEnterBackgroundForSnapshotOpt:;
+- (void)appDidBecomeActiveForSnapshotOpt:;
+- (void)trackOrientationChange:;
+- (BOOL)enableHybirdCustomOrientationChange;
+- (void)setFakeLaunchViewController:;
+- (id)fakeLaunchViewController;
+- (void)setTempWindowRootViewController:;
+- (id)tempWindowRootViewController;
+- (void)setEnablePadSnapshotOpt:;
+- (id)init;
+- (long long)lastOrientation;
+- (void)setLastOrientation:;
+- (void).cxx_destruct;
+- (id)weakTarget;
+- (void)orientationDidChange:;
+- (void)setupOrientation;
++ (Class)weakTargetClass;
++ (void)_aweLazyRegisterStaticLoad;
++ (id)GetAdapter;
++ (id)sharedInstance;
+@end

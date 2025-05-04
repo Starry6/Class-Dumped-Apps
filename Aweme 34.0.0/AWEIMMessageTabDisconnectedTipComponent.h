@@ -1,0 +1,31 @@
+@interface AWEIMMessageTabDisconnectedTipComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMMessageTabDisconnectedTipView tipView;
+@property (nonatomic) <AWEIMChatListHeaderInterface> headerService;
+@property (nonatomic) BOOL canShow;
+@property (nonatomic) NSTimer showTimer;
+@property (nonatomic) <AWEIMTabSkeletonInterface> tabSkeletonService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (id)headerService;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)setShowTimer:;
+- (void)setCanShow:;
+- (void)setHeaderService:;
+- (BOOL)canShowCurrentHeader;
+- (id)headerViewForChatList;
+- (void)setTabSkeletonService:;
+- (id)tabSkeletonService;
+- (void)updateShowState:;
+- (void)p_refreshTip:;
+- (void)dealloc;
+- (void)setTipView:;
+- (id)trackIdentifier;
+- (void).cxx_destruct;
+- (id)showTimer;
+- (id)tipView;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEMixVideoRelatedListDataController : AWEMixVideoListDataController
+@property (nonatomic) NSMutableArray currentRecommendCacheAwemeModel;
+@property (nonatomic) BOOL skipLocalCache;
+@property (nonatomic) NSString mixAuthorID;
+@property (nonatomic) AWEMixVideoListDataNode currentNode;
+@property (nonatomic) AWEMixVideoListDataNode currentRecommendNode;
+@property (nonatomic) @? requestFinishBlock;
+@property (nonatomic) <AWEUserProFileAdVideoDataController> adVideoDataController;
+@property (nonatomic) AWEMixVideoModel mixVideoModel;
+@property (nonatomic) NSString mixVideoID;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) BOOL hasRecommendMix;
+@property (nonatomic) BOOL hasFilteredData;
+@property (nonatomic) BOOL enabledLocalDataBase;
+- (void)setLoadmoreHasMore:;
+- (BOOL)loadmoreHasMore;
+- (void)setRefreshHasMore:;
+- (void)setLoadPreviousHasPrevious:;
+- (BOOL)refreshHasMore;
+- (BOOL)loadPreviousHasPrevious;
+- (void)setRefreshHasPrevious:;
+- (BOOL)refreshHasPrevious;
+- (void)setupRecommendDataWithDataType:;
+- (void)fetchWithCount:dataType:pullType:currentAwemeModel:completion:;
+- (void)fetchFinishSetDataSource:filteredArray:indexSet:;
+- (void)fetchWithCount:dataType:pullDown:cursor:currentAwemeModel:completion:block:;
+- (void)setCurrentRecommendCacheAwemeModel:;
+- (id)currentRecommendCacheAwemeModel;
+- (void)resetCacheAwemeModel;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+@end

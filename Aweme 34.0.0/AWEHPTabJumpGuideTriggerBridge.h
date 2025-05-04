@@ -1,0 +1,34 @@
+@interface AWEHPTabJumpGuideTriggerBridge : NSObject
+@property (nonatomic) AWEHPTabJumpGuideVideoHandler videoHandler;
+@property (nonatomic) @? delayTriggerBlock;
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (void)addNotification;
+- (void)onAwemeDiggNotification:;
+- (void)onAddCommentNotification:;
+- (void)onVideoFavoriteNotification:;
+- (void)onPlayInteractionPureModeChangeNotification:;
+- (void)playTimeDidUpdate:totalTime:model:;
+- (void)landingTabWithModel:;
+- (id)delayTriggerBlock;
+- (void)setDelayTriggerBlock:;
+- (void)onVideoShareNotification:;
+- (void)onAnchorToMallNotification:;
+- (void)onAnchorToPOINotification:;
+- (void)onAwemeFollowNotification:;
+- (void)onAwemeBottomBarNotification:;
+- (void)onImageAlbumBackNotification:;
+- (void)setVideoHandler:;
+- (void)addViewPlayTimeObserver;
+- (void)removeViewPlayTimeObserver;
+- (void)onAwemeUpdatePlayTimeNotification:;
+- (id)videoHandler;
+- (id)initWithVideoHandler:;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

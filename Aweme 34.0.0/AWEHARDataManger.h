@@ -1,0 +1,30 @@
+@interface AWEHARDataManger : NSObject
+@property (nonatomic) NSDictionary ABConfig;
+@property (nonatomic) NSDictionary predictResult;
+@property (nonatomic) NSDictionary conversionResult;
+@property (nonatomic) BOOL engineHasSet;
+@property (nonatomic) <AWEHARServiceManager> harService;
+@property (nonatomic) BOOL isPredicting;
+- (void)startPredicting;
+- (void)stopPredicting;
+- (BOOL)isPredicting;
+- (id)harService;
+- (void)setHarService:;
+- (void)setPredictResult:;
+- (id)ABConfig;
+- (void)setABConfig:;
+- (void)setConversionResult:;
+- (void)setIsPredicting:;
+- (void)setEngineHasSet:;
+- (id)conversionResult;
+- (BOOL)engineHasSet;
+- (BOOL)isHAREnable;
+- (id)awe_HARTrackParams;
+- (void)trackHarData:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)predictResult;
+- (id)getStatus;
+- (id)getLastResult;
++ (id)sharedInstance;
+@end

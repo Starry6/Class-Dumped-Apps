@@ -1,0 +1,23 @@
+@interface AWECommentBusinessServiceContainerViewController : UIViewController
+- (void)changeServiceContainerPage:;
+- (void)serviceContainerViewDidLoad:;
+- (void)serviceContainerRegisterReusableView:;
+- (long long)serviceContainerList:numberOfRowsInSection:;
+- (id)serviceContainerList:reusableViewForRowAtIndexPath:;
+- (void)serviceContainerList:cellOfContainer:atIndexPath:;
+- (double)serviceContainerList:heightForRowAtIndexPath:;
+- (double)serviceContainerList:heightForHeaderInSection:;
+- (double)serviceContainerList:heightForFooterInSection:;
+- (id)serviceContainerList:viewForHeaderAtIndexPath:;
+- (id)serviceContainerList:viewForFooterAtIndexPath:;
+- (void)serviceContainerList:willDisplayReusableView:forRowAtIndexPath:;
+- (void)serviceContainerList:didEndDisplayingReusableView:forRowAtIndexPath:;
+- (void)serviceContainerList:willDisplayHeaderView:forRowAtIndexPath:;
+- (void)serviceContainerList:didEndDisplayingHeaderView:forRowAtIndexPath:;
+- (void)serviceContainerList:willDisplayFooterView:forRowAtIndexPath:;
+- (void)serviceContainerList:didEndDisplayingFooterView:forRowAtIndexPath:;
+- (void)serviceContainerList:didSelectRowAtIndexPath:;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+@end

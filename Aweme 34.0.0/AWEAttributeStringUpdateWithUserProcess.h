@@ -1,0 +1,38 @@
+@interface AWEAttributeStringUpdateWithUserProcess : AWEAttributeStringUpdateBaseProcess
+@property (nonatomic) NSString duetAwemeId;
+@property (nonatomic) NSNumber simplyLiveRoomId;
+@property (nonatomic) NSString simplyLiveUserId;
+@property (nonatomic) NSNumber liveRoomID;
+@property (nonatomic) NSString liveRoomUserID;
+- (id)duetAwemeId;
+- (void)setDuetAwemeId:;
+- (id)liveRoomID;
+- (id)attributeStringUpdateProcess;
+- (id)markBeforeModify:withAttributeStringMode:;
+- (id)handleDescriptionAttributeString:withAttributeName:;
+- (id)updateTextExtrasRange:originDescriptionString:newDescriptionString:;
+- (void)setLiveRoomID:;
+- (void)setLiveRoomUserID:;
+- (void)trackSimplyLivePathShow;
+- (void)setSimplyLiveRoomId:;
+- (void)setSimplyLiveUserId:;
+- (void)duetChainButtonClicked;
+- (id)addTagAttachmentToAttributedString:range:maximumContainerSize:tagViewConfigBlock:;
+- (void)handleVideoReplyUser:withRange:withoutTag:;
+- (void)handleVideoCommentUser:withRange:withoutTag:;
+- (void)handleSimplyLivePathUser:withRange:withoutTag:;
+- (void)handleLiveRoomATUser:withRange:withoutTag:;
+- (BOOL)isSafeSubstringRange:forStringLength:;
+- (void)handleUser:withRange:withValue:;
+- (void)videoCommentClicked;
+- (id)tagAttachmentWithAttributedStringForVideoReply:range:isReplyComment:tagViewConfigblock:;
+- (id)commentStickerReplyUser;
+- (void)videoReplyClicked;
+- (id)simplyLiveUserId;
+- (id)simplyLiveRoomId;
+- (void)addLivePathTagAttachmentToAttributedString:range:maximumContainerSize:;
+- (id)livePathTagAttachmentWithAttributedString:range:maximumContainerSize:;
+- (id)liveRoomUserID;
+- (id)tagAttachmentWithAttributedString:range:maximumContainerSize:tagViewConfigblock:;
+- (void).cxx_destruct;
+@end

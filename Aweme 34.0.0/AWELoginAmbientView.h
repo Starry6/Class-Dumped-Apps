@@ -1,0 +1,32 @@
+@interface AWELoginAmbientView : UIView
+@property (nonatomic) BOOL count;
+@property (nonatomic) UIImageView headerView;
+@property (nonatomic) UIImageView backgroundView;
+@property (nonatomic) <AWELoginAmbientViewDelegate> delegate;
+@property (nonatomic) AWELoginAmbientViewModel model;
+@property (nonatomic) NSDictionary monitorInfo;
+@property (nonatomic) BOOL showHeaderView;
+@property (nonatomic) BOOL headerViewHasImage;
+- (void)p_setupUI;
+- (id)monitorInfo;
+- (BOOL)showHeaderView;
+- (void)setShowHeaderView:;
+- (void)setMonitorInfo:;
+- (id)p_imagePathWithgeckoChannel:imageName:;
+- (BOOL)headerViewHasImage;
+- (void)p_monitorLoadImage:duration:imageFrom:imagePath:imageURL:imageType:error:;
+- (void)p_updateImageView:imagePath:imageURL:completion:;
+- (BOOL)backgroundViewHasImage;
+- (void)setModel:;
+- (id)delegate;
+- (void)setCount:;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (BOOL)count;
+- (id)headerView;
+- (id)backgroundView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+@end

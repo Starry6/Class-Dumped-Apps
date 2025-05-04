@@ -1,0 +1,38 @@
+@interface AWECloudCommandNetDiagnoseConnect : NSObject
+@property (nonatomic) AWECloudCommandNetDiagnoseSimplePing pinger;
+@property (nonatomic) q currentLoop;
+@property (nonatomic) q maxLoop;
+@property (nonatomic) NSString address;
+@property (nonatomic) double startTS;
+@property (nonatomic) <AWECloudCommandNetDiagnoseConnectDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCurrentLoop:;
+- (void)setMaxLoop:;
+- (void)setPinger:;
+- (long long)maxLoop;
+- (void)_timeourtFired;
+- (long long)currentLoop;
+- (void)setStartTS:;
+- (void)_pingCallbackWithLog:;
+- (void)_sendPing;
+- (double)startTS;
+- (void)startPingWithHost:maxLoop:;
+- (id)delegate;
+- (void)simplePing:didReceiveUnexpectedPacket:;
+- (void)simplePing:didFailToSendPacket:sequenceNumber:error:;
+- (void)simplePing:didFailWithError:;
+- (void)simplePing:didReceivePingResponsePacket:sequenceNumber:;
+- (void)setAddress:;
+- (void)simplePing:didSendPacket:sequenceNumber:;
+- (void).cxx_destruct;
+- (id)address;
+- (void)setDelegate:;
+- (void)simplePing:didStartWithAddress:;
+- (void)stop;
+- (id)pinger;
++ (id)_displayAddressForAddress:;
++ (id)_failLogForError:;
+@end

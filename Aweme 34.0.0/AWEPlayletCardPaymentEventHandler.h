@@ -1,0 +1,34 @@
+@interface AWEPlayletCardPaymentEventHandler : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) AWEPlayletInfoModel playletModel;
+@property (nonatomic) AWEMixVideoModel mixModel;
+@property (nonatomic) <AWEPaymentEventHandlerDelegate> delegate;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL receiveAllEvent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (id)mixModel;
+- (void)setMixModel:;
+- (void)handlePayEvent:;
+- (void)handleLoginEvent:;
+- (id)playletModel;
+- (void)setPlayletModel:;
+- (void)setReceiveAllEvent:;
+- (BOOL)shouldRespondsToEvent:responseModel:;
+- (void)handleEvent:responseModel:;
+- (BOOL)receiveAllEvent;
+- (void)setModel:;
+- (id)delegate;
+- (void)setIdentifier:;
+- (id)initWithIdentifier:;
+- (id)identifier;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)handlerIdentifier;
+@end

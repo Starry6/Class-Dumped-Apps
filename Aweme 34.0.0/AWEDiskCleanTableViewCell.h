@@ -1,0 +1,31 @@
+@interface AWEDiskCleanTableViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UILabel descLable;
+@property (nonatomic) DUXButton operationBtn;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) AWEDiskCleanModel itemModel;
+@property (nonatomic) @? action;
+- (id)itemModel;
+- (void)setItemModel:;
+- (id)descLable;
+- (id)operationBtn;
+- (void)updateOperationButtonInCacheType;
+- (void)updateDraftStatus;
+- (void)cleanAction:;
+- (void)setDescLable:;
+- (void)setOperationBtn:;
+- (void)update;
+- (void)setAction:;
+- (id)action;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+- (void)createUI;
++ (id)identifier;
+@end

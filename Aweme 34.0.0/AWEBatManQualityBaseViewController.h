@@ -1,0 +1,38 @@
+@interface AWEBatManQualityBaseViewController : UIViewController
+@property (nonatomic) @? completion;
+@property (nonatomic) UIButton buttonSelected;
+@property (nonatomic) BOOL switching;
+@property (nonatomic) UILabel titleLbl;
+@property (nonatomic) UIButton SDBtn;
+@property (nonatomic) UIButton HDBtn;
+@property (nonatomic) UIButton FHDBtn;
+@property (nonatomic) <AWEBatManManagerProtocol> delegate;
+- (void)configUI;
+- (void)setButtonSelected:;
+- (void)setTitleLbl:;
+- (id)titleLbl;
+- (void)onSDBtnClicked:;
+- (id)createQualityBtnWithTitle:tag:defaultIndex:action:;
+- (void)setSDBtn:;
+- (void)onHDBtnClicked:;
+- (void)setHDBtn:;
+- (void)onFHDBtnClicked:;
+- (void)setFHDBtn:;
+- (id)buttonSelected;
+- (void)onQualityChangedWithSender:index:;
+- (id)SDBtn;
+- (id)HDBtn;
+- (id)FHDBtn;
+- (void)viewWillDisappear:;
+- (id)delegate;
+- (id)completion;
+- (void)viewDidLoad;
+- (void)setCompletion:;
+- (void)dismissAnimated:completion:;
+- (void).cxx_destruct;
+- (id)initWithCompletion:;
+- (void)setDelegate:;
+- (void)presentViewController:animated:completion:;
+- (BOOL)isSwitching;
+- (void)setSwitching:;
+@end

@@ -1,0 +1,34 @@
+@interface AWETheaterSectionModel : MTLModel
+@property (nonatomic) NSString sectionTitle;
+@property (nonatomic) NSString sectionID;
+@property (nonatomic) q sectionType;
+@property (nonatomic) q renderType;
+@property (nonatomic) NSArray sectionItemList;
+@property (nonatomic) AWETheaterEntranceGuideModel theaterGuide;
+@property (nonatomic) BOOL historyHasMore;
+@property (nonatomic) NSDictionary logPassBack;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)renderType;
+- (id)sectionItemList;
+- (id)logPassBack;
+- (void)setLogPassBack:;
+- (BOOL)historyHasMore;
+- (void)setSectionItemList:;
+- (id)theaterGuide;
+- (void)setTheaterGuide:;
+- (void)setHistoryHasMore:;
+- (void)setRenderType:;
+- (long long)sectionType;
+- (void)setSectionType:;
+- (void)setSectionID:;
+- (void).cxx_destruct;
+- (id)sectionID;
+- (id)sectionTitle;
+- (void)setSectionTitle:;
++ (id)revisitGuideJSONTransformer;
++ (id)sectionItemListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

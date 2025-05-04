@@ -1,0 +1,38 @@
+@interface AWEIMMessageCellTagLabel : UIView
+@property (nonatomic) q role;
+@property (nonatomic) UILabel internalLabel;
+@property (nonatomic) Q style;
+@property (nonatomic) {CGSize=dd} contentIntrinsicContentSize;
+@property (nonatomic) q scene;
+@property (nonatomic) NSString text;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateTagText:style:;
+- (void)updateRole:;
+- (void)setContentIntrinsicContentSize:;
+- (id)contentIntrinsicContentSize;
+- (void)sizeWidthToFitLabelHeightWithFixedHeight:;
+- (void)clickActiveTag:;
+- (void)updateRole:backgroundColor:textColor:;
+- (void)setScene:;
+- (BOOL)pointInside:withEvent:;
+- (long long)scene;
+- (id)intrinsicContentSize;
+- (long long)role;
+- (id)text;
+- (void)setRole:;
+- (unsigned long long)style;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (id)initWithScene:;
+- (void)layoutSubviews;
+- (void)setStyle:;
+- (id)tapAction;
+- (void)setTapAction:;
+- (id)internalLabel;
+- (void)setInternalLabel:;
++ (double)fontSizeWithScene:;
+@end

@@ -1,0 +1,35 @@
+@interface AWELeftSideBarBasePresenter : NSObject
+@property (nonatomic) <AWELeftSideBarItemContext> context;
+@property (nonatomic) NSObject<AWEHPListKitItemControllerContext> hpListKitItemContext;
+@property (nonatomic) <AWELeftSideBarEntranceViewAbility> leftSideBarEntranceViewProxy;
+@property (nonatomic) <AWELeftSideBarItemAbility> leftSideBarProxy;
+@property (nonatomic) <AWEMessageReachLeftSideBarAbility> messageReachProxy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)currentThemeStyle;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (BOOL)needUpdateLeftSideBarContextWithModuleType:withExtraData:withAmbienceIdentification:;
+- (void)updateLeftSideBarContext:withExtraData:withAmbienceIdentification:;
+- (id)leftSideBarProxy;
+- (id)hpListKitItemContext;
+- (BOOL)canReloadWithContext:extraData:;
+- (void)reloadWithContext:extraData:;
+- (id)leftSideBarEntranceViewProxy;
+- (void)setLeftSideBarEntranceViewProxy:;
+- (void)setLeftSideBarProxy:;
+- (id)messageReachProxy;
+- (void)setMessageReachProxy:;
+- (void)setHpListKitItemContext:;
+- (BOOL)needLoadHPController;
+- (void)setUpLeftSideBarPresenterProxyModel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

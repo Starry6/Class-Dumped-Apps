@@ -1,0 +1,38 @@
+@interface AWEMVSkeletonBaseCell : UICollectionViewCell
+@property (nonatomic) UIView coverView;
+@property (nonatomic) UIView infoView;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel descLine2Label;
+@property (nonatomic) UIView authorView;
+@property (nonatomic) UILabel descLine3Label;
+@property (nonatomic) UIView authorAvatarView;
+@property (nonatomic) UILabel authorNameLabel;
+@property (nonatomic) UILabel authorRightLabel;
+@property (nonatomic) AWEAwemeModel model;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)configWithAwemeModel:;
+- (void)setupSubViews;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (id)authorView;
+- (void)setAuthorView:;
+- (id)descLine2Label;
+- (id)descLine3Label;
+- (id)authorAvatarView;
+- (id)authorRightLabel;
+- (double)authorViewLabelHeight;
+- (void)updateAuthorView:;
+- (void)setDescLine2Label:;
+- (void)setDescLine3Label:;
+- (void)setAuthorAvatarView:;
+- (void)setAuthorRightLabel:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)coverView;
+- (void)setCoverView:;
+- (id)infoView;
+- (void)setInfoView:;
+@end

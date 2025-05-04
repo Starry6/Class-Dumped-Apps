@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullpageFeedDoubleListV2ContainerConfig : AWESpeCategoryKit.FeedListContainerConfig
+@end

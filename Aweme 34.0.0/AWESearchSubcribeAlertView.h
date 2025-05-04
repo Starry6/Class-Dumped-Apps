@@ -1,0 +1,32 @@
+@interface AWESearchSubcribeAlertView : UIView
+@property (nonatomic) BOOL hasInputText;
+@property (nonatomic) AWESearchSubcribeTipsView tipsView;
+@property (nonatomic) AWESearchSubcribeInputView inputView;
+@property (nonatomic) AWESearchSubcribeAlertConfiguration configuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showInputView;
+- (id)tipsView;
+- (void)setTipsView:;
+- (void)addNotification;
+- (void)removeNotification;
+- (void)handleKeyboardWillHideNotification:;
+- (void)handleKeyboardWillShowNotification:;
+- (void)clickConfirm;
+- (void)clickCancelFromTips;
+- (void)clickSubscribe;
+- (void)clickCancelFromInput;
+- (void)dismissWithSuccess:;
+- (void)show;
+- (void)setConfiguration:;
+- (void)setInputView:;
+- (id)initWithConfiguration:;
+- (void).cxx_destruct;
+- (id)configuration;
+- (id)inputView;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (BOOL)hasInputText;
+- (void)setHasInputText:;
+@end

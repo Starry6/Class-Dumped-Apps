@@ -1,0 +1,31 @@
+@interface AWEProfileRewadLynxManager : NSObject
+@property (nonatomic) NSMutableArray subscribeList;
+@property (nonatomic) NSDictionary context;
+@property (nonatomic) @? rewardPanelShowBlock;
+@property (nonatomic) @? rewardPanelCloseBlock;
+@property (nonatomic) @? rewardPanelCountUpdateBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)subscribeList;
+- (void)__unregisterSubscriber;
+- (void)setSubscribeList:;
+- (void)__registerSubscribes;
+- (void)openSchemeWithContext:;
+- (void)setRewardPanelCloseBlock:;
+- (void)setRewardPanelCountUpdateBlock:;
+- (void)__openSchemaWithParams:;
+- (id)__configSchemeWithParams:;
+- (void)__openChargeViewWithInfo:;
+- (id)rewardPanelShowBlock;
+- (id)rewardPanelCloseBlock;
+- (id)rewardPanelCountUpdateBlock;
+- (void)setRewardPanelShowBlock:;
+- (id)init;
+- (void)dealloc;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
++ (id)sharedInstance;
+@end

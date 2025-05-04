@@ -1,0 +1,31 @@
+@interface AWEUselessIAPAlertView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) AWEUIButton closeBtn;
+@property (nonatomic) AWEUIButton confirmBtn;
+@property (nonatomic) UIView btnsTopDividedLine;
+@property (nonatomic) UIView btnsMiddleDividedLine;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (id)confirmBtn;
+- (void)showInWindow;
+- (void)setConfirmBtn:;
+- (void)loadSubviews;
+- (id)btnsTopDividedLine;
+- (id)btnsMiddleDividedLine;
+- (void)selectBtnAction:;
+- (void)confirmBtnAction;
+- (void)setBtnsTopDividedLine:;
+- (void)setBtnsMiddleDividedLine:;
+- (void)closeBtnAction;
+- (void)setDescriptionLabel:;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)dismiss;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)descriptionLabel;
+@end

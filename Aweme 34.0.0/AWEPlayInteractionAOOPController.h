@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionAOOPController : AWEPlayInteractionNewBaseController
+@property (nonatomic) AWEShowMonetizeAOOPInterceptorManager interceptorManager;
+@property (nonatomic) AWEShowMonetizeAOOPContext aoopContext;
+@property (nonatomic) <AWEPaymentEventHandlerProtocol> eventHandler;
+@property (nonatomic) BOOL playerDidStart;
+@property (nonatomic) BOOL cellDidDisplay;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onPlayer:didChangePlaybackStateWithAction:;
+- (void)didDisplay;
+- (void)handlePayEvent:;
+- (id)traceParams;
+- (void)paidStream:didFinishTrialWithReason:;
+- (id)interceptorManager;
+- (void)openBillPageWithCurrentPlaybackTime:;
+- (void)setInterceptorManager:;
+- (void)trackAutoOpenOrderPageFailWithReason:;
+- (void)setAoopContext:;
+- (id)getPaidStream;
+- (void)setCellDidDisplay:;
+- (void)setPlayerDidStart:;
+- (BOOL)shouldActiveController;
+- (BOOL)isPlayerDidStart;
+- (BOOL)isCellDidDisplay;
+- (void)openBillPageForRule:;
+- (id)aoopContext;
+- (void)openBillPageWithCompletion:;
+- (void)viewDidLoad;
+- (void)setEventHandler:;
+- (void)setData:;
+- (id)containerID;
+- (void).cxx_destruct;
+- (id)eventHandler;
+- (void)reset;
+@end

@@ -1,0 +1,38 @@
+@interface AWEHotSearchCommentSectionPlaceholderCell : UICollectionViewCell
+@property (nonatomic) UIView placeholderView;
+@property (nonatomic) UIView placeholderAvatarImage;
+@property (nonatomic) UIView placeholderNickname;
+@property (nonatomic) UIView placeholderLineOne;
+@property (nonatomic) UIView placeholderLineTwo;
+@property (nonatomic) UIView placeholderLineThree;
+@property (nonatomic) UIView placeholderVideoSource;
+@property (nonatomic) <AWECommonFeedCellModelProtocol> cellModel;
+@property (nonatomic) AWECommonFeedSectionContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCellModel:;
+- (void)configUI;
+- (void)configCellWithContext:cellModel:;
+- (id)placeholderAvatarImage;
+- (id)placeholderNickname;
+- (id)placeholderLineOne;
+- (id)placeholderLineTwo;
+- (id)placeholderLineThree;
+- (id)placeholderVideoSource;
+- (void)setPlaceholderAvatarImage:;
+- (void)setPlaceholderNickname:;
+- (void)setPlaceholderLineOne:;
+- (void)setPlaceholderLineTwo:;
+- (void)setPlaceholderLineThree:;
+- (void)setPlaceholderVideoSource:;
+- (void)setPlaceholderView:;
+- (BOOL)hasVideo;
+- (id)placeholderView;
+- (id)initWithFrame:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)cellModel;
+@end

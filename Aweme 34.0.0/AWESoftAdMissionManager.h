@@ -1,0 +1,37 @@
+@interface AWESoftAdMissionManager : HTSService
+@property (nonatomic) double enterTime;
+@property (nonatomic) double stayTime;
+@property (nonatomic) double startInactiveTime;
+@property (nonatomic) double inactiveStayTime;
+@property (nonatomic) double finalStayTime;
+@property (nonatomic) BOOL isAlive;
+@property (nonatomic) BOOL pageViewTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsAlive:;
+- (void)setStayTime:;
+- (double)stayTime;
+- (void)startPageView;
+- (void)finishPageView;
+- (BOOL)whetherBackToSoftAdMission;
+- (void)setSoftAdMissionIsAlive:;
+- (BOOL)softAdMissionIsAlive;
+- (void)setComeInTask:;
+- (BOOL)comeInTask;
+- (double)finalStayTime;
+- (void)setPageViewTime:;
+- (BOOL)pageViewTime;
+- (void)setStartInactiveTime:;
+- (double)startInactiveTime;
+- (double)inactiveStayTime;
+- (void)setInactiveStayTime:;
+- (void)setFinalStayTime:;
+- (void)didBecomeActive;
+- (BOOL)isAlive;
+- (void)willResignActive;
+- (void)resetAllData;
+- (double)enterTime;
+- (void)setEnterTime:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMExchangeAnswerContentView : AWEIMGeneralCardView
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) AWEIMRefreshImageView bubbleBGView;
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) YYLabel exchangeLabel;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) UITapGestureRecognizer tapGestureRecognizer;
+@property (nonatomic) {CGSize=dd} titleSize;
+@property (nonatomic) YYTextLayout exchangeHintLayout;
+- (void)setTitleSize:;
+- (void)p_coverDidTapped:;
+- (id)bubbleBGView;
+- (void)setBubbleBGView:;
+- (id)exchangeHintLayout;
+- (void)setExchangeHintLayout:;
+- (id)exchangeLabel;
+- (void)setExchangeLabel:;
+- (void)setTapGestureRecognizer:;
+- (id)tapGestureRecognizer;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)titleSize;
+- (id)bubbleView;
+- (void)setBubbleView:;
+- (id)tapAction;
+- (void)setTapAction:;
+@end

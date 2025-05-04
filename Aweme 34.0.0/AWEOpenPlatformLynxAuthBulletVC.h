@@ -1,0 +1,34 @@
+@interface AWEOpenPlatformLynxAuthBulletVC : UIViewController
+@property (nonatomic) NSString url;
+@property (nonatomic) UIView<BDXViewContainerProtocol> bdxView;
+@property (nonatomic) <AnnieXCardModelProtocol> cardModel;
+@property (nonatomic) UIView<AnnieXContainerBaseProtocol> anniexView;
+@property (nonatomic) <BDXContainerLifecycleProtocol> containerLifecycleDelegate;
+@property (nonatomic) NSString authID;
+@property (nonatomic) BOOL useAnniex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)containerLifecycleDelegate;
+- (id)cardModel;
+- (void)setContainerLifecycleDelegate:;
+- (id)bdxView;
+- (void)setBdxView:;
+- (void)setCardModel:;
+- (BOOL)useAnniex;
+- (void)setAnniexView:;
+- (id)anniexView;
+- (void)loadURLString:isHalfPage:;
+- (void)updatePreRequestGlobalProps:;
+- (void)setUseAnniex:;
+- (void)dealloc;
+- (void)setUrl:;
+- (void)viewDidDisappear:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)url;
+- (id)authID;
+- (void)setAuthID:;
+@end

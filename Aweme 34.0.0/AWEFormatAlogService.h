@@ -1,0 +1,2 @@
+@interface AWEFormatAlogService : NSObject
+@end

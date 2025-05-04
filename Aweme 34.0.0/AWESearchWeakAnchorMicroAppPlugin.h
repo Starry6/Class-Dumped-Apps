@@ -1,0 +1,35 @@
+@interface AWESearchWeakAnchorMicroAppPlugin : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+- (id)componentContext;
+- (void)setComponentContext:;
+- (void)pluginDidLoad;
+- (void)pluginDidRemove;
+- (void)updateWithModel:forceUpdate:;
+- (void)pluginViewDidAppear:;
+- (void)pluginViewDidDisappear:;
+- (void)pluginDidEndShowing;
+- (void)pluginDidStartShowing;
+- (void)pluginViewWillAppear:;
+- (void)pluginViewWillDisappear:;
+- (void)pluginViewDidLoad;
+- (void)updateWithChunkModel:;
+- (id)provideProtocol;
+- (id)broadcastProtocolList;
+- (id)receiveProtocolList;
+- (void)pluginPrepareForReuse;
+- (void)setModelOnly:;
+- (void)anchorComponentDidClickWithAnchorType:model:cardModel:;
+- (void)anchorComponentWillShowWithAnchorType:model:cardModel:;
+- (id)searchResultParamsForAweme:searchCard:;
+- (void)didBecomeActive;
+- (void)didResignActive;
+- (void).cxx_destruct;
+- (id)containerContext;
+- (void)setContainerContext:;
+- (void)updateWithModel:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEVideoProductImageTitleView : UIView
+@property (nonatomic) UIImageView titleImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) double rightOffset;
+@property (nonatomic) double margin;
+@property (nonatomic) {CGSize=dd} imageSize;
+- (void)setRightOffset:;
+- (double)rightOffset;
+- (void)setImageTitleMargin:;
+- (BOOL)enableAdaptLargeFontMode;
+- (Class)largeFontAdaptUtilClass;
+- (void)removeTitleImageView;
+- (void)setTitleRightOffset:;
+- (void)setImageWithURLArray:;
+- (id)largeFontAdaptImageSize:;
+- (id)accessibilityLabel;
+- (double)margin;
+- (id)init;
+- (id)titleImageView;
+- (void)setImage:;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (void)setTitleText:;
+- (void)setMargin:;
+- (void)setTitleLabel:;
+- (BOOL)accessibilityElementsHidden;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)titleLabel;
+- (id)imageSize;
+- (BOOL)isAccessibilityElement;
+- (id)titleLabelFont;
+- (void)setupSubviews;
+- (void)setTitleImageView:;
+@end

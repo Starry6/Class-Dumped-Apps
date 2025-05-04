@@ -1,0 +1,31 @@
+@interface AWEPLVCardDescTitleElement : AWEPLVCardDescBaseElement
+@property (nonatomic) NSString title;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) q titleLines;
+@property (nonatomic) NSString info;
+@property (nonatomic) UIFont infoFont;
+@property (nonatomic) UIColor infoColor;
+- (void)applyView:;
+- (void)setInfoFont:;
+- (void)setInfoColor:;
+- (void)setTitleLines:;
+- (long long)titleLines;
+- (id)infoColor;
+- (void)configTitle:font:size:textColor:alpha:;
+- (void)configInfo:font:size:textColor:alpha:;
+- (void)configTitleNumOfLine:;
+- (Class)viewClass;
+- (id)titleColor;
+- (void)setInfo:;
+- (id)init;
+- (id)info;
+- (void)setTitleColor:;
+- (void)setTitleFont:;
+- (id)titleFont;
+- (void).cxx_destruct;
+- (id)title;
+- (long long)elementType;
+- (void)setTitle:;
+- (id)infoFont;
+@end

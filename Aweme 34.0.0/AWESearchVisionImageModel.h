@@ -1,0 +1,37 @@
+@interface AWESearchVisionImageModel : AWEBaseApiModel
+@property (nonatomic) NSString imageId;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) NSString thumbUrl;
+@property (nonatomic) NSString title;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString sourceUrl;
+@property (nonatomic) NSString sourceSchema;
+@property (nonatomic) NSDictionary extroInfo;
+@property (nonatomic) NSDictionary imageDetailParams;
+- (id)extroInfo;
+- (void)setExtroInfo:;
+- (id)thumbUrl;
+- (void)setThumbUrl:;
+- (id)sourceSchema;
+- (void)setSourceSchema:;
+- (id)imageDetailParams;
+- (void)setImageDetailParams:;
+- (void)setHeight:;
+- (void)setWidth:;
+- (void)setImageId:;
+- (long long)width;
+- (void).cxx_destruct;
+- (id)source;
+- (id)title;
+- (void)setSource:;
+- (long long)height;
+- (id)imageId;
+- (void)setTitle:;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (void)setSourceUrl:;
+- (id)sourceUrl;
++ (id)JSONKeyPathsByPropertyKey;
+@end

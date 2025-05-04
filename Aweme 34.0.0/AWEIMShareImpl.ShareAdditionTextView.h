@@ -1,0 +1,32 @@
+@interface AWEIMShareImpl.ShareAdditionTextView : DUXVisualEffectView
+@property (nonatomic) NSString currentText;
+@property (nonatomic) NSArray ignoreDismissArea;
+@property (nonatomic) <AWEIMShareAdditionTextViewUIDelegate> uiDelegate;
+@property (nonatomic) Q currentInputMode;
+@property (nonatomic) AWEIMShareAdditionTextViewTrackInfo trackInfo;
+@property (nonatomic) NSArray conflictGestures;
+- (void)didClickCheckBox:;
+- (id)ignoreDismissArea;
+- (void)updateButtons:;
+- (void)updatePreviewImageWithHandler:;
+- (void)updateWithConfig:;
+- (void)addDelegate:;
+- (void)endEditing;
+- (void)setCurrentText:;
+- (id)currentText;
+- (void)didClickedEmoticonControlButtonToStatus:;
+- (id)textDraggableView:itemsForDrag:;
+- (BOOL)textView:shouldInteractWithTextAttachment:inRange:interaction:;
+- (void)textViewDidChange:;
+- (id)conflictGestures;
+- (void)removeFromSuperview;
+- (id)initWithEffect:;
+- (void)setUiDelegate:;
+- (unsigned long long)currentInputMode;
+- (id)uiDelegate;
+- (void)setCurrentInputMode:;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)trackInfo;
+@end

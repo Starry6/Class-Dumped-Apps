@@ -1,0 +1,30 @@
+@interface AWEMusicPlaylistHeaderView : UIView
+@property (nonatomic) UIButton btn;
+@property (nonatomic) UILabel titleLB;
+@property (nonatomic) UIStackView horizontaLine;
+@property (nonatomic) UIStackView tagStackView;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) <AWEMusicPlaylistHeaderViewDelegate> delegate;
+@property (nonatomic) BOOL needShowDescLabel;
+@property (nonatomic) NSString descInfo;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (id)btn;
+- (id)descInfo;
+- (id)tagStackView;
+- (void)setTagStackView:;
+- (void)setBtn:;
+- (void)setDescInfo:;
+- (id)titleLB;
+- (id)horizontaLine;
+- (void)setNeedShowDescLabel:;
+- (void)btnClicked:;
+- (BOOL)needShowDescLabel;
+- (void)setTitleLB:;
+- (void)setHorizontaLine:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupViews;
+@end

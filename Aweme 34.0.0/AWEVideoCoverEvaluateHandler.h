@@ -1,0 +1,36 @@
+@interface AWEVideoCoverEvaluateHandler : NSObject
+@property (nonatomic) AWEVideoCoverImageUploadAdaptor originImageUpload;
+@property (nonatomic) AWEVideoCoverImageUploadAdaptor evaluateImageUpload;
+@property (nonatomic) AWEVideoCoverEvaluateViewController evaluateVC;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEVideoPublishViewModel publishModel;
+@property (nonatomic) AWEVideoCoverEvaluateModel evaluateModel;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)publishModel;
+- (void)setPublishModel:;
+- (id)evaluateModel;
+- (void)requestUpdateCover:image:completion:;
+- (void)showCoverReevaluatePanel:videoPublishViewModel:evaluateImage:saveCoverAction:;
+- (void)requestPanelAppeared:;
+- (void)setEvaluateVC:;
+- (id)getReEvaluateModel:publishModel:image:fromEditPage:;
+- (void)setEvaluateModel:;
+- (id)evaluateVC;
+- (void)toEvaluate:originImage:evaluateImage:;
+- (void)toUpdateCover:image:;
+- (void)requestQualityCover:;
+- (void)uploadUserOriginCoverImageToQualify:originImage:;
+- (void)uploadUserEvaluateCoverImageToQualify:evaluateImage:;
+- (void)setOriginImageUpload:;
+- (id)originImageUpload;
+- (void)handleCoverQualityFail:;
+- (void)setEvaluateImageUpload:;
+- (id)evaluateImageUpload;
+- (void)requestQualityCover:completion:;
+- (void)uploadUserEvaluateCoverImageToApply:image:completion:;
+- (void)afterPanelShow:;
+- (id)startEditCoverWithConfig:isRecommend:extra:;
+- (void).cxx_destruct;
++ (void)requestEvaluateCover:completion:;
+@end

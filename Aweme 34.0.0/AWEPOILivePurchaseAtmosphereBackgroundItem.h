@@ -1,0 +1,33 @@
+@interface AWEPOILivePurchaseAtmosphereBackgroundItem : NSObject
+@property (nonatomic) NSArray locations;
+@property (nonatomic) NSArray colors;
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) {CGPoint=dd} endPoint;
+@property (nonatomic) NSArray borderLocations;
+@property (nonatomic) NSArray borderColors;
+@property (nonatomic) {CGPoint=dd} borderStartPoint;
+@property (nonatomic) {CGPoint=dd} borderEndPoint;
+@property (nonatomic) NSString imageUrl;
+- (id)borderStartPoint;
+- (id)borderEndPoint;
+- (id)borderLocations;
+- (id)borderColors;
+- (void)setBorderLocations:;
+- (void)setBorderColors:;
+- (void)setBorderStartPoint:;
+- (void)setBorderEndPoint:;
+- (id)endPoint;
+- (void)setLocations:;
+- (void)setStartPoint:;
+- (void)setColors:;
+- (void)setEndPoint:;
+- (id)colors;
+- (id)locations;
+- (id)startPoint;
+- (void).cxx_destruct;
+- (id)imageUrl;
+- (void)setImageUrl:;
++ (id)convertItemWithDict:;
++ (id)convertArrayObjToNum:;
++ (id)convertPointWithArray:;
+@end

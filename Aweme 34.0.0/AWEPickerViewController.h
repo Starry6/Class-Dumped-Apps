@@ -1,0 +1,37 @@
+@interface AWEPickerViewController : UIViewController
+@property (nonatomic) NSString confirmTitle;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) UIPickerView pickerView;
+@property (nonatomic) UIView topView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) <AWEPickerViewControllerDataProvider> dataProvider;
+@property (nonatomic) @? confirmButtonTapBlock;
+@property (nonatomic) @? maskViewTapBlock;
+- (id)confirmTitle;
+- (void)setConfirmTitle:;
+- (void)maskTapped:;
+- (id)confirmButtonTapBlock;
+- (id)maskViewTapBlock;
+- (id)initWithDataProvider:confirmTitle:;
+- (long long)selectedRowOfColumn:;
+- (void)setConfirmButtonTapBlock:;
+- (void)setMaskViewTapBlock:;
+- (id)maskView;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void)setDataProvider:;
+- (void)setContainerView:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (id)dataProvider;
+- (id)topView;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setTopView:;
+- (id)pickerView;
+- (void)setPickerView:;
+- (void)confirmButtonTapped:;
+@end

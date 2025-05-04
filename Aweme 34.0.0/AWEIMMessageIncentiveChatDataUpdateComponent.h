@@ -1,0 +1,30 @@
+@interface AWEIMMessageIncentiveChatDataUpdateComponent : AWEIMComponentBase
+@property (nonatomic) Q relationStatus;
+@property (nonatomic) BOOL needListenExtUpdateAndRefreshAcb;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onConversationDidUpdateWithConversation:;
+- (void)componentDidMounted:;
+- (void)didReceiveNewMessage:reason:;
+- (id)conversationInfoOtherRequestParams;
+- (void)updateConversationInfoOtherData:source:;
+- (unsigned long long)relationStatus;
+- (void)setRelationStatus:;
+- (void)completeByteSyncIncentiveChatDataUpdate;
+- (void)completeIncentiveChatServiceUpdate:;
+- (void)completeInfoOtherIncentiveChatDataUpdate;
+- (void)completeCommandMessageIncentiveChatDataUpdate;
+- (void)incentiveChatService:relationUpdateWithRelationID:conversationID:;
+- (void)incentiveChatService:relationProgressUpdate:cacheProgress:source:;
+- (void)incentiveChatService:relationActivationUpdate:source:;
+- (void)incentiveChatServiceActivityExit:;
+- (void)privateIncentiveTicketInfoUpdate;
+- (BOOL)p_needListenExtUpdateAndRefreshAcb;
+- (void)setNeedListenExtUpdateAndRefreshAcb:;
+- (void)p_changeToNewRelationStatus:;
+- (BOOL)needListenExtUpdateAndRefreshAcb;
+- (void)dealloc;
++ (BOOL)canCreateComponentWithContext:;
+@end

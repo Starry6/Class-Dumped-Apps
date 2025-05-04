@@ -1,0 +1,30 @@
+@interface AWEAddWidgetGuideModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString guideImagePath;
+@property (nonatomic) NSArray guideImageURLs;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) UIColor buttonTitleColor;
+@property (nonatomic) UIColor buttonBackgroundColor;
+@property (nonatomic) NSString contentImagePath;
+@property (nonatomic) NSArray contentImageURLs;
+- (id)guideImagePath;
+- (void)setGuideImagePath:;
+- (id)contentImagePath;
+- (void)setContentImagePath:;
+- (id)contentImageURLs;
+- (void)setContentImageURLs:;
+- (void)setGuideImageURLs:;
+- (id)guideImageURLs;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)buttonTitle;
+- (void)setButtonTitle:;
+- (id)buttonBackgroundColor;
+- (id)buttonTitleColor;
+- (void)setButtonBackgroundColor:;
+- (void)setButtonTitleColor:;
+@end

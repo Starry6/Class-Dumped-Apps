@@ -1,0 +1,32 @@
+@interface AWEMVCardAvatarNickNameResource : NSObject
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView userAvatarImageView;
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)userNameLabel;
+- (void)setUserNameLabel:;
+- (void)themeDidChange:;
+- (id)userAvatarImageView;
+- (void)loadUserAvatarImage;
+- (double)userAvatarSize;
+- (id)userNameLabelColor;
+- (void)setUserAvatarImageView:;
+- (id)initWithContext:model:;
+- (void)refreshWithAwemeModel:context:containerElement:;
+- (id)cardLeftBottomUIConfigModel;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)context;
+- (void)setupViews;
+- (void)updateUI;
+@end

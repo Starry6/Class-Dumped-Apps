@@ -1,0 +1,31 @@
+@interface AWELiveShowTagViewModel : NSObject
+@property (nonatomic) AWELiveVSEpisode episode;
+@property (nonatomic) AWELiveRoomModel room;
+@property (nonatomic) AWELiveShowTagView tagView;
+@property (nonatomic) q singleType;
+@property (nonatomic) q enlargeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnlargeType:;
+- (long long)enlargeType;
+- (void)removeAllSubViews;
+- (id)createWithRoom:sizeOfView:;
+- (id)createWithEpisode:sizeOfView:;
+- (id)createWithSingleType:sizeOfView:;
+- (void)updatePaidTagType:;
+- (double)currentPaidTagWidth;
+- (void)updateCountDownLabel:;
+- (void)chooseType;
+- (long long)singleType;
+- (void)singleTypeTransform;
+- (void)setSingleType:;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)episode;
+- (void)setEpisode:;
+- (id)tagView;
+- (void)setTagView:;
+@end

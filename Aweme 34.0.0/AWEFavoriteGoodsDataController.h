@@ -1,0 +1,33 @@
+@interface AWEFavoriteGoodsDataController : AWEListDataController
+@property (nonatomic) q cursor;
+@property (nonatomic) AWEFavoriteGoodsItem justRemovedModel;
+@property (nonatomic) NSNumber score;
+@property (nonatomic) NSNumber totalCount;
+@property (nonatomic) NSString guestUserID;
+@property (nonatomic) AWEFavoriteGoodsGuideTopBarModel topBar;
+@property (nonatomic) AWEFavoriteGoodsGuideBottomNotiModel bottomNoti;
+- (void)loadMoreWithCompletion:;
+- (void)initFetchWithCompletion:;
+- (void)requestRefresh:completion:;
+- (id)guestUserID;
+- (BOOL)showTopBar:;
+- (BOOL)showBottomNoti:;
+- (id)bottomNoti;
+- (void)setBottomNoti:;
+- (void)setJustRemovedModel:;
+- (id)justRemovedModel;
+- (BOOL)removeWithItemID:;
+- (void)removeWithGoodsItem:completion:;
+- (BOOL)addGoodsWithPromotionID:;
+- (void)setGuestUserID:;
+- (long long)cursor;
+- (void)setScore:;
+- (id)totalCount;
+- (void)setCursor:;
+- (id)score;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)topBar;
+- (void)setTopBar:;
+- (void)setTotalCount:;
+@end

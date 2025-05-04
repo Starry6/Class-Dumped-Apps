@@ -1,0 +1,33 @@
+@interface AWEBatManGroupListPortaitViewController : UIViewController
+@property (nonatomic) NSArray groupList;
+@property (nonatomic) AWEPanelTransitionController transitionController;
+@property (nonatomic) NSString gameName;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) @? listener;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameName;
+- (void)setGameName:;
+- (void)configUI;
+- (void)addRoundedCorner;
+- (void)onBtnClickListener:;
+- (id)initWithGroupListData:andWithGameName:andWithClickListener:;
+- (void)setListener:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)listener;
+- (id)groupList;
+- (id)tableView;
+- (void)setGroupList:;
+- (void).cxx_destruct;
+- (id)transitionController;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setTransitionController:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEFeedMallPOIInfoModel : MTLModel
+@property (nonatomic) AWEPOIContentItemModel poiInfo;
+@property (nonatomic) NSString hotDesc;
+@property (nonatomic) Q hotType;
+@property (nonatomic) AWEURLModel hotIconUrl;
+@property (nonatomic) NSString cornerDesc;
+@property (nonatomic) NSString spuDiscount;
+@property (nonatomic) AWEPOIServiceSpuEntryModel detailEntry;
+@property (nonatomic) NSDictionary hotTags;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)poiInfo;
+- (void)setPoiInfo:;
+- (id)hotDesc;
+- (void)setHotDesc:;
+- (unsigned long long)hotType;
+- (void)setHotType:;
+- (id)hotIconUrl;
+- (void)setHotIconUrl:;
+- (id)cornerDesc;
+- (void)setCornerDesc:;
+- (id)spuDiscount;
+- (void)setSpuDiscount:;
+- (id)detailEntry;
+- (void)setDetailEntry:;
+- (id)hotTags;
+- (void)setHotTags:;
+- (void).cxx_destruct;
++ (BOOL)automaticallyDefaultMapping;
+@end

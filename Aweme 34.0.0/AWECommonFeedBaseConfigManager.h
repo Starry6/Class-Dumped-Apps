@@ -1,0 +1,38 @@
+@interface AWECommonFeedBaseConfigManager : NSObject
+@property (nonatomic) NSMutableArray feedSectionViewModelList;
+@property (nonatomic) NSMutableArray feedSectionControllerList;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) BOOL invalidateContainerPageAutoPlayControl;
+@property (nonatomic) <AWECommonFeedFullScreenDetailDelegate> fullScreenDetailDelegate;
+@property (nonatomic) <AWECommonFeedDelegate> delegate;
+@property (nonatomic) <AWECommonFeedContainerTransitionManagerProtocol> transitionManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (id)referString;
+- (void)setReferString:;
+- (id)logExtraDict;
+- (void)configSection;
+- (id)feedSectionViewModelList;
+- (id)feedSectionControllerList;
+- (id)cardModelsWithRawDataArray:dataHandler:;
+- (id)sectionViewModelClassNameList;
+- (id)sectionControllerClassNameList;
+- (id)cellModelsClassNameArrayForSectionViewModel:cardModel:;
+- (id)cellClassesNameArrayForSectionViewModel:cardModel:;
+- (BOOL)invalidateContainerPageAutoPlayControl;
+- (void)setInvalidateContainerPageAutoPlayControl:;
+- (id)fullScreenDetailDelegate;
+- (void)setFullScreenDetailDelegate:;
+- (id)transitionManager;
+- (void)setTransitionManager:;
+- (void)setFeedSectionViewModelList:;
+- (void)setFeedSectionControllerList:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

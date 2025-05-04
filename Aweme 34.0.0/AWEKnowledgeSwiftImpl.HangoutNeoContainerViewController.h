@@ -1,0 +1,30 @@
+@interface AWEKnowledgeSwiftImpl.HangoutNeoContainerViewController : UIViewController
+@property (nonatomic) NSString referString;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)reloadData;
+- (void)didEnterWithParams:;
+- (void)didLandingWithParams:;
+- (void)didLeaveWithParams:;
+- (void)holdChannelController:;
+- (id)navBarSearchIconView;
+- (BOOL)canLandingWithParams:;
+- (void)pulldownRefreshGestureRecognizerBegin:;
+- (void)pulldownRefreshGestureRecognizerEnd:;
+- (void)preparePlaceHolder;
+- (BOOL)canRefresh;
+- (id)referString;
+- (void)pauseWithAnimation;
+- (BOOL)currentTabIsTop;
+- (void)animatedRefreshWithCompletion:;
+- (void)setScrollEnabled:;
+- (void)play;
+- (void)reload;
+- (void)stop;
+- (void)pause;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (id)initWithNibName:bundle:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMConsecutiveChatDaysManager : NSObject
+@property (nonatomic) NSMutableArray currentRemindSingleCon;
+@property (nonatomic) NSMutableArray currentRemindGroupCon;
+@property (nonatomic) NSMutableArray hasDisplayRemindCon;
+@property (nonatomic) NSMutableArray hasRecordDisplayRemindCon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)iesim_didReceiveSendMessageResponse:;
+- (void)iesim_didReceiveAsyncSendMessageResponse:;
+- (void)handleApplicationWillResignActiveNotification:;
+- (id)currentRemindGroupCon;
+- (id)currentRemindSingleCon;
+- (id)hasDisplayRemindCon;
+- (void)tabControllerDidChangeSelectedIndex:;
+- (void)handleIMBaseViewControllerWillDisAppear;
+- (void)handleEnterMessageTabEvent;
+- (void)setHasDisplayRemindCon:;
+- (void)setHasRecordDisplayRemindCon:;
+- (void)recordRemindConDisplayTime;
+- (id)hasRecordDisplayRemindCon;
+- (void)clearLastShowData;
+- (void)setCurrentRemindSingleCon:;
+- (void)setCurrentRemindGroupCon:;
+- (id)sender;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

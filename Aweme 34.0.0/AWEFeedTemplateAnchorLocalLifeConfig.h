@@ -1,0 +1,32 @@
+@interface AWEFeedTemplateAnchorLocalLifeConfig : AWEFeedTemplateAnchorBaseConfig
+@property (nonatomic) <AWEFeedVideoLocalLifeAnchorV2ManagerProtocol> anchorManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)anchorViewWillShowOnSuperview;
+- (void)handlerTemplateAnchorViewClicked;
+- (id)trackerParamsForTemplateAnchorClick;
+- (id)trackerParamsForTemplateAnchorShow;
+- (BOOL)shouldBusinessInvoke;
+- (void)willShowDoubleLineStyleWithType:;
+- (void)anchorConfigReset;
+- (id)trackerCommonParamsForTemplateAnchor;
+- (void)updateWithAwemeModel:needPerformOnDisplay:;
+- (void)anchorViewReset;
+- (void)didShowDoubleLineStyleAnchor;
+- (id)anchorManager;
+- (void)setAnchorManager:;
+- (id)p_getCurrentAnchorDataBuilderWithAweme:;
+- (BOOL)shouldShowPOIAnchor;
+- (void)configSubDescription:;
+- (id)localLifeAnchorView;
+- (void)configSecondLineText:;
+- (BOOL)showSecondLine;
+- (BOOL)secondLineDidShow;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)addObservers;
+- (id)extraInfo;
++ (BOOL)shouldShowAnchor:;
+@end

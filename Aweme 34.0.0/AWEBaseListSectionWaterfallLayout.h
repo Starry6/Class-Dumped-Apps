@@ -1,0 +1,33 @@
+@interface AWEBaseListSectionWaterfallLayout : AWEBaseListBaseWaterfallLayout
+@property (nonatomic) double contentHeight;
+@property (nonatomic) NSMutableArray columnHeights;
+@property (nonatomic) NSMutableArray sectionItemAttributes;
+@property (nonatomic) q sectionColumnCount;
+@property (nonatomic) double verticalSpacing;
+@property (nonatomic) double horizontalSpacing;
+@property (nonatomic) {UIEdgeInsets=dddd} totalSectionsInset;
+- (void)awelistkit_updateInitialLayoutAttributes:forAppearingCellAtIndexPath:isInserted:;
+- (void)awelistkit_updateFinalLayoutAttributes:forAppearingCellAtIndexPath:isDeleted:;
+- (void)setSectionColumnCount:;
+- (void)setTotalSectionsInset:;
+- (id)totalSectionsInset;
+- (id)sectionItemAttributes;
+- (void)setSectionItemAttributes:;
+- (long long)sectionColumnCount;
+- (unsigned long long)longestColumnIndex;
+- (unsigned long long)shortestColumnIndex;
+- (id)columnHeights;
+- (void)setColumnHeights:;
+- (void)prepareLayout;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)init;
+- (id)collectionViewContentSize;
+- (double)contentHeight;
+- (void).cxx_destruct;
+- (void)setContentHeight:;
+- (id)targetContentOffsetForProposedContentOffset:;
+- (double)verticalSpacing;
+- (double)horizontalSpacing;
+- (void)setHorizontalSpacing:;
+- (void)setVerticalSpacing:;
+@end

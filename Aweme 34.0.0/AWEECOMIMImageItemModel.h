@@ -1,0 +1,34 @@
+@interface AWEECOMIMImageItemModel : NSObject
+@property (nonatomic) NSString thumbnailImgURLString;
+@property (nonatomic) NSString originalImgURLString;
+@property (nonatomic) double imageWidth;
+@property (nonatomic) double imageHeight;
+@property (nonatomic) q state;
+@property (nonatomic) NSString sourceLocalPath;
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) q sharkState;
+@property (nonatomic) AWEECOMIMBaseMsgModel msgModel;
+- (long long)sharkState;
+- (id)sourceLocalPath;
+- (id)originalImgURLString;
+- (void)setOriginalImgURLString:;
+- (id)thumbnailImgURLString;
+- (id)msgModel;
+- (void)setThumbnailImgURLString:;
+- (void)setSourceLocalPath:;
+- (void)setSharkState:;
+- (void)setMsgModel:;
+- (id)image;
+- (void)setImage:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageSize;
+- (void)setState:;
+- (double)imageWidth;
+- (double)imageHeight;
+- (void)setImageHeight:;
+- (void)setImageWidth:;
++ (id)imageSizeWithModel:;
+@end

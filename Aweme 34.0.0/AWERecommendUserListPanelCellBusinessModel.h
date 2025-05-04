@@ -1,0 +1,37 @@
+@interface AWERecommendUserListPanelCellBusinessModel : NSObject
+@property (nonatomic) <AWEIMCustomQuickReplyControllerHandlerPortocol> imCustomQuickReplyHandler;
+@property (nonatomic) BOOL isFriendPost;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) AFDFriendsLikeListDataController dataController;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)setDataController:;
+- (BOOL)isFriends;
+- (BOOL)shouldShowRelationTag;
+- (BOOL)relationButtonIncludesDefaultLightInteractionState;
+- (BOOL)relationButtonIncludesDefaultSendMessageState;
+- (BOOL)relationButtonIncludesDefaultFollowUnfollowStates;
+- (id)extraRelationButtonStates;
+- (id)extraRelationButtonTransitions;
+- (BOOL)shouldShowMoreActionButton;
+- (id)lightInteractionExtraParams;
+- (id)lightActionSource;
+- (BOOL)isFriendPost;
+- (void)setIsFriendPost:;
+- (void)setImCustomQuickReplyHandler:;
+- (id)imCustomQuickReplyHandler;
+- (id)transitionToSendMsg;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
+- (id)dataController;
+@end

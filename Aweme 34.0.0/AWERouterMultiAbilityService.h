@@ -1,0 +1,35 @@
+@interface AWERouterMultiAbilityService : NSObject
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWERouterAbilityManager abilityManager;
+@property (nonatomic) ACCRecordViewControllerInputData inputData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)addAbilityWithMusicID:;
+- (id)addAbilityWithMusic:;
+- (id)addAbilityWithPropIDs:;
+- (id)addAbilityWithChallengeIds:;
+- (id)addAbilityWithMissionModel:;
+- (id)addAbilityWithcommercialAnchorModel:;
+- (id)addAbilityWithActivityParams:;
+- (id)addAbilityWithMaskOption:;
+- (id)addAbilityWithInfo:;
+- (id)startShoot;
+- (id)p_createAbilityWithType:object:objectId:;
+- (id)abilityManager;
+- (void)p_createInputDataIfNeed;
+- (id)p_preParameterCheckList;
+- (void)p_prepareShootingWithCompletion:;
+- (void)p_jumpShootWithInputData:withCompletion:;
+- (void)p_jumpAlbumWith:withInputData:flashModel:clickAction:;
+- (id)p_paramterConfigurationBeforeJumpShoot:;
+- (id)p_autoGenerateBasicTrackWithRouterParam:;
+- (id)p_paramConfiguration:;
+- (void)setAbilityManager:;
+- (void).cxx_destruct;
+- (id)inputData;
+- (void)setInputData:;
+@end

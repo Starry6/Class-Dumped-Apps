@@ -1,0 +1,38 @@
+@interface AWELiveEmoticonResourceImpl : NSObject
+@property (nonatomic) NSCache imageCache;
+@property (nonatomic) NSArray hostEmoticonItems;
+@property (nonatomic) NSArray quickEmoticonItems;
+@property (nonatomic) NSDictionary emoticonTitleImageMapper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interactiveEmotionResourcePathWithDisplayName:;
+- (id)customEmotionViewController;
+- (id)customAddStickerNotifyName;
+- (id)getIMInteractiveEmoticons;
+- (id)emoticonItems;
+- (id)imageWithEmojiIconName:imageScale:;
+- (id)imageWithEmojiTitle:imageScale:;
+- (id)quickReplyEmoticonItems;
+- (void)startLoadFavoriteItems;
+- (id)imageWithFilePath:;
+- (void)transferToCustomPreviewWithData:;
+- (void)collectVSCommentSelectedImage:;
+- (id)loadFaveriteStickerResource;
+- (void)loadEmojiResource;
+- (void)setEmoticonTitleImageMapper:;
+- (void)setHostEmoticonItems:;
+- (void)setQuickEmoticonItems:;
+- (void)loadQuickEmojiResource;
+- (id)emoticonTitleImageMapper;
+- (id)plainTextFromAttributedText:;
+- (id)emoticonAttributedTextFromPlain:commonAttr:;
+- (id)hostEmoticonItems;
+- (id)quickEmoticonItems;
+- (id)init;
+- (void)setImageCache:;
+- (id)imageCache;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

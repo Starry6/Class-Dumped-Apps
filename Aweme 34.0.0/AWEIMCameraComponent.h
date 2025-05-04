@@ -1,0 +1,32 @@
+@interface AWEIMCameraComponent : AWEIMComponentBase
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)openChatCameraWithConfigModel:onScreen:sendCompletion:;
+- (void)handleVideoRecordFinishedWithConversation:configModel:publishModel:onScreen:sendCompletion:;
+- (void)handlePhotoRecordFinishedWithConversation:configModel:publishModel:onScreen:sendCompletion:;
+- (void)openChatCameraWithConfigModel:conversationContext:checkAuthorityOver:onScreen:sendCompletion:;
+- (void)shootSameWithAnchorIDs:musicModel:musicID:cameraPosition:dontAutoChangeToTextModeWhenPublish:trackInfo:context:componentContext:;
+- (void)shootSameWithStickerIDs:musicModel:trackInfo:componentContext:successCompletion:;
+- (void)transferToShootViewControllerWithEntrance:context:beforePresentBlock:;
+- (void)trackShootWithEntrance:extraParams:conversation:;
+- (void)transferToShootViewControllerWithEntrance:context:configIMModelBlock:beforePresentBlock:completion:;
+- (void)openPlayStickerCameraWithRepoIM:conversation:configModel:sendCompletion:;
+- (void)transferToShootViewControllerWithConfigModel:context:configIMModelBlock:;
+- (void)checkSendMessagePermissionWithConfigModel:conversation:messageType:completion:;
+- (void)openCameraWithConversation:configModel:onScreen:sendCompletion:;
+- (void)p_trackIMShootWithConversation:configModel:success:;
+- (id)generateDataControllerWithConversation:;
+- (id)p_videoExtraInfoDictionaryWithModel:conversation:dataController:configModel:;
+- (id)p_videoExtraInfoDictionaryWithModel:conversation:dataController:;
+- (id)getVideoEnterFromWithModel:;
+- (id)generateLocalAssetWithModel:;
+- (id)p_photoExtraInfoDictionaryWithModel:conversation:dataController:configModel:;
+- (id)p_photoExtraInfoDictionaryWithModel:conversation:dataController:;
+- (void)p_getIMUserWithUserId:secUserID:completion:;
+- (id)p_getChatType:;
++ (BOOL)canCreateComponentWithContext:;
++ (id)lazyComponentWakeupInterface;
+@end

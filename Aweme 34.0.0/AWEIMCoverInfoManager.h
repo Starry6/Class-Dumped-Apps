@@ -1,0 +1,34 @@
+@interface AWEIMCoverInfoManager : NSObject
+@property (nonatomic) NSMutableDictionary coverInfoMap;
+@property (nonatomic) AWEIMDouyinRedPacketDataManager manager;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} mutexLock;
+@property (nonatomic) NSMutableDictionary rawCache;
+@property (nonatomic) NSObject<OS_dispatch_queue> storageQueue;
+- (id)mutexLock;
+- (void)setMutexLock:;
+- (void)getCoverInfoWithCoverID:fromCache:completion:;
+- (void)setCoverInfoMap:;
+- (void)p_preloadCache;
+- (void)setRawCache:;
+- (void)fetchCoverListWithCompletion:;
+- (id)coverInfoMap;
+- (void)coverLog:;
+- (BOOL)p_shouldSaveCache:;
+- (void)p_saveCoverInfo:;
+- (id)p_getAllDefaultModelCache;
+- (id)rawCache;
+- (void)cacheInfo:;
+- (void)setDefaultCoverModel:;
+- (id)getDefaultCoverModel;
+- (void)clearCoverWithId:;
+- (void)recordKey:;
+- (void)p_showCount;
+- (void)setManager:;
+- (id)init;
+- (void)removeKey:;
+- (id)manager;
+- (void).cxx_destruct;
+- (id)storageQueue;
+- (void)setStorageQueue:;
++ (id)shareInstance;
+@end

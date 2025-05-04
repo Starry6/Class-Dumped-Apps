@@ -1,0 +1,33 @@
+@interface AWERVNewDescriptionInfoView : UIView
+@property (nonatomic) AWERelatedVideoDescriptionLabel descriptionLabel;
+@property (nonatomic) UIImageView expandImageView;
+@property (nonatomic) UILabel publishTimeLabel;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) q style;
+@property (nonatomic) <AWERVNewDescriptionViewDelegate> delegate;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)expandImageView;
+- (void)setExpandImageView:;
+- (void)updateDescriptionLabel;
+- (id)publishTimeLabel;
+- (id)descriptionLabelTextActionWithAttributedString:;
+- (id)getDescriptionLabelAttributedStringWithModel:;
+- (void)expandDidClick;
+- (id)currentExpandImage;
+- (void)hideTimeLabelIfNeed:;
+- (void)setPublishTimeLabel:;
+- (id)delegate;
+- (void)setDescriptionLabel:;
+- (id)initWithFrame:style:;
+- (id)initWithFrame:;
+- (long long)style;
+- (void).cxx_destruct;
+- (id)descriptionLabel;
+- (void)setDelegate:;
+- (void)setStyle:;
+- (void)setupUI;
+- (void)updateWithModel:;
++ (id)desLabelSizeWithisExpand:cardStyle:model:;
++ (id)desLabelHeightWithisExpand:cardStyle:model:rightOffset:;
+@end

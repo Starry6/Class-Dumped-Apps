@@ -1,0 +1,30 @@
+@interface AWECoverNLEEditorRevertNLERecord : AWECoverNLEEditorRevertRecord
+@property (nonatomic) NLECommit_OC currentCommit;
+@property (nonatomic) BOOL isDidChanged;
+@property (nonatomic) q recordType;
+@property (nonatomic) q stickerId;
+@property (nonatomic) ACCPicTemplateModel templateModel;
+@property (nonatomic) NSIndexPath lastIndexPath;
+@property (nonatomic) NSArray oldStickerViews;
+- (long long)stickerId;
+- (void)setStickerId:;
+- (id)nle;
+- (void)setLastIndexPath:;
+- (void)setCurrentCommit:;
+- (void)setupOldStickerViews;
+- (id)oldStickerViews;
+- (BOOL)isDidChanged;
+- (void)undoToCommit:;
+- (void)setIsDidChanged:;
+- (void)setOldStickerViews:;
+- (id)currentCommit;
+- (long long)recordType;
+- (void)redo;
+- (void)record;
+- (void).cxx_destruct;
+- (void)undo;
+- (void)setRecordType:;
+- (id)lastIndexPath;
+- (void)setTemplateModel:;
+- (id)templateModel;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMGroupActionCheckPromptInfo : AWEBaseApiModel
+@property (nonatomic) Q promptType;
+@property (nonatomic) AWEIMGroupActionCheckToastInfo toastInfo;
+@property (nonatomic) AWEIMGroupActionCheckNormalPopup normalPopup;
+@property (nonatomic) AWEIMGroupActionCheckFilterPopup filterPopup;
+@property (nonatomic) Q blockReason;
+@property (nonatomic) AWEIMGroupActionCheckTextInfo textInfo;
+@property (nonatomic) AWEIMCodeGenGroupActionCheckCreateRulePopUpModel createRulePopup;
+- (id)createRulePopup;
+- (id)toastInfo;
+- (void)setToastInfo:;
+- (id)filterPopup;
+- (id)normalPopup;
+- (void)setNormalPopup:;
+- (void)setFilterPopup:;
+- (unsigned long long)blockReason;
+- (void)setBlockReason:;
+- (void)setCreateRulePopup:;
+- (void).cxx_destruct;
+- (void)setTextInfo:;
+- (id)textInfo;
+- (unsigned long long)promptType;
+- (void)setPromptType:;
++ (id)textInfoJSONTransformer;
++ (id)toastInfoJSONTransformer;
++ (id)normalPopupJSONTransformer;
++ (id)filterPopupJSONTransformer;
++ (id)promptTypeJSONTransformer;
++ (id)blockReasonJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

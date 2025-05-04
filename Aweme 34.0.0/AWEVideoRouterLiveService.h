@@ -1,0 +1,32 @@
+@interface AWEVideoRouterLiveService : NSObject
+@property (nonatomic) AWEUITransitionHost transitionHost;
+@property (nonatomic) ACCEditorSilentPublisher silentPublisher;
+@property (nonatomic) AWEStudioTask ktvSaveDraftTask;
+@property (nonatomic) AWEStudioSoloKTVAlbumServiceImpl albumServiceImpl;
+@property (nonatomic) AWEStudioSoloKTVPublishServiceImpl publishServiceImpl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)startVideoClipViewControllerWithModel:liveModel:extraDict:;
+- (void)saveDraftWithSegmentedClipModel:liveModel:missionModel:extraDict:completion:;
+- (id)startPublishLiveVideoWithModel:liveModel:extraDict:;
+- (void)downloadVideoAndSaveDraft:liveModel:progress:extraDict:completion:cancelBlockPasser:;
+- (id)soloKTVAlbumService;
+- (id)soloKTVPublishService;
+- (void)openEditorViewWithStickerConfig:image:targetTime:trackParams:completion:;
+- (id)transitionHost;
+- (void)setTransitionHost:;
+- (void)handlestartOpenLiveSchema:completion:;
+- (void)setSilentPublisher:;
+- (id)silentPublisher;
+- (void)startPublishLivePlaybackVideoWithModel:liveModel:completion:;
+- (void)startPublishLiveHighlightVideoWithModel:liveModel:extraDict:completion:;
+- (id)publishServiceImpl;
+- (void)setPublishServiceImpl:;
+- (id)albumServiceImpl;
+- (void)setAlbumServiceImpl:;
+- (id)ktvSaveDraftTask;
+- (void)setKtvSaveDraftTask:;
+- (void).cxx_destruct;
+@end

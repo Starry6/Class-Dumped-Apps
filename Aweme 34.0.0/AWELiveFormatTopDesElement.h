@@ -1,0 +1,30 @@
+@interface AWELiveFormatTopDesElement : AWELiveTopElement
+@property (nonatomic) BOOL isPortraitStream;
+@property (nonatomic) q type;
+@property (nonatomic) AWELiveVSCustomTitleLable topTitle;
+@property (nonatomic) UIImageView topImageView;
+- (BOOL)shouldActivateElementWithData:;
+- (id)topImageView;
+- (void)setTopImageView:;
+- (void)viewController_viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)preloadElement;
+- (void)setIsPortraitStream:;
+- (void)_registerFontIfNeed;
+- (BOOL)isPortraitStream;
+- (void)updateTitleToPotrait;
+- (double)p_topOffSet;
+- (void)updateTitleToLandscape;
+- (BOOL)_isFontRegisted;
+- (void)p_updatePortraitStream;
+- (void)p_updateLandscapeStream;
+- (unsigned long long)liveElementType;
+- (id)p_previewImageUpURLArray;
+- (void)viewDidLoad;
+- (long long)type;
+- (void)setType:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setTopTitle:;
+- (id)topTitle;
+@end

@@ -1,0 +1,32 @@
+@interface AWERecordBeautyFirstFrameOptContext : NSObject
+@property (nonatomic) <AWERecordBeautyDownloaderProtocol> downloader;
+@property (nonatomic) AWERecordBeautyRenderOptimize render;
+@property (nonatomic) AWEStudioRecorderFeatureBeautyConfig beautyConfig;
+@property (nonatomic) <AWERecordBeautyRenderOptimize> renderOptimize;
+- (id)beautyConfig;
+- (void)setBeautyConfig:;
+- (id)renderOptimize;
+- (void)startPreloadBeautyItem;
+- (void)preloadLogicWith:;
+- (id)findAllPreDownloadBeautyItem:;
+- (void)preloadDownloadBeautyDataIfNeed:;
+- (id)buildBeautyDownloaderConfig;
+- (id)downloader;
+- (void).cxx_destruct;
+- (id)render;
+- (void)setDownloader:;
+- (void)setRender:;
++ (BOOL)enableOpt;
++ (id)beautyConfig;
++ (void)startRecordBeautyOptTask:;
++ (long long)beautyPreloadDownload;
++ (void)startPreloadBeautyResourcesIfNeed;
++ (id)p_generateDataFilterConfig;
++ (void)createRenderOptimizeIfNeed;
++ (void)updateRenderOptimizeWith:;
++ (void)generalRenderBeautyInfoWith:;
++ (BOOL)preloadEffectOpt;
++ (void)backupRecordBeautyOptTask:;
++ (void)clearRenderInfo;
++ (id)defaultManager;
+@end

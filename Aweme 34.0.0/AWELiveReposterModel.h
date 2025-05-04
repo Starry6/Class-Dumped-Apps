@@ -1,0 +1,30 @@
+@interface AWELiveReposterModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString hashTag;
+@property (nonatomic) NSString landPageScheme;
+@property (nonatomic) NSArray backgroundImageList;
+@property (nonatomic) NSDictionary extraInfoParams;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString musicId;
+@property (nonatomic) NSString reposterIdentifier;
+@property (nonatomic) @? getReposterExtraInfo;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setMusicId:;
+- (id)musicId;
+- (void)setHashTag:;
+- (id)hashTag;
+- (id)extraInfoParams;
+- (void)setBackgroundImageList:;
+- (void)setExtraInfoParams:;
+- (id)reposterIdentifier;
+- (void)setReposterIdentifier:;
+- (id)getReposterExtraInfo;
+- (void)setGetReposterExtraInfo:;
+- (id)landPageScheme;
+- (void)setLandPageScheme:;
+- (id)backgroundImageList;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+@end

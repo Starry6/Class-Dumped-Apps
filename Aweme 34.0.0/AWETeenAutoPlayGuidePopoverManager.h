@@ -1,0 +1,33 @@
+@interface AWETeenAutoPlayGuidePopoverManager : NSObject
+@property (nonatomic) DUXPopover guidePopover;
+@property (nonatomic) BOOL guidePopoverHasShown;
+@property (nonatomic) BOOL isPopoverShowing;
+@property (nonatomic) UIView target;
+@property (nonatomic) @? onCloseAlert;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (void)showWithCloseCallback:;
+- (void)popoverDidDisappear:;
+- (void)loadGuidePopoverDataFromCache;
+- (BOOL)isPopoverShowing;
+- (void)dismissPopoverIfNeeded;
+- (id)onCloseAlert;
+- (void)setOnCloseAlert:;
+- (id)guidePopover;
+- (void)setIsPopoverShowing:;
+- (void)setGuidePopoverHasShown:;
+- (BOOL)guidePopoverHasShown;
+- (void)showTeenAutoPlayGuidePopover;
+- (void)setGuidePopover:;
+- (BOOL)p_checkGuidePopoverFreqControl;
+- (void)p_updateAutoPlayGuidePopoverInfo;
+- (void)tryToShowAutoPlayGuidePopoverWithTarget:;
+- (id)target;
+- (id)init;
+- (void)setTarget:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,36 @@
+@interface AWEVideoCoverRecommendTextViewController : UIViewController
+@property (nonatomic) NSArray models;
+@property (nonatomic) AWEVideoCoverRecommendTextView recommendView;
+@property (nonatomic) NSString observerIdentifier;
+@property (nonatomic) AWEVideoCoverRecommendTextErrorView errorView;
+@property (nonatomic) AWECoverTextTitleModel currentTitleModel;
+@property (nonatomic) AWEVideoCoverTextTabContext context;
+@property (nonatomic) <AWEVideoCoverRecommendTextViewDelegate> delegate;
+@property (nonatomic) BOOL singleLine;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupSubViews;
+- (id)recommendView;
+- (void)setRecommendView:;
+- (void)cancelSelect;
+- (void)recommendTextView:didSelectItem:;
+- (id)observerIdentifier;
+- (void)setObserverIdentifier:;
+- (void)setCurrentTitleModel:;
+- (void)observeDataChangeIfNeeded;
+- (id)currentTitleModel;
+- (id)delegate;
+- (void)viewDidLoad;
+- (void)setModels:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (id)models;
+- (void)setSingleLine:;
+- (BOOL)singleLine;
+- (id)errorView;
+- (void)setErrorView:;
+@end

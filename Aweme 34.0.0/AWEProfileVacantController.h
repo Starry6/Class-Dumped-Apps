@@ -1,0 +1,38 @@
+@interface AWEProfileVacantController : NSObject
+@property (nonatomic) DUXVacantView vacantView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) AWEProfileRichEmptyView richEmptyView;
+@property (nonatomic) AWEProfileVacantConfig currentConfig;
+@property (nonatomic) AWEBinding frameBind;
+@property (nonatomic) UIView lastSuperView;
+@property (nonatomic) <AWEProfileVacantDelegate> delegate;
+@property (nonatomic) Q state;
+- (void)reloadUI;
+- (id)vacantView;
+- (void)setVacantView:;
+- (id)frameBind;
+- (void)setFrameBind:;
+- (void)updateEmptyUI:;
+- (void)updateErrorUI:;
+- (id)currentViewWith:;
+- (void)updateBind:;
+- (void)trackShown:;
+- (id)richEmptyView;
+- (id)lastSuperView;
+- (void)setLastSuperView:;
+- (id)defaultConfigWith:;
+- (void)trackErrorClick:;
+- (void)setRichEmptyView:;
+- (id)delegate;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (unsigned long long)state;
+- (void)setCurrentConfig:;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDelegate:;
+- (void)setState:;
+- (id)currentConfig;
+- (void)updateUIWithState:;
+@end

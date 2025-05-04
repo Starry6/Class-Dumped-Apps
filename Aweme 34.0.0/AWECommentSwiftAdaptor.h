@@ -1,0 +1,22 @@
+@interface AWECommentSwiftAdaptor : NSObject
+- (id)commentGlobalInstance;
+- (id)commentGeneralItem:;
+- (void)commentUpdateDetailBottomInputViewShowing:;
+- (BOOL)commentPanelThemeIsLight;
+- (id)trackingModel;
+- (BOOL)userFollowAppTheme;
+- (void)commentLog:message:subModule:;
+- (void)commentPushViewController:viewController:animated:completion:;
+- (BOOL)commentDetailBottomInputViewIsShowing;
+- (id)obtainTrackerParamsWithEvent:trackerContext:object:;
+- (void)updatePublishInterval:;
+- (void)updatePublishError:;
+- (BOOL)isSvrError:;
+- (id)commentSuperResolutionTransformerWithImageSize:;
+- (unsigned long long)commentSliceCount;
+- (id)commentSLIManager;
+- (id)obtainCommentListShowSceneString:;
+- (void)preloadCommentDataIfNeededWithAwemeModel:schema:referString:;
+- (id)init;
+- (id)commentStorage;
+@end

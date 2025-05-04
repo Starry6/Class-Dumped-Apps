@@ -1,0 +1,36 @@
+@interface AWESearchCachalotGeneralLynxPipeline : AWESearchCachalotLynxPipeline
+@property (nonatomic) <AWESearchGeneralPipelinePreRenderProvider> preRenderProvider;
+- (id)transformBusinessDataItem:ofDataType:;
+- (void)updateComponentView:withViewModel:;
+- (id)componentViewWithViewModel:;
+- (id)componentViewSizeWithViewModel:containerWidth:;
+- (id)reuseIdentifierWithViewModel:;
+- (void)asyncComponentViewSizeWithViewModel:containerWidth:sizeBlock:;
+- (BOOL)supportAsyncComponentViewSizeMeasureWithViewModel:;
+- (void)attachComponentView:usingViewModel:;
+- (BOOL)universalReusePoolAllowViewModel:;
+- (BOOL)doubleColumnExperienceOptimize;
+- (BOOL)useTemplateBundle;
+- (void)setPreRenderProvider:;
+- (Class)getSeparateRenderConfigClass;
+- (id)resolveDynamicPatchForLeafModels:;
+- (id)templateBundleLoadListBeforeRequest;
+- (id)preRenderProvider;
+- (void)reportErrorInfo:controllerProxyError:;
+- (void)p_updateComponentView:withViewModel:createCost:;
+- (id)fetchCellControllerWithComponet:;
+- (void)p_trackSearchDataBind:createDuration:bindDuration:;
+- (double)fixContainerWidthWithViewModel:width:;
+- (double)totalInjectViewHeightForViewModel:containerWidth:;
+- (void)syncModelSizeToComponentDataModel:size:containerWidth:;
+- (void)traceCellHeightCost:viewModel:;
+- (BOOL)fixQualityStyleWidth;
+- (BOOL)enableReportLynxRenderErrorInfo;
+- (void).cxx_destruct;
++ (BOOL)shouldUseAnnieXWithViewModel:dynamicPatchModel:;
++ (id)generateCellModelWithViewModel:;
++ (id)generateGeneralSearchModelWithViewModel:stuffLog:;
++ (BOOL)isPreLayoutFirst:;
++ (BOOL)shouldUseMultiTASM:;
++ (void)mergeLogPb:viewModel:;
+@end

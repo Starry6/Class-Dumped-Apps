@@ -1,0 +1,37 @@
+@interface AWENewPublishTableCell : UITableViewCell
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descrLabel;
+@property (nonatomic) UILabel accessLabel;
+@property (nonatomic) UIImageView accessImageView;
+@property (nonatomic) UIView badgeView;
+@property (nonatomic) UIImageView loadingView;
+@property (nonatomic) BOOL disableAndAllGrey;
+- (void)setAwe_disableEdit:;
+- (void)addSubviewsForContentView;
+- (BOOL)isShowingBadge;
+- (void)endLoading;
+- (id)descrLabel;
+- (void)setDescrLabel:;
+- (id)accessImageView;
+- (void)addBadge;
+- (void)setAccessImageView:;
+- (id)accessLabel;
+- (void)setDisableAndAllGrey:;
+- (void)p_updateAccessLabelLeadingWithView:;
+- (void)removeBadge;
+- (void)setAccessLabel:;
+- (BOOL)disableAndAllGrey;
+- (id)badgeView;
+- (void)startLoading;
+- (void)setBadgeView:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (unsigned long long)accessibilityTraits;
+- (void)setIconImageView:;
+@end

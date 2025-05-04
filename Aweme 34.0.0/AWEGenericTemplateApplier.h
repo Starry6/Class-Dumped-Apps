@@ -1,0 +1,33 @@
+@interface AWEGenericTemplateApplier : NSObject
+@property (nonatomic) NPGenericTemplateService_OC presetService;
+@property (nonatomic) AWEGenericTemplatePreparation templatePreparation;
+@property (nonatomic) NSArray handlers;
+@property (nonatomic) AWEGenericTemplateApplierContext context;
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+- (id)editService;
+- (void)setEditService:;
+- (id)presetService;
+- (void)setPresetService:;
+- (void)applyGenericTemplateWithModel:config:;
+- (id)removeGenericTemplateWithID:config:;
+- (id)templatePreparation;
+- (void)handleApplyGenericTemplateWithModel:config:;
+- (void)notifyTemplateIDWillRemove:config:;
+- (void)notifyTemplateIdDidRemove:config:trackChangeInfo:;
+- (void)notifyTemplateIDRemoved:config:didUpdateVideoDataWithTrackChangeInfo:error:;
+- (void)notifyWillApplyTemplate:config:targetModel:preprocessParams:;
+- (void)notifyDidApplyTemplate:config:targetModel:trackChangeInfo:error:;
+- (void)handleDidApplyTemplateWithNLE:config:trackChangeInfo:templateModel:;
+- (void)handleDidApplyEffectWithTargetModel:config:trackChangeInfo:templateModel:;
+- (void)notifyTemplateDidFirstRender:config:;
+- (void)notifyTemplate:config:didUpdateVideoDataWithTrackChangeInfo:error:;
+- (void)notifyTemplateDidSeekToStart:config:;
+- (void)setTemplatePreparation:;
+- (id)handlers;
+- (id)initWithContext:;
+- (void)setHandlers:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setupHandlers;
+- (id)context;
+@end

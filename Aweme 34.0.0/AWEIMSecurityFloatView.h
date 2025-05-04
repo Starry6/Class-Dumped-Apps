@@ -1,0 +1,32 @@
+@interface AWEIMSecurityFloatView : UIView
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIImageView headImagView;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) AWEIMGlobalToastViewModel viewModel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) @? didDismissBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)didDismissBlock;
+- (void)setDidDismissBlock:;
+- (void)renderModel:context:;
+- (void)onCloseButtonClick;
+- (id)headImagView;
+- (void)setHeadImagView:;
+- (void)didDismissViewController:;
+- (void)__themeDidChange;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setCloseButton:;
+- (id)closeButton;
++ (id)showOnView:viewModel:dismissBlock:;
+@end

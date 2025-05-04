@@ -1,0 +1,2 @@
+@interface AWEIMPreTransAttachmentProcess : AWEIMProcess
+@end

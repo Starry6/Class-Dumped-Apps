@@ -1,0 +1,35 @@
+@interface AWEDCFeedSmartLoadMoreController : AWEDCFeedBaseController
+@property (nonatomic) AWEDCFeedSmartLoadMoreConfig loadMoreConfig;
+@property (nonatomic) NSDate draggingBeginDate;
+@property (nonatomic) double draggingBeginContentOffset;
+@property (nonatomic) double velocity;
+@property (nonatomic) NSMutableSet disableKeySet;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerScrollViewWillBeginDragging:;
+- (void)containerViewDidAppear:;
+- (void)containerViewDidDisappear:;
+- (void)containerCollectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)containerScrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)listDidReloadData;
+- (void)listDidPerformBatchUpdates;
+- (void)updateViewModelDataState:;
+- (void)disable:forKey:;
+- (void)triggerSmartLoadMoreAfterDelay:;
+- (void)setDraggingBeginDate:;
+- (void)setDraggingBeginContentOffset:;
+- (id)draggingBeginDate;
+- (double)draggingBeginContentOffset;
+- (id)disableKeySet;
+- (void)pTriggerSmartLoadMore;
+- (void)pSmartLoadMoreIfNeeded:;
+- (id)loadMoreConfig;
+- (void)setDisableKeySet:;
+- (BOOL)isDisabled;
+- (id)init;
+- (void)setVelocity:;
+- (double)velocity;
+- (void).cxx_destruct;
+@end

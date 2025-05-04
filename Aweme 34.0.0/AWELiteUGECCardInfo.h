@@ -1,0 +1,35 @@
+@interface AWELiteUGECCardInfo : MTLModel
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString buriedPoint;
+@property (nonatomic) BOOL isShow;
+@property (nonatomic) q afterMillisecond;
+@property (nonatomic) AWELiteUGECCardTextDetail cardTextDetail;
+@property (nonatomic) q anchorPlan;
+@property (nonatomic) q anchorStyle;
+@property (nonatomic) BOOL anchorColorWhite;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (BOOL)isShow;
+- (void)setIsShow:;
+- (long long)anchorStyle;
+- (void)setAnchorStyle:;
+- (id)buriedPoint;
+- (void)setBuriedPoint:;
+- (long long)afterMillisecond;
+- (void)setAfterMillisecond:;
+- (id)cardTextDetail;
+- (void)setCardTextDetail:;
+- (long long)anchorPlan;
+- (void)setAnchorPlan:;
+- (BOOL)anchorColorWhite;
+- (void)setAnchorColorWhite:;
+- (void)setProductID:;
+- (id)productID;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface AWEShareTokenLongVideoCardView : AWEShareTokenNoteBaseCardView
+@property (nonatomic) AWEShareTokenHandlerResponseModel model;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UIView firstLineContainerView;
+@property (nonatomic) UILabel filmNameLabel;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UIView secondLineContainerView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel categoryLabel;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)configUI;
+- (id)buildDetailLabelText:;
+- (id)initWithConfigModel:model:;
+- (void)updateUIWithLongVideoModel:;
+- (void)transferToLongVideoPage;
+- (id)firstLineContainerView;
+- (id)filmNameLabel;
+- (id)secondLineContainerView;
+- (void)setFirstLineContainerView:;
+- (void)setFilmNameLabel:;
+- (void)setSecondLineContainerView:;
+- (void)setModel:;
+- (id)gradientView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)categoryLabel;
+- (id)scoreLabel;
+- (void)setCategoryLabel:;
+- (void)setScoreLabel:;
+@end

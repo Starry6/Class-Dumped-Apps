@@ -1,0 +1,32 @@
+@interface AWEShareWebMetaCommandCustomShareConfig : MTLModel
+@property (nonatomic) BOOL useWebChannels;
+@property (nonatomic) NSArray itemNames;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString shareURL;
+@property (nonatomic) NSString extraParams;
+@property (nonatomic) Q schemaType;
+@property (nonatomic) NSString shareScene;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)setSchemaType:;
+- (id)shareScene;
+- (void)setShareScene:;
+- (void)setItemNames:;
+- (BOOL)useWebChannels;
+- (void)setUseWebChannels:;
+- (id)itemID;
+- (unsigned long long)schemaType;
+- (void)setItemID:;
+- (id)shareURL;
+- (void).cxx_destruct;
+- (void)setShareURL:;
+- (id)itemNames;
++ (id)integerValueTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)schemaTypeJSONTransformer;
+@end

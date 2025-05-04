@@ -1,0 +1,31 @@
+@interface AWECommentVideoPublishProgressView : UIView
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) MBCircularProgressBarView circleProgressBar;
+@property (nonatomic) NSString textStr;
+@property (nonatomic) BOOL isInPublish;
+@property (nonatomic) @? endPublishBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didBeginWithInfo:;
+- (void)task:didEndWithResult:error:;
+- (void)task:progressDidChangeWithInfo:;
+- (id)tipsLabel;
+- (void)setEndPublishBlock:;
+- (id)initWithFrame:textStr:;
+- (id)endPublishBlock;
+- (BOOL)isInPublish;
+- (void)setTipsLabel:;
+- (id)textStr;
+- (void)setTextStr:;
+- (id)circleProgressBar;
+- (void)beginPublish;
+- (void)setCircleProgressBar:;
+- (void)setIsInPublish:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)updateProgress:;
+@end

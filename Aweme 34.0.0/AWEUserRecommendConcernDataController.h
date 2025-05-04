@@ -1,0 +1,33 @@
+@interface AWEUserRecommendConcernDataController : MTLModel
+@property (nonatomic) NSString insertedAuthorID;
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) @? userListUpdateCompletion;
+@property (nonatomic) NSMutableArray userList;
+@property (nonatomic) NSMutableArray alreadyRequestedUserIDList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (id)userList;
+- (void)setUserList:;
+- (void)asyncRequestWithDisplayedUserIDs:requestCount:;
+- (void)requestWithDisplayedUserIDs:requestCount:completion:;
+- (void)setUserListUpdateCompletion:;
+- (id)userListUpdateCompletion;
+- (void)requestWithDisplayedUserIDs:requestCount:authorID:completion:;
+- (void)requestWithDisplayedUserIDs:requestCount:authorID:fromHotFeed:completion:;
+- (id)alreadyRequestedUserIDList;
+- (id)insertedAuthorID;
+- (id)validateRecommendUserList:;
+- (void)requestWithCount:authorID:completion:;
+- (id)initWithInsertAuthorID:;
+- (void)setInsertedAuthorID:;
+- (id)init;
+- (id)urlPath;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+@end

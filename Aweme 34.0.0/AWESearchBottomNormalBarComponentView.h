@@ -1,0 +1,32 @@
+@interface AWESearchBottomNormalBarComponentView : UIView
+@property (nonatomic) UIImageView preIconImage;
+@property (nonatomic) UILabel preTextLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) UIButton clickButton;
+@property (nonatomic) AWESearchBottomNormalBarComponentModel model;
+@property (nonatomic) @? tapNormalBarBlock;
+- (void)setClickButton:;
+- (id)clickButton;
+- (void)configDataWithModel:;
+- (void)clickButtonAction;
+- (void)setPreTextLabel:;
+- (void)setTapNormalBarBlock:;
+- (id)preIconImage;
+- (id)preTextLabel;
+- (id)tapNormalBarBlock;
+- (void)setPreIconImage:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)init;
+- (id)model;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (id)arrowImage;
+- (void)setArrowImage:;
+@end

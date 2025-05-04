@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeActionDispatchResult : _TtCs12_SwiftObject
+@end

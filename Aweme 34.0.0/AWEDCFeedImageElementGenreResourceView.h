@@ -1,0 +1,31 @@
+@interface AWEDCFeedImageElementGenreResourceView : UIView
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) q genreType;
+@property (nonatomic) AWEDCFeedCellImageElementGenreResourceIconView albumView;
+@property (nonatomic) AWEDCFeedCellImageElementGenreResourceIconView videoView;
+@property (nonatomic) AWEDCFeedCellImageElementGenreResourceLiveView liveView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)cellWillDisplay;
+- (void)cellDidEndDisplaying;
+- (void)configResourceWithAwemeModel:context:;
+- (void)setAlbumView:;
+- (id)classNameWithReferString;
+- (void)setGenreType:;
+- (long long)genreType;
+- (id)currentResourceView;
+- (id)init;
+- (id)videoView;
+- (void)setVideoView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)liveView;
+- (void)setLiveView:;
+- (id)albumView;
+@end

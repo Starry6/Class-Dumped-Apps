@@ -1,0 +1,30 @@
+@interface AWEHangoutListResponseModel : AWEBaseApiModel
+@property (nonatomic) NSArray modelArray;
+@property (nonatomic) NSArray dcFeedListModelArray;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEHangoutHeaderModel header;
+@property (nonatomic) NSArray awemeList;
+@property (nonatomic) NSNumber cacheValidTime;
+- (void)setModelArray:;
+- (id)modelArray;
+- (id)awemeList;
+- (void)setAwemeList:;
+- (void)setIsOuter:;
+- (id)dcFeedListModelArray;
+- (void)setDcFeedListModelArray:;
+- (void)setResponseTimestampToNow;
+- (void)setResponseTimestampToTimeInterval:;
+- (void)setCacheValidTime:;
+- (id)initWithJsonObj:;
+- (void)assignPropWithJsonObj:;
+- (id)getArrayPropWithJsonObj:cls:nameStr:;
+- (id)header;
+- (void)setHasMore:;
+- (id)cacheValidTime;
+- (BOOL)hasMore;
+- (void)setDataSourceType:;
+- (void).cxx_destruct;
+- (void)setHeader:;
++ (id)awemeListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

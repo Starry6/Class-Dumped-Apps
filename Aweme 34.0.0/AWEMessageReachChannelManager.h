@@ -1,0 +1,31 @@
+@interface AWEMessageReachChannelManager : NSObject
+@property (nonatomic) <AWEMessageReachInternalAbilityProtocol> config;
+@property (nonatomic) NSMapTable pluginControllerDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)canShow:;
+- (void)registerMessageReachPluginController:channelID:;
+- (void)updateMessageReachShowingModelWithChannelID:paramContext:componentModel:;
+- (long long)canShowMessageReachDataWithChannelID:componentModel:paramContext:;
+- (void)setPluginControllerDict:;
+- (id)pluginControllerDict;
+- (id)getMessageReachChannelWithChannelID:;
+- (BOOL)canRequestMessageReachDataWithChannel:paramContext:;
+- (void)enumerateMessageReachPluginChannelUsingBlock:;
+- (id)startRequestMessageReachDataWithChannel:paramContext:;
+- (id)getMessageReachPluginControllerWithChannelID:;
+- (BOOL)p_hasChannel:;
+- (BOOL)canRequestMessageReachDataWithChannelID:paramContext:;
+- (id)getNotNeedRequestMessageReachChannelListWithParamContext:;
+- (id)startRequestMessageReachDataWithParamContext:;
+- (id)startRequestMessageReachDataWithChannelIDList:paramContext:;
+- (void)sendDataToChannelWithChannelID:sceneModel:paramContext:;
+- (void)clearAllStatusWithChannelID:paramContext:;
+- (void)clearMessageReachAllStatusFromBusiness:businessScene:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+@end

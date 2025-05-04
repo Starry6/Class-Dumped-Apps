@@ -1,0 +1,35 @@
+@interface AWEToutiaoGoodsWarmupModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) double currentTime;
+@property (nonatomic) NSString startText;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString tag;
+@property (nonatomic) BOOL isOrdered;
+@property (nonatomic) q orderCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServerTime:;
+- (void)setIsOrdered:;
+- (double)initTimeinterval;
+- (void)setInitTimeinterval:;
+- (id)startText;
+- (void)setStartText:;
+- (long long)orderCount;
+- (void)setOrderCount:;
+- (id)tag;
+- (id)init;
+- (void)setStartTime:;
+- (double)currentTime;
+- (void)setTag:;
+- (double)serverTime;
+- (void).cxx_destruct;
+- (id)title;
+- (double)startTime;
+- (BOOL)isOrdered;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

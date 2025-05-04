@@ -1,0 +1,37 @@
+@interface AWEIMMessageTabInvalidConversationListComponent : AWEIMMessageTabCustomDataBaseListComponent
+@property (nonatomic) AWEIMCodeGenGetInvalidConvSwitchStatusResponseModel invalidModel;
+@property (nonatomic) BOOL hasTracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewWillAppear;
+- (void)hostVC_viewDidLoad;
+- (void)hostVC_viewWillDisappear;
+- (id)createDataController;
+- (id)viewControllerIdentify;
+- (BOOL)canShowHeaderInCurrentViewController;
+- (id)titleTextInEmptyPage;
+- (id)infomativeTextInEmptyPage;
+- (id)centerAttributeTextInEmptyPage;
+- (long long)currentWrapperType;
+- (BOOL)hideUnreadDot;
+- (BOOL)enableShowChildViewController;
+- (void)setupIndicatorModel:;
+- (void)tabIndicatorView:didSelectedToIndex:fromIndex:withFromModel:toModel:;
+- (void)updateSelectedIndex:model:byScrollView:;
+- (void)trackInvalidPageShow;
+- (id)generateInvalidEmptyAttributeString;
+- (id)invalidModel;
+- (void)setInvalidModel:;
+- (void)refreshInvalidStatus;
+- (long long)unreadCount;
+- (long long)entryType;
+- (BOOL)hasTracker;
+- (void)setHasTracker:;
+- (void).cxx_destruct;
+- (id)title;
+- (long long)indicatorType;
+- (id)trackName;
++ (BOOL)canCreateComponentWithContext:;
+@end

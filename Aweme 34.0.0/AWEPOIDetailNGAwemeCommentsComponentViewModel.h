@@ -1,0 +1,33 @@
+@interface AWEPOIDetailNGAwemeCommentsComponentViewModel : DitoComponentViewModel
+@property (nonatomic) AWEPOIDetailNGPageContext context;
+@property (nonatomic) AWEPOIDetailLynxCollectionViewCell cell;
+@property (nonatomic) AWEPOITextTagRateInfoModel model;
+@property (nonatomic) q cellIndex;
+@property (nonatomic) BOOL isFirst;
+@property (nonatomic) BOOL isLast;
+@property (nonatomic) q modelIndex;
+@property (nonatomic) q awemeIndex;
+@property (nonatomic) BOOL hasRemoved;
+@property (nonatomic) BOOL hasTracked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFirst:;
+- (void)setIsLast:;
+- (id)componentReuseIdentifier;
+- (id)componentSizeWithMaxWidth:;
+- (id)trackParamsForAutoTrackWithEventName:params:;
+- (void)componentViewWillShow;
+- (void)componentViewDidEndShow;
+- (void)setModel:;
+- (id)initWithNode:;
+- (id)model;
+- (void).cxx_destruct;
+- (long long)cellIndex;
+- (BOOL)isFirst;
+- (id)cell;
+- (BOOL)isLast;
+- (void)setCell:;
+- (void)setCellIndex:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedPOICardRelatedPOIInfoModel : MTLModel
+@property (nonatomic) NSString POIName;
+@property (nonatomic) _TtC27AWEKnowledgeRichContentImpl33FullPageFeedPOICardScoreInfoModel scoreInfo;
+@property (nonatomic) _TtC27AWEKnowledgeRichContentImpl34FullPageFeedPOICardThumbnailsModel iconList;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString optionName;
+@property (nonatomic) NSString location;
+@property (nonatomic) q cost;
+@property (nonatomic) NSString distance;
+- (id)POIName;
+- (void)setPOIName:;
+- (id)iconList;
+- (void)setIconList:;
+- (void)setDistance:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setUrl:;
+- (id)location;
+- (id)distance;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (long long)cost;
+- (id)url;
+- (id)initWithCoder:;
+- (id)scoreInfo;
+- (void)setScoreInfo:;
+- (id)optionName;
+- (void)setOptionName:;
+- (void)setCost:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

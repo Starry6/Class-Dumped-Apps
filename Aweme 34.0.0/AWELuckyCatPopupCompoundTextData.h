@@ -1,0 +1,30 @@
+@interface AWELuckyCatPopupCompoundTextData : MTLModel
+@property (nonatomic) AWELuckyCatPopupText text;
+@property (nonatomic) AWELuckyCatPopupTextBackground bg;
+@property (nonatomic) AWELuckyCatPopupIcon icon;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) AWELuckyCatPopupSpaceModel space;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBg:;
+- (void)setHeight:;
+- (void)setWidth:;
+- (id)icon;
+- (void)setText:;
+- (id)text;
+- (id)width;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)height;
+- (id)space;
+- (void)setSpace:;
+- (id)bg;
++ (id)iconJSONTransformer;
++ (id)spaceJSONTransformer;
++ (id)bgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)textJSONTransformer;
+@end

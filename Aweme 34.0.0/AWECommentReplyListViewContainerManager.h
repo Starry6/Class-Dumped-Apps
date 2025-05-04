@@ -1,0 +1,37 @@
+@interface AWECommentReplyListViewContainerManager : NSObject
+@property (nonatomic) AWECommentPanelParams params;
+@property (nonatomic) UIViewController<AWECommentListViewControllerProtocol> commentVC;
+@property (nonatomic) BOOL needDisplyHeader;
+@property (nonatomic) BOOL isForcedToShowInputView;
+@property (nonatomic) Q headerViewType;
+@property (nonatomic) Q commentPanelHeightScreenRatio;
+@property (nonatomic) Q containerSceneType;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSString referString;
+@property (nonatomic) @? didDismissBlock;
+- (id)referString;
+- (void)sheetDidDismiss:;
+- (void)sheet:didChangeFrame:withUserInteraction:;
+- (void)setReferString:;
+- (void)setExtraParams:;
+- (id)didDismissBlock;
+- (void)setDidDismissBlock:;
+- (id)extraParams;
+- (id)commentVC;
+- (unsigned long long)commentPanelHeightScreenRatio;
+- (void)setCommentPanelHeightScreenRatio:;
+- (BOOL)isForcedToShowInputView;
+- (void)setIsForcedToShowInputView:;
+- (void)setCommentVC:;
+- (BOOL)needDisplyHeader;
+- (void)setNeedDisplyHeader:;
+- (unsigned long long)headerViewType;
+- (void)setHeaderViewType:;
+- (unsigned long long)containerSceneType;
+- (void)setContainerSceneType:;
+- (void)showCommentTreeReplyListViewContainerWithCommentModel:generalModel:didShownBlock:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)params;
+- (void)setParams:;
+@end

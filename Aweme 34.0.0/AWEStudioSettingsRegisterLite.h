@@ -1,0 +1,2 @@
+@interface AWEStudioSettingsRegisterLite : NSObject
+@end

@@ -1,0 +1,38 @@
+@interface AWEHotMusicTopTitleView : UIView
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UIView musicNameContainer;
+@property (nonatomic) AWEHotMusicNameLoopView musicNameView;
+@property (nonatomic) UIView rankAndAuthorView;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UILabel rankLabel;
+@property (nonatomic) UILabel dotLabel;
+@property (nonatomic) UILabel hotMusicTagLabel;
+@property (nonatomic) UILabel authorLabel;
+@property (nonatomic) NSString currentMusicName;
+- (void)setAuthorLabel:;
+- (id)authorLabel;
+- (id)dotLabel;
+- (void)setDotLabel:;
+- (void)updateViewWithMusicRank:musicName:author:;
+- (id)musicNameContainer;
+- (id)rankAndAuthorView;
+- (id)hotMusicTagLabel;
+- (id)currentMusicName;
+- (void)setCurrentMusicName:;
+- (id)musicNameView;
+- (void)setMusicNameView:;
+- (double)calculateMusicNameContainerLengthWithText:;
+- (id)addStrokeWithString:;
+- (void)setMusicNameContainer:;
+- (void)setRankAndAuthorView:;
+- (void)setHotMusicTagLabel:;
+- (id)gradientView;
+- (id)icon;
+- (id)initWithFrame:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (void)setupUI;
+- (id)rankLabel;
+- (void)setRankLabel:;
+@end

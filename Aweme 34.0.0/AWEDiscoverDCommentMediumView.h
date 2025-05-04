@@ -1,0 +1,33 @@
+@interface AWEDiscoverDCommentMediumView : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UILabel extraLabel;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)mediumViewDidShow;
+- (id)extraLabel;
+- (void)setExtraLabel:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)addTapGesture;
+- (id)initWithModel:params:;
+- (void)mediumViewTapped;
+- (id)textLabel;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)params;
+- (id)imageView;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (void)setParams:;
+@end

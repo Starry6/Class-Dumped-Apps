@@ -1,0 +1,37 @@
+@interface AWEBanneraAdDataModel : MTLModel
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL isAd;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSArray trackURLList;
+@property (nonatomic) NSArray clickTrackURLList;
+@property (nonatomic) AWEBannerAdDataSponsorModel sponsorData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (BOOL)isAd;
+- (void)setIsAd:;
+- (id)clickTrackURLList;
+- (void)setCreativeID:;
+- (id)trackURLList;
+- (void)setTrackURLList:;
+- (void)setClickTrackURLList:;
+- (id)sponsorData;
+- (void)setSponsorData:;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)creativeID;
++ (id)sponsorDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

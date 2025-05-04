@@ -1,0 +1,2 @@
+@interface AWEStoryImpl.StoryFeedPostSectionViewModel : AWEStoryKit.StoryKitBaseSectionViewModel
+@end

@@ -1,0 +1,33 @@
+@interface AWEProfileMediaSelectedImageConfig : NSObject
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIImage noStickerImage;
+@property (nonatomic) UIView sourceView;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) BOOL isFirstReplace;
+@property (nonatomic) BOOL enablePublishAvatarStory;
+@property (nonatomic) NSDictionary trackInfo;
+@property (nonatomic) UIViewController dismissViewController;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) @? actionBlock;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setNoStickerImage:;
+- (void)setIsFirstReplace:;
+- (void)setEnablePublishAvatarStory:;
+- (BOOL)isFirstReplace;
+- (id)noStickerImage;
+- (BOOL)enablePublishAvatarStory;
+- (void)setDismissViewController:;
+- (id)image;
+- (void)setSourceView:;
+- (void)setCompletionBlock:;
+- (void)setImage:;
+- (id)completionBlock;
+- (id)sourceView;
+- (void).cxx_destruct;
+- (id)dismissViewController;
+- (void)setActionBlock:;
+- (id)actionBlock;
+- (void)setTrackInfo:;
+- (id)trackInfo;
+@end

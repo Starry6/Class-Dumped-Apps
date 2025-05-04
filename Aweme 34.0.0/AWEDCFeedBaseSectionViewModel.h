@@ -1,0 +1,33 @@
+@interface AWEDCFeedBaseSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWEDCFeedConfig config;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) q index;
+@property (nonatomic) double height;
+@property (nonatomic) double tidyHeight;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) NSDictionary feedbackInfo;
+@property (nonatomic) @ bizContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupWithPayload:;
+- (id)bizContext;
+- (void)setBizContext:;
+- (void)replaceByModels:animated:sync:;
+- (id)feedbackInfo;
+- (void)setFeedbackInfo:;
+- (double)tidyHeight;
+- (void)setTidyHeight:;
+- (void)setIndex:;
+- (void)setConfig:;
+- (long long)index;
+- (BOOL)isShowing;
+- (void)setHeight:;
+- (id)config;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (double)height;
+- (id)context;
+- (void)setIsShowing:;
+@end

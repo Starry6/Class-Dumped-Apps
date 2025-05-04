@@ -1,0 +1,30 @@
+@interface AWEShareDetailWithSpecialQRCodeHotSearchContentView : AWEShareDetailWithQRCodeBaseContentView
+@property (nonatomic) AWEShareHotSearchModel hotSearchModel;
+@property (nonatomic) UIView<AWEHotSearchShareContainerViewProtocol> containerView;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) BOOL hasLoadFinish;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissLoading;
+- (id)hotSearchModel;
+- (void)setHotSearchModel:;
+- (void)setHasLoadFinish:;
+- (BOOL)hasLoadFinish;
+- (void)dismissSharePanel;
+- (void)hotSearchShareContentLoadFinishWithSize:;
+- (id)imageToSaveToAlbum;
+- (void)setIsQRCodeLoaded:;
+- (void)setCustomDismiss;
+- (void)dealloc;
+- (void)setLoadingView:;
+- (id)containerView;
+- (id)loadingView;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setUpSubviews;
+- (void)showLoading;
+- (void)setupCustomView;
+@end

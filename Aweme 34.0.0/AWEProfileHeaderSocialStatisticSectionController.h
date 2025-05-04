@@ -1,0 +1,35 @@
+@interface AWEProfileHeaderSocialStatisticSectionController : AWEBaseListSectionController
+@property (nonatomic) NSMutableArray binds;
+@property (nonatomic) AWEBinding favoritedBind;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)viewControllerDidAppear:;
+- (id)sizeForFooterWithCollectionViewSize:;
+- (void)didSelectItemAtIndex:model:;
+- (void)viewControllerWillAppear:isBeingPresented:isMovingToParentViewController:;
+- (id)binds;
+- (void)setBinds:;
+- (void)socialStatisticViewdidClickFollow;
+- (void)socialStatisticViewdidClickFans;
+- (void)socialStatisticViewdidClickFriend;
+- (void)socialStatisticViewdidClickpraise;
+- (id)favoritedBind;
+- (void)setFavoritedBind:;
+- (void)trackFriendLabelIfNeeded:;
+- (void)trackMateLabelIfNeeded:;
+- (void)__trackButtonClick:;
+- (void)p_showFansList;
+- (void)showFriendList;
+- (void)p_showPlayAlertView;
+- (void)p_showFollowingList;
+- (BOOL)p_isCurrentLoginAccountIsNegativeAccount;
+- (Class)cellClass;
+- (BOOL)showSeparator;
+- (void).cxx_destruct;
++ (void)showPlayAlertViewWithUser:;
+@end

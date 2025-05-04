@@ -1,0 +1,30 @@
+@interface AWEEnterpriseEnterTipsVideoView : AWEEnterpriseMessageBaseView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIStackView titleStackView;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView playIconImage;
+@property (nonatomic) AWEEnterpriseEnterTipsVideoViewModel viewModel;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)bindViewModel:;
+- (void)constraintSubviews;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (id)playIconImage;
+- (void)setPlayIconImage:;
+- (id)currentContentSize;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setTitleStackView:;
+- (id)titleStackView;
+- (void)viewTapped;
+@end

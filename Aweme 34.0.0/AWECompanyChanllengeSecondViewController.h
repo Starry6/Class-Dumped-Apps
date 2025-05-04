@@ -1,0 +1,38 @@
+@interface AWECompanyChanllengeSecondViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) NSMutableArray challengeList;
+@property (nonatomic) AWENavigationBarView navigationBar;
+@property (nonatomic) DUXNavigationBar duxNavigationBar;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSMutableDictionary trackDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (void)setTrackDict:;
+- (id)trackDict;
+- (id)challengeList;
+- (void)setChallengeList:;
+- (id)duxNavigationBar;
+- (void)setDuxNavigationBar:;
+- (void)configChallengeWithModel:;
+- (id)user;
+- (void)setUser:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)navigationBar;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)init;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setNavigationBar:;
+- (void)setupUI;
+- (void)handleBack;
+@end

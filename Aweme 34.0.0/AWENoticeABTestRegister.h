@@ -1,0 +1,2 @@
+@interface AWENoticeABTestRegister : NSObject
+@end

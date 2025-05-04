@@ -1,0 +1,31 @@
+@interface AWEMessageReachComponentPrecheckTask : NSObject
+@property (nonatomic) BOOL hasExecute;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSArray verifyList;
+@property (nonatomic) NSMutableArray preCheckResult;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString channelID;
+@property (nonatomic) NSTimer requestTimer;
+- (void)setVerifyList:;
+- (void)setHasExecute:;
+- (void)setPreCheckResult:;
+- (id)verifyList;
+- (void)handleComponentVerifyTimeout;
+- (void)taskPrecheckFinish;
+- (void)trackComponentPrecheckTimeout;
+- (BOOL)hasExecute;
+- (id)preCheckResult;
+- (void)taskStartPrecheck;
+- (void)addVerifyResult:;
+- (void)handleComponentCountExceed:;
+- (void)setChannelID:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)channelID;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (id)requestTimer;
+- (void)setRequestTimer:;
++ (id)createTaskWithCompletion:verifyList:channelID:paramsContext:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEConcernYellowDotRequestOptimizeManager : NSObject
+@property (nonatomic) double lastTimestamp;
+@property (nonatomic) BOOL shouldFobidRequestOptimize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (double)lastRequestTimestamp;
+- (BOOL)shouldFobidRequestOptimize;
+- (void)setShouldFobidRequestOptimize:;
+- (BOOL)yellowDotNoRequestIfFollowHasPointEnable;
+- (long long)yellowDotBadgeType;
+- (BOOL)yellowDotSwitchOptimizeEnable;
+- (BOOL)yellowDotFrequencyOptimizeEnable;
+- (long long)yellowDotFrequency;
+- (BOOL)yellowDotNotFollowFeedOptimizeEnable;
+- (BOOL)yellowDotBadgeShowOptimizeEnable;
+- (void)setLastRequestTimestamp:;
+- (id)yellowDotRequestOptimizeSettings;
+- (id)followYellowPointRequestOptimizeInfoWithSource:;
+- (id)familiarYellowPointRequestOptimizeSourceTypeStrWithFeedSourceType:;
+- (id)yellowPointRequestOptimizeInfoWithFamiliar:follow:source:;
+- (BOOL)yellowDotNoRequestIfNeedEnable;
+- (id)init;
+- (void)dealloc;
+- (void)setLastTimestamp:;
+- (double)lastTimestamp;
++ (id)sharedManager;
+@end

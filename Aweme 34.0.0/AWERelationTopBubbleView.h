@@ -1,0 +1,37 @@
+@interface AWERelationTopBubbleView : UIView
+@property (nonatomic) AWEHotsoonRegularBarModel model;
+@property (nonatomic) UIVisualEffectView blurView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIButton agreeButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) Q scene;
+@property (nonatomic) @? complete;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)agreeButton;
+- (void)setAgreeButton:;
+- (void)showOnView:topOffset:;
+- (void)agreeAction;
+- (id)initWithModel:scene:complete:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)complete;
+- (void)setScene:;
+- (id)blurView;
+- (unsigned long long)scene;
+- (void)setBlurView:;
+- (void)dismiss;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)closeAction;
+- (void)setComplete:;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

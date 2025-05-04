@@ -1,0 +1,30 @@
+@interface AWEPadPolymericChannelPageModel : MTLModel
+@property (nonatomic) NSArray sectionList;
+@property (nonatomic) q offset;
+@property (nonatomic) q requestType;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSString pageKey;
+@property (nonatomic) NSNumber enableLight;
+@property (nonatomic) NSNumber enableGrid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pageKey;
+- (void)setPageKey:;
+- (id)enableGrid;
+- (void)setEnableGrid:;
+- (id)enableLight;
+- (void)setEnableLight:;
+- (id)init;
+- (void)setRequestType:;
+- (long long)requestType;
+- (void)setOffset:;
+- (long long)offset;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (void)setSectionList:;
+- (id)sectionList;
++ (id)JSONKeyPathsByPropertyKey;
+@end

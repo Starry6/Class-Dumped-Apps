@@ -1,0 +1,33 @@
+@interface AWEDetailMVTracker : NSObject
+@property (nonatomic) AWEDetailMVViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackEnterPersonalDetailWithModel:;
+- (void)trackClickLinkWithModel:;
+- (void)trackDetailPageClientShowWithModel:;
+- (void)trackClickedShootButton;
+- (void)trackTemplateCollectStateWithTemplateID:templateType:isCollectAction:Error:;
+- (void)trackDetailPageExitWithMask;
+- (void)trackDetailPagePullUp;
+- (void)trackDetailPagePullDown;
+- (id)initWithStateContext:;
+- (void)welfareView:trackWelfareProjectClick:;
+- (void)welfareView:trackWelfareProjectMatchingShow:;
+- (id)aAWEDetailCollectionModuleServiceDOUYINLiteAdaper;
+- (id)shootEventParams;
+- (void)trackMVCollect:;
+- (void)trackEnterMvDetailPage;
+- (void)trackFavoriteToastShow;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
++ (Class)aAWEDetailCollectionModuleServiceDOUYINLiteAdaperClass;
++ (void)trackActivityEntranceShowWithModel:;
++ (void)trackFavoriteIconShowWithParamDic:;
++ (id)mvTypeWithParamDict:;
++ (void)trackToolsEnterMvDetailPerformanceStartWithMvId:mvLokiId:mvType:pageType:enterFrom:;
++ (void)trackToolsEnterMvDetailPerformanceEndWithMvId:mvLokiId:mvType:pageType:enterFrom:duration:success:error:;
++ (void)trackToolsTemplateDetailFetchHeadInfoWithMvId:mvType:success:duration:error:;
+@end

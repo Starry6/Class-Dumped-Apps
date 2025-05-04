@@ -1,0 +1,30 @@
+@interface AWELongConnectionManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishUpdateAwemeUser;
+- (id)settingsConfig;
+- (void)didUpdateInstallIDFrom:to:;
+- (void)didUpdateDeviceIDFrom:to:;
+- (void)didUpdateNetworkDomainConfig:;
+- (void)configWithLaunchTime:;
+- (void)accountPrivacyPolicyAgreeNoti:;
+- (void)p_connectIfNeeded;
+- (BOOL)connectAfterPrivacy;
+- (BOOL)connectRateEnable;
+- (void)p_connect;
+- (id)pushConfig:;
+- (BOOL)reconnectForLogInOut;
+- (void)p_reconnectIgnoreBeforeStatus;
+- (BOOL)shouldTrackUpdateUrls;
+- (id)connectionManager;
+- (id)init;
+- (void)dealloc;
+- (void)config;
+- (BOOL)isConnected;
+- (void)p_addObservers;
++ (id)sharedInstance;
+@end

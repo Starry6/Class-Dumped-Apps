@@ -1,0 +1,37 @@
+@interface AWESearchCitySugViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSMutableArray sugCities;
+@property (nonatomic) BOOL showL2Only;
+@property (nonatomic) @? citySelectBlock;
+@property (nonatomic) @? scrollCityBlock;
+@property (nonatomic) AWECitySelectAppearance appearance;
+@property (nonatomic) BOOL canSelectL3;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (BOOL)showL2Only;
+- (void)setShowL2Only:;
+- (void)searchCitiesToSuggest:searchText:showL2Only:;
+- (void)setCanSelectL3:;
+- (BOOL)canSelectL3;
+- (void)setCitySelectBlock:;
+- (void)setScrollCityBlock:;
+- (id)citySelectBlock;
+- (void)setSugCities:;
+- (id)sugCities;
+- (void)filterSearchResultWithModel:searchText:bestMatchResultArray:nextMatchMatchResultArray:;
+- (id)scrollCityBlock;
+- (void)setAppearance:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)appearance;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)scrollViewWillBeginDragging:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+@end

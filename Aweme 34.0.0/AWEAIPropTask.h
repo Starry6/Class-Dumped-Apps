@@ -1,0 +1,25 @@
+@interface AWEAIPropTask : AWEAIAsyncBaseTask
+- (void)startDownloading;
+- (void)saveGeneratingDraftWithPublishModel:completion:;
+- (id)generatePathWithFileName:taskId:;
+- (BOOL)isAssetDownloaded;
+- (void)trackAIGCCameraCompositeResponseWithDuration:errorCode:errorMessage:;
+- (void)saveGeneratedDraftCompletion:;
+- (void)updateDataWithVideoURLList:coverURLList:videoType:;
+- (void)queryStateWithCompletion:;
+- (void)downloadVideoWithCompletion:;
+- (void)removeGeneratedDraftIfNeeded;
+- (void)showAIPropGeneratingNotification;
+- (void)showAIPropGeneratedNotification;
+- (void)showAIPropGeneratedCardNotification;
+- (BOOL)couldHandleServerNotification;
+- (void)markAsReceivedServerNotification;
+- (BOOL)couldShowGeneratingNotification;
+- (BOOL)couldShowGeneratedOrCardNotification;
+- (void)markShowedGeneratedCardNotification;
+- (BOOL)couldRemoveTask;
+- (id)getGeneratedVideoPath;
+- (id)logLabel;
+- (void)resumeIfNeeded;
+- (id)rootFolder;
+@end

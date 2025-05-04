@@ -1,0 +1,33 @@
+@interface AWEProfileMultiTabMixAndPlayletViewController : UIViewController
+@property (nonatomic) AWESlidingTabbarView tabView;
+@property (nonatomic) AWESlidingViewController slidingViewController;
+@property (nonatomic) NSArray controllers;
+@property (nonatomic) NSArray titlesArray;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (long long)numberOfControllers:;
+- (id)slidingViewController:viewControllerAtIndex:;
+- (void)slidingViewController:didSelectIndex:transitionType:;
+- (void)configureUI;
+- (void)backBtnClicked;
+- (id)titlesArray;
+- (void)setTitlesArray:;
+- (id)slidingViewController;
+- (void)setSlidingViewController:;
+- (void)configNavigationBar;
+- (void)configureSlidingViewController;
+- (void)didChangedLanguage;
+- (id)controllers;
+- (id)init;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)tabView;
+- (void)setTabView:;
+- (void)setControllers:;
+- (id)initWithControllers:;
+@end

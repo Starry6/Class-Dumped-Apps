@@ -1,0 +1,32 @@
+@interface AWELifeShelfCardBanner : MTLModel
+@property (nonatomic) NSString poiId;
+@property (nonatomic) NSString poiName;
+@property (nonatomic) NSString poiCity;
+@property (nonatomic) NSString poiDistrict;
+@property (nonatomic) NSString poiTown;
+@property (nonatomic) NSString poiRankName;
+@property (nonatomic) NSString userDistance;
+@property (nonatomic) NSNumber userLocateScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)poiName;
+- (void)setPoiName:;
+- (id)userLocateScene;
+- (id)userDistance;
+- (void)setPoiCity:;
+- (id)poiCity;
+- (id)poiRankName;
+- (id)poiDistrict;
+- (id)poiTown;
+- (void)setPoiRankName:;
+- (void)setPoiDistrict:;
+- (void)setPoiTown:;
+- (void)setUserDistance:;
+- (void)setUserLocateScene:;
+- (void).cxx_destruct;
+- (id)poiId;
+- (void)setPoiId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

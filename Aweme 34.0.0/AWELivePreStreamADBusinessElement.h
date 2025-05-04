@@ -1,0 +1,33 @@
+@interface AWELivePreStreamADBusinessElement : AWELiveBusinessBaseElement
+@property (nonatomic) NSDictionary balanceToCouponData;
+@property (nonatomic) NSDictionary couponDict;
+@property (nonatomic) NSString adCardClickMethod;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_viewDidAppear;
+- (void)prepareForDisPlay;
+- (void)onUserEnterLiveRoom:;
+- (void)viewController_viewDidLoad;
+- (void)preloadElement;
+- (void)provideEenterLiveRoomParamasWithContext:;
+- (id)balanceToCouponData;
+- (void)handleCardDidClickToOpenLiveRoomInStream:;
+- (void)p_fetchBalanceToCouponStateIfNeeded:;
+- (void)setCouponDict:;
+- (void)setAdCardClickMethod:;
+- (void)fetchBalanceToCouponState;
+- (void)setBalanceToCouponData:;
+- (id)couponDict;
+- (id)adCardClickMethod;
+- (void)onUserQuitLiveRoom;
+- (id)provideCoreDataForEvent:;
+- (BOOL)isShowing;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setIsShowing:;
+@end

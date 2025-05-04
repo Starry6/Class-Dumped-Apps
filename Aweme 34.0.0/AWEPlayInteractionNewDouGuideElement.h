@@ -1,0 +1,38 @@
+@interface AWEPlayInteractionNewDouGuideElement : AWEPlayInteractionNewBottomElement
+@property (nonatomic) UIView douGuideBottomView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) AWEDetailCellTagLabel douGuideTag;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) BOOL isFromPublish;
+@property (nonatomic) BOOL hasJumpToFE;
+@property (nonatomic) NSString jumpUrl;
+- (void)p_setupUI;
+- (void)viewController_willDisplay;
+- (unsigned long long)elementVisibleType;
+- (id)jumpUrl;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)setJumpUrl:;
+- (void)tapView;
+- (void)viewDidDisposed;
+- (BOOL)shouldAppearWithData:;
+- (id)douGuideBottomView;
+- (void)setDouGuideBottomView:;
+- (void)trackClickWithEventName:;
+- (BOOL)isFromPublish;
+- (BOOL)hasJumpToFE;
+- (void)p_reportWhenPublishOnAction:;
+- (void)setHasJumpToFE:;
+- (id)p_basicTrackParams;
+- (id)douGuideTag;
+- (void)setIsFromPublish:;
+- (void)updateDouGuideBottomView:;
+- (void)setDouGuideTag:;
+- (void)viewDidLoad;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

@@ -1,0 +1,34 @@
+@interface AWEAdFeedPreloadDataModel : MTLModel
+@property (nonatomic) NSArray channelNames;
+@property (nonatomic) NSArray awemeChannelNames;
+@property (nonatomic) AWEAdTransitionEggInfo transitionEggInfo;
+@property (nonatomic) NSArray transitionEggs;
+@property (nonatomic) NSArray alphaVideoResources;
+@property (nonatomic) BOOL alphaVideoRealFullscreen;
+@property (nonatomic) NSDictionary videoModelMap;
+@property (nonatomic) NSArray preloadWebpResource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)preloadWebpResource;
+- (id)channelNames;
+- (id)transitionEggInfo;
+- (id)alphaVideoResources;
+- (id)videoModelMap;
+- (BOOL)alphaVideoRealFullscreen;
+- (id)transitionEggs;
+- (void)setVideoModelMap:;
+- (void)setChannelNames:;
+- (id)awemeChannelNames;
+- (void)setAwemeChannelNames:;
+- (void)setTransitionEggInfo:;
+- (void)setTransitionEggs:;
+- (void)setAlphaVideoResources:;
+- (void)setAlphaVideoRealFullscreen:;
+- (void)setPreloadWebpResource:;
+- (void).cxx_destruct;
++ (BOOL)automaticallyDefaultMapping;
++ (id)transitionEggsJSONTransformer;
++ (id)alphaVideoResourcesJSONTransformer;
+@end

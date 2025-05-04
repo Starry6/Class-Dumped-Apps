@@ -1,0 +1,34 @@
+@interface AWEProfileBillboardButton : UIView
+@property (nonatomic) Q type;
+@property (nonatomic) UIView crownImageView;
+@property (nonatomic) UILabel rankNumberLabel;
+@property (nonatomic) UILabel rankTitleLabel;
+@property (nonatomic) UIView billboardTitleBackgroundView;
+@property (nonatomic) double scaleRate;
+@property (nonatomic) NSString rankString;
+@property (nonatomic) NSString rankTitle;
+@property (nonatomic) NSAttributedString rankAttributedTitle;
+- (id)rankTitle;
+- (void)setRankTitle:;
+- (void)setRankString:;
+- (void)setRankAttributedTitle:;
+- (id)rankTitleLabel;
+- (id)rankTitleRect;
+- (id)rankString;
+- (id)rankAttributedTitle;
+- (void)p_setupBillboardButton;
+- (id)crownImageView;
+- (id)billboardTitleBackgroundView;
+- (void)setCrownImageView:;
+- (void)setBillboardTitleBackgroundView:;
+- (id)rankNumberLabel;
+- (void)setRankNumberLabel:;
+- (void)setRankTitleLabel:;
+- (double)scaleRate;
+- (void)setScaleRate:;
+- (unsigned long long)type;
+- (void)setType:;
+- (void)updateLayout;
+- (void).cxx_destruct;
++ (id)attriTextWithArrow:scaleRate:;
+@end

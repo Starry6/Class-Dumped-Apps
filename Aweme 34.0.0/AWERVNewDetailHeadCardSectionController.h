@@ -1,0 +1,30 @@
+@interface AWERVNewDetailHeadCardSectionController : AWEBaseListSectionController
+@property (nonatomic) AWERVNewDetailHeadCardCell curentClickCell;
+@property (nonatomic) BOOL isClickExpand;
+@property (nonatomic) AWERVNewDetailPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didSelectItemAtIndex:model:;
+- (void)handleCellEvent:model:userInfo:;
+- (void)setIsClickExpand:;
+- (BOOL)isClickExpand;
+- (id)customLogExtraDict;
+- (void)setCurentClickCell:;
+- (id)curentClickCell;
+- (BOOL)shouldPostWithActionName:;
+- (void)updateMetaInfoView;
+- (id)init;
+- (Class)cellClass;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+@end

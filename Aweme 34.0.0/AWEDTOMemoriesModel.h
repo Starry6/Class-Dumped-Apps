@@ -1,0 +1,38 @@
+@interface AWEDTOMemoriesModel : MTLModel
+@property (nonatomic) BOOL validMemories;
+@property (nonatomic) NSString themeId;
+@property (nonatomic) NSString trackTitle;
+@property (nonatomic) NSString trackThemeTag;
+@property (nonatomic) NSString mainStickerTitle;
+@property (nonatomic) double mainStickerOffsetY;
+@property (nonatomic) double mainStickerFontSize;
+@property (nonatomic) NSString subStickerTitle;
+@property (nonatomic) double subStickerOffsetY;
+@property (nonatomic) double subStickerFontSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)themeId;
+- (void)setThemeId:;
+- (BOOL)validMemories;
+- (void)setValidMemories:;
+- (id)trackThemeTag;
+- (void)setTrackThemeTag:;
+- (id)mainStickerTitle;
+- (void)setMainStickerTitle:;
+- (double)mainStickerOffsetY;
+- (void)setMainStickerOffsetY:;
+- (double)mainStickerFontSize;
+- (void)setMainStickerFontSize:;
+- (id)subStickerTitle;
+- (void)setSubStickerTitle:;
+- (double)subStickerOffsetY;
+- (void)setSubStickerOffsetY:;
+- (double)subStickerFontSize;
+- (void)setSubStickerFontSize:;
+- (void).cxx_destruct;
+- (void)setTrackTitle:;
+- (id)trackTitle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

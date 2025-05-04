@@ -1,0 +1,2 @@
+@interface AWEDYShareWebService : AWEShareWebBaseService
+@end

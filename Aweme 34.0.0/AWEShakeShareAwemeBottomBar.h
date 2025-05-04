@@ -1,0 +1,30 @@
+@interface AWEShakeShareAwemeBottomBar : UIView
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) AWEShakeShareAwemeBottomBarItemView diceItemView;
+@property (nonatomic) AWEShakeShareAwemeBottomBarItemView scanItemView;
+@property (nonatomic) AWEShakeShareAwemeBottomBarItemView groupItemView;
+@property (nonatomic) AWEShakeShareAwemeBottomBarItemView codeItemView;
+@property (nonatomic) AWERadarGameManager gameManager;
+@property (nonatomic) IESEffectModel diceGame;
+- (void)initView;
+- (id)gameManager;
+- (void)setDiceGame:;
+- (id)diceItemView;
+- (id)scanItemView;
+- (id)groupItemView;
+- (id)codeItemView;
+- (void)diceButtonTapped;
+- (void)scanButtonTapped;
+- (void)groupButtonTapped;
+- (void)codeButtonTapped;
+- (id)diceGame;
+- (void)setDiceItemView:;
+- (void)setScanItemView:;
+- (void)setGroupItemView:;
+- (void)setCodeItemView:;
+- (void)setGameManager:;
+- (id)stackView;
+- (void)setStackView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,32 @@
+@interface AWELocationPickerView : UIView
+@property (nonatomic) UIPickerView locationPicker;
+@property (nonatomic) UIImageView locationPickerIndicator;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) @? completion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showAnimation;
+- (void)dismissAnimation:;
+- (id)initWithFrame:location:completion:;
+- (id)locationPicker;
+- (id)locationPickerIndicator;
+- (void)__onTouchBackgroundView;
+- (void)__onTouchConfirmButton;
+- (void)setLocationPicker:;
+- (void)setLocationPickerIndicator:;
+- (void)dealloc;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (void)safeAreaInsetsDidChange;
+- (long long)numberOfComponentsInPickerView:;
+- (void)pickerView:didSelectRow:inComponent:;
+- (long long)pickerView:numberOfRowsInComponent:;
+- (double)pickerView:rowHeightForComponent:;
+- (id)pickerView:viewForRow:forComponent:reusingView:;
+- (double)pickerView:widthForComponent:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+@end

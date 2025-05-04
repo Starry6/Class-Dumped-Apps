@@ -1,0 +1,31 @@
+@interface AWEPostPagePreviewUtilHandler : NSObject
+@property (nonatomic) <AWEPostPageContext> context;
+@property (nonatomic) IESContainer serviceContainer;
+@property (nonatomic) <AWEPostPagePreviewUtilServiceDependencies> dependencies;
+@property (nonatomic) <ACCSequenceEditServiceProtocol> sequenceEditService;
+@property (nonatomic) <AWEPostPageFeatureConfigService> featureConfigService;
+@property (nonatomic) AWEStudioComposerPublishBasicFeature basicFeature;
+@property (nonatomic) @ didConfigCoverSignal;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServiceContainer:;
+- (id)basicFeature;
+- (id)sequenceEditService;
+- (void)bindServices:;
+- (void)setFeatureConfigService:;
+- (id)featureConfigService;
+- (void)setBasicFeature:;
+- (void)configCoverImage;
+- (void)setDidConfigCoverSignal:;
+- (id)configPreviewControllerWithImage:index:editService:;
+- (id)didConfigCoverSignal;
+- (void)didChooseVieoCover;
+- (id)serviceContainer;
+- (id)dependencies;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setDependencies:;
+@end

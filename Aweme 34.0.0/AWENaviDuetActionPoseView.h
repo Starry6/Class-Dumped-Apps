@@ -1,0 +1,30 @@
+@interface AWENaviDuetActionPoseView : AWENaviPassThroughView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) AWENaviDuetActionPoseModel curSelectedAction;
+@property (nonatomic) NSArray actionPoses;
+@property (nonatomic) @? onSelectedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setActionPoses:;
+- (id)actionPoses;
+- (void)updateSelectedActionPoseWithIndex:;
+- (void)setOnSelectedBlock:;
+- (id)onSelectedBlock;
+- (void)configActionPoseCell:indexPath:;
+- (id)curSelectedAction;
+- (id)collectionView;
+- (void)setSelectedIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (long long)selectedIndex;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setupSubviews;
+@end

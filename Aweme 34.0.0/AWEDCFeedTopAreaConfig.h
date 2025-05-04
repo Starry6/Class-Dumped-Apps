@@ -1,0 +1,38 @@
+@interface AWEDCFeedTopAreaConfig : AWEDCFeedBaseConfig
+@property (nonatomic) double innerHeight;
+@property (nonatomic) q areaType;
+@property (nonatomic) double height;
+@property (nonatomic) <AWEDCFeedTopAreaDelegate> topAreaDelegate;
+@property (nonatomic) q hoveredType;
+@property (nonatomic) q viewPosition;
+@property (nonatomic) {UIEdgeInsets=dddd} customViewInsets;
+@property (nonatomic) double moveMinOffset;
+@property (nonatomic) double moveMaxOffset;
+@property (nonatomic) BOOL isHovered;
+@property (nonatomic) AWEDCFeedTopAreaSearchConfig searchConfig;
+- (id)searchConfig;
+- (void)setTopAreaDelegate:;
+- (void)setViewPosition:;
+- (void)setHoveredType:;
+- (void)setupDefaultConfig;
+- (id)topAreaDelegate;
+- (void)setInnerHeight:;
+- (void)setSearchConfig:;
+- (void)setCustomViewInsets:;
+- (void)setMoveMinOffset:;
+- (void)setMoveMaxOffset:;
+- (double)innerHeight;
+- (id)customViewInsets;
+- (BOOL)checkTopAreaAvailable;
+- (long long)hoveredType;
+- (long long)viewPosition;
+- (double)moveMinOffset;
+- (double)moveMaxOffset;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (BOOL)isHovered;
+- (void)setIsHovered:;
+- (long long)areaType;
+- (void)setAreaType:;
+- (double)getHeight;
+@end

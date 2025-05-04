@@ -1,0 +1,34 @@
+@interface __AWEIMRTVChatMessage : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q orderIndex;
+@property (nonatomic) q type;
+@property (nonatomic) q status;
+@property (nonatomic) NSString sender;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString preferredSentIMConversationID;
+@property (nonatomic) NSDictionary content;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)preferredSentIMConversationID;
+- (id)initWithIESIMMessage:;
+- (id)initTextMsgWithIESIMMessage:text:;
+- (long long)__rtvMessageTypeWithAWEIMMessageType:;
+- (id)sender;
+- (void)setSender:;
+- (id)content;
+- (void)setStatus:;
+- (void)setIdentifier:;
+- (id)identifier;
+- (long long)type;
+- (id)conversationID;
+- (void)setContent:;
+- (void)setType:;
+- (long long)orderIndex;
+- (void).cxx_destruct;
+- (long long)status;
+- (void)updateStatus:;
+- (void)setConversationID:;
+- (void)setOrderIndex:;
+@end

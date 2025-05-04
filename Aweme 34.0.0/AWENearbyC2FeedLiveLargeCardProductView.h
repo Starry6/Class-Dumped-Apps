@@ -1,0 +1,36 @@
+@interface AWENearbyC2FeedLiveLargeCardProductView : UIView
+@property (nonatomic) UIImageView cover;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel price;
+@property (nonatomic) UILabel originPrice;
+@property (nonatomic) UIView originPriceHorizontalLine;
+@property (nonatomic) UIView videoTagView;
+@property (nonatomic) UIView videoTagIcon;
+@property (nonatomic) UILabel videoTagLabel;
+@property (nonatomic) AWENearbyGrouponLargeCardRoomProductInfo roomInfo;
+- (id)roomInfo;
+- (id)cover;
+- (void)setCover:;
+- (id)originPrice;
+- (void)setOriginPrice:;
+- (void)setRoomInfo:;
+- (id)videoTagView;
+- (void)setVideoTagView:;
+- (id)videoTagLabel;
+- (void)setVideoTagLabel:;
+- (void)updateWithProductt:;
+- (void)setUpLayout;
+- (void)configDataWithModel:;
+- (id)originPriceHorizontalLine;
+- (id)videoTagIcon;
+- (void)setOriginPriceHorizontalLine:;
+- (void)setVideoTagIcon:;
+- (id)price;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setPrice:;
+- (id)initWithProduct:;
+- (void)tap;
+- (void)setUpUI;
+@end

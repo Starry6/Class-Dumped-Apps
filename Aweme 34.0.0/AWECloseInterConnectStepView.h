@@ -1,0 +1,38 @@
+@interface AWECloseInterConnectStepView : UIView
+@property (nonatomic) Q step;
+@property (nonatomic) UIImageView imageView1;
+@property (nonatomic) UIImageView imageView2;
+@property (nonatomic) UIImageView imageView3;
+@property (nonatomic) UIView lineView1;
+@property (nonatomic) UIView lineView2;
+@property (nonatomic) UILabel label1;
+@property (nonatomic) UILabel label2;
+@property (nonatomic) UILabel label3;
+@property (nonatomic) BOOL isLowEndMachine;
+- (id)imageView2;
+- (id)imageView3;
+- (void)setImageView2:;
+- (void)setImageView3:;
+- (void)setLineView2:;
+- (id)lineView2;
+- (void)setLineView1:;
+- (id)lineView1;
+- (void)configUI;
+- (id)imageView1;
+- (BOOL)isLowEndMachine;
+- (void)drawDotLint;
+- (void)drawLineByImageView:color:;
+- (void)setLabelStyle:forIndex:;
+- (void)setImageView1:;
+- (void)setIsLowEndMachine:;
+- (unsigned long long)step;
+- (void).cxx_destruct;
+- (void)setStep:;
+- (id)initWithStep:;
+- (id)label1;
+- (id)label2;
+- (id)label3;
+- (void)setLabel1:;
+- (void)setLabel2:;
+- (void)setLabel3:;
+@end

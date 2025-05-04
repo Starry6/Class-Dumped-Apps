@@ -1,0 +1,35 @@
+@interface AWESelectTemplateDataStrategyOneClickFilming : NSObject
+@property (nonatomic) AWESelectTemplateViewModel viewModel;
+@property (nonatomic) NSArray recommendTemplateArray;
+@property (nonatomic) AWESelectTemplateDataProvider templateDataProvider;
+@property (nonatomic) AWESelectTemplateDataPreload templateDataPreload;
+@property (nonatomic) AWESelectTemplateDataCache templateCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)templateResourcePreload;
+- (BOOL)templateRecommendAssetsChanged;
+- (void)templatesfetch;
+- (BOOL)hasTemplateCacheForIndex:;
+- (void)templateGenerateData;
+- (void)templateGenerateDataCancel;
+- (void)setupWithTemplateViewModel:;
+- (void)templateSelectWithIndex:;
+- (void)templateGenerateDataWithIndex:;
+- (void)templateResourcePreloadCancel;
+- (void)templateDataCheck;
+- (void)refreshSelectTemplateModels;
+- (id)templateDataPreload;
+- (void)setTemplateDataPreload:;
+- (void)setRecommendTemplateArray:;
+- (id)recommendTemplateArray;
+- (void)syncRepoOneClickFilming;
+- (id)templateCache;
+- (id)viewModel;
+- (void)setTemplateCache:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setTemplateDataProvider:;
+- (id)templateDataProvider;
+@end

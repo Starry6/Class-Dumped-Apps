@@ -1,0 +1,33 @@
+@interface AWEUGDesktopRetainPopupGuideConfigModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString guidePic;
+@property (nonatomic) UIImage guideImage;
+@property (nonatomic) NSString leftButtonText;
+@property (nonatomic) NSString rightButtonText;
+@property (nonatomic) AWEUGDesktopChannelGuideInstallConfigModel installConfig;
+@property (nonatomic) AWEUGDesktopChannelGuideTrackerInfoModel trackerInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)leftButtonText;
+- (void)setLeftButtonText:;
+- (id)rightButtonText;
+- (void)setRightButtonText:;
+- (id)guidePic;
+- (void)setTrackerInfo:;
+- (void)setGuidePic:;
+- (id)installConfig;
+- (void)setInstallConfig:;
+- (id)trackerInfo;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)guideImage;
+- (void)setGuideImage:;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

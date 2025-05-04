@@ -1,0 +1,32 @@
+@interface AWEFeedDislikeAuthorFilter : NSObject
+@property (nonatomic) NSMutableArray cachedAuthorInfos;
+@property (nonatomic) NSMutableArray cachedAuthorIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)willStartLogin;
+- (void)willLogoutWithUserID:;
+- (void)didFinishLogoutWithUid:;
+- (void)willSwitchAccountWithUserID:;
+- (void)addNotifications;
+- (void)dislikeWithModel:referString:;
+- (id)filterArrayWithModels:;
+- (void)revertDislikeWithModel:referString:;
+- (void)loadCachedInfos;
+- (id)whiteSceneList;
+- (id)cachedAuthorIDs;
+- (id)cachedAuthorInfos;
+- (void)storeCachedAuthorInfo;
+- (void)willEnterBackground:;
+- (BOOL)valideDate:;
+- (void)setCachedAuthorInfos:;
+- (void)setCachedAuthorIDs:;
+- (id)init;
+- (void)dealloc;
+- (id)storeKey;
+- (unsigned long long)capacity;
+- (void).cxx_destruct;
+- (double)timeThreshold;
+@end

@@ -1,0 +1,30 @@
+@interface AWEUserRecommendKitService : HTSService
+@property (nonatomic) BOOL hasColdLanunchTracked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)recommendManagerWithTableView:context:;
+- (id)recommendManagerWithTableView:viewModel:;
+- (id)recommendSectionViewModelWithContext:;
+- (Class)recommendSectionControllerClass;
+- (Class)recommendCardSectionControllerClass;
+- (id)recommendViewModelWithContextBuilder:;
+- (id)recommendViewModelWithContext:;
+- (id)defaultRecommendListContext;
+- (void)configureRecommendListContextForUserWork:;
+- (id)defaultRecommendListContextWithUserWork;
+- (id)generalCellLayout;
+- (id)recUserListExitStrategy:;
+- (void)coldLaunchTrackRecommendExitScene;
+- (void)preloadFansNoticeRecommendIfNeeded;
+- (void)preloadInteractNoticeRecommendIfNeeded;
+- (id)recommendCardHorizontalViewWithContext:;
+- (void)dislikeMate:scene:;
+- (id)recommendTableSectionProviderWithContext:;
+- (id)recUserListExitStrategyConfig;
+- (BOOL)hasColdLanunchTracked;
+- (void)setHasColdLanunchTracked:;
+- (long long)countToPermanentlyClose:;
+- (long long)daysToReappearAfterClosed:;
+@end

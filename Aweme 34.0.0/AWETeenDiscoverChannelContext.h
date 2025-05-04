@@ -1,0 +1,32 @@
+@interface AWETeenDiscoverChannelContext : NSObject
+@property (nonatomic) NSMutableDictionary params;
+@property (nonatomic) NSString channelID;
+@property (nonatomic) NSString channelName;
+@property (nonatomic) Q channelIndex;
+@property (nonatomic) q channelKind;
+@property (nonatomic) q enterMethod;
+@property (nonatomic) BOOL isPush;
+@property (nonatomic) BOOL isClickGuideCard;
+@property (nonatomic) BOOL channalTopResouceHighlight;
+- (void)setEnterMethod:;
+- (long long)enterMethod;
+- (id)trackParams;
+- (BOOL)isPush;
+- (void)setIsPush:;
+- (void)setChannalTopResouceHighlight:;
+- (long long)channelKind;
+- (void)setChannelKind:;
+- (BOOL)isClickGuideCard;
+- (void)setIsClickGuideCard:;
+- (BOOL)channalTopResouceHighlight;
+- (void)setChannelID:;
+- (id)channelID;
+- (void).cxx_destruct;
+- (id)channelName;
+- (id)params;
+- (id)copyWithZone:;
+- (void)setParams:;
+- (void)setChannelName:;
+- (unsigned long long)channelIndex;
+- (void)setChannelIndex:;
+@end

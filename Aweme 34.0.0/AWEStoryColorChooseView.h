@@ -1,0 +1,31 @@
+@interface AWEStoryColorChooseView : UIView
+@property (nonatomic) NSArray storyColors;
+@property (nonatomic) @? didSelectedColorBlock;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWEStoryColor selectedColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)storyColors;
+- (void)selectWithIndexPath:;
+- (void)setDidSelectedColorBlock:;
+- (void)selectWithColor:;
+- (void)clearSelectColor;
+- (BOOL)isColor:equalTo:;
+- (void)updateSelectedColorWithIndexPath:;
+- (void)selectColorWithoutCallBack:;
+- (id)didSelectedColorBlock;
+- (id)collectionView;
+- (void)dealloc;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setSelectedColor:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)selectedColor;
++ (id)storyColors;
++ (BOOL)isColor:equalTo:;
+@end

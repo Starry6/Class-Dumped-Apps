@@ -1,0 +1,33 @@
+@interface AWEGroupFilterModel : NSObject
+@property (nonatomic) Q modelType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) NSString selectedImageName;
+@property (nonatomic) BOOL isUnread;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) @? switchTabBlock;
+@property (nonatomic) BOOL select;
+@property (nonatomic) BOOL isRedDotShow;
+@property (nonatomic) q groupID;
+- (void)setIsUnread:;
+- (void)setSelectedBlock:;
+- (id)selectedBlock;
+- (id)selectedImageName;
+- (void)setSelectedImageName:;
+- (id)switchTabBlock;
+- (void)setSwitchTabBlock:;
+- (BOOL)isRedDotShow;
+- (void)setIsRedDotShow:;
+- (unsigned long long)modelType;
+- (void)setModelType:;
+- (void)setGroupID:;
+- (BOOL)isUnread;
+- (BOOL)select;
+- (long long)groupID;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)buttonTitle;
+- (void)setSelect:;
+- (void)setButtonTitle:;
+@end

@@ -1,0 +1,34 @@
+@interface AWENaviDuetMatchView : UIView
+@property (nonatomic) AWENaviDuetMatchPanelView panelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray originUsers;
+@property (nonatomic) @? onClosedBlock;
+@property (nonatomic) @? onCompletedBlock;
+@property (nonatomic) @? onSelectedBlock;
+@property (nonatomic) BOOL enableMultipleSelection;
+- (id)onCompletedBlock;
+- (void)setOnCompletedBlock:;
+- (id)panelView;
+- (void)setOnSelectedBlock:;
+- (id)onSelectedBlock;
+- (void)setOriginUsers:;
+- (void)showPanelCompletion:;
+- (void)removePanelCompletion:;
+- (BOOL)isSearchNoResultsErrMsg:;
+- (id)originUsers;
+- (void)filterReset;
+- (void)setEnableMultipleSelection:;
+- (void)setOnClosedBlock:;
+- (void)setPanelView:;
+- (BOOL)enableMultipleSelection;
+- (id)onClosedBlock;
+- (void)updateTitleForPanel:;
+- (void)updateTitleForCompleteButton:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (void)handleTapGesture:;
+@end

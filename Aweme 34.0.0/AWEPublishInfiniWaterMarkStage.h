@@ -1,0 +1,38 @@
+@interface AWEPublishInfiniWaterMarkStage : AWEPublishBaseStage
+@property (nonatomic) <ACCEditServiceProtocol> editService;
+@property (nonatomic) AWEVideoPublishViewModel publishViewModel;
+@property (nonatomic) AWEVideoPublishViewModel mergePublishViewModel;
+@property (nonatomic) AWEVideoPublishViewModel originPublishViewModel;
+@property (nonatomic) <ACCSequenceEditServiceProtocol> sequenceEditService;
+@property (nonatomic) NSArray videoStageArray;
+@property (nonatomic) AWEPublishContainerStage containerStage;
+@property (nonatomic) AWEPublishContainerStage videoContainerStage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)publishViewModel;
+- (void)setPublishViewModel:;
+- (id)editService;
+- (void)setEditService:;
+- (id)sequenceEditService;
+- (void)setSequenceEditService:;
+- (id)initWithModel:editService:;
+- (void)stage:didChangeStatus:;
+- (void)stage:didUpdateProgress:;
+- (void)setupWithFlowModelIfNeeded;
+- (void)updateFlowModelIfNeeded;
+- (void)setOriginPublishViewModel:;
+- (void)buildStageArrayForSaveAlbum;
+- (id)containerStage;
+- (void)setVideoStageArray:;
+- (id)videoContainerStage;
+- (id)videoStageArray;
+- (id)mergePublishViewModel;
+- (void)setMergePublishViewModel:;
+- (id)originPublishViewModel;
+- (void)setContainerStage:;
+- (void)setVideoContainerStage:;
+- (void)run;
+- (void).cxx_destruct;
+@end

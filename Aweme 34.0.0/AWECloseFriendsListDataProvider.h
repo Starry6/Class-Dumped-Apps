@@ -1,0 +1,35 @@
+@interface AWECloseFriendsListDataProvider : AWESocialRelationDataProvider
+@property (nonatomic) NSDictionary closeFriendsMap;
+@property (nonatomic) NSNumber closeFriendsCountNumber;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)willStartSwitchAccountWithUser:;
+- (void)removeForwardCloseFriendsWithUIDs:;
+- (id)readFromMemory:;
+- (void)readFromFile:completion:;
+- (void)splitFriendsList:completion:;
+- (void)splitFriendsList:shouldShowAllCloseFriends:completion:;
+- (long long)getCloseFriendsCountWithScene:;
+- (void)loadCloseFriendsDataIfNeededWithScene:;
+- (void)localDataCenterDidUpdate:;
+- (void)closeFriendsTableDidPrepare:;
+- (id)p_getNewUserMapWithUpdateUsers:andDeleteUsers:;
+- (long long)p_getForwardCloseFriendsCount:;
+- (void)p_updateCacheAndNotifyObservers:closeFriendsCount:;
+- (id)closeFriendsMap;
+- (id)p_createListReadResponseWithDict:;
+- (id)closeFriendsCountNumber;
+- (void)setCloseFriendsMap:;
+- (void)setCloseFriendsCountNumber:;
+- (void)updateCacheAndWriteUsersToDB:andDeleteUsers:action:;
+- (void)p_fillUpCloseFriendsUsers:completion:;
+- (void)p_splitFriendsList:completion:;
+- (id)getCloseFriendsModelFromMemoryWithUserID:;
+- (id)init;
+- (void)dealloc;
+- (id)identifier;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,2 @@
+@interface AWEVideoHallViewHolder : AWEBaseListViewHolder
+@end

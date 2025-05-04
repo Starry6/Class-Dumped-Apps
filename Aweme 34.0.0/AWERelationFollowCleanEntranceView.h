@@ -1,0 +1,37 @@
+@interface AWERelationFollowCleanEntranceView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UILabel numLabel;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) AWERelationFollowCleanAvatarContainer avatorImageContainer;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (double)userIconWidth;
+- (void)viewClick;
+- (BOOL)isStylyA;
+- (id)avatorImageContainer;
+- (id)numLabel;
+- (void)setStyleAConstraint;
+- (void)setStyleBConstraint;
+- (void)setNumLabel:;
+- (void)setAvatorImageContainer:;
+- (id)init;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupView;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)arrowImage;
+- (void)setArrowImage:;
+- (id)bottomLine;
+- (void)setBottomLine:;
+- (void)setupModel:;
+- (double)suggestedHeight;
+@end

@@ -1,0 +1,31 @@
+@interface AWENearbySkylightLynxContainerView : UIView
+@property (nonatomic) NSMutableArray lynxViews;
+@property (nonatomic) q pageType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWENearbySkyLightElementViewActionDelegate> delegate;
+- (id)initWithPageType:;
+- (void)__setupObserver;
+- (void)lynxContainer:didFinishLoadWithURL:;
+- (void)lynxContainer:didLoadFailedWithUrl:error:;
+- (void)lynxContainerDidUpdate:;
+- (id)lynxViews;
+- (void)setLynxViews:;
+- (void)trackShowAnimated:params:;
+- (unsigned long long)elementViewType;
+- (void)setData:withLynxViewsBlk:;
+- (void)trackShowAnimated:incrementalLynxViews:params:;
+- (id)getLynxViews;
+- (void)onRecieveFavoriteDotNotification:;
+- (void)updateWithData:response:withLynxViewsBlk:;
+- (void)updateLynxViewHeight:cardType:;
+- (void)sendLynxEvent:params:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void)setPageType:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (long long)pageType;
+@end

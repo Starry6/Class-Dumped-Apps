@@ -1,0 +1,31 @@
+@interface AWEIMMsgStateView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIView avatarListView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) AWEIMMessageSendProgressView sendingProgress;
+@property (nonatomic) NSMutableArray displayedAvatars;
+@property (nonatomic) @? tapAction;
+- (void)configWithModel:;
+- (void)addSubviews;
+- (void)setSendingProgress:;
+- (id)avatarListView;
+- (void)setAvatarListView:;
+- (id)sendingProgress;
+- (id)initWithTapGestureAndFrame:;
+- (void)showSendingProgressView:;
+- (void)updateSendingProgress:;
+- (void)p_viewDidTapped;
+- (void)removeRotateAnimation;
+- (id)displayedAvatars;
+- (void)setDisplayedAvatars:;
+- (id)textLabel;
+- (id)displayText;
+- (id)initWithFrame:;
+- (void)commonInit;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setTextLabel:;
+- (id)tapAction;
+- (void)setTapAction:;
+@end

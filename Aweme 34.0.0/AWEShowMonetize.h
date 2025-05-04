@@ -1,0 +1,32 @@
+@interface AWEShowMonetize : HTSService
+@property (nonatomic) <AWEShowMonetizeRefreshService> refreshImpl;
+@property (nonatomic) <AWEShowMonetizeStatusCheckService> statusCheckImpl;
+@property (nonatomic) <AWEShowMonetizeCouponService> couponImpl;
+@property (nonatomic) <AWEShowMonetizeSkinService> skinImpl;
+@property (nonatomic) <AWEShowMonetizeGiftTicketService> giftTicketImpl;
+@property (nonatomic) <AWEShowMonetizePopupService> popupImpl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (id)coupon;
+- (id)statusCheck;
+- (id)skin;
+- (id)giftTicket;
+- (void)setRefreshImpl:;
+- (void)setStatusCheckImpl:;
+- (void)setCouponImpl:;
+- (void)setSkinImpl:;
+- (void)setGiftTicketImpl:;
+- (void)setPopupImpl:;
+- (id)refreshImpl;
+- (id)statusCheckImpl;
+- (id)couponImpl;
+- (id)skinImpl;
+- (id)giftTicketImpl;
+- (id)popupImpl;
+- (id)refresh;
+- (void).cxx_destruct;
+- (id)popup;
+@end

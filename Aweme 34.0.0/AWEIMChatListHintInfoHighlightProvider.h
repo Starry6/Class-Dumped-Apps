@@ -1,0 +1,37 @@
+@interface AWEIMChatListHintInfoHighlightProvider : AWEIMComponentBase
+@property (nonatomic) <AWEIMChatListHintProviderUpdateHintInterface> hintUpdateService;
+@property (nonatomic) YYMemoryCache hintInfoCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEIMComponentManager componentManager;
+- (void)iesim_onConversationDataSourceMessagesCreated:belongingConversationMap:reason:;
+- (void)iesim_chatDataManager:chatDidUpdate:;
+- (void)iesim_onConversationDataSourceMessagesUpdated:belongingConversationMap:;
+- (id)componentContext;
+- (id)componentsNameArrayWithContext:;
+- (void)setComponentManager:;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)updateCellComponentWhenChatUpdate:;
+- (id)hintUpdateService;
+- (void)setHintUpdateService:;
+- (void)clearCacheHintInfoAndHintWithCellHintType:conv:;
+- (void)setHintInfoCache:;
+- (id)hintInfoCache;
+- (void)updateHintInfoHighlightWithChatModel:;
+- (id)updateHintInfoWithConv:;
+- (unsigned long long)convertServerHintTypeToCellHintType:;
+- (void)updateHintInfoTextWithHintInfo:conv:;
+- (void)clearCacheHintInfoAndHint:conv:;
+- (id)subPriorityComponents;
+- (void)updateHintWithHighlightedAttributedStringWithHintInfo:conv:hintType:;
+- (BOOL)p_enableHighLightWithCon:;
+- (void)updateVMForConversationId:content:type:;
+- (long long)convertCellHintTypeToServerHintType:;
+- (void)messageTabViewWillDealloc:;
+- (void).cxx_destruct;
+- (id)componentManager;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEEntertainmentPlayletVIPHavePermissionPresenter : AWEEntertainmentBaseHavePermissionPresenter
+@end

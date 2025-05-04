@@ -1,0 +1,37 @@
+@interface AWEMediaDownloadAwemeStage : AWEMediaDownloadBaseStage
+@property (nonatomic) AWEParallelDownloader currentDownloader;
+@property (nonatomic) BOOL isCanceled;
+@property (nonatomic) NSMutableArray downloadedImages;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) q downloadingImageCount;
+@property (nonatomic) q downloadedItemCount;
+- (void)downloadImage;
+- (void)downloadImagesForNowPost;
+- (void)downloadSelectedImageFromAlbum;
+- (void)downloadUsingCache;
+- (void)downloadVideoWithURLList:;
+- (id)currentDownloader;
+- (void)setCurrentDownloader:;
+- (id)urlWithURLGroup:;
+- (void)handleDownloadCompleteWithURLGroup:response:fileURL:error:;
+- (void)setDownloadedImages:;
+- (id)downloadedImages;
+- (void)setDownloadingImageCount:;
+- (void)setDownloadedItemCount:;
+- (void)p_addNextImageToDownloadQueue;
+- (long long)downloadingImageCount;
+- (void)p_downloadClipVideoWithURLList:atIndex:clipIndex:;
+- (long long)downloadedItemCount;
+- (id)p_videoClipDestinationURLWithClipIndex:;
+- (void)prepareWithConfig:;
+- (long long)progressUnitCount;
+- (id)nowPostWatermarkImageDownloadURL;
+- (void)setIsCanceled:;
+- (void)run;
+- (BOOL)isCanceled;
+- (void)setCurrentIndex:;
+- (void)cancel;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (void)handleProgress:;
+@end

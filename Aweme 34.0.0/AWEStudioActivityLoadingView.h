@@ -1,0 +1,36 @@
+@interface AWEStudioActivityLoadingView : UIView
+@property (nonatomic) UIView bgContentView;
+@property (nonatomic) LOTAnimationView lotAnamitionView;
+@property (nonatomic) UILabel progressLabel;
+@property (nonatomic) NSString tips_title;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) @? closelButtonHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissWithAnimated:;
+- (void)setTips_title:;
+- (id)bgContentView;
+- (void)setLayoutSubview;
+- (id)lotAnamitionView;
+- (void)setLotAnamitionView:;
+- (id)tips_title;
+- (void)setCloselButtonHandler:;
+- (id)closelButtonHandler;
+- (void)onCloseButtonTap;
+- (void)setLoadingResource:;
+- (void)showCloseButtonWithCloseEventHandler:;
+- (void)setBgContentView:;
+- (void)stopAnimating;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (void)startAnimating;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)progressLabel;
+- (void)updateProgress:;
+- (void)setProgressLabel:;
++ (id)showLoadingOnView:;
+@end

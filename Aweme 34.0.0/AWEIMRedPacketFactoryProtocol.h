@@ -1,0 +1,32 @@
+@interface AWEIMRedPacketFactoryProtocol : HTSService
+@property (nonatomic) BOOL isRefreshingUser;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)aweim_isNewDefinedSocialGroup:;
+- (BOOL)isPitayaRevert;
+- (BOOL)isGroupBlocked:;
+- (BOOL)enableOpenInteractiveRedpacketDirectly:conversationID:;
+- (void)openRedPacketAndSendMessageWithInput:completion:;
+- (id)createConversationWithId:;
+- (id)createConversationWithId:options:;
+- (void)sendGiphyMessageWithContent:conversationID:;
+- (void)sendInteractiveEmojiGiphyMessageWithContent:conversationID:enterMethod:;
+- (void)sendRedPacketWithContent:conversationID:isFansCreator:preSendMsgID:coverId:isPitayaRedpacket:;
+- (id)createVolumeIncreaseViewWithFrame:;
+- (void)openIMCameraWithConfigModel:;
+- (void)fetchSendRedPacketEnableStatusWithConversation:completion:;
+- (BOOL)isEnableSendRedPacketWithUser:conversation:needToast:;
+- (void)didOpenRedPacketWithConversationId:isPitayaRedPacket:;
+- (void)didSendRedPacketMessageWithConversationId:isPitayaRedPacket:;
+- (id)nickNamePlaceHolderKey;
+- (BOOL)openTaskResultPanelIfParamValid:;
+- (void)recordPetElfAsset:;
+- (BOOL)ifAccountHasPetElfAsset;
+- (BOOL)isRefreshingUser;
+- (void)setIsRefreshingUser:;
+- (void)sendGiphyMessageWithContent:aweType:conversationID:enterMethod:;
+- (void)p_redPackRejectWithToast:conversation:;
+- (void)trackRedPackRejectEventWithConversation:;
+@end

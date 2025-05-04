@@ -1,0 +1,38 @@
+@interface AWEIMStrangerChatLimitBannerComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMShadowStyleBannerView bannerView;
+@property (nonatomic) BOOL isDisplaying;
+@property (nonatomic) @? continueBlock;
+@property (nonatomic) @? removeBlock;
+@property (nonatomic) BOOL invalid;
+@property (nonatomic) Q priorityValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsDisplaying:;
+- (id)removeBlock;
+- (void)setRemoveBlock:;
+- (id)shouldContinueForPriorityObject:;
+- (id)shouldRemoveForPriorityObject:;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (BOOL)p_shouldShow;
+- (void)p_display;
+- (id)getBaseVC;
+- (void)prepareToDispatch;
+- (void)p_fetchEnableShow:;
+- (void)dismissView:;
+- (void)setInvalid:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (BOOL)invalid;
+- (BOOL)isDisplaying;
+- (id)bannerView;
+- (void)setBannerView:;
+- (id)continueBlock;
+- (void)setContinueBlock:;
+- (unsigned long long)priorityValue;
+- (void)setPriorityValue:;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)p_isC2CNotFriendCon:;
+@end

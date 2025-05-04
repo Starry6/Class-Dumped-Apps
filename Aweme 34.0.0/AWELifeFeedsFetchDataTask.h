@@ -1,0 +1,32 @@
+@interface AWELifeFeedsFetchDataTask : NSObject
+@property (nonatomic) AWELifeFeedsNetworkImpl networkImpl;
+@property (nonatomic) AWELifeFeedsDataParseTask parseTask;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) @? completeBlock;
+@property (nonatomic) <AWENearbyModuleService> nearbyService;
+@property (nonatomic) NSMutableDictionary networkTrackParams;
+@property (nonatomic) double startTime;
+- (void)setCompleteBlock:;
+- (id)completeBlock;
+- (void)setNetworkImpl:;
+- (id)networkImpl;
+- (id)nearbyService;
+- (void)didFinishFetchData:;
+- (id)getServerTiming:param:;
+- (void)fetchDataWithParams:complete:;
+- (void)invokeFailureCompleteBlockWithError:;
+- (void)addTaskTrackParamsFromRequestQuery:;
+- (void)didFinishFetchRealTimeUserActions:;
+- (void)tryFetchRealTimeUserActions:;
+- (void)recordTimingParams:;
+- (id)networkTrackParams;
+- (void)setParseTask:;
+- (void)didFinishParseData:;
+- (void)setNetworkTrackParams:;
+- (id)parseTask;
+- (void)setStartTime:;
+- (void).cxx_destruct;
+- (double)startTime;
+- (id)params;
+- (void)setParams:;
+@end

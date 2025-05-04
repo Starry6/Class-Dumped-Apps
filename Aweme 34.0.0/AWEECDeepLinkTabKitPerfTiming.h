@@ -1,0 +1,37 @@
+@interface AWEECDeepLinkTabKitPerfTiming : NSObject
+@property (nonatomic) q isShortLink;
+@property (nonatomic) q bootType;
+@property (nonatomic) double bootTime;
+@property (nonatomic) double taskStartTime;
+@property (nonatomic) double getTabKitUrlStart;
+@property (nonatomic) double getTabKitUrlEnd;
+@property (nonatomic) double preloadGeckoStart;
+@property (nonatomic) double preloadGeckoEnd;
+@property (nonatomic) double prefetchApiStart;
+@property (nonatomic) double prefetchApiEnd;
+@property (nonatomic) double taskEndTime;
+- (long long)isShortLink;
+- (long long)bootType;
+- (double)getTabKitUrlStart;
+- (double)getTabKitUrlEnd;
+- (double)preloadGeckoStart;
+- (double)preloadGeckoEnd;
+- (double)prefetchApiStart;
+- (double)prefetchApiEnd;
+- (double)taskEndTime;
+- (id)initWithShortLinkType:;
+- (id)formatPerfTiming;
+- (void)setIsShortLink:;
+- (void)setBootType:;
+- (void)setBootTime:;
+- (void)setGetTabKitUrlStart:;
+- (void)setGetTabKitUrlEnd:;
+- (void)setPreloadGeckoStart:;
+- (void)setPreloadGeckoEnd:;
+- (void)setPrefetchApiStart:;
+- (void)setPrefetchApiEnd:;
+- (void)setTaskEndTime:;
+- (double)taskStartTime;
+- (void)setTaskStartTime:;
+- (double)bootTime;
+@end

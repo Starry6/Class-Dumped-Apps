@@ -1,0 +1,36 @@
+@interface AWEDislikeStrategyTool : NSObject
+- (id)aAWEAwemeInteractionManagerDOUYINLiteAdapter;
++ (BOOL)isPersonalRecommendSwitchOn;
++ (id)arrayToJsonString:;
++ (BOOL)shouldShowOpenPersonalRecommendPopup:;
++ (void)showOpenPersonalRecommendPopupWithParams:;
++ (BOOL)isRecommendUnfollowWithModel:;
++ (void)dislikeFail:;
++ (void)tapticEngineNotifySuccess;
++ (id)recommendToast;
++ (BOOL)isFamiliarAndUnFollowingWithModel:;
++ (BOOL)familiarItemDislikeAvailableWithContext:;
++ (void)dislikeRecommendUserWithContext:shouldDelete:fromUnfollowOftenWatch:;
++ (BOOL)canFakeFollow;
++ (void)postDeleteNotificationWithAweme:referString:;
++ (id)serverAnchorExtraWithLogExtra:;
++ (BOOL)enableLongPressDislikeParams;
++ (id)mainFeedReferStrings;
++ (id)shouldPostCanWithdrawMethodTypes;
++ (Class)aAWEAwemeInteractionManagerDOUYINLiteAdapterClass;
++ (void)tapticEngineNotifyFailure;
++ (BOOL)isTriggeredByLongPressPanel:;
++ (BOOL)isTriggeredBySharePanel:;
++ (void)requestDislikeVideoWithDislikeContext:;
++ (BOOL)syncGetSearchOuterFeedBackOptimizeV2;
++ (BOOL)shouldShield:;
++ (void)postDoubleColumnDislikeNotificationWithAweme:;
++ (BOOL)inMainFeedWithReferString:;
++ (BOOL)shouldPostDeleteNotiWithMethodType:;
++ (BOOL)shouldPostCanWithdrawWithMethodType:;
++ (void)postPanelDislikeWithContext:shouldDelete:shouldScrollToNext:;
++ (BOOL)shouldShowBottomNotiForLongPressWithContext:;
++ (void)showBottomNotiForLongPressWithContext:;
++ (void)dislikeProcessInSearchWithContext:;
++ (void)dislikeCompletionInDoubleColumnWithContext:;
+@end

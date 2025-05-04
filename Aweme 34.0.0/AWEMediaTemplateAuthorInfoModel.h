@@ -1,0 +1,30 @@
+@interface AWEMediaTemplateAuthorInfoModel : MTLModel
+@property (nonatomic) NSString xingtuUserID;
+@property (nonatomic) NSString xingtuUserName;
+@property (nonatomic) NSString DouyinUserID;
+@property (nonatomic) NSString DouyinUserName;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) AWEURLModel avatarThumb;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)avatarThumb;
+- (id)secUid;
+- (void)setAvatarThumb:;
+- (void)setSecUid:;
+- (id)DouyinUserID;
+- (void)setXingtuUserID:;
+- (void)setXingtuUserName:;
+- (void)setDouyinUserID:;
+- (void)setDouyinUserName:;
+- (id)DouyinUserName;
+- (id)xingtuUserID;
+- (id)xingtuUserName;
+- (void)setNickName:;
+- (void).cxx_destruct;
+- (id)nickName;
++ (id)avatarThumbJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

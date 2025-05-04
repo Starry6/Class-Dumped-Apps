@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionListenFeedView : UIView
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) AWEGradientView backgroundView;
+@property (nonatomic) UIImageView animationIcon;
+@property (nonatomic) UILabel animationLabel;
+@property (nonatomic) AWEMusicCoverButton musicButton;
+@property (nonatomic) UIImageView listenIconView;
+@property (nonatomic) UILabel listenTitleLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)layoutSubviews;
+- (void)playMusicAnimations;
+- (void)stopMusicAnimations;
+- (void)makeConstraints;
+- (id)musicButton;
+- (void)pauseMusicAnimations;
+- (void)resumeMusicAnimations;
+- (void)setMusicButton:;
+- (id)listenIconView;
+- (void)layoutWithSize:;
+- (id)listenTitleLabel;
+- (id)animationIcon;
+- (id)animationLabel;
+- (void)setListenIconView:;
+- (void)setListenTitleLabel:;
+- (void)setAnimationIcon:;
+- (void)setAnimationLabel:;
+- (id)initWithViewController:;
+- (void)setBackgroundView:;
+- (id)viewController;
+- (id)backgroundView;
+- (double)iconSize;
+- (void).cxx_destruct;
+- (void)setViewController:;
+@end

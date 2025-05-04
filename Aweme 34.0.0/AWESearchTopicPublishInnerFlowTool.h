@@ -1,0 +1,33 @@
+@interface AWESearchTopicPublishInnerFlowTool : NSObject
+@property (nonatomic) NSMutableDictionary pubslihTaskMap;
+@property (nonatomic) AWESearchHotSpotConfigModel topicPublishModel;
+@property (nonatomic) @? publishWithContextBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didEndWithResult:error:;
+- (id)topicPublishModel;
+- (void)onTopicFavorited:paramContext:;
+- (void)onTopicClickPublish:;
+- (void)onFavoriteButtonShow:;
+- (void)onPublishButtonShow:;
+- (id)pubslihTaskMap;
+- (void)removePublishTask:;
+- (void)setPubslihTaskMap:;
+- (void)setPublishWithContextBlock:;
+- (void)setTopicPublishModel:;
+- (void)onFavoriteButtonClick:isFavorited:;
+- (void)onRequestFavorite:paramContext:;
+- (void)onFavorited:;
+- (void)onFavoriteChallenge:isFavorited:;
+- (void)onCancelFavorited;
+- (void)trackOnClickLook:;
+- (void)onPublish:;
+- (void)onPublishButtonClick:;
+- (id)publishWithContextBlock;
+- (id)logExtras:buttonType:btm:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

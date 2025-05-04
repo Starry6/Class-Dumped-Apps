@@ -1,0 +1,36 @@
+@interface AWENearbyFirstFMPManager : AWENearbyFMPBaseManager
+@property (nonatomic) BOOL isFirstFMP;
+@property (nonatomic) q areaType;
+@property (nonatomic) BOOL transformerFMPSdkSuccess;
+@property (nonatomic) NSString transformerFMPSdkResult;
+@property (nonatomic) NSDictionary feedParams;
+@property (nonatomic) BOOL transformerGeckoExist;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedRequestFail;
+- (void)feedRequestEmpty;
+- (void)transformerRequestFail;
+- (void)transformerRequestEmpty;
+- (void)transformerDidShowParams:renderTime:error:;
+- (void)setTransformerFMPSdkResult:;
+- (id)transformerFMPSdkResult;
+- (id)injectCustomParams;
+- (id)injectEventName;
+- (void)feedDidShowParams:;
+- (void)setIsFirstFMP:;
+- (BOOL)isFirstFMP;
+- (void)setFeedParams:;
+- (void)setTransformerFMPSdkSuccess:;
+- (void)setTransformerGeckoExist:;
+- (id)feedParams;
+- (BOOL)transformerGeckoExist;
+- (BOOL)transformerFMPSdkSuccess;
+- (void)willShowSkyLightGeckoExist:;
+- (id)init;
+- (void).cxx_destruct;
+- (long long)areaType;
+- (void)setAreaType:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface AWEUserLoginHalfScreenPadEmailViewController : AWEUserLoginBaseViewController
+@property (nonatomic) UIView whiteBackView;
+@property (nonatomic) UIView centerContentView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWEUserLoginErrorInfoLabel errorLabel;
+@property (nonatomic) AWEUserLoginEmailViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pageBtm;
+- (void)createContainerView;
+- (void)handleKeyboardWillChange:;
+- (void)addErrorLabel:;
+- (void)startBind;
+- (void)addGeneralOtherComponentView;
+- (void)addWhiteBackView;
+- (id)whiteBackView;
+- (void)addThemeBackgroundView;
+- (void)addThemeHeaderView;
+- (void)setWhiteBackView:;
+- (void)updateContainerViewWithKeyboardHeight:;
+- (BOOL)isShowTheme;
+- (id)init;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)centerContentView;
+- (void)setCenterContentView:;
+- (void)hideError;
+- (id)errorLabel;
+- (void)setErrorLabel:;
+@end

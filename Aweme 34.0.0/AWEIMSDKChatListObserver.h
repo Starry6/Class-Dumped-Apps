@@ -1,0 +1,30 @@
+@interface AWEIMSDKChatListObserver : HTSService
+@property (nonatomic) NSObject<OS_dispatch_queue> sharedQueue;
+@property (nonatomic) RxScheduler sharedScheduler;
+@property (nonatomic) BOOL hasStartObserve;
+@property (nonatomic) NSDate conversationCountInfoDate;
+@property (nonatomic) NSInteger conversationMaxCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)iesim_chatDataManager:chatListDidUpdateWithDeletedChats:insertedChats:firstPage:reason:;
+- (BOOL)p_bindObserver;
+- (void)startObserve;
+- (id)p_errorWithCode:info:;
+- (BOOL)hasStartObserve;
+- (void)setHasStartObserve:;
+- (id)p_loadInfoFromDisk;
+- (void)setConversationCountInfoDate:;
+- (void)setConversationMaxCount:;
+- (id)conversationCountInfoDate;
+- (int)conversationMaxCount;
+- (id)p_flushInfoIntoDisk;
+- (void)p_reportChatCount:;
+- (BOOL)p_recordAndReportIfNecessaryWithDate:chatCount:;
+- (void)p_chatCountDidChangeTo:;
+- (id)init;
+- (id)sharedScheduler;
+- (void).cxx_destruct;
+- (id)sharedQueue;
+@end

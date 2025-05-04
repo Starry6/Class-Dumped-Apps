@@ -1,0 +1,32 @@
+@interface AWEDoubleColumnSearchInstantLocationModel : MTLModel
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString buttonTextColor;
+@property (nonatomic) NSString buttonSchema;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) q showAddress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)buttonSchema;
+- (long long)showAddress;
+- (void)setButtonSchema:;
+- (void)setShowAddress:;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)buttonTextColor;
+- (void)setButtonTextColor:;
+- (void)setButtonText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

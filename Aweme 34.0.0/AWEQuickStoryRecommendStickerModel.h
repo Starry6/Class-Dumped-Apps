@@ -1,0 +1,35 @@
+@interface AWEQuickStoryRecommendStickerModel : AWEBaseApiModel
+@property (nonatomic) NSString stickerId;
+@property (nonatomic) NSString stickerName;
+@property (nonatomic) NSNumber userCount;
+@property (nonatomic) AWEURLModel iconUrl;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL isMomentType;
+@property (nonatomic) BOOL isStory24;
+- (id)referString;
+- (void)setReferString:;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)stickerId;
+- (void)setStickerId:;
+- (void)setIsStory24:;
+- (void)setIsMomentType:;
+- (BOOL)isStory24;
+- (BOOL)isMomentType;
+- (id)schema;
+- (id)iconImage;
+- (void)setSchema:;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (void)setUserCount:;
+- (id)userCount;
+- (id)stickerName;
+- (void)setStickerName:;
+- (id)itemId;
+- (void)setItemId:;
++ (id)iconUrlJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

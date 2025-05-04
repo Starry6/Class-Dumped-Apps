@@ -1,0 +1,38 @@
+@interface AWEFeedPendantCapsuleView : UIView
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) Q status;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString bdColor;
+@property (nonatomic) NSString txtColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showOnView:;
+- (id)txtColor;
+- (void)setTxtColor:;
+- (void)performUpdateFromState:toState:animated:;
+- (void)updateTextString:;
+- (void)setBdColor:;
+- (id)bdColor;
+- (id)hexColorFromString:;
+- (id)textLabel;
+- (void)willEnterForeground;
+- (void)didEnterBackground;
+- (void)setBorderWidth:;
+- (id)init;
+- (double)borderWidth;
+- (void)setStatus:;
+- (void)setCornerRadius:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (unsigned long long)status;
+- (void)layoutSubviews;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (id)bgColor;
+- (void)setBgColor:;
+@end

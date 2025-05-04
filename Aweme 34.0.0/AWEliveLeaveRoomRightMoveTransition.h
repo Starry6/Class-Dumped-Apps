@@ -1,0 +1,34 @@
+@interface AWEliveLeaveRoomRightMoveTransition : NSObject
+@property (nonatomic) UIViewController fromVC;
+@property (nonatomic) UIViewController toVC;
+@property (nonatomic) @ fromCP;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView snapshotTabbar;
+@property (nonatomic) double tabBarAlpha;
+@property (nonatomic) BOOL tabBarHidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startCustomAnimationWithFromVC:toVC:fromContextProvider:toContextProvider:containerView:context:;
+- (void)updateAnimationWithPosition:startPosition:;
+- (void)finishAnimationWithCompletionBlock:;
+- (void)cancelAnimationWithCompletionBlock:;
+- (void)setFromVC:;
+- (id)fromVC;
+- (void)setFromCP:;
+- (id)fromCP;
+- (void)setSnapshotTabbar:;
+- (id)snapshotTabbar;
+- (void)setToVC:;
+- (id)toVC;
+- (void)setTabBarAlpha:;
+- (double)tabBarAlpha;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (unsigned long long)interactionType;
+- (void)clearSession;
+- (void)setTabBarHidden:;
+- (BOOL)tabBarHidden;
+@end

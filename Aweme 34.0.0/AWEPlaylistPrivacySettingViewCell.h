@@ -1,0 +1,31 @@
+@interface AWEPlaylistPrivacySettingViewCell : UITableViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) BOOL onlyBottomLine;
+@property (nonatomic) BOOL drawLine;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) MASConstraint iconSizeConstraint;
+@property (nonatomic) CAShapeLayer topLine;
+@property (nonatomic) CAShapeLayer bottomLine;
+- (void)configModel:;
+- (void)setDrawLine:;
+- (void)setOnlyBottomLine:;
+- (void)p_layoutUI;
+- (BOOL)drawLine;
+- (BOOL)onlyBottomLine;
+- (void)setSubtitleLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)subtitleLabel;
+- (void)setIconImageView:;
+- (id)topLine;
+- (id)bottomLine;
+- (void)setBottomLine:;
+- (void)setTopLine:;
+- (id)iconSizeConstraint;
+- (void)setIconSizeConstraint:;
+@end

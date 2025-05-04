@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionUserAvatarFollowController : AWEBaseController
+@property (nonatomic) BOOL needPlayUnFollowAnimation;
+@property (nonatomic) BOOL isChangeFollowStatusToTrack;
+@property (nonatomic) BOOL isFollowAnimationFinished;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onFollowViewClicked:;
+- (void)updateFollowStatus;
+- (void)followStatusChanged:;
+- (void)playUnFollowAnimation;
+- (id)userAvatarView;
+- (void)playFollowAnimation;
+- (id)aAWEPlayInteractionAdapter;
+- (void)controllerViewDidLoad;
+- (BOOL)canFollow;
+- (void)setNeedPlayUnFollowAnimation:;
+- (void)setIsChangeFollowStatusToTrack:;
+- (BOOL)isFollowAnimationFinished;
+- (BOOL)needPlayUnFollowAnimation;
+- (void)updateFollowStatusByUserAction:;
+- (void)onUnFollowViewClicked:;
+- (void)switchFollowButtonVisibility:;
+- (void)setIsFollowAnimationFinished:;
+- (BOOL)isChangeFollowStatusToTrack;
+- (void)initController;
+- (void)controllerViewDidLayout;
+- (void)controllerStartConfigAvatarView:;
+- (id)viewModel;
+- (id)model;
++ (Class)aAWEPlayInteractionAdapterClass;
+@end

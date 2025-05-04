@@ -1,0 +1,37 @@
+@interface AWEIMLiveRedPacketOpenViewModel : NSObject
+@property (nonatomic) AWEIMLiveRedPacketOpenViewController openVC;
+@property (nonatomic) NSAttributedString nameAttrString;
+@property (nonatomic) NSAttributedString hintAttrString;
+@property (nonatomic) NSAttributedString titleAttrString;
+@property (nonatomic) NSAttributedString subTitleAttrString;
+@property (nonatomic) UIImage avatarImage;
+@property (nonatomic) UIImage backgroundImage;
+@property (nonatomic) @? closeTapAction;
+@property (nonatomic) @? jumpTapAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTitleAttrString:;
+- (id)closeTapAction;
+- (void)setCloseTapAction:;
+- (id)titleAttrString;
+- (id)jumpTapAction;
+- (void)setJumpTapAction:;
+- (id)initWithLiveRedPacketOpenVC:;
+- (void)setOpenVC:;
+- (void)p_prepareProps;
+- (id)openVC;
+- (void)setSubTitleAttrString:;
+- (void)setNameAttrString:;
+- (void)setHintAttrString:;
+- (void)p_enterProfileWithMessage:;
+- (id)nameAttrString;
+- (id)hintAttrString;
+- (id)subTitleAttrString;
+- (id)backgroundImage;
+- (void)setBackgroundImage:;
+- (void).cxx_destruct;
+- (void)setAvatarImage:;
+- (id)avatarImage;
+@end

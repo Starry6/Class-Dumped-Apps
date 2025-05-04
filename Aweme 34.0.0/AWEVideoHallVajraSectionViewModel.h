@@ -1,0 +1,2 @@
+@interface AWEVideoHallVajraSectionViewModel : AWEBaseListSectionViewModel
+@end

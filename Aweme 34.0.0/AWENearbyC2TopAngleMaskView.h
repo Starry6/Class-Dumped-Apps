@@ -1,0 +1,38 @@
+@interface AWENearbyC2TopAngleMaskView : UIView
+@property (nonatomic) NSString arrowColor;
+@property (nonatomic) UIImageView targetImageView;
+@property (nonatomic) UIImageView arrowHeadImgView;
+@property (nonatomic) UIImageView arrowNockImgView;
+@property (nonatomic) double pageFullPercent;
+@property (nonatomic) Q arrowStyle;
+@property (nonatomic) AWENearbyOpenSubPageModel subpageModel;
+@property (nonatomic) AWENearbyHalfStyleConfigModel config;
+- (void)setArrowStyle:;
+- (double)pageFullPercent;
+- (void)setPageFullPercent:;
+- (id)arrowColor;
+- (void)setArrowColor:;
+- (void)updatePageFullPercent:;
+- (void)setSubpageModel:;
+- (void)setupRichArrowWithTargetRect:targetView:offset:;
+- (void)setupNormalArrowWithTargetRect:targetView:offset:;
+- (id)subpageModel;
+- (id)targetImageView;
+- (void)setTargetImageView:;
+- (id)arrowHeadImgView;
+- (void)setArrowHeadImgView:;
+- (id)arrowNockImgView;
+- (void)setArrowNockImgView:;
+- (void)downLoadRichArrowWithStyleConfig:completion:;
+- (void)loadImageWithUrlModel:imageView:completion:;
+- (id)initWithFrame:subpageModel:;
+- (void)showWithTargetView:targetRect:offset:;
+- (void)updateWithTargetView:targetRect:;
+- (void)setConfig:;
+- (id)config;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (id)hitTest:withEvent:;
+- (unsigned long long)arrowStyle;
+@end

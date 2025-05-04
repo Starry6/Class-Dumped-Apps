@@ -1,0 +1,36 @@
+@interface AWEDCFeedCellActionInfoElement : AWEDCFeedBaseCellElement
+@property (nonatomic) UILabel userNameLabel;
+@property (nonatomic) UIImageView userAvatarImageView;
+@property (nonatomic) AWEDCFeedDiggResource diggResource;
+@property (nonatomic) UIView resourcePlaceView;
+@property (nonatomic) AWEDCFeedCellActionInfoViewModel viewModel;
+- (void)configWithModel:context:;
+- (void)setupSubViews;
+- (id)userNameLabel;
+- (void)setUserNameLabel:;
+- (void)themeDidChange:;
+- (id)classNameWithReferString;
+- (id)resourcePlaceView;
+- (id)userAvatarImageView;
+- (void)setResourcePlaceView:;
+- (void)loadUserAvatarImage;
+- (void)configResourcePlaceWithModel:context:;
+- (id)diggResource;
+- (void)addDiggViewIfNeededWithConfig:model:;
+- (void)addCustomViewIfNeededWithConfig:;
+- (void)setDiggResource:;
+- (void)didTapDiggButton:;
+- (double)userAvatarSize;
+- (double)userNameLabelFontSize;
+- (id)userNameLabelColor;
+- (void)didTapUserInfo:;
+- (void)setUserAvatarImageView:;
+- (id)viewModel;
+- (id)initWithContext:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)reset;
++ (BOOL)canShowWithAwemeModel:context:;
++ (double)heightWithCellWidth:awemeModel:context:;
++ (long long)elementStyle;
+@end

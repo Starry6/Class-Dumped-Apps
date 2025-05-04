@@ -1,0 +1,38 @@
+@interface AWEPOIDetailQualityModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEURLModel entranceIconURL;
+@property (nonatomic) NSString desc;
+@property (nonatomic) q score;
+@property (nonatomic) NSString rankCode;
+@property (nonatomic) q qualityRank;
+@property (nonatomic) AWEURLModel rankIconURL;
+@property (nonatomic) NSString rankLinkDesc;
+@property (nonatomic) NSString rankSchema;
+@property (nonatomic) q rankType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)rankSchema;
+- (void)setRankSchema:;
+- (id)rankCode;
+- (void)setRankCode:;
+- (id)entranceIconURL;
+- (void)setEntranceIconURL:;
+- (long long)qualityRank;
+- (void)setQualityRank:;
+- (id)rankIconURL;
+- (void)setRankIconURL:;
+- (id)rankLinkDesc;
+- (void)setRankLinkDesc:;
+- (void)setScore:;
+- (void)setDesc:;
+- (long long)score;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRankType:;
+- (long long)rankType;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

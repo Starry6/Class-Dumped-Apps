@@ -1,0 +1,38 @@
+@interface AWEDPlayerInteractionViewLayoutConfig : NSObject
+@property (nonatomic) double horizontalOffset;
+@property (nonatomic) double videoInfoLeftHorizontalOffset;
+@property (nonatomic) double topOffset;
+@property (nonatomic) double bottomOffset;
+@property (nonatomic) double bottomContainerHeight;
+@property (nonatomic) double videoInfoToTopMargin;
+@property (nonatomic) double topGradientHeight;
+@property (nonatomic) double bottomGradientHeight;
+@property (nonatomic) double topContainerSpace;
+@property (nonatomic) double videoInfoContainerSpace;
+@property (nonatomic) double middleContainerSpace;
+@property (nonatomic) double bottomContainerSpace;
+- (double)topGradientHeight;
+- (double)bottomGradientHeight;
+- (void)setBottomContainerHeight:;
+- (double)videoInfoLeftHorizontalOffset;
+- (void)setVideoInfoLeftHorizontalOffset:;
+- (double)bottomContainerHeight;
+- (double)videoInfoToTopMargin;
+- (void)setVideoInfoToTopMargin:;
+- (void)setTopGradientHeight:;
+- (void)setBottomGradientHeight:;
+- (double)topContainerSpace;
+- (void)setTopContainerSpace:;
+- (double)videoInfoContainerSpace;
+- (void)setVideoInfoContainerSpace:;
+- (double)middleContainerSpace;
+- (void)setMiddleContainerSpace:;
+- (double)bottomContainerSpace;
+- (void)setBottomContainerSpace:;
+- (void)setTopOffset:;
+- (double)topOffset;
+- (void)setHorizontalOffset:;
+- (double)horizontalOffset;
+- (double)bottomOffset;
+- (void)setBottomOffset:;
+@end

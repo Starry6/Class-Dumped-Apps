@@ -1,0 +1,32 @@
+@interface AWEModernFeedVideoDeepQATitleFrame : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} iconImageFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} titleFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} contanierFrame;
+@property (nonatomic) NSString titleText;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIFont titleFont;
+@property (nonatomic) NSURL iconImageURL;
+@property (nonatomic) q type;
+- (void)configFrameWithModel:containerWidth:leftMargin:rightMargin:;
+- (id)contanierFrame;
+- (void)setContanierFrame:;
+- (void)setIconImageFrame:;
+- (id)iconImageFrame;
+- (id)init;
+- (void)setTitleFont:;
+- (void)setTextColor:;
+- (void)setTitleText:;
+- (long long)type;
+- (id)backgroundColor;
+- (id)titleFont;
+- (id)titleText;
+- (void)setType:;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)iconImageURL;
+- (void)setIconImageURL:;
+- (id)titleFrame;
+- (void)setTitleFrame:;
+@end

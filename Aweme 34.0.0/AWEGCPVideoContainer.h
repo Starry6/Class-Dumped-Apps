@@ -1,0 +1,32 @@
+@interface AWEGCPVideoContainer : IESGCPBaseContainer
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) <AWEAwemePlayInteractionPanelControllerProtocol> panelController;
+@property (nonatomic) <AWEAwemePlayInteractionPlayDelegate> interactionController;
+@property (nonatomic) <AWEFeedTableViewCellViewControllerProtocol> feedCellController;
+@property (nonatomic) <AWEPlayInteractionGameCPHalfPanelPanelControllerProtocol> halfPanelController;
+@property (nonatomic) <IESGCPDIContext> currentAudienceDetailDIContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)currentPlayVideoDidChangePlayState:;
+- (void)bindActions;
+- (id)currentAudienceDetailDIContext;
+- (id)feedCellController;
+- (id)halfPanelController;
+- (void)gameDetailVC_viewWillAppear:gameDetailVC:;
+- (void)setCurrentAudienceDetailDIContext:;
+- (id)initWithScene:diContext:parentDI:awemeModel:panelController:interactionController:feedCellController:halfPanelController:;
+- (void)updateContainerWithAwemeModel:panelController:interactionController:feedCellController:halfPanelController:;
+- (void)beforeReset;
+- (void)updatePlayTime:totalTime:;
+- (void)setFeedCellController:;
+- (void)setHalfPanelController:;
+- (void)setPanelController:;
+- (void)setInteractionController:;
+- (void).cxx_destruct;
+- (id)panelController;
+- (id)interactionController;
+@end

@@ -1,0 +1,34 @@
+@interface AWEMusicSearchRequestModel : ACCBaseApiModel
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString cursor;
+@property (nonatomic) NSString count;
+@property (nonatomic) NSString searchSource;
+@property (nonatomic) NSString searchChannel;
+@property (nonatomic) NSNumber queryCorrectType;
+@property (nonatomic) NSString shootType;
+@property (nonatomic) NSString shootDuration;
+@property (nonatomic) NSString defaultKeyword;
+@property (nonatomic) q type;
+- (void)setShootDuration:;
+- (id)queryCorrectType;
+- (void)setQueryCorrectType:;
+- (id)shootDuration;
+- (id)defaultKeyword;
+- (void)setDefaultKeyword:;
+- (id)searchChannel;
+- (void)setSearchChannel:;
+- (id)shootType;
+- (void)setShootType:;
+- (id)cursor;
+- (void)setCount:;
+- (id)count;
+- (void)setCursor:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)searchSource;
+- (void)setSearchSource:;
+- (id)keyword;
+- (void)setKeyword:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

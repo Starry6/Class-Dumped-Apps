@@ -1,0 +1,38 @@
+@interface AWEForceAlertManager : NSObject
+@property (nonatomic) NSMutableSet triggeredEventIDs;
+@property (nonatomic) NSMutableArray allAlerts;
+@property (nonatomic) NSMutableDictionary showedAlertsMap;
+@property (nonatomic) <AWEForceAlertExecuteDelegate> executeDelegate;
+- (void)trackEvent:params:;
+- (id)lifeCycleDelegate;
+- (BOOL)isAlertOfIdExist:;
+- (BOOL)hasShownAlertWithId:;
+- (BOOL)hasTriggeredEvent:;
+- (id)getCurrentShowingAlerts;
+- (BOOL)hasShownAnyAlert;
+- (void)logAlertShowing;
+- (void)setExecuteDelegate:;
+- (void)handleWillTerminateNotification:;
+- (id)allAlerts;
+- (id)triggeredEventIDs;
+- (id)showedAlertsMap;
+- (void)willShowAlert:;
+- (void)triggerForceAlert:forEventItem:completion:;
+- (void)attachAlert:toLifeCycle:;
+- (BOOL)hasForceAlertShowing;
+- (id)currentShowingAlertIDs;
+- (BOOL)isAlertOfIdExist:withEventID:;
+- (void)setAllAlerts:;
+- (void)setTriggeredEventIDs:;
+- (void)setShowedAlertsMap:;
+- (id)executeDelegate;
+- (id)generateShowCallbackWithAlert:;
+- (id)generateCloseCallbackWithAlert:;
+- (void)trackAlertShow:extraParams:;
+- (void)p_onAlertShowCallback:alertResponder:;
+- (void)p_onAlertCloseCallback:isCanceled:;
+- (void)willRemoveAlert:isCanceled:;
+- (void)postAlertEventEnded:;
+- (BOOL)enableTrackShow;
+- (void).cxx_destruct;
+@end

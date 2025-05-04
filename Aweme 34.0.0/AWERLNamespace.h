@@ -1,0 +1,2 @@
+@interface AWERLNamespace : NSObject
+@end

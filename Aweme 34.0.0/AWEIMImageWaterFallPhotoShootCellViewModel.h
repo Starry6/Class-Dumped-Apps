@@ -1,0 +1,36 @@
+@interface AWEIMImageWaterFallPhotoShootCellViewModel : NSObject
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) AWEIMMixImageMessage mixImageMessage;
+@property (nonatomic) @? transferToShootBlock;
+@property (nonatomic) NSDictionary trackExtra;
+@property (nonatomic) @? shootTrackBlock;
+@property (nonatomic) q type;
+@property (nonatomic) AWEIMImageWaterFallItemUIConfig uiConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)uiConfig;
+- (id)tapActionBlock;
+- (id)trackExtra;
+- (void)setTrackExtra:;
+- (void)setUiConfig:;
+- (void)p_configWithWithConv:mixImageMessage:trackExtra:;
+- (void)setMixImageMessage:;
+- (void)p_transferToShootWithConv:mixImageMessage:;
+- (id)shootTrackBlock;
+- (void)setTransferToShootBlock:;
+- (id)p_transferToStartMixPageSchema;
+- (id)transferToShootBlock;
+- (BOOL)shouldDismissPreviousPage;
+- (id)initWithConv:mixImageMessage:trackExtra:;
+- (void)setShootTrackBlock:;
+- (id)mixImageMessage;
+- (id)text;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)iconImageName;
+- (id)conversation;
+- (void)setConversation:;
+@end

@@ -1,0 +1,34 @@
+@interface AWECodeGenDesktopWidgetFloatTipsDataModel : AWEBaseDataModel
+@property (nonatomic) NSInteger showStyle;
+@property (nonatomic) q widgetStyle;
+@property (nonatomic) NSInteger headerStyle;
+@property (nonatomic) NSString widgetImg;
+@property (nonatomic) NSString widgetImgHeight;
+@property (nonatomic) BOOL canRetryPlus;
+@property (nonatomic) BOOL canGuideSmallWidget;
+@property (nonatomic) NSString guideAddWidgetSize;
+@property (nonatomic) AWECodeGenFloatTipsRewardModel beforePlusRewardModel;
+@property (nonatomic) BOOL isNewWidget;
+- (int)showStyle;
+- (void)setShowStyle:;
+- (id)widgetImg;
+- (void)setWidgetImg:;
+- (id)widgetImgHeight;
+- (void)setWidgetImgHeight:;
+- (BOOL)canRetryPlus;
+- (void)setCanRetryPlus:;
+- (BOOL)canGuideSmallWidget;
+- (void)setCanGuideSmallWidget:;
+- (id)guideAddWidgetSize;
+- (void)setGuideAddWidgetSize:;
+- (id)beforePlusRewardModel;
+- (void)setBeforePlusRewardModel:;
+- (BOOL)isNewWidget;
+- (void)setIsNewWidget:;
+- (int)headerStyle;
+- (void).cxx_destruct;
+- (void)setHeaderStyle:;
+- (void)setWidgetStyle:;
+- (long long)widgetStyle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFeedAnchorOptimizedMovieTicketConfig : AWEFeedAnchorBaseConfig
+@property (nonatomic) AWEMarkView mediumButton;
+@property (nonatomic) BOOL isExpand;
+@property (nonatomic) BOOL didUpdateForLargeFontAdapt;
+- (void)anchorViewWillShowOnSuperview;
+- (void)updateWithAwemeModel:needPerformOnDisplay:;
+- (id)commonParams;
+- (BOOL)isExpand;
+- (void)setIsExpand:;
+- (id)anchorViewWithModel:;
+- (id)layoutWithAwemeModel:commonLayoutInfo:;
+- (void)updateAnchorForLargeFontAdaptIfNeeded;
+- (void)handleAnchorViewTapped;
+- (void)trackEventWithEventName:;
+- (void)trackEventWithEventName:url:;
+- (BOOL)didUpdateForLargeFontAdapt;
+- (void)setDidUpdateForLargeFontAdapt:;
+- (id)mediumButton;
+- (void)setAdTagLabelAttributedText:tailText:;
+- (void)setMarkLabelAttributedText:tailText:;
+- (id)attributeStringForNewStyleWithText:tailText:;
+- (id)attributeStringWithText:tailText:;
+- (void)updateAnchorWithPlayBackTime:;
+- (void)setMediumButton:;
+- (void).cxx_destruct;
+- (void)reset;
++ (BOOL)hasAnchorViewDataWithAwemeModelForFeed:extraInfo:;
++ (BOOL)hasAnchorViewDataWithAwemeModelForCommentList:extraInfo:;
++ (id)anchorType;
+@end

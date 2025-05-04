@@ -1,0 +1,38 @@
+@interface AWEUlikeInvitationLetterAlert : NSObject
+@property (nonatomic) @? onClose;
+@property (nonatomic) DUXContentSheet sheet;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) q maxCount;
+@property (nonatomic) q intervalDays;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickCloseButton:;
+- (BOOL)sheetWillStayAfterClickMaskArea;
+- (void)sheetDidDismiss:;
+- (BOOL)canShow;
+- (void)showWithCloseCallback:;
+- (BOOL)shouldCancelAllOtherPendingAlertsWhenShowed;
+- (id)getStoregeKeyWithOriginKey:;
+- (void)fetchUlikeAuthAccount;
+- (long long)intervalDays;
+- (BOOL)fetchAuthInfoWithSource;
+- (void)setIntervalDays:;
+- (void)showInvitationSheet;
+- (void)letterDidShow;
+- (void)setMaxCount:;
+- (id)init;
+- (long long)maxCount;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)sheet;
+- (id)onClose;
+- (void)setOnClose:;
+- (void)setSheet:;
++ (id)sharedInstance;
+@end

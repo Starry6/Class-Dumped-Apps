@@ -1,0 +1,38 @@
+@interface AWEECOMIMUploadImageHelper : NSObject
+@property (nonatomic) BDImageXUploaderClient uploadClient;
+@property (nonatomic) @? callback;
+@property (nonatomic) NSArray progresses;
+@property (nonatomic) NSArray fileDatas;
+@property (nonatomic) NSMutableArray URIs;
+@property (nonatomic) NSMutableArray widths;
+@property (nonatomic) NSMutableArray heights;
+@property (nonatomic) <AWEECOMIMUploadImageHelperDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)imageXUpload:fileIndex:singleImage:error:;
+- (void)imageXUpload:fileIndex:progressDidUpdate:;
+- (void)imageXUploadDidFinish:;
+- (long long)imageXUploadGetNetState:;
+- (void)imageXUpload:onLogInfo:;
+- (id)uploadClient;
+- (void)setUploadClient:;
+- (void)fetchUploadImageTokenWithPigeonBizType:completion:;
+- (void)setFileDatas:;
+- (void)setWidths:;
+- (void)setHeights:;
+- (void)uploadImageWithPigeonBizType:fileDatas:progresses:completion:;
+- (id)fileDatas;
+- (id)URIs;
+- (void)setCallback:;
+- (id)callback;
+- (id)delegate;
+- (id)progresses;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setURIs:;
+- (id)heights;
+- (id)widths;
+- (void)setProgresses:;
+@end

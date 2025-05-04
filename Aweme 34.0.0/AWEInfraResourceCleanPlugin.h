@@ -1,0 +1,38 @@
+@interface AWEInfraResourceCleanPlugin : NSObject
+@property (nonatomic) NSCondition cleanCondition;
+@property (nonatomic) NSString liveMetaPath;
+@property (nonatomic) NSString ttnetPath;
+@property (nonatomic) NSString heimdallrPath;
+@property (nonatomic) NSString pitayaPath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cleanPaths;
+- (void)cleanResourceWithStrategy:;
+- (double)cleanSizeWithStrategy:;
+- (BOOL)useAllocatedDiskSize;
+- (id)liveMetaPath;
+- (id)ttnetPath;
+- (id)heimdallrPath;
+- (id)pitayaPath;
+- (double)liveMetaSize;
+- (double)cleanSizeInRadical;
+- (void)cleanInfraResourceAuto;
+- (void)cleanInfraResourceRadical;
+- (void)cleanInfraResourceExtremely;
+- (void)cleanLiveMeta;
+- (void)cleanTTNetCache;
+- (void)cleanVideoCache;
+- (void)cleanImageCache;
+- (BOOL)fixedCleanUpRange;
+- (id)cleanCondition;
+- (void)cleanResourceAtPath:whiteList:;
+- (void)setCleanCondition:;
+- (void)setLiveMetaPath:;
+- (void)setTtnetPath:;
+- (void)setHeimdallrPath:;
+- (void)setPitayaPath:;
+- (id)init;
+- (void).cxx_destruct;
+@end

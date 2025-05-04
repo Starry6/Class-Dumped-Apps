@@ -1,0 +1,30 @@
+@interface AWEStreamEditManager : NSObject
+@property (nonatomic) BOOL prepared;
+@property (nonatomic) NSDictionary preparationInfo;
+@property (nonatomic) BOOL cloudCompilePrepared;
+@property (nonatomic) NSDictionary cloudCompileAuthInfo;
+@property (nonatomic) BOOL bufferingDone;
+- (void)prepareForShareToStory;
+- (void)beginPreparation;
+- (void)endPreparationWithResult:info:;
+- (void)beginShareImagePreparation;
+- (void)endShareImagePreparationWithResult:info:;
+- (void)prepareForShareToStoryAtLaunch;
+- (BOOL)isBufferingDoneWithPublishModel:;
+- (void)endCloudCompilePreparation:;
+- (id)preparationInfo;
+- (void)resetShareImageStatus;
+- (void)setBufferingDone:;
+- (BOOL)isCloudCompilePrepared;
+- (id)cloudCompileAuthInfo;
+- (void)setPreparationInfo:;
+- (void)setCloudCompileAuthInfo:;
+- (void)setCloudCompilePrepared:;
+- (void)loadCanvasAnimatedInfoEffect;
+- (BOOL)isBufferingDone;
+- (void)resetStatus;
+- (void)setPrepared:;
+- (BOOL)isPrepared;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

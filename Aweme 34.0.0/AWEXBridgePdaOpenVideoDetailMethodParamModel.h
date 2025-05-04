@@ -1,0 +1,31 @@
+@interface AWEXBridgePdaOpenVideoDetailMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) NSString currentAwemeId;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSArray awemeIdList;
+@property (nonatomic) NSDictionary extraLog;
+@property (nonatomic) NSDictionary extraParam;
+@property (nonatomic) q type;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)extraLog;
+- (void)setExtraLog:;
+- (id)extraParam;
+- (void)setExtraParam:;
+- (id)awemeIdList;
+- (id)currentAwemeId;
+- (void)setCurrentAwemeId:;
+- (void)setAwemeIdList:;
+- (void)setContainerID:;
+- (void)setDomain:;
+- (id)domain;
+- (long long)type;
+- (void)setType:;
+- (id)containerID;
+- (void).cxx_destruct;
++ (id)requiredKeyPaths;
++ (id)typeJSONTransformer;
++ (id)defaultValues;
++ (id)JSONKeyPathsByPropertyKey;
+@end

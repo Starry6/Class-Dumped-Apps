@@ -1,0 +1,30 @@
+@interface AWECameraFilterConfiguration : NSObject
+@property (nonatomic) NSArray filterArray;
+@property (nonatomic) NSArray aggregatedEffects;
+@property (nonatomic) AWEColorFilterDataManager filterManager;
+@property (nonatomic) IESEffectModel frontCameraFilter;
+@property (nonatomic) IESEffectModel rearCameraFilter;
+@property (nonatomic) IESEffectModel needRecoveryFrontCameraFilter;
+@property (nonatomic) IESEffectModel needRecoveryRearCameraFilter;
+- (void)setFilterArray:;
+- (id)filterArray;
+- (id)filterManager;
+- (void)updateFilterDataWithCompletion:;
+- (void)updateFilterData;
+- (id)frontCameraFilter;
+- (id)needRecoveryFrontCameraFilter;
+- (void)setFrontCameraFilter:;
+- (id)rearCameraFilter;
+- (id)needRecoveryRearCameraFilter;
+- (void)setRearCameraFilter:;
+- (id)initWithFilterPanelName:;
+- (void)setNeedRecoveryFrontCameraFilter:;
+- (void)setNeedRecoveryRearCameraFilter:;
+- (void)updateCameraFilterWithEffects:;
+- (id)aggregatedEffects;
+- (void)setAggregatedEffects:;
+- (void)fetchEffectListStateCompletion:;
+- (void)updateFilterCheckStatusWithCheckArray:uncheckArray:;
+- (id)init;
+- (void).cxx_destruct;
+@end

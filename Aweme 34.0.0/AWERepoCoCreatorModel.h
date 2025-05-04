@@ -1,0 +1,30 @@
+@interface AWERepoCoCreatorModel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray coCreators;
+@property (nonatomic) BOOL isStarAtlasCoCreator;
+@property (nonatomic) BOOL hasStarAtlasMission;
+@property (nonatomic) NSString capcutToken;
+@property (nonatomic) BOOL hasLoadCapCutInfo;
+- (id)coCreators;
+- (void)setCoCreators:;
+- (id)initWithDraft:;
+- (void)saveWithDraft:;
+- (void)updateFromAweme:;
+- (BOOL)isStarAtlasCoCreator;
+- (id)capcutToken;
+- (BOOL)hasLoadCapCutInfo;
+- (void)setHasLoadCapCutInfo:;
+- (BOOL)hasStarAtlasMission;
+- (void)setCapcutToken:;
+- (void)setHasStarAtlasMission:;
+- (void)setIsStarAtlasCoCreator:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

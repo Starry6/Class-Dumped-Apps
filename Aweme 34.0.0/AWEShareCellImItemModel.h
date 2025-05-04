@@ -1,0 +1,30 @@
+@interface AWEShareCellImItemModel : NSObject
+@property (nonatomic) <AWEIMShareModelProtocol> imModel;
+@property (nonatomic) @? iconClickCallback;
+@property (nonatomic) @? additionViewClickCallback;
+@property (nonatomic) @? titleClickCallback;
+@property (nonatomic) @? cellClickCallback;
+@property (nonatomic) q dotShowType;
+@property (nonatomic) NSArray recentShareUsers;
+@property (nonatomic) UIColor bgColor;
+@property (nonatomic) NSString hasSharedIconAndTextColor;
+- (void)setImModel:;
+- (id)imModel;
+- (id)iconClickCallback;
+- (void)setIconClickCallback:;
+- (id)additionViewClickCallback;
+- (void)setAdditionViewClickCallback:;
+- (id)titleClickCallback;
+- (void)setTitleClickCallback:;
+- (id)cellClickCallback;
+- (void)setCellClickCallback:;
+- (long long)dotShowType;
+- (void)setDotShowType:;
+- (id)recentShareUsers;
+- (void)setRecentShareUsers:;
+- (id)hasSharedIconAndTextColor;
+- (void)setHasSharedIconAndTextColor:;
+- (void).cxx_destruct;
+- (id)bgColor;
+- (void)setBgColor:;
+@end

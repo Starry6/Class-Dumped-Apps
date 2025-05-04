@@ -1,0 +1,30 @@
+@interface AWEVoiceSearchTranslater : NSObject
+@property (nonatomic) SAMICore handler;
+@property (nonatomic) BOOL translatePending;
+@property (nonatomic) @? textResultCallBack;
+@property (nonatomic) @? failureCallBack;
+@property (nonatomic) @? connectedCallBack;
+@property (nonatomic) @? finishedCallBack;
+- (void)pauseTranslate;
+- (void)translatePCMAudioData:withDataSize:;
+- (BOOL)translatePending;
+- (void)setTranslatePending:;
+- (id)failureCallBack;
+- (void)setFailureCallBack:;
+- (void)setupHandlerWithAppKey:token:extra:config:;
+- (void)clearCallBack;
+- (void)setTextResultCallBack:connectedCallBack:failureCallBack:finishCallBack:;
+- (id)finishedCallBack;
+- (void)setFinishedCallBack:;
+- (void)_processTranslateResult:extra:;
+- (id)connectedCallBack;
+- (void)setupSAMIWithAppKey:token:extra:config:;
+- (void)setTextResultCallBack:;
+- (void)setConnectedCallBack:;
+- (id)textResultCallBack;
+- (void)setupHandlerWithAppKey:token:extra:;
+- (void)setHandler:;
+- (id)handler;
+- (void).cxx_destruct;
+- (void)destroyHandler;
+@end

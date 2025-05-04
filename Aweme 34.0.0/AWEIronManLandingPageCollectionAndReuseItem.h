@@ -1,0 +1,31 @@
+@interface AWEIronManLandingPageCollectionAndReuseItem : UICollectionViewCell
+@property (nonatomic) UIButton bgBtn;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILongPressGestureRecognizer press;
+@property (nonatomic) AWEIronManLandingPageCommonItemModel model;
+@property (nonatomic) <AWEIronManLandingPageItemInteractionDelegate> delegate;
+@property (nonatomic) q index;
+- (void)awe_themeDidChange:;
+- (void)clickAction;
+- (void)setBgBtn:;
+- (id)bgBtn;
+- (void)setPress:;
+- (void)deliverActionToDelegate:;
+- (void)updateToItemModel:;
+- (void)setIndex:;
+- (void)setModel:;
+- (long long)index;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)longPress:;
+- (id)model;
+- (void)setIconView:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)press;
+- (void)setNameLabel:;
+- (void)setUpUI;
+@end

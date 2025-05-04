@@ -1,0 +1,34 @@
+@interface AWEPOIParamsDataManager : NSObject
+@property (nonatomic) Q status;
+@property (nonatomic) AWEPOIParamsDataModelManager mobManager;
+@property (nonatomic) AWEPOIParamsDataModelManager routerManager;
+@property (nonatomic) AWEPOIRepeatEventRuleModel repeatEventRuleModel;
+@property (nonatomic) NSPointerArray observers;
+@property (nonatomic) ^{__CFRunLoopObserver=} runLoopObserver;
+- (BOOL)isFileExistAtPath:;
+- (void)setRouterManager:;
+- (id)routerManager;
+- (void)prepareForUpdate;
+- (id)localFileDirectory;
+- (id)tempDownloadFileDirectory;
+- (void)stopRunloopObserver;
+- (void)reloadDataModelManager:;
+- (id)mobManager;
+- (id)repeatEventRuleModel;
+- (unsigned long long)checkStatusAndAddStatusObserverIfNotDone:;
+- (void)setMobManager:;
+- (void)setRepeatEventRuleModel:;
+- (id)init;
+- (void)setStatus:;
+- (id)rootURL;
+- (id)observers;
+- (void)startUpdate;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (id)downloadURL;
+- (id)runLoopObserver;
+- (void)setObservers:;
+- (void)setRunLoopObserver:;
++ (id)settingsInfo;
++ (id)sharedManager;
+@end

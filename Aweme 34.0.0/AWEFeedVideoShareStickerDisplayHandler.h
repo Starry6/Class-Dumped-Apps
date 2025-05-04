@@ -1,0 +1,33 @@
+@interface AWEFeedVideoShareStickerDisplayHandler : AWEFeedBasicStickerDisplayHandler
+@property (nonatomic) UIView<ACCStickerContentProtocol> contentView;
+@property (nonatomic) UIView<HunterContainerProtocol> hunterContainer;
+@property (nonatomic) BOOL isInPureModePage;
+@property (nonatomic) BOOL hasFetched;
+@property (nonatomic) NSString prefetchingForwardAwemeUUID;
+@property (nonatomic) UIView shareInfoContentView;
+- (BOOL)isInPureModePage;
+- (void)updateShareAwemeStickerContent:;
+- (void)setHasFetched:;
+- (id)hunterContainer;
+- (void)setHunterContainer:;
+- (BOOL)displayByNative;
+- (void)displaySticker:;
+- (void)onPlayerFrameChanged:;
+- (BOOL)canResponseEvent;
+- (id)hunterCountainerForHandler;
+- (BOOL)isShareCommentToStoryScene:;
+- (id)findPreFetchAwemeIfNeeded;
+- (void)setPrefetchingForwardAwemeUUID:;
+- (void)jumpToVideoSharePage;
+- (id)prefetchingForwardAwemeUUID;
+- (void)setIsInPureModePage:;
+- (void)setShareInfoContentView:;
+- (void)changeStickerContainerFrame;
+- (id)shareInfoContentView;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)handleTapAtPoint:;
+- (BOOL)hasFetched;
++ (BOOL)canDisplaySticker:;
+@end

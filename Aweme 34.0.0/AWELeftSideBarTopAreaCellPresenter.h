@@ -1,0 +1,30 @@
+@interface AWELeftSideBarTopAreaCellPresenter : AWELeftSideBarBasePresenter
+@property (nonatomic) AWELeftSideBarListCellDynamicDataModel leftSideBarDynamicDataModel;
+@property (nonatomic) UIView<AWELeftSideBarStencilViewProtocol> listView;
+@property (nonatomic) AWELeftSideBarListCellDataModel cellDataModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (double)cellViewWidth;
+- (id)bussinessTrackInfo;
+- (void)leftSideBarThemeDidChange:;
+- (BOOL)needUpdateLeftSideBarContextWithModuleType:withExtraData:withAmbienceIdentification:;
+- (void)updateLeftSideBarContext:withExtraData:withAmbienceIdentification:;
+- (BOOL)canDowngradeDisplay;
+- (void)downgradeDisplay;
+- (void)setCellDataModel:;
+- (id)cellDataModel;
+- (id)leftSideBarDynamicDataModel;
+- (void)setLeftSideBarDynamicDataModel:;
+- (id)p_leftSideBarCellDataModel:;
+- (void)p_resetListView;
+- (void)override_leftSideBarClickCell;
+- (id)listView;
+- (void)setListView:;
+- (void).cxx_destruct;
+@end

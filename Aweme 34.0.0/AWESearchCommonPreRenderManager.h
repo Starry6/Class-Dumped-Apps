@@ -1,0 +1,31 @@
+@interface AWESearchCommonPreRenderManager : AWESearchClientAIBaseManager
+@property (nonatomic) AWESearchCommonPreRenderConfig preRenderConfig;
+@property (nonatomic) NSString pitayaTraceID;
+@property (nonatomic) Q triggerType;
+@property (nonatomic) NSSet featureSet;
+@property (nonatomic) @? taskCallBack;
+- (id)pitayaTraceID;
+- (void)setPitayaTraceID:;
+- (void)startClientAITaskWithTriggerType:callback:;
+- (BOOL)managerPrecheck;
+- (void)managerPrecheckFail;
+- (void)managerPackageNotFound;
+- (BOOL)managerCheckInputModel;
+- (void)managerInputModelInvalid;
+- (void)managerGetPTYTaskData:;
+- (void)managerPTYOutputError;
+- (id)managerFetchInputParams;
+- (void)setTaskCallBack:;
+- (id)stringBySenceType:;
+- (id)preRenderConfig;
+- (id)getLastCount:ElementsWithArray:;
+- (id)getFirstCount:ElementsWithArray:;
+- (id)taskCallBack;
+- (void)setPreRenderConfig:;
+- (id)initWithConfig:;
+- (id)featureSet;
+- (void).cxx_destruct;
+- (unsigned long long)triggerType;
+- (void)setTriggerType:;
+- (void)setFeatureSet:;
+@end

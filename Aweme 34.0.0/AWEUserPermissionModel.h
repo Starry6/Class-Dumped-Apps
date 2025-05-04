@@ -1,0 +1,36 @@
+@interface AWEUserPermissionModel : AWEBaseApiModel
+@property (nonatomic) q followToast;
+@property (nonatomic) q originalList;
+@property (nonatomic) q shopToast;
+@property (nonatomic) q shareToast;
+@property (nonatomic) q followingFollowerListToast;
+@property (nonatomic) q fansPageToast;
+@property (nonatomic) BOOL isHitActiveFansGrayed;
+@property (nonatomic) q followToastTypeNew;
+@property (nonatomic) NSString profileToast;
+@property (nonatomic) NSString shareProfileToast;
+- (long long)followToast;
+- (long long)originalList;
+- (long long)shopToast;
+- (long long)shareToast;
+- (long long)fansPageToast;
+- (BOOL)isHitActiveFansGrayed;
+- (void)setIsHitActiveFansGrayed:;
+- (void)setFollowingFollowerListToast:;
+- (void)setFansPageToast:;
+- (long long)followingFollowerListToast;
+- (id)profileToast;
+- (void)setFollowToast:;
+- (void)setOriginalList:;
+- (void)setShopToast:;
+- (void)setShareToast:;
+- (long long)followToastTypeNew;
+- (void)setFollowToastTypeNew:;
+- (void)setProfileToast:;
+- (id)shareProfileToast;
+- (void)setShareProfileToast:;
+- (void).cxx_destruct;
++ (id)followToastJSONTransformer;
++ (id)followToastTypeNewJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface AWEInteractionPreloadModel : NSObject
+@property (nonatomic) <AWEAwemePlayInteractionPlayDelegate><AWEAwemePlayInteractionPanelDelegate><AWEAwemePlayInteractionCommerceDelegate><AWEAwemePlayInteractionUpdateDelegate><AWEAwemePlayInteractionUIDisplayDelegate><AWEAwemePlayInteractionPresenterMethodDelegate><AWEPlayInteractionViewControllerProtocol> interactionViewController;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) Q spreadState;
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL isBackup;
+@property (nonatomic) NSNumber indexInFeed;
+@property (nonatomic) NSString spreadGroupID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (void)setInteractionViewController:;
+- (void)setIndexInFeed:;
+- (id)indexInFeed;
+- (BOOL)isBackup;
+- (id)spreadGroupID;
+- (void)setSpreadState:;
+- (void)updateInteractionVCWithModel:;
+- (void)setIsBackup:;
+- (void)setSpreadGroupID:;
+- (unsigned long long)spreadState;
+- (void)removeInteractionVCFromSuperview;
+- (id)itemID;
+- (void)setItemID:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)interactionViewController;
+@end

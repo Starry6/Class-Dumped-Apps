@@ -1,0 +1,31 @@
+@interface AWEAdAttitudeFilterWordModel : MTLModel
+@property (nonatomic) NSString filterID;
+@property (nonatomic) BOOL defaultSelected;
+@property (nonatomic) NSString filterName;
+@property (nonatomic) NSString filterSubTitle;
+@property (nonatomic) BOOL isPositive;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) NSArray subFilterWords;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFilterID:;
+- (void)setIsPositive:;
+- (id)filterSubTitle;
+- (void)setFilterSubTitle:;
+- (id)subFilterWords;
+- (void)setSubFilterWords:;
+- (void)setIsSelected:;
+- (id)filterName;
+- (BOOL)isSelected;
+- (void).cxx_destruct;
+- (id)filterID;
+- (void)setFilterName:;
+- (BOOL)defaultSelected;
+- (void)setDefaultSelected:;
+- (BOOL)isPositive;
++ (id)isPositiveJSONTransformer;
++ (id)subFilterWordsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

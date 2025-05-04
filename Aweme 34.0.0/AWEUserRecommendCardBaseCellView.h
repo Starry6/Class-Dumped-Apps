@@ -1,0 +1,31 @@
+@interface AWEUserRecommendCardBaseCellView : UIView
+@property (nonatomic) AWEUserRecommendCardBaseCellViewConfig config;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIImageView verificationImageView;
+@property (nonatomic) AFDButton actionButton;
+@property (nonatomic) AFDButton closeButton;
+@property (nonatomic) UIStackView titleStackView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+- (id)initWithFrame:config:;
+- (id)verificationImageView;
+- (void)setVerificationImageView:;
+- (void)setConfig:;
+- (id)config;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (id)initWithCoder:;
+- (id)avatarImageView;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setAvatarImageView:;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)setTitleStackView:;
+- (id)titleStackView;
++ (id)cellViewWithFrame:config:;
+@end

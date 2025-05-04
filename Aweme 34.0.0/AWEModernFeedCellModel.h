@@ -1,0 +1,33 @@
+@interface AWEModernFeedCellModel : NSObject
+@property (nonatomic) NSString preRenderIdentifier;
+@property (nonatomic) NSString cellType;
+@property (nonatomic) @ data;
+@property (nonatomic) BOOL isStaticType;
+@property (nonatomic) Q themeStyle;
+@property (nonatomic) AWEModernFeedCellSeparatorModel bottomSeparator;
+@property (nonatomic) AWEModernFeedCellBackgroundModel cellBackgroundModel;
+@property (nonatomic) AWEModernFeedSectionMeta meta;
+@property (nonatomic) @ attachmentCellModel;
+@property (nonatomic) Q combinateCardType;
+- (void)setThemeStyle:;
+- (id)preRenderIdentifier;
+- (void)setPreRenderIdentifier:;
+- (id)attachmentCellModel;
+- (void)setAttachmentCellModel:;
+- (BOOL)isStaticType;
+- (id)cellBackgroundModel;
+- (void)setCellBackgroundModel:;
+- (unsigned long long)combinateCardType;
+- (void)setCombinateCardType:;
+- (id)meta;
+- (id)cellType;
+- (void)setCellType:;
+- (void)setMeta:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)initWithType:data:;
+- (id)data;
+- (id)bottomSeparator;
+- (void)setBottomSeparator:;
+- (unsigned long long)themeStyle;
+@end

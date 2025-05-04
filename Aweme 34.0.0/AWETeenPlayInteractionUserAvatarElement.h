@@ -1,0 +1,36 @@
+@interface AWETeenPlayInteractionUserAvatarElement : AWETeenPlayInteractionBaseElement
+@property (nonatomic) UIImageView userAvatarView;
+@property (nonatomic) UIImageView xiguaSignView;
+@property (nonatomic) UIView subscribePromptView;
+@property (nonatomic) LOTAnimationView subscribeAnimationView;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) BOOL isPlaySubscribe;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)setUserAvatarView:;
+- (id)userAvatarView;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)p_subscribe:;
+- (id)getTitleAction:;
+- (void)p_updateUserAvatar;
+- (id)xiguaSignView;
+- (id)subscribePromptView;
+- (void)p_playSubscribe:;
+- (void)p_playUnSubscribe;
+- (void)p_showSubscribeGuide;
+- (id)subscribeAnimationView;
+- (BOOL)isPlaySubscribe;
+- (void)setIsPlaySubscribe:;
+- (void)onUserAvatarViewClicked;
+- (void)onSubscribePromptViewClicked;
+- (void)setXiguaSignView:;
+- (void)setSubscribePromptView:;
+- (void)setSubscribeAnimationView:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+@end

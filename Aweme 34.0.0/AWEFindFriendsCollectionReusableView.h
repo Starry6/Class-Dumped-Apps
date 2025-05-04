@@ -1,0 +1,32 @@
+@interface AWEFindFriendsCollectionReusableView : AWEUserRecommendCollectionReusableView
+@property (nonatomic) UIView yellowDot;
+@property (nonatomic) UIButton allFansButton;
+@property (nonatomic) UIButton privacyButton;
+@property (nonatomic) @? allFansTappedBlock;
+@property (nonatomic) @? privacyTappedBlock;
+@property (nonatomic) BOOL showYelloDot;
+@property (nonatomic) BOOL showAllFansButton;
+@property (nonatomic) BOOL showPrivacyButton;
+- (id)yellowDot;
+- (void)setYellowDot:;
+- (id)privacyButton;
+- (void)setPrivacyButton:;
+- (void)setShowPrivacyButton:;
+- (void)setShowYelloDot:;
+- (void)setShowAllFansButton:;
+- (id)allFansButton;
+- (id)allFansTappedBlock;
+- (id)privacyTappedBlock;
+- (void)allFansButtonTapped:;
+- (void)privacyButtonTapped:;
+- (void)setAllFansTappedBlock:;
+- (void)setPrivacyTappedBlock:;
+- (BOOL)showYelloDot;
+- (BOOL)showAllFansButton;
+- (BOOL)showPrivacyButton;
+- (void)setAllFansButton:;
+- (void)setAlpha:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

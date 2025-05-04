@@ -1,0 +1,37 @@
+@interface AWESearchScanTabManager : NSObject
+@property (nonatomic) NSDictionary tabToTabFeedViewControllerMap;
+@property (nonatomic) NSArray tabModels;
+@property (nonatomic) q initialIndex;
+@property (nonatomic) NSString selectedTab;
+@property (nonatomic) NSArray boxMap;
+@property (nonatomic) NSString initialTab;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) q numberOfTabs;
+@property (nonatomic) NSArray trackSearchTabList;
+- (id)initWithDataContext:;
+- (void)setInitialTab:;
+- (id)initialTab;
+- (id)tabModels;
+- (id)tabFeedViewControllerAtIndex:;
+- (id)tabTitles;
+- (long long)indexOfTab:;
+- (id)tabToTabFeedViewControllerMap;
+- (void)setTabModels:;
+- (id)trackSearchTabList;
+- (id)boxModelIDWithIndex:;
+- (void)setupTabModelsWithDataContext:;
+- (void)setTabToTabFeedViewControllerMap:;
+- (void)setBoxMap:;
+- (id)boxMap;
+- (void)setTrackSearchTabList:;
+- (id)init;
+- (void)setSelectedIndex:;
+- (long long)numberOfTabs;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (id)tabAtIndex:;
+- (id)selectedTab;
+- (void)setSelectedTab:;
+- (long long)initialIndex;
+- (void)setInitialIndex:;
+@end

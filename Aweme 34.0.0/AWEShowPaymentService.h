@@ -1,0 +1,30 @@
+@interface AWEShowPaymentService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (Class)getPaymentVideoToolsClass;
+- (Class)getPlayInteractionIAARewardManagerClass;
+- (id)videoTryWatchViewWithViewStyle:updateStyle:;
+- (id)createVideoTryWatchViewWithViewStyle:updateViewStyle:;
+- (Class)getVideoPaymentTrackerClass;
+- (Class)entertainmentPaidStreamTool;
+- (id)createMultipleEventsView;
+- (BOOL)videoPaymentEnableUseBlockStyle;
+- (id)allowListPageForNeedFromGroupID;
+- (id)blockListPageForNeedPreviousPage;
+- (Class)paymentVideoTool;
+- (void)requestInsertADForAwemeModel:scene:parameters:completion:;
+- (Class)videoPaymentTracker;
+- (id)createPaymentDetailPageEventHandlerWithIdentifier:;
+- (id)getPaymentEventManager;
+- (id)createPaymentEventHandlerWithIdentifier:;
+- (Class)getRewardAdvertisingToolClass;
+- (id)getPlayInteractionIAARewardManagerWithAwemeModel:referString:retryCount:fromEntry:extraParams:;
+- (id)createGetRewardInfoManagerWithModel:referString:fromEntry:;
+- (Class)rewardedAdvertisingTool;
+- (Class)rewardedAdvertisingTracker;
+- (Class)getRewardedAdvertisingTrackerClass;
+- (id)createIAPMaskPresenterWithModel:context:;
++ (void)addEventHandler:;
+@end

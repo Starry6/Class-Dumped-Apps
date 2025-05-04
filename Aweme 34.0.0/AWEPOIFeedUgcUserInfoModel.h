@@ -1,0 +1,34 @@
+@interface AWEPOIFeedUgcUserInfoModel : MTLModel
+@property (nonatomic) NSNumber userTagsHeight;
+@property (nonatomic) AWEPOIFeedUgcSimpleUserModel userBasicInfo;
+@property (nonatomic) NSArray userTags;
+@property (nonatomic) NSString redirectUrl;
+@property (nonatomic) NSString avatarFrameCenterUrl;
+@property (nonatomic) NSArray cellModeUserTags;
+@property (nonatomic) NSArray picModeUserTags;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellModeUserTags;
+- (double)cellModeUserTagSpacing;
+- (unsigned long long)cellModeUserTagSplitType;
+- (id)userBasicInfo;
+- (id)userTagsHeight;
+- (id)avatarFrameCenterUrl;
+- (void)setUserTagsHeight:;
+- (id)picModeUserTags;
+- (double)picModeUserTagSpacing;
+- (unsigned long long)picModeUserTagSplitType;
+- (void)setUserBasicInfo:;
+- (void)setAvatarFrameCenterUrl:;
+- (void)setCellModeUserTags:;
+- (void)setPicModeUserTags:;
+- (void).cxx_destruct;
+- (void)setUserTags:;
+- (id)userTags;
+- (void)setRedirectUrl:;
+- (id)redirectUrl;
++ (id)userTagsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

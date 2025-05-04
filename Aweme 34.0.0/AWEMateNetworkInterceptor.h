@@ -1,0 +1,38 @@
+@interface AWEMateNetworkInterceptor : NSObject
+@property (nonatomic) BOOL isTriggerMateHotActiveBySpreadToken;
+@property (nonatomic) BOOL addMateChainSwitch;
+@property (nonatomic) NSSet pathAllowlist;
+@property (nonatomic) BOOL lastReadAbValue;
+@property (nonatomic) BOOL needTriggerHotActiveByAbValueChanged;
+@property (nonatomic) BOOL friendRebrandingAbValue;
+@property (nonatomic) <IESLCMessageHandlerProtocol> messageHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)ieslc_messageHandler:didReceiveMsg:;
+- (BOOL)friendRebrandingAbValue;
+- (void)updateFriendRebrandSpreadToken:;
+- (void)triggerMateHotActiveIfNeeded;
+- (void)tabBarController:didSelectItemType:previousItemType:;
+- (void)p_handleMessageWithObject:;
+- (void)addIntercept;
+- (void)setPathAllowlist:;
+- (id)pathAllowlist;
+- (id)currentLoginUid;
+- (BOOL)isTriggerMateHotActiveBySpreadToken;
+- (void)didReceiveMateApplyPush:;
+- (void)abTestDidChanged;
+- (void)setLastReadAbValue:;
+- (void)setFriendRebrandingAbValue:;
+- (BOOL)lastReadAbValue;
+- (void)setNeedTriggerHotActiveByAbValueChanged:;
+- (void)setAddMateChainSwitch:;
+- (BOOL)addMateChainSwitch;
+- (BOOL)needTriggerHotActiveByAbValueChanged;
+- (void)setIsTriggerMateHotActiveBySpreadToken:;
+- (void)syncSettings;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

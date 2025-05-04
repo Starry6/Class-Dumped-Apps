@@ -1,0 +1,34 @@
+@interface AWEStudioRepoOpenShareModel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString openPlatformExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString openPlatformShareID;
+@property (nonatomic) NSString openPlatformExtra;
+@property (nonatomic) NSString openPlatformKey;
+@property (nonatomic) NSString openPlatformContent;
+- (id)openPlatformKey;
+- (void)setOpenPlatformKey:;
+- (id)openPlatformExtra;
+- (void)setOpenPlatformExtra:;
+- (id)openPlatformContent;
+- (void)setOpenPlatformContent:;
+- (id)acc_publishRequestParams:;
+- (id)acc_publishRequestParams:;
+- (id)initWithDraft:;
+- (id)initWithDraft:;
+- (void)saveWithDraft:;
+- (void)saveWithDraft:;
+- (id)openPlatformShareID;
+- (void)setOpenPlatformShareID:;
+- (void)configOpenShareDataFrom:;
+- (void)configModelForQuikStoryBeforePublish:;
+- (void)configModelForQuikStoryBeforePublish:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

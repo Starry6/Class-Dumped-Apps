@@ -1,0 +1,2 @@
+@interface AWEIMOpenPlatformGroupConversationFeatureConfig : AWEIMBigGroupConversationFeatureConfig
+@end

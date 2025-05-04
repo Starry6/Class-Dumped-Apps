@@ -1,0 +1,30 @@
+@interface AWEOnPlayAndMonitorManager : NSObject
+@property (nonatomic) AWEPlayVideoViewController playerController;
+@property (nonatomic) NSArray handlers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onPlayerWillLoopPlaying:;
+- (void)onPlayer:didChangePlaybackStateWithAction:context:;
+- (void)onBackgroundPlay;
+- (id)paramsForVideoPlayQuality;
+- (id)paramsForVideoPlayEnd;
+- (id)paramsForVideoPlayFailed:;
+- (id)paramsForVideoRequest:;
+- (id)paramsForVideoRequestResponse;
+- (id)paramsForVideoBlock;
+- (void)onPrepareToPlay:;
+- (id)handlerClasses;
+- (void)onStopWithHold:async:;
+- (id)handlers;
+- (void)setPlayerController:;
+- (void)setHandlers:;
+- (id)playerController;
+- (void).cxx_destruct;
+- (void)setupHandlers;
+- (void)onResume;
+- (id)initWithPlayerController:;
+- (void)onPause;
+- (void)onPlay:;
+@end

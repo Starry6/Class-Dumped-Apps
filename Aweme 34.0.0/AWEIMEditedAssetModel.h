@@ -1,0 +1,33 @@
+@interface AWEIMEditedAssetModel : NSObject
+@property (nonatomic) NSString filePath;
+@property (nonatomic) UIImage image;
+@property (nonatomic) AVURLAsset urlAsset;
+@property (nonatomic) q videoDuration;
+@property (nonatomic) BOOL isConvertToVideo;
+@property (nonatomic) NSString checkText;
+@property (nonatomic) BOOL isLivePhoto;
+@property (nonatomic) PHLivePhoto editedLivePhoto;
+@property (nonatomic) NSString livePhotoPairedVideoUrl;
+@property (nonatomic) NSString livePhotoPairedImageUrl;
+- (id)checkText;
+- (void)setCheckText:;
+- (void)setIsConvertToVideo:;
+- (void)setUrlAsset:;
+- (id)urlAsset;
+- (void)setLivePhotoPairedImageUrl:;
+- (void)setLivePhotoPairedVideoUrl:;
+- (BOOL)isConvertToVideo;
+- (id)livePhotoPairedVideoUrl;
+- (id)livePhotoPairedImageUrl;
+- (id)editedLivePhoto;
+- (void)setEditedLivePhoto:;
+- (id)filePath;
+- (id)image;
+- (void)setImage:;
+- (void)setIsLivePhoto:;
+- (void)setFilePath:;
+- (void).cxx_destruct;
+- (BOOL)isLivePhoto;
+- (long long)videoDuration;
+- (void)setVideoDuration:;
+@end

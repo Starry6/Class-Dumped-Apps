@@ -1,0 +1,36 @@
+@interface AWEPOIDetailFeedUgcRateLabel : UIView
+@property (nonatomic) AWEPOIDetailFeedUgcRateLabelConfig config;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIView expandTruncationView;
+@property (nonatomic) NSAttributedString expandToken;
+@property (nonatomic) NSAttributedString collapseToken;
+@property (nonatomic) <AWEPOIDetailFeedUgcRateLabelDelegate> delegate;
+- (void)updateWithConfig:string:hasExpandTruncation:didExpand:;
+- (void)didClickContentTextArea;
+- (void)setupExpandTruncationView;
+- (void)didClickExpandToken;
+- (void)setExpandTruncationView:;
+- (id)expandTruncationView;
+- (id)collapseToken;
+- (id)expandToken;
+- (void)didClickCollapseToken;
+- (void)updateWithString:expandedStatus:didExpand:;
+- (void)updateGradientTokenWithExpandStatus:content:;
+- (void)updateTruncationTokenWithExpandStatus:didExpand:content:;
+- (void)refreshCollapseTokenWithTruncationText:;
+- (void)setExpandToken:;
+- (void)setCollapseToken:;
+- (void)setConfig:;
+- (id)delegate;
+- (id)initWithConfig:;
+- (id)attributedText;
+- (void)updateWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
++ (void)emoticonForAttributedString:font:;
++ (id)calculateContentHeightWithModel:config:;
+@end

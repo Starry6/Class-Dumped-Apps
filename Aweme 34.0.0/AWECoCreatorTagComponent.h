@@ -1,0 +1,37 @@
+@interface AWECoCreatorTagComponent : NSObject
+@property (nonatomic) UILabel coCreatorLabel;
+@property (nonatomic) UIView tagContentView;
+@property (nonatomic) AWECoCreatorMultiAvatarTag multiAvatarTag;
+@property (nonatomic) AWEPlayInteractionBaseElement clickDelegate;
+@property (nonatomic) NSArray currentActivatedComponents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEFeedModuleServiceDOUYINJXAdapter;
+- (long long)tagWidth;
+- (id)tagContentView;
+- (void)setTagContentView:;
+- (id)clickDelegate;
+- (void)setClickDelegate:;
+- (id)currentActivatedComponents;
+- (void)setCurrentActivatedComponents:;
+- (long long)optimizeStyle;
+- (id)coCreatorLabel;
+- (long long)tagStyle;
+- (void)configMultiAvatarTagWithCoCreatorLabel:model:;
+- (void)configDefaultTagWithCoCreatorLabel:;
+- (id)urlModelsForMultiAvatarTagWithModel:;
+- (id)multiAvatarTag;
+- (void)onCoCreatorLabelClicked:;
+- (BOOL)isJXStyleOne;
+- (void)setCoCreatorLabel:;
+- (void)setMultiAvatarTag:;
+- (void).cxx_destruct;
+- (void)updateWithModel:;
+- (id)tagView;
++ (Class)aAWEFeedModuleServiceDOUYINJXAdapterClass;
++ (BOOL)needShowWithContext:;
++ (BOOL)mustShowWithContext:;
++ (id)attributedStringWithCoCreatorLabel:;
+@end

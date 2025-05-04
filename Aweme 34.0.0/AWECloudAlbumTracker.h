@@ -1,0 +1,30 @@
+@interface AWECloudAlbumTracker : NSObject
+@property (nonatomic) EcClient client;
+@property (nonatomic) NSMutableDictionary downloadTrackerRunningStart;
+@property (nonatomic) NSMutableDictionary downloadTrackerPauseStart;
+@property (nonatomic) NSMutableDictionary downloadTrackerPauseDuration;
+@property (nonatomic) NSMutableDictionary downloadTrackerPauseDidRun;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)taskItemChanges:;
+- (void)taskProgressChanges:;
+- (void)taskStateChanges:;
+- (void)trackerUploadChanges:;
+- (void)trackerDownloadChanges:;
+- (id)downloadTrackerRunningStart;
+- (id)downloadTrackerPauseStart;
+- (id)downloadTrackerPauseDuration;
+- (id)downloadTrackerPauseDidRun;
+- (void)setDownloadTrackerRunningStart:;
+- (void)setDownloadTrackerPauseStart:;
+- (void)setDownloadTrackerPauseDuration:;
+- (void)setDownloadTrackerPauseDidRun:;
+- (void)cleanup;
+- (void)dealloc;
+- (void)setClient:;
+- (id)client;
+- (void).cxx_destruct;
+- (void)updateClient:;
+@end

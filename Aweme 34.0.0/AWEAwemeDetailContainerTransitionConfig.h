@@ -1,0 +1,33 @@
+@interface AWEAwemeDetailContainerTransitionConfig : NSObject
+@property (nonatomic) @? awemeDetailContainerTransitionCustomProviderBlock;
+@property (nonatomic) BOOL enableTransitionTriggerDirectionDown;
+@property (nonatomic) BOOL disableTransitionTriggerDirectionUp;
+@property (nonatomic) BOOL enableCustomLiveTransitionType;
+@property (nonatomic) Q transitionType;
+@property (nonatomic) NSString interactiveLiveProviderClassName;
+@property (nonatomic) NSString noneInteractiveLiveProviderClassName;
+@property (nonatomic) NSString uniqueProviderClassName;
+@property (nonatomic) NSString interactiveProviderClassName;
+@property (nonatomic) NSString noneInteractiveProviderClassName;
+- (void)setEnableTransitionTriggerDirectionDown:;
+- (void)setDisableTransitionTriggerDirectionUp:;
+- (id)awemeDetailContainerTransitionCustomProviderBlock;
+- (void)setAwemeDetailContainerTransitionCustomProviderBlock:;
+- (BOOL)enableTransitionTriggerDirectionDown;
+- (BOOL)disableTransitionTriggerDirectionUp;
+- (BOOL)enableCustomLiveTransitionType;
+- (void)setEnableCustomLiveTransitionType:;
+- (id)interactiveLiveProviderClassName;
+- (void)setInteractiveLiveProviderClassName:;
+- (id)noneInteractiveLiveProviderClassName;
+- (void)setNoneInteractiveLiveProviderClassName:;
+- (id)uniqueProviderClassName;
+- (void)setUniqueProviderClassName:;
+- (id)interactiveProviderClassName;
+- (void)setInteractiveProviderClassName:;
+- (id)noneInteractiveProviderClassName;
+- (void)setNoneInteractiveProviderClassName:;
+- (void)setTransitionType:;
+- (unsigned long long)transitionType;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,31 @@
+@interface AWEECOMIMLiveInvitationCardModel : AWEECOMIMBaseCardModel
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL isExpired;
+@property (nonatomic) NSString coverLink;
+@property (nonatomic) NSString roomLink;
+@property (nonatomic) NSString shopLogo;
+@property (nonatomic) NSString shopName;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)shopLogo;
+- (id)shopName;
+- (void)setShopLogo:;
+- (void)setShopName:;
+- (void)updateModelWithData:encrypted:;
+- (void)didSkipButtonClick:;
+- (void)setRoomLink:;
+- (void)setCoverLink:;
+- (id)coverLink;
+- (id)roomLink;
+- (BOOL)isExpired;
+- (void)setButtons:;
+- (id)buttons;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setIsExpired:;
++ (Class)cardViewClass;
+@end

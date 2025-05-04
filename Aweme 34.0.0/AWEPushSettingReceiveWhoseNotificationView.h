@@ -1,0 +1,30 @@
+@interface AWEPushSettingReceiveWhoseNotificationView : UIView
+@property (nonatomic) UICollectionView settingsCollection;
+@property (nonatomic) NSArray settings;
+@property (nonatomic) Q whose;
+@property (nonatomic) @? callback;
+@property (nonatomic) NSString notReceiveBtnTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__setupUI;
+- (id)settingsCollection;
+- (id)__titleForSetting:;
+- (unsigned long long)whose;
+- (id)notReceiveBtnTitle;
+- (void)setWhose:;
+- (void)setNotReceiveBtnTitle:;
+- (void)setSettingsCollection:;
+- (void)setSettings:;
+- (void)setCallback:;
+- (id)callback;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)settings;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
++ (id)referenceSize;
+@end

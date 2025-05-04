@@ -1,0 +1,35 @@
+@interface AWEMRSubscribeManageSelectionPanelTableViewCell : UITableViewCell
+@property (nonatomic) UILabel label;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) DUXRadioBox radioBox;
+@property (nonatomic) DUXDivider divider;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) BOOL isImageSetup;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL checked;
+@property (nonatomic) BOOL dividerHidden;
+- (id)radioBox;
+- (void)setRadioBox:;
+- (void)setupImageIfNeeded;
+- (void)setImageURL:description:;
+- (void)setDividerHidden:;
+- (BOOL)dividerHidden;
+- (BOOL)isImageSetup;
+- (void)setIsImageSetup:;
+- (void)setLabel:;
+- (void)setDescriptionLabel:;
+- (void)setChecked:;
+- (BOOL)checked;
+- (id)label;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)title;
+- (id)descriptionLabel;
+- (unsigned long long)accessibilityTraits;
+- (void)setTitle:;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (id)divider;
+- (void)setDivider:;
+@end

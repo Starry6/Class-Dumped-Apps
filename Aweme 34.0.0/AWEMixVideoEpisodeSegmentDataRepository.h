@@ -1,0 +1,34 @@
+@interface AWEMixVideoEpisodeSegmentDataRepository : NSObject
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEMixVideoModel currentMixInfo;
+@property (nonatomic) NSArray videoPanelArray;
+@property (nonatomic) @? currentMixInfoBlock;
+@property (nonatomic) @? currentSegmentEpisodeIdBlock;
+@property (nonatomic) @? currentTableViewBlock;
+- (id)currentMixInfo;
+- (void)setupHeader;
+- (id)tableView;
+- (id)videoPanelArray;
+- (void)refreshOriginVideoPanelArray;
+- (void)synchronizeToViewModelWith:;
+- (void)loadMore;
+- (void)rebindMixVideoEpisodes;
+- (void)checkMissingEpisodesWith:;
+- (BOOL)dataNeedRequestWith:;
+- (void)bindWithFeedViewModel:;
+- (void)setupBindDataBlock;
+- (long long)rightIndexOf:;
+- (long long)leftIndexOf:;
+- (void)updateDataForSegmentWith:;
+- (void)loadMoreForSegmentFromEpisode:completion:;
+- (void)loadPrevious;
+- (void)prepareForReuse;
+- (id)currentMixInfoBlock;
+- (void)setCurrentMixInfoBlock:;
+- (id)currentSegmentEpisodeIdBlock;
+- (void)setCurrentSegmentEpisodeIdBlock:;
+- (id)currentTableViewBlock;
+- (void)setCurrentTableViewBlock:;
+- (id)init;
+- (void).cxx_destruct;
+@end

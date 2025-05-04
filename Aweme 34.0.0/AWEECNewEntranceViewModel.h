@@ -1,0 +1,2 @@
+@interface AWEECNewEntranceViewModel : NSObject
+@end

@@ -1,0 +1,3 @@
+@interface _TtCCV28AWECommentPanelListSwiftImpl6NEWAPI40CommentCellFixedBottomContainerComponentP33_CC64AE42E1B45E66E400434A90C4339019PostViewVirtualView : _TtCV28AWECommentPanelListSwiftImpl6NEWAPI19CommentVirtualLabel
+- (id)layoutThatFits:;
+@end

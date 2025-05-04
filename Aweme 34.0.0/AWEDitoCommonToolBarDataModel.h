@@ -1,0 +1,31 @@
+@interface AWEDitoCommonToolBarDataModel : MTLModel
+@property (nonatomic) NSString backGround;
+@property (nonatomic) AWEDitoCommonToolBarItemModel title;
+@property (nonatomic) NSArray leftContainer;
+@property (nonatomic) NSArray rightContainer;
+@property (nonatomic) BOOL shouldShowLine;
+@property (nonatomic) NSString notFitStatusBar;
+@property (nonatomic) NSDictionary bizParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bizParams;
+- (id)leftContainer;
+- (id)rightContainer;
+- (void)setRightContainer:;
+- (void)setLeftContainer:;
+- (void)setBizParams:;
+- (id)backGround;
+- (void)setBackGround:;
+- (BOOL)shouldShowLine;
+- (void)setShouldShowLine:;
+- (id)notFitStatusBar;
+- (void)setNotFitStatusBar:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)leftContainerJSONTransformer;
++ (id)rightContainerJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

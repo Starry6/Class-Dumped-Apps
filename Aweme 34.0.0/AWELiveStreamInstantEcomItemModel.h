@@ -1,0 +1,35 @@
+@interface AWELiveStreamInstantEcomItemModel : MTLModel
+@property (nonatomic) NSString source;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString productId;
+@property (nonatomic) NSString productTitle;
+@property (nonatomic) NSDictionary productCover;
+@property (nonatomic) NSString productLink;
+@property (nonatomic) BOOL liveTag;
+@property (nonatomic) NSDictionary eventParams;
+@property (nonatomic) NSString extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (BOOL)liveTag;
+- (void)setLiveTag:;
+- (id)productTitle;
+- (void)setProductTitle:;
+- (void)setEventParams:;
+- (id)productCover;
+- (id)productLink;
+- (void)setProductCover:;
+- (void)setProductLink:;
+- (id)productId;
+- (id)extra;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (id)params;
+- (void)setProductId:;
+- (void)setParams:;
+- (id)eventParams;
++ (id)JSONKeyPathsByPropertyKey;
+@end

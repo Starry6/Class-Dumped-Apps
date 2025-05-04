@@ -1,0 +1,33 @@
+@interface AWECollectionViewItemDisplayDelegate : NSProxy
+@property (nonatomic) ^{__CFRunLoopObserver=} sleepObserver;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) <AWECollectionViewItemDisplayDelegateTarget> target;
+@property (nonatomic) NSMutableArray visibleItems;
+@property (nonatomic) BOOL isDisplayChanged;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sleepObserver;
+- (void)setSleepObserver:;
+- (void)p_setupRunloopObserver;
+- (void)startObserverIfNeeded;
+- (void)setIsDisplayChanged:;
+- (BOOL)isDisplayChanged;
+- (void)setVisibleItems:;
+- (id)initWithCollectionView:target:;
+- (void)invalidateItems:;
+- (id)target;
+- (id)collectionView;
+- (void)dealloc;
+- (BOOL)respondsToSelector:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (BOOL)conformsToProtocol:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)setTarget:;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (id)methodSignatureForSelector:;
+- (id)visibleItems;
+@end

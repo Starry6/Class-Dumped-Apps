@@ -1,0 +1,30 @@
+@interface AWEIMFTSMultiRecallRequest : AWEIMFTSDataResult
+@property (nonatomic) NSMutableDictionary dataQueues;
+@property (nonatomic) NSMutableDictionary assistantDataQueues;
+@property (nonatomic) NSMutableSet dataKeySet;
+@property (nonatomic) NSMutableDictionary dataDict;
+@property (nonatomic) q currentFlag;
+@property (nonatomic) BOOL stop;
+@property (nonatomic) @? addSubDataToPrimeDataBlock;
+@property (nonatomic) @? checkRecallFinishedBlock;
+- (void)setDataDict:;
+- (id)dataDict;
+- (id)dataQueues;
+- (id)dataKeySet;
+- (void)loadDataBeforeSortOrder:completion:;
+- (void)setDataQueues:;
+- (void)setDataKeySet:;
+- (void)addDataSource:withConfig:keyElement:isAssistant:;
+- (void)setAddSubDataToPrimeDataBlock:;
+- (void)setCheckRecallFinishedBlock:;
+- (long long)currentFlag;
+- (void)setCurrentFlag:;
+- (id)assistantDataQueues;
+- (id)addSubDataToPrimeDataBlock;
+- (id)checkRecallFinishedBlock;
+- (void)setAssistantDataQueues:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)stop;
+- (void)setStop:;
+@end

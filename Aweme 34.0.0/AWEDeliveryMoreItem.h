@@ -1,0 +1,31 @@
+@interface AWEDeliveryMoreItem : NSObject
+@property (nonatomic) Q operateType;
+@property (nonatomic) Q itemType;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString toastContent;
+@property (nonatomic) NSString itemIconURL;
+@property (nonatomic) NSString itemTitle;
+@property (nonatomic) NSString iconCodeString;
+@property (nonatomic) NSString displayType;
+@property (nonatomic) NSString localIconName;
+- (id)toastContent;
+- (void)setToastContent:;
+- (unsigned long long)operateType;
+- (void)setOperateType:;
+- (void)setItemIconURL:;
+- (void)setLocalIconName:;
+- (void)setIconCodeString:;
+- (id)iconCodeString;
+- (id)moreItemRemindDisplayKey;
+- (id)itemIconURL;
+- (id)localIconName;
+- (unsigned long long)itemType;
+- (id)schema;
+- (void)setItemType:;
+- (void)setSchema:;
+- (id)displayType;
+- (void)setDisplayType:;
+- (void).cxx_destruct;
+- (id)itemTitle;
+- (void)setItemTitle:;
+@end

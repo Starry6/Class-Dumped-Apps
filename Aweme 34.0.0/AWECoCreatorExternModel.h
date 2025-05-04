@@ -1,0 +1,33 @@
+@interface AWECoCreatorExternModel : MTLModel
+@property (nonatomic) NSString customVerify;
+@property (nonatomic) NSString enterpriseVerifyReason;
+@property (nonatomic) NSString talentVerify;
+@property (nonatomic) BOOL hasRequestAwemeList;
+@property (nonatomic) q awemeCount;
+@property (nonatomic) NSNumber minCursor;
+@property (nonatomic) NSNumber maxCursor;
+@property (nonatomic) NSArray awemeList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeList;
+- (id)minCursor;
+- (void)setAwemeList:;
+- (id)maxCursor;
+- (void)setMaxCursor:;
+- (void)setMinCursor:;
+- (id)customVerify;
+- (void)setCustomVerify:;
+- (id)enterpriseVerifyReason;
+- (void)setEnterpriseVerifyReason:;
+- (id)talentVerify;
+- (void)setTalentVerify:;
+- (BOOL)hasRequestAwemeList;
+- (void)setHasRequestAwemeList:;
+- (long long)awemeCount;
+- (void)setAwemeCount:;
+- (void).cxx_destruct;
++ (id)awemeListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

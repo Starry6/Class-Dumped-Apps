@@ -1,0 +1,33 @@
+@interface AWEDoubleColumnSearchMerchandiseQueryModel : AWEBaseApiModel
+@property (nonatomic) NSArray renderInfo;
+@property (nonatomic) NSDictionary businessInfo;
+@property (nonatomic) NSDictionary styleInfo;
+@property (nonatomic) NSDictionary rebackParams;
+@property (nonatomic) NSString dataType;
+@property (nonatomic) NSDictionary recommendedWordsInfo;
+@property (nonatomic) BOOL isTrendingTracked;
+- (void)updateWithControllerInfo:filterManager:;
+- (void)updateWithQueryModel:filterManager:;
+- (void)setBusinessInfo:;
+- (id)businessInfo;
+- (void)setRenderInfo:;
+- (BOOL)removeItemWithModel:;
+- (id)recommendedWordsInfo;
+- (BOOL)isTrendingTracked;
+- (void)setIsTrendingTracked:;
+- (id)rebackParams;
+- (void)setRebackParams:;
+- (BOOL)addItemWithModel:filterManager:;
+- (BOOL)updateQueryModel:filterManager:;
+- (void)setRecommendedWordsInfo:;
+- (void)setDataType:;
+- (void).cxx_destruct;
+- (id)dataType;
+- (id)renderInfo;
+- (void)setStyleInfo:;
+- (id)styleInfo;
++ (id)styleInfoJSONTransformer;
++ (id)renderInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)businessInfoJSONTransformer;
+@end

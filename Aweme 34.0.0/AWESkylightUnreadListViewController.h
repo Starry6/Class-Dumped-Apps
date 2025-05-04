@@ -1,0 +1,38 @@
+@interface AWESkylightUnreadListViewController : AWECommonUserListViewController
+@property (nonatomic) NSString vcEnterForm;
+@property (nonatomic) BOOL noUpdate;
+@property (nonatomic) Q VCState;
+@property (nonatomic) AWESkylightOftenWatchSectionController ofenWatchSectionController;
+@property (nonatomic) AWESkylightMoreAuthorSectionController moreAuthorSectionController;
+@property (nonatomic) NSString noticeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (void)aweui_emptyPagePrimaryButtonTapped:;
+- (BOOL)configWithRouterParamDict:;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)setNoticeType:;
+- (BOOL)enableStickHeader;
+- (BOOL)shouldStickHeaderAtSectionIndex:sectionController:;
+- (BOOL)noUpdate;
+- (void)setNoUpdate:;
+- (void)setVcEnterForm:;
+- (id)ofenWatchSectionController;
+- (id)moreAuthorSectionController;
+- (id)vcEnterForm;
+- (void)setOfenWatchSectionController:;
+- (void)setMoreAuthorSectionController:;
+- (void)setVCState:;
+- (unsigned long long)VCState;
+- (void)viewDidLoad;
+- (void)scrollViewWillBeginDragging:;
+- (void)willMoveToParentViewController:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)noticeType;
+- (void)setupCollectionView:;
++ (Class)viewModelClass;
+@end

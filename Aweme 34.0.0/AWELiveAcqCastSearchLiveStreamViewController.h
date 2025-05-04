@@ -1,0 +1,34 @@
+@interface AWELiveAcqCastSearchLiveStreamViewController : AWELiveAcqCastVideoSearchBaseController
+@property (nonatomic) AWELiveAcqCastSearchLiveStreamDataController dataController;
+@property (nonatomic) <AWELiveAcqCastVideoViewModelProtocol> viewModel;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)loadMore;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (void)__configComponents;
+- (void)track_liveStreamShow:;
+- (void)track_searchShow;
+- (id)initWithDataManager:viewModel:trackParams:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setLoadingView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)dataController;
+@end

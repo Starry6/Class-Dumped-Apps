@@ -1,0 +1,36 @@
+@interface AWELongVideoAdChargeInfoModel : AWEBaseApiModel
+@property (nonatomic) AWELongVideoAdPreviewConfig previewConfig;
+@property (nonatomic) q unlockType;
+@property (nonatomic) double remainedCanWatchDuration;
+@property (nonatomic) q totalAdCount;
+@property (nonatomic) q remainedAdCount;
+@property (nonatomic) NSNumber creatorId;
+@property (nonatomic) q rit;
+@property (nonatomic) NSString adFrom;
+@property (nonatomic) NSString creatorIdStr;
+@property (nonatomic) NSArray awards;
+- (long long)rit;
+- (void)setRit:;
+- (void)setAdFrom:;
+- (id)adFrom;
+- (id)previewConfig;
+- (void)setPreviewConfig:;
+- (double)remainedCanWatchDuration;
+- (void)setRemainedCanWatchDuration:;
+- (long long)totalAdCount;
+- (void)setTotalAdCount:;
+- (long long)remainedAdCount;
+- (void)setRemainedAdCount:;
+- (id)creatorIdStr;
+- (void)setCreatorIdStr:;
+- (void).cxx_destruct;
+- (id)awards;
+- (void)setAwards:;
+- (void)setUnlockType:;
+- (long long)unlockType;
+- (id)creatorId;
+- (void)setCreatorId:;
++ (id)previewConfigJSONTransformer;
++ (id)awardsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

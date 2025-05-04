@@ -1,0 +1,30 @@
+@interface AWESearchScanFromGeneralTopView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel searchLabel;
+@property (nonatomic) UIButton returnButton;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) NSString searchText;
+@property (nonatomic) @? closeButtonClickedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReturnButton:;
+- (id)returnButton;
+- (id)closeButtonClickedBlock;
+- (void)setCloseButtonClickedBlock:;
+- (double)inlayScrollPanelTopViewHeight;
+- (void)setSearchLabel:;
+- (void)clickReturnButton;
+- (void)loadImageWithURL:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setSearchText:;
+- (id)searchLabel;
+- (id)searchText;
+- (void)setIconImageView:;
+- (void)createUI;
+@end

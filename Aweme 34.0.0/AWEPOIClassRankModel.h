@@ -1,0 +1,37 @@
+@interface AWEPOIClassRankModel : AWEBaseApiModel
+@property (nonatomic) NSString poiID;
+@property (nonatomic) NSString rankDescription;
+@property (nonatomic) NSNumber rankValue;
+@property (nonatomic) NSNumber classCode;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString rankCode;
+@property (nonatomic) BOOL canSwitch;
+@property (nonatomic) NSString districtCode;
+@property (nonatomic) AWEPOIOptionModel classOption;
+@property (nonatomic) AWEPOIOptionModel businessAreaOption;
+@property (nonatomic) AWEPOITypeModel poiBackendType;
+- (id)poiID;
+- (id)poiBackendType;
+- (void)setPoiBackendType:;
+- (void)setPoiID:;
+- (id)districtCode;
+- (void)setDistrictCode:;
+- (id)rankDescription;
+- (void)setRankDescription:;
+- (id)rankCode;
+- (void)setRankCode:;
+- (BOOL)canSwitch;
+- (void)setCanSwitch:;
+- (id)rankValue;
+- (void)setRankValue:;
+- (id)classOption;
+- (void)setClassOption:;
+- (id)businessAreaOption;
+- (void)setBusinessAreaOption:;
+- (void).cxx_destruct;
+- (id)cityCode;
+- (void)setCityCode:;
+- (id)classCode;
+- (void)setClassCode:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,36 @@
+@interface AWEAwemeBarrageAwemeView : AWEAwemeBarrageCommentView
+@property (nonatomic) UIImageView dislikeImageView;
+@property (nonatomic) AWECommentAnchorView anchorView;
+@property (nonatomic) AWEFeedRelationView relationView;
+@property (nonatomic) UILabel dislikeLabel;
+@property (nonatomic) UIView<AFDAwemeMusicInfoViewProtocol> musicInfoView;
+@property (nonatomic) BOOL isPinningStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureUI;
+- (id)musicInfoView;
+- (void)setMusicInfoView:;
+- (id)dislikeImageView;
+- (void)setDislikeImageView:;
+- (id)dislikeLabel;
+- (void)setDislikeLabel:;
+- (id)relationView;
+- (void)setRelationView:;
+- (void)configureWithFrame:;
+- (BOOL)isPinningStyle;
+- (BOOL)shouldResponseEventForDislikeOnLocation:;
+- (BOOL)shouldResponseEventForMusicOnLocation:;
+- (BOOL)shouldResponseEventForAnchorOnLocation:;
+- (BOOL)shouldResponseEventForRelationOnLocation:;
+- (void)setIsPinningStyle:;
+- (void)updateStyle;
+- (void)resume;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)anchorView;
+- (void)setAnchorView:;
+- (void)playAnimation;
+@end

@@ -1,0 +1,30 @@
+@interface AWEPOINetworkPrefetchManager : NSObject
+@property (nonatomic) NSOperationQueue taskQueue;
+@property (nonatomic) NSMutableDictionary preloadLynxURLs;
+@property (nonatomic) NSMutableDictionary preloadTasks;
+@property (nonatomic) NSMutableDictionary keyMap;
+@property (nonatomic) NSMutableDictionary clearKeyMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setKeyMap:;
+- (id)preloadTasks;
+- (void)setPreloadTasks:;
+- (id)doSmartPrefetchWithSchema:predictionModel:smartPrefetchType:poiBackendType:bizCode:prefetchModel:;
+- (void)clearSmartPrefetchWithKey:;
+- (void)preloadLynxWithDict:data:forKey:;
+- (id)clearKeyMap;
+- (BOOL)isTemplateMatch:url:;
+- (id)preloadLynxURLs;
+- (id)prefetchWithSchema:prefetchModel:;
+- (void)clearPrefetchWithKey:;
+- (void)setPreloadLynxURLs:;
+- (void)setClearKeyMap:;
+- (id)init;
+- (id)taskQueue;
+- (void).cxx_destruct;
+- (id)keyMap;
+- (void)setTaskQueue:;
++ (id)sharedInstance;
+@end

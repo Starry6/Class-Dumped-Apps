@@ -1,0 +1,36 @@
+@interface AWEGeckoCDNConfig : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSArray bundleArray;
+@property (nonatomic) NSString channelName;
+@property (nonatomic) NSString resourceDirectory;
+@property (nonatomic) NSString cdnDomain;
+@property (nonatomic) @? cdnPathPart;
+@property (nonatomic) NSCache cache;
+@property (nonatomic) NSCache commonCache;
+@property (nonatomic) NSCache bundleCache;
+@property (nonatomic) BOOL enableOpt;
+@property (nonatomic) @? loadResourceBlock;
+- (id)cdnPathPart;
+- (id)cdnDomain;
+- (id)bundleArray;
+- (void)setBundleArray:;
+- (void)setCdnDomain:;
+- (void)setCdnPathPart:;
+- (id)commonCache;
+- (void)setCommonCache:;
+- (id)bundleCache;
+- (void)setBundleCache:;
+- (BOOL)enableOpt;
+- (void)setEnableOpt:;
+- (id)loadResourceBlock;
+- (void)setLoadResourceBlock:;
+- (void)setCache:;
+- (id)cache;
+- (void)setIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)channelName;
+- (void)setChannelName:;
+- (id)resourceDirectory;
+- (void)setResourceDirectory:;
+@end

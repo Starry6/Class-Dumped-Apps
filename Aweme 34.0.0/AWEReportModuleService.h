@@ -1,0 +1,34 @@
+@interface AWEReportModuleService : HTSService
+@property (nonatomic) NSMutableDictionary cachedResponse;
+@property (nonatomic) AWEProgressLoadingView indicator;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reportWithType:objectID:ownerID:;
+- (void)reportWithType:objectID:ownerID:commomQueryParam:extraParam:;
+- (void)reportWithType:reportInfo:;
+- (void)recordReportSuccess;
+- (void)reportWithType:objectID:ownerID:extraParam:;
+- (void)presentActionSheetWithType:objectID:ownerID:beforeReport:beforeCancel:completion:;
+- (void)showIndicator;
+- (id)requestStringForType:;
+- (void)reportWithType:objectID:ownerID:reason:completion:;
+- (void)loadReportTypesWithType:completion:;
+- (void)_reportWithType:objectID:ownerID:content:roomID:isSpam:;
+- (void)reportWithType:objectID:ownerID:content:roomID:isSpam:commonParam:extraParam:;
+- (void)reportV2WithType:objectID:ownerID:content:roomID:isSpam:commonParam:extraParam:;
+- (void)reportTogetherSeeWithObjectID:ownerID:extraParam:;
+- (void)newReportUserWithObjectID:ownerID:extraParam:;
+- (void)presentActionSheetWithType:objectID:ownerID:completion:;
+- (void)reportPiratedMusicWithID:completion:;
+- (id)indicator;
+- (void)setIndicator:;
+- (id)cachedResponse;
+- (void).cxx_destruct;
+- (void)setCachedResponse:;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)hideIndicator;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMSilverWingPrivateChatLoadingComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMMessage fakeSilverWingLoadingMsg;
+@property (nonatomic) BOOL cancelDelayedLoadingMsgDeletion;
+@property (nonatomic) NSString lastCauseLoadingMsgID;
+@property (nonatomic) <AWEIMSilverWingLoadingTrackInterface> loadingTrackComp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)willSendNewMessage;
+- (void)didReceiveAsyncSendMessageResponse:;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)didReceiveNewMessage:reason:;
+- (void)willDeleteMessage:;
+- (void)didUpdateWithMessage:;
+- (id)fakeSilverWingLoadingMsg;
+- (void)setFakeSilverWingLoadingMsg:;
+- (id)lastCauseLoadingMsgID;
+- (id)loadingTrackComp;
+- (void)insertFakeMessageForLoadingIfNeeded;
+- (void)setCancelDelayedLoadingMsgDeletion:;
+- (void)removeFakeMessageForLoadingDelayTime:messageID:;
+- (void)setLastCauseLoadingMsgID:;
+- (BOOL)cancelDelayedLoadingMsgDeletion;
+- (void)setLoadingTrackComp:;
+- (void)addLoadingIfNeededExt:messageId:;
+- (void)removeLoadingMessageIfNeeded;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
++ (BOOL)enableComponentWithConversation:;
++ (BOOL)enableLoadingWithConversation:;
++ (BOOL)messageShouldAIReplyWithSyncedExt:;
+@end

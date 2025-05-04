@@ -1,0 +1,2 @@
+@interface AWECommerceSwiftImpl.AdWebViewPreloadSearchDataManager : _TtCs12_SwiftObject
+@end

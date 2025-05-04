@@ -1,0 +1,38 @@
+@interface AWESearchTextExtractionModel : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) AWEURLModel urlListModel;
+@property (nonatomic) NSArray uRLListArray;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) double iconWidth;
+@property (nonatomic) double iconHeight;
+@property (nonatomic) q identi;
+@property (nonatomic) NSString textIdentifer;
+@property (nonatomic) BOOL isSelect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsSelect:;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (BOOL)isSelect;
+- (void)setURLListArray:;
+- (id)getTitleLabelAttriStringIsSelect:;
+- (id)urlListModel;
+- (id)uRLListArray;
+- (long long)identi;
+- (double)heightForRowWithWidth:isSelect:;
+- (id)textIdentifer;
+- (void)setUrlListModel:;
+- (void)setIdenti:;
+- (void)setTextIdentifer:;
+- (double)iconWidth;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (double)iconHeight;
+- (void)setIconHeight:;
+- (void)setIconWidth:;
++ (id)uRLListArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMEmoticonTextBackedString : IESIMEmoticonTextBackedString
+@end

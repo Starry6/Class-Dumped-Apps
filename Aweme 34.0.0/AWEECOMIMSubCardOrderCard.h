@@ -1,0 +1,38 @@
+@interface AWEECOMIMSubCardOrderCard : UIView
+@property (nonatomic) UIControl containerView;
+@property (nonatomic) UIImageView productImg;
+@property (nonatomic) UILabel productLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) NSString orderId;
+@property (nonatomic) NSString fullOrderUrl;
+@property (nonatomic) AWEECOMIMEntryChatInfoModel entryModel;
+@property (nonatomic) <AWEECOMIMSubCardTrackProtocol> tracker;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString unitBtmId;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (id)orderId;
+- (void)setOrderId:;
+- (id)entryModel;
+- (id)productLabel;
+- (void)setEntryModel:;
+- (id)fullOrderUrl;
+- (id)unitBtmId;
+- (void)tapCard;
+- (void)setFullOrderUrl:;
+- (void)setUnitBtmId:;
+- (void)setProductImg:;
+- (id)productImg;
+- (void)setProductLabel:;
+- (id)tracker;
+- (id)initWithFrame:;
+- (id)containerView;
+- (unsigned long long)type;
+- (void)setTracker:;
+- (void)setContainerView:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)updateWithData:;
+- (void)setupUI;
++ (double)designHeight;
+@end

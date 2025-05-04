@@ -1,0 +1,32 @@
+@interface AWEIMFoldMessageRiskTipsModel : NSObject
+@property (nonatomic) NSString riskInfoText;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) UIFont textFont;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) double marginLeft;
+@property (nonatomic) q order;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)riskInfoText;
+- (id)sizeOfRiskInfoText;
+- (void)setRiskInfoText:;
+- (long long)order;
+- (id)textFont;
+- (id)iconName;
+- (void)setIconSize:;
+- (void)setTextColor:;
+- (id)iconSize;
+- (void).cxx_destruct;
+- (void)setOrder:;
+- (void)setIconName:;
+- (id)textColor;
+- (void)setTextFont:;
+- (id)tapAction;
+- (void)setTapAction:;
+- (double)marginLeft;
+- (void)setMarginLeft:;
+@end

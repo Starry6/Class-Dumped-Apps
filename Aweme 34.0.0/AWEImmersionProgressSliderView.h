@@ -1,0 +1,35 @@
+@interface AWEImmersionProgressSliderView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView progressView;
+@property (nonatomic) BOOL needSetProgress;
+@property (nonatomic) double percentage;
+@property (nonatomic) UIColor minimumTrackTintColor;
+@property (nonatomic) UIColor maximumTrackTintColor;
+@property (nonatomic) BOOL isDisappearAnimating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateProgressUI;
+- (void)setIsDisappearAnimating:;
+- (BOOL)isDisappearAnimating;
+- (BOOL)needSetProgress;
+- (void)setNeedSetProgress:;
+- (id)initWithColor:backgroundColor:;
+- (id)init;
+- (void)dealloc;
+- (id)progressView;
+- (void)setMinimumTrackTintColor:;
+- (id)containerView;
+- (void)setProgressView:;
+- (id)minimumTrackTintColor;
+- (void)setContainerView:;
+- (id)maximumTrackTintColor;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setMaximumTrackTintColor:;
+- (double)percentage;
+- (void)setupUI;
+- (void)show:completion:;
+- (void)setPercentage:;
+@end

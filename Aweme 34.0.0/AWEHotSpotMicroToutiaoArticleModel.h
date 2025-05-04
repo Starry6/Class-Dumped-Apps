@@ -1,0 +1,31 @@
+@interface AWEHotSpotMicroToutiaoArticleModel : AWEBaseApiModel
+@property (nonatomic) NSString text;
+@property (nonatomic) NSArray imageURLArray;
+@property (nonatomic) NSString authorName;
+@property (nonatomic) NSURL avatarURL;
+@property (nonatomic) q updateTime;
+@property (nonatomic) q groupID;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString hotSpotKeyword;
+@property (nonatomic) BOOL isTrackedShown;
+- (id)avatarURL;
+- (void)setAvatarURL:;
+- (id)hotSpotKeyword;
+- (void)setHotSpotKeyword:;
+- (id)imageURLArray;
+- (void)setImageURLArray:;
+- (BOOL)isTrackedShown;
+- (void)setIsTrackedShown:;
+- (id)schema;
+- (void)setGroupID:;
+- (void)setSchema:;
+- (long long)groupID;
+- (void)setText:;
+- (id)text;
+- (long long)updateTime;
+- (void).cxx_destruct;
+- (void)setUpdateTime:;
+- (id)authorName;
+- (void)setAuthorName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

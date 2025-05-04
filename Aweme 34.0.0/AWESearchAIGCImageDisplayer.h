@@ -1,0 +1,30 @@
+@interface AWESearchAIGCImageDisplayer : UIViewController
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) AWESearchAIGCImageContext imageContext;
+@property (nonatomic) AWESearchAIGCImageSelectionContainer selectionContainer;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) Q popType;
+@property (nonatomic) <AWESearchAIGCImageDisplayerDelegate> delegate;
+- (void)backButtonClick;
+- (void)setPopType:;
+- (unsigned long long)popType;
+- (void)setSelectionContainer:;
+- (void)setupSelectionContainer;
+- (void)displayerPop;
+- (id)backButton;
+- (id)delegate;
+- (void)didMoveToParentViewController:;
+- (void)viewDidLoad;
+- (void)setBackButton:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setImageView:;
+- (id)imageView;
+- (void)setupView;
+- (void)handleTap:;
+- (id)selectionContainer;
+- (id)imageContext;
+- (void)setImageContext:;
+- (void)setupImageView;
+@end

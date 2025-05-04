@@ -1,0 +1,36 @@
+@interface AWEIMAudioTextComponent : AWEIMFlexComponent
+@property (nonatomic) <AWEIMAudioContentInterface> audioContentService;
+@property (nonatomic) AWEIMUIViewPresenter line;
+@property (nonatomic) AWEIMLoadingViewPresenter loading;
+@property (nonatomic) AWEIMSelectableLabelPresenter text;
+@property (nonatomic) BOOL isShownLoadingWhenShowText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)p_addObserver;
+- (void)presenter:didUpdateWithView:;
+- (void)recognizeAudioToText;
+- (void)cancelRecognizeAudioToText;
+- (void)setAudioContentService:;
+- (id)audioContentService;
+- (void)p_showLoadingViewWithAnimation:;
+- (void)setIsShownLoadingWhenShowText:;
+- (void)p_setupPresenterIfNeeded;
+- (void)p_expandOrFoldAudioText:;
+- (void)p_hideAudioTextButton;
+- (void)p_setupAudioText:;
+- (BOOL)isShownLoadingWhenShowText;
+- (id)p_getAudioTextLabelAttributes;
+- (void)setText:;
+- (id)text;
+- (id)line;
+- (void).cxx_destruct;
+- (id)loading;
+- (void)setLoading:;
+- (void)setLine:;
+- (id)audioMessage;
++ (BOOL)canCreateComponentWithContext:;
+@end

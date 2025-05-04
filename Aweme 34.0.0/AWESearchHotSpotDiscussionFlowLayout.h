@@ -1,0 +1,35 @@
+@interface AWESearchHotSpotDiscussionFlowLayout : UICollectionViewLayout
+@property (nonatomic) NSMutableDictionary rowsWidthArray;
+@property (nonatomic) NSMutableArray attributesArray;
+@property (nonatomic) q rowCount;
+@property (nonatomic) q rowSpacing;
+@property (nonatomic) q columnSpacing;
+@property (nonatomic) {UIEdgeInsets=dddd} sectionInset;
+@property (nonatomic) <AWESearchHotSpotDiscussionFlowLayoutDelegate> delegate;
+@property (nonatomic) @? itemWidthBlock;
+- (void)setAttributesArray:;
+- (id)attributesArray;
+- (id)initWithRowCount:;
+- (id)rowsWidthArray;
+- (id)itemWidthBlock;
+- (void)setRowSpacing:columnSpacing:sectionInset:;
+- (void)setItemWidthBlock:;
+- (void)setRowsWidthArray:;
+- (void)prepareLayout;
+- (long long)rowCount;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)init;
+- (id)delegate;
+- (void)setRowSpacing:;
+- (id)collectionViewContentSize;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (long long)rowSpacing;
+- (void)setRowCount:;
+- (id)sectionInset;
+- (void)setSectionInset:;
+- (long long)columnSpacing;
+- (void)setColumnSpacing:;
++ (id)waterFallLayoutWithRowCount:;
+@end

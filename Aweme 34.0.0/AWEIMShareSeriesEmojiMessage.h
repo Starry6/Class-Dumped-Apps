@@ -1,0 +1,34 @@
+@interface AWEIMShareSeriesEmojiMessage : AWEIMMessage
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString coverURL;
+@property (nonatomic) NSString pushDetail;
+@property (nonatomic) NSNumber emojiResourceId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (void)setPushDetail:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedEmojiReply;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (BOOL)isSupportForward;
+- (BOOL)isAllowedForward;
+- (id)emojiResourceId;
+- (void)setEmojiResourceId:;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)copyWithZone:;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

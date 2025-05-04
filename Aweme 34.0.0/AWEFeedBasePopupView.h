@@ -1,0 +1,33 @@
+@interface AWEFeedBasePopupView : UIView
+@property (nonatomic) double contentViewHeight;
+@property (nonatomic) UIView shadeView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIButton closeBtn;
+@property (nonatomic) CAShapeLayer shapeLayer;
+@property (nonatomic) @? closeButtonClickAction;
+- (void)closeButtonAction:;
+- (id)closeBtn;
+- (void)setCloseBtn:;
+- (id)shadeView;
+- (void)setShadeView:;
+- (void)hideWithDuration:;
+- (void)contentViewPanAction:;
+- (void)p_showWithDuration:;
+- (void)p_setBasePopupViewUI;
+- (void)showInView:duration:;
+- (id)closeButtonClickAction;
+- (void)shadeViewTapAction:;
+- (id)initWithContentViewHeight:;
+- (void)setCloseButtonHide:;
+- (void)setCloseButtonClickAction:;
+- (void)hide;
+- (void)setShapeLayer:;
+- (id)contentView;
+- (id)shapeLayer;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)layoutSubviews;
+- (void)showInView:;
+- (double)contentViewHeight;
+- (void)setContentViewHeight:;
+@end

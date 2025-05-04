@@ -1,0 +1,38 @@
+@interface AWESearchCardInteractorButton : UIButton
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) BOOL needImageAnimation;
+@property (nonatomic) BOOL needWholeAnimation;
+@property (nonatomic) double realContentWidth;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) @? touchUpInsideBlock;
+@property (nonatomic) @? didBecomeVoiceOverFocused;
+- (void)setTouchUpInsideBlock:;
+- (id)showStringFromNumber:;
+- (void)setDidBecomeVoiceOverFocused:;
+- (BOOL)needImageAnimation;
+- (void)_onTouchUpInside;
+- (void)setNeedImageAnimation:;
+- (void)announceAccessibility:;
+- (BOOL)needWholeAnimation;
+- (id)didBecomeVoiceOverFocused;
+- (void)setNeedWholeAnimation:;
+- (double)realContentWidth;
+- (void)setRealContentWidth:;
+- (void)adjustButtonUIStyle;
+- (id)lottieDataFromGecko:;
+- (id)init;
+- (BOOL)pointInside:withEvent:;
+- (void)touchesCancelled:withEvent:;
+- (id)imageRectForContentRect:;
+- (id)titleRectForContentRect:;
+- (void)touchesEnded:withEvent:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (void)setImageSize:;
+- (id)imageSize;
+- (void)layoutSubviews;
+- (void)accessibilityElementDidBecomeFocused;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (id)touchUpInsideBlock;
+@end

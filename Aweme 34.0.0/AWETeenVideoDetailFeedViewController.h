@@ -1,0 +1,37 @@
+@interface AWETeenVideoDetailFeedViewController : AWETeenFeedBaseViewController
+@property (nonatomic) AWETeenDurationHelper durationHelper;
+@property (nonatomic) NSMutableArray playItemIDs;
+@property (nonatomic) BOOL isFirstWillPlayCell;
+@property (nonatomic) q lastIndex;
+@property (nonatomic) @? currentIndexChangedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)zoomTransitionItemOffset;
+- (id)footerNoMoreDataTitle;
+- (void)setWillDisplayCell:;
+- (void)windowDidResignKeyNotification:;
+- (void)windowDidBecomeKeyNotification:;
+- (id)initWithDataController:initialIndex:vcType:extra:;
+- (id)durationHelper;
+- (void)setDurationHelper:;
+- (void)setCurrentIndexChangedBlock:;
+- (id)playItemIDs;
+- (void)notifyCurrentIndexDidChangedIfNeeded;
+- (id)currentIndexChangedBlock;
+- (void)setIsFirstWillPlayCell:;
+- (BOOL)isFirstWillPlayCell;
+- (void)setPlayItemIDs:;
+- (void)applicationWillResignActive:;
+- (void)applicationDidBecomeActive:;
+- (void)dealloc;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)tableView:didEndDisplayingCell:forRowAtIndexPath:;
+- (long long)lastIndex;
+- (void)setLastIndex:;
+@end

@@ -1,0 +1,2 @@
+@interface AWESpeCategoryKit.FeedListContainerMonitorConfig : AWESpeCategoryKit.FeedListBaseMarkConfig
+@end

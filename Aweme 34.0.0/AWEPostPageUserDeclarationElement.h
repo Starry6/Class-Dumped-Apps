@@ -1,0 +1,32 @@
+@interface AWEPostPageUserDeclarationElement : AWEPublishAndAdvanceSettingsPopupBaseCellElement
+@property (nonatomic) AWEPublishUserDeclarationCell tableViewCell;
+@property (nonatomic) BOOL hasShowed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasShowed;
+- (void)setHasShowed:;
+- (void)refreshCell;
+- (void)setupCell:;
+- (BOOL)forceReceiveEvents;
+- (id)advanceSettingsPopupItemConfig;
+- (BOOL)shouldEnableUserDeclaration;
+- (void)trackUserDeclarationElementWithAction:;
+- (id)userDeclarationScene;
+- (id)userDeclarationIndicatorText;
+- (id)aAWEStudioPostPageSettingsAdapter;
+- (void)viewDidLoad;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)cell;
+- (void)setTableViewCell:;
+- (id)tableViewCell;
+- (void)didSelect;
++ (void)_aweLazyRegisterPostPage;
++ (void)setupCustomSceneRule:context:;
++ (long long)registerScene:;
++ (Class)aAWEStudioPostPageSettingsAdapterClass;
++ (id)type;
+@end

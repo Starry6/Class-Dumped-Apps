@@ -1,0 +1,32 @@
+@interface AWEShareReflowIncentiveChatPrivateShareModel : MTLModel
+@property (nonatomic) AWEShareReflowIncentiveChatUserModel userInfo;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString btnText;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) q followStatus;
+@property (nonatomic) BOOL hasInviteBefore;
+@property (nonatomic) NSString cardImgUrl;
+@property (nonatomic) NSString tagLabelText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)followStatus;
+- (void)setFollowStatus:;
+- (id)btnText;
+- (void)setBtnText:;
+- (BOOL)hasInviteBefore;
+- (void)setHasInviteBefore:;
+- (id)cardImgUrl;
+- (void)setCardImgUrl:;
+- (id)tagLabelText;
+- (void)setTagLabelText:;
+- (void)setSubTitle:;
+- (void)setUserInfo:;
+- (id)userInfo;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)mainTitle;
+- (void)setMainTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

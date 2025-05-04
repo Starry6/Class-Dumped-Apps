@@ -1,0 +1,34 @@
+@interface AWEIMMixPhotoWaterFallSuccessCellViewModel : NSObject
+@property (nonatomic) AWEIMEncryptedImageInfo imageInfo;
+@property (nonatomic) NSString showText;
+@property (nonatomic) AWEIMMixImageMessage mixImageMessage;
+@property (nonatomic) @? presentMediaDetailBlock;
+@property (nonatomic) @? clickTrackBlock;
+@property (nonatomic) q type;
+@property (nonatomic) AWEIMImageWaterFallItemUIConfig uiConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)uiConfig;
+- (id)tapActionBlock;
+- (void)setShowText:;
+- (void)setUiConfig:;
+- (id)clickTrackBlock;
+- (void)setClickTrackBlock:;
+- (id)encryptedImageInfo;
+- (void)setMixImageMessage:;
+- (id)mixImageMessage;
+- (id)presentMediaDetailBlock;
+- (id)initWithMixImageMessage:topViewController:;
+- (void)setPresentMediaDetailBlock:;
+- (unsigned long long)hash;
+- (id)text;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)imageInfo;
+- (void)setImageInfo:;
+- (id)showText;
+@end

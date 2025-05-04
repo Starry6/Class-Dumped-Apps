@@ -1,0 +1,36 @@
+@interface AWEIMFansSyncContactRemarkView : UITableViewHeaderFooterView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView leftIcon;
+@property (nonatomic) UIView contentContainer;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel subTitle;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) <AWEIMFansSyncContactRemarkViewModelProtocol> viewModel;
+@property (nonatomic) BOOL shouldUseOptimizedBgprimary;
+- (void)configWithViewModel:;
+- (BOOL)shouldUseOptimizedBgprimary;
+- (void)setLeftIcon:;
+- (void)clickActionButton;
+- (void)setShouldUseOptimizedBgprimary:;
+- (void)configWithRemarkSyncReason:;
+- (void)setAlpha:;
+- (id)viewModel;
+- (id)containerView;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void)setContainerView:;
+- (void)setHidden:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)initWithReuseIdentifier:;
+- (id)title;
+- (void)setTitle:;
+- (id)contentContainer;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setupViews;
+- (id)leftIcon;
+- (void)setContentContainer:;
++ (id)identifier;
++ (double)viewHeight;
+@end

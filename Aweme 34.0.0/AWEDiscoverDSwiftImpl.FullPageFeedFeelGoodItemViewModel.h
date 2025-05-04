@@ -1,0 +1,36 @@
+@interface AWEDiscoverDSwiftImpl.FullPageFeedFeelGoodItemViewModel : AWEKnowledgeSwiftBasic.FullPageBaseItemViewModel
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString serverData;
+@property (nonatomic) BOOL useHunterHeight;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString feData;
+@property (nonatomic) NSMutableDictionary clientData;
+@property (nonatomic) <HunterPreserveDataManagerProtocol> preserveDataManager;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString eventNameForLoadFail;
+@property (nonatomic) NSString eventNameForLoadSuccess;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)preserveDataManager;
+- (id)serverData;
+- (void)setServerData:;
+- (BOOL)useHunterHeight;
+- (void)setUseHunterHeight:;
+- (id)feData;
+- (void)setFeData:;
+- (void)setPreserveDataManager:;
+- (id)eventNameForLoadFail;
+- (void)setEventNameForLoadFail:;
+- (id)eventNameForLoadSuccess;
+- (void)setEventNameForLoadSuccess:;
+- (void)trackLoadResult:;
+- (void)trackSurveyShow:;
+- (void)trackSurveyQuit:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setClientData:;
+- (void).cxx_destruct;
+- (id)clientData;
+@end

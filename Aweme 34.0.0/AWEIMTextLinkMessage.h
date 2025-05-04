@@ -1,0 +1,35 @@
+@interface AWEIMTextLinkMessage : AWEIMMessage
+@property (nonatomic) NSString originContent;
+@property (nonatomic) NSDictionary actions;
+@property (nonatomic) AWEIMLinkTextUtility textUtility;
+@property (nonatomic) NSArray richTextInfos;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString pushDetail;
+- (void)setOriginContent:;
+- (id)originContent;
+- (id)pushDetail;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)enableBubbleColorWithType:isQuoteReply:;
+- (BOOL)supportRefactorCell;
+- (id)bubblePaddingInset:;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (id)linkArray;
+- (void)setRichTextInfos:;
+- (id)calculateAttributedContent;
+- (id)richTextInfos;
+- (id)textUtility;
+- (void)setTextUtility:;
+- (void)p_trackClickEvent;
+- (id)p_receiverUid:;
+- (id)actions;
+- (void).cxx_destruct;
+- (void)setActions:;
+@end

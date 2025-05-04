@@ -1,0 +1,31 @@
+@interface AWEStudioFPRecordSupportImpl : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (Class)repoRecorderTrackerToolModel;
+- (Class)recordAuthComponent;
+- (Class)awe_recordAuthServiceImpl;
+- (id)awe_recordAuthService;
+- (Class)acc_recordAuthServiceImpl;
+- (id)acc_recordAuthService;
+- (Class)repoMusicModel;
+- (Class)repoContextModel;
+- (Class)recordCloseComponent;
+- (Class)recordCloseLogicServiceImpl;
+- (id)recordCloseLogicService;
+- (id)recordCloseService;
+- (id)layoutActionWithContext:builder:;
+- (id)createDefaultViewContainer;
+- (Class)recordPropEntranceComponent;
+- (Class)recordPropEntranceServiceImpl;
+- (id)recordPropEntranceService;
+- (Class)recordSelectPropViewModel;
+- (id)recordSelectPropService;
+- (Class)recordSelectMusicComponent;
+- (Class)recordSelectMusicServiceImpl;
+- (id)recordSelectMusicService;
+- (Class)videoEditMusicViewModel;
+- (id)editMusicServiceProtocol;
+- (id)createVideoEditMusicViewModel;
+@end

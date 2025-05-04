@@ -1,0 +1,31 @@
+@interface AWEIMFoldMessageRiskWarningViewModel : NSObject
+@property (nonatomic) AWEIMFoldMessageRiskWarningViewController riskWaringVC;
+@property (nonatomic) @? agreeTapAction;
+@property (nonatomic) @? disagreeTapAction;
+@property (nonatomic) NSAttributedString title;
+@property (nonatomic) NSAttributedString content;
+@property (nonatomic) NSAttributedString positive;
+@property (nonatomic) NSAttributedString negative;
+@property (nonatomic) AWEIMMessage message;
+- (void)p_prepareProps;
+- (id)agreeTapAction;
+- (id)disagreeTapAction;
+- (void)setAgreeTapAction:;
+- (void)setDisagreeTapAction:;
+- (id)initWithRiskWaringViewController:message:;
+- (void)p_onTapAgreeButton;
+- (void)p_onTapDisAgreeButton;
+- (id)riskWaringVC;
+- (void)setRiskWaringVC:;
+- (id)content;
+- (id)message;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setNegative:;
+- (void)setMessage:;
+- (void)setTitle:;
+- (id)negative;
+- (id)positive;
+- (void)setPositive:;
+@end

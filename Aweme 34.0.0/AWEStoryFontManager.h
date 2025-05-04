@@ -1,0 +1,36 @@
+@interface AWEStoryFontManager : NSObject
+@property (nonatomic) BOOL shouldFetchFontList;
+@property (nonatomic) NSArray stickerFonts;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)stickerFonts;
+- (void)downloadFontWithModel:completion:;
+- (void)prefetchFontEffectsWithCompletion:;
+- (id)fontWithModel:size:;
+- (void)downloadFontWithModelWithHighPriority:completion:;
+- (void)prefetchFontEffects;
+- (id)handleWithFontEffects:;
+- (id)fontFilePath:;
+- (void)fetchFontEffectList;
+- (void)onClearCache;
+- (void)fetchFontEffectListWithCompletion:;
+- (void)removeCachedEffectWithId:;
+- (id)loadFontFromData:fontPath:size:completion:;
+- (id)cachedEffectWithID:;
+- (void)downloadEffect:forFontModel:priority:completion:;
+- (void)downloadFontWithModel:priority:completion:;
+- (BOOL)shouldFetchFontList;
+- (void)setShouldFetchFontList:;
+- (void)setStickerFonts:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)stickerFonts;
++ (void)downloadFontWithModel:completion:;
++ (id)fontWithModel:size:;
++ (void)downloadFontWithModelWithHighPriority:completion:;
++ (void)prefetchFontEffects;
++ (id)fontFilePath:;
++ (id)sharedInstance;
+@end

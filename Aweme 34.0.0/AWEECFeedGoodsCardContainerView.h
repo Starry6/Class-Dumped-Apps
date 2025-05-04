@@ -1,0 +1,35 @@
+@interface AWEECFeedGoodsCardContainerView : UIView
+@property (nonatomic) AWEECFeedGoodsCardModel model;
+@property (nonatomic) AWEECFeedGoodsCardTitleView titleView;
+@property (nonatomic) YYLabel title;
+@property (nonatomic) AWEECFeedGoodsCardCommentView commentView;
+@property (nonatomic) YYLabel commentLabel;
+@property (nonatomic) UIStackView productStackView;
+@property (nonatomic) NSMutableArray cells;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) <AWEECFeedGoodsCardContainerViewDelegate> delegate;
+- (void)setupUIWithModel:;
+- (void)setCommentView:;
+- (id)commentView;
+- (id)productStackView;
+- (void)setProductStackView:;
+- (void)__handleTapGesture:;
+- (void)clickProductCellWithString:productId:;
+- (void)updateViewWithCurrentIndex:progressValue:totalValue:;
+- (void)updateCommentViewWithCurrentIndex:;
+- (void)setModel:;
+- (id)titleView;
+- (void)setTitleView:;
+- (id)delegate;
+- (id)initWithModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setDelegate:;
+- (void)setTitle:;
+- (id)tapGesture;
+- (id)cells;
+- (void)setCells:;
+- (id)commentLabel;
+- (void)setCommentLabel:;
+@end

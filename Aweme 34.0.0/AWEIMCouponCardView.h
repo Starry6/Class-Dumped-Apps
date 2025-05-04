@@ -1,0 +1,35 @@
+@interface AWEIMCouponCardView : UIView
+@property (nonatomic) AWEIMCouponListItemViewModel viewModel;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView recommendIconImageView;
+@property (nonatomic) AWEIMCouponCardDiscountView discountView;
+@property (nonatomic) YYLabel detailLabel;
+@property (nonatomic) UIButton functionButton;
+@property (nonatomic) <AWEIMCouponCardViewDelegate> delegate;
+- (void)configWithViewModel:;
+- (id)discountView;
+- (void)setDiscountView:;
+- (void)__setupUI;
+- (id)functionButton;
+- (void)setFunctionButton:;
+- (double)__iconHeight;
+- (id)recommendIconImageView;
+- (void)__updateIconWithViewModel:;
+- (void)__updateCouponInfoWithWithViewModel:;
+- (void)__updateFunctionButtonWithViewModel:;
+- (void)__handlFunctionButtonclicked:;
+- (void)setRecommendIconImageView:;
+- (id)init;
+- (id)delegate;
+- (id)viewModel;
+- (id)iconImageView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)backgroundImageView;
+- (void)setIconImageView:;
+- (id)detailLabel;
+- (void)setBackgroundImageView:;
+- (void)setDetailLabel:;
+@end

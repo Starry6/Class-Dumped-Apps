@@ -1,0 +1,3 @@
+@interface AWEKnowledgeRichContentImpl.FeedAlbumPanelBaseTransition : _TtGC22AWEKnowledgeSwiftBasic19TenetBaseTransitionPSo47AWEFeedAlbumPanelTransitionOuterContextProvider_PSo47AWEFeedAlbumPanelTransitionInnerContextProvider__
+- (id)init;
+@end

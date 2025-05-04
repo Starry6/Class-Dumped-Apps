@@ -1,0 +1,31 @@
+@interface AWETimingCloseTimePickerViewController : UIViewController
+@property (nonatomic) DUXPicker duxPicker;
+@property (nonatomic) DUXNavigationBar bar;
+@property (nonatomic) NSArray hoursArray;
+@property (nonatomic) NSArray minutesArray;
+@property (nonatomic) NSArray minutesArrayWithZero;
+@property (nonatomic) @? onPickCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sheetDidClickMaskArea:;
+- (id)duxPicker;
+- (id)hoursArray;
+- (id)minutesArray;
+- (id)minutesArrayWithZero;
+- (id)onPickCompletion;
+- (long long)componentCountInDUXPicker:;
+- (long long)duxPicker:numberOfRowsInComponent:;
+- (id)duxPicker:titleForRow:forComponent:;
+- (void)setOnPickCompletion:;
+- (void)selectedByTimeInterval:;
+- (void)setDuxPicker:;
+- (void)setHoursArray:;
+- (void)setMinutesArray:;
+- (void)setMinutesArrayWithZero:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)setBar:;
+- (id)bar;
+@end

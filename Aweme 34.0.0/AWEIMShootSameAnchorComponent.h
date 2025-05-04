@@ -1,0 +1,32 @@
+@interface AWEIMShootSameAnchorComponent : AWEIMFlexComponent
+@property (nonatomic) UIView<IESIMToastLoadingProtocol> loading;
+@property (nonatomic) <AWEIMMessageListTrackerInterface> tracker;
+@property (nonatomic) AWEIMAwemeMediaVideoDownloader downloader;
+@property (nonatomic) BOOL tapShootSameFromCoplayView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (id)p_transformToJsonStringWithUgcId:;
+- (id)p_moveFileToAttachmentPathAndUpdateDBModelWithTmpPath:;
+- (void)presenter:didUpdateWithView:;
+- (void)p_trackStickerShootShowWithMessage;
+- (void)shootSameActionInvoke;
+- (id)propsTitleWithMessage:;
+- (void)p_shootSameAnchorViewDidTapped;
+- (void)setTapShootSameFromCoplayView:;
+- (BOOL)tapShootSameFromCoplayView;
+- (void)downloadCoPlayResourceCompletion:;
+- (void)p_downloadVideoWithMessage:completion:;
+- (id)tracker;
+- (id)downloader;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (id)loading;
+- (void)setLoading:;
+- (void)setDownloader:;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFeedNewDoubleColumnOuterSettingEntranceController : AWEDCFeedBaseController
+@property (nonatomic) UIView settingContainerView;
+@property (nonatomic) UIView settingDisplayedView;
+@property (nonatomic) UIImageView settingIcon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerViewDidDisappear:;
+- (void)panel:didCloseWithCurrentSelectedItem:;
+- (void)panel:didSelectItem:;
+- (id)settingContainerView;
+- (id)settingDisplayedView;
+- (id)settingIcon;
+- (double)awe_shrinkTranslationX;
+- (double)awe_tabBarTopBoundY;
+- (id)shrinkAndExpendAnimation;
+- (void)settingClick;
+- (void)hideSettingEntranceView:;
+- (void)setSettingContainerView:;
+- (void)setSettingDisplayedView:;
+- (void)setSettingIcon:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)containerViewDidLoad;
++ (double)settingWidthHeight;
++ (double)settingIconHitAreaValue;
++ (double)settingIconBottomHitAreaValue;
++ (double)settingIconWidth;
+@end

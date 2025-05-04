@@ -1,0 +1,33 @@
+@interface AWEDTOPublishVideoSyncModel : MTLModel
+@property (nonatomic) BOOL enableNewVideoSync;
+@property (nonatomic) NSArray limitAppGroups;
+@property (nonatomic) NSString tipMessage;
+@property (nonatomic) NSArray oldVersionKeysNeedRemove;
+@property (nonatomic) BOOL rememberChoice;
+@property (nonatomic) NSString syncHintText;
+@property (nonatomic) NSString syncAuthText;
+@property (nonatomic) NSString syncAuthTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableNewVideoSync;
+- (void)setEnableNewVideoSync:;
+- (id)limitAppGroups;
+- (void)setLimitAppGroups:;
+- (id)tipMessage;
+- (void)setTipMessage:;
+- (id)oldVersionKeysNeedRemove;
+- (void)setOldVersionKeysNeedRemove:;
+- (BOOL)rememberChoice;
+- (void)setRememberChoice:;
+- (id)syncHintText;
+- (void)setSyncHintText:;
+- (id)syncAuthText;
+- (void)setSyncAuthText:;
+- (id)syncAuthTitle;
+- (void)setSyncAuthTitle:;
+- (void).cxx_destruct;
++ (id)limitAppGroupsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

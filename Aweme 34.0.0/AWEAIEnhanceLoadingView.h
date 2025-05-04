@@ -1,0 +1,33 @@
+@interface AWEAIEnhanceLoadingView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel progressTextLabel;
+@property (nonatomic) UILabel progressNumLabel;
+@property (nonatomic) AWEEditAIProgressView progressView;
+@property (nonatomic) UIView tagContainerView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateTagList:;
+- (void)dismissWithIsComplete:completion:;
+- (void)showWithInitialProgress:;
+- (void)setupUI:;
+- (id)tagContainerView;
+- (void)setTagContainerView:;
+- (id)initWithTagList:;
+- (id)createTextLabel;
+- (void)updateTextWithProgress:;
+- (id)createTag;
+- (id)progressTextLabel;
+- (void)setProgressTextLabel:;
+- (id)progressNumLabel;
+- (void)setProgressNumLabel:;
+- (void)show;
+- (id)progressView;
+- (id)contentView;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)setProgressView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)updateProgress:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEPOIVideoPlayerConfig : NSObject
+@property (nonatomic) q scalingMode;
+@property (nonatomic) BOOL enableTouchPause;
+@property (nonatomic) BOOL fullTouchAction;
+@property (nonatomic) BOOL showProgressSlider;
+@property (nonatomic) double progressSliderBottom;
+@property (nonatomic) BOOL mutePlay;
+@property (nonatomic) BOOL showMuteView;
+@property (nonatomic) {CGPoint=dd} mutePosition;
+@property (nonatomic) BOOL showFullPlay;
+@property (nonatomic) BOOL useCoolProgress;
+@property (nonatomic) NSString groupName;
+- (void)setEnableTouchPause:;
+- (void)setFullTouchAction:;
+- (void)setShowMuteView:;
+- (void)setMutePlay:;
+- (void)setShowProgressSlider:;
+- (void)setProgressSliderBottom:;
+- (void)setShowFullPlay:;
+- (void)setUseCoolProgress:;
+- (void)setMutePosition:;
+- (BOOL)enableTouchPause;
+- (BOOL)fullTouchAction;
+- (BOOL)showProgressSlider;
+- (double)progressSliderBottom;
+- (BOOL)mutePlay;
+- (BOOL)showMuteView;
+- (id)mutePosition;
+- (BOOL)showFullPlay;
+- (BOOL)useCoolProgress;
+- (void)setGroupName:;
+- (id)init;
+- (id)groupName;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setScalingMode:;
+- (long long)scalingMode;
+@end

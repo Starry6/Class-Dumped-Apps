@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.VideoContentAdapterCellConfig : BDMultiContentContainer.VideoContentCellConfig
+@end

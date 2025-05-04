@@ -1,0 +1,29 @@
+@interface AWEIMSharePanelBigFontManager : NSObject
++ (double)simpleShareScale;
++ (double)imShareTitleFontSize;
++ (double)imShareGoodsTitleFontSize;
++ (BOOL)isFromSharePanel;
++ (void)setIsFromSharePanel:;
++ (double)imShareInputImageSize;
++ (double)imShareInputFontSize;
++ (double)imShareCellWidth;
++ (double)imShareCloseButtonTopRightMargin;
++ (double)imShareTitleHeight;
++ (double)imShareCloseButtonBottomMargin;
++ (double)imShareSubTitleHeight;
++ (double)imShareSubTitleFontSize;
++ (double)imShareCloseButtonImageSize;
++ (double)imShareListHeight;
++ (double)imShareSubTitleTopMargin;
++ (double)imShareCellHeight;
++ (double)imShareGoodsInputContentHeight;
++ (double)imShareInputContentHeight;
++ (double)shareAdaptValueWithKey:;
++ (BOOL)enableSharePanelBigFont;
++ (id)shareDefaultSizeDict;
++ (double)shareElderValueForKey:defaultValue:;
++ (id)shareElderSizeDict;
++ (double)imShareCellTitleFontSize;
++ (double)imShareCellSubTitleFontSize;
++ (double)imShareCellSubTitleHeight;
+@end

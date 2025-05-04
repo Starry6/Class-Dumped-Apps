@@ -1,0 +1,31 @@
+@interface AWESearchIconRecommendAreaView : UIView
+@property (nonatomic) AWESearchMerchandiseIconRecommendAreaStruct iconRecommendArea;
+@property (nonatomic) UILabel tagRecommend;
+@property (nonatomic) UILabel mainInfo;
+@property (nonatomic) UILabel extraInfo;
+@property (nonatomic) UIImageView KOLAvatar;
+@property (nonatomic) UIView borderView;
+@property (nonatomic) UIView bgColorView;
+@property (nonatomic) UIImageView arrowIcon;
+- (id)mainInfo;
+- (void)setMainInfo:;
+- (id)iconRecommendArea;
+- (void)setIconRecommendArea:;
+- (id)arrowIcon;
+- (void)setArrowIcon:;
+- (id)KOLAvatar;
+- (id)tagRecommend;
+- (void)configBGColor;
+- (id)truncateText:toWidth:withAttributes:;
+- (void)setTagRecommend:;
+- (void)setKOLAvatar:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)borderView;
+- (void)setBorderView:;
+- (id)extraInfo;
+- (void)setBgColorView:;
+- (id)bgColorView;
+- (void)setExtraInfo:;
+@end

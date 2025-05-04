@@ -1,0 +1,31 @@
+@interface AWEPlayInteractionPaymentPurchaseElement : AWEPlayInteractionLeftElement
+@property (nonatomic) CADisplayLink displayLink;
+@property (nonatomic) double currPlayTime;
+@property (nonatomic) AWEPaymentRepurchaseView repurchaseView;
+@property (nonatomic) AWEPaymentRepurchaseModel repurchaseModel;
+@property (nonatomic) AWEPaymentRepurchaseTracker repurchaseTracker;
+- (void)initializeElement;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)setupEvent;
+- (void)playResumeDisplayLink;
+- (void)resetDisplayLink;
+- (void)setCurrPlayTime:;
+- (double)currPlayTime;
+- (double)calculateDetailViewWidth;
+- (void)repurchaseOrderBuy;
+- (id)repurchaseModel;
+- (void)setRepurchaseModel:;
+- (void)updateRepurchaseView;
+- (id)repurchaseView;
+- (id)repurchaseTracker;
+- (void)repurchaseButtonClick;
+- (void)setRepurchaseView:;
+- (void)setRepurchaseTracker:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)displayLink;
+- (void)setDisplayLink:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

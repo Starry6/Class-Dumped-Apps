@@ -1,0 +1,34 @@
+@interface AWEIMWidgetsManager : NSObject
+@property (nonatomic) AWEIMWidgetDelayModel delayModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishUpdateAwemeUser;
+- (void)didUpdateUserOnLaunch;
+- (void)imStreakDataDidUpdateWithConversation:;
+- (void)teenModeDidChange:isLogout:;
+- (void)iesim_didFinishLogin;
+- (void)iesim_didFinishLogout;
+- (void)transferToChatIfNeeded;
+- (void)updateUserDefaultsWithDict:forWidgetType:;
+- (void)didXTTTokenChanged;
+- (id)userDefaultsKeyForWidgetsType:;
+- (void)synchronizeCookiesWithExtension;
+- (void)checkIMWidgetsIsSelectingUserID:inKind:withCompletion:;
+- (void)trackWidgetInstallWithKind:;
+- (void)updateCacheForWidgets;
+- (void)trackWidgetInstall;
+- (void)transferToChatIfNeededCompletion:;
+- (id)delayModel;
+- (void)setDelayModel:;
+- (void)dealloc;
+- (void)setup;
+- (void).cxx_destruct;
++ (void)p_asyncGetIESConvWithConvId:convType:completion:;
++ (id)localizeForWidgetType:;
++ (void)transferToChatWithConversationID:conversationType:extension:completion:;
++ (unsigned long long)imWidgetTypeWithFromWidget:;
+@end

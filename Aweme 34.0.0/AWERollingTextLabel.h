@@ -1,0 +1,32 @@
+@interface AWERollingTextLabel : UIView
+@property (nonatomic) UILabel frontLabel;
+@property (nonatomic) UILabel backLabel;
+@property (nonatomic) NSString currentText;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIFont font;
+@property (nonatomic) <AWERollingViewAnimateDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configSubViews;
+- (id)backLabel;
+- (void)setBackLabel:;
+- (void)animateToText:type:duration:complete:;
+- (void)animateWithText:duration:isIncrease:complete:;
+- (id)frontLabel;
+- (void)setFrontLabel:;
+- (void)changeToText:type:duration:;
+- (id)init;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)setTextColor:;
+- (id)font;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)textColor;
+- (void)setCurrentText:;
+- (id)currentText;
+@end

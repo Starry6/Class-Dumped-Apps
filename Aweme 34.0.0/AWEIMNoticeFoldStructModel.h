@@ -1,0 +1,30 @@
+@interface AWEIMNoticeFoldStructModel : IESIMBaseApiModel
+@property (nonatomic) q group;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q foldStatus;
+@property (nonatomic) IESIMURLModel imageUrl;
+@property (nonatomic) NSNumber lastMsgTime;
+@property (nonatomic) BOOL hasUnread;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) q demoteState;
+- (id)lastMsgTime;
+- (void)setLastMsgTime:;
+- (void)setHasUnread:;
+- (unsigned long long)foldStatus;
+- (void)setFoldStatus:;
+- (long long)demoteState;
+- (void)setDemoteState:;
+- (long long)unreadCount;
+- (void)setGroup:;
+- (void)setUnreadCount:;
+- (long long)group;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (BOOL)hasUnread;
++ (id)imageUrlJSONTransformer;
++ (id)foldStatusJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

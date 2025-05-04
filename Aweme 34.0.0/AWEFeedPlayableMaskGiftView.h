@@ -1,0 +1,30 @@
+@interface AWEFeedPlayableMaskGiftView : UIView
+@property (nonatomic) UIView iconPlaceholder;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel valueLabel;
+@property (nonatomic) UILabel useLabel;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) AWEFeedPlayableRewardAfterModel rewardAfterModel;
+- (void)configWithModel:;
+- (void)constraintSubviews;
+- (void)p_configBgColorAndBorder;
+- (id)useLabel;
+- (void)setRewardAfterModel:;
+- (id)rewardAfterModel;
+- (void)copyGiftCode;
+- (void)setUseLabel:;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)setValueLabel:;
+- (id)valueLabel;
+- (id)iconPlaceholder;
+- (void)setIconPlaceholder:;
+@end

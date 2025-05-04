@@ -1,0 +1,35 @@
+@interface AWEBubbleIMShareMutiselectViewController : AWEIMShareMutiselectViewController
+@property (nonatomic) UIView<AWEPadBubbleViewProtocol> sharePanleContainer;
+@property (nonatomic) UIViewController rootViewController;
+@property (nonatomic) double keyboardHeight;
+@property (nonatomic) UIView<AWEPadBubbleViewProtocol> shapView;
+@property (nonatomic) UIButton shareButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awe_viewController:willTransitionToSize:transitionCoordinator:;
+- (id)aAWEPadModuleAdapter;
+- (void)handleKeyboardShowNoti:;
+- (void)handleKeyboardHideNoti:;
+- (void)setSharePanleContainer:;
+- (id)shapView;
+- (id)sharePanleContainer;
+- (void)doShareViewDownAnimationWithDuration:;
+- (void)doShareViewUpAnimationWithDuration:;
+- (void)updateIMMutiSelectView;
+- (id)initWithMutiselectViewControllerConfig:sharePanelContainer:;
+- (id)initWithShareContext:shareModels:dataSource:isBGColorWhite:titleAttributedText:hasMore:sharePanleContainer:;
+- (void)setShapView:;
+- (void)viewSafeAreaInsetsDidChange;
+- (double)keyboardHeight;
+- (void)dealloc;
+- (void)setRootViewController:;
+- (void)viewDidLoad;
+- (void)setKeyboardHeight:;
+- (void).cxx_destruct;
+- (id)rootViewController;
+- (void)setShareButton:;
+- (id)shareButton;
++ (Class)aAWEPadModuleAdapterClass;
+@end

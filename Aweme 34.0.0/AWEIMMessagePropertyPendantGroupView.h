@@ -1,0 +1,36 @@
+@interface AWEIMMessagePropertyPendantGroupView : UIView
+@property (nonatomic) UIButton followPropertyButton;
+@property (nonatomic) UIImageView emoticonView;
+@property (nonatomic) UIView separatorView;
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) AWEIMMessageEmoticonReplyViewModel viewModel;
+@property (nonatomic) UIView dotView;
+@property (nonatomic) <AWEIMMessagePropertyPendantGroupViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)emoticonView;
+- (void)setEmoticonView:;
+- (void)longPressGesHandler:;
+- (void)renderWithModel:wrapped:isLightCameraMsg:sendFromMe:;
+- (id)bgHighlightColor;
+- (void)updateBGColor:wrapped:;
+- (id)followPropertyButton;
+- (void)followPropertyButtonPressed:;
+- (void)setFollowPropertyButton:;
+- (id)delegate;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setSeparatorView:;
+- (void)setTitleLabel:;
+- (void)clearContent;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)separatorView;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (id)dotView;
+@end

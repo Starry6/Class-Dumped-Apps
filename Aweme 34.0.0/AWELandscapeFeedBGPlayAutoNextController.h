@@ -1,0 +1,31 @@
+@interface AWELandscapeFeedBGPlayAutoNextController : AWELandscapeFeedBaseController
+@property (nonatomic) BOOL isLoadMoreNoMoreData;
+@property (nonatomic) BOOL isAppearing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didEnterLandscape;
+- (void)setIsLoadMoreNoMoreData:;
+- (BOOL)isLoadMoreNoMoreData;
+- (BOOL)shouldEnableBGPlayAutoNextFeature;
+- (void)playNext:;
+- (BOOL)tryToPlayWithIndex:isNext:;
+- (void)playWithIndex:isNext:;
+- (void)trackBackgroundParamsForEvent:;
+- (void)playPre;
+- (BOOL)shouldShowPlayChangeForRemoteControl;
+- (BOOL)shouldEnablePlayPreForRemoteControl;
+- (void)handleBackgroundPlayPrev;
+- (void)handleBackgroundPlayNext;
+- (void)handleLandscapeFeedAutoPlayNextNotification:;
+- (void)applicationWillResignActive:;
+- (void)viewDidLoad;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (BOOL)isAppearing;
+- (void)viewDidDisappear:;
+- (void)setIsAppearing:;
+- (void)viewDidAppear:;
+- (void)reset;
+@end

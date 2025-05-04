@@ -1,0 +1,35 @@
+@interface AWEIMChapterShareBubbleView : UIView
+@property (nonatomic) AWEIMChapterShareBubbleViewModel viewModel;
+@property (nonatomic) BOOL hasBackground;
+@property (nonatomic) UIView labelContainerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) YYLabel subTitleLabel;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) @? didTapViewBlock;
+- (void)p_setupUI;
+- (void)setHasBackground:;
+- (void)p_updateUI;
+- (void)p_setupLayout;
+- (void)p_setupViews;
+- (void)p_updateView;
+- (void)p_updateLayout;
+- (id)didTapViewBlock;
+- (void)p_didTapView:;
+- (void)updateWithModel:hasBackground:;
+- (void)updateColorWithHasBackground:;
+- (void)setDidTapViewBlock:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (BOOL)hasBackground;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)labelContainerView;
+- (void)setLabelContainerView:;
++ (BOOL)enableLazyCreateView;
+@end

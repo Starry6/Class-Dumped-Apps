@@ -1,0 +1,36 @@
+@interface AWEBaseListWaterfallLayout : AWEBaseListBaseWaterfallLayout
+@property (nonatomic) NSMutableArray columnHeights;
+@property (nonatomic) NSMutableArray sectionItemAttributes;
+@property (nonatomic) BOOL enableStickHeader;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awelistkit_updateInitialLayoutAttributes:forAppearingCellAtIndexPath:isInserted:;
+- (void)awelistkit_updateFinalLayoutAttributes:forAppearingCellAtIndexPath:isDeleted:;
+- (BOOL)enableStickHeader;
+- (id)awelistkit_extraLayoutAttributesForElementsInRect:;
+- (id)sectionItemAttributes;
+- (void)setSectionItemAttributes:;
+- (BOOL)shouldStickHeaderAtSection:;
+- (void)setEnableStickHeader:;
+- (id)columnHeights;
+- (long long)columnCountForSection:;
+- (unsigned long long)longestColumnIndexInSection:;
+- (unsigned long long)shortestColumnIndexInSection:;
+- (void)setColumnHeights:;
+- (void)prepareLayout;
+- (id)layoutAttributesForDecorationViewOfKind:atIndexPath:;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+- (id)init;
+- (id)indexPathsToDeleteForDecorationViewOfKind:;
+- (id)collectionViewContentSize;
+- (void).cxx_destruct;
+- (id)finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:;
+- (id)initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:;
+- (id)targetContentOffsetForProposedContentOffset:;
++ (Class)customDecorationViewClass;
+@end

@@ -1,0 +1,37 @@
+@interface AWEGrouponWidgetView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView expandedImageView;
+@property (nonatomic) UIImageView foldedImageView;
+@property (nonatomic) UIButton dismissButton;
+@property (nonatomic) @? tapHandler;
+@property (nonatomic) @? dismissHandler;
+@property (nonatomic) Q state;
+- (void)dismissButtonTapped;
+- (void)contentTapped;
+- (void)performUpdateFromState:toState:animated:;
+- (id)expandedImageView;
+- (void)setExpandedImageView:;
+- (id)foldedImageView;
+- (void)performHiddenAnimation;
+- (void)performFoldedAnimation;
+- (void)__configFoldedState;
+- (void)performExpandedAnimation;
+- (void)__configExpandedState;
+- (void)updateWidgetWithExpandedImageURLList:foldedImageURLList:completion:;
+- (void)setFoldedImageView:;
+- (void)setState:animated:;
+- (void)setDismissHandler:;
+- (id)init;
+- (id)dismissHandler;
+- (id)contentView;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)initWithType:;
+- (void)setState:;
+- (id)dismissButton;
+- (void)setDismissButton:;
+- (void)setupUI;
+- (void)setTapHandler:;
+- (id)tapHandler;
+@end

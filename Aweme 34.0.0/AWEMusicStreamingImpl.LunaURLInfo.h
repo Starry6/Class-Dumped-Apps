@@ -1,0 +1,33 @@
+@interface AWEMusicStreamingImpl.LunaURLInfo : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString templateValue;
+@property (nonatomic) NSString fullTemplate;
+@property (nonatomic) NSURL plainURL;
+@property (nonatomic) NSArray urlArr;
+@property (nonatomic) NSURL baseUrl;
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) NSString template;
+@property (nonatomic) NSString templatePrefix;
+@property (nonatomic) BOOL needCompleteUrl;
+- (id)templateValue;
+- (id)fullTemplate;
+- (id)plainURL;
+- (id)fullURLWithSize:crop:isGIF:hasAlpha:;
+- (id)urlArr;
+- (id)baseUrl;
+- (id)templatePrefix;
+- (void)setTemplatePrefix:;
+- (BOOL)needCompleteUrl;
+- (void)setNeedCompleteUrl:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setUrls:;
+- (id)uri;
+- (void)setUri:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)urls;
+- (void)setTemplate:;
+- (id)template;
++ (id)JSONKeyPathsByPropertyKey;
+@end

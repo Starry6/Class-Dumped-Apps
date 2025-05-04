@@ -1,0 +1,32 @@
+@interface AWEECPhotoSearchLynxPreloadCardConfig : MTLModel
+@property (nonatomic) q renderType;
+@property (nonatomic) q dataType;
+@property (nonatomic) NSDictionary renderModel;
+@property (nonatomic) NSString cardName;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString rawData;
+@property (nonatomic) NSString cardType;
+@property (nonatomic) BOOL isDouble;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)renderType;
+- (id)renderModel;
+- (void)setRenderModel:;
+- (void)setIsDouble:;
+- (id)schema;
+- (void)setDataType:;
+- (void)setSchema:;
+- (void)setRenderType:;
+- (void)setRawData:;
+- (void).cxx_destruct;
+- (long long)dataType;
+- (id)rawData;
+- (id)cardType;
+- (void)setCardType:;
+- (id)cardName;
+- (void)setCardName:;
+- (BOOL)isDouble;
++ (id)JSONKeyPathsByPropertyKey;
+@end

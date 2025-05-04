@@ -1,0 +1,38 @@
+@interface AWESearchAIGCQARoundInfo : NSObject
+@property (nonatomic) NSMutableArray answers;
+@property (nonatomic) NSMutableArray extras;
+@property (nonatomic) NSMutableArray subUniqueIDs;
+@property (nonatomic) NSString searchUniqueID;
+@property (nonatomic) NSArray subSearchUniqueIDs;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> queryNode;
+@property (nonatomic) NSArray answerNodes;
+@property (nonatomic) NSArray extraNodes;
+@property (nonatomic) BOOL isRealTime;
+- (id)searchUniqueID;
+- (id)queryNode;
+- (id)subUniqueIDs;
+- (BOOL)hasSubSearchUniqueID:;
+- (id)subSearchUniqueIDs;
+- (id)initWithQueryNode:searchUniqueID:;
+- (void)addAnswerNodes:conversationID:searchID:;
+- (void)removeAnswerNode:;
+- (void)cleanAnswerNodes;
+- (void)addExtraNodes:;
+- (void)removeExtraNode:;
+- (void)cleanExtraNodes;
+- (id)answerNodes;
+- (id)extraNodes;
+- (void)addSubSearchUniqueID:;
+- (void)setIsRealTime:;
+- (void)setSubUniqueIDs:;
+- (void)setExtras:;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (id)extras;
+- (id)answers;
+- (void)setAnswers:;
+- (id)searchID;
+- (BOOL)isRealTime;
+@end

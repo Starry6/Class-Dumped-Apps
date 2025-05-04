@@ -1,0 +1,36 @@
+@interface AWERVLVInviteWatchPanelViewModel : AWERVLVBasePanelViewModel
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWERVLVLoginGuideViewController guideVC;
+@property (nonatomic) UIViewController<AWERTVInviteViewController> feedShareView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadModuleAdapter;
+- (id)panelVC;
+- (id)aAWEPadRTVAdapter;
+- (id)guideVC;
+- (void)setGuideVC:;
+- (void)padAdapter_triggerInviteWatchToolTip;
+- (void)startRequestAnimating;
+- (void)refreshModel:params:;
+- (BOOL)canScrollToDownDirection;
+- (id)feedShareView;
+- (void)setFeedShareView:;
+- (id)panelID;
+- (void)panelDidLoad;
+- (void)panelDidAppear;
+- (BOOL)slidingPanelAvailable;
+- (id)slidingPanelTitle;
+- (void)didScrollToPanel:prevPanel:;
+- (void)didPanelButtonClicked;
+- (void)scrollPanelToTop;
+- (void)scrollPanelToTop:;
+- (void)didScrollToPanel:;
+- (void)setModel:;
+- (id)scrollOffset;
+- (id)model;
+- (void).cxx_destruct;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEPadRTVAdapterClass;
+@end

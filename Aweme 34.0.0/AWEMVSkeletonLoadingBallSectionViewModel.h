@@ -1,0 +1,2 @@
+@interface AWEMVSkeletonLoadingBallSectionViewModel : AWEBaseListSectionViewModel
+@end

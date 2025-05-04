@@ -1,0 +1,32 @@
+@interface AWEComplianceMonitor : NSObject
+@property (nonatomic) NSMutableDictionary eventDictionary;
+@property (nonatomic) NSMutableDictionary vcDictionary;
+@property (nonatomic) NSMutableDictionary pendingActions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)clearEventForKey:;
+- (id)vcDictionary;
+- (id)collectWindowLevelMessage;
+- (BOOL)calculatedTeenModeEnabledWithModel:;
+- (id)minorModeTypeWithModel:;
+- (void)registerEventForKey:;
+- (void)registerViewControllerEventInit:;
+- (void)registerViewControllerEventAppear:;
+- (void)registerViewControllerEventClick:;
+- (void)registerViewControllerEventDealloc:;
+- (void)clearRegisterViewControllerEvent:;
+- (void)equeueMonitorType:extraInfo:;
+- (void)trackTeenModeChangeWithLastModel:newModel:;
+- (void)setVcDictionary:;
+- (id)eventDictionary;
+- (id)init;
+- (void)dealloc;
+- (void)setEventDictionary:;
+- (void).cxx_destruct;
+- (id)pendingActions;
+- (void)setPendingActions:;
++ (id)sharedInstance;
+@end

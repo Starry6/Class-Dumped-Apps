@@ -1,0 +1,32 @@
+@interface AWEStoryColor : MTLModel
+@property (nonatomic) UIColor color;
+@property (nonatomic) NSString colorString;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) NSString borderColorString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)borderColorString;
+- (void)setBorderColorString:;
+- (id)initWithTextHexString:borderHexString:alpha:;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (id)color;
+- (void)setColor:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setColorString:;
+- (id)colorString;
+- (id)colorFromHexString:alpha:;
++ (id)colorWithTextColorHexString:borderColorHexString:alpha:;
++ (id)colorWithTextColorHexString:borderColorHexString:;
++ (id)hexStringFromUIColor:;
++ (id)colorWithHexString:alpha:;
++ (unsigned int)argbValueWithColor:;
++ (id)colorWithargbValue:;
++ (id)borderColorJSONTransformer;
++ (id)colorWithHexString:;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)colorJSONTransformer;
+@end

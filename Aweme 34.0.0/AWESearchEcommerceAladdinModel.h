@@ -1,0 +1,33 @@
+@interface AWESearchEcommerceAladdinModel : AWEBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString aladdinID;
+@property (nonatomic) NSString darkIcon;
+@property (nonatomic) NSString lightIcon;
+@property (nonatomic) NSArray goodsItems;
+@property (nonatomic) q version;
+@property (nonatomic) NSString commodityAllText;
+@property (nonatomic) NSString commodityMoreText;
+@property (nonatomic) NSString foldStatus;
+- (id)lightIcon;
+- (id)darkIcon;
+- (void)setLightIcon:;
+- (void)setDarkIcon:;
+- (id)aladdinID;
+- (id)foldStatus;
+- (void)setFoldStatus:;
+- (void)setAladdinID:;
+- (void)setGoodsItems:;
+- (id)commodityAllText;
+- (void)setCommodityAllText:;
+- (id)commodityMoreText;
+- (void)setCommodityMoreText:;
+- (id)goodsItems;
+- (long long)version;
+- (void)setVersion:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)aladdinIDJSONTransformer;
++ (id)goodsItemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

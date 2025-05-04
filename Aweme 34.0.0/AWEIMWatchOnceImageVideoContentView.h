@@ -1,0 +1,32 @@
+@interface AWEIMWatchOnceImageVideoContentView : UIView
+@property (nonatomic) AWEIMWatchOnceImageVideoContentProps props;
+@property (nonatomic) AWEIMShapeView watchEndView;
+@property (nonatomic) AWEIMShapeView beforeWatchView;
+@property (nonatomic) YYLabel watchEndLabel;
+@property (nonatomic) YYLabel beforeWatchLabel;
+@property (nonatomic) UIImageView watchEndIconView;
+@property (nonatomic) UIImageView beforeWatchIconView;
+- (void)p_addGesture;
+- (void)p_addSubviews;
+- (void)updateWithProps:;
+- (void)p_addConstraint;
+- (void)p_onTap:;
+- (id)watchEndView;
+- (id)watchEndLabel;
+- (id)watchEndIconView;
+- (id)beforeWatchView;
+- (id)beforeWatchLabel;
+- (id)beforeWatchIconView;
+- (id)watchEndLayer;
+- (id)beforeWatchLayer;
+- (void)setWatchEndView:;
+- (void)setBeforeWatchView:;
+- (void)setWatchEndLabel:;
+- (void)setBeforeWatchLabel:;
+- (void)setWatchEndIconView:;
+- (void)setBeforeWatchIconView:;
+- (id)props;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setProps:;
+@end

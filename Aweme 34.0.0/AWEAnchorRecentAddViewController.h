@@ -1,0 +1,36 @@
+@interface AWEAnchorRecentAddViewController : UIViewController
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) q anchorType;
+@property (nonatomic) BOOL isEditMode;
+@property (nonatomic) AWEAnchorRecentAddViewModel viewModel;
+@property (nonatomic) AWEAnchorRecentAddNavigationBar fakeNavigationBar;
+@property (nonatomic) <AWEAnchorRecentAddViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsEditMode:;
+- (void)setupBind;
+- (id)initWithDataSource:anchorType:;
+- (id)fakeNavigationBar;
+- (void)setFakeNavigationBar:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (long long)preferredStatusBarStyle;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)anchorType;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (void)setupUI;
+- (void)setAnchorType:;
+- (BOOL)isEditMode;
+@end

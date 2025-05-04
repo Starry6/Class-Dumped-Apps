@@ -1,0 +1,36 @@
+@interface AWEIMCreateGroupConfiguration : NSObject
+@property (nonatomic) NSString groupCreateType;
+@property (nonatomic) NSString createSource;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSString groupIcon;
+@property (nonatomic) NSString groupDesc;
+@property (nonatomic) NSArray uidList;
+@property (nonatomic) NSString idempotentIdentifier;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) BOOL isInviteWeixinFriends;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)groupCreateType;
+- (void)setGroupCreateType:;
+- (void)setIdempotentIdentifier:;
+- (void)setIsInviteWeixinFriends:;
+- (id)uidList;
+- (void)setUidList:;
+- (id)groupIcon;
+- (id)idempotentIdentifier;
+- (void)setGroupIcon:;
+- (id)groupDesc;
+- (void)setGroupDesc:;
+- (id)createSource;
+- (BOOL)isInviteWeixinFriends;
+- (void)setCreateSource:;
+- (void)setGroupName:;
+- (id)completion;
+- (void)setCompletion:;
+- (id)groupName;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,32 @@
+@interface AWESimulateExceptionTaskConfig : NSObject
+@property (nonatomic) NSString crashMsg;
+@property (nonatomic) NSString crashStack;
+@property (nonatomic) NSInteger testTriggerDelay;
+@property (nonatomic) NSInteger testTriggerProbability;
+@property (nonatomic) NSInteger testTriggerRange;
+@property (nonatomic) NSString customerFilters;
+@property (nonatomic) NSString appLogEvent;
+@property (nonatomic) NSString drillPath;
+@property (nonatomic) BOOL syncWithException;
+- (void)setCrashMsg:;
+- (void)setCrashStack:;
+- (void)setTestTriggerDelay:;
+- (void)setTestTriggerProbability:;
+- (void)setTestTriggerRange:;
+- (void)setCustomerFilters:;
+- (void)setAppLogEvent:;
+- (void)setDrillPath:;
+- (void)setSyncWithException:;
+- (BOOL)parseFromDictionary:;
+- (id)crashMsg;
+- (id)crashStack;
+- (int)testTriggerDelay;
+- (int)testTriggerProbability;
+- (int)testTriggerRange;
+- (id)customerFilters;
+- (id)appLogEvent;
+- (id)drillPath;
+- (BOOL)syncWithException;
+- (void).cxx_destruct;
++ (BOOL)checkValidDictionary:;
+@end

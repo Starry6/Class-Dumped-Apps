@@ -1,0 +1,34 @@
+@interface AWECoverEditorNLEEditorLayoutManager : NSObject
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView navBarView;
+@property (nonatomic) UIView controlBarView;
+@property (nonatomic) UIView bottomContainerView;
+@property (nonatomic) UIView bottomSwitchView;
+@property (nonatomic) <IESServiceProvider> serviceProvider;
+@property (nonatomic) <ACCEditViewContainer> viewContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setNavBarView:;
+- (id)navBarView;
+- (double)bottomContainerHeight;
+- (double)navBarHeight;
+- (id)controlBarView;
+- (double)controlBarHeight;
+- (double)bottomPanelHeight;
+- (id)bottomSwitchView;
+- (void)setControlBarView:;
+- (void)setBottomSwitchView:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)initWithServiceProvider:;
+- (void)render;
+- (id)serviceProvider;
+- (void)setServiceProvider:;
+- (void)setViewContainer:;
+- (id)viewContainer;
+- (id)bottomContainerView;
+- (void)setBottomContainerView:;
+@end

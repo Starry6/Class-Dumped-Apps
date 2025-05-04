@@ -1,0 +1,2 @@
+@interface AWEFormatAudio : NSObject
+@end

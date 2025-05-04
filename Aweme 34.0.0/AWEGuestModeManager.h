@@ -1,0 +1,30 @@
+@interface AWEGuestModeManager : NSObject
+@property (nonatomic) BOOL isGuestModeEnable;
+@property (nonatomic) double lastDiggSnackbarTime;
+@property (nonatomic) Q tryShowSnackbarTimes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL calculateGuestModeEnable;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)teenModeDidChange:isLogout:;
+- (void)basicModeDidChange:;
+- (BOOL)isGuestModeEnable;
+- (BOOL)satisfyFrequencyControl;
+- (void)tryShowDiggSnackbarWithAwemeModel:referString:completion:;
+- (BOOL)calculateGuestModeEnable;
+- (unsigned long long)tryShowSnackbarTimes;
+- (void)setTryShowSnackbarTimes:;
+- (void)showDiggSnackbarWithAwemeModel:referString:;
+- (void)recordLastDiggSnackbarTime:;
+- (void)setIsGuestModeEnable:;
+- (double)lastDiggSnackbarTime;
+- (void)setLastDiggSnackbarTime:;
+- (void)updateGuestModeIfNeeded;
+- (id)init;
+- (void)setup;
+- (void)loadData;
++ (id)sharedInstance;
+@end

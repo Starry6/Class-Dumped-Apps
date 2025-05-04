@@ -1,0 +1,36 @@
+@interface AWEAdLandingSurveyLynxViewController : UIViewController
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) AWEBDARifleViewController lynxViewController;
+@property (nonatomic) AWEPageSheetPresentationNavigationController navigationContainer;
+@property (nonatomic) BOOL finishLoadFlag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEAdTaskContext context;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (long long)initialPhaseForPageSheetPresentation:;
+- (void)pageSheetPresentationWillBegin:;
+- (BOOL)pageSheet:shouldDismissForReason:;
+- (id)pageSheetPresentation:frameOfPresentedViewForPhase:;
+- (void)setLynxViewController:;
+- (id)lynxViewController;
+- (void)rifleViewControllerDidFinishLoad:;
+- (void)rifleViewController:loadFailedWithErrorInfo:;
+- (void)setNavigationContainer:;
+- (id)navigationContainer;
+- (void)setUpLynxView;
+- (void)closeLynxSurveyPannel;
+- (BOOL)finishLoadFlag;
+- (void)setFinishLoadFlag:;
+- (void)setModel:;
+- (id)init;
+- (void)viewDidLoad;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
++ (BOOL)openAdLandingSurveyLynxViewControllerWithContext:lynxSchema:;
+@end

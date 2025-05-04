@@ -1,0 +1,32 @@
+@interface AWEECSearchTracker : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initTrackGraph;
+- (void)appendEntranceInfoWithModel:btmTrackerModel:scene:;
+- (id)bcmBiz;
+- (id)trackGraphKey;
+- (id)defaultSearchJsonString;
+- (void)makeSearchParamsBTM:chain:searchSettings:;
+- (BOOL)filter:withSearchSettings:;
+- (BOOL)checkIfJump2:searchSettings:;
+- (id)findBcmParams:;
+- (id)getOriginSourcePage:;
+- (BOOL)checkOriginSourcePage:searchPageList:;
+- (BOOL)replaceLiveTrackerParams:bcmSearchParamsDict:infoModel:;
+- (void)replaceSearchParams:bcmSearchParamsDict:infoModel:;
+- (long long)hitSearchBtm:withSearchSettings:;
+- (id)findFirstBtmParamsV2:withResultBTMIndex:andSpecialBTMs:;
+- (id)findFirstBtmParams:withSpecialBtms:;
+- (id)getStandardJoinPrimaryKeyWithBcmParams:;
+- (id)getOriginSearchParamsDict:;
+- (BOOL)isAd:bcmSearchParamsDict:;
+- (void)checkParams:bcmSearchParamsDict:infoModel:;
+- (id)getFirstNotEmpty:;
+- (id)compareOriginParams:bcmParams:infoModel:;
+- (void)showParamsDiffPromptWithInfo:;
+- (id)buildResultWithCode:reson:type:;
+- (id)getBcmSourcePage:;
+- (id)getBcmSourceUnit:;
+@end

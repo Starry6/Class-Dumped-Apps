@@ -1,0 +1,33 @@
+@interface AWEVideoPlayerConfiguration : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awemeSettingDidChange;
+- (id)init;
+- (void)dealloc;
++ (double)getHDRBrightnessOffset:brightness:;
++ (void)_setupIESVideoPlayerConfig;
++ (void)setupStrategyStateConfig;
++ (long long)optimizeVideoPlayerLogFlag;
++ (id)getVideoEngineLocalServerOptions;
++ (id)getPlayerOptions;
++ (id)getPlayerGlobalThreadPoolOptions;
++ (id)getPlayerStrategyOptions;
++ (void)configPreloadStrategy;
++ (void)configSuperResolutionStrategy;
++ (void)setPlayerCustomHeader;
++ (id)getAppInfoConfig;
++ (id)getPlayerABConfig;
++ (id)getABValueWithKeys:;
++ (id)getVideoEngineLocalServerABConfig;
++ (id)getPlayerGlobalThreadPoolABConfig;
++ (id)getPlayerStrategyABConfig;
++ (void)initHDRProcessorModel;
++ (void)initBMFProcessorModel;
++ (id)getVideoTypeStrategy:;
++ (double)getBrightnessOffset:currentBrightness:;
++ (void)setHDRBrightnessStrategy:;
++ (id)sharedInstance;
++ (void)setup;
+@end

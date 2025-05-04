@@ -1,0 +1,33 @@
+@interface AWEPlayInteractionGeneralActivityButton : UIButton
+@property (nonatomic) AWECampaignGeneralActivityButtonUIInfo buttonInfo;
+@property (nonatomic) AWEPlayInteractionContext context;
+@property (nonatomic) @? playPeriodChangeBlock;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel activityTitleLabel;
+@property (nonatomic) double realDelayTime;
+@property (nonatomic) BOOL hasChangedColor;
+- (id)buttonInfo;
+- (void)setButtonInfo:;
+- (void)setHasChangedColor:;
+- (id)hexColorFromString:;
+- (void)removeVideoPlayPeriodObserver;
+- (void)setRealDelayTime:;
+- (void)addVideoPlayPeriodObserver;
+- (id)playPeriodChangeBlock;
+- (double)realDelayTime;
+- (BOOL)hasChangedColor;
+- (void)updateByActivityButtonInfo:delayShowTime:videoDuration:isSingleButton:isFirst:context:;
+- (void)setPlayPeriodChangeBlock:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)iconImageView;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (id)activityTitleLabel;
+- (void)setActivityTitleLabel:;
+@end

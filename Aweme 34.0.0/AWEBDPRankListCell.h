@@ -1,0 +1,32 @@
+@interface AWEBDPRankListCell : UITableViewCell
+@property (nonatomic) UIImageView rankImageView;
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UILabel nickName;
+@property (nonatomic) UILabel score;
+@property (nonatomic) UIButton button;
+@property (nonatomic) UILabel rank;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) <AWEBDPRankListCellDelegate> delegate;
+- (id)secUid;
+- (void)setSecUid:;
+- (id)rankImageView;
+- (void)setRankImageView:;
+- (void)openProfile:;
+- (void)updateRankImageViewWithRank:;
+- (void)config:withRank:suffix:;
+- (void)reuse:withRank:suffix:;
+- (void)setScore:;
+- (id)delegate;
+- (id)rank;
+- (void)setButton:;
+- (void)setRank:;
+- (id)score;
+- (void)setNickName:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)nickName;
+- (id)button;
+- (id)avatar;
+- (void)setAvatar:;
+@end

@@ -1,0 +1,2 @@
+@interface AWESelectTemplatePreloadCommonDefines : NSObject
+@end

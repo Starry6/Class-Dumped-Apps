@@ -1,0 +1,34 @@
+@interface AWEMusicCollectionSongCellModel : NSObject
+@property (nonatomic) AWEMusicCollectionSongCell cell;
+@property (nonatomic) AWEMusicFeedViewModel musicModel;
+@property (nonatomic) AWEMusicCollectionSongCellConfig cellConfig;
+@property (nonatomic) BOOL alwaysShowCollectButton;
+@property (nonatomic) BOOL isRequestingCollect;
+@property (nonatomic) <AWEMusicCollectionSongCellModelDelegate> delegate;
+@property (nonatomic) BOOL shouldShowHighlightAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)musicModel;
+- (void)setCellConfig:;
+- (id)cellConfig;
+- (void)setMusicModel:;
+- (double)cellHieght;
+- (BOOL)shouldShowHighlightAnimation;
+- (id)cellForTableView:indexPath:;
+- (void)setShouldShowHighlightAnimation:;
+- (BOOL)p_handleCollectEvent;
+- (BOOL)isRequestingCollect;
+- (void)setIsRequestingCollect:;
+- (void)refreshCollectedStatus;
+- (BOOL)alwaysShowCollectButton;
+- (id)initWithMusicModel:alwaysShowCollectButton:;
+- (void)refreshShowPlayIcon:isPlaying:;
+- (void)setAlwaysShowCollectButton:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)cell;
+- (void)setCell:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEUGMaterialAdvertisingDataCenter : NSObject
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) double timeoutThreshold;
+@property (nonatomic) double retryTimeoutThreshold;
+@property (nonatomic) BOOL isStayingFallbackSchema;
+@property (nonatomic) UIViewController fallbackVC;
+@property (nonatomic) q fallbackTabbarItemType;
+@property (nonatomic) AWEHPChannelInfoModel fallbackChannelInfo;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)onAppDidEnterBackground:;
+- (double)timeoutThreshold;
+- (void)setTimeoutThreshold:;
+- (BOOL)interceptDeeplinkForMaterialAdvertisingIfNeeded:;
+- (void)handleTimeoutRetryForURL:;
+- (void)requestJumpSchemeForURL:completion:;
+- (void)asyncRequestRealSchemeForURL:needJump:completion:;
+- (id)appendOriginalQueryToScheme:query:;
+- (void)trackWithErrorCode:originalScheme:realScheme:extraParams:;
+- (void)asyncRequestRealSchemeForURL:needJump:isRetry:completion:;
+- (double)retryTimeoutThreshold;
+- (BOOL)checkStayingFallbackScheme;
+- (void)resetFallbackSchemaStatus;
+- (BOOL)validateGuidePopupInfo:;
+- (void)setIsStayingFallbackSchema:;
+- (void)setFallbackVC:;
+- (void)setFallbackChannelInfo:;
+- (BOOL)isStayingFallbackSchema;
+- (id)fallbackChannelInfo;
+- (id)fallbackVC;
+- (void)setRetryTimeoutThreshold:;
+- (long long)fallbackTabbarItemType;
+- (void)setFallbackTabbarItemType:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

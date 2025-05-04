@@ -1,0 +1,2 @@
+@interface AWEMVChannelViewHolder : AWEBaseListViewHolder
+@end

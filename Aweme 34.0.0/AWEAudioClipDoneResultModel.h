@@ -1,0 +1,30 @@
+@interface AWEAudioClipDoneResultModel : NSObject
+@property (nonatomic) {_HTSAudioRange=dd} range;
+@property (nonatomic) q changeType;
+@property (nonatomic) BOOL enableMusicLoop;
+@property (nonatomic) BOOL hasChangeMusicLoop;
+@property (nonatomic) q repeatCount;
+@property (nonatomic) BOOL enableUseOriginMusic;
+@property (nonatomic) BOOL enableUseSuggest;
+@property (nonatomic) ACCMusicTrimViewSnapShootModel imageMusicTrimStatusModel;
+@property (nonatomic) BOOL isMusicRangeEdited;
+- (BOOL)enableMusicLoop;
+- (void)setEnableMusicLoop:;
+- (BOOL)enableUseOriginMusic;
+- (void)setEnableUseOriginMusic:;
+- (id)imageMusicTrimStatusModel;
+- (void)setImageMusicTrimStatusModel:;
+- (BOOL)isMusicRangeEdited;
+- (BOOL)hasChangeMusicLoop;
+- (BOOL)enableUseSuggest;
+- (void)setIsMusicRangeEdited:;
+- (void)setHasChangeMusicLoop:;
+- (void)setEnableUseSuggest:;
+- (id)range;
+- (void)setRange:;
+- (void)setChangeType:;
+- (long long)changeType;
+- (void)setRepeatCount:;
+- (void).cxx_destruct;
+- (long long)repeatCount;
+@end

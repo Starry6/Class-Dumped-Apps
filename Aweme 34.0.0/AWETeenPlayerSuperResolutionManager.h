@@ -1,0 +1,34 @@
+@interface AWETeenPlayerSuperResolutionManager : NSObject
+@property (nonatomic) BOOL enableSuperResolution;
+@property (nonatomic) q minFpsThreshold;
+@property (nonatomic) q minBatteryThreshold;
+@property (nonatomic) q percentFor540;
+@property (nonatomic) NSArray enableDevices;
+@property (nonatomic) q superResolutionCount;
+@property (nonatomic) q unSuperResolutionCount;
+- (void)setEnableSuperResolution:;
+- (BOOL)enableSuperResolution;
+- (void)configSuperResolutionWithVC:;
+- (BOOL)isDashWithModel:;
+- (long long)minFpsThreshold;
+- (void)setMinFpsThreshold:;
+- (void)setMinBatteryThreshold:;
+- (void)setPercentFor540:;
+- (long long)percentFor540;
+- (long long)minBatteryThreshold;
+- (BOOL)isDynamicLinkWithVC:;
+- (BOOL)check540PWithVC:;
+- (void)setEnableDevices:;
+- (id)enableDevices;
+- (BOOL)isAvailabeDevice:;
+- (BOOL)checkPercentWithVC:;
+- (long long)superResolutionCount;
+- (void)setSuperResolutionCount:;
+- (long long)unSuperResolutionCount;
+- (void)setUnSuperResolutionCount:;
+- (BOOL)isLowBattery;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupData;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,36 @@
+@interface AWESearchVerticalDataController : AWESearchCachalotDataController
+@property (nonatomic) BOOL isSearchSourceGS;
+@property (nonatomic) NSArray guideSearchWordList;
+@property (nonatomic) AWEGuideSearchWordsExtraModel guideSearchWordsExtra;
+@property (nonatomic) BOOL isFilterSearch;
+@property (nonatomic) NSDictionary logPassback;
+@property (nonatomic) AWESearchKeyWordModel keyword;
+@property (nonatomic) NSString hideWords;
+@property (nonatomic) BOOL hiddenFilter;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) AWEGeneralSearchBackgroundModel verticalSearchBackgroundConfig;
+- (id)hideWords;
+- (id)logPassback;
+- (void)setLogPassback:;
+- (id)guideSearchWordList;
+- (void)setGuideSearchWordList:;
+- (void)setHideWords:;
+- (BOOL)isFilterSearch;
+- (void)setIsFilterSearch:;
+- (Class)customResponseClass;
+- (Class)customRequestParamsClass;
+- (void)refreshResponse:;
+- (BOOL)hiddenFilter;
+- (void)setHiddenFilter:;
+- (BOOL)isSearchSourceGS;
+- (id)guideSearchWordsExtra;
+- (void)setGuideSearchWordsExtra:;
+- (void)setIsSearchSourceGS:;
+- (id)verticalSearchBackgroundConfig;
+- (void)setVerticalSearchBackgroundConfig:;
+- (id)requestID;
+- (void)setRequestID:;
+- (void).cxx_destruct;
+- (id)keyword;
+- (void)setKeyword:;
+@end

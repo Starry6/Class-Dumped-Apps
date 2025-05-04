@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionBottomButtonNewAbstractComponent : NSObject
+@property (nonatomic) AWECommonButtonInfoModel infoModel;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionContextProtocol> context;
+@property (nonatomic) UIView<AWEPlayInteractionBottomButtonViewProtocol> buttonView;
+@property (nonatomic) NSObject<AWEPlayInteractionBottomButtonComponentViewModelProtocol> viewModel;
+@property (nonatomic) q avoidStatus;
+@property (nonatomic) AWEPageContext<AWEPlayInteractionBottomButtonContextProtocol> btnContext;
+@property (nonatomic) <AWEPlayInteractionBottomButtonComponentDelegateProtocol> componentDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)activateType;
+- (id)bizParamsForShowEventTrack;
+- (id)bizParamsForClickEventTrack;
+- (id)infoModel;
+- (long long)avoidStatus;
+- (void)setAvoidStatus:;
+- (id)componentDelegate;
+- (void)setComponentDelegate:;
+- (id)initWithModel:context:;
+- (void)hideBottomButton;
+- (void)handleClickEventWithModel:clickBlock:;
+- (void)setInfoModel:;
+- (id)btnContext;
+- (void)setBtnContext:;
+- (void)didClickVideoNoteView;
+- (id)viewModel;
+- (id)buttonView;
+- (void)setContext:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setButtonView:;
+- (id)context;
++ (BOOL)shouldShowButtonForModel:context:;
+@end

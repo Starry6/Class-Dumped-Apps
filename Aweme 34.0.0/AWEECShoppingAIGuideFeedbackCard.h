@@ -1,0 +1,38 @@
+@interface AWEECShoppingAIGuideFeedbackCard : AWEECShoppingAIGuideBaseCard
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView likeView;
+@property (nonatomic) UIImageView likeImageView;
+@property (nonatomic) UILabel likeLabel;
+@property (nonatomic) UIView feedbackView;
+@property (nonatomic) UIImageView feedbackImageView;
+@property (nonatomic) UILabel feedbackLabel;
+@property (nonatomic) AWEECShoppingAIGuideMessageSingleFeedBackViewModel feedbackCardModel;
+- (id)likeImageView;
+- (void)setLikeImageView:;
+- (void)setupUIWithModel:;
+- (void)updateFeedbackStatusWithSelected:;
+- (void)setFeedbackCardModel:;
+- (id)feedbackCardModel;
+- (void)updateLikeStatusWithSelected:;
+- (id)getFeedbackRequestParams;
+- (id)fallbackSchemaSetting;
+- (void)selectLikeViewUI;
+- (void)resetFeedbackViewUI;
+- (void)resetLikeViewUI;
+- (void)selectFeedbackViewUI;
+- (id)likeLabel;
+- (id)feedbackImageView;
+- (id)feedbackLabel;
+- (id)likeView;
+- (void)tapLikeView:;
+- (void)tapFeedbackView:;
+- (void)setLikeView:;
+- (void)setLikeLabel:;
+- (void)setFeedbackImageView:;
+- (void)setFeedbackLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)feedbackView;
+- (void)setFeedbackView:;
+@end

@@ -1,0 +1,32 @@
+@interface AWELiveCommerceJSBridgeHandler : NSObject
+@property (nonatomic) <IESLivePiperProtocol> bridge;
+@property (nonatomic) NSMutableArray subscribeList;
+@property (nonatomic) BOOL shouldLazyCreateCallHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)subscribeList;
+- (void)registerHandlerWithBridge:;
+- (void)setSubscribeList:;
+- (void)handleAppStoreDismissNoti:;
+- (void)unregisterSubscriber;
+- (void)removeObserverNotification;
+- (void)addObserverNotification;
+- (void)registerSubscribes;
+- (BOOL)shouldLazyCreateCallHandler;
+- (id)preload_app_adCallHandler;
+- (id)download_clickCallHandler;
+- (id)openAdLiveLandingPageCallHandler;
+- (id)ext_webcast_getLiveRoomInfoCallHandler;
+- (void)registerOnCapsuleTextUpdate;
+- (id)buildOpenAppStoreDictWithJSBResult:;
+- (id)checkisAdsFlow:;
+- (void)invokeCloseAppStore;
+- (void)setShouldLazyCreateCallHandler:;
+- (id)init;
+- (void)dealloc;
+- (id)bridge;
+- (void).cxx_destruct;
+- (void)setBridge:;
+@end

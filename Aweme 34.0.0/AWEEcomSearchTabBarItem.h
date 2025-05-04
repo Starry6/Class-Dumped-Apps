@@ -1,0 +1,37 @@
+@interface AWEEcomSearchTabBarItem : UIView
+@property (nonatomic) UIButton button;
+@property (nonatomic) UIView indicatorView;
+@property (nonatomic) UIView indicatorMaskView;
+@property (nonatomic) double indicatorWidth;
+@property (nonatomic) double indicatorHeight;
+@property (nonatomic) <AWEEcomSearchTabBarItemDelegate> delegate;
+@property (nonatomic) UIFont normalFont;
+@property (nonatomic) UIFont selectedFont;
+- (double)indicatorHeight;
+- (void)setIndicatorHeight:;
+- (void)setNormalFont:;
+- (void)setSelected:direction:;
+- (id)selectedFont;
+- (void)setSelectedFont:;
+- (double)indicatorWidth;
+- (void)setIndicatorWidth:;
+- (id)indicatorMaskView;
+- (double)buttonOriginWidth;
+- (void)hideIndicatorWithTransition:;
+- (void)showIndicatorWithTransition:;
+- (void)setIndicatorMaskView:;
+- (id)accessibilityLabel;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void)setButton:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (unsigned long long)accessibilityTraits;
+- (id)indicatorView;
+- (id)button;
+- (void)accessibilityElementDidBecomeFocused;
+- (id)normalFont;
+- (void)setIndicatorView:;
++ (id)tabBarItemsWithDataArray:config:;
+@end

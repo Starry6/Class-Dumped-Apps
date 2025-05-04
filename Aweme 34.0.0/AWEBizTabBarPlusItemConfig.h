@@ -1,0 +1,30 @@
+@interface AWEBizTabBarPlusItemConfig : NSObject
+@property (nonatomic) AWENormalModeTabBarPlusButton plusButton;
+@property (nonatomic) AWETabbarPlusScreenBurnManager plusScreenBurnManager;
+@property (nonatomic) <AWENormalModeTabBarItemConfigAbility> tabBarAbility;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupTabBarAbility:;
+- (id)tabBarItemButton;
+- (id)tabBarItemViewController;
+- (BOOL)canLandingWithTabId:params:;
+- (BOOL)isStickerIcon;
+- (void)tabBarController:didSelectItemType:previousItemType:;
+- (void)setTabBarAbility:;
+- (id)tabBarAbility;
+- (void)setPlusScreenBurnManager:;
+- (id)plusScreenBurnManager;
+- (void)tabBarControllerViewWillAppear;
+- (void)tabBarControllerViewDidDisappear;
+- (void)tabBarControllerDidChangeSelectedIndex:;
+- (BOOL)shouldHandleTabBarItemSelectionFromPreviousSelectedType:;
+- (id)plusButton;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setPlusButton:;
+- (void)setupConfig;
+- (void)setupNotification;
++ (id)sharedConfig;
+@end

@@ -1,0 +1,37 @@
+@interface AWESearchPhotoSearchResultsTopView : UIView
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) q buttonStyle;
+@property (nonatomic) q titleAlignment;
+@property (nonatomic) <AWESearchPhotoSearchResultsTopViewDelegate> delegate;
+@property (nonatomic) @? closeButtonClickedBlock;
+@property (nonatomic) double customHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedDidScroll:;
+- (void)configUI;
+- (id)closeButtonClickedBlock;
+- (void)setCloseButtonClickedBlock:;
+- (double)inlayScrollPanelTopViewHeight;
+- (void)updateOriginProductCard:parameters:;
+- (BOOL)alreadySetupProductCardModel;
+- (id)initWithFrame:titleAlignment:buttonStyle:;
+- (void)setTitile:;
+- (long long)titleAlignment;
+- (void)setTitleAlignment:;
+- (id)delegate;
+- (long long)buttonStyle;
+- (void)setTitleLabel:;
+- (void)setButtonStyle:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)closeButtonAction;
+- (void)setCustomHeight:;
+- (double)customHeight;
+@end

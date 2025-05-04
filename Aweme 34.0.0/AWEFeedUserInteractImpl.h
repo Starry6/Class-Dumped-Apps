@@ -1,0 +1,37 @@
+@interface AWEFeedUserInteractImpl : HTSService
+@property (nonatomic) <AWEAwemeBizPlayVideoProtocol> videoDelegate;
+@property (nonatomic) BDPUniqueID uniqueID;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) BOOL shouldResumeFromSystemInterruption;
+@property (nonatomic) BOOL interruptByTimor;
+@property (nonatomic) BOOL pauseByTimor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initConfig;
+- (void)setFeedVideoDelegate:;
+- (BOOL)isTimorShowing;
+- (void)applicationExitWithUniqueID:;
+- (void)viewWillAppear:uniqueID:;
+- (void)viewDidDisappear:uniqueID:;
+- (void)didReceiveAudioInterrupt:;
+- (void)enterBackgroud:;
+- (void)enterForeGround:;
+- (BOOL)interruptByTimor;
+- (void)pauseFeedVideo;
+- (void)setShouldResumeFromSystemInterruption:;
+- (BOOL)shouldResumeFromSystemInterruption;
+- (void)setPauseByTimor:;
+- (void)setInterruptByTimor:;
+- (BOOL)pauseByTimor;
+- (id)init;
+- (BOOL)isShowing;
+- (id)uniqueID;
+- (void)setUniqueID:;
+- (void).cxx_destruct;
+- (void)setIsShowing:;
+- (void)setVideoDelegate:;
+- (id)videoDelegate;
++ (id)sharedInstance;
+@end

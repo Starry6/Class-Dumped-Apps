@@ -1,0 +1,31 @@
+@interface AWEGrouponC2GuideMaskView : UIView
+@property (nonatomic) UITapGestureRecognizer tap;
+@property (nonatomic) NSTimer autoHideTimer;
+@property (nonatomic) @? dismissBlk;
+@property (nonatomic) CALayer shapeLayer;
+@property (nonatomic) q autoDismissTime;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} highLightRect;
+@property (nonatomic) double radius;
+- (long long)autoDismissTime;
+- (void)setAutoDismissTime:;
+- (void)startAutoHideIfNeeded;
+- (id)highLightRect;
+- (void)setHighLightRect:;
+- (void)setDismissBlk:;
+- (id)dismissBlk;
+- (void)updateHighLightRect:;
+- (void)showWithBlk:dismissBlk:;
+- (double)radius;
+- (void)drawRect:;
+- (void)setShapeLayer:;
+- (id)initWithFrame:;
+- (id)shapeLayer;
+- (void)dismiss;
+- (void)setRadius:;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (id)tap;
+- (void)setTap:;
+- (id)autoHideTimer;
+- (void)setAutoHideTimer:;
+@end

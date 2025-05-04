@@ -1,0 +1,37 @@
+@interface AWEFeedSyncMultiDevicePushContent : NSObject
+@property (nonatomic) AWEFeedSyncMultiDevicePushView oldView;
+@property (nonatomic) AWEInnerPushCommonView currentView;
+@property (nonatomic) AWEInnerPushCommonViewModel viewModel;
+@property (nonatomic) AWEInnerNotificationRequest request;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+- (BOOL)disablePullIndicatorView;
+- (void)renderModel:context:;
+- (void)handleTapAction;
+- (id)notificationOperator;
+- (BOOL)tapGestureIsEnable:;
+- (id)trackingModelForScene:;
+- (void)setNotificationOperator:;
+- (void)updateLeftIcon;
+- (void)updateRightActionAreaModel;
+- (void)updateTitleAreaItems;
+- (void)updateContentAttrString;
+- (id)oldView;
+- (void)setOldView:;
+- (void)clickLandingButton;
+- (id)content;
+- (id)view;
+- (id)viewModel;
+- (void)setViewModel:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setRequest:;
+- (id)request;
+- (void)updateProperties;
+- (void)setCurrentView:;
+- (id)currentView;
+@end

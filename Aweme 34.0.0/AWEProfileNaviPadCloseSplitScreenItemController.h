@@ -1,0 +1,30 @@
+@interface AWEProfileNaviPadCloseSplitScreenItemController : NSObject
+@property (nonatomic) UIView itemView;
+@property (nonatomic) DUXBaseButton navCloseButton;
+@property (nonatomic) AWEProfileNavigationButton closeButton;
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (void)closeButtonDidClicked;
+- (id)profileContext;
+- (id)padService;
+- (id)navigationItemView;
+- (BOOL)disableProfileScrollingAlphaChange;
+- (void)onNavigationStickToTop:;
+- (id)navCloseButton;
+- (void)setNavCloseButton:;
+- (id)delegate;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)itemSize;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (id)itemView;
+- (void)setItemView:;
+@end

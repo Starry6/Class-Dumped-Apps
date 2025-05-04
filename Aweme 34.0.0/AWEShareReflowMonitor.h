@@ -1,0 +1,31 @@
+@interface AWEShareReflowMonitor : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> trackerQueue;
+@property (nonatomic) NSMutableDictionary stageTrackCount;
+@property (nonatomic) NSString lastStage;
+@property (nonatomic) double lastTrackTime;
+@property (nonatomic) BOOL hasEnterBackground;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasEnterBackground;
+- (double)p_processStartTime;
+- (BOOL)p_processInfoForPID:procInfo:;
+- (void)setHasEnterBackground:;
+- (void)routerDidBeginTransferWithURLString:;
+- (void)setTrackerQueue:;
+- (id)trackerQueue;
+- (void)trackReflowTimingStage:;
+- (id)stageTrackCount;
+- (id)lastStage;
+- (double)lastTrackTime;
+- (void)setLastStage:;
+- (void)setLastTrackTime:;
+- (void)setStageTrackCount:;
+- (void)didEnterBackground;
+- (id)init;
+- (void)willResignActive;
+- (void).cxx_destruct;
++ (void)_aweLazyRegisterLoad;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,30 @@
+@interface AWESearchMerchandiseFilterIntervalInputComponent : AWESearchMerchandiseFilterBaseComponent
+@property (nonatomic) UITextField minTextField;
+@property (nonatomic) UITextField maxTextField;
+@property (nonatomic) @? clickTrackBlock;
+@property (nonatomic) BOOL isNewUIStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isNewUIStyle;
+- (id)minTextField;
+- (id)maxTextField;
+- (id)clickTrackBlock;
+- (id)generateTextFieldWithPlaceholder:;
+- (void)setNewUIStyle:;
+- (void)setClickTrackBlock:;
+- (void)setMinTextField:;
+- (void)setMaxTextField:;
+- (void)setModel:;
+- (void)setIsSelected:;
+- (void)textFieldDidEndEditing:;
+- (void)updateState;
+- (void)hideKeyboard;
+- (id)initWithFrame:;
+- (BOOL)textFieldShouldReturn:;
+- (void).cxx_destruct;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (BOOL)isEditing;
+- (void)setupUI;
+@end

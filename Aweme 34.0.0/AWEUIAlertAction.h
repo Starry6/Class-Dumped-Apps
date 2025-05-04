@@ -1,0 +1,31 @@
+@interface AWEUIAlertAction : NSObject
+@property (nonatomic) BOOL disabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString title;
+@property (nonatomic) q style;
+@property (nonatomic) UIFont font;
+@property (nonatomic) @? handler;
+@property (nonatomic) BOOL showAlterViewAfterClicking;
+- (BOOL)showAlterViewAfterClicking;
+- (void)setShowAlterViewAfterClicking:;
+- (void)setHandler:;
+- (BOOL)disabled;
+- (id)handler;
+- (void)setDisabled:;
+- (long long)style;
+- (id)font;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (id)title;
+- (void)setTitle:;
+- (void)setStyle:;
++ (id)actionWithTitle:style:font:handler:;
++ (id)actionWithTitle:style:handler:;
+@end

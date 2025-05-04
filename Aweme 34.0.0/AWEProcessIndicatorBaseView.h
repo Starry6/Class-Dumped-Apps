@@ -1,0 +1,32 @@
+@interface AWEProcessIndicatorBaseView : UIView
+@property (nonatomic) UIView container;
+@property (nonatomic) UILabel progressLeftLabel;
+@property (nonatomic) UILabel progressRightLabel;
+@property (nonatomic) {UIEdgeInsets=dddd} edgeInsets;
+@property (nonatomic) double contentMargin;
+@property (nonatomic) UIView separatorView;
+- (id)progressLeftLabel;
+- (id)progressRightLabel;
+- (void)setProgressLeftLabel:;
+- (void)setProgressRightLabel:;
+- (void)setLeftContent:;
+- (void)setRightContent:;
+- (void)setContentEdgeInset:;
+- (void)setLeftContentWithAttributeStr:;
+- (void)setRightContentWithAttributeStr:;
+- (void)setLeftContentFont:;
+- (void)setRightContentFont:;
+- (void)setLeftContentColor:;
+- (void)setRightContentColor:;
+- (void)setContainer:;
+- (id)container;
+- (id)init;
+- (id)edgeInsets;
+- (void)setEdgeInsets:;
+- (void)setSeparatorView:;
+- (void)setContentMargin:;
+- (void).cxx_destruct;
+- (double)contentMargin;
+- (id)separatorView;
+- (void)setupUI;
+@end

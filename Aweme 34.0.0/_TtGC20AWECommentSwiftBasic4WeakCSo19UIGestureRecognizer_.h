@@ -1,0 +1,2 @@
+@interface _TtGC20AWECommentSwiftBasic4WeakCSo19UIGestureRecognizer_ : _TtCs12_SwiftObject
+@end

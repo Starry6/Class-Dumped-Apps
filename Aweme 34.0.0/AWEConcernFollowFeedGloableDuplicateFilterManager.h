@@ -1,0 +1,31 @@
+@interface AWEConcernFollowFeedGloableDuplicateFilterManager : NSObject
+@property (nonatomic) NSMutableArray viewedNotFollowFeedCache;
+@property (nonatomic) NSMutableDictionary viewedNotFollowFeedReferStringCache;
+@property (nonatomic) NSMutableArray duplicateDeleteArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (id)arrayWithResponse:awemeList:;
+- (void)clearDuplicateDeleteItems;
+- (BOOL)isDuplicateOnFollowFeed:;
+- (void)addDuplicateDeleteItems:;
+- (id)shownReferStringWithDuplicateItemID:;
+- (id)viewedNotFollowFeedCache;
+- (void)setViewedNotFollowFeedCache:;
+- (void)setViewedNotFollowFeedReferStringCache:;
+- (BOOL)isViewed:;
+- (id)viewedNotFollowFeedReferStringCache;
+- (id)duplicateDeleteArray;
+- (id)allDuplicateDeleteItems;
+- (BOOL)duplicateFilterOptimizeEnable;
+- (void)setDuplicateDeleteArray:;
+- (void)clearCache;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (void)videoPlay:;
++ (id)sharedManager;
+@end

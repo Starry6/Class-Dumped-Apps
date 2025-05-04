@@ -1,0 +1,30 @@
+@interface AWEIMPerformanceTracker : NSObject
+@property (nonatomic) NSString event;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSMutableDictionary trackDictionary;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> lock;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)trackParams;
+- (void)trackReport;
+- (id)trackDictionary;
+- (void)tickWithMethod:;
+- (void)tockWithMethod:;
+- (void)setTrackDictionary:;
+- (void)p_trackTimestampWithMethod:timeKey:;
+- (void)setScene:;
+- (id)init;
+- (void)setLock:;
+- (id)scene;
+- (void)setEvent:;
+- (id)extra;
+- (id)lock;
+- (void).cxx_destruct;
+- (id)event;
++ (id)trackerWithEvent:scene:;
++ (id)trackerWithEvent:scene:threadSafe:;
+@end

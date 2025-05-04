@@ -1,0 +1,31 @@
+@interface AWEPassportChinaTelecomServiceManager : NSObject
+@property (nonatomic) double timeout;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString appKey;
+@property (nonatomic) BOOL didRegisterSDK;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAppKey:;
+- (id)appKey;
+- (BOOL)didRegisterSDK;
+- (void)setDidRegisterSDK:;
+- (BOOL)isAvailableWithCarrierType:;
+- (void)registerWithAppID:appKey:timeout:;
+- (void)requestSecurityPhoneNumber:timeout:;
+- (void)requestTokenDictionary:;
+- (void)requestMobileAuth:;
+- (id)carrierAppId;
+- (void)registerChinaTelecomService;
+- (void)registerChinaTelecomServiceWithCarrierType:;
+- (id)requestPhoneNumberConfigWithTimeout:;
+- (BOOL)isAvailable;
+- (double)timeout;
+- (id)appID;
+- (id)defaultConfig;
+- (void)setTimeout:;
+- (void)setAppID:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

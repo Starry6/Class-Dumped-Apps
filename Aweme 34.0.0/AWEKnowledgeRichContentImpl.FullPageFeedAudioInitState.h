@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedAudioInitState : _TtCs12_SwiftObject
+@end

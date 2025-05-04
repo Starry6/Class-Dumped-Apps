@@ -1,0 +1,32 @@
+@interface AWEPOIInStoreCouponPageModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEPOIInStoreMerchantUserInfoModel merchantUserInfo;
+@property (nonatomic) AWEPOIInStoreCouponModel coupon;
+@property (nonatomic) NSArray couponList;
+@property (nonatomic) AWEPOIInStoreButtonModel accept;
+@property (nonatomic) AWEPOIInStoreButtonModel decline;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString popViewSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)coupon;
+- (void)setCoupon:;
+- (id)merchantUserInfo;
+- (void)setMerchantUserInfo:;
+- (id)couponList;
+- (void)setCouponList:;
+- (id)popViewSchema;
+- (void)setDecline:;
+- (void)setPopViewSchema:;
+- (id)schema;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)accept;
+- (void)setAccept:;
+- (id)decline;
++ (id)JSONKeyPathsByPropertyKey;
+@end

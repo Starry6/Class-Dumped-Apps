@@ -1,0 +1,3 @@
+@interface AWEStudioSwiftImpl.ToneCloneUploadAudioTask : _TtGC8AirFlowX7AFXTaskVC18AWEStudioSwiftImpl24ToneCloneUploadAudioTask5InputVS2_6Output_
+- (void).cxx_destruct;
+@end

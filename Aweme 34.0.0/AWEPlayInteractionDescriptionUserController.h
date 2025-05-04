@@ -1,0 +1,32 @@
+@interface AWEPlayInteractionDescriptionUserController : NSObject
+@property (nonatomic) NSNumber simplyLiveRoomId;
+@property (nonatomic) NSString simplyLiveUserId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSimplyLiveRoomId:;
+- (void)setSimplyLiveUserId:;
+- (BOOL)isSafeSubstringRange:forStringLength:;
+- (id)simplyLiveUserId;
+- (id)simplyLiveRoomId;
+- (id)parserTextExtraForDescriptionWithContext:;
+- (void)recordFalseTouchWithContext:;
+- (void)parserSimplyLiveRoomUserWithContext:descriptionExtraModel:;
+- (void)parserElseUserWithContext:descriptionExtraModel:;
+- (void)parserVideoCommentUserWithContext:videoCommentExtraModel:;
+- (void)parserVideoReplyUserWithContext:videoCommentExtraModel:;
+- (void)parserVideoDuetChainForVideoWithContext:duetChainExtraModel:;
+- (void)parserSimplyLivePathRoomUserWithContext:simplyLivePathExtraModel:;
+- (void)simplyLiveRoomPathActionWithRoomID:userID:parserContext:;
+- (void)trackSimplyLivePathShowWithContext:;
+- (void)addLivePathTagAttachmentWithContext:simplyLivePathExtraModel:;
+- (void)parserVideoCommentForVideoWithContext:videoCommentExtraModel:;
+- (void)videoReplyClickedWithContext:;
+- (id)tagAttachmentWithAttributedStringForVideoReplyWithContext:videoCommentExtraModel:isReplyComment:;
+- (void)videoCommentClickedWithContext:;
+- (id)duetChainTagAttachment:duetChainExtraModel:;
+- (void)duetChainButtonClickedWithContext:duetAwemeId:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

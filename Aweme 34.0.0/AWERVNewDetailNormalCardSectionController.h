@@ -1,0 +1,34 @@
+@interface AWERVNewDetailNormalCardSectionController : AWEBaseListSectionController
+@property (nonatomic) AWERVNewDetailNormalCardCell curentClickCell;
+@property (nonatomic) UIViewController<AWECommentListViewControllerProtocol> commentVC;
+@property (nonatomic) AWERVNewDetailPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didSelectItemAtIndex:model:;
+- (id)commentVC;
+- (void)setCommentVC:;
+- (void)handleCellEvent:model:userInfo:;
+- (id)customLogExtraDict;
+- (void)setCurentClickCell:;
+- (id)curentClickCell;
+- (BOOL)shouldPostWithActionName:;
+- (void)addHeadCardModelIfNeed;
+- (void)enterInnerVideoWithModel:;
+- (void)syncFollowStatus;
+- (id)init;
+- (id)sectionBackgroundColor;
+- (Class)cellClass;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (void)updateCell;
+@end

@@ -1,0 +1,30 @@
+@interface AWEMateOnboardingUserGeneralCellBusinessModel : NSObject
+@property (nonatomic) @? refreshBlock;
+@property (nonatomic) AWEUserModel userModel;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL isCloseFriendSection;
+- (void)onDidBindToCellWithRefreshBlock:;
+- (BOOL)shouldShowRelationTag;
+- (BOOL)shouldMonitorActiveStatus;
+- (BOOL)shouldShowRelationButton;
+- (BOOL)shouldShowMoreActionButton;
+- (BOOL)shouldShowDisclosureIndicator;
+- (BOOL)shouldShowCheckBox;
+- (BOOL)checkBoxSelected;
+- (id)checkBoxTintColor;
+- (id)bigFontAutoLengthBlock;
+- (id)bigFontAutoFontSizeBlock;
+- (BOOL)isCloseFriendSection;
+- (void)setIsCloseFriendSection:;
+- (id)cellBackgroundColor;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (BOOL)selected;
+- (void)setSelected:;
+- (id)refreshBlock;
+- (void)setRefreshBlock:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEVerifiedUserViewLayoutManager : NSObject
+@property (nonatomic) double avatarImageWidth;
+@property (nonatomic) double avatarImageLeftMargin;
+@property (nonatomic) double verifiedImageNewWidth;
+@property (nonatomic) double verifiedImageRightMargin;
+@property (nonatomic) double arrowImageWidth;
+@property (nonatomic) double arrowImageRightMargin;
+@property (nonatomic) double usernameTrailingMargin;
+@property (nonatomic) double usernameLeadingMargin;
+@property (nonatomic) double usernameTopMargin;
+@property (nonatomic) double followButtonRightMargin;
+@property (nonatomic) double followButtonWidth;
+@property (nonatomic) double followButtonHeight;
+- (void)setAvatarImageWidth:;
+- (void)setAvatarImageLeftMargin:;
+- (void)setVerifiedImageNewWidth:;
+- (void)setVerifiedImageRightMargin:;
+- (void)setArrowImageWidth:;
+- (void)setArrowImageRightMargin:;
+- (void)setUsernameLeadingMargin:;
+- (void)setUsernameTrailingMargin:;
+- (void)setUsernameTopMargin:;
+- (void)setFollowButtonRightMargin:;
+- (void)setFollowButtonWidth:;
+- (void)setFollowButtonHeight:;
+- (double)avatarImageWidth;
+- (double)avatarImageLeftMargin;
+- (double)verifiedImageNewWidth;
+- (double)verifiedImageRightMargin;
+- (double)arrowImageWidth;
+- (double)arrowImageRightMargin;
+- (double)usernameTrailingMargin;
+- (double)usernameLeadingMargin;
+- (double)usernameTopMargin;
+- (double)followButtonRightMargin;
+- (double)followButtonWidth;
+- (double)followButtonHeight;
+@end

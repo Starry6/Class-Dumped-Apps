@@ -1,0 +1,37 @@
+@interface AWEMultiDeviceMDNSDiscover : NSObject
+@property (nonatomic) NSNetServiceBrowser browser;
+@property (nonatomic) NSMutableArray servicesFounded;
+@property (nonatomic) @? discoverCompletion;
+@property (nonatomic) NSString timerIdentify;
+@property (nonatomic) NSString service;
+@property (nonatomic) NSString domain;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWESCSearchMutuallyExclusiveTaskDelegate> searchMEDelegate;
+- (void)setSearchMEDelegate:;
+- (id)searchMEDelegate;
+- (BOOL)canStopSearchMETaskNow;
+- (void)stopSearchMETask;
+- (void)stopSearch;
+- (void)beginSearchServiceOfService:inDomain:timeout:completion:;
+- (id)timerIdentify;
+- (void)setTimerIdentify:;
+- (void)setServicesFounded:;
+- (id)servicesFounded;
+- (void)setDiscoverCompletion:;
+- (void)stopSearchWithTimeOut:deviceName:;
+- (id)discoverCompletion;
+- (void)setBrowser:;
+- (id)init;
+- (id)service;
+- (void)setService:;
+- (void)setDomain:;
+- (id)domain;
+- (void)netServiceBrowser:didFindService:moreComing:;
+- (void).cxx_destruct;
+- (id)browser;
+- (void)netServiceBrowser:didNotSearch:;
++ (id)sharedInstance;
+@end

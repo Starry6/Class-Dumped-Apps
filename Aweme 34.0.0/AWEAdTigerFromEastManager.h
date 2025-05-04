@@ -1,0 +1,37 @@
+@interface AWEAdTigerFromEastManager : NSObject
+@property (nonatomic) AWEAdInteractiveSpaceCompassManager compassManager;
+@property (nonatomic) AWEAdTigerEggManager tigerEggManager;
+@property (nonatomic) AWEPlayInteractionAdRiflePendantElement pendantManager;
+@property (nonatomic) q stageType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWECommerceComponentContext> commerceContext;
+- (id)commerceContext;
+- (void)setCommerceContext:;
+- (void)setStageType:;
+- (long long)stageType;
+- (void)preLoadData:interactionVC:;
+- (void)transferToCompassStage;
+- (void)transferToTargetPage:refer:;
+- (void)transferToTigerEggStage:;
+- (void)resetTigerEggManager;
+- (void)setTigerEggManager:;
+- (id)tigerEggManager;
+- (void)setCompassManager:;
+- (id)compassManager;
+- (id)pendantManager;
+- (void)setPendantManager:;
+- (void)setModel:;
+- (void).cxx_destruct;
+- (void)reset;
++ (BOOL)canShowComponentWithContext:;
++ (BOOL)needToShowPendant:;
++ (BOOL)needToShowCompass:;
++ (BOOL)needToShowTigerEgg:;
++ (BOOL)isTigerFromEastAd:;
++ (void)preFetchDataIfNeeded:isTV:;
++ (void)removeTVPreFetchData:;
++ (void)removeFeedPreFetchData;
+@end

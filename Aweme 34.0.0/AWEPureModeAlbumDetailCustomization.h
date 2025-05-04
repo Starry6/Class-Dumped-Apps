@@ -1,0 +1,30 @@
+@interface AWEPureModeAlbumDetailCustomization : NSObject
+@property (nonatomic) <AFDFullPageLongPressManagerProtocol> longPressManager;
+@property (nonatomic) BOOL isFromFeed;
+@property (nonatomic) BOOL albumPinchKeepScale;
+@property (nonatomic) <AFDPureModePageExitTransitionDelegate> exitTransitionDelegate;
+@property (nonatomic) BOOL albumPinchQuitOneStep;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)albumPinchKeepScale;
+- (id)pureModeExitTransitionDelegate;
+- (BOOL)pinch_enableLongPressPanel;
+- (id)pureModeLongPressPanelDelegate;
+- (BOOL)pureModeAlbumPinchKeepScale;
+- (BOOL)pureModeAlbumPinchQuitOneStep;
+- (BOOL)pinch_shouldHandleDismissSelfWhenDislike;
+- (void)setIsFromFeed:;
+- (void)setAlbumPinchKeepScale:;
+- (void)setExitTransitionDelegate:;
+- (void)setAlbumPinchQuitOneStep:;
+- (BOOL)isFromFeed;
+- (BOOL)pinch_isLongPressPanelShowing;
+- (void)pinch_showLongPressPanelWithContext:completion:;
+- (BOOL)albumPinchQuitOneStep;
+- (id)exitTransitionDelegate;
+- (id)longPressManager;
+- (void)setLongPressManager:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,34 @@
+@interface AWEEditStickerHintView : UIView
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL shouldUseGradient;
+- (void)showHint:;
+- (void)showHint:animated:autoDismiss:;
+- (void)showHint:type:;
+- (void)p_setupUIWithGradient;
+- (BOOL)shouldUseGradient;
+- (void)p_animate;
+- (void)setShouldUseGradient:;
+- (id)initWithGradientAndFrame:;
+- (id)textLabel;
+- (void)autoDismiss;
+- (void)dealloc;
+- (id)intrinsicContentSize;
+- (void)dismissWithAnimation:;
+- (id)initWithFrame:;
+- (void)dismiss;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)registerNotifications;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)setTextLabel:;
+- (void)setVisible:animated:;
+- (void)setupUI;
++ (void)setNoNeedShowForType:;
++ (BOOL)isNeedShowHintViewForType:;
++ (id)storageKeyForType:;
+@end

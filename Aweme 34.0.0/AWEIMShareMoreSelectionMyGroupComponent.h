@@ -1,0 +1,33 @@
+@interface AWEIMShareMoreSelectionMyGroupComponent : AWEIMComponentBase
+@property (nonatomic) <IESIMContactPickerSelectService> selectService;
+@property (nonatomic) <AWEIMShareSendTextBottomComponentService> sendTextService;
+@property (nonatomic) <AWEIMShareMoreNotifyInterface> notifyService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidLoad;
+- (void)componentDidMounted:;
+- (void)startShareNotifyWithNeedCreateGroup:text:;
+- (void)dismissVerticalSharePanel:closeByUser:completion:;
+- (id)contactPickerSelectService:canAddIdentifier:;
+- (long long)checkerPriorityForContactPickerSelectService:;
+- (void)setSelectService:;
+- (id)selectService;
+- (void)contactPickerSelectService:didAddSelectIdentifiers:;
+- (void)contactPickerSelectService:didRemoveSelectIdentifier:;
+- (void)sendTextService:textViewDidChange:;
+- (void)sendTextService:updateTimestampSelected:;
+- (void)sendTextService:didUpdateBottomButtonWithButtonTypes:;
+- (BOOL)enableShowMyGroupPanelEntry;
+- (void)showMyGroupPanel;
+- (void)setSendTextService:;
+- (void)setNotifyService:;
+- (void)p_trackEntranceWithAction:;
+- (id)p_makeShareMoreSelectionMyGroupViewController;
+- (id)sendTextService;
+- (id)notifyService;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

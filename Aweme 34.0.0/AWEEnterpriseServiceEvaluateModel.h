@@ -1,0 +1,38 @@
+@interface AWEEnterpriseServiceEvaluateModel : NSObject
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString committedTitle;
+@property (nonatomic) q level;
+@property (nonatomic) NSString levelButtonID;
+@property (nonatomic) NSArray descriptions;
+@property (nonatomic) NSDictionary feedbacks;
+@property (nonatomic) NSString submitTitle;
+@property (nonatomic) NSString apiString;
+@property (nonatomic) q timeout;
+@property (nonatomic) NSString timeoutToast;
+- (void)setApiString:;
+- (id)apiString;
+- (id)timeoutToast;
+- (void)setTimeoutToast:;
+- (void)setCommittedTitle:;
+- (void)setLevelButtonID:;
+- (void)setSubmitTitle:;
+- (id)createFeedbackWithCustomerServiceModule:;
+- (id)committedTitle;
+- (id)levelButtonID;
+- (id)submitTitle;
+- (void)setLevel:;
+- (long long)level;
+- (id)initWithModel:;
+- (long long)timeout;
+- (void)setFeedbacks:;
+- (void)setTimeout:;
+- (void).cxx_destruct;
+- (id)feedbacks;
+- (id)title;
+- (void)setTitle:;
+- (id)descriptions;
+- (void)setDescriptions:;
+- (id)cardID;
+- (void)setCardID:;
+@end

@@ -1,0 +1,34 @@
+@interface AWERecordInspirationDataMemoryCache : NSObject
+@property (nonatomic) NSArray categoryItems;
+@property (nonatomic) NSMutableDictionary categoryDetailLists;
+@property (nonatomic) NSMutableDictionary categoryDetailIDLists;
+@property (nonatomic) NSMutableDictionary effectCacheLists;
+@property (nonatomic) NSMutableDictionary templateLists;
+- (void)removeAllCache;
+- (id)categoryItems;
+- (void)setCategoryItems:;
+- (id)findCategoryDetailListWithCategoryItem:;
+- (id)findEffectModelWithId:;
+- (void)saveEffectModels:;
+- (id)findTemplateModelWithId:;
+- (void)insertCategoryDetail:forItem:location:;
+- (void)deleteCategoryDetail:forItem:;
+- (void)cancelFavorDetail:;
+- (id)allCategoryItems;
+- (void)saveCategoryTabList:;
+- (id)findCategoryItemWithCategoryId:;
+- (void)removeCategoryDetailItem:;
+- (void)saveCategoryDetailList:forItem:;
+- (void)insertHeadCategoryDetailList:forItem:;
+- (void)saveTemplates:;
+- (id)categoryDetailLists;
+- (id)categoryDetailIDLists;
+- (id)getEffectID:;
+- (id)effectCacheLists;
+- (id)templateLists;
+- (void)setCategoryDetailLists:;
+- (void)setCategoryDetailIDLists:;
+- (void)setEffectCacheLists:;
+- (void)setTemplateLists:;
+- (void).cxx_destruct;
+@end

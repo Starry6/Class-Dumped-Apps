@@ -1,0 +1,30 @@
+@interface AWEPOIDetailProductItemRateCard : MTLModel
+@property (nonatomic) NSString prompt;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSArray rateGrades;
+@property (nonatomic) NSString couponDesc;
+@property (nonatomic) NSArray expGroups;
+@property (nonatomic) NSString schemeURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)schemeURL;
+- (void)setSchemeURL:;
+- (id)rateGrades;
+- (void)setRateGrades:;
+- (id)couponDesc;
+- (void)setCouponDesc:;
+- (id)expGroups;
+- (void)setExpGroups:;
+- (BOOL)hitEntranceFiveStarAB;
+- (BOOL)hitEntranceFiveStarABWithAnimation;
+- (void)setPrompt:;
+- (id)prompt;
+- (void)setDesc:;
+- (id)desc;
+- (void).cxx_destruct;
++ (id)rateGradesJSONTransformer;
++ (id)expGroupsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

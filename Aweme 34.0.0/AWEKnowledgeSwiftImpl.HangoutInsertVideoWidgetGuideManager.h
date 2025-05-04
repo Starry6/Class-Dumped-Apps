@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutInsertVideoWidgetGuideManager : _TtCs12_SwiftObject
+@end

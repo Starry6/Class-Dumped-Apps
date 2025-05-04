@@ -1,0 +1,38 @@
+@interface AWEPOIDetailFeedViewResizeManagerExtension : AWEPOIBaseExtension
+@property (nonatomic) <AWEPOIFeedPlayerManagerProtocol> feedManager;
+@property (nonatomic) AWEPOIDetailRouterInterceptor routerInterceptor;
+@property (nonatomic) BOOL dismissing;
+@property (nonatomic) BOOL isHalfContainerMaxUnfold;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)tryPlayFeedPlayer;
+- (void)tryPauseFeedPlay;
+- (id)feedManager;
+- (void)setFeedManager:;
+- (void)didHalfContainerOffsetChange:offset:;
+- (void)halfContainerUnfoldStateChange:;
+- (void)vsdContainer:offsetChange:;
+- (void)initializeExtension;
+- (id)routerInterceptor;
+- (void)setRouterInterceptor:;
+- (void)handleNearbyCheckOrderUndertake:;
+- (BOOL)isSearchAdPoiXScreen;
+- (BOOL)isHalfContainerMaxUnfold;
+- (void)setIsHalfContainerMaxUnfold:;
+- (double)videoContentHeight;
+- (BOOL)shouldResizeVideoWidth:;
+- (BOOL)shouldResizeVideoHeight:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)setDismissing:;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)applicationDidBecomeActive;
+- (void)viewDidAppear;
+- (void)applicationWillResignActive;
+- (BOOL)dismissing;
+- (void)viewDidDisappear;
+@end

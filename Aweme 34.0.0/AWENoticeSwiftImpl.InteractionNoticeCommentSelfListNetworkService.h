@@ -1,0 +1,2 @@
+@interface AWENoticeSwiftImpl.InteractionNoticeCommentSelfListNetworkService : _TtCs12_SwiftObject
+@end

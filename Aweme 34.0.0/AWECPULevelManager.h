@@ -1,0 +1,36 @@
+@interface AWECPULevelManager : NSObject
+@property (nonatomic) q cpuLevel;
+@property (nonatomic) q predictedCPULevel;
+@property (nonatomic) q timerInterval;
+@property (nonatomic) AWECPUDataConsumer consumer;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) NSHashTable predictionObservers;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} lock;
+- (long long)cpuLevel;
+- (void)setCpuLevel:;
+- (long long)predictedCPULevel;
+- (void)setPredictedCPULevel:;
+- (void)produceCPUData;
+- (void)setPredictionObservers:;
+- (void)notifyObserverIfNeeded:newLevel:;
+- (id)predictionObservers;
+- (void)notifyPredictionObserverIfNeeded:;
+- (void)addPredictionObserver:;
+- (void)removePredictionObserver:;
+- (void)setTimer:;
+- (void)removeObserver:;
+- (id)timer;
+- (void)setLock:;
+- (id)initWithConfig:;
+- (id)lock;
+- (id)observers;
+- (void)addObserver:;
+- (void)setConsumer:;
+- (void).cxx_destruct;
+- (id)consumer;
+- (void)setObservers:;
+- (long long)timerInterval;
+- (void)setTimerInterval:;
++ (id)sharedManager;
+@end

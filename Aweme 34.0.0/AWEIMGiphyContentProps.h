@@ -1,0 +1,36 @@
+@interface AWEIMGiphyContentProps : AWEIMUIViewPresenterProps
+@property (nonatomic) NSArray imageUrls;
+@property (nonatomic) @? imageBlock;
+@property (nonatomic) @? didLoadImageBlock;
+@property (nonatomic) AWEIMMessage<AWEIMGiphyMessageProtocol> message;
+@property (nonatomic) NSString animateRunloopMode;
+@property (nonatomic) BOOL shouldMirrorEmoji;
+@property (nonatomic) @? loopCompletionBlock;
+@property (nonatomic) @? coverDidTapBlock;
+@property (nonatomic) @? reloadDidTapBlock;
+@property (nonatomic) Q customLoop;
+@property (nonatomic) NSString imageAccessibilityLabel;
+- (id)imageBlock;
+- (void)setImageBlock:;
+- (void)setCustomLoop:;
+- (void)setLoopCompletionBlock:;
+- (id)loopCompletionBlock;
+- (unsigned long long)customLoop;
+- (id)imageUrls;
+- (void)setCoverDidTapBlock:;
+- (id)coverDidTapBlock;
+- (void)setImageUrls:;
+- (void)setAnimateRunloopMode:;
+- (void)setReloadDidTapBlock:;
+- (BOOL)shouldMirrorEmoji;
+- (void)setShouldMirrorEmoji:;
+- (void)setDidLoadImageBlock:;
+- (void)setImageAccessibilityLabel:;
+- (id)animateRunloopMode;
+- (id)didLoadImageBlock;
+- (id)reloadDidTapBlock;
+- (id)imageAccessibilityLabel;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setMessage:;
+@end

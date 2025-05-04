@@ -1,0 +1,34 @@
+@interface AWEDPlayerPageContext : AWEPageContext
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEDPlayerConfig config;
+@property (nonatomic) AWEDPlayerInteractionViewConfig viewConfig;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString originFromPage;
+@property (nonatomic) BOOL isMute;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) BOOL shouldPreventVideoPause;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setEnterFrom:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)currentPlayModel;
+- (void)setIsMute:;
+- (id)viewConfig;
+- (void)setViewConfig:;
+- (id)originFromPage;
+- (void)setOriginFromPage:;
+- (BOOL)shouldPreventVideoPause;
+- (void)setShouldPreventVideoPause:;
+- (void)setModel:;
+- (void)setConfig:;
+- (BOOL)isPlaying;
+- (id)config;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setIsPlaying:;
+- (BOOL)isMute;
+@end

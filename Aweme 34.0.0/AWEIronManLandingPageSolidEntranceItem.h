@@ -1,0 +1,33 @@
+@interface AWEIronManLandingPageSolidEntranceItem : UICollectionViewCell
+@property (nonatomic) UIButton bgBtn;
+@property (nonatomic) UIImageView entranceIconView;
+@property (nonatomic) UILabel entranceTitleLabel;
+@property (nonatomic) UILabel badgeLabel;
+@property (nonatomic) MASConstraint widthCons;
+@property (nonatomic) MASConstraint badgeCons;
+@property (nonatomic) AWEIronManLandingPageSolidEntranceItemModel itemModel;
+@property (nonatomic) <AWEIronManLandingPageItemInteractionDelegate> delegate;
+- (void)awe_themeDidChange:;
+- (void)clickAction;
+- (id)itemModel;
+- (void)setItemModel:;
+- (void)setBgBtn:;
+- (id)bgBtn;
+- (void)updateToItemModel:;
+- (void)setWidthCons:;
+- (id)widthCons;
+- (void)setEntranceIconView:;
+- (id)entranceIconView;
+- (void)setEntranceTitleLabel:;
+- (id)entranceTitleLabel;
+- (id)badgeCons;
+- (void)setBadgeCons:;
+- (void)updateBtnWidth;
+- (id)delegate;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)badgeLabel;
+- (void)setBadgeLabel:;
+- (void)setUpUI;
+@end

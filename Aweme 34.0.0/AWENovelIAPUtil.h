@@ -1,0 +1,30 @@
+@interface AWENovelIAPUtil : BDNovelBaseIAPUtil
+@property (nonatomic) BDNovelIAPParam param;
+@property (nonatomic) NSArray preloadProducts;
+@property (nonatomic) <AWEYAPModuleService> payService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startIAPWithParam:;
+- (BOOL)inAudit;
+- (void)getPreFetchProductsWithIAPIds:completion:;
+- (void)restoreTransactionsWithUid:WithIapIDs:completion:;
+- (id)createVipViewController:;
+- (void)setPayService:;
+- (id)payService;
+- (void)didFinishProductOrder:resultType:error:;
+- (void)didFinishProductOrderInBack:resultType:error:;
+- (BOOL)shouldHandleProduct:;
+- (id)businessIdentify:;
+- (BOOL)shouldHandleTransactionOfProduct:;
+- (id)iapProductsWithIAPIds:;
+- (void)preloadProductsByAddingProductsFromArray:;
+- (void)handlerFinish:resultType:error:;
+- (id)preloadProducts;
+- (void)setPreloadProducts:;
+- (id)init;
+- (id)param;
+- (void)setParam:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface AWEECommerceMallInnerPushContent : UIView
+@property (nonatomic) AWEInnerPushCommonViewModel viewModel;
+@property (nonatomic) AWEInnerPushCommonView currentView;
+@property (nonatomic) AWEEcommerceInAppPushViewModel noticePushModel;
+@property (nonatomic) <AWEInnerNotificationContentOperator> notificationOperator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disablePullIndicatorView;
+- (void)renderModel:context:;
+- (void)handleTapAction;
+- (id)notificationOperator;
+- (void)viewDidDisappearWithReason:;
+- (BOOL)tapGestureIsEnable:;
+- (id)trackingModelForScene:;
+- (BOOL)enableVibrateWhileViewDidAppear;
+- (void)setNotificationOperator:;
+- (void)updateLeftIcon;
+- (void)updateLeftExtraIcon;
+- (void)updateRightActionAreaModel;
+- (void)updateTitleAreaItems;
+- (void)updateContentAttrString;
+- (id)trackEnterFrom;
+- (id)aAWEECModuleServiceDOUYINLGAdapter;
+- (void)setNoticePushModel:;
+- (id)noticePushModel;
+- (id)noticeChatType:;
+- (id)view;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)updateProperties;
+- (void)setCurrentView:;
+- (id)currentView;
++ (Class)aAWEECModuleServiceDOUYINLGAdapterClass;
+@end

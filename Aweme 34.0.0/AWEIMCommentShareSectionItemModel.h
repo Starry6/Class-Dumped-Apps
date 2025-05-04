@@ -1,0 +1,36 @@
+@interface AWEIMCommentShareSectionItemModel : NSObject
+@property (nonatomic) <AWEIMShareModelProtocol> shareModel;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) <AWEIMCommentSectionViewModelProtocol> longPressViewModel;
+@property (nonatomic) Q shareState;
+@property (nonatomic) NSString imIconImageName;
+@property (nonatomic) BOOL isMoreCell;
+@property (nonatomic) NSString shareType;
+@property (nonatomic) NSString title;
+@property (nonatomic) UIImage image;
+@property (nonatomic) BOOL isDisable;
+@property (nonatomic) @? clickBlock;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (BOOL)isDisable;
+- (void)setIsDisable:;
+- (void)setLongPressViewModel:;
+- (id)longPressViewModel;
+- (id)imIconImageName;
+- (void)setImIconImageName:;
+- (BOOL)isMoreCell;
+- (void)setIsMoreCell:;
+- (id)image;
+- (void)setImage:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setShareType:;
+- (unsigned long long)shareState;
+- (id)shareType;
+- (void)setShareState:;
+- (void)setShareModel:;
+- (id)shareModel;
+@end

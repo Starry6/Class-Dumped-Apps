@@ -1,0 +1,36 @@
+@interface AWEInteractionDiggConfig : NSObject
+@property (nonatomic) @? diggBlock;
+@property (nonatomic) @? undiggBlock;
+@property (nonatomic) @? otherActionBlock;
+@property (nonatomic) @? actionFailedBlock;
+@property (nonatomic) @? succeedBlock;
+@property (nonatomic) @? animationBlock;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) BOOL diggOriginItem;
+@property (nonatomic) BOOL inFollowFeed;
+@property (nonatomic) BOOL ignoreUnLogin;
+- (void)setEnterMethod:;
+- (void)setExtraParams:;
+- (id)enterMethod;
+- (id)extraParams;
+- (void)setSucceedBlock:;
+- (id)succeedBlock;
+- (void)setActionFailedBlock:;
+- (id)diggBlock;
+- (void)setDiggBlock:;
+- (id)undiggBlock;
+- (void)setUndiggBlock:;
+- (id)otherActionBlock;
+- (void)setOtherActionBlock:;
+- (id)actionFailedBlock;
+- (BOOL)diggOriginItem;
+- (void)setDiggOriginItem:;
+- (BOOL)inFollowFeed;
+- (void)setInFollowFeed:;
+- (BOOL)ignoreUnLogin;
+- (void)setIgnoreUnLogin:;
+- (id)animationBlock;
+- (void)setAnimationBlock:;
+- (void).cxx_destruct;
+@end

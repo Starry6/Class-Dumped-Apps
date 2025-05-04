@@ -1,0 +1,33 @@
+@interface AWESBCNotiModuleInterfaceImpl : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)boolValueForKeyPath:defaultValue:;
+- (void)trackEvent:params:;
+- (void)dealNotificationMessageWithParams:;
+- (id)dictionaryForKeyPath:defaultValue:;
+- (BOOL)transferToURLString:;
+- (void)matchEmoticonForAttributedString:font:;
+- (void)pauseCurrentLive;
+- (void)trackPushClickEventWithPayload:;
+- (BOOL)couldDisplayNotificationWithPayload:;
+- (id)trackEnterFrom;
+- (double)fontSizeForBigFont:;
+- (void)sbc_requestImageWithURL:completion:;
+- (BOOL)enableCustomizeDismissTimeInterval;
+- (double)dismissTimeIntervalWithBusinessType:;
+- (void)requestWithParams:completionBlock:;
+- (BOOL)transferWithDeepinkToURLString:BusinessType:;
+- (void)awelogInfo:;
+- (void)changeToPortraitIfNeedWithCompletion:;
+- (BOOL)p_checkSceneValid;
+- (BOOL)p_isChatPushShowing;
+- (BOOL)p_isLivePushShowing;
+- (BOOL)p_isShakePushShowing;
+- (double)screenWidth;
+- (id)rootViewController;
+- (BOOL)isLogin;
++ (void)_aweLazyRegisterStaticLoad;
++ (BOOL)isInnerPushShowing;
+@end

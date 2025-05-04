@@ -1,0 +1,32 @@
+@interface AWEPayRPAudioRecordAnimationView : UIView
+@property (nonatomic) UIView<AWEIMVolumeIncreaseViewProtocol> volumeIncreaseView;
+@property (nonatomic) UIView cancelView;
+@property (nonatomic) UIImageView cancelImgView;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) BOOL isLeftTimeState;
+@property (nonatomic) double touchViewCenterY;
+- (void)p_setupUI;
+- (id)tipsLabel;
+- (void)setTipsLabel:;
+- (void)notifyRecordVolumeChangeWithValue:currentTime:;
+- (void)updateLeftTime:;
+- (id)volumeIncreaseView;
+- (id)cancelView;
+- (void)setCancelView:;
+- (void)setVolumeIncreaseView:;
+- (id)cancelImgView;
+- (id)p_gradientLayerDefaultColors;
+- (void)p_updateTipsWithContent:;
+- (id)p_gradientLayerHighLightColors;
+- (void)setIsLeftTimeState:;
+- (double)touchViewCenterY;
+- (BOOL)isLeftTimeState;
+- (id)initWithTouchViewCenterY:;
+- (void)setCancelImgView:;
+- (void)setTouchViewCenterY:;
+- (void)show;
+- (id)init;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (void)updateWithState:;
+@end

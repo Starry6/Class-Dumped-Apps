@@ -1,0 +1,32 @@
+@interface AWEECOMIMDynamicCardView : UIView
+@property (nonatomic) AWEECOMIMDynamicCardUtil cardUtil;
+@property (nonatomic) AWEECOMIMDynamicCardViewConfig config;
+@property (nonatomic) AWEECOMIMDynamicCardViewStatus status;
+@property (nonatomic) UIView<AWEECOMIMDynamicCardLoadingViewProtocol> loadingView;
+@property (nonatomic) UIView failedView;
+@property (nonatomic) UIView sliceXView;
+- (id)failedView;
+- (void)setFailedView:;
+- (void)setCardUtil:;
+- (id)cardUtil;
+- (void)removeOldSliceXView;
+- (void)handleWillCreateCardView;
+- (void)handleDidCreateCardView:error:;
+- (void)updateWithSliceXView:;
+- (id)initWithConfig:sliceXView:cardUtil:;
+- (void)handleDidBindCardData:error:viewSize:;
+- (id)sliceXView;
+- (void)updateContentViewSize;
+- (void)updateWithStatus;
+- (void)handleWillBindCardData;
+- (void)setHasBizError;
+- (void)setConfig:;
+- (void)resetStatus;
+- (void)setStatus:;
+- (void)setLoadingView:;
+- (id)config;
+- (id)loadingView;
+- (void).cxx_destruct;
+- (id)status;
+- (void)layoutSubviews;
+@end

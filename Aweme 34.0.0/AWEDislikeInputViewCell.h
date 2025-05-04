@@ -1,0 +1,34 @@
+@interface AWEDislikeInputViewCell : UICollectionViewCell
+@property (nonatomic) AWEDislikePanelInputTextView textView;
+@property (nonatomic) <AWEDislikeInputViewCellDelegate> delegate;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) AWEDislikeEntityModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)textViewDidChangeText:;
+- (void)textViewWillChangeHeight:;
+- (void)textViewDidChangeHeight:;
+- (void)keyboardWillShowWithAdditionalAnimation:;
+- (void)keyboardWillChangeFrameWithAdditionalAnimation:;
+- (void)keyboardWillHideWithAdditionalAnimation:;
+- (id)textView;
+- (void)setModel:;
+- (void)setTextView:;
+- (void)keyboardDidHide:;
+- (void)keyboardWillHide:;
+- (id)delegate;
+- (id)indexPath;
+- (id)initWithFrame:;
+- (void)setIndexPath:;
+- (id)model;
+- (void)keyboardDidChangeFrame:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)keyboardWillShow:;
+- (void)setSelected:;
+- (void)keyboardDidShow:;
+- (void)keyboardWillChangeFrame:;
+@end

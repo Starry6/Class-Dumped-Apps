@@ -1,0 +1,34 @@
+@interface AWEECMultiMallClipBGView : UIView
+@property (nonatomic) IESECMallBackgroundView bgView;
+@property (nonatomic) NSString currentPageTheme;
+@property (nonatomic) NSDictionary currentTransInfo;
+@property (nonatomic) NSDictionary imgViewMap;
+@property (nonatomic) IESECMallCategoryTabAreaModel tabListModel;
+@property (nonatomic) q currentTabIndex;
+@property (nonatomic) q previousTabIndex;
+- (unsigned long long)currentThemeStyle;
+- (void)mallChannelInnerTheme:;
+- (void)mallChannelTransInfo:;
+- (void)updateSkinBackground:;
+- (void)needSwitchToGrey:;
+- (void)setCurrentPageTheme:;
+- (id)currentPageTheme;
+- (void)addBGView;
+- (void)setCurrentTransInfo:;
+- (id)currentThemeStyleDefine;
+- (void)setTabListModel:;
+- (id)imgViewMap;
+- (void)setImgViewMap:;
+- (id)tabListModel;
+- (long long)previousTabIndex;
+- (void)categoryWillTransitionToIndex:fromIndex:;
+- (void)setPreviousTabIndex:;
+- (void)updateWithTabListModel:;
+- (id)currentTransInfo;
+- (void).cxx_destruct;
+- (id)bgView;
+- (void)setBgView:;
+- (long long)currentTabIndex;
+- (void)setCurrentTabIndex:;
+- (id)initWithTheme:;
+@end

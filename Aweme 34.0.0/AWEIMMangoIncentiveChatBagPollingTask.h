@@ -1,0 +1,35 @@
+@interface AWEIMMangoIncentiveChatBagPollingTask : NSObject
+@property (nonatomic) double interval;
+@property (nonatomic) q pollingLimit;
+@property (nonatomic) q completePopAllowSecondDiff;
+@property (nonatomic) NSString taskGroup;
+@property (nonatomic) NSString taskToken;
+@property (nonatomic) NSString taskID;
+@property (nonatomic) NSString scene;
+@property (nonatomic) q count;
+@property (nonatomic) Q status;
+- (id)taskToken;
+- (void)setTaskToken:;
+- (void)setTaskGroup:;
+- (id)taskGroup;
+- (void)pollWithInterval:;
+- (long long)pollingLimit;
+- (void)requestWithCompletion:;
+- (id)initWithTaskID:taskToken:taskGroup:scene:;
+- (void)setPollingLimit:;
+- (long long)completePopAllowSecondDiff;
+- (void)setCompletePopAllowSecondDiff:;
+- (void)setScene:;
+- (double)interval;
+- (void)setCount:;
+- (void)setStatus:;
+- (id)scene;
+- (void)execute;
+- (void)setInterval:;
+- (long long)count;
+- (void)cancel;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (void)setTaskID:;
+- (id)taskID;
+@end

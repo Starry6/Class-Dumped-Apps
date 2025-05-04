@@ -1,0 +1,36 @@
+@interface AWERVNewDetailBaseCell : UICollectionViewCell
+@property (nonatomic) AWERVNewDetailPageContext context;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWERVNewDetailPlayVideoViewController videoController;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) AWERVAutoPlayHandler autoPlayHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)autoPlayHandler;
+- (void)setAutoPlayHandler:;
+- (void)makeVideoControllerLayout;
+- (void)configVideoViewController:;
+- (void)updateVideoControllerLayout;
+- (void)controlViewClicked;
+- (void)configWithAwemeModel:context:videoController:logExtraDict:;
+- (void)setModel:;
+- (void)didBecomeActive;
+- (void)setIsActive:;
+- (void)play;
+- (void)prepareForReuse;
+- (void)didResignActive;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)reset;
+- (BOOL)isActive;
+- (id)context;
+- (void)stop;
+- (void)pause;
+- (id)activeView;
+- (id)videoController;
+- (void)setVideoController:;
+@end

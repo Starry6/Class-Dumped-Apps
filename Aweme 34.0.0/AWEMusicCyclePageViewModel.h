@@ -1,0 +1,38 @@
+@interface AWEMusicCyclePageViewModel : NSObject
+@property (nonatomic) AWEMusicCyclePageItem preItem;
+@property (nonatomic) AWEMusicCyclePageItem currentItem;
+@property (nonatomic) AWEMusicCyclePageItem nextItem;
+@property (nonatomic) NSMutableDictionary reuse;
+@property (nonatomic) <AWEMusicCyclePageViewModelDelegate> delegate;
+@property (nonatomic) {CGSize=dd} itemSize;
+- (id)reuse;
+- (void)setReuse:;
+- (BOOL)canScrollToNext;
+- (void)pageWillChangeAnimation:;
+- (BOOL)canScrollToPre;
+- (unsigned long long)currentPageItem:;
+- (BOOL)updateCurrentItem:;
+- (void)correctScrollViewOffsetIfNeed:;
+- (void)onScrollDidEnd:isManual:;
+- (void)dropPageItem:;
+- (id)reusePageItem:;
+- (id)preItem;
+- (void)setPreItem:;
+- (void)initViewItems:;
+- (void)addPageItemViews;
+- (void)addPageItemView:;
+- (id)pageItemOfPosition:;
+- (void)onScrolling:;
+- (id)currentItem;
+- (id)init;
+- (id)delegate;
+- (id)nextItem;
+- (void).cxx_destruct;
+- (void)setCurrentItem:;
+- (void)setDelegate:;
+- (id)itemSize;
+- (void)setItemSize:;
+- (void)setNextItem:;
+- (void)reloadData:;
+- (void)layoutItems;
+@end

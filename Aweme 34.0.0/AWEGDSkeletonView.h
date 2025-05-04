@@ -1,0 +1,33 @@
+@interface AWEGDSkeletonView : UIView
+@property (nonatomic) UIImageView headImgView;
+@property (nonatomic) UIView headBlockView;
+@property (nonatomic) UIView grouponDetailBlockView;
+@property (nonatomic) UIView footerBlockView;
+@property (nonatomic) UIImageView lightCover;
+@property (nonatomic) NSTimer lightSweepTimer;
+@property (nonatomic) NSString headImgUrl;
+- (id)lightCover;
+- (void)setLightCover:;
+- (void)setHeadImgUrl:;
+- (void)setupHeadImg;
+- (void)setupHeadBlockView;
+- (void)setupGrouponDetailBlockView;
+- (void)setupLightCover;
+- (void)setHeadImgView:;
+- (void)lightSweepAnimation;
+- (void)setLightSweepTimer:;
+- (id)lightSweepTimer;
+- (id)headImgView;
+- (void)setHeadBlockView:;
+- (id)createGrayLineAddSuperView:;
+- (id)headBlockView;
+- (void)setGrouponDetailBlockView:;
+- (id)headImgUrl;
+- (id)grouponDetailBlockView;
+- (id)footerBlockView;
+- (void)setFooterBlockView:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

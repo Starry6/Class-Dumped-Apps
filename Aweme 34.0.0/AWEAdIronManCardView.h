@@ -1,0 +1,35 @@
+@interface AWEAdIronManCardView : UIView
+@property (nonatomic) AWEIronManModel model;
+@property (nonatomic) UIImageView cardImage;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel challengeLabel;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) UIView interactionView;
+@property (nonatomic) @? pushIronManBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)challengeLabel;
+- (id)pushIronManBlock;
+- (void)tappedCard:;
+- (void)setPushIronManBlock:;
+- (void)setChallengeLabel:;
+- (id)textLabel;
+- (void)setModel:;
+- (id)interactionView;
+- (id)initWithModel:;
+- (void)setInteractionView:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setupConstraints;
+- (id)titleLabel;
+- (void)setTextLabel:;
+- (id)cardImage;
+- (void)setCardImage:;
+- (id)arrowImage;
+- (void)setArrowImage:;
+- (void)setupModel;
+@end

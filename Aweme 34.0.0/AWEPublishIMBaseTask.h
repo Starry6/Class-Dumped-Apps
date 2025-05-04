@@ -1,0 +1,32 @@
+@interface AWEPublishIMBaseTask : AWEPublishCommonTask
+@property (nonatomic) NSArray shareList;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString taskID;
+@property (nonatomic) double clickSendTimestamp;
+@property (nonatomic) BOOL createGroup;
+@property (nonatomic) BOOL notDismissLoadingOnFinish;
+@property (nonatomic) NSString trackEnterMethod;
+@property (nonatomic) NSString trackShootWay;
+@property (nonatomic) NSString trackEnterFrom;
+- (BOOL)createGroup;
+- (void)setCreateGroup:;
+- (void)setTrackEnterMethod:;
+- (void)setTrackEnterFrom:;
+- (id)trackEnterFrom;
+- (id)trackEnterMethod;
+- (void)setTrackShootWay:;
+- (void)setClickSendTimestamp:;
+- (void)setNotDismissLoadingOnFinish:;
+- (id)commonNotificationInfo;
+- (double)clickSendTimestamp;
+- (id)trackShootWay;
+- (BOOL)notDismissLoadingOnFinish;
+- (void)resume;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (void)setTaskID:;
+- (id)taskID;
+- (void)setShareList:;
+- (id)shareList;
+@end

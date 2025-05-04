@@ -1,0 +1,30 @@
+@interface AWEPOISpuInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString spuID;
+@property (nonatomic) NSString spuName;
+@property (nonatomic) AWEPOIContentItemModel poiContent;
+@property (nonatomic) NSArray coverUrlList;
+@property (nonatomic) q status;
+@property (nonatomic) NSString targetURL;
+@property (nonatomic) NSString supplierID;
+@property (nonatomic) NSArray iconServiceTypeList;
+- (id)spuID;
+- (id)spuName;
+- (void)setSpuName:;
+- (id)iconServiceTypeList;
+- (void)setIconServiceTypeList:;
+- (void)setSpuID:;
+- (id)poiContent;
+- (void)setPoiContent:;
+- (id)coverUrlList;
+- (void)setCoverUrlList:;
+- (id)supplierID;
+- (void)setSupplierID:;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)targetURL;
+- (void)setTargetURL:;
++ (id)iconServiceTypeListJSONTransformer;
++ (id)coverUrlListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

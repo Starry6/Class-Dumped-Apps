@@ -1,0 +1,2 @@
+@interface AWEContactsBridgeMethodParamsModel : BDXBridgeModel
+@end

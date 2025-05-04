@@ -1,0 +1,2 @@
+@interface AWELivePreStreamVSBusinessContainer : AWELivePreStreamBusinessBaseContainer
+@end

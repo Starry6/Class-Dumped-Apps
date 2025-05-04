@@ -1,0 +1,30 @@
+@interface AWEUGDesktopSnakeBarGuideConfigModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString guidePic;
+@property (nonatomic) NSString rightButtonText;
+@property (nonatomic) NSString bottomHeight;
+@property (nonatomic) AWEUGDesktopChannelGuideInstallConfigModel installConfig;
+@property (nonatomic) AWEUGDesktopChannelGuideTrackerInfoModel trackerInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)rightButtonText;
+- (void)setRightButtonText:;
+- (id)guidePic;
+- (void)setTrackerInfo:;
+- (void)setGuidePic:;
+- (id)installConfig;
+- (void)setInstallConfig:;
+- (id)trackerInfo;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)bottomHeight;
+- (void)setBottomHeight:;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

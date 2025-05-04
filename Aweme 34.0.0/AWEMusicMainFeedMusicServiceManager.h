@@ -1,0 +1,38 @@
+@interface AWEMusicMainFeedMusicServiceManager : NSObject
+@property (nonatomic) NSArray serviceArray;
+@property (nonatomic) AWEMusicPlayEventService musicEventService;
+@property (nonatomic) AWEMusicPlayEventService secondaryEventService;
+@property (nonatomic) NSArray eventServiceArray;
+@property (nonatomic) @ lastPlayService;
+@property (nonatomic) @ secondaryMusicService;
+@property (nonatomic) AWEMusicDSPEventModel eventModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)musicServiceWillPlay:;
+- (void)videoPlayStart;
+- (void)videoPlayEnd;
+- (void)enterMusicScene;
+- (id)secondaryMusicService;
+- (void)setSecondaryMusicService:;
+- (id)eventModel;
+- (void)setEventModel:;
+- (void)setMusicEventService:;
+- (id)musicEventService;
+- (id)lastPlayService;
+- (id)initWithMusicService:secondaryMusicService:;
+- (void)setServiceArray:;
+- (void)setEventServiceArray:;
+- (void)setSecondaryEventService:;
+- (id)secondaryEventService;
+- (id)eventServiceArray;
+- (void)setLastPlayService:;
+- (void)secondaryVideoPlayStart;
+- (void)secondaryVideoPlayEnd;
+- (void)removeObserver:;
+- (void)addObserver:;
+- (void).cxx_destruct;
+- (id)serviceArray;
+- (void)setPageName:;
+@end

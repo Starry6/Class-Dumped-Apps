@@ -1,0 +1,30 @@
+@interface AWEPerfEvaluateTrigger : NSObject
+@property (nonatomic) <AWEPerfEvaluateTriggerHandler> handler;
+@property (nonatomic) NSObject<OS_dispatch_queue> triggerQueue;
+@property (nonatomic) BOOL enableBootTrigger;
+@property (nonatomic) BOOL trigger_after_feed_ready;
+@property (nonatomic) NSTimer triggerTimer;
+@property (nonatomic) double triggerInterval;
+@property (nonatomic) double lastTriggerTime;
+- (void)onTriggerEvent:params:;
+- (id)initWithPerfEvaluateJSONConfig:triggerHandler:;
+- (void)triggerBootCollect;
+- (void)timerTriggerCollect;
+- (void)setEnableBootTrigger:;
+- (void)dispatchCollectOnSceneIfNeeded:;
+- (BOOL)enableBootTrigger;
+- (id)triggerQueue;
+- (double)triggerInterval;
+- (BOOL)trigger_after_feed_ready;
+- (void)_dispatchCollectOnSceneIfNeeded:;
+- (void)setTriggerQueue:;
+- (void)setTrigger_after_feed_ready:;
+- (id)triggerTimer;
+- (void)setTriggerTimer:;
+- (void)setTriggerInterval:;
+- (void)setHandler:;
+- (id)handler;
+- (void)setLastTriggerTime:;
+- (double)lastTriggerTime;
+- (void).cxx_destruct;
+@end

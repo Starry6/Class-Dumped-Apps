@@ -1,0 +1,33 @@
+@interface AWEHPBizTabBarPrivatedService : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getChannelInfoWithTabId:;
+- (id)getCurrentChannelInfo;
+- (id)getChannelCommunicationObjectWithTabId:byProtocol:;
+- (id)getCurrentChannelCommunicationObjectByProtocol:;
+- (id)getChannelIdByViewController:;
+- (long long)compareTabPositionWithFirstTab:secondTab:;
+- (id)homePageContext;
+- (id)getTabCenterPointWithTabId:;
+- (id)getBottomBarInfoWithTabId:;
+- (id)getCurrentBottomBarInfo;
+- (void)landingTabWithTabId:model:completionBlock:exitBlock:;
+- (void)canLandingTabWithTabId:params:completionBlock:;
+- (id)getCurrentChannelController;
+- (id)p_getChannelInfoWithChannelObject:selectedTabId:;
+- (id)p_getBottomBarInfoWithChannelObject:;
+- (id)p_getChannelCommunicationObjectWithChannelObject:byProtocol:;
+- (id)getItemConfigWithTabId:;
+- (void)updateTabBarGreyModeStatusWhenSwitchToChannelID:;
+- (id)getNormalModeAbilityWithTabId:;
+- (id)getBottomTabItemList;
+- (id)getTabBarRootViewController;
+- (id)getTabBarRootViewControllerWithTabID:;
+- (id)getNormalModeButtonCurrentTitleWithTabID:;
+- (id)selectedTabBarTabID;
+- (BOOL)channelCanHotReloadWithTabID:;
+- (void)updateTabBarGreyModeStatusWhenHotReload;
+- (BOOL)topCanShowTabBarBGSkinWithChannelID:;
+@end

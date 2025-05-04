@@ -1,0 +1,34 @@
+@interface AWEEcomSearchCoinTaskView : UIView
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) double pastTimeinterval;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel countdownLabel;
+@property (nonatomic) @? finishBlock;
+@property (nonatomic) AWEEcomSearchResultPageCoinTaskResponse taskResponse;
+@property (nonatomic) NSDictionary taskQueryParams;
+@property (nonatomic) BOOL disableTask;
+- (void)updateTheme:;
+- (id)taskResponse;
+- (void)setTaskResponse:;
+- (void)setPastTimeinterval:;
+- (void)setDisableTask:;
+- (void)timerTicker;
+- (void)setCountdownLabel:;
+- (void)freshUI;
+- (void)finishTask:;
+- (double)pastTimeinterval;
+- (id)countdownLabel;
+- (BOOL)disableTask;
+- (BOOL)hasCoinTask;
+- (void)updateTask:;
+- (id)taskQueryParams;
+- (void)setTaskQueryParams:;
+- (void)setTimer:;
+- (id)timer;
+- (void)runTask:;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setFinishBlock:;
+- (id)finishBlock;
+@end

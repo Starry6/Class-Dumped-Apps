@@ -1,0 +1,5 @@
+@interface AWEStoryImpl.CoverPrivacyTagView : UIView
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+@end

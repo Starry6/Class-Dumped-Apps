@@ -1,0 +1,31 @@
+@interface AWEIMMessageStateIndicator : NSObject
+@property (nonatomic) q messageState;
+@property (nonatomic) UIView icon;
+@property (nonatomic) UIImageView currentStateImageView;
+@property (nonatomic) double progress;
+@property (nonatomic) BOOL needReloadForThemeChange;
+@property (nonatomic) q indicatorScene;
+- (void)setMessageState:;
+- (long long)messageState;
+- (void)changeToState:progress:;
+- (void)changeToState:readReceipt:;
+- (void)updateIconFrame:;
+- (void)__configIcon;
+- (void)__configThemeChangeEvent;
+- (BOOL)needReloadForThemeChange;
+- (void)setNeedReloadForThemeChange:;
+- (id)currentStateImageView;
+- (void)__startAnimating;
+- (void)__stopAnimating;
+- (id)__imageForState:progress:;
+- (void)setCurrentStateImageView:;
+- (long long)indicatorScene;
+- (void)setIndicatorScene:;
+- (id)init;
+- (id)icon;
+- (double)progress;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setProgress:;
++ (id)imageForProcess:;
+@end

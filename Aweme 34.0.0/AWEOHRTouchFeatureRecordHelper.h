@@ -1,0 +1,31 @@
+@interface AWEOHRTouchFeatureRecordHelper : NSObject
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL addSceneInfo;
+@property (nonatomic) q listMaxSize;
+@property (nonatomic) q recordTimeInterval;
+@property (nonatomic) double moveDistanceThreshold;
+@property (nonatomic) double lastRecordTime;
+@property (nonatomic) NSMutableArray touchActionModelList;
+- (void)onOHREngineCollectTouch:;
+- (id)screenClickPositionList;
+- (id)screenClickPositionListV2;
+- (id)userActionTypeList;
+- (double)lastRecordTime;
+- (long long)recordTimeInterval;
+- (void)setLastRecordTime:;
+- (double)moveDistanceThreshold;
+- (id)touchActionModelList;
+- (long long)listMaxSize;
+- (BOOL)addSceneInfo;
+- (void)setAddSceneInfo:;
+- (void)setListMaxSize:;
+- (void)setRecordTimeInterval:;
+- (void)setMoveDistanceThreshold:;
+- (void)setTouchActionModelList:;
+- (BOOL)enable;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (id)touchFeatureRecordConfig;
+@end

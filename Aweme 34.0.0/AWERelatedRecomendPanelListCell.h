@@ -1,0 +1,34 @@
+@interface AWERelatedRecomendPanelListCell : UITableViewCell
+@property (nonatomic) UIImageView videoCoverView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel durationLabel;
+@property (nonatomic) UIImageView likeIcon;
+@property (nonatomic) UILabel playLabel;
+@property (nonatomic) UIColor titleLabelTextColor;
+@property (nonatomic) UIColor contentViewBackgroundColor;
+@property (nonatomic) UIColor locatedContentViewBackgroundColor;
+@property (nonatomic) UIColor lineAttributesColor;
+- (id)contentViewBackgroundColor;
+- (void)setContentViewBackgroundColor:;
+- (id)locatedContentViewBackgroundColor;
+- (id)playLabel;
+- (void)setPlayLabel:;
+- (id)videoCoverView;
+- (id)likeIcon;
+- (void)setLocatedContentViewBackgroundColor:;
+- (void)setLineAttributesColor:;
+- (void)updateAwemeModel:selected:;
+- (void)setConstDarkMode;
+- (void)setContentBackgroundColor;
+- (void)setVideoCoverView:;
+- (id)lineAttributesColor;
+- (void)setLikeIcon:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)durationLabel;
+- (void)setDurationLabel:;
+- (void)setTitleLabelTextColor:;
+- (id)titleLabelTextColor;
+@end

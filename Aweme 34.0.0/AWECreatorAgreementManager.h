@@ -1,0 +1,35 @@
+@interface AWECreatorAgreementManager : NSObject
+@property (nonatomic) BOOL needShowAuthorAgreeAlert;
+@property (nonatomic) BOOL enteredLinkWebVC;
+@property (nonatomic) AWECreatorAgreementAlertView alert;
+@property (nonatomic) AWEPromoteSettings settings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didBeginWithInfo:;
+- (void)awemeSettingDidChange;
+- (void)setNeedShowAuthorAgreeAlert:;
+- (void)setEnteredLinkWebVC:;
+- (void)_updateAlertView;
+- (BOOL)enteredLinkWebVC;
+- (BOOL)needShowAuthorAgreeAlert;
+- (void)_agreeForCreatorTerm;
+- (void)_cancelForCreatorTerm;
+- (void)_recordPopupWithConfirmStatus:;
+- (void)_transferToTermsUrl;
+- (BOOL)_checkPopupConditionGivenMaxPopupTimes:popupIntervalDays:;
+- (void)_markNeedShowAuthorAgreeAlert;
+- (BOOL)shouldCheckWhetherShowAlertViewWithTask:;
+- (void)checkWhetherShowAlertView;
+- (void)showAlertViewWhenEnteredAgreementWebViewController;
+- (void)setSettings:;
+- (id)init;
+- (void)dealloc;
+- (id)settings;
+- (void)showAlertView;
+- (void).cxx_destruct;
+- (void)setAlert:;
+- (id)alert;
++ (id)sharedManager;
+@end

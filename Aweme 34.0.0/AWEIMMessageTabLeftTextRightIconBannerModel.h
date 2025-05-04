@@ -1,0 +1,33 @@
+@interface AWEIMMessageTabLeftTextRightIconBannerModel : NSObject
+@property (nonatomic) NSString textString;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) UIColor bannerNormalColor;
+@property (nonatomic) UIColor bannerHighlightedColor;
+@property (nonatomic) BOOL needBottomSeparatorLine;
+@property (nonatomic) Q layoutStyle;
+@property (nonatomic) double bannerHeight;
+@property (nonatomic) double bannerWidth;
+@property (nonatomic) @? bannerTapBlock;
+@property (nonatomic) @? iconTapBlock;
+- (void)setTextString:;
+- (void)setBannerNormalColor:;
+- (void)setBannerHighlightedColor:;
+- (void)setNeedBottomSeparatorLine:;
+- (void)setBannerWidth:;
+- (void)setBannerTapBlock:;
+- (id)textString;
+- (id)bannerNormalColor;
+- (id)bannerHighlightedColor;
+- (BOOL)needBottomSeparatorLine;
+- (double)bannerWidth;
+- (id)bannerTapBlock;
+- (id)iconTapBlock;
+- (void)setIconTapBlock:;
+- (void)setLayoutStyle:;
+- (id)iconImage;
+- (void)setIconImage:;
+- (unsigned long long)layoutStyle;
+- (void).cxx_destruct;
+- (double)bannerHeight;
+- (void)setBannerHeight:;
+@end

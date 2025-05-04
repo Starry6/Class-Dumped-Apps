@@ -1,0 +1,8 @@
+@interface AWESimulateExceptionTaskLibra : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)queryConfig;
+- (id)taskName;
+@end

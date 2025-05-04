@@ -1,0 +1,36 @@
+@interface AWEPOILynxContainerViewV2 : AWEPOILynxContainerView
+@property (nonatomic) DitoLynxComponentViewModelV2 lynxViewModel;
+@property (nonatomic) NSNumber lastScrollViewOffsetY;
+@property (nonatomic) DitoPageContext ditoPageContext;
+@property (nonatomic) NSString ditoNodeTag;
+@property (nonatomic) q preloadType;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) NSNumber geckoID;
+@property (nonatomic) BOOL isLoadSuccess;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sendEvent:params:;
+- (void)setPreloadType:;
+- (void)setLynxViewModel:;
+- (id)lynxViewModel;
+- (id)eventExtraParams;
+- (double)fontScaleForCubeWithModel:;
+- (void)setDitoPageContext:;
+- (void)updateLynxWithBizData:;
+- (id)ditoPageContext;
+- (id)lastScrollViewOffsetY;
+- (void)setLastScrollViewOffsetY:;
+- (void)subscribeUpdate;
+- (void)subscribeRemove;
+- (void)subscribeScrollEventFrequency;
+- (void)subscribeSwitchDitoEvent;
+- (void)observeModalViewOffset;
+- (id)ditoNodeTag;
+- (void)setDitoNodeTag:;
+- (void)subscribeBDXEvent;
+- (long long)lynxPreloadType;
+- (void).cxx_destruct;
+- (long long)preloadType;
+@end

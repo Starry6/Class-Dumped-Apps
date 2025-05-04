@@ -1,0 +1,34 @@
+@interface AWEFeedPlayletChannelController : NSObject
+@property (nonatomic) UIViewController<AWESCPlayletTabViewControllerProtocol><AWEFeedTabItemViewControllerProtocol> contentVC;
+@property (nonatomic) BOOL isShowingBadge;
+@property (nonatomic) BOOL isShowingBubble;
+@property (nonatomic) <AWEHPChannelControllerConfigProtocol> config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)channelTopTabDidSelect;
+- (void)channelEnterWithModel:;
+- (void)channelTopTabDidUnSelect;
+- (void)hideBadge;
+- (id)contentVC;
+- (void)setContentVC:;
+- (id)topBarAbility;
+- (void)channelDidLoadWithType:;
+- (void)channelLandingTabWithModel:;
+- (BOOL)channelReleaseContentViewController:;
+- (id)getContentViewController;
+- (id)getPostPluginControllers;
+- (void)showBubble:;
+- (void)showWatchAdFreeRightExpireToastIfNeeded;
+- (void)setIsShowingBubble:;
+- (void)saveCurrentUserLatestShowPlayletTabBubbleTime;
+- (void)setIsShowingBadge:;
+- (BOOL)isShowingBadge;
+- (BOOL)isShowingBubble;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)config;
+- (void).cxx_destruct;
+- (void)showBadge;
+@end

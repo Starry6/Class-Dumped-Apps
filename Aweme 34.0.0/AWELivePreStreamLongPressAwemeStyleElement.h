@@ -1,0 +1,33 @@
+@interface AWELivePreStreamLongPressAwemeStyleElement : AWELiveBaseElement
+@property (nonatomic) UILongPressGestureRecognizer longPressGesture;
+@property (nonatomic) IESLiveLongPressStore store;
+@property (nonatomic) IESLiveRoomService roomService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)initializeElement;
+- (void)didSetAttachingDIContext;
+- (BOOL)shouldActivateElementWithData:;
+- (id)roomService;
+- (BOOL)onLiveRoomDeletedByLongPress:;
+- (void)followAnchorSuccessWithLongPress:;
+- (void)unfollowAnchorSuccessWithLongPress:;
+- (void)followAnchorSuccessWithLongPress;
+- (void)unfollowAnchorSuccessWithLongPress;
+- (void)preloadElement;
+- (void)triggerLongPress:;
+- (void)deleteRoomFromFeedWithRoomID:;
+- (BOOL)enableLongPress:;
+- (BOOL)enableLongPressDislike;
+- (BOOL)disableLongPressDislikeDelete;
+- (void)dealloc;
+- (id)store;
+- (void)setStore:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)longPressGesture;
+- (void)setLongPressGesture:;
+@end

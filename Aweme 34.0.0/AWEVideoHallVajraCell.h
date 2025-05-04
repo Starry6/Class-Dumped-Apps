@@ -1,0 +1,30 @@
+@interface AWEVideoHallVajraCell : UICollectionViewCell
+@property (nonatomic) AWEVideoHallBlockInfo blockInfo;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) @? willDisplayHandler;
+@property (nonatomic) AWELVideoHallTracker tracker;
+@property (nonatomic) @? vajraCellClickTrackBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)blockInfo;
+- (id)willDisplayHandler;
+- (id)vajraCellClickTrackBlock;
+- (void)setWillDisplayHandler:;
+- (void)setVajraCellClickTrackBlock:;
+- (void)setBlockInfo:;
+- (void)configWithBlockInfo:;
+- (id)collectionView;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)tracker;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTracker:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setupUI;
+@end

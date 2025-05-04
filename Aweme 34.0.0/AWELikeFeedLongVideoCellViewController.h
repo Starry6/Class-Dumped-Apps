@@ -1,0 +1,32 @@
+@interface AWELikeFeedLongVideoCellViewController : AWEFeedLongVideoCellViewController
+@property (nonatomic) AWEVideoHallBottomBarView videoHallBottomView;
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIImageView tipsIcon;
+@property (nonatomic) BOOL needShowHistoryTips;
+@property (nonatomic) NSTimer tipsTimer;
+- (void)updateDefaultSeekToTime:;
+- (id)tipsLabel;
+- (void)addNotifications;
+- (void)setTipsLabel:;
+- (id)tipsTimer;
+- (void)setTipsTimer:;
+- (id)tipsIcon;
+- (void)setTipsIcon:;
+- (void)submitLongVideoHistory;
+- (void)videoDidPlay;
+- (void)configTracker;
+- (id)videoHallBottomView;
+- (void)setNeedShowHistoryTips:;
+- (BOOL)needShowHistoryTips;
+- (void)showHistoryTips;
+- (void)handleClickBottomButton;
+- (void)setVideoHallBottomView:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setupSubviews;
+- (void)willReset;
+- (void)handleAppWillResignActive;
+- (id)pageName;
+@end

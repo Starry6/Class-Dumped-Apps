@@ -1,0 +1,31 @@
+@interface AWEPaySwiftImpl.CCMCodeScriptResponse : MTLModel
+@property (nonatomic) NSString retCode;
+@property (nonatomic) NSString retMsg;
+@property (nonatomic) _TtC15AWEPaySwiftImpl15CCMGatewayExtra gatewayExtra;
+@property (nonatomic) NSString scriptName;
+@property (nonatomic) NSString scriptContent;
+@property (nonatomic) NSString scriptVer;
+@property (nonatomic) NSString scriptLimit;
+@property (nonatomic) NSString scriptSign;
+- (void)setScriptName:;
+- (id)scriptContent;
+- (void)setScriptContent:;
+- (id)scriptVer;
+- (void)setScriptVer:;
+- (id)scriptSign;
+- (void)setScriptSign:;
+- (id)scriptLimit;
+- (void)setScriptLimit:;
+- (id)retCode;
+- (void)setRetCode:;
+- (id)retMsg;
+- (void)setRetMsg:;
+- (id)gatewayExtra;
+- (void)setGatewayExtra:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)scriptName;
++ (id)JSONKeyPathsByPropertyKey;
+@end

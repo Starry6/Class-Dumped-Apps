@@ -1,0 +1,35 @@
+@interface AWEIMFansGroupWelcomeCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIImageView selectedImageView;
+@property (nonatomic) UIView line;
+@property (nonatomic) AWEIMFansGroupWelcomeModel model;
+@property (nonatomic) <AWEIMBaseCollectionViewViewModelProtocol> viewModel;
+@property (nonatomic) <AWEIMBaseCollectionViewEventProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithViewModel:;
+- (void)addKVO;
+- (void)showSelectedImage:;
+- (void)setModel:;
+- (void)dealloc;
+- (id)delegate;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (id)model;
+- (void)setTitleLabel:;
+- (id)line;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)subtitleLabel;
+- (void)setLine:;
+- (void)setupUI;
+- (id)selectedImageView;
+- (void)setSelectedImageView:;
++ (id)cellReuseIdentifier;
+@end

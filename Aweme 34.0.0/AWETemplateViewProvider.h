@@ -1,0 +1,35 @@
+@interface AWETemplateViewProvider : AWETemplateViewBaseProvider
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView<AWETemplateViewProtocol> barView;
+@property (nonatomic) AWETemplateBaseViewModel viewModel;
+@property (nonatomic) AWETemplateBarModel barModel;
+@property (nonatomic) AWETemplateBarContext barContext;
+@property (nonatomic) AWEPageContext pageContext;
+@property (nonatomic) Q scene;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)barModel;
+- (void)setBarModel:;
+- (void)setBarContext:;
+- (id)barContext;
+- (void)configViewModel;
+- (void)configBarView;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (id)viewModel;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)updateWithData:;
+- (void)setPageContext:;
+- (id)pageContext;
+- (id)extraInfo;
+- (id)barView;
+- (void)setBarView:;
+- (void)setExtraInfo:;
++ (BOOL)shouldActiveWithData:scene:context:;
++ (BOOL)shouldActiveWithData:context:scene:extraInfo:;
++ (BOOL)shouldAvoidOtherElementWithData:barModel:context:scene:extraInfo:;
+@end

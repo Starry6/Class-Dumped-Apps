@@ -1,0 +1,36 @@
+@interface AWERadarHeaderViewController : UIViewController
+@property (nonatomic) AWERadarLocationAuthView authView;
+@property (nonatomic) AWERadarNearbyItemListViewController itemListController;
+@property (nonatomic) AWERadarGameViewController gameListController;
+@property (nonatomic) UILabel nearbySectionLabel;
+@property (nonatomic) BOOL authLocation;
+@property (nonatomic) NSString defaultSectionTitle;
+@property (nonatomic) AWERadarHeaderContext context;
+@property (nonatomic) <AWERadarHeaderViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithHeaderModel:;
+- (void)p_updateUI;
+- (id)gameListController;
+- (void)setGameListController:;
+- (void)updateHeaderLayout;
+- (id)itemListController;
+- (id)nearbySectionLabel;
+- (id)defaultSectionTitle;
+- (void)setAuthLocation:;
+- (void)setItemListController:;
+- (void)setNearbySectionLabel:;
+- (BOOL)authLocation;
+- (id)delegate;
+- (void)viewDidLoad;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (double)heightForHeaderView;
+- (id)authView;
+- (void)setAuthView:;
+@end

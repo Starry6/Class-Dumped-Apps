@@ -1,0 +1,35 @@
+@interface AWEActivityPendantView : UIView
+@property (nonatomic) AWEPendantView mainPendantView;
+@property (nonatomic) AWEPendantCapsuleView capsuleView;
+@property (nonatomic) AWEToolTipView toastBubble;
+@property (nonatomic) AWEActivityConfigModel configModel;
+@property (nonatomic) NSString capsuleMessage;
+- (id)configModel;
+- (void)setConfigModel:;
+- (void)configActivityViewWithModel:;
+- (void)switchPendantViewState:animated:;
+- (void)registerTapHandler:dismissHandler:;
+- (unsigned long long)pendantViewState;
+- (void)enableLottieAnimation:;
+- (void)hideCapsuleView;
+- (id)capsuleMessage;
+- (void)showCapsuleMessage:;
+- (void)showMessageOnBubble:;
+- (void)registerStatusChangeCompletion:;
+- (id)currentMessageOnCapsule;
+- (id)hexColorStyle:;
+- (id)mainPendantView;
+- (void)setMainPendantView:;
+- (void)configPendantViewWithExpandedLottie:foldedLottie:;
+- (void)configPendantViewWithExpandedImage:foldedImage:;
+- (id)toastBubble;
+- (void)setToastBubble:;
+- (void)configCapsuleView:;
+- (void)configPendantView:;
+- (void)dismissBubbleWithCompletion:;
+- (void)setCapsuleMessage:;
+- (void)playRewardAnimation;
+- (id)capsuleView;
+- (void).cxx_destruct;
+- (void)setCapsuleView:;
+@end

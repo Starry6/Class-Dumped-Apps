@@ -1,0 +1,33 @@
+@interface AWELiteGameStickerInfo : MTLModel
+@property (nonatomic) NSString stickerId;
+@property (nonatomic) q actualAwardNum;
+@property (nonatomic) double coefficient;
+@property (nonatomic) BOOL isRedPacket;
+@property (nonatomic) q limitAwardNum;
+@property (nonatomic) q minAwardNum;
+@property (nonatomic) BOOL overByUser;
+@property (nonatomic) BOOL isNext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)stickerId;
+- (void)setStickerId:;
+- (long long)actualAwardNum;
+- (void)setActualAwardNum:;
+- (BOOL)isRedPacket;
+- (void)setIsRedPacket:;
+- (long long)limitAwardNum;
+- (void)setLimitAwardNum:;
+- (long long)minAwardNum;
+- (void)setMinAwardNum:;
+- (BOOL)overByUser;
+- (void)setOverByUser:;
+- (BOOL)isNext;
+- (void)setIsNext:;
+- (double)coefficient;
+- (void).cxx_destruct;
+- (void)setValue:forUndefinedKey:;
+- (void)setCoefficient:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

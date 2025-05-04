@@ -1,0 +1,31 @@
+@interface AWEMusicStreamingImpl.LunaActivityInfo : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString key;
+@property (nonatomic) q quota;
+@property (nonatomic) q used;
+@property (nonatomic) q duration;
+@property (nonatomic) q nextReceivableTime;
+@property (nonatomic) q latestStartTime;
+@property (nonatomic) q latestExpireTime;
+@property (nonatomic) NSArray audioEffectKeys;
+- (long long)nextReceivableTime;
+- (void)setNextReceivableTime:;
+- (long long)latestStartTime;
+- (void)setLatestStartTime:;
+- (long long)latestExpireTime;
+- (void)setLatestExpireTime:;
+- (id)audioEffectKeys;
+- (void)setAudioEffectKeys:;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (void)setKey:;
+- (void)setDuration:;
+- (id)key;
+- (long long)used;
+- (void).cxx_destruct;
+- (long long)duration;
+- (void)setQuota:;
+- (id)initWithCoder:;
+- (long long)quota;
+- (void)setUsed:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

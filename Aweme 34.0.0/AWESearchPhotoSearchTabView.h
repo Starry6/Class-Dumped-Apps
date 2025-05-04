@@ -1,0 +1,35 @@
+@interface AWESearchPhotoSearchTabView : UIView
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) UIImage sourceImage;
+@property (nonatomic) NSArray fixedDetectionList;
+@property (nonatomic) <AWESearchPhotoSearchTabViewProtocol> delegate;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableArray dataList;
+@property (nonatomic) AWESearchPhotoSearchTabViewModel selectedModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataList:;
+- (id)selectedModel;
+- (void)configUI;
+- (void)setSelectedModel:;
+- (void)setFixedDetectionList:;
+- (id)fixedDetectionList;
+- (id)collectionView;
+- (id)init;
+- (void)setSelectedIndex:;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (long long)selectedIndex;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (void)setSourceImage:;
+- (id)sourceImage;
+- (void)selectItemAtIndex:;
+- (id)dataList;
+@end

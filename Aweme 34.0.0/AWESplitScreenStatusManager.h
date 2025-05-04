@@ -1,0 +1,35 @@
+@interface AWESplitScreenStatusManager : NSObject
+@property (nonatomic) double currentWidth;
+@property (nonatomic) double currentHeight;
+@property (nonatomic) q currentShowType;
+@property (nonatomic) q lastShowType;
+@property (nonatomic) NSDate beginTime;
+@property (nonatomic) double currentWidthResolution;
+@property (nonatomic) double currentHeightResolution;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCurrentHeight:;
+- (id)stringForCurrentShowType;
+- (double)currentWidthResolution;
+- (double)currentHeightResolution;
+- (long long)currentShowType;
+- (void)setCurrentWidth:;
+- (void)setCurrentShowType:;
+- (void)updateSplitScreenStatus;
+- (long long)showTypeWithWindowWidth:windowHeight:;
+- (void)setLastShowType:;
+- (long long)lastShowType;
+- (void)trackScreenModeChange;
+- (id)showTypeString:;
+- (id)stringForWindowRatio;
+- (id)init;
+- (void)setup;
+- (id)beginTime;
+- (void)setBeginTime:;
+- (double)currentHeight;
+- (void).cxx_destruct;
+- (double)currentWidth;
++ (id)sharedInstance;
+@end

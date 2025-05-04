@@ -1,0 +1,2 @@
+@interface AWEPlayInteractionBaseActionButtonElement : AWEPlayInteractionLeftElement
+@end

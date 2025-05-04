@@ -1,0 +1,36 @@
+@interface AWEIMSharePoiCouponMessage : AWEIMMessage
+@property (nonatomic) NSString poiId;
+@property (nonatomic) NSString poiName;
+@property (nonatomic) q activityId;
+@property (nonatomic) q couponId;
+@property (nonatomic) NSString couponDescription;
+@property (nonatomic) AWEURLModel merchantIconUrl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)couponDescription;
+- (id)poiName;
+- (void)setPoiName:;
+- (id)initWithContentDict:;
+- (id)contentComponentName;
+- (void)setCouponId:;
+- (long long)couponId;
+- (void)setCouponDescription:;
+- (id)getContentDict;
+- (BOOL)isUserCellType;
+- (BOOL)supportRefactorCell;
+- (id)supportMessageMenuTypeList;
+- (BOOL)isAllowedCellEdit;
+- (BOOL)shouldShowNicknameWithMessageType;
+- (BOOL)isSupportForward;
+- (BOOL)isAllowedForward;
+- (id)merchantIconUrl;
+- (void)setMerchantIconUrl:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)poiId;
+- (void)setPoiId:;
+- (long long)activityId;
+- (void)setActivityId:;
+@end

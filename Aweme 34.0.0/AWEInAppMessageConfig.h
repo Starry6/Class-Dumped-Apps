@@ -1,0 +1,33 @@
+@interface AWEInAppMessageConfig : NSObject
+@property (nonatomic) BOOL showDividingLine;
+@property (nonatomic) BOOL showBottomLine;
+@property (nonatomic) UIView descView;
+@property (nonatomic) q actionStyle;
+@property (nonatomic) UIView actionView;
+@property (nonatomic) NSString actionStr;
+@property (nonatomic) NSString titleStr;
+@property (nonatomic) NSAttributedString attributedTitle;
+@property (nonatomic) NSString descStr;
+@property (nonatomic) NSAttributedString attributedDesc;
+- (BOOL)showDividingLine;
+- (void)setShowDividingLine:;
+- (BOOL)showBottomLine;
+- (void)setShowBottomLine:;
+- (id)descView;
+- (void)setDescView:;
+- (id)actionStr;
+- (void)setActionStr:;
+- (id)titleStr;
+- (void)setTitleStr:;
+- (id)descStr;
+- (void)setDescStr:;
+- (id)attributedDesc;
+- (void)setAttributedDesc:;
+- (long long)actionStyle;
+- (void)setAttributedTitle:;
+- (void).cxx_destruct;
+- (id)attributedTitle;
+- (id)actionView;
+- (void)setActionStyle:;
+- (void)setActionView:;
+@end

@@ -1,0 +1,36 @@
+@interface AWERVCommerceController : AWERVBaseController
+@property (nonatomic) UIViewController<AWEAdLongVideoContainerViewController> adLongVideoContainerViewController;
+@property (nonatomic) <AWERelatedAdLongVideoAdapter> adLongVideoAdapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isAdContainerPauseVideoWhenRefreshModel;
+- (void)adContainerViewShowCompleted;
+- (void)adLongVideoBackButtonDidClick;
+- (void)enterFullScreenByClick:;
+- (void)resumeBackgroundPlayer;
+- (void)pauseBackgroundPlayer;
+- (void)adPlayerWillStartPlay;
+- (void)refreshWithAwemeModel:;
+- (void)updateAdVideoContainer;
+- (id)adLongVideoContainerViewController;
+- (BOOL)canShowAdVideoContainerWithModel:;
+- (void)setAdLongVideoContainerViewController:;
+- (void)viewWillAppearAfterUpdateContentSize:;
+- (void)viewDidAppearAfter;
+- (void)refreshWithUIAfterVideoPlayerFrameUpdate;
+- (void)didRefreshWithUI;
+- (BOOL)isAdContainerPauseVideoWhenRefreshModel;
+- (void)setIsAdContainerPauseVideoWhenRefreshModel:;
+- (void)enterFullScreenWithEnterMethod:createPageContext:holder:;
+- (BOOL)shouldDisableResumeVideoPlayer;
+- (void)afterQuitFromLandscapeFeed;
+- (void)updateVideoPlayerFrameWhenScrolling:;
+- (void)initialAdLongVideoContainerViewControllerIfNeed;
+- (id)adLongVideoAdapter;
+- (void)tryAddAdVideoContainerView;
+- (void)setAdLongVideoAdapter:;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

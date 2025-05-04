@@ -1,0 +1,30 @@
+@interface AWEManageVideoCommentAreaSettingItemModel : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString iconImageName;
+@property (nonatomic) NSString svgIconImageName;
+@property (nonatomic) NSString subIconImageName;
+@property (nonatomic) BOOL isSwitchButton;
+@property (nonatomic) NSString commentSwitchKey;
+@property (nonatomic) @? subIconTapped;
+@property (nonatomic) @? switchButtonTapped;
+- (void)setSvgIconImageName:;
+- (id)svgIconImageName;
+- (BOOL)isSwitchButton;
+- (void)setIsSwitchButton:;
+- (id)switchButtonTapped;
+- (void)setSwitchButtonTapped:;
+- (id)subIconImageName;
+- (void)setSubIconImageName:;
+- (id)commentSwitchKey;
+- (void)setCommentSwitchKey:;
+- (id)subIconTapped;
+- (void)setSubIconTapped:;
+- (void)setIconImageName:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)iconImageName;
+@end

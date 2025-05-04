@@ -1,0 +1,38 @@
+@interface AWEMerchandiseCouponCountdownView : UIView
+@property (nonatomic) UILabel hourLabel;
+@property (nonatomic) UILabel minuteLeftSemicolonLabel;
+@property (nonatomic) UILabel minuteLabel;
+@property (nonatomic) UILabel secondLeftSemicolonLabel;
+@property (nonatomic) UILabel secondLabel;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseCouponInfoCountdownModel model;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) <AWEMerchandiseCouponCountdownViewDelegate> delegate;
+- (void)configWithModel:;
+- (void)countdownStatusDidChange:;
+- (id)secondLeftSemicolonLabel;
+- (id)minuteLeftSemicolonLabel;
+- (void)beginTimer;
+- (long long)getCountdownInterVal;
+- (void)countdownAction;
+- (id)countDownSize;
+- (void)setHourLabel:;
+- (void)setMinuteLeftSemicolonLabel:;
+- (void)setMinuteLabel:;
+- (void)setSecondLeftSemicolonLabel:;
+- (void)setModel:;
+- (void)setTimer:;
+- (id)timer;
+- (void)endTimer;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)hourLabel;
+- (id)minuteLabel;
+- (void)updateText;
+- (void)setupUI;
+- (void)setSecondLabel:;
+- (id)secondLabel;
+@end

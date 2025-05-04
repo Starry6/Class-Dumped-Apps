@@ -1,0 +1,37 @@
+@interface AWEUserPerfMonitorManager : NSObject
+@property (nonatomic) AWEUserPerfShowModel showModel;
+@property (nonatomic) AWEUserPerfProcessModel processModel;
+@property (nonatomic) AWEUserPerfFinishModel finishModel;
+@property (nonatomic) AWEUserPerfLoginModel loginModel;
+- (void)setLoginModel:;
+- (id)loginModel;
+- (id)aAWEFeedModuleServiceDOUYINSSAdapter;
+- (void)recordSDKIsProcess:;
+- (void)recordProfileSelfDuration:;
+- (void)recordLoginShowTimeStamp:;
+- (void)trackPerfShowWithLoginType:loginPlatform:showPlatforms:viewModel:;
+- (void)recordLoginProcessTimeStamp:;
+- (void)recordLoginType:eventType:;
+- (void)recordNoVerifyStatus:;
+- (void)recordCarrierDataIsCache:;
+- (void)recordCarrierTokenIsCache:;
+- (void)recordTrustRequestIsTimeout:;
+- (void)recordTrustPrerequisitesSatisfy:;
+- (void)recordTrustDataIsCache:;
+- (void)trackSuccessOrFinishEventWithParams:platform:addtionalTrackerInformation:error:;
+- (void)recordSecondProcessErrorCode:;
+- (id)showModel;
+- (id)finishModel;
+- (id)processModel;
+- (void)recordPreviousShowLoginTypeForShowEvent:;
+- (double)durationMS:;
+- (void)setShowModel:;
+- (void)setFinishModel:;
+- (void)recordLastShowEventForFinishEvent:showDuration:;
+- (void)setProcessModel:;
+- (void)recordGroupJumpToAuthDuration:;
+- (void)recordGroupShareLoginDuration:;
+- (void).cxx_destruct;
++ (Class)aAWEFeedModuleServiceDOUYINSSAdapterClass;
++ (id)sharedManager;
+@end

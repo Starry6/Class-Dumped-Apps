@@ -1,0 +1,35 @@
+@interface AWEMinorXiGuaExtraInfoModel : MTLModel
+@property (nonatomic) q IPCategory;
+@property (nonatomic) NSString categoryName;
+@property (nonatomic) NSString area;
+@property (nonatomic) NSString year;
+@property (nonatomic) q status;
+@property (nonatomic) q duration;
+@property (nonatomic) NSArray aliasList;
+@property (nonatomic) NSArray relatedStaffList;
+@property (nonatomic) NSArray videoTitleList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)IPCategory;
+- (void)setIPCategory:;
+- (id)aliasList;
+- (void)setAliasList:;
+- (id)relatedStaffList;
+- (void)setRelatedStaffList:;
+- (id)videoTitleList;
+- (void)setVideoTitleList:;
+- (void)setStatus:;
+- (void)setDuration:;
+- (id)year;
+- (void).cxx_destruct;
+- (long long)duration;
+- (long long)status;
+- (void)setYear:;
+- (id)area;
+- (id)categoryName;
+- (void)setArea:;
+- (void)setCategoryName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

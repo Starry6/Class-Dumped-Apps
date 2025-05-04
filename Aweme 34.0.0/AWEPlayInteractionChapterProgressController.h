@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionChapterProgressController : AWEPlayInteractionBaseController
+@property (nonatomic) AWEDemaciaChapterProgressSlider chapterProgressBar;
+@property (nonatomic) BOOL shouldShowChapter;
+@property (nonatomic) @? progressSliderHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awe_viewController:willTransitionToSize:transitionCoordinator:;
+- (void)onUpdatePlayerController:withPlayVideoVC:;
+- (void)setHide:;
+- (void)removeControllerFromSuperView;
+- (double)calcuteEntryTopOffset:;
+- (BOOL)shouldMoveUpChapterProgress;
+- (BOOL)optimizePanelHeight;
+- (void)switchChapterProgress:withModel:;
+- (BOOL)optimizeChapterProgressSlider;
+- (void)unbindContext;
+- (id)chapterProgressBar;
+- (void)setChapterProgressBar:;
+- (void)updateChapterProgressBarPosition:;
+- (void)setShouldShowChapter:;
+- (id)progressSliderHandler;
+- (BOOL)shouldShowChapter;
+- (void)setProgressSliderHandler:;
+- (void)removeChapterProgressBar;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)viewDidAppear;
+- (void)setupContext;
+- (void)willDisplay;
++ (BOOL)chapterProgressViewOptEnabled;
+@end

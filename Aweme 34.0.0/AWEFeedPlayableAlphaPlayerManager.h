@@ -1,0 +1,30 @@
+@interface AWEFeedPlayableAlphaPlayerManager : HTSService
+@property (nonatomic) CMCFeedPlayableContenxt playableContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishPlayingWithError:;
+- (void)videoGiftController:didFinishPlayingWithError:;
+- (void)videoGiftController:isReadyToPlayOnView:;
+- (void)preloadAlphaPlayerResource:;
+- (id)alphaPlayerView:;
+- (BOOL)canResume:;
+- (void)preloadFeedAlphaVideoResource:;
+- (id)playableContext;
+- (void)setPlayableContext:;
+- (void)p_downloadAlphaVideoWithURLStringIfNeeded:;
+- (id)alphaPlayerConfigWith:;
+- (void)trackPlayableAlphaPlayerLoad:context:;
+- (id)commonParamsWithContext:;
+- (void)removePlayerViewIfNeed;
+- (id)conversionPublicParamWith:;
+- (id)publicParamsWith:;
+- (id)playableUrlWith:;
+- (void)reset:;
+- (void)play:;
+- (void)pause:;
+- (id)cacheDirectory;
+- (void)resume:;
+- (void).cxx_destruct;
+@end

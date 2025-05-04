@@ -1,0 +1,2 @@
+@interface AWECommentPanelHeaderSwiftImpl.CommentHeaderTemplateAnchorSpiderManService : _TtCs12_SwiftObject
+@end

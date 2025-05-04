@@ -1,0 +1,31 @@
+@interface AWECitySelectSection : NSObject
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWECitySelectAppearance appearance;
+@property (nonatomic) BOOL disableAction;
+@property (nonatomic) @? callback;
+@property (nonatomic) q pageType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)viewForHeader;
+- (id)viewForFooter;
+- (BOOL)disableAction;
+- (void)clickedAtIndexPath:;
+- (id)initWithTableView:appearance:disable:pageType:;
+- (double)heightForCellAtRow:;
+- (void)setDisableAction:;
+- (void)setAppearance:;
+- (void)setCallback:;
+- (id)callback;
+- (id)appearance;
+- (unsigned long long)numberOfItems;
+- (void)setTableView:;
+- (id)tableView;
+- (void)setPageType:;
+- (void).cxx_destruct;
+- (long long)pageType;
+- (id)cellForIndexPath:;
+- (double)heightForHeader;
+- (double)heightForFooter;
+@end

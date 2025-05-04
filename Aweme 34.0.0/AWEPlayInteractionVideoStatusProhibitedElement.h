@@ -1,0 +1,38 @@
+@interface AWEPlayInteractionVideoStatusProhibitedElement : AWEPlayInteractionNewBottomElement
+@property (nonatomic) UIView<AWEProhibitedURLViewProtocol> prohibitedURLView;
+@property (nonatomic) BOOL isReplacingMusic;
+@property (nonatomic) Q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (unsigned long long)elementVisibleType;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)viewDidDisposed;
+- (BOOL)shouldAppearWithData:;
+- (BOOL)isReplacingMusic;
+- (void)setIsReplacingMusic:;
+- (void)trackPlaypageItemAuditBarIsDisplay:;
+- (void)handleReplaceMusicStatusNotification:;
+- (id)prohibitedURLView;
+- (void)setProhibitedURLView:;
+- (void)trackReplaceBarShow;
+- (id)prohibitedURLViewText:;
+- (BOOL)shouldStartReplaceMusic:;
+- (id)prohibitedURLLink:;
+- (BOOL)shouldShowProhibitedURLView:;
+- (BOOL)disableProhibitedURLView:audioEditStatus:;
+- (id)musicOffLineText:;
+- (id)setupProhibitedURLView;
+- (void)prohibitedURLViewDidClick:;
+- (void)updateProhibitedURLView;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)identifier;
+- (unsigned long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+@end

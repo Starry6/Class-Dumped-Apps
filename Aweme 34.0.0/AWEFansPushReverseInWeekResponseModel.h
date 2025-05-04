@@ -1,0 +1,30 @@
+@interface AWEFansPushReverseInWeekResponseModel : AWEBaseApiModel
+@property (nonatomic) NSArray urgeList;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) q total;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEFansPushRewardModel rewardData;
+@property (nonatomic) NSString topTitle;
+@property (nonatomic) q urgeLiveCnt;
+@property (nonatomic) q sendGiftCnt;
+- (id)urgeList;
+- (void)setUrgeList:;
+- (id)rewardData;
+- (void)setRewardData:;
+- (long long)urgeLiveCnt;
+- (void)setUrgeLiveCnt:;
+- (long long)sendGiftCnt;
+- (void)setSendGiftCnt:;
+- (id)cursor;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (long long)total;
+- (void)setTotal:;
+- (void)setTopTitle:;
+- (id)topTitle;
++ (id)urgeListJSONTransformer;
++ (id)rewardDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,34 @@
+@interface AWEAdPlayerBottomGradientProcessorConfig : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSNumber brightnessStd;
+@property (nonatomic) NSNumber brightnessMean;
+@property (nonatomic) BOOL estimatedToStatic;
+@property (nonatomic) AWEAdPlayerBottomGradientProcessorResult staticResult;
+@property (nonatomic) q samplingInterval;
+@property (nonatomic) q delayDuration;
+@property (nonatomic) double cropPercent;
+@property (nonatomic) NSMutableDictionary dynamicResultDict;
+@property (nonatomic) BOOL stopDynamicDetect;
+- (long long)delayDuration;
+- (void)setDelayDuration:;
+- (void)setBrightnessMean:;
+- (void)setBrightnessStd:;
+- (void)setStaticResult:;
+- (void)setEstimatedToStatic:;
+- (double)cropPercent;
+- (void)setCropPercent:;
+- (void)setStopDynamicDetect:;
+- (BOOL)stopDynamicDetect;
+- (id)dynamicResultDict;
+- (void)setDynamicResultDict:;
+- (id)brightnessStd;
+- (id)brightnessMean;
+- (BOOL)estimatedToStatic;
+- (id)staticResult;
+- (id)init;
+- (long long)samplingInterval;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setSamplingInterval:;
+@end

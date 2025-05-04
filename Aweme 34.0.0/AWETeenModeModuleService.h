@@ -1,0 +1,36 @@
+@interface AWETeenModeModuleService : HTSService
+@property (nonatomic) NSString pushSchema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)preloadDowngradeIfNeededWithBitrateModel:;
+- (id)teenTabBarItemTypes;
+- (id)pushSchema;
+- (BOOL)teenModeCanHandleURL:transferType:;
+- (BOOL)teenModeCanHandleURLString:transferType:;
+- (BOOL)teenModePushFeatureOn;
+- (BOOL)teenModeAlipayFeatureOn;
+- (BOOL)teenModeAlipay:;
+- (void)enterByPush:;
+- (void)startAppWithTeenMode:;
+- (void)startChangeTeenMode;
+- (void)failChangeTeenModelWithErrorCode:errorMessage:isNetwork:;
+- (void)resetChangeTeenMode;
+- (void)startChangeTeenModeApi;
+- (void)endChangeTeenModeApi;
+- (id)minorAlbumOfAweme:;
+- (void)updateIgonreLongConnectMessage:;
+- (id)getContentPreferManager;
+- (BOOL)isTeenUpgradeAlertOptimizeEnable;
+- (id)versionUpdateManager;
+- (void)setPauseTimeLockIfNeed:scene:;
+- (void)fetchVideosForOfflineCacheWithType:count:feedColumntype:extParams:pullType:completion:;
+- (BOOL)isCurrentFeedVCRecommend;
+- (void)updateCurrentTableVCsGreyStatus;
+- (void)upadteUserInfo;
+- (BOOL)teenFeedPreCacheEnable;
+- (long long)teenFeedPreCacheFileSizeLimit;
+- (void)setPushSchema:;
+- (void).cxx_destruct;
+@end

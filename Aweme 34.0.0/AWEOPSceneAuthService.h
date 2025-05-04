@@ -1,0 +1,31 @@
+@interface AWEOPSceneAuthService : HTSService
+@property (nonatomic) AWEOpenPlatformAuthEntranceModel entranceModel;
+@property (nonatomic) NSMutableArray sceneAuthArray;
+@property (nonatomic) BOOL hasRealTimeTypeInCurrentFlow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addNotifications;
+- (id)entranceModel;
+- (void)setEntranceModel:;
+- (void)handleSceneAuthIfNeededWithEntranceModel:sceneAuthArray:completeBlock:;
+- (void)callbackWithAuthID:clientKey:rspCode:errMsg:extraParams:;
+- (void)handleSceneAuthDialogIfNeededWithChoosedScopes:sceneAuthBindInfoModels:scopeInfoMap:finishBlock:;
+- (id)filterValidSceneAuthArray:;
+- (BOOL)shouldBeginSceneAuthWithArray:;
+- (id)isValidParamsWithArray:;
+- (void)beginToSceneAuthWithClientKey:scopes:openExtraStr:sceneAuthArray:complete:;
+- (id)sceneAuthArray;
+- (void)showContainerWithModel:;
+- (BOOL)hasRealTimeTypeInCurrentFlow;
+- (id)limitAuthDialogTextView;
+- (Class)getVCClassWithNativeKey:;
+- (void)setSceneAuthArray:;
+- (void)setHasRealTimeTypeInCurrentFlow:;
+- (id)buildContainerParamsWithModel:;
+- (void)dismissDidEnterBackground;
+- (void)dealloc;
+- (void)clearData;
+- (void).cxx_destruct;
+@end

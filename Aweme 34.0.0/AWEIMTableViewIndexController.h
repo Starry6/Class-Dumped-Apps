@@ -1,0 +1,33 @@
+@interface AWEIMTableViewIndexController : NSObject
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? didSelectIndexViewBlock;
+@property (nonatomic) @? didUpdateIndexViewSelectedTextBlock;
+@property (nonatomic) @? getIndexViewFrameBlock;
+@property (nonatomic) @? getIndexRelationsBlock;
+@property (nonatomic) @? getIndexViewSectionTitlesBlock;
+- (void)tableView:didSelectIndexViewAtSection:;
+- (void)tableView:didUpdateIndexViewSelectedTextAtIndex:;
+- (id)awe_indexViewGetFrame;
+- (id)awe_indexViewGetIndexRelations;
+- (void)p_indexViewSupportAccessibility;
+- (id)didSelectIndexViewBlock;
+- (id)didUpdateIndexViewSelectedTextBlock;
+- (id)getIndexViewFrameBlock;
+- (id)getIndexRelationsBlock;
+- (void)setIconDataSourceOfIndexView:;
+- (void)setTextDataSourceOfIndexView:;
+- (void)setDidSelectIndexViewBlock:;
+- (void)setDidUpdateIndexViewSelectedTextBlock:;
+- (void)setGetIndexViewFrameBlock:;
+- (void)setGetIndexRelationsBlock:;
+- (id)getIndexViewSectionTitlesBlock;
+- (void)setGetIndexViewSectionTitlesBlock:;
+- (id)initWithConfig:tableView:;
+- (void)setTableView:;
+- (id)tableView;
+- (void).cxx_destruct;
+@end

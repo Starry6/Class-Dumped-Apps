@@ -1,0 +1,35 @@
+@interface AWEPayWebviewPlugin : IWKPluginObject
+@property (nonatomic) NSDictionary pluginConfig;
+@property (nonatomic) NSString authDyURL;
+@property (nonatomic) NSArray authURLArray;
+@property (nonatomic) NSDictionary authURLConfig;
+@property (nonatomic) NSArray payURLArray;
+@property (nonatomic) WKWebView currentPayWebView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onResponse:;
+- (void)monitorPlugin:isBreak:;
+- (id)payURLArray;
+- (void)redirectToDyPayDesk:URL:;
+- (void)setCurrentPayWebView:;
+- (id)currentPayWebView;
+- (id)webviewURL:params:;
+- (id)authURLArray;
+- (id)authDyURL;
+- (id)authURLConfig;
+- (void)setPluginConfig:;
+- (void)setAuthDyURL:;
+- (void)setAuthURLArray:;
+- (void)setAuthURLConfig:;
+- (void)setPayURLArray:;
+- (long long)priority;
+- (id)defaultConfig;
+- (void).cxx_destruct;
+- (id)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (id)pluginConfig;
++ (BOOL)enableWebviewPlugin;
++ (void)inject;
++ (id)shared;
+@end

@@ -1,0 +1,36 @@
+@interface AWEACCNewActionSheetImpl : NSObject
+@property (nonatomic) UIView sheet;
+@property (nonatomic) NSMutableArray itemTitles;
+@property (nonatomic) NSMutableArray itemStyles;
+@property (nonatomic) NSMutableArray itemHandlers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString title;
+@property (nonatomic) @? cancelHandler;
+- (void)actionSheetDidClickCancelButton:;
+- (void)addActionWithTitle:handler:;
+- (id)titleForSubtitleActionSheet;
+- (id)buttonTextsForSubtitleActionSheet;
+- (id)buttonTypesForSubtitleActionSheet;
+- (void)didClickedSubtitleActionSheetButtonAtIndex:;
+- (void)addActionWithTitle:subtitle:highlighted:handler:;
+- (void)addActionWithTitle:subtitle:handler:;
+- (id)itemHandlers;
+- (id)itemStyles;
+- (void)setItemStyles:;
+- (void)setItemHandlers:;
+- (void)show;
+- (id)init;
+- (void)setCancelHandler:;
+- (void)dismiss;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)cancelHandler;
+- (id)itemTitles;
+- (void)setItemTitles:;
+- (id)sheet;
+- (void)setSheet:;
+@end

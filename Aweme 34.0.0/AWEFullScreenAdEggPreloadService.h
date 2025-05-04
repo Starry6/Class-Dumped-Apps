@@ -1,0 +1,38 @@
+@interface AWEFullScreenAdEggPreloadService : HTSService
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSMutableArray preloadLocalModels;
+@property (nonatomic) NSMutableArray currentLoadModels;
+@property (nonatomic) NSObject<OS_dispatch_queue> taskQueue;
+@property (nonatomic) BOOL isLocalDataUpdate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)saveDataInDiskWithNotification:;
+- (void)adSearchMiddlePageModelReceiveWithNotification:;
+- (void)setPreloadLocalModels:;
+- (void)checkAndUpdateLocalStorage;
+- (id)preloadLocalModels;
+- (BOOL)isModelExpired:;
+- (void)trackDataReceivedWithModel:;
+- (BOOL)tryPreloadAdEggResourceWithModel:;
+- (BOOL)isLocalDataUpdate;
+- (void)setIsLocalDataUpdate:;
+- (id)currentLoadModels;
+- (void)trackPreloadStartWithModel:;
+- (BOOL)needPreloadResourceWithModel:;
+- (void)preloadImageDataWithModel:;
+- (void)preloadAlphaPlayerResourceWithModel:;
+- (void)trackPreloadResultWithModel:success:failReason:;
+- (void)setCurrentLoadModels:;
+- (void)onServiceStartUp;
+- (id)init;
+- (BOOL)isLoading;
+- (void)setLock:;
+- (id)lock;
+- (id)taskQueue;
+- (void).cxx_destruct;
+- (void)setIsLoading:;
+- (void)setTaskQueue:;
+@end

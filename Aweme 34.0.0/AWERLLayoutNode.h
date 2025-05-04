@@ -1,0 +1,32 @@
+@interface AWERLLayoutNode : NSObject
+@property (nonatomic) @? layoutBlock;
+@property (nonatomic) NSObject<AWERLVirtualNodeProtocol> virtualNode;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) NSMutableArray children;
+@property (nonatomic) {CGSize=dd} layoutSize;
+@property (nonatomic) {CGPoint=dd} layoutPosition;
+@property (nonatomic) AWERLProps props;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLayoutPosition:;
+- (id)layoutPosition;
+- (id)initWithSize:props:virtualNode:;
+- (id)computeLayoutThatFits:;
+- (id)virtualNode;
+- (void)setVirtualNode:;
+- (void)setLayoutBlock:;
+- (id)layoutSize;
+- (id)children;
+- (id)props;
+- (void)applyLayout;
+- (id)size;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (void)setChildren:;
+- (void)setLayoutSize:;
+- (void)appendChild:;
+- (id)layoutBlock;
+- (void)setProps:;
+@end

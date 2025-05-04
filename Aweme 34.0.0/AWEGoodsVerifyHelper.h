@@ -1,0 +1,33 @@
+@interface AWEGoodsVerifyHelper : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
++ (void)loginNCheckDisclaimerForPromotionSource:successBlock:failureBlock:;
++ (void)acknowledgeDisclaimerForPromotionSource:;
++ (void)verifyGoodsManageAuthorityFromProfileIfNeeded:;
++ (void)verifyGoodsManageAuthorityIfNeeded:;
++ (void)loginIfNeededWithCompletion:;
++ (void)verifyGoodsPageAuthorityIfNeeded:;
++ (void)verifyGoodsAuthorityFromProfileIfNeeded:checkTopVC:;
++ (void)verifyGoodsAuthorityIfNeeded:checkTopVC:;
++ (void)checkDisclaimerForGoodsIfNeeded:action:cancel:;
++ (void)checkDisclaimerForPromotionSource:action:cancel:;
++ (void)p_checkDisclaimerWithConfig:action:cancel:;
++ (long long)disclaimerTypeWithConfig:descDict:;
++ (void)updateAlertCompletedWithDisclaimerKey:;
++ (void)checkDisclaimerWithConfig:action:cancel:;
++ (id)disclaimerDictionaryWithPromotionSource:forceShow:;
++ (BOOL)legacyLawOnceOfPromotionSources:;
++ (BOOL)hasAcceptedDisclaimerLocally:;
++ (id)keyFromArray:;
++ (void)loginNCheckDisclaimerWithGoods:successBlock:failureBlock:;
++ (void)loginNCheckDisclaimerForBuyingPromotionID:promotionSource:extraData:successBlock:failureBlock:;
++ (BOOL)hasAcknowledgeDisclaimerForPromotionSource:;
++ (void)checkDisclaimerWithPromotionSource:action:cancel:;
++ (void)confirmDisclaimerLocally:;
++ (void)recordTodayJumpNoticeForKey:;
++ (void)popVerifyViewWithResponse:completion:;
++ (id)dayFormatter;
+@end

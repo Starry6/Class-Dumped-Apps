@@ -1,0 +1,30 @@
+@interface AWEProfileTaskCardItemModel : NSObject
+@property (nonatomic) Q cellType;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) @? buttonAction;
+@property (nonatomic) @? hotJumpAreaAction;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) AWEURLModel iconURLDark;
+@property (nonatomic) BOOL isIconNeedBG;
+- (id)iconURLDark;
+- (void)setIconURLDark:;
+- (id)hotJumpAreaAction;
+- (void)setHotJumpAreaAction:;
+- (BOOL)isIconNeedBG;
+- (void)setIsIconNeedBG:;
+- (void)setIconURL:;
+- (unsigned long long)cellType;
+- (void)setCellType:;
+- (id)iconURL;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (void).cxx_destruct;
+- (id)buttonTitle;
+- (void)setButtonTitle:;
+- (id)buttonAction;
+- (void)setButtonAction:;
+- (id)mainTitle;
+- (void)setMainTitle:;
+@end

@@ -1,0 +1,37 @@
+@interface AWEDiversionServiceImpl : HTSService
+@property (nonatomic) SKStoreProductViewController preloadStoreController;
+@property (nonatomic) BOOL isStorePresenting;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) double storeViewStayStartTime;
+@property (nonatomic) double storeViewBeginTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (BOOL)checkLunaInstalled;
+- (void)preloadStoreViewController;
+- (void)diversionLuna:deepLinkPath:extraProps:trackParams:completion:;
+- (void)reportDiversionLunaInfoWithZlinkID:urlParams:completion:;
+- (BOOL)shouldUseProtect;
+- (BOOL)checkLunaInstalledProtect;
+- (void)logLunaCheckIsOutDate:withTime:;
+- (void)openLunaWithPath:params:completion:;
+- (void)openAppStoreWithStoreID:trackParams:completion:;
+- (void)reportDiversionInfo:withZlinkPath:completion:;
+- (void)diversionLunaWithZlinkPath:deepLinkPath:extraProps:trackParams:completion:;
+- (id)preloadStoreController;
+- (void)setPreloadStoreController:;
+- (void)setStoreViewBeginTime:;
+- (void)p_presentViewController:isPreload:trackParams:completion:;
+- (void)trackAppStoreDismissWithParams:;
+- (void)trackAppStoreShowWithParams:;
+- (double)storeViewBeginTime;
+- (void)setIsStorePresenting:;
+- (void)setStoreViewStayStartTime:;
+- (BOOL)isStorePresenting;
+- (double)storeViewStayStartTime;
+- (void)productViewControllerDidFinish:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface AWETeenFeedDoubleColumnSectionController : AWEBaseListSectionController
+@property (nonatomic) AWETeenFeedDoubleColumnViewController doubleColumnVC;
+@property (nonatomic) double itemWidth;
+@property (nonatomic) AWETeenVideoDetailFeedViewController currentDetailVC;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) q entranceIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (long long)waterfallColumnCount;
+- (void)didSelectItemAtIndex:model:;
+- (id)doubleColumnVC;
+- (void)setDoubleColumnVC:;
+- (void)setEntranceIndex:;
+- (long long)entranceIndex;
+- (void)removeCachedCellSizeWithAwemeID:;
+- (void)p_trackSquareShow:WithIndex:model:;
+- (void)setCurrentDetailVC:;
+- (id)currentDetailVC;
+- (id)separatorColor;
+- (id)init;
+- (void)dealloc;
+- (void)setCurrentIndex:;
+- (void)setItemWidth:;
+- (id)sectionBackgroundColor;
+- (double)itemWidth;
+- (Class)cellClass;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+@end

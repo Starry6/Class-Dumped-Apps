@@ -1,0 +1,35 @@
+@interface AWEDCFeedOutOfTimeRefreshController : AWEDCFeedBaseController
+@property (nonatomic) NSNumber leaveTime;
+@property (nonatomic) BOOL needForceRefreshForOutOfTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)checkIsShowing;
+- (void)containerViewWillAppear:;
+- (void)containerAfterViewDidAppear:;
+- (void)containerViewWillDisappear:;
+- (id)customRequestParams:requestInfo:;
+- (id)customRequestArgs:requestInfo:;
+- (id)classNameWithReferString;
+- (BOOL)needForceRefreshForOutOfTime;
+- (void)setNeedForceRefreshForOutOfTime:;
+- (void)appDidEnterBackgroundFromNoti:;
+- (void)appWillEnterForegroundFromNoti:;
+- (void)recordLeaveTimeIfNeeded;
+- (BOOL)isTimeEnoughForRefresh;
+- (void)clearSearchRecords;
+- (void)clearNeedForceRefreshForSearchController;
+- (void)clearSearchIDListFromController;
+- (BOOL)needForceRefreshForSearchController;
+- (id)searchIDListFromController;
+- (long long)timeOfRefresh;
+- (id)leaveTime;
+- (void)resetLeaveTimeIfNeeded;
+- (void)setLeaveTime:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)refreshIfNeeded;
+- (void)addObservers;
+@end

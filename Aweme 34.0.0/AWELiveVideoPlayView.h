@@ -1,0 +1,34 @@
+@interface AWELiveVideoPlayView : IESECSliceXBaseContentElementView
+@property (nonatomic) IESLiveVideoPlayer videoPlayer;
+@property (nonatomic) <IESLiveOrientationConfig> orientationConfig;
+@property (nonatomic) UIView videoPlayerContainer;
+@property (nonatomic) UIImageView firstFrameImage;
+@property (nonatomic) UIView operationContainer;
+@property (nonatomic) UIImageView pauseImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)videoPlayerDidLoadFirstFrame:;
+- (void)videoPause;
+- (id)pauseImageView;
+- (void)setPauseImageView:;
+- (id)firstFrameImage;
+- (void)setFirstFrameImage:;
+- (id)operationContainer;
+- (id)orientationConfig;
+- (void)setOrientationConfig:;
+- (BOOL)setupElementView;
+- (void)setVideoPlayerContainer:;
+- (id)videoPlayerContainer;
+- (void)createVideoPlay;
+- (void)setOperationContainer:;
+- (void)trackClickWithPosition:;
+- (void)forceUpdateToLandscape;
+- (void)cleanupElementView;
+- (id)sliceXFlexLayoutMeasureView:width:widthMode:height:heightMode:;
+- (id)videoPlayer;
+- (void)setVideoPlayer:;
+- (void).cxx_destruct;
+- (void)fullScreen;
+@end

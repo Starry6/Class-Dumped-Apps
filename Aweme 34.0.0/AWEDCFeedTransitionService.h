@@ -1,0 +1,35 @@
+@interface AWEDCFeedTransitionService : NSObject
+@property (nonatomic) AWEDCFeedEventDispatcher eventDispatcher;
+@property (nonatomic) UIView transitionStartView;
+@property (nonatomic) NSIndexPath transitionStartIndex;
+@property (nonatomic) <AWEDCFeedListViewControllerProtocol> container;
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)zoomTransitionStartViewForOffset:;
+- (BOOL)zoomTransitionWantsTabBarAnimation;
+- (BOOL)zoomTransitionWantsTabBarBeStatic;
+- (double)zoomTransitionTargetViewCornerRadius;
+- (BOOL)zoomTransitionShouldScreenSliced;
+- (BOOL)zoomTransitionWantsTabBarAlphaAnimation;
+- (BOOL)zoomTransitionWantsStaticTabBarAtTopLayer;
+- (unsigned long long)zoomTransitionWantsAnimationOptions;
+- (BOOL)zoomTransitionWantsOptAnimation;
+- (void)updateAnimationWithPercentage:;
+- (void)setTransitionStartIndex:;
+- (void)setTransitionStartView:;
+- (id)transitionStartView;
+- (id)transitionStartIndex;
+- (id)dcFeedTransitionProviderClassNameForContext:;
+- (void)setContainer:;
+- (id)container;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)finishAnimation;
+- (id)eventDispatcher;
+- (void)setEventDispatcher:;
+- (void)cancelAnimation;
+@end

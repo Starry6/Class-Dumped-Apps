@@ -1,0 +1,31 @@
+@interface AWECommentAnchorModel : MTLModel
+@property (nonatomic) UIImage anchorIcon;
+@property (nonatomic) NSArray iconImageURLs;
+@property (nonatomic) NSArray iconLightImageURLs;
+@property (nonatomic) NSString anchorDes;
+@property (nonatomic) BOOL hasAnchorType;
+@property (nonatomic) NSString anchorType;
+@property (nonatomic) @? tapAnchorBlock;
+@property (nonatomic) Q businessType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconImageURLs;
+- (void)setAnchorIcon:;
+- (void)setAnchorDes:;
+- (void)setTapAnchorBlock:;
+- (id)tapAnchorBlock;
+- (id)anchorDes;
+- (void)setBusinessType:;
+- (id)anchorIcon;
+- (void)setIconImageURLs:;
+- (id)iconLightImageURLs;
+- (void)setIconLightImageURLs:;
+- (unsigned long long)businessType;
+- (void).cxx_destruct;
+- (id)anchorType;
+- (BOOL)hasAnchorType;
+- (void)setAnchorType:;
+- (void)setHasAnchorType:;
+@end

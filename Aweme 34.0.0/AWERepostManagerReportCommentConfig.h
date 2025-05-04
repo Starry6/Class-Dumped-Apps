@@ -1,0 +1,33 @@
+@interface AWERepostManagerReportCommentConfig : NSObject
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEAwemeModel fromAweme;
+@property (nonatomic) NSString commentId;
+@property (nonatomic) AWECommentModel commentModel;
+@property (nonatomic) AWECommentModel firstCommentModel;
+@property (nonatomic) NSString pageType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) q commentIndex;
+@property (nonatomic) NSDictionary extraLogDict;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)aweme;
+- (void)setAweme:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)commentModel;
+- (void)setCommentModel:;
+- (void)setCommentId:;
+- (void)setFirstCommentModel:;
+- (void)setCommentIndex:;
+- (void)setExtraLogDict:;
+- (id)commentId;
+- (void)setFromAweme:;
+- (id)fromAweme;
+- (id)extraLogDict;
+- (long long)commentIndex;
+- (id)firstCommentModel;
+- (void)setPageType:;
+- (void).cxx_destruct;
+- (id)pageType;
+@end

@@ -1,0 +1,33 @@
+@interface AWEPCTPrepareResourceTaskAttachObj : NSObject
+@property (nonatomic) @? completeHandler;
+@property (nonatomic) AWEPCTBusinessTaskCreatorContext context;
+@property (nonatomic) ACCAssetImportManager importManager;
+@property (nonatomic) NSArray allInfos;
+@property (nonatomic) Q restCount;
+@property (nonatomic) NSArray downloadingTasks;
+@property (nonatomic) BOOL didCancel;
+- (id)downloadingTasks;
+- (void)setDownloadingTasks:;
+- (id)completeHandler;
+- (void)setCompleteHandler:;
+- (void)preprocessInfos;
+- (void)processResources;
+- (void)setAllInfos:;
+- (unsigned long long)restCount;
+- (void)setRestCount:;
+- (void)exceptionCallback:;
+- (void)checkComplete;
+- (void)startWithCompleteHandler:;
+- (id)importManager;
+- (void)setImportManager:;
+- (BOOL)didCancel;
+- (id)init;
+- (void)cancel;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setDidCancel:;
+- (id)allInfos;
++ (id)cacheFilePathFromResource:;
++ (id)generateCacheFilePathWithResource:;
+@end

@@ -1,0 +1,23 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedTransitionInnerComponent : AWEKnowledgeRichContentImpl.FullPageFeedBaseComponent
+- (void)updateScrollViewContentOffsetY:animated:;
+- (void)albumDetailSinkingTransitionDidCancel;
+- (id)innerAlbumContainer;
+- (id)customAspectRatioLimit;
+- (double)albumElementWHRatio;
+- (double)albumEndFrameTopOffset;
+- (id)bringInnerAlbumView;
+- (double)scrollViewContentOffsetY;
+- (void)sendBackInnerAlbumView;
+- (id)innerVideoController;
+- (void)updateAudioPlayWithPlayVideoVC:;
+- (void)albumDetailSinkingTransitionDidEnd;
+- (void)albumDetailSinkingTransitionWillBegin;
+- (id)navBarTopAvatarView;
+- (void)albumDetailTransitionDidEnd;
+- (void)albumDetailTransitionWillBegin;
+- (void)onContainerViewWillAppear;
+- (id)transition_destinatedViewControllerForSlideDirection:gestureRecognizer:;
+- (id)preferredTransitionProviderClassNameFor:;
+- (id)init;
+- (void).cxx_destruct;
+@end

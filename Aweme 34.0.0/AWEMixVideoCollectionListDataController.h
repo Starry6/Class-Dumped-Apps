@@ -1,0 +1,35 @@
+@interface AWEMixVideoCollectionListDataController : AWEListDataController
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSString noticeID;
+@property (nonatomic) NSString mixID;
+@property (nonatomic) NSMutableArray itemIDs;
+@property (nonatomic) NSMutableArray noticeUsers;
+@property (nonatomic) BOOL hasJumpLoad;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSArray insertCollectedUserIDs;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)mixID;
+- (void)setNoticeID:;
+- (id)noticeID;
+- (void)loadmoreWithCompletion:;
+- (void)setMixID:;
+- (void)fetchWithCompletion:fetchType:;
+- (void)setInsertCollectedUserIDs:;
+- (id)insertCollectedUserIDs;
+- (id)noticeUsers;
+- (id)filterDuplicateAwemeModels:;
+- (void)updateDataSourceWithFilterArray:;
+- (BOOL)hasJumpLoad;
+- (void)setHasJumpLoad:;
+- (id)initWithMixID:noticeID:;
+- (void)cleanNoticeUsers;
+- (void)setNoticeUsers:;
+- (id)cursor;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)reset;
+- (id)itemIDs;
+- (void)setItemIDs:;
+@end

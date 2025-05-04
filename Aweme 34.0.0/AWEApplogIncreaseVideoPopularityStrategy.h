@@ -1,0 +1,30 @@
+@interface AWEApplogIncreaseVideoPopularityStrategy : AWEApplogIncreaseAbstractStrategy
+@property (nonatomic) BOOL enableFastEmitTag;
+@property (nonatomic) double fastEmitScoreMin;
+@property (nonatomic) double fastEmitScoreMax;
+@property (nonatomic) q hasConsumedFastEmitVideoCount;
+@property (nonatomic) NSString triggerApplogEvent;
+@property (nonatomic) BOOL hasConsumedFastEmitVideo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)playWith:;
+- (void)onApplogEvent:params:;
+- (BOOL)shouldExecuteStrategy;
+- (void)setTriggerApplogEvent:;
+- (id)triggerApplogEvent;
+- (void)setHasConsumedFastEmitVideoCount:;
+- (void)setHasConsumedFastEmitVideo:;
+- (void)setEnableFastEmitTag:;
+- (void)setFastEmitScoreMin:;
+- (void)setFastEmitScoreMax:;
+- (long long)hasConsumedFastEmitVideoCount;
+- (BOOL)hasConsumedFastEmitVideo;
+- (BOOL)enableFastEmitTag;
+- (double)fastEmitScoreMin;
+- (double)fastEmitScoreMax;
+- (id)init;
+- (void)execute;
+- (void).cxx_destruct;
+@end

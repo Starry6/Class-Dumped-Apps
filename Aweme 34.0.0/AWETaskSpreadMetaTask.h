@@ -1,0 +1,35 @@
+@interface AWETaskSpreadMetaTask : NSObject
+@property (nonatomic) NSMutableArray tasks;
+@property (nonatomic) AWETaskSpreadMetaTaskInfo taskInfo;
+@property (nonatomic) BOOL executing;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) @ info;
+@property (nonatomic) AWETaskSpreadMetaTaskProgressMonitor monitor;
+- (void)executeWithFilterBlock:;
+- (id)initWithBlock:info:;
+- (void)addBlock:extraInfo:;
+- (void)__compeletionCheck;
+- (void)__moveToFinishStateAndNotify;
+- (void)executeAll;
+- (void)executeOne;
+- (void)removeTaskWithFilter:;
+- (id)initWithInfo:;
+- (void)setMonitor:;
+- (id)monitor;
+- (void)setInfo:;
+- (id)init;
+- (id)info;
+- (void)addBlock:;
+- (void)setFinished:;
+- (BOOL)isExecuting;
+- (void)cancel;
+- (id)description;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (id)taskInfo;
+- (void)setExecuting:;
+- (void)setTaskInfo:;
+- (void)setTasks:;
+- (id)tasks;
++ (id)metaTaskWithBlock:info:;
+@end

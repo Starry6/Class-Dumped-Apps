@@ -1,0 +1,36 @@
+@interface AWEPOIDetailTabSwitchExtension : NSObject
+@property (nonatomic) NSMutableDictionary listOffSetCache;
+@property (nonatomic) DitoSwitchNodeActionOperation switchTagOperation;
+@property (nonatomic) NSNumber targetOffsetY;
+@property (nonatomic) DitoActionContext selectActionContext;
+@property (nonatomic) DitoPageContext context;
+@property (nonatomic) <DitoExtensionContainerProtocol> container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isLoadingMore;
+- (void)bindStateAndAction;
+- (void)componentViewDidCompleteShow:;
+- (void)initializeExtension;
+- (id)switchTagOperation;
+- (void)setSwitchTagOperation:;
+- (void)setListOffSetCache:;
+- (void)setSelectActionContext:;
+- (void)handleSwitchContext:;
+- (void)retryLoadTabData;
+- (void)publishEventWithName:eventAttachedParams:;
+- (void)tabSelectList:event:isSticked:stickOffsetY:nodeTag:;
+- (id)selectActionContext;
+- (id)cacheKeyWithTabId:;
+- (void)cacheScrollState:isSticked:;
+- (void)scrollListViewToOffset:isSticked:stickOffsetY:nodeTag:;
+- (id)listOffSetCache;
+- (void)setTargetOffsetY:;
+- (id)targetOffsetY;
+- (void)setContainer:;
+- (id)container;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

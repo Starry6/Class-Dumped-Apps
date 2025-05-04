@@ -1,0 +1,24 @@
+@interface AWEFormatTrackCommonComponent : AWEIMComponentBase
+- (void)trackEvent:params:;
+- (void)willSendNewMessage;
+- (void)didReceiveNewMessageWithMessageProtocol:reason:;
+- (void)didReceiveSendMessageProtocolResponse:message:result:;
+- (void)componentDidMounted:;
+- (void)trackTopicCardShow:;
+- (void)trackMessageEvent:menuType:extra:;
+- (void)trackMsgFeedback:isClick:extra:;
+- (void)trackMsgSend:extra:;
+- (id)msgShareParams:sendContext:key:;
+- (void)trackMsgEvent:msg:params:;
+- (void)trackGuideQuestionShow:extra:;
+- (void)trackClickStickOn:;
+- (void)trackStartSpan:;
+- (void)trackEndSpan:extra:;
+- (void)setCurrentClickSugId:msg:;
+- (id)msgGuideQuestionCommonParams;
+- (id)formatCommonParams;
+- (void)trackCharacterCardShow:msg:;
+- (void)trackDeepThinkWithEvent:duration:;
+- (id)init;
+- (void).cxx_destruct;
+@end

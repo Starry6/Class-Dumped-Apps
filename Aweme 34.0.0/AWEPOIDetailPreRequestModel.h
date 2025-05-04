@@ -1,0 +1,34 @@
+@interface AWEPOIDetailPreRequestModel : NSObject
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BOOL lynxReady;
+@property (nonatomic) BOOL requestFinish;
+@property (nonatomic) AWEGoodsDetailPageContext context;
+@property (nonatomic) NSString bundle;
+@property (nonatomic) NSMutableArray tags;
+@property (nonatomic) NSDictionary cjInfo;
+@property (nonatomic) DitoPageModel pageModelForRefresh;
+@property (nonatomic) BOOL isRefresh;
+- (void)setLynxReady:;
+- (void)setRequestFinish:;
+- (BOOL)lynxReady;
+- (BOOL)requestFinish;
+- (id)pageModelForRefresh;
+- (id)cjInfo;
+- (void)notifyGoodsDetailRefreshedWithTag:;
+- (void)setCjInfo:;
+- (void)setPageModelForRefresh:;
+- (id)tags;
+- (BOOL)isRefresh;
+- (id)initWithBundle:;
+- (id)bundle;
+- (void)setTags:;
+- (void)clear;
+- (void)setData:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)data;
+- (id)context;
+- (void)setBundle:;
+- (void)notify;
+- (void)setIsRefresh:;
+@end

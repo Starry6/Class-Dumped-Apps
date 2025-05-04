@@ -1,0 +1,33 @@
+@interface AWEIMPhotoBrowserZoomableCell : UICollectionViewCell
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) AWEIMPhotoBrowserZoomableView scrollView;
+@property (nonatomic) AWEIMPhotoBrowserZoomableModel model;
+@property (nonatomic) <AWEIMPhotoBrowserZoomableCellDelegate> zoomableDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)didTapZoomableView:;
+- (void)didBeginZoomZoomableView:;
+- (void)didEndZoomZoomableView:;
+- (void)didEndDecelerating:;
+- (void)configWithModel:;
+- (void)setZoomableDelegate:;
+- (void)p_updateUIWithModel:;
+- (void)p_showLoadingView;
+- (void)resetZoomableStatusIfNeededWithAnimated:;
+- (void)p_hideLoadingView;
+- (void)p_setupBind;
+- (void)p_updateImage;
+- (id)zoomableDelegate;
+- (void)setModel:;
+- (void)setScrollView:;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (id)scrollView;
+- (id)model;
+- (void).cxx_destruct;
++ (id)identifier;
+@end

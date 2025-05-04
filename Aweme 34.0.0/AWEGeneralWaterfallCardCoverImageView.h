@@ -1,0 +1,34 @@
+@interface AWEGeneralWaterfallCardCoverImageView : BDImageView
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) UIVisualEffectView blurView;
+@property (nonatomic) UIImageView contentImgView;
+@property (nonatomic) UIImageView backgroundImgView;
+@property (nonatomic) BOOL isUseGassuBlur;
+@property (nonatomic) double blurOpacity;
+@property (nonatomic) BOOL useNormalCover;
+@property (nonatomic) q coverContentMode;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (long long)coverContentMode;
+- (void)setCoverContentMode:;
+- (BOOL)useNormalCover;
+- (void)setUseNormalCover:;
+- (id)backgroundImgView;
+- (id)contentImgView;
+- (void)setBackgroundImgView:;
+- (void)p_adjustFillModeAccordingToRatio:;
+- (void)setBlurOpacity:;
+- (BOOL)isUseGassuBlur;
+- (double)blurOpacity;
+- (void)setContentImgView:;
+- (void)setIsUseGassuBlur:;
+- (void)updateCoverImageWithModel:IsVideo:;
+- (id)blurView;
+- (void)setImage:;
+- (void)setBlurView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setContentMode:;
+- (id)coverImage;
+@end

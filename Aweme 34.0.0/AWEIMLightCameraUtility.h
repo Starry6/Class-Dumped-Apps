@@ -1,0 +1,32 @@
+@interface AWEIMLightCameraUtility : NSObject
++ (BOOL)shouldDisableMenuItemWithMessage:;
++ (BOOL)shouldReloadViewModelWithOriginMessage:updateMessage:;
++ (void)trackLightCameraWithMessageIfNeeded:event:;
++ (void)setRecordedMessage:;
++ (id)recordedMessage;
++ (void)markRecordedMessageReplied;
++ (BOOL)isRepliedFromLightCameraMessageWithMessage:;
++ (BOOL)shouldShowReplyButtonInMesageListWithGiphyMessage:;
++ (id)generateLightReplyRouterParamsWithMessage:;
++ (BOOL)shouldShowReplyStyleInPushWithMessage:;
++ (void)findAndRecordRepliedMessage:messageId:;
++ (void)trackLightCameraClickWithEnterMethod:;
++ (void)sendLightCameraMessageWithConversationID:enterMethod:;
++ (BOOL)shouldShowReliedStyleWithMessage:;
++ (id)generateLightCameraReplyMessageExtra;
++ (BOOL)checkLightCameraEmojiResource;
++ (void)checkShouldShowLightCameraEntryWithCompletion:conversationID:;
++ (void)transferToShootViewControllerWithEntrance:configIMModelBlock:beforePresentBlock:conversation:completion:;
++ (BOOL)shouldAlienationTreatmentHint:;
++ (id)lightCameraHintWithMessag:;
++ (BOOL)checkShowReplyButtonInMessageListCommonConditionWithMessage:;
++ (BOOL)checkCommonConditionWithMessage:;
++ (id)adjustOriginStringColorToTargetColor:originAttributedString:;
++ (id)appendLightCameraStringWithOriginString:;
++ (id)p_generateLightCameraMessageWithEnterMethod:;
++ (void)appendEnterMethodWithMessage:enterMethod:;
++ (void)trackEnterShootWithConversation:entrance:extraDict:;
++ (void)checkUserSendMessagePrivilegeWithCompletion:conversation:;
++ (BOOL)shouldShowReplyButtonInMesageListWithTextMessage:;
++ (id)adjustOriginStringToLightCameraReplyStirngWithOriginAttributedString:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEFeedMultiDeviceVideoPlaySyncConfig : NSObject
++ (BOOL)enableUnifySync;
++ (BOOL)shouldAllowManualSyncForPc;
++ (BOOL)pcResumeForShareEnable;
++ (BOOL)shouldAllowManualSync;
++ (BOOL)multiDeviceSyncUnifyEnable;
++ (long long)videoPlaySecond;
++ (long long)videoPlayLeft;
++ (BOOL)enableVideoAutoRecordV2;
++ (long long)videoAutoRecordPlayProgress;
++ (id)videoAutoRecordExcludeAwemeType;
++ (id)videoAutoRecordCategories;
++ (BOOL)pcResumeForLongPressEnable;
++ (id)multiDeviceSyncUnifyPosition;
++ (long long)pcResumeButtonPosConfig;
++ (BOOL)enableSync;
++ (id)pcResumeForLongPressConfig;
++ (id)multiDeviceSyncUnifyConfig;
++ (id)enableAutoRecordV2;
++ (id)multiDeviceSyncSceneConfig;
++ (BOOL)shouldAllowAutoRecord;
++ (BOOL)shouldAllowAutoPlay;
++ (long long)noticeDuration;
++ (long long)noticeDenyTime;
++ (long long)strikeTimeStart;
++ (long long)strikeTimeEnd;
++ (long long)launchCheckerTimer;
++ (BOOL)enableWarmQuery;
++ (BOOL)debugNOchecker;
++ (BOOL)shouldAllowAutoRecordToPc;
++ (BOOL)iPadContinuePlaySupportLanding;
++ (id)multiDeviceSyncSceneList;
++ (id)configDict;
++ (long long)noticeType;
+@end

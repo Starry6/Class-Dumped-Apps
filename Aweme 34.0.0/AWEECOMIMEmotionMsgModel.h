@@ -1,0 +1,35 @@
+@interface AWEECOMIMEmotionMsgModel : AWEECOMIMBaseMsgModel
+@property (nonatomic) NSString emotionName;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) UIImage image;
+@property (nonatomic) double imageWidth;
+@property (nonatomic) double imageHeight;
+@property (nonatomic) q emotionType;
+@property (nonatomic) NSNumber emotionSetId;
+@property (nonatomic) NSNumber emotionId;
+@property (nonatomic) @? onTap;
+@property (nonatomic) @? showBlock;
+- (id)showBlock;
+- (void)setShowBlock:;
+- (void)setEmotionId:;
+- (id)emotionId;
+- (BOOL)canShowFootDescSource;
+- (void)setEmotionType:;
+- (void)setEmotionSetId:;
+- (id)emotionName;
+- (void)setEmotionName:;
+- (long long)emotionType;
+- (id)emotionSetId;
+- (id)image;
+- (void)setImage:;
+- (id)imageURL;
+- (id)onTap;
+- (void).cxx_destruct;
+- (void)setImageURL:;
+- (id)initWithMessage:;
+- (double)imageWidth;
+- (double)imageHeight;
+- (void)setImageHeight:;
+- (void)setImageWidth:;
++ (Class)cellClass;
+@end

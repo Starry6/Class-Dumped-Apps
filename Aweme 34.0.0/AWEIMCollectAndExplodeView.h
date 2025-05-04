@@ -1,0 +1,38 @@
+@interface AWEIMCollectAndExplodeView : UIView
+@property (nonatomic) q trigerCount;
+@property (nonatomic) q animationsCount;
+@property (nonatomic) UIImageView centerImageView;
+@property (nonatomic) q explodingCount;
+@property (nonatomic) double maxScale;
+@property (nonatomic) Q explodeTrigerCount;
+@property (nonatomic) {CGSize=dd} explodeSize;
+@property (nonatomic) double explodelifetime;
+@property (nonatomic) @? endCollectBlock;
+@property (nonatomic) @? explodeCompletion;
+- (void)setExplodeCompletion:;
+- (unsigned long long)explodeTrigerCount;
+- (void)performAnimationFromView:image:centerAvatarView:;
+- (long long)trigerCount;
+- (void)setTrigerCount:;
+- (long long)animationsCount;
+- (void)setAnimationsCount:;
+- (void)explodeWithCenterImageView:;
+- (void)p_checkAllAnimationsEnd;
+- (long long)explodingCount;
+- (id)explodeCompletion;
+- (void)setExplodingCount:;
+- (id)explodeSize;
+- (double)explodelifetime;
+- (void)triggerExplode;
+- (void)setExplodeTrigerCount:;
+- (void)setExplodeSize:;
+- (void)setExplodelifetime:;
+- (id)endCollectBlock;
+- (void)setEndCollectBlock:;
+- (double)maxScale;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setMaxScale:;
+- (id)centerImageView;
+- (void)setCenterImageView:;
+@end

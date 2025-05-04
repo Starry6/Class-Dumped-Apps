@@ -1,0 +1,30 @@
+@interface AWERatingView : UIView
+@property (nonatomic) NSArray starViews;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWERatingViewRenderConfig config;
+@property (nonatomic) double rate;
+@property (nonatomic) @? onRateChange;
+@property (nonatomic) <AWERatingViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onStarViewTaped:tapPercentage:;
+- (id)createStarsWithConfig:rate:;
+- (id)generateCAGradientLayerIfNeed:;
+- (id)initWithFrame:config:rate:;
+- (void)updateWithRate:;
+- (id)onRateChange;
+- (void)setOnRateChange:;
+- (void)setConfig:;
+- (double)rate;
+- (id)delegate;
+- (id)config;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)updatePosition;
+- (void)setStarViews:;
+- (id)starViews;
+@end

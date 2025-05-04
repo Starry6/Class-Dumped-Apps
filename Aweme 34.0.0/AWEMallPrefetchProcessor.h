@@ -1,0 +1,37 @@
+@interface AWEMallPrefetchProcessor : NSObject
+@property (nonatomic) Q status;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) @? callback;
+@property (nonatomic) NSString prefetchId;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSDictionary prefetchApiConfig;
+@property (nonatomic) NSDictionary prefetchImagesConfig;
+@property (nonatomic) double dataCreateTimeInterval;
+@property (nonatomic) double validTime;
+@property (nonatomic) <AWEMallImagesPrefetchDelegate> delegate;
+- (id)paramsFromConfig:;
+- (void)setPrefetchId:;
+- (void)setPrefetchApiConfig:;
+- (id)prefetchId;
+- (id)prefetchApiConfig;
+- (void)fetchDataWithCallback:;
+- (void)setPrefetchImagesConfig:;
+- (void)triggerMallPrefetch;
+- (double)validTime;
+- (id)prefetchImagesConfig;
+- (void)setDataCreateTimeInterval:;
+- (double)dataCreateTimeInterval;
+- (void)setValidTime:;
+- (id)schema;
+- (void)setCallback:;
+- (id)callback;
+- (id)init;
+- (void)setSchema:;
+- (id)delegate;
+- (void)setStatus:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (unsigned long long)status;
+- (void)setDelegate:;
+@end

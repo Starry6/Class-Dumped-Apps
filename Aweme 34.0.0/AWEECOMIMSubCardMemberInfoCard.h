@@ -1,0 +1,37 @@
+@interface AWEECOMIMSubCardMemberInfoCard : UIView
+@property (nonatomic) UIControl containerView;
+@property (nonatomic) UIImageView backImageView;
+@property (nonatomic) UIImageView avatarImgView;
+@property (nonatomic) UIImageView memberImgView;
+@property (nonatomic) UIImageView levelImgView;
+@property (nonatomic) UILabel themeLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) NSString cardUrl;
+@property (nonatomic) <AWEECOMIMSubCardTrackProtocol> tracker;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setBackImageView:;
+- (id)backImageView;
+- (id)avatarImgView;
+- (void)setAvatarImgView:;
+- (id)cardUrl;
+- (void)setCardUrl:;
+- (void)tapCard;
+- (id)themeLabel;
+- (void)setThemeLabel:;
+- (void)updateWithData:shopInfoModel:;
+- (void)customLayoutSubviews;
+- (id)memberImgView;
+- (id)levelImgView;
+- (void)setMemberImgView:;
+- (void)setLevelImgView:;
+- (id)tracker;
+- (id)initWithFrame:;
+- (id)containerView;
+- (void)setTracker:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setupUI;
++ (double)designHeight;
++ (double)paddingBetweenAvatarTitle;
+@end

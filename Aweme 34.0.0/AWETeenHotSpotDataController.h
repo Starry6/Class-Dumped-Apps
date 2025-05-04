@@ -1,0 +1,31 @@
+@interface AWETeenHotSpotDataController : AWEListDataController
+@property (nonatomic) NSArray hotSpotList;
+@property (nonatomic) NSMutableDictionary totalDataSource;
+@property (nonatomic) NSString originHotID;
+@property (nonatomic) NSString endHotID;
+@property (nonatomic) NSString enterFrom;
+- (void)loadMoreWithCompletion:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)initFetchWithCompletion:;
+- (id)hotSpotList;
+- (void)setHotSpotList:;
+- (void)p_reportAwemeVideoNotTeen:;
+- (id)totalDataSource;
+- (void)setTotalDataSource:;
+- (void)initFetchWithOriginHotID:completion:;
+- (void)refreshWithOriginHotID:completion:;
+- (void)setOriginHotID:;
+- (void)setEndHotID:;
+- (BOOL)p_checkHasLoop;
+- (id)originHotID;
+- (void)p_fetchFeedWithHotID:pullType:completion:;
+- (void)p_appendFeedWithBeginHotID:completion:;
+- (id)endHotID;
+- (void)p_appendFeedWithBeginHotID:beginIndex:completion:;
+- (id)p_feedRequestParamsWithPullType:feedModel:;
+- (void)fetchHotSpotListWithCompletion:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+@end

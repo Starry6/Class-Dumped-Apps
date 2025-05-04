@@ -1,0 +1,31 @@
+@interface AWERVLVEpisodesViewController : AWERVMetaPanelViewController
+@property (nonatomic) AWERVLVEpisodesView episodesView;
+@property (nonatomic) AWELVideoAlbumInfoModel albumInfoModel;
+@property (nonatomic) NSArray episodeList;
+@property (nonatomic) @? episodesCloseBlock;
+@property (nonatomic) <AWERVLVSelectDelegate> delegate;
+@property (nonatomic) BOOL shouldSimplifyTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)episodeList;
+- (void)setEpisodeList:;
+- (id)episodesView;
+- (void)refreshModel:episodeList:currentSelectIndex:;
+- (void)setEpisodesCloseBlock:;
+- (void)refreshModel:title:subTitle:episodeList:currentSelectIndex:;
+- (void)setShouldSimplifyTitle:;
+- (void)setAlbumInfoModel:;
+- (id)albumInfoModel;
+- (void)trackLongVideoShowWithEpisodeIndex:;
+- (id)panelContentView;
+- (id)episodesCloseBlock;
+- (BOOL)shouldSimplifyTitle;
+- (void)setEpisodesView:;
+- (id)delegate;
+- (id)contentScrollView;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)closeButtonTapped;
+@end

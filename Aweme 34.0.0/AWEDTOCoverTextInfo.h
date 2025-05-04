@@ -1,0 +1,38 @@
+@interface AWEDTOCoverTextInfo : MTLModel
+@property (nonatomic) BOOL isEffectText;
+@property (nonatomic) NSArray content;
+@property (nonatomic) NSString effectId;
+@property (nonatomic) q cursorLoc;
+@property (nonatomic) q isCoverText;
+@property (nonatomic) AWEDTOCoverTextAttrInfo coverTextAttr;
+@property (nonatomic) AWEDTOStyleInfoEntry styleInfo;
+@property (nonatomic) AWEDTOLocationInfoEntry locationInfo;
+@property (nonatomic) NSString textImagePath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isEffectText;
+- (void)setIsEffectText:;
+- (long long)cursorLoc;
+- (void)setCursorLoc:;
+- (long long)isCoverText;
+- (void)setIsCoverText:;
+- (id)coverTextAttr;
+- (void)setCoverTextAttr:;
+- (id)textImagePath;
+- (void)setTextImagePath:;
+- (id)content;
+- (id)locationInfo;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (void)setLocationInfo:;
+- (id)effectId;
+- (void)setStyleInfo:;
+- (id)styleInfo;
+- (void)setEffectId:;
++ (id)coverTextAttrJSONTransformer;
++ (id)styleInfoJSONTransformer;
++ (id)locationInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

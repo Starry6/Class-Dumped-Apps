@@ -1,0 +1,2 @@
+@interface AWEStudioEditPlayControlFeatureConfig : AWEStudioComposerBaseFeatureConfig
+@end

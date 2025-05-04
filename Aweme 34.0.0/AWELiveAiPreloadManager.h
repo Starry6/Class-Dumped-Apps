@@ -1,0 +1,31 @@
+@interface AWELiveAiPreloadManager : NSObject
+@property (nonatomic) NSTimer livePreloadStreamTimer;
+@property (nonatomic) AWEAwemeModel preAwemeModel;
+@property (nonatomic) AWEAwemeModel nextAwemeModel;
+@property (nonatomic) NSMutableDictionary roomPreloadReason;
+@property (nonatomic) AWEFeedLiveModuleController delegate;
+- (void)addNotifications;
+- (void)handleViewWillAppear:;
+- (void)tabBarDidChangeNotification:;
+- (void)feedContainerViewControllerDidSwitchTab:;
+- (void)stopPreloadStream;
+- (void)predictPreloadTimeWithCell:preModel:nextModel:;
+- (id)livePreloadStreamTimer;
+- (void)setLivePreloadStreamTimer:;
+- (void)registMethodWhenReady;
+- (void)stopStreamWithCell:model:;
+- (void)preloadStreamWithCell:model:preloadPull:preloadTime:delayTime:ignorePeakTime:;
+- (void)registMethod;
+- (id)roomPreloadReason;
+- (void)preloadHotStreamWithCell:model:preloadTime:delayTime:ignorePeakTime:;
+- (id)preAwemeModel;
+- (void)setPreAwemeModel:;
+- (id)nextAwemeModel;
+- (void)setNextAwemeModel:;
+- (void)setRoomPreloadReason:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (id)sharedInstance;
+@end

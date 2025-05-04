@@ -1,0 +1,34 @@
+@interface AWELiveSearchModel : AWEBaseApiModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWEAwemeModel replay;
+@property (nonatomic) NSNumber type;
+@property (nonatomic) AWELiveSearchUIControlModel uiControlInfo;
+@property (nonatomic) AWEAwemeModel live;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseUserInfoModel userInfoModel;
+@property (nonatomic) NSString searchKeyword;
+@property (nonatomic) NSNumber rank;
+- (id)userInfoModel;
+- (void)setUserInfoModel:;
+- (void)setReplay:;
+- (id)searchKeyword;
+- (void)setSearchKeyword:;
+- (id)uiControlInfo;
+- (void)setUiControlInfo:;
+- (long long)liveSearchCardType;
+- (id)live;
+- (void)setLive:;
+- (id)rank;
+- (void)setRank:;
+- (id)type;
+- (id)replay;
+- (void)setType:;
+- (void).cxx_destruct;
++ (id)liveModelJSONTransformer;
++ (id)userInfoModelJSONTransformer;
++ (id)replayJSONTransformer;
++ (id)uiControlInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

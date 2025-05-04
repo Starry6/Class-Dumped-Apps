@@ -1,0 +1,32 @@
+@interface AWEEcomSearchPlainBar : UIView
+@property (nonatomic) UILabel queryLabel;
+@property (nonatomic) UIButton photoButton;
+@property (nonatomic) UIButton queryButton;
+@property (nonatomic) UIView line;
+@property (nonatomic) UIView icon;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) <AWEEcomSearchPlainBarDelegate> delegate;
+- (id)searchIcon;
+- (void)updateFullCornerStyle;
+- (void)queryButtonTapped:;
+- (void)barTapped:;
+- (id)queryLabel;
+- (id)queryButton;
+- (void)setQueryLabel:;
+- (void)setQueryButton:;
+- (id)delegate;
+- (id)icon;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (id)line;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setLine:;
+- (void)setupUI;
+- (void)setPhotoButton:;
+- (id)photoButton;
+- (void)photoButtonTapped:;
+- (void)updateQuery:;
+@end

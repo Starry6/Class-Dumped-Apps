@@ -1,0 +1,38 @@
+@interface AWESearchNearbyEntranceConfigModel : MTLModel
+@property (nonatomic) Q style;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString contentColor;
+@property (nonatomic) AWESearchNearbyEntranceColorConfig originColorConfig;
+@property (nonatomic) AWESearchNearbyEntranceColorConfig scrolledColorConfig;
+@property (nonatomic) AWESearchNearbyEntranceColorConfig btnColorConfig;
+@property (nonatomic) AWEURLModel originBorderImg;
+@property (nonatomic) AWEURLModel scrolledBorderImg;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)originColorConfig;
+- (void)setOriginColorConfig:;
+- (id)scrolledColorConfig;
+- (void)setScrolledColorConfig:;
+- (id)btnColorConfig;
+- (void)setBtnColorConfig:;
+- (id)originBorderImg;
+- (void)setOriginBorderImg:;
+- (id)scrolledBorderImg;
+- (void)setScrolledBorderImg:;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (unsigned long long)style;
+- (void).cxx_destruct;
+- (id)contentColor;
+- (void)setContentColor:;
+- (id)textColor;
+- (void)setStyle:;
++ (id)originColorConfigJSONTransformer;
++ (id)scrolledColorConfigJSONTransformer;
++ (id)btnColorConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

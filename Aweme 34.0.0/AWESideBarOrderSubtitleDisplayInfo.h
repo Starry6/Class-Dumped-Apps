@@ -1,0 +1,2 @@
+@interface AWESideBarOrderSubtitleDisplayInfo : AWESideBarSubtitleDisplayBaseInfo
+@end

@@ -1,0 +1,2 @@
+@interface AWECreateSubAccountDetailGeneralView : AWECreateSubAccountDetailBaseView
+@end

@@ -1,0 +1,30 @@
+@interface AWETeenSaveButtonModel : NSObject
+@property (nonatomic) Q buttonStyle;
+@property (nonatomic) UIImage saveIcon;
+@property (nonatomic) NSString saveTitle;
+@property (nonatomic) UIImage cannotSaveIcon;
+@property (nonatomic) UIImage shareIcon;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) NSString loadingTitle;
+@property (nonatomic) double loadingProgress;
+@property (nonatomic) NSString noNetworkTitle;
+- (void)setShareTitle:;
+- (void)setShareIcon:;
+- (id)saveIcon;
+- (id)saveTitle;
+- (id)cannotSaveIcon;
+- (id)noNetworkTitle;
+- (void)setSaveIcon:;
+- (void)setSaveTitle:;
+- (void)setCannotSaveIcon:;
+- (void)setNoNetworkTitle:;
+- (void)setLoadingProgress:;
+- (unsigned long long)buttonStyle;
+- (void)setButtonStyle:;
+- (void).cxx_destruct;
+- (double)loadingProgress;
+- (id)loadingTitle;
+- (void)setLoadingTitle:;
+- (id)shareTitle;
+- (id)shareIcon;
+@end

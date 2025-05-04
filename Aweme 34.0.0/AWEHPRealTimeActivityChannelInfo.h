@@ -1,0 +1,34 @@
+@interface AWEHPRealTimeActivityChannelInfo : MTLModel
+@property (nonatomic) NSString activityID;
+@property (nonatomic) NSString activitySchema;
+@property (nonatomic) q topTabTheme;
+@property (nonatomic) q bottomTabTheme;
+@property (nonatomic) AWEFeedActivityTopBarItemConfig topBarItemConfig;
+@property (nonatomic) NSArray badgeArray;
+@property (nonatomic) NSArray bubbleArray;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activitySchema;
+- (void)setActivitySchema:;
+- (id)topBarItemConfig;
+- (id)badgeArray;
+- (id)bubbleArray;
+- (long long)topTabTheme;
+- (long long)bottomTabTheme;
+- (void)setTopBarItemConfig:;
+- (void)setBadgeArray:;
+- (void)setBubbleArray:;
+- (BOOL)isValidWithError:;
+- (void).cxx_destruct;
+- (id)activityID;
+- (void)setActivityID:;
+- (id)extraInfo;
+- (void)setExtraInfo:;
++ (id)badgeArrayJSONTransformer;
++ (id)topBarItemConfigJSONTransformer;
++ (id)bubbleArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

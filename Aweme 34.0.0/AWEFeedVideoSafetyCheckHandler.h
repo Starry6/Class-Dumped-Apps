@@ -1,0 +1,36 @@
+@interface AWEFeedVideoSafetyCheckHandler : NSObject
+@property (nonatomic) NSString referString;
+@property (nonatomic) @? getCurrentModelBlock;
+@property (nonatomic) @? getCurrentDataSourcelBlock;
+@property (nonatomic) AWEFeedLRUCache lruCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (void)setReferString:;
+- (void)requestSafetyCheckWithInfo:referString:currentModel:currentDataSource:completion:;
+- (id)getRequestItemParamsForModel:;
+- (long long)getDyQTimeFromModel:;
+- (long long)getTagFromModel:;
+- (void)setGetCurrentModelBlock:;
+- (void)setGetCurrentDataSourcelBlock:;
+- (id)getCurrentModelBlock;
+- (id)getCurrentDataSourcelBlock;
+- (BOOL)enableSafeCheckCache;
+- (long long)safeCheckThreshold;
+- (id)getAimItemIDFromModel:;
+- (long long)cacheExpireDuration;
+- (id)lruCache;
+- (void)trackVideoSafetyCheckWithAweme:videoSafetyReason:videoSafetyType:extra:;
+- (long long)safeCheckPackSize;
+- (BOOL)enablePrivacyLocalData:;
+- (void)updateCacheIfNeededWithArray:resultIDs:;
+- (void)handleVideoSafetyPreCheckWithResults:referString:completion:;
+- (void)updateCacheIfNeededWithArray:result:;
+- (BOOL)isIllegalAweme:resultItemIDs:referString:;
+- (id)getSafeCheckCacheExpDict;
+- (long long)lruCacheSize;
+- (void)setLruCache:;
+- (void).cxx_destruct;
+@end

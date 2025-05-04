@@ -1,0 +1,35 @@
+@interface AWESignatureEditCollectionDataController : NSObject
+@property (nonatomic) NSString mentionListSearchKeyword;
+@property (nonatomic) NSCache mentionUserSearchManagers;
+@property (nonatomic) NSObject<AWECommentSearchManagerProtocol> mentionUserListDefaultSearchManager;
+@property (nonatomic) NSObject<AWECommentSearchManagerProtocol> mentionUserListCurrentSearchManager;
+@property (nonatomic) NSArray defaultUserArray;
+@property (nonatomic) NSMutableArray mentionDataSource;
+@property (nonatomic) BOOL loadmoreHasMore;
+@property (nonatomic) BOOL isRequestOnAir;
+- (void)setLoadmoreHasMore:;
+- (BOOL)loadmoreHasMore;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (id)defaultUserArray;
+- (void)setDefaultUserArray:;
+- (BOOL)isDefaultList;
+- (id)mentionUserListCurrentSearchManager;
+- (void)setMentionListSearchKeyword:;
+- (id)mentionUserSearchManagers;
+- (void)setMentionUserListCurrentSearchManager:;
+- (void)setMentionUserListDefaultSearchManager:;
+- (void)searchWithsearchManager:completion:;
+- (void)setMentionDataSource:;
+- (id)convertUserModelListToEditCollectionData:;
+- (void)p_reloadDataIfNeeded:error:userList:completion:;
+- (id)mentionListSearchKeyword;
+- (BOOL)mentionListHasMore;
+- (void)fetchMentionListWithKeyword:completion:;
+- (void)fetchMentionListLoadMoreWithCompletion:;
+- (id)mentionDataSource;
+- (void)setMentionUserSearchManagers:;
+- (id)mentionUserListDefaultSearchManager;
+- (id)init;
+- (void).cxx_destruct;
+@end

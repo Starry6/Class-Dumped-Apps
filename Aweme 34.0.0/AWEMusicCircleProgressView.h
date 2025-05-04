@@ -1,0 +1,30 @@
+@interface AWEMusicCircleProgressView : UIView
+@property (nonatomic) CAShapeLayer curShapreLayer;
+@property (nonatomic) CAShapeLayer bgShapeLayer;
+@property (nonatomic) CAShapeLayer auxiliaryLayer;
+@property (nonatomic) double progress;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) UIColor lineColor;
+@property (nonatomic) UIColor bgLineColor;
+- (id)curShapreLayer;
+- (id)auxiliaryLayer;
+- (id)bgShapeLayer;
+- (id)generatePath;
+- (id)auxiliaryPath;
+- (void)setBgLineColor:;
+- (id)bgLineColor;
+- (void)setCurShapreLayer:;
+- (void)setBgShapeLayer:;
+- (void)setAuxiliaryLayer:;
+- (void)setLineWidth:;
+- (double)lineWidth;
+- (id)initWithFrame:;
+- (double)progress;
+- (id)lineColor;
+- (void)setLineColor:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setProgress:;
+- (void)_setupSubviews;
+- (void)updateProgress:;
+@end

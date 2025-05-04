@@ -1,0 +1,36 @@
+@interface AWESearchRecommWordsCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView container;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIImageView hotIconView;
+@property (nonatomic) UIColor cellBackgroundColor;
+- (void)awe_themeWillChange:;
+- (void)buildViews;
+- (id)wordColor;
+- (id)cellBGColor;
+- (id)hotIconView;
+- (void)setHotIconView:;
+- (void)updateWithText:withHot:withModel:withTitle:;
+- (double)recommendCellRadius;
+- (id)textLabel;
+- (void)setContainer:;
+- (id)container;
+- (BOOL)pointInside:withEvent:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)cellBackgroundColor;
+- (void)setHighlighted:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setCellBackgroundColor:;
+- (void)setTextLabel:;
++ (double)itemWidthWithText:;
++ (BOOL)wordBold;
++ (id)titleCellIdentifier;
++ (double)itemWidthWithText:withHot:withModel:withTitle:;
++ (BOOL)hasIconURLInfoWithModel:;
++ (double)recommendTextSize;
++ (id)textFont;
++ (id)identifier;
+@end

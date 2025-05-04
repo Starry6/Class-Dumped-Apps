@@ -1,0 +1,34 @@
+@interface AWEIMAwemeMediaDisplayMaskView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIStackView titleStackView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) DUXButton shootButton;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) @? tapButtonBlock;
+- (void)p_setupUI;
+- (void)tapShootButton;
+- (id)shootButton;
+- (void)setShootButton:;
+- (void)p_updateSubtitle:;
+- (id)tapButtonBlock;
+- (void)updateWithMessage:;
+- (void)setTapButtonBlock:;
+- (id)init;
+- (void)setIdentifier:;
+- (void)setAvatarView:;
+- (id)contentView;
+- (void)setSubtitleLabel:;
+- (id)avatarView;
+- (id)identifier;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setupConstraints;
+- (id)hitTest:withEvent:;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setTitleStackView:;
+- (id)titleStackView;
+@end

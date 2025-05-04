@@ -1,0 +1,34 @@
+@interface AWEPadLeftSideBarBottomBarGridView : UIView
+@property (nonatomic) <AWELeftSideBarItemContext> context;
+@property (nonatomic) AWELeftSideBarListCellDataModel cellDataModel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)leftSideBarThemeDidChange:;
+- (void)setThemeStyle:;
+- (void)updateLeftSideBarSubTitle:;
+- (BOOL)leftSideBarSubTitleIsShow;
+- (id)leftSideBarDisplayingSubtitle;
+- (BOOL)leftSideBarRedDotIsShow;
+- (void)updateListCellContext:cellDataModel:;
+- (void)showLeftSideBarRedDot;
+- (void)hideLeftSideBarRedDot;
+- (double)leftSideBarStencilViewHeight;
+- (void)setCellDataModel:;
+- (id)cellDataModel;
+- (id)initWithContext:cellDataModel:;
+- (void)setUpIconViewImageWithUrl:themeStyle:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)context;
+- (void)setupUI;
+- (long long)themeStyle;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMMediaDisplaySlideWindow : NSObject
+@property (nonatomic) q left;
+@property (nonatomic) q right;
+@property (nonatomic) q min;
+@property (nonatomic) q max;
+@property (nonatomic) q total;
+@property (nonatomic) <AWEIMMediaDisplaySlideWindowDelegate> delegate;
+@property (nonatomic) q current;
+- (id)initWithTotal:firstPosition:delegate:;
+- (void)p_initialWindowPosition:;
+- (void)p_moveLeft;
+- (void)p_moveRight;
+- (long long)rightMostIndex;
+- (void)p_moveSlideWindowIfNeeded:right:;
+- (void)p_slideWindowDidMoved;
+- (id)delegate;
+- (void)setCurrent:;
+- (void)setMax:;
+- (long long)current;
+- (void).cxx_destruct;
+- (long long)right;
+- (id)debugDescription;
+- (long long)left;
+- (long long)total;
+- (void)setDelegate:;
+- (long long)max;
+- (long long)min;
+- (void)setMin:;
+- (void)setLeft:;
+- (void)setRight:;
+@end

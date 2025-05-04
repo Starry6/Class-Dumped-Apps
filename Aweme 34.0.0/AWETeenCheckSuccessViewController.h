@@ -1,0 +1,34 @@
+@interface AWETeenCheckSuccessViewController : UIViewController
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView iconBackgroundView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) AWETeenNextActionButton confirmButton;
+@property (nonatomic) UILabel reSetPasswordLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (id)iconBackgroundView;
+- (void)setIconBackgroundView:;
+- (id)reSetPasswordLabel;
+- (void)refreshComplianceSettings;
+- (void)didNextBtnClicked;
+- (void)didResetBtnClicked;
+- (void)setReSetPasswordLabel:;
+- (void)viewDidLoad;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+@end

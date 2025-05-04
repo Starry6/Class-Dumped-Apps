@@ -1,0 +1,2 @@
+@interface AWEFriendsImpl.StoryVideoContentSectionViewModel : AWEFriendsImpl.VideoContentSectionViewModel
+@end

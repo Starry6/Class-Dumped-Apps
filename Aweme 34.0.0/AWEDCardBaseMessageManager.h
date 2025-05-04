@@ -1,0 +1,33 @@
+@interface AWEDCardBaseMessageManager : NSObject
+@property (nonatomic) NSMutableArray callbacksArray;
+@property (nonatomic) NSMutableArray processorsArray;
+@property (nonatomic) NSMutableArray triggersArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addDCardRequestParamsProcessor:;
+- (void)addDCardMessageListenerWithCallback:;
+- (void)setupDefaultTriggers;
+- (id)processorsArray;
+- (void)didReceiveDCardMessage:messageType:error:;
+- (BOOL)checkDCardMessageModelValidity:;
+- (id)callbacksArray;
+- (id)triggersArray;
+- (void)registerDCardTrigger:;
+- (void)requestDCardMessageWithPath:params:trigger:callback:;
+- (void)pullDCardWithExtraParams:trigger:callback:;
+- (void)registerDCardMessageUsingPersistentConnectionWithBusinessID:callback:;
+- (id)bsyncBusinessID;
+- (void)setCallbacksArray:;
+- (void)setProcessorsArray:;
+- (void)setTriggersArray:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)requestPath;
+- (id)requestParams;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

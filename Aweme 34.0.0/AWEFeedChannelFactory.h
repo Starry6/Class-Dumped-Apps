@@ -1,0 +1,31 @@
+@interface AWEFeedChannelFactory : NSObject
+@property (nonatomic) AWEHPChannelRegisterList channelList;
+@property (nonatomic) AWEHPChannelPrivatedPluginRegisterList privatedPluginList;
+@property (nonatomic) AWEHPChannelPublicPluginRegisterList publicPluginList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)channelList;
+- (void)setChannelList:;
+- (id)publicPluginList;
+- (id)generatePluginControllerWithController:configs:;
+- (id)privatedPluginList;
+- (BOOL)registerChannelWithConfig:;
+- (Class)getChannelControllerWithChannelModel:;
+- (BOOL)hasRegisterChannelType:;
+- (id)generatePublicPrePluginControllerWithController:;
+- (id)generatePublicPostPluginControllerWithController:;
+- (id)generatePrivatedPrePluginControllerWithController:;
+- (id)generatePrivatedPostPluginControllerWithController:;
+- (BOOL)registerPreCommonPluginWithConfig:;
+- (BOOL)registerPostCommonPluginWithConfig:;
+- (BOOL)registerPrePrivatedPluginWithConfig:;
+- (BOOL)registerPostPrivatedPluginWithConfig:;
+- (void)setPrivatedPluginList:;
+- (void)setPublicPluginList:;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,34 @@
+@interface AWELongVideoAPIMonitor : NSObject
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString fromPage;
+@property (nonatomic) NSString pageName;
+@property (nonatomic) NSString albumID;
+@property (nonatomic) NSString episodeID;
+@property (nonatomic) NSString channelID;
+@property (nonatomic) NSString pageID;
+@property (nonatomic) NSString filterPageID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (void)setFromPage:;
+- (id)enterFrom;
+- (void)setAlbumID:;
+- (void)setEpisodeID:;
+- (id)filterPageID;
+- (void)setFilterPageID:;
+- (void)longVideoApiMonitorWithApiType:isSuccess:error:duration:dataError:extParams:;
+- (void)setChannelID:;
+- (id)channelID;
+- (void).cxx_destruct;
+- (void)setPageID:;
+- (id)pageID;
+- (id)albumID;
+- (id)episodeID;
+- (id)fromPage;
+- (id)pageName;
+- (void)setPageName:;
++ (id)getVideoInfoStatus:;
++ (id)sharedInstance;
+@end

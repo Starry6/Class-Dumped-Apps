@@ -1,0 +1,33 @@
+@interface AWEIMCustomMenuModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString lightImageURL;
+@property (nonatomic) NSString darkImageURL;
+@property (nonatomic) @ actionTarget;
+@property (nonatomic) : actionSelector;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL showRedDot;
+@property (nonatomic) @? willPerformMenuActionSelectorBlock;
+@property (nonatomic) NSString trackerName;
+- (BOOL)showRedDot;
+- (void)setShowRedDot:;
+- (id)darkImageURL;
+- (void)setDarkImageURL:;
+- (void)setLightImageURL:;
+- (void)setTrackerName:;
+- (void)setWillPerformMenuActionSelectorBlock:;
+- (id)trackerName;
+- (id)lightImageURL;
+- (id)willPerformMenuActionSelectorBlock;
+- (unsigned long long)type;
+- (void)setActionSelector:;
+- (void)setType:;
+- (void)setImageName:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)imageName;
+- (SEL)actionSelector;
+- (void)setTitle:;
+- (id)actionTarget;
+- (void)setActionTarget:;
+@end

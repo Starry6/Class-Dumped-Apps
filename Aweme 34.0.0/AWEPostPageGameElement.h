@@ -1,0 +1,31 @@
+@interface AWEPostPageGameElement : AWEPostPageCellElement
+@property (nonatomic) AWENewPublishTableCell gameTableViewCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary extras;
+- (void)elementAppear;
+- (void)didSelectAnchorWithType:anchorDismissBlock:enterFromType:;
+- (void)addAIAnchorWithType:anchorDismissBlock:;
+- (void)refreshWithAnchorVM:;
+- (void)configPlaceholderUI;
+- (BOOL)canHandleAnchorType:;
+- (void)setupUIForGame;
+- (id)gameTableViewCell;
+- (void)p_gameCellClicked;
+- (void)addGameAnchorNotification:;
+- (void)updateGameWithJsonString:;
+- (void)cancleSelectedGame:;
+- (void)setGameTableViewCell:;
+- (void)cleanUp;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (BOOL)isEnabled;
+- (id)extras;
+- (id)cell;
+- (void)addObservers;
+- (void)didSelect;
++ (void)_aweLazyRegisterPostPage;
++ (id)type;
+@end

@@ -1,0 +1,30 @@
+@interface AWEShowShrinkTransitionWrapper : NSObject
+@property (nonatomic) @? videoHander;
+@property (nonatomic) @? awemeModelHander;
+@property (nonatomic) q preState;
+@property (nonatomic) @? needCallVideoPlay;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)modernTransitionContext;
+- (void)modernTransitionUpdateOffset:isScrolled:;
+- (void)modernTransitionDidCompleteWithOffset:;
+- (BOOL)shouldUpdatePlayerWhenModelDifferent:;
+- (long long)preferScaleMode;
+- (BOOL)shouldModernTransitionUpdatePlayerControllerWithFromContext:;
+- (BOOL)disableSyncReferString;
+- (BOOL)disableSyncScalingMode;
+- (void)setPreState:;
+- (long long)preState;
+- (void)recordPushPreState:;
+- (void)setAwemeModelHandler:;
+- (void)setVideoPlayerVCHandler:;
+- (void)setVideoHander:;
+- (void)setAwemeModelHander:;
+- (id)videoHander;
+- (void)setNeedCallVideoPlay:;
+- (id)awemeModelHander;
+- (id)needCallVideoPlay;
+- (void).cxx_destruct;
+@end

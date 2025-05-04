@@ -1,0 +1,35 @@
+@interface AWEIMWelcomeEditFooterCollectionReusableView : UICollectionReusableView
+@property (nonatomic) UIViewController<IESIMTextEditViewControllerProtocol> welcomeEditView;
+@property (nonatomic) UILabel numberLabel;
+@property (nonatomic) UIButton submitBtn;
+@property (nonatomic) <AWEIMWelcomeEditFooterCollectionReusableViewProtocol> footerDelegate;
+@property (nonatomic) BOOL isShownInHalfScreen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTipLabelForContentTextView;
+- (id)submitBtn;
+- (void)setSubmitBtn:;
+- (long long)maxContentLength;
+- (void)configDefaultData;
+- (void)resignTextViewFirstResponder;
+- (BOOL)enableNewStyle;
+- (void)setupWelcomeMessage:;
+- (BOOL)isShownInHalfScreen;
+- (void)setIsShownInHalfScreen:;
+- (void)becomeTextViewFirstResponder;
+- (id)welcomeEditView;
+- (void)enableSubmitButton:;
+- (void)updateInputViewUIIfNeed;
+- (void)didClickSubmitBtn;
+- (void)setWelcomeEditView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)textViewDidChange:;
+- (id)footerDelegate;
+- (void)setFooterDelegate:;
+- (void)setNumberLabel:;
+- (id)numberLabel;
+@end

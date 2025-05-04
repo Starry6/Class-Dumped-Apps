@@ -1,0 +1,38 @@
+@interface AWEUserHometownModel : MTLModel
+@property (nonatomic) NSString country;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) NSString province;
+@property (nonatomic) NSString provinceCode;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString district;
+@property (nonatomic) NSString districtCode;
+@property (nonatomic) NSString subDistrict;
+@property (nonatomic) NSString subDistrictCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setProvince:;
+- (id)province;
+- (id)districtCode;
+- (void)setDistrictCode:;
+- (void)setProvinceCode:;
+- (id)provinceCode;
+- (id)subDistrict;
+- (void)setSubDistrict:;
+- (id)subDistrictCode;
+- (void)setSubDistrictCode:;
+- (id)country;
+- (void)setCountryCode:;
+- (id)city;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (id)countryCode;
+- (void)setCountry:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (void)setDistrict:;
+- (id)district;
++ (id)JSONKeyPathsByPropertyKey;
+@end

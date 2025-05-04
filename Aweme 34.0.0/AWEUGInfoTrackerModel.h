@@ -1,0 +1,35 @@
+@interface AWEUGInfoTrackerModel : NSObject
+@property (nonatomic) Q phase;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString gdLabelUgInfo;
+@property (nonatomic) NSString ugInfo;
+@property (nonatomic) NSString gdLabelInsertJson;
+@property (nonatomic) NSString insertJson;
+@property (nonatomic) NSString source_gid;
+@property (nonatomic) NSString source_gids;
+@property (nonatomic) NSString gids;
+@property (nonatomic) q feedCount;
+- (long long)feedCount;
+- (id)ugInfo;
+- (void)setUgInfo:;
+- (void)setFeedCount:;
+- (id)gdLabelUgInfo;
+- (id)gdLabelInsertJson;
+- (id)insertJson;
+- (id)gids;
+- (id)source_gid;
+- (id)source_gids;
+- (void)setGdLabelUgInfo:;
+- (void)setGdLabelInsertJson:;
+- (void)setInsertJson:;
+- (void)setGids:;
+- (void)setSource_gid:;
+- (void)setSource_gids:;
+- (unsigned long long)phase;
+- (id)type;
+- (void)setType:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (void)setPhase:;
+- (id)copyWithZone:;
+@end

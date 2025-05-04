@@ -1,0 +1,33 @@
+@interface AWEUGInnerPushExtraSelectionModel : MTLModel
+@property (nonatomic) NSArray settingActions;
+@property (nonatomic) NSDictionary actionMap;
+@property (nonatomic) NSArray pushGroups;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) NSString selectionType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString iconUrlString;
+@property (nonatomic) NSString confirmButtonText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setConfirmButtonText:;
+- (id)settingActions;
+- (void)setSettingActions:;
+- (void)setActionMap:;
+- (id)iconUrlString;
+- (void)setIconUrlString:;
+- (void)setSelectionType:;
+- (void).cxx_destruct;
+- (id)title;
+- (BOOL)selected;
+- (void)setTitle:;
+- (void)setSelected:;
+- (id)selectionType;
+- (id)confirmButtonText;
+- (id)actionMap;
+- (id)pushGroups;
+- (void)setPushGroups:;
++ (id)pushGroupsArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

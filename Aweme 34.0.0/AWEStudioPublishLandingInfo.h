@@ -1,0 +1,30 @@
+@interface AWEStudioPublishLandingInfo : NSObject
+@property (nonatomic) NSString taskID;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) q landingTab;
+@property (nonatomic) q insertTab;
+@property (nonatomic) NSArray progressTabs;
+@property (nonatomic) NSString fromStrategy;
+@property (nonatomic) BOOL insertAsLandingStrategyForNoLanding;
+@property (nonatomic) BOOL progressAsLandingStrategyForNoLanding;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (long long)insertTab;
+- (long long)landingTab;
+- (void)setLandingTab:;
+- (id)progressTabs;
+- (void)setInsertAsLandingStrategyForNoLanding:;
+- (void)setProgressAsLandingStrategyForNoLanding:;
+- (BOOL)insertAsLandingStrategyForNoLanding;
+- (void)setInsertTab:;
+- (BOOL)progressAsLandingStrategyForNoLanding;
+- (void)setProgressTabs:;
+- (id)fromStrategy;
+- (unsigned long long)hash;
+- (id)description;
+- (void).cxx_destruct;
+- (void)setTaskID:;
+- (BOOL)isEqual:;
+- (id)taskID;
++ (id)landingInfoWithTaskID:landingTab:insertTab:progressTabs:;
+@end

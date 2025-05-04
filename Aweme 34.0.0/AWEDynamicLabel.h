@@ -1,0 +1,36 @@
+@interface AWEDynamicLabel : UILabel
+@property (nonatomic) UILabel hollowedOutLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) NSString labelInfo;
+@property (nonatomic) UIColor labelInfoColor;
+@property (nonatomic) UIFont labelInfoFont;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) BOOL needShowIcon;
+- (id)labelInfoColor;
+- (void)setLabelInfoColor:;
+- (id)hollowedOutLabel;
+- (BOOL)needShowIcon;
+- (void)refreshDynamicLabel;
+- (id)labelInfoFont;
+- (void)setNeedShowIcon:;
+- (void)setHollowedOutLabel:;
+- (void)setLabelInfoFont:;
+- (id)init;
+- (id)intrinsicContentSize;
+- (void)drawRect:;
+- (id)iconName;
+- (void)setIconSize:;
+- (id)containerView;
+- (id)iconView;
+- (id)iconSize;
+- (void)setContainerView:;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setIconName:;
+- (void)layoutSubviews;
+- (id)labelInfo;
+- (void)setLabelInfo:;
++ (id)label;
+@end

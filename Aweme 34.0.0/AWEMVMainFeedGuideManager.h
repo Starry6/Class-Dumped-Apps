@@ -1,0 +1,30 @@
+@interface AWEMVMainFeedGuideManager : NSObject
+@property (nonatomic) <AWEMVDataControllerProtocol> mvDataController;
+@property (nonatomic) AWEAwemeResponseModel landingResponseModel;
+@property (nonatomic) NSMutableArray pendingCompletions;
+@property (nonatomic) BOOL isFetchingLandingData;
+@property (nonatomic) BOOL isLandingDataReady;
+- (void)clearLandingData;
+- (BOOL)isLandingDataReady;
+- (void)fetchLandingDataWithItemID:authorID:completion:;
+- (void)fetchLandingDataWithParams:completion:;
+- (id)landingResponseModel;
+- (void)setLandingResponseModel:;
+- (void)setIsLandingDataReady:;
+- (void)setIsFetchingLandingData:;
+- (id)mvDataController;
+- (BOOL)isFetchingLandingData;
+- (void)invokeAndClearAllPendingCompletions:error:;
+- (void)requestLandingDataWithParams:completion:;
+- (void)setMvDataController:;
+- (void)setPendingCompletions:;
+- (id)pendingCompletions;
+- (void).cxx_destruct;
++ (id)syncFetchLandingData;
++ (void)clearLandingData;
++ (void)preloadLandingDataWithParams:;
++ (void)preloadLandingDataWithItemID:authorID:;
++ (void)asyncFetchLandingDataWithItemID:authorID:completion:;
++ (id)sharedInstance;
++ (BOOL)isReady;
+@end

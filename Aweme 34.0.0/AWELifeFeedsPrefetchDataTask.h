@@ -1,0 +1,31 @@
+@interface AWELifeFeedsPrefetchDataTask : NSObject
+@property (nonatomic) NSString storageId;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) @? completeBlock;
+@property (nonatomic) AWELifeFeedsPageViewModel pageViewModel;
+@property (nonatomic) NSError error;
+@property (nonatomic) BOOL didStart;
+@property (nonatomic) AWELifeFeedsFetchDataTask fetchDataTask;
+@property (nonatomic) Q status;
+- (void)setCompleteBlock:;
+- (id)completeBlock;
+- (id)pageViewModel;
+- (void)setPageViewModel:;
+- (void)didFinishFetchData:;
+- (id)storageId;
+- (void)setStorageId:;
+- (id)initWithStorageId:params:;
+- (void)runWithComplete:;
+- (void)invokeFailureCompleteBlockWithError:;
+- (void)setFetchDataTask:;
+- (id)fetchDataTask;
+- (void)run;
+- (void)setError:;
+- (void).cxx_destruct;
+- (id)error;
+- (unsigned long long)status;
+- (id)params;
+- (void)setParams:;
+- (BOOL)didStart;
+- (void)setDidStart:;
+@end

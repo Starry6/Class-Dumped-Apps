@@ -1,0 +1,38 @@
+@interface AWEPostPageLifeCycleDispatcher : NSObject
+@property (nonatomic) NSMutableArray subscribers;
+@property (nonatomic) <AWEPostPageLifeCycleMessage> multicastDelegate;
+@property (nonatomic) @? comparator;
+@property (nonatomic) @? perfTrackBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)elementAppear;
+- (void)audioSessionReset;
+- (BOOL)containSubscriber:;
+- (void)p_observeNotifications;
+- (void)setMulticastDelegate:;
+- (id)multicastDelegate;
+- (void)setPerfTrackBlock:;
+- (id)perfTrackBlock;
+- (id)comparator;
+- (void)cleanUp;
+- (void)viewWillDisappear:;
+- (id)init;
+- (void)dealloc;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (id)subscribers;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (void)setComparator:;
+- (void)viewDidDisappear:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (BOOL)addSubscriber:;
+- (BOOL)removeSubscriber:;
+- (void)appDidEnterBackground;
+- (void)appDidBecomeActive;
+- (void)setSubscribers:;
+@end

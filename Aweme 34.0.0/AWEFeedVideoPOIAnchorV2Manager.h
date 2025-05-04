@@ -1,0 +1,34 @@
+@interface AWEFeedVideoPOIAnchorV2Manager : AWEFeedVideoBaseAnchorV2Manager
+@property (nonatomic) AWEFeedVideoLocalLifeAnchorV2PrefetchUtils prefetchUtils;
+@property (nonatomic) q anchorPointClickIndex;
+- (void)anchorViewWillShowOnSuperview;
+- (id)trackerParamsForTemplateAnchorClick;
+- (id)trackerParamsForTemplateAnchorShow;
+- (BOOL)shouldBusinessInvoke;
+- (void)willShowDoubleLineStyleWithType:;
+- (id)trackerCommonParamsForTemplateAnchor;
+- (void)didShowDoubleLineStyleAnchor;
+- (void)trackAdPoiPointShow;
+- (void)handlePlayerPlayedPeriodChanged:;
+- (void)handleDidEndDisplaying;
+- (void)handleDidDisappear;
+- (void)handleAppDidEnterBackground;
+- (void)handleAnchorElementLeftInteractionShow;
+- (void)handlePlayerPlayedLoopTimes:;
+- (void)updateAnchorViewWithViewContext:;
+- (void)handlerTemplateAnchorViewClicked:extraInfo:;
+- (void)handleUserActionToShowTwoLine;
+- (id)initWithViewContext:;
+- (id)p_createFeedAnchorContext;
+- (void)p_poiAnchorRenderTimeTrackWithContext:scene:;
+- (id)prefetchUtils;
+- (void)p_preloadIronManIfNeeded;
+- (id)dataStringForDetailLabels;
+- (id)dataStringForPoiTag;
+- (long long)anchorPointClickIndex;
+- (void)setAnchorPointClickIndex:;
+- (void)trackClickADEventWithEventName:;
+- (void)setPrefetchUtils:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

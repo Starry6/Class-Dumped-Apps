@@ -1,0 +1,31 @@
+@interface AWEProfileCompletion : AWEBaseApiModel
+@property (nonatomic) NSNumber avatar;
+@property (nonatomic) NSNumber nickname;
+@property (nonatomic) NSNumber shortId;
+@property (nonatomic) NSNumber gender;
+@property (nonatomic) NSNumber birthday;
+@property (nonatomic) NSNumber school;
+@property (nonatomic) NSNumber signature;
+@property (nonatomic) NSNumber location;
+@property (nonatomic) NSNumber hometown;
+- (id)shortId;
+- (id)school;
+- (id)hometown;
+- (void)setShortId:;
+- (void)setHometown:;
+- (void)setSchool:;
+- (id)signature;
+- (id)nickname;
+- (void)setSignature:;
+- (id)birthday;
+- (id)location;
+- (void)setGender:;
+- (void)setLocation:;
+- (id)gender;
+- (void).cxx_destruct;
+- (void)setBirthday:;
+- (void)setNickname:;
+- (id)avatar;
+- (void)setAvatar:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

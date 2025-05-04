@@ -1,0 +1,34 @@
+@interface AWENearbyPendantManager : NSObject
+@property (nonatomic) double pendantServiceTimeInterval;
+@property (nonatomic) double localMachineTimeInterval;
+@property (nonatomic) AWEStorage cacheStorage;
+@property (nonatomic) BOOL isHometownMode;
+@property (nonatomic) BOOL isHometownLocalMode;
+@property (nonatomic) BOOL isRedPacketPendant;
+@property (nonatomic) AWERxProperty pendant;
+- (id)pendant;
+- (void)setPendant:;
+- (void)downloadLottieWithURL:completion:;
+- (id)getLottieWithURL:;
+- (id)cacheStorage;
+- (void)setCacheStorage:;
+- (BOOL)isHometownMode;
+- (BOOL)isHometownLocalMode;
+- (void)setLocalMachineTimeInterval:;
+- (void)setPendantServiceTimeInterval:;
+- (double)localMachineTimeInterval;
+- (double)pendantServiceTimeInterval;
+- (id)__pendantClosedTimeCacheKeyWithPendantModel:;
+- (id)__findLottieJSONPath:;
+- (void)handleNearbyPendantModel:serverTimeStamp:;
+- (void)closePendantModel:;
+- (void)downloadPendantResourceWithPendantModel:completion:;
+- (BOOL)needShowPendantModel:;
+- (id)getLottieFilePathWithPendantModel:;
+- (void)setIsHometownMode:;
+- (void)setIsHometownLocalMode:;
+- (BOOL)isRedPacketPendant;
+- (void)setIsRedPacketPendant:;
+- (id)init;
+- (void).cxx_destruct;
+@end

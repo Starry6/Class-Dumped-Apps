@@ -1,0 +1,35 @@
+@interface AWELongPressPanelSegmentView : UIView
+@property (nonatomic) NSArray items;
+@property (nonatomic) UIView btnBackView;
+@property (nonatomic) UIView animationView;
+@property (nonatomic) UIButton selectedBtn;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) <AWELongPressPanelSegmentViewDelegate> delegate;
+- (void)setDefaultSelectIndex:;
+- (BOOL)enableHighlightStyle;
+- (void)setupHighlightStyle;
+- (void)setupAnimationButtonStyle;
+- (id)hitTestingEdgeInsets;
+- (void)setBtnBackView:;
+- (void)btnDidClick:;
+- (double)animationViewCornerRadius;
+- (id)animationViewSize;
+- (void)btnClick:isUserAction:;
+- (id)btnBackView;
+- (id)selectedBtn;
+- (void)setSelectedBtn:;
+- (double)backgroundCornerRadius;
+- (id)initWithItems:;
+- (void)setSelectedIndex:;
+- (id)items;
+- (id)delegate;
+- (void)setItems:;
+- (void)setUp;
+- (long long)selectedIndex;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)animationView;
+- (void)setAnimationView:;
+- (id)initWithItems:delegate:;
+- (double)titleLabelFontSize;
+@end

@@ -1,0 +1,35 @@
+@interface AWESearchLiveGoodModel : AWEBaseApiModel
+@property (nonatomic) NSString promotionID;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString cover;
+@property (nonatomic) NSString price;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSNumber commodityType;
+@property (nonatomic) NSString liveProductType;
+@property (nonatomic) NSArray tagInfos;
+- (id)cover;
+- (void)setCover:;
+- (id)promotionID;
+- (void)setPromotionID:;
+- (id)tagInfos;
+- (void)setTagInfos:;
+- (id)commodityType;
+- (void)setCommodityType:;
+- (id)liveProductType;
+- (void)setLiveProductType:;
+- (id)price;
+- (id)schema;
+- (void)setProductID:;
+- (id)productID;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)title;
+- (void)setSource:;
+- (void)setTitle:;
+- (void)setPrice:;
++ (id)tagInfosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

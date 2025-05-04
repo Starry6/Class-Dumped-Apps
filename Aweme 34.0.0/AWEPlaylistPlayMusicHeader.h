@@ -1,0 +1,33 @@
+@interface AWEPlaylistPlayMusicHeader : UIView
+@property (nonatomic) UIButton playAllButton;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView playerImageView;
+@property (nonatomic) UILabel desLabel;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) q count;
+@property (nonatomic) @? tappedPlayallBlock;
+- (void)p_setup;
+- (id)desLabel;
+- (void)setDesLabel:;
+- (void)p_playTapped;
+- (id)playerImageView;
+- (id)tappedPlayallBlock;
+- (void)setTappedPlayallBlock:;
+- (void)setPlayerImageView:;
+- (void)p_updateColors;
+- (id)playAllButton;
+- (void)setPlayAllButton:;
+- (void)setCount:;
+- (id)initWithFrame:;
+- (long long)count;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)updateUI;
+- (id)countLabel;
+- (void)setCountLabel:;
+@end

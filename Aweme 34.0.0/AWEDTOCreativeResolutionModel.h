@@ -1,0 +1,31 @@
+@interface AWEDTOCreativeResolutionModel : MTLModel
+@property (nonatomic) AWEDTOCreativeResolutionSizeModel resolution;
+@property (nonatomic) AWEDTOCreativeResolutionSizeModel sourceResolution;
+@property (nonatomic) AWEDTOCreativeResolutionSizeModel originResolution;
+@property (nonatomic) AWEDTOCreativeResolutionSizeModel editResolution;
+@property (nonatomic) AWEDTOCreativeResolutionSizeModel publishResolution;
+@property (nonatomic) BOOL qualityDowngradedEnableEffectSuperResolution;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sourceResolution;
+- (id)publishResolution;
+- (void)setSourceResolution:;
+- (id)originResolution;
+- (void)setOriginResolution:;
+- (id)editResolution;
+- (void)setEditResolution:;
+- (void)setPublishResolution:;
+- (BOOL)qualityDowngradedEnableEffectSuperResolution;
+- (void)setQualityDowngradedEnableEffectSuperResolution:;
+- (id)resolution;
+- (void)setResolution:;
+- (void).cxx_destruct;
++ (id)resolutionJSONTransformer;
++ (id)sourceResolutionJSONTransformer;
++ (id)originResolutionJSONTransformer;
++ (id)editResolutionJSONTransformer;
++ (id)publishResolutionJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

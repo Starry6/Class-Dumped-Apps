@@ -1,0 +1,31 @@
+@interface AWEProfileMyTabRedDotAdapter : NSObject
+@property (nonatomic) <AWEProfileRedDotShowViewProtocol> showView;
+@property (nonatomic) NSMutableDictionary myTabNodes;
+@property (nonatomic) <AWEProfileRedDotNodeModelProtocol> currentShowModel;
+@property (nonatomic) NSMutableSet currentShowNodeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)showView;
+- (void)setShowView:;
+- (void)tabBarDidChangeNotification:;
+- (BOOL)enableAlog;
+- (id)currentShowModel;
+- (void)setCurrentShowModel:;
+- (void)bindShowView:;
+- (void)addRedDotNode:;
+- (id)boundChildNodes;
+- (id)myTabNodes;
+- (id)currentShowNodeType;
+- (void)updateRedDotUI;
+- (long long)priorityWithBusinessType:model:;
+- (void)setCurrentShowNodeType:;
+- (BOOL)isDiff:with:;
+- (id)myTabRedDotLog;
+- (void)setMyTabNodes:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)updateWithModel:;
+@end

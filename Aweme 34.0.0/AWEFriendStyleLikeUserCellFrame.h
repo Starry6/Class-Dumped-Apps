@@ -1,0 +1,30 @@
+@interface AWEFriendStyleLikeUserCellFrame : AWEFriendStyleCommentBaseCellFrame
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} avatar1Frame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} avatar2Frame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} avatar3Frame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} labelFrame;
+@property (nonatomic) NSAttributedString likeUserAttributedString;
+@property (nonatomic) NSArray linkRangeArray;
+@property (nonatomic) NSAttributedString moreText;
+- (void)setLinkRangeArray:;
+- (id)linkRangeArray;
+- (void)calculateLayoutWithContainerWidth:;
+- (long long)diggIntegerCount;
+- (void)setAvatar1Frame:;
+- (void)setAvatar2Frame:;
+- (void)setAvatar3Frame:;
+- (id)likeNumString;
+- (id)handleUserNameWithString:userModel:isFirstUser:;
+- (id)avatar1Frame;
+- (id)avatar2Frame;
+- (id)avatar3Frame;
+- (void)setLikeUserAttributedString:;
+- (id)likeUserAttributedString;
+- (id)init;
+- (void).cxx_destruct;
+- (id)labelFrame;
+- (double)cellHeight;
+- (void)setMoreText:;
+- (id)moreText;
+- (void)setLabelFrame:;
+@end

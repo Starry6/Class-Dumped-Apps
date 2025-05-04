@@ -1,0 +1,4 @@
+@interface AWEProfileAsStoryHandler : NSObject
++ (void)createStoryFromProfileWithSignatureContent:publishButtonTitle:publishButtonClickBlock:completion:;
++ (void)createStoryFromProfileWithAvatarImage:originImage:userDisplayName:hashTag:leftEffectId:rightEffectId:unmodifiablePublishParams:referString:enterFrom:directPublish:showLoading:landingAfterPublish:beforeEditPublish:completion:;
+@end

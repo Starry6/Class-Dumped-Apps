@@ -1,0 +1,35 @@
+@interface AWETimorWebViewLoadingView : UIView
+@property (nonatomic) UIView stateView;
+@property (nonatomic) UIImageView loadImageView;
+@property (nonatomic) BDPLoadingAnimationView loadingAnimationView;
+@property (nonatomic) UILabel loadLabel;
+@property (nonatomic) UILabel retryLabel;
+@property (nonatomic) UIImage loadImage;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) <AWETimorWebViewLoadingViewDelegate> feedBackDelegate;
+- (void)createView:;
+- (void)netError;
+- (id)stateView;
+- (void)setStateView:;
+- (id)retryLabel;
+- (void)setRetryLabel:;
+- (id)loadingAnimationView;
+- (void)setLoadingAnimationView:;
+- (id)initWithLoadType:width:height:;
+- (void)setFeedBackDelegate:;
+- (void)errorView:;
+- (void)setLoadLabel:;
+- (id)loadLabel;
+- (void)closebuttonClick;
+- (void)retryClick;
+- (void)setLoadImageView:;
+- (id)loadImageView;
+- (void)setLoadImage:;
+- (id)feedBackDelegate;
+- (void)loadingView;
+- (id)loadImage;
+- (void).cxx_destruct;
+- (void)loadError;
+- (void)setCloseButton:;
+- (id)closeButton;
+@end

@@ -1,0 +1,2 @@
+@interface AWEGrouponLifeFeedsFloatContianerView : UIView
+@end

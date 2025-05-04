@@ -1,0 +1,32 @@
+@interface AWEIronManLandingPageRecentActionItem : AWEIronManLandingPageRecentBaseItem
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UILabel trdTitleLabel;
+@property (nonatomic) UIButton actionBtn;
+@property (nonatomic) UIView priceView;
+@property (nonatomic) UILabel currentPriceLabel;
+@property (nonatomic) UILabel previousPriceLabel;
+- (void)awe_themeDidChange:;
+- (id)priceView;
+- (void)setPriceView:;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (id)actionBtn;
+- (void)setActionBtn:;
+- (void)updateToItemModel:;
+- (void)setCurrentPriceLabel:;
+- (id)currentPriceLabel;
+- (void)setTrdTitleLabel:;
+- (id)trdTitleLabel;
+- (void)setPreviousPriceLabel:;
+- (id)previousPriceLabel;
+- (void)previousPriceAttrStrBuild;
+- (id)initWithFrame:;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setUpUI;
+@end

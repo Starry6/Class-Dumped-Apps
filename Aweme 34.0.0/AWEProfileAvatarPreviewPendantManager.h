@@ -1,0 +1,33 @@
+@interface AWEProfileAvatarPreviewPendantManager : NSObject
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) AWEUserAvatarDecotationModel decoration;
+@property (nonatomic) BOOL isButtonClickedAction;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) <AWEProfileAvatarPreviewPendantButtonProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)currentLoginUser;
+- (void)buttonClicked:;
+- (BOOL)isCurrentLoginUser;
+- (id)initWithUserModel:enterFrom:;
+- (BOOL)isButtonClickedAction;
+- (void)setIsButtonClickedAction:;
+- (void)gotoPendantCenter;
+- (void)showFirstCreativeGuide;
+- (void)hintUserNotQualifiedForFirstPublishPendant;
+- (void)triggerButtonActions:;
+- (void)pushInAppVC;
+- (void)showPendantGuideWhenButtonClicked:;
+- (id)appendParametersForURLString:;
+- (id)user;
+- (void)setUser:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)decoration;
+- (void)setDecoration:;
+@end

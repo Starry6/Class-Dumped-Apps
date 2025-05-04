@@ -1,0 +1,31 @@
+@interface AWEECShareGoodsContainerView : UIView
+@property (nonatomic) UIImageView goodsImage;
+@property (nonatomic) UIView goodsCoverView;
+@property (nonatomic) UILabel goodsTitleLabel;
+@property (nonatomic) UILabel priceLabel;
+@property (nonatomic) UILabel markingPriceLabel;
+@property (nonatomic) UILabel priceSuffixLabel;
+@property (nonatomic) UILabel shareInfoLabel;
+@property (nonatomic) UILabel shareRecommandLabel;
+- (id)goodsImage;
+- (void)setGoodsImage:;
+- (id)goodsTitleLabel;
+- (void)setGoodsTitleLabel:;
+- (void)setGoodsCoverView:;
+- (id)goodsCoverView;
+- (id)_convertFenToYuan:;
+- (void)setModel:withCompletion:;
+- (void)setPriceSuffixLabel:;
+- (id)priceSuffixLabel;
+- (void)setMarkingPriceLabel:;
+- (id)markingPriceLabel;
+- (void)setShareInfoLabel:;
+- (id)shareInfoLabel;
+- (void)setShareRecommandLabel:;
+- (id)shareRecommandLabel;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setUpSubviews;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+@end

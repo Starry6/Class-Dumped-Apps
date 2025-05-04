@@ -1,0 +1,38 @@
+@interface AWERTVInvokeVoipPresenter : NSObject
+@property (nonatomic) AWEIMRTVSelectSectionModelFactory sectionModelFactory;
+@property (nonatomic) <RxInjector> injector;
+@property (nonatomic) q rtvType;
+@property (nonatomic) q enterFrom;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) @? callback;
+@property (nonatomic) AWEIMRTVListSelectBaseViewController listSelectViewController;
+@property (nonatomic) <AWEIMRTVInviteFriendPresenterContext> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)enterFrom;
+- (void)rxAwakeFromPropertyInjection;
+- (long long)rtvType;
+- (void)renderWithContext:;
+- (void)selectAndInvokeVoipWithType:enterFrom:params:callback:;
+- (id)__allFriendsSelectModel;
+- (id)__navBarTitle;
+- (void)setListSelectViewController:;
+- (id)sectionModelFactory;
+- (id)__inviteButtonTitle;
+- (id)__inviteButtonTitleColor;
+- (id)__inviteButtonBgColor;
+- (id)listSelectViewController;
+- (void)listSelectBaseViewController:configCell:cellModel:;
+- (BOOL)listSelectBaseViewController:canSelectWithCellModel:;
+- (void)voipFriendInviteTableViewCell:didClickInviteButton:;
+- (void)setSectionModelFactory:;
+- (void)p_voipWithUserId:;
+- (void)setCallback:;
+- (id)callback;
+- (id)injector;
+- (void).cxx_destruct;
+- (id)context;
+- (id)params;
+@end

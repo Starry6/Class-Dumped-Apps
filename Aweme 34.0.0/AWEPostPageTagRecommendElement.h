@@ -1,0 +1,34 @@
+@interface AWEPostPageTagRecommendElement : AWEPostPageCellElement
+@property (nonatomic) AWEVideoNewPublishTagRecommendTableViewCell tagRecommendTableViewCell;
+@property (nonatomic) BOOL didAppearFlag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aACCMidVideoCreationProtocol;
+- (void)setupCell:;
+- (BOOL)didAppearFlag;
+- (void)setDidAppearFlag:;
+- (id)tagRecommendTableViewCell;
+- (void)p_addRecommendTagObserver;
+- (void)p_trackSelectHashtag:rank:;
+- (void)p_addHashTagAndHotSpotWithModel:;
+- (void)updateAutoRecommendTags;
+- (void)AWEVideoNewPublishTagRecommendTableViewCell:didClickedHashTag:indexPath:;
+- (id)AWEVideoNewPublishTagRecommendTableViewCellContextLogPrams:;
+- (void)hashtagButtonDidClicked;
+- (void)atButtonDidClicked;
+- (void)setTagRecommendTableViewCell:;
+- (id)service;
+- (void)viewDidLoad;
+- (BOOL)isVisible;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)cell;
+- (id)nearby;
+- (id)challengeService;
++ (Class)aACCMidVideoCreationProtocolClass;
++ (void)_aweLazyRegisterPostPage;
++ (Class)featureConfigClass:;
++ (id)type;
+@end

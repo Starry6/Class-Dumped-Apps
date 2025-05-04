@@ -1,0 +1,33 @@
+@interface AWEPerfSession : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString sceneName;
+@property (nonatomic) NSString fromSceneName;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) @? extraBlock;
+@property (nonatomic) AWEPerfFPSMetric fpsMetric;
+@property (nonatomic) AWEPerfLoadMetric loadMetric;
+- (void)setExtra:forKey:;
+- (id)loadMetric;
+- (void)setExtraBlock:;
+- (id)fpsMetric;
+- (void)setFpsMetric:;
+- (void)setLoadMetric:;
+- (id)fromSceneName;
+- (id)extraBlock;
+- (void)setFromSceneName:;
+- (void)iesll_setExtra:forKey:;
+- (void)iesll_setSubsceneName:;
+- (id)sceneName;
+- (void)dealloc;
+- (void)addMetric:;
+- (id)extra;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)setSceneName:;
++ (void)registerSessionForViewControllerClassName:usingBlock:;
++ (BOOL)isEnabled;
+@end

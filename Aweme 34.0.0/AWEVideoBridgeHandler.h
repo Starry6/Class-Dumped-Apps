@@ -1,0 +1,38 @@
+@interface AWEVideoBridgeHandler : NSObject
+@property (nonatomic) @? callback;
+@property (nonatomic) NSMutableDictionary dataLists;
+@property (nonatomic) NSMutableDictionary callbacks;
+- (void)addNotifications;
+- (void)startPlay:;
+- (void)setDataLists:;
+- (id)dataLists;
+- (void)handleHotSpotVideoPlayBridgeWithParams:callback:;
+- (void)willLoop:;
+- (void)videoWebViewBroadcast:;
+- (void)lynxDealloc:;
+- (void)handleNotificationsWithAction:userInfo:;
+- (void)clearDataListWithId:;
+- (void)removeNotificaitons;
+- (void)setCallback:;
+- (id)callback;
+- (void)stop:;
+- (id)init;
+- (id)callbacks;
+- (void)pause:;
+- (void)close:;
+- (void)setCallbacks:;
+- (void).cxx_destruct;
++ (void)handleVideoPlayBridgeWithParams:callback:;
++ (void)handleOpenAwemeDetailWithParams:;
++ (void)handleAddAwemeVideosFromRNWithParams:;
++ (void)handleInfinteVideosBridgeWithParams:callback:;
++ (void)handleFeedsLoadWithParams:;
++ (void)handleMixVideoPlayBridgeWithParams:callback:;
++ (void)handleLongVideoPlayBridgeWithParams:callback:;
++ (void)fetchAwemesFromRN:page:callback:;
++ (void)fetchAwemesFromRN:previousPage:callback:;
++ (void)postFeedsStatusChangeNotficiationWithDataController:;
++ (id)getFeedsFlowWithParams:;
++ (BOOL)refreshAwemeModel:;
++ (id)sharedHandler;
+@end

@@ -1,0 +1,32 @@
+@interface AWEECOMIMPaasECOMVideoUploadInfoNew : NSObject
+@property (nonatomic) BDECPigeonECOMVideoUploadInfoV2 videoUploadInfo;
+@property (nonatomic) NSString accessKeyId;
+@property (nonatomic) NSString secretAccessKey;
+@property (nonatomic) NSString sessionToken;
+@property (nonatomic) NSString expiredTime;
+@property (nonatomic) NSString currentTime;
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSString spaceName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSpaceName:;
+- (id)expiredTime;
+- (void)setExpiredTime:;
+- (id)accessKeyId;
+- (void)setAccessKeyId:;
+- (id)secretAccessKey;
+- (void)setSecretAccessKey:;
+- (void)setVideoUploadInfo:;
+- (id)videoUploadInfo;
+- (void)setCurrentTime:;
+- (id)currentTime;
+- (id)sessionToken;
+- (void).cxx_destruct;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (void)setSessionToken:;
+- (id)spaceName;
++ (id)PaasVideoUploadInfoWithPigeonVideoUploadInfo:;
+@end

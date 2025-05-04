@@ -1,0 +1,35 @@
+@interface AWEHPBottomTabGestureHandler : NSObject
+@property (nonatomic) <AWEBizTabBarItemConfigProtocol> itemConfig;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) q doubleClickRefreshTimes;
+@property (nonatomic) NSNumber maxDoubleClickMemoryTimes;
+@property (nonatomic) <AWENormalModeTabBarItemConfigAbility> tabBarAbility;
+@property (nonatomic) NSString bottomTipBubbleText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setItemConfig:;
+- (id)itemConfig;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)setupTabBarAbility:;
+- (BOOL)tabBarItemLongPressFromPreviousSelectedTypeWithInterceptAfterByStateBegan:;
+- (BOOL)shouldInterceptUpdateSelectedTabWithModel:;
+- (BOOL)tabBarItemDoubleClickFromPreviousSelectedType:;
+- (id)initWithItemConfig:channelConfig:;
+- (void)setTabBarAbility:;
+- (id)tabBarAbility;
+- (id)bottomTipBubbleText;
+- (void)setBottomTipBubbleText:;
+- (id)maxDoubleClickMemoryTimes;
+- (id)bottomTabRefreshGestureExpSettings;
+- (id)bottomTipBubbleTextWithTabID:;
+- (long long)doubleClickRefreshTimes;
+- (void)setDoubleClickRefreshTimes:;
+- (void)setMaxDoubleClickMemoryTimes:;
+- (void).cxx_destruct;
++ (BOOL)allowInjectWithChannelConfig:;
++ (BOOL)doubleColumnPreviewSettingEnable;
++ (BOOL)doubleColumnBanTabTouch;
+@end

@@ -1,0 +1,34 @@
+@interface AWEBatManActionsTasksCell : UITableViewCell
+@property (nonatomic) UIImageView iconImg;
+@property (nonatomic) UILabel titleLbl;
+@property (nonatomic) UILabel subTitleLbl;
+@property (nonatomic) UIImageView checkImg;
+@property (nonatomic) UILabel timeLbl;
+@property (nonatomic) UIButton taskBtn;
+@property (nonatomic) @? onTaskButtonClicked;
+- (id)iconImg;
+- (void)setIconImg:;
+- (void)setTitleLbl:;
+- (id)titleLbl;
+- (void)hideTip;
+- (id)timeLbl;
+- (void)setTimeLbl:;
+- (void)setSubTitleLbl:;
+- (void)setCheckImg:;
+- (void)onTaskBtnClicked:;
+- (void)setTaskBtn:;
+- (id)onTaskButtonClicked;
+- (id)subTitleLbl;
+- (void)setTaskButtonDisabledWithTitle:;
+- (void)setTaskButtonUnusableWithTitle:;
+- (void)setTaskButtonEnabledWithTitle:;
+- (void)showTipWithTrialTime:;
+- (id)checkImg;
+- (id)taskBtn;
+- (void)setOnTaskButtonClicked:;
+- (void)setPreferredMaxLayoutWidth:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)createUI;
+@end

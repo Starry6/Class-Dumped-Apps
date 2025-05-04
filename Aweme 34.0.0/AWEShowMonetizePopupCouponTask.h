@@ -1,0 +1,30 @@
+@interface AWEShowMonetizePopupCouponTask : AWEShowMonetizePopupTask
+@property (nonatomic) NSString referString;
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) @? trackParamsHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)referString;
+- (id)aweme;
+- (void)setReferString:;
+- (void)setAweme:;
+- (id)couponReceiveHandlerEventContainerID:;
+- (void)coupon:willLoadCouponInfoForScene:timing:;
+- (void)coupon:didLoadCouponInfoForScene:timing:hasCouponInfo:;
+- (void)coupon:willShowCouponPageForScene:timing:;
+- (void)coupon:didShowCouponPageForScene:timing:result:;
+- (void)coupon:didCloseCouponPageForScene:timing:;
+- (void)setTrackParamsHandler:;
+- (id)trackParamsHandler;
+- (id)initWithReferString:aweme:containerID:trackParamsHandler:;
+- (BOOL)canRun;
+- (void)dealloc;
+- (void)setContainerID:;
+- (void)run;
+- (void)cancel;
+- (id)containerID;
+- (void).cxx_destruct;
+@end

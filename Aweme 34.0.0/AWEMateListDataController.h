@@ -1,0 +1,32 @@
+@interface AWEMateListDataController : NSObject
+@property (nonatomic) AFDFriendsRelationListDataController relationListDataController;
+@property (nonatomic) NSDate startTime;
+@property (nonatomic) BOOL isRequestMateListOnAir;
+@property (nonatomic) BOOL hasRequestRelationData;
+- (id)relationListDataController;
+- (void)setRelationListDataController:;
+- (void)fetchMateListData:;
+- (id)sortDataSourceByCloseFriends:;
+- (long long)judgeHideHerPostStatusWithUid:;
+- (long long)judgeHideMyPostStatusWithUid:;
+- (BOOL)judgePrivateRelation:withUid:;
+- (void)updateHideHerPostStatusWith:userID:;
+- (void)updateHideMyPostStatusWith:userID:;
+- (void)updatePrivateRelation:relationValue:userID:;
+- (BOOL)hasRequestRelationData;
+- (void)setHasRequestRelationData:;
+- (id)closeFriendsList:;
+- (id)updatedListWithRelationStatus:;
+- (id)sortedListByFirstPinyinLetter:;
+- (BOOL)isRequestMateListOnAir;
+- (void)fetchRelationListWithCompletion:;
+- (void)setIsRequestMateListOnAir:;
+- (void)trackListDataMonitor:isLocalData:success:;
+- (id)sortedUserList:;
+- (BOOL)enableSortCloseFriends;
+- (id)init;
+- (void)dealloc;
+- (void)setStartTime:;
+- (void).cxx_destruct;
+- (id)startTime;
+@end

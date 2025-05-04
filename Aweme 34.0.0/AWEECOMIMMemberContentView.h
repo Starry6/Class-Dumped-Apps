@@ -1,0 +1,32 @@
+@interface AWEECOMIMMemberContentView : UIControl
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) AWEECOMIMCardComponentCommonTitleView headerView;
+@property (nonatomic) AWEECOMIMSubCardMemberInfoCard subMemberInfoView;
+@property (nonatomic) AWEECOMIMCardComponentSingleIconLabelView descView;
+@property (nonatomic) AWEECOMIMMemberRightView rightsView;
+@property (nonatomic) AWEECOMIMCardComponentOperationPanel btnPanel;
+@property (nonatomic) AWEECOMIMCardMemberInfoModel memberModel;
+@property (nonatomic) <AWEECOMIMMemberContentViewDelegate> delegate;
+- (id)descView;
+- (void)setDescView:;
+- (id)btnPanel;
+- (void)setBtnPanel:;
+- (id)rightsView;
+- (void)setRightsView:;
+- (void)bindMemberInfoModel:;
+- (void)memberContentViewDidClick;
+- (void)setMemberModel:;
+- (id)subMemberInfoView;
+- (id)memberModel;
+- (void)setSubMemberInfoView:;
+- (id)stackView;
+- (void)setStackView:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)headerView;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)setDelegate:;
+- (void)setHeaderView:;
++ (double)heightWithWidth:cardPaddings:memberModel:;
+@end

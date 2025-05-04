@@ -1,0 +1,32 @@
+@interface AWETeenAlbumPanelCollectView : UIView
+@property (nonatomic) AWETeenAlbumDataController dataController;
+@property (nonatomic) Q type;
+@property (nonatomic) UIView topLineView;
+@property (nonatomic) UIControl actionControl;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel albumCollectLabel;
+@property (nonatomic) @? albumCollectBlock;
+- (void)p_setupUI;
+- (void)setDataController:;
+- (void)p_setupBind;
+- (void)p_configData;
+- (void)setAlbumCollectBlock:;
+- (id)actionControl;
+- (id)albumCollectLabel;
+- (id)albumCollectBlock;
+- (void)clickAlbumCollect;
+- (id)initWithDataController:type:;
+- (void)setActionControl:;
+- (void)setAlbumCollectLabel:;
+- (id)contentView;
+- (unsigned long long)type;
+- (void)setType:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setIconImageView:;
+- (void)setTopLineView:;
+- (id)topLineView;
+- (id)dataController;
+@end

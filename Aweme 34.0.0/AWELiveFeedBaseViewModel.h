@@ -1,0 +1,32 @@
+@interface AWELiveFeedBaseViewModel : NSObject
+@property (nonatomic) @? referStringGetter;
+@property (nonatomic) @? aweModelGetter;
+@property (nonatomic) AWELiveStreamURLModel curStream;
+- (id)roomId;
+- (id)referString;
+- (BOOL)isFromHomepageHot;
+- (id)currentUserId;
+- (id)aweModel;
+- (id)liveRoomRawData;
+- (id)avatarImageURLArray;
+- (long long)feedSource;
+- (BOOL)isFollow;
+- (void)setReferStringGetter:;
+- (void)setAweModelGetter:;
+- (id)aweModelGetter;
+- (id)referStringGetter;
+- (BOOL)isFromHomepageFresh;
+- (BOOL)isFromHomepageFollow;
+- (BOOL)isFromHomepageFamiliar;
+- (id)rawRoomModel;
+- (id)curStream;
+- (id)initWithReferString:aweModel:;
+- (id)currentSecUserId;
+- (id)currentPlayerURL;
+- (id)currentPlayerStreamData;
+- (id)currentPlayerSDKKey;
+- (BOOL)isLiveEnded;
+- (void)setLiveDidEnd;
+- (void).cxx_destruct;
++ (id)endedRoomIDs;
+@end

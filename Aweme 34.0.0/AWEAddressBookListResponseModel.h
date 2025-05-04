@@ -1,0 +1,30 @@
+@interface AWEAddressBookListResponseModel : MTLModel
+@property (nonatomic) NSNumber statusCode;
+@property (nonatomic) NSNumber type;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSArray users;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSNumber totalCount;
+@property (nonatomic) NSNumber registerCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)registerCount;
+- (void)setRegisterCount:;
+- (id)cursor;
+- (id)statusCode;
+- (id)totalCount;
+- (id)users;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void)setCursor:;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (void)setUsers:;
+- (void)setTotalCount:;
++ (id)usersJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

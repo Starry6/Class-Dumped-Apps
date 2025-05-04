@@ -1,0 +1,35 @@
+@interface AWEChapterPanelNavBar : UIView
+@property (nonatomic) UIView closeButton;
+@property (nonatomic) UILabel aiStatement;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton leftCloseButton;
+@property (nonatomic) @? tapAiStatementBlock;
+@property (nonatomic) @? closeAction;
+@property (nonatomic) AWEChapterContext context;
+@property (nonatomic) NSDictionary trackParams;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)configSubViews;
+- (void)updateWithChapterList:;
+- (void)updateAiStatement:chapterRecommendApplyType:;
+- (void)configBar;
+- (id)aiStatement;
+- (void)refreshLayoutWithConfig:;
+- (id)leftCloseButton;
+- (void)setTapAiStatementBlock:;
+- (id)tapAiStatementBlock;
+- (void)tapAiStatementAction;
+- (void)setAiStatement:;
+- (void)setLeftCloseButton:;
+- (void)setCloseAction:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)closeAction;
+- (id)context;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)updateTitle:;
+@end

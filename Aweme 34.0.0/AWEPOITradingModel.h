@@ -1,0 +1,31 @@
+@interface AWEPOITradingModel : AWEBaseApiModel
+@property (nonatomic) NSString typeText;
+@property (nonatomic) NSString typeTextColor;
+@property (nonatomic) NSString typeTextLightColor;
+@property (nonatomic) NSString typeTextBackgroundColor;
+@property (nonatomic) NSString typeTextLightBackgroundColor;
+@property (nonatomic) NSString infoText;
+@property (nonatomic) NSString priceText;
+@property (nonatomic) NSString recruitedText;
+@property (nonatomic) q style;
+- (id)typeText;
+- (void)setTypeText:;
+- (id)typeTextColor;
+- (void)setTypeTextColor:;
+- (id)typeTextLightColor;
+- (void)setTypeTextLightColor:;
+- (id)typeTextBackgroundColor;
+- (void)setTypeTextBackgroundColor:;
+- (id)typeTextLightBackgroundColor;
+- (void)setTypeTextLightBackgroundColor:;
+- (id)recruitedText;
+- (void)setRecruitedText:;
+- (long long)style;
+- (void).cxx_destruct;
+- (void)setStyle:;
+- (void)setInfoText:;
+- (id)infoText;
+- (id)priceText;
+- (void)setPriceText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

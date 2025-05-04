@@ -1,0 +1,36 @@
+@interface AWEPaySKMCreateOrderResponse : CJPayBaseResponse
+@property (nonatomic) NSString prePayInfo;
+@property (nonatomic) NSString payMode;
+@property (nonatomic) NSString codeUrl;
+@property (nonatomic) NSString codeToken;
+@property (nonatomic) NSString verifyId;
+@property (nonatomic) NSString verifyToken;
+@property (nonatomic) NSString authUrl;
+@property (nonatomic) NSString errMsg;
+@property (nonatomic) NSString errCode;
+@property (nonatomic) NSString msgHint;
+- (id)errCode;
+- (id)errMsg;
+- (id)msgHint;
+- (void)setMsgHint:;
+- (id)verifyId;
+- (void)setVerifyId:;
+- (id)verifyToken;
+- (void)setVerifyToken:;
+- (id)prePayInfo;
+- (void)setPrePayInfo:;
+- (void)setErrMsg:;
+- (void)setErrCode:;
+- (id)authUrl;
+- (void)setAuthUrl:;
+- (id)codeUrl;
+- (void)setCodeUrl:;
+- (id)codeToken;
+- (void)setCodeToken:;
+- (id)payMode;
+- (void)setPayMode:;
+- (void).cxx_destruct;
+- (BOOL)isSuccess;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

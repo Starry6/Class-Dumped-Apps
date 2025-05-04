@@ -1,0 +1,2 @@
+@interface AWEStudioSwiftImpl.AIEraserNativeBlendTask : _TtGC8AirFlowX7AFXTaskVC18AWEStudioSwiftImpl23AIEraserNativeBlendTask5InputVS2_6Output_
+@end

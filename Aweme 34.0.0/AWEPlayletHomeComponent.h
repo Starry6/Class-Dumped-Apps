@@ -1,0 +1,35 @@
+@interface AWEPlayletHomeComponent : AWEUserHomeBaseComponent
+@property (nonatomic) UIViewController<AWEDiscoverDPlayletUserProfileTabProtocol> playletTabVC;
+@property (nonatomic) AWEProfileLynxViewController lynxViewController;
+@property (nonatomic) AWEProfileLynxConfiguration lynxConfig;
+@property (nonatomic) BOOL isTabScrolled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tabHelper;
+- (id)lynxConfig;
+- (void)setLynxConfig:;
+- (void)setLynxViewController:;
+- (id)lynxViewController;
+- (id)titleForType:;
+- (void)onDidSelectTabListIndex:actionType:hasRedDotWhenSwitched:needTrack:;
+- (id)supportTabTypes;
+- (id)tabViewControllerForType:;
+- (id)tabNameForLogWithType:;
+- (id)profileTabModelForType:;
+- (BOOL)shouldShowForType:;
+- (void)onResetUI;
+- (void)setIsTabScrolled:;
+- (unsigned long long)lynxVCAppearStyle;
+- (BOOL)isTabScrolled;
+- (void)updatePlayletWatchedIfNeeded:;
+- (id)playletTabVC;
+- (id)playletModelForType:;
+- (id)showTrackerCommonParamsWithRouterParam:;
+- (void)setPlayletTabVC:;
+- (id)user;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+@end

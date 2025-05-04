@@ -1,0 +1,37 @@
+@interface AWEStickerAsyncTask : AWEAIAsyncBaseTask
+@property (nonatomic) <ACCDUXLoadingInstance> duxLoading;
+@property (nonatomic) @? completion;
+- (void)saveGeneratingDraftWithPublishModel:completion:;
+- (void)handleGeneratedNoticeClickBeforeTaskBatchProcessFinish:completion:;
+- (id)generatePathWithFileName:taskId:;
+- (BOOL)isAssetDownloaded;
+- (void)writeTaskStatus:;
+- (void)trackAIGCCameraCompositeResponseWithDuration:errorCode:errorMessage:;
+- (BOOL)isTaskFinished;
+- (void)updateTaskWithGenerationInfo:scene:completion:;
+- (void)updateTaskWithTaskInfo:scene:completion:;
+- (void)trackAIGCCameraCompositeResponseSucceedWithScene:;
+- (void)saveGeneratedDraftCompletion:;
+- (void)startDownloadingWithScene:completion:;
+- (void)p_trackDownImageWithDuration:isSucceeded:scene:errorMessage:;
+- (void)setDuxLoading:;
+- (id)duxLoading;
+- (void)newSaveGeneratingDraftWithPublishModel:completion:;
+- (void)oldSaveGeneratingDraftWithPublishModel:completion:;
+- (void)storePreProcessImage:targetPublishModel:;
+- (void)saveGeneratingDraftFromNewPublishModel:originPublishModel:completion:;
+- (id)p_generateDraftID;
+- (void)containsDraftIdIsExistAndRemakeNewId:completion:;
+- (void)trackAsyncPostTaskFailedWithErrorCode:errorMsg:;
+- (void)openWithDraftId:;
+- (void)trackCustomEffectDownload:isSucceeded:errorCode:errorMsg:;
+- (void)p_downloadMultiImages:completion:;
+- (void)downloadVideoAssetWith:downloadingStartTime:scene:completion:;
+- (void)downloadLiveVideoAssetWith:downloadingStartTime:scene:completion:;
+- (void)p_downloadRawImages:completion:;
+- (id)logLabel;
+- (id)completion;
+- (void)setCompletion:;
+- (id)rootFolder;
+- (void).cxx_destruct;
+@end

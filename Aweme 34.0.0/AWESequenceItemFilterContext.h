@@ -1,0 +1,2 @@
+@interface AWESequenceItemFilterContext : NSObject
+@end

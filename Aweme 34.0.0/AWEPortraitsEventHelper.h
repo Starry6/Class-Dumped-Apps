@@ -1,0 +1,31 @@
+@interface AWEPortraitsEventHelper : NSObject
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL enableIESGetter;
+@property (nonatomic) NSArray hookEventArray;
+@property (nonatomic) NSDictionary hookEventDic;
+@property (nonatomic) NSDictionary adHookEventDic;
+- (id)hookEventArray;
+- (BOOL)enableAddEvent;
+- (void)onEventV3:params:;
+- (id)getAdExtPortraitsWithEvent:groupID:logExtra:;
+- (void)setupV1ConfigWithHookEventDict:;
+- (void)setupV2ConfigWithHookEventDict:adHookEventDict:;
+- (void)setHookEventDic:;
+- (void)setAdHookEventDic:;
+- (void)setHookEventArray:;
+- (void)addUserPortraits:videoPortraits:forEvent:withHookEventDict:;
+- (void)setEnableIESGetter:;
+- (id)hookEventDic;
+- (id)findItemIDInParams:;
+- (id)getExtPortraitsWithHookConfig:groupID:;
+- (id)getUserPortrait:;
+- (id)getVideoPortrait:groupID:;
+- (id)adHookEventDic;
+- (BOOL)enableIESGetter;
+- (BOOL)enable;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (id)sharedInstance;
+@end

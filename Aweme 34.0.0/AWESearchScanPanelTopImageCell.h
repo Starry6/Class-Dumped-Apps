@@ -1,0 +1,36 @@
+@interface AWESearchScanPanelTopImageCell : UICollectionViewCell
+@property (nonatomic) UILabel indexLabel;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIImageView searchImage;
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) AWESearchScanSearchTabViewModel model;
+@property (nonatomic) BOOL isScanQuestionMode;
+@property (nonatomic) BOOL isSuggestWordMode;
+@property (nonatomic) BOOL currentSelectedTabIsScanQuestion;
+- (void)setIsSuggestWordMode:;
+- (void)setIndexLabel:;
+- (id)searchImage;
+- (BOOL)isScanQuestionMode;
+- (void)setSearchImage:;
+- (void)setIsScanQuestionMode:;
+- (void)setCurrentSelectedTabIsScanQuestion:;
+- (BOOL)currentSelectedTabIsScanQuestion;
+- (BOOL)isSuggestWordMode;
+- (void)updateUIWithMode:index:;
+- (void)updateImageWithUrl:;
+- (id)getCellImage;
+- (void)setModel:;
+- (id)indexLabel;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupUI;
+- (void)updateImage:;
+- (void)setBgImageView:;
+- (id)bgImageView;
++ (id)reuseIdentifier;
+@end

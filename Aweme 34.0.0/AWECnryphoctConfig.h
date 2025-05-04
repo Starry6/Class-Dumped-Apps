@@ -1,0 +1,38 @@
+@interface AWECnryphoctConfig : NSObject
+@property (nonatomic) BDTuringConfig turingConfig;
+@property (nonatomic) q regionType;
+@property (nonatomic) NSString secret;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString channel;
+@property (nonatomic) BOOL enableTTNet;
+@property (nonatomic) BOOL needConfigSelas;
+@property (nonatomic) NSString appName;
+@property (nonatomic) <BDTuringLoginDelegate> loginHandler;
+@property (nonatomic) <BDTuringUCTwiceVerifyDelegate> uctvHandler;
+- (void)setEnableTTNet:;
+- (BOOL)enableTTNet;
+- (BOOL)needConfigSelas;
+- (id)turingConfig;
+- (id)uctvHandler;
+- (void)setUctvHandler:;
+- (void)setTuringConfig:;
+- (void)setNeedConfigSelas:;
+- (id)init;
+- (id)channel;
+- (void)setLanguage:;
+- (id)initWithBlock:;
+- (void)setChannel:;
+- (id)appId;
+- (void).cxx_destruct;
+- (id)language;
+- (void)setAppName:;
+- (id)appName;
+- (long long)regionType;
+- (void)setAppId:;
+- (void)setRegionType:;
+- (id)secret;
+- (id)loginHandler;
+- (void)setLoginHandler:;
++ (id)configWithBlock:;
+@end

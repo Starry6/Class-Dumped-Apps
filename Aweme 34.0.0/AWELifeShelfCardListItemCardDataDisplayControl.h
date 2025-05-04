@@ -1,0 +1,33 @@
+@interface AWELifeShelfCardListItemCardDataDisplayControl : MTLModel
+@property (nonatomic) NSString buyButtonText;
+@property (nonatomic) NSNumber isCouponProduct;
+@property (nonatomic) NSString clickBuyTips;
+@property (nonatomic) NSString prePriceText;
+@property (nonatomic) NSString defaultPrePriceText;
+@property (nonatomic) BOOL isSupportBuy;
+@property (nonatomic) NSString buttonJumpUrl;
+@property (nonatomic) Q buttonJumpUrlType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buyButtonText;
+- (void)setBuyButtonText:;
+- (unsigned long long)buttonJumpUrlType;
+- (id)buttonJumpUrl;
+- (id)isCouponProduct;
+- (id)getTrackProductStockType;
+- (id)prePriceText;
+- (void)setPrePriceText:;
+- (void)setIsCouponProduct:;
+- (BOOL)isSupportBuy;
+- (void)setIsSupportBuy:;
+- (id)clickBuyTips;
+- (void)setClickBuyTips:;
+- (void)setButtonJumpUrl:;
+- (void)setButtonJumpUrlType:;
+- (id)defaultPrePriceText;
+- (void)setDefaultPrePriceText:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

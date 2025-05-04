@@ -1,0 +1,32 @@
+@interface AWEECOrderCounterResponseModel : MTLModel
+@property (nonatomic) NSString showCountDesc;
+@property (nonatomic) NSString updateSendId;
+@property (nonatomic) BOOL showIconTag;
+@property (nonatomic) q updateTime;
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSString orderListSchema;
+@property (nonatomic) q tabID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)statusMsg;
+- (void)setStatusMsg:;
+- (void)setTabID:;
+- (id)orderListSchema;
+- (id)showCountDesc;
+- (void)setShowCountDesc:;
+- (id)updateSendId;
+- (void)setUpdateSendId:;
+- (BOOL)showIconTag;
+- (void)setShowIconTag:;
+- (void)setOrderListSchema:;
+- (long long)statusCode;
+- (long long)updateTime;
+- (void).cxx_destruct;
+- (void)setStatusCode:;
+- (void)setUpdateTime:;
+- (long long)tabID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

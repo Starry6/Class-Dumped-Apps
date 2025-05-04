@@ -1,0 +1,30 @@
+@interface AWECommerceCommentService : HTSService
+@property (nonatomic) UIViewController<AWEAdFeedCommentContainerViewController> commentViewController;
+@property (nonatomic) UIView<AWEAdCommentGuideView> guideView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commentViewController;
+- (void)setCommentViewController:;
+- (BOOL)shouldShowCommentWithAwemeModel:;
+- (void)trackCommentTabClick:enterMethod:;
+- (id)commentViewControllerWithAwemeModel:extraParams:;
+- (BOOL)isECommerceCommentWithAwemeModel:;
+- (id)commentCountWithAwemeModel:;
+- (id)commentTabTitleWithAwemeModel:;
+- (BOOL)shouldShowLandingCommentWithAwemeModel:;
+- (id)bottomGuideView;
+- (void)updateCommentCountWithAwemeModel:newCount:;
+- (void)commentTabChangedWithAwemeModel:isAdTab:;
+- (void)showCommentGuideViewIfNeedWithAwemeModel:containerView:currentSection:;
+- (void)trackCommentTabShowIfNeed:;
+- (void)trackCommentTabStayTimeIfNeed:;
+- (id)extraParamsWithAwemeModel:;
+- (void)closeAdCommentGuide:;
+- (id)extraECommerceParamsWithAwemeModel:;
+- (id)tabNameWithAwemeModel:;
+- (void).cxx_destruct;
+- (id)guideView;
+- (void)setGuideView:;
+@end

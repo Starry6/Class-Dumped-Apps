@@ -1,0 +1,35 @@
+@interface AWELivePreStreamMessageActionCreator : IESLiveIMBaseActionCreator
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWELivePreStreamMessageManager dispatcherManager;
+@property (nonatomic) IESLiveDataSyncManager wrdsManager;
+@property (nonatomic) NSHashTable subscribersForAll;
+@property (nonatomic) BOOL isCallingStart;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dispatcherManager;
+- (void)updateAwemeModel:;
+- (void)setDispatcherManager:;
+- (void)updateDispatcherManager:;
+- (id)subscribersForAll;
+- (void)setSubscribersForAll:;
+- (id)initWithDIContext:config:;
+- (void)updateLiveDataBy:;
+- (BOOL)isCallingStart;
+- (void)realStart;
+- (id)setupIMDispatcherWithConfig:;
+- (void)setWrdsManager:;
+- (id)wrdsManager;
+- (void)subscribedSyncDataUpdatedWithValue:oldVersion:newVersion:;
+- (void)startAll;
+- (void)updateNtpDiffTime:;
+- (id)decideReceiver;
+- (void)setIsCallingStart:;
+- (void)setModel:;
+- (void)dealloc;
+- (id)model;
+- (void).cxx_destruct;
+- (void)stopAll;
+- (void)messageReceived:;
+@end

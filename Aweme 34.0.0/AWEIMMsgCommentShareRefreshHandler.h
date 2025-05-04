@@ -1,0 +1,10 @@
+@interface AWEIMMsgCommentShareRefreshHandler : AWEIMMsgBaseRefreshHandler
+- (id)initWithComponentCenter:;
+- (BOOL)supportRefreshMessage:;
+- (BOOL)supportRefreshStrategy:;
+- (void)refrshResourceStateFor:forViewModels:strategy:;
++ (BOOL)supportRefresh;
++ (long long)getRefreshHandlerType;
++ (id)getCommentShareModel:;
++ (void)setCommentShareModel:uniqueId:;
+@end

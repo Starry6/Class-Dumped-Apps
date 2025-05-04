@@ -1,0 +1,37 @@
+@interface AWEIMShareToSingleChatViewController : UIViewController
+@property (nonatomic) AWEIMShareToSingleChatCardView cardView;
+@property (nonatomic) <AWEIMShareToSingleChatContentProviderProtocol> contentProvider;
+@property (nonatomic) <AWEIMShareToSingleChatEventHandlerProtocol> eventHandler;
+@property (nonatomic) BOOL didPerformBackgroundAnimation;
+@property (nonatomic) @? shareCompletion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setup;
+- (id)initWithContentProvider:eventHandler:;
+- (void)p_registNotification;
+- (id)shareContentViewInShareToSingleCardView:;
+- (id)shareContentViewSizeInShareToSingleCardView:;
+- (void)shareToSingleCardView:didClickWithType:;
+- (void)interrupShare;
+- (void)cancelWhithoutTranferBack;
+- (id)shareCompletion;
+- (id)defaultShareContentView;
+- (id)defaultShareContentViewSize;
+- (void)setShareCompletion:;
+- (BOOL)didPerformBackgroundAnimation;
+- (void)setDidPerformBackgroundAnimation:;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (id)contentProvider;
+- (id)animationControllerForDismissedController:;
+- (void)viewDidLoad;
+- (void)setEventHandler:;
+- (void).cxx_destruct;
+- (id)eventHandler;
+- (void)applicationDidEnterBackground:;
+- (void)applicationProtectedDataWillBecomeUnavailable:;
+- (void)setContentProvider:;
+- (id)cardView;
+- (void)setCardView:;
+@end

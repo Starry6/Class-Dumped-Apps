@@ -1,0 +1,38 @@
+@interface AWEEntertainmentTagElement : LynxUI
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView tagView;
+@property (nonatomic) q currentType;
+@property (nonatomic) AWELiveShowTagViewModel showTagViewModel;
+@property (nonatomic) AWELiveRoomModel aweLiveRoom;
+@property (nonatomic) AWELiveVSEpisode aweLiveEpisode;
+- (void)setUpdatedFrame:;
+- (void)setCurrentType:;
+- (void)setShowTagViewModel:;
+- (void)setAweLiveRoom:;
+- (id)aweLiveRoom;
+- (id)showTagViewModel;
+- (void)setAweLiveEpisode:;
+- (id)aweLiveEpisode;
+- (void)updatePaidStatus:withResult:;
+- (long long)currentPaidTagTypeForViewRight:countDown:;
+- (long long)paidTagTypeForRoomModel:viewRight:countDown:;
+- (long long)paidTagTypeForEpisodeModel:viewRight:countDown:;
+- (void)showLiveTag:withResult:;
+- (void)showReplayTag:withResult:;
+- (void)showTagByScene:withResult:;
+- (void)removeTag:withResult:;
+- (id)containerView;
+- (void)setFrame:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)createView;
+- (long long)currentType;
+- (id)tagView;
+- (void)setTagView:;
++ (void)lynxLazyLoad;
++ (id)__lynx_ui_method_config__681;
++ (id)__lynx_ui_method_config__832;
++ (id)__lynx_ui_method_config__973;
++ (id)__lynx_ui_method_config__1104;
++ (id)__lynx_ui_method_config__1305;
+@end

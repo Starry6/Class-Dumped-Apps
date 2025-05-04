@@ -1,0 +1,32 @@
+@interface AWESearchAladdinWeakBannerCell : AWESearchCachalotECommerceBaseCell
+@property (nonatomic) UIView functionView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView iconPicture;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UILabel arrowLabel;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseAladdinInfo aladdinInfoModel;
+@property (nonatomic) UIButton enterButton;
+- (void)configWithModel:;
+- (id)enterButton;
+- (void)setEnterButton:;
+- (id)aladdinInfoModel;
+- (void)setAladdinInfoModel:;
+- (id)functionView;
+- (id)iconPicture;
+- (void)setFunctionView:;
+- (void)setIconPicture:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)arrowLabel;
+- (void)setArrowLabel:;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (double)heightForModel:containerWidth:;
++ (id)identifier;
+@end

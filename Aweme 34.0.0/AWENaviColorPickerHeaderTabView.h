@@ -1,0 +1,32 @@
+@interface AWENaviColorPickerHeaderTabView : UIView
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UILabel titleButton;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView indicatorDot;
+@property (nonatomic) AWENaviColorPickerTabModel tab;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) BOOL selected;
+- (void)setTab:;
+- (void)updateColorHex:;
+- (id)initWithFrame:classTab:;
+- (id)indicatorDot;
+- (void)setIndicatorDot:;
+- (id)accessibilityLabel;
+- (id)intrinsicContentSize;
+- (id)accessibilityElements;
+- (id)contentView;
+- (BOOL)isSelected;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (BOOL)isAccessibilityElement;
+- (void)setupViews;
+- (void)setCloseButton:;
+- (id)closeButton;
+- (void)updateColor:;
+- (id)titleButton;
+- (void)setTitleButton:;
+- (id)tab;
+@end

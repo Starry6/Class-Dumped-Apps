@@ -1,0 +1,32 @@
+@interface AWEMissionParticipationInfoView : UIView
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel alreadyInLabel;
+@property (nonatomic) UIImageView lineImageView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIColor lineImageColor;
+@property (nonatomic) UIImage particImage;
+@property (nonatomic) AWETaskModel mission;
+- (void)setMission:;
+- (id)mission;
+- (void)setLineImageColor:;
+- (void)updateWithMission:;
+- (void)_updateWithMission:;
+- (id)particImage;
+- (id)alreadyInLabel;
+- (id)lineImageColor;
+- (id)lineImageView;
+- (void)timerDidFired:;
+- (void)setParticImage:;
+- (void)setAlreadyInLabel:;
+- (void)setLineImageView:;
+- (void)setLabel:;
+- (void)setTimer:;
+- (id)timer;
+- (id)initWithFrame:;
+- (id)label;
+- (void)willMoveToWindow:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+@end

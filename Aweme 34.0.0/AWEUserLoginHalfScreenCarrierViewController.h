@@ -1,0 +1,33 @@
+@interface AWEUserLoginHalfScreenCarrierViewController : AWEUserLoginBaseViewController
+@property (nonatomic) AWEUserLoginCarrierViewModel viewModel;
+@property (nonatomic) UIView whiteBackView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) BOOL firstWillAppear;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pageBtm;
+- (void)createContainerView;
+- (id)initWithPhoneModel:;
+- (void)addTapGestureRecognizer;
+- (void)addGeneralOtherComponentView;
+- (void)setFirstWillAppear:;
+- (void)handleLoginPaySetting;
+- (BOOL)firstWillAppear;
+- (void)addWhiteBackView;
+- (void)addHTSElderlyOtherComponentView;
+- (id)whiteBackView;
+- (void)addThemeBackgroundView;
+- (void)addThemeHeaderView;
+- (void)maskInteractionAction:;
+- (void)setWhiteBackView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)viewWillAppear:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

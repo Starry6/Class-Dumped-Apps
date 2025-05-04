@@ -1,0 +1,37 @@
+@interface AWEGCPStrategyLiveTableViewCell : UITableViewCell
+@property (nonatomic) AWEGCPLiveItemView liveItemView;
+@property (nonatomic) AWEGCPAwemeModel gameAwemeModel;
+@property (nonatomic) {UIEdgeInsets=dddd} contentViewEdgeInsets;
+@property (nonatomic) q viewStyle;
+@property (nonatomic) Q rectCorner;
+@property (nonatomic) @? exposedHandle;
+@property (nonatomic) @? speakerButtonDidClicked;
+@property (nonatomic) @? playViewDidClick;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRectCorner:;
+- (unsigned long long)rectCorner;
+- (void)setExposedHandle:;
+- (void)setPlayViewDidClick:;
+- (void)setSpeakerButtonDidClicked:;
+- (void)updateWithModel:isMute:maxWidth:;
+- (id)playViewDidClick;
+- (id)gameAwemeModel;
+- (void)setGameAwemeModel:;
+- (id)exposedHandle;
+- (id)speakerButtonDidClicked;
+- (void)updateLayoutWithViewStyle:;
+- (id)liveItemView;
+- (void)updateItemViewLayoutIfNeeded;
+- (id)contentViewEdgeInsets;
+- (void)setContentViewEdgeInsets:;
+- (void)setLiveItemView:;
+- (long long)viewStyle;
+- (void)setup;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setViewStyle:;
+- (id)cellContentView;
+@end

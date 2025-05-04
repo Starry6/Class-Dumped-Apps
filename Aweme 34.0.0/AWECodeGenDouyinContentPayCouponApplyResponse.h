@@ -1,0 +1,35 @@
+@interface AWECodeGenDouyinContentPayCouponApplyResponse : AWEBaseResponseModel
+@property (nonatomic) NSString contentID;
+@property (nonatomic) NSString productID;
+@property (nonatomic) Q timing;
+@property (nonatomic) BOOL shown;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) NSInteger applyStatus;
+@property (nonatomic) AWECodeGenApplyCouponInfoModel applyCouponModel;
+@property (nonatomic) NSArray applyCouponsModelArray;
+@property (nonatomic) q showPopupMinDiscountAmountFen;
+@property (nonatomic) AWECodeGenPopUpConfModel couponPopUpConfModel;
+- (id)applyCouponModel;
+- (void)setApplyCouponModel:;
+- (id)applyCouponsModelArray;
+- (void)setApplyCouponsModelArray:;
+- (id)couponPopUpConfModel;
+- (void)setCouponPopUpConfModel:;
+- (long long)showPopupMinDiscountAmountFen;
+- (void)setShowPopupMinDiscountAmountFen:;
+- (void)setProductID:;
+- (id)productID;
+- (unsigned long long)timing;
+- (void)setContainerID:;
+- (void)setTiming:;
+- (id)contentID;
+- (id)containerID;
+- (void).cxx_destruct;
+- (void)setContentID:;
+- (BOOL)hasShown;
+- (void)setShown:;
+- (void)setApplyStatus:;
+- (int)applyStatus;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

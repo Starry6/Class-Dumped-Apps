@@ -1,0 +1,33 @@
+@interface AWESearchVideoCardAuthorInfoComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWESearchVideoCardAuthorInfoView authorInfoView;
+@property (nonatomic) AWEGeneralSearchVideoCardModel bindedModel;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL currentModelFromSetupModelOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)authorInfoView;
+- (id)playerProvider;
+- (void)updateWithModel:forceUpdate:;
+- (void)trackSearchResultClick;
+- (void)setBindedModel:;
+- (id)bindedModel;
+- (void)setModelOnly:;
+- (void)setCurrentModelFromSetupModelOnly:;
+- (BOOL)currentModelFromSetupModelOnly;
+- (id)descProvider;
+- (void)setAuthorInfoView:;
+- (void)contentViewTap:;
+- (void)setModel:;
+- (id)init;
+- (id)contentView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
+- (void)setupUI;
++ (id)componentSizeForModel:width:;
++ (id)calculateSizeWithModel:Width:;
+@end

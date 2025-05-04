@@ -1,0 +1,3 @@
+@interface AWECommentPanelListSwiftImpl.CommentTopTipsSectionViewModel : _TtGC20AWECommentSwiftModel24BaseListSectionViewModelCSo21AWECommentTopTipsInfo_
+- (id)init;
+@end

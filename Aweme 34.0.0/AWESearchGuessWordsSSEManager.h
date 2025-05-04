@@ -1,0 +1,33 @@
+@interface AWESearchGuessWordsSSEManager : NSObject
+@property (nonatomic) AWESearchAIGCSSERequestManager manager;
+@property (nonatomic) @? inboxWordFinishBlock;
+@property (nonatomic) @? middleGuessWordFinishBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didReceiveAllData;
+- (void)clearBeforeNewLink;
+- (void)didReceiveCommonResponse:;
+- (void)didReceiveFirstDataChunk;
+- (void)didEndReadChunkForError:errorReason:currentResponse:;
+- (void)retryRequestWithRetryCount:;
+- (void)didReceiveCommonJSON:;
+- (void)setInboxWordFinishBlock:;
+- (void)setMiddleGuessWordFinishBlock:;
+- (void)p_clearContext;
+- (id)inboxWordFinishBlock;
+- (id)middleGuessWordFinishBlock;
+- (void)fetchGuessWordsWithParams:inboxWordFinish:middleGuessWordFinish:completionBlock:;
+- (void)setManager:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)manager;
+- (void).cxx_destruct;
++ (id)SSERequestConfig;
++ (BOOL)enableSSERequest;
++ (long long)SSEGSDataValidTimeGap;
++ (long long)SSERequestTimeOutConfig;
++ (long long)SSERequestRetryTimes;
+@end

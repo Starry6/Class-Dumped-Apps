@@ -1,0 +1,2 @@
+@interface _TtGC18AWEServiceKitSwift12ServiceEntryC19AWEIMShareBasicImpl27ShareContactListServiceImpl_ : AWEServiceKitSwift.AnyServiceEntry
+@end

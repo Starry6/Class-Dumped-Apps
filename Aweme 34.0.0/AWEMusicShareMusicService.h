@@ -1,0 +1,36 @@
+@interface AWEMusicShareMusicService : NSObject
+@property (nonatomic) NSString musicId;
+@property (nonatomic) <MusicService> musicService;
+@property (nonatomic) AWEMusicMainFeedViewController playerVC;
+@property (nonatomic) AWEMusicStreamingQueueHandler queueHandler;
+@property (nonatomic) AWEMusicPlayEventService eventService;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL releaseWhenExit;
+- (void)setMusicId:;
+- (id)musicId;
+- (id)musicService;
+- (void)setMusicService:;
+- (id)playerVC;
+- (void)setPlayerVC:;
+- (void)setReleaseWhenExit:;
+- (BOOL)hasMoreOfScene:;
+- (void)feedViewDidLoad:;
+- (id)collectToast:;
+- (id)initWithMusicId:;
+- (id)queueHandler;
+- (BOOL)releaseWhenExit;
+- (void)setQueueHandler:;
+- (void)dealloc;
+- (id)type;
+- (void)setType:;
+- (void)setEventService:;
+- (void).cxx_destruct;
+- (id)eventService;
++ (id)convert:queueNane:;
++ (id)pushDspVCWithWithMusicService:eventService:musicId:;
++ (void)openDspWithMusicService:eventService:musicId:completion:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEFeedNearbyMallStyle3ItemViewConfig : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray poiImageUrlList;
+@property (nonatomic) NSString firstTag;
+@property (nonatomic) NSString secondTag;
+@property (nonatomic) NSString thirdTag;
+@property (nonatomic) NSString hotDesc;
+@property (nonatomic) NSArray hotIconUrlList;
+@property (nonatomic) NSString spuDesc;
+@property (nonatomic) Q hotType;
+@property (nonatomic) NSDictionary hotTags;
+- (id)hotDesc;
+- (void)setHotDesc:;
+- (unsigned long long)hotType;
+- (void)setHotType:;
+- (id)hotTags;
+- (void)setHotTags:;
+- (id)firstTag;
+- (void)setFirstTag:;
+- (id)secondTag;
+- (void)setSecondTag:;
+- (void)setPoiImageUrlList:;
+- (void)setThirdTag:;
+- (void)setHotIconUrlList:;
+- (void)setSpuDesc:;
+- (id)poiImageUrlList;
+- (id)thirdTag;
+- (id)hotIconUrlList;
+- (id)spuDesc;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+@end

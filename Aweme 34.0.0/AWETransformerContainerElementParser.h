@@ -1,0 +1,2 @@
+@interface AWETransformerContainerElementParser : AWETransformerGroupElementParser
+@end

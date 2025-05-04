@@ -1,0 +1,37 @@
+@interface AWESearchImageFilterPluginConfig : NSObject
+@property (nonatomic) NSDictionary settingsDict;
+@property (nonatomic) NSDictionary frontendConfig;
+@property (nonatomic) double scoreThreshold;
+@property (nonatomic) Q prohibitedAdMinFileSize;
+@property (nonatomic) Q prohibitedAdMaxFileSize;
+@property (nonatomic) double prohibitedAdMinImageSide;
+@property (nonatomic) q adMaxImageSideForDownSample;
+@property (nonatomic) NSString filterJS;
+@property (nonatomic) NSArray noFilterHosts;
+@property (nonatomic) NSArray noFilterHostSuffixes;
+@property (nonatomic) BOOL enableClientAI;
+- (BOOL)enableClientAI;
+- (id)filterJS;
+- (void)fetchAdBlockSetting;
+- (id)frontendConfig;
+- (void)setFrontendConfig:;
+- (unsigned long long)prohibitedAdMinFileSize;
+- (void)setProhibitedAdMinFileSize:;
+- (unsigned long long)prohibitedAdMaxFileSize;
+- (void)setProhibitedAdMaxFileSize:;
+- (double)prohibitedAdMinImageSide;
+- (void)setProhibitedAdMinImageSide:;
+- (long long)adMaxImageSideForDownSample;
+- (void)setAdMaxImageSideForDownSample:;
+- (void)setFilterJS:;
+- (id)noFilterHosts;
+- (void)setNoFilterHosts:;
+- (id)noFilterHostSuffixes;
+- (void)setNoFilterHostSuffixes:;
+- (id)init;
+- (id)settingsDict;
+- (void).cxx_destruct;
+- (void)setSettingsDict:;
+- (double)scoreThreshold;
+- (void)setScoreThreshold:;
+@end

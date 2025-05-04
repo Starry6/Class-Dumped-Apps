@@ -1,0 +1,34 @@
+@interface AWEAnchorAdditionSearchHistoryViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView tableFooterView;
+@property (nonatomic) q anchorType;
+@property (nonatomic) AWEAnchorSearchHistoryViewModel viewModel;
+@property (nonatomic) @? searchHistoryBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupBinding;
+- (void)saveSearchHistoryResultWithKeyword:;
+- (id)initWithAnchorBusinessType:;
+- (void)setSearchHistoryBlock:;
+- (void)updateDeleteAllSearchHistoryView;
+- (id)searchHistoryBlock;
+- (void)deleteAllSearchHistory:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLayoutSubviews;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (long long)anchorType;
+- (id)tableFooterView;
+- (void)setTableFooterView:;
+- (void)setupUI;
+- (void)setAnchorType:;
+@end

@@ -1,0 +1,35 @@
+@interface AWEHPLottieRetryManager : NSObject
+@property (nonatomic) NSHashTable lottieTaskTable;
+@property (nonatomic) BOOL isPizzaReady;
+@property (nonatomic) BOOL isCombineReady;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addNotification;
+- (void)removeNotification;
+- (BOOL)isCombineReady;
+- (void)addLottieTask:;
+- (void)hideBottomLottieIfNeed;
+- (void)offlineLottieIfNeed;
+- (void)hideTopLottieIfNeed;
+- (long long)retryDelayTime;
+- (BOOL)isLottieActivateWithComponentID:;
+- (void)setIsPizzaReady:;
+- (void)setIsCombineReady:;
+- (void)retryAllLottieTasks;
+- (void)hambInitComplete:;
+- (void)pizzaInitComplete:;
+- (id)lottieTaskTable;
+- (void)hideLottieIfNeedWithTask:;
+- (void)removeLottieTask:;
+- (BOOL)isPizzaReady;
+- (void)setLottieTaskTable:;
+- (void)setTimer:;
+- (id)init;
+- (void)dealloc;
+- (id)timer;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

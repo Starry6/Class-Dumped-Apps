@@ -1,0 +1,32 @@
+@interface AWEHotSearchDiscussionInteractionViewController : AWEPlayInteractionViewController
+@property (nonatomic) UIViewController<AWEHotSpotDiscussionViewControllerProtocol> commentAutoScrollViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showDislikeOnVideo;
+- (void)setLogExtraDict:;
+- (id)logExtraDict;
+- (void)setHide:;
+- (void)setPureMode:animateDuration:;
+- (void)_removeChildVC;
+- (void)_addChildVC;
+- (void)autoScrollCommentView;
+- (void)pauseAutoScrollCommentView;
+- (void)stopAutoScrollCommentView;
+- (void)updateProgressSliderWithTime:totalDuration:model:;
+- (void)setPlayProgressWithTime:totalDuration:model:;
+- (void)updatePlayProgressWithTime:totalDuration:model:;
+- (void)setupBottomContainer;
+- (void)setupLeftContainer;
+- (void)setupRightContainer;
+- (BOOL)loadElementContainerByProvider;
+- (id)commentAutoScrollViewController;
+- (void)setCommentAutoScrollViewController:;
+- (void)setModel:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)willDisplay;
+@end

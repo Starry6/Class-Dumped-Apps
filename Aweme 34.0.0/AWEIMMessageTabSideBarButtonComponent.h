@@ -1,0 +1,36 @@
+@interface AWEIMMessageTabSideBarButtonComponent : AWEIMComponentBase
+@property (nonatomic) BOOL hasAppear;
+@property (nonatomic) AWEIMMessageTabSideBarView sideBarView;
+@property (nonatomic) NSObject<AWELeftSideBarAmbienceObjectProtocol> ambienceObject;
+@property (nonatomic) Q slidePanType;
+@property (nonatomic) <AWEIMMessageTabPrivateChatMgrInterface> privateChatMgrService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_viewDidDisappear;
+- (void)hostVC_viewWillAppear;
+- (void)afterInitialComponentAllResolved:;
+- (void)hostVC_viewDidAppear;
+- (void)hostVC_viewWillDisappear;
+- (BOOL)hasAppear;
+- (void)setHasAppear:;
+- (void)setSlidePanType:;
+- (unsigned long long)slidePanType;
+- (id)ambienceObject;
+- (void)setAmbienceObject:;
+- (long long)buttonPosition;
+- (BOOL)canShowInNaviBar;
+- (id)customNaviButtonView;
+- (BOOL)messageTabSideBarTransition_destinatedCanOpen;
+- (unsigned long long)messageTabSideBarTransition_destinatedType;
+- (id)messageTabSideBarTransition_destinatedViewControllerForSlideDirection:gestureRecognizer:;
+- (void)setPrivateChatMgrService:;
+- (id)privateChatMgrService;
+- (BOOL)p_canShowPrivateChatMgr;
+- (id)p_getSideBarHostParams;
+- (void)setSideBarView:;
+- (id)sideBarView;
+- (void).cxx_destruct;
++ (BOOL)canCreateComponentWithContext:;
+@end

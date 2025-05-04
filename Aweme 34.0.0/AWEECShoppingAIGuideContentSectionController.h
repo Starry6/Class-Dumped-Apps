@@ -1,0 +1,34 @@
+@interface AWEECShoppingAIGuideContentSectionController : IGListSectionController
+@property (nonatomic) AWEECShoppingAIGuideContext context;
+@property (nonatomic) AWEECShoppingAIGuideMessageGroupViewModel msgGroupViewModels;
+@property (nonatomic) <AWEECShoppingAIGuideAnswerBaseCellDelegate> answerCellDelegate;
+@property (nonatomic) AWEECShoppingAIGuideAnswerDynamicTextCell dynamicTextAnswerCell;
+@property (nonatomic) <AWEECShoppingAIGuideContentSectionControllerDelegate> delegate;
+@property (nonatomic) AWEECShoppingAIGuideCardSettingProvider cardProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellForItemAtIndex:;
+- (id)supportedElementKinds;
+- (id)viewForSupplementaryElementOfKind:atIndex:;
+- (id)sizeForSupplementaryViewOfKind:atIndex:;
+- (void)didUpdateToObject:;
+- (id)cardProvider;
+- (void)setCardProvider:;
+- (id)msgGroupViewModels;
+- (void)setMsgGroupViewModels:;
+- (id)answerCellDelegate;
+- (id)dynamicTextAnswerCell;
+- (void)setDynamicTextAnswerCell:;
+- (void)setAnswerCellDelegate:;
+- (long long)numberOfItems;
+- (id)delegate;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)context;
+- (id)inset;
+- (id)sizeForItemAtIndex:;
+@end

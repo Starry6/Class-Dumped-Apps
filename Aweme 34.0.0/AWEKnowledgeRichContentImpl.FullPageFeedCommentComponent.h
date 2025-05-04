@@ -1,0 +1,25 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedCommentComponent : AWEKnowledgeRichContentImpl.FullPageFeedBaseComponent
+- (void)sectionControllerWillDisplay:;
+- (void)onScrollViewWillBeginDraggingWithScrollView:;
+- (void)onScrollViewDidScrollWithScrollView:;
+- (void)onScrollViewDidEndDraggingWithScrollView:willDecelerate:;
+- (void)onScrollViewDidEndDeceleratingWithScrollView:;
+- (void)onContainerViewDidAppear;
+- (void)onContainerViewDidDisappear;
+- (id)commentSectionControllerContainer;
+- (id)commentSectionControllerContainerView;
+- (id)commentSectionControllerContainerSectionModelsArray;
+- (void)commentSectionControllerUpdateByFinalModels:actionModels:actionType:animated:sync:;
+- (void)commentSectionControllerFooterTextDidUpdate:noMoreData:hideFooter:;
+- (id)commentSectionControllerContainerActualScrollview;
+- (BOOL)shouldFollowPanelCollectionViewColorWhenThemeChange;
+- (BOOL)allowScrollToInputTop;
+- (BOOL)allowScrollAfterReplyComment;
+- (void)listVCViewDidLoad:;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:atListVC:;
+- (void)setupCollectionView:forBusinessType:atListVC:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
+@end

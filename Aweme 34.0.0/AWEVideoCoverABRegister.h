@@ -1,0 +1,2 @@
+@interface AWEVideoCoverABRegister : NSObject
+@end

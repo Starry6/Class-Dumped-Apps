@@ -1,0 +1,36 @@
+@interface AWESearchCachalotGeneralCardPipeline : AWESearchCachalotCardPipeline
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString adEventName;
+@property (nonatomic) <AWESearchGeneralPipelinePreRenderProvider> preRenderProvider;
+@property (nonatomic) BOOL shouldForceCallSuperComponentViewWithViewModelMethod;
+- (id)referString;
+- (void)setReferString:;
+- (id)adEventName;
+- (void)setAdEventName:;
+- (id)transformBusinessDataItem:ofDataType:;
+- (void)updateComponentView:withViewModel:;
+- (id)componentViewWithViewModel:;
+- (id)componentViewSizeWithViewModel:containerWidth:;
+- (id)reuseIdentifierWithViewModel:;
+- (void)attachComponentView:usingViewModel:;
+- (BOOL)universalReusePoolAllowViewModel:;
+- (void)registerViewType:viewClass:;
+- (BOOL)doubleColumnExperienceOptimize;
+- (BOOL)enableModernFeedSafe;
+- (void)uploadErrorInfo:;
+- (void)setPreRenderProvider:;
+- (BOOL)p_isSingleCardWidthWith:;
+- (void)p_trackSizeMeasureWithDuration:viewModel:;
+- (id)preRenderProvider;
+- (BOOL)fixCachalotNativeRenderContextErrorSwitch;
+- (void)reportErrorInfo:controllerProxyError:;
+- (void)p_updateComponentView:withViewModel:createCost:;
+- (BOOL)enablePrerenderComponentExceptionFix;
+- (BOOL)shouldForceCallSuperComponentViewWithViewModelMethod;
+- (id)fetchCellControllerWithComponet:;
+- (void)bindComponentContextForData:cellFrame:;
+- (void)p_trackSearchDataBind:createDuration:bindDuration:;
+- (BOOL)enableReportErrorInfo;
+- (void)setShouldForceCallSuperComponentViewWithViewModelMethod:;
+- (void).cxx_destruct;
+@end

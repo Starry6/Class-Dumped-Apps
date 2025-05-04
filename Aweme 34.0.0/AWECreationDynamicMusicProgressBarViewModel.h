@@ -1,0 +1,32 @@
+@interface AWECreationDynamicMusicProgressBarViewModel : NSObject
+@property (nonatomic) BOOL isUnfold;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) <ACCMusicModelProtocol> musicModel;
+@property (nonatomic) NSMutableArray volumeArray;
+@property (nonatomic) double playBackTime;
+@property (nonatomic) NSMutableDictionary searchLogParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isUnfold;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) AWEMusicModel musicModel;
+@property (nonatomic) NSMutableArray volumeArray;
+@property (nonatomic) double playBackTime;
+@property (nonatomic) NSMutableDictionary searchLogParams;
+- (id)musicModel;
+- (void)setMusicModel:;
+- (BOOL)isUnfold;
+- (void)setIsUnfold:;
+- (void)setPlayBackTime:;
+- (double)playBackTime;
+- (id)searchLogParams;
+- (void)setSearchLogParams:;
+- (id)volumeArray;
+- (void)setVolumeArray:;
+- (id)init;
+- (BOOL)isPlaying;
+- (void).cxx_destruct;
+- (void)setIsPlaying:;
+@end

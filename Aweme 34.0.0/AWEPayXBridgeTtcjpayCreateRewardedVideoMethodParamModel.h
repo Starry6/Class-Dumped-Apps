@@ -1,0 +1,31 @@
+@interface AWEPayXBridgeTtcjpayCreateRewardedVideoMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSNumber rit;
+@property (nonatomic) NSString adFrom;
+@property (nonatomic) NSString creatorId;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) NSArray moreRewardInfos;
+@property (nonatomic) NSDictionary rewardInfo;
+@property (nonatomic) BDXBridgeTtcjpayCreateRewardedVideoRetentionModel retentionModel;
+@property (nonatomic) NSDictionary extraVideoData;
+- (id)rit;
+- (void)setRit:;
+- (void)setAdFrom:;
+- (id)adFrom;
+- (void)setRewardInfo:;
+- (id)rewardInfo;
+- (void)setExtraVideoData:;
+- (id)extraVideoData;
+- (id)moreRewardInfos;
+- (void)setMoreRewardInfos:;
+- (id)retentionModel;
+- (void)setRetentionModel:;
+- (void).cxx_destruct;
+- (id)extraData;
+- (void)setExtraData:;
+- (id)creatorId;
+- (void)setCreatorId:;
++ (id)requiredKeyPaths;
++ (id)moreRewardInfosJSONTransformer;
++ (id)retentionModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

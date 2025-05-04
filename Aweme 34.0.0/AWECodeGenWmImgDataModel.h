@@ -1,0 +1,31 @@
+@interface AWECodeGenWmImgDataModel : AWEBaseDataModel
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString algorithm;
+@property (nonatomic) NSString version;
+@property (nonatomic) BOOL isGray;
+@property (nonatomic) q expireAt;
+@property (nonatomic) NSString comBkLink;
+@property (nonatomic) NSString comBkAlgorithm;
+@property (nonatomic) NSString comBkVersion;
+@property (nonatomic) q comBkExpireAt;
+- (long long)expireAt;
+- (void)setExpireAt:;
+- (BOOL)isGray;
+- (void)setIsGray:;
+- (id)comBkLink;
+- (void)setComBkLink:;
+- (id)comBkAlgorithm;
+- (void)setComBkAlgorithm:;
+- (id)comBkVersion;
+- (void)setComBkVersion:;
+- (long long)comBkExpireAt;
+- (void)setComBkExpireAt:;
+- (id)algorithm;
+- (id)version;
+- (void)setAlgorithm:;
+- (void)setVersion:;
+- (void).cxx_destruct;
+- (id)link;
+- (void)setLink:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

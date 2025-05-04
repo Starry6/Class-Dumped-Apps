@@ -1,0 +1,36 @@
+@interface AWEHPTopTabItemImageContentView : UIView
+@property (nonatomic) AWEHPTopTabRedDotUIConfig redDotUIConfig;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) double imageSize;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) AWEHPChannelImageModel imageModel;
+@property (nonatomic) UIImageView oldImageView;
+@property (nonatomic) {CGSize=dd} containerSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageModel;
+- (void)setImageModel:;
+- (id)oldImageView;
+- (void)setOldImageView:;
+- (void)p_updateImageView;
+- (id)generateImagePopAnimationGroupWithAnimateStyle:;
+- (id)generateImageShowAnimationGroupWithAnimateStyle:;
+- (id)redDotUIConfig;
+- (void)setRedDotUIConfig:;
+- (id)initWithImageSize:withRedDotConfig:;
+- (void)showWithImageConfig:;
+- (void)updateAvatarBadgeHollowDisplay:withContainerSize:;
+- (void)animationDidStop:finished:;
+- (BOOL)isShowing;
+- (id)containerSize;
+- (void)setContainerSize:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (double)imageSize;
+- (void)setImageView:;
+- (id)imageView;
+- (void)hideImage;
+- (void)setIsShowing:;
+@end

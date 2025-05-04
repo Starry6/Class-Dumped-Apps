@@ -1,0 +1,30 @@
+@interface AWESearchImageCompressorConfig : NSObject
+@property (nonatomic) NSData hightCompressData;
+@property (nonatomic) NSData middleCompressData;
+@property (nonatomic) NSData lowCompressData;
+@property (nonatomic) float compression;
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGSize=dd} maxSize;
+@property (nonatomic) float maxDataSize;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString scene;
+- (float)maxDataSize;
+- (void)setMaxDataSize:;
+- (id)hightCompressData;
+- (void)setHightCompressData:;
+- (id)middleCompressData;
+- (void)setMiddleCompressData:;
+- (id)lowCompressData;
+- (void)setLowCompressData:;
+- (id)maxSize;
+- (void)setMaxSize:;
+- (void)setScene:;
+- (id)image;
+- (id)completion;
+- (id)scene;
+- (void)setImage:;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (void)setCompression:;
+- (float)compression;
+@end

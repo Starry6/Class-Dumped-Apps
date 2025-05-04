@@ -1,0 +1,35 @@
+@interface AWECodeGenEntertainmentUIConfigModel : AWEBaseDataModel
+@property (nonatomic) NSArray flowBottomButtonsModelArray;
+@property (nonatomic) NSArray blockCardButtonsModelArray;
+@property (nonatomic) AWECodeGenEntertainmentItemLabelModel itemLabelInfoModel;
+@property (nonatomic) AWECodeGenPreviewConfigModel previewConfigModel;
+@property (nonatomic) NSString maskText;
+@property (nonatomic) AWECodeGenEntertainmentItemLabelModel universalCoverLabelModel;
+@property (nonatomic) NSArray landscapePreviewButtonsModelArray;
+@property (nonatomic) NSArray landscapeBlockButtonsModelArray;
+@property (nonatomic) AWECodeGenEntertainmentBlockCardInfoModel blockCardInfoModel;
+@property (nonatomic) NSString landMaskText;
+- (id)previewConfigModel;
+- (void)setPreviewConfigModel:;
+- (id)maskText;
+- (void)setMaskText:;
+- (id)landMaskText;
+- (id)landscapeBlockButtonsModelArray;
+- (id)landscapePreviewButtonsModelArray;
+- (id)itemLabelInfoModel;
+- (id)universalCoverLabelModel;
+- (id)flowBottomButtonsModelArray;
+- (id)blockCardButtonsModelArray;
+- (void)setFlowBottomButtonsModelArray:;
+- (void)setBlockCardButtonsModelArray:;
+- (void)setItemLabelInfoModel:;
+- (void)setUniversalCoverLabelModel:;
+- (void)setLandscapePreviewButtonsModelArray:;
+- (void)setLandscapeBlockButtonsModelArray:;
+- (id)blockCardInfoModel;
+- (void)setBlockCardInfoModel:;
+- (void)setLandMaskText:;
+- (void).cxx_destruct;
++ (id)propertyToModelClassInArrayMap;
++ (id)JSONKeyPathsByPropertyKey;
+@end

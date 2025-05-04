@@ -1,0 +1,31 @@
+@interface AWEAdGetAdFeedbackInfoResultModel : BDXBridgeModel
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString dislikeSource;
+@property (nonatomic) NSString dislikeExtra;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSNumber feedbackType;
+@property (nonatomic) NSNumber interactType;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString dislikeAdType;
+@property (nonatomic) NSString tag;
+- (void)setEnterMethod:;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)enterMethod;
+- (void)setCreativeID:;
+- (id)dislikeSource;
+- (void)setDislikeSource:;
+- (id)dislikeExtra;
+- (void)setDislikeExtra:;
+- (id)interactType;
+- (void)setInteractType:;
+- (id)dislikeAdType;
+- (void)setDislikeAdType:;
+- (id)feedbackType;
+- (id)tag;
+- (void)setFeedbackType:;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)creativeID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

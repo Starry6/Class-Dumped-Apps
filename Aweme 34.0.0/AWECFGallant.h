@@ -1,0 +1,31 @@
+@interface AWECFGallant : NSObject
+@property (nonatomic) NSURL nsurl;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString product;
+@property (nonatomic) NSString business;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString parameters;
+- (void)setNsurl:;
+- (id)nsurl;
+- (BOOL)isStartScheme;
+- (BOOL)isCloseScheme;
+- (BOOL)isFetchScheme;
+- (id)toNSURL;
+- (id)initWithScheme:product:business:action:parameters:;
+- (id)initWithProduct:business:action:parameters:;
+- (id)scheme;
+- (id)parameters;
+- (id)action;
+- (void).cxx_destruct;
+- (id)business;
+- (id)product;
+- (id)initWithNSURL:;
+- (BOOL)canHandle;
++ (id)DYCURLWithNSURL:;
++ (id)startDYCURL;
++ (id)closeDYCURL;
++ (id)fetchDYCURL;
++ (id)DYCURLWithProduct:business:action:parameters:;
++ (id)scheme;
++ (BOOL)canHandleURL:;
+@end

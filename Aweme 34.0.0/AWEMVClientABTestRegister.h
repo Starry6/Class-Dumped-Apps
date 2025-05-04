@@ -1,0 +1,38 @@
+@interface AWEMVClientABTestRegister : NSObject
+- (id)aAWEFeedModuleServiceDOUYINJXAdapter;
++ (BOOL)clearMemoryWhenEnteringBackground;
++ (BOOL)shouldUseWeakMemoryCache;
++ (double)diskSizeLimit;
++ (double)diskTrimmingRate;
++ (double)diskAgeLimit;
++ (void)_aweLazyRegisterStaticLoad;
++ (Class)aAWEFeedModuleServiceDOUYINJXAdapterClass;
++ (long long)maxUnconsumedItemCount;
++ (long long)minUnconsumedScreenCount;
++ (BOOL)scrollVelocityDetectEnabled;
++ (BOOL)innerCacheEnabledWithExposure:;
++ (BOOL)enableCoverAndAvatarOptions;
++ (unsigned long long)avatarImageOptions;
++ (BOOL)autoReloadFailedCoverEnabledWithExposure:;
++ (BOOL)innerPreLoadMoreOptEnabled;
++ (long long)innerPreLoadMoreCount;
++ (BOOL)diskImageCacheOptEnabled;
++ (BOOL)fastLoadMoreEnabledWithExposure:;
++ (BOOL)memoryImageCacheOptEnabled;
++ (long long)cacheSeparatedMode;
++ (double)smallImageMemorySizeLimit;
++ (unsigned long long)imageSizeThresholdWillBeIgnored;
++ (double)largeImageMemorySizeLimit;
++ (unsigned long long)largeImageSizeThreshold;
++ (BOOL)shouldUseCustomImageCache;
++ (long long)innerCacheCount;
++ (id)refreshUseUnconsumedDataConfig;
++ (BOOL)preloadCoverAfterLoadMore;
++ (BOOL)smartLoadMoreEnabledWithExposure:;
++ (BOOL)preloadIgnoreDecode;
++ (unsigned long long)coverImageOptions;
++ (long long)multiSectionCoverPreloadCount;
++ (BOOL)enableSwitchNetRegisterPlugin;
++ (BOOL)enableSwitchNetWithExposure:;
++ (long long)fastLoadMoreBufferSize;
+@end

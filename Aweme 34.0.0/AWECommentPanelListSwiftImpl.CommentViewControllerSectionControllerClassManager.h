@@ -1,0 +1,2 @@
+@interface AWECommentPanelListSwiftImpl.CommentViewControllerSectionControllerClassManager : _TtCs12_SwiftObject
+@end

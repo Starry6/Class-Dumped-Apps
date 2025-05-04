@@ -1,0 +1,34 @@
+@interface AWECutSameGamePlayConfig : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString algorithm;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSArray resourceTypes;
+@property (nonatomic) Q outputType;
+@property (nonatomic) NSString config;
+@property (nonatomic) BOOL isReshape;
+@property (nonatomic) NSString videoResourceID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setResourceTypes:;
+- (BOOL)isReshape;
+- (void)setIsReshape:;
+- (id)videoResourceID;
+- (void)setVideoResourceID:;
+- (void)setConfig:;
+- (id)algorithm;
+- (id)icon;
+- (id)config;
+- (void)setAlgorithm:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (void)setOutputType:;
+- (unsigned long long)outputType;
+- (id)resourceTypes;
++ (id)outputTypeJSONTransformer;
++ (id)JSONTransformerForKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

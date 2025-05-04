@@ -1,0 +1,33 @@
+@interface AWEIMCacheableImageRenderModel : NSObject
+@property (nonatomic) Q renderType;
+@property (nonatomic) q contentMode;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString imageType;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) @? imageBlock;
+@property (nonatomic) NSURL url;
+@property (nonatomic) UIImage placeholder;
+@property (nonatomic) BOOL disableDownsample;
+@property (nonatomic) NSString cacheName;
+- (unsigned long long)renderType;
+- (id)imageBlock;
+- (void)setImageBlock:;
+- (BOOL)disableDownsample;
+- (void)setDisableDownsample:;
+- (id)filePath;
+- (id)image;
+- (void)setUrl:;
+- (void)setImageType:;
+- (void)setImage:;
+- (void)setRenderType:;
+- (void)setPlaceholder:;
+- (void)setFilePath:;
+- (id)placeholder;
+- (void).cxx_destruct;
+- (id)cacheName;
+- (id)url;
+- (long long)contentMode;
+- (id)imageType;
+- (void)setContentMode:;
+- (void)setCacheName:;
+@end

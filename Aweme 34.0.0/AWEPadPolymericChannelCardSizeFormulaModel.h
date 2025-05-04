@@ -1,0 +1,34 @@
+@interface AWEPadPolymericChannelCardSizeFormulaModel : MTLModel
+@property (nonatomic) q cardType;
+@property (nonatomic) q evaluationType;
+@property (nonatomic) q cardNumPortrait;
+@property (nonatomic) q cardNumLandscape;
+@property (nonatomic) q edgePadding;
+@property (nonatomic) q cardPadding;
+@property (nonatomic) double cardWidthPercent;
+@property (nonatomic) double cardHeightPercent;
+@property (nonatomic) double cardExtraHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)cardPadding;
+- (long long)cardNumPortrait;
+- (long long)cardNumLandscape;
+- (double)cardHeightPercent;
+- (double)cardExtraHeight;
+- (void)setCardNumPortrait:;
+- (void)setCardNumLandscape:;
+- (void)setCardPadding:;
+- (double)cardWidthPercent;
+- (void)setCardWidthPercent:;
+- (void)setCardHeightPercent:;
+- (void)setCardExtraHeight:;
+- (void)setEvaluationType:;
+- (long long)evaluationType;
+- (void)setEdgePadding:;
+- (long long)edgePadding;
+- (long long)cardType;
+- (void)setCardType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

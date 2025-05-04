@@ -1,0 +1,35 @@
+@interface AWEOfflineVideoCenterModel : NSObject
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSLock cellLock;
+@property (nonatomic) NSMutableArray downloadingModels;
+@property (nonatomic) NSMutableArray downloadedModels;
+- (void)addDownloadModel:;
+- (id)downloadingModels;
+- (void)setDownloadingModels:;
+- (void)mergeGroupModelIfNeededWithSingleResourceModels:;
+- (id)transferToCellModels;
+- (void)deleteDownloadedResourceModel:;
+- (void)deleteDownloadingResourceModel:;
+- (void)clearAllDownloading;
+- (void)deleteInvalidVideoWithItemIDs:;
+- (id)allDownloadingModels;
+- (BOOL)mergeMixGroupIfNeededWithModel:;
+- (BOOL)mergeAuthorGroupIfNeededWithModel:;
+- (id)cellLock;
+- (id)allDownloadedAwemeModels;
+- (double)cacheSizeMB;
+- (BOOL)cantainsModel:;
+- (id)allDownloadAwemeModels;
+- (long long)downloadedMixCount;
+- (long long)downloadedAuthorCount;
+- (void)setDownloadedModels:;
+- (void)setCellLock:;
+- (void)setLock:;
+- (void)encodeWithCoder:;
+- (id)lock;
+- (void)clear;
+- (BOOL)isEmpty;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)downloadedModels;
+@end

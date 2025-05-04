@@ -1,0 +1,36 @@
+@interface AWEFeedLiveTabRefreshComponent : AWEFeedLiveTabBaseComponent
+@property (nonatomic) double autoRefreshStartTime;
+@property (nonatomic) double lastEnterTabTime;
+@property (nonatomic) NSTimer autoRefreshTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedLiveTabDidEnter:;
+- (void)feedLiveTabDidLeave;
+- (void)feedLiveTabWillAppear:;
+- (void)feedLiveTabDidDisappear;
+- (void)feedLiveTabDidEnterBackground;
+- (void)feedLiveTabDidEnterForeground;
+- (void)feedLiveTabAllPageRefresh;
+- (void)bindService;
+- (double)heightOfComponent;
+- (void)setLastEnterTabTime:;
+- (void)setAutoRefreshStartTime:;
+- (void)p_autoRefreshLocalComponent:;
+- (void)p_refreshAllLiveTabPageIfNeed;
+- (void)p_autoRefreshTimerInvalid;
+- (void)p_refreshLiveTabComponentsIfNeed:;
+- (double)lastEnterTabTime;
+- (void)p_resetRefreshConfig;
+- (void)p_requestLocalComponentsWithCompletion:;
+- (id)p_addRequestParams;
+- (void)p_clearRequestParams;
+- (double)autoRefreshStartTime;
+- (void)setAutoRefreshTimer:;
+- (id)autoRefreshTimer;
+- (id)init;
+- (double)topPadding;
+- (id)contentView;
+- (void).cxx_destruct;
+@end

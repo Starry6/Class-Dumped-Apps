@@ -1,0 +1,30 @@
+@interface AWEAwemeLongPressFunctionParams : NSObject
+@property (nonatomic) q modelType;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary extraLogDict;
+@property (nonatomic) NSDictionary customParams;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setReferString:;
+- (id)enterFrom;
+- (void)setCustomParams:;
+- (id)customParams;
+- (void)setExtraLogDict:;
+- (id)extraLogDict;
+- (long long)modelType;
+- (void)setModelType:;
+- (void).cxx_destruct;
+- (void)setActionBlock:;
+- (id)actionBlock;
++ (id)makeWithModelType:awemeModel:referString:extraLog:customParams:enterFrom:actionBlock:;
++ (id)makeWithModelType:awemeModel:referString:extraLog:customParams:actionBlock:;
+@end

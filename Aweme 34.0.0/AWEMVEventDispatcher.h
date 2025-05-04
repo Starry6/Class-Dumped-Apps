@@ -1,0 +1,31 @@
+@interface AWEMVEventDispatcher : NSObject
+@property (nonatomic) AWEMVChannelPageContext context;
+@property (nonatomic) NSPointerArray eventObserversArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)controllerArrayBySelector:;
+- (id)eventObserversArray;
+- (void)setEventObserversArray:;
+- (void)landscapeFeedViewController:awemeModel:didChangePlaybackToAction:;
+- (void)landscapeFeedViewControllerWillStartNextLoop:;
+- (void)didEnterMVChannel;
+- (void)didLeaveMVChannel;
+- (void)channelVideoViewController:awemeModel:playerPlayTime:totalPlayTime:canPlayTime:totalTime:;
+- (void)channelVideoViewController:awemeModel:didChangePlaybackToAction:;
+- (void)channelVideoWillStartNextLoop:;
+- (void)landscapeFeedViewControllerDidEnter:;
+- (void)landscapeFeedViewControllerDidExit;
+- (void)landscapeFeedViewController:awemeModel:playerPlayTime:totalPlayTime:canPlayTime:totalTime:;
+- (void)relatedVideoViewControllerDidEnter:currentAwemeModel:;
+- (void)relatedVideoViewControllerDidExit;
+- (void)relatedVideoViewController:awemeModel:didChangePlaybackToAction:;
+- (void)relatedVideoViewControllerWillStartNextLoop:;
+- (void)largeBannerCell:didLoadCoverImage:url:error:duration:;
+- (void)registerEventObserver:;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

@@ -1,0 +1,37 @@
+@interface AWEMateListContainerViewController : AWEBaseListViewController
+@property (nonatomic) BOOL isSearchBarEditing;
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) DUXVacantView netErrorVacantView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)listDidReloadDataWithCollectionView:;
+- (BOOL)configWithRouterParamDict:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (void)customLayoutCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (void)hideErrorView;
+- (void)bindViewModel;
+- (void)bindEvent;
+- (void)perf_setExtra;
+- (void)trackSearchFriendsWithKeyword:;
+- (id)netErrorVacantView;
+- (void)setNetErrorVacantView:;
+- (void)setIsSearchBarEditing:;
+- (void)updateSearchBarPlaceholder;
+- (BOOL)isSearchBarEditing;
+- (void)reloadIndexView:;
+- (BOOL)enableSimpleMateListStyle;
+- (void)setLoadingView:;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void)scrollViewWillBeginDragging:;
+- (void).cxx_destruct;
+- (void)showLoadingView;
+- (void)showErrorView;
+- (void)setupCollectionView:;
+- (void)hideLoadingView;
+@end

@@ -1,0 +1,32 @@
+@interface AWEInteractionAppointmentStickerInfoModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) double onlineTime;
+@property (nonatomic) q type;
+@property (nonatomic) NSString appointmentId;
+@property (nonatomic) q appointmentType;
+@property (nonatomic) NSString stickerExtraInfo;
+@property (nonatomic) q status;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)appointmentId;
+- (void)setAppointmentId:;
+- (double)onlineTime;
+- (void)setOnlineTime:;
+- (id)stickerExtraInfo;
+- (long long)appointmentType;
+- (void)setAppointmentType:;
+- (void)setStickerExtraInfo:;
+- (void)setStatus:;
+- (long long)type;
+- (void)setType:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)title;
+- (void)setTitle:;
+- (void)setButtonText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

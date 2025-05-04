@@ -1,0 +1,35 @@
+@interface AWECommentPublishVideoModel : NSObject
+@property (nonatomic) NSString imageSource;
+@property (nonatomic) q mediaType;
+@property (nonatomic) NSString videoFilePath;
+@property (nonatomic) UIImage coverImage;
+@property (nonatomic) PHLivePhoto livePhoto;
+@property (nonatomic) NSString vids;
+@property (nonatomic) BOOL isLivePhoto;
+@property (nonatomic) AVAsset videoAvAsset;
+@property (nonatomic) BOOL isLiveClose;
+@property (nonatomic) AWECommentImageSourceInfoModel imageSourceInfo;
+- (void)setCoverImage:;
+- (id)imageSourceInfo;
+- (void)setImageSourceInfo:;
+- (id)videoFilePath;
+- (void)setVideoFilePath:;
+- (id)videoAvAsset;
+- (void)setVideoAvAsset:;
+- (id)vids;
+- (void)setVids:;
+- (BOOL)isLiveClose;
+- (void)setIsLiveClose:;
+- (void)setMediaType:;
+- (id)init;
+- (id)imageSource;
+- (long long)mediaType;
+- (id)livePhoto;
+- (void)setIsLivePhoto:;
+- (void)setImageSource:;
+- (void).cxx_destruct;
+- (BOOL)isLivePhoto;
+- (void)setLivePhoto:;
+- (id)coverImage;
+- (id)imageContent;
+@end

@@ -1,0 +1,31 @@
+@interface AWESearchChallengeModel : AWEBaseApiModel
+@property (nonatomic) AWEChallengeModel challenge;
+@property (nonatomic) AWEDcmInfoModel dcmInfoModel;
+@property (nonatomic) NSArray hightlightPositions;
+@property (nonatomic) AWEChallengeInterveneAdModel adData;
+@property (nonatomic) NSArray videos;
+@property (nonatomic) AWEChallengeInterveneHotSpotInfoModel hotSpotInfo;
+- (id)diffIdentifier;
+- (BOOL)isEqualToDiffableObject:;
+- (id)dcmInfoModel;
+- (void)setDcmInfoModel:;
+- (id)hotSpotInfo;
+- (void)setHotSpotInfo:;
+- (id)hightlightPositions;
+- (void)setHightlightPositions:;
+- (unsigned long long)hash;
+- (id)challenge;
+- (id)adData;
+- (void)setChallenge:;
+- (void).cxx_destruct;
+- (void)setAdData:;
+- (BOOL)isEqual:;
+- (id)videos;
+- (void)setVideos:;
++ (id)challengeJSONTransformer;
++ (id)dcmInfoModelJSONTransformer;
++ (id)hotSpotInfoJSONTransformer;
++ (id)videosJSONTransformer;
++ (id)hightlightPositionsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

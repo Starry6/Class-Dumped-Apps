@@ -1,0 +1,34 @@
+@interface AWEMusicPlayerCoverView : UIView
+@property (nonatomic) BDImageView coverImageView;
+@property (nonatomic) UIView defaultContainer;
+@property (nonatomic) AWEMusicStreamingShadowView shadowView;
+@property (nonatomic) UIImageView defaultImageView;
+@property (nonatomic) UILongPressGestureRecognizer longGestrue;
+@property (nonatomic) @? workItem;
+@property (nonatomic) <AWEMusicPlayerCoverViewDelegate> delegate;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)workItem;
+- (void)setWorkItem:;
+- (void)updateCoverImageUrl:;
+- (void)setDefaultContainer:;
+- (void)setDefaultImageView:;
+- (id)defaultImageView;
+- (void)showDefault;
+- (void)longTapped:;
+- (void)setLongGestrue:;
+- (id)longGestrue;
+- (void)showSuccess;
+- (void)trackWebCoverImageDownloadStatus:;
+- (id)delegate;
+- (id)shadowView;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setShadowView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (void)cancelBlock;
+- (id)defaultContainer;
+- (void)showError;
+@end

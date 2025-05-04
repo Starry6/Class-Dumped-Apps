@@ -1,0 +1,36 @@
+@interface AWELongVideoLandscapeHighLightEntranceView : UIView
+@property (nonatomic) UIView pointView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) DUXBaseImageView arrowIcon;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) BOOL isLock;
+@property (nonatomic) NSArray highLightList;
+@property (nonatomic) <AWELandscapeChapterEntranceDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pointView;
+- (void)setPointView:;
+- (BOOL)isLock;
+- (id)arrowIcon;
+- (void)setArrowIcon:;
+- (void)setIsLock:;
+- (id)highLightList;
+- (void)updateWithCurrentTime:;
+- (void)updateLockStatus:;
+- (void)trackShowChapterEntranceWithState:context:;
+- (void)trackShowChapterEntranceOverWithContext:;
+- (void)trackClickChapterEntranceWithState:context:;
+- (void)handleClickChapterEntrance:;
+- (void)setModel:;
+- (id)init;
+- (id)delegate;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)updateWithModel:;
+@end

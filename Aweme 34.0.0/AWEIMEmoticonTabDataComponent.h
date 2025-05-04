@@ -1,0 +1,31 @@
+@interface AWEIMEmoticonTabDataComponent : AWEIMComponentBase
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray listData;
+@property (nonatomic) <AWEIMEmoticonPanelSyncComponent> syncComponent;
+@property (nonatomic) BOOL didFirstAppear;
+@property (nonatomic) BOOL lastContainerHidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (id)syncComponent;
+- (void)setSyncComponent:;
+- (id)listData;
+- (void)setListData:;
+- (void)containerViewDidChangeHidden:;
+- (BOOL)didFirstAppear;
+- (void)setDidFirstAppear:;
+- (void)updateWithListData:;
+- (BOOL)lastContainerHidden;
+- (void)willDisplayCell:atIndex:isByContainerHidden:;
+- (void)setLastContainerHidden:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+@end

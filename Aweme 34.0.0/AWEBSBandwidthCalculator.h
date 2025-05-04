@@ -1,0 +1,30 @@
+@interface AWEBSBandwidthCalculator : NSObject
+@property (nonatomic) BOOL ladderSelectionPredictType;
+@property (nonatomic) double safeCacheDuration;
+@property (nonatomic) double maxReservedDurationMs;
+@property (nonatomic) q targetCount;
+@property (nonatomic) q firstFeedCntThreshold;
+@property (nonatomic) double maxVideoDuration;
+@property (nonatomic) double curVideoDuration;
+@property (nonatomic) BOOL enableParamFix;
+@property (nonatomic) q recordCount;
+- (double)maxVideoDuration;
+- (long long)targetCount;
+- (void)fillbitrateSelectRecordWithModel:bitrate:offset:;
+- (double)bandWidthCalculatorByModels:fromIndex:bitrateModel:selectingModel:;
+- (long long)firstFeedCntThreshold;
+- (BOOL)ladderSelectionPredictType;
+- (double)maxReservedDurationMs;
+- (double)getPlayedDurationFromModel:;
+- (void)setFirstFeedCntThreshold:;
+- (BOOL)enableParamFix;
+- (void)initBSFactorCalculateModel:BSModel:lastCacheExist:;
+- (id)getPlayListValue:;
+- (void)setCurVideoDuration:;
+- (double)safeCacheDuration;
+- (double)curVideoDuration;
+- (void)setEnableParamFix:;
+- (id)init;
+- (long long)recordCount;
++ (id)sharedInstance;
+@end

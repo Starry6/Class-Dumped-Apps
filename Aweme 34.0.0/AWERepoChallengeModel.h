@@ -1,0 +1,38 @@
+@interface AWERepoChallengeModel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <ACCChallengeModelProtocol> challenge;
+@property (nonatomic) NSData challengeJson;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <ACCPublishRepository> repoDeprecated;
+- (id)repoDeprecated;
+- (void)setRepoDeprecated:;
+- (id)challengeJson;
+- (void)setChallengeJson:;
+- (id)acc_publishRequestParams:;
+- (id)initWithDraft:;
+- (void)saveWithDraft:;
+- (void)draftWillBeSavedWithID:;
+- (void)modelDidRetrievedFromDraftWithID:;
+- (id)acc_referExtraParams;
+- (id)allChallengeNameArray;
+- (id)createWithJson:;
+- (id)allChallengeIdArray;
+- (id)challenge;
+- (void)setChallenge:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

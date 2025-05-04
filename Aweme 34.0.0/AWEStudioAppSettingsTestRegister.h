@@ -1,0 +1,2 @@
+@interface AWEStudioAppSettingsTestRegister : NSObject
+@end

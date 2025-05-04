@@ -1,0 +1,34 @@
+@interface AWEUserPostsWeakRefreshModel : MTLModel
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSDictionary logPb;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSNumber playCount;
+@property (nonatomic) NSNumber diggCount;
+@property (nonatomic) NSString descriptionString;
+@property (nonatomic) AWECreatorDiagnoseModel creatorDiagnoseModel;
+@property (nonatomic) AWECodeGenPostReachModuleModel postReachModule;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)diggCount;
+- (void)setExtra:;
+- (void)setDiggCount:;
+- (void)setLogPb:;
+- (id)logPb;
+- (id)creatorDiagnoseModel;
+- (void)setCreatorDiagnoseModel:;
+- (id)postReachModule;
+- (void)setPostReachModule:;
+- (id)itemID;
+- (void)setItemID:;
+- (void)setDescriptionString:;
+- (id)descriptionString;
+- (id)extra;
+- (id)playCount;
+- (void).cxx_destruct;
+- (void)setPlayCount:;
++ (id)postReachModuleJSONAdapter;
++ (id)creatorDiagnoseModelJSONAdapter;
++ (id)JSONKeyPathsByPropertyKey;
+@end

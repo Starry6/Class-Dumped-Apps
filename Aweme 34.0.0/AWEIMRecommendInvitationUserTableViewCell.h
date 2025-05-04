@@ -1,0 +1,34 @@
+@interface AWEIMRecommendInvitationUserTableViewCell : AWEIMSystemMessageTableViewCell
+@property (nonatomic) UIView backGrayView;
+@property (nonatomic) UILabel inviteTitleLabel;
+@property (nonatomic) AWEIMRecommendInvitationUserDetailView invitationUserDetailView;
+@property (nonatomic) UIButton inviteButton;
+@property (nonatomic) BOOL cardShowHasTracked;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__createComponents;
+- (void)__layoutComponents;
+- (id)inviteButton;
+- (void)configWithMessage:;
+- (id)invitationUserDetailView;
+- (void)__configInviteButtonWithMessage:;
+- (BOOL)__canInviteUserRecommendUserWhenTapMsg:needSetTime:;
+- (void)__enableInviteButton:;
+- (id)__isFriendWithUserID:userManager:;
+- (id)__inviteFriends:;
+- (id)__inviteNotFriends:;
+- (BOOL)cardShowHasTracked;
+- (void)setCardShowHasTracked:;
+- (void)__inviteBtnTapped:;
+- (id)backGrayView;
+- (id)inviteTitleLabel;
+- (id)__iesMsgWithIMMsg:;
+- (void)recommendUserDetailView:selectedUserChanged:;
+- (void)trackGroupMemberInvitationCardShow;
+- (void).cxx_destruct;
+- (void)setupUI;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

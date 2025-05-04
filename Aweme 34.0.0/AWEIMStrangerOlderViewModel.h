@@ -1,0 +1,2 @@
+@interface AWEIMStrangerOlderViewModel : AWEIMStrangerMainViewModel
+@end

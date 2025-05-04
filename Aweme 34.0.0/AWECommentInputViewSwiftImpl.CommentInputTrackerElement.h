@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputTrackerElement : _TtCs12_SwiftObject
+@end

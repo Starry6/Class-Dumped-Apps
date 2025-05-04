@@ -1,0 +1,35 @@
+@interface AWEShowMonetizeAnnieXCardTrackPlugin : NSObject
+@property (nonatomic) AWEShowMonetizeAnnieXCardTrackInfo trackInfo;
+@property (nonatomic) NSTimer loadTimeoutTimer;
+@property (nonatomic) @? trackParamHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didFinishLoadWithURL:;
+- (void)container:didLoadFailedWithUrl:error:;
+- (void)container:didStartLoadingFailedWithUrl:;
+- (void)container:didFetchedResource:error:;
+- (void)container:didRecieveError:;
+- (id)trackParamHandler;
+- (void)setTrackParamHandler:;
+- (void)releaseTimeoutTimer;
+- (id)loadTimeoutTimer;
+- (void)setLoadTimeoutTimer:;
+- (void)monetizeAnnieXCardWillLoad:;
+- (void)monetizeAnnieXCardBizDidFinishLoad:params:;
+- (void)monetizeAnnieXCardWillBizLoad:;
+- (BOOL)enablePreloadWithAnnieXCard:;
+- (void)handleEventForWillLoad;
+- (void)trackPaidContentBlockOrderPageReady;
+- (void)trackClickOrderPageStatusForLoadSuccessWithExtraParams:;
+- (void)trackPaidContentBlockOrderPageFailWithReason:failInfo:extraParams:;
+- (void)trackClickOrderPageStatusForLoadError:extraParams:;
+- (void)trackClickOrderPageStatusWithExtraParams:;
+- (id)initWithTrackParamHandler:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setTrackInfo:;
+- (id)trackInfo;
+- (void)createTimeoutTimer;
+@end

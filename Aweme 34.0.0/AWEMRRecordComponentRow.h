@@ -1,0 +1,30 @@
+@interface AWEMRRecordComponentRow : NSObject
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) double timeOfFirstShow;
+@property (nonatomic) double timeOfLastShow;
+@property (nonatomic) q showCount;
+@property (nonatomic) q consumeCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)secUid;
+- (void)setSecUid:;
+- (void)setTimeOfFirstShow:;
+- (void)setTimeOfLastShow:;
+- (long long)consumeCount;
+- (void)setConsumeCount:;
+- (id)jsonStringPrettyEncoded;
+- (double)timeOfFirstShow;
+- (double)timeOfLastShow;
+- (id)formatedStringWithTimeInterval:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (void)setComponentID:;
+- (id)componentID;
+- (void)setShowCount:;
+- (long long)showCount;
+@end

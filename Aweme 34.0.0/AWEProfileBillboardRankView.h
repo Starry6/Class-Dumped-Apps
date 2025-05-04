@@ -1,0 +1,31 @@
+@interface AWEProfileBillboardRankView : UIView
+@property (nonatomic) double scaleRate;
+@property (nonatomic) {CGSize=dd} rankViewSize;
+@property (nonatomic) UILabel rankTitleLabel;
+@property (nonatomic) UIImageView crownImageView;
+@property (nonatomic) UIImageView rankArrowImageView;
+@property (nonatomic) UIView rankBackgroundView;
+@property (nonatomic) CAGradientLayer backgroundGradientLayer;
+@property (nonatomic) AWEProfileRankModel rankModel;
+- (id)rankModel;
+- (void)setRankModel:;
+- (id)rankTitleLabel;
+- (id)crownImageView;
+- (void)setCrownImageView:;
+- (void)setRankTitleLabel:;
+- (double)scaleRate;
+- (void)setScaleRate:;
+- (id)rankBackgroundView;
+- (void)configButtonIconWith:;
+- (id)titleColorImageWith:colorEnd:rect:;
+- (id)rankArrowImageView;
+- (void)setRankViewSize:;
+- (id)initWithFrame:scaleRate:;
+- (id)rankViewSize;
+- (void)setRankArrowImageView:;
+- (void)setRankBackgroundView:;
+- (void).cxx_destruct;
+- (id)backgroundGradientLayer;
+- (void)setBackgroundGradientLayer:;
+- (void)setupSubviews;
+@end

@@ -1,0 +1,31 @@
+@interface AWECustomWebImageManager : NSObject
+@property (nonatomic) HMDThreadSafeArray cacheNames;
+@property (nonatomic) NSMutableDictionary reuseCacheImageInfoDictionary;
+@property (nonatomic) BOOL imageResourcePersistenceFlag;
+- (id)getCacheImageInfoWithIdentificationKey:;
+- (id)getRegisteredCacheName:;
+- (void)stagingImageInfo:cacheName:identificationKey:;
+- (void)registerCustomWebImage:;
+- (void)removeCacheForName:;
+- (void)enableImageResourcePersistence:;
+- (id)getRegisterBDImageCache:;
+- (void)removeCustomMemoryCache;
+- (void)removeCustomDiskCache;
+- (void)removeMemoryCacheForName:;
+- (void)removeCacheImageInfoWithIdentificationKey:;
+- (void)setCacheNames:;
+- (void)setReuseCacheImageInfoDictionary:;
+- (id)cacheNames;
+- (void)getCustomBDWebImageManager:cacheName:;
+- (BOOL)imageResourcePersistenceFlag;
+- (void)updateBDWebImageConfig:cacheName:;
+- (void)removeDiskCacheForName:;
+- (BOOL)isRegisteredCacheName:;
+- (void)setImageResourcePersistenceFlag:;
+- (id)reuseCacheImageInfoDictionary;
+- (void)updateCustomWebImageConfig:cacheName:;
+- (unsigned long long)totalCustomDiskCost;
+- (void).cxx_destruct;
++ (void)runOnceForLazyRegister;
++ (id)sharedInstance;
+@end

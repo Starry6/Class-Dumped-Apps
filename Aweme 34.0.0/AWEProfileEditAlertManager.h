@@ -1,0 +1,30 @@
+@interface AWEProfileEditAlertManager : NSObject
+@property (nonatomic) NSString path;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)alertIDForEvent:;
+- (long long)alertPriorityForEvent:;
+- (BOOL)canShowWithContext:;
+- (void)showWithContext:onClose:;
+- (void)onAlertCanceledWithContext:;
+- (id)enterFrom;
+- (BOOL)satifiedInteval;
+- (id)titleSuffix;
+- (BOOL)needNickname;
+- (BOOL)needAvatar;
+- (long long)sceneForPath:;
+- (void)updateUnFillDate;
+- (void)updateUnEditTimes;
+- (long long)unEditTimes;
+- (id)lastUnFillDate;
+- (id)path;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setPath:;
+- (id)titlePrefix;
++ (void)addAlertWithPath:enterFrom:event:;
+@end

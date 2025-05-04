@@ -1,0 +1,30 @@
+@interface AWEMessageReachRequestParamModel : NSObject
+@property (nonatomic) NSDictionary reqParam;
+@property (nonatomic) NSDictionary triggerExtra;
+@property (nonatomic) NSArray scenes;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString source;
+@property (nonatomic) double eventVersion;
+@property (nonatomic) @? triggerCompletion;
+@property (nonatomic) NSDictionary channelParamsDict;
+@property (nonatomic) BOOL isFromRetry;
+- (void)setExtra:;
+- (id)channelParamsDict;
+- (void)setReqParam:;
+- (BOOL)isFromRetry;
+- (id)triggerCompletion;
+- (void)setChannelParamsDict:;
+- (void)setIsFromRetry:;
+- (id)reqParam;
+- (id)triggerExtra;
+- (void)setTriggerExtra:;
+- (void)setTriggerCompletion:;
+- (id)scenes;
+- (id)extra;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (double)eventVersion;
+- (void)setEventVersion:;
+- (void)setScenes:;
+@end

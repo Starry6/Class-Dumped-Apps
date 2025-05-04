@@ -1,0 +1,35 @@
+@interface AWELSBarWatchVideoLaterCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIView coverContainerView;
+@property (nonatomic) DUXBaseImageView coverImageView;
+@property (nonatomic) AWELSBarWatchVideoLaterProgressView progressView;
+@property (nonatomic) UIView infoContainerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel watchTimeLabel;
+@property (nonatomic) DUXBaseImageView authorImageView;
+@property (nonatomic) UILabel authorLabel;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)setAuthorLabel:;
+- (id)authorLabel;
+- (void)updatePlayTime:;
+- (id)infoContainerView;
+- (void)setInfoContainerView:;
+- (id)authorImageView;
+- (void)setAuthorImageView:;
+- (id)coverContainerView;
+- (id)watchTimeLabel;
+- (void)updatePlayProgress:;
+- (void)setCoverContainerView:;
+- (void)setWatchTimeLabel:;
+- (void)updateWithModel:useRecordTime:;
+- (id)progressView;
+- (id)initWithFrame:;
+- (void)setProgressView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)updateWithModel:;
++ (double)titleHeightForAwemeModel:width:;
++ (id)titleWithAwemeModel:;
+@end

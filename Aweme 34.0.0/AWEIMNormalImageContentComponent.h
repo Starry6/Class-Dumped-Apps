@@ -1,0 +1,33 @@
+@interface AWEIMNormalImageContentComponent : AWEIMFlexComponent
+@property (nonatomic) q vmState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q scene;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)onCellWillRenderForCurrentComponent;
+- (long long)vmState;
+- (void)setVmState:;
+- (id)contentMD5;
+- (void)p_bindToVM;
+- (BOOL)p_needResizeImage:targetSize:;
+- (void)trackOpenPlatformEvent:;
+- (void)trackWithEventName:;
+- (void)didTapCoverAction;
+- (void)configMessage;
+- (id)specializedViewModel;
+- (void)trackCellClickForOpenPlatform;
+- (void)reloadImageFromVM;
+- (id)p_sizeForReduceResolution;
+- (void)p_clipAndShowImage:;
+- (void)p_clipAndShowImage:thenCache:;
+- (BOOL)isImageUnavailable;
+- (id)p_clippedImageWithImage:size:corners:;
+- (void)trackWillDisplayCellForOpenPlatform;
+- (id)displayMessage;
+- (void)setScene:;
+- (long long)scene;
+- (id)displayImage;
+@end

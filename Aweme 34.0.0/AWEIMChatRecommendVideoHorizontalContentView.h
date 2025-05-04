@@ -1,0 +1,37 @@
+@interface AWEIMChatRecommendVideoHorizontalContentView : AWEIMChatRecommendVideoContentView
+@property (nonatomic) AWEIMChatRecommendVideoHorizontalFlowLayout flowLayout;
+@property (nonatomic) NSIndexPath presentingIndexPath;
+@property (nonatomic) DUXButton sendButton;
+@property (nonatomic) DUXButton gotoChatButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (void)showGotoChatButton;
+- (id)centerCell;
+- (void)awemeDidSentAtIndexPath:;
+- (double)cellRadius;
+- (void)p_sendButtonClicked:;
+- (void)p_gotoChatButtonClicked:;
+- (void)setGotoChatButton:;
+- (void)setPresentingIndexPath:;
+- (id)p_getCenterIndexPath;
+- (id)presentingIndexPath;
+- (void)p_didEndScroll;
+- (id)gotoChatButton;
+- (void)showSendButton;
+- (void)flowLayout:willAutoScrollToIndexPath:;
+- (void)didBecomeActive;
+- (void)didResignActive;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (BOOL)scrollToIndexPath:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (Class)cellClass;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (id)flowLayout;
+- (void)setFlowLayout:;
+- (id)sendButton;
+- (void)setSendButton:;
+@end

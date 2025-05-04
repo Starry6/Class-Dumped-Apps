@@ -1,0 +1,35 @@
+@interface AWESearchHotSpotDataManager : NSObject
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString sentenceId;
+@property (nonatomic) NSNumber pageSize;
+@property (nonatomic) NSNumber offset;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) NSMutableArray commentList;
+@property (nonatomic) NSMutableArray realCommentList;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) BOOL abortFlag;
+- (void)loadMoreWithCompletion:;
+- (id)sentenceId;
+- (void)setSentenceId:;
+- (id)commentList;
+- (void)setCommentList:;
+- (BOOL)isRequesting;
+- (void)setIsRequesting:;
+- (void)setAbortFlag:;
+- (BOOL)abortFlag;
+- (id)realCommentList;
+- (void)setRealCommentList:;
+- (id)init;
+- (void)setOffset:;
+- (id)offset;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (id)pageSize;
+- (id)keyword;
+- (void)setKeyword:;
+- (void)setPageSize:;
+- (void)updateWithModel:;
++ (void)validateHotSpotDiscussionComment:itemID:completion:;
++ (id)__getCommentExpectedSizeInfo;
+@end

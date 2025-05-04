@@ -1,0 +1,37 @@
+@interface AWEUGPushGuideIncentiveModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString negativeBtnText;
+@property (nonatomic) NSString positiveBtnText;
+@property (nonatomic) NSString incentiveTaskToken;
+@property (nonatomic) q incentiveTaskExpireTime;
+@property (nonatomic) NSString incentiveTaskID;
+@property (nonatomic) NSString incentiveActivityID;
+@property (nonatomic) NSString incentiveBackground;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString incentiveTitleIcon;
+- (id)incentiveBackground;
+- (id)negativeBtnText;
+- (id)positiveBtnText;
+- (id)incentiveTitleIcon;
+- (void)setNegativeBtnText:;
+- (void)setPositiveBtnText:;
+- (id)incentiveTaskToken;
+- (void)setIncentiveTaskToken:;
+- (long long)incentiveTaskExpireTime;
+- (void)setIncentiveTaskExpireTime:;
+- (id)incentiveTaskID;
+- (void)setIncentiveTaskID:;
+- (id)incentiveActivityID;
+- (void)setIncentiveActivityID:;
+- (void)setIncentiveBackground:;
+- (void)setIncentiveTitleIcon:;
+- (id)schema;
+- (id)content;
+- (void)setSchema:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)initWithDictionary:;
+@end

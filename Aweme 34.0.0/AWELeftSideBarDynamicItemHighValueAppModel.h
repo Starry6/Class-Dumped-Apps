@@ -1,0 +1,33 @@
+@interface AWELeftSideBarDynamicItemHighValueAppModel : MTLModel
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString buttonMsg;
+@property (nonatomic) NSString buttonSchema;
+@property (nonatomic) NSString highValueExtra;
+@property (nonatomic) BOOL undertakeInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buttonSchema;
+- (void)setButtonSchema:;
+- (id)buttonMsg;
+- (void)setButtonMsg:;
+- (id)highValueExtra;
+- (void)setHighValueExtra:;
+- (BOOL)undertakeInfo;
+- (void)setUndertakeInfo:;
+- (id)aweAppPresenterAction_key;
+- (id)icon;
+- (id)appId;
+- (void)setDesc:;
+- (id)desc;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setAppName:;
+- (id)appName;
+- (void)setAppId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

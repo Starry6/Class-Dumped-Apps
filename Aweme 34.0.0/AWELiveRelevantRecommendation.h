@@ -1,0 +1,31 @@
+@interface AWELiveRelevantRecommendation : AWEBaseApiModel
+@property (nonatomic) q relevantType;
+@property (nonatomic) q bottomBarCategory;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSString barTextPrefix;
+@property (nonatomic) NSString barTextPostfix;
+@property (nonatomic) AWELiveRelevantRecommendationVSInfo vsInfo;
+@property (nonatomic) NSArray liveRoomsInfo;
+@property (nonatomic) AWELiveRoomWhiteCategoryInfo whiteCategoryInfo;
+@property (nonatomic) BOOL hadShown;
+- (long long)bottomBarCategory;
+- (id)initWithRelevantRecommendation:;
+- (long long)relevantType;
+- (id)barTextPrefix;
+- (id)barTextPostfix;
+- (id)vsInfo;
+- (id)whiteCategoryInfo;
+- (void)setWhiteCategoryInfo:;
+- (void)setRelevantType:;
+- (void)setBottomBarCategory:;
+- (void)setBarTextPrefix:;
+- (void)setBarTextPostfix:;
+- (void)setVsInfo:;
+- (id)liveRoomsInfo;
+- (void)setLiveRoomsInfo:;
+- (BOOL)hadShown;
+- (void)setHadShown:;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+@end

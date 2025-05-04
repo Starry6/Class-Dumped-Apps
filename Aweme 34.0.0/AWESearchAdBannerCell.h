@@ -1,0 +1,36 @@
+@interface AWESearchAdBannerCell : UICollectionViewCell
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel searchMerchandiseModel;
+@property (nonatomic) UILabel adTagLabel;
+@property (nonatomic) AWEOriginalAdModel adModel;
+@property (nonatomic) BOOL isFromECommerce;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithModel:;
+- (id)adModel;
+- (void)setAdModel:;
+- (id)adTagLabel;
+- (BOOL)isFromECommerce;
+- (void)setIsFromECommerce:;
+- (id)searchMerchandiseModel;
+- (void)trackAdOtherShow;
+- (void)recordDidEndDisplaying;
+- (void)containerViewSingleTapGR:;
+- (void)trackWithLabel:;
+- (void)openPageWithAdTask;
+- (id)ironManURLWithAdModel:;
+- (id)ironManScene;
+- (id)commonParamsForTrack;
+- (void)setSearchMerchandiseModel:;
+- (void)p_configAdTagLabel;
+- (void)setAdTagLabel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)componentView;
+- (void)setupSubviews;
+- (void)updateWithViewModel:;
++ (double)heightForModel:containerWidth:;
++ (id)sizeWithViewModel:width:;
++ (id)identifier;
+@end

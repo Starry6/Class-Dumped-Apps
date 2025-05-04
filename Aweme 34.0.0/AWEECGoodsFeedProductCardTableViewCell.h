@@ -1,0 +1,30 @@
+@interface AWEECGoodsFeedProductCardTableViewCell : UITableViewCell
+@property (nonatomic) UIView<AWEECGoodsFeedProductCardViewProtocol> productCardView;
+@property (nonatomic) BOOL isFirstCardFullScreen;
+@property (nonatomic) AWEGoodsFeedDetailTableViewController parentVC;
+@property (nonatomic) q indexPath;
+@property (nonatomic) q maxUserScrollIndex;
+@property (nonatomic) UIViewController viewController;
+- (void)configUI;
+- (id)productCardView;
+- (void)setProductCardView:;
+- (BOOL)isFirstCardFullScreen;
+- (void)setIsFirstCardFullScreen:;
+- (void)updateFirstCardPanPercent:;
+- (long long)maxUserScrollIndex;
+- (void)addFakeNextCardIfNeeded:;
+- (void)updateLayoutWithIsFullMode:animationTime:;
+- (void)updateLayoutWithPreviewPercent:;
+- (void)productCardWillDisplay;
+- (void)configWithModel:modelInitTime:;
+- (void)setMaxUserScrollIndex:;
+- (long long)indexPath;
+- (id)viewController;
+- (void)setIndexPath:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setViewController:;
+- (id)parentVC;
+- (void)setParentVC:;
++ (id)reuseIdentifier;
+@end

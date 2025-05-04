@@ -1,0 +1,38 @@
+@interface AWEPushSettingDoubleConfirmSheet : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIImageView imgView;
+@property (nonatomic) BOOL needShowImg;
+@property (nonatomic) @? cancelBlock;
+@property (nonatomic) @? confirmBlock;
+@property (nonatomic) @? closeBlock;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (id)confirmBlock;
+- (void)setConfirmBlock:;
+- (void)setImgView:;
+- (id)imgView;
+- (BOOL)needShowImg;
+- (void)setNeedShowImg:;
+- (void)close;
+- (void)setCancelButton:;
+- (void)setDescriptionLabel:;
+- (void)setCancelBlock:;
+- (void)cancel;
+- (void)setTitleLabel:;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)descriptionLabel;
+- (id)cancelBlock;
+- (void)confirm;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)setCloseButton:;
+- (id)closeButton;
++ (id)confirmSheetWithTitle:decription:cancel:confirm:isNeedImg:;
++ (id)confirmSheetWithTitle:decription:cancel:confirm:;
+@end

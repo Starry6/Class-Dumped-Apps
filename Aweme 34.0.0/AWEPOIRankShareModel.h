@@ -1,0 +1,33 @@
+@interface AWEPOIRankShareModel : NSObject
+@property (nonatomic) NSString rankID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString updateTime;
+@property (nonatomic) NSString content;
+@property (nonatomic) AWEURLModel coverURL;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString rankCode;
+@property (nonatomic) BOOL canSwitch;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) NSString shareUrl;
+- (void)setShareTitle:;
+- (void)setShareUrl:;
+- (id)shareUrl;
+- (id)rankID;
+- (void)setRankID:;
+- (id)rankCode;
+- (void)setRankCode:;
+- (BOOL)canSwitch;
+- (void)setCanSwitch:;
+- (id)content;
+- (id)updateTime;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setUpdateTime:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (id)shareTitle;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

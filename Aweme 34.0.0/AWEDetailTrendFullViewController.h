@@ -1,0 +1,35 @@
+@interface AWEDetailTrendFullViewController : AWEDetailFullViewController
+@property (nonatomic) AWEDetailNewStyleShootButton collectButton;
+@property (nonatomic) DUXVacantView errorView;
+- (id)zoomTransitionStartViewForOffset:;
+- (BOOL)configWithRouterParamDict:;
+- (id)collectButton;
+- (void)setCollectButton:;
+- (void)setupInjectServiceOnInit;
+- (void)handleDetailInfoFetchStateChange;
+- (void)handleAwemeListInitFetchStatusChange;
+- (void)showEmptyAwemeList;
+- (BOOL)needAmendEmptyAwemeListView;
+- (void)setAwemeModelForViewModel:trackDict:;
+- (double)awemeListSectionOffsetY;
+- (id)placeHolderNaviBarObject;
+- (void)updateCollectButtonWithCollected:;
+- (void)updateCollectState:;
+- (void)updateCollectButtonLayout;
+- (double)sectionControllersTotalHeightWithObjectList:;
+- (void)showToastForNoMusic;
+- (void)preloadResourceIfNeededWithSchema:;
+- (void)onCollectButtonClicked:;
+- (long long)transferIndexFromInnerToPanel:withStartIndex:;
+- (void)viewWillDisappear:;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)scrollViewDidScroll:;
+- (void)viewWillAppear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)serviceProvider;
+- (id)errorView;
+- (void)setErrorView:;
+@end

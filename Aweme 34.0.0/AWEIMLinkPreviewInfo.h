@@ -1,0 +1,38 @@
+@interface AWEIMLinkPreviewInfo : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString coverUrl;
+@property (nonatomic) NSString originUrl;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) q version;
+@property (nonatomic) double updateTime;
+@property (nonatomic) NSString md5String;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) Q flags;
+@property (nonatomic) Q status;
+@property (nonatomic) IESIMLinkCardURLExtra urlCardExtra;
+- (id)originUrl;
+- (void)setOriginUrl:;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (id)getInfoDict;
+- (id)md5String;
+- (id)initWithInfoDict:;
+- (id)urlCardExtra;
+- (void)setMd5String:;
+- (void)setUrlCardExtra:;
+- (id)displayText;
+- (void)setFlags:;
+- (void)setStatus:;
+- (long long)version;
+- (double)updateTime;
+- (void)setDisplayText:;
+- (void)setVersion:;
+- (BOOL)isValid;
+- (void)setIsValid:;
+- (unsigned long long)flags;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (id)title;
+- (void)setTitle:;
+- (void)setUpdateTime:;
+@end

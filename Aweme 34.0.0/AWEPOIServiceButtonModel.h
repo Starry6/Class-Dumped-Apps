@@ -1,0 +1,35 @@
+@interface AWEPOIServiceButtonModel : MTLModel
+@property (nonatomic) Q displayType;
+@property (nonatomic) NSString buttonName;
+@property (nonatomic) Q schemaType;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString productID;
+@property (nonatomic) Q platformSource;
+@property (nonatomic) Q productType;
+@property (nonatomic) BOOL disableCollect;
+@property (nonatomic) q buttonActionType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSchemaType:;
+- (BOOL)disableCollect;
+- (unsigned long long)platformSource;
+- (void)setPlatformSource:;
+- (void)setDisableCollect:;
+- (void)setButtonActionType:;
+- (unsigned long long)productType;
+- (void)setProductID:;
+- (unsigned long long)schemaType;
+- (void)setProductType:;
+- (id)productID;
+- (void)setUrl:;
+- (unsigned long long)displayType;
+- (void)setDisplayType:;
+- (void).cxx_destruct;
+- (id)url;
+- (long long)buttonActionType;
+- (id)buttonName;
+- (void)setButtonName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

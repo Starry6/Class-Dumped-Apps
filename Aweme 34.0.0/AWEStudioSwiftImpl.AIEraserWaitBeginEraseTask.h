@@ -1,0 +1,2 @@
+@interface AWEStudioSwiftImpl.AIEraserWaitBeginEraseTask : _TtGC8AirFlowX7AFXTaskP_Sb_
+@end

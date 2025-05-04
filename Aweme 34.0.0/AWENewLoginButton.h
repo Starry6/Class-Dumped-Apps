@@ -1,0 +1,37 @@
+@interface AWENewLoginButton : UIButton
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) BOOL showHighlightAnimation;
+@property (nonatomic) BOOL showTitleDisableAlphaChange;
+@property (nonatomic) BOOL enableHighlightAlphaChange;
+@property (nonatomic) BOOL awe_enabled;
+@property (nonatomic) UIImage defaultImage;
+@property (nonatomic) UIImage enableImage;
+@property (nonatomic) UIImage loadingImage;
+- (void)setEnableImage:;
+- (id)enableImage;
+- (void)setLoadingImage:;
+- (BOOL)showHighlightAnimation;
+- (void)setAlpha:withAnimateCompletion:;
+- (void)setImageWithDefaultImage;
+- (void)setShowHighlightAnimation:;
+- (void)setEnableHighlightAlphaChange:;
+- (BOOL)awe_enabled;
+- (id)_spinAnimation;
+- (void)setAwe_enabled:;
+- (BOOL)enableHighlightAlphaChange;
+- (double)alphaForCurrentState;
+- (BOOL)showTitleDisableAlphaChange;
+- (void)setShowTitleDisableAlphaChange:;
+- (BOOL)isLoading;
+- (void)startLoading;
+- (id)initWithFrame:;
+- (void)stopLoading;
+- (void)commonInit;
+- (void)setEnabled:;
+- (void)setHighlighted:;
+- (void).cxx_destruct;
+- (void)setIsLoading:;
+- (id)defaultImage;
+- (void)setDefaultImage:;
+- (id)loadingImage;
+@end

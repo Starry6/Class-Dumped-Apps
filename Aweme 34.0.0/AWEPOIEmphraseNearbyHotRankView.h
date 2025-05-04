@@ -1,0 +1,38 @@
+@interface AWEPOIEmphraseNearbyHotRankView : UIView
+@property (nonatomic) AWEAwemeModel aweme;
+@property (nonatomic) AWEPOIBizModel poiBiz;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) CAGradientLayer topLayer;
+@property (nonatomic) UIView topContainer;
+@property (nonatomic) UILabel hotNameLabel;
+@property (nonatomic) UILabel poiNameLabel;
+@property (nonatomic) UIImageView arrowIcon;
+@property (nonatomic) NSString referString;
+- (id)referString;
+- (id)aweme;
+- (void)setReferString:;
+- (void)setAweme:;
+- (id)topLayer;
+- (id)poiBiz;
+- (void)setPoiBiz:;
+- (id)arrowIcon;
+- (void)setArrowIcon:;
+- (void)updateUIWithModel:;
+- (id)topContainer;
+- (void)setTopContainer:;
+- (void)setPoiNameLabel:;
+- (id)poiNameLabel;
+- (BOOL)shouldUpdateUI:;
+- (id)hotNameLabel;
+- (id)topLabelFont;
+- (void)setHotNameLabel:;
+- (void)trackBottomBarShow;
+- (void)trackBottomBarClick;
+- (void)setTopLayer:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setTopLabel:;
+- (id)topLabel;
+- (void)updateModel:;
+@end

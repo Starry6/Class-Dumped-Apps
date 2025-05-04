@@ -1,0 +1,30 @@
+@interface AWEMessageReachSceneModel : MTLModel
+@property (nonatomic) NSString sceneID;
+@property (nonatomic) NSString msg;
+@property (nonatomic) q code;
+@property (nonatomic) NSArray components;
+@property (nonatomic) AWEMessageReachVerifyParamsModel verifyParams;
+@property (nonatomic) Q componentAction;
+@property (nonatomic) NSString extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (void)setComponentAction:;
+- (id)verifyParams;
+- (unsigned long long)componentAction;
+- (void)setVerifyParams:;
+- (long long)code;
+- (void)setSceneID:;
+- (void)setCode:;
+- (id)extra;
+- (id)sceneID;
+- (void)setComponents:;
+- (void).cxx_destruct;
+- (id)components;
+- (void)setMsg:;
+- (id)msg;
++ (id)componentsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

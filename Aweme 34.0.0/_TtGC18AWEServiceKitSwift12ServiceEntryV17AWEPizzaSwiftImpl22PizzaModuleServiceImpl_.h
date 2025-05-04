@@ -1,0 +1,2 @@
+@interface _TtGC18AWEServiceKitSwift12ServiceEntryV17AWEPizzaSwiftImpl22PizzaModuleServiceImpl_ : AWEServiceKitSwift.AnyServiceEntry
+@end

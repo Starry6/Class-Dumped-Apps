@@ -1,0 +1,2 @@
+@interface _TtGC19AWEIMShareBasicImpl21IMShareSafeDictionarySSPSo52AWEIMShareContactListLocalExternalDataSourceProtocol__ : _TtCs12_SwiftObject
+@end

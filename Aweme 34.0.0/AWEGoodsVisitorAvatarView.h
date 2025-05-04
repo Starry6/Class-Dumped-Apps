@@ -1,0 +1,33 @@
+@interface AWEGoodsVisitorAvatarView : UIView
+@property (nonatomic) CAShapeLayer borderLayer;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double avatarsRadius;
+@property (nonatomic) double avatarsCenterDistance;
+@property (nonatomic) BOOL clearBorder;
+@property (nonatomic) BOOL previousHasClearBorder;
+- (void)setClearBorder:;
+- (void)setAvatarsRadius:;
+- (void)setAvatarsCenterDistance:;
+- (BOOL)clearBorder;
+- (void)setPreviousHasClearBorder:;
+- (double)avatarsRadius;
+- (double)avatarsCenterDistance;
+- (BOOL)previousHasClearBorder;
+- (id)crescentMaskLayerV2;
+- (id)outsideBorderForHeight:;
+- (id)crescentMaskLayer;
+- (void)setBorderColor:;
+- (void)setBorderWidth:;
+- (double)borderWidth;
+- (id)borderColor;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)borderLayer;
+- (void)setBorderLayer:;
+@end

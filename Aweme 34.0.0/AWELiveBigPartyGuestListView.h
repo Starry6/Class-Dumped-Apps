@@ -1,0 +1,31 @@
+@interface AWELiveBigPartyGuestListView : UIView
+@property (nonatomic) BOOL enableFeedVideoTalkEffect;
+@property (nonatomic) BOOL enableFeedVideoTalkListUpdate;
+@property (nonatomic) q maxGuestNum;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) IESLiveLinkmicPreStreamUserService userService;
+@property (nonatomic) <AWELiveBigPartyGuestListDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)userService;
+- (void)setUserService:;
+- (void)updateListModel:;
+- (long long)maxGuestNum;
+- (id)initWithFrame:maxGuestNum:;
+- (BOOL)enableFeedVideoTalkEffect;
+- (void)setEnableFeedVideoTalkEffect:;
+- (BOOL)enableFeedVideoTalkListUpdate;
+- (void)setEnableFeedVideoTalkListUpdate:;
+- (void)setMaxGuestNum:;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (void)layoutUI;
+@end

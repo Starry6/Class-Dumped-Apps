@@ -1,0 +1,2 @@
+@interface AWEPOIABTestRegister : NSObject
+@end

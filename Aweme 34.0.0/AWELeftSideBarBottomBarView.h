@@ -1,0 +1,37 @@
+@interface AWELeftSideBarBottomBarView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) q themeStyle;
+@property (nonatomic) double horizontalPadding;
+@property (nonatomic) NSArray bottomModuleModels;
+@property (nonatomic) <AWELeftSideBarBottomBarViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setThemeStyle:;
+- (id)bottomModuleModels;
+- (void)setBottomModuleModels:;
+- (id)leftSideBarBaseBaseCollectionViewCellOnCreateView:itemModel:;
+- (void)configGradientViewWithThemeStyle:;
+- (id)initWithThemeStyle:withHorizontalPadding:;
+- (void)themeStyleDidChange:;
+- (void)updateAndReloadWithBottomModuleModels:;
+- (id)collectionView;
+- (id)gradientView;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (double)horizontalPadding;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDelegate:;
+- (void)setHorizontalPadding:;
+- (void)setupUI;
+- (long long)themeStyle;
+@end

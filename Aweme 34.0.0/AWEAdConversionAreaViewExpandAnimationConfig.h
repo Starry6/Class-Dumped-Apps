@@ -1,0 +1,37 @@
+@interface AWEAdConversionAreaViewExpandAnimationConfig : NSObject
+@property (nonatomic) double backgroundDelayTime;
+@property (nonatomic) double backgroundDuration;
+@property (nonatomic) double titleDelayTime;
+@property (nonatomic) double titleDuration;
+@property (nonatomic) double descDelayTime;
+@property (nonatomic) double descDuration;
+@property (nonatomic) double actionButtonDelayTime;
+@property (nonatomic) double actionButtonDuration;
+@property (nonatomic) BOOL iconAnimationEnable;
+@property (nonatomic) double iconDelayTime;
+@property (nonatomic) double iconDuration;
+- (double)backgroundDelayTime;
+- (void)setBackgroundDelayTime:;
+- (double)backgroundDuration;
+- (void)setBackgroundDuration:;
+- (double)titleDelayTime;
+- (void)setTitleDelayTime:;
+- (double)titleDuration;
+- (void)setTitleDuration:;
+- (double)descDelayTime;
+- (void)setDescDelayTime:;
+- (double)descDuration;
+- (void)setDescDuration:;
+- (double)actionButtonDelayTime;
+- (void)setActionButtonDelayTime:;
+- (double)actionButtonDuration;
+- (void)setActionButtonDuration:;
+- (BOOL)iconAnimationEnable;
+- (void)setIconAnimationEnable:;
+- (double)iconDelayTime;
+- (void)setIconDelayTime:;
+- (double)iconDuration;
+- (void)setIconDuration:;
+- (id)init;
++ (id)defaultConfig;
+@end

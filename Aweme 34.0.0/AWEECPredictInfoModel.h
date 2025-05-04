@@ -1,0 +1,32 @@
+@interface AWEECPredictInfoModel : MTLModel
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString productId;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSString authorId;
+@property (nonatomic) q timeStamp;
+@property (nonatomic) NSNumber clickProductCtr;
+@property (nonatomic) NSArray triggerList;
+@property (nonatomic) NSString mediaType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)triggerList;
+- (id)clickProductCtr;
+- (void)setClickProductCtr:;
+- (void)setTriggerList:;
+- (void)setGroupId:;
+- (id)groupId;
+- (void)setMediaType:;
+- (id)productId;
+- (id)mediaType;
+- (id)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (long long)timeStamp;
+- (void)setTimeStamp:;
+- (void)setProductId:;
+- (id)authorId;
+- (void)setAuthorId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

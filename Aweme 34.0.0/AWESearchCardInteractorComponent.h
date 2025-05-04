@@ -1,0 +1,38 @@
+@interface AWESearchCardInteractorComponent : AWESearchComponent
+@property (nonatomic) <AWESearchCardDiggComponentProvider> diggComponent;
+@property (nonatomic) <AWESearchCardCommentComponentProvider> commentComponent;
+@property (nonatomic) <AWESearchCardFavorComponentProvider> favorComponent;
+@property (nonatomic) <AWESearchCardShareComponentProvider> shareComponent;
+@property (nonatomic) AWESearchCardInteractorModel model;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewLayoutSubviews;
+- (id)provideProtocol;
+- (id)accessibilityElementsArr;
+- (id)commentComponent;
+- (void)setCommentComponent:;
+- (id)diggComponent;
+- (id)favorComponent;
+- (id)shareComponent;
+- (void)setDiggComponent:;
+- (void)setFavorComponent:;
+- (void)setShareComponent:;
+- (void)setModel:;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)componentView;
++ (id)componentSizeForModel:width:;
+@end

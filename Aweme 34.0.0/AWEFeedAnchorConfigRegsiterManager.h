@@ -1,0 +1,2 @@
+@interface AWEFeedAnchorConfigRegsiterManager : NSObject
+@end

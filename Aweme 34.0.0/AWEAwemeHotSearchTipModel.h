@@ -1,0 +1,34 @@
+@interface AWEAwemeHotSearchTipModel : AWEBaseApiModel
+@property (nonatomic) NSString hotSearchTip;
+@property (nonatomic) NSString hotSearchKeyword;
+@property (nonatomic) NSString challengeID;
+@property (nonatomic) q hotValue;
+@property (nonatomic) q videoBillBoardRank;
+@property (nonatomic) q videoViewCountForToday;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) q label;
+@property (nonatomic) q hotSpotRank;
+@property (nonatomic) q patternType;
+- (long long)hotSpotRank;
+- (void)setHotSpotRank:;
+- (long long)hotValue;
+- (void)setHotValue:;
+- (id)hotSearchTip;
+- (void)setHotSearchTip:;
+- (id)hotSearchKeyword;
+- (void)setHotSearchKeyword:;
+- (long long)videoBillBoardRank;
+- (void)setVideoBillBoardRank:;
+- (long long)videoViewCountForToday;
+- (void)setVideoViewCountForToday:;
+- (void)setGroupID:;
+- (void)setLabel:;
+- (id)groupID;
+- (long long)label;
+- (void).cxx_destruct;
+- (void)setPatternType:;
+- (long long)patternType;
+- (id)challengeID;
+- (void)setChallengeID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

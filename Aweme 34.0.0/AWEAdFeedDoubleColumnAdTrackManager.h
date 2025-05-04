@@ -1,0 +1,22 @@
+@interface AWEAdFeedDoubleColumnAdTrackManager : HTSService
+- (void)fullPageTrackAvatarOrNameClickWithModel:isClickName:;
+- (void)feedDoubleColumnCellClick:clickPosition:;
+- (void)feedDoubleColumnCellShow:;
+- (void)fullPageCardShow:cardType:;
+- (void)fullPageCardOtherClick:clickPosition:;
+- (void)fullPagePinchImageEnter:model:;
+- (void)fullPagePinchImageShow:;
+- (void)fullPageImageSlideToIndex:model:isLastImage:;
+- (void)fullPagePinchImageExit:;
+- (void)fullPageImageFollowStatus:model:;
+- (void)fullPageImageLikeType:model:;
+- (void)fullPageImageCommentType:model:;
+- (void)fullPageImageShareClick:;
+- (void)enterFullPageImageFeedFromModel:;
+- (void)fullPageImageFeedShow:;
+- (void)fullPageImageFeedVoiceStatusChanged:;
+- (void)fullPageImageFeedEndShow:;
+- (void)exitInsImageFeed;
+- (id)init;
+- (void).cxx_destruct;
+@end

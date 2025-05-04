@@ -1,0 +1,34 @@
+@interface AWEEcommerceGuideSearchV2TabTitleModel : AWEBaseApiModel
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString titleIcon;
+@property (nonatomic) NSString selectedTitleColor;
+@property (nonatomic) NSString unselectedTitleColor;
+@property (nonatomic) NSString prefixIcon;
+@property (nonatomic) AWEEcommerceGuideSearchV2PrefixIconModel prefixIconV2;
+@property (nonatomic) AWEEcommerceGuideSearchV2GradientModel selectedBackgroundGradientColor;
+@property (nonatomic) AWEEcommerceGuideSearchV2GradientModel unselectedBackgroundGradientColor;
+@property (nonatomic) NSString unselectedBorderColor;
+- (void)setSelectedTitleColor:;
+- (id)unselectedTitleColor;
+- (void)setUnselectedTitleColor:;
+- (id)prefixIcon;
+- (void)setPrefixIcon:;
+- (id)prefixIconV2;
+- (void)setPrefixIconV2:;
+- (id)selectedBackgroundGradientColor;
+- (void)setSelectedBackgroundGradientColor:;
+- (id)unselectedBackgroundGradientColor;
+- (void)setUnselectedBackgroundGradientColor:;
+- (id)unselectedBorderColor;
+- (void)setUnselectedBorderColor:;
+- (void)setTitleText:;
+- (id)titleText;
+- (void).cxx_destruct;
+- (void)setTitleIcon:;
+- (id)titleIcon;
+- (id)selectedTitleColor;
++ (id)selectedBackgroundGradientColorJSONTransformer;
++ (id)unselectedBackgroundGradientColorJSONTransformer;
++ (id)prefixIconV2JSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

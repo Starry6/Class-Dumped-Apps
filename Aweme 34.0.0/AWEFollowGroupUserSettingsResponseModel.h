@@ -1,0 +1,2 @@
+@interface AWEFollowGroupUserSettingsResponseModel : AWEBaseApiModel
+@end

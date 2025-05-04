@@ -1,0 +1,34 @@
+@interface AWEModelLayerIMNetworkProvider.CodeGenConsecutiveElfScreenShotNetworkProvider : AWEDataLayerRootModelPostMethodNetworkProvider
+@property (nonatomic) NSNumber convShortId;
+@property (nonatomic) NSString lightPetElfUri;
+@property (nonatomic) NSString grayPetElfUri;
+@property (nonatomic) NSString lightUriSkey;
+@property (nonatomic) NSString grayUriSkey;
+@property (nonatomic) NSNumber petElfId;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString baseInfo;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)convShortId;
+- (id)lightPetElfUri;
+- (void)setLightPetElfUri:;
+- (id)grayPetElfUri;
+- (void)setGrayPetElfUri:;
+- (id)lightUriSkey;
+- (void)setLightUriSkey:;
+- (id)grayUriSkey;
+- (void)setGrayUriSkey:;
+- (id)petElfId;
+- (void)setPetElfId:;
+- (id)baseInfo;
+- (void)setBaseInfo:;
+- (id)initWithGrayPetElfUri:convShortId:petElfId:lightUriSkey:lightPetElfUri:version:grayUriSkey:;
+- (void)setConvShortId:;
+- (id)init;
+- (id)version;
+- (void)setVersion:;
+- (void).cxx_destruct;
+- (Class)modelClass;
++ (id)businessURI;
+@end

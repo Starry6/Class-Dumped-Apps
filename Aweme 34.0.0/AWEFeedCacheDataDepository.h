@@ -1,0 +1,32 @@
+@interface AWEFeedCacheDataDepository : NSObject
+@property (nonatomic) NSString tag;
+@property (nonatomic) <AWEFeedCacheDataInspector> inspector;
+@property (nonatomic) NSMutableDictionary cacheIndexObjects;
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) BOOL isDisposable;
+- (void)storeData:;
+- (id)availableIds;
+- (void)clearCacheWithArray:;
+- (void)clearAllKeepingArray:;
+- (BOOL)isDataExistWithAwemeID:;
+- (id)configIndexObjectWithAweme:;
+- (id)cacheIndexObjects;
+- (void)loadDataWithAwemeID:Completion:;
+- (id)initWithTag:inspector:;
+- (void)loadDataWithAwemeIDs:Completion:;
+- (void)loadAllDataWith:;
+- (id)dataIndexWithAwemeID:;
+- (void)clearDataWithGroupID:includeVideoCache:;
+- (void)clearCacheWithCount:;
+- (void)setIsDisposable:;
+- (void)setCacheIndexObjects:;
+- (id)tag;
+- (void)setLock:;
+- (void)setTag:;
+- (id)lock;
+- (BOOL)isDisposable;
+- (void)clearAll;
+- (void).cxx_destruct;
+- (id)inspector;
+- (void)setInspector:;
+@end

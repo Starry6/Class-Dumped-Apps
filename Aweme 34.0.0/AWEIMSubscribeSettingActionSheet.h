@@ -1,0 +1,38 @@
+@interface AWEIMSubscribeSettingActionSheet : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView closeImageView;
+@property (nonatomic) UIView closeView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) AWEIMSubscribeSettingActionSheetContext context;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (id)closeView;
+- (void)setCloseView:;
+- (void)p_setupLayout;
+- (void)p_close;
+- (void)renderWithTitle:dataSource:context:;
+- (id)collectionView;
+- (id)init;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTitleLabel:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDataSource:;
+- (id)titleLabel;
+- (id)context;
+- (id)dataSource;
+- (id)closeImageView;
+- (void)setCloseImageView:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEPrivacyAudioCameraConfig : NSObject
+@property (nonatomic) BOOL enableCapturePreviewLayer;
+@property (nonatomic) BOOL enableLiveStreamCapture;
+@property (nonatomic) BOOL enableVERecorder;
+@property (nonatomic) BOOL enableVERecorderSession;
+@property (nonatomic) BOOL enableVECrossPlatRecorder;
+@property (nonatomic) BOOL enableNextResponder;
+@property (nonatomic) BOOL enableAlog;
+@property (nonatomic) BOOL enableFloatWindw;
+@property (nonatomic) Q detectThreshold;
+- (BOOL)enableCapturePreviewLayer;
+- (void)setEnableCapturePreviewLayer:;
+- (BOOL)enableAlog;
+- (void)setEnableLiveStreamCapture:;
+- (void)setEnableVERecorder:;
+- (void)setEnableVERecorderSession:;
+- (void)setEnableVECrossPlatRecorder:;
+- (void)setEnableNextResponder:;
+- (void)setEnableAlog:;
+- (void)setEnableFloatWindw:;
+- (void)setDetectThreshold:;
+- (BOOL)enableLiveStreamCapture;
+- (BOOL)enableVERecorder;
+- (BOOL)enableVERecorderSession;
+- (BOOL)enableVECrossPlatRecorder;
+- (BOOL)enableNextResponder;
+- (BOOL)enableFloatWindw;
+- (unsigned long long)detectThreshold;
+- (id)init;
++ (BOOL)enable;
+@end

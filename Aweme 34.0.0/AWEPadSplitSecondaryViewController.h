@@ -1,0 +1,35 @@
+@interface AWEPadSplitSecondaryViewController : UINavigationController
+@property (nonatomic) BOOL isPopTransition;
+@property (nonatomic) BOOL isPadSplitting;
+@property (nonatomic) q splitViewScene;
+@property (nonatomic) AWEPadSplitPageContext splitViewContext;
+@property (nonatomic) <AWEPadSplitViewService> splitService;
+@property (nonatomic) <AWEPadSplitViewBizAdapter> splitViewAdapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsPadSplitting:;
+- (BOOL)isPadSplitting;
+- (id)splitService;
+- (long long)splitViewScene;
+- (id)splitViewContext;
+- (void)setSplitViewContext:;
+- (void)setSplitService:;
+- (id)splitViewAdapter;
+- (void)setSplitViewAdapter:;
+- (id)protocolViewControllers;
+- (BOOL)isPopTransition;
+- (void)cleanWithViewController:;
+- (void)setIsPopTransition:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)pushViewController:animated:;
+- (void).cxx_destruct;
+- (id)popViewControllerAnimated:;
+- (id)popToRootViewControllerAnimated:;
+- (id)popToViewController:animated:;
+- (void)setNavigationBarHidden:animated:;
+- (void)refreshDelegate;
++ (id)delegateFromViewController:;
+@end

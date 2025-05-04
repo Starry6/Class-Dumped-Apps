@@ -1,0 +1,36 @@
+@interface AWESearchAIGCFlowVoiceInputOverlayView : UIView
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) CAGradientLayer backgroundGradientLayer;
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) CAGradientLayer bubbleLayer;
+@property (nonatomic) LOTAnimationView voiceToTextLottieView;
+@property (nonatomic) AWESearchAIGCBubbleTextView bubbleLabel;
+@property (nonatomic) double maxBubbleHeight;
+@property (nonatomic) double maxLabelHeight;
+- (void)setBubbleLabel:;
+- (id)bubbleLabel;
+- (void)setBubbleLayer:;
+- (id)voiceToTextLottieView;
+- (id)textQuerySizeWithText:width:;
+- (id)attributeStringWithText:;
+- (void)updateBubbleText:completion:;
+- (void)detachOverlayWithBubbleCenter:;
+- (id)getBubbleViewFrame;
+- (void)updateBubbleLayerOpacity:;
+- (void)setVoiceToTextLottieView:;
+- (double)maxBubbleHeight;
+- (void)setMaxBubbleHeight:;
+- (double)maxLabelHeight;
+- (void)setMaxLabelHeight:;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (id)backgroundView;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)backgroundGradientLayer;
+- (void)setBackgroundGradientLayer:;
+- (id)bubbleView;
+- (void)setBubbleView:;
+- (id)bubbleLayer;
+@end

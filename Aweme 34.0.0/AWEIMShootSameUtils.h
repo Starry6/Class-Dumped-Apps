@@ -1,0 +1,31 @@
+@interface AWEIMShootSameUtils : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEIMLGDOUYINLGCommonAdapter;
+- (void)startStoryVideoWithStickerIDArray:musicModel:conversation:cameraPosition:dontAutoChangeToTextModeWhenPublish:info:;
+- (void)startStoryVideoWithStickerIDArray:musicModel:conversation:cameraPosition:dontAutoChangeToTextModeWhenPublish:info:completion:;
+- (void)addStickerIdsToLocalAsset:withPHAsset:imageData:;
+- (void)addStickerIdsToLocalAsset:withPHAsset:videoAsset:;
+- (BOOL)isMango25PlaySticker:extra:;
+- (id)getSyncedExtWithMessageType:extraInfo:;
+- (id)getSyncedExtWithMessageType:extraInfo:localAsset:;
+- (BOOL)isSupportStickerWithMessageType:;
+- (id)getImageStickerIdsWithAsset:imageData:;
+- (id)getVideoStickerIdsWithAsset:videoAsset:;
+- (BOOL)shooldBlockShootSameWithMessage:;
+- (BOOL)enableShowShootSameViewWithMessage:conversation:;
+- (BOOL)isDuetEffectAndNeedParticipateWithMessage:;
+- (BOOL)isDuetEffectWithMessage:;
+- (BOOL)isSocialEffectMessage:;
+- (BOOL)isEffectValidInMessage:matchConversation:;
+- (BOOL)coplayHasFinishedParticipateWithMessage:;
+- (void)startStoryVideoWithStickerIDArray:musicModel:conversation:info:;
++ (id)sharedIntance;
++ (Class)aAWEIMLGDOUYINLGCommonAdapterClass;
++ (id)shootSameStickerIDsWithAwemeModel:;
++ (id)shootSameMsgContentStickerIDsWithAwemeModel:;
++ (id)shootSameCustomStickerIDWithAwemeModel:;
++ (id)shootSameBlockSettings;
+@end

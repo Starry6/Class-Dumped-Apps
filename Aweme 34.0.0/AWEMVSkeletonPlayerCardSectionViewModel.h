@@ -1,0 +1,2 @@
+@interface AWEMVSkeletonPlayerCardSectionViewModel : AWEBaseListSectionViewModel
+@end

@@ -1,0 +1,30 @@
+@interface AWEPOIAlbumTabInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString tabID;
+@property (nonatomic) NSString totalCount;
+@property (nonatomic) BOOL hasTrackShowEvent;
+- (double)labelHeight;
+- (void)setTabID:;
+- (BOOL)hasTrackShowEvent;
+- (void)setHasTrackShowEvent:;
+- (id)unselectedLabelColor;
+- (id)unselectedLabelFont;
+- (id)unselectedBGColor;
+- (id)selectedBGColor;
+- (id)selectedLabelFont;
+- (id)selectedLabelCellSize;
+- (id)unselectedLabelCellSize;
+- (id)selectedLabelSize;
+- (id)unselectedLabelSize;
+- (id)labelText;
+- (id)totalCount;
+- (void).cxx_destruct;
+- (double)itemHeight;
+- (void)setTotalCount:;
+- (id)tabID;
+- (id)tabName;
+- (void)setTabName:;
+- (id)labelInset;
+- (id)selectedLabelColor;
++ (id)JSONKeyPathsByPropertyKey;
+@end

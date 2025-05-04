@@ -1,0 +1,31 @@
+@interface AWERVPaymentViewController : AWEVideoPlayControlBaseController
+@property (nonatomic) UIView<AWELandscapePaymentViewProtocol> paymentView;
+@property (nonatomic) AWERVDetailPageContext pageContext;
+@property (nonatomic) BOOL hasTrackTrialEnd;
+@property (nonatomic) BOOL hasTrackShowPaymentView;
+@property (nonatomic) BOOL isAppearValueChange;
+- (void)setHide:;
+- (void)player:updatePlayTime:canPlayTime:totalTime:;
+- (void)setAppear:;
+- (id)paymentView;
+- (BOOL)shouldResponseTapGesture:;
+- (void)bindEvents;
+- (BOOL)usePaidStreamControl;
+- (void)setHasTrackShowPaymentView:;
+- (void)setHasTrackTrialEnd:;
+- (void)trackTrialEndIfNeeded;
+- (void)trackClickPaymentView;
+- (void)trackShowPaymentViewIfNeeded;
+- (BOOL)hasTrackShowPaymentView;
+- (BOOL)hasTrackTrialEnd;
+- (void)addPaymentViewIfNeeded;
+- (void)setPaymentView:;
+- (void)updatePaymentViewWithCurrentTime:;
+- (BOOL)isAppearValueChange;
+- (void)setIsAppearValueChange:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)pageContext;
+@end

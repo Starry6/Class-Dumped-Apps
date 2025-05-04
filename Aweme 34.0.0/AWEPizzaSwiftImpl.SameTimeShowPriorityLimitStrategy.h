@@ -1,0 +1,2 @@
+@interface AWEPizzaSwiftImpl.SameTimeShowPriorityLimitStrategy : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,38 @@
+@interface AWEPOIAlbumCategoryInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString tabID;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q totalCount;
+@property (nonatomic) q nextOffset;
+@property (nonatomic) NSMutableArray photoInfos;
+@property (nonatomic) NSArray photoInfosString;
+@property (nonatomic) q tabIndex;
+@property (nonatomic) BOOL shouldShowUploadButton;
+@property (nonatomic) NSString poiID;
+@property (nonatomic) NSString backendType;
+- (id)poiID;
+- (void)setPoiID:;
+- (void)setBackendType:;
+- (id)backendType;
+- (void)setTabID:;
+- (void)setNextOffset:;
+- (id)photoInfosString;
+- (void)setPhotoInfosString:;
+- (BOOL)shouldShowUploadButton;
+- (void)setShouldShowUploadButton:;
+- (long long)totalCount;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (long long)tabIndex;
+- (void).cxx_destruct;
+- (long long)nextOffset;
+- (id)photoInfos;
+- (void)setPhotoInfos:;
+- (void)setTotalCount:;
+- (id)tabID;
+- (id)tabName;
+- (void)setTabName:;
+- (void)setTabIndex:;
++ (id)photoInfosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

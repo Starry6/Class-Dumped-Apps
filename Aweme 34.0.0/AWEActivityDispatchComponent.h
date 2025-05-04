@@ -1,0 +1,32 @@
+@interface AWEActivityDispatchComponent : NSObject
+@property (nonatomic) NSMutableArray managers;
+@property (nonatomic) AWEActivityTimerTask timerTask;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray objcs;
+- (void)addNotifications;
+- (void)channelViewDidAppear;
+- (void)channelViewDidDisappear;
+- (void)channelDidLoad;
+- (id)timerTask;
+- (void)setTimerTask:;
+- (void)setData:extraInfo:;
+- (id)initWithData:extraInfo:;
+- (id)objcs;
+- (id)getObjectWithIdentifer:;
+- (void)applicationWillResignActive:;
+- (double)timeInterval;
+- (void)setManagers:;
+- (void)applicationDidBecomeActive:;
+- (id)init;
+- (void)timing;
+- (void)setTimeInterval:;
+- (void).cxx_destruct;
+- (void)removeObject:;
+- (void)reset;
+- (void)addObject:;
+- (id)managers;
+@end

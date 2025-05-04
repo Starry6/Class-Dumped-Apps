@@ -1,0 +1,30 @@
+@interface AWENewVideoCoverCommand : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) ACCNLEImageWrapper NLEImageWrapper;
+@property (nonatomic) UIView<ACCStickerProtocol> stickerView;
+@property (nonatomic) BOOL stickCommand;
+@property (nonatomic) <AWENewVideoCoverCommandDelegate> delegate;
+@property (nonatomic) @? additionalRevert;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)NLEImageWrapper;
+- (void)setNLEImageWrapper:;
+- (void)realExecute;
+- (void)realUnExecute;
+- (id)additionalRevert;
+- (void)unExecute;
+- (id)realLayer;
+- (BOOL)stickCommand;
+- (void)setStickCommand:;
+- (void)setAdditionalRevert:;
+- (double)timestamp;
+- (id)delegate;
+- (void)execute;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setStickerView:;
+- (id)stickerView;
+@end

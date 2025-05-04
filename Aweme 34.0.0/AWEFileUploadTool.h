@@ -1,0 +1,37 @@
+@interface AWEFileUploadTool : NSObject
+@property (nonatomic) @? completion;
+@property (nonatomic) UIColor tabBarTintColor;
+@property (nonatomic) UIColor tabBarBarTintColor;
+@property (nonatomic) UIImage tabBarBackgroundImage;
+@property (nonatomic) UIImage tabBarShadowImage;
+@property (nonatomic) UIColor barButtonItemTintColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTabBarBarTintColor:;
+- (void)setTabBarBackgroundImage:;
+- (void)setTabBarShadowImage:;
+- (void)setBarButtonItemTintColor:;
+- (id)tabBarBarTintColor;
+- (id)tabBarBackgroundImage;
+- (id)tabBarShadowImage;
+- (id)barButtonItemTintColor;
+- (BOOL)isNeedChangeTabColor;
+- (void)colorReset;
+- (void)callbacFailWithCode:msg:;
+- (id)errorCode:msg:;
+- (void)callbacSuccessWithFileUrl:;
+- (void)presentDocumentPickerWithUtis:compeletion:;
+- (void)uploadFile:params:completion:;
+- (id)audioSelectionJsbResponseData:error:;
+- (id)completion;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (void)documentPicker:didPickDocumentsAtURLs:;
+- (void)documentPickerWasCancelled:;
+- (id)modelString;
+- (id)tabBarTintColor;
+- (void)setTabBarTintColor:;
++ (id)sharedFileUploadTool;
+@end

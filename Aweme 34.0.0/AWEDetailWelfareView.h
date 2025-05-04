@@ -1,0 +1,34 @@
+@interface AWEDetailWelfareView : UIView
+@property (nonatomic) AWEWelfareActivityModel model;
+@property (nonatomic) <AWEDetailWelfareViewDelegate> delegate;
+@property (nonatomic) <AWEDetailWelfareTrackDelegate> tracker;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel projectNameLabel;
+@property (nonatomic) UIImageView projectArrowImageView;
+@property (nonatomic) UILabel projectDescriptionLabel;
+@property (nonatomic) AWEDetailWelfareDonateInfoView donateInfoView;
+- (void)p_setupUI;
+- (void)updateToModel:;
+- (id)projectNameLabel;
+- (id)projectArrowImageView;
+- (id)projectDescriptionLabel;
+- (id)donateInfoView;
+- (void)p_updateProjectNameLabelWithModel:;
+- (void)p_updateDescriptionLabelWithModel:welfareViewTotalHeight:;
+- (void)p_updateDonateInfoViewWithModel:welfareViewTotalHeight:;
+- (void)clickedWelfareView:;
+- (void)setProjectNameLabel:;
+- (void)setProjectArrowImageView:;
+- (void)setProjectDescriptionLabel:;
+- (void)setDonateInfoView:;
+- (void)setModel:;
+- (id)delegate;
+- (id)tracker;
+- (id)initWithFrame:;
+- (id)containerView;
+- (id)model;
+- (void)setTracker:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

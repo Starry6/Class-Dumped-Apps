@@ -1,0 +1,33 @@
+@interface AWEIMPeerABTestManager : NSObject
+@property (nonatomic) NSMutableDictionary abValueDict;
+@property (nonatomic) NSDictionary stableAbValueDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishFollowUser:status:error:;
+- (void)fetchReverseExperimentIfNeededWithSource:userModels:;
+- (void)fetchReverseExperimentIfNeededWithSource:secUids:;
+- (void)requestWithParams:completion:;
+- (id)peerABValueWithPeerSecUid:abKey:stable:;
+- (void)p_preparePeerABTestData;
+- (void)setAbValueDict:;
+- (id)abValueDict;
+- (void)setStableAbValueDict:;
+- (void)p_prepareABtestDataForFriendsIfNeeded;
+- (id)stableAbValueDict;
+- (void)asyncGetPeerABValueWithPeerSecUids:abKey:completion:;
+- (void)asyncGetPeerABValueWithPeerSecUids:abKeys:completion:;
+- (id)init;
+- (void).cxx_destruct;
++ (void)im_clearPeerABTestData;
++ (BOOL)shouldRefreshRecord;
++ (id)supportedSources;
++ (id)peerExpConfigs;
++ (long long)secUidsLimit;
++ (id)sharedInstance;
++ (BOOL)enabled;
++ (BOOL)forceReload;
++ (long long)refreshInterval;
+@end

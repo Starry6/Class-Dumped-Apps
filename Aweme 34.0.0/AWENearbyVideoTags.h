@@ -1,0 +1,32 @@
+@interface AWENearbyVideoTags : AWEBaseApiModel
+@property (nonatomic) UIColor tagBgColor;
+@property (nonatomic) UIColor tagBgColor;
+@property (nonatomic) q style;
+@property (nonatomic) NSString content;
+@property (nonatomic) AWENearbyC2CellTagData firstTag;
+@property (nonatomic) AWENearbyC2CellTagData title;
+@property (nonatomic) AWEURLModel backGround;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) double bgDegree;
+@property (nonatomic) AWEURLModel splitUrl;
+- (id)backGround;
+- (void)setBackGround:;
+- (id)firstTag;
+- (void)setFirstTag:;
+- (double)bgDegree;
+- (void)setBgDegree:;
+- (id)splitUrl;
+- (void)setSplitUrl:;
+- (id)tagBgColor;
+- (id)tagBgColor;
+- (id)content;
+- (long long)style;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setStyle:;
+- (id)bgColor;
+- (void)setBgColor:;
++ (BOOL)automaticallyDefaultMapping;
+@end

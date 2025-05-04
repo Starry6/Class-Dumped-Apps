@@ -1,0 +1,37 @@
+@interface AWEECShoppingAIGuideLynxCard : AWEECShoppingAIGuideBaseCard
+@property (nonatomic) AWEECShoppingAIGuideMessageSingleLynxViewModel lynxViewModel;
+@property (nonatomic) double intrinsicContentHeight;
+@property (nonatomic) NSString lynxCardID;
+@property (nonatomic) <AWEECShoppingAIGuideLynxCardDelegate> lynxDelegate;
+@property (nonatomic) UIView<AnnieXContainerBaseProtocol> cardView;
+@property (nonatomic) AWEECShoppingAIGuideCardSettingProvider cardProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didFinishLoadWithURL:;
+- (void)container:didChangeIntrinsicContentSize:;
+- (void)containerDidFirstScreen:;
+- (id)lynxModel;
+- (void)setupUIWithModel:;
+- (id)cardProvider;
+- (void)setCardProvider:;
+- (void)setLynxViewModel:;
+- (id)lynxCardID;
+- (id)initWithCardProvider:;
+- (void)setLynxDelegate:;
+- (id)lynxViewModel;
+- (void)setIntrinsicContentHeight:;
+- (void)enqueueLynxCard;
+- (void)setLynxCardID:;
+- (void)tryUpdateCardSize:callTrace:;
+- (id)lynxDelegate;
+- (void)container:customReuseDidChangeSize:;
+- (void)cleanForReuse;
+- (void)didMoveToSuperview;
+- (void).cxx_destruct;
+- (id)cardView;
+- (void)setCardView:;
+- (id)expectedSize;
+- (double)intrinsicContentHeight;
+@end

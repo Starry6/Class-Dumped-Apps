@@ -1,0 +1,32 @@
+@interface AWEIMGroupInviteContentComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMGroupInviteMessage message;
+@property (nonatomic) AWEIMUserViewModel inviterUserVM;
+@property (nonatomic) double cellShowTrackInterval;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)needUpdateDisplayWithContextOptions:;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)p_createPresenter;
+- (void)didTapCard;
+- (double)cellShowTrackInterval;
+- (void)setCellShowTrackInterval:;
+- (id)__titleLabelText;
+- (id)__subtitleLabelText;
+- (void)setInviterUserVM:;
+- (void)p_setupBind;
+- (id)inviterUserVM;
+- (id)p_makeSubtitleLabelText;
+- (void)__trackEventWithShowCard;
+- (void)__trackInviteCardClick;
+- (void)__trackGroupChatClickInvite;
+- (id)displayMessage;
+- (void)setScene:;
+- (id)message;
+- (long long)scene;
+- (void).cxx_destruct;
++ (id)sceneTypeStringForScene:;
+@end

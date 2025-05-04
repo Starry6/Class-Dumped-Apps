@@ -1,0 +1,36 @@
+@interface AWEFeedCommentBarConfig : AWEBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString barID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString intro;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q expireTime;
+@property (nonatomic) AWEURLModel lightIconUrls;
+@property (nonatomic) AWEURLModel darkIconUrls;
+@property (nonatomic) q priorityType;
+- (void)setExtra:;
+- (long long)priorityType;
+- (void)setPriorityType:;
+- (void)setIntro:;
+- (id)barID;
+- (void)setBarID:;
+- (id)lightIconUrls;
+- (void)setLightIconUrls:;
+- (id)darkIconUrls;
+- (void)setDarkIconUrls:;
+- (void)setUrl:;
+- (id)extra;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)url;
+- (void)setTitle:;
+- (long long)expireTime;
+- (void)setExpireTime:;
+- (id)intro;
++ (id)lightIconUrlsJSONTransformer;
++ (id)darkIconUrlsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

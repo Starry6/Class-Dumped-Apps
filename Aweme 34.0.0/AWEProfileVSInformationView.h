@@ -1,0 +1,32 @@
+@interface AWEProfileVSInformationView : UIView
+@property (nonatomic) UIImageView timeIcon;
+@property (nonatomic) UILabel scheduleLable;
+@property (nonatomic) UIImageView introductionIcon;
+@property (nonatomic) UIButton introductionButton;
+@property (nonatomic) YYLabel introductionLabel;
+@property (nonatomic) AWEVSPersonalModel model;
+@property (nonatomic) NSDictionary trackerParam;
+@property (nonatomic) NSString authorId;
+- (id)currentThemeName;
+- (id)trackerParam;
+- (void)setTrackerParam:;
+- (id)introductionLabel;
+- (void)setIntroductionLabel:;
+- (void)configWithVSPersonalModel:authorId:trackParam:;
+- (id)timeIcon;
+- (id)scheduleLable;
+- (id)introductionButton;
+- (id)introductionIcon;
+- (void)setTimeIcon:;
+- (void)setScheduleLable:;
+- (void)setIntroductionIcon:;
+- (void)setIntroductionButton:;
+- (void)setModel:;
+- (id)init;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)handleTapGestureRecognizer:;
+- (id)authorId;
+- (void)setAuthorId:;
+@end

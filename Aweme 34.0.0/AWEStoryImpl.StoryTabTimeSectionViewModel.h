@@ -1,0 +1,2 @@
+@interface AWEStoryImpl.StoryTabTimeSectionViewModel : AWEStoryKit.StoryKitBaseSectionViewModel
+@end

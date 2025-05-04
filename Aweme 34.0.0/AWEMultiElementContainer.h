@@ -1,0 +1,35 @@
+@interface AWEMultiElementContainer : AWEElementContainer
+@property (nonatomic) NSMapTable reusableElements;
+@property (nonatomic) NSMapTable reuseCounter;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) AWEPageContext context;
+@property (nonatomic) NSMutableArray allElements;
+@property (nonatomic) AWEElementGroups elementGroups;
+@property (nonatomic) q reuseWeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithViewController:context:;
+- (id)elementArray;
+- (void)addElementView:view:;
+- (void)addElementByClassName:withParamDict:;
+- (id)reusableElements;
+- (long long)reuseWeight;
+- (id)elementGroups;
+- (void)setElementGroups:;
+- (void)clearByReuseCounter;
+- (id)dequeueReuseElementWithClass:;
+- (void)clearForPrepareSetModel;
+- (void)setReuseWeight:;
+- (void)setReusableElements:;
+- (id)allElements;
+- (id)viewController;
+- (void)setContext:;
+- (void)setAllElements:;
+- (void).cxx_destruct;
+- (id)context;
+- (void)setViewController:;
+- (id)reuseCounter;
+- (void)setReuseCounter:;
+@end

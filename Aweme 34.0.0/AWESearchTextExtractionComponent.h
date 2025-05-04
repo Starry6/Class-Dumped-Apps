@@ -1,0 +1,33 @@
+@interface AWESearchTextExtractionComponent : AWESearchComponent
+@property (nonatomic) UIButton textExtractionButton;
+@property (nonatomic) AWESearchTextExtractionComponentModel model;
+@property (nonatomic) <AWESearchStandardVideoPlayerComponentProvider> playerProvider;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (id)textExtractionButton;
+- (void)textExtractionClick;
+- (void)trackerTextExtractionWithEvent:;
+- (id)playerProvider;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewDidStartShowing;
+- (void)componentViewLayoutSubviews;
+- (id)provideProtocol;
+- (void)setPlayerProvider:;
+- (void)setTextExtractionButton:;
+- (void)p_updateWithModel:forceUpdate:;
+- (void)setModel:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)componentView;
++ (id)componentSizeForModel:width:;
++ (id)p_calculateComponentSize:withModel:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEECOMIMEmojiView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIButton deleteButton;
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) @? selectedEmoji;
+@property (nonatomic) @? deleteEmoji;
+@property (nonatomic) @? sendAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onClickSend;
+- (void)onClickDelete;
+- (id)deleteEmoji;
+- (id)selectedEmoji;
+- (void)setSelectedEmoji:;
+- (void)setDeleteEmoji:;
+- (void)setSendAction:;
+- (id)collectionView;
+- (void)setDeleteButton:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (id)deleteButton;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)sendAction;
+- (id)sendButton;
+- (void)setSendButton:;
+@end

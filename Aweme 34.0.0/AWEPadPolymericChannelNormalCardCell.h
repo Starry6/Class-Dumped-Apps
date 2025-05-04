@@ -1,0 +1,33 @@
+@interface AWEPadPolymericChannelNormalCardCell : UICollectionViewCell
+@property (nonatomic) AWEPadPolymericChannelMarkLabel tagViewGradientView;
+@property (nonatomic) AWEGradientView coverBottomInfoMaskView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UILabel infoLabel;
+@property (nonatomic) UIImageView playIcon;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)playIcon;
+- (void)setPlayIcon:;
+- (id)coverBottomInfoMaskView;
+- (void)setCoverBottomInfoMaskView:;
+- (id)tagViewGradientView;
+- (void)configCardTag:;
+- (void)setTagViewGradientView:;
+- (void)setDescriptionLabel:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)descriptionLabel;
+- (void)layoutSubviews;
+- (id)infoLabel;
+- (void)setupView;
+- (void)setInfoLabel:;
+- (void)makeLayout;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

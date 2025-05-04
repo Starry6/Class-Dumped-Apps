@@ -1,0 +1,2 @@
+@interface AWEMCRecordDurationViewModel : AFDMomentCameraBaseViewModel
+@end

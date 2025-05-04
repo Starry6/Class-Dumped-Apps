@@ -1,0 +1,37 @@
+@interface AWECodeGenServiceAccountModel : AWEBaseDataModel
+@property (nonatomic) NSString serviceAccountId;
+@property (nonatomic) NSString serviceAccountName;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSArray subcategoryListModelArray;
+@property (nonatomic) AWECodeGenPermissionControlModel permissionControlModel;
+@property (nonatomic) q updateTime;
+@property (nonatomic) NSString bizExtra;
+@property (nonatomic) NSInteger appId;
+@property (nonatomic) NSInteger serviceAccountIconType;
+- (id)iconUrl;
+- (void)setIconUrl:;
+- (id)serviceAccountId;
+- (void)setServiceAccountId:;
+- (id)bizExtra;
+- (void)setBizExtra:;
+- (id)serviceAccountName;
+- (id)permissionControlModel;
+- (id)subcategoryListModelArray;
+- (void)setServiceAccountName:;
+- (int)serviceAccountIconType;
+- (void)setSubcategoryListModelArray:;
+- (void)setPermissionControlModel:;
+- (void)setServiceAccountIconType:;
+- (long long)updateTime;
+- (int)appId;
+- (void).cxx_destruct;
+- (void)setUpdateTime:;
+- (void)setAppId:;
++ (id)modelWithJSONDictionary:sharedModelInfos:;
++ (id)modelWithJSONDictionary:;
++ (id)propertyToModelClassInArrayMap;
++ (id)subscribe_modelWithJSONDictionary:;
++ (id)subscribe_modelWithJSONDictionary:sharedModelInfos:;
++ (void)_aweLazyRegisterStaticLoad_AWEMRSubscribeHelper;
++ (id)JSONKeyPathsByPropertyKey;
+@end

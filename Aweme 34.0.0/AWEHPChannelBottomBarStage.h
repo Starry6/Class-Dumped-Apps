@@ -1,0 +1,32 @@
+@interface AWEHPChannelBottomBarStage : NSObject
+@property (nonatomic) BOOL isTabBarSelected;
+@property (nonatomic) AWEHPChannelTabBarItemModel tabItem;
+@property (nonatomic) AWEHPChannelBubbleTask bubbleTask;
+@property (nonatomic) AWEHPChannelActionPopoverTask popoverTask;
+@property (nonatomic) BOOL bottomBarFillBackground;
+@property (nonatomic) Q bottomBarThemeStyle;
+@property (nonatomic) NSArray leftElementButtonViewModels;
+@property (nonatomic) NSArray rightElementButtonViewModels;
+@property (nonatomic) BOOL compactBGColorFill;
+- (id)leftElementButtonViewModels;
+- (void)setLeftElementButtonViewModels:;
+- (id)rightElementButtonViewModels;
+- (void)setRightElementButtonViewModels:;
+- (BOOL)compactBGColorFill;
+- (void)setCompactBGColorFill:;
+- (id)bubbleTask;
+- (void)setBubbleTask:;
+- (id)tabItem;
+- (void)setTabItem:;
+- (BOOL)isTabBarSelected;
+- (void)setIsTabBarSelected:;
+- (id)popoverTask;
+- (BOOL)bottomBarFillBackground;
+- (unsigned long long)bottomBarThemeStyle;
+- (void)setBottomBarThemeStyle:;
+- (void)setBottomBarFillBackground:;
+- (void)setPopoverTask:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)debugDescription;
+@end

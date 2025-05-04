@@ -1,0 +1,37 @@
+@interface AWESearchExpandLabelView : UIView
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) BOOL expanded;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastFrame;
+@property (nonatomic) UIImageView expendImageView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) double topBottomPadding;
+@property (nonatomic) double oneLineLabelHeight;
+@property (nonatomic) @? heightChanged;
+@property (nonatomic) NSString text;
+- (void)initViews;
+- (id)heightChanged;
+- (void)setHeightChanged:;
+- (void)setTopBottomPadding:;
+- (double)topBottomPadding;
+- (id)textSizeAvailableWidth:;
+- (id)expendImageView;
+- (double)oneLineLabelHeight;
+- (void)setExpendImageView:;
+- (void)setLabel:;
+- (void)setTintColor:;
+- (BOOL)expanded;
+- (id)tintColor;
+- (void)setText:;
+- (id)initWithFrame:;
+- (id)text;
+- (void)setTextColor:;
+- (id)label;
+- (void)setExpanded:;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (void)setTextFont:;
+- (id)lastFrame;
+- (void)setLastFrame:;
+- (void)tapAction;
+- (void)expand:;
+@end

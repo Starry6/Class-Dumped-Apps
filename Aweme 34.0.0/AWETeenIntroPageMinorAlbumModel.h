@@ -1,0 +1,35 @@
+@interface AWETeenIntroPageMinorAlbumModel : MTLModel
+@property (nonatomic) NSString albumID;
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEURLModel coverUrl;
+@property (nonatomic) AWEURLModel coverClip;
+@property (nonatomic) AWETeenIntroPageMinorAlbumStatusModel status;
+@property (nonatomic) q source;
+@property (nonatomic) Q fakeAlbumType;
+@property (nonatomic) NSString pageToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (void)setAlbumID:;
+- (id)pageToken;
+- (void)setPageToken:;
+- (id)coverClip;
+- (unsigned long long)fakeAlbumType;
+- (void)setFakeAlbumType:;
+- (void)setCoverClip:;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)status;
+- (id)title;
+- (void)setSource:;
+- (void)setTitle:;
+- (id)albumID;
++ (id)coverUrlJSONTransformer;
++ (id)statusJSONTransformer;
++ (id)coverClipJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

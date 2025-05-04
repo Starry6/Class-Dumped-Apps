@@ -1,0 +1,2 @@
+@interface AWEReplaceMusicPublishReponse : ACCBaseApiModel
+@end

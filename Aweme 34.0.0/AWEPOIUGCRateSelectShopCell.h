@@ -1,0 +1,31 @@
+@interface AWEPOIUGCRateSelectShopCell : UITableViewCell
+@property (nonatomic) UIImageView selectedIcon;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel distanceLabel;
+@property (nonatomic) UIView scoreContainerView;
+@property (nonatomic) UIImageView scoreImageView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UILabel scoreTextLabel;
+- (id)selectedIcon;
+- (void)setSelectedIcon:;
+- (id)scoreImageView;
+- (void)setScoreImageView:;
+- (id)scoreTextLabel;
+- (void)setScoreTextLabel:;
+- (id)scoreContainerView;
+- (void)updateScoreViewWithInfo:;
+- (void)updateSubviewLayout;
+- (void)setScoreContainerView:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)nameLabel;
+- (void).cxx_destruct;
+- (id)distanceLabel;
+- (void)setDistanceLabel:;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (void)updateWithModel:;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
++ (double)normalHeightWithNewStyle:;
++ (double)itemHeightWithModel:;
+@end

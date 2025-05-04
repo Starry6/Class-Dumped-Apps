@@ -1,0 +1,33 @@
+@interface AWEAlertConfigModel : NSObject
+@property (nonatomic) # eventClass;
+@property (nonatomic) NSString alertID;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) NSString eventClassName;
+@property (nonatomic) q priority;
+@property (nonatomic) BOOL cancelOtherAlerts;
+@property (nonatomic) NSString lynxURL;
+@property (nonatomic) NSNumber lynxURLTimeout;
+@property (nonatomic) NSString lynxControllerURL;
+@property (nonatomic) NSNumber lynxControllerURLTimeout;
+- (void)setLynxURL:;
+- (id)lynxURL;
+- (void)setAlertID:;
+- (id)lynxURLTimeout;
+- (void)setLynxURLTimeout:;
+- (id)lynxControllerURL;
+- (void)setLynxControllerURL:;
+- (id)lynxControllerURLTimeout;
+- (void)setLynxControllerURLTimeout:;
+- (BOOL)cancelOtherAlerts;
+- (void)setCancelOtherAlerts:;
+- (id)eventClassName;
+- (void)setEventClassName:;
+- (id)eventID;
+- (long long)priority;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (void)setEventID:;
+- (Class)eventClass;
+- (id)alertID;
+- (void)setEventClass:;
+@end

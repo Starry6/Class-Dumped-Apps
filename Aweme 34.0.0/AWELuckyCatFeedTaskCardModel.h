@@ -1,0 +1,30 @@
+@interface AWELuckyCatFeedTaskCardModel : MTLModel
+@property (nonatomic) NSString lynxSchema;
+@property (nonatomic) NSString cardData;
+@property (nonatomic) BOOL showInspire;
+@property (nonatomic) BOOL enableDislike;
+@property (nonatomic) AWELuckyCatFeedTaskCardBubbleInfo bubbleInfo;
+@property (nonatomic) double validStartTime;
+@property (nonatomic) double validEndTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lynxSchema;
+- (void)setLynxSchema:;
+- (id)bubbleInfo;
+- (void)setBubbleInfo:;
+- (BOOL)showInspire;
+- (void)setShowInspire:;
+- (BOOL)enableDislike;
+- (void)setEnableDislike:;
+- (void).cxx_destruct;
+- (void)setValidEndTime:;
+- (void)setValidStartTime:;
+- (double)validEndTime;
+- (double)validStartTime;
+- (id)cardData;
+- (void)setCardData:;
++ (id)bubbleInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

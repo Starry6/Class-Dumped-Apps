@@ -1,0 +1,33 @@
+@interface AWEPOIPrivateCardService : NSObject
+@property (nonatomic) BOOL isDialogShow;
+@property (nonatomic) BOOL hasFollowed;
+@property (nonatomic) NSDictionary paramDict;
+@property (nonatomic) DUXToast toast;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)alertDialogDidDismiss:;
+- (id)paramDict;
+- (void)setParamDict:;
+- (id)webviewSchemaString:joinParameters:;
+- (id)webviewUrlString:joinParameters:;
+- (BOOL)isCraftsmanScene;
+- (void)setHasFollowed:;
+- (void)followMerchantAndGetCoupon:toUser:extraInfo:materialId:onDialog:;
+- (void)setIsDialogShow:;
+- (void)updateFollowStatus:toUser:secUid:;
+- (BOOL)isDialogShow;
+- (BOOL)hasFollowed;
+- (void)showCouponDialog:andFollowMerchant:extraInfo:materialId:paramDict:onViewController:;
+- (void)showLiveAppointDialog:extraInfo:materialId:paramDict:onViewController:;
+- (void)openSchemaWithExtraInfo:toUserID:materialId:paramDict:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
++ (BOOL)needHandleError:error:;
++ (void)trackEvent:withModel:enterMethod:extraParams:;
++ (BOOL)needHandleLiveAppointError:error:;
++ (BOOL)needHandleCouponError:error:;
+@end

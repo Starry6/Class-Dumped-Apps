@@ -1,0 +1,30 @@
+@interface AWEACCUserServiceImpl : NSObject
+@property (nonatomic) BOOL isUserLogin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)requireLogin:;
+- (void)requireLogin:withTrackerInformation:;
+- (void)requireLoginWithContext:completion:;
+- (BOOL)isCurrentLoginUserWithID:;
+- (id)bindedPhoneCountryCode;
+- (id)recentLoginedUserIdListWithCountLimit:;
+- (BOOL)isUserLogin;
+- (void)setIsUserLogin:;
+- (void)getUserProfileWithID:completion:;
+- (BOOL)isHMRegionUser;
+- (BOOL)isChildMode;
+- (void)requireLoginAdaptTeenMode:withTrackerInformation:;
+- (id)currentLoginUserModel;
+- (void)getUserProfileWithID:secUserID:completion:;
+- (void)syncUser:;
+- (void)cleanUserCache;
+- (void)switchUserWithCompletion:;
+- (id)init;
+- (void)dealloc;
+- (BOOL)isNewUser;
+- (BOOL)isLogin;
+@end

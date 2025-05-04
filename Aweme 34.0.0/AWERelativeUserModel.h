@@ -1,0 +1,36 @@
+@interface AWERelativeUserModel : AWEBaseApiModel
+@property (nonatomic) NSNumber userID;
+@property (nonatomic) AWEURLModel avatar;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) AWEURLModel avatarThumb;
+@property (nonatomic) q followStatus;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) NSString alias;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)secUserID;
+- (void)setSecUserID:;
+- (long long)followStatus;
+- (id)avatarThumb;
+- (void)setFollowStatus:;
+- (id)getUserModel;
+- (void)setAvatarThumb:;
+- (id)userNameWithScene:;
+- (id)aliasWithScene:;
+- (id)nickname;
+- (id)alias;
+- (id)userID;
+- (id)displayName;
+- (void).cxx_destruct;
+- (void)setAlias:;
+- (void)setNickname:;
+- (void)setUserID:;
+- (id)avatar;
+- (void)setAvatar:;
++ (id)avatarThumbJSONAdapter;
++ (id)followStatusJSONTransformer;
++ (id)avatarJSONAdapter;
++ (id)JSONKeyPathsByPropertyKey;
+@end

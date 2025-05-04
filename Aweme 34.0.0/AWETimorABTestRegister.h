@@ -1,0 +1,2 @@
+@interface AWETimorABTestRegister : NSObject
+@end

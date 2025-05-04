@@ -1,0 +1,32 @@
+@interface AWEStarAtlasModel : MTLModel
+@property (nonatomic) NSArray trackURLList;
+@property (nonatomic) NSArray clickTrackURLList;
+@property (nonatomic) q reviewStatus;
+@property (nonatomic) AWEStarAtlasLinkModel linkModel;
+@property (nonatomic) AWEStarAtlasLiveInfoModel liveInfoModel;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (void)setReviewStatus:;
+- (long long)reviewStatus;
+- (id)clickTrackURLList;
+- (id)linkModel;
+- (id)trackURLList;
+- (void)setTrackURLList:;
+- (void)setClickTrackURLList:;
+- (id)liveInfoModel;
+- (id)clickTrackURLModel;
+- (void)setLinkModel:;
+- (id)trackURLModel;
+- (id)statusIntroText;
+- (id)statusDetailText;
+- (id)statusTrackText;
+- (void)setLiveInfoModel:;
+- (void).cxx_destruct;
++ (id)linkModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

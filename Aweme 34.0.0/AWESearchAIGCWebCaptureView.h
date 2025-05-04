@@ -1,0 +1,32 @@
+@interface AWESearchAIGCWebCaptureView : UIView
+@property (nonatomic) UIView<BDXViewContainerProtocol> bdxView;
+@property (nonatomic) BDXBridgeEventSubscriber readyToCaptureSubscriber;
+@property (nonatomic) @? webReadyCallback;
+@property (nonatomic) @? webLoadResultCallback;
+@property (nonatomic) NSMutableDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didFinishLoadWithURL:;
+- (void)container:didLoadFailedWithUrl:error:;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)bdxView;
+- (void)setBdxView:;
+- (void)setReadyToCaptureSubscriber:;
+- (id)readyToCaptureSubscriber;
+- (void)captureWithSchema:finishCallback:;
+- (id)webReadyCallback;
+- (void)startCaptureWithParams:completion:;
+- (void)setWebReadyCallback:;
+- (void)setWebLoadResultCallback:;
+- (void)scrollToDraw:targetSize:scale:perHeight:completion:;
+- (id)webLoadResultCallback;
+- (void)dealloc;
+- (void)addObserver;
+- (id)initWithFrame:;
+- (void)cancel;
+- (void)removeObserver;
+- (void).cxx_destruct;
+@end

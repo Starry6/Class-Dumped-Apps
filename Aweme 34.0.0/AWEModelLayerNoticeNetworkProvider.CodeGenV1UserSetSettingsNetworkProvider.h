@@ -1,0 +1,36 @@
+@interface AWEModelLayerNoticeNetworkProvider.CodeGenV1UserSetSettingsNetworkProvider : AWEDataLayerRootModelGetMethodNetworkProvider
+@property (nonatomic) NSString field;
+@property (nonatomic) NSNumber value;
+@property (nonatomic) NSString userResidence;
+@property (nonatomic) NSString contentLanguage;
+@property (nonatomic) NSNumber actionType;
+@property (nonatomic) NSString contentLanguageNotLogin;
+@property (nonatomic) NSString settingsNotLogin;
+@property (nonatomic) NSNumber vpaContentChoice;
+@property (nonatomic) NSString postscript;
+- (id)networkDomain;
+- (id)networkURLPath;
+- (id)networkParams;
+- (id)userResidence;
+- (void)setUserResidence:;
+- (id)contentLanguage;
+- (void)setContentLanguage:;
+- (id)contentLanguageNotLogin;
+- (void)setContentLanguageNotLogin:;
+- (id)settingsNotLogin;
+- (void)setSettingsNotLogin:;
+- (id)vpaContentChoice;
+- (void)setVpaContentChoice:;
+- (id)postscript;
+- (void)setPostscript:;
+- (id)value;
+- (id)actionType;
+- (void)setActionType:;
+- (id)init;
+- (id)field;
+- (void)setValue:;
+- (void)setField:;
+- (void).cxx_destruct;
+- (Class)modelClass;
++ (id)businessURI;
+@end

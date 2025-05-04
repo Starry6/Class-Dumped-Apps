@@ -1,0 +1,2 @@
+@interface AWEXTabBridgeActivityMethodResultModel : BDXBridgeModel
+@end

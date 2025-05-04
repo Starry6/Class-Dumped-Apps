@@ -1,0 +1,35 @@
+@interface AWEVideoHallHotCell : UICollectionViewCell
+@property (nonatomic) BDImageView cover;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) DUXTextTag videoTag;
+@property (nonatomic) UILabel updateCycleLabel;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UIVisualEffectView appbrandIconBlurView;
+@property (nonatomic) BDImageView appbrandIconView;
+- (id)cover;
+- (void)setCover:;
+- (void)setupSubViews;
+- (id)videoTag;
+- (void)setVideoTag:;
+- (void)configurationWithItem:;
+- (void)setCornerMarkLabelWithAlbumModel:;
+- (id)updateCycleLabel;
+- (void)setUpdateCycleLabel:;
+- (id)appbrandIconBlurView;
+- (id)appbrandIconView;
+- (void)setAppbrandIconBlurView:;
+- (void)setAppbrandIconView:;
+- (id)gradientView;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)titleLabel;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

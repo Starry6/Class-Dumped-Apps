@@ -1,0 +1,21 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedMiniClientGuideManager : AWEKnowledgeSwiftBasic.FullPageBaseComponent
+- (void)onContainerViewDidAppear;
+- (void)onContainerViewDidLoad;
+- (void)onContainerViewWillDisappear;
+- (void)onPageModeWillChange:;
+- (void)onPageModeDidChage:;
+- (BOOL)shouldDesktopChannelGuideEvadeWithScene:enterFrom:;
+- (void)handleFavoriteSnackBarDismissWithNotification:;
+- (void)handleShareSuccessWithNotification:;
+- (void)handleCommentAddedWithNotification:;
+- (BOOL)shouldPreventBack;
+- (void)executeCustomBackOperation;
+- (void)handleLikeSuccess;
+- (void)handleCollectSuccess;
+- (void)handleFollowSuccess;
+- (id)init;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
+@end

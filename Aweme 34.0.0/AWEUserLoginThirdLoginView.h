@@ -1,0 +1,30 @@
+@interface AWEUserLoginThirdLoginView : UIView
+@property (nonatomic) AWEUserLoginThirdLoginDataController dataController;
+@property (nonatomic) DYSSOLoginView thirdLoginView;
+@property (nonatomic) UIButton otherLoginButton;
+@property (nonatomic) <AWEUserLoginThirdLoginViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataController:;
+- (id)createLoginView;
+- (void)loginWithPlatform:;
+- (id)otherLoginButton;
+- (id)thirdLoginView;
+- (id)onShowThirdPlatforms;
+- (id)createLoginButton;
+- (void)SSOLogin:;
+- (void)moreButtonTappedOnSSOLoginView:;
+- (void)setOtherLoginButton:;
+- (void)setThirdLoginView:;
+- (void)showToastWithModel:platform:;
+- (void)clickOtherLoginButton:;
+- (void)SSOLoginWithPlatform:;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)dataController;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMQuoteReplyStyleContentView : UIView
+@property (nonatomic) AWEIMQuoteReplyStyleContentProps props;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIView quoteReplyLineView;
+@property (nonatomic) YYLabel quoteReplyLabel;
+@property (nonatomic) UITapGestureRecognizer quoteTapGestureRecognizer;
+@property (nonatomic) UITapGestureRecognizer bubbleTapGestureRecognizer;
+- (void)p_addGesture;
+- (void)p_addSubviews;
+- (void)p_updateConstraints;
+- (void)updateWithProps:;
+- (void)p_addConstraints;
+- (id)quoteReplyLabel;
+- (id)quoteReplyLineView;
+- (id)quoteTapGestureRecognizer;
+- (void)setQuoteReplyLineView:;
+- (void)setQuoteReplyLabel:;
+- (void)setQuoteTapGestureRecognizer:;
+- (void)p_updateTexts;
+- (void)p_updateLineColor;
+- (id)p_quoteReplySize;
+- (id)bubbleTapGestureRecognizer;
+- (void)p_tapQuoteReplyLabelWithGesture:;
+- (void)p_tapViewWithGesture:;
+- (void)setBubbleTapGestureRecognizer:;
+- (id)props;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setProps:;
++ (id)contentSizeWithQuoteReplyAttrString:displayAttrString:;
++ (id)quoteReplySizeWithAttrString:;
+@end

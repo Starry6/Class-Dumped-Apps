@@ -1,0 +1,2 @@
+@interface AWEECOMIMPaasClientDefine : NSObject
+@end

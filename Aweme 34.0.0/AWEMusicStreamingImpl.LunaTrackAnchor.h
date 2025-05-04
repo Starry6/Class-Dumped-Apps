@@ -1,0 +1,37 @@
+@interface AWEMusicStreamingImpl.LunaTrackAnchor : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString text;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl11LunaURLInfo image;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSArray textList;
+@property (nonatomic) q truncPos;
+@property (nonatomic) BOOL isYearEnd;
+@property (nonatomic) BOOL isVlpAnchor;
+@property (nonatomic) BOOL isMutualFriendAnchor;
+@property (nonatomic) BOOL isHighValueRelationAnchor;
+@property (nonatomic) q priority;
+- (void)setTextList:;
+- (long long)truncPos;
+- (void)setTruncPos:;
+- (BOOL)isYearEnd;
+- (BOOL)isVlpAnchor;
+- (BOOL)isMutualFriendAnchor;
+- (BOOL)isHighValueRelationAnchor;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)image;
+- (void)setImage:;
+- (void)setText:;
+- (long long)priority;
+- (id)text;
+- (id)textList;
+- (id)type;
+- (void)setType:;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)link;
+- (id)initWithCoder:;
+- (void)setLink:;
++ (id)imageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

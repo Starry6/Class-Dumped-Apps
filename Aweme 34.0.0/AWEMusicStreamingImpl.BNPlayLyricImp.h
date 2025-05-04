@@ -1,0 +1,37 @@
+@interface AWEMusicStreamingImpl.BNPlayLyricImp : MTLModel
+@property (nonatomic) _TtC21AWEMusicStreamingImpl15LunaTrackLyrics lyric;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl14LunaTrackColor trackColor;
+@property (nonatomic) double totalDuration;
+@property (nonatomic) NSString trackID;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) _TtC21AWEMusicStreamingImpl21LunaSongMakerTeamInfo lunaSongMakerTeamInfo;
+@property (nonatomic) BOOL hasTranslation;
+@property (nonatomic) BOOL isExpired;
+@property (nonatomic) BOOL hideRequestLyric;
+- (void)insertSongMakerTeamInfoToLyricWithTeamInfo:totalDuration:;
+- (void)insertNoLyricHintIfNeedWithTotalDuration:;
+- (void)insertLyricContributorInfoIfNeedWithTotalDuration:;
+- (id)lunaSongMakerTeamInfo;
+- (void)setLunaSongMakerTeamInfo:;
+- (BOOL)hasTranslation;
+- (BOOL)hideRequestLyric;
+- (void)setHideRequestLyric:;
+- (id)initWithTrackId:lyric:trackColor:totalDuration:lunaSongMakerTeamInfo:requestID:;
+- (id)lyric;
+- (void)setLyric:;
+- (BOOL)isExpired;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (id)requestID;
+- (void)setRequestID:;
+- (double)totalDuration;
+- (void)setTrackID:;
+- (id)trackID;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)initWithCoder:;
+- (void)setTotalDuration:;
+- (void)setTrackColor:;
+- (id)trackColor;
++ (id)encodingBehaviorsByPropertyKey;
+@end

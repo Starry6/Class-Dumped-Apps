@@ -1,0 +1,30 @@
+@interface AWEIMDescriptionViewContext : NSObject
+@property (nonatomic) BOOL shouldUseBackground;
+@property (nonatomic) UIImage icon;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) double iconImageMarginLeft;
+@property (nonatomic) NSString templateText;
+@property (nonatomic) NSDictionary templateActions;
+@property (nonatomic) UIFont textFont;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIColor linkColor;
+- (id)templateText;
+- (void)setTemplateText:;
+- (void)setIconImageMarginLeft:;
+- (double)iconImageMarginLeft;
+- (BOOL)shouldUseBackground;
+- (void)setShouldUseBackground:;
+- (id)textFont;
+- (id)icon;
+- (void)setIconSize:;
+- (void)setTextColor:;
+- (id)iconSize;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)linkColor;
+- (void)setLinkColor:;
+- (void)setTextFont:;
+- (id)templateActions;
+- (void)setTemplateActions:;
+@end

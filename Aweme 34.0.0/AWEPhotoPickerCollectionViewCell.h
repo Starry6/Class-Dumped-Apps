@@ -1,0 +1,33 @@
+@interface AWEPhotoPickerCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView loadingView;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) NSInteger imageRequestId;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView selectedIndicatorView;
+@property (nonatomic) AWEAssetModel assetModel;
+@property (nonatomic) BOOL assetSelected;
+- (int)imageRequestId;
+- (void)setImageRequestId:;
+- (id)assetModel;
+- (void)setAssetModel:;
+- (id)selectedIndicatorView;
+- (void)setSelectedIndicatorView:;
+- (id)dateSpeakString;
+- (void)setAssetSelected:;
+- (BOOL)assetSelected;
+- (id)accessibilityLabel;
+- (void)setTimeLabel:;
+- (void)prepareForReuse;
+- (void)setLoadingView:;
+- (id)initWithFrame:;
+- (id)loadingView;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (void)setImageView:;
+- (unsigned long long)accessibilityTraits;
+- (BOOL)isAccessibilityElement;
+- (id)imageView;
+- (void)accessibilityElementDidBecomeFocused;
+- (id)mediaInfo;
++ (id)identifier;
+@end

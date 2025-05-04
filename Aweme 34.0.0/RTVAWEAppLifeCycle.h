@@ -1,0 +1,38 @@
+@interface RTVAWEAppLifeCycle : NSObject
+@property (nonatomic) RTVAWEAppDelegate appDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onAppDidBecomeActive;
+- (void)onAppWillTerminate;
+- (void)onAppWillEnterForeground;
+- (void)onAppWillResignActive;
+- (void)onAppDidEnterBackground;
+- (void)onAppDidReceiveMemoryWarning;
+- (void)onAppDidRegisterDeviceToken;
+- (void)onAppDidFailToRegisterForRemoteNotifications;
+- (void)onAppDidReceiveLocalNotification;
+- (void)onAppDidReceiveRemoteNotification;
+- (void)onAppHandleNotification;
+- (void)onAppPerformBackgroundFetch;
+- (void)onHandleAppShortcutAction;
+- (void)onHandleEventsForBackgroundURLSession;
+- (BOOL)onHandleAppOpenUrl;
+- (BOOL)onHandleAppContinueUserActivity;
+- (void)aweRTVLongConnectionDidReceiveMsg:;
+- (void)appDidLaunch;
+- (void)appAfterLaunch;
+- (void)__forceInitialAppDelegate;
+- (long long)__delayInterval;
+- (void)__forceInitialAppDelegateCompletion:;
+- (id)__application;
+- (void)registerVoIPPush;
+- (void)voipPushRegister:didReceivePayload:;
+- (BOOL)__delayOptimize;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setAppDelegate:;
+- (id)appDelegate;
++ (void)lazyLoadInjectorAnnotation;
+@end

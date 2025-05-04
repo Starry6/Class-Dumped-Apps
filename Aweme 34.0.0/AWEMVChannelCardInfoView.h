@@ -1,0 +1,36 @@
+@interface AWEMVChannelCardInfoView : UIView
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel subDescLabel;
+@property (nonatomic) AWEMVChannelLeftBottomView leftBottomLabel;
+@property (nonatomic) UILabel rightBottomLabel;
+@property (nonatomic) AWEMVCardActionButton actionButton;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) @? actionBtnTouchUpInsideBlock;
+- (id)aAWEPadModuleAdapter;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)updateWithAwemeModel:;
+- (id)subDescLabel;
+- (void)setSubDescLabel:;
+- (void)setLeftBottomLabel:;
+- (void)setRightBottomLabel:;
+- (id)leftBottomLabel;
+- (id)rightBottomLabel;
+- (void)setActionBtnTouchUpInsideBlock:;
+- (void)updateInfoWithModel:;
+- (void)updateRightLabelWithModel:;
+- (void)updateForPadMidCard;
+- (double)cardInfoViewHeight:isBigCard:;
+- (id)actionBtnTouchUpInsideBlock;
+- (void)setModel:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)layoutSubviews;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setupSubviews;
+- (void)updateAction:;
++ (Class)aAWEPadModuleAdapterClass;
+@end

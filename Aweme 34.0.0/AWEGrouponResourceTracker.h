@@ -1,0 +1,30 @@
+@interface AWEGrouponResourceTracker : NSObject
+@property (nonatomic) Q pageType;
+@property (nonatomic) double didLoadTime;
+@property (nonatomic) double startRequestTime;
+@property (nonatomic) double endRequestTime;
+@property (nonatomic) double startCreateContainerTime;
+@property (nonatomic) double startSendLaunchInNaTime;
+@property (nonatomic) double endSendLaunchInNaTime;
+- (double)startRequestTime;
+- (void)setStartRequestTime:;
+- (id)initWithPageType:;
+- (void)setEndRequestTime:;
+- (double)endRequestTime;
+- (void)startCreateContainer;
+- (void)startSendLaunchInNa;
+- (void)endSendLaunchInNa;
+- (double)didLoadTime;
+- (double)startCreateContainerTime;
+- (double)startSendLaunchInNaTime;
+- (void)setDidLoadTime:;
+- (void)setStartCreateContainerTime:;
+- (void)setStartSendLaunchInNaTime:;
+- (double)endSendLaunchInNaTime;
+- (void)setEndSendLaunchInNaTime:;
+- (void)setPageType:;
+- (void)startRequest;
+- (unsigned long long)pageType;
+- (void)endRequest;
+- (void)didLoad;
+@end

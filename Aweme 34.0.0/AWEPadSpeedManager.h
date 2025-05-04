@@ -1,0 +1,34 @@
+@interface AWEPadSpeedManager : NSObject
+@property (nonatomic) NSArray padSpeedAwemeTypeBlackList;
+@property (nonatomic) BOOL enableGlobalSpeedInherit;
+@property (nonatomic) double currentSpeed;
+@property (nonatomic) NSString isLockedSpeedAwemeID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)inheritedSpeedWhenSlideHorizontallyWithAweme:referString:;
+- (BOOL)enableGlobalSpeedInherit;
+- (id)isLockedSpeedAwemeID;
+- (void)setIsLockedSpeedAwemeID:;
+- (void)updateCurrentVideoInfoWithAweme:speed:;
+- (double)inheritedSpeedWhenSlideVerticallyWithAweme:referString:;
+- (double)inheritedGlobalSpeedWithAweme:referString:enterFrom:;
+- (BOOL)shouldGlobalSpeedInherit;
+- (void)setEnableGlobalSpeedInherit:;
+- (void)setPadSpeedAwemeTypeBlackList:;
+- (BOOL)shouldInheritSpeedWithAweme:;
+- (id)padSpeedAwemeTypeBlackList;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
+- (double)currentSpeed;
+- (void)setCurrentSpeed:;
+- (void)setupConfig;
++ (void)setSpeedModeNextEnterMethod:;
++ (id)getSpeedModeNextEnterMethod;
++ (void)trackSpeedModePlayTimeWithModel:params:;
++ (BOOL)isCurrentVideoDurationSatisfiedWithModel:;
++ (double)videoDurationThreshold;
++ (id)sharedInstance;
+@end

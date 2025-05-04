@@ -1,0 +1,32 @@
+@interface AWEMusicSegmentItemView : UIView
+@property (nonatomic) AWEMusicSegmentItem item;
+@property (nonatomic) UILabel darkLabel;
+@property (nonatomic) UILabel lightLabel;
+@property (nonatomic) LOTAnimationView darkWaveView;
+@property (nonatomic) LOTAnimationView lightWaveView;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) UIFont font;
+- (id)darkLabel;
+- (id)lightLabel;
+- (void)setLightLabel:;
+- (void)setDarkLabel:;
+- (void)updateSelectedProgress:darkTheme:themeChanged:;
+- (void)updateTitleAlpha:darkTheme:;
+- (void)willEnterForegroundNotify:;
+- (id)darkWaveView;
+- (void)setDarkWaveView:;
+- (void)setLightWaveView:;
+- (id)lightWaveView;
+- (void)updatePlayingViewAlpha:darkTheme:themeChanged:increasing:;
+- (BOOL)isPlaying;
+- (void)play;
+- (void)setItem:;
+- (void)setup;
+- (id)item;
+- (id)font;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (void)setIsPlaying:;
+- (void)pause;
+- (id)initWithItem:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEProfileHeaderGuestFollowAreaSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) AWEProfileHeaderContext context;
+@property (nonatomic) q followStatus;
+@property (nonatomic) BOOL isRequestOnAir;
+@property (nonatomic) double sectionTopPadding;
+@property (nonatomic) double footerHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)followStatus;
+- (BOOL)isRequestOnAir;
+- (void)setIsRequestOnAir:;
+- (void)setFollowStatus:;
+- (void)configWithContext:;
+- (void)guestDidFinishFollowUser:isUnfollow:;
+- (id)padService;
+- (double)topPaddingWithUpperSection:;
+- (double)bottomPaddingWithLowerSection:;
+- (void)requestFollow;
+- (void)trackFollowEventWithUnfollow:;
+- (id)init;
+- (void)dealloc;
+- (long long)sectionType;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)sectionSize;
+- (double)footerHeight;
+- (double)sectionTopPadding;
+@end

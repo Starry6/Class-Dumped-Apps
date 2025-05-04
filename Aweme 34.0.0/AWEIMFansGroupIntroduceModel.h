@@ -1,0 +1,32 @@
+@interface AWEIMFansGroupIntroduceModel : IESIMBaseApiModel
+@property (nonatomic) q numCreator;
+@property (nonatomic) NSString introduceVideoUrl;
+@property (nonatomic) NSString introduceBackupUrl;
+@property (nonatomic) NSString introduceVideoUrlDark;
+@property (nonatomic) NSString introduceBackupUrlDark;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray iconList;
+@property (nonatomic) NSString faqUrl;
+@property (nonatomic) NSString faqDesc;
+- (id)iconList;
+- (void)setIconList:;
+- (long long)numCreator;
+- (id)introduceBackupUrl;
+- (id)introduceVideoUrl;
+- (id)introduceBackupUrlDark;
+- (id)introduceVideoUrlDark;
+- (id)faqDesc;
+- (id)faqUrl;
+- (void)setNumCreator:;
+- (void)setIntroduceVideoUrl:;
+- (void)setIntroduceBackupUrl:;
+- (void)setIntroduceVideoUrlDark:;
+- (void)setIntroduceBackupUrlDark:;
+- (void)setFaqUrl:;
+- (void)setFaqDesc:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)iconListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

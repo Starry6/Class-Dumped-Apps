@@ -1,0 +1,33 @@
+@interface AWEHotVideoVenationTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView lineArrowView;
+@property (nonatomic) UIImageView lineView;
+@property (nonatomic) UILabel timeInfoLabel;
+@property (nonatomic) AWEFeedInsetsLabel supplementLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView playIconImageView;
+@property (nonatomic) @? clickBlock;
+- (void)setClickBlock:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)clickBlock;
+- (id)playIconImageView;
+- (void)setPlayIconImageView:;
+- (id)timeInfoLabel;
+- (void)setTimeInfoLabel:;
+- (id)lineArrowView;
+- (id)supplementLabel;
+- (void)configWithModel:isFirst:;
+- (void)setLineArrowView:;
+- (void)setSupplementLabel:;
+- (void)setDescriptionLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (id)descriptionLabel;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
++ (double)cellHeight:;
++ (id)formatDuration:;
++ (id)reuseIdentifier;
+@end

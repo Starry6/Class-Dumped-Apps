@@ -1,0 +1,30 @@
+@interface AWEECOMIMChatListSectionModel : NSObject
+@property (nonatomic) NSString sectionText;
+@property (nonatomic) NSString sectionIcon;
+@property (nonatomic) NSString sectionIconDark;
+@property (nonatomic) BOOL hasMoveBeyond14daysModelToWithin;
+@property (nonatomic) BOOL hasSectionHeader;
+@property (nonatomic) Q sectionModelType;
+@property (nonatomic) BOOL isfold;
+@property (nonatomic) NSString sectionName;
+@property (nonatomic) NSArray<AWEECOMIMChatListCellModelProtocol> cellModelList;
+- (id)cellModelList;
+- (void)setCellModelList:;
+- (unsigned long long)sectionModelType;
+- (BOOL)hasSectionHeader;
+- (void)setSectionModelType:;
+- (void)setHasSectionHeader:;
+- (void)setHasMoveBeyond14daysModelToWithin:;
+- (void)setIsfold:;
+- (void)setSectionIconDark:;
+- (id)sectionIconDark;
+- (BOOL)hasMoveBeyond14daysModelToWithin;
+- (BOOL)isfold;
+- (void).cxx_destruct;
+- (id)sectionIcon;
+- (void)setSectionIcon:;
+- (void)setSectionName:;
+- (id)sectionName;
+- (void)setSectionText:;
+- (id)sectionText;
+@end

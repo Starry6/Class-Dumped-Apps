@@ -1,0 +1,35 @@
+@interface AWEMixVideoSmallCardCell : UICollectionViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIButton likeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UIImage placeholder;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIColor episodeLineColor;
+@property (nonatomic) UIImageView picoVRTagView;
+- (void)setThemeStyle:;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)configWithAwemeModel:;
+- (id)picoVRTagView;
+- (void)setPicoVRTagView:;
+- (id)episodeLineColor;
+- (void)setEpisodeLineColor:;
+- (id)accessibilityLabel;
+- (id)titleColor;
+- (id)gradientView;
+- (void)prepareForReuse;
+- (void)setPlaceholder:;
+- (void)setTitleColor:;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (id)placeholder;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)likeButton;
+- (void)setLikeButton:;
++ (id)titleFont;
++ (id)cellSize;
+@end

@@ -1,0 +1,30 @@
+@interface AWEProfileLynxTabBottomView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView iconImage;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) @? didClick;
+- (void)didClickView;
+- (id)didClick;
+- (void)setViewBackgroundColor:;
+- (void)setDidClick:;
+- (void)setImageWithURL:defaultImage:;
+- (id)iconImage;
+- (id)init;
+- (void)setImage:;
+- (void)setIconImage:;
+- (void)setBackgroundView:;
+- (id)contentView;
+- (id)containerView;
+- (id)backgroundView;
+- (void)setContainerView:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setContentColor:;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

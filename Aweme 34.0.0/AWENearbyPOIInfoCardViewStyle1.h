@@ -1,0 +1,32 @@
+@interface AWENearbyPOIInfoCardViewStyle1 : AWENearbyPOIInfoCardView
+@property (nonatomic) AWENearbyPOIinfoTilingView headImages;
+@property (nonatomic) AWEGradientView spuBgGradientView;
+@property (nonatomic) UIView cardShadowView;
+@property (nonatomic) UIView headImgShadowView;
+@property (nonatomic) UITapGestureRecognizer headImgGesture;
+@property (nonatomic) UITapGestureRecognizer ImgCountGesture;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastBounds;
+- (void)configViews;
+- (void)configViewWithModel:;
+- (id)headImgGesture;
+- (void)setHeadImgGesture:;
+- (void)startCardViewAnimation;
+- (id)headImages;
+- (id)cardShadowView;
+- (id)headImgShadowView;
+- (id)spuBgGradientView;
+- (void)addSpuBgGradientViewWithModel:;
+- (id)ImgCountGesture;
+- (void)setImgCountGesture:;
+- (id)getHeaderImagesWithCardModel:;
+- (void)addShadowColorWithModel:;
+- (void)setHeadImages:;
+- (void)setSpuBgGradientView:;
+- (void)setCardShadowView:;
+- (void)setHeadImgShadowView:;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (void)updateUI;
+- (id)lastBounds;
+- (void)setLastBounds:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEDTOOriginTextModel : MTLModel
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString content;
+@property (nonatomic) BOOL isOriginText;
+@property (nonatomic) NSString bgEffectId;
+@property (nonatomic) q initType;
+@property (nonatomic) NSString hashtagText;
+@property (nonatomic) NSString placeholderText;
+@property (nonatomic) BOOL isAiText;
+@property (nonatomic) q tabType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)tabType;
+- (BOOL)isOriginText;
+- (void)setIsOriginText:;
+- (id)bgEffectId;
+- (void)setBgEffectId:;
+- (long long)initType;
+- (void)setInitType:;
+- (id)hashtagText;
+- (void)setHashtagText:;
+- (BOOL)isAiText;
+- (void)setIsAiText:;
+- (void)setTabType:;
+- (id)content;
+- (void)setTextColor:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)placeholderText;
+- (void)setPlaceholderText:;
+- (id)bgColor;
+- (void)setBgColor:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

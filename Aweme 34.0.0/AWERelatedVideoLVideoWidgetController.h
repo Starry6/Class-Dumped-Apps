@@ -1,0 +1,31 @@
+@interface AWERelatedVideoLVideoWidgetController : AWEVideoPlayControlBaseController
+@property (nonatomic) AWERelatedVideoHunterContainer hunterView;
+@property (nonatomic) BOOL showLVWidget;
+@property (nonatomic) BOOL feShowLVWidget;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didChangeIntrinsicContentSize:;
+- (void)onPlayerWillLoopPlaying:;
+- (void)setHide:;
+- (void)onPlayerPlay:ifPlay:;
+- (void)onPlayerPause:;
+- (void)onPlayerAddPeriodicTimeObserverCallback:;
+- (void)bindEvent;
+- (void)setHunterView:;
+- (id)hunterView;
+- (BOOL)isShowingLVWidget;
+- (void)setShowLVWidget:;
+- (void)resetWidgetEnv;
+- (void)createHunterIfNeeded;
+- (BOOL)feShowLVWidget;
+- (void)setFeShowLVWidget:;
+- (void)showLVWigetWithData:show:;
+- (void)updateContainerLayout;
+- (void)hideAllTipsView;
+- (void)preloadHunterWithData:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+@end

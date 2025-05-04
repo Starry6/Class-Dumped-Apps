@@ -1,0 +1,5 @@
+@interface _TtCCV28AWECommentPanelListSwiftImpl6NEWAPI31CommentCellMultilImageComponentP33_91F84133BA361ECB0183C179E737F92F26MultilImageViewVirtualView : _TtCV28AWECommentPanelListSwiftImpl6NEWAPI18CommentVirtualView
+- (id)layoutThatFits:;
+- (id)createViewToRender;
+- (id)reuseIdentifier;
+@end

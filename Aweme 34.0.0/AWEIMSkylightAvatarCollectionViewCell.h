@@ -1,0 +1,31 @@
+@interface AWEIMSkylightAvatarCollectionViewCell : AWEIMSkylightBaseCollectionViewCell
+@property (nonatomic) <AFDCloseFriendsColorRingDisplayManagerProtocol> colorRingDisplayManager;
+@property (nonatomic) <AFDSkylightMomentCellControllerProtocol> cellController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellWillDisplay;
+- (id)colorRingDisplayManager;
+- (id)createColorRingDisplayManager;
+- (BOOL)cf_canShowColorRingWithRingStatus:;
+- (id)cf_transitionTargetView;
+- (void)setColorRingDisplayManager:;
+- (void)cf_didUpdateByColorRingChanged;
+- (id)cellController;
+- (void)setCellController:;
+- (void)willBackFromMoment;
+- (void)renderWithModel:;
+- (void)createComponents;
+- (void)momentColorRingDidChange;
+- (void)updateUserInfo;
+- (BOOL)canShowMomentColorRing;
+- (void)renderColorRingViewWithModel:;
+- (id)createCellController;
+- (void)updateVirtualAvatarFromRemoteIfNeededWithModel:;
+- (void)p_updateColorRingView;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)layoutComponents;
+@end

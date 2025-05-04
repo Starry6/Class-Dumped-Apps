@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.ImageTextAdapterRegister : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,31 @@
+@interface AWEMerchandiseComponentTabBar : UIView
+@property (nonatomic) UICollectionView tabBar;
+@property (nonatomic) NSArray tabNames;
+@property (nonatomic) NSString selectedTab;
+@property (nonatomic) NSDictionary tabsTypeDict;
+@property (nonatomic) <AWEMerchandiseComponentTabBarDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithTabBarConfig:minimumLineSpacing:;
+- (void)configTabBarWithMinimumLineSpacing:;
+- (id)tabNames;
+- (id)tabsTypeDict;
+- (void)setTabNames:;
+- (void)setTabsTypeDict:;
+- (void)reloadData;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)tabBar;
+- (void).cxx_destruct;
+- (void)setTabBar:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (id)selectedTab;
+- (void)setSelectedTab:;
++ (double)totalTabsWidthWithTabs:height:;
+@end

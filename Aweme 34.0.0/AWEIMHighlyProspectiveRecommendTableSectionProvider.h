@@ -1,0 +1,33 @@
+@interface AWEIMHighlyProspectiveRecommendTableSectionProvider : NSObject
+@property (nonatomic) NSMutableSet chatRelatedCellHasDisplaySet;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEIMChatListViewController chatListViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMoreWithCompletion:;
+- (void)viewControllerWillDisappear;
+- (double)heightForCellAtIndex:;
+- (id)viewForHeader;
+- (void)willDisplayCell:atIndex:;
+- (id)chatListViewController;
+- (void)__addKVO;
+- (void)setChatListViewController:;
+- (id)chatRelatedCellHasDisplaySet;
+- (void)setChatRelatedCellHasDisplaySet:;
+- (void)removeRecommendCellWithModel:;
+- (void)didClickRecommendCellWithClickType:model:;
+- (void)didClickRecommendCellWithModel:;
+- (void)didClickCloseImageView;
+- (void)didClickIntroductionImageView;
+- (id)init;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (long long)numberOfCells;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)viewModels;
+- (id)cellAtIndex:;
+- (double)heightForHeader;
+@end

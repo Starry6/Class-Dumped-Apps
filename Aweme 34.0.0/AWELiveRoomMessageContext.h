@@ -1,0 +1,31 @@
+@interface AWELiveRoomMessageContext : NSObject
+@property (nonatomic) UIView bizView;
+@property (nonatomic) NSNumber multiLinkerDistance;
+@property (nonatomic) BOOL leaveByCloseButton;
+@property (nonatomic) BOOL leaveBySwipeExitRoom;
+@property (nonatomic) q mountedCellCount;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString isAppearing;
+@property (nonatomic) AWELiveQuitRoomModel roomModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)roomModel;
+- (void)setRoomModel:;
+- (BOOL)leaveByCloseButton;
+- (long long)mountedCellCount;
+- (id)multiLinkerDistance;
+- (void)setMultiLinkerDistance:;
+- (id)bizView;
+- (void)setBizView:;
+- (void)setLeaveByCloseButton:;
+- (void)setLeaveBySwipeExitRoom:;
+- (void)setMountedCellCount:;
+- (BOOL)leaveBySwipeExitRoom;
+- (id)isAppearing;
+- (void).cxx_destruct;
+- (void)setIsAppearing:;
+@end

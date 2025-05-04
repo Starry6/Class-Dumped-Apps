@@ -1,0 +1,31 @@
+@interface AWECouponValidateDetail : MTLModel
+@property (nonatomic) NSString merchantName;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString username;
+@property (nonatomic) AWEURLModel userAvatarURL;
+@property (nonatomic) AWEURLModel couponHeaderImageURL;
+@property (nonatomic) NSString codeID;
+@property (nonatomic) NSNumber couponType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)couponType;
+- (void)setCouponType:;
+- (id)userAvatarURL;
+- (void)setUserAvatarURL:;
+- (id)couponHeaderImageURL;
+- (void)setCouponHeaderImageURL:;
+- (void)setUsername:;
+- (id)username;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)merchantName;
+- (void)setMerchantName:;
+- (id)codeID;
+- (void)setCodeID:;
++ (id)userAvatarURLJSONTransformer;
++ (id)couponHeaderImageURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

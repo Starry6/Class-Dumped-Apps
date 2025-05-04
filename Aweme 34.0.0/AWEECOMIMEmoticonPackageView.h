@@ -1,0 +1,38 @@
+@interface AWEECOMIMEmoticonPackageView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray emoticonArr;
+@property (nonatomic) NSString emoticonPackageName;
+@property (nonatomic) NSIndexPath selectedIndexPath;
+@property (nonatomic) BOOL itemShowBkgColor;
+@property (nonatomic) BOOL hasSelected;
+@property (nonatomic) UIView inputSuperView;
+@property (nonatomic) @? sendEmoticonPackage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setInputSuperView:;
+- (id)inputSuperView;
+- (id)emoticonArr;
+- (BOOL)itemShowBkgColor;
+- (id)sendEmoticonPackage;
+- (void)setItemShowBkgColor:;
+- (id)initWithEmoticonArr:emoticonPackageName:;
+- (void)setSendEmoticonPackage:;
+- (void)setEmoticonArr:;
+- (id)emoticonPackageName;
+- (void)setEmoticonPackageName:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)selectedIndexPath;
+- (void)setSelectedIndexPath:;
+- (BOOL)hasSelected;
+- (void)setupUI;
+- (void)onLongPress:;
+- (void)setHasSelected:;
+@end

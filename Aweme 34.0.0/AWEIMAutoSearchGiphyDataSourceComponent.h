@@ -1,0 +1,34 @@
+@interface AWEIMAutoSearchGiphyDataSourceComponent : AWEIMComponentBase
+@property (nonatomic) Q conversationType;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) AWEIMAutoSearchGiphyPipelineNode normalEntryNode;
+@property (nonatomic) AWEIMAutoSearchGiphyPipelineNode refreshCacheNode;
+@property (nonatomic) AWEIMAutoSearchGiphyPipelineContext reqContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)conversationType;
+- (void)setConversationType:;
+- (void)componentDidMounted:;
+- (id)refreshCacheNode;
+- (void)setRefreshCacheNode:;
+- (void)searchGiphyWithKey:shouldLoadMore:offset:queryIndex:completion:;
+- (id)reqContext;
+- (id)p_createReqContextWithSearchKey:;
+- (void)setReqContext:;
+- (id)normalEntryNode;
+- (id)checkCacheNode;
+- (void)setNormalEntryNode:;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (void)setConversationID:;
+- (void)setupPipeline;
++ (BOOL)canCreateComponentWithContext:;
++ (id)interveneNode;
++ (id)networkNode;
++ (id)updateCacheNode;
++ (id)updateInterveneNode;
++ (id)effectDataNode;
++ (id)emoticonDataNode;
+@end

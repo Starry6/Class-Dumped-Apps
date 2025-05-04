@@ -1,0 +1,35 @@
+@interface AWEFlowerRedpacketHelper : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)flowerRedPacketActivityPublishBtnTitle;
++ (long long)flowerRedPacketDefaultCouponSendCount;
++ (BOOL)isFlowerRedPacketActivityOn;
++ (id)redPacketFELynxSchemaURLString;
++ (BOOL)isFlowerRedPacketSupportflash;
++ (id)pineappleBannedShootWays;
++ (id)pineappleBannedActivityVideoType;
++ (void)handleRedpacketDraftRecoverWithPublishModel:handler:;
++ (id)normalRedpacketSettings;
++ (id)arrayConfigValueForKey:backupKey:;
++ (id)stringConfigValueForKey:backupKey:;
++ (long long)integerConfigValueForKey:backupKey:;
++ (BOOL)showAccordingPersonal;
++ (id)redPacketName;
++ (void)p_showTipAlertWithDescription:actionBlock:;
++ (void)p_doRollbackCouponOrderWithPublishModel:handler:;
++ (void)p_doStatusCheckFlowWithPublishModel:handler:;
++ (id)p_assetModelFromRedPacketInfo:;
++ (BOOL)p_hasBindRedpcketDrafts:;
++ (id)p_B2CNeedRollbackCouponDraftsFromDrafts:;
++ (void)p_handleRollbackCouponRedpackDraftsIfNeedWithDrafts:callback:;
++ (BOOL)p_isValidConfigValue:class:;
++ (BOOL)isFlowerRedPacketActivityVideoType:;
++ (long long)flowerRedPacketBarItemIndex;
++ (id)flowerRedPacketShootToast;
++ (id)pineappleEditRedpacketToast;
++ (BOOL)pineappleGreatReversal;
++ (BOOL)hasNeedAlertRedpackDrafts:;
++ (void)alertDeleteRedpackDraftsWithDrafts:callback:;
+@end

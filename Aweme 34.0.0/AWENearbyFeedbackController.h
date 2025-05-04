@@ -1,0 +1,35 @@
+@interface AWENearbyFeedbackController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray items;
+@property (nonatomic) AWENearbyFeedbackTopBar topBar;
+@property (nonatomic) <AWENearbyFeedbackControllerDelegate> delegate;
+@property (nonatomic) @? closeActionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configViews;
+- (void)borderForView:;
+- (void)setSectionCornreRadiusAndLines:forRowAtIndexPath:;
+- (void)configTopBar;
+- (void)onTapRightButton:;
+- (id)closeActionBlock;
+- (void)setCloseActionBlock:;
+- (void)showDetailWithItem:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)items;
+- (id)delegate;
+- (long long)numberOfSectionsInTableView:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)setItems:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (id)topBar;
+- (void)setTopBar:;
+- (void)setDelegate:;
++ (id)feedbackWithTitle:items:;
+@end

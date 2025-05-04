@@ -1,0 +1,34 @@
+@interface AWEFeedLLMManager : NSObject
+@property (nonatomic) AWEFeedLLMRecommendSurveyFrequencyChecker llmRecommendSurveyFrequencyChecker;
+@property (nonatomic) NSMutableSet didPlayAwemeSet;
+@property (nonatomic) NSMutableDictionary surveyStatusCacheDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDidPlayAwemeSet:;
+- (void)setSurveyStatusCacheDict:;
+- (id)llmRecommendSurveyFrequencyChecker;
+- (void)setLlmRecommendSurveyFrequencyChecker:;
+- (id)didPlayAwemeSet;
+- (id)surveyStatusCacheDict;
+- (void).cxx_destruct;
++ (BOOL)frequencyTimeControlIsOkByLastDate:checkDate:cooldownHours:;
++ (BOOL)enableFeedLLMRecommendSurveyWithModel:;
++ (BOOL)enableFeedLLM;
++ (BOOL)isFrequencyControlOK:;
++ (void)updateLLMInteractRecommendShowWithAwemeModel:completion:;
++ (void)recordHasShownLLMRecommendSurveyWithQuestionnaire:;
++ (BOOL)isLLMRecommendSurveyShowPrerequisitesMatchedWithQuestionnaire:;
++ (void)updateQuestionnaireShowForFeelGoodWithAwemeModel:completion:;
++ (void)recordNotFilledSurveyWithItemID:isUGScene:;
++ (void)recordHasFilledSurveyWithItemID:;
++ (void)updateQuestionnaireOptionClickForFeelGoodWithAwemeModel:index:clickDurationSinceShowSurvey:completion:;
++ (void)updateLLMInteractRecommendClickWithAwemeModel:isSelected:index:completion:;
++ (void)setupFrequencyCheckerIfNeeded;
++ (id)getShowArrayKey:;
++ (id)llmSettingDict;
++ (void)updateInteractBarClickWithReqID:itemID:gid:bizInfo:btnExtra:duration:completion:;
++ (void)updateInteractBarShowWithReqID:itemID:gid:bizInfo:btnExtra:completion:;
++ (id)sharedInstance;
+@end

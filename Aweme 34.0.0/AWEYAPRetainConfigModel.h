@@ -1,0 +1,31 @@
+@interface AWEYAPRetainConfigModel : NSObject
+@property (nonatomic) NSString bizID;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSDictionary popupInfo;
+@property (nonatomic) NSDictionary agreementInfo;
+@property (nonatomic) NSDictionary trackerParam;
+@property (nonatomic) BOOL needAgreementCheck;
+@property (nonatomic) BOOL isAgreementChecked;
+@property (nonatomic) q pageRenderTimeoutMS;
+- (id)popupInfo;
+- (void)setIsAgreementChecked:;
+- (id)trackerParam;
+- (void)setNeedAgreementCheck:;
+- (void)setPopupInfo:;
+- (void)setTrackerParam:;
+- (void)setAgreementInfo:;
+- (void)setBizID:;
+- (BOOL)needAgreementCheck;
+- (BOOL)isAgreementChecked;
+- (id)agreementInfo;
+- (long long)pageRenderTimeoutMS;
+- (void)setPageRenderTimeoutMS:;
+- (id)scheme;
+- (void)setScheme:;
+- (void)setScene:;
+- (id)init;
+- (id)scene;
+- (void).cxx_destruct;
+- (id)bizID;
+@end

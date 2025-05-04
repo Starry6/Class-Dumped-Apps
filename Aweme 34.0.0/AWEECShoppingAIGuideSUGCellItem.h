@@ -1,0 +1,37 @@
+@interface AWEECShoppingAIGuideSUGCellItem : UIButton
+@property (nonatomic) AWEECShoppingAIGuideContext context;
+@property (nonatomic) AWEECShoppingAIGuideComponentUIConfigItem buttonConfig;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) double maxWidth;
+@property (nonatomic) AWEECShoppingGuideSUGModel data;
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIImageView arrow;
+@property (nonatomic) q sugPosition;
+- (id)buttonConfig;
+- (void)setButtonConfig:;
+- (void)tapView:;
+- (id)initWithSUGModel:context:itemConfig:maxWidth:;
+- (void)setSugPosition:;
+- (void)updateUIConfig;
+- (void)updateCornerRadiusColor;
+- (void)updateBGColorIsSelected:;
+- (void)updateFontColorIsSelected:;
+- (void)updateBorderColorIsSelected:;
+- (long long)sugPosition;
+- (void)setLabel:;
+- (double)maxWidth;
+- (id)label;
+- (void)setHighlighted:;
+- (void)setData:;
+- (void)setContext:;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (id)data;
+- (id)context;
+- (void)setSelected:;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)setupUI;
+- (id)arrow;
+- (void)setArrow:;
+@end

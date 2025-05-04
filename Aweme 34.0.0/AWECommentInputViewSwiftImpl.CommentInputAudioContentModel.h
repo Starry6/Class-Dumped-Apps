@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputAudioContentModel : _TtCs12_SwiftObject
+@end

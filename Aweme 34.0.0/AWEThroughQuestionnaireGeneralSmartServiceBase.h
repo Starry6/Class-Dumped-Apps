@@ -1,0 +1,30 @@
+@interface AWEThroughQuestionnaireGeneralSmartServiceBase : NSObject
+@property (nonatomic) NSString serviceTag;
+@property (nonatomic) AWEThroughQuestionnaireSmartServiceCore serviceCore;
+@property (nonatomic) AWEThroughQuestionnaireGeneralSmartServiceConfig serviceConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServiceConfig:;
+- (id)serviceConfig;
+- (id)configMap;
+- (void)onEnterInnerWithParams:;
+- (void)onLeaveInnerWithParams:;
+- (id)serviceCore;
+- (void)setServiceCore:;
+- (id)logTag;
+- (id)buildCommonEventMap;
+- (id)pageReferStringSet;
+- (id)saveShownTasksKey;
+- (id)getQuestionnaireResponse;
+- (void)onSmartQuestionnaireResult:action:;
+- (id)innerInActionName;
+- (id)innerExitActionName;
+- (void)setupServiceCoreIfNeeded;
+- (void)disableInnerEventObserver:;
+- (id)serviceTag;
+- (void)setServiceTag:;
+- (id)sceneName;
+- (void).cxx_destruct;
+@end

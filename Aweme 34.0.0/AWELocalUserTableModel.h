@@ -1,0 +1,36 @@
+@interface AWELocalUserTableModel : AWEBaseApiModel
+@property (nonatomic) q opType;
+@property (nonatomic) q modifyTime;
+@property (nonatomic) AWELocalFamiliarModel familiarModel;
+@property (nonatomic) AWELocalFriendModel friendModel;
+@property (nonatomic) AWELocalDBUserModel userModel;
+@property (nonatomic) AWELocalColorRingModel colorRingModel;
+@property (nonatomic) AWELocalCloseFriendsModel closeFriendsModel;
+@property (nonatomic) AWELocalFollowModel followModel;
+- (long long)modifyTime;
+- (void)setOpType:;
+- (long long)opType;
+- (id)closeFriendsModel;
+- (void)setCloseFriendsModel:;
+- (id)currentModelWithTableName:;
+- (id)followModel;
+- (void)setFollowModel:;
+- (void)setFamiliarModel:;
+- (void)setFriendModel:;
+- (void)setColorRingModel:;
+- (id)familiarModel;
+- (id)friendModel;
+- (id)colorRingModel;
+- (void)setUserModel:;
+- (void).cxx_destruct;
+- (id)userModel;
+- (id)initWithBaseModel:;
+- (void)setModifyTime:;
++ (id)userModelJSONTransformer;
++ (id)followModelJSONTransformer;
++ (id)familiarModelJSONTransformer;
++ (id)friendModelJSONTransformer;
++ (id)colorRingModelJSONTransformer;
++ (id)closeFriendsModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

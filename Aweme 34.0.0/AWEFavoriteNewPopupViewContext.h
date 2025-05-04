@@ -1,0 +1,30 @@
+@interface AWEFavoriteNewPopupViewContext : NSObject
+@property (nonatomic) NSMutableArray itemIDArray;
+@property (nonatomic) NSString coverUrl;
+@property (nonatomic) NSNumber collectsIdFrom;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) BOOL refreshItems;
+@property (nonatomic) BOOL autoEnterCreateFolder;
+- (id)referString;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (void)setReferString:;
+- (void)setExtraParams:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)extraParams;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (id)itemIDArray;
+- (void)setItemIDArray:;
+- (void)setCollectsIdFrom:;
+- (void)setRefreshItems:;
+- (void)setAutoEnterCreateFolder:;
+- (id)collectsIdFrom;
+- (BOOL)refreshItems;
+- (BOOL)autoEnterCreateFolder;
+- (void).cxx_destruct;
+@end

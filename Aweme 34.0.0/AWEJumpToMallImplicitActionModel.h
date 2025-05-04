@@ -1,0 +1,36 @@
+@interface AWEJumpToMallImplicitActionModel : MTLModel
+@property (nonatomic) q level;
+@property (nonatomic) q targetPageType;
+@property (nonatomic) NSString sameBlockName;
+@property (nonatomic) BOOL supportTab;
+@property (nonatomic) BOOL supportLeftSlide;
+@property (nonatomic) NSString tabId;
+@property (nonatomic) NSString trafficFrom;
+@property (nonatomic) NSString isStronglyRecommend;
+@property (nonatomic) BOOL supportLeftSlideEnterStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTargetPageType:;
+- (BOOL)supportTab;
+- (BOOL)supportLeftSlideEnterStyle;
+- (BOOL)supportLeftSlide;
+- (id)sameBlockName;
+- (id)isStronglyRecommend;
+- (id)trafficFrom;
+- (void)setSameBlockName:;
+- (void)setTrafficFrom:;
+- (void)setIsStronglyRecommend:;
+- (void)setSupportTab:;
+- (void)setSupportLeftSlide:;
+- (void)setSupportLeftSlideEnterStyle:;
+- (long long)targetPageType;
+- (void)setLevel:;
+- (long long)level;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setTabId:;
+- (id)tabId;
++ (id)JSONKeyPathsByPropertyKey;
+@end

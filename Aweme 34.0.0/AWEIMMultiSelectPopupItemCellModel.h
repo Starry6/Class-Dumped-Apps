@@ -1,0 +1,2 @@
+@interface AWEIMMultiSelectPopupItemCellModel : AWEIMCellModel
+@end

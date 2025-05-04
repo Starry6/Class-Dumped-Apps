@@ -1,0 +1,34 @@
+@interface AWECommonFeedContainerTransitionManager : NSObject
+@property (nonatomic) q transitionIndex;
+@property (nonatomic) q transitionToIndex;
+@property (nonatomic) AWECommonFeedContainerViewController hostVC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? ModernTransitionUpdateOffsetBlock;
+- (id)zoomTransitionStartViewForOffset:;
+- (id)liveTransitionContext;
+- (void)detailTableViewController:willDisplayCell:forRowAtIndexPath:model:;
+- (void)detailTableViewControllerDidDisappear:currentAwemeModel:;
+- (id)modernTransitionContext;
+- (void)modernTransitionUpdateOffset:isScrolled:;
+- (long long)preferScaleMode;
+- (BOOL)shouldModernTransitionUpdatePlayerControllerWithFromContext:;
+- (BOOL)disableSyncReferString;
+- (id)hostVC;
+- (void)setHostVC:;
+- (void)singleTapEnterDetailWithModel:extra:withPlayer:;
+- (void)singleTapEnterDetailWithModel:config:withPlayer:;
+- (id)ModernTransitionUpdateOffsetBlock;
+- (void)setTransitionToIndex:;
+- (long long)transitionToIndex;
+- (id)detailVCWithInitialIndex:withExtra:;
+- (id)detailVCWithConfig:;
+- (void)setModernTransitionUpdateOffsetBlock:;
+- (id)initWithHostContainer:;
+- (id)detailVCWithInitialIndex:;
+- (void).cxx_destruct;
+- (long long)transitionIndex;
+- (void)setTransitionIndex:;
+@end

@@ -1,0 +1,37 @@
+@interface AWEUserLoginSMSResendCodeView : UIView
+@property (nonatomic) AWEUserLoginBaseViewModel<AWEUserLoginViewModelSecondaryProtocol> viewModel;
+@property (nonatomic) AWEUserSendCodeModel codeModel;
+@property (nonatomic) UIButton button;
+@property (nonatomic) BOOL isReSendCode;
+@property (nonatomic) q reSendCodeCount;
+@property (nonatomic) NSTimer countDownTimer;
+@property (nonatomic) q curCountDown;
+- (void)setRemainTime:;
+- (id)codeModel;
+- (void)setCodeModel:;
+- (void)setCurCountDown:;
+- (void)countDownAction:;
+- (long long)curCountDown;
+- (void)setCountDownAndTimer:max:;
+- (void)setupUIForViewModel;
+- (void)bindUIForViewModel;
+- (void)setupUIForCodeModel;
+- (void)bindUIForCodeModel;
+- (void)updateCountDownForCodeModel;
+- (void)setIsReSendCode:;
+- (void)removeButtonWidthConstraints;
+- (void)addButtonWidthConstraintsForCountDown;
+- (id)initWithCodeModel:;
+- (void)updateCodeModel:;
+- (BOOL)isReSendCode;
+- (long long)reSendCodeCount;
+- (void)setReSendCodeCount:;
+- (id)initWithViewModel:;
+- (id)viewModel;
+- (void)setButton:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)button;
+- (id)countDownTimer;
+- (void)setCountDownTimer:;
+@end

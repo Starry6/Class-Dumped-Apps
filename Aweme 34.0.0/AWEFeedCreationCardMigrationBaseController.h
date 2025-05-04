@@ -1,0 +1,31 @@
+@interface AWEFeedCreationCardMigrationBaseController : AWEBaseController
+@property (nonatomic) NSMutableSet displayedAwemeIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWESpecialCardDelegate> cardDelegate;
+@property (nonatomic) <AWESpecialCardContextProtocol> cardContext;
+- (id)cardContext;
+- (void)setCardContext:;
+- (void)showDebugToast:;
+- (id)cardDelegate;
+- (void)setCardDelegate:;
+- (void)cardDidAppear:withAweme:;
+- (BOOL)shouldCancelInsertCard:withAweme:isFromFeed:willInsertForRowAtIndexPath:;
+- (void)cardDidInsert:withAweme:isFromFeed:forRowAtIndexPath:;
+- (void)cardFrequencyControl:withAweme:isFromFeed:type:;
+- (id)cardClientData:;
+- (BOOL)ignoreFrequencyControl;
+- (id)displayedAwemeIDs;
+- (void)setDisplayedAwemeIDs:;
+- (void)preloadResourcesIfNeededWithAweme:;
+- (BOOL)basicConditionsInvalid;
+- (BOOL)p_isInFrequencyControl;
+- (id)p_frequencyDictionary;
+- (void)p_resetRemainCountIfNeededWithLastShowDate:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
++ (BOOL)enableWithFeedType:;
++ (id)businessID;
+@end

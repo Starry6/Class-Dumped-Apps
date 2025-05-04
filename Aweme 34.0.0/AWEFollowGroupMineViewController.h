@@ -1,0 +1,30 @@
+@interface AWEFollowGroupMineViewController : AWEFollowGroupBaseViewController
+@property (nonatomic) UIView bottomView;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) AWEButton createButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aweui_emptyPageConfigForState:;
+- (void)_fetchDataSuccess;
+- (void)_emptyButtonClicked;
+- (void)didFinishCreateGroup:groupName:;
+- (void)didFinishDeleteGroup:;
+- (void)didFinishUpdateGroupName:newName:;
+- (void)didFinishAddNewMembers:newUserIds:;
+- (void)didFinishDropMembers:userIds:;
+- (void)didFinishUpdateUserBelongGroups:;
+- (void)_setupCreateButton;
+- (void)createButtonClicked;
+- (id)initWithGroupType:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setBottomView:;
+- (id)createButton;
+- (void)setCreateButton:;
+@end

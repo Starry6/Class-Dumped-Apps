@@ -1,0 +1,31 @@
+@interface AWEFollowListGroupFilterView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray groupList;
+@property (nonatomic) AWEFollowListGroupFilterModel selectedGroup;
+@property (nonatomic) @? groupfilterClickedBlock;
+@property (nonatomic) @? clickedEnableBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateSelectStatusWithType:;
+- (id)clickedEnableBlock;
+- (void)updateSelectStatusWithSelectedGroup:;
+- (id)groupfilterClickedBlock;
+- (void)configGroupList:currentGroupFilterType:;
+- (void)setGroupfilterClickedBlock:;
+- (void)setClickedEnableBlock:;
+- (id)collectionView;
+- (id)init;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)groupList;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setGroupList:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)setupCollectionView;
+- (void)setupUI;
+- (id)selectedGroup;
+- (void)setSelectedGroup:;
+@end

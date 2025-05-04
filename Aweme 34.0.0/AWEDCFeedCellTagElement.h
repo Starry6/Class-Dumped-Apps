@@ -1,0 +1,33 @@
+@interface AWEDCFeedCellTagElement : AWEDCFeedBaseCellElement
+@property (nonatomic) AWEDCFeedCellRecommendReasonConfigModel recommendReasonConfigModel;
+@property (nonatomic) UILabel recommendTagLabel;
+@property (nonatomic) UIImageView recommendTagIcon;
+- (void)configWithModel:context:;
+- (void)setupSubViews;
+- (id)containerColor;
+- (void)themeDidChange:;
+- (double)iconLeftMargin;
+- (double)iconAndTextMargin;
+- (double)textRightMargin;
+- (id)recommendTagIcon;
+- (id)recommendTagLabel;
+- (void)setRecommendReasonConfigModel:;
+- (id)recommendReasonConfigModel;
+- (id)currentIconUrls;
+- (void)loadRecommendReasonView;
+- (void)setRecommendTagLabel:;
+- (void)setRecommendTagIcon:;
+- (double)fontSize;
+- (id)initWithContext:;
+- (double)iconWidth;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)textColor;
+- (double)iconHeight;
+- (double)containerCornerRadius;
+- (double)containerHeight;
+- (id)iconPlaceholderColor;
++ (BOOL)canShowWithAwemeModel:context:;
++ (double)heightWithCellWidth:awemeModel:context:;
++ (long long)elementStyle;
+@end

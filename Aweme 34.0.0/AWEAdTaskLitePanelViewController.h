@@ -1,0 +1,36 @@
+@interface AWEAdTaskLitePanelViewController : UIViewController
+@property (nonatomic) AWEAdTaskLitePanelTopBar topBar;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel contentTitleLabel;
+@property (nonatomic) UIStackView descriptionItemsStackView;
+@property (nonatomic) UIView<AWEChallengeDetailHorizontalVideoView> missionExampleView;
+@property (nonatomic) UIView<AWEChallengeDetailHorizontalVideoView> videoListView;
+@property (nonatomic) @? didClickMissionExampleCell;
+@property (nonatomic) AWETaskLiteModel taskLiteModel;
+- (void)closeButtonAction:;
+- (id)createVideoView;
+- (void)presentOnViewController:;
+- (void)pageSheetPresentationWillBegin:;
+- (id)initWithTaskLiteDetail:;
+- (id)taskLiteModel;
+- (void)setDidClickMissionExampleCell:;
+- (void)setContentTitleLabel:;
+- (id)contentTitleLabel;
+- (void)setDescriptionItemsStackView:;
+- (id)descriptionItemsStackView;
+- (void)setMissionExampleView:;
+- (id)didClickMissionExampleCell;
+- (id)missionExampleView;
+- (void)startShoot:;
+- (id)videoListView;
+- (void)setVideoListView:;
+- (void)setScrollView:;
+- (void)viewDidLoad;
+- (id)contentView;
+- (id)scrollView;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)topBar;
+- (void)setTopBar:;
+@end

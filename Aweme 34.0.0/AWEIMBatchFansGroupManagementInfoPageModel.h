@@ -1,0 +1,32 @@
+@interface AWEIMBatchFansGroupManagementInfoPageModel : AWEBaseApiModel
+@property (nonatomic) NSArray fansGroupInfoList;
+@property (nonatomic) q groupTotalCount;
+@property (nonatomic) q groupMemberTotalCount;
+@property (nonatomic) q shownGroupTotalCount;
+@property (nonatomic) q shownGroupMemberTotalCount;
+@property (nonatomic) AWEIMFansGroupContributionInfoModel groupContribution;
+@property (nonatomic) AWEIMCreateFansGroupModel createInfo;
+@property (nonatomic) AWEIMFansGroupIntroduceModel introduceInfo;
+@property (nonatomic) BOOL commercePermission;
+- (BOOL)commercePermission;
+- (void)setCommercePermission:;
+- (id)fansGroupInfoList;
+- (void)setFansGroupInfoList:;
+- (long long)groupTotalCount;
+- (void)setGroupTotalCount:;
+- (long long)groupMemberTotalCount;
+- (void)setGroupMemberTotalCount:;
+- (long long)shownGroupTotalCount;
+- (void)setShownGroupTotalCount:;
+- (long long)shownGroupMemberTotalCount;
+- (void)setShownGroupMemberTotalCount:;
+- (id)groupContribution;
+- (void)setGroupContribution:;
+- (void)setCreateInfo:;
+- (id)introduceInfo;
+- (void)setIntroduceInfo:;
+- (void).cxx_destruct;
+- (id)createInfo;
++ (id)fansGroupInfoListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

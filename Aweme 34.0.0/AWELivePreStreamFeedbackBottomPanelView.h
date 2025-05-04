@@ -1,0 +1,35 @@
+@interface AWELivePreStreamFeedbackBottomPanelView : UIView
+@property (nonatomic) UIView streamView;
+@property (nonatomic) PuzzleHybridContainer feedGoodContainer;
+@property (nonatomic) AWELivePreStreamFeedbackViewModel viewModel;
+@property (nonatomic) {CGSize=dd} rawSize;
+@property (nonatomic) UITapGestureRecognizer tap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidChangeIntrinsicContentSize:;
+- (void)viewDidFirstScreen;
+- (unsigned long long)elementConfig;
+- (void)bindViewModel:;
+- (id)streamView;
+- (void)setStreamView:;
+- (void)showLiveAlertElementWithCompletion:;
+- (void)removeLiveAlertElementWithCompletion:;
+- (id)feedGoodContainer;
+- (void)setFeedGoodContainer:;
+- (void)renderLynxView:fallbackUrl:;
+- (void)updateFeedGoodContainerSize;
+- (void)p_handleTapGesture:;
+- (id)viewModel;
+- (unsigned long long)priority;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)rawSize;
+- (id)initWithParentView:;
+- (void)setRawSize:;
+- (id)tap;
+- (void)setTap:;
+- (id)elementView;
+@end

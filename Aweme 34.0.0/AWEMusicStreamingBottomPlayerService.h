@@ -1,0 +1,32 @@
+@interface AWEMusicStreamingBottomPlayerService : NSObject
+@property (nonatomic) <AWEMusicStreamingBottomPlayerServiceDelegate> delegate;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString guideKey;
+@property (nonatomic) BOOL isCurrentUser;
+@property (nonatomic) <MusicService> musicService;
+@property (nonatomic) BOOL shouldShowMusicMainFeedView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)transition_didPopDoneTransitionWithContext:;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)musicService;
+- (void)setMusicService:;
+- (void)feed:didDismissAnimation:;
+- (void)showSubPlayerOnVC:WithOpenMethod:;
+- (id)guideKey;
+- (void)setGuideKey:;
+- (void)showQueueVC;
+- (BOOL)shouldShowMusicMainFeedView;
+- (void)showSubPlayerOnVC:WithOpenMethod:eventModel:;
+- (void)setShouldShowMusicMainFeedView:;
+- (BOOL)canShowBottomPlayer;
+- (id)p_buildGuideServiceWithConfig:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (BOOL)isCurrentUser;
+- (void)setIsCurrentUser:;
+@end

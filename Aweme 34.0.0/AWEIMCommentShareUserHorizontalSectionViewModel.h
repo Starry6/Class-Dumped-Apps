@@ -1,0 +1,34 @@
+@interface AWEIMCommentShareUserHorizontalSectionViewModel : AWEBaseListSectionViewModel
+@property (nonatomic) NSArray itemModels;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) AWEIMCommentShareUserHorizontalCollectionViewCell sectionCell;
+@property (nonatomic) @? shareItemViewBlock;
+@property (nonatomic) @? extraAsynchronousGesturesBlock;
+@property (nonatomic) <AWEIMShareAndForwardToChatProtocol> shareImpl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWECommentLongPressPanelContext commentPageContext;
+- (id)commentPageContext;
+- (void)setCommentPageContext:;
+- (void)fetchSectionDataSource;
+- (double)sectionTotalHeight;
+- (id)asynchronousWithGestures;
+- (void)sheetWillDismiss;
+- (long long)modelsDiffType;
+- (void)setItemModels:;
+- (id)itemModels;
+- (id)shareImpl;
+- (void)setExtraAsynchronousGesturesBlock:;
+- (void)setSectionCell:;
+- (void)configShareModel:;
+- (void)setShareImpl:;
+- (id)sectionCell;
+- (id)extraAsynchronousGesturesBlock;
+- (id)shareItemViewBlock;
+- (void)setShareItemViewBlock:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+@end

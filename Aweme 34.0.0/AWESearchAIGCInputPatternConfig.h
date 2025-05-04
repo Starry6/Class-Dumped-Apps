@@ -1,0 +1,31 @@
+@interface AWESearchAIGCInputPatternConfig : NSObject
+@property (nonatomic) NSString placeholder;
+@property (nonatomic) NSString mode;
+@property (nonatomic) NSString query;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString clientServerExtra;
+@property (nonatomic) NSDictionary patternExtra;
+@property (nonatomic) BOOL disableSug;
+@property (nonatomic) BOOL disableVoiceInput;
+@property (nonatomic) BOOL disablePanel;
+- (BOOL)disableVoiceInput;
+- (BOOL)disablePanel;
+- (void)setDisableVoiceInput:;
+- (id)clientServerExtra;
+- (void)setClientServerExtra:;
+- (void)setPatternExtra:;
+- (void)setDisableSug:;
+- (void)setDisablePanel:;
+- (id)patternExtra;
+- (BOOL)disableSug;
+- (id)initWithParams:;
+- (void)setQuery:;
+- (id)query;
+- (void)setPlaceholder:;
+- (void)setMode:;
+- (id)mode;
+- (id)placeholder;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+@end

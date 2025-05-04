@@ -1,0 +1,31 @@
+@interface AWEInspirationMusicAwemeListDataController : AWEInspirationAwemeListDataController
+@property (nonatomic) q listFetchNumbers;
+@property (nonatomic) NSString musicID;
+@property (nonatomic) NSDictionary fetchAwemeListExtraParams;
+@property (nonatomic) <AWEDetailMusicMonitorService> monitor;
+@property (nonatomic) BOOL disableZeroOffsetClean;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initFetchWithCompletion:;
+- (void)loadMoreWithFilteredCompletion:;
+- (id)networkRequestCommonParams;
+- (unsigned long long)inspirationType;
+- (void)weakBindInspirationModel:;
+- (void)setListFetchNumbers:;
+- (long long)musicDetailAwemeListRequestCount;
+- (void)trackForMusicAwemeListRequestWithIfIsInitial:currentFetchAwemeCount:currentFetchFilteredAwemeCount:loadDuration:error:;
+- (void)fetchWithCount:type:completion:;
+- (id)fetchAwemeListExtraParams;
+- (BOOL)disableZeroOffsetClean;
+- (long long)listFetchNumbers;
+- (void)setFetchAwemeListExtraParams:;
+- (void)setDisableZeroOffsetClean:;
+- (void)setMonitor:;
+- (id)monitor;
+- (void)resetData;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (id)copyWithZone:;
+@end

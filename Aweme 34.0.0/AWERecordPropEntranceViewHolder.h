@@ -1,0 +1,31 @@
+@interface AWERecordPropEntranceViewHolder : NSObject
+@property (nonatomic) FPStateFlow stateFlow;
+@property (nonatomic) AWERecordPropEntranceComponent propComponent;
+@property (nonatomic) BOOL hasTrackedIconShow;
+@property (nonatomic) UIButton stickerSwitchButton;
+@property (nonatomic) AWEStickerSwitchImageView stickerSwitchImageView;
+@property (nonatomic) UILabel stickerSwitchLabel;
+@property (nonatomic) <FPUIComponent> typeErasedComponent;
+- (id)typeErasedComponent;
+- (void)setTypeErasedComponent:;
+- (id)stateFlow;
+- (id)stickerSwitchButton;
+- (id)stickerSwitchLabel;
+- (void)setStickerSwitchButton:;
+- (void)setStickerSwitchLabel:;
+- (void)clickStickersBtn;
+- (id)stickerSwitchImageView;
+- (void)p_updateIcon:;
+- (void)trackPropEntranceIconFirstShowTimeIfNeed;
+- (void)configStickerBtnWithURLArray:index:completion:;
+- (void)setStickerSwitchImageView:;
+- (void)p_configStickerBtnWithURL:completion:;
+- (BOOL)hasTrackedIconShow;
+- (void)setHasTrackedIconShow:;
+- (void)setStateFlow:;
+- (void)bindStateFlowChange;
+- (id)propComponent;
+- (void).cxx_destruct;
+- (id)initWith:;
++ (Class)componentType;
+@end

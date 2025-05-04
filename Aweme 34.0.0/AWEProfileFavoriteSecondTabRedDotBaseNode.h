@@ -1,0 +1,37 @@
+@interface AWEProfileFavoriteSecondTabRedDotBaseNode : NSObject
+@property (nonatomic) <AWEProfileRedDotNodeProtocol> parentNode;
+@property (nonatomic) AWEProfileFavoriteSecondTabRedDotAdapter favoriteSecondTabAdapter;
+@property (nonatomic) q priority;
+@property (nonatomic) AWEProfileUpdateDataFavoriteRedDotModel favoriteRedDotModel;
+@property (nonatomic) <AWEProfileRedDotNodeModelProtocol> currentModel;
+@property (nonatomic) Q favoriteType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (void)updateCurrentModel:;
+- (unsigned long long)favoriteType;
+- (id)favoriteRedDotModel;
+- (void)setFavoriteType:;
+- (void)bindParentNode:;
+- (void)bindAdapter:;
+- (void)redDotUIHasUpdate;
+- (id)currentChildNodes;
+- (void)setFavoriteRedDotModel:;
+- (void)redDotDismissedWithReason:;
+- (id)favoriteSecondTabAdapter;
+- (void)setFavoriteSecondTabAdapter:;
+- (id)generateComponentID;
+- (BOOL)isnodeInFrequencyControl;
+- (id)init;
+- (void)dealloc;
+- (long long)priority;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (id)parentNode;
+- (id)currentModel;
+- (void)setParentNode:;
+- (void)setCurrentModel:;
+- (void)updateWithModel:;
+@end

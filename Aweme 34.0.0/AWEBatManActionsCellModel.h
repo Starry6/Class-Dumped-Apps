@@ -1,0 +1,35 @@
+@interface AWEBatManActionsCellModel : NSObject
+@property (nonatomic) q itemType;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString highlightedTitle;
+@property (nonatomic) NSString iconImageName;
+@property (nonatomic) NSString iconImageNameHighlighted;
+@property (nonatomic) @? cellTappedBlock;
+@property (nonatomic) q defaultQualityIndex;
+@property (nonatomic) @? selectQualityAction;
+@property (nonatomic) @? changeFavoriteAction;
+@property (nonatomic) BOOL isHighlightedStyle;
+- (void)setCellTappedBlock:;
+- (id)cellTappedBlock;
+- (BOOL)isHighlightedStyle;
+- (id)iconImageNameHighlighted;
+- (id)highlightedTitle;
+- (id)changeFavoriteAction;
+- (void)setIsHighlightedStyle:;
+- (id)initWithType:title:normalIcon:highlightedIcon:;
+- (id)initWithType:title:icon:;
+- (void)setHighlightedTitle:;
+- (void)setIconImageNameHighlighted:;
+- (long long)defaultQualityIndex;
+- (void)setDefaultQualityIndex:;
+- (id)selectQualityAction;
+- (void)setSelectQualityAction:;
+- (void)setChangeFavoriteAction:;
+- (long long)itemType;
+- (void)setItemType:;
+- (void)setIconImageName:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)iconImageName;
+@end

@@ -1,0 +1,32 @@
+@interface AWEDCFeedTopAreaSearchConfig : AWEDCFeedBaseConfig
+@property (nonatomic) {UIEdgeInsets=dddd} searchBarInsets;
+@property (nonatomic) q alphaType;
+@property (nonatomic) <AWEDCFeedTopAreaSearchDelegate> delegate;
+@property (nonatomic) q URLType;
+@property (nonatomic) NSString defaultPlaceHolderText;
+@property (nonatomic) q routeType;
+@property (nonatomic) Q guessWordOption;
+@property (nonatomic) BOOL needSeparatorView;
+@property (nonatomic) double separatorViewOffset;
+- (void)setNeedSeparatorView:;
+- (void)setSeparatorViewOffset:;
+- (void)setSearchBarInsets:;
+- (void)setURLType:;
+- (void)setGuessWordOption:;
+- (void)setDefaultPlaceHolderText:;
+- (void)setupDefaultConfig;
+- (void)setAlphaType:;
+- (id)searchBarInsets;
+- (long long)alphaType;
+- (long long)URLType;
+- (id)defaultPlaceHolderText;
+- (unsigned long long)guessWordOption;
+- (BOOL)needSeparatorView;
+- (double)separatorViewOffset;
+- (id)delegate;
+- (long long)routeType;
+- (void).cxx_destruct;
+- (double)height;
+- (void)setDelegate:;
+- (void)setRouteType:;
+@end

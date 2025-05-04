@@ -1,0 +1,30 @@
+@interface AWEEcomSearchWordModel : NSObject
+@property (nonatomic) AWEGuideSearchWordModel guideSearchWordModel;
+@property (nonatomic) AWESearchRelatedWordModel relatedSearchWordModel;
+@property (nonatomic) q searchWordType;
+@property (nonatomic) q wordIndex;
+@property (nonatomic) NSString word;
+@property (nonatomic) NSString wordsContent;
+@property (nonatomic) NSString searchKeyWord;
+@property (nonatomic) NSString searchResultId;
+@property (nonatomic) BOOL shouldReplaceKeyWord;
+- (id)searchResultId;
+- (void)setSearchResultId:;
+- (id)searchKeyWord;
+- (void)setSearchKeyWord:;
+- (id)wordsContent;
+- (void)setWordsContent:;
+- (BOOL)shouldReplaceKeyWord;
+- (id)guideSearchWordModel;
+- (long long)searchWordType;
+- (id)relatedSearchWordModel;
+- (void)setSearchWordType:;
+- (void)setGuideSearchWordModel:;
+- (void)setShouldReplaceKeyWord:;
+- (void)setRelatedSearchWordModel:;
+- (void).cxx_destruct;
+- (id)word;
+- (void)setWord:;
+- (void)setWordIndex:;
+- (long long)wordIndex;
+@end

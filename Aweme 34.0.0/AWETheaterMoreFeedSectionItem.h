@@ -1,0 +1,34 @@
+@interface AWETheaterMoreFeedSectionItem : MTLModel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) AWETheaterMoreFeedSmallCardCellViewModel smallCardCellViewModel;
+@property (nonatomic) q itemType;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWETheaterMoreFeedSectionItemLynxInfo lynxInfo;
+@property (nonatomic) AWETheaterMoreFeedSectionItemAppointmentInfo appointmentInfo;
+@property (nonatomic) NSDictionary logPassBack;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)diffIdentifierKey;
+- (id)appointmentInfo;
+- (id)lynxInfo;
+- (void)setAppointmentInfo:;
+- (id)logPassBack;
+- (void)setLogPassBack:;
+- (id)smallCardCellViewModel;
+- (void)setSmallCardCellViewModel:;
+- (void)setLynxInfo:;
+- (long long)itemType;
+- (void)setItemType:;
+- (void).cxx_destruct;
++ (id)appointmentInfoJSONTransformer;
++ (id)awemeModelConfigJSONTransformer;
++ (id)lynxInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

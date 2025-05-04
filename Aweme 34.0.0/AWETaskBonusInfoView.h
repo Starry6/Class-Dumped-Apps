@@ -1,0 +1,34 @@
+@interface AWETaskBonusInfoView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel tallestProfitLabel;
+@property (nonatomic) UILabel mostParticipationLabel;
+@property (nonatomic) UILabel progressLabel;
+@property (nonatomic) AWETaskBonusProgressView progressView;
+@property (nonatomic) UIStackView progressStackView;
+@property (nonatomic) double preferredMaxLayoutWidth;
+- (id)titleLightAttributedStringWithChallenge:;
+- (id)profitLightAttributedStringWithChallenge:;
+- (id)tallestProfitLabel;
+- (id)participationLightAttributedStringWithTask:;
+- (id)mostParticipationLabel;
+- (id)titleAttributedStringWithTask:;
+- (id)connectorAttributedString;
+- (id)makeGradientTextWithAttributedText:baselineOffset:;
+- (id)preLightAttributedDictionaryWithChallenge:;
+- (id)gradientTextImageWithAttributedText:;
+- (void)updateBonusViewWithChallenge:;
+- (void)setTallestProfitLabel:;
+- (void)setMostParticipationLabel:;
+- (id)progressView;
+- (void)setPreferredMaxLayoutWidth:;
+- (id)initWithFrame:;
+- (void)setProgressView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (double)preferredMaxLayoutWidth;
+- (id)progressLabel;
+- (void)setProgressLabel:;
+- (id)progressStackView;
+- (void)setProgressStackView:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMConsecutiveChatModel : NSObject
+@property (nonatomic) q chatDays;
+@property (nonatomic) q startTimeStamp;
+@property (nonatomic) q expireTimeStamp;
+@property (nonatomic) BOOL shouldRender;
+@property (nonatomic) Q source;
+@property (nonatomic) BOOL minEnable;
+@property (nonatomic) BOOL maxEnable;
+- (void)setStartTimeStamp:;
+- (id)initWithInfoString:source:;
+- (long long)expireTimeStamp;
+- (id)initWithChatDays:startTimeStamp:expireTimeStamp:shouldRender:source:minEnable:maxEnable:;
+- (long long)chatDays;
+- (BOOL)minEnable;
+- (BOOL)maxEnable;
+- (id)initWithChatDays:startTimeStamp:expireTimeStamp:shouldRender:source:;
+- (id)toStringWithSharedSyncExtFormat;
+- (void)setChatDays:;
+- (void)setExpireTimeStamp:;
+- (void)setShouldRender:;
+- (void)setMinEnable:;
+- (void)setMaxEnable:;
+- (unsigned long long)hash;
+- (unsigned long long)source;
+- (void)setSource:;
+- (BOOL)isEqual:;
+- (BOOL)shouldRender;
+- (id)toString;
+- (long long)startTimeStamp;
+@end

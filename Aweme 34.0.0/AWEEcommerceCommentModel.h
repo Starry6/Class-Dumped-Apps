@@ -1,0 +1,31 @@
+@interface AWEEcommerceCommentModel : NSObject
+@property (nonatomic) NSString comment;
+@property (nonatomic) NSString productTitle;
+@property (nonatomic) q starCount;
+@property (nonatomic) NSString productPrice;
+@property (nonatomic) NSString productSales;
+@property (nonatomic) NSString productId;
+@property (nonatomic) NSString topic;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString orderID;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (id)orderID;
+- (void)setOrderID:;
+- (id)productTitle;
+- (void)setProductTitle:;
+- (long long)starCount;
+- (void)setStarCount:;
+- (id)productPrice;
+- (void)setProductSales:;
+- (void)setProductPrice:;
+- (id)productSales;
+- (id)comment;
+- (id)topic;
+- (id)productId;
+- (void).cxx_destruct;
+- (void)setTopic:;
+- (void)setComment:;
+- (void)setProductId:;
+- (id)priceText;
+@end

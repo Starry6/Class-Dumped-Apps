@@ -1,0 +1,33 @@
+@interface AWESearchNormalTagView : UIView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) YYLabel titleYYLabel;
+@property (nonatomic) AWEAnchorNormalInfoModel anchorModel;
+@property (nonatomic) BOOL isQuality;
+@property (nonatomic) UIFont labelFont;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) UIColor lineColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAnchorModel:;
+- (id)verticalLine;
+- (id)anchorModel;
+- (void)setupUIWithModel:;
+- (void)setIsQuality:;
+- (BOOL)isQuality;
+- (id)getAnchorText;
+- (id)titleYYLabel;
+- (void)setTitleYYLabel:;
+- (void)reuseAnchor;
+- (void)updateWithModel:isQuality:;
+- (void)setLabelFont:;
+- (id)titleColor;
+- (id)labelFont;
+- (void)setTitleColor:;
+- (id)iconView;
+- (id)lineColor;
+- (void)setIconView:;
+- (void)setLineColor:;
+- (void).cxx_destruct;
+@end

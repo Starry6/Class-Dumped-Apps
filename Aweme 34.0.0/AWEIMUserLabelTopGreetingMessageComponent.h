@@ -1,0 +1,30 @@
+@interface AWEIMUserLabelTopGreetingMessageComponent : AWEIMFlexComponent
+@property (nonatomic) AWEIMUserLabelTopGreetingMessage message;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) q scene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMounted:;
+- (void)cellWillDisplay:;
+- (void)p_addKVO;
+- (void)p_createPresenterIfNeed;
+- (void)p_initProps;
+- (id)__setupTagModels;
+- (id)__buildTagModel;
+- (void)transferToProfileWithAdditionalParams:;
+- (void)p_refreshProps;
+- (void)onClickProfileButton;
+- (id)displayMessage;
+- (void)setScene:;
+- (id)message;
+- (long long)scene;
+- (id)contentSize;
+- (void).cxx_destruct;
+- (void)setMessage:;
+- (id)conversation;
+- (void)setConversation:;
+- (void)avatarTapped:;
++ (BOOL)canCreateComponentWithContext:;
+@end

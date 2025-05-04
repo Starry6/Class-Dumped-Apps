@@ -1,0 +1,2 @@
+@interface AWEPOIRecommendFoodListPageContext : POIMediaListPageContext
+@end

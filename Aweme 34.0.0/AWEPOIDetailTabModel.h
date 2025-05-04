@@ -1,0 +1,31 @@
+@interface AWEPOIDetailTabModel : AWEBaseApiModel
+@property (nonatomic) q tabID;
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString tabMobName;
+@property (nonatomic) BOOL isTracked;
+@property (nonatomic) NSString schemaURL;
+@property (nonatomic) Q tabType;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) q defaultTab;
+@property (nonatomic) Q sceneType;
+- (unsigned long long)tabType;
+- (void)setSchemaURL:;
+- (id)schemaURL;
+- (void)setTabType:;
+- (void)setTabID:;
+- (id)tabMobName;
+- (void)setTabMobName:;
+- (void)setIconURL:;
+- (id)iconURL;
+- (void).cxx_destruct;
+- (unsigned long long)sceneType;
+- (void)setSceneType:;
+- (long long)tabID;
+- (id)tabName;
+- (void)setTabName:;
+- (BOOL)isTracked;
+- (void)setIsTracked:;
+- (long long)defaultTab;
+- (void)setDefaultTab:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

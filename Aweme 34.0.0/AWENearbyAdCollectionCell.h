@@ -1,0 +1,36 @@
+@interface AWENearbyAdCollectionCell : UICollectionViewCell
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView adImageView;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) AWENearbyAdModel model;
+@property (nonatomic) BOOL isInFeedContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_setupUI;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)adImageView;
+- (void)setAdImageView:;
+- (void)willDisplayNearByCellWithContext:;
+- (void)didSelectNearByCellWithContext:;
+- (BOOL)isInFeedContainer;
+- (void)setIsInFeedContainer:;
+- (void)configurationWithModel:;
+- (void)setModel:;
+- (id)gradientView;
+- (void)setDescriptionLabel:;
+- (unsigned long long)moduleNames;
+- (id)initWithFrame:;
+- (id)model;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (id)descriptionLabel;
+- (void)setIconImageView:;
++ (id)p_descriptionWithModel:;
++ (double)cellHeightForWidth:model:;
+@end

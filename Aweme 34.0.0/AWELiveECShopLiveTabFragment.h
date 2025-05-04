@@ -1,0 +1,37 @@
+@interface AWELiveECShopLiveTabFragment : IESLiveRoomComponent
+@property (nonatomic) UIView bottomBar;
+@property (nonatomic) UIView topLeftContainer;
+@property (nonatomic) UIView guideContainer;
+@property (nonatomic) AWELiveECShopLiveTabFeedController feedController;
+@property (nonatomic) <IESLiveSquareService> squareService;
+@property (nonatomic) NSDictionary ecomParams;
+@property (nonatomic) BOOL didUnMount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)feedController;
+- (void)componentBindService;
+- (void)componentMount;
+- (void)componentUnmount;
+- (void)componentCreate;
+- (id)guideContainer;
+- (void)setGuideContainer:;
+- (void)innerFeedWillBeginDragging:;
+- (id)squareService;
+- (void)setSquareService:;
+- (void)setEcomParams:;
+- (id)ecomParams;
+- (void)createFeedController;
+- (void)setTopLeftContainer:;
+- (id)topLeftContainer;
+- (void)showSwipeGuideIfNeed;
+- (BOOL)didUnMount;
+- (void)hideSwipeGuide;
+- (void)setDidUnMount:;
+- (void)setFeedController:;
+- (void)setBottomBar:;
+- (id)bottomBar;
+- (void).cxx_destruct;
+- (double)bottomOffset;
+@end

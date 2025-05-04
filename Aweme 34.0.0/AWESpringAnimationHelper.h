@@ -1,0 +1,31 @@
+@interface AWESpringAnimationHelper : NSObject
+@property (nonatomic) CADisplayLink displaylink;
+@property (nonatomic) double fromValue;
+@property (nonatomic) double fullValue;
+@property (nonatomic) double damping;
+@property (nonatomic) q numberOfnum;
+@property (nonatomic) q beginNum;
+@property (nonatomic) @? callbackValue;
+@property (nonatomic) @? completedBlock;
+- (void)setCompletedBlock:;
+- (id)completedBlock;
+- (void)animationWithFromValue:toValue:damping:duration:callback:completedCallback:;
+- (id)animationWithFromValue:toValue:damping:duration:;
+- (id)displaylink;
+- (void)setDisplaylink:;
+- (void)setNumberOfnum:;
+- (void)setFullValue:;
+- (void)setBeginNum:;
+- (void)setCallbackValue:;
+- (void)displayLinkRun;
+- (long long)beginNum;
+- (long long)numberOfnum;
+- (double)fullValue;
+- (id)callbackValue;
+- (double)caculateMathValueWithValue:damping:;
+- (void)setDamping:;
+- (double)damping;
+- (void).cxx_destruct;
+- (double)fromValue;
+- (void)setFromValue:;
+@end

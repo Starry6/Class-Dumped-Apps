@@ -1,0 +1,2 @@
+@interface AWELifeFeedsFloatContianerView : UIView
+@end

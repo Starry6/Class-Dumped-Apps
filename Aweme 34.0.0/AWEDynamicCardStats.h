@@ -1,0 +1,35 @@
+@interface AWEDynamicCardStats : NSObject
+@property (nonatomic) NSDictionary localStats;
+@property (nonatomic) NSDictionary stats;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) double lastSelectTimestamp;
+@property (nonatomic) NSNumber isDislike;
+@property (nonatomic) NSNumber isSkip;
+@property (nonatomic) NSMutableArray poiIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (id)isSkip;
+- (void)setIsSkip:;
+- (void)setPoiIDs:;
+- (void)setIsDislike:;
+- (void)setLastSelectTimestamp:;
+- (double)lastSelectTimestamp;
+- (id)isDislike;
+- (id)poiIDs;
+- (id)localStats;
+- (void)setLocalStats:;
+- (id)stats;
+- (id)debugInfo;
+- (void)setScene:;
+- (id)scene;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)copyWithZone:;
+- (void)setStats:;
+@end

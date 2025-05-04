@@ -1,0 +1,31 @@
+@interface AWEStudioSoloKTVPublishServiceImpl : NSObject
+@property (nonatomic) BOOL hasRegisteredPublishMessage;
+@property (nonatomic) AWEPublishBaseTask currentPublishTask;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:willAppendWithInfo:;
+- (void)task:didEndWithResult:error:;
+- (void)task:progressDidChangeWithInfo:;
+- (void)addListener;
+- (void)removeListener;
+- (void)silentlyPublishWithFilePath:publishConfig:trackExtra:progressBlock:completionBlock:;
+- (BOOL)existPublishingTask;
+- (void)cancelCurrentPublishTaskWithCallBack:;
+- (void)saveDraftWithFilePath:trackExtra:completion:;
+- (void)silentlyPublishWithFilePath:publishConfig:trackExtra:;
+- (id)currentPublishTask;
+- (void)setCurrentPublishTask:;
+- (BOOL)hasRegisteredPublishMessage;
+- (void)setHasRegisteredPublishMessage:;
+- (id)setupPublishModelWithInputData:;
+- (id)progressBlock;
+- (void)dealloc;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setProgressBlock:;
+- (void).cxx_destruct;
+@end

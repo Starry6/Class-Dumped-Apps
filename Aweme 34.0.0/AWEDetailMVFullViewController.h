@@ -1,0 +1,32 @@
+@interface AWEDetailMVFullViewController : AWEDetailFullViewController
+@property (nonatomic) AWELuckyCatRewardBubbleView rewardView;
+@property (nonatomic) NSString rewardText;
+- (BOOL)configWithRouterParamDict:;
+- (BOOL)awe_shouldAutorotate;
+- (unsigned long long)awe_supportedInterfaceOrientations;
+- (id)aAWEPadModuleAdapter;
+- (id)rewardView;
+- (void)setRewardView:;
+- (void)setupInjectServiceOnInit;
+- (void)registerBusinessHandlersOnInit;
+- (void)setupUIOnViewDidLoad;
+- (void)handleDetailInfoFetchStateChange;
+- (BOOL)shouldUseUnifyStyleErrorView;
+- (BOOL)needAmendEmptyAwemeListTip;
+- (void)updateViewHeightWhileProgress:;
+- (id)aAWEDetailCollectionModuleServiceDOUYINLiteAdaper;
+- (void)p_handleCutSameAbnormalStatusCode;
+- (void)p_updateBottomButtonStyleIfNeed;
+- (void)useUnifyActionButtonLayout;
+- (BOOL)needRewardView;
+- (void)setRewardText:;
+- (id)rewardText;
+- (void)trackWithEvent:;
+- (void)viewWillDisappear:;
+- (void)viewDidLoad;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (id)serviceProvider;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEDetailCollectionModuleServiceDOUYINLiteAdaperClass;
+@end

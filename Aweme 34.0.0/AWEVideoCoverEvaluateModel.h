@@ -1,0 +1,30 @@
+@interface AWEVideoCoverEvaluateModel : AWEBaseApiModel
+@property (nonatomic) q showType;
+@property (nonatomic) q coverEvaluateType;
+@property (nonatomic) AWEVideoCoverEvaluateOriginCoverModel evaluateCover;
+@property (nonatomic) AWEVideoCoverEvaluateNormalSuggestModel suggestCoverList;
+@property (nonatomic) AWEVideoCoverEvaluateResultDescModel resultDesc;
+@property (nonatomic) NSString resultTitle;
+@property (nonatomic) NSArray lowSuggestList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)resultDesc;
+- (void)setResultDesc:;
+- (id)lowSuggestList;
+- (long long)coverEvaluateType;
+- (void)setCoverEvaluateType:;
+- (id)evaluateCover;
+- (void)setEvaluateCover:;
+- (id)suggestCoverList;
+- (void)setSuggestCoverList:;
+- (id)resultTitle;
+- (void)setResultTitle:;
+- (void)setLowSuggestList:;
+- (void).cxx_destruct;
+- (void)setShowType:;
+- (long long)showType;
++ (id)lowSuggestListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

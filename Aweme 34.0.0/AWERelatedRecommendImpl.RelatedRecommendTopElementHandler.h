@@ -1,0 +1,2 @@
+@interface AWERelatedRecommendImpl.RelatedRecommendTopElementHandler : _TtCs12_SwiftObject
+@end

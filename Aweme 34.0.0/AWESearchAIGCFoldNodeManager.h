@@ -1,0 +1,31 @@
+@interface AWESearchAIGCFoldNodeManager : NSObject
+@property (nonatomic) NSMutableSet disableFoldIDs;
+@property (nonatomic) NSMutableDictionary mixNodeMap;
+@property (nonatomic) <AWESearchAIGCFoldNodeDelegate> delegate;
+@property (nonatomic) UIView<AWESearchCachalotViewInterface> cachalotView;
+- (id)cachalotView;
+- (void)setCachalotView:;
+- (void)setMixNodeMap:;
+- (void)setDisableFoldIDs:;
+- (BOOL)enableFoldNode;
+- (id)getCardIDWithCmdArray:;
+- (BOOL)isFoldNode:;
+- (id)disableFoldIDs;
+- (id)foldID:;
+- (id)mixNodeMap;
+- (void)addNode:mixNodeID:;
+- (void)replaceNode:nodeID:mixNodeID:;
+- (id)getCopyMixNodeWithNodeID:;
+- (BOOL)containFoldNodeForMixNode:;
+- (id)getCardID:;
+- (id)preHandleWithCmdArray:response:;
+- (void)unfoldWithIDs:removeNode:searchId:;
+- (void)preHandleForSaveLocalHistory:;
+- (void)preHandleForLoadHistory:;
+- (id)getSubVmCardIDs:;
+- (id)init;
+- (id)delegate;
+- (void)clear;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

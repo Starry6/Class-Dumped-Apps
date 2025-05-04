@@ -1,0 +1,30 @@
+@interface AWENavView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) DUXNavigationBar duxNaviBar;
+@property (nonatomic) DUXNavigationBarImageAction duxImageAction;
+@property (nonatomic) NSString title;
+@property (nonatomic) @? backAction;
+- (void)setAlp_disableLocalizations:;
+- (void)setDuxNaviBar:;
+- (id)duxNaviBar;
+- (void)setDuxImageAction:;
+- (id)duxImageAction;
+- (id)initWithTitle:backAction:;
+- (void)addDefaultConstraints;
+- (void)setBackButtonImageColor:;
+- (id)backButton;
+- (void)setBackButton:;
+- (void)setTitleColor:;
+- (void)setBackAction:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (id)backAction;
+- (void)setTitle:;
+- (void)setBackButtonImage:;
+- (void)backButtonTapped:;
+- (void)_setupUI;
+- (void)updateTitle:;
+@end

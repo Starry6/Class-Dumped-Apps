@@ -1,0 +1,37 @@
+@interface AWESearchAIGCSSEDataController : AWESearchAIGCDataController
+@property (nonatomic) AWESearchAIGCSSERequestManager requestManager;
+@property (nonatomic) <AWESearchAIGCSSEDataControllerDelegate> requestDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didReceiveAllData;
+- (void)clearBeforeNewLink;
+- (void)didReceiveCommonResponse:;
+- (id)currentRequestURL;
+- (long long)triggerCallback;
+- (void)setRequestDelegate:;
+- (id)requestDelegate;
+- (BOOL)enableNewPreRequestWithInitialParams:context:;
+- (unsigned long long)newPreRequestType:context:;
+- (id)refreshNewPreRequestParams:context:;
+- (id)currentSearchId;
+- (BOOL)cachalot_refreshWithCompletion:;
+- (void)didReceiveFirstDataChunk;
+- (void)didEndReadChunkForError:errorReason:currentResponse:;
+- (void)reviveDataSource;
+- (void)setupDataSourceKeepAlive;
+- (id)getKeepAliveCallback:;
+- (void)retryRequestWithRetryCount:;
+- (id)currentRequestRefreshParams;
+- (void)setupRequestCallbackMode:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)requestManager;
+- (BOOL)keepAliveEnabled;
+- (void)setRequestManager:;
++ (id)identifierForPreRequestWithRootTag:;
++ (unsigned long long)newPreRequestType:;
++ (BOOL)enableNewPreRequestWithInitialParams:;
+@end

@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionLongVideoController : AWEPlayInteractionBaseController
+@property (nonatomic) UILabel lastFiveSecondsToast;
+@property (nonatomic) BOOL longVideoViewDisappeared;
+@property (nonatomic) BOOL isDragging;
+@property (nonatomic) BOOL isFromMixFeed;
+@property (nonatomic) BOOL isLastVideo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)videoDidShrink;
+- (void)videoDidMagnify;
+- (void)setIsFromMixFeed:;
+- (void)updateProgressSliderWithTime:totalDuration:model:;
+- (void)setPlayProgressWithTime:totalDuration:model:;
+- (void)updatePlayProgressWithTime:totalDuration:model:;
+- (BOOL)longVideoViewDisappeared;
+- (BOOL)bizDowngradeProgressBarWhenDraw;
+- (void)hashTagClicked:;
+- (void)markLongVideoAppear:;
+- (BOOL)isFromMixFeed;
+- (BOOL)isLastVideo;
+- (void)showMixLastFiveSecondsToast:;
+- (void)updatePlayerWithTime:totalDuration:;
+- (id)lastFiveSecondsToast;
+- (void)setIsLastVideo:;
+- (void)setLongVideoViewDisappeared:;
+- (void)setLastFiveSecondsToast:;
+- (void)viewDidLoad;
+- (BOOL)isDragging;
+- (void)scrollViewWillBeginDragging:;
+- (void).cxx_destruct;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)setIsDragging:;
+@end

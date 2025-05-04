@@ -1,0 +1,34 @@
+@interface AWEIMGroupChatMonitorTrigger : NSObject
+@property (nonatomic) <IESIMPerfFPSMonitorProtocol> fpsWrapper;
+@property (nonatomic) NSArray delays;
+@property (nonatomic) <AWEIMGroupChatMonitorTriggerDelegate> delegate;
+@property (nonatomic) NSMutableDictionary fpsPhaseDict;
+@property (nonatomic) NSDictionary conversationCommonParams;
+@property (nonatomic) <IESIMConversationProtocol> conversation;
+- (void)startAll;
+- (void)triggerScene:extraParams:;
+- (void)endAll;
+- (id)__getCommmonConversationParams:;
+- (void)__startStageTrigger;
+- (void)__startLayoutTrigger;
+- (void)__endTrigger;
+- (id)__endMonitorWithScene:suffix:;
+- (void)__triggerTrackEvent:params:;
+- (id)fpsPhaseDict;
+- (void)__startMonitorWithScene:;
+- (id)__phaseValueWithScene:suffix:;
+- (void)__cleanPhaseDictIfNeededAfterTrackEvent:;
+- (id)fpsWrapper;
+- (id)conversationCommonParams;
+- (void)setFpsWrapper:;
+- (void)setFpsPhaseDict:;
+- (void)setConversationCommonParams:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)conversation;
+- (void)setConversation:;
+- (id)initWithConversation:delegate:;
+- (id)delays;
+- (void)setDelays:;
+@end

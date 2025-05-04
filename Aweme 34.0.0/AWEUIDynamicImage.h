@@ -1,0 +1,36 @@
+@interface AWEUIDynamicImage : UIImage
+@property (nonatomic) @? resolveBlock;
+@property (nonatomic) q currentTheme;
+- (id)awe_imageWithThemeColor:;
+- (id)preferDarkImage;
+- (id)preferLightImage;
+- (void)setCurrentTheme:;
+- (id)dynamicImageWithTransformer:;
+- (id)resolveBlock;
+- (void)setResolveBlock:;
+- (void)syncAccessibilityPropertyWith:;
+- (id)syncAttributeWith:;
+- (id)imageWithThemeStyle:;
+- (id)createPreferImageWithStyle:;
+- (long long)preferredTheme;
+- (void)setPreferredTheme:;
+- (void)p_syncAccessibilityPropertyWith:;
+- (void)syncPropertyWith:;
+- (id)imageWithColorSuit:;
+- (id)imageWithConfiguration:;
+- (id)image;
+- (void)encodeWithCoder:;
+- (long long)currentTheme;
+- (void).cxx_destruct;
+- (id)imageByApplyingSymbolConfiguration:;
+- (id)imageFlippedForRightToLeftLayoutDirection;
+- (id)imageWithAlignmentRectInsets:;
+- (id)imageWithBaselineOffsetFromBottom:;
+- (id)imageWithHorizontallyFlippedOrientation;
+- (id)imageWithRenderingMode:;
+- (id)imageWithTintColor:;
+- (id)imageWithTintColor:renderingMode:;
+- (id)imageWithoutBaseline;
++ (id)dynamicImageWithResolveBlock:;
++ (id)createDynamicImageWithStyle:resolveBlock:;
+@end

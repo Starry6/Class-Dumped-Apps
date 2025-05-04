@@ -1,0 +1,2 @@
+@interface AWEContactsParamsModel : NSObject
+@end

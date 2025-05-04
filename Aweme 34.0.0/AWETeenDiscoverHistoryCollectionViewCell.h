@@ -1,0 +1,32 @@
+@interface AWETeenDiscoverHistoryCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableArray albumsListDataSource;
+@property (nonatomic) NSMutableSet albumSets;
+@property (nonatomic) BOOL isAppear;
+@property (nonatomic) AWETeenDiscoverChannelContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isAppear;
+- (void)setIsAppear:;
+- (void)cellShowLog;
+- (void)setAlbumsListDataSource:;
+- (id)albumsListDataSource;
+- (id)albumSets;
+- (void)configWithAlbums:context:isAppear:;
+- (id)enterFromOrEventPage;
+- (void)setAlbumSets:;
+- (id)collectionView;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)context;
+@end

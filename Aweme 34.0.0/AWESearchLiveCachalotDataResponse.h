@@ -1,0 +1,2 @@
+@interface AWESearchLiveCachalotDataResponse : AWESearchResultCachalotDataResponse
+@end

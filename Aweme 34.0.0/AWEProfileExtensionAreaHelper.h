@@ -1,0 +1,35 @@
+@interface AWEProfileExtensionAreaHelper : NSObject
+- (id)aAWEUserProfileModuleServiceDOUYINHTSAdaper;
++ (id)getGroupedCardsDictionaryWithUserModel:;
++ (void)updateCardIdsWithCardIdList:userModel:;
++ (BOOL)shouldEnableAutoSort;
++ (BOOL)shouldReportAutoSort;
++ (long long)getInsertIndex:notShowCards:userModel:;
++ (void)transferToAllCardPageWithEditing:entranceType:entranceSubType:extraQueryParams:profileContext:;
++ (Class)aAWEUserProfileModuleServiceDOUYINHTSAdaperClass;
++ (void)transferToEditViewControllerWithEditing:enterMethod:;
++ (BOOL)isExtensionAreaRevision:;
++ (id)allCardsWithUserModel:;
++ (BOOL)isCurrentLoginUser:;
++ (unsigned long long)extensionAreaCardStyle:;
++ (long long)getCardIndex:allCards:;
++ (id)showCardIdsWithUserModel:;
++ (id)getGroupedCardsDictionaryWithShowCardIds:allCards:;
++ (id)showExtensionAreaCardList:;
++ (id)cardControllerClassDict;
++ (BOOL)isCardVajraStyle:;
++ (void)trackTrackerParamConflictedWithCardType:conflictedType:trackerName:functionPosition:originParams:newParams:;
++ (id)profileCardEntriesInfoModel:;
++ (id)serviceWidgetCardControllerClassDict;
++ (id)extensionAreaSize:containerWidth:;
++ (BOOL)shouldShowProvidedServiceSection:;
++ (id)cardViewWithCardModel:cardStyle:shouldShrinkTitle:;
++ (void)trackExtensionAreaEventWithConfig:;
++ (void)trackExtensionAreaEnterDurationWithConfig:;
++ (BOOL)isInProfilePage;
++ (id)allCardIdsWithUserModel:;
++ (id)getCardModelInshowExtensionAreaCardList:userModel:;
++ (BOOL)isCardInMoreFuncsWithCardType:userModel:;
++ (void)checkAndBindBDUGFlowAuthTokenForCard:profileContext:;
++ (double)currentScale;
+@end

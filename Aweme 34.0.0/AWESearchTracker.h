@@ -1,0 +1,35 @@
+@interface AWESearchTracker : NSObject
+@property (nonatomic) NSDictionary log;
+@property (nonatomic) AWETrackerContext context;
+@property (nonatomic) AWESearchTrackerOnceManager onceManager;
+- (id)logExtra;
+- (void)trackEvent:paramsBuilder:;
+- (id)logExtraWithSearchParamsBuilder:paramsBuilder:;
+- (id)searchParamsWithBuilder:;
+- (id)onceManager;
+- (void)trackSearchParamsEvent:searchParamsBuilder:paramsBuilder:;
+- (id)logExtraWithSearchParamsBuilder:;
+- (void)trackSearchParamsOnceEvent:uniqueID:searchParamsBuilder:paramsBuilder:;
+- (void)setOnceManager:;
+- (void)trackOnceEvent:uniqueID:paramsBuilder:;
+- (void)updateWithTracker:;
+- (void)appendLogWithBuilder:;
+- (void)appendExclusiveLogWithBuilder:;
+- (void)trackOnceEvent:uniqueID:;
+- (void)replaceLogWithBuilder:;
+- (void)trackEvent:;
+- (void)setLog:;
+- (id)log;
+- (id)description;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)copyWithZone:;
++ (void)trackEvent:paramsBuilder:;
++ (void)trackDoubleEvent:metric:category:extra:;
++ (void)trackEvent:paramsBuilder:to:;
++ (BOOL)enableSearchTracker;
++ (void)trackEventToV3AndU:paramsBuilder:;
++ (void)trackEvent:label:value:extra:paramsBuilder:;
++ (void)trackEventToV1AndV3:paramsBuilder:;
+@end

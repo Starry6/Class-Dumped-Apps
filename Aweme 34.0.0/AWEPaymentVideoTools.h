@@ -1,0 +1,34 @@
+@interface AWEPaymentVideoTools : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)enableDeviceOver;
++ (BOOL)enablePreviewVideo;
++ (BOOL)isPreviewVideo:;
++ (BOOL)enableAutoOpenOrderPage;
++ (BOOL)enableActiveDetailBillPageDataPreCachingController;
++ (BOOL)enableInnerAutoPurchaseWithReferString:;
++ (BOOL)shouldShowPreviewEndDot:;
++ (double)progressForPreviewStartDot:;
++ (double)progressForPreviewEndDot:;
++ (BOOL)enableUseBlockStyle;
++ (BOOL)enableShowLimitFreeHintForOrderPageWithModel:;
++ (BOOL)shouldShowPreviewStartDot:;
++ (BOOL)enableNewVideoPayment;
++ (BOOL)isDowngradeWithModel:;
++ (BOOL)shouldPreventPlayWhenPreviewEndWithModel:;
++ (id)getPreviewDotColor:;
++ (BOOL)isDeviceOverVideo:;
++ (BOOL)shouldPreventSingleClickPauseWithModel:currPlayTime:;
++ (BOOL)shouldRefreshItemWithModel:;
++ (BOOL)hasLimitFreeHintWithModel:;
++ (id)autoPurchaseConfig;
++ (long long)maxFrequencyForUnpaidVideoTryUnlock;
++ (BOOL)hasUnlockWithMixID:currentEpisode:;
++ (BOOL)shouldShowPaymentMaskViewWithModel:;
++ (BOOL)enableShowLimitFreeHintWithModel:;
++ (BOOL)enableAutoOpenOrderTrailFinished;
++ (BOOL)shouldForbidUnpaidVideoCreatePlayer;
++ (id)allowListSupportAutoPullOrderPage;
+@end

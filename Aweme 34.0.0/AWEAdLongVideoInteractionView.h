@@ -1,0 +1,30 @@
+@interface AWEAdLongVideoInteractionView : UIView
+@property (nonatomic) UIView baseContainerView;
+@property (nonatomic) q orientationType;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) AWEAdLongVideoLearnMoreView learnMoreView;
+@property (nonatomic) AWEAdLongVideoTimerView timerView;
+@property (nonatomic) AWEAdTagView adTagView;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIView enterFullScreenView;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)adTagView;
+- (void)setAdTagView:;
+- (void)setOrientationType:;
+- (long long)orientationType;
+- (id)enterFullScreenView;
+- (id)learnMoreView;
+- (void)setupPortraitConstraints;
+- (void)setupLandscapeConstraints;
+- (void)setLearnMoreView:;
+- (void)setEnterFullScreenView:;
+- (id)backButton;
+- (void)setBackButton:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)timerView;
+- (void)setTimerView:;
+- (id)baseContainerView;
+- (void)setBaseContainerView:;
+@end

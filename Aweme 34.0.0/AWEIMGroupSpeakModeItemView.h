@@ -1,0 +1,30 @@
+@interface AWEIMGroupSpeakModeItemView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView tailImageView;
+@property (nonatomic) UIImageView leadingImageView;
+@property (nonatomic) UIStackView containerStackView;
+@property (nonatomic) UIStackView contentStackView;
+@property (nonatomic) UIStackView leadingStackView;
+@property (nonatomic) UIStackView tailStackView;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) AWEIMGroupSpeakModeItemViewModel viewModel;
+- (void)createComponents;
+- (void)addView:toPosition:;
+- (void)refreshStackViewVisible;
+- (id)createTemplateStackView;
+- (id)leadingStackView;
+- (id)tailStackView;
+- (void)refreshStackViewVisibleState:;
+- (id)initWithViewModel:;
+- (void)addObserver;
+- (id)viewModel;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)tapGesture;
+- (id)contentStackView;
+- (id)leadingImageView;
+- (id)tailImageView;
+- (void)handleTapGesture:;
+- (id)containerStackView;
+- (void)layoutComponents;
+@end

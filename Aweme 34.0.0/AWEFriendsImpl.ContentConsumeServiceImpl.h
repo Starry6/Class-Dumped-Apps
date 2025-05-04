@@ -1,0 +1,21 @@
+@interface AWEFriendsImpl.ContentConsumeServiceImpl : HTSService
+- (BOOL)shouldAggregateModel:referString:;
+- (BOOL)shouldAggregateModel:referString:willShow:;
+- (void)loadAggregationListIfNeededWithModel:referString:;
+- (void)loadAggregationListIfNeededWithAwemeList:;
+- (BOOL)isNonVideoCardContentWithModel:;
+- (BOOL)isMusicCardContentWithModel:;
+- (void)loadMoreClipsIfNeedWithAweme:atIndex:completion:;
+- (id)awemeModelWithRichContentDataModel:;
+- (id)createClipVideoAdapterWithContainerView:;
+- (id)createAudioPLayerManager;
+- (id)generateAudioWaveArrayFromString:duration:maxHeight:minHeight:;
+- (id)createCloseFriendsMorePopoverController;
+- (void)hideHerPostFrom:enterMethod:previousPage:awemeModel:completion:;
+- (void)getBackgroundColorWithConfig:completion:;
+- (void)requestMateRateReportWithScene:completion:;
+- (void)reportMomentMigrationWithCompletion:;
+- (BOOL)saveAsPolaroidWithImage:awemeModel:;
+- (id)renderMomentBlurImageWithSourceImage:cacheKey:;
+- (id)init;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMMessagePropertyItemGroup : NSObject
+@property (nonatomic) AWEIMMessageEmojiConfig config;
+@property (nonatomic) NSArray properties;
+@property (nonatomic) BOOL hasPropertyFromMe;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) Q count;
+@property (nonatomic) q createdAt;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL needRefresh;
+- (void)setNeedRefresh:;
+- (void)setHasPropertyFromMe:;
+- (BOOL)hasPropertyFromMe;
+- (void)setConfig:;
+- (void)setProperties:;
+- (void)setKey:;
+- (void)setCount:;
+- (id)config;
+- (id)key;
+- (unsigned long long)count;
+- (BOOL)needRefresh;
+- (unsigned long long)type;
+- (void)setType:;
+- (void)setCreatedAt:;
+- (long long)createdAt;
+- (void).cxx_destruct;
+- (id)properties;
+- (id)tagName;
+- (void)setTagName:;
++ (id)groupWithKey:seKey:type:ttMsg:;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMDoubleAvatarView : UIView
+@property (nonatomic) UIImageView firstImageView;
+@property (nonatomic) UIImageView secondImageView;
+@property (nonatomic) UIView firstImageBackgroundView;
+@property (nonatomic) BOOL isWhiteBg;
+@property (nonatomic) double singleWidth;
+@property (nonatomic) double outerWidth;
+- (void)p_setupUI;
+- (void)updateWithFirstImageUrl:secondImageUrl:;
+- (id)firstImageView;
+- (id)secondImageView;
+- (void)setFirstImageView:;
+- (void)setSecondImageView:;
+- (id)initWithIsWhiteBg:singleWidth:outerWidth:;
+- (id)firstImageBackgroundView;
+- (void)p_creatComponents;
+- (void)p_makeConstraint;
+- (double)outerWidth;
+- (id)p_getCommonImageView;
+- (void)setFirstImageBackgroundView:;
+- (double)singleWidth;
+- (BOOL)isWhiteBg;
+- (void)setIsWhiteBg:;
+- (void)setSingleWidth:;
+- (void)setOuterWidth:;
+- (void).cxx_destruct;
+- (void)setBgColor:;
++ (id)doubleHeaderViewWithIsWhiteBg:singleWidth:borderWidth:;
++ (id)doubleHeaderViewWithIsWhiteBg:singleWidth:outerWidth:;
++ (id)doubleHeaderViewWithIsWhiteBg:;
+@end

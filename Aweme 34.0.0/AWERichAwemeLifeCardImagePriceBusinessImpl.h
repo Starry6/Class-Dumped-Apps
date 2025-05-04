@@ -1,0 +1,32 @@
+@interface AWERichAwemeLifeCardImagePriceBusinessImpl : NSObject
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) AWERichAwemeLifeCardImagePOIInfoView infoView;
+@property (nonatomic) AWERichAwemeLifeCardImagePriceView priceView;
+@property (nonatomic) <AWEPlayInteractionContextProtocol> playInteractionContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowPriceWithModel:;
+- (id)playInteractionContext;
+- (void)setPlayInteractionContext:;
+- (void)updateWithContainerView:model:;
+- (void)elementWillDisplayWithModel:;
+- (id)priceView;
+- (void)setPriceView:;
+- (void)setModel:;
+- (id)containerView;
+- (id)model;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)handleTap:;
+- (id)infoView;
+- (void)setInfoView:;
++ (BOOL)shouldShowElementWithContext:;
++ (BOOL)shouldShowPOIInfoView:;
++ (BOOL)shouldShowPriceInfoView:;
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMMessageTabChatPopOverComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMChatModel originChat;
+@property (nonatomic) q originIndex;
+@property (nonatomic) UIView<IESIMActionSheetProtocol> popoverActionSheet;
+@property (nonatomic) <AWEIMMessageTabChatPopOverAction> action;
+@property (nonatomic) NSNumber currentThemeStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentThemeStyle;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)setCurrentThemeStyle:;
+- (long long)originIndex;
+- (void)setOriginIndex:;
+- (void)messageTabDataDidChanged;
+- (void)listViewControllerWillDisappear:;
+- (void)plusPanelActionSheetWillShow;
+- (void)setPreferThemeStyle:;
+- (void)setPopoverActionSheet:;
+- (id)popoverActionSheet;
+- (void)triggerChatPopOverActionSheetWithModels:cell:point:chat:;
+- (void)hidePopOverIfNeeded;
+- (BOOL)isDisplayingPopOver;
+- (void)p_hideIfNeeded;
+- (id)originChat;
+- (void)p_trackPopOverShow:;
+- (void)setOriginChat:;
+- (id)__popoverSheetShapeColor;
+- (id)__popoverSheetMaskColor;
+- (id)__preferredThemeColorForBaseColor:;
+- (id)p_typeForChat:;
+- (id)p_innerMessageTypeForChat:;
+- (void)setAction:;
+- (id)action;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,35 @@
+@interface AWEHotSearchCommentDiscussView : UIView
+@property (nonatomic) AWEHotSearchCommentAvatarView avatarsView;
+@property (nonatomic) YYLabel discussingLabel;
+@property (nonatomic) UIView separationView;
+@property (nonatomic) YYLabel hotListLabel;
+@property (nonatomic) UIView placeHolderView;
+@property (nonatomic) q theme;
+- (void)awe_themeDidChange:;
+- (void)updateTheme:;
+- (id)avatarsView;
+- (void)setAvatarsView:;
+- (void)makeConstraint;
+- (void)updateDarkTheme;
+- (void)updateGrayTheme;
+- (void)removePlaceHolderView;
+- (id)discussingLabel;
+- (id)separationView;
+- (id)hotListLabel;
+- (void)updateAvatarsTheme:;
+- (void)setDiscussingText:;
+- (void)setHotListText:;
+- (void)updateAvatarsDarkTheme;
+- (void)updateAvatarsGrayTheme;
+- (void)setDiscussingLabel:;
+- (void)setSeparationView:;
+- (void)setHotListLabel:;
+- (long long)theme;
+- (void)setTheme:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)updateWithContext:;
+- (id)placeHolderView;
+- (void)setPlaceHolderView:;
+@end

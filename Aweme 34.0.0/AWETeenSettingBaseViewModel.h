@@ -1,0 +1,30 @@
+@interface AWETeenSettingBaseViewModel : NSObject
+@property (nonatomic) q colorStyle;
+@property (nonatomic) <AWETeenSettingBaseViewModelDelegate> controllerDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray sectionDataArray;
+- (id)sectionDataArray;
+- (void)listControlDidChange;
+- (void)tapTeenagerProtectionCell;
+- (void)tapSettingCell;
+- (void)tapEyeProtectionCell;
+- (void)tapHelpDeskCell;
+- (void)tapWalletCell;
+- (void)tapBalanceWithdrawCell;
+- (void)tapContentPreferCell;
+- (void)refreshAllCells;
+- (void)viewDidDisapper;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)controllerDelegate;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setControllerDelegate:;
+- (void)viewDidAppear;
+- (long long)colorStyle;
+- (void)setColorStyle:;
+@end

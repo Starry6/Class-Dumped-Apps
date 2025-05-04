@@ -1,0 +1,36 @@
+@interface AWEIMEncryptAudioContent : AWEIMMessageContent
+@property (nonatomic) NSString skey;
+@property (nonatomic) NSString tkey;
+@property (nonatomic) q expiredTimestamp;
+@property (nonatomic) NSString md5;
+@property (nonatomic) AWEURLModel resourceUrl;
+@property (nonatomic) q duration;
+@property (nonatomic) NSArray averagePowerArr;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)skey;
+- (void)setSkey:;
+- (void)setAveragePowerArr:;
+- (id)averagePowerArr;
+- (id)tkey;
+- (void)updateMessageContentWithAttachmentMD5:fileType:;
+- (void)updateMessageContentWithUploadedFileResponse:fileType:;
+- (long long)expiredTimestamp;
+- (void)setTkey:;
+- (void)setExpiredTimestamp:;
+- (id)contentType;
+- (void)setDuration:;
+- (void)setContentType:;
+- (void).cxx_destruct;
+- (long long)duration;
+- (id)initWithDictionary:;
+- (id)copyWithZone:;
+- (void)setMd5:;
+- (id)md5;
+- (void)setResourceUrl:;
+- (id)resourceUrl;
+- (id)contentDictionary;
+@end

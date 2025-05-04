@@ -1,0 +1,34 @@
+@interface AWEHotSearchCommentAISummaryCellModel : NSObject
+@property (nonatomic) AWECommentModel commentModel;
+@property (nonatomic) NSArray avatarImageURLList;
+@property (nonatomic) NSAttributedString contentText;
+@property (nonatomic) YYTextLayout contentLayout;
+@property (nonatomic) double containerWidth;
+@property (nonatomic) BOOL needQuoteView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commentModel;
+- (void)setCommentModel:;
+- (id)cellSizeWithConstraintWidth:;
+- (void)configWithSectionData:;
+- (void)setAvatarImageURLList:;
+- (id)p_attributedContentForComment:;
+- (double)p_fontSize;
+- (id)p_labelFont;
+- (id)p_labelColor;
+- (id)p_labelHighlightColor;
+- (void)p_buildContentInfo;
+- (void)configWithCommentModel:;
+- (id)avatarImageURLList;
+- (BOOL)needQuoteView;
+- (void)setNeedQuoteView:;
+- (id)contentLayout;
+- (void).cxx_destruct;
+- (void)setContentLayout:;
+- (void)setContentText:;
+- (id)contentText;
+- (double)containerWidth;
+- (void)setContainerWidth:;
+@end

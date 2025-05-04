@@ -1,0 +1,2 @@
+@interface AWEECOMChatListNavigationController : UINavigationController
+@end

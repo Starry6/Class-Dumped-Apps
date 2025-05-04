@@ -1,0 +1,38 @@
+@interface AWEPlayInteractionLongVideoPlusInfoWithCoverLeftElement : AWEPlayInteractionLeftElement
+@property (nonatomic) UIView coverContainerView;
+@property (nonatomic) BDImageView coverImageView;
+@property (nonatomic) AWEElementContainer innerContainer;
+@property (nonatomic) UIImage placeholderImage;
+@property (nonatomic) BOOL isExpanded;
+@property (nonatomic) double descriptionLabelOriginHeight;
+- (void)initializeElement;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (id)elementClassArray;
+- (id)coverContainerView;
+- (void)setCoverContainerView:;
+- (void)handleInteractionDescriptionLabelAnimation:;
+- (id)getVerticalCoverUrlString;
+- (double)getElementCoverWidth;
+- (double)getElementBaseHeight;
+- (void)setSubElementWidth:;
+- (void)handleExpand:distance:;
+- (void)refreshContainerHeight;
+- (void)fallbackUnrecognizedSelector:;
+- (void)buildTrackParams:;
+- (double)descriptionLabelOriginHeight;
+- (void)setDescriptionLabelOriginHeight:;
+- (void)setIsExpanded:;
+- (BOOL)isExpanded;
+- (id)placeholderImage;
+- (void)setPlaceholderImage:;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (id)methodSignatureForSelector:;
+- (id)innerContainer;
+- (void)setInnerContainer:;
++ (BOOL)shouldActiveWithModel:context:;
+@end

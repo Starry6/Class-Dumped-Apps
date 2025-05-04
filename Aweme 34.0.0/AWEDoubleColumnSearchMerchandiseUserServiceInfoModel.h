@@ -1,0 +1,30 @@
+@interface AWEDoubleColumnSearchMerchandiseUserServiceInfoModel : MTLModel
+@property (nonatomic) NSString buttonType;
+@property (nonatomic) NSString shopId;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSNumber count;
+@property (nonatomic) AWEURLModel entryIcon;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseTextTagModel textTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)shopId;
+- (void)setShopId:;
+- (id)textTag;
+- (void)setEntryIcon:;
+- (id)buttonType;
+- (void)setUrl:;
+- (void)setCount:;
+- (id)count;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setButtonType:;
+- (id)url;
+- (void)setTitle:;
+- (id)entryIcon;
+- (void)setTextTag:;
++ (id)textTagJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,38 @@
+@interface AWEVideocutLandingPageViewModel : NSObject
+@property (nonatomic) q fetchState;
+@property (nonatomic) NSArray nonTemplateIDList;
+@property (nonatomic) BOOL isDefaultID;
+@property (nonatomic) NSString templateID;
+@property (nonatomic) NSString topicID;
+@property (nonatomic) AWEAweMVTemplateModel templateModel;
+@property (nonatomic) NSString usageAmountString;
+@property (nonatomic) BOOL isVideocutInstalled;
+@property (nonatomic) NSString awemeID;
+- (void)setAwemeID:;
+- (id)awemeID;
+- (BOOL)isVideocutInstalled;
+- (void)trackActionButtonClickWithType:;
+- (void)trackVideocutDetailPageShow;
+- (void)openInJianying;
+- (void)trackDownloadEvent;
+- (void)transferToUserProfile;
+- (id)usageAmountString;
+- (BOOL)isDefaultID;
+- (void)fetchTemplateDetail;
+- (void)trackVideoPlayAction:;
+- (BOOL)isValidTemplateID:;
+- (void)setIsDefaultID:;
+- (void)fetchTemplateDetailWithTemplateID:;
+- (id)nonTemplateIDList;
+- (long long)fetchState;
+- (void)setFetchState:;
+- (void)trackEnterUserProfile;
+- (void)setTopicID:;
+- (id)topicID;
+- (id)templateID;
+- (void)setTemplateID:;
+- (void).cxx_destruct;
+- (id)actionButtonTitle;
+- (void)setTemplateModel:;
+- (id)templateModel;
+@end

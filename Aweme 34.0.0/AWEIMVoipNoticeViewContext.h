@@ -1,0 +1,2 @@
+@interface AWEIMVoipNoticeViewContext : NSObject
+@end

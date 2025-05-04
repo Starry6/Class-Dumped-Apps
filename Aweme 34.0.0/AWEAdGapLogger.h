@@ -1,0 +1,38 @@
+@interface AWEAdGapLogger : HTSService
+@property (nonatomic) BOOL enableAdGapLogger;
+@property (nonatomic) BOOL isFirstVideoShow;
+@property (nonatomic) BOOL isPlayingAd;
+@property (nonatomic) double prevAdFinishTime;
+@property (nonatomic) double curAdStartTime;
+@property (nonatomic) NSMutableDictionary trackCount;
+@property (nonatomic) AWEAdGapTrackModel adGapTrackModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (void)logInteractiveEvent:from:;
+- (void)logInteractiveEvent:with:from:;
+- (BOOL)shouldSendToSati;
+- (void)setAdGapTrackModel:;
+- (id)adGapTrackModel;
+- (void)handleAppHotStart:;
+- (void)handleSplashFinish:;
+- (void)handleFeedVideoWillDisplay:;
+- (void)handleFeedVideoDidEndDisplay:;
+- (BOOL)enableAdGapLogger;
+- (BOOL)isPlayingAd;
+- (BOOL)isFirstVideoShow;
+- (void)setIsFirstVideoShow:;
+- (void)setIsPlayingAd:;
+- (double)curAdStartTime;
+- (double)prevAdFinishTime;
+- (void)trackIfAdGapInteractive;
+- (void)setEnableAdGapLogger:;
+- (void)setPrevAdFinishTime:;
+- (void)setCurAdStartTime:;
+- (id)trackCount;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setTrackCount:;
+@end

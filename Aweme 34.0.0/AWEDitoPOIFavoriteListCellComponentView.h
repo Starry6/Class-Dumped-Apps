@@ -1,0 +1,36 @@
+@interface AWEDitoPOIFavoriteListCellComponentView : DitoComponentView
+@property (nonatomic) AWEDitoPOIFavoriteListCellComponentViewModel viewModel;
+@property (nonatomic) UILabel listNameLabel;
+@property (nonatomic) UILabel authorNameLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel collectTimeLabel;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) AWEDitoPOIFavoriteListCoverContainer container;
+@property (nonatomic) YYLabel cornerLabel;
+@property (nonatomic) AWEDitoPOIFavoritePageContext context;
+- (id)descLabel;
+- (void)setDescLabel:;
+- (void)setAuthorNameLabel:;
+- (id)authorNameLabel;
+- (void)updateViewModel:;
+- (void)setCornerLabel:;
+- (id)cornerLabel;
+- (void)updateUILayout;
+- (id)collectTimeLabel;
+- (void)discriminateProfileScene;
+- (void)setCollectTimeLabel:;
+- (id)listNameLabel;
+- (void)didSelected;
+- (void)setListNameLabel:;
+- (void)setContainer:;
+- (id)container;
+- (void)layoutSublayersOfLayer:;
+- (void)setAvatarView:;
+- (void)prepareForReuse;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)avatarView;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

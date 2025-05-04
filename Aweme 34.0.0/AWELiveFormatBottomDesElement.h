@@ -1,0 +1,35 @@
+@interface AWELiveFormatBottomDesElement : AWELiveTopElement
+@property (nonatomic) BOOL isPortraitStream;
+@property (nonatomic) q type;
+@property (nonatomic) AWELiveVSCustomTitleLable bottomTitle;
+@property (nonatomic) UIImageView bottomImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldActivateElementWithData:;
+- (void)viewController_viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)preloadElement;
+- (void)setIsPortraitStream:;
+- (void)_registerFontIfNeed;
+- (BOOL)isPortraitStream;
+- (void)updateTitleToPotrait;
+- (void)updateTitleToLandscape;
+- (BOOL)_isFontRegisted;
+- (id)p_previewImageDownURLArray;
+- (BOOL)p_canshowScore;
+- (void)p_updatePortraitStream;
+- (void)p_updateLandscapeStream;
+- (void)onMessageReceivce:withDict:;
+- (unsigned long long)liveElementType;
+- (void)viewDidLoad;
+- (long long)type;
+- (void)setType:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setBottomTitle:;
+- (id)bottomTitle;
+- (id)bottomImageView;
+- (void)setBottomImageView:;
+@end

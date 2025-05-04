@@ -1,0 +1,32 @@
+@interface AWEEcommerceSearchBoxBannerBaseCell : AWESearchCachalotECommerceBaseCell
+@property (nonatomic) UIImageView bannerImgView;
+@property (nonatomic) UIView bannerContentView;
+@property (nonatomic) AWEEcomSearchWebImageView contentImgView;
+@property (nonatomic) CALayer contentImgMaskLayer;
+@property (nonatomic) AWEEcommerceSearchBannerBackgroundView contentBgView;
+@property (nonatomic) AWEEcommerceSearchBannerIconGroupView iconGroupView;
+@property (nonatomic) AWEEcommerceSearchStyleLabel mainTitleLab;
+@property (nonatomic) AWEEcommerceSearchStyleLabel subTitleLab;
+@property (nonatomic) AWEEcommerceSearchBannerActionView button;
+@property (nonatomic) AWEDoubleColumnSearchMerchandiseModel model;
+@property (nonatomic) NSDictionary searchInfoDict;
+- (void)clickButton;
+- (id)subTitleLab;
+- (id)contentBgView;
+- (void)trackCardShow;
+- (void)trackCardClick;
+- (void)setSearchInfoDict:;
+- (id)searchInfoDict;
+- (id)bannerImgView;
+- (id)bannerContentView;
+- (id)contentImgView;
+- (id)contentImgMaskLayer;
+- (id)iconGroupView;
+- (id)mainTitleLab;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)button;
++ (id)identifier;
+@end

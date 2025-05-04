@@ -1,0 +1,37 @@
+@interface AWEOrangeStoryCellMediaWrapper : UIView
+@property (nonatomic) BOOL hasRefreshedData;
+@property (nonatomic) UIImageView imagePlayerView;
+@property (nonatomic) NSDictionary paramDic;
+@property (nonatomic) AWEOneDayStoryWithCommentModel commenStoryModel;
+@property (nonatomic) UIViewController<AWEDPlayerProtocol> playerViewController;
+@property (nonatomic) BOOL shouldShowPlayIcon;
+@property (nonatomic) BOOL isOnSight;
+- (id)imagePlayerView;
+- (id)paramDic;
+- (void)setShouldShowPlayIcon:;
+- (void)setParamDic:;
+- (void)refreshWithCommentStoryModel:paramDic:;
+- (id)newImagePlayerView;
+- (void)setImagePlayerView:;
+- (void)setupVideoPlayerViewController;
+- (BOOL)hasRefreshedData;
+- (id)commenStoryModel;
+- (void)setCommenStoryModel:;
+- (void)setHasRefreshedData:;
+- (void)updateVideoPlayerWithOneDayModel:;
+- (BOOL)isOnSight;
+- (void)setIsOnSight:;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)play;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)stop;
+- (id)playerViewController;
+- (void)pause;
+- (void)setPlayerViewController:;
+- (BOOL)shouldShowPlayIcon;
++ (BOOL)isImage:;
++ (BOOL)isVideo:;
+@end

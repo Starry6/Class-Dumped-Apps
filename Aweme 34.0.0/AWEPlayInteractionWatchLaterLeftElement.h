@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionWatchLaterLeftElement : AWEPlayInteractionLeftElement
+@property (nonatomic) @? showHandler;
+@property (nonatomic) DUXButton watchLaterGuideButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)clickAction;
+- (void)viewController_viewDidAppear;
+- (void)viewController_viewWillDisappear;
+- (id)aAWEPadModuleAdapter;
+- (BOOL)isNeedDelayAppear;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)prepareForActivate;
+- (void)showButtonIfNeeded;
+- (id)aAWEPlayInteractionAdapter;
+- (BOOL)shouldActivateButtonWithData:;
+- (id)showHandler;
+- (void)setShowHandler:;
+- (id)watchLaterGuideButton;
+- (void)setWatchLaterGuideButton:;
+- (void)autoDismiss;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)hideButton;
++ (Class)aAWEPadModuleAdapterClass;
++ (id)activateInfoWithContext:;
++ (BOOL)shouldShowWithModel:referString:;
++ (Class)aAWEPlayInteractionAdapterClass;
++ (void)recordShown:;
++ (void)invalidateRecordsIfNeeded;
++ (id)todayShownRecords;
++ (void)recordNotClick:;
+@end

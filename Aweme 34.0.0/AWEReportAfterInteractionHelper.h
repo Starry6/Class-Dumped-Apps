@@ -1,0 +1,34 @@
+@interface AWEReportAfterInteractionHelper : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (BOOL)enablePluginInteractionSurveyInCommonDCOuter:;
++ (BOOL)enable31InteractionSurveyInCommonDCOuter:;
++ (id)paramsForFetchSurveyInCommonDCOuter:;
++ (id)smartServiceForCommonSurvey:;
++ (BOOL)enable31AfterInteractionInMediumVideoChannelInner;
++ (BOOL)enable3AfterInteraction;
++ (id)coldStartLagFor31;
++ (id)coldStartLag;
++ (id)lastTimeLag;
++ (id)lastTimeLagFor31;
++ (id)lastTimeLagFor31InDoubleColumn;
++ (id)lastTimeLagFor31InMediumVideoChannel;
++ (id)coldStartLagForCommonDCInner:;
++ (id)lastTimeLagForCommonDCInner:;
++ (id)coldStartLagForCommonDCOuter:;
++ (id)lastTimeLagForCommonDCOuter:;
++ (id)mediumVideoChannel31AfterInteractionConfig;
++ (id)cacheConfigWithIdentifier:;
++ (id)sceneConfigWithIdentifier:;
++ (id)surveyConfigWithIdentifier:;
++ (id)generalDCSurveyConfig;
++ (BOOL)enableReportAfterInteraction;
++ (BOOL)enable31AfterInteractionInDoubleColumn;
++ (id)coldStartLagFor31InDoubleColumn;
++ (BOOL)enable31AfterInteractionInMediumVideoChannel;
++ (id)coldStartLagFor31InMediumVideoChannel;
++ (BOOL)enable31InteractionSurveyInCommonDCInner:;
++ (id)paramsForFetchSurveyInCommonDCInner:;
+@end

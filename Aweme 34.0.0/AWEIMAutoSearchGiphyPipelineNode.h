@@ -1,0 +1,2 @@
+@interface AWEIMAutoSearchGiphyPipelineNode : AWEIMTaskPipelineNode
+@end

@@ -1,0 +1,2 @@
+@interface _TtGC20AWECommentSwiftBasic11CommentWeakCSo6UIView_ : _TtCs12_SwiftObject
+@end

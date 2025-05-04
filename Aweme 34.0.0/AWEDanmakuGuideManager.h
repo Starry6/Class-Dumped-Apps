@@ -1,0 +1,37 @@
+@interface AWEDanmakuGuideManager : NSObject
+@property (nonatomic) NSArray remoteGuideList;
+@property (nonatomic) NSMutableArray guideDanmakus;
+@property (nonatomic) NSMutableDictionary exitRecord;
+@property (nonatomic) NSMutableDictionary showCountRecord;
+@property (nonatomic) NSMutableDictionary tapCountRecord;
+@property (nonatomic) NSMutableDictionary timestampRecord;
+@property (nonatomic) NSMutableArray videos;
+@property (nonatomic) NSString lastVideoIDShowGuide;
+- (id)needShowGuideDanmakuWithModel:sceneType:;
+- (void)updateTapCountRecordWithID:;
+- (void)updateShowCountRecordWithID:;
+- (void)setLastVideoIDShowGuide:;
+- (BOOL)canShowGuideDanmakuModelBeforeDisplay:;
+- (void)updateGuideDanmakus:;
+- (void)loadLocalStorage;
+- (id)exitRecord;
+- (id)showCountRecord;
+- (id)tapCountRecord;
+- (id)timestampRecord;
+- (void)setRemoteGuideList:;
+- (id)filterInvalidGuideDanmakuIfNeed;
+- (id)guideDanmakus;
+- (void)postGuideDanmakuChangeNoti;
+- (id)remoteGuideList;
+- (long long)transfromGuideScene:;
+- (id)lastVideoIDShowGuide;
+- (void)setGuideDanmakus:;
+- (void)setExitRecord:;
+- (void)setShowCountRecord:;
+- (void)setTapCountRecord:;
+- (void)setTimestampRecord:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)videos;
+- (void)setVideos:;
+@end

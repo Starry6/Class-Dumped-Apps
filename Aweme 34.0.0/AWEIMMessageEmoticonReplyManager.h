@@ -1,0 +1,36 @@
+@interface AWEIMMessageEmoticonReplyManager : HTSService
+@property (nonatomic) HMDThreadSafeDictionary conversationDic;
+@property (nonatomic) HMDThreadSafeDictionary conversationNameDic;
+@property (nonatomic) BOOL recentChanged;
+@property (nonatomic) NSMutableArray mRecentEmoticonArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray recentEmoticonArray;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)handleDidEnterBackgroundNotification:;
+- (void)removeWithConversationID:;
+- (void)updateRecentEmoticonWithModel:;
+- (void)handleApplicationWillTerminationNty:;
+- (id)recentEmoticonArray;
+- (void)updateWithConversation:;
+- (void)loadDiskCacheRecentEmoticonIfPossible;
+- (id)mRecentEmoticonArray;
+- (id)conversationDic;
+- (id)p_keyWithConversationID:;
+- (id)conversationNameDic;
+- (void)p_diskCacheRecentEmoticonIfNeeded;
+- (void)setRecentChanged:;
+- (BOOL)recentChanged;
+- (id)p_rencentEmoticonKey;
+- (id)conversationWithConversationID:;
+- (id)nameDictionaryWithConversationID:;
+- (void)setConversationDic:;
+- (void)setConversationNameDic:;
+- (void)setMRecentEmoticonArray:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

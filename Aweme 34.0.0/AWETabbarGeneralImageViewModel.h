@@ -1,0 +1,33 @@
+@interface AWETabbarGeneralImageViewModel : NSObject
+@property (nonatomic) AWEHPBottomTabUIConfigModel config;
+@property (nonatomic) AWEHPChannelImageModel imageModel;
+@property (nonatomic) UIImageView oldImageView;
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) {CGSize=dd} containerSize;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageModel;
+- (void)setImageModel:;
+- (id)oldImageView;
+- (void)setOldImageView:;
+- (void)p_updateImageView;
+- (id)generateImagePopAnimationGroupWithAnimateStyle:;
+- (id)generateImageShowAnimationGroupWithAnimateStyle:;
+- (void)showWithImageModel:changeImageAnimateStyle:;
+- (void)updateAvatarBadgeHollowDisplay:withContainerSize:withImageCenter:withBadgeOrigin:;
+- (void)setConfig:;
+- (void)animationDidStop:finished:;
+- (BOOL)isShowing;
+- (id)initWithConfig:;
+- (id)config;
+- (id)containerSize;
+- (void)setContainerSize:;
+- (void).cxx_destruct;
+- (void)setImageView:;
+- (id)imageView;
+- (void)hideImage;
+- (void)setIsShowing:;
+@end

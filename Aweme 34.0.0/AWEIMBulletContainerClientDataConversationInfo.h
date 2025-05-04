@@ -1,0 +1,37 @@
+@interface AWEIMBulletContainerClientDataConversationInfo : MTLModel
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString conversationShortID;
+@property (nonatomic) Q chatType;
+@property (nonatomic) NSString groupCreateType;
+@property (nonatomic) NSString groupOwnerType;
+@property (nonatomic) NSString privateType;
+@property (nonatomic) NSString curUID;
+@property (nonatomic) NSString otherUID;
+@property (nonatomic) BOOL groupIsInvalid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupCreateType;
+- (void)setGroupCreateType:;
+- (unsigned long long)chatType;
+- (void)setChatType:;
+- (id)privateType;
+- (void)setPrivateType:;
+- (id)conversationShortID;
+- (void)setConversationShortID:;
+- (void)setCurUID:;
+- (id)curUID;
+- (id)otherUID;
+- (void)setOtherUID:;
+- (void)configDataWithIESConversation:;
+- (void)configDataWithConversation:;
+- (void)setGroupIsInvalid:;
+- (id)groupOwnerType;
+- (void)setGroupOwnerType:;
+- (BOOL)groupIsInvalid;
+- (id)conversationID;
+- (void).cxx_destruct;
+- (void)setConversationID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,33 @@
+@interface AWERelationFollowBaseViewModel : AWEBaseViewModel
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) NSString updateUid;
+@property (nonatomic) BOOL needReloadData;
+@property (nonatomic) BOOL needRefreshData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishBlockUser:status:;
+- (void)didFinishHidePostFromHer:status:;
+- (void)didFinishUnHidePostFromHer:status:;
+- (void)didFinishSetRemarkWithUser:;
+- (void)didFinishRemoveFansWithUser:;
+- (id)updateUid;
+- (void)didFinishAddNewMembers:newUserIds:;
+- (void)didFinishDropMembers:userIds:;
+- (void)setNeedReloadData:;
+- (void)setUpdateUid:;
+- (void)__updateDataSourceWithType:userID:object:needResetAlias:;
+- (void)viewModelDidFinishAddNewMembers:newUserIds:;
+- (void)setNeedRefreshData:;
+- (void)viewModelDidFinishDropMembers:userIds:;
+- (BOOL)needReloadData;
+- (BOOL)needRefreshData;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setDataSource:;
+- (id)dataSource;
+@end

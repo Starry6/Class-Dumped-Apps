@@ -1,0 +1,30 @@
+@interface AWEListenFeedGuidePopupView : AWEFeedBasePopupView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) @? confirmButtonClickAction;
+@property (nonatomic) @? dismissedBlock;
+- (id)aAWEPadModuleAdapter;
+- (void)setDismissedBlock:;
+- (id)dismissedBlock;
+- (id)aAWEPlayInteractionAdapter;
+- (id)confirmButtonClickAction;
+- (void)p_onClickConfirm;
+- (id)initWithContentViewHeight:;
+- (void)p_configViews;
+- (void)setConfirmButtonClickAction:;
+- (void)hide;
+- (void)setTitleLabel:;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (id)confirmButton;
+- (id)contentLabel;
+- (void)setConfirmButton:;
+- (void)setContentLabel:;
++ (Class)aAWEPadModuleAdapterClass;
++ (Class)aAWEPlayInteractionAdapterClass;
++ (id)listenFeedPopupView;
+@end

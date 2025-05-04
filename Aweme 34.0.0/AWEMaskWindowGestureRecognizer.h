@@ -1,0 +1,2 @@
+@interface AWEMaskWindowGestureRecognizer : UIPanGestureRecognizer
+@end

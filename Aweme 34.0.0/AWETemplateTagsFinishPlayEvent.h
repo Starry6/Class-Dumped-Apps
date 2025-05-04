@@ -1,0 +1,2 @@
+@interface AWETemplateTagsFinishPlayEvent : AWETemplateTagsTriggerEvent
+@end

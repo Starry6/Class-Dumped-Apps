@@ -1,0 +1,37 @@
+@interface AWEFeedUnfollowFamiliarFollowAndDislikeView : UIStackView
+@property (nonatomic) double buttonMaxWidth;
+@property (nonatomic) double buttonNormalWidth;
+@property (nonatomic) BOOL canShowMateBtn;
+@property (nonatomic) AWEButton disLikeBtn;
+@property (nonatomic) AWEButton unfollowBtn;
+@property (nonatomic) AFDButton greetBtn;
+@property (nonatomic) UIButton<AFDFollowButtonProtocol> followBtn;
+@property (nonatomic) AWEButton mateBtn;
+@property (nonatomic) NSString referString;
+- (void)p_setupUI;
+- (id)referString;
+- (void)setReferString:;
+- (void)setButtonMaxWidth:;
+- (double)buttonMaxWidth;
+- (id)followBtn;
+- (void)setFollowBtn:;
+- (void)setDisLikeBtn:;
+- (void)setupDislikeButton;
+- (void)setUnfollowBtn:;
+- (id)unfollowBtn;
+- (id)mateBtn;
+- (id)disLikeBtn;
+- (void)setButtonNormalWidth:;
+- (double)buttonNormalWidth;
+- (void)setGreetBtn:;
+- (id)greetBtn;
+- (void)resetDisLikeBtnSize;
+- (id)mateBtnText;
+- (void)updateUnFollowButtonText:icon:isPrimaryColor:;
+- (void)updateDislikeButtonWithWhiteStyle:;
+- (void)setMateBtn:;
+- (BOOL)canShowMateBtn;
+- (void)setCanShowMateBtn:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

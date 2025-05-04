@@ -1,0 +1,35 @@
+@interface AWEProfileNavVisitorItemController : NSObject
+@property (nonatomic) AWEUserHomeVisitorButton visitorButton;
+@property (nonatomic) <AWEProfileNavigationContainerDelegate> delegate;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (id)profileContext;
+- (void)onReloadUI:isCache:;
+- (id)padService;
+- (id)navigationItemView;
+- (BOOL)needFitMiniScreen;
+- (id)visitorButton;
+- (void)updateVisitorNumberNotification:;
+- (void)newPrivacySettingItemDidChange:;
+- (void)updateVisitorButtonNumber;
+- (void)trackVisitorButtonShow;
+- (id)aAWEUserProfileGreetCommonAdapter;
+- (void)visitorButtonClicked;
+- (void)setVisitorButton:;
+- (id)delegate;
+- (void)viewDidLoad;
+- (long long)type;
+- (void)setType:;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)viewDidAppear;
+- (id)itemSize;
+- (BOOL)isCurrentUser;
+- (void)viewDidDisappear;
++ (Class)aAWEUserProfileGreetCommonAdapterClass;
+@end

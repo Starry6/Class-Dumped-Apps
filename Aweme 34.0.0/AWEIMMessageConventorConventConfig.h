@@ -1,0 +1,2 @@
+@interface AWEIMMessageConventorConventConfig : NSObject
+@end

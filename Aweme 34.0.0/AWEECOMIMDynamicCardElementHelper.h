@@ -1,0 +1,36 @@
+@interface AWEECOMIMDynamicCardElementHelper : NSObject
+@property (nonatomic) NSMutableDictionary elementViewTypeDictM;
+@property (nonatomic) NSMutableDictionary elementViewCacheM;
+@property (nonatomic) BOOL enableViewCache;
+@property (nonatomic) NSDictionary inputElementDict;
+@property (nonatomic) NSArray inputActionTypeArr;
+@property (nonatomic) BOOL enableViewUseNewUI;
+- (id)rootElementViewForElement:;
+- (Class)elementClassWithElementModel:;
+- (id)rootElementViewWithElementForCalculateHeight:;
+- (BOOL)enableViewUseNewUI;
+- (id)configSubElementViewsForElement:parentElementView:maxSize:;
+- (void)registerAllElementViewClass;
+- (void)registerElementViewClass:elementType:;
+- (void)setEnableViewCache:;
+- (void)setEnableViewUseNewUI:;
+- (id)initWithInputElementDict:inputActionTypeArr:;
+- (BOOL)enableViewCache;
+- (id)elementViewCacheM;
+- (id)elementViewTypeDictM;
+- (BOOL)checkNeedPreCalculateWidth:;
+- (id)dealChildrenWithParentElementView:childElement:autoPartWidth:allPercent:containViewWidth:hasPreCalculateWidth:layoutElementView:left:top:elementModel:maxSize:;
+- (id)filterTypeSet;
+- (id)inputElementDict;
+- (BOOL)isFilterType:;
+- (void)setElementViewTypeDictM:;
+- (void)setInputElementDict:;
+- (id)inputActionTypeArr;
+- (void)setInputActionTypeArr:;
+- (id)init;
+- (void).cxx_destruct;
++ (BOOL)enableDynamicCardRefactor;
++ (long long)inputElementTypeStartNum;
++ (long long)cardViewV2MaxCacheCount;
++ (long long)elementWithOriginalString:;
+@end

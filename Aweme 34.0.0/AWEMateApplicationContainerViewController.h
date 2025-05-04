@@ -1,0 +1,30 @@
+@interface AWEMateApplicationContainerViewController : AWEBaseListViewController
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) DUXVacantView netErrorVacantView;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary logExtra;
+- (void)setEnterFrom:;
+- (void)setLogExtra:;
+- (id)logExtra;
+- (id)enterFrom;
+- (void)setupHeader;
+- (void)customLayoutCollectionView:;
+- (id)layoutForCollectionView;
+- (id)sectionControllerClassArray;
+- (void)bindViewModel;
+- (void)bindEvent;
+- (void)showLoadMoreFooter;
+- (void)setupTrackerParam;
+- (void)showNetErrorView;
+- (void)endLoadMoreFooterRefreshing;
+- (id)netErrorVacantView;
+- (void)setNetErrorVacantView:;
+- (void)setLoadingView:;
+- (void)viewDidLoad;
+- (id)loadingView;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setupFooter;
+- (void)setupCollectionView:;
+- (void)removeErrorView;
+@end

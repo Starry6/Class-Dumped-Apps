@@ -1,0 +1,37 @@
+@interface AWEDCFeedListDataManager : NSObject
+@property (nonatomic) AWEDCFeedPageContext context;
+@property (nonatomic) NSArray dataProcessors;
+@property (nonatomic) <AWEDCFeedDataControllerProtocol> dataController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onWillBeginRequestDataWithRequestType:;
+- (void)onWillBeginProcessWithRequestType:response:error:;
+- (void)onDidEndProcessWithRequestType:response:error:;
+- (void)onDidEndCompletionWithRequestType:response:error:;
+- (void)onDidCancelRequestWithRequestType:;
+- (void)fetchDataWithRequestParams:args:completion:;
+- (void)refreshDataWithRequestParams:args:completion:;
+- (void)refreshDataWithRequestParams:useUnconsumedVideos:unconsumedVideos:args:completion:;
+- (void)loadMoreDataWithRequestParams:args:completion:;
+- (void)cancelRequestTask;
+- (void)setDataController:;
+- (id)filterDataArray:args:;
+- (void)setDataProcessors:;
+- (id)dataProcessors;
+- (id)classNameWithReferString;
+- (id)chunkDataController;
+- (void)processResponseDataWithRequestType:response:error:completion:;
+- (BOOL)shouldRequestWithChunk;
+- (void)p_fetchChunkDataWithRequestParams:args:completion:;
+- (void)p_refreshChunkDataWithRequestParams:args:completion:;
+- (void)p_loadMoreChunkDataWithRequestParams:args:completion:;
+- (id)filterModelArrayWithRequestType:modelArray:args:;
+- (void)processModelArrayWithRequestType:dataProcessors:modelArray:args:completion:;
+- (id)initWithPageContext:dataController:dataProcessors:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)dataController;
+@end

@@ -1,0 +1,34 @@
+@interface AWEBatManLxPayModel : NSObject
+@property (nonatomic) NSString containerId;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) BDPUniqueID uniqueID;
+@property (nonatomic) UIView<BDXViewContainerProtocol> containerView;
+@property (nonatomic) UIViewController containerVC;
+@property (nonatomic) UIView<BDXViewContainerProtocol> hiddenContainerView;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) BOOL hiddenSupport;
+@property (nonatomic) NSString stage;
+- (void)setContainerVC:;
+- (id)containerVC;
+- (void)setHiddenContainerView:;
+- (BOOL)hiddenSupport;
+- (id)hiddenContainerView;
+- (void)setHiddenSupport:;
+- (void)setSessionId:;
+- (void)setTimer:;
+- (id)sessionId;
+- (void)setStage:;
+- (id)timer;
+- (id)containerId;
+- (id)completion;
+- (id)uniqueID;
+- (void)setCompletion:;
+- (id)stage;
+- (id)containerView;
+- (void)setUniqueID:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setContainerId:;
++ (void)lxModelStageEvent:operationType:msg:;
+@end

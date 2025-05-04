@@ -1,0 +1,30 @@
+@interface AWEHPProfileSideBarSettingPagePresenter : AWELeftSideBarBasePresenter
+@property (nonatomic) UIView<AWEHPSideBarStencilViewProtocol> containerView;
+@property (nonatomic) AWEHPSideBarStencilViewDataModel dataModel;
+@property (nonatomic) BOOL isSideBarOpen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithContext:extraData:;
+- (void)leftSideBarPresenterOnReloadWithContext:extraData:;
+- (id)onCreateCellView;
+- (double)cellViewHeight;
+- (void)leftSideBarThemeDidChange:;
+- (void)leftSideBarCellClick;
+- (void)onLeftSideBarOpen;
+- (void)onLeftSideBarClose;
+- (id)p_sideBarListCellDataModel:;
+- (id)p_jumpUrlString;
+- (id)aAWEHPProfileSideBarDOUYINJXAdapter;
+- (void)setIsSideBarOpen:;
+- (BOOL)isSideBarOpen;
+- (void)showDotBadgeWithCompletion:;
+- (void)hideDotBadgeWithCompletion:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
++ (Class)aAWEHPProfileSideBarDOUYINJXAdapterClass;
+@end

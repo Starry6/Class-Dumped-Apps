@@ -1,0 +1,33 @@
+@interface AWEMusicStreamingImpl.LunaMembership : AWEMusicStreamingImpl.LunaBaseApiModel
+@property (nonatomic) q expireDate;
+@property (nonatomic) BOOL inGracePeriod;
+@property (nonatomic) BOOL isMembership;
+@property (nonatomic) NSString membershipType;
+@property (nonatomic) BOOL isPayingUserL;
+@property (nonatomic) NSString vipLabelSuffix;
+@property (nonatomic) NSString modifierVipLabelSuffix;
+@property (nonatomic) NSString lastMembershipType;
+@property (nonatomic) BOOL isExpired;
+- (id)membershipType;
+- (void)setMembershipType:;
+- (BOOL)inGracePeriod;
+- (void)setInGracePeriod:;
+- (BOOL)isMembership;
+- (void)setIsMembership:;
+- (BOOL)isPayingUserL;
+- (void)setIsPayingUserL:;
+- (id)vipLabelSuffix;
+- (void)setVipLabelSuffix:;
+- (id)modifierVipLabelSuffix;
+- (void)setModifierVipLabelSuffix:;
+- (id)lastMembershipType;
+- (void)setLastMembershipType:;
+- (BOOL)isExpired;
+- (id)initWithDictionary:error:;
+- (id)init;
+- (long long)expireDate;
+- (void)setExpireDate:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

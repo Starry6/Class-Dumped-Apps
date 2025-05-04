@@ -1,0 +1,30 @@
+@interface AWESearchAIGCVoiceBroadcastPlayer : NSObject
+@property (nonatomic) AWESearchAIGCVoiceBroadcastPlayerConfig config;
+@property (nonatomic) <AWESearchAIGCVoiceBroadcastPlayerDelegate> delegate;
+@property (nonatomic) q playStatus;
+@property (nonatomic) ^{OpaqueAudioComponentInstance=} audioUnit;
+@property (nonatomic) NSMutableData bufferData;
+@property (nonatomic) NSLock audioBufferSafeLock;
+- (long long)playStatus;
+- (void)setPlayStatus:;
+- (void)stopAudioPlay;
+- (void)startAudioPlay;
+- (void)appendAudioPCMData:;
+- (void)setAudioBufferSafeLock:;
+- (void)safeClearAudioBuffer;
+- (void)safeAppendAudioBuffer:;
+- (id)audioBufferSafeLock;
+- (BOOL)setAudioPlaybackRate:;
+- (id)safeRangeAudioBufferWithSize:;
+- (void)setConfig:;
+- (void)dealloc;
+- (id)delegate;
+- (id)config;
+- (id)audioUnit;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setAudioUnit:;
+- (id)bufferData;
+- (void)setBufferData:;
+- (id)initWithConfig:delegate:;
+@end

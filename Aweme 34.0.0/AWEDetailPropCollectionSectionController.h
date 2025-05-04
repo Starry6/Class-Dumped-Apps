@@ -1,0 +1,33 @@
+@interface AWEDetailPropCollectionSectionController : IGListSectionController
+@property (nonatomic) AWEDetailPropViewModel stateContext;
+@property (nonatomic) <AWEDetailPropCollectionConfiguration> contentConfiguration;
+@property (nonatomic) AWEDetailPropCollectionModel object;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UICollectionView contentCollectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellForItemAtIndex:;
+- (void)didUpdateToObject:;
+- (id)contentCollectionView;
+- (void)setContentCollectionView:;
+- (void)dealloc;
+- (void)setStateContext:;
+- (long long)numberOfItems;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)object;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)containerView;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)stateContext;
+- (id)initWithServiceProvider:;
+- (void)setObject:;
+- (id)contentConfiguration;
+- (void)setContentConfiguration:;
+- (id)sizeForItemAtIndex:;
+@end

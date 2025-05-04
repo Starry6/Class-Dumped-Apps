@@ -1,0 +1,35 @@
+@interface AWEFollowingListSecondaryInfoModel : AWEBaseApiModel
+@property (nonatomic) Q infoPriority;
+@property (nonatomic) NSString subInfoText;
+@property (nonatomic) NSDictionary infoTrackString;
+@property (nonatomic) NSDictionary infoTrackDict;
+@property (nonatomic) Q subInfoTextType;
+@property (nonatomic) NSString subInfoEcomType;
+@property (nonatomic) AWEFollowingListSecondaryInfoLabelStyleModel labelStyle;
+@property (nonatomic) NSString subInfoTextForSpecialGroup;
+@property (nonatomic) q recallDay;
+- (unsigned long long)infoPriority;
+- (id)subInfoTextForSpecialGroup;
+- (id)subInfoEcomType;
+- (long long)recallDay;
+- (id)subInfoText;
+- (id)infoTrackDict;
+- (void)setInfoPriority:;
+- (void)setSubInfoText:;
+- (id)infoTrackString;
+- (void)setInfoTrackString:;
+- (void)setInfoTrackDict:;
+- (unsigned long long)subInfoTextType;
+- (void)setSubInfoTextType:;
+- (void)setSubInfoEcomType:;
+- (void)setSubInfoTextForSpecialGroup:;
+- (void)setRecallDay:;
+- (void).cxx_destruct;
+- (id)labelStyle;
+- (void)setLabelStyle:;
++ (id)infoTrackDictJSONTransformer;
++ (id)subInfoTextTypeJSONTransformer;
++ (id)infoPriorityJSONTransformer;
++ (id)labelStyleJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

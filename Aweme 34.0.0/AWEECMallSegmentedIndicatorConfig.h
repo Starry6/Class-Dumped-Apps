@@ -1,0 +1,32 @@
+@interface AWEECMallSegmentedIndicatorConfig : NSObject
+@property (nonatomic) q showStyle;
+@property (nonatomic) q widthStyle;
+@property (nonatomic) q position;
+@property (nonatomic) UIColor color;
+@property (nonatomic) double height;
+@property (nonatomic) double verticalMargin;
+@property (nonatomic) double fixedWidth;
+@property (nonatomic) {AWEECMallSegmentedControlInsets=dd} margin;
+@property (nonatomic) double cornerRadius;
+- (void)setWidthStyle:;
+- (long long)showStyle;
+- (long long)widthStyle;
+- (void)setShowStyle:;
+- (id)margin;
+- (id)init;
+- (void)setHeight:;
+- (double)verticalMargin;
+- (id)color;
+- (void)setCornerRadius:;
+- (long long)position;
+- (void)setVerticalMargin:;
+- (void)setColor:;
+- (void)setMargin:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (double)height;
+- (void)setPosition:;
+- (void)setFixedWidth:;
+- (double)fixedWidth;
++ (id)defaultConfig;
+@end

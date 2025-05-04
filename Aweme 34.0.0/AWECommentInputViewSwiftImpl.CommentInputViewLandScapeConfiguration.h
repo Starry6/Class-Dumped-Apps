@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentInputViewLandScapeConfiguration : AWECommentInputViewSwiftImpl.CommentInputViewConfiguration
+@end

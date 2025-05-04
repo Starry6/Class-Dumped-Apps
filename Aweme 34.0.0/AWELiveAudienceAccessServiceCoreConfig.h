@@ -1,0 +1,30 @@
+@interface AWELiveAudienceAccessServiceCoreConfig : NSObject
+@property (nonatomic) BOOL enableReuse;
+@property (nonatomic) BOOL enableExistChangeRoom;
+@property (nonatomic) BOOL allowEnterSameRoomID;
+@property (nonatomic) BOOL enableLeaveSameRoom;
+@property (nonatomic) NSDictionary exitRoomStyle;
+@property (nonatomic) NSDictionary clickLiveClose;
+@property (nonatomic) NSDictionary clickFinishClose;
+@property (nonatomic) NSDictionary disableRoomDelete;
+@property (nonatomic) NSDictionary reportDislikeExitStyle;
+- (BOOL)enableReuse;
+- (void)setEnableReuse:;
+- (void)setAllowEnterSameRoomID:;
+- (void)setEnableLeaveSameRoom:;
+- (void)setEnableExistChangeRoom:;
+- (void)setClickLiveClose:;
+- (void)setClickFinishClose:;
+- (void)setExitRoomStyle:;
+- (void)setReportDislikeExitStyle:;
+- (void)setDisableRoomDelete:;
+- (id)reportDislikeExitStyle;
+- (id)exitRoomStyle;
+- (BOOL)enableExistChangeRoom;
+- (BOOL)enableLeaveSameRoom;
+- (BOOL)allowEnterSameRoomID;
+- (id)clickLiveClose;
+- (id)clickFinishClose;
+- (id)disableRoomDelete;
+- (void).cxx_destruct;
+@end

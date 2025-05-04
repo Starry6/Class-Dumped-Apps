@@ -1,0 +1,33 @@
+@interface AWELiveAppointmentAudienceManager : NSObject
+@property (nonatomic) NSString enterFromType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)makeLiveAppointmentWithParams:completion:;
+- (void)saveToCalenderWithAppointmentTime:appointmentID:anchorInfo:weekDaysArray:extraParams:;
+- (void)cancelCalenderWithAppointmentID:anchorInfo:;
+- (void)saveCalenderIfNeedWithAppointmentStatus:appointmentInfo:completion:;
+- (id)enterFromType;
+- (void)setEnterFromType:;
+- (void)saveAppointmentInfoToCalender:appointmentID:authorInfo:weekDaysArray:extraParams:;
+- (void)cancelCalenderWithAppointmentID:anchorID:anchorSecID:;
+- (BOOL)enableShowAppointmentToast;
+- (void)saveToCalenderWithAppointmentTime:appointmentID:anchorID:anchorSecID:anchorName:weekDaysArray:extraParams:;
+- (double)getAppointmentStartTimeWithStartDate:startTime:weekDaysArray:;
+- (id)formatTime:;
+- (BOOL)enableSaveToCalender;
+- (BOOL)enableShowCalendarAlert;
+- (void)trackerSaveToCalendarAlertShow:appointmentID:isCycle:;
+- (void)showCalendarAlertWithAppointmentTime:appointmentID:anchorID:anchorSecID:anchorName:weekDaysArray:isCycle:extraParams:;
+- (void)handleCalenderWithAppointmentTime:appointmentID:anchorID:anchorSecID:anchorName:weekDaysArray:extraParams:;
+- (void)trackerSaveToCalendarAlertClick:appointmentID:isCycle:buttonType:;
+- (id)generateCalendarURLWithAnchorID:;
+- (void)trackerSaveToCalendarSuccess:appointmentID:isCycle:;
+- (void)updateLiveAppointmentStatus:authorInfo:itemID:extraParams:completion:;
+- (void)checkLiveAppointmentStatus:completion:;
+- (void)cancelAppointmentInfoInCalender:authorInfo:;
+- (void).cxx_destruct;
+- (id)formatDate:;
++ (id)sharedManager;
+@end

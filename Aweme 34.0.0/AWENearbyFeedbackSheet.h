@@ -1,0 +1,30 @@
+@interface AWENearbyFeedbackSheet : NSObject
+@property (nonatomic) AWENearbyFeedbackController feedbackController;
+@property (nonatomic) DUXBasicSheet sheet;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSString title;
+@property (nonatomic) q type;
+@property (nonatomic) <AWENearbyFeedbackSheetDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)feedbackController:didClickItem:atIndex:;
+- (void)__showDetailWithItem:;
+- (id)initWithTitle:items:type:;
+- (void)show;
+- (id)items;
+- (id)delegate;
+- (void)setItems:;
+- (void)dismiss;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setDelegate:;
+- (void)setTitle:;
+- (id)feedbackController;
+- (void)setFeedbackController:;
+- (id)sheet;
+- (void)setSheet:;
+@end

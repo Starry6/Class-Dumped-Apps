@@ -1,0 +1,33 @@
+@interface AWEAdInteractiveSpaceCompassManager : AWEAdInteractiveSpaceManager
+@property (nonatomic) AWELocationDisposable headingDispose;
+@property (nonatomic) NSNumber compassOrientation;
+@property (nonatomic) AVAudioPlayer compassSoundPlayer;
+@property (nonatomic) <AWEAdTigerFromEastManager> delegate;
+- (void)willDisplayCellWithContext:;
+- (void)playerDidUpdateWith:;
+- (void)viewDidDisappearWith:;
+- (void)rifleView:didFinishLoadWithURL:;
+- (void)rifleView:didLoadFailedWithURL:error:;
+- (void)getUserCompassOrientation;
+- (void)setHeadingDispose:;
+- (void)setCompassSoundPlayer:;
+- (void)trackAdInteractiveSpace:resultType:extraData:preLoadType:;
+- (void)showAdInteractiveSpaceLynxContainer;
+- (void)enableCompassSoundPlayer;
+- (id)compassOrientation;
+- (void)setCompassOrientation:;
+- (id)headingDispose;
+- (void)adInteractiveSpaceInteractionFinish;
+- (id)compassSoundPlayer;
+- (void)showAdInteractiveSpaceCompassView;
+- (void)handelAdInteractiveSpaceInteractionStateWith:Method:;
+- (void)interactiveSpaceContainerPreLoadStart;
+- (void)reset:;
+- (id)delegate;
+- (void)applicationDidEnterBackground;
+- (void)clearData;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDelegate:;
++ (BOOL)shouldShowAdInteractiveSpaceLynxContainer:;
+@end

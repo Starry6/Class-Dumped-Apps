@@ -1,0 +1,31 @@
+@interface AWEFeedQuickFlashDetailPageItemModel : MTLModel
+@property (nonatomic) NSString showId;
+@property (nonatomic) NSString imgURL;
+@property (nonatomic) NSString jumpSchema;
+@property (nonatomic) NSString extra;
+@property (nonatomic) BOOL tracked;
+@property (nonatomic) AWEFeedQuickFlashStickerTagStyleModel flashTagModel;
+@property (nonatomic) AWEFeedQuickFlashDetailPageItemIconModel iconModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtra:;
+- (id)jumpSchema;
+- (id)flashTagModel;
+- (void)setFlashTagModel:;
+- (void)setJumpSchema:;
+- (id)imgURL;
+- (void)setImgURL:;
+- (id)extra;
+- (BOOL)tracked;
+- (void)setTracked:;
+- (void).cxx_destruct;
+- (void)setIconModel:;
+- (id)iconModel;
+- (void)setShowId:;
+- (id)showId;
++ (id)flashTagModelJSONTransformer;
++ (id)iconModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

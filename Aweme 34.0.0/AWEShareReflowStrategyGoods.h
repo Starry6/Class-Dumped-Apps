@@ -1,0 +1,30 @@
+@interface AWEShareReflowStrategyGoods : NSObject
+@property (nonatomic) Q schemaType;
+@property (nonatomic) AWEShareTokenHandlerResponseModel model;
+@property (nonatomic) NSString longURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSchemaType:;
+- (void)setLongURL:;
+- (id)longURL;
+- (id)initWithModel:longURL:;
+- (BOOL)shouldAvoidSamePageWithModel:;
+- (BOOL)enableTransferDirectly;
+- (BOOL)shouldDelayTokenFind;
+- (void)transferWithModel:params:longURL:tokenFromType:;
+- (void)configReflowCardWithModel:tokenFromType:trackParams:reportParams:turnToShareBlock:reshowCardViewBlock:completion:;
+- (void)trackEcomShareReflowRate:trackParams:;
+- (unsigned long long)tokenTypeToAweChannelType:;
+- (id)getEcomShareTrackParamsWithSchema:longDic:eventParams:tokenFromType:;
+- (id)ecomShareBackTrackWithEventParams:schema:longDic:tokenFromType:logInfoMap:extra:;
+- (id)shareTokenNoteCardView:extraData:;
+- (id)addEcomShareTrackParams:params:;
+- (void)setModel:;
+- (unsigned long long)schemaType;
+- (id)model;
+- (id)descriptionText;
+- (void).cxx_destruct;
+- (id)tokenType;
+@end

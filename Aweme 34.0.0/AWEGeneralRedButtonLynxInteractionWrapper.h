@@ -1,0 +1,38 @@
+@interface AWEGeneralRedButtonLynxInteractionWrapper : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) UIView<BDXViewContainerProtocol> lynxInteractionWrapperView;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) NSMutableDictionary subscriberDict;
+@property (nonatomic) BOOL isLoadFailed;
+@property (nonatomic) <AWEGeneralRedButtonLynxWrapperDelegate> lynxWrapperDelegate;
+@property (nonatomic) BOOL isReady;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didLoadFailedWithUrl:error:;
+- (void)sendEvent:params:;
+- (void)setIsLoadFailed:;
+- (BOOL)isLoadFailed;
+- (id)subscriberDict;
+- (void)setSubscriberDict:;
+- (id)lynxInteractionWrapperView;
+- (void)__bindEvent;
+- (id)lynxWrapperDelegate;
+- (id)__registerEvent:callback:;
+- (void)__unbindEvent;
+- (id)initWithURLString:lynxWrapperDelegate:;
+- (void)elementDidAppearWithAweme:;
+- (void)elementDidClickWithAweme:;
+- (void)updateContainerWithURL:;
+- (void)setLynxInteractionWrapperView:;
+- (void)setLynxWrapperDelegate:;
+- (id)urlString;
+- (void)setUrlString:;
+- (void)dealloc;
+- (void)setContainerID:;
+- (BOOL)isReady;
+- (id)containerID;
+- (void).cxx_destruct;
+- (void)setIsReady:;
+@end

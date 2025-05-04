@@ -1,0 +1,34 @@
+@interface AWERecommendChapterInfo : MTLModel
+@property (nonatomic) q recommendType;
+@property (nonatomic) NSArray pushScene;
+@property (nonatomic) Q generalStatus;
+@property (nonatomic) Q generalSource;
+@property (nonatomic) NSArray chapterList;
+@property (nonatomic) NSArray colorList;
+@property (nonatomic) NSString chapterAbstract;
+@property (nonatomic) BOOL hasClickedRecommendBar;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)recommendType;
+- (void)setRecommendType:;
+- (id)chapterList;
+- (id)chapterAbstract;
+- (void)setChapterAbstract:;
+- (void)setChapterList:;
+- (id)pushScene;
+- (void)setPushScene:;
+- (unsigned long long)generalStatus;
+- (void)setGeneralStatus:;
+- (unsigned long long)generalSource;
+- (void)setGeneralSource:;
+- (id)colorList;
+- (void)setColorList:;
+- (BOOL)hasClickedRecommendBar;
+- (void)setHasClickedRecommendBar:;
+- (void).cxx_destruct;
++ (id)chapterListJSONTransformer;
++ (id)colorListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

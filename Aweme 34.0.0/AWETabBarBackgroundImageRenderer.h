@@ -1,0 +1,35 @@
+@interface AWETabBarBackgroundImageRenderer : NSObject
+@property (nonatomic) UIImage darkMainImage;
+@property (nonatomic) UIImage darkLeftImage;
+@property (nonatomic) UIImage darkRightImage;
+@property (nonatomic) UIImage lightMainImage;
+@property (nonatomic) UIImage lightLeftImage;
+@property (nonatomic) UIImage lightRightImage;
+@property (nonatomic) UIImage rendedDarkImage;
+@property (nonatomic) UIImage rendedLightImage;
+@property (nonatomic) BOOL valid;
+- (void)createDarkImageWithSize:;
+- (id)rendedDarkImage;
+- (void)createLightImageWithSize:;
+- (id)rendedLightImage;
+- (void)setDarkMainImage:;
+- (id)darkMainImage;
+- (void)setLightMainImage:;
+- (id)lightMainImage;
+- (void)setDarkLeftImage:;
+- (id)darkLeftImage;
+- (void)setLightLeftImage:;
+- (id)lightLeftImage;
+- (void)setDarkRightImage:;
+- (id)darkRightImage;
+- (void)setLightRightImage:;
+- (id)lightRightImage;
+- (id)backgroundImageWithSize:isLightMode:;
+- (void)setRendedDarkImage:;
+- (void)setRendedLightImage:;
+- (void)setValid:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
++ (id)rendererWithResourceConfig:reloadType:;
++ (id)currentTabBarModeString;
+@end

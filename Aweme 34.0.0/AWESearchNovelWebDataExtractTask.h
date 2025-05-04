@@ -1,0 +1,30 @@
+@interface AWESearchNovelWebDataExtractTask : NSObject
+@property (nonatomic) NSString taskId;
+@property (nonatomic) q selectorSeqNo;
+@property (nonatomic) q taskType;
+@property (nonatomic) NSDictionary taskExtraResult;
+@property (nonatomic) BOOL isFinish;
+@property (nonatomic) q receiveResultCallbackTime;
+@property (nonatomic) q notifyFinishCallbackTime;
+@property (nonatomic) q finishCode;
+@property (nonatomic) UIView<BDXKitViewProtocol> webView;
+- (BOOL)isFinish;
+- (void)setIsFinish:;
+- (long long)selectorSeqNo;
+- (void)setSelectorSeqNo:;
+- (id)taskExtraResult;
+- (void)setTaskExtraResult:;
+- (long long)receiveResultCallbackTime;
+- (void)setReceiveResultCallbackTime:;
+- (long long)notifyFinishCallbackTime;
+- (void)setNotifyFinishCallbackTime:;
+- (long long)finishCode;
+- (void)setFinishCode:;
+- (long long)taskType;
+- (void)setWebView:;
+- (id)webView;
+- (void).cxx_destruct;
+- (id)taskId;
+- (void)setTaskType:;
+- (void)setTaskId:;
+@end

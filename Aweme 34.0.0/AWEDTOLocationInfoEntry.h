@@ -1,0 +1,35 @@
+@interface AWEDTOLocationInfoEntry : MTLModel
+@property (nonatomic) double rotation;
+@property (nonatomic) double scale;
+@property (nonatomic) double transformX;
+@property (nonatomic) double transformY;
+@property (nonatomic) BOOL isRationCoord;
+@property (nonatomic) double canvasRatio;
+@property (nonatomic) double iosTransformY;
+@property (nonatomic) BOOL isLeftAxis;
+@property (nonatomic) double maxTBPadding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMaxTBPadding:;
+- (double)transformX;
+- (void)setTransformX:;
+- (double)transformY;
+- (void)setTransformY:;
+- (BOOL)isRationCoord;
+- (void)setIsRationCoord:;
+- (double)canvasRatio;
+- (void)setCanvasRatio:;
+- (double)iosTransformY;
+- (void)setIosTransformY:;
+- (BOOL)isLeftAxis;
+- (void)setIsLeftAxis:;
+- (double)maxTBPadding;
+- (id)init;
+- (double)scale;
+- (double)rotation;
+- (void)setRotation:;
+- (void)setScale:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

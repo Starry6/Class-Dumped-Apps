@@ -1,0 +1,37 @@
+@interface AWEIMEnterpriseModeDataBannerComponent : AWEIMComponentBase
+@property (nonatomic) AWEIMEnterpriseModeExpandedDataBannerView bannerView;
+@property (nonatomic) AWEIMEnterpriseModeDataBannerViewModel viewModel;
+@property (nonatomic) <AWEIMChatListHeaderInterface> headerService;
+@property (nonatomic) <AWEIMMessageTabBannerInterface> bannerService;
+@property (nonatomic) <AWEIMMessageTabNaviBubbleInterface> naviGuideService;
+@property (nonatomic) NSDictionary innerModelStore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogoutWithUid:;
+- (id)headerService;
+- (void)hostVC_viewWillAppear;
+- (void)afterInitialComponentAllResolved:;
+- (void)componentDidMounted:;
+- (void)__fetchData;
+- (id)p_fetchInnerModelViaCache;
+- (void)__updateViewModelWithModel:canOverwrite:;
+- (void)setHeaderService:;
+- (void)setBannerService:;
+- (void)setNaviGuideService:;
+- (BOOL)canShowCurrentHeader;
+- (void)p_saveCacheOfInnerModel:;
+- (id)naviGuideService;
+- (void)setInnerModelStore:;
+- (id)bannerService;
+- (id)innerModelStore;
+- (id)headerViewForChatList;
+- (void)dealloc;
+- (id)viewModel;
+- (id)trackIdentifier;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (id)bannerView;
+- (void)setBannerView:;
+@end

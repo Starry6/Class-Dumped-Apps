@@ -1,0 +1,36 @@
+@interface AWESearchAIGCFoldButton : AWESearchCachalotBaseCardView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) CAGradientLayer borderLayer;
+@property (nonatomic) CAGradientLayer backgroundLayer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) <CachalotRenderPipelineComponentViewModel> viewModel;
+@property (nonatomic) BOOL isFolded;
+- (id)commonTrackParams;
+- (void)componentWillDisplay;
+- (void)setIsFolded:;
+- (void)configUI;
+- (void)updateGradientLayerFrame;
+- (void)configGesture;
+- (void)configNoti;
+- (void)refreshDynamicColors;
+- (void)configGradientLayer;
+- (void)dealloc;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)layoutSubviews;
+- (id)backgroundLayer;
+- (id)componentView;
+- (void)setBackgroundLayer:;
+- (id)borderLayer;
+- (void)tap;
+- (void)updateWithViewModel:;
+- (void)setBorderLayer:;
+- (BOOL)isFolded;
++ (id)sizeWithViewModel:width:;
+@end

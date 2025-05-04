@@ -1,0 +1,30 @@
+@interface AWELiveTicketSKUDetail : AWEBaseApiModel
+@property (nonatomic) q ticketType;
+@property (nonatomic) NSString ticketName;
+@property (nonatomic) q startSellTime;
+@property (nonatomic) q closingSellTime;
+@property (nonatomic) q sellStatus;
+@property (nonatomic) AWELivePriceInfo priceInfo;
+@property (nonatomic) BOOL hasPriceInfo;
+@property (nonatomic) AWELivePriceInfo douPriceInfo;
+@property (nonatomic) BOOL hasDouPriceInfo;
+- (long long)ticketType;
+- (id)priceInfo;
+- (void)setPriceInfo:;
+- (BOOL)hasPriceInfo;
+- (void)setTicketType:;
+- (void)setTicketName:;
+- (long long)startSellTime;
+- (void)setStartSellTime:;
+- (long long)closingSellTime;
+- (void)setClosingSellTime:;
+- (long long)sellStatus;
+- (void)setSellStatus:;
+- (void)setHasPriceInfo:;
+- (id)douPriceInfo;
+- (void)setDouPriceInfo:;
+- (BOOL)hasDouPriceInfo;
+- (void)setHasDouPriceInfo:;
+- (void).cxx_destruct;
+- (id)ticketName;
+@end

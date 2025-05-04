@@ -1,0 +1,30 @@
+@interface AWEMessageReachComponentBlockInfoModel : NSObject
+@property (nonatomic) NSString channelID;
+@property (nonatomic) AWEMessageReachParamContext paramContext;
+@property (nonatomic) q blockCode;
+@property (nonatomic) NSString blockDesc;
+@property (nonatomic) BOOL fromCache;
+@property (nonatomic) q result;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) NSArray componentList;
+@property (nonatomic) AWEMessageReachComponentModel componentModel;
+- (BOOL)fromCache;
+- (long long)blockCode;
+- (void)setComponentModel:;
+- (id)componentModel;
+- (id)paramContext;
+- (void)setParamContext:;
+- (void)setComponentList:;
+- (void)setBlockCode:;
+- (void)setBlockDesc:;
+- (void)setFromCache:;
+- (id)blockDesc;
+- (void)setChannelID:;
+- (void)setResult:;
+- (id)channelID;
+- (void).cxx_destruct;
+- (long long)result;
+- (id)extraInfo;
+- (void)setExtraInfo:;
+- (id)componentList;
+@end

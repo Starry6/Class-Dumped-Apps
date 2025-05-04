@@ -1,0 +1,31 @@
+@interface AWEMusicSubPlayerNavigatorView : UIView
+@property (nonatomic) UIButton backBtn;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton rightBtn;
+@property (nonatomic) NSString title;
+@property (nonatomic) @? backTappedBlock;
+@property (nonatomic) @? rightTappedBlock;
+@property (nonatomic) NSString rightTitle;
+- (id)backBtn;
+- (void)setBackBtn:;
+- (id)rightBtn;
+- (void)setRightBtn:;
+- (void)rightBtnTapped:;
+- (id)rightTappedBlock;
+- (void)setRightTappedBlock:;
+- (id)generateTitleLabel;
+- (void)setBackTappedBlock:;
+- (void)backBtnTapped:;
+- (void)backBtnTapped_IMP:;
+- (id)backTappedBlock;
+- (void)rightBtnTapped_IMP:;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)titleLabel;
+- (void)setTitle:;
+- (id)rightTitle;
+- (void)setRightTitle:;
+@end

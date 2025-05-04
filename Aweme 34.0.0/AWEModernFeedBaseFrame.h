@@ -1,0 +1,2 @@
+@interface AWEModernFeedBaseFrame : NSObject
+@end

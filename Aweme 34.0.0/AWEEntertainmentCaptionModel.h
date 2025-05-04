@@ -1,0 +1,32 @@
+@interface AWEEntertainmentCaptionModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString lightIcon;
+@property (nonatomic) NSString darkIcon;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString businessID;
+@property (nonatomic) NSString activityName;
+@property (nonatomic) NSString captionType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lightIcon;
+- (id)darkIcon;
+- (void)setLightIcon:;
+- (void)setDarkIcon:;
+- (id)captionType;
+- (void)setCaptionType:;
+- (id)schema;
+- (void)setSchema:;
+- (id)businessID;
+- (void)setBusinessID:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setComponentID:;
+- (id)componentID;
+- (id)activityName;
+- (void)setActivityName:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

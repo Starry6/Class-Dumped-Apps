@@ -1,0 +1,33 @@
+@interface AWERepoCameraModeCustomModel : NSObject
+@property (nonatomic) BOOL supportModeCustom;
+@property (nonatomic) NSString currentMode;
+@property (nonatomic) NSDictionary modeName;
+@property (nonatomic) NSArray allowMode;
+@property (nonatomic) NSArray blockMode;
+@property (nonatomic) BOOL subModeUiHide;
+@property (nonatomic) NSDictionary subModeIndicator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <ACCPublishRepository> repoDeprecated;
+- (id)repoDeprecated;
+- (void)setRepoDeprecated:;
+- (id)acc_publishRequestParams:;
+- (void)setAllowMode:;
+- (void)setBlockMode:;
+- (id)subModeIndicator;
+- (void)setSubModeIndicator:;
+- (id)allowMode;
+- (id)blockMode;
+- (void)setSubModeUiHide:;
+- (BOOL)supportModeCustom;
+- (BOOL)subModeUiHide;
+- (void)setSupportModeCustom:;
+- (id)currentMode;
+- (void)setCurrentMode:;
+- (id)modeName;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setModeName:;
+@end

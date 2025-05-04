@@ -1,0 +1,36 @@
+@interface AWEEcomScreenShotPanelButton : UIButton
+@property (nonatomic) Q screenShotPanelButtonType;
+@property (nonatomic) UIImageView originalImageView;
+@property (nonatomic) UIImageView animatedImageView;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) UIImage screenShotImage;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSString ecomSceneID;
+@property (nonatomic) <AWEEcomScreenShotPanelButtonDelegate> delegate;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setOriginalImageView:;
+- (id)originalImageView;
+- (void)configUI;
+- (void)shareAction;
+- (id)animatedImageView;
+- (void)setAnimatedImageView:;
+- (id)ecomSceneID;
+- (void)setEcomSceneID:;
+- (void)setScreenShotPanelButtonType:;
+- (unsigned long long)screenShotPanelButtonType;
+- (void)feedbackAction;
+- (void)identifyAction;
+- (id)screenShotImage;
+- (void)triggerAnimationForShareButton;
+- (void)setScreenShotImage:;
+- (id)filePath;
+- (void)setProductID:;
+- (id)productID;
+- (id)delegate;
+- (void)setFilePath:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (id)initWithButtonType:;
+@end

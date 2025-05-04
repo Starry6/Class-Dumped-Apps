@@ -1,0 +1,30 @@
+@interface AWEDislikePanelBottomView : UIView
+@property (nonatomic) Q type;
+@property (nonatomic) DUXDivider line;
+@property (nonatomic) DUXButton submitButton;
+@property (nonatomic) DUXButton cancelButton;
+@property (nonatomic) @? submit;
+@property (nonatomic) @? cancel;
+- (void)didClickCancel;
+- (void)setCancelText:;
+- (void)setSubmit:;
+- (void)didClickedSubmit;
+- (id)initWithType:submit:cancel:;
+- (void)setSubmitText:;
+- (void)hideLine:;
+- (void)showSumitButton:completion:;
+- (void)showCancelButton:completion:;
+- (void)setCancelButton:;
+- (id)cancel;
+- (unsigned long long)type;
+- (void)setType:;
+- (id)line;
+- (id)cancelButton;
+- (void).cxx_destruct;
+- (id)submit;
+- (void)setCancel:;
+- (void)setLine:;
+- (void)setupUI;
+- (void)setSubmitButton:;
+- (id)submitButton;
+@end

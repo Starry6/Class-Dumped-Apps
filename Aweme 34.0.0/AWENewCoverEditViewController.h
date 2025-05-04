@@ -1,0 +1,21 @@
+@interface AWENewCoverEditViewController : ACCViewController
+- (id)initWithBusinessConfiguration:;
+- (id)editService;
+- (void)buildEditSession;
+- (id)handleTargetViewControllerInputData;
+- (void)prepareForLoadComponent;
+- (id)videoCoverEditService;
+- (void)configWithInputData:;
+- (id)creatComponentManager;
+- (void)popSelf;
+- (void)beforeLoadLazyComponent;
+- (BOOL)userVideoCoverRenderOptimize;
+- (BOOL)prefersStatusBarHidden;
+- (void)viewWillDisappear:;
+- (void)close;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+@end

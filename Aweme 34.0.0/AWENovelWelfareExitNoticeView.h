@@ -1,0 +1,35 @@
+@interface AWENovelWelfareExitNoticeView : BDNovelReaderBaseInsertView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton button;
+@property (nonatomic) NSString chapterId;
+@property (nonatomic) NSDictionary userInfoDict;
+@property (nonatomic) BOOL isInReader;
+@property (nonatomic) BDReaderConfig config;
+@property (nonatomic) <AWENovelWelfareExitNoticeViewDelegate> delegate;
+- (void)buttonClicked;
+- (id)chapterId;
+- (void)setChapterId:;
+- (void)onConfigChanged:;
+- (id)readerInsertedViewRequestInsertedView;
+- (void)readerInsertedViewDidAppear;
+- (void)readerInsertedViewBackgroundConfigChange:;
+- (void)setUserInfoDict:;
+- (id)userInfoDict;
+- (id)initWithFrame:userInfoDict:chapterId:isInReader:;
+- (BOOL)isInReader;
+- (void)setIsInReader:;
+- (void)setConfig:;
+- (void)dealloc;
+- (id)delegate;
+- (id)config;
+- (void)setButton:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setDelegate:;
+- (id)button;
+- (void)setupUI;
+@end

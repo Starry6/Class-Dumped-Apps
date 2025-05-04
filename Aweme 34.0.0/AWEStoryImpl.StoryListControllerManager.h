@@ -1,0 +1,22 @@
+@interface AWEStoryImpl.StoryListControllerManager : AWEShellControllerManager
+- (void)listDidReloadDataWithCollectionView:;
+- (void)listWillPerformBatchUpdatesWithCollectionView:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:;
+- (void)listWillReloadDataWithCollectionView:;
+- (void)didBecomeActive;
+- (void)willResignActive;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)onThemeChanged;
+- (void)viewWillDisappear:;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (id)classNameArray;
+- (id)init;
+- (void).cxx_destruct;
+@end

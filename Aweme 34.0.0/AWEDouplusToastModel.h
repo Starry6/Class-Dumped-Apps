@@ -1,0 +1,30 @@
+@interface AWEDouplusToastModel : MTLModel
+@property (nonatomic) q toastId;
+@property (nonatomic) q contentId;
+@property (nonatomic) q toastType;
+@property (nonatomic) NSString toastContent;
+@property (nonatomic) NSString redirectUrl;
+@property (nonatomic) q type;
+@property (nonatomic) NSNumber itemID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)toastId;
+- (void)setToastId:;
+- (id)toastContent;
+- (void)setToastContent:;
+- (long long)toastType;
+- (void)setToastType:;
+- (long long)douplusToastType;
+- (id)itemID;
+- (void)setItemID:;
+- (long long)type;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setContentId:;
+- (long long)contentId;
+- (void)setRedirectUrl:;
+- (id)redirectUrl;
++ (id)JSONKeyPathsByPropertyKey;
+@end

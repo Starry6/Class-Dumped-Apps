@@ -1,0 +1,33 @@
+@interface AWEMusicChartDataService : NSObject
+@property (nonatomic) NSMutableDictionary musicChartData;
+@property (nonatomic) NSMutableDictionary musicListDic;
+- (id)getVideoOrderWithSessionId:itemId:;
+- (long long)getSongOrderWithSessionId:musicId:;
+- (BOOL)getIsFromHotMusicListWithSessionId:;
+- (void)handleVideoFavoriteNotification:;
+- (void)loadMusicListWithWithSessionId:chartId:version:completion:;
+- (void)setVideoOrderWithSessionId:itemId:;
+- (void)clearCacheWithSessionId:;
+- (void)getMusicInfoWithSessionId:chartId:version:musicId:completion:;
+- (void)recordMusicLastIndexWithSessionId:musicId:itemId:;
+- (long long)getMusicLastIndexWithSessionId:musicId:;
+- (void)setIsFromHotMusicListWithSessionId:;
+- (void)loadMusicChartDetailWithSessionId:version:chartId:musicId:completion:;
+- (id)getMusicIdWithSessionId:itemId:;
+- (id)musicChartData;
+- (id)musicListDic;
+- (id)produceEventAwemeInfoWithAwemeList:;
+- (void)requestMusicChartDetailWithSessionId:version:chartId:musicId:cursor:count:needMusicRank:needMusic:withChartMeta:itemId:loadType:completion:;
+- (void)initSessionIdKey:musicIdKey:data:version:;
+- (void)requestMusicListWithSessionId:ChartId:version:cursor:count:itemCount:withDetailUrl:withChartMeta:completion:;
+- (id)loadCacheWithSessionId:musicId:;
+- (id)getMusicWithSessionId:musicId:;
+- (id)getVersionWithSessionId:;
+- (BOOL)getHasMoreWithSessionId:musicId:;
+- (void)loadMoreMusicChartDetailWithSessionId:version:chartId:musicId:count:needMusicRank:needMusic:withChartMeta:itemId:loadType:scene:completion:;
+- (void)setMusicChartData:;
+- (void)setMusicListDic:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)shared;
+@end

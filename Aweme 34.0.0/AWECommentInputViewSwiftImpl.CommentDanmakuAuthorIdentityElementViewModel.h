@@ -1,0 +1,2 @@
+@interface AWECommentInputViewSwiftImpl.CommentDanmakuAuthorIdentityElementViewModel : AWECommentInputViewSwiftImpl.CommentInputViewBaseElementViewModel
+@end

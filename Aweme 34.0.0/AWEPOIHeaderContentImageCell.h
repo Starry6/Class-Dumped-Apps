@@ -1,0 +1,34 @@
+@interface AWEPOIHeaderContentImageCell : AWEPOIHeaderContentBaseCell
+@property (nonatomic) UIImageView cellImageView;
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) UIVisualEffectView bgMaskView;
+@property (nonatomic) UIView infoView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) AWEGradientView infoBgGradientView;
+@property (nonatomic) BOOL showInfoView;
+- (id)bgMaskView;
+- (void)setBgMaskView:;
+- (void)setupInfoView;
+- (void)updateData:originHeight:completion:;
+- (id)cellImageView;
+- (id)infoBgGradientView;
+- (void)setShowInfoView:;
+- (void)setCellImageView:;
+- (void)setInfoBgGradientView:;
+- (BOOL)showInfoView;
+- (id)initWithFrame:;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (void)setupViews;
+- (id)infoView;
+- (void)setInfoView:;
+- (void)setBgImageView:;
+- (id)bgImageView;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

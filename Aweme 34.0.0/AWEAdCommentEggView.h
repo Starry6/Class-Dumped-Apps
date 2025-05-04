@@ -1,0 +1,33 @@
+@interface AWEAdCommentEggView : UIView
+@property (nonatomic) Q eggType;
+@property (nonatomic) AWEAdItemCommentEggModel eggModel;
+@property (nonatomic) BDImageView eggImageView;
+@property (nonatomic) double displayTime;
+@property (nonatomic) double clickTime;
+@property (nonatomic) @? clickImageBlock;
+@property (nonatomic) UIButton clickCloseButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clickImageBlock;
+- (void)setClickImageBlock:;
+- (id)clickCloseButton;
+- (void)setClickCloseButton:;
+- (void)updateViewWithCommentEggModel:finishBlock:loopBlock:;
+- (void)setEggModel:;
+- (void)setEggType:;
+- (unsigned long long)eggType;
+- (id)eggImageView;
+- (void)setEggImageView:;
+- (void)setClickTime:;
+- (double)clickTime;
+- (void)clickImage;
+- (id)eggModel;
+- (void)remove;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)touchesBegan:withEvent:;
+- (void)setDisplayTime:;
+- (double)displayTime;
+@end

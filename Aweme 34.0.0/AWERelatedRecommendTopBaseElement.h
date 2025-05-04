@@ -1,0 +1,32 @@
+@interface AWERelatedRecommendTopBaseElement : NSObject
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView skeletonView;
+@property (nonatomic) double height;
+@property (nonatomic) <AWERelatedRecommendTopElementDataModel> dataModel;
+@property (nonatomic) double bottomSpacing;
+@property (nonatomic) <AWERelatedRecommendTopElementDelegate> delegate;
+@property (nonatomic) q state;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)skeletonView;
+- (void)updateWithNewState:;
+- (id)horizontalGestureRecognizers;
+- (void)setSkeletonView:;
+- (BOOL)validate;
+- (id)delegate;
+- (id)contentView;
+- (long long)state;
+- (id)initWithDataModel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (double)height;
+- (void)setDelegate:;
+- (void)setState:;
+- (id)dataModel;
+- (void)updateUI;
+- (double)bottomSpacing;
++ (id)createWithContext:container:currentModel:;
++ (long long)type;
+@end

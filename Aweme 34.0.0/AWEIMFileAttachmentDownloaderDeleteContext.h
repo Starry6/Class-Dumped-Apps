@@ -1,0 +1,2 @@
+@interface AWEIMFileAttachmentDownloaderDeleteContext : AWEIMFileAttachmentDownloaderContext
+@end

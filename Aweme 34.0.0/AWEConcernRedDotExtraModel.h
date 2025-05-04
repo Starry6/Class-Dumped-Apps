@@ -1,0 +1,31 @@
+@interface AWEConcernRedDotExtraModel : AWEBaseApiModel
+@property (nonatomic) q count;
+@property (nonatomic) q group;
+@property (nonatomic) NSString noticeName;
+@property (nonatomic) q anchorUserID;
+@property (nonatomic) NSString anchorName;
+@property (nonatomic) q roomID;
+@property (nonatomic) NSArray interposeRoomIDArray;
+@property (nonatomic) NSArray insertAwemeIDArray;
+@property (nonatomic) BOOL isLiveSpecialFollowDot;
+- (BOOL)isLiveSpecialFollowDot;
+- (id)insertAwemeIDArray;
+- (id)interposeRoomIDArray;
+- (void)setIsLiveSpecialFollowDot:;
+- (long long)anchorUserID;
+- (id)noticeName;
+- (void)setNoticeName:;
+- (void)setAnchorUserID:;
+- (id)anchorName;
+- (void)setAnchorName:;
+- (void)setInterposeRoomIDArray:;
+- (void)setInsertAwemeIDArray:;
+- (long long)roomID;
+- (void)setCount:;
+- (void)setGroup:;
+- (long long)group;
+- (long long)count;
+- (void).cxx_destruct;
+- (void)setRoomID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

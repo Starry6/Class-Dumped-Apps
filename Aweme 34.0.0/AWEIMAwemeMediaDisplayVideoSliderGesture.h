@@ -1,0 +1,2 @@
+@interface AWEIMAwemeMediaDisplayVideoSliderGesture : UILongPressGestureRecognizer
+@end

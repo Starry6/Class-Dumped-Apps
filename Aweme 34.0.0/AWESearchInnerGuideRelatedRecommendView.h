@@ -1,0 +1,35 @@
+@interface AWESearchInnerGuideRelatedRecommendView : UIView
+@property (nonatomic) BOOL hasInterAction;
+@property (nonatomic) AWESearchInnerGuideRelatedRecommendModel model;
+@property (nonatomic) UIView<_TtP9AWELottie13AWELottieView_> arrowLOTView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) NSDictionary logExtraDict;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (BOOL)canShow;
+- (id)logExtraDict;
+- (void)addCount;
+- (void)dismissWithClick:;
+- (void)showInSuperView:animation:;
+- (void)setArrowLOTView:;
+- (id)arrowLOTView;
+- (void)setHasInterAction:;
+- (BOOL)hasInterAction;
+- (void)trackGuideViewShow;
+- (BOOL)isSameWeekWithFirstDate:secondDate:;
+- (id)textLabel;
+- (void)setModel:;
+- (void)play;
+- (id)initWithFrame:;
+- (id)model;
+- (void).cxx_destruct;
+- (id)hitTest:withEvent:;
+- (void)layoutSubviews;
+- (void)setTextLabel:;
+- (void)setupUI;
+- (void)updateWithModel:;
+@end

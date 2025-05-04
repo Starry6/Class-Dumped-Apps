@@ -1,0 +1,32 @@
+@interface AWEVideoCoverEditorTextTemplateCell : UIView
+@property (nonatomic) double panelHeight;
+@property (nonatomic) AWEVideoCoverEditorTextTemplateController textTemplateController;
+@property (nonatomic) ACCTextStickerView currentTextStickerView;
+@property (nonatomic) BOOL isTextTemplateUsed;
+@property (nonatomic) AWEVideoPublishViewModel publishModel;
+@property (nonatomic) <AWEVideoCoverEditorTextTemplateCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)panelHeight;
+- (id)publishModel;
+- (void)setPanelHeight:;
+- (void)setPublishModel:;
+- (void)stickerPickerController:didDeselectSticker:;
+- (id)initWithPublishModel:panelHeight:;
+- (void)scrollToSelectedTemplateWithStickerView:;
+- (void)clearSelectedTemplate;
+- (id)textTemplateController;
+- (id)currentTextStickerView;
+- (void)setCurrentTextStickerView:;
+- (void)setIsTextTemplateUsed:;
+- (void)setTextTemplateController:;
+- (BOOL)isTextTemplateUsed;
+- (void)stickerPickerController:didSelectSticker:extraPramas:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupUI;
++ (id)createTemplatePickerConfigWithPanelHeight:;
+@end

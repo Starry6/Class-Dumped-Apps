@@ -1,0 +1,33 @@
+@interface AWENewVideoImageTemplateListCatCell : UICollectionViewCell
+@property (nonatomic) UICollectionView imageTemplateCollectionView;
+@property (nonatomic) NSArray templateList;
+@property (nonatomic) AWEImageTemplateEditViewModel viewModel;
+@property (nonatomic) <AWENewVideoImageTemplateListCatCellDelegate> delegate;
+@property (nonatomic) q section;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)templateList;
+- (void)setTemplateList:;
+- (id)imageTemplateCollectionView;
+- (void)setImageTemplateCollectionView:;
+- (id)currentSelectIndexPath;
+- (void)updateWithTemplateList:viewModel:;
+- (void)setSection:;
+- (id)collectionView:layout:referenceSizeForFooterInSection:;
+- (id)collectionView:layout:referenceSizeForHeaderInSection:;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (long long)section;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDelegate:;
+- (void)setupUI;
+@end

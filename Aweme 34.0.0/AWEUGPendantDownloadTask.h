@@ -1,0 +1,30 @@
+@interface AWEUGPendantDownloadTask : NSOperation
+@property (nonatomic) NSString URL;
+@property (nonatomic) NSURL zipFileURL;
+@property (nonatomic) NSString zipFileMD5;
+@property (nonatomic) NSString unzipTargetPath;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL isTaskExecuting;
+@property (nonatomic) BOOL isTaskFinished;
+- (BOOL)isTaskFinished;
+- (id)initWithURL:zipFileURL:zipFileMD5:unzipTargetPath:completion:;
+- (void)setZipFileURL:;
+- (void)setZipFileMD5:;
+- (void)setUnzipTargetPath:;
+- (void)setIsTaskExecuting:;
+- (void)setIsTaskFinished:;
+- (id)zipFileMD5;
+- (id)unzipTargetPath;
+- (BOOL)isTaskExecuting;
+- (id)completion;
+- (BOOL)isExecuting;
+- (void)main;
+- (void)setCompletion:;
+- (id)URL;
+- (void)setURL:;
+- (BOOL)isFinished;
+- (BOOL)isConcurrent;
+- (void).cxx_destruct;
+- (void)start;
+- (id)zipFileURL;
+@end

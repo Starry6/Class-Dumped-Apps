@@ -1,0 +1,33 @@
+@interface AWEPOIAlbumPhotoParamModel : NSObject
+@property (nonatomic) NSString anchorTabID;
+@property (nonatomic) NSString poiEnterID;
+@property (nonatomic) NSString poiID;
+@property (nonatomic) NSString poiBackendType;
+@property (nonatomic) NSString poiDeviceSameCity;
+@property (nonatomic) NSDictionary shootReward;
+@property (nonatomic) NSDictionary mobParams;
+@property (nonatomic) NSDictionary bottomBarParams;
+@property (nonatomic) BOOL shouldShowUploadButton;
+@property (nonatomic) BOOL useNewStyle;
+- (BOOL)useNewStyle;
+- (void)setUseNewStyle:;
+- (id)poiID;
+- (id)poiBackendType;
+- (void)setPoiBackendType:;
+- (void)setPoiID:;
+- (id)shootReward;
+- (void)setShootReward:;
+- (id)mobParams;
+- (void)setMobParams:;
+- (id)poiEnterID;
+- (id)poiDeviceSameCity;
+- (void)setPoiDeviceSameCity:;
+- (BOOL)shouldShowUploadButton;
+- (void)setShouldShowUploadButton:;
+- (void)setPoiEnterID:;
+- (id)anchorTabID;
+- (void)setAnchorTabID:;
+- (id)bottomBarParams;
+- (void)setBottomBarParams:;
+- (void).cxx_destruct;
+@end

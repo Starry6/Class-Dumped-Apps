@@ -1,0 +1,38 @@
+@interface AWENearbyPendantModel : AWEBaseApiModel
+@property (nonatomic) NSString pendantID;
+@property (nonatomic) Q actionType;
+@property (nonatomic) Q materailType;
+@property (nonatomic) AWEURLModel imageUrlModel;
+@property (nonatomic) NSString lottieUrlString;
+@property (nonatomic) NSString schema;
+@property (nonatomic) double startTimeStamp;
+@property (nonatomic) double endTimeStamp;
+@property (nonatomic) double hiddenDuration;
+@property (nonatomic) NSString toast;
+@property (nonatomic) q toastType;
+- (id)imageUrlModel;
+- (void)setStartTimeStamp:;
+- (long long)toastType;
+- (void)setToastType:;
+- (void)setImageUrlModel:;
+- (void)setPendantID:;
+- (id)pendantID;
+- (unsigned long long)materailType;
+- (id)lottieUrlString;
+- (double)hiddenDuration;
+- (void)setMaterailType:;
+- (void)setLottieUrlString:;
+- (void)setHiddenDuration:;
+- (id)schema;
+- (unsigned long long)actionType;
+- (void)setActionType:;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
+- (double)startTimeStamp;
+- (double)endTimeStamp;
+- (void)setEndTimeStamp:;
++ (id)imageUrlModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

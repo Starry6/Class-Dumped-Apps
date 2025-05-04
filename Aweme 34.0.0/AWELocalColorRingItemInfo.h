@@ -1,0 +1,36 @@
+@interface AWELocalColorRingItemInfo : AWEBaseApiModel
+@property (nonatomic) q createTime;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) NSString userId;
+@property (nonatomic) BOOL readStatus;
+@property (nonatomic) BOOL fakeCreate;
+@property (nonatomic) q visibleScope;
+@property (nonatomic) Q cfItemType;
+@property (nonatomic) q storyItemType;
+@property (nonatomic) q contentType;
+@property (nonatomic) BOOL isStrangerStory;
+- (unsigned long long)cfItemType;
+- (void)setCfItemType:;
+- (BOOL)isStrangerStory;
+- (void)setIsStrangerStory:;
+- (void)setReadStatus:;
+- (long long)visibleScope;
+- (long long)storyItemType;
+- (BOOL)fakeCreate;
+- (void)setFakeCreate:;
+- (void)setVisibleScope:;
+- (void)setStoryItemType:;
+- (id)userId;
+- (long long)createTime;
+- (long long)contentType;
+- (void)setContentType:;
+- (void)setCreateTime:;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)itemId;
+- (BOOL)readStatus;
+- (void)setItemId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

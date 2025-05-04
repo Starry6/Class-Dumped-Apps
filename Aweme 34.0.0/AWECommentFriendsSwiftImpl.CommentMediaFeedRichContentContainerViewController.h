@@ -1,0 +1,27 @@
+@interface AWECommentFriendsSwiftImpl.CommentMediaFeedRichContentContainerViewController : NSObject
+- (void)updateCurrentAwemeModel:;
+- (void)didChangeAlbumIndex:animated:;
+- (BOOL)currentVCIsActive;
+- (void)richContainerDidCreateProgressView:;
+- (BOOL)shouldRecognizeProgressGesture;
+- (BOOL)shouldRecognizeWindowGesture;
+- (void)didUpdatePaginatedProgressWithIndex:totalCount:;
+- (id)progressConfig;
+- (BOOL)canPlayerPlayAfterTouch;
+- (void)didUpdatePaginatedProgressWithDuration:totalCount:currentIndex:currentProcess:needAnimation:;
+- (void)awemePlay;
+- (id)commonViewControllerContext;
+- (void)scrollToIndex:syncUpdateCell:;
+- (void)updateReferString:enterFrom:;
+- (id)init;
+- (BOOL)isPlaying;
+- (void)play;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)stop;
+- (void)pause;
+- (id)currentCell;
+- (void)willDisplay;
+- (void)updateModel:;
+@end

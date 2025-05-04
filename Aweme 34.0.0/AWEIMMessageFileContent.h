@@ -1,0 +1,37 @@
+@interface AWEIMMessageFileContent : AWEIMMessageContent
+@property (nonatomic) q aweType;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString format;
+@property (nonatomic) q size;
+@property (nonatomic) NSString md5;
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSString secretKey;
+@property (nonatomic) Q fileType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)aweType;
+- (void)setAweType:;
+- (void)updateMessageContentWithAttachmentMD5:fileType:;
+- (void)updateMessageContentWithUploadedFileResponse:fileType:;
+- (id)fileTypeForTrack;
+- (unsigned long long)fileType;
+- (id)format;
+- (void)setSecretKey:;
+- (void)setFormat:;
+- (id)uri;
+- (void)setUri:;
+- (id)secretKey;
+- (long long)size;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (void)setName:;
+- (id)name;
+- (id)initWithDictionary:;
+- (id)copyWithZone:;
+- (void)setMd5:;
+- (id)md5;
+- (id)contentDictionary;
++ (id)fileTypeForTrackWith:;
+@end

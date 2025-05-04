@@ -1,0 +1,37 @@
+@interface AWEPlayInteractionPOICommentTagRateElementViewModel : AWEPlayInteractionBaseElementViewModel
+@property (nonatomic) NSDictionary deleteParams;
+@property (nonatomic) DUXActionSheet actionSheet;
+@property (nonatomic) BOOL hasAddedObserver;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) @? didTapUnfoldButton;
+@property (nonatomic) @? deleteRateSuccess;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)actionSheet:didClickButtonAtIndex:;
+- (void)actionSheetDidClickCancelButton:;
+- (void)actionSheetDidClickMaskArea:;
+- (id)lynxInitialData;
+- (void)handleLynxBroadcastNotification:;
+- (BOOL)canShowElement;
+- (void)setDidTapUnfoldButton:;
+- (void)setDeleteRateSuccess:;
+- (void)setDeleteParams:;
+- (BOOL)hasAddedObserver;
+- (void)setHasAddedObserver:;
+- (id)deleteParams;
+- (id)deleteRateSuccess;
+- (id)didTapUnfoldButton;
+- (void)p_actionSheet;
+- (void)p_deleteRate;
+- (void)dealloc;
+- (void)addObserver;
+- (id)viewController;
+- (void)removeObserver;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setViewController:;
+- (void)setActionSheet:;
+- (id)actionSheet;
+@end

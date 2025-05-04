@@ -1,0 +1,32 @@
+@interface AWEInterstitialRevisitView : UIView
+@property (nonatomic) BOOL hasJumpButton;
+@property (nonatomic) LOTAnimationView lottieView;
+@property (nonatomic) NSString backgroundUrl;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) @? closeAction;
+@property (nonatomic) @? jumpAction;
+- (id)backgroundUrl;
+- (void)setBackgroundUrl:;
+- (id)lottieView;
+- (void)setLottieView:;
+- (void)setupCloseButton;
+- (id)jumpAction;
+- (void)onClickCloseButton:;
+- (void)setupBackground;
+- (void)setJumpAction:;
+- (void)showOn:;
+- (void)preLoadLottieView;
+- (void)setHasJumpButton:;
+- (void)setupJumpButton;
+- (BOOL)hasJumpButton;
+- (void)onClickJumpButton:;
+- (void)getSettingsConfig;
+- (id)init;
+- (void)setCloseAction:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (id)closeAction;
+- (void)layoutSubviews;
+- (void)setButtonText:;
+- (void)setupUI;
+@end

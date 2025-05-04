@@ -1,0 +1,36 @@
+@interface AWEIMIncentiveChatActivityInfo : NSObject
+@property (nonatomic) Q userActivityType;
+@property (nonatomic) BOOL hasActivity;
+@property (nonatomic) Q privateActivityStatus;
+@property (nonatomic) BOOL hasTopRedpackEntry;
+@property (nonatomic) BOOL hasCellEntry;
+@property (nonatomic) BOOL hasActionBarEntry;
+@property (nonatomic) NSString actionBarStrategyKey;
+@property (nonatomic) AWEIncentiveChatInvitePanelButtonTextModel invitePanelButtonTextModel;
+@property (nonatomic) AWEIMIncentiveChatIndicatorInfo indicatorInfo;
+@property (nonatomic) Q cellEntryStatus;
+- (id)indicatorInfo;
+- (id)dictionaryRawData;
+- (unsigned long long)cellEntryStatus;
+- (BOOL)hasCellEntry;
+- (BOOL)hasActionBarEntry;
+- (unsigned long long)privateActivityStatus;
+- (void)setIndicatorInfo:;
+- (void)setCellEntryStatus:;
+- (id)actionBarStrategyKey;
+- (void)setActionBarStrategyKey:;
+- (id)invitePanelButtonTextModel;
+- (void)setInvitePanelButtonTextModel:;
+- (BOOL)hasTopRedpackEntry;
+- (void)setPrivateActivityStatus:;
+- (void)setHasTopRedpackEntry:;
+- (void)setHasCellEntry:;
+- (void)setHasActionBarEntry:;
+- (void).cxx_destruct;
+- (unsigned long long)userActivityType;
+- (id)initWithDictionary:;
+- (void)setUserActivityType:;
+- (BOOL)hasActivity;
+- (void)setHasActivity:;
++ (unsigned long long)p_getCellEntryStatusWithDictionary:;
+@end

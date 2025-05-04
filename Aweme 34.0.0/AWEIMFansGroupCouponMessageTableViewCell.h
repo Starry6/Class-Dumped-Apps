@@ -1,0 +1,34 @@
+@interface AWEIMFansGroupCouponMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) AWEIMCommerceCouponContainerView couponView;
+@property (nonatomic) AWEIMFansGroupCouponModel couponModel;
+@property (nonatomic) <AWEIMCommerceCouponBuilderProtocol> builder;
+@property (nonatomic) <AWEIMCommerceCouponBuilderProtocol> sendBuilder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)chatBackgroundDidChangeNty:;
+- (id)couponView;
+- (void)setCouponView:;
+- (void)setCouponModel:;
+- (id)couponModel;
+- (void)processCurrentCommerceCoupon:;
+- (void)refreshExtWithCouponModel:;
+- (void)enterprsieTrack;
+- (void)refreshCouponStatus;
+- (void)trackDisplay;
+- (void)configWithMessage:;
+- (id)menuTargetView;
+- (id)sendBuilder;
+- (void)refreshCouponViewBgColor;
+- (void)setSendBuilder:;
+- (id)builder;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)layoutSubviews;
+- (void)setupUI;
+- (void)setBuilder:;
++ (id)contentSizeWithMesasge:;
++ (Class)builderClassForMessage:;
++ (id)identifier;
+@end

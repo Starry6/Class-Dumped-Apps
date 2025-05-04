@@ -1,0 +1,31 @@
+@interface AWEPublishResultView : UIView
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView statusImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIStackView textContainerView;
+@property (nonatomic) UIStackView buttonContainerView;
+@property (nonatomic) UIButton indicatorButton;
+@property (nonatomic) UIControl actionButton;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)layoutButtons;
+- (id)indicatorButton;
+- (void)setIndicatorButton:;
+- (id)intrinsicContentSize;
+- (id)initWithFrame:;
+- (void)setup;
+- (void)setSubtitleLabel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subtitleLabel;
+- (id)actionButton;
+- (void)setActionButton:;
+- (id)statusImageView;
+- (void)setStatusImageView:;
+- (void)setTextContainerView:;
+- (id)textContainerView;
+- (id)buttonContainerView;
+- (void)setButtonContainerView:;
+@end

@@ -1,0 +1,2 @@
+@interface AWESearchCommonRerankPageContext : NSObject
+@end

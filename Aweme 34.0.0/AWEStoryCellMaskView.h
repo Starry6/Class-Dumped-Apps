@@ -1,0 +1,32 @@
+@interface AWEStoryCellMaskView : UIView
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UIImageView tipImageView;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UIVisualEffectView effectView;
+- (id)aAWEPadModuleAdapter;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)tipImageView;
+- (void)setTipImageView:;
+- (void)configModel:;
+- (id)aAWEPadSplitScreenAdapter;
+- (id)imageURLArray:;
+- (void)setModel:;
+- (id)effectView;
+- (id)initWithModel:;
+- (id)containerView;
+- (void)setEffectView:;
+- (id)model;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setTipLabel:;
+- (id)tipLabel;
+- (void)setupUI;
++ (Class)aAWEPadModuleAdapterClass;
++ (id)configCleanModeStoryCellMask:inView:;
++ (Class)aAWEPadSplitScreenAdapterClass;
++ (BOOL)shouldShowWith:;
++ (id)viewSizeWith:;
+@end

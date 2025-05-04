@@ -1,0 +1,38 @@
+@interface AWELiveXPlayCloudPlayerWrapper : NSObject
+@property (nonatomic) <XPlayCloudPlayerProtocol> cloudPlayer;
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString clientUserId;
+@property (nonatomic) NSString remoteUserId;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL didPlay;
+@property (nonatomic) BOOL didLoadSuccess;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) UIViewController controller;
+@property (nonatomic) UIView view;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)roomId;
+- (id)cloudPlayer;
+- (void)setCloudPlayer:;
+- (void)interenalVideoCanvasRender:;
+- (BOOL)didLoadSuccess;
+- (id)clientUserId;
+- (id)remoteUserId;
+- (BOOL)isMainCloudPlayer;
+- (id)initWithCloudPlayer:;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)play;
+- (void)resume;
+- (id)view;
+- (void)setMute:;
+- (void).cxx_destruct;
+- (void)focus;
+- (id)controller;
+- (id)name;
+- (void)stop;
+- (void)pause;
+- (BOOL)didPlay;
+@end

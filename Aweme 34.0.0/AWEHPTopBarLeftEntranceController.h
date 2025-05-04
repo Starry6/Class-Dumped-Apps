@@ -1,0 +1,33 @@
+@interface AWEHPTopBarLeftEntranceController : AWEBaseController
+@property (nonatomic) NSArray leftEntranceItemClass;
+@property (nonatomic) <AWEHPTopBarEntranceItemProtocol> leftEntranceItem;
+@property (nonatomic) {CGSize=dd} preferredContentSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)feedContentView;
+- (BOOL)hpSlidingScrollViewShouldScrollWithPanGestureRecognizer:reason:;
+- (BOOL)hpIsShowInteractiveAnimation;
+- (BOOL)hpIsShowCaptionBubble;
+- (void)hpTopBarLeftContainerHideChange:;
+- (void)hpTopBarLeftContainerAlphaChange:;
+- (void)hpThemeDidChange:;
+- (id)leftEntranceViewWithTabID:;
+- (id)currentLeftEntranceViewTabIds;
+- (void)setupLeftEntrance;
+- (id)leftEntranceItemClass;
+- (void)setupEntranceWithClass:;
+- (id)leftEntranceItem;
+- (void)reloadLeftEntranceAfterLogin;
+- (void)loadEntranceItem:;
+- (void)setLeftEntranceItem:;
+- (void)setLeftEntranceItemClass:;
+- (id)init;
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (void)viewDidDisappear;
+- (void)viewWillDisappear;
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchHotspotGradientTabItem : UIControl
+@property (nonatomic) UILabel itemLabel;
+@property (nonatomic) UIView selectionMark;
+@property (nonatomic) UIColor gradientColor;
+@property (nonatomic) q tabType;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) BOOL grayMode;
+@property (nonatomic) BOOL isAverageTile;
+- (long long)tabType;
+- (void)setClickBlock:;
+- (id)clickBlock;
+- (void)handleClick;
+- (void)setTabType:;
+- (BOOL)grayMode;
+- (void)setGrayMode:;
+- (void)p_updateItemColor;
+- (id)p_gradientFont;
+- (void)p_getGradientTextColor:withCompletion:;
+- (id)p_normalFont;
+- (void)prePareForReuse;
+- (void)setIsAverageTile:;
+- (id)selectionMark;
+- (void)setSelectionMark:;
+- (BOOL)isAverageTile;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setSelected:;
+- (id)gradientColor;
+- (void)setGradientColor:;
+- (id)itemLabel;
+- (void)setItemLabel:;
+- (void)setItemTitle:;
+@end

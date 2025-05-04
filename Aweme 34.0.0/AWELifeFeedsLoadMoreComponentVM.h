@@ -1,0 +1,33 @@
+@interface AWELifeFeedsLoadMoreComponentVM : AWELifeFeedsBaseComponentVM
+@property (nonatomic) NSString pullUpText;
+@property (nonatomic) NSString loadingText;
+@property (nonatomic) NSString noMoreText;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q index;
+@property (nonatomic) AWELifeFeedsLoadMoreComponentView loadMoreComponentView;
+@property (nonatomic) AWELifeFeedsLoadmorePlugin loadmorePlugin;
+@property (nonatomic) AWENearbyGrouponTabLoadMoreFooter noMoreStyle;
+@property (nonatomic) BOOL loadingMore;
+- (void)startLoadMore;
+- (void)endLoadMore;
+- (id)componentSizeWithMaxWidth:presetHeight:;
+- (void)bindStateAndAction;
+- (void)componentStartShow:;
+- (BOOL)loadingMore;
+- (id)noMoreStyle;
+- (id)noMoreText;
+- (void)setPullUpText:;
+- (void)setNoMoreText:;
+- (void)setNoMoreStyle:;
+- (id)loadMoreComponentView;
+- (id)loadmorePlugin;
+- (id)pullUpText;
+- (void)setIndex:;
+- (long long)index;
+- (id)initWithNode:;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (void).cxx_destruct;
+- (id)loadingText;
+- (void)setLoadingText:;
+@end

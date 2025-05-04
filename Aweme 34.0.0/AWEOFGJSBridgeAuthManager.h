@@ -1,0 +1,36 @@
+@interface AWEOFGJSBridgeAuthManager : NSObject
+@property (nonatomic) NSMutableDictionary authCacheDict;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> authMethodAccessLock;
+@property (nonatomic) NSArray innerConfigList;
+@property (nonatomic) NSMutableDictionary pageInfoDict;
+- (id)cacheKeyWithURL:;
+- (BOOL)isAuthorizedForMethod:withInfo:;
+- (void)updateAuthConfigWithInfo:completion:;
+- (void)loadInnerConfigIfNeed;
+- (void)setAuthCacheDict:;
+- (void)setPageInfoDict:;
+- (void)setAuthMethodAccessLock:;
+- (BOOL)isSecondPartyWithURL:;
+- (id)authCacheDict;
+- (id)pageInfoForKey:;
+- (id)innerConfigList;
+- (unsigned long long)_isAuthorizedForMethod:withInfo:;
+- (id)hostForURLString:;
+- (void)showToastWithMethodName:hostName:errCode:isBlackList:;
+- (long long)checkAuthFromSettings:withInfo:;
+- (id)authMethodAccessLock;
+- (BOOL)enableCheckJSBHole;
+- (void)setInnerConfigList:;
+- (id)filterPrefix:;
+- (BOOL)matchString:withRegularString:;
+- (void)prepareAuthRequestWithCacheKey:clientKey:completion:isDuplicatedReqeust:;
+- (void)udpateAuthMethodWithCacheKey:jsMethodList:;
+- (void)invokeAuthUpdateCompletionWithCacheKey:error:;
+- (id)pageInfoDict;
+- (BOOL)shouldInterceptWithURL:methodName:;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)errorWithCode:message:;
++ (id)sharedManager;
+@end

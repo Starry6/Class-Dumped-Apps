@@ -1,0 +1,36 @@
+@interface AWEBaseControllerManager : NSObject
+@property (nonatomic) NSMutableArray<AWEControllerProtocol> controllerInstanceArray;
+@property (nonatomic) NSMutableDictionary cacheDict;
+@property (nonatomic) <AWEContainerProtocol> container;
+@property (nonatomic) UIView rootView;
+@property (nonatomic) AWEPageContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCacheDict:;
+- (id)controllerByProtocol:;
+- (id)classNameArray;
+- (id)controllerArray;
+- (void)loadControllersWithContainer:rootView:withContext:;
+- (id)controllerArrayBySelector:;
+- (id)controllersByProtocol:;
+- (void)updateRootView:;
+- (id)controllerInstanceArray;
+- (void)removeAllControllers;
+- (void)log:selectorName:startTime:endTime:;
+- (void)setControllerInstanceArray:;
+- (void)setContainer:;
+- (id)container;
+- (void)addController:;
+- (void)removeController:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (id)context;
+- (id)rootView;
+- (void)setRootView:;
+- (id)cacheDict;
++ (BOOL)protocolCacheEnabled;
++ (void)setProtocolCacheEnabled:;
+@end

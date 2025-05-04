@@ -1,0 +1,38 @@
+@interface AWESearchMidDCCommonInfoManager : NSObject
+@property (nonatomic) NSString pageID;
+@property (nonatomic) NSString gid;
+@property (nonatomic) NSString enterInnerDocId;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) q outerOffset;
+@property (nonatomic) q outerRequestCount;
+@property (nonatomic) q innerRequestCount;
+@property (nonatomic) UIViewController<AWESearchHubbleDoubleListElementDelegate> middleBaseVC;
+- (void)updatePreviousPage:;
+- (void)setMiddleBaseVC:;
+- (id)middleBaseVC;
+- (void)setEnterInnerDocId:;
+- (void)setOuterOffset:;
+- (long long)outerRequestCount;
+- (void)setOuterRequestCount:;
+- (long long)innerRequestCount;
+- (void)setInnerRequestCount:;
+- (id)enterInnerDocId;
+- (long long)outerOffset;
+- (void)updatePageID:;
+- (void)updateEnterInnerDocId:;
+- (void)updateGid:;
+- (void)updateOuterOffset:;
+- (void)updateOuterRequestCount;
+- (void)updateInnerRequestCount;
+- (void)resetRequestCount;
+- (id)init;
+- (id)gid;
+- (void)setGid:;
+- (void).cxx_destruct;
+- (void)setPageID:;
+- (id)pageID;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (void)resetInfo;
++ (id)sharedInstance;
+@end

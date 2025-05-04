@@ -1,0 +1,33 @@
+@interface AWEAlertNearbyFirstMoveGuideEvent : NSObject
+@property (nonatomic) @? canShowBlk;
+@property (nonatomic) @? beginShowBlk;
+@property (nonatomic) @? dismissBlk;
+@property (nonatomic) @? jumpBlk;
+@property (nonatomic) @? animationBeginBlk;
+@property (nonatomic) @? alertCloseBlk;
+@property (nonatomic) Q transformerOfflineType;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)setDismissBlk:;
+- (id)dismissBlk;
+- (unsigned long long)transformerOfflineType;
+- (void)setTransformerOfflineType:;
+- (id)canShowBlk;
+- (void)setCanShowBlk:;
+- (id)beginShowBlk;
+- (void)setBeginShowBlk:;
+- (id)jumpBlk;
+- (void)setJumpBlk:;
+- (id)animationBeginBlk;
+- (void)setAnimationBeginBlk:;
+- (id)alertCloseBlk;
+- (void)setAlertCloseBlk:;
+- (void).cxx_destruct;
++ (id)eventID;
++ (id)eventDescription;
+@end

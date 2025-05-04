@@ -1,0 +1,37 @@
+@interface AWEIMGroupChatRouterInviteMemberContext : NSObject
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) Q disableOption;
+@property (nonatomic) BOOL dismissSuperVC;
+@property (nonatomic) NSString confirmButtonTitle;
+@property (nonatomic) double panelHeight;
+@property (nonatomic) NSNumber sourceType;
+@property (nonatomic) NSNumber preferThemeStyle;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)panelHeight;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (id)preferThemeStyle;
+- (void)setPanelHeight:;
+- (void)setPreferThemeStyle:;
+- (BOOL)dismissSuperVC;
+- (void)setDismissSuperVC:;
+- (void)handleTransferResult:viewController:;
+- (unsigned long long)disableOption;
+- (id)initWithConversationID:sourceType:enterFrom:enterMethod:;
+- (void)setDisableOption:;
+- (id)sourceType;
+- (id)conversationID;
+- (id)description;
+- (void).cxx_destruct;
+- (id)confirmButtonTitle;
+- (void)setConfirmButtonTitle:;
+- (id)getSchema;
+@end

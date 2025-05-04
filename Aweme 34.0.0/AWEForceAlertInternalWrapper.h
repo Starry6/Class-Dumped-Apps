@@ -1,0 +1,38 @@
+@interface AWEForceAlertInternalWrapper : NSObject
+@property (nonatomic) AWEAlertDemotionStrategyModel demotionStrategyModel;
+@property (nonatomic) <AWEForceAlertProtocol> alert;
+@property (nonatomic) <AWEAlertEventProtocol> eventItem;
+@property (nonatomic) AWEForceAlertContext context;
+@property (nonatomic) double beginMediaTime;
+@property (nonatomic) double endMediaTime;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) BOOL showCallbackInvoked;
+@property (nonatomic) BOOL closeCallbackInvoked;
+@property (nonatomic) AWEForceAlertCallbackWrapper callbackWrapper;
+@property (nonatomic) NSString alertID;
+@property (nonatomic) NSString eventID;
+- (id)callbackWrapper;
+- (void)setCallbackWrapper:;
+- (id)eventItem;
+- (void)setBeginMediaTime:;
+- (double)beginMediaTime;
+- (void)setEventItem:;
+- (id)demotionStrategyModel;
+- (BOOL)closeCallbackInvoked;
+- (BOOL)showCallbackInvoked;
+- (void)setShowCallbackInvoked:;
+- (void)setDemotionStrategyModel:;
+- (id)demotionContext;
+- (double)endMediaTime;
+- (void)setEndMediaTime:;
+- (void)setCloseCallbackInvoked:;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (id)eventID;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setAlert:;
+- (id)alert;
+- (id)context;
+- (id)alertID;
+@end

@@ -1,0 +1,36 @@
+@interface AWEHangoutSearchCardModel : MTLModel
+@property (nonatomic) NSString cardID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray items;
+@property (nonatomic) AWEHangoutSearchCardStyleModel lightStyle;
+@property (nonatomic) AWEHangoutSearchCardStyleModel darkStyle;
+@property (nonatomic) BOOL isNewVersion;
+@property (nonatomic) NSNumber index;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDarkStyle:;
+- (BOOL)isNewVersion;
+- (void)setIsNewVersion:;
+- (void)setIndex:;
+- (id)index;
+- (id)items;
+- (void)setStartTime:;
+- (id)endTime;
+- (void)setEndTime:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (id)title;
+- (id)startTime;
+- (void)setTitle:;
+- (id)darkStyle;
+- (id)lightStyle;
+- (id)cardID;
+- (void)setCardID:;
+- (void)setLightStyle:;
++ (id)itemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

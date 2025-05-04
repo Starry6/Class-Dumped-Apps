@@ -1,0 +1,33 @@
+@interface AWEIMStorageAdapter : NSObject
+@property (nonatomic) AWEStorage storage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)storageWithDomain:;
+- (BOOL)setDictionary:forKey:err:;
+- (BOOL)setArray:forKey:err:;
+- (BOOL)setObject:forKey:err:;
+- (BOOL)removeObjectForKey:err:;
+- (void)setStorage:;
+- (void)setDouble:forKey:;
+- (void)setInteger:forKey:;
+- (id)storage;
+- (id)arrayForKey:;
+- (id)stringForKey:;
+- (id)dataForKey:;
+- (void)setData:forKey:;
+- (void)setBool:forKey:;
+- (void)setArray:forKey:;
+- (void)setDictionary:forKey:;
+- (void)setString:forKey:;
+- (id)dictionaryForKey:;
+- (void)removeObjectForKey:;
+- (void).cxx_destruct;
+- (id)objectForKey:;
+- (double)doubleForKey:;
+- (BOOL)boolForKey:;
+- (id)initWithStorage:;
+- (long long)integerForKey:;
+- (void)setObject:forKey:;
+@end

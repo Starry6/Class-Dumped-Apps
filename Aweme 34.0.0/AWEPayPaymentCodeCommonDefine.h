@@ -1,0 +1,2 @@
+@interface AWEPayPaymentCodeCommonDefine : NSObject
+@end

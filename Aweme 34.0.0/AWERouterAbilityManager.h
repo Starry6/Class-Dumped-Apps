@@ -1,0 +1,33 @@
+@interface AWERouterAbilityManager : NSObject
+@property (nonatomic) NSMutableArray abilityLists;
+@property (nonatomic) NSDictionary routerParam;
+@property (nonatomic) ACCRecordViewControllerInputData inputData;
+@property (nonatomic) @? completedHandler;
+@property (nonatomic) NSError abilityError;
+@property (nonatomic) Q abilityMaskOption;
+- (id)routerParam;
+- (void)clearTask;
+- (void)setRouterParam:;
+- (id)abilityTrackData;
+- (unsigned long long)abilityMaskOption;
+- (void)setAbilityMaskOption:;
+- (id)p_inputDataConfiguration;
+- (void)setAbilityError:;
+- (id)abilityLists;
+- (void)p_allAbilityParamConfiguration;
+- (void)p_allAbilityAssemblyCompletedIfNeed;
+- (BOOL)p_allAbilityStatusCheckIfNeed;
+- (void)p_cancelAllAbilityOperation;
+- (id)abilityError;
+- (void)prepareTaskWithInputData:routerParams:;
+- (id)createInputData;
+- (id)createAbilityWithType:;
+- (id)abilityParametersPromiseCheck;
+- (void)buildingAbilityCompleted:;
+- (void)setAbilityLists:;
+- (void).cxx_destruct;
+- (id)inputData;
+- (id)completedHandler;
+- (void)setCompletedHandler:;
+- (void)setInputData:;
+@end

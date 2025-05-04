@@ -1,0 +1,32 @@
+@interface AWEUserProfileCoverControl : NSObject
+@property (nonatomic) AWEProfileCoverPreviewActionSheetManager actionSheetManager;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) NSDictionary selectCoverTrackParams;
+@property (nonatomic) NSDictionary photosPreviewTrackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnterFrom:;
+- (void)userDidPerformOperationOnPhotosPreviewViewController:;
+- (id)enterFrom;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)selectCoverFromAlbum;
+- (void)selectCoverWith:;
+- (void)coverPreViewWith:fromRect:showIndex:;
+- (id)initWith:trackParams:selectCoverTrackParams:;
+- (id)actionSheetManager;
+- (void)setActionSheetManager:;
+- (void)setSelectCoverTrackParams:;
+- (void)showCompanyPreView:fromRect:showIndex:;
+- (void)showUserPreView:fromRect:showIndex:;
+- (void)p_selectCover;
+- (void)p_showUserPreView:fromRect:showIndex:;
+- (void)p_showHeadBackgroundsWith:fromRect:;
+- (void)setPhotosPreviewTrackParams:;
+- (id)selectCoverTrackParams;
+- (id)photosPreviewTrackParams;
+- (void).cxx_destruct;
+@end

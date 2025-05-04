@@ -1,0 +1,31 @@
+@interface AWELandscapeSubtitleController : AWELandscapeInteractionBaseController
+@property (nonatomic) AWEFeedSubtitleContainerView subtitleContainer;
+@property (nonatomic) double maxWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)player:didChangePlaybackStateWithAction:;
+- (void)player:onSubtitleInfoCallBack:;
+- (void)didEnterLandscape;
+- (void)playerBeforePrepareToPlay:;
+- (void)updateLayoutWithAnimationOffset:position:;
+- (void)changeSubtitleSwitchStatus:;
+- (void)changeSubtitleSelectedLanguageID:;
+- (BOOL)shouldShowSubtitleView;
+- (void)willExitLandscape;
+- (void)willEnterSplitScreen:movePoint:scale:;
+- (BOOL)enableSubtitleView;
+- (void)updateState:;
+- (id)init;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (double)maxWidth;
+- (void)setData:;
+- (void)setMaxWidth:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)currentModel;
+- (void)setSubtitleContainer:;
+- (id)subtitleContainer;
+@end

@@ -1,0 +1,30 @@
+@interface AWEGrouponHalfScreenTopAngleViewInjector : NSObject
+@property (nonatomic) UIViewController<AWEGrouponHalfScreenContainerProtocol> targetVC;
+@property (nonatomic) AWEGrouponHalfScreenContainerArrowView injectedView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)targetVC;
+- (void)setTargetVC:;
+- (void)downLoadRichArrowWithStyleConfig:completion:;
+- (void)loadImageWithUrlModel:imageView:completion:;
+- (id)initWithTargetVC:;
+- (void)willBecomeFullScreen:targetVC:;
+- (void)didBecomeFullScreen:targetVC:;
+- (void)didAddContentView:targetVC:;
+- (void)updateInjectedTargetVC:;
+- (void)willDissmissInjectedTargetVC:;
+- (void)hiddenInjectedTargetVC:;
+- (id)injectedView;
+- (void)setInjectedView:;
+- (void)__addContentView:targetVC:;
+- (void)__updateInjectedTargetVC:;
+- (void)addRichArrowViewWithContentView:targetVC:;
+- (void)addNormalArrowWithContentView:targetVC:;
+- (void)setupTargetImageFrameWithTargetVC:;
+- (void)clickTarget;
+- (void)layoutNormalArrowWithContentView:targetVC:;
+- (void)layoutRichArrowWithContentView:targetVC:;
+- (void).cxx_destruct;
+@end

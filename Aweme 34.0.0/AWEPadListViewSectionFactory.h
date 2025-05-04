@@ -1,0 +1,36 @@
+@interface AWEPadListViewSectionFactory : NSObject
+@property (nonatomic) AWEPadListViewSectionFactoryContext context;
+@property (nonatomic) NSDictionary sectionInteractTypeMap;
+@property (nonatomic) NSDictionary sectionTypeMap;
+@property (nonatomic) NSDictionary horizontalInnerSectionTypeMap;
+@property (nonatomic) NSDictionary headerTypeToHeaderVMMap;
+@property (nonatomic) NSDictionary headerTypeToHeaderModelMap;
+@property (nonatomic) NSDictionary cellControllerMap;
+@property (nonatomic) NSDictionary dataTypeToCardModelMap;
+@property (nonatomic) NSDictionary commonCellControllerMap;
+- (id)buildSectionWithModel:;
+- (id)sectionTypeMap;
+- (id)sectionInteractTypeMap;
+- (id)horizontalInnerSectionTypeMap;
+- (id)buildCellControllerWithModelArray:sectionViewModel:cardConfig:;
+- (id)buildCellControllerWithModelArray:sectionViewModel:;
+- (id)buildHeaderControllerWithModel:;
+- (id)commonCellControllerMap;
+- (id)dataTypeToCardModelMap;
+- (id)cellControllerMap;
+- (id)headerTypeToHeaderVMMap;
+- (id)headerTypeToHeaderModelMap;
+- (id)buildSectionWithModelArray:;
+- (void)setSectionInteractTypeMap:;
+- (void)setSectionTypeMap:;
+- (void)setHorizontalInnerSectionTypeMap:;
+- (void)setHeaderTypeToHeaderVMMap:;
+- (void)setHeaderTypeToHeaderModelMap:;
+- (void)setCellControllerMap:;
+- (void)setDataTypeToCardModelMap:;
+- (void)setCommonCellControllerMap:;
+- (id)initWithContext:;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+@end

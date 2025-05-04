@@ -1,0 +1,37 @@
+@interface AWEOpenPlatformAuthScopeItem : NSObject
+@property (nonatomic) NSString scope;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString descText;
+@property (nonatomic) BOOL necessary;
+@property (nonatomic) BOOL granted;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL allNecessary;
+@property (nonatomic) BOOL isNoAuth;
+@property (nonatomic) NSString noAuthDesc;
+@property (nonatomic) q authUICase;
+@property (nonatomic) Q pageType;
+- (id)descText;
+- (void)setDescText:;
+- (void)setGranted:;
+- (BOOL)necessary;
+- (void)setNecessary:;
+- (BOOL)allNecessary;
+- (void)setAllNecessary:;
+- (BOOL)isNoAuth;
+- (void)setIsNoAuth:;
+- (id)noAuthDesc;
+- (void)setNoAuthDesc:;
+- (long long)authUICase;
+- (void)setAuthUICase:;
+- (id)init;
+- (void)setPageType:;
+- (unsigned long long)type;
+- (id)scope;
+- (void)setType:;
+- (void).cxx_destruct;
+- (BOOL)granted;
+- (id)title;
+- (void)setScope:;
+- (void)setTitle:;
+- (unsigned long long)pageType;
+@end

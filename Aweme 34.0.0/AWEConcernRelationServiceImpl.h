@@ -1,0 +1,32 @@
+@interface AWEConcernRelationServiceImpl : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (void)approve:completion:;
++ (void)reject:completion:;
++ (void)rejectWithNotice:userID:completion:;
++ (BOOL)isApproveRequestOnAir;
++ (void)hideMyPostFromUser:completion:;
++ (void)showMyPostToUser:completion:;
++ (long long)convertBlockStatusToHideMyPostStatus:;
++ (id)convertUserGenderType:showGenderStrategy:;
++ (void)hideHerPost:completion:;
++ (void)unhideHerPost:completion:;
++ (long long)convertBlockStatusToHideHerPostStatus:;
++ (void)block:completion:;
++ (void)blockUser:completion:;
++ (void)unblock:completion:;
++ (BOOL)isFollowRequestOnAir;
++ (void)removeFans:completion:;
++ (void)topFollowingUser:completion:;
++ (void)untopFollowingUser:completion:;
++ (void)followParamsRegulation:;
++ (void)unfollow:completion:;
++ (void)follow:completion:;
++ (long long)prePageTypeWithContext:;
++ (void)dislike:completion:;
++ (void)closeFriends:completion:;
++ (void)unCloseFriends:completion:;
++ (long long)prePageTypeWithEnterFrom:;
+@end

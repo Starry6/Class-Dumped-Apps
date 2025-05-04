@@ -1,0 +1,35 @@
+@interface AWEFeedContainerBaseService : NSObject
+@property (nonatomic) UIViewController<AWEFeedContainerProtocol> outerFeedContainer;
+@property (nonatomic) AWEShellControllerManager<AWEFeedControllerProtocol> outerFeedControllerManager;
+@property (nonatomic) BOOL isInOuterFeed;
+@property (nonatomic) UIViewController<AWEAwemeNewDetailTableContainerProtocol> innerDetailFeedContainer;
+@property (nonatomic) AWEShellControllerManager<AWEAwemeNewDetailTableControllerProtocol> innerDetailFeedControllerManager;
+@property (nonatomic) BOOL isInInnerDetailFeed;
+@property (nonatomic) q containerType;
+@property (nonatomic) AWEShellControllerManager<AWEAwemeFeedBaseControllerProtocol> containerControllerManager;
+@property (nonatomic) AWEAwemePageContext context;
+@property (nonatomic) UIViewController<AWEAwemeFeedServiceBaseContainerProtocol> container;
+@property (nonatomic) <AWEFeedContainerServiceResolverProtocol> serviceResolver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)outerFeedContainer;
+- (id)innerDetailFeedContainer;
+- (BOOL)isInOuterFeed;
+- (BOOL)isInInnerDetailFeed;
+- (void)setContainerControllerManager:;
+- (id)serviceResolver;
+- (void)setServiceResolver:;
+- (id)containerControllerManager;
+- (id)outerFeedControllerManager;
+- (id)innerDetailFeedControllerManager;
+- (void)setContainer:;
+- (id)container;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (long long)containerType;
+- (void)setContainerType:;
++ (id)createInstance;
+@end

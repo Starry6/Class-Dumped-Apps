@@ -1,0 +1,38 @@
+@interface AWEPluginTTNetWSCustomImpl : NSObject
+@property (nonatomic) NSMutableDictionary ttnetSocketInfoDict;
+@property (nonatomic) NSMutableDictionary ttnetSockets;
+@property (nonatomic) <BDPPluginTTNetWSCustomImplDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onPushMessageReceived:message:type:;
+- (void)onFeedbackLog:feedbacklog:;
+- (void)onConnectionErrorWithState:connectionState:url:error:;
+- (void)onConnectionStateChanged:connectionState:url:;
+- (void)bdp_setDelegate:;
+- (void)closeAllTTNetSockets;
+- (id)ttnetSockets;
+- (id)getPushManagerKey:;
+- (id)ttnetSocketInfoDict;
+- (id)getPushManagerForTaskID:;
+- (BOOL)sendTTNetSocket:param:;
+- (BOOL)closeTTNetSocket:param:;
+- (long long)getSocketTaskIdForPushManager:;
+- (long long)getAWETTNetWSDataTypeFromTTNetDataType:;
+- (id)getProtocolTypeForPushManager:;
+- (id)getUrlForPushManager:;
+- (id)getPushManagerStateString:;
+- (BOOL)bdp_createTTNetSocketTaskWithUrl:taskID:param:;
+- (BOOL)bdp_operateTTNetSocketTaskWithParam:errMsg:;
+- (void)bdp_closeAllTTNetSockets;
+- (id)getHeaderForPushManager:;
+- (void)setTtnetSocketInfoDict:;
+- (void)setTtnetSockets:;
+- (id)init;
+- (void)dealloc;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
++ (id)sharedPlugin;
+@end

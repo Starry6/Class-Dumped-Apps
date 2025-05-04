@@ -1,0 +1,30 @@
+@interface AWEMVDealWithServerPreprocessResourceModel : NSObject
+@property (nonatomic) q index;
+@property (nonatomic) NSMutableArray resourceURLArr;
+@property (nonatomic) NSMutableArray resourceIDArr;
+@property (nonatomic) NSString algorithm;
+@property (nonatomic) NSMutableString algorithmType;
+@property (nonatomic) Q resultType;
+@property (nonatomic) NSString algorithmParamJson;
+@property (nonatomic) BOOL needServerExecute;
+@property (nonatomic) BOOL multiInput;
+- (void)setAlgorithmParamJson:;
+- (id)algorithmParamJson;
+- (id)resourceURLArr;
+- (void)setResourceURLArr:;
+- (id)resourceIDArr;
+- (void)setResourceIDArr:;
+- (BOOL)needServerExecute;
+- (void)setNeedServerExecute:;
+- (BOOL)multiInput;
+- (void)setMultiInput:;
+- (void)setIndex:;
+- (id)algorithm;
+- (long long)index;
+- (void)setResultType:;
+- (void)setAlgorithm:;
+- (unsigned long long)resultType;
+- (void).cxx_destruct;
+- (id)algorithmType;
+- (void)setAlgorithmType:;
+@end

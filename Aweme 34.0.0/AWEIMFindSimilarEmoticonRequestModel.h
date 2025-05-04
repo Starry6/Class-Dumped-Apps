@@ -1,0 +1,33 @@
+@interface AWEIMFindSimilarEmoticonRequestModel : NSObject
+@property (nonatomic) q stickerType;
+@property (nonatomic) q stickerID;
+@property (nonatomic) NSString stickerURI;
+@property (nonatomic) NSString stickerURL;
+@property (nonatomic) NSString source;
+@property (nonatomic) q messageID;
+@property (nonatomic) q conversationShortID;
+@property (nonatomic) q conversationType;
+@property (nonatomic) q toUid;
+@property (nonatomic) NSString commentID;
+- (long long)conversationType;
+- (void)setConversationType:;
+- (id)commentID;
+- (void)setStickerType:;
+- (void)setCommentID:;
+- (void)setStickerID:;
+- (long long)conversationShortID;
+- (void)setConversationShortID:;
+- (long long)stickerID;
+- (id)stickerURL;
+- (void)setStickerURL:;
+- (long long)toUid;
+- (void)setToUid:;
+- (id)stickerURI;
+- (void)setStickerURI:;
+- (long long)messageID;
+- (void)setMessageID:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (long long)stickerType;
+@end

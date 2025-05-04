@@ -1,0 +1,31 @@
+@interface AWEIMMessageTabPushGuideV4BannerInteractor : AWEIMMessageTabCommonBannerInteractor
+@property (nonatomic) AWEIMPushGuideBannerV4Model model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (id)shouldContinueForPriorityObject:;
+- (id)shouldRemoveForPriorityObject:;
+- (void)pushGuideBannerViewDidClose;
+- (id)bannerViewCreated;
+- (void)bannerViewDidShow;
+- (BOOL)shouldShowCacheBannerView;
+- (void)shouldShowCacheBannerView:;
+- (void)updateBannerViewIfNeeded;
+- (BOOL)isIMListBannerShowing;
+- (id)modelForCache;
+- (void)setupDataWithCacheModel:;
+- (void)updateCacheBannerWithView:completion:;
+- (void)updateBannerOptExitRecordIfNeeded;
+- (void)startBannerOptIconAnimationIfNeeded;
+- (BOOL)shouldStartBannerOptIconAnimation;
+- (void)didConfirm;
+- (void)setModel:;
+- (void)didCancel;
+- (id)init;
+- (void)dealloc;
+- (id)model;
+- (void).cxx_destruct;
++ (long long)bannerPriorityValue;
+@end

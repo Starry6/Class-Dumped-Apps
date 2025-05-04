@@ -1,0 +1,33 @@
+@interface AWEDetailTrendMusicListCollectServiceImpl : NSObject
+@property (nonatomic) <AWEDetailMusicListViewModelProtocol> musicListDataContext;
+@property (nonatomic) <AWEDetailTrendTrackerService> trendTrackerService;
+@property (nonatomic) AWEDetailTrendViewModel trendViewModel;
+@property (nonatomic) DUXPopover collectPopover;
+@property (nonatomic) BOOL isMusicCollecting;
+@property (nonatomic) BOOL shouldShowCollectHintAfterCollectFinish;
+@property (nonatomic) BOOL enableShowToastAfterCollect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)collectMusicWithActionSender:;
+- (void)removeCollectMusicHint;
+- (id)initWitServiceProvider:;
+- (void)setMusicListDataContext:;
+- (void)setTrendTrackerService:;
+- (void)setTrendViewModel:;
+- (void)setEnableShowToastAfterCollect:;
+- (id)musicListDataContext;
+- (id)trendViewModel;
+- (BOOL)enableShowToastAfterCollect;
+- (void)setShouldShowCollectHintAfterCollectFinish:;
+- (void)setIsMusicCollecting:;
+- (BOOL)shouldShowCollectHintAfterCollectFinish;
+- (id)p_detailCollectionBottomNoticeText;
+- (id)trendTrackerService;
+- (void)setCollectPopover:;
+- (id)collectPopover;
+- (void)p_collectMusicWithMusicItemViewModel:updateUIBlock:;
+- (BOOL)isMusicCollecting;
+- (void).cxx_destruct;
+@end

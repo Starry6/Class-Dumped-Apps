@@ -1,0 +1,37 @@
+@interface AWEApplogIncreaseAbstractStrategy : NSObject
+@property (nonatomic) double lastExecuteTimeStamp;
+@property (nonatomic) NSString strategyName;
+@property (nonatomic) NSArray triggerApplogList;
+@property (nonatomic) double minTimeInterval;
+@property (nonatomic) NSArray forbidTimeArray;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) AWEAwemeModel curPlayModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)lastExecuteTimeStamp;
+- (id)forbidTimeArray;
+- (void)setLastExecuteTimeStamp:;
+- (void)onApplogEvent:params:;
+- (BOOL)shouldExecuteStrategy;
+- (BOOL)checkTimeInterval;
+- (BOOL)checkPeakTimeForbidden;
+- (void)updateExecuteTimeStamp;
+- (id)selectForbidTimeRangeWithConfig:;
+- (id)triggerApplogList;
+- (void)setTriggerApplogList:;
+- (void)setMinTimeInterval:;
+- (void)setForbidTimeArray:;
+- (id)curPlayModel;
+- (void)setCurPlayModel:;
+- (BOOL)enable;
+- (id)init;
+- (void)dealloc;
+- (void)execute;
+- (void).cxx_destruct;
+- (void)setEnable:;
+- (double)minTimeInterval;
+- (void)setStrategyName:;
+- (id)strategyName;
+@end

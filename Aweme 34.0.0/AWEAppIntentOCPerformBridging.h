@@ -1,0 +1,2 @@
+@interface AWEAppIntentOCPerformBridging : NSObject
+@end

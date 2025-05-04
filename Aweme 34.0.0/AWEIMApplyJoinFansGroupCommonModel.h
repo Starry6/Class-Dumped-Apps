@@ -1,0 +1,34 @@
+@interface AWEIMApplyJoinFansGroupCommonModel : NSObject
+@property (nonatomic) q sourceType;
+@property (nonatomic) q cid;
+@property (nonatomic) NSString ownerID;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSDictionary invitationExtra;
+@property (nonatomic) NSDictionary bizExtra;
+@property (nonatomic) BOOL showEntryLimitPanel;
+@property (nonatomic) BOOL immediatelyJoinMessageListVc;
+@property (nonatomic) BOOL needFloatMode;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (id)bizExtra;
+- (void)setBizExtra:;
+- (BOOL)needFloatMode;
+- (void)setNeedFloatMode:;
+- (id)invitationExtra;
+- (BOOL)showEntryLimitPanel;
+- (BOOL)immediatelyJoinMessageListVc;
+- (void)setInvitationExtra:;
+- (void)setShowEntryLimitPanel:;
+- (void)setImmediatelyJoinMessageListVc:;
+- (long long)cid;
+- (void)setSourceType:;
+- (long long)sourceType;
+- (id)init;
+- (void).cxx_destruct;
+- (id)ownerID;
+- (void)setOwnerID:;
+- (void)setCid:;
+@end

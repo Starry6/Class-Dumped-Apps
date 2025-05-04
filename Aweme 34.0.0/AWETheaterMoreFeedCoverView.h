@@ -1,0 +1,31 @@
+@interface AWETheaterMoreFeedCoverView : UIView
+@property (nonatomic) BDImageView coverImageView;
+@property (nonatomic) UIView tagBackgroundView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) AWEGradientView gradientView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UILabel updateInfoLabel;
+@property (nonatomic) @? finishImageRequestBlock;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (id)tagLabel;
+- (void)setTagLabel:;
+- (void)setTagBackgroundView:;
+- (id)tagBackgroundView;
+- (void)updateCoverImage:;
+- (void)updateCoverTag:;
+- (void)updateCoverInfoView:;
+- (id)updateInfoLabel;
+- (id)finishImageRequestBlock;
+- (void)configWithSectionItem:themeStyle:;
+- (void)setFinishImageRequestBlock:;
+- (void)setUpdateInfoLabel:;
+- (id)gradientView;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setGradientView:;
+- (void)reset;
+- (void)setupUI;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

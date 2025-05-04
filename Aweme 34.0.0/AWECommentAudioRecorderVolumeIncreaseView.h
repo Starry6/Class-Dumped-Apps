@@ -1,0 +1,38 @@
+@interface AWECommentAudioRecorderVolumeIncreaseView : AWECommentAudioRecorderBaseView
+@property (nonatomic) UILabel recordTimeLabel;
+@property (nonatomic) UIScrollView recordVolumeScrollView;
+@property (nonatomic) CAShapeLayer recordShapeLayer;
+@property (nonatomic) Q recordVolumeCount;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UILabel completionLabel;
+@property (nonatomic) AWECommentAudioRecorderVolumeIncreaseViewConfig config;
+- (void)startWorkWithPreState:currentState:;
+- (void)stopWorkWithPreState:currentState:;
+- (void)increaseVolumeAnimation:currentTime:;
+- (id)gradientLayerHighLightColors;
+- (id)gradientLayerDefaultColors;
+- (void)addVolumeIncreaseView;
+- (id)gradientLayerMaskColors;
+- (id)p_getTimeTextWithValue:;
+- (id)recordTimeLabel;
+- (void)p_drawAudioIncreaseAnimationViewWithHeight:;
+- (unsigned long long)recordVolumeCount;
+- (id)recordVolumeScrollView;
+- (void)setRecordVolumeCount:;
+- (void)__replacePathForViews:waveMaxSize:;
+- (id)recordShapeLayer;
+- (double)p_calculateMaxScrollViewContentWidth;
+- (void)setRecordTimeLabel:;
+- (void)setRecordVolumeScrollView:;
+- (void)setRecordShapeLayer:;
+- (void)setCompletionLabel:;
+- (void)setConfig:;
+- (id)config;
+- (double)minScale;
+- (void).cxx_destruct;
+- (id)completionLabel;
+- (id)gradientLayer;
+- (void)setGradientLayer:;
+- (void)updateWithViewModel:;
+- (void)notifyCompletion;
+@end

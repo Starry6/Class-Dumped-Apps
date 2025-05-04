@@ -1,0 +1,36 @@
+@interface AWEPOILynxTemplatePrefetcher : NSObject
+@property (nonatomic) NSMutableDictionary groupURLS;
+@property (nonatomic) NSMutableDictionary shouldCheckDownloadAtStart;
+- (void)preloadTemplateToMemoryForGroups:;
+- (void)preloadTemplateToMemoryForGroups:;
+- (void)prefetchTemplate;
+- (void)prefetchTemplate;
+- (id)startOptimizeMethodWithBizCode:page:name:strategies:;
+- (id)startOptimizeMethodWithBizCode:page:name:strategies:;
+- (id)verifyAndPreloadTemplatesToMemory:;
+- (id)verifyAndPreloadTemplatesToMemory:;
+- (void)preloadTemplatesToMemory:;
+- (void)preloadTemplatesToMemory:;
+- (id)verifyAndPrefetchChannels:;
+- (id)verifyAndPrefetchChannels:;
+- (void)prefetchChannels:;
+- (void)prefetchChannels:;
+- (id)groupURLS;
+- (void)setGroupURLS:;
+- (id)shouldCheckDownloadAtStart;
+- (void)setShouldCheckDownloadAtStart:;
+- (void)registTemplatePrefetchURLS:forGroup:;
+- (void)setEnableDownloadAtStart:forGroup:;
+- (void)trackChannelDownloadWithChannelName:result:;
+- (BOOL)shouldDoPrefetchForChannel:;
+- (void)executeLazyRegister;
+- (void)prefetchTemplateForGroup:;
+- (id)libraOrSettingsConfig;
+- (id)libraOrSettingsOptChannels;
+- (void)trackTemplatePreloadWithTemplateUrl:error:;
+- (id)init;
+- (void).cxx_destruct;
++ (BOOL)canOptimize;
++ (BOOL)canOptimize;
++ (id)shared;
+@end

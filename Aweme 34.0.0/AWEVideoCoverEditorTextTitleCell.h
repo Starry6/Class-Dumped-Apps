@@ -1,0 +1,34 @@
+@interface AWEVideoCoverEditorTextTitleCell : UIView
+@property (nonatomic) BOOL singleLine;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray titleModelArr;
+@property (nonatomic) AWECoverEditorTextReloadView reloadView;
+@property (nonatomic) <AWEVideoCoverEditorTextTitleCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReloadView:;
+- (void)setTitleModelArr:;
+- (id)initWithTitleArray:;
+- (void)clearSelectedTitle;
+- (void)reloadDataForReloadButton;
+- (id)titleModelArr;
+- (id)collectionView;
+- (id)delegate;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)collectionViewLayout;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)hitTest:withEvent:;
+- (void)setDelegate:;
+- (void)setupUI;
+- (id)sizeWithText:;
+- (void)setSingleLine:;
+- (BOOL)singleLine;
+- (id)reloadView;
+@end

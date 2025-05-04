@@ -1,0 +1,30 @@
+@interface AWEQuickShareTaskManager : NSObject
+@property (nonatomic) NSMutableArray taskArray;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) AWEPublishBaseTask currentTask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didEndWithResult:error:;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (void)landingWithTask:;
+- (void)notificationDidDismiss:;
+- (void)notificationDidTapInteractiveComponent:;
+- (id)taskArray;
+- (void)setTaskArray:;
+- (void)cancelTaskWithCreationID:;
+- (void)taskDidFail:withError:;
+- (void)showInAppDuxNotificationWithTask:;
+- (void)finishTaskCreationID:;
+- (void)trackWithPublishModel:;
+- (void)taskDidFinish:withResult:;
+- (id)addTaskWithShareToStoryModel:;
+- (id)init;
+- (void)dealloc;
+- (id)currentTask;
+- (void)setCurrentTask:;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

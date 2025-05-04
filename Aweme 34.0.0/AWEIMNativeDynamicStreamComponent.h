@@ -1,0 +1,32 @@
+@interface AWEIMNativeDynamicStreamComponent : AWEIMComponentBase
+@property (nonatomic) TTHttpTask task;
+@property (nonatomic) q retryCount;
+@property (nonatomic) AWEIMNativeDynamicCardMessage message;
+@property (nonatomic) NSString lastDataStr;
+@property (nonatomic) NSMutableDictionary messageIDRetryCountDict;
+@property (nonatomic) BOOL hasRequestSuccess;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hostVC_willDealloc;
+- (void)componentDidMounted:;
+- (void)requestWithMessage:callback:;
+- (void)interruptWithConversationID:responseID:streamID:type:;
+- (void)setMessageIDRetryCountDict:;
+- (void)handleRequestTimeout;
+- (void)setHasRequestSuccess:;
+- (id)messageIDRetryCountDict;
+- (void)setLastDataStr:;
+- (id)parseDataToModel:;
+- (id)lastDataStr;
+- (BOOL)hasRequestSuccess;
+- (void)setTask:;
+- (id)message;
+- (void)setRetryCount:;
+- (id)task;
+- (long long)retryCount;
+- (void).cxx_destruct;
+- (void)setMessage:;
++ (BOOL)canCreateComponentWithContext:;
+@end

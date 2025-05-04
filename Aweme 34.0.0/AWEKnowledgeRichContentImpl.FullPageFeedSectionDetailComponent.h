@@ -1,0 +1,26 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedSectionDetailComponent : AWEKnowledgeRichContentImpl.FullPageFeedBaseComponent
+- (void)sectionControllerWillEnterWorkingRange:;
+- (void)sectionControllerWillDisplay:;
+- (void)sectionControllerDidEndDisplaying:;
+- (void)sectionControllerDidExitWorkingRange:;
+- (void)onScrollViewWillBeginDraggingWithScrollView:;
+- (void)onScrollViewDidScrollWithScrollView:;
+- (void)onContainerViewDidAppear;
+- (void)onScrollViewWillEndDraggingWithScrollView:withVelocity:targetContentOffset:;
+- (void)onScrollViewDidEndScrollingAnimationWithScrollView:;
+- (void)onContainerViewWillDisappear;
+- (void)executePageModeChangeAnimation:;
+- (void)onPageModeWillChange:;
+- (void)onPageModeDidChage:;
+- (void)listVCViewDidLoad:;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:atListVC:;
+- (void)setupCollectionView:forBusinessType:atListVC:;
+- (void)listDidReloadDataWithCollectionView:atListVC:;
+- (void)listWillPerformBatchUpdatesWithCollectionView:atListVC:;
+- (void)listDidPerformBatchUpdatesWithCollectionView:atListVC:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
+@end

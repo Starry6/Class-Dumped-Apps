@@ -1,0 +1,30 @@
+@interface AWEFeedPollStickerDisplayHandler : AWEFeedBasicStickerDisplayHandler
+@property (nonatomic) BOOL voting;
+@property (nonatomic) UIView<ACCStickerContentProtocol><ACCPollStickerViewProtocol> contentView;
+@property (nonatomic) UIViewController<AWEVoteStickerDetailViewControllerProtocol> voteStickerDetailVC;
+- (void)handleEventWithParams:;
+- (void)updateStickerState;
+- (void)removeSticker:;
+- (BOOL)voting;
+- (void)setVoting:;
+- (id)getTrackParams;
+- (BOOL)displayByNative;
+- (BOOL)canHandleTapAtPoint:;
+- (void)displaySticker:;
+- (BOOL)isShowStickerViewController;
+- (void)seeVoteResult;
+- (void)trackPollStickerMasterClick;
+- (void)clickPollSticker:;
+- (id)voteStickerDetailVC;
+- (void)setVoteStickerDetailVC:;
+- (id)findBelongInteractionViewControllerForView:;
+- (id)contentView;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)reset;
+- (BOOL)blockAction;
+- (void)viewWillDisappear;
+- (void)handleTapAtPoint:;
++ (BOOL)canDisplaySticker:;
+@end

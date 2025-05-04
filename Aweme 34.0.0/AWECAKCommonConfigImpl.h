@@ -1,0 +1,32 @@
+@interface AWECAKCommonConfigImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)searchConfig;
+- (BOOL)isEnableMaterialFollowUpAlbumAbilityUnifiedStatus;
+- (BOOL)albumUseNewDataLayer;
+- (BOOL)optimzieNextiCloud;
+- (BOOL)showMediaTypeImageView;
+- (BOOL)useBpeaApi;
+- (BOOL)enablePreloadDebug;
+- (BOOL)disablePhotoLibraryChangeObserverForIOS17;
+- (BOOL)selectCoverImageOpt;
+- (double)recommendLoop;
+- (BOOL)isAlbumLocationPermissionGranted;
+- (BOOL)enableUIUnify;
+- (BOOL)slidesAddAssetsFix;
+- (BOOL)albumLivePhotoSupportSwitch;
+- (BOOL)albumPhotoTabLivePhotoImportAsImage;
+- (BOOL)albumLivePhotoPreviewPlayFull;
+- (BOOL)albumShowSmallLivePhotoTagOnIpad;
+- (BOOL)enableGoSettingsStripOptimize;
+- (BOOL)enableEnterAlbumWithoutAuth;
+- (BOOL)enableAlbumPerfOpt;
+- (BOOL)enableAlbumRACOpt;
+- (BOOL)enablePhotoPickerIOS18BugFix;
+- (BOOL)enableReorderableForCollectionViewFlowLayoutOptimize;
+- (BOOL)enableAlbumReloadVisibleCellCrashFix;
+- (id)init;
+- (BOOL)shouldShowSearchBar;
+@end

@@ -1,0 +1,33 @@
+@interface AWEFansPushUserModel : AWEBaseApiModel
+@property (nonatomic) AWEUserModel user;
+@property (nonatomic) NSNumber urgeTime;
+@property (nonatomic) q userType;
+@property (nonatomic) NSString labelText;
+@property (nonatomic) NSArray giftList;
+@property (nonatomic) NSString urgeResultText;
+@property (nonatomic) NSString sendGiftResultText;
+@property (nonatomic) q urgeResultType;
+@property (nonatomic) NSArray extraUrgeType;
+- (long long)urgeResultType;
+- (id)urgeTime;
+- (void)setUrgeTime:;
+- (id)giftList;
+- (void)setGiftList:;
+- (id)urgeResultText;
+- (void)setUrgeResultText:;
+- (id)sendGiftResultText;
+- (void)setSendGiftResultText:;
+- (void)setUrgeResultType:;
+- (id)extraUrgeType;
+- (void)setExtraUrgeType:;
+- (id)user;
+- (void)setUser:;
+- (id)labelText;
+- (long long)userType;
+- (void)setLabelText:;
+- (void).cxx_destruct;
+- (void)setUserType:;
++ (id)userJSONTransformer;
++ (id)giftListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

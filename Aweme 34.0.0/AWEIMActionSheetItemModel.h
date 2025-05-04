@@ -1,0 +1,30 @@
+@interface AWEIMActionSheetItemModel : NSObject
+@property (nonatomic) BOOL isDisable;
+@property (nonatomic) NSString title;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) BOOL duxIcon;
+@property (nonatomic) NSString duxName;
+@property (nonatomic) UIColor duxColor;
+@property (nonatomic) BOOL iconNameThemeRevearse;
+@property (nonatomic) @? tapBlock;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (BOOL)isDisable;
+- (void)setIsDisable:;
+- (void)setDuxName:;
+- (void)setDuxColor:;
+- (void)setDuxIcon:;
+- (void)setIconNameThemeRevearse:;
+- (id)duxName;
+- (id)duxColor;
+- (BOOL)duxIcon;
+- (BOOL)iconNameThemeRevearse;
+- (id)titleColor;
+- (void)setTitleColor:;
+- (id)iconName;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setIconName:;
+- (void)setTitle:;
+@end

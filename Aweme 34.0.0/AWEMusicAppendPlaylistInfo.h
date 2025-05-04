@@ -1,0 +1,37 @@
+@interface AWEMusicAppendPlaylistInfo : AWEBaseApiModel
+@property (nonatomic) NSString playlistID;
+@property (nonatomic) NSString appendBeforeText;
+@property (nonatomic) NSString appendAfterText;
+@property (nonatomic) q playlistTrackCount;
+@property (nonatomic) NSString playlistTitleBefore;
+@property (nonatomic) NSString playlistTitleAfter;
+@property (nonatomic) NSString playlistFallbackTitleBefore;
+@property (nonatomic) NSString playlistFallbackTitleAfter;
+@property (nonatomic) NSString playlistSubtitle;
+@property (nonatomic) q collectStatus;
+@property (nonatomic) Q middlePageStyle;
+- (void)setPlaylistID:;
+- (long long)collectStatus;
+- (void)setCollectStatus:;
+- (id)appendBeforeText;
+- (id)appendAfterText;
+- (unsigned long long)middlePageStyle;
+- (long long)playlistTrackCount;
+- (id)playlistTitleBefore;
+- (id)playlistTitleAfter;
+- (id)playlistFallbackTitleBefore;
+- (id)playlistFallbackTitleAfter;
+- (id)playlistSubtitle;
+- (void)setAppendBeforeText:;
+- (void)setAppendAfterText:;
+- (void)setPlaylistTrackCount:;
+- (void)setPlaylistTitleBefore:;
+- (void)setPlaylistTitleAfter:;
+- (void)setPlaylistFallbackTitleBefore:;
+- (void)setPlaylistFallbackTitleAfter:;
+- (void)setPlaylistSubtitle:;
+- (void)setMiddlePageStyle:;
+- (void).cxx_destruct;
+- (id)playlistID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

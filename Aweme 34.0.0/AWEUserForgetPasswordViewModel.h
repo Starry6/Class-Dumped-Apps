@@ -1,0 +1,38 @@
+@interface AWEUserForgetPasswordViewModel : AWEUserContainerBaseViewModel
+@property (nonatomic) AWEUserComponentSubtitleModel customSubtitleModel;
+@property (nonatomic) AWEUserSendCodeModel codeModel;
+@property (nonatomic) AWEUserLoginInputModel inputVerificationModel;
+@property (nonatomic) NSString inputVerification;
+@property (nonatomic) NSError loginError;
+@property (nonatomic) q verificationStatus;
+- (id)codeModel;
+- (void)setCodeModel:;
+- (void)handleButtonClick;
+- (id)buttonNotAvailableToastText;
+- (id)componentTypeList;
+- (void)bindingComponentInfo;
+- (void)viewModelBindingUI;
+- (id)trackEventStringWithEventType:;
+- (id)trackEventParamsWithEventType:;
+- (id)subtitleModel;
+- (id)initWithSendCodeModel:;
+- (BOOL)isCodeModelCorrect:;
+- (void)_bindingComponentInfo;
+- (void)handleVerificationChanged;
+- (void)handleResendButtonClick;
+- (id)inputVerification;
+- (void)setLoginError:;
+- (BOOL)isInputVerificationCorrect;
+- (id)additionalTrackParamsForSendCode;
+- (id)inputVerificationModel;
+- (id)loginError;
+- (id)customSubtitleModel;
+- (void)setCustomSubtitleModel:;
+- (void)setInputVerificationModel:;
+- (void)setInputVerification:;
+- (id)titleText;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (void)setVerificationStatus:;
+- (long long)verificationStatus;
+@end

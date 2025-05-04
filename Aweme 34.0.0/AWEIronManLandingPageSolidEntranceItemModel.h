@@ -1,0 +1,33 @@
+@interface AWEIronManLandingPageSolidEntranceItemModel : AWEIronManLandingPageBaseRouterModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) NSString linkUrl;
+@property (nonatomic) NSString showText;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString moduleType;
+@property (nonatomic) q entranceType;
+@property (nonatomic) BOOL trackFlag;
+- (void)setExtra:;
+- (void)processData;
+- (void)setShowText:;
+- (long long)entranceType;
+- (void)setEntranceType:;
+- (BOOL)trackFlag;
+- (void)setTrackFlag:;
+- (long long)unreadCount;
+- (id)location;
+- (void)setUnreadCount:;
+- (id)extra;
+- (void).cxx_destruct;
+- (id)title;
+- (id)moduleType;
+- (void)setTitle:;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (void)setModuleType:;
+- (id)showText;
+- (id)linkUrl;
+- (void)setLinkUrl:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

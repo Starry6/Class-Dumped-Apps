@@ -1,0 +1,36 @@
+@interface AWEDownloadShareChannel : AWEShareBaseChannel
+@property (nonatomic) UIViewController<AWEImageAlbumImagePickerViewControllerProtocol> imagePickerVC;
+@property (nonatomic) AWEMediaDownloadOptions downloadOptions;
+@property (nonatomic) AWEMediaDownloadResultItem downloadResult;
+- (void)startDownloadingWithCompletion:;
+- (void)downloadSingleImageAlbumWithCompletion:;
+- (void)finishWithDownloadResult:completion:;
+- (void)p_doDownloadImageAlbumWithSelectedIndices:completion:;
+- (void)p_downloadFileCheckWithAweme:completion:;
+- (void)p_runSaveImageAlbumAsVideoWithCompletion:;
+- (void)p_saveImageAlbumAsVideoWithCompletion:;
+- (void)presentShareSavePanelWithCompletion:;
+- (void)saveImageAlbumAsVideoWithCompletion:;
+- (void)setDownloadResult:;
+- (void)setImagePickerVC:;
+- (void)showImageAlbumDownloadSouceChooseWithCompletion:;
+- (void)showImageAlbumPickerWithCompletion:;
+- (void)succeedWithDownloadResult:;
+- (void)trackDownloadEventWithAppend:;
+- (void)shareWithCompletion:;
+- (id)shareImage;
+- (BOOL)prepareToShare;
+- (void)trackDownloadEvent;
+- (id)prepareDownloadOptions;
+- (id)aAWEShareServiceDOUYINHTSAdapter;
+- (id)imagePickerVC;
+- (void)showDownloadSuccessToast;
+- (void)showDownloadFailedToast;
+- (id)collectTransmissionAndAspectParams;
+- (id)downloadResult;
+- (id)downloadOptions;
+- (void).cxx_destruct;
+- (void)setDownloadOptions:;
+- (id)shareType;
++ (Class)aAWEShareServiceDOUYINHTSAdapterClass;
+@end

@@ -1,0 +1,33 @@
+@interface AWESearchVisionSettingsManager : NSObject
++ (BOOL)showNewLargeFontStyle;
++ (BOOL)visionSupportCardThemeGlobalProps;
++ (id)searchScanCameraPopEntranceConfig;
++ (BOOL)fixSearchSampleGuideBugfix;
++ (id)visualSearchTextStrategyConfigPool;
++ (BOOL)searchScanFromGeneralUseTargetChannel;
++ (BOOL)searchVisionCancelBoxLimitSettings;
++ (BOOL)enableAdapterMultiQueryAndMulitTab;
++ (BOOL)fixSearchVisionScanModeDetectionEnable;
++ (BOOL)fixSearchVisionEnableReplaceBlurredImage;
++ (BOOL)searchVisionImageText3HideShadowView;
++ (BOOL)fixVisionTopViewBoxImageWrongEnable;
++ (BOOL)fixSearchVisionFixQuestionSearchBoxBothShowEnable;
++ (BOOL)searchVisionImageGuideTrackVisualPicTimeDiffEnable;
++ (BOOL)enableScanResultForceInvalidateLayoutChange;
++ (BOOL)searchVisionVerticalMergeAllPropertyKeysOptEnable;
++ (BOOL)enableScanResultTuringVerify;
++ (BOOL)fixVisionFixRequestReturn;
++ (BOOL)searchVisionForceReturnWhenPanRightSide;
++ (BOOL)searchVisionDisableSwitchQuestionWhenPanLeftSide;
++ (BOOL)fixVisionResultPageSwitchTabDoubleBoxEnable;
++ (BOOL)fixSearchScanPageFixExitCamera;
++ (BOOL)visionSupportSearchPageExitTrack;
++ (BOOL)useTransitionNotUpdatePlayer;
++ (id)searchVisualPuctureDetailSchema;
++ (BOOL)searchVisionVideoTagMonitorSettings;
++ (BOOL)searchVisionVideoTagActionSettings;
++ (BOOL)visionSupportScreenWidthGlobalProps;
++ (BOOL)visionEnableDrawFromCacheOptimize;
++ (id)separateRenderBlockListForVision;
++ (id)lynxRecycledBlacklistForVision;
+@end

@@ -1,0 +1,33 @@
+@interface AWEMusicDetailInspirationSectionController : AWEBaseListSectionController
+@property (nonatomic) BOOL ifFirstCellLoadHasTracked;
+@property (nonatomic) BOOL ifFirstCoverLoadHasTracked;
+@property (nonatomic) NSMutableSet markCardShowSet;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)didBindSectionViewModel;
+- (void)didSelectItemAtIndex:model:;
+- (void)configSupplementaryHeaderView:;
+- (void)trackFirstCellLoadIfNeeded;
+- (void)trackFirstCoverLoadIfNeeded;
+- (BOOL)ifFirstCellLoadHasTracked;
+- (void)setIfFirstCellLoadHasTracked:;
+- (BOOL)ifFirstCoverLoadHasTracked;
+- (void)setIfFirstCoverLoadHasTracked:;
+- (void)handleCellClickEvent:index:clickType:;
+- (id)markCardShowSet;
+- (BOOL)shouldShowHeaderView;
+- (void)setMarkCardShowSet:;
+- (id)separatorColor;
+- (id)init;
+- (id)sectionBackgroundColor;
+- (void).cxx_destruct;
+- (double)separatorHeight;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
+- (Class)headerViewClass;
++ (id)firstPageCutSameButtonClickedTrackParamsWithInspirationModel:;
+@end

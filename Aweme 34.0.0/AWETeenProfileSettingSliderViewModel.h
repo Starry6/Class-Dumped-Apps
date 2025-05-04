@@ -1,0 +1,37 @@
+@interface AWETeenProfileSettingSliderViewModel : AWETeenSettingBaseViewModel
+@property (nonatomic) AWEUILoadingView loadingView;
+@property (nonatomic) BOOL shouldShowLoadingView;
+@property (nonatomic) <AWETeenProfileSettingSliderViewModelDelegate> sliderDelegate;
+@property (nonatomic) BOOL isServiceExpand;
+@property (nonatomic) BOOL isPublicWalfareExpand;
+@property (nonatomic) NSString shopAssistantUrl;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (void)dismissAnimation;
+- (id)sliderDelegate;
+- (void)setSliderDelegate:;
+- (id)constructSectionDataArray;
+- (id)aAWETeenModeSettingsViewModelCommonAdapter;
+- (id)aAWETeenProfileSettingSliderViewModelDOUYINHMAdapter;
+- (void)tapTeenagerProtectionCell;
+- (void)tapSettingCell;
+- (void)tapEyeProtectionCell;
+- (void)tapHelpDeskCell;
+- (void)tapWalletCell;
+- (void)tapBalanceWithdrawCell;
+- (void)tapContentPreferCell;
+- (BOOL)isServiceExpand;
+- (void)setIsServiceExpand:;
+- (BOOL)isPublicWalfareExpand;
+- (void)setIsPublicWalfareExpand:;
+- (id)shopAssistantUrl;
+- (void)setShopAssistantUrl:;
+- (void)setLoadingView:;
+- (id)loadingView;
+- (void)viewWillAppear;
+- (void).cxx_destruct;
+- (void)setShouldShowLoadingView:;
+- (BOOL)shouldShowLoadingView;
++ (Class)aAWETeenModeSettingsViewModelCommonAdapterClass;
++ (Class)aAWETeenProfileSettingSliderViewModelDOUYINHMAdapterClass;
+@end

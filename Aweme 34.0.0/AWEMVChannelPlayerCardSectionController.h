@@ -1,0 +1,30 @@
+@interface AWEMVChannelPlayerCardSectionController : AWEBaseListSectionController
+@property (nonatomic) AWEMVChannelPageContext context;
+@property (nonatomic) AWEMVChannelViewModel containerViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (Class)cellClassForModel:index:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (void)sectionDidEndDisplayingCell:index:;
+- (void)didBindSectionViewModel;
+- (id)containerViewModel;
+- (id)cellForItemAtIndex:;
+- (id)aAWEPadModuleAdapter;
+- (long long)waterfallColumnCount;
+- (void)didSelectItemAtIndex:model:;
+- (void)handleCellEvent:model:userInfo:;
+- (void)revokeFeedbackWithModel:feedbackInfo:cell:;
+- (void)setContainerViewModel:;
+- (id)init;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (id)context;
+- (id)inset;
+- (double)minimumInteritemSpacing;
+- (double)minimumLineSpacing;
++ (Class)aAWEPadModuleAdapterClass;
+@end

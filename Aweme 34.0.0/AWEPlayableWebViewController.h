@@ -1,0 +1,36 @@
+@interface AWEPlayableWebViewController : AWEAdWebViewController
+@property (nonatomic) q playableResponseCode;
+@property (nonatomic) BOOL disableVisibleChange;
+@property (nonatomic) BUPlayableAd playableSDK;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)playableAd:loadRequest:;
+- (void)playableAd:registerHandlerBlock:forJSMethod:;
+- (void)playableAd:fireEvent:params:;
+- (void)playableAd:executeJavaScript:completion:;
+- (void)playableEventReportNotification:;
+- (void)pauseAudioAndVideoPlay;
+- (id)playableSDK;
+- (void)setPlayableSDK:;
+- (void)setDisableVisibleChange:;
+- (void)setupPlayableEventNotification;
+- (void)removePlayableEventNotification;
+- (long long)playableResponseCode;
+- (void)setPlayableResponseCode:;
+- (id)webviewSettings;
+- (id)webviewLabel;
+- (void)setWebviewLabel:;
+- (BOOL)disableVisibleChange;
+- (void)viewWillDisappear:;
+- (void)dealloc;
+- (void)viewDidLayoutSubviews;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)webView:didFailLoadWithError:;
+- (void)webViewDidFinishLoad:;
+- (void)webViewDidStartLoad:;
+- (void)setupWebView;
+- (void)handleURLResponse:;
+@end

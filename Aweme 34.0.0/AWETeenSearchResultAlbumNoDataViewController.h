@@ -1,0 +1,33 @@
+@interface AWETeenSearchResultAlbumNoDataViewController : UIViewController
+@property (nonatomic) NSMutableArray dataSource;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSString keyword;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)getLabelHeightWithFixedWidth:andFixedFont:andContent:;
+- (id)albumAtIndex:;
+- (void)setPlaceholderData:;
+- (id)collectionView:layout:referenceSizeForHeaderInSection:;
+- (id)collectionView;
+- (id)init;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)viewDidLoad;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setDataSource:;
+- (id)dataSource;
+- (void)setupUI;
+- (id)keyword;
+- (void)setKeyword:;
+- (id)searchID;
+- (void)setSearchID:;
+@end

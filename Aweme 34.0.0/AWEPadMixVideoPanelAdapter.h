@@ -1,0 +1,31 @@
+@interface AWEPadMixVideoPanelAdapter : NSObject
+@property (nonatomic) MASConstraint containerRightOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aAWEPadSplitScreenAdapter;
+- (BOOL)isCurrentLandscape;
+- (void)performViewDidLoad;
+- (BOOL)isMixVideoSplitStyle;
+- (void)performViewDidLayout;
+- (void)performViewNeedLayout;
+- (BOOL)panGestureShouldBegin:;
+- (BOOL)ifPadPanelNeedAdapt;
+- (long long)scrollToLocatedCellPosition;
+- (BOOL)updateMixVideoCurrentEpisode;
+- (BOOL)notClosePanelWhenShareClicked;
+- (BOOL)closeSplitPanelWhenDidSelectedWithIsSameEpisode:;
+- (BOOL)ifNeedAdapt;
+- (void)defaultStyleNeedLayout;
+- (void)multiScreenStyleLayout;
+- (void)setContainerRightOffset:;
+- (id)containerRightOffset;
+- (void).cxx_destruct;
+- (void)handlePanGesture:;
+- (id)weakTarget;
++ (Class)weakTargetClass;
++ (Class)aAWEPadSplitScreenAdapterClass;
++ (double)getMixPanelHeight;
++ (BOOL)Enable;
+@end

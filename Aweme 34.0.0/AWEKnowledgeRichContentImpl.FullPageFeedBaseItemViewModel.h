@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.FullPageFeedBaseItemViewModel : AWEKnowledgeSwiftBasic.FullPageBaseItemViewModel
+@end

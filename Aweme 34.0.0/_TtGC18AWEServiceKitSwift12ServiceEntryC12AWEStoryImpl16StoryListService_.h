@@ -1,0 +1,2 @@
+@interface _TtGC18AWEServiceKitSwift12ServiceEntryC12AWEStoryImpl16StoryListService_ : AWEServiceKitSwift.AnyServiceEntry
+@end

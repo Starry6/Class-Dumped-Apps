@@ -1,0 +1,33 @@
+@interface AWELivePreviewStreamCardView : UIView
+@property (nonatomic) <AWELiveStreamPlayer> playerControllerForPreview;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) <AWELivePreviewStreamViewDelegate> delegate;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)currentRoomID;
+- (id)coverImageView;
+- (void)setCoverImageView:;
+- (void)stopPlay;
+- (void)startPlay;
+- (void)player:loadStateDidChange:;
+- (void)player:mediaSizeDidChange:;
+- (void)updateWithAwemeModel:withImmediatePlay:;
+- (void)removeFromAttachedView;
+- (void)setupPlayerDelegate:;
+- (id)initWithTrackConfig:;
+- (void)playerReloadStreamWithAwemeModel:;
+- (void)initializePlayer:;
+- (void)setPlayerControllerForPreview:;
+- (id)playerControllerForPreview;
+- (void)setupCoverBlurImageView;
+- (void)setupAttachedView:;
+- (id)delegate;
+- (void)setMute:;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+@end

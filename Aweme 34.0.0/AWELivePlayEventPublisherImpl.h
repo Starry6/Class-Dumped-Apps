@@ -1,0 +1,36 @@
+@interface AWELivePlayEventPublisherImpl : NSObject
+@property (nonatomic) AWELiveRoomMessageContext roomEndContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dislikeWithRoom:;
+- (void)liveWillAppear;
+- (void)liveDidAppear;
+- (void)liveWillDisappear;
+- (void)liveDidDisappear;
+- (void)onPreViewUserFeedbackCardShowInLive:;
+- (void)insertFeedbackDataInPreview:;
+- (void)setRoomEndContext:;
+- (id)snapshotLinkmicView;
+- (id)roomEndContext;
+- (id)snapshotPKView;
+- (id)snapshotMultiLinkerView;
+- (void)p_trackLeaveLiveRoomWithtrackInfo:;
+- (id)findAudioViewFrames:;
+- (id)findKTVStage:;
+- (void)findGuestView:addTo:rootView:;
+- (void)liveWillOpen;
+- (void)liveDidCloseWithPreferOptions:;
+- (void)liveDidCloseByCloseButton;
+- (void)liveWillEnter;
+- (void)liveDidLeave;
+- (void)liveSmoothEnterRoomEnd;
+- (void)liveDidKickdOutForRoom:anchorID:;
+- (void)liveDidRegionForbiddenForRoom:anchorID:;
+- (void)audienceRtcChannelStateChange:;
+- (void)liveWillLeaveWithViceView:;
+- (void)checkLiveRoomBackOptimizeEnable:;
+- (void)liveDidCloseWithPreReusePlayer;
+- (void).cxx_destruct;
+@end

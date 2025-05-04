@@ -1,0 +1,31 @@
+@interface AWECustomStickerCropEditModel : MTLModel
+@property (nonatomic) BOOL isFlipped;
+@property (nonatomic) double rotatingAngle;
+@property (nonatomic) double realAngle;
+@property (nonatomic) double zoomScale;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} cropViewFrame;
+@property (nonatomic) {CGAffineTransform=dddddd} imageTransform;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} imageViewFrame;
+@property (nonatomic) q editType;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEditType:;
+- (double)rotatingAngle;
+- (void)setRotatingAngle:;
+- (double)realAngle;
+- (void)setRealAngle:;
+- (id)cropViewFrame;
+- (void)setCropViewFrame:;
+- (void)setZoomScale:;
+- (double)zoomScale;
+- (void)setImageTransform:;
+- (id)imageTransform;
+- (BOOL)isFlipped;
+- (long long)editType;
+- (void)setIsFlipped:;
+- (id)imageViewFrame;
+- (void)setImageViewFrame:;
+@end

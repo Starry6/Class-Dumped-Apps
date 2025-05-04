@@ -1,0 +1,34 @@
+@interface AWEDiscoverDPlayletFastEnterManager : NSObject
+@property (nonatomic) NSMutableDictionary cachePool;
+@property (nonatomic) NSMutableDictionary seriesAwemeApiCachePool;
+- (id)cachePool;
+- (void)setCachePool:;
+- (void)setSeriesAwemeApiCachePool:;
+- (id)seriesAwemeApiCachePool;
+- (void).cxx_destruct;
++ (BOOL)filterPaidAwemeModel:;
++ (id)reasonPaidUnlockVideoForPlaylet:;
++ (id)reasonPaidVideoForPlaylet:;
++ (id)p_filterPaidAwemeModel:;
++ (BOOL)needNotUsePlayingAwemeModelToFastEnterCacheWithModel:;
++ (BOOL)p_isRegisterRefer:;
++ (id)p_getLocalCacheModelWithKey:enterFrom:;
++ (id)p_getSeriesAwemeServerCacheWithKey:;
++ (BOOL)needUseRequestAwemeModelToFastEnterCacheWithModel:;
++ (id)p_enterFromWithParams:;
++ (id)hitCommonParamsWithModel:;
++ (void)p_setCacheTrackerWithModel:withFailReason:;
++ (void)p_lazyCreatePoolWithModel:;
++ (id)p_getCacheIdWithParams:;
++ (id)p_getCacheModelWithKey:enterFrom:;
++ (id)getLastPlayerWithItemId:enterFrom:;
++ (id)getFastEnterModelWithParams:;
++ (BOOL)isLimitSceneUseCacheModel:params:;
++ (void)p_hitCacheTrackerWithModel:;
++ (void)p_hitCacheSuccessTrackerWithModel:;
++ (void)p_hitCacheFailTrackerWithModel:;
++ (id)getCacheModelWithParams:;
++ (BOOL)shouldUseFastEnter:;
++ (void)setCacheModel:;
++ (id)shareInstance;
+@end

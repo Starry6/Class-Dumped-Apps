@@ -1,0 +1,38 @@
+@interface AWEPOIRateLynxImage : LynxUIImage
+@property (nonatomic) NSString rateID;
+@property (nonatomic) q selectIndex;
+@property (nonatomic) BOOL hasDoMagnifyTransition;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) NSArray materials;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)zoomTransitionStartViewForOffset:;
+- (BOOL)zoomTransitionWantsFromVCScale;
+- (id)focusViewPlaceholderFrame;
+- (void)zoomTransitionMagnifyFinish;
+- (void)userDidPerformOperationOnPhotosPreviewViewController:;
+- (void)photosPreviewViewController:didDisappearWithStayTime:;
+- (id)trackParams;
+- (void)setTrackParams:;
+- (long long)selectIndex;
+- (void)setSelectIndex:;
+- (id)trackingParams;
+- (void)photosPreviewViewController:didExposedPhoto:isFirst:;
+- (id)rateID;
+- (void)setRateID:;
+- (void)enterPhotoPreviewWithParams:callback:;
+- (void)handleMultiCommentsDataWithParams:;
+- (void)setHasDoMagnifyTransition:;
+- (void)publishPhotosPreviewOperationEventWithType:currentPhoto:;
+- (void)trackPreviewVCShow:didExposedPhoto:;
+- (BOOL)hasDoMagnifyTransition;
+- (void)open:withResult:;
+- (id)materials;
+- (void).cxx_destruct;
+- (void)setMaterials:;
+- (void)transitionToViewController:;
++ (void)lynxLazyLoad;
++ (id)__lynx_ui_method_config__431;
+@end

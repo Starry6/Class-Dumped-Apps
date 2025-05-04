@@ -1,0 +1,32 @@
+@interface AWEAwemeViewedManager : NSObject
+@property (nonatomic) NSMutableArray viewerListArray;
+@property (nonatomic) NSMutableArray viewerListArrayV2;
+@property (nonatomic) YYDiskCache diskCache;
+@property (nonatomic) BOOL afterSettingsChange;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataControllerWithAwemeID:;
+- (void)removeAllData;
+- (BOOL)afterSettingsChange;
+- (void)setAfterSettingsChange:;
+- (void)setDiskCache:;
+- (id)dataControllerWithAwemeIDV2:;
+- (void)updateViewerListArrayV2:;
+- (void)updateViewerListArray:;
+- (void)updateAfterSettingsChange;
+- (void)setViewerListArray:;
+- (void)setViewerListArrayV2:;
+- (id)viewerListArray;
+- (id)viewerListArrayV2;
+- (void)setViewerCacheModel:withAwemeID:;
+- (id)getViewerCacheModelWithAwemeID:;
+- (void)setViewerCacheModel:withAwemeID:enableMemoryCache:;
+- (unsigned long long)totalCostSize;
+- (id)getViewerCacheModelWithAwemeID:enableMemoryCache:;
+- (id)diskCache;
+- (void).cxx_destruct;
++ (id)viewedCache;
++ (id)shareInstance;
+@end

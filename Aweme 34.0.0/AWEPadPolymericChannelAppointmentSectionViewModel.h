@@ -1,0 +1,34 @@
+@interface AWEPadPolymericChannelAppointmentSectionViewModel : AWEPadPolymericChannelSlidableSectionViewModel
+@property (nonatomic) BOOL isSpringLiveBookingRequestOnAir;
+@property (nonatomic) BOOL isLimitedFreeRequestOnAir;
+@property (nonatomic) <AWEPLVSectionModelProtocol> sectionModel;
+@property (nonatomic) q sectionIndex;
+@property (nonatomic) BOOL canShow;
+@property (nonatomic) BOOL enableNewArch;
+@property (nonatomic) q maxLines;
+@property (nonatomic) NSString sectionName;
+@property (nonatomic) NSString pageKey;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSDictionary logPB;
+@property (nonatomic) AWEPLVPageContext pageContext;
+@property (nonatomic) @ sectionConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (void)replaceByModels:;
+- (void)trackEvent:withExtraParams:;
+- (void)triggerCollectionViewScrollToTop;
+- (void)updateSectionTimeLine;
+- (void)bookWithCardList;
+- (void)setIsSpringLiveBookingRequestOnAir:;
+- (void)setIsLimitedFreeRequestOnAir:;
+- (void)updateSubscribeStatus;
+- (void)trackPadAppointmentStatusWithEvent:ExtraParams:;
+- (void)filterSectionDataWithFilterMap:;
+- (void)bookLivingIfLogin;
+- (void)trackPadEpisodeOrderAllClick;
+- (BOOL)isSpringLiveBookingRequestOnAir;
+- (BOOL)isLimitedFreeRequestOnAir;
+@end

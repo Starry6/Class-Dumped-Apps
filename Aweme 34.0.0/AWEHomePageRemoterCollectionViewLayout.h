@@ -1,0 +1,2 @@
+@interface AWEHomePageRemoterCollectionViewLayout : UICollectionViewFlowLayout
+@end

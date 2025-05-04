@@ -1,0 +1,31 @@
+@interface AWEVoiceSearchContext : NSObject
+@property (nonatomic) q pageType;
+@property (nonatomic) q positionType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString groudID;
+@property (nonatomic) NSDictionary historyConfig;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) NSString queryID;
+@property (nonatomic) NSString query;
+@property (nonatomic) q enterType;
+- (void)setEnterFrom:;
+- (id)enterFrom;
+- (void)setPositionType:;
+- (id)historyConfig;
+- (void)setGroudID:;
+- (void)setHistoryConfig:;
+- (id)groudID;
+- (id)init;
+- (void)setQuery:;
+- (id)query;
+- (void)setQueryID:;
+- (void)setPageType:;
+- (id)queryID;
+- (void).cxx_destruct;
+- (long long)pageType;
+- (id)searchID;
+- (void)setSearchID:;
+- (long long)positionType;
+- (long long)enterType;
+- (void)setEnterType:;
+@end

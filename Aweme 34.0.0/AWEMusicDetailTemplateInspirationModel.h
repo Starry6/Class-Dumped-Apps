@@ -1,0 +1,37 @@
+@interface AWEMusicDetailTemplateInspirationModel : AWEMusicDetailInspirationModel
+@property (nonatomic) AWEMusicDetailProfileTemplateModel lvTemplate;
+@property (nonatomic) AWEMergedMVTemplateModel awemeTemplate;
+@property (nonatomic) AWEMusicDetailInspirationTemplateBodyModel templateBodyModel;
+@property (nonatomic) AWEAweMVTemplateModel detailModel;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) BOOL collectionTab;
+@property (nonatomic) BOOL coverType;
+@property (nonatomic) q videoMinLimit;
+@property (nonatomic) NSNumber templateStatusCode;
+- (BOOL)coverType;
+- (unsigned long long)inspirationType;
+- (id)shootSameDescription;
+- (void)updateDataWithResponseModel:;
+- (id)inspirationID;
+- (BOOL)isJianYingTemplate;
+- (id)lvTemplate;
+- (BOOL)isAwemeTemplate;
+- (BOOL)collectionTab;
+- (long long)videoMinLimit;
+- (id)templateBodyModel;
+- (void)setTemplateBodyModel:;
+- (void)setupDataWith:;
+- (id)detailModel;
+- (void)setLvTemplate:;
+- (void)setAwemeTemplate:;
+- (void)setDetailModel:;
+- (id)awemeTemplate;
+- (id)templateStatusCode;
+- (void).cxx_destruct;
+- (id)title;
+- (id)tagName;
+- (long long)materialType;
+- (id)userCount;
+- (BOOL)isDataAvailable;
+- (id)coverURL;
+@end

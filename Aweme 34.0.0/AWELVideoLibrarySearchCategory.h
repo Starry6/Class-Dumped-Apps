@@ -1,0 +1,32 @@
+@interface AWELVideoLibrarySearchCategory : MTLModel
+@property (nonatomic) NSString channelID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString alias;
+@property (nonatomic) NSString wordName;
+@property (nonatomic) NSString searchKey;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) q rank;
+@property (nonatomic) q keyRank;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)wordName;
+- (void)setWordName:;
+- (id)searchKey;
+- (void)setSearchKey:;
+- (long long)keyRank;
+- (void)setKeyRank:;
+- (id)alias;
+- (void)setIsSelected:;
+- (void)setChannelID:;
+- (long long)rank;
+- (BOOL)isSelected;
+- (void)setRank:;
+- (id)channelID;
+- (void).cxx_destruct;
+- (void)setName:;
+- (id)name;
+- (void)setAlias:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

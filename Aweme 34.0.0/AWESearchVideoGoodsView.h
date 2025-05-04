@@ -1,0 +1,31 @@
+@interface AWESearchVideoGoodsView : UIView
+@property (nonatomic) AWEECSimilarProductModel model;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel searchSameTitle;
+@property (nonatomic) UILabel searchSameContent;
+@property (nonatomic) BOOL isBGColorWhite;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsBGColorWhite:;
+- (BOOL)isBGColorWhite;
+- (double)customViewHeightInCommentListHeader;
+- (void)updateUITheme;
+- (id)initWithModel:isBGColorWhite:;
+- (id)searchSameContent;
+- (void)handleTapView:;
+- (id)searchSameTitle;
+- (void)p_trackVSCommentShow;
+- (id)p_baseParams;
+- (void)p_trackVSCommentClicked;
+- (void)setSearchSameTitle:;
+- (void)setSearchSameContent:;
+- (void)setModel:;
+- (void)refreshUI;
+- (id)model;
+- (id)iconImageView;
+- (void).cxx_destruct;
+- (void)setIconImageView:;
+- (void)setupUI;
+@end

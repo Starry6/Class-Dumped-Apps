@@ -1,0 +1,2 @@
+@interface AWESearchPresentContainerHeaderViewConfig : NSObject
+@end

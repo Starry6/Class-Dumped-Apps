@@ -1,0 +1,2 @@
+@interface AWEAntiAddictedOptUserInfo : NSObject
+@end

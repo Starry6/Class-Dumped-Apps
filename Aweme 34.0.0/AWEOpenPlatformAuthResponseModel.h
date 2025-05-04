@@ -1,0 +1,37 @@
+@interface AWEOpenPlatformAuthResponseModel : NSObject
+@property (nonatomic) AWEOpenPlatformAuthEntranceModel entranceModel;
+@property (nonatomic) NSString ticket;
+@property (nonatomic) NSString grantedPermissions;
+@property (nonatomic) NSString grantedLocalPermissions;
+@property (nonatomic) q errCode;
+@property (nonatomic) q subErrCode;
+@property (nonatomic) NSString errMsg;
+@property (nonatomic) BOOL shouldNotJumpBack;
+@property (nonatomic) NSError originalError;
+@property (nonatomic) BOOL withPrivacyAgreement;
+- (long long)errCode;
+- (id)errMsg;
+- (void)setErrMsg:;
+- (void)setErrCode:;
+- (id)entranceModel;
+- (void)setEntranceModel:;
+- (void)setShouldNotJumpBack:;
+- (id)originalError;
+- (BOOL)shouldNotJumpBack;
+- (void)setWithPrivacyAgreement:;
+- (void)setSubErrCode:;
+- (void)setOriginalError:;
+- (id)grantedLocalPermissions;
+- (void)setGrantedLocalPermissions:;
+- (long long)subErrCode;
+- (BOOL)withPrivacyAgreement;
+- (void).cxx_destruct;
+- (void)setTicket:;
+- (id)ticket;
+- (id)grantedPermissions;
+- (void)setGrantedPermissions:;
++ (id)commonParamsErrorRespWithError:entranceModel:;
++ (id)delegateErrorRespWithError:entranceModel:;
++ (id)errCode:subErrCode:errMsg:originalError:entranceModel:;
++ (id)successWithTicket:grantedPermissions:entranceModel:;
+@end

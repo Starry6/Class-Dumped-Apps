@@ -1,0 +1,32 @@
+@interface AWEVideoDraftTracer : NSObject
+@property (nonatomic) BOOL printEnabeld;
+@property (nonatomic) NSMutableDictionary resultDictionary;
+@property (nonatomic) NSMutableDictionary runningDictionary;
+@property (nonatomic) NSMutableDictionary logDictionary;
+@property (nonatomic) NSNumber enterBackgroundTime;
+@property (nonatomic) AWEVideoDraftTracer logTracer;
+@property (nonatomic) NSString identifier;
+- (void)setEnterBackgroundTime:;
+- (id)enterBackgroundTime;
+- (id)logDictionary;
+- (void)beginEvent:;
+- (void)setLog:forKey:;
+- (void)beginLogEvent:;
+- (void)endLogEvent:;
+- (void)endAllEvents;
+- (long long)costWithEvent:;
+- (id)runningDictionary;
+- (void)p_createTracerIfNeeded;
+- (id)logTracer;
+- (void)p_printIfNeeded;
+- (BOOL)printEnabeld;
+- (void)willEnterForeground:;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (id)initWithIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)result;
+- (void)endEvent:;
+- (id)resultDictionary;
+@end

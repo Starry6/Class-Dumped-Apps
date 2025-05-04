@@ -1,0 +1,2 @@
+@interface AWEGrouponLifeFeedsSingleContainerView : UIView
+@end

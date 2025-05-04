@@ -1,0 +1,2 @@
+@interface AWEShareLoadingCellModel : AWEShareActionCellModel
+@end

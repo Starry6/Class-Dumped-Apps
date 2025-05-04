@@ -1,0 +1,33 @@
+@interface AWESearchVarietyEpisodeTableViewCell : UITableViewCell
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) YYLabel timeLabel;
+@property (nonatomic) UIView<AWESearchFilmTVTagViewProtocol> paymentTag;
+@property (nonatomic) UIImageView newIcon;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) BOOL cellMode;
+@property (nonatomic) BOOL showPeriod;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureUI;
+- (void)configModel:;
+- (void)setShowPeriod:;
+- (id)newIcon;
+- (id)paymentTag;
+- (BOOL)showPeriod;
+- (void)updatePaymentStatus:;
+- (void)setPaymentTag:;
+- (void)setNewIcon:;
+- (void)setTimeLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)timeLabel;
+- (id)titleLabel;
+- (id)bgView;
+- (void)setBgView:;
+- (BOOL)cellMode;
+- (void)setCellMode:;
++ (double)tableCellHeight;
+@end

@@ -1,0 +1,31 @@
+@interface AWEHomepageChannelEnterPerfMetricsMonitorEventModel : NSObject
+@property (nonatomic) double appLaunchTime;
+@property (nonatomic) NSMutableArray sceneModelArray;
+@property (nonatomic) AWEHomepageChannelEnterPerfMetricsMonitorEventConfig eventConfig;
+@property (nonatomic) <AWEHomepagePerfMetricsMonitorDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)p_getCurrentTime;
+- (id)eventConfig;
+- (void)setEventConfig:;
+- (void)beginSessionPerfMetricsMonitorWithParams:;
+- (void)beginScenePerfMetricsMonitorWithParams:;
+- (void)cancelScenePerfMetricsMonitorWithParams:;
+- (void)setAppLaunchTime:;
+- (void)setSceneModelArray:;
+- (id)sceneModelArray;
+- (void)p_endSessionPerfMetricsMonitorWithParams:;
+- (id)initWithAppLaunchTime:withConfigData:withDelegate:;
+- (void)endScenePerfMetricsMonitorWithParams:withDelayTime:;
+- (void)endSessionPerfMetricsMonitorWithParams:withDelayTime:;
+- (id)p_getNoEndSceneModelWithParams:;
+- (double)p_getRepeatCallSceneDuration;
+- (double)p_getTouchTime:;
+- (void)p_endScenePerfMetricsMonitorWithParams:sceneModel:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (double)appLaunchTime;
+@end

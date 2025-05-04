@@ -1,0 +1,22 @@
+@interface AWECommentMainSwiftImpl.CommentMediaVideoPlayerController : NSObject
+- (double)customTimerPeriodic:;
+- (void)player:updatePlayTime:canPlayTime:totalTime:;
+- (void)awemePlay;
+- (void)playerSeekProgress:completion:;
+- (void)updatePlayerRate:;
+- (double)currentPlayerRate;
+- (void)videoDidTap:;
+- (void)hidePauseButton:;
+- (void)updateData:referString:enterFrom:;
+- (id)init;
+- (BOOL)isPlaying;
+- (void)play;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)stop;
+- (id)playerViewController;
+- (void)pause;
+- (long long)playState;
+- (void)willDisplay;
+@end

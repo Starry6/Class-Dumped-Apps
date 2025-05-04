@@ -1,0 +1,30 @@
+@interface AWEEntertainmentBaseMaskPresenter : NSObject
+@property (nonatomic) <AWEEntertainmentMaskDelegate> internalDelegate;
+@property (nonatomic) BOOL hasReportTryEnd;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) AWEPageContext<AWELandscapePageContextInteractionProtocol> context;
+@property (nonatomic) <AWEEntertainmentMaskDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isPreviewVideo;
+- (id)initWithModel:context:;
+- (BOOL)shouldShowBlockView;
+- (id)trackCommonParams;
+- (BOOL)shouldBlurEffectMask;
+- (void)handleEventWithType:;
+- (id)getPreviewConfig;
+- (void)trackButtonShow;
+- (void)trackButtonShowOnce;
+- (BOOL)hasReportTryEnd;
+- (void)setHasReportTryEnd:;
+- (id)internalDelegate;
+- (id)delegate;
+- (void)setInternalDelegate:;
+- (id)model;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setDelegate:;
+- (id)context;
+@end

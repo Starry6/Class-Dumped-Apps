@@ -1,0 +1,34 @@
+@interface AWEIronManGuestProfileEntryController : NSObject
+@property (nonatomic) BOOL shouldReported;
+@property (nonatomic) AWEProfileExtensionAreaCommonParamModel commonParamModel;
+@property (nonatomic) UIView<AWEProfileExtensionAreaCardViewProtocol> cardNewView;
+@property (nonatomic) <AWEProfileExtensionAreaContainerProtocol> delegate;
+@property (nonatomic) NSDictionary trackData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldShowCard;
+- (void)passCardView:;
+- (void)cardDidClicked;
+- (void)cardWillAppear;
+- (void)configDelegate:;
+- (void)cardDidDisappear;
+- (id)cardModel;
+- (void)setCommonParamModel:;
+- (id)commonParamModel;
+- (void)setShouldReported:;
+- (void)setCardNewView:;
+- (BOOL)shouldReported;
+- (void)sendExposeTrackEvent;
+- (void)sendClickTrackEvent;
+- (id)cardNewView;
+- (id)init;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setCardData:;
+- (id)trackData;
+- (void)setTrackData:;
++ (id)cardControllerWithCommonParam:;
+@end

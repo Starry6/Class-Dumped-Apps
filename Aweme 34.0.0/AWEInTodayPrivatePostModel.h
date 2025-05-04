@@ -1,0 +1,36 @@
+@interface AWEInTodayPrivatePostModel : NSObject
+@property (nonatomic) PHAsset localAsset;
+@property (nonatomic) NSString requestLocalIdentifier;
+@property (nonatomic) BOOL hasAggregateAuthority;
+@property (nonatomic) NSString coverId;
+@property (nonatomic) Q coverType;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL needRefresh;
+@property (nonatomic) NSString customDisplayName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setNeedRefresh:;
+- (unsigned long long)coverType;
+- (id)localAsset;
+- (void)setLocalAsset:;
+- (id)coverId;
+- (id)initWithCoverId:coverType:;
+- (void)setCoverImageWithModel:InCoverImageView:;
+- (id)schemaForInTodayDetailPage;
+- (BOOL)hasAggregateAuthority;
+- (void)setCustomDisplayName:;
+- (void)setRequestLocalIdentifier:;
+- (id)requestLocalIdentifier;
+- (BOOL)checkEnableTransferToSchema:;
+- (void)configCoverImageWithModel:coverImage:;
+- (void)requestCoverImageWithPHAsset:completion:;
+- (void)setHasAggregateAuthority:;
+- (id)schema;
+- (void)setSchema:;
+- (BOOL)needRefresh;
+- (void).cxx_destruct;
+- (id)name;
+- (id)customDisplayName;
+@end

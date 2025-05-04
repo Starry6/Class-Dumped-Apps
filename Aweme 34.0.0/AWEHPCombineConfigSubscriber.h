@@ -1,0 +1,37 @@
+@interface AWEHPCombineConfigSubscriber : NSObject
+@property (nonatomic) AWEHPCombineDataModel dataModel;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) NSMutableArray blocks;
+@property (nonatomic) <AWEHPNetCombineSubscriberAbility> ability;
+@property (nonatomic) BOOL hasLoad;
+@property (nonatomic) AWEHPCombineFrequencyConfig frequencyConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMmkv:;
+- (id)mmkv;
+- (void)setHasLoad:;
+- (BOOL)hasLoad;
+- (void)addUpdateBlock:;
+- (void)setAbility:;
+- (id)ability;
+- (void)setupAbility:;
+- (id)frequencyConfig;
+- (void)p_tryLoad;
+- (void)p_handleResponse:;
+- (id)getBodyInRequest:;
+- (id)safeGetDataModel;
+- (void)p_callSubscriberUpdateBlocks:;
+- (id)init;
+- (void)handleResponse:;
+- (void)setLock:;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setBlocks:;
+- (id)blocks;
+- (id)dataModel;
+- (void)setDataModel:;
++ (id)sharedInstance;
+@end

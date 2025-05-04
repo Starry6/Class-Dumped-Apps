@@ -1,0 +1,30 @@
+@interface AWELandscapeShoppingCartElement : AWELandscapeInteractionBaseElement
+@property (nonatomic) UIButton cartButton;
+@property (nonatomic) AWELandscapeLVideoCartPanelViewController lVideoCartPanel;
+@property (nonatomic) BOOL isShowingCartPanel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hideAllPanels;
+- (void)bdx_closeWithAnimated:completion:;
+- (BOOL)bdx_shouldUseCustomClose;
+- (BOOL)handleResponseGestureRecognizer:;
+- (id)cartButton;
+- (void)setCartButton:;
+- (BOOL)isShowingPanel;
+- (void)showCartPanelWithEntrance:;
+- (void)traceCartButtonShow;
+- (BOOL)isShowingCartPanel;
+- (void)hideLongVideoCartPanelWithCompletion:;
+- (void)traceCartButtonClicked;
+- (id)lVideoCartPanel;
+- (void)setIsShowingCartPanel:;
+- (void)handleClickCart;
+- (void)setLVideoCartPanel:;
+- (void)updateState:;
+- (void)viewDidLoad;
+- (void)setData:;
+- (void).cxx_destruct;
+- (BOOL)isInteracting;
+@end

@@ -1,0 +1,30 @@
+@interface AWEDiskExtremelyViewModel : AWEDiskCleanViewModel
+@property (nonatomic) AWEPerformanceDiskCleanExtremelyManager cleanManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double cacheSize;
+@property (nonatomic) double offlineVideoSize;
+@property (nonatomic) NSString enterFrom;
+- (void)externalCleanResourceWithCleanType:completion:;
+- (void)constructAllDatas;
+- (id)initWithDiskOverallCalculateProgress:overallCalculateCompletion:businessCalculateCompletion:;
+- (void)initDetailData;
+- (void)prepareCacheData;
+- (void)cleanResourceWithCleanType:completion:;
+- (void)cleanResourceWithCleanType:checkCancelForProgress:completion:;
+- (id)constructCleanModelWithTitle:detail:desc:type:haveCache:;
+- (id)initWithDiskOverallIgnoreALog:calculateProgress:overallCalculateCompletion:businessCalculateCompletion:;
+- (void)addGeckoWhiteList;
+- (void)initCustomCacheWithIgnoreALog:;
+- (void)initHeaderData;
+- (void)prepareOfflineVideoData;
+- (id)geckoWhiteList;
+- (id)cleanManager;
+- (void)cleanCacheWithCancelForCleanSize:;
+- (void)trackCleanOfflineVideo;
+- (void)externalCleanResourceWithCompletion:;
+- (void)setCleanManager:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMServiceChatRoleCardView : UIView
+@property (nonatomic) AWEIMSeviceChatRoleCardView_AvatarView avatarView;
+@property (nonatomic) AWEIMSeviceChatRoleCardView_NameView nameView;
+@property (nonatomic) AWEIMServiceChatRoleCardTextView contentTextView;
+@property (nonatomic) AWEIMSeviceChatRoleCardTagView firstRowView;
+@property (nonatomic) AWEIMSeviceChatRoleCardTagView secondRowView;
+@property (nonatomic) @? tapAvatarActionBlock;
+@property (nonatomic) @? followActionBlock;
+@property (nonatomic) @? tapIdentityIconActionBlock;
+@property (nonatomic) @? tapExpandContentActionBlock;
+- (void)setContentTextView:;
+- (id)contentTextView;
+- (void)setTapAvatarActionBlock:;
+- (void)setFollowActionBlock:;
+- (void)setTapIdentityIconActionBlock:;
+- (void)setTapExpandContentActionBlock:;
+- (id)tapAvatarActionBlock;
+- (id)followActionBlock;
+- (id)tapIdentityIconActionBlock;
+- (id)tapExpandContentActionBlock;
+- (void)configViewModel:context:floatFollowDisplaying:;
+- (void)setFirstRowView:;
+- (void)setSecondRowView:;
+- (id)itemsByModels:;
+- (id)firstRowView;
+- (id)secondRowView;
+- (id)init;
+- (id)nameView;
+- (void)setAvatarView:;
+- (void)updateTags:;
+- (id)avatarView;
+- (void).cxx_destruct;
+- (void)setNameView:;
+@end

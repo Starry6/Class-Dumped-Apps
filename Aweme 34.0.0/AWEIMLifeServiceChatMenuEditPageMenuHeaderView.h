@@ -1,0 +1,36 @@
+@interface AWEIMLifeServiceChatMenuEditPageMenuHeaderView : UICollectionReusableView
+@property (nonatomic) AWEIMLifeServiceChatMenuEditPageMenuContentView menuContentView;
+@property (nonatomic) AWEIMLifeServiceChatMenuEditPageAddMenuContentView addMenuView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) <AWEIMLifeServiceChatMenuEditPageCollectionViewCellDelegate> delegate;
+@property (nonatomic) q section;
+@property (nonatomic) BOOL isOnlyItemInSection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)lifeServiceChatMenuEditPageMenuContentView:didPress:;
+- (void)lifeServiceChatMenuEditPageMenuContentView:didTapDelete:;
+- (id)menuContentView;
+- (void)hideAllContent;
+- (void)setMenuContentView:;
+- (id)addMenuView;
+- (BOOL)isOnlyItemInSection;
+- (void)__refreshContentViewCornerRadius;
+- (void)__didClickMenuView;
+- (void)__didClickAddMenuView;
+- (void)configWithModel:enableMove:;
+- (void)refreshToAddMenuUI;
+- (id)touchFrame;
+- (void)setIsOnlyItemInSection:;
+- (void)setAddMenuView:;
+- (void)setSection:;
+- (id)delegate;
+- (id)initWithFrame:;
+- (id)contentView;
+- (long long)section;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setDelegate:;
++ (id)identifier;
+@end

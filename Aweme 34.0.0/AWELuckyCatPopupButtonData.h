@@ -1,0 +1,31 @@
+@interface AWELuckyCatPopupButtonData : MTLModel
+@property (nonatomic) Q style;
+@property (nonatomic) AWELuckyCatPopupIcon icon;
+@property (nonatomic) AWELuckyCatPopupText text;
+@property (nonatomic) AWELuckyCatPopupTextBackground bg;
+@property (nonatomic) AWELuckyCatPopupSpaceModel space;
+@property (nonatomic) AWELuckyCatPopupTag tag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBg:;
+- (id)tag;
+- (id)icon;
+- (void)setTag:;
+- (void)setText:;
+- (id)text;
+- (unsigned long long)style;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setStyle:;
+- (id)space;
+- (void)setSpace:;
+- (id)bg;
++ (id)iconJSONTransformer;
++ (id)tagJSONTransformer;
++ (id)spaceJSONTransformer;
++ (id)bgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)textJSONTransformer;
+@end

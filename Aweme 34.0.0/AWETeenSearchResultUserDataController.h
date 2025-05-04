@@ -1,0 +1,32 @@
+@interface AWETeenSearchResultUserDataController : AWEListDataController
+@property (nonatomic) NSNumber offset;
+@property (nonatomic) BOOL isFirst;
+@property (nonatomic) AWETeenSearchKeywordModel keyWord;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) NSDictionary logPassback;
+- (void)loadMoreWithCompletion:;
+- (void)setEnterFrom:;
+- (void)setEnterMethod:;
+- (id)enterMethod;
+- (id)enterFrom;
+- (void)initFetchWithCompletion:;
+- (id)logPassback;
+- (void)setLogPassback:;
+- (void)setIsFirst:;
+- (id)keyWord;
+- (void)setKeyWord:;
+- (void)loadSearchUserWithPullType:Completion:;
+- (void)setGroupID:;
+- (id)init;
+- (id)groupID;
+- (void)setOffset:;
+- (id)offset;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (BOOL)isFirst;
+- (id)searchID;
+- (void)setSearchID:;
+@end

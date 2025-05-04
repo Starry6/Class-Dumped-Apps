@@ -1,0 +1,2 @@
+@interface AWEPlayInteractionRelatedPanelLayout : UICollectionViewFlowLayout
+@end

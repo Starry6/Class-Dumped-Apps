@@ -1,0 +1,36 @@
+@interface AWENetworkPingTask : NSObject
+@property (nonatomic) NSArray icmp_detect;
+@property (nonatomic) NSArray tcp_dectect;
+@property (nonatomic) NSMutableArray completionBlocks;
+@property (nonatomic) BOOL success;
+@property (nonatomic) BOOL isPinging;
+@property (nonatomic) q taskID;
+@property (nonatomic) double icmpTimeout;
+@property (nonatomic) double tcpTimeout;
+@property (nonatomic) NSArray srcs;
+- (id)initWithPingSources:;
+- (void)setIcmpTimeout:;
+- (void)setTcpTimeout:;
+- (void)pingWithBlock:;
+- (void)setIsPinging:;
+- (void)setSrcs:;
+- (double)tcpTimeout;
+- (double)icmpTimeout;
+- (void)_pingWithBlock:;
+- (id)icmp_detect;
+- (id)tcp_dectect;
+- (void)didEndDetect:latency:stage:;
+- (void)timeoutCallBack;
+- (id)srcs;
+- (void)setIcmp_detect:;
+- (void)setTcp_dectect:;
+- (id)completionBlocks;
+- (void)dealloc;
+- (void)setCompletionBlocks:;
+- (void)setSuccess:;
+- (void).cxx_destruct;
+- (void)setTaskID:;
+- (long long)taskID;
+- (BOOL)success;
+- (BOOL)isPinging;
+@end

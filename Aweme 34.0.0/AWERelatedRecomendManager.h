@@ -1,0 +1,33 @@
+@interface AWERelatedRecomendManager : NSObject
+@property (nonatomic) AWERelatedRecomendPanelRecord record;
+@property (nonatomic) YYCache cache;
+@property (nonatomic) NSMutableDictionary relationConfirmedDictionary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getTempDataControllerForAwemeId:;
+- (double)awemeListCacheTimeInterval;
+- (void)removeTempDataControllerForAwemeId:;
+- (long long)maxPanelShowTimes;
+- (long long)maxDisinterestTimes;
+- (long long)maxNoConsumeTimes;
+- (long long)awemeListCacheMaxCount;
+- (BOOL)shouldShowRelatedPanelWithAwemeId:;
+- (void)showPanelOnceWithAwemeId:;
+- (void)noInterestOnce;
+- (void)consumpPanelVideo;
+- (void)registTempDataController:forAwemeId:;
+- (double)requestPanelAheadTimeInterval;
+- (double)autoShowPanelAheadTimeInterval;
+- (double)autoHidePanelAheadTimeInterval;
+- (BOOL)canShowRecommendBar;
+- (id)relationConfirmedDictionary;
+- (void)setRelationConfirmedDictionary:;
+- (void)setCache:;
+- (void)setRecord:;
+- (id)cache;
+- (id)record;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

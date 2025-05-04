@@ -1,0 +1,30 @@
+@interface AWEECOMIMPaasNewAdditionalModelsConvertHelper : NSObject
++ (id)convertPigeonUserInfo:;
++ (id)convertAWEClientConfig:;
++ (id)convertAWEShopInfoFetchOptions:;
++ (id)convertPigeonShopInfo:;
++ (id)convertPigeonGetIconsModel:;
++ (unsigned long long)convertAWEConversationMarkAsReadMode:;
++ (id)convertPigeonConversation:;
++ (id)convertPigeonMessage:;
++ (id)convertAWESendMessage:;
++ (id)convertAWESendUserEnterMessageRequestModel:;
++ (id)convertPigeonECOMImageUploadInfo:;
++ (id)convertPigeonECOMVideoUploadInfo:;
++ (unsigned long long)convertPigeonWebSocketState:;
++ (id)convertPigeonMessageSendResponse:;
++ (id)convertPigeonP2PMessage:;
++ (id)convertPigeonServiceInfo:;
++ (id)convertPigeonConversationUnreadCountNew:;
++ (unsigned long long)convertPigeonConversationType:;
++ (id)convertPigeonIMClientConfig:;
++ (id)convertAWEUpdateMessage:;
++ (long long)convertPigeonMessageRoleType:;
++ (long long)convertPigeonMessageSharkState:;
++ (long long)convertPigeonMessageState:;
++ (id)convertAWEMessagesDataSourceOptions:;
++ (long long)convertPigeonInsertNewMessagesReason:;
++ (long long)convertAWEMessageRoleType:;
++ (unsigned long long)convertAWEConversationType:;
++ (id)convertAWEEvaluateRequestModel:;
+@end

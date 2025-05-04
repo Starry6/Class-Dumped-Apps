@@ -1,0 +1,30 @@
+@interface AWETeenAlbumHistoryCollectionViewCell : UICollectionViewCell
+@property (nonatomic) AWEMinorAlbum model;
+@property (nonatomic) UIImageView coverView;
+@property (nonatomic) CAGradientLayer coverGradientLayer;
+@property (nonatomic) UIView progressBGView;
+@property (nonatomic) UIView progressView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSDictionary logDict;
+- (id)logDict;
+- (void)setLogDict:;
+- (void)configCellWithModel:;
+- (void)p_updateTitle;
+- (void)p_setupView;
+- (void)p_updateCover;
+- (id)progressBGView;
+- (id)coverGradientLayer;
+- (void)setCoverGradientLayer:;
+- (void)setProgressBGView:;
+- (void)setModel:;
+- (id)progressView;
+- (id)initWithFrame:;
+- (void)setProgressView:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)coverView;
+- (void)setCoverView:;
++ (id)cellSizeWithConstraintHeight:;
+@end

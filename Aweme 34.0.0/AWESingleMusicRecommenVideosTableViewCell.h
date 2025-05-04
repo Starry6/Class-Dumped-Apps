@@ -1,0 +1,38 @@
+@interface AWESingleMusicRecommenVideosTableViewCell : UITableViewCell
+@property (nonatomic) UIView<AWESearchMusicRecommendedVideoListViewProtocol> videoListView;
+@property (nonatomic) <ACCSingleMusicRecommenVideosTableViewCellDelegate> delegate;
+@property (nonatomic) q rank;
+@property (nonatomic) BOOL showTopSeparatorLine;
+@property (nonatomic) NSMutableDictionary logExtraDict;
+@property (nonatomic) NSString referString;
+@property (nonatomic) @? solveCloseGesture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogExtraDict:;
+- (id)referString;
+- (void)setReferString:;
+- (id)logExtraDict;
+- (id)videoListView;
+- (void)setVideoListView:;
+- (void)stopVideoPlay;
+- (id)solveCloseGesture;
+- (void)setSolveCloseGesture:;
+- (void)setShowTopSeparatorLine:;
+- (void)updateWithModel:offsetX:lastPlayedIndex:;
+- (void)updateWithModel:offsetX:;
+- (id)getListContentOffset;
+- (void)clearVideoUseMusicButton;
+- (void)removePlayerContainer;
+- (void)updateWithModel:playerContainer:index:offsetX:;
+- (BOOL)showTopSeparatorLine;
+- (id)delegate;
+- (long long)rank;
+- (void)setRank:;
+- (void)awakeFromNib;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)layoutSubviews;
+- (void)setSelected:animated:;
+@end

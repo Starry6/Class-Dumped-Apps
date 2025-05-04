@@ -1,0 +1,2 @@
+@interface AWEDetailSeparateLineModel : AWEDetailCommonDiffableModel
+@end

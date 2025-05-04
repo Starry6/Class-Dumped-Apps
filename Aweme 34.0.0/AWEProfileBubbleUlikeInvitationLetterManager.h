@@ -1,0 +1,30 @@
+@interface AWEProfileBubbleUlikeInvitationLetterManager : NSObject
+@property (nonatomic) BOOL showing;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString text;
+@property (nonatomic) q maxCount;
+@property (nonatomic) q intervalDays;
+@property (nonatomic) q days;
+@property (nonatomic) q times;
+- (BOOL)canShow;
+- (id)getStoregeKeyWithOriginKey:;
+- (void)fetchUlikeAuthAccount;
+- (long long)intervalDays;
+- (BOOL)fetchAuthInfoWithSource;
+- (void)setIntervalDays:;
+- (void)setMaxCount:;
+- (id)init;
+- (long long)maxCount;
+- (void)setText:;
+- (id)text;
+- (void).cxx_destruct;
+- (id)title;
+- (void)didDismiss;
+- (void)setTitle:;
+- (void)didShow;
+- (BOOL)showing;
+- (void)setShowing:;
+- (long long)days;
+- (long long)times;
++ (id)sharedInstance;
+@end

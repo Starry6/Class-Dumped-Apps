@@ -1,0 +1,2 @@
+@interface AWEAppUserRecommendSettingManager : NSObject
+@end

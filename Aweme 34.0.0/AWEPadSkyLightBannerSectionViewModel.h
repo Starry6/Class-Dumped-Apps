@@ -1,0 +1,2 @@
+@interface AWEPadSkyLightBannerSectionViewModel : AWEPadBannerSectionViewModel
+@end

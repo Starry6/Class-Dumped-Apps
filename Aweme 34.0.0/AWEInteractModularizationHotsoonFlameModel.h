@@ -1,0 +1,31 @@
+@interface AWEInteractModularizationHotsoonFlameModel : AWEBaseApiModel
+@property (nonatomic) NSString sendOrderID;
+@property (nonatomic) q sendFlameAmount;
+@property (nonatomic) NSString replyText;
+@property (nonatomic) NSString sendText;
+@property (nonatomic) BOOL hasReply;
+@property (nonatomic) Q orderStatus;
+@property (nonatomic) NSString orderStatusText;
+@property (nonatomic) Q orderType;
+@property (nonatomic) NSString orderStatusSchema;
+- (unsigned long long)orderStatus;
+- (void)setOrderStatus:;
+- (BOOL)hasReply;
+- (id)orderStatusText;
+- (void)setHasReply:;
+- (id)sendText;
+- (id)sendOrderID;
+- (long long)sendFlameAmount;
+- (id)orderStatusSchema;
+- (void)setSendOrderID:;
+- (void)setSendFlameAmount:;
+- (void)setSendText:;
+- (void)setOrderStatusText:;
+- (void)setOrderStatusSchema:;
+- (void).cxx_destruct;
+- (id)replyText;
+- (unsigned long long)orderType;
+- (void)setOrderType:;
+- (void)setReplyText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

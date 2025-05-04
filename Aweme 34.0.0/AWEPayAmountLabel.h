@@ -1,0 +1,31 @@
+@interface AWEPayAmountLabel : UIView
+@property (nonatomic) UILabel preLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIFont preTextFont;
+@property (nonatomic) double space;
+@property (nonatomic) NSString preText;
+@property (nonatomic) NSString text;
+@property (nonatomic) UIColor textColor;
+- (id)preText;
+- (id)preLabel;
+- (void)setPreLabel:;
+- (void)setPreText:;
+- (id)preTextFont;
+- (void)setPreTextFont:;
+- (id)getAmountStr;
+- (id)init;
+- (void)setText:;
+- (id)text;
+- (void)setTextColor:;
+- (id)font;
+- (void)updateLayout;
+- (void).cxx_destruct;
+- (void)setFont:;
+- (id)textColor;
+- (double)space;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setSpace:;
+@end

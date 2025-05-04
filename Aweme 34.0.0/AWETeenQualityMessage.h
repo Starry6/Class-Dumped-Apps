@@ -1,0 +1,36 @@
+@interface AWETeenQualityMessage : NSObject
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString subScene;
+@property (nonatomic) NSString identify;
+@property (nonatomic) q requestType;
+@property (nonatomic) q playerLaunchType;
+@property (nonatomic) q status;
+@property (nonatomic) NSError error;
+@property (nonatomic) q duration;
+@property (nonatomic) double startTime;
+@property (nonatomic) double stopTime;
+@property (nonatomic) NSMutableDictionary stages;
+- (id)subScene;
+- (void)setSubScene:;
+- (void)setStages:;
+- (long long)playerLaunchType;
+- (void)setPlayerLaunchType:;
+- (void)setScene:;
+- (void)setRequestType:;
+- (long long)requestType;
+- (void)setStartTime:;
+- (void)setStatus:;
+- (id)scene;
+- (void)setError:;
+- (void)setDuration:;
+- (double)stopTime;
+- (void).cxx_destruct;
+- (id)error;
+- (long long)duration;
+- (long long)status;
+- (double)startTime;
+- (void)setStopTime:;
+- (id)stages;
+- (id)identify;
+- (void)setIdentify:;
+@end

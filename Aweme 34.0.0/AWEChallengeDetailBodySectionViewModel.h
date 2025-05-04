@@ -1,0 +1,2 @@
+@interface AWEChallengeDetailBodySectionViewModel : AWEBaseListSectionViewModel
+@end

@@ -1,0 +1,2 @@
+@interface AWESearchGroupBuyDataResponse : AWESearchResultLifeServiceBaseDataResponse
+@end

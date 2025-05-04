@@ -1,0 +1,2 @@
+@interface AWEIMFindSimilarEmoticonRequestService : NSObject
+@end

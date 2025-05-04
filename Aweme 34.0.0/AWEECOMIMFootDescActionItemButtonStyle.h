@@ -1,0 +1,30 @@
+@interface AWEECOMIMFootDescActionItemButtonStyle : MTLModel
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) NSString iconURL;
+@property (nonatomic) NSString text;
+@property (nonatomic) AWEECOMIMFootDescActionItemButtonTextStyle textStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBorderColor:;
+- (void)setBorderWidth:;
+- (void)setIconURL:;
+- (id)textStyle;
+- (double)borderWidth;
+- (id)borderColor;
+- (id)iconURL;
+- (void)setText:;
+- (void)setCornerRadius:;
+- (id)text;
+- (id)backgroundColor;
+- (void)setBackgroundColor:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (void)setTextStyle:;
++ (id)textStyleJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

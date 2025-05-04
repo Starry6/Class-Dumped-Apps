@@ -1,0 +1,36 @@
+@interface AWEQRCodeLoginCoreViewController : UIViewController
+@property (nonatomic) q qrcodeState;
+@property (nonatomic) NSString token;
+@property (nonatomic) BOOL isLoginSuccess;
+@property (nonatomic) UIView qrBorderView;
+@property (nonatomic) UIImageView qrCodeImageView;
+@property (nonatomic) UIImageView stateIconView;
+@property (nonatomic) UILabel stateLabel;
+@property (nonatomic) UIButton refreshBtn;
+- (void)p_setupUI;
+- (void)checkQRConnect;
+- (void)loadRQCodeImage;
+- (BOOL)isLoginSuccess;
+- (void)monitorQRLoginResult:;
+- (id)qrBorderView;
+- (id)refreshBtn;
+- (id)stateIconView;
+- (long long)qrcodeState;
+- (void)setQrcodeState:;
+- (void)monitorGetQRImage:error:invalidImage:;
+- (void)updateStateText:icon:;
+- (void)setIsLoginSuccess:;
+- (void)setQrBorderView:;
+- (void)setStateIconView:;
+- (void)setRefreshBtn:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)setToken:;
+- (void)viewDidAppear:;
+- (id)token;
+- (id)qrCodeImageView;
+- (void)setQrCodeImageView:;
+- (void)setStateLabel:;
+- (id)stateLabel;
+@end

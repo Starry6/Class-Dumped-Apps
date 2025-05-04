@@ -1,0 +1,35 @@
+@interface AWEIMSkylightListFoldComponent : AWEIMComponentBase
+@property (nonatomic) Q currentFoldType;
+@property (nonatomic) BOOL isFolded;
+@property (nonatomic) BOOL animating;
+@property (nonatomic) AWEIMSkylightListFoldExpandView foldExpandView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <AWEIMSkylightListFoldDelegate> delegate;
+- (void)didFinishLogin;
+- (void)componentDidMounted:;
+- (void)setIsFolded:;
+- (void)onReceiveColorRingChangeNotification:;
+- (void)addViewToSuperView:;
+- (void)skylightListViewDidRefresh;
+- (void)refreshFoldExpandViewLayout;
+- (void)onTabBarDidChangeToMsgTab:;
+- (void)fetchUserActiveStatusDidFinish;
+- (void)didTapFoldExpandBtn;
+- (id)foldTextWithTriggerType:;
+- (id)foldExpandView;
+- (void)trackBubbleShowOrClick:isFolded:;
+- (void)setCurrentFoldType:;
+- (unsigned long long)currentFoldType;
+- (void)setFoldExpandView:;
+- (void)setAnimating:;
+- (void)dealloc;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (BOOL)animating;
+- (BOOL)isFolded;
++ (BOOL)canCreateComponentWithContext:;
+@end

@@ -1,0 +1,36 @@
+@interface AWEPOIDetailAutoPlayExtension : AWEPOIBaseExtension
+@property (nonatomic) AWEPOIDetailNGAutoPlayUtil autoPlayer;
+@property (nonatomic) <AWEPOIDetailNGAutoPlayUtilObjectProtocol> currentPlayingObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cancelVideoPreload;
+- (void)pageDidScroll:;
+- (void)didEndReload;
+- (void)pageDidEndDragging:willDecelerate:;
+- (void)pageDidEndDecelerating:;
+- (void)pageWillBeginDragging:;
+- (void)pageDidEndScrollingAnimation:;
+- (void)didHalfContainerStatusChange:state:;
+- (void)vsdContainer:stateChange:;
+- (void)initializeExtension;
+- (void)handleWindowResignKey;
+- (id)autoPlayer;
+- (id)currentPlayingObject;
+- (void)autoStopObject:;
+- (void)setCurrentPlayingObject:;
+- (void)autoPlayObject:;
+- (id)autoPlayVisibleObjects;
+- (void)doVideoPreload;
+- (void)setAutoPlayer:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (id)containerView;
+- (void).cxx_destruct;
+- (void)didLayout;
+- (void)applicationDidBecomeActive;
+- (void)viewDidAppear;
+- (void)applicationWillResignActive;
+- (void)viewDidDisappear;
+@end

@@ -1,0 +1,32 @@
+@interface AWEPOIHotWordModel : MTLModel
+@property (nonatomic) NSString sentence;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString prefixTag;
+@property (nonatomic) NSString douDiscountID;
+@property (nonatomic) NSString categoryType;
+@property (nonatomic) AWEURLModel iconURL;
+@property (nonatomic) NSString discountValue;
+@property (nonatomic) NSString collectedCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)collectedCount;
+- (void)setCollectedCount:;
+- (id)prefixTag;
+- (void)setPrefixTag:;
+- (id)douDiscountID;
+- (void)setDouDiscountID:;
+- (id)discountValue;
+- (void)setDiscountValue:;
+- (void)setGroupID:;
+- (void)setIconURL:;
+- (id)groupID;
+- (id)iconURL;
+- (id)categoryType;
+- (void).cxx_destruct;
+- (void)setCategoryType:;
+- (id)sentence;
+- (void)setSentence:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

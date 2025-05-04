@@ -1,0 +1,33 @@
+@interface AWEShareDetailWithSpecialQRCodeBookContentView : AWEShareDetailWithQRCodeBaseContentView
+@property (nonatomic) UIView<BDXViewContainerProtocol> bulletView;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) NSMutableArray bridgeSubscriberList;
+@property (nonatomic) NSString bookTemplateID;
+@property (nonatomic) BOOL containerDidFirstScreen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)containerDidFirstScreen:;
+- (void)setShareContext:;
+- (id)commonTrackParams;
+- (id)shareContext;
+- (void)bindEvent;
+- (id)imageToSaveToAlbum;
+- (id)bulletView;
+- (void)setBulletView:;
+- (id)bridgeSubscriberList;
+- (void)setBridgeSubscriberList:;
+- (void)setIsQRCodeLoaded:;
+- (void)setContainerDidFirstScreen:;
+- (BOOL)containerDidFirstScreen;
+- (void)setBookTemplateID:;
+- (void)loadBulletView;
+- (id)bookTemplateID;
+- (void)updateQRcode;
+- (void)dealloc;
+- (void)setContext:;
+- (void).cxx_destruct;
+- (void)setUpSubviews;
+- (id)contentViewSize;
+@end

@@ -1,0 +1,37 @@
+@interface AWECodeGenEpisodeTitleModel : AWEBaseDataModel
+@property (nonatomic) NSString seqOnly;
+@property (nonatomic) NSString seqAndType;
+@property (nonatomic) NSString fullTitle;
+@property (nonatomic) NSString coverTitle;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString derivedType;
+@property (nonatomic) NSString suffix;
+@property (nonatomic) NSString rawTitle;
+@property (nonatomic) NSString coverTitleLeft;
+@property (nonatomic) NSString coverTitleRight;
+@property (nonatomic) NSString horizonTitle;
+- (id)seqOnly;
+- (id)seqAndType;
+- (id)coverTitle;
+- (id)derivedType;
+- (id)coverTitleLeft;
+- (id)coverTitleRight;
+- (id)horizonTitle;
+- (void)setCoverTitle:;
+- (void)setSeqOnly:;
+- (void)setSeqAndType:;
+- (void)setDerivedType:;
+- (void)setCoverTitleLeft:;
+- (void)setCoverTitleRight:;
+- (void)setHorizonTitle:;
+- (id)rawTitle;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setSuffix:;
+- (void)setTitle:;
+- (void)setRawTitle:;
+- (id)suffix;
+- (id)fullTitle;
+- (void)setFullTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

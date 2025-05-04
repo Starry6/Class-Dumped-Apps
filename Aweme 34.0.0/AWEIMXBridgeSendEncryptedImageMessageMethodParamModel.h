@@ -1,0 +1,35 @@
+@interface AWEIMXBridgeSendEncryptedImageMessageMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSNumber type;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString cid;
+@property (nonatomic) NSString relative_path;
+@property (nonatomic) NSNumber need_snack_bar;
+@property (nonatomic) NSNumber snack_bar_bottom_offset;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSDictionary content;
+@property (nonatomic) NSDictionary log_extra;
+- (id)secUid;
+- (void)setSecUid:;
+- (id)log_extra;
+- (void)setLog_extra:;
+- (id)relative_path;
+- (void)setRelative_path:;
+- (id)need_snack_bar;
+- (id)snack_bar_bottom_offset;
+- (void)setNeed_snack_bar:;
+- (void)setSnack_bar_bottom_offset:;
+- (id)cid;
+- (void)setUid:;
+- (id)content;
+- (id)uid;
+- (id)path;
+- (id)type;
+- (void)setContent:;
+- (void)setType:;
+- (void).cxx_destruct;
+- (void)setPath:;
+- (void)setCid:;
++ (id)requiredKeyPaths;
++ (id)JSONKeyPathsByPropertyKey;
+@end

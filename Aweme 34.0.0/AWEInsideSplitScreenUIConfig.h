@@ -1,0 +1,32 @@
+@interface AWEInsideSplitScreenUIConfig : NSObject
+@property (nonatomic) UIViewController mainContainerVC;
+@property (nonatomic) UIViewController leftContainerVC;
+@property (nonatomic) UIView leftContentView;
+@property (nonatomic) q scene;
+@property (nonatomic) BOOL hasTabBar;
+@property (nonatomic) <AWEPadSplitScreenLeftContainerDelegate> sceneDelegate;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) UIPanGestureRecognizer panGesture;
+@property (nonatomic) UILongPressGestureRecognizer longPressGesture;
+- (void)setLeftContentView:;
+- (void)setHasTabBar:;
+- (void)setLeftContainerVC:;
+- (void)setMainContainerVC:;
+- (id)initWithLeftContainer:leftContentView:mainContainerVC:scene:;
+- (void)bindTapGesture:panGesture:longPressGesture:;
+- (id)mainContainerVC;
+- (id)leftContainerVC;
+- (void)setSceneDelegate:;
+- (void)setScene:;
+- (BOOL)hasTabBar;
+- (long long)scene;
+- (id)sceneDelegate;
+- (void).cxx_destruct;
+- (id)longPressGesture;
+- (id)tapGesture;
+- (id)leftContentView;
+- (void)setLongPressGesture:;
+- (void)setTapGesture:;
+- (id)panGesture;
+- (void)setPanGesture:;
+@end

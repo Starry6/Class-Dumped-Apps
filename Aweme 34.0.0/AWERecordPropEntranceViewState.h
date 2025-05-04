@@ -1,0 +1,30 @@
+@interface AWERecordPropEntranceViewState : NSObject
+@property (nonatomic) UIImage stickerSwitchImage;
+@property (nonatomic) NSString stickerSwitchLabelText;
+@property (nonatomic) NSString stickerSwitchButtonAccessibilityLabel;
+@property (nonatomic) IESEffectModel entranceProp;
+@property (nonatomic) double firstFrameStartTime;
+@property (nonatomic) BOOL stickerSwitchButtonHidden;
+@property (nonatomic) BOOL stickerSwitchLabelHidden;
+@property (nonatomic) BOOL stickerSwitchButtonFadeHidden;
+@property (nonatomic) BOOL stickerSwitchLabelFadeHidden;
+- (void)setFirstFrameStartTime:;
+- (id)stickerSwitchLabelText;
+- (double)firstFrameStartTime;
+- (void)setStickerSwitchImage:;
+- (void)setStickerSwitchLabelText:;
+- (void)setStickerSwitchButtonAccessibilityLabel:;
+- (void)setStickerSwitchLabelHidden:;
+- (void)setEntranceProp:;
+- (void)setStickerSwitchButtonFadeHidden:;
+- (void)setStickerSwitchLabelFadeHidden:;
+- (void)setStickerSwitchButtonHidden:;
+- (id)stickerSwitchButtonAccessibilityLabel;
+- (id)stickerSwitchImage;
+- (id)entranceProp;
+- (BOOL)stickerSwitchButtonHidden;
+- (BOOL)stickerSwitchLabelHidden;
+- (BOOL)stickerSwitchButtonFadeHidden;
+- (BOOL)stickerSwitchLabelFadeHidden;
+- (void).cxx_destruct;
+@end

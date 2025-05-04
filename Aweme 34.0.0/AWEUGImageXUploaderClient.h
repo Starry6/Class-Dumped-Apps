@@ -1,0 +1,31 @@
+@interface AWEUGImageXUploaderClient : NSObject
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSDictionary uploadConfig;
+@property (nonatomic) NSDictionary authorizationParameter;
+@property (nonatomic) BDImageXUploaderClient client;
+@property (nonatomic) NSError error;
+@property (nonatomic) BDUploadImageXInfo imageInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)imageXUpload:fileIndex:singleImage:error:;
+- (void)imageXUpload:fileIndex:progressDidUpdate:;
+- (void)imageXUploadDidFinish:;
+- (long long)imageXUploadGetNetState:;
+- (void)imageXUpload:onLogInfo:;
+- (void)setAuthorizationParameter:;
+- (void)setUploadConfig:;
+- (id)uploadConfig;
+- (id)authorizationParameter;
+- (void)setCompletionBlock:;
+- (id)completionBlock;
+- (void)setError:;
+- (void)setClient:;
+- (id)client;
+- (void).cxx_destruct;
+- (id)error;
+- (id)imageInfo;
+- (void)setImageInfo:;
++ (id)instanceWithBase64Data:uploadConfig:authConfig:requestParams:;
+@end

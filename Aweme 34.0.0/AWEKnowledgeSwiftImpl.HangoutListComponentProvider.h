@@ -1,0 +1,2 @@
+@interface AWEKnowledgeSwiftImpl.HangoutListComponentProvider : AWESpeCategoryKit.FeedListComponentProvider
+@end

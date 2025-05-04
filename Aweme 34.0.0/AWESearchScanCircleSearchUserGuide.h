@@ -1,0 +1,36 @@
+@interface AWESearchScanCircleSearchUserGuide : NSObject
+@property (nonatomic) double guideTimes;
+@property (nonatomic) UIView clearView;
+@property (nonatomic) UIView guideView;
+@property (nonatomic) LOTAnimationView guideLottieView;
+@property (nonatomic) UILabel guideTextLabel;
+@property (nonatomic) BOOL isCircleGuide;
+@property (nonatomic) BOOL hasHideGuide;
+- (BOOL)canShowGuide;
+- (id)clearView;
+- (void)setClearView:;
+- (id)guideTextLabel;
+- (void)hideGuideIfNeed;
+- (void)setGuideLottieView:;
+- (id)guideLottieView;
+- (double)guideTimes;
+- (void)setGuideTimes:;
+- (void)resetGuideView;
+- (void)setGuideTextLabel:;
+- (id)getGuideTimesKey;
+- (void)setHasHideGuide:;
+- (void)addCurrentGuideTimes;
+- (BOOL)hasHideGuide;
+- (BOOL)isCircleGuide;
+- (id)setupCircleLottieView;
+- (id)setupClickLottieView;
+- (void)showGuideOnView:guideHeight:;
+- (void)setIsCircleGuide:;
+- (void)handlePan:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)handleTap:;
+- (id)guideView;
+- (void)setGuideView:;
+@end

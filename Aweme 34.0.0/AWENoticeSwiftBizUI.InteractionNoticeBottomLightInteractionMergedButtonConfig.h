@@ -1,0 +1,3 @@
+@interface AWENoticeSwiftBizUI.InteractionNoticeBottomLightInteractionMergedButtonConfig : AWENoticeSwiftBizUI.InteractionNoticeBottomLightInteractionButtonConfig
+- (void).cxx_destruct;
+@end

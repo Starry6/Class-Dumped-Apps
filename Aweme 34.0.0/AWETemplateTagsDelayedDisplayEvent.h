@@ -1,0 +1,2 @@
+@interface AWETemplateTagsDelayedDisplayEvent : AWETemplateTagsTriggerEvent
+@end

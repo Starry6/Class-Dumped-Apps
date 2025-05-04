@@ -1,0 +1,32 @@
+@interface AWEVCDAccountAlertModel : AWEBaseApiModel
+@property (nonatomic) q accountAlertType;
+@property (nonatomic) AWEVCDAlertModel authorizeAlert;
+@property (nonatomic) AWEVCDAlertModel closeInterActionAlert;
+@property (nonatomic) AWEVCDAlertModel importFansAlert;
+@property (nonatomic) AWEVCDAlertModel finishInterActionAlert;
+@property (nonatomic) AWEVCDUserModel vcdUserInfo;
+@property (nonatomic) AWEVCDAlertModel relationAlert;
+- (long long)accountAlertType;
+- (void)setAccountAlertType:;
+- (id)authorizeAlert;
+- (void)setAuthorizeAlert:;
+- (id)closeInterActionAlert;
+- (void)setCloseInterActionAlert:;
+- (id)importFansAlert;
+- (void)setImportFansAlert:;
+- (id)finishInterActionAlert;
+- (void)setFinishInterActionAlert:;
+- (id)vcdUserInfo;
+- (void)setVcdUserInfo:;
+- (id)relationAlert;
+- (void)setRelationAlert:;
+- (void).cxx_destruct;
++ (id)accountAlertTypeJSONTransformer;
++ (id)authorizeAlertJSONTransformer;
++ (id)relationAlertJSONTransformer;
++ (id)closeInterActionAlertJSONTransformer;
++ (id)importFansAlertJSONTransformer;
++ (id)finishInterActionAlertJSONTransformer;
++ (id)vcdUserInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

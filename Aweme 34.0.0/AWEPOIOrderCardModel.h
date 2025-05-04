@@ -1,0 +1,30 @@
+@interface AWEPOIOrderCardModel : MTLModel
+@property (nonatomic) NSArray spuList;
+@property (nonatomic) NSString orderID;
+@property (nonatomic) NSString expireTimeText;
+@property (nonatomic) NSString orderURLString;
+@property (nonatomic) q bizLineType;
+@property (nonatomic) NSString appID;
+@property (nonatomic) BOOL isLifeOrder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)orderID;
+- (void)setOrderID:;
+- (id)spuList;
+- (void)setSpuList:;
+- (id)expireTimeText;
+- (void)setExpireTimeText:;
+- (id)orderURLString;
+- (void)setOrderURLString:;
+- (long long)bizLineType;
+- (void)setBizLineType:;
+- (BOOL)isLifeOrder;
+- (void)setIsLifeOrder:;
+- (id)appID;
+- (void)setAppID:;
+- (void).cxx_destruct;
++ (id)spuListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

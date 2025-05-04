@@ -1,0 +1,32 @@
+@interface AWEEcomSearchRequestStatisticManager : NSObject
+@property (nonatomic) NSMutableDictionary costDict;
+@property (nonatomic) NSMutableDictionary startTimeDict;
+@property (nonatomic) NSMutableDictionary endTimeDict;
+@property (nonatomic) NSMutableDictionary photoCostDict;
+@property (nonatomic) NSMutableDictionary photoStartTimeDict;
+- (void)setCostDict:;
+- (void)setStartTimeDict:;
+- (id)startTimeDict;
+- (id)costDict;
+- (void)startStatisticTimeForKey:;
+- (void)endStatisticTimeForKey:;
+- (void)appendCostForKey:cost:scene:;
+- (void)startPhotoStatisticTimeForKey:;
+- (void)endPhotoStatisticTimeForKey:;
+- (void)setEndTimeDict:;
+- (void)startStatisticTime:forKey:;
+- (id)endTimeDict;
+- (void)endStatisticTime:forKey:;
+- (id)p_costCountKey:;
+- (id)photoCostDict;
+- (id)photoStartTimeDict;
+- (void)setPhotoCostDict:;
+- (void)setPhotoStartTimeDict:;
+- (id)costParams;
+- (void)resetAppendCost:;
+- (void)startPhotoTrack;
+- (id)photoCostParams;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

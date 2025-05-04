@@ -1,0 +1,33 @@
+@interface AWESearchScanResultsEmptyView : UIView
+@property (nonatomic) UILabel firstLabel;
+@property (nonatomic) UILabel secondLabel;
+@property (nonatomic) UIView retryView;
+@property (nonatomic) Q emptyStatus;
+@property (nonatomic) UILabel retryLabel;
+@property (nonatomic) UIImageView iconImage;
+@property (nonatomic) @? returnLastPageBlock;
+@property (nonatomic) @? retryRequestDataBlock;
+- (void)configUI;
+- (id)retryView;
+- (void)setRetryView:;
+- (id)retryRequestDataBlock;
+- (void)setRetryRequestDataBlock:;
+- (id)retryLabel;
+- (void)setRetryLabel:;
+- (void)updateEmptyViewWithStatus:openSearchPage:;
+- (void)setReturnLastPageBlock:;
+- (void)clickRetryBtn;
+- (void)setEmptyStatus:;
+- (unsigned long long)emptyStatus;
+- (id)returnLastPageBlock;
+- (id)iconImage;
+- (id)init;
+- (void)resume;
+- (void)setIconImage:;
+- (void)clear;
+- (void).cxx_destruct;
+- (void)setSecondLabel:;
+- (id)firstLabel;
+- (id)secondLabel;
+- (void)setFirstLabel:;
+@end

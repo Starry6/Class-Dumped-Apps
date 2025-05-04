@@ -1,0 +1,36 @@
+@interface AWEUserCenterWhoCanMessageMeJumpCollectionViewCell : UICollectionViewCell
+@property (nonatomic) AWESettingItemModel model;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UIImageView arrowIconImageView;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) Q cornerType;
+@property (nonatomic) BOOL useCardUIStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUseCardUIStyle:;
+- (BOOL)useCardUIStyle;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (void)configWithViewModel:;
+- (void)setupCorners;
+- (void)p_addSubviews;
+- (void)highlightWithAnimation;
+- (void)p_addPositionConstraints;
+- (void)configTextAndSizeWithViewModel:;
+- (void)highlightWithAnimationWithDuration:dismissDelay:;
+- (id)arrowIconImageView;
+- (void)setArrowIconImageView:;
+- (void)setModel:;
+- (id)initWithFrame:;
+- (id)model;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)detailLabel;
+- (void)setDetailLabel:;
+- (unsigned long long)cornerType;
+- (void)setCornerType:;
+@end

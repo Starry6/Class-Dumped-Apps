@@ -1,0 +1,33 @@
+@interface AWEReshootVideoProgressView : UIView
+@property (nonatomic) HTSVideoProgressView progressView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView container;
+@property (nonatomic) float progress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIColor trackTintColor;
+@property (nonatomic) UIColor originTrackTintColor;
+- (void)setProgress:duration:animated:;
+- (void)updateViewWithTimeSegments:totalTime:;
+- (void)updateStandardDurationIndicatorWithLongVideoEnabled:standardDuration:maxDuration:;
+- (void)setReshootTimeFrom:to:totalDuration:;
+- (void)blinkMarkAtCurrentProgress:;
+- (void)blinkReshootProgressBarOnce;
+- (id)originTrackTintColor;
+- (void)setContainer:;
+- (id)container;
+- (id)init;
+- (id)progressView;
+- (void)setBackgroundView:;
+- (id)initWithFrame:;
+- (float)progress;
+- (id)backgroundView;
+- (void)setProgressView:;
+- (void).cxx_destruct;
+- (void)setProgress:;
+- (void)setTrackTintColor:;
+- (id)trackTintColor;
+- (void)setupUI;
+@end

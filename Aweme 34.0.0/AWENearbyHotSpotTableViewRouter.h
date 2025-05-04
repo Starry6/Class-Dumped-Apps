@@ -1,0 +1,2 @@
+@interface AWENearbyHotSpotTableViewRouter : NSObject
+@end

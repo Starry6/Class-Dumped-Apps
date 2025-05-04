@@ -1,0 +1,31 @@
+@interface AWEImageAlbumEditAssetsExportManager : HTSService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)exportWithAssetModels:publishModel:completion:;
+- (void)exportWithImages:publishModel:completion:;
++ (id)maxExportSize;
++ (id)exportSizeForPHAsset:;
++ (void)exportWithResourceModels:publishModel:completion:;
++ (void)exportWithImagePaths:imagePathsForCompress:publishModel:completion:;
++ (void)p_fetchImageWithPlaceholderModels:publishModel:completionHandler:;
++ (id)p_exportLock;
++ (id)p_exportQueue;
++ (void)p_handleExportSucceedWithPlaceholderModels:publishModel:completionHandler:;
++ (void)p_exportAssetToLocalFileWithModel:rootOutputFolderPath:completion:;
++ (BOOL)p_copyImageWithModel:originalImageFilePath:rootOutputFolderPath:isCompressedImage:;
++ (id)recodeOriginImageDataWith:placeholderModel:;
++ (BOOL)p_saveOriginalImageWithModel:originalImage:imageData:rootOutputFolderPath:;
++ (void)p_saveCompressedImageWithModel:originalImage:imageData:rootOutputFolderPath:;
++ (id)p_exportImageSize:;
++ (void)fetchOriginImageWithAsset:imageSize:resizeMode:completion:;
++ (id)downsampleWithLimitSize:originImage:placeholderModel:;
++ (id)p_originalImagePathAtFolder:index:;
++ (id)p_compressedImagePathAtFolder:index:;
++ (id)p_creatImageInputInfo:isOriginal:taskId:;
++ (BOOL)saveImageWithFilePath:imageData:originImage:usingOriginImageData:trackParams:;
++ (BOOL)saveImageWithFilePath:imageData:originImage:usingOriginImageData:;
++ (id)exportSizeWithImageSize:;
++ (long long)resizeMode;
+@end

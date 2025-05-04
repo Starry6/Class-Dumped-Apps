@@ -1,0 +1,37 @@
+@interface AWEIMPhotoPickerToolbarViewV2 : UIView
+@property (nonatomic) Q sceneType;
+@property (nonatomic) AWEIMPhotoPickerFunctionModel useOriginModel;
+@property (nonatomic) NSMutableArray viewModelArr;
+@property (nonatomic) Q sendCount;
+@property (nonatomic) NSString sendButtonTitle;
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) BOOL isEnableEdit;
+@property (nonatomic) BOOL defaultOriginSelect;
+@property (nonatomic) <AWEIMPhotoPickerToolbarDelegate> delegate;
+- (void)setupViewModel;
+- (id)sendButtonTitle;
+- (void)setSendButtonTitle:;
+- (BOOL)useOrigin;
+- (void)selectUseOrigin:;
+- (id)initWithSceneType:isEnableEdit:;
+- (id)initWithSceneType:isEnableEdit:defaultOriginSelect:;
+- (void)setUseOriginModel:;
+- (BOOL)defaultOriginSelect;
+- (id)useOriginModel;
+- (id)viewModelArr;
+- (BOOL)isEnableEdit;
+- (void)onSendButtonTapped;
+- (void)setViewModelArr:;
+- (void)setIsEnableEdit:;
+- (void)setDefaultOriginSelect:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setDelegate:;
+- (void)setupView;
+- (unsigned long long)sceneType;
+- (void)setSceneType:;
+- (id)sendButton;
+- (void)setSendButton:;
+- (unsigned long long)sendCount;
+- (void)setSendCount:;
+@end

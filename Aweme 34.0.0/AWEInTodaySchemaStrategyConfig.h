@@ -1,0 +1,33 @@
+@interface AWEInTodaySchemaStrategyConfig : MTLModel
+@property (nonatomic) q pastType;
+@property (nonatomic) NSString aggregatedDateRange;
+@property (nonatomic) BOOL aggregateVideo;
+@property (nonatomic) q maxVideoDuration;
+@property (nonatomic) BOOL aggregateImage;
+@property (nonatomic) BOOL sortCreateTime;
+@property (nonatomic) q maxAssetsCount;
+@property (nonatomic) NSArray tagWeightList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)maxVideoDuration;
+- (id)tagWeightList;
+- (void)setTagWeightList:;
+- (void)setMaxVideoDuration:;
+- (void)setPastType:;
+- (id)aggregatedDateRange;
+- (void)setAggregatedDateRange:;
+- (BOOL)aggregateVideo;
+- (void)setAggregateVideo:;
+- (BOOL)aggregateImage;
+- (void)setAggregateImage:;
+- (BOOL)sortCreateTime;
+- (void)setSortCreateTime:;
+- (long long)maxAssetsCount;
+- (void)setMaxAssetsCount:;
+- (void).cxx_destruct;
+- (long long)pastType;
++ (id)tagWeightListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

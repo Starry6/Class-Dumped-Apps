@@ -1,0 +1,32 @@
+@interface AWEGDAlbumCategoryInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString tabName;
+@property (nonatomic) NSString tabID;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q totalCount;
+@property (nonatomic) q nextOffset;
+@property (nonatomic) q nextPage;
+@property (nonatomic) NSMutableArray photoInfos;
+@property (nonatomic) NSArray photoInfosString;
+@property (nonatomic) q tabIndex;
+- (void)setTabID:;
+- (void)setNextOffset:;
+- (id)photoInfosString;
+- (void)setPhotoInfosString:;
+- (long long)totalCount;
+- (void)setHasMore:;
+- (BOOL)hasMore;
+- (long long)tabIndex;
+- (void).cxx_destruct;
+- (long long)nextOffset;
+- (id)photoInfos;
+- (void)setPhotoInfos:;
+- (void)setTotalCount:;
+- (id)tabID;
+- (long long)nextPage;
+- (id)tabName;
+- (void)setTabName:;
+- (void)setNextPage:;
+- (void)setTabIndex:;
++ (id)photoInfosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

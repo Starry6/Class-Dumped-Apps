@@ -1,0 +1,25 @@
+@interface AWEImageTextStickerComponent : AWEImageTextBaseComponent
+- (BOOL)shouldResponsetoLongPress:;
+- (void)playByClick:;
+- (void)pauseByClick:;
+- (void)createdVideoController:;
+- (void)prepareForPlayingIfNeeded;
+- (void)overlayView:containerDidScrollTo:;
+- (void)overlayView:didUpdateSize:;
+- (BOOL)overlayView:shouldResponseToTap:from:;
+- (void)configOverlayView:;
+- (void)sectionControllerDidEndDisplaying:;
+- (void)configCell:index:model:;
+- (void)didBindSectionViewModel;
+- (void)viewControllerDidAppear:;
+- (void)viewControllerWillDisappear:isBeingDismissed:isMovingFromParentViewController:;
+- (void)didSetupPageContext;
+- (id)getCurrentCellStickerManager;
+- (void)updateOverlaysWithIndexes:;
+- (void)updateModernInteractiveContainerAtIndex:uri:aweme:container:;
+- (void)updateStickerPositionWithUri:;
+- (id)registerProtocol;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithManager:;
+@end

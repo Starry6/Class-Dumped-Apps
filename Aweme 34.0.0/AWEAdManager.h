@@ -1,0 +1,33 @@
+@interface AWEAdManager : HTSService
+@property (nonatomic) NSString referString;
+@property (nonatomic) BOOL hasOpenOtherAppInTask;
+@property (nonatomic) NSString linkAdStashedData;
+@property (nonatomic) NSString lastClickCid;
+@property (nonatomic) NSString lastClickLogExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (id)referString;
+- (void)setReferString:;
+- (void)onAppDidEnterBackground:;
+- (void)storeLastClickedAdInfoWithCid:logExtra:;
+- (id)getLastClickedAdInfoWithCid:;
+- (BOOL)hasOpenOtherAppInTask;
+- (void)setHasOpenOtherAppInTask:;
+- (id)linkAdStashedData;
+- (void)setLinkAdStashedData:;
+- (void)didOpenURL:sourceApplication:annotation:;
+- (void)setupExtraObserver;
+- (void)setLastClickCid:;
+- (void)setLastClickLogExtra:;
+- (id)lastClickCid;
+- (id)lastClickLogExtra;
+- (void)handleApplicationDidBecomeActiveNotification:;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (void)setUpAuthorTagIfNeededForComment:;
++ (BOOL)isOtherAppSchema:;
++ (void)setupCommentTag:;
+@end

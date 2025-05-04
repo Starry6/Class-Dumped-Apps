@@ -1,0 +1,30 @@
+@interface AWELivePreStreamUserFeedbackElement : AWELiveBaseElement
+@property (nonatomic) AWELivePreStreamFeedbackViewModel feedbackViewModel;
+@property (nonatomic) AWELivePreStreamFeedbackBottomPanelView feedbackBottomPanelView;
+@property (nonatomic) q indexPath;
+@property (nonatomic) BOOL enteredRoom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)onUserEnterLiveRoom:;
+- (void)onUserQuitLiveRoom:;
+- (void)viewController_endDecelerating;
+- (void)streamPlayer_firstFrame;
+- (void)streamPlayer_stop;
+- (void)streamPlayer_finish;
+- (void)preloadElement;
+- (void)provideEenterLiveRoomParamasWithContext:;
+- (void)setEnteredRoom:;
+- (BOOL)enteredRoom;
+- (id)feedbackViewModel;
+- (id)feedbackBottomPanelView;
+- (void)liveFeedBackBottomPanelViewChangeAlpha:;
+- (void)setFeedbackViewModel:;
+- (void)setFeedbackBottomPanelView:;
+- (long long)indexPath;
+- (void)setData:;
+- (void).cxx_destruct;
+- (void)reset;
+@end

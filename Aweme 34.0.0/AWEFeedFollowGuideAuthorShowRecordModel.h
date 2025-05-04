@@ -1,0 +1,31 @@
+@interface AWEFeedFollowGuideAuthorShowRecordModel : MTLModel
+@property (nonatomic) NSString authorID;
+@property (nonatomic) BOOL canShow;
+@property (nonatomic) NSString latestUpdateSessionKey;
+@property (nonatomic) NSDate lastShowTimeStamp;
+@property (nonatomic) NSString lastShowSessionKey;
+@property (nonatomic) q showCount;
+@property (nonatomic) BOOL isUpdating;
+- (BOOL)canShow;
+- (void)setCanShow:;
+- (id)lastShowTimeStamp;
+- (void)setLastShowTimeStamp:;
+- (void)updateCanShowStatusWithSessionKey:completion:;
+- (BOOL)dataTrustworthyWithSessionKey:;
+- (BOOL)isTimeStampOutdated;
+- (void)countShownForAuthorWithSessionKey:;
+- (id)latestUpdateSessionKey;
+- (void)setLatestUpdateSessionKey:;
+- (void)setLastShowSessionKey:;
+- (BOOL)satisfyFrequencyControl;
+- (id)lastShowSessionKey;
+- (void)clearData;
+- (void).cxx_destruct;
+- (BOOL)isUpdating;
+- (void)setIsUpdating:;
+- (void)setShowCount:;
+- (long long)showCount;
+- (id)initWithAuthor:;
+- (id)authorID;
+- (void)setAuthorID:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEAnchorMediumSearchHistoryViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray historyList;
+@property (nonatomic) UIView tableFooterView;
+@property (nonatomic) @? searchHistoryClickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)saveSearchHistoryResultWithKeyword:;
+- (void)updateDeleteAllSearchHistoryView;
+- (id)historyList;
+- (void)deleteHistoryItemWithKeyWord:;
+- (void)deleteAllSearchHistory:;
+- (void)setHistoryList:;
+- (void)setSearchHistoryClickBlock:;
+- (id)searchHistoryClickBlock;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLayoutSubviews;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (void)viewDidLoad;
+- (id)tableView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)tableFooterView;
+- (void)setTableFooterView:;
+- (void)setupUI;
+@end

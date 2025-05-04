@@ -1,0 +1,34 @@
+@interface AWEAdSearchOutFlowLynxComponentMonitorManager : HTSService
+@property (nonatomic) NSMutableSet cache;
+@property (nonatomic) NSLock asynLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)asynLock;
+- (void)setAsynLock:;
+- (void)lynxComponentMonitorPostEventWithContext:eventKey:;
+- (void)searchWholeLynxCardDataReceiveWithSearchModel:;
+- (void)searchDynamicCardDataReceiveWithSearchModel:;
+- (void)searchOutFlowLynxComponentDataReceiveWithSearchModel:;
+- (void)searchOutFlowStructureButtonDataReceiveWithSearchModel:;
+- (void)searchOutFlowCouponButtonDataReceiveWithSearchModel:;
+- (void)searchCinemaTicketCardDataReceiveWithSearchModel:;
+- (void)searchOutFlowMerchandiseVideoButtonDataReceiveWithSearchModel:;
+- (void)searchOutFlowSandwichTopCardDataReceiveWithSearchModel:;
+- (void)searchOutFlowSandwichBottomCardVideoButtonDataReceiveWithSearchModel:;
+- (BOOL)isMonitorPost:label:creativeID:adID:adStyleType:lynxType:lynxRawDataMd5:;
+- (void)monitorEventPostWithSchema:label:creativeID:adID:adStyleType:lynxType:lynxRawDataMd5:;
+- (id)lynxComponentIdentifierWithSchema:label:creativeID:adID:adStyleType:lynxType:lynxRawDataMd5:;
+- (id)adExtraDataFromDynamicPatch:;
+- (id)adCardNameFromModel:;
+- (id)getAdExtraRelatedInfo:;
+- (id)adExtraDataFromAweme:;
+- (void)generalSearchDataReceivedWithReponseModel:;
+- (void)resetMonitorCache;
+- (void)setCache:;
+- (id)cache;
+- (void).cxx_destruct;
++ (id)sharedInstance;
++ (id)allocWithZone:;
+@end

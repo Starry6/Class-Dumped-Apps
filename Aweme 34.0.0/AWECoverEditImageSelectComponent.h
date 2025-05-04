@@ -1,0 +1,34 @@
+@interface AWECoverEditImageSelectComponent : ACCSecondaryPageComponent
+@property (nonatomic) UIView selectContainerView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) AWECoverEditImageChooseCoverViewModel viewModel;
+@property (nonatomic) <ACCSequencePlayControlServiceProtocol> sequenceControlService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMount;
+- (void)componentDidUnmount;
+- (void)componentDidAppear;
+- (void)componentWillAppear;
+- (void)componentDidDisappear;
+- (id)serviceBinding;
+- (void)sequenceEditService:didTransferToIndex:editMode:isAutoTransfer:;
+- (unsigned long long)secondaryPageComponentType;
+- (double)subViewHeight;
+- (id)subViewInHierarchy;
+- (id)selectContainerView;
+- (unsigned long long)mediaTypeWithProject:;
+- (void)setSelectContainerView:;
+- (id)sequenceControlService;
+- (void)setSequenceControlService:;
+- (id)collectionView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)viewModel;
+- (void)setCollectionView:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+@end

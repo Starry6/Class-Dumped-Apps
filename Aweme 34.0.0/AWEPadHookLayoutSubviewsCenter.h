@@ -1,0 +1,2 @@
+@interface AWEPadHookLayoutSubviewsCenter : NSObject
+@end

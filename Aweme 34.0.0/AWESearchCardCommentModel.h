@@ -1,0 +1,34 @@
+@interface AWESearchCardCommentModel : NSObject
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) q commentCount;
+@property (nonatomic) BOOL disableComment;
+@property (nonatomic) AWEAwemeModel awemeModel;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString referString;
+@property (nonatomic) NSString adEventName;
+@property (nonatomic) NSDictionary interactLogExtra;
+@property (nonatomic) NSDictionary commentLogExtra;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} commentButtonFrame;
+- (id)awemeModel;
+- (void)setAwemeModel:;
+- (id)referString;
+- (void)setReferString:;
+- (id)adEventName;
+- (void)setAdEventName:;
+- (BOOL)disableComment;
+- (id)commentLogExtra;
+- (void)setDisableComment:;
+- (void)setCommentLogExtra:;
+- (id)commentButtonFrame;
+- (id)interactLogExtra;
+- (void)setInteractLogExtra:;
+- (void)setCommentButtonFrame:;
+- (void)setGroupID:;
+- (id)init;
+- (id)groupID;
+- (void)setHidden:;
+- (void).cxx_destruct;
+- (BOOL)hidden;
+- (long long)commentCount;
+- (void)setCommentCount:;
+@end

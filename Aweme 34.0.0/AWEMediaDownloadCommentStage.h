@@ -1,0 +1,35 @@
+@interface AWEMediaDownloadCommentStage : AWEMediaDownloadAwemeStage
+@property (nonatomic) double imageProgress;
+@property (nonatomic) double videoProgress;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) BOOL hasRegisteredObserver;
+@property (nonatomic) NSMutableArray resultQueue;
+@property (nonatomic) NSObject<OS_dispatch_group> dispatchGroup;
+- (void)setHasRegisteredObserver:;
+- (BOOL)hasRegisteredObserver;
+- (void)setVideoProgress:;
+- (double)videoProgress;
+- (void)downloadImage;
+- (id)commentConfig;
+- (void)finishThenContinue;
+- (void)downloadVideoWithURLList:;
+- (void)failedThenContinueWithError:;
+- (void)downloadLivePhoto;
+- (void)handleImageDownload;
+- (void)handleLivePhotoVideoDownload;
+- (id)commentImageModel;
+- (void)handleProgressChange;
+- (void)dealloc;
+- (void)run;
+- (id)progress;
+- (void)setResultQueue:;
+- (id)dispatchGroup;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (id)resultQueue;
+- (void)setDispatchGroup:;
+- (void)setProgress:;
+- (double)imageProgress;
+- (void)setImageProgress:;
+- (id)getImageURL:;
+@end

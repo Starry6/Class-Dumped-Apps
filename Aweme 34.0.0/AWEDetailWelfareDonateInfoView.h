@@ -1,0 +1,33 @@
+@interface AWEDetailWelfareDonateInfoView : UIView
+@property (nonatomic) UIView topSeperateLine;
+@property (nonatomic) UILabel sponsorNameLabel;
+@property (nonatomic) AWEDetailDonateStateView donateStateView;
+@property (nonatomic) UILabel donateMoneyLabel;
+@property (nonatomic) UILabel userCountLabel;
+@property (nonatomic) UILabel donateMoneyTagLabel;
+@property (nonatomic) UILabel userCountTagLabel;
+@property (nonatomic) UIButton donateTipButton;
+- (void)p_setupUI;
+- (id)userCountLabel;
+- (void)setUserCountLabel:;
+- (id)topSeperateLine;
+- (void)setTopSeperateLine:;
+- (void)updateToModel:;
+- (id)sponsorNameLabel;
+- (id)donateStateView;
+- (id)donateMoneyLabel;
+- (id)donateMoneyTagLabel;
+- (id)userCountTagLabel;
+- (id)donateTipButton;
+- (void)p_updateDonateViewStateWithModel:;
+- (void)p_updateDonateMoneyLabelWithModel:;
+- (void)setSponsorNameLabel:;
+- (void)setDonateStateView:;
+- (void)setDonateMoneyLabel:;
+- (void)setDonateMoneyTagLabel:;
+- (void)setUserCountTagLabel:;
+- (void)setDonateTipButton:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
++ (id)formatedMoneyStringWithNumber:;
+@end

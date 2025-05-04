@@ -1,0 +1,36 @@
+@interface AWESearchAIGCSubDataController : NSObject
+@property (nonatomic) AWESearchAIGCSSERequestManager requestManager;
+@property (nonatomic) NSMutableDictionary fEDataParams;
+@property (nonatomic) <AWESearchAIGCSubDataControllerDelegate> requestDelegate;
+@property (nonatomic) NSDictionary subRequestLastParams;
+@property (nonatomic) AWESearchAIGCSubDataControllerMonitor monitor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didReceiveAllData;
+- (void)clearBeforeNewLink;
+- (void)didReceiveCommonResponse:;
+- (void)setRequestDelegate:;
+- (id)requestDelegate;
+- (id)currentSearchId;
+- (void)didReceiveFirstDataChunk;
+- (void)didEndReadChunkForError:errorReason:currentResponse:;
+- (void)cancelCurrentStream;
+- (void)startNewStream;
+- (id)dataControllerRequestUrl;
+- (id)dataControllerRequestRefreshParams;
+- (id)fEDataParams;
+- (id)subRequestParams;
+- (void)setFEDataParams:;
+- (void)setSubRequestLastParams:;
+- (void)appendFEData:;
+- (id)subRequestLastParams;
+- (void)setMonitor:;
+- (id)monitor;
+- (id)init;
+- (void)resetData;
+- (void).cxx_destruct;
+- (id)requestManager;
+- (void)setRequestManager:;
+@end

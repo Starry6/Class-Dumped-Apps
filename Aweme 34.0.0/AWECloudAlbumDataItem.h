@@ -1,0 +1,38 @@
+@interface AWECloudAlbumDataItem : NSObject
+@property (nonatomic) # cellClass;
+@property (nonatomic) Q cellType;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) Q albumId;
+@property (nonatomic) NSString title;
+@property (nonatomic) q localNum;
+@property (nonatomic) q cloudNum;
+@property (nonatomic) EcAsset cover;
+@property (nonatomic) UIImage thumbnailImage;
+@property (nonatomic) EcAlbum albumResource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (void)setCover:;
+- (unsigned long long)albumId;
+- (void)setAlbumId:;
+- (long long)localNum;
+- (void)setLocalNum:;
+- (long long)cloudNum;
+- (void)setCloudNum:;
+- (id)albumResource;
+- (void)setAlbumResource:;
+- (void)setIsSelected:;
+- (id)init;
+- (unsigned long long)cellType;
+- (void)setCellType:;
+- (id)thumbnailImage;
+- (BOOL)isSelected;
+- (Class)cellClass;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (void)setThumbnailImage:;
+- (void)setCellClass:;
+@end

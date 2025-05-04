@@ -1,0 +1,3 @@
+@interface _TtGC20AWECommentSwiftModel24BaseListSectionViewModelPSo48AWECommentLongPressPanelElementViewModelProtocol__ : AWEBaseListSectionViewModel
+- (id)init;
+@end

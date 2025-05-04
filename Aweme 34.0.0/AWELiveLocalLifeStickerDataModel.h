@@ -1,0 +1,36 @@
+@interface AWELiveLocalLifeStickerDataModel : MTLModel
+@property (nonatomic) NSString cardId;
+@property (nonatomic) AWEURLModel titleUrl;
+@property (nonatomic) AWEURLModel productImageUrl;
+@property (nonatomic) NSArray data;
+@property (nonatomic) q width;
+@property (nonatomic) q isFolding;
+@property (nonatomic) NSString background;
+@property (nonatomic) NSDictionary eventParams;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtraParams:;
+- (id)extraParams;
+- (void)setEventParams:;
+- (long long)isFolding;
+- (void)setIsFolding:;
+- (id)titleUrl;
+- (void)setTitleUrl:;
+- (id)productImageUrl;
+- (void)setProductImageUrl:;
+- (void)setWidth:;
+- (id)background;
+- (long long)width;
+- (void)setBackground:;
+- (void)setData:;
+- (void).cxx_destruct;
+- (id)data;
+- (id)cardId;
+- (void)setCardId:;
+- (id)eventParams;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)dataJSONTransformer;
+@end

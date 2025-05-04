@@ -1,0 +1,37 @@
+@interface AWESearchResultFilterAdviceViewController : UIViewController
+@property (nonatomic) UILabel tipsLabel;
+@property (nonatomic) UIView phoneContactContainerView;
+@property (nonatomic) UILabel contactTipsLabel;
+@property (nonatomic) UILabel contactPhoneLabel;
+@property (nonatomic) UIView adviceContainerView;
+@property (nonatomic) UILabel adviceTipsLabel;
+@property (nonatomic) AWESearchBlankView searchBlankView;
+@property (nonatomic) AWERiskPreventModel riskPreventModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tipsLabel;
+- (void)setTipsLabel:;
+- (id)riskPreventModel;
+- (void)setRiskPreventModel:;
+- (void)setSearchBlankView:;
+- (id)searchBlankView;
+- (id)phoneContactContainerView;
+- (id)contactTipsLabel;
+- (id)contactPhoneLabel;
+- (void)phoneContactTapped;
+- (id)adviceContainerView;
+- (id)adviceTipsLabel;
+- (void)adviceTapped;
+- (void)configRiskPreventModel:;
+- (void)setPhoneContactContainerView:;
+- (void)setContactTipsLabel:;
+- (void)setContactPhoneLabel:;
+- (void)setAdviceContainerView:;
+- (void)setAdviceTipsLabel:;
+- (void)dealloc;
+- (void)viewDidLoad;
+- (void)setup;
+- (void).cxx_destruct;
+@end

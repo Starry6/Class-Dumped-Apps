@@ -1,0 +1,2 @@
+@interface AWEKnowledgeRichContentImpl.ImageContentAdapterCellConfig : BDMultiContentContainer.ImageContentCellConfig
+@end

@@ -1,0 +1,34 @@
+@interface AWESearchAlienatedTabModel : AWEBaseApiModel
+@property (nonatomic) double scale;
+@property (nonatomic) NSString normalImgUrl;
+@property (nonatomic) NSString colorImgUrl;
+@property (nonatomic) NSString colorSelectedImgUrl;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) NSString lineColor;
+@property (nonatomic) NSString tabType;
+@property (nonatomic) NSString wordsContent;
+@property (nonatomic) AWESearchAlienatedTabExitRuleModel exitRule;
+- (id)tabType;
+- (void)setTabType:;
+- (id)wordsContent;
+- (void)setWordsContent:;
+- (void)setExitRule:;
+- (id)exitRule;
+- (id)normalImgUrl;
+- (void)setColorImgUrl:;
+- (void)setColorSelectedImgUrl:;
+- (id)colorSelectedImgUrl;
+- (void)setNormalImgUrl:;
+- (id)colorImgUrl;
+- (void)setStartTime:;
+- (long long)endTime;
+- (void)setEndTime:;
+- (double)scale;
+- (id)lineColor;
+- (void)setLineColor:;
+- (void).cxx_destruct;
+- (void)setScale:;
+- (long long)startTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

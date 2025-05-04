@@ -1,0 +1,32 @@
+@interface AWEStudioVideoProgressView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel standardDurationLabel;
+@property (nonatomic) HTSVideoProgressView progressView;
+@property (nonatomic) float progress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UIColor trackTintColor;
+@property (nonatomic) UIColor originTrackTintColor;
+- (void)setProgress:duration:animated:;
+- (void)updateViewWithTimeSegments:totalTime:;
+- (void)updateStandardDurationIndicatorWithLongVideoEnabled:standardDuration:maxDuration:;
+- (void)updateViewWithProgress:marks:duration:totalTime:animated:;
+- (void)blinkMarkAtCurrentProgress:;
+- (id)originTrackTintColor;
+- (void)setStandardDurationLabel:;
+- (id)standardDurationLabel;
+- (id)init;
+- (id)progressView;
+- (id)initWithFrame:;
+- (float)progress;
+- (id)containerView;
+- (void)setProgressView:;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setProgress:;
+- (void)setTrackTintColor:;
+- (id)trackTintColor;
+- (void)setupUI;
+@end

@@ -1,0 +1,31 @@
+@interface AWELivePreStreamCancleMuteElement : AWELiveLeftElement
+@property (nonatomic) UIView<AFDMuteAwemeCancelViewProtocol> cancelMuteView;
+@property (nonatomic) BOOL isShowing;
+- (void)muteAwemeCanceled;
+- (void)viewController_viewWillAppear;
+- (unsigned long long)excludeStatus;
+- (id)slotIdentity;
+- (void)prepareForDisPlay;
+- (BOOL)shouldActivateElementWithData:;
+- (void)viewDidDisposed;
+- (void)accessibilityElementAutomaticFocus;
+- (id)cancelMuteView;
+- (void)setCancelMuteView:;
+- (void)streamPlayer_startToPlay;
+- (void)p_shortenBottomArea:;
+- (void)showAnimationMuteButton;
+- (void)trackCancelMuteViewEvent:;
+- (void)recoverVoice;
+- (void)didtappedCancelMuteView;
+- (BOOL)isShowing;
+- (void)prepareForReuse;
+- (void)viewDidLoad;
+- (unsigned long long)priority;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)showMuteButton;
+- (void)setIsShowing:;
+- (void)clean;
+- (void)layoutUI;
++ (BOOL)shouldActivateElement;
+@end

@@ -1,0 +1,31 @@
+@interface AWEOfflineVideoCenterCurrentDownloadingViewController : AWEBaseListViewController
+@property (nonatomic) AWENavigationBar navigationBar;
+@property (nonatomic) AWEOfflineVideoCenterCurrentDownloadingSectionViewModel sectionViewModel;
+@property (nonatomic) AWEOfflineCenterEmptyView emptyView;
+@property (nonatomic) AWEOfflineVideoCenterStorageSizeView storageSizeView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (id)sectionViewModel;
+- (void)setSectionViewModel:;
+- (id)sectionControllerClassArray;
+- (id)emptySectionsPlaceholderView;
+- (void)addNavigationBar;
+- (void)onBackBtnClicked;
+- (void)setupCacheSizeLabel;
+- (id)storageSizeView;
+- (void)setStorageSizeView:;
+- (id)navigationBar;
+- (void)viewDidLoad;
+- (void)updateView;
+- (long long)preferredStatusBarStyle;
+- (void).cxx_destruct;
+- (void)setNavigationBar:;
+- (void)setupView;
+- (id)emptyView;
+- (void)setEmptyView:;
+- (void)setupCollectionView:;
+- (void)setupNotification;
+@end

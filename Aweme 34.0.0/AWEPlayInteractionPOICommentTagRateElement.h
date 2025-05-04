@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionPOICommentTagRateElement : AWEPlayInteractionLeftElement
+@property (nonatomic) AWEPlayInteractionPOICommentTagRateElementViewModel viewModel;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) double foldedHeight;
+@property (nonatomic) UIView<BDXViewContainerProtocol> bdxView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didChangeIntrinsicContentSize:;
+- (void)containerDidFirstScreen:;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (id)bdxView;
+- (void)setBdxView:;
+- (void)viewDidDisposed;
+- (void)updateContentSize:;
+- (void)setFoldedHeight:;
+- (double)foldedHeight;
+- (void)p_setElementIsHide:;
+- (void)p_animateOtherElementWithUnfold:duration:delay:;
+- (void)p_changeLynxHierarchyWithUnfold:;
+- (void)p_animateOtherElementWithUnfold:duration:;
+- (void)p_animateFinished;
+- (void)p_didTapWithUnfold:;
+- (void)p_deleteTagElement;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (BOOL)isAnimating;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (void)setIsAnimating:;
+- (void)reset;
++ (id)activateInfoWithContext:;
+@end

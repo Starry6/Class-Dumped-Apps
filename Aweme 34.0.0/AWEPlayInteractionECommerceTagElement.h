@@ -1,0 +1,35 @@
+@interface AWEPlayInteractionECommerceTagElement : AWEPlayInteractionLeftElement
+@property (nonatomic) UIStackView tagsStackView;
+@property (nonatomic) UIView<AWEECLabelActionProtocol> ecommerceTagEntryView;
+@property (nonatomic) UIView<AWEECLabelActionProtocol> ecommerceTagLabelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewController_willDisplay;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)viewDidDisposed;
+- (long long)elementPriority;
+- (void)hideComponent;
+- (id)tagsStackView;
+- (id)ecommerceTagEntryView;
+- (id)ecommerceTagLabelView;
+- (id)goodsTrackObject:withType:;
+- (void)adClickTrackWithLabel:;
+- (BOOL)shouldShowFriendsBoughtTagWithVid:;
+- (void)friendTagShowedWithVid:;
+- (id)friendTagShowCountKey;
+- (long long)frequencyInEcommerceScene:;
+- (id)ecommerceVideoFriendBuyKey:;
+- (void)setTagsStackView:;
+- (id)getViews;
+- (void)setEcommerceTagLabelView:;
+- (void)setEcommerceTagEntryView:;
+- (id)businessID;
+- (void)viewDidLoad;
+- (void).cxx_destruct;
+- (void)showActionSheet;
++ (BOOL)shouldActiveWithData:context:;
++ (id)activateInfoWithContext:;
+@end

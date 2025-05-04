@@ -1,0 +1,36 @@
+@interface AWEPlayInteractionLiveAppointmentGuideElement : AWEPlayInteractionBaseActionButtonElement
+@property (nonatomic) AWEPlayInteractionLiveAppointmentGuideView appointmentView;
+@property (nonatomic) AWEPlayInteractionLiveAppointmentGuideViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)initializeElement;
+- (void)viewController_willDisplay;
+- (id)activateInfoWithData:;
+- (void)layoutElementView;
+- (void)dynamicWidthRemakeLayout;
+- (void)viewDidDisposed;
+- (BOOL)shouldActivateButtonWithData:;
+- (void)setAppointmentView:;
+- (id)appointmentView;
+- (id)p_enterMethod;
+- (id)p_trackParams;
+- (BOOL)p_isNextAppointment;
+- (void)tapAppointmentView;
+- (BOOL)shouldShowLiveAppointmentGuide;
+- (id)viewModel;
+- (void)viewDidLoad;
+- (void)setViewModel:;
+- (void).cxx_destruct;
+- (BOOL)isMySelf;
++ (void)cleanFrequency;
++ (BOOL)checkFrequenceControl;
++ (void)addAppointmentShowCount:;
++ (id)appointmentShowCount;
++ (long long)notClickTimes;
++ (long long)disableShowTime;
++ (void)setDisableShowTime:;
++ (long long)notShowDays;
++ (void)setAppointmentShowCount:;
+@end

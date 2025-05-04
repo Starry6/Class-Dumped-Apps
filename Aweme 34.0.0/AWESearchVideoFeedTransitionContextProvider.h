@@ -1,0 +1,30 @@
+@interface AWESearchVideoFeedTransitionContextProvider : NSObject
+@property (nonatomic) NSIndexPath transitionIndexPath;
+@property (nonatomic) @? transitionUpdateOffsetBlock;
+@property (nonatomic) @? transitionUpdateCompleteBlock;
+@property (nonatomic) @? getTransitionContextBlock;
+@property (nonatomic) @? getLiveTransitionContextBlock;
+@property (nonatomic) @? getTransitionContextViewBlock;
+@property (nonatomic) @? transitionShouldUpdatePlayerControllerBlock;
+- (id)zoomTransitionStartViewForOffset:;
+- (id)liveTransitionContext;
+- (id)modernTransitionContext;
+- (void)modernTransitionUpdateOffset:isScrolled:;
+- (void)modernTransitionDidCompleteWithOffset:;
+- (BOOL)shouldModernTransitionUpdatePlayerControllerWithFromContext:;
+- (id)transitionIndexPath;
+- (void)setTransitionIndexPath:;
+- (void)setGetTransitionContextBlock:;
+- (void)setGetLiveTransitionContextBlock:;
+- (void)setGetTransitionContextViewBlock:;
+- (void)setTransitionUpdateOffsetBlock:;
+- (void)setTransitionShouldUpdatePlayerControllerBlock:;
+- (id)getTransitionContextBlock;
+- (id)transitionUpdateOffsetBlock;
+- (id)transitionShouldUpdatePlayerControllerBlock;
+- (id)getLiveTransitionContextBlock;
+- (id)transitionUpdateCompleteBlock;
+- (id)getTransitionContextViewBlock;
+- (void)setTransitionUpdateCompleteBlock:;
+- (void).cxx_destruct;
+@end

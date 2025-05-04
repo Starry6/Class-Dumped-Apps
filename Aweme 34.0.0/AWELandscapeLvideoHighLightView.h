@@ -1,0 +1,30 @@
+@interface AWELandscapeLvideoHighLightView : UIView
+@property (nonatomic) UICollectionViewFlowLayout collectionViewLayout;
+@property (nonatomic) AWEAwemeModel model;
+@property (nonatomic) double maxSpace;
+@property (nonatomic) NSArray highLightList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) UICollectionView collectionView;
+- (void)configWithModel:;
+- (void)__configSubviews;
+- (double)__calculateMaxSpace;
+- (void)setMaxSpace:;
+- (double)maxSpace;
+- (id)highLightList;
+- (id)__textRectWithHighLightInfo:font:;
+- (void)setHighLightList:;
+- (void)setModel:;
+- (id)collectionView;
+- (id)init;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (id)model;
+- (id)collectionViewLayout;
+- (void).cxx_destruct;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setCollectionViewLayout:;
+@end

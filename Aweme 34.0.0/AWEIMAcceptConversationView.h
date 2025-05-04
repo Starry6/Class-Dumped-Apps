@@ -1,0 +1,30 @@
+@interface AWEIMAcceptConversationView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIStackView buttonStack;
+@property (nonatomic) NSArray buttonArray;
+@property (nonatomic) BOOL isSetup;
+@property (nonatomic) <AWEIMAcceptConversationViewDelegate> delegte;
+- (void)p_setupUI;
+- (void)setButtonArray:;
+- (id)buttonArray;
+- (id)delegte;
+- (void)handleMenuBtnClick:;
+- (void)setDelegte:;
+- (id)initWithFrame:;
+- (id)containerView;
+- (BOOL)isSetup;
+- (void)setContainerView:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)updateUI;
+- (id)createButton;
+- (void)setIsSetup:;
+- (void)setButtonStack:;
+- (id)buttonStack;
+@end

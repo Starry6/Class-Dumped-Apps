@@ -1,0 +1,32 @@
+@interface AWEIMRTVService : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)voipEntranceEnableShowWithConversation:;
+- (BOOL)voipEntranceIsEnableInConversation:;
+- (BOOL)isEnableInvokeVoipInConversation:;
+- (id)resultIsEnableInvokeVoipInConversation:rtvType:;
+- (void)openFeedTogetherWithRoomID:withOwnerUserID:withEnterFrom:withEventPage:withConversation:withAwemeModel:;
+- (id)createRTVSelectPresenter;
+- (void)invokeGameRTVInteractionWithConversation:;
+- (void)invokeFeedRTVInteractionWithConversation:serviceErrorCode:;
+- (BOOL)enableIMChatCall;
+- (BOOL)enableXRTCGameEntranceInIM;
+- (id)describeWithBlockReason:;
+- (BOOL)p_isAnchorLiveRatherThanAudience;
+- (id)p_voipEntranceIsEnableInConversation:;
+- (id)p_isEnableInvokeVoipInConversation:rtvType:;
+- (void)p_openFeedTogetherLiveWithRoomID:withOwnerUserID:withEnterFrom:withEventPage:withConversation:withAwemeModel:;
+- (id)p_voipEntranceIsEnableWithUser:;
+- (id)p_entranceIsEnableInGroupConversation:;
+- (id)p_resultWithErrorDescription:code:;
+- (id)p_isEnableInvokeVoipWithUser:rtvType:;
+- (id)p_voipCapacityEnable;
+- (BOOL)p_isGroupMemberMoreThanLimit:;
+- (BOOL)p_isGroupMemberLessThanLimit:;
+- (id)p_errorWithDescription:code:;
+- (long long)p_minConversationMemberLimitForGroupVoipEntranceShow;
+- (long long)p_maxConversationMemberLimitForGroupVoipEntranceShow;
++ (id)sharedInstance;
+@end

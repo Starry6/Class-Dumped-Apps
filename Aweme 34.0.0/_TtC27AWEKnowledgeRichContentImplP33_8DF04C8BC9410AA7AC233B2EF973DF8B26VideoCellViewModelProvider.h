@@ -1,0 +1,2 @@
+@interface _TtC27AWEKnowledgeRichContentImplP33_8DF04C8BC9410AA7AC233B2EF973DF8B26VideoCellViewModelProvider : AWEKnowledgeRichContentImpl.BaseCellViewModelProvider
+@end

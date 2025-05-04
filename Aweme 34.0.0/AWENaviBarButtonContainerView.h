@@ -1,0 +1,2 @@
+@interface AWENaviBarButtonContainerView : UIView
+@end

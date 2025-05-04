@@ -1,0 +1,30 @@
+@interface AWEFollowUserUpdateSectionController : AWERelationUserListBaseSectionController
+@property (nonatomic) BOOL isMoreMenuShowing;
+@property (nonatomic) BOOL viewDidAppear;
+- (void)configCell:index:model:;
+- (void)sectionWillDisplayCell:index:model:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (id)enterFrom;
+- (void)didBindSectionViewModel;
+- (void)viewControllerDidDisappear:;
+- (void)didSelectItemAtIndex:model:;
+- (void)viewControllerWillAppear:isBeingPresented:isMovingToParentViewController:;
+- (unsigned long long)activeUserSourceType;
+- (BOOL)isMoreMenuShowing;
+- (void)setIsMoreMenuShowing:;
+- (void)__moreOptionButtonTapped:model:;
+- (void)__showMenuWithUser:;
+- (void)__alienationOptionButtonTappedWithModel:index:;
+- (void)sectionWillDisplayCell:;
+- (id)separatorColor;
+- (id)sectionBackgroundColor;
+- (long long)type;
+- (Class)cellClass;
+- (BOOL)viewDidAppear;
+- (BOOL)isMine;
+- (BOOL)isSearch;
+- (id)pageIdentifier;
+- (void)setViewDidAppear:;
+- (id)willDisappearBlock;
++ (Class)sectionViewModelClass;
+@end

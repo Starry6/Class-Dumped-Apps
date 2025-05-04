@@ -1,0 +1,37 @@
+@interface AWETeenDiscoverAgeSettingView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView arrow;
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UITapGestureRecognizer tap;
+@property (nonatomic) @? ageLabelClickedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogin;
+- (void)didFinishLogoutWithUid:;
+- (void)didFinishUpdateAwemeUser;
+- (void)awe_themeDidChange:;
+- (id)aAWEBrandColorAdapter;
+- (void)p_addGestureRecognizer;
+- (void)p_renderUI;
+- (void)updateDiscoverUserInfo;
+- (void)p_bindNotification;
+- (void)p_setTitleAndIconColor;
+- (void)tapClick:;
+- (id)ageLabelClickedBlock;
+- (void)p_ageSettingFinished;
+- (void)setAgeLabelClickedBlock:;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)avatar;
+- (void)setAvatar:;
+- (id)arrow;
+- (void)setArrow:;
+- (id)tap;
+- (void)setTap:;
++ (Class)aAWEBrandColorAdapterClass;
+@end

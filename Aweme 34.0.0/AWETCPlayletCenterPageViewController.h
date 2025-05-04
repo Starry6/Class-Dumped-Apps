@@ -1,0 +1,38 @@
+@interface AWETCPlayletCenterPageViewController : UIViewController
+@property (nonatomic) AWEPlayletCenterPageNaviBarView naviBarView;
+@property (nonatomic) AWETripleColumnPlayletContainerViewController containerView;
+@property (nonatomic) UIImageView backgroundView;
+@property (nonatomic) AWEPlayletPageContext context;
+@property (nonatomic) AWEPlayletTracker tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (BOOL)awe_shouldAutorotate;
+- (unsigned long long)awe_supportedInterfaceOrientations;
+- (id)naviBarView;
+- (id)currentPageName;
+- (id)aAWEIncentivePendantDOUYINLiteAdapter;
+- (void)openSearchPage;
+- (void)setNaviBarView:;
+- (void)viewWillDisappear:;
+- (id)init;
+- (id)tracker;
+- (void)viewDidLoad;
+- (void)setBackgroundView:;
+- (id)containerView;
+- (id)backgroundView;
+- (void)appWillResignActive:;
+- (void)setTracker:;
+- (void)setContainerView:;
+- (void)setContext:;
+- (void)viewWillAppear:;
+- (void)appDidBecomeActive:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)context;
+- (void)setupUI;
+- (void)addObservers;
++ (Class)aAWEIncentivePendantDOUYINLiteAdapterClass;
+@end

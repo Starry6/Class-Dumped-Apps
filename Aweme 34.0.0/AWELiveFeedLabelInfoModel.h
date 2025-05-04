@@ -1,0 +1,37 @@
+@interface AWELiveFeedLabelInfoModel : AWEBaseApiModel
+@property (nonatomic) BOOL isPaid;
+@property (nonatomic) NSNumber timeInterval;
+@property (nonatomic) q labelType;
+@property (nonatomic) q displayType;
+@property (nonatomic) AWELiveFeedLabelSpliceModel spliceLabel;
+@property (nonatomic) AWELiveFeedLabelProfilePicSpliceModel profilePicSpliceLabel;
+@property (nonatomic) AWEURLModel wholeLabel;
+@property (nonatomic) NSString extra;
+@property (nonatomic) BOOL containSelf;
+@property (nonatomic) BOOL skylightStyle;
+- (void)setExtra:;
+- (id)wholeLabel;
+- (void)setSkylightStyle:;
+- (id)spliceLabel;
+- (BOOL)skylightStyle;
+- (id)profilePicSpliceLabel;
+- (BOOL)containSelf;
+- (void)setProfilePicSpliceLabel:;
+- (void)setContainSelf:;
+- (void)setSpliceLabel:;
+- (void)setWholeLabel:;
+- (id)timeInterval;
+- (long long)labelType;
+- (void)setLabelType:;
+- (id)extra;
+- (long long)displayType;
+- (BOOL)isPaid;
+- (void)setDisplayType:;
+- (void)setTimeInterval:;
+- (void).cxx_destruct;
+- (void)setIsPaid:;
++ (id)spliceLabelJSONTransformer;
++ (id)wholeLabelJSONTransformer;
++ (id)profilePicSpliceLabelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

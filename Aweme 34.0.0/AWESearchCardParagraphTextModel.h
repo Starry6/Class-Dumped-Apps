@@ -1,0 +1,33 @@
+@interface AWESearchCardParagraphTextModel : NSObject
+@property (nonatomic) NSString descriptionString;
+@property (nonatomic) NSArray textExtra;
+@property (nonatomic) q abstractType;
+@property (nonatomic) q sectionsType;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) NSString shortAnswerString;
+@property (nonatomic) NSString contentString;
+@property (nonatomic) BOOL hasShortAnswer;
+@property (nonatomic) q suffixType;
+@property (nonatomic) NSMutableAttributedString prefixAttributedString;
+- (id)textExtra;
+- (void)setTextExtra:;
+- (void)setShortAnswerString:;
+- (void)setHasShortAnswer:;
+- (void)setPrefixAttributedString:;
+- (void)setSectionsType:;
+- (void)setAbstractType:;
+- (id)shortAnswerString;
+- (void)setSuffixType:;
+- (long long)abstractType;
+- (BOOL)hasShortAnswer;
+- (id)prefixAttributedString;
+- (void)setDescriptionString:;
+- (id)sections;
+- (id)descriptionString;
+- (void)setSections:;
+- (void).cxx_destruct;
+- (id)contentString;
+- (void)setContentString:;
+- (long long)sectionsType;
+- (long long)suffixType;
+@end

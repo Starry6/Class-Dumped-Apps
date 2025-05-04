@@ -1,0 +1,36 @@
+@interface AWERepoAuthorityContext : NSObject
+@property (nonatomic) BOOL downloadIgnoreVisibility;
+@property (nonatomic) BOOL duetIgnoreVisibility;
+@property (nonatomic) BOOL storyShareIgnoreVisibility;
+@property (nonatomic) q downloadVerificationStatus;
+@property (nonatomic) q duetVerificationStatus;
+@property (nonatomic) q storyShareVerificationStatus;
+@property (nonatomic) NSString downloadTypeErrorMessage;
+@property (nonatomic) NSString itemDuetErrorMessage;
+@property (nonatomic) NSString itemShareErrorMessage;
+- (BOOL)downloadIgnoreVisibility;
+- (void)setDownloadIgnoreVisibility:;
+- (BOOL)duetIgnoreVisibility;
+- (void)setDuetIgnoreVisibility:;
+- (BOOL)storyShareIgnoreVisibility;
+- (void)setStoryShareIgnoreVisibility:;
+- (BOOL)isDownloadTypeError;
+- (void)setDownloadVerificationStatus:;
+- (long long)downloadVerificationStatus;
+- (id)downloadTypeErrorMessage;
+- (void)setDownloadTypeErrorMessage:;
+- (BOOL)isItemDuetError;
+- (void)setDuetVerificationStatus:;
+- (id)itemDuetErrorMessage;
+- (long long)duetVerificationStatus;
+- (void)setItemDuetErrorMessage:;
+- (BOOL)isItemShareError;
+- (void)setStoryShareVerificationStatus:;
+- (id)itemShareErrorMessage;
+- (long long)storyShareVerificationStatus;
+- (void)setItemShareErrorMessage:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithCoder:;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,32 @@
+@interface AWEPOIVideoDarenCardModel : MTLModel
+@property (nonatomic) q times;
+@property (nonatomic) NSString cardType;
+@property (nonatomic) AWEPOIVideoDarenCardTextModel iconTextModel;
+@property (nonatomic) AWEURLModel icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) AWEPOIVideoDarenCardTextModel buttonTextModel;
+@property (nonatomic) NSString schema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconTextModel;
+- (void)setIconTextModel:;
+- (id)buttonTextModel;
+- (void)setButtonTextModel:;
+- (id)schema;
+- (void)setSchema:;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
+- (id)cardType;
+- (void)setCardType:;
+- (long long)times;
+- (void)setTimes:;
++ (id)iconJSONTransformer;
++ (id)iconTextModelJSONTransformer;
++ (id)buttonTextModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface AWEApplogDynamicFreqEarlyConsumeStrategy : AWEApplogDynamicFreqStrategy
+@property (nonatomic) q consumeVideoCount;
+@property (nonatomic) double launchTime;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) q validVideoCount;
+@property (nonatomic) double validTimeInterval;
+@property (nonatomic) double timerPollInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLaunchTime:;
+- (double)launchTime;
+- (void)playWith:;
+- (void)onStrategyInit;
+- (id)initWithStrategyName:config:delegate:;
+- (void)startTimerPolling;
+- (double)timerPollInterval;
+- (void)updateValidState;
+- (void)setTimerPollInterval:;
+- (long long)consumeVideoCount;
+- (void)setConsumeVideoCount:;
+- (double)validTimeInterval;
+- (long long)validVideoCount;
+- (void)setValidVideoCount:;
+- (void)setValidTimeInterval:;
+- (void)setTimer:;
+- (id)timer;
+- (unsigned long long)moduleNames;
+- (id)description;
+- (void).cxx_destruct;
+@end

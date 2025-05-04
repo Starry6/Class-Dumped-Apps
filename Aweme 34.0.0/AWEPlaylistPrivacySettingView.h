@@ -1,0 +1,31 @@
+@interface AWEPlaylistPrivacySettingView : UIView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView headerView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) @? closeBlock;
+@property (nonatomic) <AWEPlaylistPrivacySettingViewDelegate> delegate;
+@property (nonatomic) double viewHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCloseBlock:;
+- (id)closeBlock;
+- (void)setViewHeight:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)setTableView:;
+- (id)tableView;
+- (void)cancel;
+- (id)headerView;
+- (void).cxx_destruct;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (void)setHeaderView:;
+- (id)dataSource;
+- (double)viewHeight;
++ (id)sheetWithModels:headerText:currentType:;
+@end

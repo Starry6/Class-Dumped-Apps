@@ -1,0 +1,2 @@
+@interface AWEStudioEditEffectFeatureConfig : AWEStudioComposerBaseFeatureConfig
+@end

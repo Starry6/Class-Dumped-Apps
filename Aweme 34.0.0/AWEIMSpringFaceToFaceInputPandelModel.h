@@ -1,0 +1,38 @@
+@interface AWEIMSpringFaceToFaceInputPandelModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString bgURL;
+@property (nonatomic) NSString smallBgURL;
+@property (nonatomic) q minCount;
+@property (nonatomic) NSString localBgURL;
+@property (nonatomic) NSString localSmallBgURL;
+@property (nonatomic) NSString localBgImagePath;
+@property (nonatomic) NSString localSmallBgImagePath;
+@property (nonatomic) NSString keyboardType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bgURL;
+- (void)setBgURL:;
+- (id)localBgImagePath;
+- (id)localSmallBgImagePath;
+- (id)localBgURL;
+- (id)smallBgURL;
+- (id)localSmallBgURL;
+- (void)setLocalBgURL:;
+- (void)setLocalSmallBgURL:;
+- (void)setLocalBgImagePath:;
+- (void)setLocalSmallBgImagePath:;
+- (void)setSmallBgURL:;
+- (long long)minCount;
+- (void)setMinCount:;
+- (id)keyboardType;
+- (void)setKeyboardType:;
+- (id)subtitle;
+- (void)setSubtitle:;
+- (void).cxx_destruct;
+- (id)title;
+- (void)setTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

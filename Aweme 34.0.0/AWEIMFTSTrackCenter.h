@@ -1,0 +1,36 @@
+@interface AWEIMFTSTrackCenter : NSObject
+@property (nonatomic) NSTimer trackSearchStartTimer;
+@property (nonatomic) NSMutableDictionary searchDataDict;
+@property (nonatomic) NSMutableDictionary coldStartSyncDataDict;
+@property (nonatomic) NSObject<OS_dispatch_queue> trackQueue;
+@property (nonatomic) double setupStartTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackQueue;
+- (id)initWithTrackSearchStartInterval:;
+- (void)startSearchWithId:types:limit:conversationID:keyword:;
+- (void)ftsSearchEndWithId:count:monitorArray:;
+- (void)cancelSearchWithId:;
+- (void)startSyncWithId:type:count:;
+- (void)syncEndWithId:;
+- (void)setupStart;
+- (void)trackHasSyncAllMultipleMessages:withSearchId:;
+- (void)setupEnd;
+- (void)setSearchDataDict:;
+- (void)setColdStartSyncDataDict:;
+- (void)addTrackSearchStartTimerWithInterval:;
+- (void)invalidateTrackSearchStartTimer;
+- (id)searchDataDict;
+- (id)coldStartSyncDataDict;
+- (void)trackSearchStartData;
+- (void)setTrackSearchStartTimer:;
+- (id)trackSearchStartTimer;
+- (void)syncEndWithId:startTimeInterval:type:count:;
+- (void)setTrackQueue:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (double)setupStartTime;
+- (void)setSetupStartTime:;
+@end

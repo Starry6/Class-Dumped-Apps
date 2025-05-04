@@ -1,0 +1,38 @@
+@interface AWESearchMerchandiseTagInfoModel : AWEBaseApiModel
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString color;
+@property (nonatomic) q type;
+@property (nonatomic) NSString tagID;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSArray urlList;
+@property (nonatomic) AWESearchTagExtraModel extra;
+@property (nonatomic) NSArray extraUrlList;
+@property (nonatomic) NSString extraText;
+- (void)setExtra:;
+- (id)extraUrlList;
+- (void)setExtraUrlList:;
+- (id)extraText;
+- (void)setExtraText:;
+- (id)tagID;
+- (void)setHeight:;
+- (void)setWidth:;
+- (id)icon;
+- (void)setText:;
+- (id)color;
+- (id)extra;
+- (id)text;
+- (void)setColor:;
+- (long long)type;
+- (double)width;
+- (void)setType:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (double)height;
+- (void)setTagID:;
+- (id)urlList;
+- (void)setUrlList:;
++ (id)extraJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

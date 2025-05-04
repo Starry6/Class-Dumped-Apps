@@ -1,0 +1,33 @@
+@interface AWEIMDemoteHelper : NSObject
+@property (nonatomic) NSString bizKey;
+@property (nonatomic) Q version;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) @? identifierCallback;
+- (void)resetScene:;
+- (id)bizKey;
+- (void)setBizKey:;
+- (id)initWithBizKey:version:;
+- (void)increaseCountWithScene:;
+- (BOOL)isMoreThanOrEqualMaxCount:scene:;
+- (BOOL)isMoreThanMaxDays:date:scene:;
+- (id)p_identifier;
+- (id)p_cacheKeyWithIdentifier:scene:;
+- (void)p_increaseClickCountWithIdentifier:scene:;
+- (BOOL)p_isMoreThanOrEqualMaxCount:identifier:scene:;
+- (BOOL)p_isMoreThanMaxDays:date:identifier:scene:;
+- (void)resetClickCount;
+- (void)increaseClickCount;
+- (BOOL)shouldDemoteWithMaxCount:;
+- (void)resetDisplay;
+- (BOOL)shouldDemoteWithDate:maxDays:;
+- (long long)cachedCountWithScene:;
+- (id)identifierCallback;
+- (void)setIdentifierCallback:;
+- (void)setIdentifier:;
+- (unsigned long long)version;
+- (id)identifier;
+- (void)setVersion:;
+- (void).cxx_destruct;
++ (id)p_dateFormatter;
++ (id)helperWithBizKey:version:;
+@end

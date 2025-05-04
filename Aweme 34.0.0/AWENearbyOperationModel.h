@@ -1,0 +1,30 @@
+@interface AWENearbyOperationModel : MTLModel
+@property (nonatomic) NSString operationDescription;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString schema;
+@property (nonatomic) q indexToInsert;
+@property (nonatomic) AWEURLModel coverUrl;
+@property (nonatomic) NSString boostTaskId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)boostTaskId;
+- (void)setCoverUrl:;
+- (id)coverUrl;
+- (void)setBoostTaskId:;
+- (long long)indexToInsert;
+- (void)setOperationDescription:;
+- (void)setIndexToInsert:;
+- (id)schema;
+- (void)setSchema:;
+- (void)setIdentifier:;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)title;
+- (id)operationDescription;
+- (void)setTitle:;
++ (id)coverUrlJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

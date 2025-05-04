@@ -1,0 +1,35 @@
+@interface AWESearchBottomNormalBarComponent : AWESearchComponent
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AWESearchBottomNormalBarComponentView normalBarView;
+@property (nonatomic) AWESearchBottomNormalBarComponentModel model;
+@property (nonatomic) NSMutableArray broadCastArray;
+@property (nonatomic) <AWESearchBottomNormalBarComponentBroadCast> broadCast;
+@property (nonatomic) AWESearchEventDispather eventDispather;
+@property (nonatomic) <AWESearchContainerProtocol> containerContext;
+@property (nonatomic) <AWESearchComponentProtocol> componentContext;
+@property (nonatomic) NSDictionary dictLogExtraInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidLoad;
+- (void)updateWithModel:forceUpdate:;
+- (void)componentViewDidStartShowing;
+- (void)componentViewLayoutSubviews;
+- (id)broadcastProtocolList;
+- (id)normalBarView;
+- (id)broadCast;
+- (id)broadCastArray;
+- (void)setNormalBarView:;
+- (void)setBroadCastArray:;
+- (void)setBroadCast:;
+- (void)setModel:;
+- (id)contentView;
+- (id)model;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)componentView;
++ (id)componentSizeForModel:width:;
+@end

@@ -1,0 +1,30 @@
+@interface AWEFeedRVCardFakeProgressSliderViewV2 : UIView
+@property (nonatomic) double percentage;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView thumbView;
+@property (nonatomic) UIView whiteView;
+@property (nonatomic) UIView grayView;
+@property (nonatomic) BOOL isDisappearAnimating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsDisappearAnimating:;
+- (BOOL)isDisappearAnimating;
+- (id)grayView;
+- (void)show:animation:completion:;
+- (void)setGrayView:;
+- (id)init;
+- (void)dealloc;
+- (id)containerView;
+- (id)thumbView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (double)percentage;
+- (void)setupUI;
+- (void)setThumbView:;
+- (void)show:completion:;
+- (void)setPercentage:;
+- (void)setWhiteView:;
+- (id)whiteView;
+@end

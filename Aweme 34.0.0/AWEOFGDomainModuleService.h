@@ -1,0 +1,33 @@
+@interface AWEOFGDomainModuleService : HTSService
+@property (nonatomic) NSDictionary firstPartyDomainList;
+@property (nonatomic) NSDictionary firstPartyBlockDomainList;
+@property (nonatomic) NSDictionary secondPartyDomainList;
+@property (nonatomic) NSURL lastURL;
+@property (nonatomic) Q lastParty;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onServiceInit;
+- (void)awemeSettingDidChange;
+- (void)initServiceData;
+- (unsigned long long)getDomainPartyForURL:;
+- (id)lastURL;
+- (unsigned long long)lastParty;
+- (id)secondPartyDomainList;
+- (id)firstPartyDomainList;
+- (void)loadInnerConfigIfNeed;
+- (unsigned long long)getDomainPartyForDomain:path:;
+- (void)setLastURL:;
+- (void)setLastParty:;
+- (void)trackEvent:url:duration:party:;
+- (id)firstPartyBlockDomainList;
+- (BOOL)hasUpperDomain:;
+- (id)getUpperDomain:;
+- (void)updateDomainListIfNeeded;
+- (void)setFirstPartyBlockDomainList:;
+- (void)setFirstPartyDomainList:;
+- (void)setSecondPartyDomainList:;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

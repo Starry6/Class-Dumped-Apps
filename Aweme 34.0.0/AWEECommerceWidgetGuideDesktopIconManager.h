@@ -1,0 +1,32 @@
+@interface AWEECommerceWidgetGuideDesktopIconManager : NSObject
+@property (nonatomic) AWEECommerceWidgetGuideEntranceModel entranceModel;
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) NSMutableArray hasPreloadEntranceList;
+@property (nonatomic) BOOL passFrequencyDebugSwitch;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldDesktopChannelGuideEvadeWithScene:enterFrom:;
+- (void)desktopChannelGuideAlreadyShowWithScene:enterFrom:guideType:extraParams:config:;
+- (void)desktopChannelGuideShowFailedWithScene:enterFrom:guideType:error:extraParams:;
+- (id)preloadConfig;
+- (id)entranceModel;
+- (void)setEntranceModel:;
+- (void)setPassFrequencyDebugSwitch:;
+- (void)setHasPreloadEntranceList:;
+- (id)hasPreloadEntranceList;
+- (BOOL)passFrequencyDebugSwitch;
+- (void)trackerWithAction:state:entrance:;
+- (void)checkCanShowWithParams:completion:;
+- (void)showGuidePanelWithParams:completion:;
+- (void)preloadWithEntrance:completion:;
+- (id)init;
+- (void)dealloc;
+- (id)position;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
+- (id)tabID;
++ (id)sharedInstance;
+@end

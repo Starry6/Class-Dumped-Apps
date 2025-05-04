@@ -1,0 +1,2 @@
+@interface AWETeenLandscapeInteractionButton : UIButton
+@end

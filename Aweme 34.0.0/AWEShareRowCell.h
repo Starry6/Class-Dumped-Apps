@@ -1,0 +1,31 @@
+@interface AWEShareRowCell : UICollectionViewCell
+@property (nonatomic) UIView customView;
+@property (nonatomic) BOOL shouldBubbleAnimates;
+@property (nonatomic) BOOL scalesImageWhenHighlighted;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView smallImageView;
+@property (nonatomic) BDImageView bottomCenterImageView;
+- (BOOL)scalesImageWhenHighlighted;
+- (void)setScalesImageWhenHighlighted:;
+- (id)smallImageView;
+- (id)bottomCenterImageView;
+- (BOOL)shouldBubbleAnimates;
+- (void)setShouldBubbleAnimates:;
+- (id)initWithFrame:;
+- (void)setHighlighted:;
+- (void)setCustomView:;
+- (id)customView;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)updateWithItem:;
+- (id)imageView;
+- (void)setupSubviews;
++ (id)smallIconSize;
++ (id)customViewSizeInInteractionScene;
++ (id)titleTextColorForStyle:;
++ (id)imageBadgeColor;
++ (id)iconSize;
++ (id)cellSize;
++ (double)iconTitlePadding;
+@end

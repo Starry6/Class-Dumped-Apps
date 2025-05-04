@@ -1,0 +1,33 @@
+@interface AWEPOIUGCRateCardResponse : AWEBaseApiModel
+@property (nonatomic) BOOL hasRate;
+@property (nonatomic) AWEPOIInfoModel poiInfo;
+@property (nonatomic) NSString contentPrompt;
+@property (nonatomic) NSArray rateGrade;
+@property (nonatomic) AWEPOICouponDescModel couponDesc;
+@property (nonatomic) NSString topPrompt;
+@property (nonatomic) NSArray poiRateCardExpGroups;
+@property (nonatomic) NSArray subTitles;
+@property (nonatomic) NSString subTitleLabel;
+- (id)poiInfo;
+- (id)rateGrade;
+- (void)setPoiInfo:;
+- (id)couponDesc;
+- (void)setCouponDesc:;
+- (void)setRateGrade:;
+- (BOOL)hasRate;
+- (id)contentPrompt;
+- (id)poiRateCardExpGroups;
+- (id)topPrompt;
+- (void)setContentPrompt:;
+- (void)setTopPrompt:;
+- (void)setPoiRateCardExpGroups:;
+- (void).cxx_destruct;
+- (void)setSubTitles:;
+- (id)subTitles;
+- (void)setSubTitleLabel:;
+- (id)subTitleLabel;
+- (void)setHasRate:;
++ (id)rateGradeJSONTransformer;
++ (id)poiRateCardExpGroupsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end
